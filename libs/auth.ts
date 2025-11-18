@@ -133,13 +133,6 @@ export async function getUserDefaultAccount(
 ): Promise<AccountWithRole | null> {
   const supabase = await createClient();
 
-  // Verify authentication context
-  const {
-    data: { user: authUser },
-  } = await supabase.auth.getUser();
-  console.log("[getUserDefaultAccount] Auth user:", authUser?.id);
-  console.log("[getUserDefaultAccount] Requested userId:", userId);
-
   // First, get the user's default_account_id
   const { data: profile, error: profileError } = await supabase
     .from("profiles")
@@ -147,28 +140,10 @@ export async function getUserDefaultAccount(
     .eq("id", userId)
     .single();
 
-  if (profileError) {
-    console.error("[getUserDefaultAccount] Profile query error:", {
-      message: profileError.message,
-      details: profileError.details,
-      hint: profileError.hint,
-      code: profileError.code,
-    });
+  if (profileError || !profile?.default_account_id) {
+    console.error("Error fetching user profile:", profileError);
     return null;
   }
-
-  if (!profile?.default_account_id) {
-    console.error(
-      "[getUserDefaultAccount] No default_account_id in profile:",
-      profile
-    );
-    return null;
-  }
-
-  console.log(
-    "[getUserDefaultAccount] Found default_account_id:",
-    profile.default_account_id
-  );
 
   // Get the account membership
   const { data: membership, error: membershipError } = await supabase
@@ -178,30 +153,10 @@ export async function getUserDefaultAccount(
     .eq("account_id", profile.default_account_id)
     .single();
 
-  if (membershipError) {
-    console.error(
-      "[getUserDefaultAccount] Membership query error:",
-      JSON.stringify(
-        {
-          message: membershipError.message,
-          details: membershipError.details,
-          hint: membershipError.hint,
-          code: membershipError.code,
-          full: membershipError,
-        },
-        null,
-        2
-      )
-    );
+  if (membershipError || !membership) {
+    console.error("Error fetching account membership:", membershipError);
     return null;
   }
-
-  if (!membership) {
-    console.error("[getUserDefaultAccount] No membership found");
-    return null;
-  }
-
-  console.log("[getUserDefaultAccount] Found membership:", membership);
 
   // Separately fetch the account details
   const { data: account, error: accountError } = await supabase
@@ -210,22 +165,10 @@ export async function getUserDefaultAccount(
     .eq("id", profile.default_account_id)
     .single();
 
-  if (accountError) {
-    console.error("[getUserDefaultAccount] Account query error:", {
-      message: accountError.message,
-      details: accountError.details,
-      hint: accountError.hint,
-      code: accountError.code,
-    });
+  if (accountError || !account) {
+    console.error("Error fetching account:", accountError);
     return null;
   }
-
-  if (!account) {
-    console.error("[getUserDefaultAccount] No account found");
-    return null;
-  }
-
-  console.log("[getUserDefaultAccount] Success!");
 
   return {
     account: account as AccountWithRole["account"],

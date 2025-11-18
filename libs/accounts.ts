@@ -66,15 +66,16 @@ export async function createPersonalAccount(
   userName: string | null,
   supabase: SupabaseClient
 ): Promise<{ accountId: string; profileId: string }> {
-  // Generate account name from user's name or email
-  const accountName = userName || userEmail.split("@")[0];
-  const slug = await generateAccountSlug(`${accountName}'s Account`, supabase);
+  // Generate account name
+  // If user provided a name, use it. Otherwise, use a neutral default.
+  const accountName = userName ? `${userName}'s Account` : "Personal Account";
+  const slug = await generateAccountSlug(accountName, supabase);
 
   // 1. Create the personal account
   const { data: account, error: accountError } = await supabase
     .from("accounts")
     .insert({
-      name: `${accountName}'s Account`,
+      name: accountName,
       slug,
       account_type: "personal",
       seat_count: 1,
