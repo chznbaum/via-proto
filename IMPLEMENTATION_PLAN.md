@@ -2992,7 +2992,7 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 **Build Configuration:**
 - Build Command: `npm run build` (auto-detected)
 - Start Command: `npm run start` (auto-detected)
-- Port: `3000` (auto-detected)
+- Port: `3001` (manually changed)
 
 **Environment Variables (Coolify Dashboard):**
 

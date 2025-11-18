@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from "next/server";
-import { createClient } from "@/libs/supabase/server";
+import { createServerClient } from "@supabase/ssr";
 import { SupabaseClient } from "@supabase/supabase-js";
 import {
   createPersonalAccount,
@@ -13,9 +13,35 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   const requestUrl = new URL(req.url);
   const code = requestUrl.searchParams.get("code");
+  const redirectUrl = requestUrl.origin + config.auth.callbackUrl;
 
   if (code) {
-    const supabase = await createClient();
+    // Create the redirect response first
+    const response = NextResponse.redirect(redirectUrl);
+
+    // Create Supabase client with cookie handling that sets on the response
+    const supabase = createServerClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        cookies: {
+          getAll() {
+            return req.cookies.getAll();
+          },
+          setAll(cookiesToSet) {
+            cookiesToSet.forEach(({ name, value, options }) => {
+              // Set max-age to 7 days for real cookies, keep original options for deletions
+              const cookieOptions = value
+                ? { ...options, maxAge: 7 * 24 * 60 * 60 } // 7 days in seconds
+                : options; // Keep original options when deleting (empty value)
+
+              response.cookies.set(name, value, cookieOptions);
+            });
+          },
+        },
+      }
+    );
+
     const { data, error } = await supabase.auth.exchangeCodeForSession(code);
 
     if (error) {
@@ -59,8 +85,11 @@ export async function GET(req: NextRequest) {
         }
       }
     }
+
+    // Return the response with cookies set
+    return response;
   }
 
-  // URL to redirect to after sign in process completes
-  return NextResponse.redirect(requestUrl.origin + config.auth.callbackUrl);
+  // If no code, just redirect
+  return NextResponse.redirect(redirectUrl);
 }

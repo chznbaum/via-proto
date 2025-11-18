@@ -14,9 +14,14 @@ export async function createClient() {
         },
         setAll(cookiesToSet) {
           try {
-            cookiesToSet.forEach(({ name, value, options }) =>
-              cookieStore.set(name, value, options)
-            );
+            cookiesToSet.forEach(({ name, value, options }) => {
+              // Override max-age to 14 days for security
+              const cookieOptions = {
+                ...options,
+                maxAge: 14 * 24 * 60 * 60, // 14 days in seconds
+              };
+              cookieStore.set(name, value, cookieOptions);
+            });
           } catch {
             // The `setAll` method was called from a Server Component.
             // This can be ignored if you have middleware refreshing
