@@ -1,7 +1,5 @@
 import { ReactNode } from "react";
-import { redirect } from "next/navigation";
-import { createClient } from "@/libs/supabase/server";
-import config from "@/config";
+import { requireAuth } from "@/libs/auth";
 
 // This is a server-side component to ensure the user is logged in.
 // If not, it will redirect to the login page.
@@ -13,15 +11,8 @@ export default async function LayoutPrivate({
 }: {
   children: ReactNode;
 }) {
-  const supabase = await createClient();
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  if (!user) {
-    redirect(config.auth.loginUrl);
-  }
+  // Require authentication - will redirect to login if not authenticated
+  await requireAuth();
 
   return <>{children}</>;
 }
