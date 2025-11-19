@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 // @ts-ignore
 import SimpleBar from "simplebar-react";
@@ -9,7 +8,6 @@ import "simplebar-react/dist/simplebar.min.css";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
 import ButtonSignin from "./ButtonSignin";
-import logo from "@/app/icon.png";
 import config from "@/config";
 
 const menu = [
@@ -70,14 +68,9 @@ export const Topbar = () => {
                                 <div className="bg-base-100 flex h-screen w-64 flex-col px-3 py-4">
                                     <div className="flex items-center justify-center gap-2">
                                         <Link href="/" className="flex items-center gap-2">
-                                            <Image
-                                                src={logo}
-                                                alt={`${config.appName} logo`}
-                                                className="w-8"
-                                                width={32}
-                                                height={32}
-                                            />
-                                            <span className="font-extrabold text-lg">{config.appName}</span>
+                                            <span className="font-serif text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                                ViaPro.to
+                                            </span>
                                         </Link>
                                     </div>
                                     <div className="min-h-0 grow">
@@ -105,14 +98,9 @@ export const Topbar = () => {
                         </div>
                     </div>
                     <Link href="/" className="flex items-center gap-2 shrink-0">
-                        <Image
-                            src={logo}
-                            alt={`${config.appName} logo`}
-                            className="w-8"
-                            width={32}
-                            height={32}
-                        />
-                        <span className="font-extrabold text-lg max-md:hidden">{config.appName}</span>
+                        <span className="font-serif text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            ViaPro.to
+                        </span>
                     </Link>
                 </div>
                 <div className="hidden items-center gap-1 md:flex">

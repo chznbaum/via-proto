@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import type { JSX } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
 import { ThemeToggle } from "./ThemeToggle";
-import logo from "@/app/icon.png";
 import config from "@/config";
 
 const links: {
@@ -54,16 +52,9 @@ const Header = () => {
             href="/"
             title={`${config.appName} homepage`}
           >
-            <Image
-              src={logo}
-              alt={`${config.appName} logo`}
-              className="w-8"
-              placeholder="blur"
-              priority={true}
-              width={32}
-              height={32}
-            />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            <span className="font-serif text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              ViaPro.to
+            </span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -124,16 +115,9 @@ const Header = () => {
               title={`${config.appName} homepage`}
               href="/"
             >
-              <Image
-                src={logo}
-                alt={`${config.appName} logo`}
-                className="w-8"
-                placeholder="blur"
-                priority={true}
-                width={32}
-                height={32}
-              />
-              <span className="font-extrabold text-lg">{config.appName}</span>
+              <span className="font-serif text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                ViaPro.to
+              </span>
             </Link>
             <button
               type="button"

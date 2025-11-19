@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 import config from "@/config";
-import logo from "@/app/icon.png";
 
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.resend.supportEmail, the link won't be displayed.
@@ -38,17 +36,9 @@ const Footer = () => {
           <div className="grid gap-6 md:grid-cols-5 md:gap-8 xl:gap-12">
             <div className="col-span-2">
               <Link href="/" className="flex gap-2 items-center">
-                <Image
-                  src={logo}
-                  alt={`${config.appName} logo`}
-                  priority={true}
-                  className="w-6 h-6"
-                  width={24}
-                  height={24}
-                />
-                <strong className="font-extrabold tracking-tight text-base md:text-lg">
-                  {config.appName}
-                </strong>
+                <span className="font-serif text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  ViaPro.to
+                </span>
               </Link>
               <p className="text-base-content/80 mt-3 max-w-sm">
                 {config.appDescription}
