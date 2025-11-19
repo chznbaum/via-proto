@@ -165,7 +165,8 @@ export const MODEL_CATALOG: ModelConfig[] = [
     costTier: "medium",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Excellent balance of intelligence and cost for coding and analysis",
+    description:
+      "Excellent balance of intelligence and cost for coding and analysis",
     featured: true,
   },
   {
@@ -209,17 +210,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsWebSearch: true,
     supportsStructuredOutput: true,
     description: "3x cheaper and 2x faster than Sonnet 4 for coding tasks",
-    featured: true,
-  },
-  {
-    id: "anthropic/claude-opus-4",
-    name: "Claude Opus 4",
-    provider: "Anthropic",
-    minimumTier: "pro",
-    costTier: "premium",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Most powerful coding model with 200K context",
     featured: true,
   },
   {
@@ -321,7 +311,8 @@ export const MODEL_CATALOG: ModelConfig[] = [
     costTier: "high",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Advanced reasoning model optimized for complex problem-solving",
+    description:
+      "Advanced reasoning model optimized for complex problem-solving",
     featured: true,
     isReasoningModel: true,
   },
@@ -457,7 +448,9 @@ export function getModelsForTier(tier: SubscriptionTier): ModelConfig[] {
 /**
  * Get only featured models for a subscription tier
  */
-export function getFeaturedModelsForTier(tier: SubscriptionTier): ModelConfig[] {
+export function getFeaturedModelsForTier(
+  tier: SubscriptionTier,
+): ModelConfig[] {
   return getModelsForTier(tier).filter((m) => m.featured === true);
 }
 
@@ -466,7 +459,7 @@ export function getFeaturedModelsForTier(tier: SubscriptionTier): ModelConfig[] 
  */
 export function isModelAllowedForTier(
   modelConfig: ModelConfig,
-  tier: SubscriptionTier
+  tier: SubscriptionTier,
 ): boolean {
   if (tier === "free") {
     return modelConfig.minimumTier === "free";
@@ -479,7 +472,7 @@ export function isModelAllowedForTier(
  * Group models by provider
  */
 export function getModelsByProvider(
-  tier: SubscriptionTier
+  tier: SubscriptionTier,
 ): Record<ModelProvider, ModelConfig[]> {
   const models = getModelsForTier(tier);
   const grouped: Record<string, ModelConfig[]> = {};
