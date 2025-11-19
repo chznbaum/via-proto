@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { createClient } from "@/libs/supabase/server";
 import { createCustomerPortal } from "@/libs/stripe";
+import { getUserDefaultAccount } from "@/libs/auth";
 
 export async function POST(req: NextRequest) {
   try {
@@ -25,13 +26,11 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { data } = await supabase
-      .from("profiles")
-      .select("*")
-      .eq("id", user?.id)
-      .single();
+    // Get user's default account
+    const accountData = await getUserDefaultAccount(user.id);
+    const { account } = accountData;
 
-    if (!data?.customer_id) {
+    if (!account?.stripe_customer_id) {
       return NextResponse.json(
         {
           error: "You don't have a billing account yet. Make a purchase first.",
@@ -41,7 +40,7 @@ export async function POST(req: NextRequest) {
     }
 
     const stripePortalUrl = await createCustomerPortal({
-      customerId: data.customer_id,
+      customerId: account.stripe_customer_id,
       returnUrl: body.returnUrl,
     });
 

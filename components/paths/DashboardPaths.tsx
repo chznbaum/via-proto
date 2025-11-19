@@ -122,6 +122,7 @@ export default function DashboardPaths({
             <PathCreateForm
               onSuccess={handlePathCreated}
               onCancel={() => setShowCreateForm(false)}
+              subscriptionTier={subscriptionTier as 'free' | 'pro' | 'team'}
             />
           </div>
           <div

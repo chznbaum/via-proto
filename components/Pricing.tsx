@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import config from "@/config";
 import ButtonCheckout from "./ButtonCheckout";
 
@@ -6,18 +9,85 @@ import ButtonCheckout from "./ButtonCheckout";
 // <ButtonCheckout /> renders a button that will redirect the user to Stripe checkout called the /api/stripe/create-checkout API endpoint with the correct priceId
 
 const Pricing = () => {
+  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
+  const [teamSeats, setTeamSeats] = useState<number>(2);
+
+  // Group plans by tier and filter by billing period
+  const plans = config.stripe.plans
+    .filter(p => p.billingPeriod === billingPeriod)
+    .reduce((acc, plan) => {
+      if (!acc.find(p => p.tier === plan.tier)) {
+        acc.push(plan);
+      }
+      return acc;
+    }, [] as typeof config.stripe.plans);
+
   return (
     <section className="bg-base-200 overflow-hidden" id="pricing">
       <div className="py-24 px-8 max-w-5xl mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <p className="font-medium text-primary mb-8">Pricing</p>
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+            AI-Powered Learning Paths
           </h2>
+          <p className="text-base-content/60 mt-4 text-lg">
+            Choose the plan that fits your learning journey
+          </p>
+        </div>
+
+        {/* Billing Period Toggle */}
+        <div className="flex justify-center mb-8">
+          <div className="tabs tabs-boxed">
+            <button
+              className={`tab ${billingPeriod === 'monthly' ? 'tab-active' : ''}`}
+              onClick={() => setBillingPeriod('monthly')}
+            >
+              Monthly
+            </button>
+            <button
+              className={`tab ${billingPeriod === 'yearly' ? 'tab-active' : ''}`}
+              onClick={() => setBillingPeriod('yearly')}
+            >
+              Yearly
+              <span className="ml-2 badge badge-sm badge-success">Save 17%</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Team Seats Selector */}
+        <div className="flex justify-center mb-12">
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">Team seats (for Team plan)</span>
+            </label>
+            <div className="flex items-center gap-2">
+              <button
+                className="btn btn-sm btn-circle"
+                onClick={() => setTeamSeats(Math.max(2, teamSeats - 1))}
+                disabled={teamSeats <= 2}
+              >
+                -
+              </button>
+              <input
+                type="number"
+                className="input input-bordered w-20 text-center"
+                value={teamSeats}
+                onChange={(e) => setTeamSeats(Math.max(2, parseInt(e.target.value) || 2))}
+                min="2"
+              />
+              <button
+                className="btn btn-sm btn-circle"
+                onClick={() => setTeamSeats(teamSeats + 1)}
+              >
+                +
+              </button>
+              <span className="text-sm text-base-content/60">seats</span>
+            </div>
+          </div>
         </div>
 
         <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8">
-          {config.stripe.plans.map((plan) => (
+          {plans.map((plan) => (
             <div key={plan.priceId} className="relative w-full max-w-lg">
               {plan.isFeatured && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
@@ -46,25 +116,45 @@ const Pricing = () => {
                     )}
                   </div>
                 </div>
-                <div className="flex gap-2">
-                  {plan.priceAnchor && (
-                    <div className="flex flex-col justify-end mb-[4px] text-lg ">
-                      <p className="relative">
-                        <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
-                        <span className="text-base-content/80">
-                          ${plan.priceAnchor}
-                        </span>
+                <div className="flex flex-col gap-2">
+                  {plan.perSeat ? (
+                    <>
+                      <div className="flex items-baseline gap-2">
+                        <p className="text-5xl tracking-tight font-extrabold">
+                          ${plan.price * teamSeats}
+                        </p>
+                        <div className="flex flex-col">
+                          <p className="text-xs text-base-content/60 uppercase font-semibold">
+                            USD
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-base-content/60">
+                        ${plan.price}/seat × {teamSeats} seats
                       </p>
+                    </>
+                  ) : (
+                    <div className="flex gap-2">
+                      {plan.priceAnchor && (
+                        <div className="flex flex-col justify-end mb-[4px] text-lg ">
+                          <p className="relative">
+                            <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
+                            <span className="text-base-content/80">
+                              ${plan.priceAnchor}
+                            </span>
+                          </p>
+                        </div>
+                      )}
+                      <p className={`text-5xl tracking-tight font-extrabold`}>
+                        ${plan.price}
+                      </p>
+                      <div className="flex flex-col justify-end mb-[4px]">
+                        <p className="text-xs text-base-content/60 uppercase font-semibold">
+                          USD
+                        </p>
+                      </div>
                     </div>
                   )}
-                  <p className={`text-5xl tracking-tight font-extrabold`}>
-                    ${plan.price}
-                  </p>
-                  <div className="flex flex-col justify-end mb-[4px]">
-                    <p className="text-xs text-base-content/60 uppercase font-semibold">
-                      USD
-                    </p>
-                  </div>
                 </div>
                 {plan.features && (
                   <ul className="space-y-2.5 leading-relaxed text-base flex-1">
@@ -89,10 +179,14 @@ const Pricing = () => {
                   </ul>
                 )}
                 <div className="space-y-2">
-                  <ButtonCheckout priceId={plan.priceId} />
+                  <ButtonCheckout
+                    priceId={plan.priceId}
+                    mode="subscription"
+                    seatCount={plan.perSeat ? teamSeats : undefined}
+                  />
 
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    Pay once. Access forever.
+                    Cancel anytime
                   </p>
                 </div>
               </div>

@@ -50,54 +50,34 @@ export async function POST(req: NextRequest) {
 
         const session = await findCheckoutSession(stripeObject.id);
 
-        const customerId = session?.customer;
+        const customerId = session?.customer as string;
         const priceId = session?.line_items?.data[0]?.price.id;
-        const userId = stripeObject.client_reference_id;
+        const quantity = session?.line_items?.data[0]?.quantity || 1;
+        const accountId = stripeObject.client_reference_id; // This is now account_id
+        const metadata = stripeObject.metadata || {};
         const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
 
-        const customer = (await stripe.customers.retrieve(
-          customerId as string
-        )) as Stripe.Customer;
-
-        if (!plan) break;
-
-        let user;
-        if (!userId) {
-          // check if user already exists
-          const { data: profile } = await supabase
-            .from("profiles")
-            .select("*")
-            .eq("email", customer.email)
-            .single();
-          if (profile) {
-            user = profile;
-          } else {
-            // create a new user using supabase auth admin
-            const { data } = await supabase.auth.admin.createUser({
-              email: customer.email,
-            });
-
-            user = data?.user;
-          }
-        } else {
-          // find user by ID
-          const { data: profile } = await supabase
-            .from("profiles")
-            .select("*")
-            .eq("id", userId)
-            .single();
-
-          user = profile;
+        if (!plan || !accountId) {
+          console.error('Missing plan or account_id in checkout session');
+          break;
         }
 
+        // Get the subscription ID if it's a subscription
+        const subscriptionId = session?.subscription as string | null;
+
+        // Update account with subscription details
         await supabase
-          .from("profiles")
+          .from("accounts")
           .update({
-            customer_id: customerId,
-            price_id: priceId,
-            has_access: true,
+            stripe_customer_id: customerId,
+            stripe_subscription_id: subscriptionId,
+            subscription_tier: plan.tier,
+            subscription_status: 'active',
+            seat_count: quantity,
+            cycle_start_date: new Date().toISOString(),
+            paths_generated_this_cycle: 0, // Reset counter on new subscription
           })
-          .eq("id", user?.id);
+          .eq("id", accountId);
 
         // Extra: send email with user link, product page, etc...
         // try {
@@ -117,24 +97,56 @@ export async function POST(req: NextRequest) {
 
       case "customer.subscription.updated": {
         // The customer might have changed the plan (higher or lower plan, cancel soon etc...)
-        // You don't need to do anything here, because Stripe will let us know when the subscription is canceled for good (at the end of the billing cycle) in the "customer.subscription.deleted" event
-        // You can update the user data to show a "Cancel soon" badge for instance
+        const stripeObject: Stripe.Subscription = event.data
+          .object as Stripe.Subscription;
+
+        const priceId = stripeObject.items.data[0]?.price.id;
+        const quantity = stripeObject.items.data[0]?.quantity || 1;
+        const customerId = stripeObject.customer as string;
+
+        const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
+
+        if (!plan) break;
+
+        // Check if subscription is being canceled (cancel_at_period_end = true)
+        const status = stripeObject.cancel_at_period_end
+          ? 'canceled'
+          : stripeObject.status === 'active'
+            ? 'active'
+            : stripeObject.status;
+
+        // Update account with new plan details
+        await supabase
+          .from("accounts")
+          .update({
+            subscription_tier: plan.tier,
+            subscription_status: status,
+            seat_count: quantity,
+          })
+          .eq("stripe_customer_id", customerId);
+
         break;
       }
 
       case "customer.subscription.deleted": {
         // The customer subscription stopped
-        // ❌ Revoke access to the product
+        // ❌ Revoke access to the product (revert to free tier)
         const stripeObject: Stripe.Subscription = event.data
           .object as Stripe.Subscription;
         const subscription = await stripe.subscriptions.retrieve(
           stripeObject.id
         );
 
+        // Revert account to free tier
         await supabase
-          .from("profiles")
-          .update({ has_access: false })
-          .eq("customer_id", subscription.customer);
+          .from("accounts")
+          .update({
+            subscription_tier: 'free',
+            subscription_status: 'inactive',
+            stripe_subscription_id: null,
+            seat_count: 1, // Personal accounts always have 1 seat
+          })
+          .eq("stripe_customer_id", subscription.customer);
         break;
       }
 
@@ -144,23 +156,30 @@ export async function POST(req: NextRequest) {
         const stripeObject: Stripe.Invoice = event.data
           .object as Stripe.Invoice;
         const priceId = stripeObject.lines.data[0].price.id;
+        const quantity = stripeObject.lines.data[0].quantity || 1;
         const customerId = stripeObject.customer;
 
-        // Find profile where customer_id equals the customerId (in table called 'profiles')
-        const { data: profile } = await supabase
-          .from("profiles")
+        // Find account where customer_id equals the customerId
+        const { data: account } = await supabase
+          .from("accounts")
           .select("*")
-          .eq("customer_id", customerId)
+          .eq("stripe_customer_id", customerId)
           .single();
 
-        // Make sure the invoice is for the same plan (priceId) the user subscribed to
-        if (profile.price_id !== priceId) break;
+        if (!account) break;
 
-        // Grant the profile access to your product. It's a boolean in the database, but could be a number of credits, etc...
+        const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
+        if (!plan) break;
+
+        // Update account subscription status to active (renewal successful)
         await supabase
-          .from("profiles")
-          .update({ has_access: true })
-          .eq("customer_id", customerId);
+          .from("accounts")
+          .update({
+            subscription_tier: plan.tier,
+            subscription_status: 'active',
+            seat_count: quantity,
+          })
+          .eq("stripe_customer_id", customerId);
 
         break;
       }

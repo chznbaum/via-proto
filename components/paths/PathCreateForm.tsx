@@ -7,11 +7,13 @@ import TopicTypeahead, { Topic } from './TopicTypeahead';
 interface PathCreateFormProps {
   onSuccess?: (pathId: string) => void;
   onCancel?: () => void;
+  subscriptionTier: 'free' | 'pro' | 'team';
 }
 
 export default function PathCreateForm({
   onSuccess,
   onCancel,
+  subscriptionTier,
 }: PathCreateFormProps) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
@@ -35,14 +37,21 @@ export default function PathCreateForm({
       }
 
       // Generate the learning path
+      // For free tier: don't send is_public (backend defaults to true)
+      // For pro/team: send user's choice
+      const requestBody: any = {
+        topic_id: formData.topic_id,
+        skill_level: formData.skill_level,
+      };
+
+      if (subscriptionTier !== 'free') {
+        requestBody.is_public = formData.is_public;
+      }
+
       const pathResponse = await fetch('/api/paths/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          topic_id: formData.topic_id,
-          skill_level: formData.skill_level,
-          is_public: formData.is_public,
-        }),
+        body: JSON.stringify(requestBody),
       });
 
       if (!pathResponse.ok) {
@@ -135,25 +144,47 @@ export default function PathCreateForm({
         </select>
       </div>
 
-      <div className="form-control">
-        <label className="label cursor-pointer justify-start gap-4">
-          <input
-            type="checkbox"
-            className="checkbox"
-            checked={formData.is_public}
-            onChange={(e) =>
-              setFormData({ ...formData, is_public: e.target.checked })
-            }
-            disabled={isLoading}
-          />
-          <span className="label-text">
-            <span className="font-semibold">Make this path public</span>
-            <span className="block text-sm text-base-content/60">
-              Public paths can be viewed by anyone
-            </span>
+      {subscriptionTier === 'free' ? (
+        <div className="alert alert-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="stroke-current shrink-0 w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span>
+            Free tier paths are always public. Upgrade to Pro or Team for
+            private paths.
           </span>
-        </label>
-      </div>
+        </div>
+      ) : (
+        <div className="form-control">
+          <label className="label cursor-pointer justify-start gap-4">
+            <input
+              type="checkbox"
+              className="checkbox"
+              checked={formData.is_public}
+              onChange={(e) =>
+                setFormData({ ...formData, is_public: e.target.checked })
+              }
+              disabled={isLoading}
+            />
+            <span className="label-text">
+              <span className="font-semibold">Make this path public</span>
+              <span className="block text-sm text-base-content/60">
+                Public paths can be viewed by anyone
+              </span>
+            </span>
+          </label>
+        </div>
+      )}
 
       <div className="flex gap-4">
         <button

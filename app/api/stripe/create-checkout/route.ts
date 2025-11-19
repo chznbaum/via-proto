@@ -1,5 +1,7 @@
 import { createCheckout } from "@/libs/stripe";
 import { createClient } from "@/libs/supabase/server";
+import { getUserDefaultAccount } from "@/libs/auth";
+import config from "@/config";
 import { NextRequest, NextResponse } from "next/server";
 
 // This function is used to create a Stripe Checkout Session (one-time payment or subscription)
@@ -35,12 +37,50 @@ export async function POST(req: NextRequest) {
       data: { user },
     } = await supabase.auth.getUser();
 
-    const { priceId, mode, successUrl, cancelUrl } = body;
+    if (!user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
 
-    const { data } = await supabase
+    const { priceId, mode, successUrl, cancelUrl, seatCount } = body;
+
+    // Get user's default account
+    const accountData = await getUserDefaultAccount(user.id);
+
+    if (!accountData) {
+      return NextResponse.json(
+        { error: "No active account found" },
+        { status: 400 }
+      );
+    }
+
+    const { account } = accountData;
+
+    // Find the plan configuration
+    const plan = config.stripe.plans.find((p) => p.priceId === priceId);
+
+    if (!plan) {
+      return NextResponse.json(
+        { error: "Invalid price ID" },
+        { status: 400 }
+      );
+    }
+
+    // For Team plans, validate seat count
+    let quantity = 1;
+    if (plan.perSeat) {
+      if (!seatCount || seatCount < (plan.minSeats || 2)) {
+        return NextResponse.json(
+          { error: `Team plan requires at least ${plan.minSeats || 2} seats` },
+          { status: 400 }
+        );
+      }
+      quantity = seatCount;
+    }
+
+    const { data: profile } = await supabase
       .from("profiles")
-      .select("*")
-      .eq("id", user?.id)
+      .select("email")
+      .eq("id", user.id)
       .single();
 
     const stripeSessionURL = await createCheckout({
@@ -48,12 +88,21 @@ export async function POST(req: NextRequest) {
       mode,
       successUrl,
       cancelUrl,
-      // If user is logged in, it will pass the user ID to the Stripe Session so it can be retrieved in the webhook later
-      clientReferenceId: user?.id,
+      // Pass account_id in metadata so webhook knows which account to update
+      clientReferenceId: account.id,
       user: {
-        email: data?.email,
-        // If the user has already purchased, it will automatically prefill it's credit card
-        customerId: data?.customer_id,
+        email: profile?.email,
+        // Use account-level customer ID
+        customerId: account.stripe_customer_id,
+      },
+      // For Team plans, pass the seat count as quantity
+      ...(plan.perSeat && { quantity }),
+      // Pass metadata for webhook processing
+      metadata: {
+        account_id: account.id,
+        user_id: user.id,
+        tier: plan.tier,
+        seat_count: quantity.toString(),
       },
       // If you send coupons from the frontend, you can pass it here
       // couponId: body.couponId,

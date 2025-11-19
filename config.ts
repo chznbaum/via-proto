@@ -15,51 +15,93 @@ const config = {
     onlyShowOnRoutes: ["/"],
   },
   stripe: {
-    // Create multiple plans in your Stripe dashboard, then add them here. You can add as many plans as you want, just make sure to add the priceId
     plans: [
       {
-        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        // Pro Monthly
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
-            : "price_456",
-        //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
-        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
-        // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
-        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+            ? "price_1SV0QxD1xQn8aM2gSRgiYPWh"
+            : "price_1SV0QxD1xQn8aM2gSRgiYPWh",
+        name: "Pro",
+        description: "Claude Sonnet 4.5 • 5 paths/month",
+        price: 12,
+        priceAnchor: null,
+        isFeatured: false,
+        billingPeriod: "monthly",
+        tier: "pro",
         features: [
-          {
-            name: "NextJS boilerplate",
-          },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "5 learning paths per month" },
+          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Private learning paths" },
+          { name: "Priority support" },
         ],
       },
       {
+        // Pro Yearly
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
-            : "price_456",
-        // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
+            ? "price_1SV0QxD1xQn8aM2gHQEeq5lj"
+            : "price_1SV0QxD1xQn8aM2gHQEeq5lj",
+        name: "Pro",
+        description: "Claude Sonnet 4.5 • 5 paths/month",
+        price: 100,
+        priceAnchor: 120,
         isFeatured: true,
-        name: "Advanced",
-        description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        billingPeriod: "yearly",
+        tier: "pro",
         features: [
-          {
-            name: "NextJS boilerplate",
-          },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "5 learning paths per month" },
+          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Private learning paths" },
+          { name: "Priority support" },
+          { name: "2 months free" },
+        ],
+      },
+      {
+        // Team Monthly
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1SV0VBD1xQn8aM2gP6WMraVn"
+            : "price_1SV0VBD1xQn8aM2gP6WMraVn",
+        name: "Team",
+        description: "Collaboration • $10/seat/month",
+        price: 10,
+        priceAnchor: null,
+        isFeatured: false,
+        billingPeriod: "monthly",
+        tier: "team",
+        perSeat: true,
+        minSeats: 2,
+        features: [
+          { name: "10+ paths per month (scales with seats)" },
+          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Team collaboration" },
+          { name: "Private learning paths" },
+          { name: "$10 per team member" },
+        ],
+      },
+      {
+        // Team Yearly
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1SV0VBD1xQn8aM2gz44hjeiv"
+            : "price_1SV0VBD1xQn8aM2gz44hjeiv",
+        name: "Team",
+        description: "Collaboration • $10/seat/month",
+        price: 80, // yearly per seat
+        priceAnchor: 100,
+        isFeatured: false,
+        billingPeriod: "yearly",
+        tier: "team",
+        perSeat: true,
+        minSeats: 2,
+        features: [
+          { name: "10+ paths per month (scales with seats)" },
+          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Team collaboration" },
+          { name: "Private learning paths" },
+          { name: "$10 per team member" },
+          { name: "2 months free" },
         ],
       },
     ],

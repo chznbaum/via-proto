@@ -10,10 +10,12 @@ import config from "@/config";
 // You can also change the mode to "subscription" if you want to create a subscription instead of a one-time payment
 const ButtonCheckout = ({
   priceId,
-  mode = "payment",
+  mode = "subscription",
+  seatCount,
 }: {
   priceId: string;
   mode?: "payment" | "subscription";
+  seatCount?: number;
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -28,6 +30,7 @@ const ButtonCheckout = ({
           successUrl: window.location.href,
           cancelUrl: window.location.href,
           mode,
+          ...(seatCount && { seatCount }),
         }
       );
 

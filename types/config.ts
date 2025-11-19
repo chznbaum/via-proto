@@ -38,6 +38,10 @@ export interface ConfigProps {
       description?: string;
       price: number;
       priceAnchor?: number;
+      billingPeriod: 'monthly' | 'yearly';
+      tier: 'free' | 'pro' | 'team';
+      perSeat?: boolean;
+      minSeats?: number;
       features: {
         name: string;
       }[];
