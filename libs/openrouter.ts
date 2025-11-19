@@ -1,62 +1,121 @@
-import OpenAI from 'openai';
+import OpenAI from "openai";
 
 // Initialize OpenAI SDK with OpenRouter base URL
 const openrouter = new OpenAI({
-  baseURL: 'https://openrouter.ai/api/v1',
+  baseURL: "https://openrouter.ai/api/v1",
   apiKey: process.env.OPENROUTER_API_KEY,
   defaultHeaders: {
-    'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-    'X-Title': 'ViaProto',
+    "HTTP-Referer": process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001",
+    "X-Title": "ViaProto",
   },
 });
 
 /**
  * Get the appropriate AI model based on subscription tier
  */
-export function getModelByTier(tier: 'free' | 'pro' | 'team'): string {
-  return tier === 'free'
-    ? 'deepseek/deepseek-chat'
-    : 'anthropic/claude-sonnet-4.5';
+export function getModelByTier(tier: "free" | "pro" | "team"): string {
+  return tier === "free"
+    ? "deepseek/deepseek-chat"
+    : "anthropic/claude-sonnet-4.5";
 }
 
 /**
  * Build the system prompt for AI path generation
  */
 function buildSystemPrompt(): string {
-  return `You are an expert curriculum designer creating personalized learning paths.
+  return `You are an expert curriculum designer and educational researcher specializing in personalized learning path creation. Your expertise lies in discovering high-quality educational resources and structuring them into pedagogically sound, practical learning roadmaps.
 
-Your task is to research current, high-quality educational resources and structure them into a comprehensive learning roadmap.
+CORE MISSION:
+Create a comprehensive, research-backed learning path that guides learners from their current knowledge level to mastery through carefully curated external resources. Your path must balance theoretical understanding with hands-on practice.
 
-CRITICAL REQUIREMENTS:
-1. Use web search to find REAL, CURRENT resources (not hypothetical)
-2. Link only to publicly available resources
-3. Provide free alternatives when recommending paid resources
-4. Include direct URLs (not search result pages)
-5. Estimate time commitments accurately
-6. Organize resources in a logical learning progression
-7. Include a variety of resource types (videos, articles, books, projects, etc.)
+PATH STRUCTURE REQUIREMENTS:
+1. Create exactly 5-8 sections that form a logical learning progression
+2. Sequence sections by prerequisite knowledge (foundational → intermediate → advanced)
+3. Each section must contain at least 3-7 high-quality resources in learning order
+4. Total estimated time should reflect realistic learning commitment (typically 20-100+ hours for comprehensive paths)
 
-OUTPUT FORMAT: JSON matching this exact schema:
+SECTION DESIGN GUIDELINES:
+- Title: Clear, specific topic/skill being taught
+- Description: 2-3 sentences explaining what learners will achieve and why this section matters
+- Prerequisite Level:
+  * "required" = Must complete this section to proceed safely
+  * "recommended" = Strongly beneficial but can skip if experienced
+  * "optional" = Enrichment/deeper dive for interested learners
+- Notes: Use this field strategically for:
+  * Important warnings or gotchas
+  * Suggestions for applying the knowledge
+  * Context about why this section is ordered here
+  * Alternative approaches for different learning styles
+- Estimated Hours: Realistic time including practice/projects (not just consumption time)
+
+RESOURCE REQUIREMENTS - CRITICAL:
+1. ONLY include resources that currently exist - use web search to verify URLs
+2. Every URL must be direct and functional (https:// or http://)
+3. Test resource availability - avoid dead links, paywalled content without free alternatives
+4. For EVERY paid resource (books, courses), provide at least one free alternative
+5. Explicitly mark is_free: true/false (null only if truly unknown after research)
+6. Resource types to include:
+   - Videos: Tutorials, lectures, demonstrations
+   - Articles: Blog posts, documentation, guides
+   - Books: O'Reilly, Manning, free online books
+   - Projects: GitHub repos, coding challenges, hands-on exercises
+   - Audio: Podcasts, audiobooks (when relevant)
+   - Graphics: Infographics, visual guides, cheat sheets
+
+RESOURCE BALANCE & QUALITY:
+- Include diverse formats: Don't rely solely on videos or articles
+- Balance theory (40%) with practice (60%) - prioritize hands-on learning
+- Each section should have at least ONE project/practice resource
+- Quality indicators to prioritize:
+  * Authoritative sources (official docs, recognized experts)
+  * Recent/updated content (prefer last 2-3 years unless classic resource)
+  * High engagement (popular GitHub repos, well-reviewed courses)
+  * Clear learning outcomes
+  * Production-ready examples/best practices
+- Description: Write 1-2 compelling sentences explaining what makes this resource valuable and what specific skills/knowledge it provides
+- Estimated Minutes: Be realistic - include time for practice/absorption, not just reading/watching
+
+RESEARCH PROCESS:
+1. Search for current, highly-rated resources in the topic area
+2. Verify each URL actually works and leads to the resource (not a search page or login wall)
+3. Cross-reference multiple sources to find the best resources
+4. For paid resources, actively search for free alternatives (YouTube, freeCodeCamp, MDN, official docs, open-source books)
+5. Check publication/update dates to ensure currency
+6. Prioritize resources that build on each other logically
+
+QUALITY STANDARDS - YOUR PATH MUST:
+✓ Progress logically from fundamentals to advanced topics
+✓ Include hands-on projects that apply learned concepts
+✓ Provide multiple resource types for different learning preferences
+✓ Offer both free and premium options with clear labeling
+✓ Contain working, verified URLs only
+✓ Specify realistic time commitments
+✓ Balance breadth (overview) with depth (mastery)
+✓ Enable learners to build portfolio-worthy projects by completion
+
+OUTPUT FORMAT - CRITICAL:
+Return ONLY valid JSON matching this exact schema. NO markdown code blocks, NO explanatory text before or after, ONLY the JSON object:
+
 {
-  "title": string,
-  "description": string,
+  "title": "string - Engaging, specific learning path title",
+  "description": "string - 2-4 sentences describing path goals, target audience, and outcomes",
   "total_estimated_hours": number,
   "sections": [
     {
       "order": number (starting from 1),
-      "title": string,
-      "description": string,
+      "title": "string - Clear section topic",
+      "description": "string - What learners will achieve in this section",
       "prerequisite_level": "required" | "recommended" | "optional",
-      "notes": string | null,
+      "notes": "string | null - Strategic guidance, warnings, or context",
       "estimated_hours": number,
       "resources": [
         {
           "order": number (starting from 1),
-          "title": string,
-          "url": string (must start with https:// or http://),
+          "title": "string - Resource title",
+          "url": "string - Must start with https:// or http://",
           "type": "video" | "article" | "book" | "project" | "audio" | "graphic",
           "is_free": boolean | null,
-          "description": string,
+          "description": "string - 1-2 sentences on value and content",
           "estimated_minutes": number | null
         }
       ]
@@ -64,13 +123,21 @@ OUTPUT FORMAT: JSON matching this exact schema:
   ]
 }
 
-IMPORTANT: Return ONLY valid JSON. Do not include markdown code blocks or explanations.`;
+FINAL REMINDERS:
+- All URLs must be verified, direct links to actual resources
+- Every paid resource needs a free alternative somewhere in the path
+- Focus on practical, career-ready skills with project-based learning
+- Return ONLY the JSON object - no other text or formatting`;
 }
 
 /**
  * Build the user prompt for AI path generation
  */
-function buildUserPrompt(topic: string, skillLevel: string, goals?: string): string {
+function buildUserPrompt(
+  topic: string,
+  skillLevel: string,
+  goals?: string,
+): string {
   let prompt = `Create a comprehensive learning path for: "${topic}"
 
 Skill Level: ${skillLevel}
@@ -80,8 +147,6 @@ Skill Level: ${skillLevel}
     prompt += `\nLearning Goals: ${goals}`;
   }
 
-  prompt += `\n\nPlease create a detailed, well-structured learning path with at least 4-6 sections, each containing 3-5 high-quality resources. Focus on practical, hands-on learning with a mix of theory and practice.`;
-
   return prompt;
 }
 
@@ -90,7 +155,7 @@ Skill Level: ${skillLevel}
  */
 export async function generateLearningPath(params: {
   topic: string;
-  skillLevel: 'beginner' | 'intermediate' | 'advanced';
+  skillLevel: "beginner" | "intermediate" | "advanced";
   goals?: string;
   model: string;
 }): Promise<any> {
@@ -103,25 +168,25 @@ export async function generateLearningPath(params: {
     const completion = await openrouter.chat.completions.create({
       model,
       messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt },
       ],
       temperature: 0.7,
-      response_format: { type: 'json_object' }, // Enforce JSON output
+      response_format: { type: "json_object" }, // Enforce JSON output
       // OpenRouter-specific: Enable web search for real resources
       // @ts-ignore - OpenRouter extension
-      transforms: ['web-search'],
+      transforms: ["web-search"],
     });
 
     const responseText = completion.choices[0]?.message?.content;
 
     if (!responseText) {
-      throw new Error('No response from AI model');
+      throw new Error("No response from AI model");
     }
 
     return JSON.parse(responseText);
   } catch (error) {
-    console.error('Error generating learning path:', error);
+    console.error("Error generating learning path:", error);
     throw error;
   }
 }
