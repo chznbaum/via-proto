@@ -32,10 +32,13 @@
     "react-syntax-highlighter": "^15.6.1",
     "react-tooltip": "^5.28.0",
     "resend": "^4.0.1",
+    "simplebar-react": "^3.3.2",
     "stripe": "^13.11.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.73",
+    "@iconify/tailwind4": "^1.1.0",
     "@tailwindcss/postcss": "^4.1.10",
     "@types/jest": "^29.5.14",
     "@types/mdx": "^2.0.13",
@@ -48,6 +51,7 @@
     "daisyui": "^5.0.5",
     "postcss": "^8.4.49",
     "tailwindcss": "^4.1.10",
+    "tailwindcss-motion": "^1.1.1",
     "typescript": "^5.9.2"
   }
 }

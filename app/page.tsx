@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import { Topbar } from "@/components/Topbar";
 import { Hero } from "@/components/landing/Hero";
 import { Features } from "@/components/landing/Features";
 import { Pricing } from "@/components/landing/Pricing";
@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export default function Page() {
   return (
     <>
-      <Header />
+      <Topbar />
 
       <main>
         <Hero />

@@ -9,6 +9,7 @@ import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
 import config from "@/config";
+import { ConfigProvider } from "@/contexts/config";
 
 // Crisp customer chat support:
 // This component is separated from ClientLayout because it needs to be wrapped with <SessionProvider> to use useSession() hook
@@ -68,7 +69,7 @@ const CrispChat = (): null => {
 // 4. CrispChat: Set Crisp customer chat support (see above)
 const ClientLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
+    <ConfigProvider>
       {/* Show a progress bar at the top when navigating between pages */}
       <NextTopLoader color={config.colors.main} showSpinner={false} />
 
@@ -90,7 +91,7 @@ const ClientLayout = ({ children }: { children: ReactNode }) => {
 
       {/* Set Crisp customer chat support */}
       <CrispChat />
-    </>
+    </ConfigProvider>
   );
 };
 

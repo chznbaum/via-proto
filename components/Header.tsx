@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
+import { ThemeToggle } from "./ThemeToggle";
 import logo from "@/app/icon.png";
 import config from "@/config";
 
@@ -104,8 +105,11 @@ const Header = () => {
           ))}
         </div>
 
-        {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        {/* Theme toggle and CTA on large screens */}
+        <div className="hidden lg:flex lg:justify-end lg:flex-1 lg:gap-4 lg:items-center">
+          <ThemeToggle className="btn btn-ghost btn-sm btn-square" />
+          {cta}
+        </div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -171,6 +175,11 @@ const Header = () => {
               </div>
             </div>
             <div className="divider"></div>
+            {/* Theme toggle on small screens */}
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-sm">Theme:</span>
+              <ThemeToggle className="btn btn-ghost btn-sm btn-square" />
+            </div>
             {/* Your CTA on small screens */}
             <div className="flex flex-col">{cta}</div>
           </div>

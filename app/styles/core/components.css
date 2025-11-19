@@ -1,0 +1,36 @@
+/* Custom component styles */
+
+/* Apply Young Serif to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Button text transform override */
+.btn {
+  text-transform: capitalize !important;
+}
+
+/* Gradient button utility */
+.btn-gradient {
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;
+  background-size: 300% 300% !important;
+  animation: var(--animate-shimmer) !important;
+  border: 0 !important;
+  border-color: transparent !important;
+  color: white !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+.btn-gradient:hover {
+  filter: saturate(1.2) !important;
+}
+
+.btn-gradient:disabled {
+  background: rgb(107 114 128 / 0.3) !important;
+  color: rgb(156 163 175) !important;
+}
+
+/* Progress bar smooth transitions */
+progress::-webkit-progress-value {
+  transition: 0.6s width ease-out;
+}

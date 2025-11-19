@@ -1,0 +1,26 @@
+/* Root Styling */
+@import "./typography.css";
+@import "./tailwind.css";
+@import "./daisyui.css";
+
+/* Custom Styling */
+@import "./core/components.css";
+@import "./core/animation.css";
+
+/* Plugin Overriding */
+@import "./plugins/scrollbar.css";
+
+/****  Plugins  ****/
+/* Animations */
+@plugin "tailwindcss-motion";
+
+/* Iconify (Lucide icons) */
+@plugin "@iconify/tailwind4" {
+    prefixes: lucide;
+}
+
+/* Additional theme tokens */
+@theme {
+  --font-sans: "Fixel", system-ui, sans-serif;
+  --font-serif: "Young Serif", Georgia, serif;
+}
