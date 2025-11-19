@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import TopicTypeahead, { Topic } from './TopicTypeahead';
+import { GroupedModelSelector } from '@/components/ui/ModelSelector';
 
 interface PathCreateFormProps {
   onSuccess?: (pathId: string) => void;
@@ -24,6 +25,7 @@ export default function PathCreateForm({
     topicName: '',
     skill_level: 'beginner' as 'beginner' | 'intermediate' | 'advanced',
     is_public: false,
+    model_id: undefined as string | undefined,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -46,6 +48,11 @@ export default function PathCreateForm({
 
       if (subscriptionTier !== 'free') {
         requestBody.is_public = formData.is_public;
+      }
+
+      // Include selected model if user chose one
+      if (formData.model_id) {
+        requestBody.model_id = formData.model_id;
       }
 
       const pathResponse = await fetch('/api/paths/generate', {
@@ -143,6 +150,13 @@ export default function PathCreateForm({
           <option value="advanced">Advanced - I want to master this</option>
         </select>
       </div>
+
+      <GroupedModelSelector
+        value={formData.model_id}
+        onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
+        tier={subscriptionTier}
+        disabled={isLoading}
+      />
 
       {subscriptionTier === 'free' ? (
         <div className="alert alert-info">

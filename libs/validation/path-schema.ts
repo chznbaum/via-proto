@@ -44,6 +44,7 @@ export const PathGenerationRequestSchema = z.object({
   skill_level: z.enum(['beginner', 'intermediate', 'advanced']),
   goals: z.string().max(2000).optional(),
   is_public: z.boolean().optional().default(false),
+  model_id: z.string().optional(), // User-selected model ID
 });
 
 /**

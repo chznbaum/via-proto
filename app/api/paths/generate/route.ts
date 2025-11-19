@@ -1,11 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/libs/supabase/server';
 import { getUserDefaultAccount } from '@/libs/auth';
-import { generateLearningPath, getModelByTier } from '@/libs/openrouter';
+import { generateLearningPath } from '@/libs/openrouter';
 import {
   PathGenerationRequestSchema,
   AIPathResponseSchema,
 } from '@/libs/validation/path-schema';
+import {
+  getDefaultModelForTier,
+  getModelConfig,
+  isModelAllowedForTier,
+} from '@/libs/models';
 import { ZodError } from 'zod';
 
 /**
@@ -104,21 +109,63 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 6. Determine model based on subscription tier
-    const model = getModelByTier(account.subscription_tier);
+    // 6. Determine model (user selection or default)
+    let selectedModel: string;
+
+    if (validatedInput.model_id) {
+      // User chose a specific model - validate it
+      const modelConfig = getModelConfig(validatedInput.model_id);
+
+      if (!modelConfig) {
+        return NextResponse.json(
+          { error: 'Invalid model selected' },
+          { status: 400 }
+        );
+      }
+
+      // Verify user's tier allows this model
+      if (!isModelAllowedForTier(modelConfig, account.subscription_tier)) {
+        return NextResponse.json(
+          {
+            error: 'Model not available for your subscription tier',
+            model: modelConfig.name,
+            requiredTier: modelConfig.minimumTier,
+            currentTier: account.subscription_tier,
+          },
+          { status: 403 }
+        );
+      }
+
+      // Verify model supports required features
+      if (!modelConfig.supportsWebSearch || !modelConfig.supportsStructuredOutput) {
+        return NextResponse.json(
+          {
+            error: 'Selected model does not support required features (web search and structured output)',
+            model: modelConfig.name,
+          },
+          { status: 400 }
+        );
+      }
+
+      selectedModel = modelConfig.id;
+    } else {
+      // Fall back to tier-based default
+      selectedModel = getDefaultModelForTier(account.subscription_tier);
+    }
 
     // 7. Generate learning path using AI
     console.log('Generating learning path with AI...', {
       topic: topic.name,
       skillLevel: validatedInput.skill_level,
-      model,
+      model: selectedModel,
+      userSelected: !!validatedInput.model_id,
     });
 
     const aiResponse = await generateLearningPath({
       topic: topic.name,
       skillLevel: validatedInput.skill_level,
       goals: validatedInput.goals,
-      model,
+      model: selectedModel,
     });
 
     // 8. Validate AI response
@@ -143,7 +190,7 @@ export async function POST(req: NextRequest) {
         skill_level: validatedInput.skill_level,
         total_estimated_hours: validatedPath.total_estimated_hours,
         is_public: isPublic,
-        model_used: model,
+        model_used: selectedModel,
         generation_metadata: {
           ...(validatedInput.goals && { goals: validatedInput.goals }),
           generated_at: new Date().toISOString(),

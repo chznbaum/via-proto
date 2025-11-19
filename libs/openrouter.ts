@@ -12,6 +12,7 @@ const openrouter = new OpenAI({
 
 /**
  * Get the appropriate AI model based on subscription tier
+ * @deprecated Use getDefaultModelForTier from @/libs/models instead
  */
 export function getModelByTier(tier: "free" | "pro" | "team"): string {
   return tier === "free"
@@ -151,6 +152,58 @@ Skill Level: ${skillLevel}
 }
 
 /**
+ * Strip markdown code blocks from JSON response
+ * Claude models sometimes wrap JSON in ```json ... ``` despite instructions
+ */
+function stripMarkdownCodeBlocks(text: string): string {
+  // Remove markdown code blocks: ```json ... ``` or ``` ... ```
+  const codeBlockPattern = /^```(?:json)?\s*\n?([\s\S]*?)\n?```$/;
+  const match = text.trim().match(codeBlockPattern);
+
+  if (match) {
+    return match[1].trim();
+  }
+
+  return text.trim();
+}
+
+/**
+ * Parse JSON response with multiple fallback strategies
+ */
+function parseAIResponse(responseText: string): any {
+  // Strategy 1: Try direct parse
+  try {
+    return JSON.parse(responseText);
+  } catch (e) {
+    // Continue to next strategy
+  }
+
+  // Strategy 2: Strip markdown code blocks and try again
+  try {
+    const cleanedText = stripMarkdownCodeBlocks(responseText);
+    return JSON.parse(cleanedText);
+  } catch (e) {
+    // Continue to next strategy
+  }
+
+  // Strategy 3: Try to find JSON object within text
+  try {
+    const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      return JSON.parse(jsonMatch[0]);
+    }
+  } catch (e) {
+    // Continue to throw original error
+  }
+
+  // All strategies failed - throw detailed error
+  console.error("Failed to parse AI response. First 500 chars:", responseText.substring(0, 500));
+  throw new Error(
+    `Failed to parse AI response as JSON. Response started with: ${responseText.substring(0, 100)}...`
+  );
+}
+
+/**
  * Generate a learning path using AI
  */
 export async function generateLearningPath(params: {
@@ -184,7 +237,7 @@ export async function generateLearningPath(params: {
       throw new Error("No response from AI model");
     }
 
-    return JSON.parse(responseText);
+    return parseAIResponse(responseText);
   } catch (error) {
     console.error("Error generating learning path:", error);
     throw error;
