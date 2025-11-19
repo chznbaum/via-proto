@@ -53,9 +53,9 @@
     - Pro: 5 paths/month, Claude Sonnet 4.5, private paths, progress tracking
     - Team: 10 base + 3/seat, all Pro features, team collaboration
   - [x] CTA button: "See Full Pricing" → `/pricing`
-  - [ ] Align pricing section layout with Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/Pricing.tsx`)
-    - [ ] Narrow pricing section
-    - [ ] Align the Team plan box design with dark theme ("Ultimate") contrast box from the template
+  - [x] Align pricing section layout with Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/Pricing.tsx`)
+    - [x] Narrow pricing section
+    - [x] Align the Team plan box design with dark theme ("Ultimate") contrast box from the template
   - **Reuse:** Adapt from existing `components/Pricing.tsx`
 
 - [ ] **1.4 Sample Path Preview (Optional)** (20 min)
@@ -69,7 +69,7 @@
   - [x] Navigation: About, Contact, Pricing, Blog (if exists)
   - [x] Legal links: Terms of Service, Privacy Policy
   - [x] Copyright notice
-  - [ ] Align footer to the Scalo template
+  - [x] Align footer to the Scalo template
   - **Files to modify:** `components/Footer.tsx` (likely exists from ShipFast)
 
 - [ ] **1.6 Path Generation Time Tracking** (30 min)
