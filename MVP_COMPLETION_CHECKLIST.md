@@ -46,7 +46,7 @@
   - [x] Mobile-responsive (grid-cols-1 md:grid-cols-2 lg:grid-cols-4)
   - **Component:** Create `components/LandingFeatures.tsx`
 
-- [ ] **1.3 Pricing Preview** (30 min)
+- [x] **1.3 Pricing Preview** (30 min)
   - [x] Embed simplified pricing comparison (3 tiers)
   - [x] Show key differentiators:
     - Free: 1 path/month, DeepSeek, public paths only
@@ -64,7 +64,7 @@
   - [ ] Demonstrates path structure (sections, resources, badges)
   - [ ] Link to sample public path if available
 
-- [ ] **1.5 Footer** (15 min)
+- [x] **1.5 Footer** (15 min)
   - [x] Company info, social links (optional)
   - [x] Navigation: About, Contact, Pricing, Blog (if exists)
   - [x] Legal links: Terms of Service, Privacy Policy
@@ -84,7 +84,7 @@
     - `components/landing/Hero.tsx` - fetch and display real average
   - **Note:** Currently showing static "60s" stat; this makes it dynamic and accurate
   
-  - [ ] **1.7 Additional Components from Scalo Template**
+  - [x] **1.7 Additional Components from Scalo Template**
     - [x] Add FAQ section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/FAQs.tsx`)
       - [x] Use placeholder Q&A (will generate from PRD later)
     - [x] Add below-FAQ CTA section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/Footer.tsx` lines 9-32)

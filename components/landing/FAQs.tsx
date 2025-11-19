@@ -43,7 +43,7 @@ export const FAQs = () => {
                 Questions
             </p>
 
-            <p className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Frequently Asked Questions</p>
+            <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Frequently Asked Questions</h2>
             <div className="mt-2 flex justify-center text-center">
                 <p className="text-base-content/80 max-w-lg">
                     Find quick answers to common questions about ViaProto, AI-powered learning paths, and how to get the most from your learning journey.
@@ -54,7 +54,7 @@ export const FAQs = () => {
                     <div className="space-y-4 lg:space-y-6">
                         {faqs1.map((faq, index) => (
                             <div className="collapse-arrow group bg-base-200/60 collapse h-fit" key={index}>
-                                <input type="radio" aria-label="Accordion radio" name="accordion" />
+                                <input type="checkbox" aria-label="Accordion checkbox" />
                                 <div className="collapse-title cursor-pointer font-medium sm:text-lg">
                                     {faq.question}
                                 </div>
@@ -65,7 +65,7 @@ export const FAQs = () => {
                     <div className="space-y-4 lg:space-y-6">
                         {faqs2.map((faq, index) => (
                             <div className="collapse-arrow group bg-base-200/60 collapse h-fit" key={index}>
-                                <input type="radio" aria-label="Accordion radio" name="accordion" />
+                                <input type="checkbox" aria-label="Accordion checkbox" />
                                 <div className="collapse-title cursor-pointer font-medium sm:text-lg">
                                     {faq.question}
                                 </div>

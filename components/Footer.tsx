@@ -15,7 +15,7 @@ const Footer = () => {
           <span className="iconify lucide--circle absolute -start-16 -top-16 size-44 opacity-5 transition-all group-hover:size-48 group-hover:opacity-10"></span>
           <span className="iconify lucide--circle absolute -end-16 -bottom-16 size-44 opacity-5 transition-all group-hover:size-48 group-hover:opacity-10"></span>
 
-          <p className="text-lg font-semibold md:text-xl xl:text-2xl">Start Learning Today</p>
+          <h2 className="text-lg font-semibold md:text-xl xl:text-2xl">Start Learning Today</h2>
           <p className="text-base-content/80 mt-2 max-w-2xl text-xs sm:text-sm md:text-base">
             Get started in seconds and experience AI-powered learning paths. Discover curated resources from real creators and master any skill.
           </p>

@@ -51,7 +51,7 @@ export const Features = () => {
             <p className="group-hover/section:text-primary text-base-content/60 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
                 Why ViaProto
             </p>
-            <p className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Learn from Real Creators</p>
+            <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Learn from Real Creators</h2>
             <div className="mt-2 flex justify-center text-center">
                 <p className="text-base-content/80 max-w-lg">
                     We don't generate content or steal traffic from educators. Every resource links directly to the creator,
