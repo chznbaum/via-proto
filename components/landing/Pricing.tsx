@@ -3,6 +3,7 @@
 import { useState } from "react";
 import config from "@/config";
 import ButtonCheckout from "@/components/ButtonCheckout";
+import { TeamSizeSlider } from "./TeamSizeSlider";
 
 export const Pricing = () => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
@@ -93,7 +94,9 @@ export const Pricing = () => {
                             ].map((feature, index) => (
                                 <div className="flex items-center gap-3" key={index}>
                                     <div className="bg-primary/20 text-primary rounded-full p-0.5">
-                                        <span className="iconify lucide--check size-3.5"></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                                            <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                                        </svg>
                                     </div>
                                     {feature}
                                 </div>
@@ -161,9 +164,20 @@ export const Pricing = () => {
                     )}
                 </div>
 
+                {/* Team Size Selector */}
+                {teamPlan && (
+                    <div className="mt-4">
+                        <TeamSizeSlider
+                            teamSeats={teamSeats}
+                            setTeamSeats={setTeamSeats}
+                            pricePerSeat={teamPlan.price}
+                        />
+                    </div>
+                )}
+
                 {/* Team Plan - Contrast card with proper dark mode support */}
                 {teamPlan && (
-                    <div className="card group card-border cursor-pointer p-6" data-theme="dark">
+                    <div className="card group card-border contrast-box cursor-pointer p-6" data-theme="dark">
                         <div className="flex items-start justify-between gap-3">
                             <div className="flex items-center gap-3">
                                 <div className="bg-base-100 rounded-box border-base-300 border p-2.5">
@@ -183,34 +197,6 @@ export const Pricing = () => {
 
                         <hr className="border-base-content/20 -mx-6 my-6" />
 
-                        {/* Team Seats Selector */}
-                        <div className="mb-4">
-                            <label className="text-base-content/80 text-sm font-medium mb-2 block">Team Size</label>
-                            <div className="flex items-center gap-2">
-                                <button
-                                    className="btn btn-sm btn-circle"
-                                    onClick={() => setTeamSeats(Math.max(2, teamSeats - 1))}
-                                    disabled={teamSeats <= 2}
-                                >
-                                    -
-                                </button>
-                                <input
-                                    type="number"
-                                    className="input input-bordered w-20 text-center input-sm"
-                                    value={teamSeats}
-                                    onChange={(e) => setTeamSeats(Math.max(2, parseInt(e.target.value) || 2))}
-                                    min="2"
-                                />
-                                <button
-                                    className="btn btn-sm btn-circle"
-                                    onClick={() => setTeamSeats(teamSeats + 1)}
-                                >
-                                    +
-                                </button>
-                                <span className="text-sm text-base-content/60">× ${teamPlan.price}/seat</span>
-                            </div>
-                        </div>
-
                         <p className="text-base-content/80 text-sm font-medium">Everything in Pro, plus:</p>
                         <div className="mt-4 grid grid-cols-1 space-y-1 gap-x-8 sm:grid-cols-2">
                             {[
@@ -225,7 +211,9 @@ export const Pricing = () => {
                             ].map((feature, index) => (
                                 <div className="flex items-center gap-3" key={index}>
                                     <div className="bg-primary/20 text-primary rounded-full p-0.5">
-                                        <span className="iconify lucide--check size-3.5"></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                                            <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                                        </svg>
                                     </div>
                                     {feature}
                                 </div>

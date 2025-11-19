@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="group/section pt-4 md:pt-6 lg:pt-8 2xl:pt-12">
       {/* Elevated CTA Section */}
       <div className="-mb-32 flex items-center justify-center">
-        <div className="bg-base-100 group relative flex max-w-xs flex-col items-center overflow-hidden rounded-lg p-4 text-center sm:w-5xl sm:max-w-4xl md:p-6 xl:p-10" data-theme="dark">
+        <div className="bg-base-100 contrast-box group relative flex max-w-xs flex-col items-center overflow-hidden rounded-lg p-4 text-center sm:w-5xl sm:max-w-4xl md:p-6 xl:p-10" data-theme="dark">
           <span className="iconify lucide--circle absolute -start-16 -top-16 size-44 opacity-5 transition-all group-hover:size-48 group-hover:opacity-10"></span>
           <span className="iconify lucide--circle absolute -end-16 -bottom-16 size-44 opacity-5 transition-all group-hover:size-48 group-hover:opacity-10"></span>
 
@@ -34,7 +34,7 @@ const Footer = () => {
 
       {/* Footer Proper */}
       <footer className="bg-base-200/25 pt-44 xl:pt-60">
-        <div className="container max-w-7xl mx-auto px-8">
+        <div className="container">
           <div className="grid gap-6 md:grid-cols-5 md:gap-8 xl:gap-12">
             <div className="col-span-2">
               <Link href="/" className="flex gap-2 items-center">
@@ -53,37 +53,60 @@ const Footer = () => {
               <p className="text-base-content/80 mt-3 max-w-sm">
                 {config.appDescription}
               </p>
+              <div className="mt-5 flex items-center gap-3">
+                <a
+                  href="https://rss.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost btn-square border-base-300 btn-sm"
+                  aria-label="RSS/Beehiiv">
+                  <span className="iconify tabler--rss size-5"></span>
+                </a>
+                <a
+                  href="https://bsky.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost btn-square border-base-300 btn-sm"
+                  aria-label="Bluesky">
+                  <span className="iconify tabler--brand-bluesky size-5"></span>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost btn-square border-base-300 btn-sm"
+                  aria-label="Github">
+                  <span className="iconify tabler--brand-github size-5"></span>
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost btn-square border-base-300 btn-sm"
+                  aria-label="LinkedIn">
+                  <span className="iconify tabler--brand-linkedin size-5"></span>
+                </a>
+              </div>
             </div>
 
             <div>
               <h2 className="text-lg font-medium">Product</h2>
-              <div className="mt-2 flex flex-col gap-2">
-                <Link href="/explore" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Explore Paths
-                </Link>
-                <Link href="/#features" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Features
-                </Link>
-                <Link href="/#pricing" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Pricing
-                </Link>
-                <Link href="/dashboard" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Dashboard
-                </Link>
+              <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
+                <Link href="/explore">Explore Paths</Link>
+                <Link href="/#features">Features</Link>
+                <Link href="/#pricing">Pricing</Link>
+                <Link href="/dashboard">Dashboard</Link>
               </div>
             </div>
 
             <div>
               <h2 className="text-lg font-medium">Resources</h2>
-              <div className="mt-2 flex flex-col gap-2">
-                <Link href="/#faq" className="link link-hover text-base-content/70 hover:text-base-content">
-                  FAQ
-                </Link>
+              <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
+                <Link href="/#faq">FAQ</Link>
                 {config.resend.supportEmail && (
                   <a
                     href={`mailto:${config.resend.supportEmail}`}
                     target="_blank"
-                    className="link link-hover text-base-content/70 hover:text-base-content"
                     aria-label="Contact Support"
                   >
                     Support
@@ -94,23 +117,32 @@ const Footer = () => {
 
             <div>
               <h2 className="text-lg font-medium">Legal</h2>
-              <div className="mt-2 flex flex-col gap-2">
-                <Link href="/tos" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Terms of Service
-                </Link>
-                <Link href="/privacy-policy" className="link link-hover text-base-content/70 hover:text-base-content">
-                  Privacy Policy
-                </Link>
+              <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
+                <Link href="/tos">Terms of Service</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </div>
             </div>
           </div>
         </div>
 
         <hr className="text-base-200 mt-8" />
-        <div className="container max-w-7xl mx-auto px-8 flex flex-wrap items-center justify-between gap-2 py-4">
+        <div className="container flex flex-wrap items-center justify-between gap-2 py-4">
           <p className="text-sm text-base-content/60">
             © {new Date().getFullYear()} {config.appName} - All rights reserved
           </p>
+          <p className="text-sm text-base-content/60">
+            Concept to Reality by{" "}
+            <Link href="https://chazonabaum.com" className="text-blue-500 transition-all hover:text-blue-600" target="_blank">
+              Chazona
+            </Link>
+          </p>
+          <Link
+            href="/#pricing"
+            className="btn group from-primary to-secondary text-primary-content btn-sm max-sm:btn-square relative gap-2 border-0 bg-linear-to-r text-sm">
+            <span className="iconify lucide--rocket size-4" />
+            <span className="max-sm:hidden">Start Your Path</span>
+            <div className="from-primary to-secondary absolute inset-x-0 top-1 -z-1 h-8 bg-linear-to-r opacity-40 blur-md transition-all duration-500 group-hover:opacity-60 group-hover:blur-lg"></div>
+          </Link>
         </div>
       </footer>
     </div>
