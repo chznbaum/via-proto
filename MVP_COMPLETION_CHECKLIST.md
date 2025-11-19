@@ -30,7 +30,7 @@
   - [x] Primary CTA button: "Generate Your First Path" → `/dashboard`
   - [x] Secondary CTA: "Browse Public Paths" → `/explore`
   - [x] Hero illustration from Undraw or Hero Patterns background
-  - [ ] Troubleshoot public learning path count and topic count not being correctly pulled from Supabase
+  - [x] Troubleshoot public learning path count and topic count not being correctly pulled from Supabase
     - No error being returned, `Stats fetched: {pathsCount: 0, topicsCount: 0}` in the console logs
   - [x] **Files to modify:** `app/page.tsx`
   - [x] **Design:** Use DaisyUI hero component pattern
@@ -85,9 +85,9 @@
   - **Note:** Currently showing static "60s" stat; this makes it dynamic and accurate
   
   - [ ] **1.7 Additional Components from Scalo Template**
-    - [ ] Add FAQ section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/FAQs.tsx`)
-      - [ ] Use placeholder Q&A (will generate from PRD later)
-    - [ ] Add below-FAQ CTA section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/Footer.tsx` lines 9-32)
+    - [x] Add FAQ section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/FAQs.tsx`)
+      - [x] Use placeholder Q&A (will generate from PRD later)
+    - [x] Add below-FAQ CTA section from Scalo storage template (`scalo-nextjs@3.0.0/src/app/(landings)/storage/components/Footer.tsx` lines 9-32)
 
 ---
 
@@ -140,10 +140,10 @@
   - **Components:** Category dropdown, skill level tabs, sort dropdown
 
 - [ ] **2.3 Update Navigation** (15 min)
-  - [ ] Add "Explore" or "Browse Paths" link to main header navigation
-  - [ ] Position: Between "Home" and "Pricing" (or similar)
-  - [ ] Accessible to both authenticated and unauthenticated users
-  - [ ] Highlight as key discovery feature
+  - [x] Add "Explore" or "Browse Paths" link to main header navigation
+  - [x] Position: Between "Home" and "Pricing" (or similar)
+  - [x] Accessible to both authenticated and unauthenticated users
+  - [x] Highlight as key discovery feature
   - **Files to modify:** `components/Header.tsx` or `components/LayoutClient.tsx`
 
 - [ ] **2.4 SEO Optimization** (15 min)
