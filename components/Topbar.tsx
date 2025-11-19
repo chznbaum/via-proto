@@ -13,19 +13,19 @@ import config from "@/config";
 const menu = [
     {
         title: "Home",
-        href: "#home",
+        href: "/",
     },
     {
         title: "Features",
-        href: "#features",
+        href: "/#features",
     },
     {
         title: "Pricing",
-        href: "#pricing",
+        href: "/#pricing",
     },
     {
         title: "FAQ",
-        href: "#faq",
+        href: "/#faq",
     },
 ] as const;
 

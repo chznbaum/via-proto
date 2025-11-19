@@ -68,12 +68,24 @@ export async function GET(req: NextRequest) {
             data.user.user_metadata?.name ||
             null;
 
+          // Get avatar and name from cookies (set during registration)
+          const pendingAvatar = req.cookies.get("pendingAvatar")?.value;
+          const pendingName = req.cookies.get("pendingName")?.value;
+
+          const avatarUrl = pendingAvatar ? decodeURIComponent(pendingAvatar) : null;
+          const finalName = pendingName ? decodeURIComponent(pendingName) : userName;
+
           await createPersonalAccount(
             data.user.id,
             userEmail,
-            userName,
-            serviceSupabase
+            finalName,
+            serviceSupabase,
+            avatarUrl
           );
+
+          // Clear the pending cookies
+          response.cookies.delete("pendingAvatar");
+          response.cookies.delete("pendingName");
 
           console.log(
             `Created personal account for new user: ${data.user.id} (${userEmail})`

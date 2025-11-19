@@ -11,6 +11,7 @@ import {
   getModelConfig,
   isModelAllowedForTier,
 } from '@/libs/models';
+import { fetchUnsplashImage } from '@/libs/unsplash';
 import { ZodError } from 'zod';
 
 /**
@@ -210,6 +211,24 @@ export async function POST(req: NextRequest) {
         { error: 'Failed to create learning path' },
         { status: 500 }
       );
+    }
+
+    // 10.5. Fetch featured image from Unsplash based on topic
+    try {
+      const unsplashImage = await fetchUnsplashImage(topic.name);
+
+      if (unsplashImage) {
+        // Update the path with the featured image URL
+        await supabase
+          .from('learning_paths')
+          .update({ featured_image_url: unsplashImage.url })
+          .eq('id', newPath.id);
+
+        console.log('Fetched Unsplash image for topic:', topic.name);
+      }
+    } catch (error) {
+      // Non-critical error - log but continue
+      console.warn('Failed to fetch Unsplash image, continuing without:', error);
     }
 
     // 11. Insert sections and resources

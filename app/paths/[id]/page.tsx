@@ -49,9 +49,10 @@ async function getPath(id: string) {
 export default async function PathDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const path = await getPath(params.id);
+  const { id } = await params;
+  const path = await getPath(id);
 
   if (!path) {
     notFound();
@@ -166,9 +167,26 @@ export default async function PathDetailPage({
             </span>
           </div>
 
-          <div className="text-sm text-base-content/50 mt-2">
-            Created by {path.creator?.name || 'Anonymous'} •{' '}
-            {new Date(path.created_at).toLocaleDateString()}
+          <div className="flex items-center gap-2 text-sm text-base-content/50 mt-2">
+            {path.creator?.avatar_url ? (
+              <div className="avatar">
+                <div className="mask mask-circle w-6">
+                  <img src={path.creator.avatar_url} alt={path.creator.name || 'Creator'} />
+                </div>
+              </div>
+            ) : (
+              <div className="avatar placeholder">
+                <div className="mask mask-circle w-6 bg-base-300">
+                  <span className="text-xs">
+                    {(path.creator?.name || 'A')[0].toUpperCase()}
+                  </span>
+                </div>
+              </div>
+            )}
+            <span>
+              Created by {path.creator?.name || 'Anonymous'} •{' '}
+              {new Date(path.created_at).toLocaleDateString()}
+            </span>
           </div>
         </div>
 

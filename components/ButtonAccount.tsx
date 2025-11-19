@@ -17,6 +17,8 @@ const ButtonAccount = () => {
 	const supabase = createClient();
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [user, setUser] = useState<User>(null);
+	const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+	const [displayName, setDisplayName] = useState<string>("");
 
 	useEffect(() => {
 		const getUser = async () => {
@@ -25,6 +27,22 @@ const ButtonAccount = () => {
 			} = await supabase.auth.getUser();
 
 			setUser(user);
+
+			if (user) {
+				// Fetch profile data including avatar
+				const { data: profile } = await supabase
+					.from("profiles")
+					.select("avatar_url, name")
+					.eq("id", user.id)
+					.single();
+
+				if (profile) {
+					setAvatarUrl(profile.avatar_url);
+					setDisplayName(profile.name || user.email?.split("@")[0] || "Account");
+				} else {
+					setDisplayName(user.email?.split("@")[0] || "Account");
+				}
+			}
 		};
 
 		getUser();
@@ -59,10 +77,10 @@ const ButtonAccount = () => {
 			{({ open }) => (
 				<>
 					<Popover.Button className="btn">
-						{user?.user_metadata?.avatar_url ? (
+						{avatarUrl ? (
 							<img
-								src={user?.user_metadata?.avatar_url}
-								alt={"Profile picture"}
+								src={avatarUrl}
+								alt="Profile avatar"
 								className="w-6 h-6 rounded-full shrink-0"
 								referrerPolicy="no-referrer"
 								width={24}
@@ -74,9 +92,7 @@ const ButtonAccount = () => {
 							</span>
 						)}
 
-						{user?.user_metadata?.name ||
-							user?.email?.split("@")[0] ||
-							"Account"}
+						{displayName}
 
 						{isLoading ? (
 							<span className="loading loading-spinner loading-xs"></span>

@@ -58,13 +58,15 @@ export async function generateAccountSlug(
  * @param userEmail - The user's email address
  * @param userName - The user's name (optional, falls back to email)
  * @param supabase - Supabase client with service role access
+ * @param avatarUrl - The selected avatar URL (optional)
  * @returns Object containing account_id and profile_id
  */
 export async function createPersonalAccount(
   userId: string,
   userEmail: string,
   userName: string | null,
-  supabase: SupabaseClient
+  supabase: SupabaseClient,
+  avatarUrl?: string | null
 ): Promise<{ accountId: string; profileId: string }> {
   // Generate account name
   // If user provided a name, use it. Otherwise, use a neutral default.
@@ -98,6 +100,7 @@ export async function createPersonalAccount(
       id: userId,
       email: userEmail,
       name: userName,
+      avatar_url: avatarUrl,
       default_account_id: account.id,
     })
     .select()
