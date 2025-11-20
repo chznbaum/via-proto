@@ -95,10 +95,10 @@
 **Reference:** PRD Section 3.3.3, PRD Section 5.1
 **Purpose:** Allow unauthenticated users to discover public learning paths (essential for SEO and lead generation)
 
-- [ ] **2.1 Create Public Explore Page** (1 hour)
-  - [ ] Create route: `app/explore/page.tsx`
-  - [ ] **No authentication required** - publicly accessible
-  - [ ] Fetch all public learning paths from database:
+- [x] **2.1 Create Public Explore Page** (1 hour)
+  - [x] Create route: `app/explore/page.tsx`
+  - [x] **No authentication required** - publicly accessible
+  - [x] Fetch all public learning paths from database:
     ```typescript
     const { data: paths } = await supabase
       .from('learning_paths')
@@ -106,8 +106,8 @@
       .eq('is_public', true)
       .order('created_at', { ascending: false });
     ```
-  - [ ] Display paths in grid layout (similar to dashboard)
-  - [ ] Each path card shows:
+  - [x] Display paths in grid layout (similar to dashboard)
+  - [x] Each path card shows:
     - Topic name
     - Title
     - Skill level badge
@@ -116,8 +116,8 @@
     - Creator name
     - Created date
     - Click → view path detail at `/paths/[id]`
-  - [ ] Use DaisyUI card components
-  - [ ] Mobile-responsive grid (1 col mobile, 2 md, 3 lg)
+  - [x] Use DaisyUI card components
+  - [x] Mobile-responsive grid (1 col mobile, 2 md, 3 lg)
   - **New files:** `app/explore/page.tsx`
   - **Reuse component:** Can adapt `PathCard` component from dashboard
 
@@ -139,7 +139,7 @@
   - **Files to modify:** `app/explore/page.tsx`
   - **Components:** Category dropdown, skill level tabs, sort dropdown
 
-- [ ] **2.3 Update Navigation** (15 min)
+- [x] **2.3 Update Navigation** (15 min)
   - [x] Add "Explore" or "Browse Paths" link to main header navigation
   - [x] Position: Between "Home" and "Pricing" (or similar)
   - [x] Accessible to both authenticated and unauthenticated users
