@@ -265,9 +265,16 @@ COMMENT ON FUNCTION public.search_topics_unified IS
 
 ---
 
-## API Endpoint
+## API Endpoint Structure
 
-### `/api/search/route.ts` (NEW)
+### `/api/search` - Unified Search API
+
+**Supports multiple search types:**
+- `type=topics` - Search topics (implemented)
+- `type=paths` - Search learning paths (future)
+- `type=all` - Search both, return categorized results (future)
+
+### `/api/search/route.ts`
 
 ```typescript
 import { NextRequest, NextResponse } from 'next/server';
@@ -498,11 +505,13 @@ The trade-off is worth it - search performance matters more than update performa
 
 ## Testing Examples
 
+### Topic Search (Current Implementation)
+
 ```bash
 # Search for competency
-curl "http://localhost:3001/api/search?q=react&limit=10"
+curl "http://localhost:3001/api/search?type=topics&q=react&limit=10"
 
-# Search for synonym
+# Search for synonym (defaults to type=topics)
 curl "http://localhost:3001/api/search?q=reactjs&limit=10"
 
 # Search for topic directly
@@ -523,6 +532,60 @@ curl "http://localhost:3001/api/search?q=\"machine+learning\"&limit=10"
 # Advanced: OR operator
 curl "http://localhost:3001/api/search?q=react+OR+vue&limit=10"
 ```
+
+### Learning Path Search (Future Implementation)
+
+```bash
+# Search learning paths (not yet implemented)
+curl "http://localhost:3001/api/search?type=paths&q=react&limit=10"
+
+# Search both topics and paths (not yet implemented)
+curl "http://localhost:3001/api/search?type=all&q=react&limit=10"
+```
+
+---
+
+## Future: Learning Path Search
+
+When implementing `search_learning_paths()`, use the same weighted tsvector pattern:
+
+### Database Schema
+```sql
+-- Add search vector to learning_paths
+ALTER TABLE public.learning_paths
+ADD COLUMN search_vector tsvector;
+
+CREATE INDEX idx_learning_paths_search_vector
+ON public.learning_paths USING GIN(search_vector);
+```
+
+### Weighted Search Vector for Paths
+- **A-weight:** Path title
+- **B-weight:** Topic name, competency names
+- **C-weight:** Path description
+- **D-weight:** Creator name, tags
+
+### Search Function Signature
+```sql
+CREATE OR REPLACE FUNCTION public.search_learning_paths(
+    search_query text,
+    result_limit integer DEFAULT 10,
+    filter_skill_level text DEFAULT NULL,
+    filter_is_public boolean DEFAULT NULL
+)
+RETURNS TABLE (
+    path_id uuid,
+    path_title text,
+    path_description text,
+    topic_name text,
+    skill_level text,
+    creator_name text,
+    rank real,
+    ...
+)
+```
+
+This keeps the architecture consistent and allows for combined `type=all` search results later.
 
 ---
 
