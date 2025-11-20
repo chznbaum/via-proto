@@ -207,31 +207,35 @@
 **Reference:** Config files, PRD Section 2
 
 - [ ] **5.1 Update config.ts** (10 min)
-  - [ ] Open `config.ts` or equivalent config file
+  - [x] Open `config.ts` or equivalent config file
   - [x] Replace `appName: "ShipFast"` → `"ViaPro.to"`
-  - [ ] Update `appDescription` to ViaProto value prop
+  - [x] Update `appDescription` to ViaProto value prop
   - [x] Update `domainName` to production domain (e.g., `viaproto.com`)
   - [x] Verify `supportEmail` is correct
-  - [ ] Update social media handles if applicable
+  - [x] Update social media handles if applicable
   - **Files to modify:** `config.ts`
 
 - [ ] **5.2 Search for ShipFast References** (15 min)
-  - [ ] Run global search: `Grep -i "shipfast"` across codebase
-  - [ ] Replace all remaining ShipFast branding with ViaProto
-  - [ ] Check files:
+  - [x] Run global search: `Grep -i "shipfast"` across codebase
+  - [x] Replace all remaining ShipFast branding with ViaProto
+  - [x] Check files:
     - `app/layout.tsx` (metadata)
     - `components/Header.tsx` or `components/LayoutClient.tsx`
     - `components/Footer.tsx`
     - Email templates (if any)
-    - The README.md will need to be entirely replaced in preparation for launch
+  - [ ] The README.md will need to be entirely replaced in preparation for launch
   - **Command:** Use Grep tool to find all instances
 
-- [ ] **5.3 Update Metadata** (5 min)
-  - [ ] Update `app/layout.tsx` metadata:
-    - `title.default` → "ViaProto - AI-Powered Learning Paths"
+- [x] **5.3 Update Metadata** (5 min)
+  - [x] Update `app/layout.tsx` metadata:
+    - `title.default` → "ViaProto - Learning Paths to Help You Get Ahead"
     - `description` → ViaProto value prop
     - `openGraph.title` and `openGraph.description`
     - `twitter.title` and `twitter.description`
+  - [x] Ensure other public-facing pages have appropriate metadata:
+    - [x] Explore
+    - [x] Terms of Service
+    - [x] Privacy Policy
   - **Files to modify:** `app/layout.tsx`
 
 ---
@@ -577,6 +581,11 @@
     - On success or failure, polling continues to take place instead of stopping
       - Result of this is that users are bombarded with many success/error messages rather than just the one
   - [ ] On generation failure, give users a retry button on the card (instead of view path) that allows them to hit the generation function for that learning path again
+
+- [ ] **12.3 Authentication Issues** (20 min)
+  - [ ] Investigate the following:
+    - Sign up works well, but login seems to have stopped working effectively:
+      - When I attempt to log in with a valid email address for an existing user, I get the error that an account was not found and am redirected to sign up instead. This should only occur when an account genuinely can't be found. If we can't connect to the database for any reason, we should also error instead of creating the account, but the error message should be different.
 
 ---
 

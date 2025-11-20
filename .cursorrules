@@ -1,7 +1,7 @@
-# ShipFast TypeScript SaaS Boilerplate - Cursor Rules
+# ViaProto - Cursor Rules
 
 ## Project Overview
-This is a Next.js 15+ TypeScript SaaS boilerplate with Stripe payments, Supabase authentication, and modern UI components using DaisyUI/TailwindCSS v4.
+This is ViaProto, an AI-powered learning path generator built with Next.js 15+, TypeScript, Stripe payments, Supabase authentication, and modern UI components using DaisyUI/TailwindCSS v4.
 
 ## Tech Stack & Dependencies
 - **Framework**: Next.js 15+ with App Router

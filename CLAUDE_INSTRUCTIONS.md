@@ -1,4 +1,4 @@
-# Claude Code Instructions - ShipFast Next.js 15 + Tailwind v4 + Supabase
+# Claude Code Instructions - ViaProto Next.js 15 + Tailwind v4 + Supabase
 
 ## Project Context
 You are working on a **ShipFast TypeScript SaaS boilerplate** that has been upgraded to use the latest technologies:
@@ -392,4 +392,4 @@ npm run build
 4. Missing environment variables
 5. Tailwind CSS configuration errors
 
-Remember: This project uses the latest versions of all technologies, so always follow the patterns shown above for compatibility and best practices. 
+Remember: This project uses the latest versions of all technologies, so always follow the patterns shown above for compatibility and best practices.
