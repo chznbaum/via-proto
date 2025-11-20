@@ -52,19 +52,6 @@ export default function PathCard({ path, isOwner, onDelete }: PathCardProps) {
     }
   };
 
-  const getSkillLevelIcon = () => {
-    switch (path.skill_level) {
-      case 'beginner':
-        return 'lucide--sprout text-success';
-      case 'intermediate':
-        return 'lucide--flame text-warning';
-      case 'advanced':
-        return 'lucide--zap text-error';
-      default:
-        return 'lucide--book-open';
-    }
-  };
-
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();
@@ -82,11 +69,7 @@ export default function PathCard({ path, isOwner, onDelete }: PathCardProps) {
     <div className="card bg-base-100 shadow">
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-2.5">
-        <span className={`iconify ${getSkillLevelIcon()} size-4`}></span>
         <p className="grow font-medium">{path.title}</p>
-        <p className="text-base-content/40 text-xs font-medium max-sm:hidden">
-          {formatDate(path.created_at)}
-        </p>
         {isOwner && (
           <div className="dropdown dropdown-end">
             <button
@@ -149,6 +132,9 @@ export default function PathCard({ path, isOwner, onDelete }: PathCardProps) {
               {path.creator.name}
             </span>
           )}
+          <span className="text-base-content/40 text-xs font-medium max-sm:hidden">
+            {formatDate(path.created_at)}
+          </span>
         </div>
       </div>
 

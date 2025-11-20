@@ -1,12 +1,24 @@
 -- Supabase Seed File
--- This file seeds the database with initial topics and synonyms
+-- This file seeds the database with initial data
 -- Run with: supabase db reset (drops and recreates with migrations + seeds)
 -- Or: psql -h localhost -U postgres -d postgres -f supabase/seed.sql
 
 -- Clear existing data (optional - use if reseeding)
-TRUNCATE public.topic_synonyms, public.topics CASCADE;
+TRUNCATE public.topic_synonyms, public.topics, public.unsplash_images CASCADE;
 
--- Insert topics and synonyms
+-- ============================================================
+-- UNSPLASH IMAGES
+-- ============================================================
+
+-- man writing on paper
+-- Usage: Used on /tos page for legal documentation illustration
+INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_url, download_location)
+VALUES ('OQMZwNd3ThU', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8&ixlib=rb-4.1.0&q=80&w=1080', 'Scott Graham', 'https://unsplash.com/@amstram?utm_source=ViaProto&utm_medium=referral', 'https://api.unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8');
+
+
+-- ============================================================
+-- TOPICS AND SYNONYMS
+-- ============================================================
 
 -- Category: Programming
 -- React
@@ -367,7 +379,6 @@ SELECT id, 'Cyber Security' FROM public.topics WHERE slug = 'cybersecurity';
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Information Security' FROM public.topics WHERE slug = 'cybersecurity';
 
-
 -- Category: Design
 -- UI Design
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -531,7 +542,6 @@ VALUES ('Interaction Design', 'interaction-design', 'Design', 'Designing interac
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'IxD' FROM public.topics WHERE slug = 'interaction-design';
 
-
 -- Category: Data Science
 -- Data Analysis
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -684,7 +694,6 @@ INSERT INTO public.topics (name, slug, category, description, is_active)
 VALUES ('Time Series Analysis', 'time-series-analysis', 'Data Science', 'Analyzing data points over time', true);
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Time Series' FROM public.topics WHERE slug = 'time-series-analysis';
-
 
 -- Category: Business
 -- Product Management
@@ -859,7 +868,6 @@ VALUES ('Organizational Behavior', 'organizational-behavior', 'Business', 'Study
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'OB' FROM public.topics WHERE slug = 'organizational-behavior';
 
-
 -- Category: Language Learning
 -- Spanish
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -997,7 +1005,6 @@ SELECT id, 'Speaking Skills' FROM public.topics WHERE slug = 'pronunciation';
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Accent Training' FROM public.topics WHERE slug = 'pronunciation';
 
-
 -- Category: Mathematics
 -- Algebra
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -1077,7 +1084,6 @@ VALUES ('Set Theory', 'set-theory', 'Mathematics', 'Study of collections of obje
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Sets' FROM public.topics WHERE slug = 'set-theory';
 
-
 -- Category: Science
 -- Physics
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -1152,7 +1158,6 @@ INSERT INTO public.topics (name, slug, category, description, is_active)
 VALUES ('Ecology', 'ecology', 'Science', 'Study of organisms and environment', true);
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Ecological Science' FROM public.topics WHERE slug = 'ecology';
-
 
 -- Category: Personal Development
 -- Time Management
@@ -1258,7 +1263,6 @@ INSERT INTO public.topics (name, slug, category, description, is_active)
 VALUES ('Stress Management', 'stress-management', 'Personal Development', 'Managing and reducing stress', true);
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Stress Relief' FROM public.topics WHERE slug = 'stress-management';
-
 
 -- Category: Creative Arts
 -- Photography
@@ -1369,7 +1373,6 @@ SELECT id, '2D Animation' FROM public.topics WHERE slug = 'animation';
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, '3D Animation' FROM public.topics WHERE slug = 'animation';
 
-
 -- Category: Health & Fitness
 -- Yoga
 INSERT INTO public.topics (name, slug, category, description, is_active)
@@ -1470,7 +1473,6 @@ INSERT INTO public.topics (name, slug, category, description, is_active)
 VALUES ('Sleep Science', 'sleep-science', 'Health & Fitness', 'Understanding and improving sleep', true);
 INSERT INTO public.topic_synonyms (topic_id, synonym)
 SELECT id, 'Sleep Hygiene' FROM public.topics WHERE slug = 'sleep-science';
-
 
 -- Category: Finance
 -- Personal Finance

@@ -59,25 +59,31 @@ const TOS = async () => {
                 className="h-full w-full object-cover"
               />
               <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded px-2 py-1">
-                <a
-                  href={unsplashImage.photographer_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white text-xs hover:underline"
-                >
-                  Photo by {unsplashImage.photographer}
-                </a>
+                <p className="text-white text-xs">
+                  Photo by{" "}
+                  <a
+                    href={unsplashImage.photographer_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-white/80"
+                  >
+                    {unsplashImage.photographer}
+                  </a>{" "}
+                  on{" "}
+                  <a
+                    href="https://unsplash.com?utm_source=ViaProto&utm_medium=referral"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-white/80"
+                  >
+                    Unsplash
+                  </a>
+                </p>
               </div>
             </div>
           ) : (
-            <div className="bg-base-200 rounded-lg h-50 sm:h-84 lg:ms-auto flex items-center justify-center max-lg:w-full">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">📚</div>
-                <p className="text-lg font-medium">AI-Powered Learning Paths</p>
-                <p className="text-base-content/80 text-sm mt-2">
-                  Curated resources, organized for you
-                </p>
-              </div>
+            <div className="bg-gradient-to-r from-primary to-secondary rounded-lg h-50 sm:h-84 lg:ms-auto flex items-center justify-center max-lg:w-full">
+
             </div>
           )}
         </div>

@@ -141,10 +141,10 @@
 ### 3. Terms of Service 🔴 (~30-60 min)
 **Reference:** PRD Section 7 (Launch Checklist), existing `/tos` page
 
-- [ ] **3.1 Update TOS Content** (45 min)
-  - [ ] Review existing `app/tos/page.tsx` placeholder
-  - [ ] Restructure tos page to match Scalo terms template structure and styles
-  - [ ] Adapt ShipFast template terms to ViaProto specifics:
+- [x] **3.1 Update TOS Content** (45 min)
+  - [x] Review existing `app/tos/page.tsx` placeholder
+  - [x] Restructure tos page to match Scalo terms template structure and styles
+  - [x] Adapt ShipFast template terms to ViaProto specifics:
     - Service description: AI-powered learning path generation
     - External links disclaimer (resources are third-party)
     - User-generated content policy (public paths)
@@ -152,20 +152,20 @@
     - Acceptable use (no prompt injection, abuse)
     - Intellectual property (paths belong to account owner)
     - Termination and refund policy
-  - [ ] Add section: "External Resources Disclaimer"
+  - [x] Add section: "External Resources Disclaimer"
     - We don't own/control external content
     - Users access resources at their own risk
     - Broken links may occur; we provide "regenerate" option
-  - [ ] Add section: "AI-Generated Content"
+  - [x] Add section: "AI-Generated Content"
     - Paths are AI-assisted curation, not instruction
     - Accuracy not guaranteed; user discretion advised
   - **Files to modify:** `app/tos/page.tsx`
   - **Tool:** Use Claude to generate draft, then review/edit
 
-- [ ] **3.2 Verify Legal Page Layout** (5 min)
-  - [ ] Ensure proper styling (readable typography, max-width prose)
-  - [ ] Add "Last Updated" date
-  - [ ] Link to contact/support email for questions
+- [x] **3.2 Verify Legal Page Layout** (5 min)
+  - [x] Ensure proper styling (readable typography, max-width prose)
+  - [x] Add "Last Updated" date
+  - [x] Link to contact/support email for questions
 
 ---
 
