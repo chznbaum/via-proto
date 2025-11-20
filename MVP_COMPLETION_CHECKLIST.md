@@ -128,12 +128,12 @@
   - [x] Highlight as key discovery feature
   - **Files to modify:** `components/Header.tsx` or `components/LayoutClient.tsx`
 
-- [ ] **2.3 Update Dashboard** (10 min)
-  - [ ] Remove tabs (My Paths, Browse Public)
-  - [ ] Remove My Learning Paths h2 element
-  - [ ] Ensure headins on dashboard layout only use --font-sans instead of --font-serif
-  - [ ] Replicate the landing page logo on the dashboard
-  - [ ] We have two ways of opening the account drawer from the dashboard: in the layout sidebar and in the desktop topnav—remove the one from the topnav and ensure the one in the layout sidebar uses the user's avatar
+- [x] **2.3 Update Dashboard** (10 min)
+  - [x] Remove tabs (My Paths, Browse Public)
+  - [x] Remove My Learning Paths h2 element
+  - [x] Ensure headins on dashboard layout only use --font-sans instead of --font-serif
+  - [x] Replicate the landing page logo on the dashboard
+  - [x] We have two ways of opening the account drawer from the dashboard: in the layout sidebar and in the desktop topnav—remove the one from the topnav and ensure the one in the layout sidebar uses the user's avatar
   - **Files to modify:** `app/dashboard/page.tsx` or dashboard component
 
 ---
@@ -143,6 +143,7 @@
 
 - [ ] **3.1 Update TOS Content** (45 min)
   - [ ] Review existing `app/tos/page.tsx` placeholder
+  - [ ] Restructure tos page to match Scalo terms template structure and styles
   - [ ] Adapt ShipFast template terms to ViaProto specifics:
     - Service description: AI-powered learning path generation
     - External links disclaimer (resources are third-party)
@@ -239,7 +240,7 @@
 **Reference:** PRD Section 7, IMPLEMENTATION_PLAN Testing Strategy
 
 - [ ] **6.1 New User Flow - Free Tier** (20 min)
-  - [ ] Test signup with Google OAuth
+  - [ ] Test signup with magic links
   - [ ] Verify personal account auto-created
   - [ ] Generate first learning path
   - [ ] Verify path marked as public (`is_public = true`)
