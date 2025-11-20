@@ -131,7 +131,7 @@ CREATE POLICY "Users can delete their own competency assessments"
 2. Design ✅ (top-level as "Design & Creativity")
 3. Data Science ✅ (nested under Information & Technology > Data & Analytics)
 4. Business ✅ (top-level as "Business & Management")
-5. Language Learning → **Rename to "Languages"** ✅ (top-level)
+5. Language Learning → **Rename to "Languages"** ✅
 6. Mathematics → **Add as top-level**
 7. Science → **Add as top-level**
 8. Personal Development → **Add as top-level**

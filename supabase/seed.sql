@@ -48,13 +48,25 @@ VALUES ('Information & Technology', 'information-technology', 'Technology, softw
       INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
       VALUES ('Frontend Development', 'frontend-development', 'Client-side web development', (SELECT id FROM public.categories WHERE slug = 'web-development'), 'DevicePhoneMobileIcon', 1, true);
 
+      -- Full-stack Development
+      INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+      VALUES ('Full-stack Development', 'fullstack-development', 'End-to-end web application development', (SELECT id FROM public.categories WHERE slug = 'web-development'), 'CircleStackIcon', 2, true);
+
       -- Backend Development
       INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
-      VALUES ('Backend Development', 'backend-development', 'Server-side web development', (SELECT id FROM public.categories WHERE slug = 'web-development'), 'ServerIcon', 2, true);
+      VALUES ('Backend Development', 'backend-development', 'Server-side web development', (SELECT id FROM public.categories WHERE slug = 'web-development'), 'ServerIcon', 3, true);
 
     -- Mobile Development
     INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
     VALUES ('Mobile Development', 'mobile-development', 'Building mobile applications', (SELECT id FROM public.categories WHERE slug = 'programming'), 'DevicePhoneMobileIcon', 2, true);
+
+    -- Game Development
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Game Development', 'game-development', 'Creating video games and interactive experiences', (SELECT id FROM public.categories WHERE slug = 'programming'), 'PuzzlePieceIcon', 3, true);
+
+    -- Systems Programming
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Systems Programming', 'systems-programming', 'Low-level programming and operating systems', (SELECT id FROM public.categories WHERE slug = 'programming'), 'CpuChipIcon', 4, true);
 
   -- Data & Analytics
   INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
@@ -68,17 +80,285 @@ VALUES ('Information & Technology', 'information-technology', 'Technology, softw
     INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
     VALUES ('Data Engineering', 'data-engineering', 'Building data pipelines and infrastructure', (SELECT id FROM public.categories WHERE slug = 'data-analytics'), 'CircleStackIcon', 2, true);
 
+    -- Databases
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Databases', 'databases', 'Database design, management, and optimization', (SELECT id FROM public.categories WHERE slug = 'data-analytics'), 'CircleStackIcon', 3, true);
+
+  -- Cloud & DevOps
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Cloud & DevOps', 'cloud-devops', 'Cloud computing and DevOps practices', (SELECT id FROM public.categories WHERE slug = 'information-technology'), 'CloudIcon', 3, true);
+
+  -- Information Security
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Information Security', 'information-security', 'Cybersecurity and information protection', (SELECT id FROM public.categories WHERE slug = 'information-technology'), 'ShieldCheckIcon', 4, true);
+
+    -- Cybersecurity
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Cybersecurity', 'cybersecurity', 'Protecting systems and networks from attacks', (SELECT id FROM public.categories WHERE slug = 'information-security'), 'LockClosedIcon', 1, true);
+
 -- Design & Creativity
 INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
 VALUES ('Design & Creativity', 'design-creativity', 'Visual design, UX, and creative arts', NULL, 'PaintBrushIcon', 2, true);
+
+  -- UI/UX Design
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('UI/UX Design', 'uiux-design', 'User interface and user experience design', (SELECT id FROM public.categories WHERE slug = 'design-creativity'), 'DevicePhoneMobileIcon', 1, true);
+
+  -- Graphic Design
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Graphic Design', 'graphic-design', 'Visual communication and graphic design', (SELECT id FROM public.categories WHERE slug = 'design-creativity'), 'PhotoIcon', 2, true);
+
+  -- Motion & 3D
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Motion & 3D', 'motion-3d', 'Motion graphics, animation, and 3D modeling', (SELECT id FROM public.categories WHERE slug = 'design-creativity'), 'FilmIcon', 3, true);
+
+  -- Creative Arts
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Creative Arts', 'creative-arts', 'Music, writing, photography, and visual arts', (SELECT id FROM public.categories WHERE slug = 'design-creativity'), 'MusicalNoteIcon', 4, true);
+
+    -- Photography & Video
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Photography & Video', 'photography-video', 'Photography and videography', (SELECT id FROM public.categories WHERE slug = 'creative-arts'), 'CameraIcon', 1, true);
+
+    -- Music
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Music', 'music', 'Music theory, performance, and production', (SELECT id FROM public.categories WHERE slug = 'creative-arts'), 'MusicalNoteIcon', 2, true);
+
+    -- Writing
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Writing', 'writing', 'Creative and technical writing', (SELECT id FROM public.categories WHERE slug = 'creative-arts'), 'PencilIcon', 3, true);
+
+    -- Theater
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Theater', 'theater', 'Acting, directing, and stage production', (SELECT id FROM public.categories WHERE slug = 'creative-arts'), 'FilmIcon', 4, true);
+
+    -- Visual Arts
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Visual Arts', 'visual-arts', 'Drawing, painting, and traditional arts', (SELECT id FROM public.categories WHERE slug = 'creative-arts'), 'PaintBrushIcon', 5, true);
+
+  -- Architecture
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Architecture', 'architecture', 'Architectural design and planning', (SELECT id FROM public.categories WHERE slug = 'design-creativity'), 'BuildingOfficeIcon', 5, true);
 
 -- Business & Management
 INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
 VALUES ('Business & Management', 'business-management', 'Business skills, management, and entrepreneurship', NULL, 'BriefcaseIcon', 3, true);
 
--- Languages
+  -- Product & Project Management
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Product & Project Management', 'product-project-management', 'Product development and project coordination', (SELECT id FROM public.categories WHERE slug = 'business-management'), 'ClipboardDocumentListIcon', 1, true);
+
+  -- Marketing & Sales
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Marketing & Sales', 'marketing-sales', 'Marketing strategy and sales techniques', (SELECT id FROM public.categories WHERE slug = 'business-management'), 'MegaphoneIcon', 2, true);
+
+  -- Leadership & Communication
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Leadership & Communication', 'leadership-communication', 'Leadership skills and professional communication', (SELECT id FROM public.categories WHERE slug = 'business-management'), 'UserGroupIcon', 3, true);
+
+  -- Finance & Accounting
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Finance & Accounting', 'finance-accounting', 'Financial management and accounting principles', (SELECT id FROM public.categories WHERE slug = 'business-management'), 'CurrencyDollarIcon', 4, true);
+
+    -- Personal Finance
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Personal Finance', 'personal-finance', 'Managing personal money and investments', (SELECT id FROM public.categories WHERE slug = 'finance-accounting'), 'BanknotesIcon', 1, true);
+
+    -- Investing & Trading
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Investing & Trading', 'investing-trading', 'Investment strategies and trading', (SELECT id FROM public.categories WHERE slug = 'finance-accounting'), 'ChartBarIcon', 2, true);
+
+    -- Corporate Finance
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Corporate Finance', 'corporate-finance', 'Business financial management', (SELECT id FROM public.categories WHERE slug = 'finance-accounting'), 'BuildingOfficeIcon', 3, true);
+
+  -- Operations & Strategy
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Operations & Strategy', 'operations-strategy', 'Business operations and strategic planning', (SELECT id FROM public.categories WHERE slug = 'business-management'), 'CogIcon', 5, true);
+
+-- Linguistics
 INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
-VALUES ('Languages', 'languages', 'Natural language learning', NULL, 'LanguageIcon', 4, true);
+VALUES ('Linguistics', 'linguistics', 'Language learning and speech development', NULL, 'LanguageIcon', 4, true);
+
+  -- Languages
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Languages', 'languages', 'Natural language learning', (SELECT id FROM public.categories WHERE slug = 'linguistics'), 'GlobeAltIcon', 1, true);
+
+  -- Speech Development & Pathology
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Speech Development & Pathology', 'speech-development-pathology', 'Speech therapy and language development', (SELECT id FROM public.categories WHERE slug = 'linguistics'), 'MicrophoneIcon', 2, true);
+
+-- Mathematics
+INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+VALUES ('Mathematics', 'mathematics', 'Mathematical theory and applications', NULL, 'CalculatorIcon', 5, true);
+
+  -- Foundational Math
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Foundational Math', 'foundational-math', 'Basic mathematical concepts and operations', (SELECT id FROM public.categories WHERE slug = 'mathematics'), 'AcademicCapIcon', 1, true);
+
+    -- Arithmetic
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Arithmetic', 'arithmetic', 'Basic number operations', (SELECT id FROM public.categories WHERE slug = 'foundational-math'), 'CalculatorIcon', 1, true);
+
+    -- Algebra
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Algebra', 'algebra', 'Algebraic expressions and equations', (SELECT id FROM public.categories WHERE slug = 'foundational-math'), 'VariableIcon', 2, true);
+
+    -- Geometry
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Geometry', 'geometry', 'Shapes, spaces, and spatial reasoning', (SELECT id FROM public.categories WHERE slug = 'foundational-math'), 'Square3Stack3DIcon', 3, true);
+
+    -- Trigonometry
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Trigonometry', 'trigonometry', 'Angles and triangular relationships', (SELECT id FROM public.categories WHERE slug = 'foundational-math'), 'ChartPieIcon', 4, true);
+
+  -- Advanced Math
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Advanced Math', 'advanced-math', 'Higher-level mathematical concepts', (SELECT id FROM public.categories WHERE slug = 'mathematics'), 'AcademicCapIcon', 2, true);
+
+    -- Calculus
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Calculus', 'calculus', 'Differential and integral calculus', (SELECT id FROM public.categories WHERE slug = 'advanced-math'), 'ChartBarIcon', 1, true);
+
+    -- Linear Algebra
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Linear Algebra', 'linear-algebra', 'Vectors, matrices, and linear transformations', (SELECT id FROM public.categories WHERE slug = 'advanced-math'), 'TableCellsIcon', 2, true);
+
+    -- Differential Equations
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Differential Equations', 'differential-equations', 'Equations involving derivatives', (SELECT id FROM public.categories WHERE slug = 'advanced-math'), 'ArrowTrendingUpIcon', 3, true);
+
+  -- Applied Math
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Applied Math', 'applied-math', 'Practical mathematical applications', (SELECT id FROM public.categories WHERE slug = 'mathematics'), 'ChartBarIcon', 3, true);
+
+    -- Statistics & Probability
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Statistics & Probability', 'statistics-probability', 'Data analysis and probability theory', (SELECT id FROM public.categories WHERE slug = 'applied-math'), 'ChartBarIcon', 1, true);
+
+    -- Discrete Mathematics
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Discrete Mathematics', 'discrete-mathematics', 'Mathematical structures for computer science', (SELECT id FROM public.categories WHERE slug = 'applied-math'), 'Squares2X2Icon', 2, true);
+
+    -- Number Theory
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Number Theory', 'number-theory', 'Properties and relationships of numbers', (SELECT id FROM public.categories WHERE slug = 'applied-math'), 'HashtagIcon', 3, true);
+
+-- Science
+INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+VALUES ('Science', 'science', 'Natural sciences and scientific research', NULL, 'BeakerIcon', 6, true);
+
+  -- Physical Sciences
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Physical Sciences', 'physical-sciences', 'Physics, chemistry, and physical phenomena', (SELECT id FROM public.categories WHERE slug = 'science'), 'BoltIcon', 1, true);
+
+    -- Physics
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Physics', 'physics', 'Matter, energy, and fundamental forces', (SELECT id FROM public.categories WHERE slug = 'physical-sciences'), 'BoltIcon', 1, true);
+
+    -- Chemistry
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Chemistry', 'chemistry', 'Chemical elements and reactions', (SELECT id FROM public.categories WHERE slug = 'physical-sciences'), 'BeakerIcon', 2, true);
+
+    -- Astronomy
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Astronomy', 'astronomy', 'Celestial objects and universe', (SELECT id FROM public.categories WHERE slug = 'physical-sciences'), 'SparklesIcon', 3, true);
+
+  -- Life Sciences
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Life Sciences', 'life-sciences', 'Biology and living organisms', (SELECT id FROM public.categories WHERE slug = 'science'), 'HeartIcon', 2, true);
+
+    -- Biology
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Biology', 'biology', 'Living organisms and life processes', (SELECT id FROM public.categories WHERE slug = 'life-sciences'), 'SparklesIcon', 1, true);
+
+    -- Genetics
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Genetics', 'genetics', 'Heredity and genetic variation', (SELECT id FROM public.categories WHERE slug = 'life-sciences'), 'DocumentMagnifyingGlassIcon', 2, true);
+
+    -- Neuroscience
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Neuroscience', 'neuroscience', 'Brain and nervous system', (SELECT id FROM public.categories WHERE slug = 'life-sciences'), 'CpuChipIcon', 3, true);
+
+  -- Environmental Science
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Environmental Science', 'environmental-science', 'Environment and ecosystems', (SELECT id FROM public.categories WHERE slug = 'science'), 'GlobeAltIcon', 3, true);
+
+-- Personal Development
+INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+VALUES ('Personal Development', 'personal-development', 'Self-improvement and life skills', NULL, 'UserIcon', 7, true);
+
+  -- Productivity & Time Management
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Productivity & Time Management', 'productivity-time-management', 'Efficiency and time optimization', (SELECT id FROM public.categories WHERE slug = 'personal-development'), 'ClockIcon', 1, true);
+
+  -- Cognitive Skills
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Cognitive Skills', 'cognitive-skills', 'Thinking and learning abilities', (SELECT id FROM public.categories WHERE slug = 'personal-development'), 'LightBulbIcon', 2, true);
+
+    -- Critical Thinking
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Critical Thinking', 'critical-thinking', 'Logical analysis and reasoning', (SELECT id FROM public.categories WHERE slug = 'cognitive-skills'), 'AcademicCapIcon', 1, true);
+
+    -- Memory & Learning
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Memory & Learning', 'memory-learning', 'Retention and learning techniques', (SELECT id FROM public.categories WHERE slug = 'cognitive-skills'), 'BookOpenIcon', 2, true);
+
+    -- Problem Solving
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Problem Solving', 'problem-solving', 'Analytical problem resolution', (SELECT id FROM public.categories WHERE slug = 'cognitive-skills'), 'PuzzlePieceIcon', 3, true);
+
+  -- Communication & Interpersonal
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Communication & Interpersonal', 'communication-interpersonal', 'Relationship and communication skills', (SELECT id FROM public.categories WHERE slug = 'personal-development'), 'ChatBubbleLeftRightIcon', 3, true);
+
+  -- Mindfulness & Wellness
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Mindfulness & Wellness', 'mindfulness-wellness', 'Mental well-being and awareness', (SELECT id FROM public.categories WHERE slug = 'personal-development'), 'HeartIcon', 4, true);
+
+-- Health & Fitness
+INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+VALUES ('Health & Fitness', 'health-fitness', 'Physical health and wellness', NULL, 'HeartIcon', 8, true);
+
+  -- Fitness & Exercise
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Fitness & Exercise', 'fitness-exercise', 'Physical training and exercise', (SELECT id FROM public.categories WHERE slug = 'health-fitness'), 'BoltIcon', 1, true);
+
+    -- Strength Training
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Strength Training', 'strength-training', 'Resistance and weight training', (SELECT id FROM public.categories WHERE slug = 'fitness-exercise'), 'FireIcon', 1, true);
+
+    -- Cardio & Endurance
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Cardio & Endurance', 'cardio-endurance', 'Cardiovascular fitness', (SELECT id FROM public.categories WHERE slug = 'fitness-exercise'), 'HeartIcon', 2, true);
+
+    -- Flexibility & Mobility
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Flexibility & Mobility', 'flexibility-mobility', 'Stretching and movement quality', (SELECT id FROM public.categories WHERE slug = 'fitness-exercise'), 'ArrowsRightLeftIcon', 3, true);
+
+  -- Nutrition & Diet
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Nutrition & Diet', 'nutrition-diet', 'Healthy eating and nutrition', (SELECT id FROM public.categories WHERE slug = 'health-fitness'), 'CakeIcon', 2, true);
+
+  -- Mental Health
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Mental Health', 'mental-health', 'Psychological well-being', (SELECT id FROM public.categories WHERE slug = 'health-fitness'), 'HeartIcon', 3, true);
+
+  -- Holistic Health
+  INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+  VALUES ('Holistic Health', 'holistic-health', 'Alternative and integrative health', (SELECT id FROM public.categories WHERE slug = 'health-fitness'), 'SparklesIcon', 4, true);
+
+    -- Yoga
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Yoga', 'yoga', 'Mind-body practice and movement', (SELECT id FROM public.categories WHERE slug = 'holistic-health'), 'UserIcon', 1, true);
+
+    -- Meditation
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Meditation', 'meditation', 'Mindfulness and meditation practices', (SELECT id FROM public.categories WHERE slug = 'holistic-health'), 'SparklesIcon', 2, true);
+
+    -- Alternative Medicine
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Alternative Medicine', 'alternative-medicine', 'Complementary health practices', (SELECT id FROM public.categories WHERE slug = 'holistic-health'), 'BeakerIcon', 3, true);
 
 
 -- ============================================================
