@@ -8,8 +8,11 @@ CREATE TABLE IF NOT EXISTS public.unsplash_images (
   photo_id text NOT NULL UNIQUE, -- Unsplash's unique photo ID
   url text NOT NULL, -- Image URL (regular size, 1080px wide)
   photographer text NOT NULL, -- Photographer name (for attribution)
+  photographer_username text NOT NULL, -- Photographer's Unsplash username
   photographer_url text NOT NULL, -- Link to photographer's Unsplash profile
   download_location text NOT NULL, -- API endpoint for triggering download events
+  alt_description text, -- Alt text description from Unsplash
+  usage_note text, -- Internal note about where/how this image is used
   created_at timestamptz DEFAULT now()
 );
 
@@ -47,5 +50,8 @@ CREATE POLICY "Allow authenticated users to insert Unsplash images"
 -- Add comments
 COMMENT ON TABLE public.unsplash_images IS 'Stores Unsplash images with attribution data for API compliance';
 COMMENT ON COLUMN public.unsplash_images.photo_id IS 'Unsplash unique photo identifier';
+COMMENT ON COLUMN public.unsplash_images.photographer_username IS 'Photographer Unsplash username for profile links';
 COMMENT ON COLUMN public.unsplash_images.download_location IS 'API endpoint to trigger download event (required by Unsplash)';
+COMMENT ON COLUMN public.unsplash_images.alt_description IS 'Alt text description provided by Unsplash for accessibility';
+COMMENT ON COLUMN public.unsplash_images.usage_note IS 'Internal documentation of where/how this image is used in the app';
 COMMENT ON COLUMN public.learning_paths.unsplash_image_id IS 'Reference to Unsplash image for featured image with attribution';

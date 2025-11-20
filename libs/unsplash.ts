@@ -15,8 +15,11 @@ export interface UnsplashImage {
   photoId: string; // Unsplash unique photo identifier
   url: string; // Image URL
   photographer: string; // Photographer name for attribution
+  photographerUsername: string; // Photographer's Unsplash username
   photographerUrl: string; // Link to photographer profile with UTM params
   downloadLocation: string; // API endpoint to trigger download event
+  altDescription: string | null; // Alt text description from Unsplash
+  usageNote: string | null; // Internal note on how we're using the image
 }
 
 /**
@@ -60,8 +63,11 @@ export async function fetchUnsplashImage(
       photoId: data.id,
       url: data.urls.regular, // 1080px wide, good for cards
       photographer: data.user.name,
+      photographerUsername: data.user.username,
       photographerUrl: `${data.user.links.html}?${UTM_PARAMS}`,
       downloadLocation: data.links.download_location,
+      altDescription: data.alt_description || null,
+      usageNote: 'Featured image for learning path',
     };
   } catch (error) {
     console.error("Error fetching Unsplash image:", error);

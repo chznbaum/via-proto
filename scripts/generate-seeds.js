@@ -39,6 +39,7 @@ for (const image of unsplashData.images) {
   const photographerUsername = image.photographer_username.replace(/'/g, "''");
   const downloadLocation = image.download_location.replace(/'/g, "''");
   const altDescription = (image.alt_description || '').replace(/'/g, "''");
+  const usageNote = (image.usage_note || '').replace(/'/g, "''");
 
   // Construct photographer URL with UTM parameters (per Unsplash API guidelines)
   const photographerUrl = `https://unsplash.com/@${photographerUsername}?utm_source=ViaProto&utm_medium=referral`;
@@ -47,8 +48,8 @@ for (const image of unsplashData.images) {
   if (image.usage_note) {
     sql += `-- Usage: ${image.usage_note}\n`;
   }
-  sql += `INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_url, download_location)\n`;
-  sql += `VALUES ('${photoId}', '${url}', '${photographer}', '${photographerUrl}', '${downloadLocation}');\n\n`;
+  sql += `INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_username, photographer_url, download_location, alt_description, usage_note)\n`;
+  sql += `VALUES ('${photoId}', '${url}', '${photographer}', '${photographerUsername}', '${photographerUrl}', '${downloadLocation}', ${altDescription ? `'${altDescription}'` : 'NULL'}, ${usageNote ? `'${usageNote}'` : 'NULL'});\n\n`;
 }
 
 // ============================================================

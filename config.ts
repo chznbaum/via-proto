@@ -119,6 +119,10 @@ const config = {
     fromAdmin: `ViaProto <hello@notifications.viapro.to>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
     supportEmail: "chazona@viapro.to",
+    // Email to be used for privacy/GDPR requests
+    privacyEmail: "privacy@viapro.to",
+    // Email to be used for good-faith security disclosures or questions
+    securityEmail: "security@viapro.to",
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you any other theme than light/dark, you need to add it in config.tailwind.js in daisyui.themes.

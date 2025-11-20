@@ -123,8 +123,11 @@ export async function POST(
               photo_id: unsplashImage.photoId,
               url: unsplashImage.url,
               photographer: unsplashImage.photographer,
+              photographer_username: unsplashImage.photographerUsername,
               photographer_url: unsplashImage.photographerUrl,
               download_location: unsplashImage.downloadLocation,
+              alt_description: unsplashImage.altDescription,
+              usage_note: unsplashImage.usageNote,
             })
             .select('id')
             .single();

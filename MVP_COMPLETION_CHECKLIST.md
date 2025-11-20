@@ -172,9 +172,9 @@
 ### 4. Privacy Policy 🔴 (~30-60 min)
 **Reference:** PRD Section 7, existing `/privacy-policy` page
 
-- [ ] **4.1 Update Privacy Policy Content** (50 min)
-  - [ ] Review existing `app/privacy-policy/page.tsx` placeholder
-  - [ ] Adapt ShipFast template to ViaProto specifics:
+- [x] **4.1 Update Privacy Policy Content** (50 min)
+  - [x] Review existing `app/privacy-policy/page.tsx` placeholder
+  - [x] Adapt ShipFast template to ViaProto specifics:
     - Data collected: Email, name, avatar (via Supabase Auth)
     - Payment info: Processed by Stripe (we don't store card details)
     - Usage data: Paths generated, topics selected, view counts
@@ -188,11 +188,11 @@
     - Cookies: Session cookies, analytics cookies
     - Data retention: Accounts deleted on request, cascade deletes
     - User rights: GDPR compliance (export, delete, access)
-    - Public paths: Visible to all users, opt-in sharing
-  - [ ] Add section: "AI Model Providers"
-    - User prompts sent to Claude (Anthropic) or DeepSeek via OpenRouter
-    - We don't control how model providers use data
-    - Link to OpenRouter, Anthropic, DeepSeek privacy policies
+    - Public paths: Visible to all users, mandatory for free, opt-in sharing on pro/team
+  - [x] Add section: "AI Model Providers"
+    - User prompts sent to LLM providers (found in libs/models/model-config.ts) via OpenRouter
+    - We don't control how model providers use data, but the user chooses which model they use
+    - Link to OpenRouter, LLM provider privacy policies
   - **Files to modify:** `app/privacy-policy/page.tsx`
   - **Tool:** Use Claude to generate draft, then review
 

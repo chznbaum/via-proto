@@ -12,8 +12,13 @@ TRUNCATE public.topic_synonyms, public.topics, public.unsplash_images CASCADE;
 
 -- man writing on paper
 -- Usage: Used on /tos page for legal documentation illustration
-INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_url, download_location)
-VALUES ('OQMZwNd3ThU', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8&ixlib=rb-4.1.0&q=80&w=1080', 'Scott Graham', 'https://unsplash.com/@amstram?utm_source=ViaProto&utm_medium=referral', 'https://api.unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8');
+INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_username, photographer_url, download_location, alt_description, usage_note)
+VALUES ('OQMZwNd3ThU', 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=crop&h=672&w=1120&fm=jpg&ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8&ixlib=rb-4.1.0&q=80', 'Scott Graham', 'amstram', 'https://unsplash.com/@amstram?utm_source=ViaProto&utm_medium=referral', 'https://api.unsplash.com/photos/OQMZwNd3ThU/download?ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NDUyNjV8', 'man writing on paper', 'Used on /tos page for legal documentation illustration');
+
+-- we''ve updated outr privacy policy sign
+-- Usage: Used on /privacy-policy page for privacy documentation illustration
+INSERT INTO public.unsplash_images (photo_id, url, photographer, photographer_username, photographer_url, download_location, alt_description, usage_note)
+VALUES ('HkUDmu2uC9w', 'https://images.unsplash.com/photo-1571751902560-033d0c0f7e5f?crop=bottom&cs=tinysrgb&fit=crop&h=672&w=1120&fm=jpg&ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NTAwNzl8&ixlib=rb-4.1.0&q=80', 'lilartsy', 'lilartsy', 'https://unsplash.com/@lilartsy?utm_source=ViaProto&utm_medium=referral', 'https://api.unsplash.com/photos/HkUDmu2uC9w/download?ixid=M3w4MzI5NTB8MHwxfGFsbHx8fHx8fHx8fDE3NjM2NTAwNzl8', 'we''ve updated outr privacy policy sign', 'Used on /privacy-policy page for privacy documentation illustration');
 
 
 -- ============================================================
