@@ -37,7 +37,7 @@ Even if a competency is used across domains, there's usually one category that m
 **A:** **NO.** We need three levels:
 
 1. **Required:** Cannot learn without this (e.g., JavaScript for React, Algebra for Calculus)
-2. **Recommended:** Strongly beneficial but not blocking (e.g., Geometry before Calculus)
+2. **Recommended:** Strongly beneficial but not blocking (e.g., Geometry before Algebra)
 3. **Optional:** Useful for specific interests/passions (e.g., Accessibility basics for web development)
 
 **Schema Change Needed:** Change `competency_prerequisites.is_required` boolean to `prerequisite_level` enum.

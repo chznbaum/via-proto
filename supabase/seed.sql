@@ -158,28 +158,28 @@ SELECT id, 'Castellano' FROM public.competencies WHERE slug = 'spanish';
 -- COMPETENCY PREREQUISITES
 -- ============================================================
 
--- react requires javascript
-INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, is_required, notes)
+-- react requires javascript (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
 SELECT 
   (SELECT id FROM public.competencies WHERE slug = 'react'),
   (SELECT id FROM public.competencies WHERE slug = 'javascript'),
-  true,
+  'required',
   'JavaScript fundamentals required before learning React';
 
--- flask requires python
-INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, is_required, notes)
+-- flask requires python (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
 SELECT 
   (SELECT id FROM public.competencies WHERE slug = 'flask'),
   (SELECT id FROM public.competencies WHERE slug = 'python'),
-  true,
+  'required',
   'Python basics required for Flask development';
 
--- django requires python
-INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, is_required, notes)
+-- django requires python (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
 SELECT 
   (SELECT id FROM public.competencies WHERE slug = 'django'),
   (SELECT id FROM public.competencies WHERE slug = 'python'),
-  true,
+  'required',
   'Python basics required for Django development';
 
 
@@ -218,56 +218,48 @@ VALUES ('Conversational Spanish for travelers', 'conversational-spanish-for-trav
 -- ============================================================
 
 -- Competencies for: Building interactive UIs with React
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-interactive-uis-with-react'),
   (SELECT id FROM public.competencies WHERE slug = 'react'),
-  true,
-  'intermediate';
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-interactive-uis-with-react'),
   (SELECT id FROM public.competencies WHERE slug = 'javascript'),
-  false,
-  'intermediate';
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-interactive-uis-with-react'),
   (SELECT id FROM public.competencies WHERE slug = 'html'),
-  false,
-  'beginner';
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-interactive-uis-with-react'),
   (SELECT id FROM public.competencies WHERE slug = 'css'),
-  false,
-  'beginner';
+  false;
 
 -- Competencies for: Building web applications with Python
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-web-applications-with-python'),
   (SELECT id FROM public.competencies WHERE slug = 'python'),
-  true,
-  'intermediate';
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-web-applications-with-python'),
   (SELECT id FROM public.competencies WHERE slug = 'flask'),
-  false,
-  'intermediate';
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'building-web-applications-with-python'),
   (SELECT id FROM public.competencies WHERE slug = 'html'),
-  false,
-  'beginner';
+  false;
 
 -- Competencies for: Conversational Spanish for travelers
-INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
 SELECT 
   (SELECT id FROM public.topics WHERE slug = 'conversational-spanish-for-travelers'),
   (SELECT id FROM public.competencies WHERE slug = 'spanish'),
-  true,
-  'beginner';
+  true;
 

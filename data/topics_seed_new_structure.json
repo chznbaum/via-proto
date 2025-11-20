@@ -164,23 +164,19 @@
       "competencies": [
         {
           "competency_slug": "react",
-          "is_primary": true,
-          "proficiency_level": "intermediate"
+          "is_primary": true
         },
         {
           "competency_slug": "javascript",
-          "is_primary": false,
-          "proficiency_level": "intermediate"
+          "is_primary": false
         },
         {
           "competency_slug": "html",
-          "is_primary": false,
-          "proficiency_level": "beginner"
+          "is_primary": false
         },
         {
           "competency_slug": "css",
-          "is_primary": false,
-          "proficiency_level": "beginner"
+          "is_primary": false
         }
       ]
     },
@@ -192,18 +188,15 @@
       "competencies": [
         {
           "competency_slug": "python",
-          "is_primary": true,
-          "proficiency_level": "intermediate"
+          "is_primary": true
         },
         {
           "competency_slug": "flask",
-          "is_primary": false,
-          "proficiency_level": "intermediate"
+          "is_primary": false
         },
         {
           "competency_slug": "html",
-          "is_primary": false,
-          "proficiency_level": "beginner"
+          "is_primary": false
         }
       ]
     },
@@ -215,8 +208,7 @@
       "competencies": [
         {
           "competency_slug": "spanish",
-          "is_primary": true,
-          "proficiency_level": "beginner"
+          "is_primary": true
         }
       ]
     }
@@ -225,19 +217,19 @@
     {
       "competency_slug": "react",
       "prerequisite_slug": "javascript",
-      "is_required": true,
+      "prerequisite_level": "required",
       "notes": "JavaScript fundamentals required before learning React"
     },
     {
       "competency_slug": "flask",
       "prerequisite_slug": "python",
-      "is_required": true,
+      "prerequisite_level": "required",
       "notes": "Python basics required for Flask development"
     },
     {
       "competency_slug": "django",
       "prerequisite_slug": "python",
-      "is_required": true,
+      "prerequisite_level": "required",
       "notes": "Python basics required for Django development"
     }
   ],

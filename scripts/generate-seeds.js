@@ -141,15 +141,15 @@ sql += `-- ============================================================\n\n`;
 for (const prereq of topicsData.competency_prerequisites) {
   const competencySlug = prereq.competency_slug;
   const prerequisiteSlug = prereq.prerequisite_slug;
-  const isRequired = prereq.is_required !== false; // default to true
+  const prerequisiteLevel = prereq.prerequisite_level || 'required'; // default to 'required'
   const notes = prereq.notes ? escapeSql(prereq.notes) : null;
 
-  sql += `-- ${competencySlug} requires ${prerequisiteSlug}\n`;
-  sql += `INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, is_required, notes)\n`;
+  sql += `-- ${competencySlug} requires ${prerequisiteSlug} (${prerequisiteLevel})\n`;
+  sql += `INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)\n`;
   sql += `SELECT \n`;
   sql += `  (SELECT id FROM public.competencies WHERE slug = '${competencySlug}'),\n`;
   sql += `  (SELECT id FROM public.competencies WHERE slug = '${prerequisiteSlug}'),\n`;
-  sql += `  ${isRequired},\n`;
+  sql += `  '${prerequisiteLevel}',\n`;
   sql += `  ${notes ? `'${notes}'` : 'NULL'};\n\n`;
 }
 
@@ -209,14 +209,12 @@ for (const topic of topicsData.topics) {
     for (const comp of topic.competencies) {
       const competencySlug = comp.competency_slug;
       const isPrimary = comp.is_primary === true;
-      const proficiencyLevel = comp.proficiency_level || null;
 
-      sql += `INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary, proficiency_level)\n`;
+      sql += `INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)\n`;
       sql += `SELECT \n`;
       sql += `  (SELECT id FROM public.topics WHERE slug = '${topicSlug}'),\n`;
       sql += `  (SELECT id FROM public.competencies WHERE slug = '${competencySlug}'),\n`;
-      sql += `  ${isPrimary},\n`;
-      sql += `  ${proficiencyLevel ? `'${proficiencyLevel}'` : 'NULL'};\n`;
+      sql += `  ${isPrimary};\n`;
     }
     sql += '\n';
   }
