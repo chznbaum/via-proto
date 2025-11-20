@@ -66,9 +66,9 @@ export default function PathCreateForm({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit}>
       {error && (
-        <div className="alert alert-error">
+        <div className="alert alert-error mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="stroke-current shrink-0 h-6 w-6"
@@ -86,117 +86,149 @@ export default function PathCreateForm({
         </div>
       )}
 
-      <div className="form-control w-full">
-        <label className="label">
-          <span className="label-text font-semibold">
-            What do you want to learn?
-          </span>
-        </label>
-        <TopicTypeahead
-          onSelect={(topicId: string, topic: Topic) => {
-            setFormData({
-              ...formData,
-              topic_id: topicId,
-              topicName: topic.name,
-            });
-          }}
-          placeholder="Search for a topic (e.g., React, Machine Learning, Spanish)"
-        />
-        <label className="label">
-          <span className="label-text-alt text-base-content/60">
-            Start typing to search from {' '}
-            <span className="font-semibold">hundreds of topics</span> across programming, design, business, and more
-          </span>
-        </label>
+      <div className="grid grid-cols-1 gap-4 md:gap-6">
+        {/* Topic Selection */}
+        <div className="card bg-base-100 shadow">
+          <div className="card-body">
+            <div className="card-title">Topic Selection</div>
+            <fieldset className="fieldset mt-2 gap-4">
+              <div className="space-y-2">
+                <label className="fieldset-label" htmlFor="topic">
+                  What do you want to learn?
+                </label>
+                <TopicTypeahead
+                  onSelect={(topicId: string, topic: Topic) => {
+                    setFormData({
+                      ...formData,
+                      topic_id: topicId,
+                      topicName: topic.name,
+                    });
+                  }}
+                  placeholder="Search for a topic (e.g., React, Machine Learning, Spanish)"
+                />
+                <p className="text-base-content/60 text-xs mt-1">
+                  Start typing to search from <span className="font-semibold">hundreds of topics</span> across programming, design, business, and more
+                </p>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        {/* Path Settings */}
+        <div className="card bg-base-100 shadow">
+          <div className="card-body">
+            <div className="card-title">Path Settings</div>
+            <fieldset className="fieldset mt-2 gap-4">
+              <div className="space-y-2">
+                <label className="fieldset-label" htmlFor="skill-level">
+                  Skill Level
+                </label>
+                <select
+                  className="select w-full"
+                  id="skill-level"
+                  value={formData.skill_level}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      skill_level: e.target.value as any,
+                    })
+                  }
+                >
+                  <option value="beginner">Beginner - I'm new to this</option>
+                  <option value="intermediate">
+                    Intermediate - I have some experience
+                  </option>
+                  <option value="advanced">Advanced - I want to master this</option>
+                </select>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        {/* AI Model Selection */}
+        <div className="card bg-base-100 shadow">
+          <div className="card-body">
+            <div className="card-title">AI Model</div>
+            <div className="mt-2">
+              <GroupedModelSelector
+                value={formData.model_id}
+                onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
+                tier={subscriptionTier}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Visibility Settings */}
+        <div className="card bg-base-100 shadow">
+          <div className="card-body">
+            <div className="card-title">Visibility</div>
+            <div className="mt-2">
+              {subscriptionTier === 'free' ? (
+                <div className="alert alert-info">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    className="stroke-current shrink-0 w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>
+                    Free tier paths are always public. Upgrade to Pro or Team for private paths.
+                  </span>
+                </div>
+              ) : (
+                <div className="flex items-center gap-4">
+                  <input
+                    type="checkbox"
+                    className="toggle toggle-sm"
+                    id="is-public"
+                    checked={formData.is_public}
+                    onChange={(e) =>
+                      setFormData({ ...formData, is_public: e.target.checked })
+                    }
+                  />
+                  <label className="label cursor-pointer" htmlFor="is-public">
+                    <span className="label-text">
+                      <span className="font-semibold">Make this path public</span>
+                      <span className="block text-sm text-base-content/60">
+                        Public paths can be viewed by anyone
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="form-control w-full">
-        <label className="label">
-          <span className="label-text font-semibold">Skill Level</span>
-        </label>
-        <select
-          className="select select-bordered w-full"
-          value={formData.skill_level}
-          onChange={(e) =>
-            setFormData({
-              ...formData,
-              skill_level: e.target.value as any,
-            })
-          }
-        >
-          <option value="beginner">Beginner - I'm new to this</option>
-          <option value="intermediate">
-            Intermediate - I have some experience
-          </option>
-          <option value="advanced">Advanced - I want to master this</option>
-        </select>
-      </div>
-
-      <GroupedModelSelector
-        value={formData.model_id}
-        onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
-        tier={subscriptionTier}
-      />
-
-      {subscriptionTier === 'free' ? (
-        <div className="alert alert-info">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="stroke-current shrink-0 w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <span>
-            Free tier paths are always public. Upgrade to Pro or Team for
-            private paths.
-          </span>
-        </div>
-      ) : (
-        <div className="form-control">
-          <label className="label cursor-pointer justify-start gap-4">
-            <input
-              type="checkbox"
-              className="checkbox"
-              checked={formData.is_public}
-              onChange={(e) =>
-                setFormData({ ...formData, is_public: e.target.checked })
-              }
-            />
-            <span className="label-text">
-              <span className="font-semibold">Make this path public</span>
-              <span className="block text-sm text-base-content/60">
-                Public paths can be viewed by anyone
-              </span>
-            </span>
-          </label>
-        </div>
-      )}
-
-      <div className="flex gap-4">
-        <button
-          type="submit"
-          className="btn btn-primary flex-1"
-          disabled={!formData.topic_id}
-        >
-          Generate Learning Path
-        </button>
-
+      {/* Action Buttons */}
+      <div className="mt-6 flex justify-end gap-3">
         {onCancel && (
           <button
             type="button"
-            className="btn btn-ghost"
+            className="btn btn-sm btn-ghost"
             onClick={onCancel}
           >
+            <span className="iconify lucide--x size-4" />
             Cancel
           </button>
         )}
+        <button
+          type="submit"
+          className="btn btn-sm btn-primary"
+          disabled={!formData.topic_id}
+        >
+          <span className="iconify lucide--sparkles size-4" />
+          Generate Learning Path
+        </button>
       </div>
     </form>
   );

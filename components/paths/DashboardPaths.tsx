@@ -212,8 +212,8 @@ export default function DashboardPaths({
       {/* Create Form Modal */}
       {showCreateForm && (
         <div className="modal modal-open">
-          <div className="modal-box max-w-2xl">
-            <h3 className="font-bold text-lg mb-4">
+          <div className="modal-box max-w-3xl">
+            <h3 className="font-bold text-lg mb-6">
               Create a New Learning Path
             </h3>
             <PathCreateForm
