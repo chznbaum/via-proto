@@ -196,10 +196,10 @@
   - **Files to modify:** `app/privacy-policy/page.tsx`
   - **Tool:** Use Claude to generate draft, then review
 
-- [ ] **4.2 Verify Privacy Page Layout** (5 min)
-  - [ ] Readable typography, proper section headings
-  - [ ] "Last Updated" date
-  - [ ] Contact email for privacy inquiries
+- [x] **4.2 Verify Privacy Page Layout** (5 min)
+  - [x] Readable typography, proper section headings
+  - [x] "Last Updated" date
+  - [x] Contact email for privacy inquiries
 
 ---
 
@@ -208,10 +208,10 @@
 
 - [ ] **5.1 Update config.ts** (10 min)
   - [ ] Open `config.ts` or equivalent config file
-  - [ ] Replace `appName: "ShipFast"` → `"ViaProto"`
+  - [x] Replace `appName: "ShipFast"` → `"ViaPro.to"`
   - [ ] Update `appDescription` to ViaProto value prop
-  - [ ] Update `domainName` to production domain (e.g., `viaproto.com`)
-  - [ ] Verify `supportEmail` is correct
+  - [x] Update `domainName` to production domain (e.g., `viaproto.com`)
+  - [x] Verify `supportEmail` is correct
   - [ ] Update social media handles if applicable
   - **Files to modify:** `config.ts`
 
@@ -223,7 +223,7 @@
     - `components/Header.tsx` or `components/LayoutClient.tsx`
     - `components/Footer.tsx`
     - Email templates (if any)
-    - README.md (optional, not user-facing)
+    - The README.md will need to be entirely replaced in preparation for launch
   - **Command:** Use Grep tool to find all instances
 
 - [ ] **5.3 Update Metadata** (5 min)
@@ -300,10 +300,10 @@
 
 ## IMPORTANT - Significantly Improves Launch (9-14 hours)
 
-### 6. Topic Improvements 🟡 (~1-2 hours)
+### 7. Topic Improvements 🟡 (~1-2 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #6", PRD Section 3.1
 
-- [ ] **6.1 Expand Topic Specificity** (1.5 hours)
+- [ ] **7.1 Expand Topic Specificity** (1.5 hours)
   - [ ] Review current `data/topics_seed.json`
   - [ ] Use AI to generate more specific, goal-oriented topics:
     - Instead of "Python" → add:
@@ -326,7 +326,7 @@
   - **Files to modify:** `data/topics_seed.json`, seed script
   - **Tool:** Use Claude to generate topic variations
 
-- [ ] **6.2 Verify Topic Search Quality** (15 min)
+- [ ] **7.2 Verify Topic Search Quality** (15 min)
   - [ ] Test typeahead with expanded topics
   - [ ] Verify synonym matching works
   - [ ] Test category filtering
@@ -334,10 +334,10 @@
 
 ---
 
-### 7. Browse Topics by Category UI 🟡 (~2-3 hours)
+### 8. Browse Topics by Category UI 🟡 (~2-3 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #7", PRD Section 3.1
 
-- [ ] **7.1 Create Category Browse Page** (1 hour)
+- [ ] **8.1 Create Category Browse Page** (1 hour)
   - [ ] Create new page: `app/browse/page.tsx`
   - [ ] Display category grid/cards:
     - Programming
@@ -354,7 +354,7 @@
   - [ ] Use DaisyUI card components
   - **New files:** `app/browse/page.tsx`, `components/CategoryGrid.tsx`
 
-- [ ] **7.2 Category-Filtered Topic List** (45 min)
+- [ ] **8.2 Category-Filtered Topic List** (45 min)
   - [ ] Create route: `app/browse/[category]/page.tsx`
   - [ ] Fetch topics for selected category
   - [ ] Display as grid of topic cards
@@ -365,25 +365,25 @@
     - "Generate Path" button → creates path for this topic
   - **New files:** `app/browse/[category]/page.tsx`, `components/TopicCard.tsx`
 
-- [ ] **7.3 Update Dashboard Navigation** (30 min)
+- [ ] **8.3 Update Dashboard Navigation** (30 min)
   - [ ] Add "Browse by Category" link to dashboard or header
   - [ ] Update typeahead search to suggest "Or browse by category"
   - [ ] Ensure consistent styling with existing UI
   - **Files to modify:** `components/Header.tsx`, `app/dashboard/page.tsx`
 
-- [ ] **7.4 Mobile Optimization** (15 min)
+- [ ] **8.4 Mobile Optimization** (15 min)
   - [ ] Test category grid on mobile (should collapse to 1-2 columns)
   - [ ] Test topic list on mobile
   - [ ] Ensure touch targets are adequate size
 
 ---
 
-### 8. Initial Teams UI 🟡 (~3-4 hours)
+### 9. Initial Teams UI 🟡 (~3-4 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #8", PRD Section 3.6, IMPLEMENTATION_PLAN Week 3
 
 **Note:** Data model and team subscriptions already working. This adds UI for team management.
 
-- [ ] **8.1 Team Settings Page** (1 hour)
+- [ ] **9.1 Team Settings Page** (1 hour)
   - [ ] Create route: `app/dashboard/team/page.tsx`
   - [ ] Conditional rendering: Only show if user is in a team account
   - [ ] Display team information:
@@ -397,7 +397,7 @@
   - **New files:** `app/dashboard/team/page.tsx`, `components/TeamMembersList.tsx`
   - **API needed:** `/api/teams/[teamId]/members` (GET)
 
-- [ ] **8.2 Team Invitation Flow** (1.5 hours)
+- [ ] **9.2 Team Invitation Flow** (1.5 hours)
   - [ ] Create API route: `app/api/teams/[teamId]/invite/route.ts`
   - [ ] POST handler:
     - Accept `email` parameter
@@ -418,7 +418,7 @@
     - `components/TeamInviteModal.tsx`
   - **Email template:** Create Resend template for team invites
 
-- [ ] **8.3 Remove Team Member** (30 min)
+- [ ] **9.3 Remove Team Member** (30 min)
   - [ ] Create API route: `app/api/teams/[teamId]/members/[userId]/route.ts`
   - [ ] DELETE handler:
     - Verify requester is team owner
@@ -429,7 +429,7 @@
   - [ ] Confirmation modal: "Are you sure you want to remove [name]?"
   - **New files:** `app/api/teams/[teamId]/members/[userId]/route.ts`
 
-- [ ] **8.4 Role Management (Optional)** (30 min)
+- [ ] **9.4 Role Management (Optional)** (30 min)
   - [ ] Add role dropdown per member (owner-only)
   - [ ] Roles: Owner, Admin, Member
   - [ ] API to update role:
@@ -438,17 +438,17 @@
   - [ ] Prevent demoting the only owner
   - **Note:** Can defer to post-MVP if time constrained
 
-- [ ] **8.5 Navigation Updates** (15 min)
+- [ ] **9.5 Navigation Updates** (15 min)
   - [ ] Add "Team Settings" link to account dropdown (if user in team)
   - [ ] Add "Team" tab to dashboard navigation
   - **Files to modify:** `components/ButtonAccount.tsx`, dashboard layout
 
 ---
 
-### 9. Link Preview Generation 🟡 (~2-3 hours)
+### 10. Link Preview Generation 🟡 (~2-3 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #9", PRD Section 3.2.3, IMPLEMENTATION_PLAN Section 1.3.6
 
-- [ ] **9.1 OpenGraph Fetcher Utility** (45 min)
+- [ ] **10.1 OpenGraph Fetcher Utility** (45 min)
   - [ ] Create utility: `libs/opengraph.ts`
   - [ ] Function `fetchOpenGraph(url: string)`:
     - Fetch URL with HEAD request first (check 200 status)
@@ -463,7 +463,7 @@
   - **New files:** `libs/opengraph.ts`
   - **Dependencies:** May need `cheerio` package
 
-- [ ] **9.2 Resource Card Preview** (1 hour)
+- [ ] **10.2 Resource Card Preview** (1 hour)
   - [ ] Update `components/PathCard.tsx` or resource display component
   - [ ] When rendering resource:
     - Check if `og_image_url` exists in database
@@ -478,7 +478,7 @@
   - **Files to modify:** Resource card component
   - **Note:** Use Server Component with `fetch()` for OG tags
 
-- [ ] **9.3 Cache OpenGraph Data** (45 min)
+- [ ] **10.3 Cache OpenGraph Data** (45 min)
   - [ ] Update path generation endpoint (`/api/paths/generate`)
   - [ ] After AI generates path, before storing:
     - For each resource, fetch OpenGraph data
@@ -492,7 +492,7 @@
     - `app/api/paths/generate/route.ts`
     - Database migration (add columns)
 
-- [ ] **9.4 Regenerate Section with Preview** (30 min)
+- [ ] **10.4 Regenerate Section with Preview** (30 min)
   - [ ] When user clicks "Regenerate Section" (post-MVP feature):
     - Re-fetch OpenGraph data for new resources
     - Update cached data in database
@@ -500,10 +500,10 @@
 
 ---
 
-### 10. Path Social Sharing 🟡 (~1-2 hours)
+### 11. Path Social Sharing 🟡 (~1-2 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #10", PRD Section 8.2
 
-- [ ] **10.1 Dynamic OpenGraph Meta Tags** (45 min)
+- [ ] **11.1 Dynamic OpenGraph Meta Tags** (45 min)
   - [ ] Update `app/paths/[id]/page.tsx` `generateMetadata` function
   - [ ] Fetch learning path data
   - [ ] Return dynamic metadata:
@@ -535,15 +535,7 @@
     ```
   - **Files to modify:** `app/paths/[id]/page.tsx`
 
-- [ ] **10.2 Static OG Image** (30 min)
-  - [ ] Create default OpenGraph image: `public/og-image-default.png`
-  - [ ] Dimensions: 1200 × 630 px
-  - [ ] Include ViaProto branding, tagline
-  - [ ] Use as fallback for all paths
-  - **Tool:** Canva, Figma, or AI image generator
-  - **File location:** `public/og-image-default.png`
-
-- [ ] **10.3 Dynamic OG Image Generation (Optional)** (1 hour)
+- [ ] **11.2 Dynamic OG Image Generation (Optional)** (1 hour)
   - [ ] Use `@vercel/og` package to generate dynamic images
   - [ ] Create route: `app/api/og-image/route.tsx`
   - [ ] Generate image with:
@@ -555,7 +547,7 @@
   - **Note:** Can defer to post-MVP if time constrained
   - **Dependencies:** `@vercel/og` package
 
-- [ ] **10.4 Twitter Card Validation** (15 min)
+- [ ] **11.3 Twitter Card Validation** (15 min)
   - [ ] Test OG tags with Twitter Card Validator: https://cards-dev.twitter.com/validator
   - [ ] Test with Facebook Debugger: https://developers.facebook.com/tools/debug/
   - [ ] Verify image displays correctly
@@ -565,10 +557,10 @@
 
 ## KNOWN ISSUES - Medium Priority Fixes
 
-### 11. Rate Limit Billing Cycle Fix 🟡 (~30 min)
+### 12. Rate Limit Billing Cycle Fix 🟡 (~30 min)
 **Reference:** MVP_LAUNCH_STATUS_REPORT "Known Issues #1"
 
-- [ ] **11.1 Update Reset Logic** (30 min)
+- [ ] **12.1 Update Reset Logic** (30 min)
   - [ ] Current: Resets on calendar month (first day of month)
   - [ ] Target: Reset on billing cycle anniversary
   - [ ] Update Stripe webhook handler (`/api/webhook/stripe`)
@@ -579,21 +571,12 @@
   - [ ] Remove any cron job that resets on calendar month
   - **Files to modify:** `app/api/webhook/stripe/route.ts`
 
----
-
-### 12. Free Plan Public Default Fix 🟡 (~20 min)
-**Reference:** MVP_LAUNCH_STATUS_REPORT "Known Issues #2"
-
-- [ ] **12.1 Enforce Public for Free Tier** (20 min)
-  - [ ] Update path generation endpoint (`/api/paths/generate`)
-  - [ ] When creating path for free account:
-    - Explicitly set `is_public = true` in INSERT query
-    - Ignore any user-provided `is_public` parameter
-  - [ ] Remove or disable visibility toggle checkbox for free users
-  - [ ] Keep warning message: "Free tier paths are always public"
-  - **Files to modify:**
-    - `app/api/paths/generate/route.ts`
-    - `components/PathCreateForm.tsx` (remove checkbox for free tier)
+- [ ] **12.2 Generation Polling Function Issues** (20 min)
+  - [ ] Investigate the following:
+    - Polling checks are currently intended to take place every 2 seconds, but they are hitting much more frequently than that
+    - On success or failure, polling continues to take place instead of stopping
+      - Result of this is that users are bombarded with many success/error messages rather than just the one
+  - [ ] On generation failure, give users a retry button on the card (instead of view path) that allows them to hit the generation function for that learning path again
 
 ---
 
