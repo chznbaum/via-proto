@@ -150,6 +150,7 @@ CREATE POLICY "Users can delete their own competency assessments"
    │  │  └─ Backend Development (existing)
    │  ├─ Mobile Development (existing)
    │  ├─ Game Development (add)
+   │  ├─ Software Testing (add)
    │  └─ Systems Programming (add)
    ├─ Data & Analytics (existing)
    │  ├─ Data Science (existing)
@@ -328,9 +329,9 @@ Define relationships between competencies
 
 #### 1.1: Web Development (High Priority)
 **Competencies to Add:**
-- [ ] React ✅ (already added)
-- [ ] Vue.js
-- [ ] Angular
+- [x] React ✅ (already added)
+- [x] Vue.js
+- [x] Angular
 - [ ] Node.js
 - [ ] Next.js
 - [ ] Express.js
@@ -339,25 +340,7 @@ Define relationships between competencies
 - [ ] Ruby on Rails
 - [ ] PHP
 
-**Sample Topic Expansion Pattern:**
-
-For **React** competency:
-- [x] "Building interactive UIs with React" ✅ (already created)
-- [ ] "Full-stack apps with React and Next.js"
-- [ ] "State management in React applications"
-- [ ] "Mobile apps with React Native"
-- [ ] "Migrating from class components to hooks"
-- [ ] "Building reusable React component libraries"
-- [ ] "Server-side rendering with React"
-- [ ] "Real-time features with React and WebSockets"
-
-For **Node.js** competency:
-- [ ] "Building REST APIs with Node.js"
-- [ ] "Real-time applications with Node.js and Socket.io"
-- [ ] "Microservices architecture with Node.js"
-- [ ] "CLI tools and automation with Node.js"
-- [ ] "GraphQL APIs with Node.js"
-- [ ] "Server-side rendering with Node.js"
+**Look to existing expanded topics for examples:**
 
 #### 1.2: Backend Development
 **Competencies to Add:**
@@ -369,19 +352,10 @@ For **Node.js** competency:
 - [ ] GraphQL
 - [ ] REST API design
 
-**Sample Expansion:**
-
-For **SQL** competency:
-- [ ] "Database design for web applications"
-- [ ] "Query optimization for better performance"
-- [ ] "Data analysis with SQL"
-- [ ] "Migrating from spreadsheets to databases"
-- [ ] "Building reports and dashboards with SQL"
-
 #### 1.3: Programming Languages
 **Competencies to Add:**
 - [ ] JavaScript ✅ (already added)
-- [ ] TypeScript
+- [x] TypeScript
 - [ ] Python ✅ (already added)
 - [ ] Java
 - [ ] C++
@@ -391,24 +365,6 @@ For **SQL** competency:
 - [ ] Swift
 - [ ] Kotlin
 - [ ] Ruby
-
-**Sample Expansion:**
-
-For **Python** competency:
-- [x] "Building web applications with Python" ✅ (already created)
-- [ ] "Automating repetitive tasks with Python"
-- [ ] "Data analysis with Python"
-- [ ] "Machine learning with Python"
-- [ ] "Web scraping with Python"
-- [ ] "Building APIs with Python"
-- [ ] "Game development with Python"
-- [ ] "Scientific computing with Python"
-
-For **TypeScript** competency:
-- [ ] "Full-stack development with TypeScript"
-- [ ] "Type-safe React applications"
-- [ ] "Migrating JavaScript projects to TypeScript"
-- [ ] "Building Node.js APIs with TypeScript"
 
 #### 1.4: Cloud & DevOps
 **Competencies to Add:**
@@ -422,27 +378,11 @@ For **TypeScript** competency:
 - [ ] CI/CD
 - [ ] DevOps
 
-**Sample Expansion:**
-
-For **Docker** competency:
-- [ ] "Containerizing applications with Docker"
-- [ ] "Docker for local development environments"
-- [ ] "Deploying containerized apps to production"
-- [ ] "Multi-container applications with Docker Compose"
-
 #### 1.5: Data Structures & Algorithms
 **Competencies to Add:**
 - [ ] Data Structures
 - [ ] Algorithms
 - [ ] System Design
-
-**Sample Expansion:**
-
-For **Data Structures** competency:
-- [ ] "Data structures for coding interviews"
-- [ ] "Choosing the right data structure"
-- [ ] "Implementing common data structures from scratch"
-- [ ] "Data structures for game development"
 
 #### 1.6: AI/ML
 **Competencies to Add:**
@@ -451,38 +391,15 @@ For **Data Structures** competency:
 - [ ] TensorFlow
 - [ ] PyTorch
 
-**Sample Expansion:**
-
-For **Machine Learning** competency:
-- [ ] "Building predictive models"
-- [ ] "ML for business analytics"
-- [ ] "Computer vision applications"
-- [ ] "Natural language processing"
-
 #### 1.7: Blockchain & Web3
 **Competencies to Add:**
 - [ ] Blockchain
 - [ ] Web3
 - [ ] Solidity
 
-**Sample Expansion:**
-
-For **Blockchain** competency:
-- [ ] "Building DApps on Ethereum"
-- [ ] "Smart contract development"
-- [ ] "NFT marketplace development"
-
 #### 1.8: Security
 **Competencies to Add:**
 - [ ] Cybersecurity
-
-**Sample Expansion:**
-
-For **Cybersecurity** competency:
-- [ ] "Web application security fundamentals"
-- [ ] "Penetration testing basics"
-- [ ] "Secure coding practices"
-- [ ] "Security for cloud applications"
 
 ---
 
@@ -503,21 +420,6 @@ For **Cybersecurity** competency:
 - [ ] User Research
 - [ ] Usability Testing
 
-**Sample Expansion:**
-
-For **UI Design** competency:
-- [ ] "Designing mobile app interfaces"
-- [ ] "Web design for e-commerce"
-- [ ] "Dashboard and data visualization design"
-- [ ] "Landing page design that converts"
-- [ ] "Responsive design across devices"
-
-For **Figma** competency:
-- [ ] "Rapid prototyping with Figma"
-- [ ] "Design systems in Figma"
-- [ ] "Collaborative design workflows"
-- [ ] "From Figma to code"
-
 #### 2.2: Graphic Design
 **Competencies to Add:**
 - [ ] Graphic Design
@@ -527,27 +429,13 @@ For **Figma** competency:
 - [ ] Adobe Photoshop
 - [ ] Adobe Illustrator
 
-**Sample Expansion:**
-
-For **Graphic Design** competency:
-- [ ] "Brand identity design"
-- [ ] "Social media graphics"
-- [ ] "Print design for marketing"
-- [ ] "Packaging design"
-
 #### 2.3: Motion & 3D
 **Competencies to Add:**
 - [ ] Motion Graphics
 - [ ] 3D Design
 - [ ] Blender
-- [ ] Animation
-
-**Sample Expansion:**
-
-For **Motion Graphics** competency:
-- [ ] "Animated explainer videos"
-- [ ] "Social media motion graphics"
-- [ ] "UI micro-interactions"
+- [ ] 2D Animation
+- [ ] 3D Animation
 
 ---
 
@@ -570,32 +458,10 @@ For **Motion Graphics** competency:
 - [ ] Power BI
 - [ ] Excel
 
-**Sample Expansion:**
-
-For **Data Analysis** competency:
-- [ ] "Business intelligence dashboards"
-- [ ] "Customer analytics for marketing"
-- [ ] "Financial data analysis"
-- [ ] "A/B testing and experimentation"
-- [ ] "Predictive analytics for business"
-
-For **Excel** competency:
-- [ ] "Advanced Excel for business analysis"
-- [ ] "Financial modeling in Excel"
-- [ ] "Data visualization in Excel"
-- [ ] "Excel automation with VBA"
-
 #### 3.2: Statistics & Math
 **Competencies to Add:**
 - [ ] Statistics
 - [ ] Probability
-
-**Sample Expansion:**
-
-For **Statistics** competency:
-- [ ] "Statistical analysis for research"
-- [ ] "A/B testing statistics"
-- [ ] "Survey data analysis"
 
 #### 3.3: Data Engineering
 **Competencies to Add:**
@@ -606,13 +472,6 @@ For **Statistics** competency:
 - [ ] Apache Spark
 - [ ] Hadoop
 - [ ] Data Warehousing
-
-**Sample Expansion:**
-
-For **Data Engineering** competency:
-- [ ] "Building data pipelines"
-- [ ] "Data warehouse design"
-- [ ] "Real-time data processing"
 
 ---
 
@@ -628,14 +487,6 @@ For **Data Engineering** competency:
 - [ ] Agile
 - [ ] Scrum
 
-**Sample Expansion:**
-
-For **Product Management** competency:
-- [ ] "Product roadmap planning"
-- [ ] "User research for product decisions"
-- [ ] "Product metrics and analytics"
-- [ ] "Prioritization frameworks"
-
 #### 4.2: Marketing & Sales
 **Competencies to Add:**
 - [ ] Marketing
@@ -647,34 +498,12 @@ For **Product Management** competency:
 - [ ] Copywriting
 - [ ] Sales
 
-**Sample Expansion:**
-
-For **SEO** competency:
-- [ ] "SEO for e-commerce sites"
-- [ ] "Local SEO for businesses"
-- [ ] "Technical SEO fundamentals"
-- [ ] "Content optimization for search"
-
-For **Copywriting** competency:
-- [ ] "Sales page copywriting"
-- [ ] "Email marketing copy"
-- [ ] "Landing page copy that converts"
-- [ ] "Social media copywriting"
-
 #### 4.3: Leadership & Communication
 **Competencies to Add:**
 - [ ] Leadership
 - [ ] Public Speaking
 - [ ] Negotiation
 - [ ] Business Writing
-
-**Sample Expansion:**
-
-For **Public Speaking** competency:
-- [ ] "Conference presentations"
-- [ ] "Pitch decks for investors"
-- [ ] "Technical talks"
-- [ ] "Storytelling for impact"
 
 #### 4.4: Business Operations
 **Competencies to Add:**
@@ -707,37 +536,12 @@ For **Public Speaking** competency:
 - [ ] Russian
 - [ ] Hindi
 
-**Sample Expansion:**
-
-For **Spanish** competency:
-- [x] "Conversational Spanish for travelers" ✅ (already created)
-- [ ] "Business Spanish for professionals"
-- [ ] "Spanish for medical professionals"
-- [ ] "Academic Spanish for students"
-- [ ] "Spanish literature and culture"
-- [ ] "Spanish grammar mastery"
-- [ ] "Spanish pronunciation improvement"
-
-For **French** competency:
-- [ ] "Conversational French for travelers"
-- [ ] "Business French"
-- [ ] "French for living abroad"
-- [ ] "French literature"
-
 #### 5.2: Language Skills
 **Competencies to Add:**
 - [ ] Grammar
 - [ ] Vocabulary Building
 - [ ] Pronunciation
 - [ ] English as a Second Language (ESL)
-
-**Sample Expansion:**
-
-For **ESL** competency:
-- [ ] "English for business communication"
-- [ ] "English for academic writing"
-- [ ] "English conversation practice"
-- [ ] "English pronunciation for non-native speakers"
 
 ---
 
@@ -758,18 +562,6 @@ For **ESL** competency:
 - [ ] Combinatorics
 - [ ] Graph Theory
 
-**Sample Expansion:**
-
-For **Calculus** competency:
-- [ ] "Calculus for engineering applications"
-- [ ] "Business calculus and optimization"
-- [ ] "Multivariable calculus"
-
-For **Linear Algebra** competency:
-- [ ] "Linear algebra for machine learning"
-- [ ] "Linear algebra for computer graphics"
-- [ ] "Linear algebra for data science"
-
 ---
 
 ### Batch 7: Science (Priority 4)
@@ -789,13 +581,6 @@ For **Linear Algebra** competency:
 - [ ] Anatomy
 - [ ] Physiology
 
-**Sample Expansion:**
-
-For **Physics** competency:
-- [ ] "Physics for engineering"
-- [ ] "Physics for game development"
-- [ ] "Physics problem-solving"
-
 ---
 
 ### Batch 8: Personal Development (Priority 3)
@@ -814,14 +599,6 @@ For **Physics** competency:
 - [ ] Study Skills
 - [ ] Memory Improvement
 - [ ] Speed Reading
-
-**Sample Expansion:**
-
-For **Time Management** competency:
-- [ ] "Productivity systems for entrepreneurs"
-- [ ] "Time management for students"
-- [ ] "Deep work and focus"
-- [ ] "Managing work-life balance"
 
 ---
 
@@ -844,21 +621,6 @@ For **Time Management** competency:
 - [ ] Film Making
 - [ ] Animation
 
-**Sample Expansion:**
-
-For **Photography** competency:
-- [ ] "Portrait photography"
-- [ ] "Product photography for e-commerce"
-- [ ] "Landscape photography"
-- [ ] "Mobile photography"
-- [ ] "Photo editing and retouching"
-
-For **Guitar** competency:
-- [ ] "Acoustic guitar for beginners"
-- [ ] "Electric guitar techniques"
-- [ ] "Jazz guitar"
-- [ ] "Songwriting with guitar"
-
 ---
 
 ### Batch 10: Health & Fitness (Priority 3)
@@ -873,20 +635,6 @@ For **Guitar** competency:
 - [ ] Running
 - [ ] Nutrition
 - [ ] Meal Planning
-
-**Sample Expansion:**
-
-For **Yoga** competency:
-- [ ] "Yoga for flexibility"
-- [ ] "Yoga for stress relief"
-- [ ] "Power yoga for fitness"
-- [ ] "Prenatal yoga"
-
-For **Nutrition** competency:
-- [ ] "Meal planning for weight loss"
-- [ ] "Sports nutrition"
-- [ ] "Plant-based nutrition"
-- [ ] "Nutrition for muscle gain"
 
 ---
 
@@ -904,20 +652,6 @@ For **Nutrition** competency:
 - [ ] Trading
 - [ ] Budgeting
 - [ ] Tax Planning
-
-**Sample Expansion:**
-
-For **Personal Finance** competency:
-- [ ] "Building an emergency fund"
-- [ ] "Financial independence (FIRE)"
-- [ ] "Managing debt effectively"
-- [ ] "Financial planning for families"
-
-For **Investing** competency:
-- [ ] "Index fund investing"
-- [ ] "Value investing strategies"
-- [ ] "Dividend investing for income"
-- [ ] "Real estate investing"
 
 ---
 

@@ -68,6 +68,10 @@ VALUES ('Information & Technology', 'information-technology', 'Technology, softw
     INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
     VALUES ('Systems Programming', 'systems-programming', 'Low-level programming and operating systems', (SELECT id FROM public.categories WHERE slug = 'programming'), 'CpuChipIcon', 4, true);
 
+    -- Software Testing
+    INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
+    VALUES ('Software Testing', 'software-testing', 'Testing methodologies and quality assurance', (SELECT id FROM public.categories WHERE slug = 'programming'), 'CheckCircleIcon', 5, true);
+
   -- Data & Analytics
   INSERT INTO public.categories (name, slug, description, parent_id, icon, display_order, is_active)
   VALUES ('Data & Analytics', 'data-analytics', 'Data science, analysis, and visualization', (SELECT id FROM public.categories WHERE slug = 'information-technology'), 'ChartBarIcon', 2, true);
@@ -377,6 +381,14 @@ SELECT id, 'ES6' FROM public.competencies WHERE slug = 'javascript';
 INSERT INTO public.competency_synonyms (competency_id, synonym)
 SELECT id, 'ES2015+' FROM public.competencies WHERE slug = 'javascript';
 
+-- TypeScript
+INSERT INTO public.competencies (name, slug, description, category_id, is_active)
+VALUES ('TypeScript', 'typescript', 'Typed superset of JavaScript for safer code', (SELECT id FROM public.categories WHERE slug = 'programming'), true);
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'TS' FROM public.competencies WHERE slug = 'typescript';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'TypeScript Language' FROM public.competencies WHERE slug = 'typescript';
+
 -- React
 INSERT INTO public.competencies (name, slug, description, category_id, is_active)
 VALUES ('React', 'react', 'JavaScript library for building user interfaces', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
@@ -386,6 +398,28 @@ INSERT INTO public.competency_synonyms (competency_id, synonym)
 SELECT id, 'ReactJS' FROM public.competencies WHERE slug = 'react';
 INSERT INTO public.competency_synonyms (competency_id, synonym)
 SELECT id, 'React Framework' FROM public.competencies WHERE slug = 'react';
+
+-- Vue.js
+INSERT INTO public.competencies (name, slug, description, category_id, is_active)
+VALUES ('Vue.js', 'vuejs', 'Progressive JavaScript framework for building user interfaces', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'Vue' FROM public.competencies WHERE slug = 'vuejs';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'VueJS' FROM public.competencies WHERE slug = 'vuejs';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'Vue Framework' FROM public.competencies WHERE slug = 'vuejs';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'Vue 3' FROM public.competencies WHERE slug = 'vuejs';
+
+-- Angular
+INSERT INTO public.competencies (name, slug, description, category_id, is_active)
+VALUES ('Angular', 'angular', 'TypeScript-based framework for building scalable web applications', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'AngularJS' FROM public.competencies WHERE slug = 'angular';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'Angular 2+' FROM public.competencies WHERE slug = 'angular';
+INSERT INTO public.competency_synonyms (competency_id, synonym)
+SELECT id, 'Angular Framework' FROM public.competencies WHERE slug = 'angular';
 
 -- HTML
 INSERT INTO public.competencies (name, slug, description, category_id, is_active)
@@ -446,6 +480,30 @@ SELECT
   'required',
   'JavaScript fundamentals required before learning React';
 
+-- vuejs requires javascript (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  'required',
+  'JavaScript fundamentals required before learning Vue.js';
+
+-- angular requires javascript (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  'required',
+  'JavaScript fundamentals required before learning Angular';
+
+-- typescript requires javascript (required)
+INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  'required',
+  'TypeScript is a superset of JavaScript, so JavaScript fundamentals are essential';
+
 -- flask requires python (required)
 INSERT INTO public.competency_prerequisites (competency_id, prerequisite_id, prerequisite_level, notes)
 SELECT 
@@ -466,6 +524,30 @@ SELECT
 -- ============================================================
 -- COMPETENCY ALTERNATIVES
 -- ============================================================
+
+-- react ⇄ vuejs (similar)
+INSERT INTO public.competency_alternatives (competency_id, alternative_id, relationship_type, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'react'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  'similar',
+  'Both are popular JavaScript frontend frameworks. React has larger ecosystem, Vue.js has gentler learning curve.';
+
+-- react ⇄ angular (similar)
+INSERT INTO public.competency_alternatives (competency_id, alternative_id, relationship_type, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'react'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  'similar',
+  'Both are popular frontend frameworks. React is more flexible, Angular is more opinionated and feature-complete.';
+
+-- vuejs ⇄ angular (similar)
+INSERT INTO public.competency_alternatives (competency_id, alternative_id, relationship_type, notes)
+SELECT 
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  'similar',
+  'Both are complete frontend frameworks. Vue.js is more approachable, Angular is better for enterprise apps.';
 
 -- flask ⇄ django (similar)
 INSERT INTO public.competency_alternatives (competency_id, alternative_id, relationship_type, notes)
@@ -491,6 +573,74 @@ VALUES ('Building web applications with Python', 'building-web-applications-with
 -- Conversational Spanish for travelers
 INSERT INTO public.topics (name, slug, description, category_id, is_active)
 VALUES ('Conversational Spanish for travelers', 'conversational-spanish-for-travelers', 'Learn essential Spanish phrases and conversations for travel', (SELECT id FROM public.categories WHERE slug = 'languages'), true);
+
+-- Building reactive web applications with Vue.js
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Building reactive web applications with Vue.js', 'building-reactive-web-apps-vuejs', 'Create responsive, data-driven web applications using Vue.js''s reactive framework', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Building games for web browsers with Vue.js
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Building games for web browsers with Vue.js', 'building-browser-games-vuejs', 'Create interactive browser-based games using Vue.js components and reactivity', (SELECT id FROM public.categories WHERE slug = 'game-development'), true);
+
+-- Managing frontend state with Vue.js and Pinia
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Managing frontend state with Vue.js and Pinia', 'state-management-vuejs-pinia', 'Master centralized state management in Vue.js applications using Pinia', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Scaffold performant Vue.js applications with Nuxt
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Scaffold performant Vue.js applications with Nuxt', 'scaffold-vuejs-apps-nuxt', 'Build server-rendered and statically generated Vue.js apps with Nuxt framework', (SELECT id FROM public.categories WHERE slug = 'fullstack-development'), true);
+
+-- Testing Vue.js applications with Jest
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Testing Vue.js applications with Jest', 'testing-vuejs-jest', 'Write comprehensive unit and component tests for Vue.js apps using Jest', (SELECT id FROM public.categories WHERE slug = 'software-testing'), true);
+
+-- Enterprise-scale applications with Angular
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Enterprise-scale applications with Angular', 'enterprise-apps-angular', 'Build large-scale, maintainable enterprise applications using Angular''s robust architecture', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Progressive Web Apps with Angular
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Progressive Web Apps with Angular', 'pwa-angular', 'Create offline-capable, installable Progressive Web Apps using Angular', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Reactive forms in Angular applications
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Reactive forms in Angular applications', 'reactive-forms-angular', 'Master complex form handling and validation with Angular reactive forms', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Testing Angular applications with Jasmine
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Testing Angular applications with Jasmine', 'testing-angular-jasmine', 'Write unit and integration tests for Angular apps using Jasmine and Karma', (SELECT id FROM public.categories WHERE slug = 'software-testing'), true);
+
+-- Server-side rendering with Angular Universal
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Server-side rendering with Angular Universal', 'ssr-angular-universal', 'Implement server-side rendering for improved performance and SEO with Angular Universal', (SELECT id FROM public.categories WHERE slug = 'fullstack-development'), true);
+
+-- State management with NgRx in Angular
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('State management with NgRx in Angular', 'state-management-ngrx-angular', 'Manage complex application state using NgRx and Redux patterns in Angular', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
+
+-- Type-safe JavaScript development with TypeScript
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Type-safe JavaScript development with TypeScript', 'type-safe-javascript-typescript', 'Write safer, more maintainable JavaScript code using TypeScript''s static typing', (SELECT id FROM public.categories WHERE slug = 'programming'), true);
+
+-- Building Node.js APIs with TypeScript
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Building Node.js APIs with TypeScript', 'nodejs-apis-typescript', 'Create type-safe backend APIs using TypeScript and Node.js', (SELECT id FROM public.categories WHERE slug = 'backend-development'), true);
+
+-- Full-stack development with TypeScript
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Full-stack development with TypeScript', 'fullstack-development-typescript', 'Build end-to-end type-safe applications with TypeScript across frontend and backend', (SELECT id FROM public.categories WHERE slug = 'fullstack-development'), true);
+
+-- Migrating JavaScript projects to TypeScript
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Migrating JavaScript projects to TypeScript', 'migrating-javascript-typescript', 'Incrementally adopt TypeScript in existing JavaScript codebases', (SELECT id FROM public.categories WHERE slug = 'programming'), true);
+
+-- Advanced TypeScript patterns and generics
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Advanced TypeScript patterns and generics', 'advanced-typescript-patterns', 'Master advanced TypeScript features including generics, utility types, and type inference', (SELECT id FROM public.categories WHERE slug = 'programming'), true);
+
+-- Type-safe React applications with TypeScript
+INSERT INTO public.topics (name, slug, description, category_id, is_active)
+VALUES ('Type-safe React applications with TypeScript', 'type-safe-react-typescript', 'Build robust React applications with TypeScript for improved type safety and developer experience', (SELECT id FROM public.categories WHERE slug = 'frontend-development'), true);
 
 
 -- ============================================================
@@ -542,4 +692,223 @@ SELECT
   (SELECT id FROM public.topics WHERE slug = 'conversational-spanish-for-travelers'),
   (SELECT id FROM public.competencies WHERE slug = 'spanish'),
   true;
+
+-- Competencies for: Building reactive web applications with Vue.js
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-reactive-web-apps-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-reactive-web-apps-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-reactive-web-apps-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'html'),
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-reactive-web-apps-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'css'),
+  false;
+
+-- Competencies for: Building games for web browsers with Vue.js
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-browser-games-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'building-browser-games-vuejs'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Managing frontend state with Vue.js and Pinia
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'state-management-vuejs-pinia'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'state-management-vuejs-pinia'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Scaffold performant Vue.js applications with Nuxt
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'scaffold-vuejs-apps-nuxt'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'scaffold-vuejs-apps-nuxt'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Testing Vue.js applications with Jest
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'testing-vuejs-jest'),
+  (SELECT id FROM public.competencies WHERE slug = 'vuejs'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'testing-vuejs-jest'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Enterprise-scale applications with Angular
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'enterprise-apps-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'enterprise-apps-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Progressive Web Apps with Angular
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'pwa-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'pwa-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Reactive forms in Angular applications
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'reactive-forms-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'reactive-forms-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Testing Angular applications with Jasmine
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'testing-angular-jasmine'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'testing-angular-jasmine'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Server-side rendering with Angular Universal
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'ssr-angular-universal'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'ssr-angular-universal'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: State management with NgRx in Angular
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'state-management-ngrx-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'angular'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'state-management-ngrx-angular'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Type-safe JavaScript development with TypeScript
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'type-safe-javascript-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'type-safe-javascript-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Building Node.js APIs with TypeScript
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'nodejs-apis-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'nodejs-apis-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Full-stack development with TypeScript
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'fullstack-development-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'fullstack-development-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Migrating JavaScript projects to TypeScript
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'migrating-javascript-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'migrating-javascript-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Advanced TypeScript patterns and generics
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'advanced-typescript-patterns'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'advanced-typescript-patterns'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
+
+-- Competencies for: Type-safe React applications with TypeScript
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'type-safe-react-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'typescript'),
+  true;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'type-safe-react-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'react'),
+  false;
+INSERT INTO public.topic_competencies (topic_id, competency_id, is_primary)
+SELECT 
+  (SELECT id FROM public.topics WHERE slug = 'type-safe-react-typescript'),
+  (SELECT id FROM public.competencies WHERE slug = 'javascript'),
+  false;
 
