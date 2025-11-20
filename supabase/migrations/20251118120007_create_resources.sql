@@ -21,7 +21,7 @@ CREATE TABLE public.resources (
 
     -- Constraints
     CONSTRAINT unique_section_order UNIQUE (section_id, "order"),
-    CONSTRAINT valid_type CHECK (type IN ('video', 'article', 'book', 'project', 'audio', 'graphic')),
+    CONSTRAINT valid_type CHECK (type IN ('video', 'article', 'book', 'project', 'audio', 'graphic', 'course')),
     CONSTRAINT valid_link_status CHECK (link_status IN ('active', 'broken', 'unchecked')),
     CONSTRAINT valid_estimated_minutes CHECK (estimated_minutes >= 0 OR estimated_minutes IS NULL),
     CONSTRAINT valid_order CHECK ("order" > 0),

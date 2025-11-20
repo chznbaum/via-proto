@@ -7,7 +7,7 @@ export const ResourceSchema = z.object({
   order: z.number().positive().int(),
   title: z.string().min(1).max(500),
   url: z.string().url().regex(/^https?:\/\//, 'URL must start with http:// or https://'),
-  type: z.enum(['video', 'article', 'book', 'project', 'audio', 'graphic']),
+  type: z.enum(['video', 'article', 'book', 'project', 'audio', 'graphic', 'course']),
   is_free: z.boolean().nullable(),
   description: z.string().min(1).max(2000),
   estimated_minutes: z.number().positive().int().nullable(),

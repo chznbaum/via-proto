@@ -6,7 +6,7 @@ import TopicTypeahead, { Topic } from './TopicTypeahead';
 import { GroupedModelSelector } from '@/components/ui/ModelSelector';
 
 interface PathCreateFormProps {
-  onSuccess?: (pathId: string) => void;
+  onSuccess?: (formData: any) => void;
   onCancel?: () => void;
   subscriptionTier: 'free' | 'pro' | 'team';
 }
@@ -16,8 +16,6 @@ export default function PathCreateForm({
   onCancel,
   subscriptionTier,
 }: PathCreateFormProps) {
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
@@ -30,7 +28,6 @@ export default function PathCreateForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
     setError(null);
 
     try {
@@ -38,7 +35,7 @@ export default function PathCreateForm({
         throw new Error('Please select a topic');
       }
 
-      // Generate the learning path
+      // Prepare the request body
       // For free tier: don't send is_public (backend defaults to true)
       // For pro/team: send user's choice
       const requestBody: any = {
@@ -55,30 +52,16 @@ export default function PathCreateForm({
         requestBody.model_id = formData.model_id;
       }
 
-      const pathResponse = await fetch('/api/paths/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(requestBody),
-      });
-
-      if (!pathResponse.ok) {
-        const errorData = await pathResponse.json();
-        throw new Error(errorData.error || 'Failed to generate path');
-      }
-
-      const { path } = await pathResponse.json();
-
-      // Success! Navigate to the path
+      // Pass the form data to parent component for multi-step generation
       if (onSuccess) {
-        onSuccess(path.id);
+        onSuccess(requestBody);
       } else {
-        router.push(`/paths/${path.id}`);
+        // Fallback: if no onSuccess handler, this shouldn't happen
+        console.error('No onSuccess handler provided to PathCreateForm');
       }
     } catch (err) {
-      console.error('Error creating path:', err);
+      console.error('Error validating form:', err);
       setError(err instanceof Error ? err.message : 'An error occurred');
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -118,7 +101,6 @@ export default function PathCreateForm({
             });
           }}
           placeholder="Search for a topic (e.g., React, Machine Learning, Spanish)"
-          disabled={isLoading}
         />
         <label className="label">
           <span className="label-text-alt text-base-content/60">
@@ -141,7 +123,6 @@ export default function PathCreateForm({
               skill_level: e.target.value as any,
             })
           }
-          disabled={isLoading}
         >
           <option value="beginner">Beginner - I'm new to this</option>
           <option value="intermediate">
@@ -155,7 +136,6 @@ export default function PathCreateForm({
         value={formData.model_id}
         onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
         tier={subscriptionTier}
-        disabled={isLoading}
       />
 
       {subscriptionTier === 'free' ? (
@@ -188,7 +168,6 @@ export default function PathCreateForm({
               onChange={(e) =>
                 setFormData({ ...formData, is_public: e.target.checked })
               }
-              disabled={isLoading}
             />
             <span className="label-text">
               <span className="font-semibold">Make this path public</span>
@@ -204,16 +183,9 @@ export default function PathCreateForm({
         <button
           type="submit"
           className="btn btn-primary flex-1"
-          disabled={isLoading || !formData.topic_id}
+          disabled={!formData.topic_id}
         >
-          {isLoading ? (
-            <>
-              <span className="loading loading-spinner"></span>
-              Generating Path...
-            </>
-          ) : (
-            'Generate Learning Path'
-          )}
+          Generate Learning Path
         </button>
 
         {onCancel && (
@@ -221,7 +193,6 @@ export default function PathCreateForm({
             type="button"
             className="btn btn-ghost"
             onClick={onCancel}
-            disabled={isLoading}
           >
             Cancel
           </button>
