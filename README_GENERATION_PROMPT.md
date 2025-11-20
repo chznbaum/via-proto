@@ -1,185 +1,276 @@
 # README Generation Prompt for ViaProto
 
-Use this prompt in your next session with Claude Code to generate a comprehensive README.md:
+Use this prompt in your next session with Claude Code to generate a comprehensive README.md based on the **actual current state** of the application:
 
 ---
 
 **Prompt:**
 
-Please generate a comprehensive README.md for the ViaProto project. Before generating the README, review the following files to understand the current state of the application:
+Please generate a comprehensive README.md for the ViaProto project by investigating the actual codebase. **Do not rely on planning documents** (PRD, IMPLEMENTATION_PLAN, etc.) as they may be outdated. Instead, discover what the application actually does by examining the code.
 
-1. **Project Overview & Configuration:**
-   - `config.ts` - App configuration, pricing tiers, and settings
-   - `package.json` - Dependencies and tech stack
-   - `.cursorrules` - Project overview and tech conventions
-   - `CLAUDE_INSTRUCTIONS.md` - Technical patterns and architecture
+## Phase 1: Investigation (Do This First)
 
-2. **Key Features & Implementation:**
-   - `PRD.md` - Product requirements and features
-   - `IMPLEMENTATION_PLAN.md` - Technical implementation details
-   - `MVP_COMPLETION_CHECKLIST.md` - Feature completion status
+### 1. Explore Project Structure
+Use the `Glob` tool to understand the project layout:
+- `Glob pattern="app/**/page.tsx"` - Find all pages
+- `Glob pattern="app/api/**/route.ts"` - Find all API endpoints
+- `Glob pattern="components/**/*.tsx"` - Find all components
+- `Glob pattern="libs/**/*.ts"` - Find utility libraries
+- `Glob pattern="supabase/migrations/*.sql"` - Find database migrations
 
-3. **Application Structure:**
-   - `app/page.tsx` - Landing page (to understand core value proposition)
-   - `app/dashboard/page.tsx` - Main dashboard functionality
-   - `app/explore/page.tsx` - Public learning paths feature
-   - `app/api/paths/generate/route.ts` - Path generation API
-   - `libs/` directory - Core utilities and integrations
+### 2. Understand Core Configuration
+Read these files to understand the tech stack and setup:
+- `package.json` - Actual dependencies and versions
+- `config.ts` - App configuration (pricing, features, settings)
+- `next.config.js` or `next.config.mjs` - Next.js configuration
+- `postcss.config.js` - PostCSS/Tailwind setup
+- `tsconfig.json` - TypeScript configuration
+- `.env.example` (if it exists) - Required environment variables
 
-4. **Database Schema:**
-   - Check `supabase/migrations/` for the current database structure
+### 3. Investigate Database Schema
+Read ALL migration files in `supabase/migrations/` to understand:
+- What tables exist (learning_paths, resources, accounts, etc.)
+- What columns each table has
+- What relationships exist
+- What RLS policies are in place
+- Any recent schema changes
 
-After reviewing these files, generate a README.md that includes:
+### 4. Map Out Features by Exploring Pages
+For each page found in step 1, read the file and understand:
+- `app/page.tsx` - What does the landing page show?
+- `app/dashboard/page.tsx` - What can users do on the dashboard?
+- `app/explore/page.tsx` - Does this page exist? What does it do?
+- `app/pricing/page.tsx` - What pricing tiers exist?
+- `app/paths/[id]/page.tsx` - How are paths displayed?
+- Any other pages you discover
 
-## Sections to Include:
+### 5. Understand API Capabilities
+For each API route found in step 1, read the file to understand:
+- What endpoints exist
+- What data they accept/return
+- What external services they integrate with
+- Authentication/authorization requirements
+
+### 6. Investigate Key Libraries and Integrations
+Read files in `libs/` directory to understand:
+- How Supabase is configured (`libs/supabase/`)
+- How Stripe is integrated (`libs/stripe.ts`)
+- How AI models are configured (look for OpenRouter, model configs)
+- Email setup (Resend or similar)
+- Any other integrations
+
+### 7. Check Component Architecture
+Sample key components to understand UI patterns:
+- Header/navigation components
+- Path generation components
+- Pricing components
+- Authentication components
+
+## Phase 2: Ask Clarifying Questions
+
+After completing your investigation, ask the user for clarification on:
+
+1. **Product Positioning:**
+   - What is the one-line elevator pitch?
+   - Who is the target audience?
+   - What problem does this solve?
+
+2. **Deployment & Infrastructure:**
+   - Where is this deployed (or intended to be deployed)?
+   - What's the production domain/URL?
+   - Any specific deployment instructions?
+
+3. **Development Workflow:**
+   - Any special scripts or commands developers should know?
+   - Any gotchas or common issues?
+   - Testing strategy?
+
+4. **License & Contribution:**
+   - What license should be listed?
+   - Is this open to contributions?
+   - Any contributor guidelines?
+
+5. **Missing Context:**
+   - Any features you discovered in code that need explanation?
+   - Any unusual patterns or architectural decisions to document?
+   - Anything that would confuse a new developer?
+
+## Phase 3: Generate README
+
+Based on your investigation and the user's answers, generate a README.md with these sections:
 
 ### 1. Header
-- Project name and logo/banner (if available)
-- Brief one-line description
-- Key badges (if applicable): build status, license, etc.
+- Project name: "ViaProto" (or actual name from config)
+- One-line description (from user)
+- Key badges (build status, license, etc.)
 
-### 2. About ViaProto
-- What it is: AI-powered learning path generator
-- Core value proposition (from landing page)
-- Key differentiators
+### 2. About
+- What the application actually does (based on landing page)
+- Core value proposition
+- Who it's for
 
 ### 3. Features
-- List of main features with brief descriptions
-- Highlight AI models used (Claude Sonnet 4.5 for Pro, DeepSeek for Free)
-- Mention tier-based features (Free, Pro, Team)
+- List features you discovered by reading the code
+- Highlight actual AI models in use (check model config files)
+- Document actual tier differences (check Stripe config and rate limiting logic)
+- Note which features are implemented vs mentioned but not built
 
 ### 4. Tech Stack
-- Frontend: Next.js 15.4+, React 19, TypeScript 5.9+
-- Styling: Tailwind CSS 4.1+, DaisyUI 5.0+
-- Backend: Supabase (database + auth), Stripe (payments)
-- AI: OpenRouter (LLM routing)
-- Email: Resend
-- List other key dependencies from package.json
+List the **actual** versions from package.json:
+- Framework: Next.js X.X
+- React version
+- TypeScript version
+- Styling libraries
+- Database and auth
+- Payment processor
+- AI/LLM provider
+- Email service
+- Any other significant dependencies
 
 ### 5. Getting Started
 
 #### Prerequisites
-- Node.js version requirement
-- npm/yarn
-- Supabase account
-- Required API keys
+Based on package.json engines field and actual setup:
+- Node.js version
+- Package manager
+- Required accounts (Supabase, Stripe, etc.)
 
 #### Installation
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/via-proto.git
+# Accurate clone command
+git clone [actual-repo-url]
 cd via-proto
 
-# Install dependencies
+# Actual install command
 npm install
 
-# Set up environment variables
+# Environment setup
 cp .env.example .env.local
-# Then edit .env.local with your keys
+# Edit .env.local with your keys
 ```
 
 #### Environment Variables
-List all required environment variables:
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `SUPABASE_SERVICE_ROLE_KEY`
-- `STRIPE_SECRET_KEY`
-- `STRIPE_WEBHOOK_SECRET`
-- `OPENROUTER_API_KEY`
-- `RESEND_API_KEY`
-- etc.
+List **all** environment variables you found referenced in the code:
+- NEXT_PUBLIC_* variables
+- Private API keys
+- Service URLs
+- Webhook secrets
+- Brief description of what each is used for
 
 #### Database Setup
+Document the **actual** steps to set up the database:
 ```bash
-# Run Supabase migrations
-# Instructions for setting up the database schema
+# Actual commands based on project setup
+# May involve Supabase CLI, SQL scripts, etc.
 ```
 
 #### Running Locally
 ```bash
+# Actual dev command from package.json
 npm run dev
-# Access at http://localhost:3001
+
+# Actual port from config (default is likely 3000 or 3001)
 ```
 
 ### 6. Project Structure
-Brief overview of key directories:
+Show the **actual** directory structure (use your Glob results):
 ```
 via-proto/
-├── app/              # Next.js 15 App Router pages
-├── components/       # React components
-├── libs/             # Utilities and integrations
-├── supabase/         # Database migrations and types
-├── public/           # Static assets
-└── config.ts         # App configuration
+├── app/                    # [Describe what you found]
+│   ├── api/               # [List key APIs]
+│   ├── dashboard/         # [Describe pages]
+│   └── ...
+├── components/            # [Describe component types]
+├── libs/                  # [List utilities]
+├── supabase/
+│   └── migrations/        # Database schema
+└── [other directories you found]
 ```
 
-### 7. Key Features Explained
+### 7. Architecture & Key Concepts
 
 #### Learning Path Generation
-- How the AI path generation works
-- Which models are used for which tiers
-- Path structure (sections, resources, skill levels)
+Explain based on what you found in the code:
+- How path generation works (API endpoints, AI calls)
+- What models are actually used
+- Data flow from request to stored path
 
-#### Subscription Tiers
-- Free: 1 path/month, DeepSeek, public paths only
-- Pro: 5 paths/month, Claude Sonnet 4.5, private paths, progress tracking
-- Team: 10+ paths/month (scales with seats), team collaboration
+#### Authentication
+Based on Supabase implementation:
+- How users sign up/log in
+- Session management
+- Protected routes
 
-#### Public Path Browsing
-- Explore page for discovering public paths
-- SEO-friendly for lead generation
+#### Database Architecture
+Based on migrations you read:
+- Key tables and relationships
+- RLS policies
+- Data ownership model
+
+#### Payment Integration
+Based on Stripe code:
+- How subscriptions work
+- Webhook handling
+- Seat-based pricing (if implemented)
 
 ### 8. Development
 
-#### Next.js 15 Patterns
-- Async APIs (headers, cookies, params)
-- Server Components vs Client Components
-- Key patterns to follow (reference CLAUDE_INSTRUCTIONS.md)
+#### Important Patterns
+Document critical patterns you noticed:
+- Next.js 15 async APIs (if used)
+- Server vs Client Components
+- Error handling patterns
+- API route patterns
 
-#### Supabase Integration
-- Row Level Security (RLS) policies
-- Authentication flows
-- Database patterns
-
-#### Stripe Integration
-- Webhook handling
-- Subscription management
-- Seat-based pricing for Team tier
+#### Common Tasks
+Based on actual code:
+- How to add a new page
+- How to add an API endpoint
+- How to modify the database schema
+- How to test payments locally
 
 ### 9. Deployment
-- Recommended platform: Vercel or self-hosted via Coolify
-- Environment setup for production
-- CDN configuration (if using Bunny CDN)
 
-### 10. Contributing
-- Guidelines for contributing (if accepting contributions)
-- Code style and conventions
-- How to submit issues or PRs
+Document based on config files and deployment setup:
+- Recommended platform
+- Build command
+- Environment variables for production
+- Any CDN or asset management
 
-### 11. License
-- Specify the license (if applicable)
+### 10. Scripts
 
-### 12. Contact & Support
-- Support email: chazona@viapro.to
-- Links to relevant resources
+List **actual** scripts from package.json with descriptions:
+```bash
+npm run dev         # [What it does]
+npm run build       # [What it does]
+npm run lint        # [What it does]
+# etc.
+```
+
+### 11. Contributing (if applicable)
+- Based on user's answer about contributions
+- Reference any coding standards you observed
+
+### 12. License
+- Based on user's answer
 
 ### 13. Roadmap (Optional)
-- Mention upcoming features from the MVP checklist:
-  - Progress tracking system
-  - Path editing & management
-  - Advanced analytics
-  - Teams collaboration features
+- Only include if user provides specific features
+- Or mention "See GitHub issues for roadmap"
 
-### 14. Acknowledgments
-- Credit to frameworks and tools used
-- Any other acknowledgments
+### 14. Support & Contact
+- Support email from config
+- Any other contact methods
 
 ---
 
-**Important Notes:**
-- Keep the README concise but comprehensive
-- Use clear, professional language
-- Include code examples where helpful
-- Make sure all file paths and commands are accurate
-- Focus on what developers need to get started quickly
-- Highlight the modern tech stack (Next.js 15, React 19, Tailwind v4)
+## Important Guidelines:
+
+1. **Be Accurate:** Only document what actually exists in the code
+2. **Be Specific:** Use exact versions, exact commands, exact file paths
+3. **Be Honest:** If something is partially implemented or broken, note it
+4. **Be Helpful:** Include gotchas, tips, and warnings you discover
+5. **Be Current:** Document the state as of today, not what was planned
+6. **Ask Questions:** If something in the code is unclear, ask the user to explain it
+
+The goal is a README that a developer could use to understand and run this project **without reading planning docs**, based solely on the code that exists.
