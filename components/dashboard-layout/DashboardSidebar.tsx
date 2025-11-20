@@ -7,9 +7,11 @@ import SimpleBarCore from "simplebar-core";
 // @ts-ignore
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
+import { User } from "@supabase/supabase-js";
 
 import { Logo } from "@/components/Logo";
 import { useConfig } from "@/contexts/config";
+import { createClient } from "@/libs/supabase/client";
 
 import { ISidebarMenuItem, SidebarMenuItem } from "./SidebarMenuItem";
 import { getActivatedItemParentKeys } from "./helpers";
@@ -19,12 +21,58 @@ export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] 
   const { calculatedSidebarTheme } = useConfig();
   const scrollRef = useRef<SimpleBarCore | null>(null);
   const hasMounted = useRef(false);
+  const supabase = createClient();
 
   const [activatedParents, setActivatedParents] = useState<Set<string>>(new Set());
+  const [user, setUser] = useState<User | null>(null);
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+  const [displayName, setDisplayName] = useState<string>("Account");
+  const [planTier, setPlanTier] = useState<string>("free");
 
   useEffect(() => {
     setActivatedParents(getActivatedItemParentKeys(menuItems, pathname));
   }, [menuItems, pathname]);
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      setUser(user);
+
+      if (user) {
+        // Fetch profile data including avatar and default account
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("avatar_url, name, default_account_id")
+          .eq("id", user.id)
+          .single();
+
+        if (profile) {
+          setAvatarUrl(profile.avatar_url);
+          setDisplayName(profile.name || user.email?.split("@")[0] || "Account");
+
+          // Fetch account subscription tier
+          if (profile.default_account_id) {
+            const { data: account } = await supabase
+              .from("accounts")
+              .select("subscription_tier")
+              .eq("id", profile.default_account_id)
+              .single();
+
+            if (account) {
+              setPlanTier(account.subscription_tier);
+            }
+          }
+        } else {
+          setDisplayName(user.email?.split("@")[0] || "Account");
+        }
+      }
+    };
+
+    getUser();
+  }, [supabase]);
 
   const onToggleActivated = (key: string) => {
     if (activatedParents.has(key)) {
@@ -113,15 +161,27 @@ export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] 
             htmlFor="dashboard-account-drawer"
             className="bg-base-200 hover:bg-base-300 rounded-box mx-2 mt-0 flex cursor-pointer items-center gap-2.5 px-3 py-2 transition-all">
             <div className="avatar">
-              <div className="bg-base-200 mask mask-squircle w-8">
-                <div className="w-full h-full bg-primary flex items-center justify-center text-primary-content text-sm font-semibold">
-                  U
-                </div>
+              <div className="bg-base-200 mask mask-circle w-8">
+                {avatarUrl ? (
+                  <img
+                    src={avatarUrl}
+                    alt="Avatar"
+                    referrerPolicy="no-referrer"
+                    width={32}
+                    height={32}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-primary flex items-center justify-center text-primary-content text-sm font-semibold">
+                    {user?.email?.charAt(0).toUpperCase() || "U"}
+                  </div>
+                )}
               </div>
             </div>
             <div className="grow -space-y-0.5">
-              <p className="text-sm font-medium">Account</p>
-              <p className="text-base-content/60 text-xs">Settings & Profile</p>
+              <p className="text-sm font-medium">{displayName}</p>
+              <p className="text-base-content/60 text-xs">
+                {planTier.charAt(0).toUpperCase() + planTier.slice(1)} Plan
+              </p>
             </div>
             <span className="iconify lucide--chevrons-up-down text-base-content/60 size-4" />
           </label>

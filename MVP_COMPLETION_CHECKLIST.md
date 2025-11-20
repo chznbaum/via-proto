@@ -121,51 +121,19 @@
   - **New files:** `app/explore/page.tsx`
   - **Reuse component:** Can adapt `PathCard` component from dashboard
 
-- [ ] **2.2 Add Filtering & Search** (45 min)
-  - [ ] **Category filter** dropdown:
-    - Extract unique categories from topics of public paths
-    - Filter: "All Categories", "Programming", "Design", "Business", etc.
-    - Update query to filter by topic category
-  - [ ] **Skill level filter** tabs or dropdown:
-    - All, Beginner, Intermediate, Advanced
-  - [ ] **Topic search** (optional, can reuse typeahead):
-    - Search bar that filters paths by topic name
-    - Real-time filtering as user types
-  - [ ] **Sort options** dropdown:
-    - Recently Created (default)
-    - Most Popular (by view count)
-    - Shortest/Longest (by estimated hours)
-  - [ ] Empty state: "No public paths found matching your filters"
-  - **Files to modify:** `app/explore/page.tsx`
-  - **Components:** Category dropdown, skill level tabs, sort dropdown
-
-- [x] **2.3 Update Navigation** (15 min)
+- [x] **2.2 Update Navigation** (15 min)
   - [x] Add "Explore" or "Browse Paths" link to main header navigation
   - [x] Position: Between "Home" and "Pricing" (or similar)
   - [x] Accessible to both authenticated and unauthenticated users
   - [x] Highlight as key discovery feature
   - **Files to modify:** `components/Header.tsx` or `components/LayoutClient.tsx`
 
-- [ ] **2.4 SEO Optimization** (15 min)
-  - [ ] Add metadata to `/explore` page:
-    ```typescript
-    export const metadata: Metadata = {
-      title: 'Explore Public Learning Paths - ViaProto',
-      description: 'Browse AI-powered learning paths created by the community. Find curated resources for any skill.',
-      openGraph: {
-        title: 'Explore Public Learning Paths - ViaProto',
-        description: 'Browse AI-powered learning paths created by the community.',
-      },
-    };
-    ```
-  - [ ] Ensure page is server-rendered (not client-side only) for SEO
-  - [ ] Consider static generation for frequently accessed filters
-  - **Files to modify:** `app/explore/page.tsx`
-
-- [ ] **2.5 Update Dashboard Tab** (10 min)
-  - [ ] Dashboard "Browse Public" tab can redirect to `/explore`
-  - [ ] Or show same content as `/explore` (authenticated view)
-  - [ ] Consider removing tab and just linking to `/explore` from dashboard
+- [ ] **2.3 Update Dashboard** (10 min)
+  - [ ] Remove tabs (My Paths, Browse Public)
+  - [ ] Remove My Learning Paths h2 element
+  - [ ] Ensure headins on dashboard layout only use --font-sans instead of --font-serif
+  - [ ] Replicate the landing page logo on the dashboard
+  - [ ] We have two ways of opening the account drawer from the dashboard: in the layout sidebar and in the desktop topnav—remove the one from the topnav and ensure the one in the layout sidebar uses the user's avatar
   - **Files to modify:** `app/dashboard/page.tsx` or dashboard component
 
 ---

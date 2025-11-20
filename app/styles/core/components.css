@@ -5,6 +5,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
 }
 
+/* Override: Use sans-serif for dashboard headings */
+#layout-sidebar h1,
+#layout-sidebar h2,
+#layout-sidebar h3,
+#layout-sidebar h4,
+#layout-sidebar h5,
+#layout-sidebar h6,
+#layout-content h1,
+#layout-content h2,
+#layout-content h3,
+#layout-content h4,
+#layout-content h5,
+#layout-content h6,
+#layout-topbar h1,
+#layout-topbar h2,
+#layout-topbar h3,
+#layout-topbar h4,
+#layout-topbar h5,
+#layout-topbar h6 {
+  font-family: var(--font-sans);
+}
+
 /* Contrast boxes - invert theme for visual contrast */
 /* When page is in dark mode, override the box to use light theme colors */
 html[data-theme="dark"] .contrast-box {

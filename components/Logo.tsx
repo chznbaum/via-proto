@@ -6,8 +6,8 @@ type ILogo = {
 
 export const Logo = ({ className }: ILogo) => {
   return (
-    <div className={`font-bold text-xl ${className ?? ""}`}>
+    <span className={`font-serif text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent ${className ?? ""}`}>
       {config.appName}
-    </div>
+    </span>
   );
 };

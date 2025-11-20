@@ -5,9 +5,8 @@ import PathCard from './PathCard';
 import PathCreateForm from './PathCreateForm';
 import { UsageStatsBar } from './UsageStatsBar';
 import { GeneratingPathCard } from './GeneratingPathCard';
+import { WelcomeHeader } from '@/components/dashboard/WelcomeHeader';
 import { toast } from 'react-hot-toast';
-
-type ViewMode = 'my' | 'team' | 'public';
 
 interface DashboardPathsProps {
   userId: string;
@@ -33,7 +32,6 @@ export default function DashboardPaths({
   accountType,
   seatCount,
 }: DashboardPathsProps) {
-  const [viewMode, setViewMode] = useState<ViewMode>('my');
   const [paths, setPaths] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateForm, setShowCreateForm] = useState(false);
@@ -56,7 +54,7 @@ export default function DashboardPaths({
 
   useEffect(() => {
     fetchPaths();
-  }, [viewMode]);
+  }, []);
 
   useEffect(() => {
     // Cleanup polling intervals on unmount
@@ -68,7 +66,7 @@ export default function DashboardPaths({
   const fetchPaths = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`/api/paths?view=${viewMode}&limit=50`);
+      const response = await fetch(`/api/paths?view=my&limit=50`);
       if (response.ok) {
         const data = await response.json();
         setPaths(data.paths);
@@ -198,38 +196,18 @@ export default function DashboardPaths({
 
   return (
     <div className="space-y-6">
+      {/* Welcome Header */}
+      <WelcomeHeader
+        onCreatePath={() => setShowCreateForm(true)}
+        canGenerate={canGenerate}
+      />
+
       {/* Usage Stats */}
       <UsageStatsBar
         pathsUsed={pathsGeneratedThisCycle}
         pathsLimit={limit}
         subscriptionTier={subscriptionTier}
       />
-
-      {/* Header with CTA */}
-      <div className="flex justify-between items-center">
-        <div>
-          <h1 className="text-3xl md:text-4xl font-extrabold">
-            Learning Paths
-          </h1>
-          <p className="text-base-content/60 mt-2">
-            {canGenerate ? (
-              <>
-                Create personalized learning paths powered by AI
-              </>
-            ) : (
-              <>Monthly limit reached. <a href="/pricing" className="link">Upgrade</a> for more paths.</>
-            )}
-          </p>
-        </div>
-        <button
-          className="btn btn-primary gap-2"
-          onClick={() => setShowCreateForm(true)}
-          disabled={!canGenerate}
-        >
-          <span className="iconify lucide--plus size-5"></span>
-          Create Path
-        </button>
-      </div>
 
       {/* Create Form Modal */}
       {showCreateForm && (
@@ -251,49 +229,19 @@ export default function DashboardPaths({
         </div>
       )}
 
-      {/* Tabs */}
-      <div className="tabs tabs-boxed">
-        <button
-          className={`tab ${viewMode === 'my' ? 'tab-active' : ''}`}
-          onClick={() => setViewMode('my')}
-        >
-          <span className="iconify lucide--user size-4 mr-2"></span>
-          My Paths
-        </button>
-        {accountType === 'team' && (
-          <button
-            className={`tab ${viewMode === 'team' ? 'tab-active' : ''}`}
-            onClick={() => setViewMode('team')}
-          >
-            <span className="iconify lucide--users size-4 mr-2"></span>
-            Team Paths
-          </button>
-        )}
-        <button
-          className={`tab ${viewMode === 'public' ? 'tab-active' : ''}`}
-          onClick={() => setViewMode('public')}
-        >
-          <span className="iconify lucide--globe size-4 mr-2"></span>
-          Browse Public
-        </button>
-      </div>
-
       {/* Generating Paths */}
       {generatingPaths.length > 0 && (
-        <div>
-          <h2 className="text-xl font-bold mb-4">Generating...</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {generatingPaths.map((genPath) => (
-              <GeneratingPathCard
-                key={genPath.pathId}
-                pathId={genPath.pathId}
-                topicName={genPath.topicName}
-                status={genPath.status}
-                error={genPath.error}
-                onCancel={handleCancelGeneration}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {generatingPaths.map((genPath) => (
+            <GeneratingPathCard
+              key={genPath.pathId}
+              pathId={genPath.pathId}
+              topicName={genPath.topicName}
+              status={genPath.status}
+              error={genPath.error}
+              onCancel={handleCancelGeneration}
+            />
+          ))}
         </div>
       )}
 
@@ -309,13 +257,9 @@ export default function DashboardPaths({
               <span className="iconify lucide--map size-16 text-base-content/20"></span>
               <h3 className="card-title">No paths yet</h3>
               <p className="text-base-content/60">
-                {viewMode === 'my'
-                  ? 'Create your first learning path to get started!'
-                  : viewMode === 'team'
-                  ? 'No team paths found.'
-                  : 'No public paths available.'}
+                Create your first learning path to get started!
               </p>
-              {viewMode === 'my' && canGenerate && (
+              {canGenerate && (
                 <button
                   className="btn btn-primary mt-4"
                   onClick={() => setShowCreateForm(true)}
@@ -329,21 +273,16 @@ export default function DashboardPaths({
       ) : (
         <>
           {paths.length > 0 && (
-            <>
-              <h2 className="text-xl font-bold">
-                {viewMode === 'my' ? 'My Learning Paths' : viewMode === 'team' ? 'Team Learning Paths' : 'Public Learning Paths'}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {paths.map((path) => (
-                  <PathCard
-                    key={path.id}
-                    path={path}
-                    isOwner={viewMode === 'my' || path.creator_id === userId}
-                    onDelete={handlePathDeleted}
-                  />
-                ))}
-              </div>
-            </>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {paths.map((path) => (
+                <PathCard
+                  key={path.id}
+                  path={path}
+                  isOwner={path.creator_id === userId}
+                  onDelete={handlePathDeleted}
+                />
+              ))}
+            </div>
           )}
         </>
       )}
