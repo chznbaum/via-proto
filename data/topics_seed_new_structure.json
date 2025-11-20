@@ -1,0 +1,252 @@
+{
+  "categories": [
+    {
+      "name": "Information & Technology",
+      "slug": "information-technology",
+      "description": "Technology, software, and digital skills",
+      "icon": "ComputerDesktopIcon",
+      "display_order": 1,
+      "parent_slug": null,
+      "subcategories": [
+        {
+          "name": "Programming",
+          "slug": "programming",
+          "description": "Software development and programming languages",
+          "icon": "CodeBracketIcon",
+          "display_order": 1,
+          "subcategories": [
+            {
+              "name": "Web Development",
+              "slug": "web-development",
+              "description": "Building websites and web applications",
+              "icon": "GlobeAltIcon",
+              "display_order": 1,
+              "subcategories": [
+                {
+                  "name": "Frontend Development",
+                  "slug": "frontend-development",
+                  "description": "Client-side web development",
+                  "icon": "DevicePhoneMobileIcon",
+                  "display_order": 1
+                },
+                {
+                  "name": "Backend Development",
+                  "slug": "backend-development",
+                  "description": "Server-side web development",
+                  "icon": "ServerIcon",
+                  "display_order": 2
+                }
+              ]
+            },
+            {
+              "name": "Mobile Development",
+              "slug": "mobile-development",
+              "description": "Building mobile applications",
+              "icon": "DevicePhoneMobileIcon",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "name": "Data & Analytics",
+          "slug": "data-analytics",
+          "description": "Data science, analysis, and visualization",
+          "icon": "ChartBarIcon",
+          "display_order": 2,
+          "subcategories": [
+            {
+              "name": "Data Science",
+              "slug": "data-science",
+              "description": "Statistical analysis and machine learning",
+              "icon": "BeakerIcon",
+              "display_order": 1
+            },
+            {
+              "name": "Data Engineering",
+              "slug": "data-engineering",
+              "description": "Building data pipelines and infrastructure",
+              "icon": "CircleStackIcon",
+              "display_order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Design & Creativity",
+      "slug": "design-creativity",
+      "description": "Visual design, UX, and creative arts",
+      "icon": "PaintBrushIcon",
+      "display_order": 2,
+      "parent_slug": null
+    },
+    {
+      "name": "Business & Management",
+      "slug": "business-management",
+      "description": "Business skills, management, and entrepreneurship",
+      "icon": "BriefcaseIcon",
+      "display_order": 3,
+      "parent_slug": null
+    },
+    {
+      "name": "Languages",
+      "slug": "languages",
+      "description": "Natural language learning",
+      "icon": "LanguageIcon",
+      "display_order": 4,
+      "parent_slug": null
+    }
+  ],
+  "competencies": [
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "description": "Programming language of the web",
+      "category_slug": "programming",
+      "synonyms": ["JS", "ECMAScript", "ES6", "ES2015+"]
+    },
+    {
+      "name": "React",
+      "slug": "react",
+      "description": "JavaScript library for building user interfaces",
+      "category_slug": "frontend-development",
+      "synonyms": ["React.js", "ReactJS", "React Framework"]
+    },
+    {
+      "name": "HTML",
+      "slug": "html",
+      "description": "Markup language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": ["HTML5", "HyperText Markup Language"]
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "description": "Style sheet language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": ["CSS3", "Cascading Style Sheets"]
+    },
+    {
+      "name": "Python",
+      "slug": "python",
+      "description": "High-level programming language",
+      "category_slug": "programming",
+      "synonyms": ["Python Programming", "Python3"]
+    },
+    {
+      "name": "Flask",
+      "slug": "flask",
+      "description": "Lightweight Python web framework",
+      "category_slug": "backend-development",
+      "synonyms": ["Flask Framework"]
+    },
+    {
+      "name": "Django",
+      "slug": "django",
+      "description": "High-level Python web framework",
+      "category_slug": "backend-development",
+      "synonyms": ["Django Framework"]
+    },
+    {
+      "name": "Spanish",
+      "slug": "spanish",
+      "description": "Spanish language",
+      "category_slug": "languages",
+      "synonyms": ["Español", "Spanish Language", "Castellano"]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Building interactive UIs with React",
+      "slug": "building-interactive-uis-with-react",
+      "description": "Learn to create dynamic, interactive user interfaces using React's component-based architecture",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "react",
+          "is_primary": true,
+          "proficiency_level": "intermediate"
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false,
+          "proficiency_level": "intermediate"
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false,
+          "proficiency_level": "beginner"
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false,
+          "proficiency_level": "beginner"
+        }
+      ]
+    },
+    {
+      "name": "Building web applications with Python",
+      "slug": "building-web-applications-with-python",
+      "description": "Learn to build full-featured web applications using Python and modern frameworks",
+      "category_slug": "backend-development",
+      "competencies": [
+        {
+          "competency_slug": "python",
+          "is_primary": true,
+          "proficiency_level": "intermediate"
+        },
+        {
+          "competency_slug": "flask",
+          "is_primary": false,
+          "proficiency_level": "intermediate"
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false,
+          "proficiency_level": "beginner"
+        }
+      ]
+    },
+    {
+      "name": "Conversational Spanish for travelers",
+      "slug": "conversational-spanish-for-travelers",
+      "description": "Learn essential Spanish phrases and conversations for travel",
+      "category_slug": "languages",
+      "competencies": [
+        {
+          "competency_slug": "spanish",
+          "is_primary": true,
+          "proficiency_level": "beginner"
+        }
+      ]
+    }
+  ],
+  "competency_prerequisites": [
+    {
+      "competency_slug": "react",
+      "prerequisite_slug": "javascript",
+      "is_required": true,
+      "notes": "JavaScript fundamentals required before learning React"
+    },
+    {
+      "competency_slug": "flask",
+      "prerequisite_slug": "python",
+      "is_required": true,
+      "notes": "Python basics required for Flask development"
+    },
+    {
+      "competency_slug": "django",
+      "prerequisite_slug": "python",
+      "is_required": true,
+      "notes": "Python basics required for Django development"
+    }
+  ],
+  "competency_alternatives": [
+    {
+      "competency_slug": "flask",
+      "alternative_slug": "django",
+      "relationship_type": "similar",
+      "notes": "Both are Python web frameworks. Flask is lightweight, Django is full-featured."
+    }
+  ]
+}
