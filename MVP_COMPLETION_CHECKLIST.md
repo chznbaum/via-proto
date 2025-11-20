@@ -223,7 +223,7 @@
     - `components/Header.tsx` or `components/LayoutClient.tsx`
     - `components/Footer.tsx`
     - Email templates (if any)
-  - [ ] The README.md will need to be entirely replaced in preparation for launch
+  - [x] The README.md will need to be entirely replaced in preparation for launch
   - **Command:** Use Grep tool to find all instances
 
 - [x] **5.3 Update Metadata** (5 min)
@@ -312,21 +312,30 @@
   - [ ] Use AI to generate more specific, goal-oriented topics:
     - Instead of "Python" → add:
       - "Automating tasks with Python"
-      - "Building web applications with Python (Flask/Django)"
-      - "Data analysis with Python (Pandas/NumPy)"
-      - "Machine learning with Python (scikit-learn)"
-      - "Building APIs with Python (FastAPI)"
+      - "Building web applications with Python" (Competencies: Python, Flask, Django, ...)
+      - "Data analysis with Python" (Competencies: Python, Pandas, NumPy, ...)
+      - "Machine learning with Python" (Competencies: Python, scikit-learn, ...)
+      - "Building APIs with Python" (Competencies: Python, FastAPI, ...)
     - Instead of "React" → add:
       - "Building interactive UIs with React"
       - "Full-stack apps with React and Next.js"
       - "Mobile apps with React Native"
-      - "State management in React (Redux/Zustand)"
+      - "State management in React"
   - [ ] Ensure each topic has:
     - Clear learning goal in name
     - Relevant synonyms for search
     - Correct category assignment
-  - [ ] Update topics_seed.json with expanded list (target: 200-300 topics)
-  - [ ] Re-seed database: `npm run seed:topics` (or manual SQL import)
+      - Note that currently we are not setting categories despite needing them to be able to browse
+        - Categories should be hierarchical and likely need to be their own table, with a join table for many-to-many association
+    - We should similarly set a new table for the underlying skill/competency (ie: React, Spanish—currently this is the title for most topics) and relate with a join table
+      - Purpose of this:
+        - Be able to show related learning paths for the same competency (that the user has access to)
+        - Be able to indicate some skills/competencies as prerequisites for others (ie: You need JavaScript before React)
+          - We could then prompt the user to check off if they have the prerequisite skills and include that context in the generation prompt
+        - Be able to indicate some skills/competencies are interchangeable (ie: Different types of relational database)
+        - Be able to inform the LLM via the prompt what competencies we expect the user to develop in the learning path to improve the quality of path generation
+  - [ ] Update topics_seed.json with expanded list (target: 1000 topics, expanded in batches/multiple Claude Code sessions)
+  - [ ] Re-seed database: `npm scripts/generte-seeds.js && supabase db reset`
   - **Files to modify:** `data/topics_seed.json`, seed script
   - **Tool:** Use Claude to generate topic variations
 
