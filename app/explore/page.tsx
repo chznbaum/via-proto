@@ -30,6 +30,11 @@ export default async function ExplorePage() {
       profiles (
         name,
         avatar_url
+      ),
+      unsplash_images (
+        url,
+        photographer,
+        photographer_url
       )
     `)
     .eq("is_public", true)
@@ -97,80 +102,106 @@ export default async function ExplorePage() {
 
           {/* Featured Path */}
           {featuredPath && (() => {
-            const fallbackStyle = featuredPath.featured_image_url
+            const unsplashImage = featuredPath.unsplash_images;
+            const fallbackStyle = unsplashImage
               ? undefined
               : { background: getFallbackGradient(featuredPath.topics?.name || featuredPath.title) };
 
             return (
-              <Link
-                href={`/paths/${featuredPath.id}`}
-                className="relative overflow-hidden rounded-lg p-8 min-h-[400px] flex"
-                style={fallbackStyle}
-              >
-                {/* Featured Image Background */}
-                {featuredPath.featured_image_url && (
-                  <>
-                    <img
-                      src={featuredPath.featured_image_url}
-                      alt={featuredPath.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    {/* Gradient overlay for better text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
-                  </>
-                )}
+              <div className="relative">
+                <Link
+                  href={`/paths/${featuredPath.id}`}
+                  className="relative overflow-hidden rounded-lg p-8 min-h-[400px] flex"
+                  style={fallbackStyle}
+                >
+                  {/* Featured Image Background */}
+                  {unsplashImage && (
+                    <>
+                      <img
+                        src={unsplashImage.url}
+                        alt={featuredPath.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      {/* Gradient overlay for better text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    </>
+                  )}
 
-                <div className="badge badge-primary absolute end-4 top-4 gap-1 shadow z-10">
-                  <span className="iconify lucide--star size-3.5"></span>
-                  Featured
-                </div>
-                <div className="flex h-full flex-col justify-between relative z-10 flex-1">
-                  <div>
-                    <p className="font-mono text-xs font-medium uppercase tracking-wide text-white/80">
-                      {featuredPath.topics?.category || "Featured"}
-                    </p>
-                    <h2 className="font-serif mt-2 text-2xl font-semibold sm:text-3xl text-white">
-                      {featuredPath.title}
-                    </h2>
-                    <p className="mt-2 text-sm sm:text-base text-white/90">
-                      {featuredPath.description || `Master ${featuredPath.topics?.name} with this curated learning path`}
-                    </p>
+                  <div className="badge badge-primary absolute end-4 top-4 gap-1 shadow z-10">
+                    <span className="iconify lucide--star size-3.5"></span>
+                    Featured
                   </div>
-                  <div className="mt-6 flex items-end gap-3">
-                    <div className="flex items-center gap-2">
-                      {featuredPath.profiles?.avatar_url ? (
-                        <div className="avatar">
-                          <div className="mask mask-circle w-8">
-                            <img src={featuredPath.profiles.avatar_url} alt={featuredPath.profiles.name || "Creator"} />
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="avatar placeholder">
-                          <div className="mask mask-circle w-8 bg-white/20">
-                            <span className="text-xs text-white">
-                              {(featuredPath.profiles?.name || "U")[0].toUpperCase()}
-                            </span>
-                          </div>
-                        </div>
-                      )}
-                      <div>
-                        <p className="text-sm font-medium text-white">
-                          {featuredPath.profiles?.name || "Anonymous"}
-                        </p>
-                        <p className="text-xs text-white/70">Creator</p>
-                      </div>
-                    </div>
-                    <div className="badge badge-outline badge-sm ml-auto bg-white/20 backdrop-blur-sm border-white/30 text-white">
-                      {featuredPath.skill_level}
-                    </div>
-                    {featuredPath.estimated_hours && (
-                      <p className="text-sm font-medium text-white/90">
-                        {featuredPath.estimated_hours}h
+                  <div className="flex h-full flex-col justify-between relative z-10 flex-1">
+                    <div>
+                      <p className="font-mono text-xs font-medium uppercase tracking-wide text-white/80">
+                        {featuredPath.topics?.category || "Featured"}
                       </p>
-                    )}
+                      <h2 className="font-serif mt-2 text-2xl font-semibold sm:text-3xl text-white">
+                        {featuredPath.title}
+                      </h2>
+                      <p className="mt-2 text-sm sm:text-base text-white/90">
+                        {featuredPath.description || `Master ${featuredPath.topics?.name} with this curated learning path`}
+                      </p>
+                    </div>
+                    <div className="mt-6 flex items-end gap-3">
+                      <div className="flex items-center gap-2">
+                        {featuredPath.profiles?.avatar_url ? (
+                          <div className="avatar">
+                            <div className="mask mask-circle w-8">
+                              <img src={featuredPath.profiles.avatar_url} alt={featuredPath.profiles.name || "Creator"} />
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="avatar placeholder">
+                            <div className="mask mask-circle w-8 bg-white/20">
+                              <span className="text-xs text-white">
+                                {(featuredPath.profiles?.name || "U")[0].toUpperCase()}
+                              </span>
+                            </div>
+                          </div>
+                        )}
+                        <div>
+                          <p className="text-sm font-medium text-white">
+                            {featuredPath.profiles?.name || "Anonymous"}
+                          </p>
+                          <p className="text-xs text-white/70">Creator</p>
+                        </div>
+                      </div>
+                      <div className="badge badge-outline badge-sm ml-auto bg-white/20 backdrop-blur-sm border-white/30 text-white">
+                        {featuredPath.skill_level}
+                      </div>
+                      {featuredPath.estimated_hours && (
+                        <p className="text-sm font-medium text-white/90">
+                          {featuredPath.estimated_hours}h
+                        </p>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+                {/* Unsplash Attribution - outside Link to avoid nested links */}
+                {unsplashImage && (
+                  <p className="text-xs text-base-content/50 mt-2">
+                    Photo by{" "}
+                    <a
+                      href={unsplashImage.photographer_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-base-content/70"
+                    >
+                      {unsplashImage.photographer}
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://unsplash.com?utm_source=ViaProto&utm_medium=referral"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-base-content/70"
+                    >
+                      Unsplash
+                    </a>
+                  </p>
+                )}
+              </div>
             );
           })()}
         </div>

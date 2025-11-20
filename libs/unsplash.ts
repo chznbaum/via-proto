@@ -1,16 +1,22 @@
 /**
  * Unsplash API integration for fetching featured images
  * Uses the Unsplash API to get random images based on search queries
+ * Complies with Unsplash API guidelines for attribution and UTM parameters
  */
 
-const UNSPLASH_ACCESS_KEY = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
+const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 const UNSPLASH_API_URL = "https://api.unsplash.com";
+const APP_NAME = "ViaProto";
+
+// UTM parameters required by Unsplash API guidelines
+const UTM_PARAMS = `utm_source=${APP_NAME}&utm_medium=referral`;
 
 export interface UnsplashImage {
-  url: string;
-  photographer: string;
-  photographerUrl: string;
-  downloadLocation: string; // Required by Unsplash API guidelines to track downloads
+  photoId: string; // Unsplash unique photo identifier
+  url: string; // Image URL
+  photographer: string; // Photographer name for attribution
+  photographerUrl: string; // Link to photographer profile with UTM params
+  downloadLocation: string; // API endpoint to trigger download event
 }
 
 /**
@@ -47,27 +53,42 @@ export async function fetchUnsplashImage(
 
     const data = await response.json();
 
-    // Trigger download endpoint as required by Unsplash API guidelines
-    if (data.links?.download_location) {
-      // Fire and forget - don't await
-      fetch(data.links.download_location, {
-        headers: {
-          Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
-        },
-      }).catch(() => {
-        // Silently fail if download tracking fails
-      });
-    }
+    // Note: Download event should be triggered when the image is actually set as featured
+    // See triggerUnsplashDownload() function below
 
     return {
+      photoId: data.id,
       url: data.urls.regular, // 1080px wide, good for cards
       photographer: data.user.name,
-      photographerUrl: data.user.links.html,
+      photographerUrl: `${data.user.links.html}?${UTM_PARAMS}`,
       downloadLocation: data.links.download_location,
     };
   } catch (error) {
     console.error("Error fetching Unsplash image:", error);
     return null;
+  }
+}
+
+/**
+ * Trigger download event for Unsplash image
+ * Required by Unsplash API guidelines when image is used
+ * @param downloadLocation - Download location URL from Unsplash API
+ */
+export async function triggerUnsplashDownload(downloadLocation: string): Promise<void> {
+  if (!UNSPLASH_ACCESS_KEY) {
+    console.warn("Unsplash access key not configured");
+    return;
+  }
+
+  try {
+    await fetch(downloadLocation, {
+      headers: {
+        Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
+      },
+    });
+  } catch (error) {
+    // Non-critical error - log but don't throw
+    console.error("Failed to trigger Unsplash download event:", error);
   }
 }
 

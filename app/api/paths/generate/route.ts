@@ -11,7 +11,7 @@ import {
   getModelConfig,
   isModelAllowedForTier,
 } from '@/libs/models';
-import { fetchUnsplashImage } from '@/libs/unsplash';
+import { fetchUnsplashImage, triggerUnsplashDownload } from '@/libs/unsplash';
 import { ZodError } from 'zod';
 
 /**
@@ -213,18 +213,54 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 10.5. Fetch featured image from Unsplash based on topic
+    // 10.5. Fetch and store Unsplash featured image based on topic
     try {
       const unsplashImage = await fetchUnsplashImage(topic.name);
 
       if (unsplashImage) {
-        // Update the path with the featured image URL
+        // Check if this Unsplash photo already exists in our database
+        const { data: existingImage } = await supabase
+          .from('unsplash_images')
+          .select('id')
+          .eq('photo_id', unsplashImage.photoId)
+          .single();
+
+        let imageId: string;
+
+        if (existingImage) {
+          // Reuse existing image record
+          imageId = existingImage.id;
+        } else {
+          // Insert new image record
+          const { data: newImage, error: imageError } = await supabase
+            .from('unsplash_images')
+            .insert({
+              photo_id: unsplashImage.photoId,
+              url: unsplashImage.url,
+              photographer: unsplashImage.photographer,
+              photographer_url: unsplashImage.photographerUrl,
+              download_location: unsplashImage.downloadLocation,
+            })
+            .select('id')
+            .single();
+
+          if (imageError || !newImage) {
+            throw new Error('Failed to insert Unsplash image');
+          }
+
+          imageId = newImage.id;
+        }
+
+        // Update the path with the Unsplash image reference
         await supabase
           .from('learning_paths')
-          .update({ featured_image_url: unsplashImage.url })
+          .update({ unsplash_image_id: imageId })
           .eq('id', newPath.id);
 
-        console.log('Fetched Unsplash image for topic:', topic.name);
+        // Trigger download event (required by Unsplash API guidelines)
+        await triggerUnsplashDownload(unsplashImage.downloadLocation);
+
+        console.log('Fetched and stored Unsplash image for topic:', topic.name);
       }
     } catch (error) {
       // Non-critical error - log but continue
