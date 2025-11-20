@@ -2,107 +2,133 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ISidebarMenuItem } from "@/app/(dashboard)/menu";
-import config from "@/config";
+import { useEffect, useRef, useState } from "react";
+import SimpleBarCore from "simplebar-core";
+// @ts-ignore
+import SimpleBar from "simplebar-react";
+import "simplebar-react/dist/simplebar.min.css";
 
-export function DashboardSidebar({ menuItems }: { menuItems: ISidebarMenuItem[] }) {
+import { Logo } from "@/components/Logo";
+import { useConfig } from "@/contexts/config";
+
+import { ISidebarMenuItem, SidebarMenuItem } from "./SidebarMenuItem";
+import { getActivatedItemParentKeys } from "./helpers";
+
+export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] }) => {
   const pathname = usePathname();
+  const { calculatedSidebarTheme } = useConfig();
+  const scrollRef = useRef<SimpleBarCore | null>(null);
+  const hasMounted = useRef(false);
 
-  const isActive = (url?: string) => {
-    if (!url) return false;
-    return pathname === url || pathname.startsWith(url + "/");
+  const [activatedParents, setActivatedParents] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    setActivatedParents(getActivatedItemParentKeys(menuItems, pathname));
+  }, [menuItems, pathname]);
+
+  const onToggleActivated = (key: string) => {
+    if (activatedParents.has(key)) {
+      activatedParents.delete(key);
+    } else {
+      activatedParents.add(key);
+    }
+    setActivatedParents(new Set(activatedParents));
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      const contentElement = scrollRef.current?.getContentElement();
+      const scrollElement = scrollRef.current?.getScrollElement();
+      if (contentElement) {
+        const activatedItem = contentElement.querySelector<HTMLElement>(".active");
+        const top = activatedItem?.getBoundingClientRect().top;
+        if (activatedItem && scrollElement && top && top !== 0) {
+          scrollElement.scrollTo({ top: scrollElement.scrollTop + top - 300, behavior: "smooth" });
+        }
+      }
+    }, 100);
+  }, [activatedParents, scrollRef]);
+
+  useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+    if (window.innerWidth <= 64 * 16) {
+      const sidebarTrigger = document.querySelector<HTMLInputElement>("#layout-sidebar-toggle-trigger");
+      if (sidebarTrigger) {
+        sidebarTrigger.checked = false;
+      }
+    }
+  }, [pathname]);
+
   return (
-    <div className="drawer-side z-40">
-      <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
-      <aside className="bg-base-200 flex h-full w-72 flex-col">
-        {/* Logo/Brand */}
-        <div className="flex h-16 items-center gap-3 border-b border-base-300 px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold">{config.appName}</span>
+    <>
+      <input
+        type="checkbox"
+        id="layout-sidebar-toggle-trigger"
+        className="hidden"
+        aria-label="Toggle layout sidebar"
+      />
+      <input
+        type="checkbox"
+        id="layout-sidebar-hover-trigger"
+        className="hidden"
+        aria-label="Dense layout sidebar"
+      />
+      <div id="layout-sidebar-hover" className="bg-base-300 h-screen w-1"></div>
+
+      <div id="layout-sidebar" className="sidebar-menu flex flex-col" data-theme={calculatedSidebarTheme}>
+        <div className="flex h-16 min-h-16 items-center justify-between gap-3 ps-5 pe-4">
+          <Link href="/dashboard">
+            <Logo />
           </Link>
+          <label
+            htmlFor="layout-sidebar-hover-trigger"
+            title="Toggle sidebar hover"
+            className="btn btn-circle btn-ghost btn-sm text-base-content/50 relative max-lg:hidden">
+            <span className="iconify lucide--panel-left-close absolute size-4.5 opacity-100 transition-all duration-300 group-has-[[id=layout-sidebar-hover-trigger]:checked]/html:opacity-0" />
+            <span className="iconify lucide--panel-left-dashed absolute size-4.5 opacity-0 transition-all duration-300 group-has-[[id=layout-sidebar-hover-trigger]:checked]/html:opacity-100" />
+          </label>
+        </div>
+        <div className="relative min-h-0 grow">
+          <SimpleBar ref={scrollRef} className="size-full">
+            <div className="mb-3 space-y-0.5 px-2.5">
+              {menuItems.map((item, index) => (
+                <SidebarMenuItem
+                  {...item}
+                  key={index}
+                  activated={activatedParents}
+                  onToggleActivated={onToggleActivated}
+                />
+              ))}
+            </div>
+          </SimpleBar>
+          <div className="from-base-100/60 pointer-events-none absolute start-0 end-0 bottom-0 h-7 bg-linear-to-t to-transparent"></div>
         </div>
 
-        {/* Navigation */}
-        <nav className="flex-1 overflow-y-auto p-4">
-          <ul className="menu gap-2">
-            {menuItems.map((item) => {
-              if (item.isTitle) {
-                return (
-                  <li key={item.id} className="menu-title">
-                    <span className="text-xs font-semibold uppercase opacity-60">
-                      {item.label}
-                    </span>
-                  </li>
-                );
-              }
-
-              if (item.children) {
-                return (
-                  <li key={item.id}>
-                    <details open>
-                      <summary>
-                        {item.icon && (
-                          <span className={`iconify ${item.icon} size-5`}></span>
-                        )}
-                        {item.label}
-                      </summary>
-                      <ul>
-                        {item.children.map((child) => (
-                          <li key={child.id}>
-                            <Link
-                              href={child.url || "#"}
-                              className={isActive(child.url) ? "active" : ""}
-                            >
-                              {child.label}
-                              {child.badges?.map((badge) => (
-                                <span
-                                  key={badge}
-                                  className="badge badge-sm badge-primary"
-                                >
-                                  {badge}
-                                </span>
-                              ))}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                  </li>
-                );
-              }
-
-              return (
-                <li key={item.id}>
-                  <Link
-                    href={item.url || "#"}
-                    className={isActive(item.url) ? "active" : ""}
-                    {...item.linkProp}
-                  >
-                    {item.icon && (
-                      <span className={`iconify ${item.icon} size-5`}></span>
-                    )}
-                    {item.label}
-                    {item.badges?.map((badge) => (
-                      <span key={badge} className="badge badge-sm badge-primary">
-                        {badge}
-                      </span>
-                    ))}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-
-        {/* Footer */}
-        <div className="border-t border-base-300 p-4">
-          <div className="text-xs text-base-content/60">
-            <p>© {new Date().getFullYear()} {config.appName}</p>
-          </div>
+        <div className="mb-2">
+          <hr className="border-base-300 my-2 border-dashed" />
+          <label
+            htmlFor="dashboard-account-drawer"
+            className="bg-base-200 hover:bg-base-300 rounded-box mx-2 mt-0 flex cursor-pointer items-center gap-2.5 px-3 py-2 transition-all">
+            <div className="avatar">
+              <div className="bg-base-200 mask mask-squircle w-8">
+                <div className="w-full h-full bg-primary flex items-center justify-center text-primary-content text-sm font-semibold">
+                  U
+                </div>
+              </div>
+            </div>
+            <div className="grow -space-y-0.5">
+              <p className="text-sm font-medium">Account</p>
+              <p className="text-base-content/60 text-xs">Settings & Profile</p>
+            </div>
+            <span className="iconify lucide--chevrons-up-down text-base-content/60 size-4" />
+          </label>
         </div>
-      </aside>
-    </div>
+      </div>
+
+      <label htmlFor="layout-sidebar-toggle-trigger" id="layout-sidebar-backdrop"></label>
+    </>
   );
-}
+};

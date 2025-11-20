@@ -7,6 +7,10 @@
 @import "./core/components.css";
 @import "./core/animation.css";
 
+/* Page wise */
+@import "./pages/layout.css";
+@import "./pages/components.css";
+
 /* Plugin Overriding */
 @import "./plugins/scrollbar.css";
 

@@ -1,6 +1,9 @@
 import { ReactNode } from "react";
 import { DashboardSidebar } from "@/components/dashboard-layout/DashboardSidebar";
 import { DashboardTopbar } from "@/components/dashboard-layout/DashboardTopbar";
+import { DashboardRightbar } from "@/components/dashboard-layout/DashboardRightbar";
+import { DashboardAccountDrawer } from "@/components/dashboard-layout/DashboardAccountDrawer";
+import { DashboardFooter } from "@/components/dashboard-layout/DashboardFooter";
 import { dashboardMenuItems } from "./menu";
 import { requireAuth } from "@/libs/auth";
 
@@ -13,21 +16,21 @@ export default async function DashboardLayout({
   await requireAuth();
 
   return (
-    <div className="drawer lg:drawer-open">
-      <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
-
-      {/* Main content */}
-      <div className="drawer-content flex flex-col">
-        <DashboardTopbar />
-        <main className="flex-1 overflow-y-auto bg-base-200/30">
-          <div className="container mx-auto p-6">
-            {children}
+    <>
+      <div className="size-full">
+        <div className="flex">
+          <DashboardSidebar menuItems={dashboardMenuItems} />
+          <div className="flex h-screen min-w-0 grow flex-col overflow-auto">
+            <DashboardTopbar />
+            <div id="layout-content">{children}</div>
+            <DashboardFooter />
           </div>
-        </main>
+        </div>
+        <DashboardRightbar />
       </div>
 
-      {/* Sidebar */}
-      <DashboardSidebar menuItems={dashboardMenuItems} />
-    </div>
+      {/* Account drawer - separate from main layout */}
+      <DashboardAccountDrawer />
+    </>
   );
 }

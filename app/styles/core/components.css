@@ -59,3 +59,15 @@ html[data-theme="dark"] .contrast-box .text-base-content\/60 {
 progress::-webkit-progress-value {
   transition: 0.6s width ease-out;
 }
+
+/* ==  Theme Specific  == */
+
+[data-theme="material"],
+[data-theme="material-dark"] {
+    .card {
+        @apply shadow-none;
+        &:not(.card-border) {
+            @apply border-0;
+        }
+    }
+}

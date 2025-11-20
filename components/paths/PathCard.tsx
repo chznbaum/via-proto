@@ -52,127 +52,112 @@ export default function PathCard({ path, isOwner, onDelete }: PathCardProps) {
     }
   };
 
-  const skillLevelColors = {
-    beginner: 'badge-success',
-    intermediate: 'badge-warning',
-    advanced: 'badge-error',
+  const getSkillLevelIcon = () => {
+    switch (path.skill_level) {
+      case 'beginner':
+        return 'lucide--sprout text-success';
+      case 'intermediate':
+        return 'lucide--flame text-warning';
+      case 'advanced':
+        return 'lucide--zap text-error';
+      default:
+        return 'lucide--book-open';
+    }
   };
 
-  const skillLevelColor =
-    skillLevelColors[path.skill_level as keyof typeof skillLevelColors] ||
-    'badge-neutral';
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffInMs = now.getTime() - date.getTime();
+    const diffInHours = Math.floor(diffInMs / (1000 * 60 * 60));
+    const diffInDays = Math.floor(diffInHours / 24);
+
+    if (diffInHours < 1) return 'Just now';
+    if (diffInHours < 24) return `${diffInHours} hours ago`;
+    if (diffInDays < 7) return `${diffInDays} days ago`;
+    return date.toLocaleDateString();
+  };
 
   return (
-    <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <div className="card-body">
-        <div className="flex justify-between items-start gap-4">
-          <div className="flex-1">
-            <Link
-              href={`/paths/${path.id}`}
-              className="card-title hover:underline text-lg mb-2"
+    <div className="card bg-base-100 shadow">
+      {/* Header */}
+      <div className="flex items-center gap-3 px-4 py-2.5">
+        <span className={`iconify ${getSkillLevelIcon()} size-4`}></span>
+        <p className="grow font-medium">{path.title}</p>
+        <p className="text-base-content/40 text-xs font-medium max-sm:hidden">
+          {formatDate(path.created_at)}
+        </p>
+        {isOwner && (
+          <div className="dropdown dropdown-end">
+            <button
+              tabIndex={0}
+              className="btn btn-ghost btn-xs btn-circle"
+              disabled={isDeleting}
             >
-              {path.title}
-            </Link>
+              <span className="iconify lucide--more-vertical size-4"></span>
+            </button>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link href={`/paths/${path.id}/edit`}>
+                  <span className="iconify lucide--pencil size-4"></span>
+                  Edit
+                </Link>
+              </li>
+              <li>
+                <button onClick={handleDelete} className="text-error">
+                  <span className="iconify lucide--trash-2 size-4"></span>
+                  Delete
+                </button>
+              </li>
+            </ul>
           </div>
-          {isOwner && (
-            <div className="dropdown dropdown-end">
-              <button
-                tabIndex={0}
-                className="btn btn-ghost btn-sm btn-circle"
-                disabled={isDeleting}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="w-5 h-5 stroke-current"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                  />
-                </svg>
-              </button>
-              <ul
-                tabIndex={0}
-                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <Link href={`/paths/${path.id}/edit`}>Edit</Link>
-                </li>
-                <li>
-                  <button onClick={handleDelete} className="text-error">
-                    Delete
-                  </button>
-                </li>
-              </ul>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="border-base-300 border-t border-dashed px-4 py-2.5">
+        <p className="text-base-content/60 text-sm line-clamp-2">
+          {path.description}
+        </p>
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <div className="badge badge-sm badge-primary">{path.topic.name}</div>
+          <div className="badge badge-sm badge-ghost">
+            {path.skill_level.charAt(0).toUpperCase() + path.skill_level.slice(1)}
+          </div>
+          {path.is_public && (
+            <div className="badge badge-sm badge-ghost">
+              <span className="iconify lucide--globe size-3"></span>
+              Public
             </div>
           )}
         </div>
-
-        <div className="flex flex-wrap gap-2 mb-2">
-          <div className="badge badge-primary">{path.topic.name}</div>
-          <div className={`badge ${skillLevelColor}`}>
-            {path.skill_level.charAt(0).toUpperCase() +
-              path.skill_level.slice(1)}
-          </div>
-          {path.is_public && <div className="badge badge-ghost">Public</div>}
-        </div>
-
-        <p className="text-sm text-base-content/70 line-clamp-2">
-          {path.description}
-        </p>
-
-        <div className="card-actions justify-between items-center mt-4">
-          <div className="flex gap-4 text-xs text-base-content/60">
+        <div className="mt-2 flex items-center gap-4 text-xs text-base-content/60">
+          <span className="flex items-center gap-1">
+            <span className="iconify lucide--clock size-3.5"></span>
+            {path.total_estimated_hours}h
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="iconify lucide--eye size-3.5"></span>
+            {path.view_count} views
+          </span>
+          {path.creator.name && (
             <span className="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              {path.total_estimated_hours}h
+              <span className="iconify lucide--user size-3.5"></span>
+              {path.creator.name}
             </span>
-            <span className="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                />
-              </svg>
-              {path.view_count}
-            </span>
-          </div>
-
-          <Link href={`/paths/${path.id}`} className="btn btn-sm btn-primary">
-            View Path
-          </Link>
+          )}
         </div>
+      </div>
+
+      {/* Footer */}
+      <div className="mt-auto flex items-end justify-end gap-2 px-4 pt-2 pb-4">
+        <Link href={`/paths/${path.id}`} className="btn btn-sm btn-primary gap-2">
+          <span className="iconify lucide--arrow-right size-4"></span>
+          View Path
+        </Link>
       </div>
     </div>
   );

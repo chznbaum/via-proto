@@ -4,25 +4,24 @@ import { IConfig, useConfig } from "@/contexts/config";
 
 const fontFamilies: { value: IConfig["fontFamily"]; label: string; className?: string }[] = [
     {
-        value: "dm-sans",
-        label: "DM Sans",
-        className: "group-[[data-font-family=dm-sans]]/html:bg-base-200",
+        value: "fixel",
+        label: "Fixel",
+        className: "group-[[data-font-family=fixel]]/html:bg-base-200",
     },
     {
-        value: "wix",
-        label: "Wix",
-        className: "group-[[data-font-family=wix]]/html:bg-base-200",
+        value: "atkinson",
+        label: "Atkinson",
+        className: "group-[[data-font-family=atkinson]]/html:bg-base-200",
     },
     {
-        value: "inclusive",
-        label: "Inclusive",
-        className:
-            "group-[[data-font-family=inclusive]]/html:bg-base-200 group-[:not([data-font-family])]/html:bg-base-200",
+        value: "geist",
+        label: "Geist",
+        className: "group-[[data-font-family=geist]]/html:bg-base-200",
     },
     {
-        value: "ar-one",
-        label: "AR One",
-        className: "group-[[data-font-family=ar-one]]/html:bg-base-200",
+        value: "figtree",
+        label: "Figtree",
+        className: "group-[[data-font-family=figtree]]/html:bg-base-200",
     },
 ];
 
@@ -31,10 +30,10 @@ export const DashboardRightbar = () => {
 
     return (
         <div className="drawer drawer-end">
-            <input id="dashboard-rightbar-drawer" type="checkbox" className="drawer-toggle" />
+            <input id="layout-rightbar-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-side z-50">
                 <label
-                    htmlFor="dashboard-rightbar-drawer"
+                    htmlFor="layout-rightbar-drawer"
                     aria-label="close sidebar"
                     className="drawer-overlay"
                     aria-hidden
@@ -58,7 +57,7 @@ export const DashboardRightbar = () => {
                                 <span className="iconify lucide--fullscreen inline size-5 group-data-[fullscreen]/html:hidden" />
                             </button>
                             <label
-                                htmlFor="dashboard-rightbar-drawer"
+                                htmlFor="layout-rightbar-drawer"
                                 aria-label="close sidebar"
                                 aria-hidden
                                 className="btn btn-ghost btn-sm btn-circle">

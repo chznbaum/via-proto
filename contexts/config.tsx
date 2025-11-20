@@ -1,8 +1,9 @@
 "use client";
 
-import { ReactNode, createContext, useContext, useEffect, useMemo } from "react";
+import { ReactNode, createContext, useContext, useEffect, useMemo, useState } from "react";
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
+import { createClient } from "@/libs/supabase/client";
 
 export const themes = ["light", "contrast", "material", "dark", "dim", "material-dark", "system"] as const;
 
@@ -12,24 +13,85 @@ export type IConfig = {
     theme: ITheme;
     direction: "ltr" | "rtl";
     sidebarTheme: "light" | "dark";
-    fontFamily: "default" | "dm-sans" | "inclusive" | "ar-one" | "wix";
+    fontFamily: "fixel" | "atkinson" | "geist" | "figtree";
     fullscreen: boolean;
 };
 
 const defaultConfig: IConfig = {
     theme: "system",
     direction: "ltr",
-    fontFamily: "default",
+    fontFamily: "fixel",
     sidebarTheme: "light",
     fullscreen: false,
 };
 
 const useHook = () => {
     const [config, setConfig] = useLocalStorage<IConfig>("__VIAPROTO_CONFIG__", defaultConfig);
+    const [userId, setUserId] = useState<string | null>(null);
+    const [isInitialized, setIsInitialized] = useState(false);
     const htmlRef = useMemo(() => typeof window !== "undefined" && document.documentElement, []);
+    const supabase = createClient();
 
-    const updateConfig = (changes: Partial<IConfig>) => {
-        setConfig({ ...config, ...changes });
+    // Load preferences from DB for logged-in users on mount
+    useEffect(() => {
+        const initializePreferences = async () => {
+            const { data: { user } } = await supabase.auth.getUser();
+
+            if (user) {
+                setUserId(user.id);
+
+                // Fetch preferences from database
+                const { data: preferences } = await supabase
+                    .from('user_preferences')
+                    .select('theme, font_family, direction, sidebar_theme')
+                    .eq('user_id', user.id)
+                    .single();
+
+                if (preferences) {
+                    // Map DB column names to config keys
+                    const dbConfig: Partial<IConfig> = {
+                        theme: preferences.theme as ITheme,
+                        fontFamily: preferences.font_family as IConfig['fontFamily'],
+                        direction: preferences.direction as IConfig['direction'],
+                        sidebarTheme: preferences.sidebar_theme as IConfig['sidebarTheme'],
+                    };
+
+                    // Merge DB preferences with local storage (DB takes precedence)
+                    setConfig({ ...config, ...dbConfig });
+                }
+            }
+
+            setIsInitialized(true);
+        };
+
+        initializePreferences();
+    }, []);
+
+    const updateConfig = async (changes: Partial<IConfig>) => {
+        const newConfig = { ...config, ...changes };
+        setConfig(newConfig);
+
+        // Sync to database if user is logged in
+        if (userId) {
+            // Map config keys to DB column names (exclude fullscreen as it's not persisted to DB)
+            const dbChanges: any = {};
+            if (changes.theme !== undefined) dbChanges.theme = changes.theme;
+            if (changes.fontFamily !== undefined) dbChanges.font_family = changes.fontFamily;
+            if (changes.direction !== undefined) dbChanges.direction = changes.direction;
+            if (changes.sidebarTheme !== undefined) dbChanges.sidebar_theme = changes.sidebarTheme;
+
+            // Only sync if there are DB-relevant changes
+            if (Object.keys(dbChanges).length > 0) {
+                await supabase
+                    .from('user_preferences')
+                    .upsert({
+                        user_id: userId,
+                        ...dbChanges,
+                    }, {
+                        onConflict: 'user_id'
+                    });
+            }
+        }
     };
 
     const changeTheme = (theme: IConfig["theme"]) => {
@@ -64,10 +126,25 @@ const useHook = () => {
         updateConfig({ fullscreen: !config.fullscreen });
     };
 
-    const reset = () => {
+    const reset = async () => {
         setConfig(defaultConfig);
         if (document.fullscreenElement != null) {
             document.exitFullscreen();
+        }
+
+        // Reset DB preferences for logged-in users
+        if (userId) {
+            await supabase
+                .from('user_preferences')
+                .upsert({
+                    user_id: userId,
+                    theme: defaultConfig.theme,
+                    font_family: defaultConfig.fontFamily,
+                    direction: defaultConfig.direction,
+                    sidebar_theme: defaultConfig.sidebarTheme,
+                }, {
+                    onConflict: 'user_id'
+                });
         }
     };
 
@@ -107,10 +184,8 @@ const useHook = () => {
         } else {
             htmlRef.removeAttribute("data-changed");
         }
-        if (config.fontFamily !== "default") {
+        if (config.fontFamily) {
             htmlRef.setAttribute("data-font-family", config.fontFamily);
-        } else {
-            htmlRef.removeAttribute("data-font-family");
         }
         if (config.direction) {
             htmlRef.dir = config.direction;

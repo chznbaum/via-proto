@@ -1,15 +1,4 @@
-export interface ISidebarMenuItem {
-  id: string;
-  label: string;
-  icon?: string;
-  url?: string;
-  isTitle?: boolean;
-  badges?: string[];
-  children?: ISidebarMenuItem[];
-  linkProp?: {
-    target?: string;
-  };
-}
+import { ISidebarMenuItem } from "@/components/dashboard-layout/SidebarMenuItem";
 
 export const dashboardMenuItems: ISidebarMenuItem[] = [
   {
