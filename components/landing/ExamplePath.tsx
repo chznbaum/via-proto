@@ -13,8 +13,8 @@ export const ExamplePath = () => {
             </p>
         </div>
         <div className="mt-8">
-          <div className="mockup-browser mockup-browser-mac border border-base-300 bg-base-100 max-w-7xl mx-auto rounded-[9px]">
-            {/* Browser toolbar with traffic lights */}
+          <div className="mockup-browser border border-base-300 bg-base-100 max-w-7xl mx-auto rounded-[9px]">
+            {/* Browser toolbar */}
             <div className="mockup-browser-toolbar">
               <div className="input border-base-300 flex-1">https://viapro.to/paths/this-could-be-yours</div>
             </div>
