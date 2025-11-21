@@ -7,7 +7,7 @@ import { getUserDefaultAccount } from '@/libs/auth';
  * List learning paths with filtering and sorting
  * Query params:
  * - view: 'my' | 'team' | 'public' (default: 'my')
- * - category: string (optional)
+ * - category_id: uuid (optional) - filter by category UUID
  * - skill_level: 'beginner' | 'intermediate' | 'advanced' (optional)
  * - sort: 'created_at' | 'popular' | 'time' (default: 'created_at')
  * - limit: number (default: 20, max: 100)
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
     // Get query parameters
     const { searchParams } = req.nextUrl;
     const view = searchParams.get('view') || 'my';
-    const category = searchParams.get('category');
+    const categoryId = searchParams.get('category_id');
     const skillLevel = searchParams.get('skill_level');
     const sort = searchParams.get('sort') || 'created_at';
     const limit = Math.min(
@@ -57,7 +57,12 @@ export async function GET(req: NextRequest) {
       .select(
         `
         *,
-        topic:topics(id, name, category, description),
+        topic:topics(
+          id,
+          name,
+          description,
+          category:categories(name, slug, icon)
+        ),
         creator:profiles!creator_id(id, name, avatar_url),
         account:accounts(id, name)
       `,
@@ -79,8 +84,8 @@ export async function GET(req: NextRequest) {
     }
 
     // Apply category filter if provided
-    if (category) {
-      query = query.eq('topics.category', category);
+    if (categoryId) {
+      query = query.eq('topics.category_id', categoryId);
     }
 
     // Apply skill level filter if provided

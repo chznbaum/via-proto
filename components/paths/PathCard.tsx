@@ -15,7 +15,11 @@ interface PathCardProps {
     created_at: string;
     topic: {
       name: string;
-      category: string;
+      category?: {
+        name: string;
+        slug: string;
+        icon?: string;
+      };
     };
     creator: {
       name: string | null;

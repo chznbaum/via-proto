@@ -12,7 +12,11 @@ type PathCardProps = {
     created_at: string;
     topics?: {
       name: string;
-      category?: string;
+      category?: {
+        name: string;
+        slug: string;
+        icon?: string;
+      };
     };
     profiles?: {
       name?: string;
@@ -61,7 +65,7 @@ export const PathCard = ({ path }: PathCardProps) => {
           <div className="relative z-10">
             <div className="flex items-start justify-between gap-2">
               <div className="badge badge-outline badge-sm bg-black/30 backdrop-blur-sm border-white/40 text-white">
-                {path.topics?.category || "Learning"}
+                {path.topics?.category?.name || "Learning"}
               </div>
               {path.view_count !== undefined && path.view_count > 0 && (
                 <div className="flex items-center gap-1 text-xs text-white/90">
