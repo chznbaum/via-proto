@@ -1,0 +1,140 @@
+{
+  "topics": [
+    {
+      "name": "Conversational Spanish for travelers",
+      "slug": "conversational-spanish-for-travelers",
+      "description": "Learn essential Spanish phrases and conversations for travel",
+      "category_slug": "languages",
+      "competencies": [
+        {
+          "competency_slug": "spanish",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building games for web browsers with Vue.js",
+      "slug": "building-browser-games-vuejs",
+      "description": "Create interactive browser-based games using Vue.js components and reactivity",
+      "category_slug": "game-development",
+      "competencies": [
+        {
+          "competency_slug": "vuejs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Testing Vue.js applications with Jest",
+      "slug": "testing-vuejs-jest",
+      "description": "Write comprehensive unit and component tests for Vue.js apps using Jest",
+      "category_slug": "software-testing",
+      "competencies": [
+        {
+          "competency_slug": "jest",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Testing Vue.js applications with Mocha",
+      "slug": "testing-vuejs-mocha",
+      "description": "Write comprehensive unit and component tests for Vue.js apps using Mocha",
+      "category_slug": "software-testing",
+      "competencies": [
+        {
+          "competency_slug": "mocha",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Testing Angular applications with Jasmine",
+      "slug": "testing-angular-jasmine",
+      "description": "Write unit and integration tests for Angular apps using Jasmine and Karma",
+      "category_slug": "software-testing",
+      "competencies": [
+        {
+          "competency_slug": "jasmine",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "angular",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Type-safe JavaScript development with TypeScript",
+      "slug": "type-safe-javascript-typescript",
+      "description": "Write safer, more maintainable JavaScript code using TypeScript's static typing",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "typescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Migrating JavaScript projects to TypeScript",
+      "slug": "migrating-javascript-typescript",
+      "description": "Incrementally adopt TypeScript in existing JavaScript codebases",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "typescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Advanced TypeScript patterns and generics",
+      "slug": "advanced-typescript-patterns",
+      "description": "Master advanced TypeScript features including generics, utility types, and type inference",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "typescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

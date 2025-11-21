@@ -1,0 +1,200 @@
+{
+  "competencies": [
+    {
+      "name": "React",
+      "slug": "react",
+      "description": "JavaScript library for building user interfaces",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "React.js",
+        "ReactJS",
+        "React Framework"
+      ],
+      "icon": "logos:react",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript fundamentals required before learning React"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vuejs",
+          "relationship_type": "similar",
+          "notes": "Both are popular JavaScript frontend frameworks. React has larger ecosystem, Vue.js has gentler learning curve."
+        },
+        {
+          "alternative_slug": "angular",
+          "relationship_type": "similar",
+          "notes": "Both are popular frontend frameworks. React is more flexible, Angular is more opinionated and feature-complete."
+        }
+      ]
+    },
+    {
+      "name": "Vue.js",
+      "slug": "vuejs",
+      "description": "Progressive JavaScript framework for building user interfaces",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Vue",
+        "VueJS",
+        "Vue Framework",
+        "Vue 3"
+      ],
+      "icon": "logos:vue",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript fundamentals required before learning Vue.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "angular",
+          "relationship_type": "similar",
+          "notes": "Both are complete frontend frameworks. Vue.js is more approachable, Angular is better for enterprise apps."
+        }
+      ]
+    },
+    {
+      "name": "Angular",
+      "slug": "angular",
+      "description": "TypeScript-based framework for building scalable web applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "AngularJS",
+        "Angular 2+",
+        "Angular Framework"
+      ],
+      "icon": "logos:angular-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "required",
+          "notes": "Angular is written in TypeScript, so familiarity is required to pick it up quickly"
+        }
+      ]
+    },
+    {
+      "name": "HTML",
+      "slug": "html",
+      "description": "Markup language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "HTML5",
+        "HyperText Markup Language"
+      ],
+      "icon": "logos:html-5"
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "description": "Style sheet language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "CSS3",
+        "Cascading Style Sheets"
+      ],
+      "icon": "logos:css-3-official"
+    },
+    {
+      "name": "Flask",
+      "slug": "flask",
+      "description": "Lightweight Python web framework",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Flask Framework"
+      ],
+      "icon": "logos:flask",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Python basics required for Flask development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "django",
+          "relationship_type": "similar",
+          "notes": "Both are Python web frameworks. Flask is lightweight, Django is full-featured."
+        }
+      ]
+    },
+    {
+      "name": "Django",
+      "slug": "django",
+      "description": "High-level Python web framework",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Django Framework"
+      ],
+      "icon": "logos:django-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Python basics required for Django development"
+        }
+      ]
+    },
+    {
+      "name": "Pinia",
+      "slug": "pinia",
+      "description": "A more modular and intuitive store for Vue.js",
+      "category_slug": "frontend-development",
+      "icon": "logos:pinia"
+    },
+    {
+      "name": "Nuxt",
+      "slug": "nuxt",
+      "description": "Full stack web application framework for Vue.js",
+      "category_slug": "frontend-development",
+      "icon": "logos:nuxt-icon"
+    },
+    {
+      "name": "Jest",
+      "slug": "jest",
+      "description": "JavaScript testing framework with an emphasis on simplicity",
+      "category_slug": "frontend-development",
+      "icon": "logos:jest"
+    },
+    {
+      "name": "Mocha",
+      "slug": "mocha",
+      "description": "Flexible JavaScript testing framework that aims to be fun to use",
+      "category_slug": "frontend-development",
+      "icon": "logos:mocha"
+    },
+    {
+      "name": "Jasmine",
+      "slug": "jasmine",
+      "description": "Lightweight JavaScript testing framework without magic",
+      "category_slug": "frontend-development",
+      "icon": "logos:jasmine"
+    },
+    {
+      "name": "Progressive Web App",
+      "slug": "pwa",
+      "description": "Web applications with native app-like features like push notifications and offline-capability",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "pwa"
+      ],
+      "icon": "logos:pwa"
+    },
+    {
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "Cross-platform JavaScript runtime that lets you make almost anything",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "node",
+        "nodejs"
+      ],
+      "icon": "logos:nodejs-icon"
+    }
+  ]
+}

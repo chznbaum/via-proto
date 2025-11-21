@@ -1,0 +1,264 @@
+{
+  "topics": [
+    {
+      "name": "Building interactive UIs with React",
+      "slug": "building-interactive-uis-with-react",
+      "description": "Learn to create dynamic, interactive user interfaces using React's component-based architecture",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "react",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building web applications with Python and Flask",
+      "slug": "building-web-applications-with-python-flask",
+      "description": "Learn to build small and flexible web applications using Python and Flask",
+      "category_slug": "backend-development",
+      "competencies": [
+        {
+          "competency_slug": "flask",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building web applications with Python and Django",
+      "slug": "building-web-applications-with-python-django",
+      "description": "Learn to build full-featured web applications using Python and Django",
+      "category_slug": "backend-development",
+      "competencies": [
+        {
+          "competency_slug": "django",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building reactive web applications with Vue.js",
+      "slug": "building-reactive-web-apps-vuejs",
+      "description": "Create responsive, data-driven web applications using Vue.js's reactive framework",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "vuejs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing frontend state with Vue.js and Pinia",
+      "slug": "state-management-vuejs-pinia",
+      "description": "Master centralized state management in Vue.js applications using Pinia",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "pinia",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Scaffold performant Vue.js applications with Nuxt",
+      "slug": "scaffold-vuejs-apps-nuxt",
+      "description": "Build server-rendered and statically generated Vue.js apps with Nuxt framework",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "nuxt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Enterprise-scale applications with Angular",
+      "slug": "enterprise-apps-angular",
+      "description": "Build large-scale, maintainable enterprise applications using Angular's robust architecture",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "angular",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Progressive Web Apps with Angular",
+      "slug": "pwa-angular",
+      "description": "Create offline-capable, installable Progressive Web Apps using Angular",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "pwa",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "angular",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Reactive forms in Angular applications",
+      "slug": "reactive-forms-angular",
+      "description": "Master complex form handling and validation with Angular reactive forms",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "angular",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Server-side rendering with Angular Universal",
+      "slug": "ssr-angular-universal",
+      "description": "Implement server-side rendering for improved performance and SEO with Angular Universal",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "angular",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "State management with NgRx in Angular",
+      "slug": "state-management-ngrx-angular",
+      "description": "Manage complex application state using NgRx and Redux patterns in Angular",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "angular",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building Node.js APIs with TypeScript",
+      "slug": "nodejs-apis-typescript",
+      "description": "Create type-safe backend APIs using TypeScript and Node.js",
+      "category_slug": "backend-development",
+      "competencies": [
+        {
+          "competency_slug": "nodejs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Full-stack development with TypeScript",
+      "slug": "fullstack-development-typescript",
+      "description": "Build end-to-end type-safe applications with TypeScript across frontend and backend",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "typescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Type-safe React applications with TypeScript",
+      "slug": "type-safe-react-typescript",
+      "description": "Build robust React applications with TypeScript for improved type safety and developer experience",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "typescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

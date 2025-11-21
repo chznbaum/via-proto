@@ -1,0 +1,57 @@
+{
+  "competencies": [
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "description": "Programming language of the web",
+      "category_slug": "programming",
+      "synonyms": [
+        "JS",
+        "ECMAScript",
+        "ES6",
+        "ES2015+"
+      ],
+      "icon": "logos:javascript"
+    },
+    {
+      "name": "TypeScript",
+      "slug": "typescript",
+      "description": "Typed superset of JavaScript for safer code",
+      "category_slug": "programming",
+      "synonyms": [
+        "TS",
+        "TypeScript Language"
+      ],
+      "icon": "logos:typescript-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "TypeScript is a superset of JavaScript, so JavaScript fundamentals are essential"
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "slug": "python",
+      "description": "High-level programming language",
+      "category_slug": "programming",
+      "synonyms": [
+        "Python Programming",
+        "Python3"
+      ],
+      "icon": "logos:python"
+    },
+    {
+      "name": "Spanish",
+      "slug": "spanish",
+      "description": "Spanish language",
+      "category_slug": "languages",
+      "synonyms": [
+        "Español",
+        "Spanish Language",
+        "Castellano"
+      ]
+    }
+  ]
+}

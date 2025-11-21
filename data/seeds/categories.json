@@ -1,0 +1,692 @@
+{
+  "categories": [
+    {
+      "name": "Information & Technology",
+      "slug": "information-technology",
+      "description": "Technology, software, and digital skills",
+      "icon": "lucide:computer",
+      "display_order": 1,
+      "parent_slug": null
+    },
+    {
+      "name": "Programming",
+      "slug": "programming",
+      "description": "Software development and programming languages",
+      "icon": "lucide:code-2",
+      "display_order": 1,
+      "parent_slug": "information-technology"
+    },
+    {
+      "name": "Web Development",
+      "slug": "web-development",
+      "description": "Building websites and web applications",
+      "icon": "lucide:globe",
+      "display_order": 1,
+      "parent_slug": "programming"
+    },
+    {
+      "name": "Frontend Development",
+      "slug": "frontend-development",
+      "description": "Client-side web development",
+      "icon": "lucide:smartphone",
+      "display_order": 1,
+      "parent_slug": "web-development"
+    },
+    {
+      "name": "Full-stack Development",
+      "slug": "fullstack-development",
+      "description": "End-to-end web application development",
+      "icon": "lucide:database",
+      "display_order": 2,
+      "parent_slug": "web-development"
+    },
+    {
+      "name": "Backend Development",
+      "slug": "backend-development",
+      "description": "Server-side web development",
+      "icon": "lucide:server",
+      "display_order": 3,
+      "parent_slug": "web-development"
+    },
+    {
+      "name": "Mobile Development",
+      "slug": "mobile-development",
+      "description": "Building mobile applications",
+      "icon": "lucide:smartphone",
+      "display_order": 2,
+      "parent_slug": "programming"
+    },
+    {
+      "name": "Game Development",
+      "slug": "game-development",
+      "description": "Creating video games and interactive experiences",
+      "icon": "lucide:puzzle",
+      "display_order": 3,
+      "parent_slug": "programming"
+    },
+    {
+      "name": "Systems Programming",
+      "slug": "systems-programming",
+      "description": "Low-level programming and operating systems",
+      "icon": "lucide:cpu",
+      "display_order": 4,
+      "parent_slug": "programming"
+    },
+    {
+      "name": "Software Testing",
+      "slug": "software-testing",
+      "description": "Testing methodologies and quality assurance",
+      "icon": "lucide:check-circle-2",
+      "display_order": 5,
+      "parent_slug": "programming"
+    },
+    {
+      "name": "Data & Analytics",
+      "slug": "data-analytics",
+      "description": "Data science, analysis, and visualization",
+      "icon": "lucide:bar-chart-3",
+      "display_order": 2,
+      "parent_slug": "information-technology"
+    },
+    {
+      "name": "Data Science",
+      "slug": "data-science",
+      "description": "Statistical analysis and machine learning",
+      "icon": "lucide:flask-conical",
+      "display_order": 1,
+      "parent_slug": "data-analytics"
+    },
+    {
+      "name": "Data Engineering",
+      "slug": "data-engineering",
+      "description": "Building data pipelines and infrastructure",
+      "icon": "lucide:database",
+      "display_order": 2,
+      "parent_slug": "data-analytics"
+    },
+    {
+      "name": "Databases",
+      "slug": "databases",
+      "description": "Database design, management, and optimization",
+      "icon": "lucide:database",
+      "display_order": 3,
+      "parent_slug": "data-analytics"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "slug": "cloud-devops",
+      "description": "Cloud computing and DevOps practices",
+      "icon": "lucide:cloud",
+      "display_order": 3,
+      "parent_slug": "information-technology"
+    },
+    {
+      "name": "Information Security",
+      "slug": "information-security",
+      "description": "Cybersecurity and information protection",
+      "icon": "lucide:shield-check",
+      "display_order": 4,
+      "parent_slug": "information-technology"
+    },
+    {
+      "name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "description": "Protecting systems and networks from attacks",
+      "icon": "lucide:lock",
+      "display_order": 1,
+      "parent_slug": "information-security"
+    },
+    {
+      "name": "Design & Creativity",
+      "slug": "design-creativity",
+      "description": "Visual design, UX, and creative arts",
+      "icon": "lucide:paintbrush",
+      "display_order": 2,
+      "parent_slug": null
+    },
+    {
+      "name": "UI/UX Design",
+      "slug": "uiux-design",
+      "description": "User interface and user experience design",
+      "icon": "lucide:smartphone",
+      "display_order": 1,
+      "parent_slug": "design-creativity"
+    },
+    {
+      "name": "Graphic Design",
+      "slug": "graphic-design",
+      "description": "Visual communication and graphic design",
+      "icon": "lucide:image",
+      "display_order": 2,
+      "parent_slug": "design-creativity"
+    },
+    {
+      "name": "Motion & 3D",
+      "slug": "motion-3d",
+      "description": "Motion graphics, animation, and 3D modeling",
+      "icon": "lucide:film",
+      "display_order": 3,
+      "parent_slug": "design-creativity"
+    },
+    {
+      "name": "Creative Arts",
+      "slug": "creative-arts",
+      "description": "Music, writing, photography, and visual arts",
+      "icon": "lucide:music",
+      "display_order": 4,
+      "parent_slug": "design-creativity"
+    },
+    {
+      "name": "Photography & Video",
+      "slug": "photography-video",
+      "description": "Photography and videography",
+      "icon": "lucide:camera",
+      "display_order": 1,
+      "parent_slug": "creative-arts"
+    },
+    {
+      "name": "Music",
+      "slug": "music",
+      "description": "Music theory, performance, and production",
+      "icon": "lucide:music",
+      "display_order": 2,
+      "parent_slug": "creative-arts"
+    },
+    {
+      "name": "Writing",
+      "slug": "writing",
+      "description": "Creative and technical writing",
+      "icon": "lucide:pencil",
+      "display_order": 3,
+      "parent_slug": "creative-arts"
+    },
+    {
+      "name": "Theater",
+      "slug": "theater",
+      "description": "Acting, directing, and stage production",
+      "icon": "lucide:film",
+      "display_order": 4,
+      "parent_slug": "creative-arts"
+    },
+    {
+      "name": "Visual Arts",
+      "slug": "visual-arts",
+      "description": "Drawing, painting, and traditional arts",
+      "icon": "lucide:paintbrush",
+      "display_order": 5,
+      "parent_slug": "creative-arts"
+    },
+    {
+      "name": "Architecture",
+      "slug": "architecture",
+      "description": "Architectural design and planning",
+      "icon": "BuildingOfficeIcon",
+      "display_order": 5,
+      "parent_slug": "design-creativity"
+    },
+    {
+      "name": "Business & Management",
+      "slug": "business-management",
+      "description": "Business skills, management, and entrepreneurship",
+      "icon": "lucide:briefcase",
+      "display_order": 3,
+      "parent_slug": null
+    },
+    {
+      "name": "Product & Project Management",
+      "slug": "product-project-management",
+      "description": "Product development and project coordination",
+      "icon": "ClipboardDocumentListIcon",
+      "display_order": 1,
+      "parent_slug": "business-management"
+    },
+    {
+      "name": "Marketing & Sales",
+      "slug": "marketing-sales",
+      "description": "Marketing strategy and sales techniques",
+      "icon": "MegaphoneIcon",
+      "display_order": 2,
+      "parent_slug": "business-management"
+    },
+    {
+      "name": "Leadership & Communication",
+      "slug": "leadership-communication",
+      "description": "Leadership skills and professional communication",
+      "icon": "lucide:users",
+      "display_order": 3,
+      "parent_slug": "business-management"
+    },
+    {
+      "name": "Finance & Accounting",
+      "slug": "finance-accounting",
+      "description": "Financial management and accounting principles",
+      "icon": "CurrencyDollarIcon",
+      "display_order": 4,
+      "parent_slug": "business-management"
+    },
+    {
+      "name": "Personal Finance",
+      "slug": "personal-finance",
+      "description": "Managing personal money and investments",
+      "icon": "BanknotesIcon",
+      "display_order": 1,
+      "parent_slug": "finance-accounting"
+    },
+    {
+      "name": "Investing & Trading",
+      "slug": "investing-trading",
+      "description": "Investment strategies and trading",
+      "icon": "lucide:bar-chart-3",
+      "display_order": 2,
+      "parent_slug": "finance-accounting"
+    },
+    {
+      "name": "Corporate Finance",
+      "slug": "corporate-finance",
+      "description": "Business financial management",
+      "icon": "BuildingOfficeIcon",
+      "display_order": 3,
+      "parent_slug": "finance-accounting"
+    },
+    {
+      "name": "Operations & Strategy",
+      "slug": "operations-strategy",
+      "description": "Business operations and strategic planning",
+      "icon": "CogIcon",
+      "display_order": 5,
+      "parent_slug": "business-management"
+    },
+    {
+      "name": "Linguistics",
+      "slug": "linguistics",
+      "description": "Language learning and speech development",
+      "icon": "lucide:languages",
+      "display_order": 4,
+      "parent_slug": null
+    },
+    {
+      "name": "Languages",
+      "slug": "languages",
+      "description": "Natural language learning",
+      "icon": "lucide:globe",
+      "display_order": 1,
+      "parent_slug": "linguistics"
+    },
+    {
+      "name": "Speech Development & Pathology",
+      "slug": "speech-development-pathology",
+      "description": "Speech therapy and language development",
+      "icon": "MicrophoneIcon",
+      "display_order": 2,
+      "parent_slug": "linguistics"
+    },
+    {
+      "name": "Mathematics",
+      "slug": "mathematics",
+      "description": "Mathematical theory and applications",
+      "icon": "lucide:calculator",
+      "display_order": 5,
+      "parent_slug": null
+    },
+    {
+      "name": "Foundational Math",
+      "slug": "foundational-math",
+      "description": "Basic mathematical concepts and operations",
+      "icon": "lucide:graduation-cap",
+      "display_order": 1,
+      "parent_slug": "mathematics"
+    },
+    {
+      "name": "Arithmetic",
+      "slug": "arithmetic",
+      "description": "Basic number operations",
+      "icon": "lucide:calculator",
+      "display_order": 1,
+      "parent_slug": "foundational-math"
+    },
+    {
+      "name": "Algebra",
+      "slug": "algebra",
+      "description": "Algebraic expressions and equations",
+      "icon": "VariableIcon",
+      "display_order": 2,
+      "parent_slug": "foundational-math"
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry",
+      "description": "Shapes, spaces, and spatial reasoning",
+      "icon": "Square3Stack3DIcon",
+      "display_order": 3,
+      "parent_slug": "foundational-math"
+    },
+    {
+      "name": "Trigonometry",
+      "slug": "trigonometry",
+      "description": "Angles and triangular relationships",
+      "icon": "ChartPieIcon",
+      "display_order": 4,
+      "parent_slug": "foundational-math"
+    },
+    {
+      "name": "Advanced Math",
+      "slug": "advanced-math",
+      "description": "Higher-level mathematical concepts",
+      "icon": "lucide:graduation-cap",
+      "display_order": 2,
+      "parent_slug": "mathematics"
+    },
+    {
+      "name": "Calculus",
+      "slug": "calculus",
+      "description": "Differential and integral calculus",
+      "icon": "lucide:bar-chart-3",
+      "display_order": 1,
+      "parent_slug": "advanced-math"
+    },
+    {
+      "name": "Linear Algebra",
+      "slug": "linear-algebra",
+      "description": "Vectors, matrices, and linear transformations",
+      "icon": "TableCellsIcon",
+      "display_order": 2,
+      "parent_slug": "advanced-math"
+    },
+    {
+      "name": "Differential Equations",
+      "slug": "differential-equations",
+      "description": "Equations involving derivatives",
+      "icon": "ArrowTrendingUpIcon",
+      "display_order": 3,
+      "parent_slug": "advanced-math"
+    },
+    {
+      "name": "Applied Math",
+      "slug": "applied-math",
+      "description": "Practical mathematical applications",
+      "icon": "lucide:bar-chart-3",
+      "display_order": 3,
+      "parent_slug": "mathematics"
+    },
+    {
+      "name": "Statistics & Probability",
+      "slug": "statistics-probability",
+      "description": "Data analysis and probability theory",
+      "icon": "lucide:bar-chart-3",
+      "display_order": 1,
+      "parent_slug": "applied-math"
+    },
+    {
+      "name": "Discrete Mathematics",
+      "slug": "discrete-mathematics",
+      "description": "Mathematical structures for computer science",
+      "icon": "Squares2X2Icon",
+      "display_order": 2,
+      "parent_slug": "applied-math"
+    },
+    {
+      "name": "Number Theory",
+      "slug": "number-theory",
+      "description": "Properties and relationships of numbers",
+      "icon": "HashtagIcon",
+      "display_order": 3,
+      "parent_slug": "applied-math"
+    },
+    {
+      "name": "Science",
+      "slug": "science",
+      "description": "Natural sciences and scientific research",
+      "icon": "lucide:flask-conical",
+      "display_order": 6,
+      "parent_slug": null
+    },
+    {
+      "name": "Physical Sciences",
+      "slug": "physical-sciences",
+      "description": "Physics, chemistry, and physical phenomena",
+      "icon": "BoltIcon",
+      "display_order": 1,
+      "parent_slug": "science"
+    },
+    {
+      "name": "Physics",
+      "slug": "physics",
+      "description": "Matter, energy, and fundamental forces",
+      "icon": "BoltIcon",
+      "display_order": 1,
+      "parent_slug": "physical-sciences"
+    },
+    {
+      "name": "Chemistry",
+      "slug": "chemistry",
+      "description": "Chemical elements and reactions",
+      "icon": "lucide:flask-conical",
+      "display_order": 2,
+      "parent_slug": "physical-sciences"
+    },
+    {
+      "name": "Astronomy",
+      "slug": "astronomy",
+      "description": "Celestial objects and universe",
+      "icon": "lucide:sparkles",
+      "display_order": 3,
+      "parent_slug": "physical-sciences"
+    },
+    {
+      "name": "Life Sciences",
+      "slug": "life-sciences",
+      "description": "Biology and living organisms",
+      "icon": "lucide:heart",
+      "display_order": 2,
+      "parent_slug": "science"
+    },
+    {
+      "name": "Biology",
+      "slug": "biology",
+      "description": "Living organisms and life processes",
+      "icon": "lucide:sparkles",
+      "display_order": 1,
+      "parent_slug": "life-sciences"
+    },
+    {
+      "name": "Genetics",
+      "slug": "genetics",
+      "description": "Heredity and genetic variation",
+      "icon": "DocumentMagnifyingGlassIcon",
+      "display_order": 2,
+      "parent_slug": "life-sciences"
+    },
+    {
+      "name": "Neuroscience",
+      "slug": "neuroscience",
+      "description": "Brain and nervous system",
+      "icon": "lucide:cpu",
+      "display_order": 3,
+      "parent_slug": "life-sciences"
+    },
+    {
+      "name": "Environmental Science",
+      "slug": "environmental-science",
+      "description": "Environment and ecosystems",
+      "icon": "lucide:globe",
+      "display_order": 3,
+      "parent_slug": "science"
+    },
+    {
+      "name": "Personal Development",
+      "slug": "personal-development",
+      "description": "Self-improvement and life skills",
+      "icon": "UserIcon",
+      "display_order": 7,
+      "parent_slug": null
+    },
+    {
+      "name": "Productivity & Time Management",
+      "slug": "productivity-time-management",
+      "description": "Efficiency and time optimization",
+      "icon": "ClockIcon",
+      "display_order": 1,
+      "parent_slug": "personal-development"
+    },
+    {
+      "name": "Cognitive Skills",
+      "slug": "cognitive-skills",
+      "description": "Thinking and learning abilities",
+      "icon": "LightBulbIcon",
+      "display_order": 2,
+      "parent_slug": "personal-development"
+    },
+    {
+      "name": "Critical Thinking",
+      "slug": "critical-thinking",
+      "description": "Logical analysis and reasoning",
+      "icon": "lucide:graduation-cap",
+      "display_order": 1,
+      "parent_slug": "cognitive-skills"
+    },
+    {
+      "name": "Memory & Learning",
+      "slug": "memory-learning",
+      "description": "Retention and learning techniques",
+      "icon": "BookOpenIcon",
+      "display_order": 2,
+      "parent_slug": "cognitive-skills"
+    },
+    {
+      "name": "Problem Solving",
+      "slug": "problem-solving",
+      "description": "Analytical problem resolution",
+      "icon": "lucide:puzzle",
+      "display_order": 3,
+      "parent_slug": "cognitive-skills"
+    },
+    {
+      "name": "Communication & Interpersonal",
+      "slug": "communication-interpersonal",
+      "description": "Relationship and communication skills",
+      "icon": "lucide:messages-square",
+      "display_order": 3,
+      "parent_slug": "personal-development"
+    },
+    {
+      "name": "Mindfulness & Wellness",
+      "slug": "mindfulness-wellness",
+      "description": "Mental well-being and awareness",
+      "icon": "lucide:heart",
+      "display_order": 4,
+      "parent_slug": "personal-development"
+    },
+    {
+      "name": "Health & Fitness",
+      "slug": "health-fitness",
+      "description": "Physical health and wellness",
+      "icon": "lucide:heart",
+      "display_order": 8,
+      "parent_slug": null
+    },
+    {
+      "name": "Fitness & Exercise",
+      "slug": "fitness-exercise",
+      "description": "Physical training and exercise",
+      "icon": "BoltIcon",
+      "display_order": 1,
+      "parent_slug": "health-fitness"
+    },
+    {
+      "name": "Strength Training",
+      "slug": "strength-training",
+      "description": "Resistance and weight training",
+      "icon": "FireIcon",
+      "display_order": 1,
+      "parent_slug": "fitness-exercise"
+    },
+    {
+      "name": "Cardio & Endurance",
+      "slug": "cardio-endurance",
+      "description": "Cardiovascular fitness",
+      "icon": "lucide:heart",
+      "display_order": 2,
+      "parent_slug": "fitness-exercise"
+    },
+    {
+      "name": "Flexibility & Mobility",
+      "slug": "flexibility-mobility",
+      "description": "Stretching and movement quality",
+      "icon": "ArrowsRightLeftIcon",
+      "display_order": 3,
+      "parent_slug": "fitness-exercise"
+    },
+    {
+      "name": "Nutrition & Diet",
+      "slug": "nutrition-diet",
+      "description": "Healthy eating and nutrition",
+      "icon": "CakeIcon",
+      "display_order": 2,
+      "parent_slug": "health-fitness"
+    },
+    {
+      "name": "Mental Health",
+      "slug": "mental-health",
+      "description": "Psychological well-being",
+      "icon": "lucide:heart",
+      "display_order": 3,
+      "parent_slug": "health-fitness"
+    },
+    {
+      "name": "Holistic Health",
+      "slug": "holistic-health",
+      "description": "Alternative and integrative health",
+      "icon": "lucide:sparkles",
+      "display_order": 4,
+      "parent_slug": "health-fitness"
+    },
+    {
+      "name": "Yoga",
+      "slug": "yoga",
+      "description": "Mind-body practice and movement",
+      "icon": "UserIcon",
+      "display_order": 1,
+      "parent_slug": "holistic-health"
+    },
+    {
+      "name": "Meditation",
+      "slug": "meditation",
+      "description": "Mindfulness and meditation practices",
+      "icon": "lucide:sparkles",
+      "display_order": 2,
+      "parent_slug": "holistic-health"
+    },
+    {
+      "name": "Alternative Medicine",
+      "slug": "alternative-medicine",
+      "description": "Complementary health practices",
+      "icon": "lucide:flask-conical",
+      "display_order": 3,
+      "parent_slug": "holistic-health"
+    },
+    {
+      "name": "Home & Lifestyle",
+      "slug": "home-lifestyle",
+      "description": "Practical skills for home, garden, and daily living",
+      "icon": "lucide:home",
+      "display_order": 9,
+      "parent_slug": null
+    },
+    {
+      "name": "Recreation & Hobbies",
+      "slug": "recreation-hobbies",
+      "description": "Games, sports, and recreational activities",
+      "icon": "lucide:gamepad-2",
+      "display_order": 10,
+      "parent_slug": null
+    },
+    {
+      "name": "Fiber Arts & Crafts",
+      "slug": "fiber-arts-crafts",
+      "description": "Textile arts, sewing, knitting, and fiber crafts",
+      "icon": "lucide:scissors",
+      "display_order": 5,
+      "parent_slug": "design-creativity"
+    }
+  ]
+}
