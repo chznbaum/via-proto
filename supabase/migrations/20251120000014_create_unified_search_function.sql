@@ -14,6 +14,8 @@ RETURNS TABLE (
     topic_slug text,
     topic_description text,
     category_id uuid,
+    category_name text,
+    category_slug text,
     rank real,
     primary_competency_name text,
     primary_competency_slug text,
@@ -30,6 +32,8 @@ BEGIN
         t.slug as topic_slug,
         t.description as topic_description,
         t.category_id,
+        cat.name as category_name,
+        cat.slug as category_slug,
         ts_rank(t.search_vector, websearch_to_tsquery('english', search_query)) as rank,
         -- Primary competency
         (SELECT c.name
@@ -55,6 +59,7 @@ BEGIN
            AND tg.taggable_type = 'topic'
            AND tag.is_active = true) as tags
     FROM public.topics t
+    INNER JOIN public.categories cat ON t.category_id = cat.id
     WHERE
         t.is_active = true
         AND t.search_vector @@ websearch_to_tsquery('english', search_query)
@@ -66,4 +71,4 @@ $$;
 
 -- Add detailed comment
 COMMENT ON FUNCTION public.search_topics IS
-'Search topics using weighted tsvector (A=name, B=competencies+synonyms, C=description, D=tags). Uses websearch_to_tsquery for natural query parsing including quoted phrases and AND/OR operators.';
+'Search topics using weighted tsvector (A=name, B=competencies+synonyms, C=description, D=tags). Returns category name for display. Uses websearch_to_tsquery for natural query parsing including quoted phrases and AND/OR operators.';

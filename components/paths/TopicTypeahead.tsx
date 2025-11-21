@@ -7,7 +7,9 @@ export interface Topic {
   id: string;
   name: string;
   slug: string;
-  category: string;
+  category_id: string;
+  category_name: string;
+  category_slug: string;
   description: string | null;
 }
 
@@ -103,7 +105,9 @@ export default function TopicTypeahead({
       id: result.topic_id,
       name: result.topic_name,
       slug: result.topic_slug,
-      category: result.category_id, // This will need mapping if you want category name
+      category_id: result.category_id,
+      category_name: result.category_name,
+      category_slug: result.category_slug,
       description: result.topic_description,
     };
     setSelectedTopic(topic);

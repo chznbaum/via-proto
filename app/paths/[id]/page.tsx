@@ -9,7 +9,10 @@ async function getPath(id: string) {
     .from('learning_paths')
     .select(`
       *,
-      topic:topics(*),
+      topic:topics(
+        *,
+        category:categories(name, slug, icon)
+      ),
       creator:profiles!creator_id(id, name, avatar_url),
       account:accounts(id, name),
       sections(

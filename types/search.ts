@@ -13,6 +13,8 @@ export interface TopicSearchResult {
   topic_slug: string;
   topic_description: string;
   category_id: string;
+  category_name: string;
+  category_slug: string;
   rank: number;
   primary_competency_name: string | null;
   primary_competency_slug: string | null;

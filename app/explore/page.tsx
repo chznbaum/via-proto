@@ -25,7 +25,8 @@ export default async function ExplorePage() {
       *,
       topics (
         name,
-        category
+        slug,
+        category:categories(name, slug, icon)
       ),
       profiles (
         name,
@@ -134,7 +135,7 @@ export default async function ExplorePage() {
                   <div className="flex h-full flex-col justify-between relative z-10 flex-1">
                     <div>
                       <p className="font-mono text-xs font-medium uppercase tracking-wide text-white/80">
-                        {featuredPath.topics?.category || "Featured"}
+                        {featuredPath.topics?.category?.name || "Featured"}
                       </p>
                       <h2 className="font-serif mt-2 text-2xl font-semibold sm:text-3xl text-white">
                         {featuredPath.title}

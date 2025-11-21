@@ -7,7 +7,7 @@ import { createClient } from '@/libs/supabase/server';
  * Query params:
  * - q: search query (searches in topic name and synonyms)
  * - limit: max results (default 10, max 50)
- * - category: filter by category
+ * - category_id: filter by category UUID
  */
 export async function GET(req: NextRequest) {
   try {
@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
     const { searchParams } = req.nextUrl;
     const query = searchParams.get('q') || '';
     const limit = Math.min(parseInt(searchParams.get('limit') || '10'), 50);
-    const category = searchParams.get('category');
+    const categoryId = searchParams.get('category_id');
 
     if (query) {
       // Search in both topic names and synonyms
@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
       const { data: topics, error } = await supabase.rpc('search_topics', {
         search_query: query,
         result_limit: limit,
-        filter_category: category || null,
+        filter_category_id: categoryId || null,
       });
 
       if (error) {
@@ -36,16 +36,19 @@ export async function GET(req: NextRequest) {
 
       return NextResponse.json({ topics: topics || [] });
     } else {
-      // No query - return all active topics (or filtered by category)
+      // No query - return all active topics with category info
       let dbQuery = supabase
         .from('topics')
-        .select('*')
+        .select(`
+          *,
+          category:categories(name, slug, icon)
+        `)
         .eq('is_active', true)
         .order('name')
         .limit(limit);
 
-      if (category) {
-        dbQuery = dbQuery.eq('category', category);
+      if (categoryId) {
+        dbQuery = dbQuery.eq('category_id', categoryId);
       }
 
       const { data: topics, error } = await dbQuery;
