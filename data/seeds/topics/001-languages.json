@@ -1,0 +1,16 @@
+{
+  "topics": [
+    {
+      "name": "Conversational Spanish",
+      "slug": "conversational-spanish",
+      "description": "Learn essential Spanish phrases and conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {
+          "competency_slug": "spanish",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

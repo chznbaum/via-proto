@@ -354,8 +354,7 @@
         "OOP",
         "Object Oriented Programming",
         "OO Programming"
-      ],
-      "icon": "lucide:boxes"
+      ]
     },
     {
       "name": "Functional Programming",
@@ -365,8 +364,7 @@
       "synonyms": [
         "FP",
         "Functional Programming Paradigm"
-      ],
-      "icon": "lucide:function-square"
+      ]
     },
     {
       "name": "Algorithms",
@@ -378,7 +376,6 @@
         "Algorithmic Thinking",
         "Problem Solving Algorithms"
       ],
-      "icon": "lucide:network",
       "prerequisites": [
         {
           "prerequisite_slug": "data-structures",
@@ -396,8 +393,7 @@
         "Data Structure Design",
         "DS",
         "Data Organization"
-      ],
-      "icon": "lucide:database"
+      ]
     },
     {
       "name": "Design Patterns",
@@ -409,7 +405,6 @@
         "Gang of Four Patterns",
         "GoF Patterns"
       ],
-      "icon": "lucide:component",
       "prerequisites": [
         {
           "prerequisite_slug": "oop",
@@ -419,65 +414,88 @@
       ]
     },
     {
-      "name": "Version Control",
-      "slug": "version-control",
-      "description": "Systems for tracking changes in code and collaborating with others",
+      "name": "Git",
+      "slug": "git",
+      "description": "Distributed version control system for tracking changes in source code",
       "category_slug": "programming",
       "synonyms": [
-        "Source Control",
-        "VCS",
-        "Git"
+        "Git VCS",
+        "Git Version Control"
       ],
-      "icon": "lucide:git-branch"
+      "icon": "logos:git",
+      "alternatives": [
+        {
+          "alternative_slug": "mercurial",
+          "relationship_type": "similar",
+          "notes": "Both are distributed version control systems"
+        },
+        {
+          "alternative_slug": "subversion",
+          "relationship_type": "similar",
+          "notes": "Subversion is a centralized VCS, Git is distributed"
+        }
+      ]
+    },
+    {
+      "name": "Mercurial",
+      "slug": "mercurial",
+      "description": "Distributed version control system emphasizing ease of use",
+      "category_slug": "programming",
+      "synonyms": [
+        "Hg",
+        "Mercurial VCS"
+      ],
+      "icon": "logos:mercurial",
+      "alternatives": [
+        {
+          "alternative_slug": "git",
+          "relationship_type": "similar",
+          "notes": "Both are distributed version control systems, Git is more popular"
+        }
+      ]
+    },
+    {
+      "name": "Subversion",
+      "slug": "subversion",
+      "description": "Centralized version control system, also known as SVN",
+      "category_slug": "programming",
+      "synonyms": [
+        "SVN",
+        "Apache Subversion"
+      ],
+      "icon": "logos:subversion"
     },
     {
       "name": "SQL",
       "slug": "sql",
-      "description": "Language for managing and querying relational databases",
+      "description": "Standard language for managing and querying relational databases",
       "category_slug": "databases",
       "synonyms": [
         "Structured Query Language",
         "Database Queries",
         "SQL Programming"
-      ],
-      "icon": "lucide:database"
+      ]
     },
     {
       "name": "Regular Expressions",
       "slug": "regular-expressions",
-      "description": "Pattern matching for text processing and string manipulation",
+      "description": "Pattern matching syntax for text processing and string manipulation",
       "category_slug": "programming",
       "synonyms": [
         "RegEx",
         "RegExp"
-      ],
-      "icon": "lucide:search"
-    },
-    {
-      "name": "Testing",
-      "slug": "software-testing",
-      "description": "Practices and techniques for verifying software quality and correctness",
-      "category_slug": "software-testing",
-      "synonyms": [
-        "Unit Testing",
-        "Test-Driven Development",
-        "TDD",
-        "QA",
-        "Quality Assurance"
-      ],
-      "icon": "lucide:check-circle-2"
+      ]
     },
     {
       "name": "Debugging",
       "slug": "debugging",
-      "description": "Identifying and fixing errors in software",
+      "description": "Process and techniques for identifying and fixing errors in software",
       "category_slug": "programming",
       "synonyms": [
         "Bug Fixing",
         "Troubleshooting",
         "Code Debugging"
-      ],
-      "icon": "lucide:bug"
+      ]
     },
     {
       "name": "Scala",
@@ -1085,6 +1103,752 @@
       "synonyms": [
         "Ada Language",
         "Ada Programming"
+      ]
+    },
+    {
+      "name": "Elm",
+      "slug": "elm",
+      "description": "Functional language for building reliable web applications with no runtime exceptions",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Elm Language",
+        "Elm Programming"
+      ],
+      "icon": "logos:elm",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Elm is a pure functional language, understanding FP concepts helps"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "purescript",
+          "relationship_type": "similar",
+          "notes": "Both are strongly-typed functional languages that compile to JavaScript"
+        }
+      ]
+    },
+    {
+      "name": "ReScript",
+      "slug": "rescript",
+      "description": "Strongly typed functional language that compiles to JavaScript, formerly known as BuckleScript and ReasonML",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "ReScript Language",
+        "ReasonML",
+        "BuckleScript",
+        "Reason"
+      ],
+      "icon": "logos:rescript",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding JavaScript helps with ReScript's interop features"
+        },
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "ReScript is functional-first, FP concepts are beneficial"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "typescript",
+          "relationship_type": "similar",
+          "notes": "Both add type safety to JavaScript, but different paradigms"
+        },
+        {
+          "alternative_slug": "elm",
+          "relationship_type": "similar",
+          "notes": "Both are functional languages for frontend development"
+        }
+      ]
+    },
+    {
+      "name": "PureScript",
+      "slug": "purescript",
+      "description": "Strongly-typed functional language that compiles to JavaScript, inspired by Haskell",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "PureScript Language",
+        "PureScript Programming"
+      ],
+      "icon": "logos:purescript",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "required",
+          "notes": "PureScript uses advanced functional programming concepts from Haskell"
+        },
+        {
+          "prerequisite_slug": "haskell",
+          "prerequisite_level": "recommended",
+          "notes": "PureScript syntax and concepts are very similar to Haskell"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "elm",
+          "relationship_type": "similar",
+          "notes": "Both are functional languages for web frontends, PureScript is more powerful but complex"
+        },
+        {
+          "alternative_slug": "haskell",
+          "relationship_type": "similar",
+          "notes": "PureScript brings Haskell-like programming to JavaScript"
+        }
+      ]
+    },
+    {
+      "name": "AWK",
+      "slug": "awk",
+      "description": "Text processing language for pattern scanning and data extraction",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "AWK Language",
+        "AWK Programming",
+        "GAWK",
+        "GNU AWK"
+      ],
+      "icon": "devicon:awk",
+      "alternatives": [
+        {
+          "alternative_slug": "perl",
+          "relationship_type": "similar",
+          "notes": "Perl was designed as a more powerful successor to AWK for text processing"
+        }
+      ]
+    },
+    {
+      "name": "Gleam",
+      "slug": "gleam",
+      "description": "Type-safe functional language for the Erlang VM with excellent error messages",
+      "category_slug": "programming",
+      "synonyms": [
+        "Gleam Language",
+        "Gleam Programming"
+      ],
+      "icon": "logos:gleam",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Gleam is a functional language with ML-inspired syntax"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "elixir",
+          "relationship_type": "similar",
+          "notes": "Both run on the Erlang VM, Gleam has static typing while Elixir is dynamic"
+        },
+        {
+          "alternative_slug": "erlang",
+          "relationship_type": "similar",
+          "notes": "Both run on the Erlang VM for concurrent systems"
+        }
+      ]
+    },
+    {
+      "name": "Hack",
+      "slug": "hack",
+      "description": "Statically typed language for HHVM, designed by Meta/Facebook for improved PHP development",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Hack Language",
+        "Hack Programming",
+        "HHVM Hack"
+      ],
+      "icon": "logos:hack",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "php",
+          "prerequisite_level": "recommended",
+          "notes": "Hack is designed as a gradual evolution from PHP"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "php",
+          "relationship_type": "similar",
+          "notes": "Hack adds static typing and modern features to PHP-like syntax"
+        }
+      ]
+    },
+    {
+      "name": "Carbon",
+      "slug": "carbon",
+      "description": "Experimental successor to C++ designed by Google for modern systems programming",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Carbon Language",
+        "Carbon Programming",
+        "Google Carbon"
+      ],
+      "icon": "devicon:carbon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "recommended",
+          "notes": "Carbon is designed as a C++ successor with interoperability"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cpp",
+          "relationship_type": "similar",
+          "notes": "Carbon aims to be a modern alternative to C++"
+        },
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages aiming to improve on C++"
+        }
+      ]
+    },
+    {
+      "name": "Ballerina",
+      "slug": "ballerina",
+      "description": "Cloud-native programming language designed for network-distributed applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Ballerina Language",
+        "Ballerina Programming"
+      ],
+      "icon": "devicon:ballerina",
+      "alternatives": [
+        {
+          "alternative_slug": "go",
+          "relationship_type": "similar",
+          "notes": "Both are designed for cloud-native and microservices development"
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "slug": "d",
+      "description": "Systems programming language with C-like performance and modern features",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "D Language",
+        "D Programming",
+        "Dlang"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "recommended",
+          "notes": "D is influenced by C and C++, understanding C helps"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cpp",
+          "relationship_type": "similar",
+          "notes": "D aims to improve on C++ with simpler syntax and memory safety features"
+        },
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages with memory safety focus"
+        }
+      ]
+    },
+    {
+      "name": "Scratch",
+      "slug": "scratch",
+      "description": "Visual block-based programming language designed for education and beginners",
+      "category_slug": "programming",
+      "synonyms": [
+        "Scratch Programming",
+        "MIT Scratch",
+        "Scratch Language"
+      ]
+    },
+    {
+      "name": "Mojo",
+      "slug": "mojo",
+      "description": "High-performance AI programming language combining Python syntax with systems programming speed",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Mojo Language",
+        "Mojo Programming",
+        "Modular Mojo"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Mojo is designed to be a superset of Python with familiar syntax"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Mojo aims to be as easy as Python but with C++ level performance"
+        },
+        {
+          "alternative_slug": "julia",
+          "relationship_type": "similar",
+          "notes": "Both target high-performance scientific and AI computing"
+        }
+      ]
+    },
+    {
+      "name": "Raku",
+      "slug": "raku",
+      "description": "Multi-paradigm language, successor to Perl 5, formerly known as Perl 6",
+      "category_slug": "programming",
+      "synonyms": [
+        "Raku Language",
+        "Perl 6",
+        "Raku Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "perl",
+          "prerequisite_level": "optional",
+          "notes": "Raku evolved from Perl but is a distinct language"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "perl",
+          "relationship_type": "similar",
+          "notes": "Raku is the spiritual successor to Perl with modern features"
+        }
+      ]
+    },
+    {
+      "name": "Tcl",
+      "slug": "tcl",
+      "description": "Embeddable scripting language with Tk GUI toolkit",
+      "category_slug": "programming",
+      "synonyms": [
+        "Tcl Language",
+        "Tcl/Tk",
+        "Tool Command Language"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Both are embeddable scripting languages with GUI toolkits"
+        }
+      ]
+    },
+    {
+      "name": "V",
+      "slug": "v",
+      "description": "Simple, fast, safe compiled language for developing maintainable software",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "V Language",
+        "V Programming",
+        "Vlang"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "go",
+          "relationship_type": "similar",
+          "notes": "Both emphasize simplicity and fast compilation"
+        },
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages with memory safety"
+        }
+      ]
+    },
+    {
+      "name": "Odin",
+      "slug": "odin",
+      "description": "Fast, concise, readable alternative to C for game and systems development",
+      "category_slug": "game-development",
+      "synonyms": [
+        "Odin Language",
+        "Odin Programming",
+        "Odinlang"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "recommended",
+          "notes": "Odin is designed as a better C with familiar concepts"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "c",
+          "relationship_type": "similar",
+          "notes": "Odin aims to be a better C for game development"
+        },
+        {
+          "alternative_slug": "zig",
+          "relationship_type": "similar",
+          "notes": "Both are modern alternatives to C for systems and game development"
+        }
+      ]
+    },
+    {
+      "name": "Pascal",
+      "slug": "pascal",
+      "description": "Structured programming language designed for teaching and software development",
+      "category_slug": "programming",
+      "synonyms": [
+        "Pascal Language",
+        "Pascal Programming",
+        "Standard Pascal"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "delphi",
+          "relationship_type": "similar",
+          "notes": "Delphi extends Pascal with object-oriented features"
+        }
+      ]
+    },
+    {
+      "name": "Smalltalk",
+      "slug": "smalltalk",
+      "description": "Object-oriented programming language that pioneered many OOP concepts",
+      "category_slug": "programming",
+      "synonyms": [
+        "Smalltalk Language",
+        "Smalltalk Programming",
+        "Smalltalk-80"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "oop",
+          "prerequisite_level": "recommended",
+          "notes": "Smalltalk is a pure object-oriented language"
+        }
+      ]
+    },
+    {
+      "name": "ActionScript",
+      "slug": "actionscript",
+      "description": "Object-oriented language for Adobe Flash platform and AIR applications",
+      "category_slug": "programming",
+      "synonyms": [
+        "ActionScript 3",
+        "AS3",
+        "ActionScript Language"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "recommended",
+          "notes": "ActionScript syntax is similar to JavaScript/ECMAScript"
+        }
+      ]
+    },
+    {
+      "name": "Standard ML",
+      "slug": "standard-ml",
+      "description": "Functional programming language with formal type system and module system",
+      "category_slug": "programming",
+      "synonyms": [
+        "SML",
+        "Standard ML Language",
+        "ML Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Standard ML is a functional language with academic roots"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ocaml",
+          "relationship_type": "similar",
+          "notes": "Both are ML family languages with similar type systems"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "slug": "red",
+      "description": "Full-stack programming language inspired by Rebol for cross-platform development",
+      "category_slug": "programming",
+      "synonyms": [
+        "Red Language",
+        "Red Programming",
+        "Red-lang"
+      ]
+    },
+    {
+      "name": "Pony",
+      "slug": "pony",
+      "description": "Actor-model systems language with capabilities-secure concurrency",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Pony Language",
+        "Pony Programming",
+        "Ponylang"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Pony uses functional programming concepts"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both focus on memory safety and concurrent systems programming"
+        },
+        {
+          "alternative_slug": "erlang",
+          "relationship_type": "similar",
+          "notes": "Both use actor-model concurrency"
+        }
+      ]
+    },
+    {
+      "name": "Fennel",
+      "slug": "fennel",
+      "description": "Lisp that compiles to Lua, used for game scripting and embedded systems",
+      "category_slug": "game-development",
+      "synonyms": [
+        "Fennel Language",
+        "Fennel Lisp"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lua",
+          "prerequisite_level": "recommended",
+          "notes": "Fennel compiles to Lua and integrates with Lua ecosystem"
+        },
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Fennel is a Lisp dialect with functional programming"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "lua",
+          "relationship_type": "similar",
+          "notes": "Fennel provides Lisp syntax for the Lua runtime"
+        }
+      ]
+    },
+    {
+      "name": "Janet",
+      "slug": "janet",
+      "description": "Embeddable Lisp-like language for scripting and systems programming",
+      "category_slug": "programming",
+      "synonyms": [
+        "Janet Language",
+        "Janet Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Janet is a Lisp dialect"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "lua",
+          "relationship_type": "similar",
+          "notes": "Both are embeddable scripting languages"
+        },
+        {
+          "alternative_slug": "common-lisp",
+          "relationship_type": "similar",
+          "notes": "Both are Lisp dialects"
+        }
+      ]
+    },
+    {
+      "name": "Idris",
+      "slug": "idris",
+      "description": "Dependently-typed functional language for verified software",
+      "category_slug": "programming",
+      "synonyms": [
+        "Idris Language",
+        "Idris Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "haskell",
+          "prerequisite_level": "recommended",
+          "notes": "Idris syntax is similar to Haskell with dependent types"
+        },
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "required",
+          "notes": "Idris is a pure functional language with advanced type theory"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "agda",
+          "relationship_type": "similar",
+          "notes": "Both are dependently-typed functional languages"
+        },
+        {
+          "alternative_slug": "coq",
+          "relationship_type": "similar",
+          "notes": "Both are used for theorem proving and verified programming"
+        }
+      ]
+    },
+    {
+      "name": "Agda",
+      "slug": "agda",
+      "description": "Dependently-typed functional language and proof assistant",
+      "category_slug": "programming",
+      "synonyms": [
+        "Agda Language",
+        "Agda Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "required",
+          "notes": "Agda requires deep understanding of functional programming and type theory"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "idris",
+          "relationship_type": "similar",
+          "notes": "Both are dependently-typed languages for verified programming"
+        },
+        {
+          "alternative_slug": "coq",
+          "relationship_type": "similar",
+          "notes": "Both are proof assistants with programming capabilities"
+        }
+      ]
+    },
+    {
+      "name": "Coq",
+      "slug": "coq",
+      "description": "Formal proof management system with functional programming language",
+      "category_slug": "programming",
+      "synonyms": [
+        "Coq Language",
+        "Coq Proof Assistant"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "required",
+          "notes": "Coq is based on functional programming with dependent types"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "lean",
+          "relationship_type": "similar",
+          "notes": "Both are theorem provers with programming capabilities"
+        },
+        {
+          "alternative_slug": "agda",
+          "relationship_type": "similar",
+          "notes": "Both support dependently-typed programming and proofs"
+        }
+      ]
+    },
+    {
+      "name": "Lean",
+      "slug": "lean",
+      "description": "Theorem prover and programming language for verified software development",
+      "category_slug": "programming",
+      "synonyms": [
+        "Lean Language",
+        "Lean Prover",
+        "Lean 4"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "required",
+          "notes": "Lean uses functional programming with dependent types"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "coq",
+          "relationship_type": "similar",
+          "notes": "Both are proof assistants and programming languages"
+        },
+        {
+          "alternative_slug": "idris",
+          "relationship_type": "similar",
+          "notes": "Both are dependently-typed languages for verified programming"
+        }
+      ]
+    },
+    {
+      "name": "Chapel",
+      "slug": "chapel",
+      "description": "Parallel programming language for high-performance computing",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Chapel Language",
+        "Chapel Programming"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "fortran",
+          "relationship_type": "similar",
+          "notes": "Both are used for high-performance scientific computing"
+        }
+      ]
+    },
+    {
+      "name": "Ring",
+      "slug": "ring",
+      "description": "Practical general-purpose multi-paradigm language for applications development",
+      "category_slug": "programming",
+      "synonyms": [
+        "Ring Language",
+        "Ring Programming"
+      ]
+    },
+    {
+      "name": "ATS",
+      "slug": "ats",
+      "description": "Statically typed language with theorem proving for safe systems programming",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "ATS Language",
+        "ATS Programming",
+        "Applied Type System"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "recommended",
+          "notes": "ATS compiles to C and is designed for systems programming"
+        },
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "ATS uses functional programming with dependent types"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both focus on memory safety in systems programming"
+        }
       ]
     }
   ]

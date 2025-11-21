@@ -148,6 +148,12 @@
       "icon": "logos:pinia"
     },
     {
+      "name": "Vuex",
+      "slug": "vuex",
+      "description": "A more modular and intuitive store for Vue.js",
+      "category_slug": "frontend-development"
+    },
+    {
       "name": "Nuxt",
       "slug": "nuxt",
       "description": "Full stack web application framework for Vue.js",

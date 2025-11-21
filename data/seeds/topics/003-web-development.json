@@ -101,6 +101,26 @@
       ]
     },
     {
+      "name": "Managing frontend state with Vue.js and Vuex",
+      "slug": "state-management-vuejs-vuex",
+      "description": "Master centralized state management in Vue.js applications using Vuex",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "vuex",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
       "name": "Scaffold performant Vue.js applications with Nuxt",
       "slug": "scaffold-vuejs-apps-nuxt",
       "description": "Build server-rendered and statically generated Vue.js apps with Nuxt framework",

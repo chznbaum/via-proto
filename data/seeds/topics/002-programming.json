@@ -1,18 +1,6 @@
 {
   "topics": [
     {
-      "name": "Conversational Spanish for travelers",
-      "slug": "conversational-spanish-for-travelers",
-      "description": "Learn essential Spanish phrases and conversations for travel",
-      "category_slug": "languages",
-      "competencies": [
-        {
-          "competency_slug": "spanish",
-          "is_primary": true
-        }
-      ]
-    },
-    {
       "name": "Building games for web browsers with Vue.js",
       "slug": "building-browser-games-vuejs",
       "description": "Create interactive browser-based games using Vue.js components and reactivity",
