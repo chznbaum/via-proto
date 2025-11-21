@@ -152,6 +152,13 @@ Add new domain files as the platform expands to new areas.
 ## Synonym Guidelines
 CRITICAL RULE: Do not create multiple synonyms that would share the same slug (ie.: WASM, wasm). Synonyms are for making searching and matching more user-friendly and those activities will be done case-insensitively. If you create multiple synonyms that would slugify the same way, you will cause a duplicate key value violates unique constraint error in the database.
 
+**Before committing changes, always run the synonym checker:**
+```bash
+node scripts/check-competency-synonyms.js
+```
+
+This script checks all competency files for synonyms that would slugify identically (e.g., "RegEx" and "Regex" both become "regex"). The script will exit with an error if duplicates are found and show which synonyms conflict.
+
 ## Icon Format
 
 All icons use the iconify format with **strict rules** for each data type:

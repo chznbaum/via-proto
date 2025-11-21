@@ -1,0 +1,3784 @@
+{
+  "competencies": [
+    {
+      "name": "Docker",
+      "slug": "docker",
+      "description": "Platform for developing, shipping, and running applications in containers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Docker Engine",
+        "Docker Container",
+        "Containerization"
+      ],
+      "icon": "logos:docker-icon",
+      "alternatives": [
+        {
+          "alternative_slug": "podman",
+          "relationship_type": "similar",
+          "notes": "Podman is a daemonless Docker alternative with similar CLI"
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "slug": "kubernetes",
+      "description": "Container orchestration platform for automating deployment, scaling, and management",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "K8s",
+        "K8",
+        "Kube"
+      ],
+      "icon": "logos:kubernetes",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Understanding containers is essential before learning Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "docker-swarm",
+          "relationship_type": "similar",
+          "notes": "Docker Swarm is simpler but less powerful than Kubernetes"
+        },
+        {
+          "alternative_slug": "nomad",
+          "relationship_type": "similar",
+          "notes": "HashiCorp Nomad is a simpler alternative to Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Docker Compose",
+      "slug": "docker-compose",
+      "description": "Tool for defining and running multi-container Docker applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Docker-Compose",
+        "Compose"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Docker basics required before using Docker Compose"
+        }
+      ]
+    },
+    {
+      "name": "Docker Swarm",
+      "slug": "docker-swarm",
+      "description": "Native clustering and orchestration solution for Docker",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Swarm Mode",
+        "Docker Swarm Mode"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Docker fundamentals required for Swarm"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kubernetes",
+          "relationship_type": "similar",
+          "notes": "Kubernetes is more feature-rich but more complex than Docker Swarm"
+        }
+      ]
+    },
+    {
+      "name": "HashiCorp Nomad",
+      "slug": "nomad",
+      "description": "Simple and flexible workload orchestrator for deploying containers and non-containerized applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Nomad",
+        "Nomad Orchestrator"
+      ],
+      "icon": "logos:nomad-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "While Nomad can orchestrate non-containerized apps, Docker knowledge is beneficial"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kubernetes",
+          "relationship_type": "similar",
+          "notes": "Nomad is simpler and more flexible than Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Rancher",
+      "slug": "rancher",
+      "description": "Complete container management platform for Kubernetes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Rancher Platform",
+        "Rancher Kubernetes"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Rancher is built on top of Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Podman",
+      "slug": "podman",
+      "description": "Daemonless container engine for developing, managing, and running OCI containers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Podman Container",
+        "Pod Manager"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "docker",
+          "relationship_type": "similar",
+          "notes": "Podman is Docker-compatible but doesn't require a daemon"
+        }
+      ]
+    },
+    {
+      "name": "Helm",
+      "slug": "helm",
+      "description": "Package manager for Kubernetes applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Helm Charts",
+        "Kubernetes Helm"
+      ],
+      "icon": "logos:helm",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Helm manages Kubernetes applications, so K8s knowledge is essential"
+        }
+      ]
+    },
+    {
+      "name": "Containerd",
+      "slug": "containerd",
+      "description": "Industry-standard container runtime with emphasis on simplicity and robustness",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Container Runtime"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cri-o",
+          "relationship_type": "similar",
+          "notes": "Both are lightweight container runtimes for Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "CRI-O",
+      "slug": "cri-o",
+      "description": "Lightweight container runtime specifically for Kubernetes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "CRIO",
+        "Container Runtime Interface"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "CRI-O is designed specifically for Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "containerd",
+          "relationship_type": "similar",
+          "notes": "Both are container runtimes for Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "slug": "aws",
+      "description": "Comprehensive cloud computing platform offering compute, storage, databases, and more",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "AWS",
+        "Amazon Cloud"
+      ],
+      "icon": "logos:aws",
+      "alternatives": [
+        {
+          "alternative_slug": "azure",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive cloud platforms"
+        },
+        {
+          "alternative_slug": "google-cloud-platform",
+          "relationship_type": "similar",
+          "notes": "Both are major cloud providers with similar services"
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Azure",
+      "slug": "azure",
+      "description": "Microsoft's cloud computing platform for building, deploying, and managing applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Azure",
+        "Azure Cloud",
+        "Windows Azure"
+      ],
+      "icon": "logos:azure",
+      "alternatives": [
+        {
+          "alternative_slug": "aws",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive cloud platforms"
+        },
+        {
+          "alternative_slug": "google-cloud-platform",
+          "relationship_type": "similar",
+          "notes": "Both are major cloud providers"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Platform",
+      "slug": "google-cloud-platform",
+      "description": "Google's suite of cloud computing services for infrastructure, platform, and serverless computing",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "GCP",
+        "Google Cloud",
+        "GC"
+      ],
+      "icon": "logos:google-cloud",
+      "alternatives": [
+        {
+          "alternative_slug": "aws",
+          "relationship_type": "similar",
+          "notes": "Both are major cloud providers"
+        },
+        {
+          "alternative_slug": "azure",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive cloud platforms"
+        }
+      ]
+    },
+    {
+      "name": "DigitalOcean",
+      "slug": "digitalocean",
+      "description": "Cloud infrastructure provider focused on simplicity for developers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "DO",
+        "Digital Ocean"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "linode",
+          "relationship_type": "similar",
+          "notes": "Both are developer-friendly cloud providers with simple pricing"
+        },
+        {
+          "alternative_slug": "vultr",
+          "relationship_type": "similar",
+          "notes": "Both are affordable VPS providers"
+        }
+      ]
+    },
+    {
+      "name": "Linode",
+      "slug": "linode",
+      "description": "Cloud hosting provider offering virtual private servers and cloud infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Akamai Linode"
+      ],
+      "icon": "logos:linode",
+      "alternatives": [
+        {
+          "alternative_slug": "digitalocean",
+          "relationship_type": "similar",
+          "notes": "Both are developer-focused cloud providers"
+        }
+      ]
+    },
+    {
+      "name": "Heroku",
+      "slug": "heroku",
+      "description": "Platform as a Service for deploying, managing, and scaling applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Heroku Platform"
+      ],
+      "icon": "logos:heroku",
+      "alternatives": [
+        {
+          "alternative_slug": "vercel",
+          "relationship_type": "similar",
+          "notes": "Both are PaaS platforms, Vercel is more focused on frontend"
+        },
+        {
+          "alternative_slug": "netlify",
+          "relationship_type": "similar",
+          "notes": "Both offer easy deployment, Netlify focuses on Jamstack"
+        },
+        {
+          "alternative_slug": "render",
+          "relationship_type": "similar",
+          "notes": "Both are modern PaaS platforms for full-stack applications"
+        }
+      ]
+    },
+    {
+      "name": "Vercel",
+      "slug": "vercel",
+      "description": "Platform for frontend frameworks and static sites, optimized for Next.js",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Vercel Platform",
+        "Zeit"
+      ],
+      "icon": "logos:vercel",
+      "alternatives": [
+        {
+          "alternative_slug": "netlify",
+          "relationship_type": "similar",
+          "notes": "Both specialize in frontend and Jamstack deployments"
+        }
+      ]
+    },
+    {
+      "name": "Netlify",
+      "slug": "netlify",
+      "description": "Platform for building, deploying, and hosting modern web projects",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Netlify Platform"
+      ],
+      "icon": "logos:netlify",
+      "alternatives": [
+        {
+          "alternative_slug": "vercel",
+          "relationship_type": "similar",
+          "notes": "Both are modern hosting platforms for Jamstack sites"
+        }
+      ]
+    },
+    {
+      "name": "IBM Cloud",
+      "slug": "ibm-cloud",
+      "description": "IBM's cloud computing platform offering IaaS, PaaS, and SaaS",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "IBM Cloud Platform",
+        "Bluemix"
+      ],
+      "icon": "logos:ibm",
+      "alternatives": [
+        {
+          "alternative_slug": "aws",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise cloud platforms"
+        }
+      ]
+    },
+    {
+      "name": "Oracle Cloud",
+      "slug": "oracle-cloud",
+      "description": "Oracle's cloud infrastructure and platform services",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "OCI",
+        "Oracle Cloud Infrastructure"
+      ],
+      "icon": "logos:oracle",
+      "alternatives": [
+        {
+          "alternative_slug": "aws",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise cloud platforms"
+        }
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare",
+      "description": "Content delivery network and DDoS protection service with edge computing",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cloudflare CDN",
+        "Cloudflare Workers"
+      ],
+      "icon": "logos:cloudflare",
+      "alternatives": [
+        {
+          "alternative_slug": "fastly",
+          "relationship_type": "similar",
+          "notes": "Both are CDN and edge computing platforms"
+        }
+      ]
+    },
+    {
+      "name": "Vultr",
+      "slug": "vultr",
+      "description": "Cloud computing platform offering high-performance SSD cloud servers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Vultr Cloud"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "digitalocean",
+          "relationship_type": "similar",
+          "notes": "Both are developer-friendly cloud VPS providers"
+        }
+      ]
+    },
+    {
+      "name": "Render",
+      "slug": "render",
+      "description": "Unified cloud platform for building and running apps and websites",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Render Platform"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "heroku",
+          "relationship_type": "similar",
+          "notes": "Both are modern PaaS platforms"
+        }
+      ]
+    },
+    {
+      "name": "Fly.io",
+      "slug": "fly-io",
+      "description": "Platform for running full-stack apps and databases close to users",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Fly",
+        "Fly Platform"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "railway",
+          "relationship_type": "similar",
+          "notes": "Both are modern deployment platforms"
+        }
+      ]
+    },
+    {
+      "name": "Railway",
+      "slug": "railway",
+      "description": "Deployment platform that simplifies shipping applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Railway Platform",
+        "Railway App"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "render",
+          "relationship_type": "similar",
+          "notes": "Both are modern PaaS platforms for developers"
+        }
+      ]
+    },
+    {
+      "name": "Supabase",
+      "slug": "supabase",
+      "description": "Open source Firebase alternative with PostgreSQL database and real-time capabilities",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Supabase Platform"
+      ],
+      "icon": "logos:supabase",
+      "alternatives": [
+        {
+          "alternative_slug": "firebase",
+          "relationship_type": "similar",
+          "notes": "Supabase is an open-source alternative to Firebase"
+        }
+      ]
+    },
+    {
+      "name": "Firebase",
+      "slug": "firebase",
+      "description": "Google's platform for building mobile and web applications with backend services",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Firebase Platform",
+        "Google Firebase"
+      ],
+      "icon": "logos:firebase",
+      "alternatives": [
+        {
+          "alternative_slug": "supabase",
+          "relationship_type": "similar",
+          "notes": "Supabase is an open-source Firebase alternative"
+        }
+      ]
+    },
+    {
+      "name": "Fastly",
+      "slug": "fastly",
+      "description": "Edge cloud platform for content delivery and edge computing",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Fastly CDN"
+      ],
+      "icon": "logos:fastly",
+      "alternatives": [
+        {
+          "alternative_slug": "cloudflare",
+          "relationship_type": "similar",
+          "notes": "Both are CDN and edge computing platforms"
+        }
+      ]
+    },
+    {
+      "name": "Hetzner Cloud",
+      "slug": "hetzner-cloud",
+      "description": "European cloud hosting provider with competitive pricing",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Hetzner",
+        "Hetzner Online"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "digitalocean",
+          "relationship_type": "similar",
+          "notes": "Both offer affordable VPS hosting"
+        }
+      ]
+    },
+    {
+      "name": "Scaleway",
+      "slug": "scaleway",
+      "description": "European cloud platform with bare metal servers and cloud instances",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Scaleway Cloud"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ovh-cloud",
+          "relationship_type": "similar",
+          "notes": "Both are European cloud providers"
+        }
+      ]
+    },
+    {
+      "name": "OVH Cloud",
+      "slug": "ovh-cloud",
+      "description": "European cloud provider with global infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "OVH",
+        "OVHcloud"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "scaleway",
+          "relationship_type": "similar",
+          "notes": "Both are European cloud providers"
+        }
+      ]
+    },
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba-cloud",
+      "description": "Cloud computing service from Alibaba Group, major provider in Asia",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Aliyun",
+        "Alibaba Cloud Computing"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive cloud platforms"
+        }
+      ]
+    },
+    {
+      "name": "Tencent Cloud",
+      "slug": "tencent-cloud",
+      "description": "Cloud computing services from Tencent, leading provider in China",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Tencent Cloud Computing"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "alibaba-cloud",
+          "relationship_type": "similar",
+          "notes": "Both are major Chinese cloud providers"
+        }
+      ]
+    },
+    {
+      "name": "Jenkins",
+      "slug": "jenkins",
+      "description": "Open-source automation server for building, testing, and deploying software",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Jenkins CI",
+        "Jenkins CI/CD"
+      ],
+      "icon": "logos:jenkins",
+      "alternatives": [
+        {
+          "alternative_slug": "gitlab-cicd",
+          "relationship_type": "similar",
+          "notes": "Both are CI/CD platforms, GitLab CI is more integrated"
+        },
+        {
+          "alternative_slug": "teamcity",
+          "relationship_type": "similar",
+          "notes": "Both are self-hosted CI/CD servers"
+        }
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "slug": "github-actions",
+      "description": "CI/CD platform integrated with GitHub for automating workflows",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "GH Actions",
+        "GitHub CI/CD"
+      ],
+      "icon": "logos:github-actions",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "Understanding Git is essential for GitHub Actions"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "gitlab-cicd",
+          "relationship_type": "similar",
+          "notes": "Both are Git platform-integrated CI/CD systems"
+        }
+      ]
+    },
+    {
+      "name": "GitLab CI/CD",
+      "slug": "gitlab-cicd",
+      "description": "Built-in CI/CD pipeline system integrated with GitLab",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "GitLab CI",
+        "GitLab Pipeline",
+        "GitLab Runners"
+      ],
+      "icon": "logos:gitlab",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "GitLab CI/CD requires Git knowledge"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "github-actions",
+          "relationship_type": "similar",
+          "notes": "Both are Git platform-integrated CI/CD systems"
+        }
+      ]
+    },
+    {
+      "name": "CircleCI",
+      "slug": "circleci",
+      "description": "Cloud-based CI/CD platform for automating software development workflows",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Circle CI"
+      ],
+      "icon": "logos:circleci",
+      "alternatives": [
+        {
+          "alternative_slug": "travis-ci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud-based CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Travis CI",
+      "slug": "travis-ci",
+      "description": "Continuous integration service for building and testing projects hosted on GitHub",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Travis",
+        "TravisCI"
+      ],
+      "icon": "logos:travis-ci",
+      "alternatives": [
+        {
+          "alternative_slug": "circleci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud CI/CD platforms for GitHub projects"
+        }
+      ]
+    },
+    {
+      "name": "Azure DevOps",
+      "slug": "azure-devops",
+      "description": "Microsoft's DevOps platform with CI/CD, repos, boards, and artifacts",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Azure Pipelines",
+        "Azure DevOps Services",
+        "VSTS"
+      ],
+      "icon": "logos:azure",
+      "alternatives": [
+        {
+          "alternative_slug": "github-actions",
+          "relationship_type": "similar",
+          "notes": "Both are Microsoft-owned CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Bamboo",
+      "slug": "bamboo",
+      "description": "Atlassian's CI/CD server that automates building, testing, and deployment",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Bamboo CI",
+        "Atlassian Bamboo"
+      ],
+      "icon": "logos:bamboo",
+      "alternatives": [
+        {
+          "alternative_slug": "jenkins",
+          "relationship_type": "similar",
+          "notes": "Both are self-hosted CI/CD servers"
+        }
+      ]
+    },
+    {
+      "name": "TeamCity",
+      "slug": "teamcity",
+      "description": "JetBrains CI/CD server with powerful build management capabilities",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Team City",
+        "JetBrains TeamCity"
+      ],
+      "icon": "logos:teamcity",
+      "alternatives": [
+        {
+          "alternative_slug": "jenkins",
+          "relationship_type": "similar",
+          "notes": "Both are self-hosted CI/CD servers"
+        }
+      ]
+    },
+    {
+      "name": "Drone",
+      "slug": "drone",
+      "description": "Container-native CI/CD platform built on Docker",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Drone CI",
+        "Drone.io"
+      ],
+      "icon": "logos:drone",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Drone is container-native, Docker knowledge is beneficial"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "gitlab-cicd",
+          "relationship_type": "similar",
+          "notes": "Both support Docker-based CI/CD pipelines"
+        }
+      ]
+    },
+    {
+      "name": "Buildkite",
+      "slug": "buildkite",
+      "description": "Fast and scalable CI/CD platform with hybrid infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Buildkite CI"
+      ],
+      "icon": "logos:buildkite",
+      "alternatives": [
+        {
+          "alternative_slug": "circleci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud-based CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Concourse CI",
+      "slug": "concourse",
+      "description": "Container-based CI/CD system with declarative pipelines",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Concourse",
+        "Concourse CI/CD"
+      ],
+      "icon": "logos:concourse",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Concourse uses containers for all tasks"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "drone",
+          "relationship_type": "similar",
+          "notes": "Both are container-native CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "GoCD",
+      "slug": "gocd",
+      "description": "Open-source CI/CD server with advanced pipeline modeling",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Go CD",
+        "ThoughtWorks GoCD"
+      ],
+      "icon": "logos:gocd",
+      "alternatives": [
+        {
+          "alternative_slug": "jenkins",
+          "relationship_type": "similar",
+          "notes": "Both are self-hosted CI/CD servers"
+        }
+      ]
+    },
+    {
+      "name": "Spinnaker",
+      "slug": "spinnaker",
+      "description": "Multi-cloud continuous delivery platform for releasing software changes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Spinnaker CD"
+      ],
+      "icon": "logos:spinnaker",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Spinnaker is often used with Kubernetes deployments"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "argocd",
+          "relationship_type": "similar",
+          "notes": "Both are CD platforms for Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "ArgoCD",
+      "slug": "argocd",
+      "description": "Declarative GitOps continuous delivery tool for Kubernetes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Argo CD",
+        "Argo Continuous Delivery"
+      ],
+      "icon": "logos:argo",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "ArgoCD is specifically designed for Kubernetes"
+        },
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "ArgoCD follows GitOps principles"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flux",
+          "relationship_type": "similar",
+          "notes": "Both are GitOps tools for Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Flux",
+      "slug": "flux",
+      "description": "GitOps toolkit for keeping Kubernetes clusters in sync with configuration sources",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Flux CD",
+        "FluxCD"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Flux is a Kubernetes-native GitOps tool"
+        },
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "Flux implements GitOps methodology"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "argocd",
+          "relationship_type": "similar",
+          "notes": "Both are GitOps CD tools for Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Bitbucket Pipelines",
+      "slug": "bitbucket-pipelines",
+      "description": "Integrated CI/CD service built into Bitbucket",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Bitbucket CI/CD",
+        "Bitbucket CI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "Bitbucket Pipelines requires Git knowledge"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "github-actions",
+          "relationship_type": "similar",
+          "notes": "Both are Git platform-integrated CI/CD systems"
+        }
+      ]
+    },
+    {
+      "name": "CodeShip",
+      "slug": "codeship",
+      "description": "Cloud-based CI/CD platform for rapid development cycles",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "CloudBees CodeShip"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "circleci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud-based CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Buddy",
+      "slug": "buddy",
+      "description": "CI/CD platform with visual pipeline designer and deployment automation",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Buddy CI/CD",
+        "Buddy Works"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "circleci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Semaphore",
+      "slug": "semaphore",
+      "description": "Fast CI/CD platform for high-performance software teams",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Semaphore CI",
+        "SemaphoreCI"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "circleci",
+          "relationship_type": "similar",
+          "notes": "Both are cloud-based CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "Wercker",
+      "slug": "wercker",
+      "description": "Container-centric automation platform for building and deploying applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Oracle Wercker"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Wercker is container-centric"
+        }
+      ]
+    },
+    {
+      "name": "Codefresh",
+      "slug": "codefresh",
+      "description": "GitOps CI/CD platform built for Kubernetes and containers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Codefresh CI/CD"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Codefresh is optimized for Kubernetes deployments"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Codefresh has strong Docker integration"
+        }
+      ]
+    },
+    {
+      "name": "Terraform",
+      "slug": "terraform",
+      "description": "Infrastructure as code tool for building, changing, and versioning infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "HashiCorp Terraform",
+        "Terraform IaC"
+      ],
+      "icon": "logos:terraform",
+      "alternatives": [
+        {
+          "alternative_slug": "pulumi",
+          "relationship_type": "similar",
+          "notes": "Both are IaC tools, Pulumi uses general-purpose languages while Terraform uses HCL"
+        },
+        {
+          "alternative_slug": "cloudformation",
+          "relationship_type": "similar",
+          "notes": "Both are IaC tools, CloudFormation is AWS-specific"
+        }
+      ]
+    },
+    {
+      "name": "Ansible",
+      "slug": "ansible",
+      "description": "Automation tool for configuration management, application deployment, and task automation",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Ansible Automation",
+        "Red Hat Ansible"
+      ],
+      "icon": "logos:ansible",
+      "alternatives": [
+        {
+          "alternative_slug": "chef",
+          "relationship_type": "similar",
+          "notes": "Both are configuration management tools"
+        },
+        {
+          "alternative_slug": "puppet",
+          "relationship_type": "similar",
+          "notes": "Both are configuration management and automation tools"
+        }
+      ]
+    },
+    {
+      "name": "Chef",
+      "slug": "chef",
+      "description": "Configuration management tool for automating infrastructure deployment",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Chef Infra",
+        "Progress Chef"
+      ],
+      "icon": "logos:chef",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "recommended",
+          "notes": "Chef uses Ruby for writing recipes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "puppet",
+          "relationship_type": "similar",
+          "notes": "Both are configuration management tools"
+        },
+        {
+          "alternative_slug": "ansible",
+          "relationship_type": "similar",
+          "notes": "Both automate infrastructure configuration"
+        }
+      ]
+    },
+    {
+      "name": "Puppet",
+      "slug": "puppet",
+      "description": "Configuration management and automation tool for managing infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Puppet Enterprise",
+        "Puppet Configuration Management"
+      ],
+      "icon": "logos:puppet",
+      "alternatives": [
+        {
+          "alternative_slug": "chef",
+          "relationship_type": "similar",
+          "notes": "Both are configuration management tools"
+        },
+        {
+          "alternative_slug": "ansible",
+          "relationship_type": "similar",
+          "notes": "Both are infrastructure automation tools"
+        }
+      ]
+    },
+    {
+      "name": "SaltStack",
+      "slug": "saltstack",
+      "description": "Event-driven automation tool for configuration management and remote execution",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Salt",
+        "Salt Configuration Management"
+      ],
+      "icon": "logos:saltstack",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "SaltStack is written in Python and uses Python for configuration"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ansible",
+          "relationship_type": "similar",
+          "notes": "Both are configuration management and automation tools"
+        }
+      ]
+    },
+    {
+      "name": "AWS CloudFormation",
+      "slug": "cloudformation",
+      "description": "AWS service for modeling and provisioning infrastructure resources",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "CloudFormation",
+        "AWS CFN",
+        "CFN"
+      ],
+      "icon": "logos:aws-cloudformation",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "CloudFormation is AWS-specific"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "terraform",
+          "relationship_type": "similar",
+          "notes": "Terraform is multi-cloud, CloudFormation is AWS-only"
+        }
+      ]
+    },
+    {
+      "name": "Pulumi",
+      "slug": "pulumi",
+      "description": "Infrastructure as code platform using general-purpose programming languages",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Pulumi IaC"
+      ],
+      "icon": "logos:pulumi",
+      "alternatives": [
+        {
+          "alternative_slug": "terraform",
+          "relationship_type": "similar",
+          "notes": "Both are IaC tools, Pulumi uses standard programming languages"
+        }
+      ]
+    },
+    {
+      "name": "Vagrant",
+      "slug": "vagrant",
+      "description": "Tool for building and managing virtualized development environments",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "HashiCorp Vagrant"
+      ],
+      "icon": "logos:vagrant",
+      "alternatives": [
+        {
+          "alternative_slug": "docker",
+          "relationship_type": "similar",
+          "notes": "Docker is often used instead of Vagrant for development environments"
+        }
+      ]
+    },
+    {
+      "name": "Packer",
+      "slug": "packer",
+      "description": "Tool for creating identical machine images for multiple platforms",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "HashiCorp Packer"
+      ],
+      "icon": "logos:packer",
+      "alternatives": [
+        {
+          "alternative_slug": "docker",
+          "relationship_type": "similar",
+          "notes": "Docker builds container images, Packer builds machine images"
+        }
+      ]
+    },
+    {
+      "name": "Capistrano",
+      "slug": "capistrano",
+      "description": "Remote server automation and deployment tool written in Ruby",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Capistrano Deploy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "recommended",
+          "notes": "Capistrano is written in Ruby"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ansible",
+          "relationship_type": "similar",
+          "notes": "Both can automate deployments"
+        }
+      ]
+    },
+    {
+      "name": "Fabric",
+      "slug": "fabric",
+      "description": "Python library and command-line tool for streamlining SSH application deployment",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Fabric Deploy",
+        "Python Fabric"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Fabric is a Python library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ansible",
+          "relationship_type": "similar",
+          "notes": "Both can automate remote tasks and deployments"
+        }
+      ]
+    },
+    {
+      "name": "AWS CDK",
+      "slug": "aws-cdk",
+      "description": "Infrastructure as code framework for defining cloud resources using programming languages",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cloud Development Kit",
+        "AWS Cloud Development Kit"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "AWS CDK is for AWS infrastructure"
+        },
+        {
+          "prerequisite_slug": "cloudformation",
+          "prerequisite_level": "recommended",
+          "notes": "AWS CDK synthesizes to CloudFormation templates"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "pulumi",
+          "relationship_type": "similar",
+          "notes": "Both allow IaC using programming languages"
+        }
+      ]
+    },
+    {
+      "name": "Bicep",
+      "slug": "bicep",
+      "description": "Domain-specific language for deploying Azure resources declaratively",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Azure Bicep"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Bicep is Azure-specific"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "terraform",
+          "relationship_type": "similar",
+          "notes": "Both are IaC tools, Terraform is multi-cloud"
+        }
+      ]
+    },
+    {
+      "name": "Azure Resource Manager",
+      "slug": "azure-resource-manager",
+      "description": "Deployment and management service for Azure resources",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ARM",
+        "ARM Templates",
+        "Azure ARM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "ARM is Azure's native IaC solution"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "bicep",
+          "relationship_type": "similar",
+          "notes": "Bicep is a more readable DSL that compiles to ARM"
+        }
+      ]
+    },
+    {
+      "name": "Crossplane",
+      "slug": "crossplane",
+      "description": "Open source Kubernetes extension for managing cloud infrastructure",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Crossplane IaC"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Crossplane extends Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "terraform",
+          "relationship_type": "similar",
+          "notes": "Both manage cloud infrastructure, Crossplane is Kubernetes-native"
+        }
+      ]
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus",
+      "description": "Open-source monitoring and alerting toolkit for cloud-native systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Prometheus Monitoring"
+      ],
+      "icon": "logos:prometheus",
+      "alternatives": [
+        {
+          "alternative_slug": "datadog",
+          "relationship_type": "similar",
+          "notes": "Both are monitoring platforms, Datadog is commercial with more features"
+        }
+      ]
+    },
+    {
+      "name": "Grafana",
+      "slug": "grafana",
+      "description": "Open-source platform for monitoring and observability with visualization dashboards",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Grafana Dashboards",
+        "Grafana Labs"
+      ],
+      "icon": "logos:grafana",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "prometheus",
+          "prerequisite_level": "recommended",
+          "notes": "Grafana is often used with Prometheus as a data source"
+        }
+      ]
+    },
+    {
+      "name": "Datadog",
+      "slug": "datadog",
+      "description": "Cloud-scale monitoring and analytics platform for infrastructure and applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Datadog Monitoring"
+      ],
+      "icon": "logos:datadog",
+      "alternatives": [
+        {
+          "alternative_slug": "new-relic",
+          "relationship_type": "similar",
+          "notes": "Both are APM and monitoring platforms"
+        },
+        {
+          "alternative_slug": "dynatrace",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise monitoring platforms"
+        }
+      ]
+    },
+    {
+      "name": "New Relic",
+      "slug": "new-relic",
+      "description": "Observability platform for monitoring, debugging, and improving application performance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "NewRelic",
+        "New Relic APM"
+      ],
+      "icon": "logos:new-relic",
+      "alternatives": [
+        {
+          "alternative_slug": "datadog",
+          "relationship_type": "similar",
+          "notes": "Both are APM and observability platforms"
+        }
+      ]
+    },
+    {
+      "name": "Elasticsearch",
+      "slug": "elasticsearch",
+      "description": "Distributed search and analytics engine for full-text search and log analytics",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Elastic Search",
+        "Elasticsearch Engine"
+      ],
+      "icon": "logos:elasticsearch",
+      "alternatives": [
+        {
+          "alternative_slug": "splunk",
+          "relationship_type": "similar",
+          "notes": "Both are used for log aggregation and analysis"
+        }
+      ]
+    },
+    {
+      "name": "Logstash",
+      "slug": "logstash",
+      "description": "Server-side data processing pipeline for ingesting and transforming log data",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Logstash Pipeline"
+      ],
+      "icon": "logos:logstash",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "elasticsearch",
+          "prerequisite_level": "recommended",
+          "notes": "Logstash is part of the ELK stack with Elasticsearch"
+        }
+      ]
+    },
+    {
+      "name": "Kibana",
+      "slug": "kibana",
+      "description": "Visualization and exploration tool for Elasticsearch data",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Kibana Dashboard",
+        "Elastic Kibana"
+      ],
+      "icon": "logos:kibana",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "elasticsearch",
+          "prerequisite_level": "required",
+          "notes": "Kibana visualizes data from Elasticsearch"
+        }
+      ]
+    },
+    {
+      "name": "Splunk",
+      "slug": "splunk",
+      "description": "Platform for searching, monitoring, and analyzing machine-generated data",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Splunk Enterprise"
+      ],
+      "icon": "logos:splunk",
+      "alternatives": [
+        {
+          "alternative_slug": "elasticsearch",
+          "relationship_type": "similar",
+          "notes": "Both are used for log analysis and monitoring"
+        }
+      ]
+    },
+    {
+      "name": "Dynatrace",
+      "slug": "dynatrace",
+      "description": "All-in-one platform for application performance monitoring and AIOps",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Dynatrace APM"
+      ],
+      "icon": "logos:dynatrace",
+      "alternatives": [
+        {
+          "alternative_slug": "datadog",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise APM platforms"
+        },
+        {
+          "alternative_slug": "appdynamics",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise APM solutions"
+        }
+      ]
+    },
+    {
+      "name": "AppDynamics",
+      "slug": "appdynamics",
+      "description": "Application performance management and IT operations analytics",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "AppD",
+        "AppDynamics APM"
+      ],
+      "icon": "logos:appdynamics",
+      "alternatives": [
+        {
+          "alternative_slug": "new-relic",
+          "relationship_type": "similar",
+          "notes": "Both are APM platforms"
+        }
+      ]
+    },
+    {
+      "name": "Jaeger",
+      "slug": "jaeger",
+      "description": "Open-source distributed tracing system for monitoring microservices",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Jaeger Tracing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Jaeger is commonly used with Kubernetes microservices"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "zipkin",
+          "relationship_type": "similar",
+          "notes": "Both are distributed tracing systems"
+        }
+      ]
+    },
+    {
+      "name": "Zipkin",
+      "slug": "zipkin",
+      "description": "Distributed tracing system for monitoring and troubleshooting microservices",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Zipkin Tracing"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jaeger",
+          "relationship_type": "similar",
+          "notes": "Both are distributed tracing platforms"
+        }
+      ]
+    },
+    {
+      "name": "Sentry",
+      "slug": "sentry",
+      "description": "Error tracking and performance monitoring platform for applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Sentry.io",
+        "Sentry Error Tracking"
+      ],
+      "icon": "logos:sentry",
+      "alternatives": [
+        {
+          "alternative_slug": "rollbar",
+          "relationship_type": "similar",
+          "notes": "Both are error tracking platforms"
+        }
+      ]
+    },
+    {
+      "name": "Rollbar",
+      "slug": "rollbar",
+      "description": "Real-time error monitoring and debugging platform",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Rollbar Error Tracking"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sentry",
+          "relationship_type": "similar",
+          "notes": "Both are error tracking platforms"
+        }
+      ]
+    },
+    {
+      "name": "PagerDuty",
+      "slug": "pagerduty",
+      "description": "Incident management platform for real-time operations and on-call scheduling",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Pager Duty"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "opsgenie",
+          "relationship_type": "similar",
+          "notes": "Both are incident management platforms"
+        }
+      ]
+    },
+    {
+      "name": "Opsgenie",
+      "slug": "opsgenie",
+      "description": "Incident management and alerting platform with on-call scheduling",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "OpsGenie",
+        "Atlassian Opsgenie"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "pagerduty",
+          "relationship_type": "similar",
+          "notes": "Both are incident management platforms"
+        }
+      ]
+    },
+    {
+      "name": "Nagios",
+      "slug": "nagios",
+      "description": "Open-source monitoring system for infrastructure and services",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Nagios Core",
+        "Nagios Monitoring"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "zabbix",
+          "relationship_type": "similar",
+          "notes": "Both are open-source monitoring solutions"
+        }
+      ]
+    },
+    {
+      "name": "Zabbix",
+      "slug": "zabbix",
+      "description": "Enterprise-class open source monitoring solution for networks and applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Zabbix Monitoring"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nagios",
+          "relationship_type": "similar",
+          "notes": "Both are open-source infrastructure monitoring tools"
+        }
+      ]
+    },
+    {
+      "name": "Fluentd",
+      "slug": "fluentd",
+      "description": "Open-source data collector for unified logging layer",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Fluentd Logging"
+      ],
+      "icon": "logos:fluentd",
+      "alternatives": [
+        {
+          "alternative_slug": "logstash",
+          "relationship_type": "similar",
+          "notes": "Both are log aggregation and processing tools"
+        },
+        {
+          "alternative_slug": "fluent-bit",
+          "relationship_type": "similar",
+          "notes": "Fluent Bit is a lightweight alternative to Fluentd"
+        }
+      ]
+    },
+    {
+      "name": "Fluent Bit",
+      "slug": "fluent-bit",
+      "description": "Lightweight and fast log processor and forwarder",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "FluentBit"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "fluentd",
+          "relationship_type": "similar",
+          "notes": "Fluent Bit is lighter and faster than Fluentd"
+        }
+      ]
+    },
+    {
+      "name": "OpenTelemetry",
+      "slug": "opentelemetry",
+      "description": "Observability framework for cloud-native software with traces, metrics, and logs",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "OTel",
+        "Open Telemetry"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jaeger",
+          "relationship_type": "similar",
+          "notes": "OpenTelemetry provides the instrumentation, Jaeger provides the backend"
+        }
+      ]
+    },
+    {
+      "name": "Loki",
+      "slug": "loki",
+      "description": "Log aggregation system designed for scalability and efficiency",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Grafana Loki"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "grafana",
+          "prerequisite_level": "recommended",
+          "notes": "Loki is designed to work with Grafana for visualization"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "elasticsearch",
+          "relationship_type": "similar",
+          "notes": "Both are log aggregation systems"
+        }
+      ]
+    },
+    {
+      "name": "Tempo",
+      "slug": "tempo",
+      "description": "High-volume distributed tracing backend from Grafana Labs",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Grafana Tempo"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jaeger",
+          "relationship_type": "similar",
+          "notes": "Both are distributed tracing backends"
+        }
+      ]
+    },
+    {
+      "name": "Uptrace",
+      "slug": "uptrace",
+      "description": "Open-source APM tool with distributed tracing for microservices",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Uptrace APM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "opentelemetry",
+          "prerequisite_level": "recommended",
+          "notes": "Uptrace works with OpenTelemetry"
+        }
+      ]
+    },
+    {
+      "name": "Honeycomb",
+      "slug": "honeycomb",
+      "description": "Observability platform for debugging complex distributed systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Honeycomb.io"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "datadog",
+          "relationship_type": "similar",
+          "notes": "Both are observability platforms"
+        }
+      ]
+    },
+    {
+      "name": "Lightstep",
+      "slug": "lightstep",
+      "description": "Observability platform for monitoring microservices and distributed systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ServiceNow Lightstep"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "datadog",
+          "relationship_type": "similar",
+          "notes": "Both are observability platforms"
+        }
+      ]
+    },
+    {
+      "name": "Istio",
+      "slug": "istio",
+      "description": "Open-source service mesh for managing microservices traffic, security, and observability",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Istio Service Mesh"
+      ],
+      "icon": "logos:istio",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Istio runs on Kubernetes"
+        },
+        {
+          "prerequisite_slug": "envoy",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Envoy helps since Istio uses it as its data plane"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "linkerd",
+          "relationship_type": "similar",
+          "notes": "Linkerd is a lighter-weight service mesh alternative"
+        },
+        {
+          "alternative_slug": "consul-service-mesh",
+          "relationship_type": "similar",
+          "notes": "Consul also provides service mesh capabilities"
+        }
+      ]
+    },
+    {
+      "name": "Envoy",
+      "slug": "envoy",
+      "description": "High-performance edge and service proxy designed for cloud-native applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Envoy Proxy"
+      ],
+      "icon": "logos:envoy",
+      "alternatives": [
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Both are high-performance proxies"
+        },
+        {
+          "alternative_slug": "haproxy",
+          "relationship_type": "similar",
+          "notes": "Both are load balancers and proxies"
+        }
+      ]
+    },
+    {
+      "name": "Linkerd",
+      "slug": "linkerd",
+      "description": "Ultralight service mesh for Kubernetes with simplicity and performance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Linkerd Service Mesh",
+        "Linkerd2"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Linkerd is designed for Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "istio",
+          "relationship_type": "similar",
+          "notes": "Istio is more feature-rich but heavier than Linkerd"
+        },
+        {
+          "alternative_slug": "consul-service-mesh",
+          "relationship_type": "similar",
+          "notes": "Both provide service mesh capabilities"
+        }
+      ]
+    },
+    {
+      "name": "Kong",
+      "slug": "kong",
+      "description": "Cloud-native API gateway and service mesh built on Nginx",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Kong API Gateway",
+        "Kong Gateway"
+      ],
+      "icon": "logos:kong",
+      "alternatives": [
+        {
+          "alternative_slug": "traefik",
+          "relationship_type": "similar",
+          "notes": "Both are modern API gateways and proxies"
+        },
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Kong is built on Nginx"
+        },
+        {
+          "alternative_slug": "aws-api-gateway",
+          "relationship_type": "similar",
+          "notes": "AWS API Gateway is a managed alternative"
+        }
+      ]
+    },
+    {
+      "name": "Traefik",
+      "slug": "traefik",
+      "description": "Modern HTTP reverse proxy and load balancer with automatic service discovery",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Traefik Proxy",
+        "Traefik Load Balancer"
+      ],
+      "icon": "logos:traefik",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Traefik has excellent Docker integration"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Both are reverse proxies and load balancers"
+        },
+        {
+          "alternative_slug": "caddy",
+          "relationship_type": "similar",
+          "notes": "Both are modern web servers with automatic HTTPS"
+        },
+        {
+          "alternative_slug": "kong",
+          "relationship_type": "similar",
+          "notes": "Both can function as API gateways"
+        }
+      ]
+    },
+    {
+      "name": "HAProxy",
+      "slug": "haproxy",
+      "description": "Reliable, high-performance TCP/HTTP load balancer and proxy",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "HA Proxy",
+        "High Availability Proxy"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Both are high-performance load balancers"
+        },
+        {
+          "alternative_slug": "envoy",
+          "relationship_type": "similar",
+          "notes": "Both are proxies for cloud-native applications"
+        },
+        {
+          "alternative_slug": "traefik",
+          "relationship_type": "similar",
+          "notes": "Both are modern load balancers"
+        }
+      ]
+    },
+    {
+      "name": "Caddy",
+      "slug": "caddy",
+      "description": "Modern web server with automatic HTTPS and easy configuration",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Caddy Server",
+        "Caddy Web Server"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Both are web servers and reverse proxies"
+        },
+        {
+          "alternative_slug": "traefik",
+          "relationship_type": "similar",
+          "notes": "Both offer automatic HTTPS"
+        },
+        {
+          "alternative_slug": "apache",
+          "relationship_type": "similar",
+          "notes": "Both are web servers"
+        }
+      ]
+    },
+    {
+      "name": "Nginx",
+      "slug": "nginx",
+      "description": "High-performance web server, reverse proxy, and load balancer",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "NGINX"
+      ],
+      "icon": "logos:nginx",
+      "alternatives": [
+        {
+          "alternative_slug": "apache",
+          "relationship_type": "similar",
+          "notes": "Both are popular web servers"
+        },
+        {
+          "alternative_slug": "caddy",
+          "relationship_type": "similar",
+          "notes": "Caddy is easier to configure with automatic HTTPS"
+        },
+        {
+          "alternative_slug": "haproxy",
+          "relationship_type": "similar",
+          "notes": "Both are high-performance load balancers"
+        }
+      ]
+    },
+    {
+      "name": "Apache HTTP Server",
+      "slug": "apache",
+      "description": "Open-source HTTP server for modern operating systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Apache",
+        "Apache Web Server",
+        "httpd"
+      ],
+      "icon": "logos:apache",
+      "alternatives": [
+        {
+          "alternative_slug": "nginx",
+          "relationship_type": "similar",
+          "notes": "Nginx is often preferred for performance and simplicity"
+        },
+        {
+          "alternative_slug": "caddy",
+          "relationship_type": "similar",
+          "notes": "Both are web servers"
+        }
+      ]
+    },
+    {
+      "name": "HashiCorp Consul",
+      "slug": "consul",
+      "description": "Service networking solution for service discovery, configuration, and segmentation",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Consul",
+        "Consul Service Discovery"
+      ],
+      "icon": "logos:consul",
+      "alternatives": [
+        {
+          "alternative_slug": "etcd",
+          "relationship_type": "similar",
+          "notes": "Both provide service discovery and distributed configuration"
+        },
+        {
+          "alternative_slug": "zookeeper",
+          "relationship_type": "similar",
+          "notes": "Both are distributed coordination systems"
+        }
+      ]
+    },
+    {
+      "name": "Consul Service Mesh",
+      "slug": "consul-service-mesh",
+      "description": "Service mesh capabilities built into HashiCorp Consul",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Consul Connect"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "consul",
+          "prerequisite_level": "required",
+          "notes": "Service mesh is a feature of Consul"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "istio",
+          "relationship_type": "similar",
+          "notes": "Both are service mesh solutions"
+        },
+        {
+          "alternative_slug": "linkerd",
+          "relationship_type": "similar",
+          "notes": "Both provide service mesh capabilities"
+        }
+      ]
+    },
+    {
+      "name": "etcd",
+      "slug": "etcd",
+      "description": "Distributed reliable key-value store for critical data in distributed systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "etcd key-value store"
+      ],
+      "icon": "logos:etcd",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "etcd is Kubernetes' backing store"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "consul",
+          "relationship_type": "similar",
+          "notes": "Both provide service discovery and configuration"
+        },
+        {
+          "alternative_slug": "zookeeper",
+          "relationship_type": "similar",
+          "notes": "Both are distributed coordination systems"
+        }
+      ]
+    },
+    {
+      "name": "Apache ZooKeeper",
+      "slug": "zookeeper",
+      "description": "Centralized service for distributed configuration, synchronization, and naming",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ZooKeeper",
+        "Apache Zookeeper"
+      ],
+      "icon": "logos:zookeeper",
+      "alternatives": [
+        {
+          "alternative_slug": "etcd",
+          "relationship_type": "similar",
+          "notes": "Both are distributed coordination systems"
+        },
+        {
+          "alternative_slug": "consul",
+          "relationship_type": "similar",
+          "notes": "Both provide distributed configuration"
+        }
+      ]
+    },
+    {
+      "name": "AWS API Gateway",
+      "slug": "aws-api-gateway",
+      "description": "Managed service for creating, publishing, and managing APIs at scale",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "API Gateway",
+        "Amazon API Gateway"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "AWS API Gateway is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kong",
+          "relationship_type": "similar",
+          "notes": "Kong is a self-hosted API gateway alternative"
+        },
+        {
+          "alternative_slug": "azure-api-management",
+          "relationship_type": "similar",
+          "notes": "Both are cloud-native API gateways"
+        }
+      ]
+    },
+    {
+      "name": "Azure API Management",
+      "slug": "azure-api-management",
+      "description": "Hybrid, multi-cloud API management platform for securing and publishing APIs",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "APIM",
+        "Azure APIM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Azure API Management is an Azure service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-api-gateway",
+          "relationship_type": "similar",
+          "notes": "Both are cloud API management platforms"
+        },
+        {
+          "alternative_slug": "kong",
+          "relationship_type": "similar",
+          "notes": "Kong is a self-hosted alternative"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Endpoints",
+      "slug": "google-cloud-endpoints",
+      "description": "API management system for developing, deploying, and managing APIs on GCP",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cloud Endpoints",
+        "GCP Endpoints"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Cloud Endpoints is a GCP service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-api-gateway",
+          "relationship_type": "similar",
+          "notes": "Both are cloud API management platforms"
+        },
+        {
+          "alternative_slug": "kong",
+          "relationship_type": "similar",
+          "notes": "Kong is a self-hosted alternative"
+        }
+      ]
+    },
+    {
+      "name": "HashiCorp Vault",
+      "slug": "vault",
+      "description": "Secrets management and data protection platform for securing sensitive data",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Vault",
+        "Vault Secrets Management"
+      ],
+      "icon": "logos:vault",
+      "alternatives": [
+        {
+          "alternative_slug": "aws-secrets-manager",
+          "relationship_type": "similar",
+          "notes": "AWS Secrets Manager is AWS-specific"
+        },
+        {
+          "alternative_slug": "azure-key-vault",
+          "relationship_type": "similar",
+          "notes": "Azure Key Vault is Azure-specific"
+        }
+      ]
+    },
+    {
+      "name": "AWS Secrets Manager",
+      "slug": "aws-secrets-manager",
+      "description": "Managed service for rotating, managing, and retrieving secrets",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Secrets Manager",
+        "AWS SM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "AWS Secrets Manager is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vault",
+          "relationship_type": "similar",
+          "notes": "Vault is a multi-cloud alternative"
+        },
+        {
+          "alternative_slug": "aws-parameter-store",
+          "relationship_type": "similar",
+          "notes": "Parameter Store is simpler but less feature-rich"
+        }
+      ]
+    },
+    {
+      "name": "AWS Systems Manager Parameter Store",
+      "slug": "aws-parameter-store",
+      "description": "Secure, hierarchical storage for configuration data and secrets",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Parameter Store",
+        "SSM Parameter Store"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "Parameter Store is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-secrets-manager",
+          "relationship_type": "similar",
+          "notes": "Secrets Manager has more features but higher cost"
+        }
+      ]
+    },
+    {
+      "name": "Azure Key Vault",
+      "slug": "azure-key-vault",
+      "description": "Cloud service for securely storing and accessing secrets, keys, and certificates",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Key Vault",
+        "Azure KV"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Azure Key Vault is an Azure service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vault",
+          "relationship_type": "similar",
+          "notes": "Vault is a multi-cloud alternative"
+        },
+        {
+          "alternative_slug": "aws-secrets-manager",
+          "relationship_type": "similar",
+          "notes": "Both are cloud secrets management services"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Secret Manager",
+      "slug": "google-cloud-secret-manager",
+      "description": "Secure and convenient storage system for API keys, passwords, and certificates",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Secret Manager",
+        "GCP Secret Manager"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Secret Manager is a GCP service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vault",
+          "relationship_type": "similar",
+          "notes": "Vault is a multi-cloud alternative"
+        }
+      ]
+    },
+    {
+      "name": "AWS Lambda",
+      "slug": "aws-lambda",
+      "description": "Serverless compute service that runs code in response to events",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Lambda",
+        "AWS Lambda Functions"
+      ],
+      "icon": "logos:aws-lambda",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "AWS Lambda is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "azure-functions",
+          "relationship_type": "similar",
+          "notes": "Both are serverless function platforms"
+        },
+        {
+          "alternative_slug": "google-cloud-functions",
+          "relationship_type": "similar",
+          "notes": "Both are serverless compute services"
+        }
+      ]
+    },
+    {
+      "name": "Azure Functions",
+      "slug": "azure-functions",
+      "description": "Serverless compute service for running event-driven code",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Azure Function Apps"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Azure Functions is an Azure service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-lambda",
+          "relationship_type": "similar",
+          "notes": "Both are serverless function platforms"
+        },
+        {
+          "alternative_slug": "google-cloud-functions",
+          "relationship_type": "similar",
+          "notes": "Both are serverless compute services"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Functions",
+      "slug": "google-cloud-functions",
+      "description": "Serverless execution environment for building and connecting cloud services",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cloud Functions",
+        "GCF"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Cloud Functions is a GCP service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-lambda",
+          "relationship_type": "similar",
+          "notes": "Both are serverless compute platforms"
+        },
+        {
+          "alternative_slug": "azure-functions",
+          "relationship_type": "similar",
+          "notes": "Both are serverless function services"
+        }
+      ]
+    },
+    {
+      "name": "AWS Fargate",
+      "slug": "aws-fargate",
+      "description": "Serverless compute engine for containers on AWS",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Fargate"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "AWS Fargate is an AWS service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Fargate runs containers"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "google-cloud-run",
+          "relationship_type": "similar",
+          "notes": "Both are serverless container platforms"
+        },
+        {
+          "alternative_slug": "azure-container-instances",
+          "relationship_type": "similar",
+          "notes": "Both run containers without managing servers"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Run",
+      "slug": "google-cloud-run",
+      "description": "Fully managed serverless platform for running containerized applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cloud Run"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Cloud Run is a GCP service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Cloud Run deploys containers"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-fargate",
+          "relationship_type": "similar",
+          "notes": "Both are serverless container platforms"
+        }
+      ]
+    },
+    {
+      "name": "Azure Container Instances",
+      "slug": "azure-container-instances",
+      "description": "Serverless container service for running isolated containers without orchestration",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ACI",
+        "Azure ACI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Azure Container Instances is an Azure service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "ACI runs containers"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-fargate",
+          "relationship_type": "similar",
+          "notes": "Both run containers without orchestration"
+        }
+      ]
+    },
+    {
+      "name": "Docker Hub",
+      "slug": "docker-hub",
+      "description": "Cloud-based container registry service for sharing and managing Docker images",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "DockerHub"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Docker Hub is for Docker images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "harbor",
+          "relationship_type": "similar",
+          "notes": "Harbor is a self-hosted alternative with more enterprise features"
+        },
+        {
+          "alternative_slug": "github-container-registry",
+          "relationship_type": "similar",
+          "notes": "Both are container registries"
+        }
+      ]
+    },
+    {
+      "name": "Harbor",
+      "slug": "harbor",
+      "description": "Open-source container registry with security, identity, and management",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Harbor Registry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Harbor stores container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "docker-hub",
+          "relationship_type": "similar",
+          "notes": "Docker Hub is cloud-hosted, Harbor is self-hosted"
+        },
+        {
+          "alternative_slug": "aws-ecr",
+          "relationship_type": "similar",
+          "notes": "Both are container registries"
+        }
+      ]
+    },
+    {
+      "name": "Amazon Elastic Container Registry",
+      "slug": "aws-ecr",
+      "description": "Fully managed Docker container registry integrated with AWS services",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ECR",
+        "AWS ECR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "ECR is an AWS service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "ECR stores container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "docker-hub",
+          "relationship_type": "similar",
+          "notes": "Both are container registries"
+        },
+        {
+          "alternative_slug": "azure-container-registry",
+          "relationship_type": "similar",
+          "notes": "Both are cloud container registries"
+        }
+      ]
+    },
+    {
+      "name": "Azure Container Registry",
+      "slug": "azure-container-registry",
+      "description": "Managed Docker registry service for storing and managing container images",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ACR",
+        "Azure ACR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "ACR is an Azure service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "ACR stores container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-ecr",
+          "relationship_type": "similar",
+          "notes": "Both are cloud container registries"
+        },
+        {
+          "alternative_slug": "google-container-registry",
+          "relationship_type": "similar",
+          "notes": "Both are managed container registries"
+        }
+      ]
+    },
+    {
+      "name": "Google Container Registry",
+      "slug": "google-container-registry",
+      "description": "Private container registry for storing and managing Docker images on GCP",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "GCR",
+        "Google GCR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "GCR is a GCP service"
+        },
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "GCR stores container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "google-artifact-registry",
+          "relationship_type": "similar",
+          "notes": "Artifact Registry is the newer GCP registry service"
+        },
+        {
+          "alternative_slug": "aws-ecr",
+          "relationship_type": "similar",
+          "notes": "Both are cloud container registries"
+        }
+      ]
+    },
+    {
+      "name": "Google Artifact Registry",
+      "slug": "google-artifact-registry",
+      "description": "Universal package manager for storing containers, language packages, and OS packages",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Artifact Registry",
+        "GAR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Artifact Registry is a GCP service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "google-container-registry",
+          "relationship_type": "similar",
+          "notes": "GCR is the older container-only registry"
+        }
+      ]
+    },
+    {
+      "name": "GitHub Container Registry",
+      "slug": "github-container-registry",
+      "description": "Container registry integrated with GitHub for storing and managing Docker images",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "GHCR",
+        "GitHub Packages"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "GHCR stores container images"
+        },
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "recommended",
+          "notes": "GHCR is integrated with GitHub"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "docker-hub",
+          "relationship_type": "similar",
+          "notes": "Both are container registries"
+        }
+      ]
+    },
+    {
+      "name": "Cilium",
+      "slug": "cilium",
+      "description": "eBPF-based networking, observability, and security for cloud-native environments",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cilium CNI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Cilium is a Kubernetes CNI plugin"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "calico",
+          "relationship_type": "similar",
+          "notes": "Both are Kubernetes networking solutions"
+        },
+        {
+          "alternative_slug": "flannel",
+          "relationship_type": "similar",
+          "notes": "Flannel is simpler but less feature-rich"
+        }
+      ]
+    },
+    {
+      "name": "Calico",
+      "slug": "calico",
+      "description": "Cloud-native networking and security solution for containers and Kubernetes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Project Calico",
+        "Calico CNI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Calico is commonly used with Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cilium",
+          "relationship_type": "similar",
+          "notes": "Both provide Kubernetes networking and security"
+        },
+        {
+          "alternative_slug": "flannel",
+          "relationship_type": "similar",
+          "notes": "Both are Kubernetes CNI plugins"
+        }
+      ]
+    },
+    {
+      "name": "Flannel",
+      "slug": "flannel",
+      "description": "Simple and easy-to-configure network fabric for Kubernetes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Flannel CNI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Flannel is a Kubernetes CNI plugin"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "calico",
+          "relationship_type": "similar",
+          "notes": "Calico is more feature-rich than Flannel"
+        },
+        {
+          "alternative_slug": "weave-net",
+          "relationship_type": "similar",
+          "notes": "Both are simple Kubernetes networking solutions"
+        }
+      ]
+    },
+    {
+      "name": "Weave Net",
+      "slug": "weave-net",
+      "description": "Container networking solution that creates a virtual network connecting containers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Weave",
+        "Weaveworks Net"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Weave Net is commonly used with Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flannel",
+          "relationship_type": "similar",
+          "notes": "Both are simple container networking solutions"
+        },
+        {
+          "alternative_slug": "calico",
+          "relationship_type": "similar",
+          "notes": "Both are Kubernetes CNI plugins"
+        }
+      ]
+    },
+    {
+      "name": "Trivy",
+      "slug": "trivy",
+      "description": "Open-source vulnerability scanner for containers, filesystems, and Git repositories",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Aqua Trivy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Trivy is commonly used for container image scanning"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "grype",
+          "relationship_type": "similar",
+          "notes": "Both are open-source vulnerability scanners"
+        },
+        {
+          "alternative_slug": "clair",
+          "relationship_type": "similar",
+          "notes": "Both scan container images for vulnerabilities"
+        }
+      ]
+    },
+    {
+      "name": "Aqua Security",
+      "slug": "aqua-security",
+      "description": "Container security platform for vulnerability scanning, runtime protection, and compliance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Aqua",
+        "Aqua Container Security"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Aqua secures containerized applications"
+        },
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Aqua is commonly used with Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sysdig",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise container security platforms"
+        },
+        {
+          "alternative_slug": "snyk-container",
+          "relationship_type": "similar",
+          "notes": "Both provide container vulnerability scanning"
+        }
+      ]
+    },
+    {
+      "name": "Snyk Container",
+      "slug": "snyk-container",
+      "description": "Container vulnerability scanner integrated into development workflows",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Snyk"
+      ],
+      "icon": "logos:snyk",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Snyk Container scans container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "trivy",
+          "relationship_type": "similar",
+          "notes": "Trivy is an open-source alternative"
+        },
+        {
+          "alternative_slug": "aqua-security",
+          "relationship_type": "similar",
+          "notes": "Both are container security platforms"
+        }
+      ]
+    },
+    {
+      "name": "Falco",
+      "slug": "falco",
+      "description": "Cloud-native runtime security tool for detecting threats in real-time",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Falco Security"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Falco is commonly deployed on Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sysdig",
+          "relationship_type": "similar",
+          "notes": "Sysdig offers similar runtime security capabilities"
+        }
+      ]
+    },
+    {
+      "name": "Clair",
+      "slug": "clair",
+      "description": "Open-source vulnerability scanner for container images",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "CoreOS Clair",
+        "Quay Clair"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Clair scans container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "trivy",
+          "relationship_type": "similar",
+          "notes": "Both scan containers for vulnerabilities"
+        },
+        {
+          "alternative_slug": "anchore",
+          "relationship_type": "similar",
+          "notes": "Both are open-source container scanners"
+        }
+      ]
+    },
+    {
+      "name": "Anchore",
+      "slug": "anchore",
+      "description": "Open-source container analysis and inspection platform for security and compliance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Anchore Engine",
+        "Anchore Enterprise"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Anchore analyzes container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "clair",
+          "relationship_type": "similar",
+          "notes": "Both are open-source container security tools"
+        },
+        {
+          "alternative_slug": "grype",
+          "relationship_type": "similar",
+          "notes": "Grype is Anchore's newer vulnerability scanner"
+        }
+      ]
+    },
+    {
+      "name": "Grype",
+      "slug": "grype",
+      "description": "Fast vulnerability scanner for container images and filesystems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Anchore Grype"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "recommended",
+          "notes": "Grype scans container images"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "trivy",
+          "relationship_type": "similar",
+          "notes": "Both are fast, open-source vulnerability scanners"
+        },
+        {
+          "alternative_slug": "anchore",
+          "relationship_type": "similar",
+          "notes": "Anchore is Grype's predecessor"
+        }
+      ]
+    },
+    {
+      "name": "Sysdig",
+      "slug": "sysdig",
+      "description": "Cloud-native security and monitoring platform with runtime threat detection",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Sysdig Secure"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Sysdig is commonly used with Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aqua-security",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise container security platforms"
+        },
+        {
+          "alternative_slug": "falco",
+          "relationship_type": "similar",
+          "notes": "Falco is Sysdig's open-source runtime security tool"
+        }
+      ]
+    },
+    {
+      "name": "Apache Kafka",
+      "slug": "kafka",
+      "description": "Distributed event streaming platform for high-throughput data pipelines and streaming applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Kafka",
+        "Apache Kafka Streams"
+      ],
+      "icon": "logos:kafka",
+      "alternatives": [
+        {
+          "alternative_slug": "rabbitmq",
+          "relationship_type": "similar",
+          "notes": "RabbitMQ is a message queue, Kafka is event streaming"
+        },
+        {
+          "alternative_slug": "pulsar",
+          "relationship_type": "similar",
+          "notes": "Both are distributed messaging systems"
+        },
+        {
+          "alternative_slug": "nats",
+          "relationship_type": "similar",
+          "notes": "NATS is simpler and lighter than Kafka"
+        }
+      ]
+    },
+    {
+      "name": "RabbitMQ",
+      "slug": "rabbitmq",
+      "description": "Open-source message broker for reliable messaging between distributed systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Rabbit MQ"
+      ],
+      "icon": "logos:rabbitmq",
+      "alternatives": [
+        {
+          "alternative_slug": "kafka",
+          "relationship_type": "similar",
+          "notes": "Kafka is for event streaming, RabbitMQ is for message queuing"
+        },
+        {
+          "alternative_slug": "activemq",
+          "relationship_type": "similar",
+          "notes": "Both are traditional message brokers"
+        }
+      ]
+    },
+    {
+      "name": "NATS",
+      "slug": "nats",
+      "description": "Lightweight and high-performance messaging system for cloud-native applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "NATS.io",
+        "NATS Messaging"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kafka",
+          "relationship_type": "similar",
+          "notes": "NATS is simpler, Kafka is more feature-rich"
+        }
+      ]
+    },
+    {
+      "name": "AWS SQS",
+      "slug": "aws-sqs",
+      "description": "Fully managed message queuing service for decoupling microservices",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "SQS",
+        "Simple Queue Service"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "SQS is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "azure-service-bus",
+          "relationship_type": "similar",
+          "notes": "Both are cloud message queue services"
+        },
+        {
+          "alternative_slug": "google-cloud-pub-sub",
+          "relationship_type": "similar",
+          "notes": "Both are cloud messaging services"
+        }
+      ]
+    },
+    {
+      "name": "Azure Service Bus",
+      "slug": "azure-service-bus",
+      "description": "Enterprise message broker with queues and pub/sub topics",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Service Bus"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "required",
+          "notes": "Service Bus is an Azure service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-sqs",
+          "relationship_type": "similar",
+          "notes": "Both are cloud message queuing services"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Pub/Sub",
+      "slug": "google-cloud-pub-sub",
+      "description": "Asynchronous messaging service for building event-driven systems",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Pub/Sub",
+        "GCP Pub/Sub"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "required",
+          "notes": "Pub/Sub is a GCP service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "aws-sqs",
+          "relationship_type": "similar",
+          "notes": "Both are cloud messaging services"
+        },
+        {
+          "alternative_slug": "kafka",
+          "relationship_type": "similar",
+          "notes": "Both support event-driven architectures"
+        }
+      ]
+    },
+    {
+      "name": "Apache Pulsar",
+      "slug": "pulsar",
+      "description": "Cloud-native distributed messaging and streaming platform",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Pulsar"
+      ],
+      "icon": "logos:pulsar",
+      "alternatives": [
+        {
+          "alternative_slug": "kafka",
+          "relationship_type": "similar",
+          "notes": "Both are distributed messaging platforms"
+        }
+      ]
+    },
+    {
+      "name": "ActiveMQ",
+      "slug": "activemq",
+      "description": "Open-source message broker implementing JMS for enterprise messaging",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Apache ActiveMQ"
+      ],
+      "icon": "logos:activemq",
+      "alternatives": [
+        {
+          "alternative_slug": "rabbitmq",
+          "relationship_type": "similar",
+          "notes": "Both are enterprise message brokers"
+        }
+      ]
+    },
+    {
+      "name": "Amazon EventBridge",
+      "slug": "aws-eventbridge",
+      "description": "Serverless event bus for connecting applications using events",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "EventBridge",
+        "AWS EventBridge"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "required",
+          "notes": "EventBridge is an AWS service"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "google-cloud-pub-sub",
+          "relationship_type": "similar",
+          "notes": "Both are serverless event messaging services"
+        }
+      ]
+    },
+    {
+      "name": "Apache JMeter",
+      "slug": "jmeter",
+      "description": "Open-source load testing tool for analyzing and measuring performance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "JMeter"
+      ],
+      "icon": "logos:jmeter",
+      "alternatives": [
+        {
+          "alternative_slug": "gatling",
+          "relationship_type": "similar",
+          "notes": "Both are load testing tools, Gatling is more code-centric"
+        },
+        {
+          "alternative_slug": "locust",
+          "relationship_type": "similar",
+          "notes": "Both are open-source load testing tools"
+        }
+      ]
+    },
+    {
+      "name": "Gatling",
+      "slug": "gatling",
+      "description": "Load testing framework with high-performance and code-based scenarios",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Gatling Load Testing"
+      ],
+      "icon": "logos:gatling",
+      "alternatives": [
+        {
+          "alternative_slug": "jmeter",
+          "relationship_type": "similar",
+          "notes": "JMeter is GUI-based, Gatling is code-based"
+        },
+        {
+          "alternative_slug": "k6",
+          "relationship_type": "similar",
+          "notes": "Both use code for test scenarios"
+        }
+      ]
+    },
+    {
+      "name": "Locust",
+      "slug": "locust",
+      "description": "Python-based load testing tool for writing scalable test scenarios",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Locust.io"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Locust tests are written in Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jmeter",
+          "relationship_type": "similar",
+          "notes": "Both are load testing tools"
+        },
+        {
+          "alternative_slug": "k6",
+          "relationship_type": "similar",
+          "notes": "Both are modern, code-based load testing tools"
+        }
+      ]
+    },
+    {
+      "name": "k6",
+      "slug": "k6",
+      "description": "Modern load testing tool for engineering teams using JavaScript",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Grafana k6"
+      ],
+      "icon": "logos:k6",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "k6 tests are written in JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "gatling",
+          "relationship_type": "similar",
+          "notes": "Both are code-based load testing tools"
+        },
+        {
+          "alternative_slug": "locust",
+          "relationship_type": "similar",
+          "notes": "Both are modern load testing frameworks"
+        }
+      ]
+    },
+    {
+      "name": "Apache Bench",
+      "slug": "apache-bench",
+      "description": "Simple command-line tool for benchmarking HTTP server performance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "ab",
+        "ApacheBench"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "wrk",
+          "relationship_type": "similar",
+          "notes": "Both are command-line HTTP benchmarking tools"
+        }
+      ]
+    },
+    {
+      "name": "Artillery",
+      "slug": "artillery",
+      "description": "Modern load testing toolkit for cloud-scale applications",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Artillery.io"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "k6",
+          "relationship_type": "similar",
+          "notes": "Both are modern, developer-friendly load testing tools"
+        },
+        {
+          "alternative_slug": "gatling",
+          "relationship_type": "similar",
+          "notes": "Both are load testing frameworks"
+        }
+      ]
+    },
+    {
+      "name": "wrk",
+      "slug": "wrk",
+      "description": "Modern HTTP benchmarking tool capable of generating significant load",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "wrk2"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apache-bench",
+          "relationship_type": "similar",
+          "notes": "Both are HTTP benchmarking tools"
+        }
+      ]
+    },
+    {
+      "name": "Let's Encrypt",
+      "slug": "lets-encrypt",
+      "description": "Free, automated certificate authority providing TLS/SSL certificates",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "LetsEncrypt"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "zerossl",
+          "relationship_type": "similar",
+          "notes": "Both are free certificate authorities"
+        }
+      ]
+    },
+    {
+      "name": "cert-manager",
+      "slug": "cert-manager",
+      "description": "Kubernetes certificate management controller for automating certificate issuance",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Cert Manager"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "cert-manager runs on Kubernetes"
+        },
+        {
+          "prerequisite_slug": "lets-encrypt",
+          "prerequisite_level": "recommended",
+          "notes": "cert-manager commonly uses Let's Encrypt"
+        }
+      ]
+    },
+    {
+      "name": "Certbot",
+      "slug": "certbot",
+      "description": "Automated tool for obtaining and renewing Let's Encrypt certificates",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "EFF Certbot"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lets-encrypt",
+          "prerequisite_level": "required",
+          "notes": "Certbot obtains Let's Encrypt certificates"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "acme-sh",
+          "relationship_type": "similar",
+          "notes": "Both are ACME clients for Let's Encrypt"
+        }
+      ]
+    },
+    {
+      "name": "acme.sh",
+      "slug": "acme-sh",
+      "description": "Pure Unix shell script implementing ACME client protocol",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "acme",
+        "acme.sh script"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lets-encrypt",
+          "prerequisite_level": "recommended",
+          "notes": "acme.sh commonly works with Let's Encrypt"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "certbot",
+          "relationship_type": "similar",
+          "notes": "Both are ACME clients"
+        }
+      ]
+    },
+    {
+      "name": "ZeroSSL",
+      "slug": "zerossl",
+      "description": "Free SSL certificate provider with ACME support and web-based management",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Zero SSL"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "lets-encrypt",
+          "relationship_type": "similar",
+          "notes": "Both are free certificate authorities"
+        }
+      ]
+    },
+    {
+      "name": "Velero",
+      "slug": "velero",
+      "description": "Kubernetes backup and disaster recovery tool for cluster resources and persistent volumes",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Velero Backup",
+        "Heptio Ark"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Velero backs up Kubernetes clusters"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kasten-k10",
+          "relationship_type": "similar",
+          "notes": "Both provide Kubernetes backup and recovery"
+        },
+        {
+          "alternative_slug": "stash",
+          "relationship_type": "similar",
+          "notes": "Both backup Kubernetes resources"
+        }
+      ]
+    },
+    {
+      "name": "Restic",
+      "slug": "restic",
+      "description": "Fast, secure, and efficient backup program with encryption",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Restic Backup"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "borg",
+          "relationship_type": "similar",
+          "notes": "Both are deduplicated backup tools"
+        }
+      ]
+    },
+    {
+      "name": "Kasten K10",
+      "slug": "kasten-k10",
+      "description": "Kubernetes-native data management platform for backup, disaster recovery, and mobility",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "K10",
+        "Veeam Kasten"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "K10 is designed for Kubernetes"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "velero",
+          "relationship_type": "similar",
+          "notes": "Velero is open-source, K10 is commercial"
+        }
+      ]
+    },
+    {
+      "name": "Stash",
+      "slug": "stash",
+      "description": "Kubernetes-native backup and recovery solution for volumes and databases",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "AppsCode Stash"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "Stash is a Kubernetes operator"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "velero",
+          "relationship_type": "similar",
+          "notes": "Both backup Kubernetes resources"
+        }
+      ]
+    },
+    {
+      "name": "BorgBackup",
+      "slug": "borg",
+      "description": "Deduplicating backup program with compression and encryption",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Borg",
+        "Borg Backup"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "restic",
+          "relationship_type": "similar",
+          "notes": "Both are deduplicated backup solutions"
+        }
+      ]
+    },
+    {
+      "name": "Duplicati",
+      "slug": "duplicati",
+      "description": "Free backup software with encryption for storing backups online",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Duplicati Backup"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "restic",
+          "relationship_type": "similar",
+          "notes": "Both are encrypted backup tools"
+        }
+      ]
+    }
+  ]
+}

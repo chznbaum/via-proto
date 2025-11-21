@@ -1,5 +1,5 @@
 -- Migration: Create Competency Alternatives Table
--- Purpose: Define interchangeable/alternative competencies
+-- Purpose: Define similar/related competencies
 -- Date: 2025-11-20
 
 -- Create competency_alternatives junction table
@@ -7,7 +7,7 @@ CREATE TABLE public.competency_alternatives (
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     competency_id uuid NOT NULL REFERENCES public.competencies(id) ON DELETE CASCADE,
     alternative_id uuid NOT NULL REFERENCES public.competencies(id) ON DELETE CASCADE,
-    relationship_type text NOT NULL DEFAULT 'interchangeable',
+    relationship_type text NOT NULL DEFAULT 'similar',
     notes text,
     created_at timestamptz NOT NULL DEFAULT now(),
 
@@ -18,7 +18,7 @@ CREATE TABLE public.competency_alternatives (
     CONSTRAINT unique_alternative UNIQUE (competency_id, alternative_id),
 
     -- Valid relationship types
-    CONSTRAINT valid_relationship_type CHECK (relationship_type IN ('interchangeable', 'similar', 'related', 'replaces'))
+    CONSTRAINT valid_relationship_type CHECK (relationship_type IN ('similar', 'related', 'replaces'))
 );
 
 -- Create indexes for performance
@@ -57,6 +57,6 @@ CREATE POLICY "Only service role can delete alternatives"
     USING (true);
 
 -- Add comments
-COMMENT ON TABLE public.competency_alternatives IS 'Defines alternative or interchangeable competencies. Example: PostgreSQL and MySQL as interchangeable relational databases.';
-COMMENT ON COLUMN public.competency_alternatives.relationship_type IS 'Type of relationship: interchangeable (fully substitutable), similar (closely related), or related (loosely related).';
+COMMENT ON TABLE public.competency_alternatives IS 'Defines alternative or similar competencies. Example: PostgreSQL and MySQL as similar relational databases.';
+COMMENT ON COLUMN public.competency_alternatives.relationship_type IS 'Type of relationship: similar (closely related or interchangeable), or related (loosely related).';
 COMMENT ON COLUMN public.competency_alternatives.notes IS 'Optional notes about the relationship and when to use which alternative.';
