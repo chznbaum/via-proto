@@ -98,17 +98,8 @@ export async function POST(
       `)
       .eq('topic_id', path.topic.id);
 
-    // Debug: Log query results
-    console.log('\n🔍 DEBUG: Topic competencies query results:');
-    console.log('- topic.id:', path.topic.id);
-    console.log('- topicCompetencies:', topicCompetencies?.length || 0, 'items');
     if (competenciesError) {
-      console.error('- ❌ Error fetching competencies:', competenciesError);
-    }
-    if (topicCompetencies && topicCompetencies.length > 0) {
-      console.log('- ✅ Sample competency:', JSON.stringify(topicCompetencies[0], null, 2));
-    } else {
-      console.log('- ⚠️ No competencies found for this topic');
+      console.error('Error fetching competencies:', competenciesError);
     }
 
     // 4. Fetch user's competency proficiency levels
@@ -128,10 +119,6 @@ export async function POST(
       const allCompetencyIds = [...new Set([...competencyIds, ...prerequisiteIds])];
 
       if (allCompetencyIds.length > 0) {
-        console.log('\n🔍 DEBUG: Fetching user competencies:');
-        console.log('- user.id:', user.id);
-        console.log('- allCompetencyIds:', allCompetencyIds);
-
         const { data: userComps, error: userCompsError } = await supabase
           .from('user_competencies')
           .select('competency_id, proficiency_level')
@@ -139,16 +126,10 @@ export async function POST(
           .in('competency_id', allCompetencyIds);
 
         if (userCompsError) {
-          console.error('- ❌ Error fetching user competencies:', userCompsError);
+          console.error('Error fetching user competencies:', userCompsError);
         }
 
         userCompetencies = userComps || [];
-        console.log('- userCompetencies found:', userCompetencies.length);
-        if (userCompetencies.length > 0) {
-          console.log('- ✅ Sample user competency:', JSON.stringify(userCompetencies[0], null, 2));
-        } else {
-          console.log('- ⚠️ No user competencies found');
-        }
       }
     }
 

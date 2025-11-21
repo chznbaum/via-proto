@@ -297,32 +297,8 @@ export async function generateLearningPath(params: {
 }): Promise<any> {
   const { topic, goals, model, competencies, userCompetencies } = params;
 
-  // Debug: Check what data we're receiving
-  console.log('\n🔍 DEBUG: Data received by generateLearningPath:');
-  console.log('- competencies:', competencies?.length || 0, 'items');
-  console.log('- userCompetencies:', userCompetencies?.length || 0, 'items');
-  if (competencies && competencies.length > 0) {
-    console.log('- competencies data:', JSON.stringify(competencies, null, 2));
-  } else {
-    console.log('- ⚠️ NO COMPETENCIES DATA - context will not be sent to LLM');
-  }
-  if (userCompetencies && userCompetencies.length > 0) {
-    console.log('- userCompetencies data:', JSON.stringify(userCompetencies, null, 2));
-  }
-
   const systemPrompt = buildSystemPrompt();
   const userPrompt = buildUserPrompt(topic, goals, competencies, userCompetencies);
-
-  // Temporary debug logging - log full prompts
-  console.log('\n' + '='.repeat(80));
-  console.log('🔍 FULL LLM PROMPT DEBUG');
-  console.log('='.repeat(80));
-  console.log('\n📋 SYSTEM PROMPT:');
-  console.log(systemPrompt);
-  console.log('\n' + '-'.repeat(80));
-  console.log('\n👤 USER PROMPT:');
-  console.log(userPrompt);
-  console.log('\n' + '='.repeat(80) + '\n');
 
   try {
     const completion = await openrouter.chat.completions.create({
