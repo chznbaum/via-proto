@@ -1,0 +1,16 @@
+{
+  "competencies": [
+    {
+      "name": "Spanish",
+      "slug": "spanish",
+      "description": "Romance language spoken by over 500 million people worldwide",
+      "category_slug": "natural-languages",
+      "synonyms": [
+        "Español",
+        "Spanish Language",
+        "Castellano"
+      ],
+      "icon": "lucide:message-circle"
+    }
+  ]
+}

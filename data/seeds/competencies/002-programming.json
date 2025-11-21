@@ -1,0 +1,483 @@
+{
+  "competencies": [
+    {
+      "name": "JavaScript",
+      "slug": "javascript",
+      "description": "Programming language of the web",
+      "category_slug": "programming",
+      "synonyms": [
+        "JS",
+        "ECMAScript",
+        "ES6",
+        "ES2015+"
+      ],
+      "icon": "logos:javascript"
+    },
+    {
+      "name": "TypeScript",
+      "slug": "typescript",
+      "description": "Typed superset of JavaScript for safer code",
+      "category_slug": "programming",
+      "synonyms": [
+        "TS",
+        "TypeScript Language"
+      ],
+      "icon": "logos:typescript-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "TypeScript is a superset of JavaScript, so JavaScript fundamentals are essential"
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "slug": "python",
+      "description": "High-level programming language",
+      "category_slug": "programming",
+      "synonyms": [
+        "Python Programming",
+        "Python3"
+      ],
+      "icon": "logos:python"
+    },
+    {
+      "name": "Java",
+      "slug": "java",
+      "description": "Object-oriented programming language used for enterprise applications, Android development, and backend systems",
+      "category_slug": "programming",
+      "synonyms": [
+        "Java Programming",
+        "Java Language",
+        "OpenJDK"
+      ],
+      "icon": "logos:java",
+      "alternatives": [
+        {
+          "alternative_slug": "csharp",
+          "relationship_type": "similar",
+          "notes": "C# and Java share similar syntax and object-oriented paradigms, both used for enterprise development"
+        },
+        {
+          "alternative_slug": "kotlin",
+          "relationship_type": "similar",
+          "notes": "Kotlin is a modern alternative to Java, especially for Android development, and runs on the JVM"
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "slug": "c",
+      "description": "Low-level systems programming language known for performance and hardware control",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "C Language",
+        "ANSI C",
+        "C Programming"
+      ],
+      "icon": "devicon:c"
+    },
+    {
+      "name": "C++",
+      "slug": "cpp",
+      "description": "High-performance programming language for systems, games, and applications requiring speed",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "C Plus Plus",
+        "CPP",
+        "C++ Programming"
+      ],
+      "icon": "logos:c-plusplus",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding C helps with C++ fundamentals, but not strictly required"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Rust offers similar performance to C++ with memory safety guarantees"
+        }
+      ]
+    },
+    {
+      "name": "C#",
+      "slug": "csharp",
+      "description": "Modern object-oriented language for .NET development, games (Unity), and enterprise applications",
+      "category_slug": "programming",
+      "synonyms": [
+        "C Sharp",
+        "CSharp",
+        "C# Language",
+        ".NET Language"
+      ],
+      "icon": "devicon:csharp",
+      "alternatives": [
+        {
+          "alternative_slug": "java",
+          "relationship_type": "similar",
+          "notes": "Java and C# share similar syntax and object-oriented paradigms"
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "slug": "go",
+      "description": "Simple and efficient language for building scalable backend services and cloud infrastructure",
+      "category_slug": "programming",
+      "synonyms": [
+        "Golang",
+        "Go Language",
+        "Go Programming"
+      ],
+      "icon": "logos:go",
+      "alternatives": [
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages with strong concurrency support"
+        }
+      ]
+    },
+    {
+      "name": "Rust",
+      "slug": "rust",
+      "description": "Memory-safe systems programming language for performance-critical applications",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Rust Language",
+        "Rust Programming",
+        "Rustlang"
+      ],
+      "icon": "logos:rust",
+      "alternatives": [
+        {
+          "alternative_slug": "cpp",
+          "relationship_type": "similar",
+          "notes": "Both are systems languages, but Rust provides memory safety without garbage collection"
+        },
+        {
+          "alternative_slug": "go",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages with strong concurrency, but different philosophies"
+        }
+      ]
+    },
+    {
+      "name": "Swift",
+      "slug": "swift",
+      "description": "Modern programming language for iOS, macOS, and Apple platform development",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Swift Language",
+        "Swift Programming",
+        "Apple Swift"
+      ],
+      "icon": "logos:swift",
+      "alternatives": [
+        {
+          "alternative_slug": "objective-c",
+          "relationship_type": "replaces",
+          "notes": "Swift is the modern replacement for Objective-C in Apple ecosystem"
+        }
+      ]
+    },
+    {
+      "name": "Kotlin",
+      "slug": "kotlin",
+      "description": "Modern JVM language for Android development and server-side applications",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Kotlin Language",
+        "Kotlin Programming"
+      ],
+      "icon": "logos:kotlin-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Java helps with Kotlin, but not required as Kotlin can be learned independently"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "java",
+          "relationship_type": "similar",
+          "notes": "Kotlin is designed as a better Java, runs on JVM, and is interoperable with Java"
+        }
+      ]
+    },
+    {
+      "name": "Objective-C",
+      "slug": "objective-c",
+      "description": "Object-oriented language used for Apple platform development before Swift",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "ObjC",
+        "Objective C",
+        "Obj-C"
+      ],
+      "icon": "devicon:objectivec",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "required",
+          "notes": "Objective-C is built on top of C"
+        }
+      ]
+    },
+    {
+      "name": "Ruby",
+      "slug": "ruby",
+      "description": "Dynamic programming language known for elegant syntax and Rails web framework",
+      "category_slug": "programming",
+      "synonyms": [
+        "Ruby Language",
+        "Ruby Programming"
+      ],
+      "icon": "logos:ruby",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Both are dynamic, high-level languages with clean syntax and strong web frameworks"
+        }
+      ]
+    },
+    {
+      "name": "PHP",
+      "slug": "php",
+      "description": "Server-side scripting language widely used for web development",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "PHP Language",
+        "PHP Programming",
+        "Hypertext Preprocessor"
+      ],
+      "icon": "logos:php",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Both are popular for backend web development"
+        },
+        {
+          "alternative_slug": "nodejs",
+          "relationship_type": "similar",
+          "notes": "Both are commonly used for server-side web development"
+        }
+      ]
+    },
+    {
+      "name": "Bash",
+      "slug": "bash",
+      "description": "Unix shell and command language for automation and system administration",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Bash Scripting",
+        "Shell Scripting",
+        "Bourne Again Shell",
+        "Linux Shell"
+      ],
+      "icon": "devicon:bash"
+    },
+    {
+      "name": "PowerShell",
+      "slug": "powershell",
+      "description": "Task automation and configuration management framework from Microsoft",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "PowerShell Scripting",
+        "Windows PowerShell",
+        "pwsh"
+      ],
+      "icon": "devicon:powershell",
+      "alternatives": [
+        {
+          "alternative_slug": "bash",
+          "relationship_type": "similar",
+          "notes": "Both are shell scripting languages, PowerShell for Windows/cross-platform, Bash for Unix/Linux"
+        }
+      ]
+    },
+    {
+      "name": "Lua",
+      "slug": "lua",
+      "description": "Lightweight scripting language used in game development and embedded systems",
+      "category_slug": "game-development",
+      "synonyms": [
+        "Lua Language",
+        "Lua Scripting"
+      ],
+      "icon": "logos:lua"
+    },
+    {
+      "name": "Perl",
+      "slug": "perl",
+      "description": "Text processing and system administration language",
+      "category_slug": "programming",
+      "synonyms": [
+        "Perl Language",
+        "Perl Programming"
+      ],
+      "icon": "devicon:perl"
+    },
+    {
+      "name": "R",
+      "slug": "r",
+      "description": "Statistical programming language for data analysis and visualization",
+      "category_slug": "data-science",
+      "synonyms": [
+        "R Language",
+        "R Programming",
+        "R Statistical Computing"
+      ],
+      "icon": "devicon:r",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python with libraries like Pandas is often used as an alternative to R for data science"
+        }
+      ]
+    },
+    {
+      "name": "Object-Oriented Programming",
+      "slug": "oop",
+      "description": "Programming paradigm based on objects containing data and code",
+      "category_slug": "programming",
+      "synonyms": [
+        "OOP",
+        "Object Oriented Programming",
+        "OO Programming"
+      ],
+      "icon": "lucide:boxes"
+    },
+    {
+      "name": "Functional Programming",
+      "slug": "functional-programming",
+      "description": "Programming paradigm treating computation as evaluation of mathematical functions",
+      "category_slug": "programming",
+      "synonyms": [
+        "FP",
+        "Functional Programming Paradigm"
+      ],
+      "icon": "lucide:function-square"
+    },
+    {
+      "name": "Algorithms",
+      "slug": "algorithms",
+      "description": "Step-by-step procedures for solving computational problems efficiently",
+      "category_slug": "programming",
+      "synonyms": [
+        "Algorithm Design",
+        "Algorithmic Thinking",
+        "Problem Solving Algorithms"
+      ],
+      "icon": "lucide:network",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "data-structures",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding data structures helps with algorithm implementation and optimization"
+        }
+      ]
+    },
+    {
+      "name": "Data Structures",
+      "slug": "data-structures",
+      "description": "Ways of organizing and storing data for efficient access and modification",
+      "category_slug": "programming",
+      "synonyms": [
+        "Data Structure Design",
+        "DS",
+        "Data Organization"
+      ],
+      "icon": "lucide:database"
+    },
+    {
+      "name": "Design Patterns",
+      "slug": "design-patterns",
+      "description": "Reusable solutions to common software design problems",
+      "category_slug": "programming",
+      "synonyms": [
+        "Software Design Patterns",
+        "Gang of Four Patterns",
+        "GoF Patterns"
+      ],
+      "icon": "lucide:component",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "oop",
+          "prerequisite_level": "required",
+          "notes": "Most design patterns are based on object-oriented principles"
+        }
+      ]
+    },
+    {
+      "name": "Version Control",
+      "slug": "version-control",
+      "description": "Systems for tracking changes in code and collaborating with others",
+      "category_slug": "programming",
+      "synonyms": [
+        "Source Control",
+        "VCS",
+        "Git"
+      ],
+      "icon": "lucide:git-branch"
+    },
+    {
+      "name": "SQL",
+      "slug": "sql",
+      "description": "Language for managing and querying relational databases",
+      "category_slug": "databases",
+      "synonyms": [
+        "Structured Query Language",
+        "Database Queries",
+        "SQL Programming"
+      ],
+      "icon": "lucide:database"
+    },
+    {
+      "name": "Regular Expressions",
+      "slug": "regular-expressions",
+      "description": "Pattern matching for text processing and string manipulation",
+      "category_slug": "programming",
+      "synonyms": [
+        "RegEx",
+        "RegExp"
+      ],
+      "icon": "lucide:search"
+    },
+    {
+      "name": "Testing",
+      "slug": "software-testing",
+      "description": "Practices and techniques for verifying software quality and correctness",
+      "category_slug": "software-testing",
+      "synonyms": [
+        "Unit Testing",
+        "Test-Driven Development",
+        "TDD",
+        "QA",
+        "Quality Assurance"
+      ],
+      "icon": "lucide:check-circle-2"
+    },
+    {
+      "name": "Debugging",
+      "slug": "debugging",
+      "description": "Identifying and fixing errors in software",
+      "category_slug": "programming",
+      "synonyms": [
+        "Bug Fixing",
+        "Troubleshooting",
+        "Code Debugging"
+      ],
+      "icon": "lucide:bug"
+    }
+  ]
+}

@@ -18,7 +18,7 @@ CREATE TABLE public.competency_alternatives (
     CONSTRAINT unique_alternative UNIQUE (competency_id, alternative_id),
 
     -- Valid relationship types
-    CONSTRAINT valid_relationship_type CHECK (relationship_type IN ('interchangeable', 'similar', 'related'))
+    CONSTRAINT valid_relationship_type CHECK (relationship_type IN ('interchangeable', 'similar', 'related', 'replaces'))
 );
 
 -- Create indexes for performance
