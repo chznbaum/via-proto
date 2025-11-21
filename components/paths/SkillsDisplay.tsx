@@ -19,6 +19,7 @@ interface TopicCompetency {
 
 interface SkillsDisplayProps {
   competencies: TopicCompetency[];
+  showCTA?: boolean;
 }
 
 const containerVariants = {
@@ -44,7 +45,7 @@ const itemVariants: Variants = {
   },
 };
 
-export const SkillsDisplay = ({ competencies }: SkillsDisplayProps) => {
+export const SkillsDisplay = ({ competencies, showCTA = true }: SkillsDisplayProps) => {
   if (!competencies || competencies.length === 0) {
     return null;
   }
@@ -106,31 +107,19 @@ export const SkillsDisplay = ({ competencies }: SkillsDisplayProps) => {
       </motion.div>
 
       {/* CTA to track competencies */}
-      <div className="mt-8 text-center md:mt-12">
-        <div className="alert alert-info inline-flex max-w-2xl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="stroke-current shrink-0 w-6 h-6">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <div className="text-left">
+      {showCTA && (
+        <div className="mt-8 text-center md:mt-12">
+          <div className="alert inline-flex max-w-2xl">
             <p className="text-sm">
               Want personalized paths based on your current skills?{" "}
-              <Link href="/skills" className="link link-primary font-medium">
+              <Link href="/skills" className="font-medium underline hover:no-underline">
                 Track your competencies
               </Link>{" "}
               to get recommendations tailored to your proficiency level.
             </p>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -195,6 +195,16 @@ export default async function PathDetailPage({
   const backLink = user ? '/dashboard' : '/explore';
   const backText = user ? 'Back to dashboard' : 'Back to explore';
 
+  // Check if user has any competencies tracked
+  let hasUserCompetencies = false;
+  if (user) {
+    const { count } = await supabase
+      .from('user_competencies')
+      .select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id);
+    hasUserCompetencies = (count || 0) > 0;
+  }
+
   // Get competency IDs for related paths
   const competencyIds =
     path.topic?.topic_competencies?.map((tc: any) => tc.competency?.id).filter(Boolean) || [];
@@ -336,7 +346,10 @@ export default async function PathDetailPage({
 
             {/* Skills Display */}
             {path.topic?.topic_competencies && path.topic.topic_competencies.length > 0 && (
-              <SkillsDisplay competencies={path.topic.topic_competencies} />
+              <SkillsDisplay
+                competencies={path.topic.topic_competencies}
+                showCTA={!hasUserCompetencies}
+              />
             )}
 
             {/* Sections Timeline */}
