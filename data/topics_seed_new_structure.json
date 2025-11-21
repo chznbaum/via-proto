@@ -640,70 +640,80 @@
       "slug": "javascript",
       "description": "Programming language of the web",
       "category_slug": "programming",
-      "synonyms": ["JS", "ECMAScript", "ES6", "ES2015+"]
+      "synonyms": ["JS", "ECMAScript", "ES6", "ES2015+"],
+      "icon": "logos:javascript"
     },
     {
       "name": "TypeScript",
       "slug": "typescript",
       "description": "Typed superset of JavaScript for safer code",
       "category_slug": "programming",
-      "synonyms": ["TS", "TypeScript Language"]
+      "synonyms": ["TS", "TypeScript Language"],
+      "icon": "logos:typescript-icon"
     },
     {
       "name": "React",
       "slug": "react",
       "description": "JavaScript library for building user interfaces",
       "category_slug": "frontend-development",
-      "synonyms": ["React.js", "ReactJS", "React Framework"]
+      "synonyms": ["React.js", "ReactJS", "React Framework"],
+      "icon": "logos:react"
     },
     {
       "name": "Vue.js",
       "slug": "vuejs",
       "description": "Progressive JavaScript framework for building user interfaces",
       "category_slug": "frontend-development",
-      "synonyms": ["Vue", "VueJS", "Vue Framework", "Vue 3"]
+      "synonyms": ["Vue", "VueJS", "Vue Framework", "Vue 3"],
+      "icon": "logos:vue"
     },
     {
       "name": "Angular",
       "slug": "angular",
       "description": "TypeScript-based framework for building scalable web applications",
       "category_slug": "frontend-development",
-      "synonyms": ["AngularJS", "Angular 2+", "Angular Framework"]
+      "synonyms": ["AngularJS", "Angular 2+", "Angular Framework"],
+      "icon": "logos:angular-icon"
     },
     {
       "name": "HTML",
       "slug": "html",
       "description": "Markup language for web pages",
       "category_slug": "frontend-development",
-      "synonyms": ["HTML5", "HyperText Markup Language"]
+      "synonyms": ["HTML5", "HyperText Markup Language"],
+      "icon": "logos:html-5"
     },
     {
       "name": "CSS",
       "slug": "css",
       "description": "Style sheet language for web pages",
       "category_slug": "frontend-development",
-      "synonyms": ["CSS3", "Cascading Style Sheets"]
+      "synonyms": ["CSS3", "Cascading Style Sheets"],
+      "icon": "logos:css-3-official"
     },
     {
       "name": "Python",
       "slug": "python",
       "description": "High-level programming language",
       "category_slug": "programming",
-      "synonyms": ["Python Programming", "Python3"]
+      "synonyms": ["Python Programming", "Python3"],
+      "icon": "logos:python"
     },
     {
       "name": "Flask",
       "slug": "flask",
       "description": "Lightweight Python web framework",
       "category_slug": "backend-development",
-      "synonyms": ["Flask Framework"]
+      "synonyms": ["Flask Framework"],
+      "icon": "logos:flask"
     },
     {
       "name": "Django",
       "slug": "django",
       "description": "High-level Python web framework",
       "category_slug": "backend-development",
-      "synonyms": ["Django Framework"]
+      "synonyms": ["Django Framework"],
+      "icon": "logos:django-icon"
     },
     {
       "name": "Spanish",
@@ -711,6 +721,62 @@
       "description": "Spanish language",
       "category_slug": "languages",
       "synonyms": ["Español", "Spanish Language", "Castellano"]
+    },
+    {
+      "name": "Pinia",
+      "slug": "pinia",
+      "description": "A more modular and intuitive store for Vue.js",
+      "category_slug": "frontend-development",
+      "synonyms": [],
+      "icon": "logos:pinia"
+    },
+    {
+      "name": "Nuxt",
+      "slug": "nuxt",
+      "description": "Full stack web application framework for Vue.js",
+      "category_slug": "frontend-development",
+      "synonyms": [],
+      "icon": "logos:nuxt-icon"
+    },
+    {
+      "name": "Jest",
+      "slug": "jest",
+      "description": "JavaScript testing framework with an emphasis on simplicity",
+      "category_slug": "frontend-development",
+      "synonyms": [],
+      "icon": "logos:jest"
+    },
+    {
+      "name": "Mocha",
+      "slug": "mocha",
+      "description": "Flexible JavaScript testing framework that aims to be fun to use",
+      "category_slug": "frontend-development",
+      "synonyms": [],
+      "icon": "logos:mocha"
+    },
+    {
+      "name": "Jasmine",
+      "slug": "jasmine",
+      "description": "Lightweight JavaScript testing framework without magic",
+      "category_slug": "frontend-development",
+      "synonyms": [],
+      "icon": "logos:jasmine"
+    },
+    {
+      "name": "Progressive Web App",
+      "slug": "pwa",
+      "description": "Web applications with native app-like features like push notifications and offline-capability",
+      "category_slug": "frontend-development",
+      "synonyms": ["pwa"],
+      "icon": "logos:pwa"
+    },
+    {
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "Cross-platform JavaScript runtime that lets you make almost anything",
+      "category_slug": "frontend-development",
+      "synonyms": ["node", "nodejs"],
+      "icon": "logos:nodejs-icon"
     }
   ],
   "topics": [
@@ -739,21 +805,33 @@
       ]
     },
     {
-      "name": "Building web applications with Python",
-      "slug": "building-web-applications-with-python",
-      "description": "Learn to build full-featured web applications using Python and modern frameworks",
+      "name": "Building web applications with Python and Flask",
+      "slug": "building-web-applications-with-python-flask",
+      "description": "Learn to build small and flexible web applications using Python and Flask",
       "category_slug": "backend-development",
       "competencies": [
         {
-          "competency_slug": "python",
+          "competency_slug": "flask",
           "is_primary": true
         },
         {
-          "competency_slug": "flask",
+          "competency_slug": "python",
           "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building web applications with Python and Django",
+      "slug": "building-web-applications-with-python-django",
+      "description": "Learn to build full-featured web applications using Python and Django",
+      "category_slug": "backend-development",
+      "competencies": [
+        {
+          "competency_slug": "django",
+          "is_primary": true
         },
         {
-          "competency_slug": "html",
+          "competency_slug": "python",
           "is_primary": false
         }
       ]
@@ -817,8 +895,12 @@
       "category_slug": "frontend-development",
       "competencies": [
         {
-          "competency_slug": "vuejs",
+          "competency_slug": "pinia",
           "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
         },
         {
           "competency_slug": "javascript",
@@ -833,8 +915,12 @@
       "category_slug": "fullstack-development",
       "competencies": [
         {
-          "competency_slug": "vuejs",
+          "competency_slug": "nuxt",
           "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
         },
         {
           "competency_slug": "javascript",
@@ -849,8 +935,32 @@
       "category_slug": "software-testing",
       "competencies": [
         {
-          "competency_slug": "vuejs",
+          "competency_slug": "jest",
           "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Testing Vue.js applications with Mocha",
+      "slug": "testing-vuejs-mocha",
+      "description": "Write comprehensive unit and component tests for Vue.js apps using Mocha",
+      "category_slug": "software-testing",
+      "competencies": [
+        {
+          "competency_slug": "mocha",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vuejs",
+          "is_primary": false
         },
         {
           "competency_slug": "javascript",
@@ -869,7 +979,7 @@
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -881,11 +991,15 @@
       "category_slug": "frontend-development",
       "competencies": [
         {
-          "competency_slug": "angular",
+          "competency_slug": "pwa",
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "angular",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -901,7 +1015,7 @@
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -913,11 +1027,15 @@
       "category_slug": "software-testing",
       "competencies": [
         {
-          "competency_slug": "angular",
+          "competency_slug": "jasmine",
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "angular",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -933,7 +1051,7 @@
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -949,7 +1067,7 @@
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "typescript",
           "is_primary": false
         }
       ]
@@ -977,8 +1095,12 @@
       "category_slug": "backend-development",
       "competencies": [
         {
-          "competency_slug": "typescript",
+          "competency_slug": "nodejs",
           "is_primary": true
+        },
+        {
+          "competency_slug": "typescript",
+          "is_primary": false
         },
         {
           "competency_slug": "javascript",
@@ -1070,9 +1192,9 @@
     },
     {
       "competency_slug": "angular",
-      "prerequisite_slug": "javascript",
+      "prerequisite_slug": "typescript",
       "prerequisite_level": "required",
-      "notes": "JavaScript fundamentals required before learning Angular"
+      "notes": "Angular is written in TypeScript, so familiarity is required to pick it up quickly"
     },
     {
       "competency_slug": "typescript",
