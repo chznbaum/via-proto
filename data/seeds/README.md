@@ -125,6 +125,8 @@ Reset the database with the new seed data:
 supabase db reset
 ```
 
+CRITICAL RULE: You should ensure competencies are comprehensive before beginning any additional work on expanding topics. Adding competencies is largely a matter of recall and research, while adding topics is more a matter of generating new expressions. These are better done separately from each other so you can optimize for each task. By comprehensive, keep in mind that the intent is for users to be able to learn about nearly anything they want to using this app.
+
 ## Domain Guidelines
 
 When adding new competencies or topics, use these domain files:
@@ -147,13 +149,63 @@ When adding new competencies or topics, use these domain files:
 
 Add new domain files as the platform expands to new areas.
 
+## Synonym Guidelines
+CRITICAL RULE: Do not create multiple synonyms that would share the same slug (ie.: WASM, wasm). Synonyms are for making searching and matching more user-friendly and those activities will be done case-insensitively. If you create multiple synonyms that would slugify the same way, you will cause a duplicate key value violates unique constraint error in the database.
+
 ## Icon Format
 
-All icons use the iconify format:
-- Categories: `lucide:icon-name` (e.g., `lucide:computer`)
-- Competencies: Use appropriate icon set (e.g., `logos:react`, `lucide:code-2`)
+All icons use the iconify format with **strict rules** for each data type:
 
-Browse icons at: https://icon-sets.iconify.design/
+### Categories
+- **Must use**: `lucide:icon-name` format (e.g., `lucide:computer`, `lucide:code-2`)
+- Categories always use Lucide icons for consistent visual style
+- Browse at: https://icon-sets.iconify.design/lucide/
+
+### Competencies
+- **Must use**: Branded logos only - either `logos:` or `devicon:` prefixes
+- **First choice**: `logos:` set (e.g., `logos:react`, `logos:typescript-icon`)
+  - Browse at: https://icon-sets.iconify.design/logos/
+  - Available icons listed in: `data/iconify/logos.json`
+- **Second choice**: `devicon:` set as fallback (e.g., `devicon:bootstrap`, `devicon:matlab`)
+  - Browse at: https://icon-sets.iconify.design/devicon/
+  - Available icons listed in: `data/iconify/devicon.json`
+- **Never use**: Generic icons (like `lucide:code-2`) for competencies
+- **If no logo exists**: Omit the `icon` field entirely rather than using a generic icon
+
+### Topics
+- Topics do not have icons
+
+### Icon Reference Files
+The project maintains local JSON files with available icons from each set:
+- `data/iconify/logos.json` - Full list of logos icons
+- `data/iconify/devicon.json` - Full list of devicon icons
+- `data/iconify/lucide.json` - Full list of lucide icons
+- `data/iconify/tabler.json` - Full list of tabler icons
+
+To verify an icon exists before using it:
+```bash
+# Check if React icon exists in logos
+grep -i '"react"' data/iconify/logos.json
+
+# Check if Python icon exists in devicon
+grep -i '"python"' data/iconify/devicon.json
+```
+
+### Common Icon Patterns
+**Programming Languages**: Usually `logos:{language}` or `devicon:{language}`
+- JavaScript: `logos:javascript`
+- Python: `logos:python`
+- TypeScript: `logos:typescript-icon`
+- C++: `logos:c-plusplus`
+- C#: `logos:c-sharp`
+- Bash: `logos:bash-icon`
+
+**Web Frameworks**: Usually have `-icon` suffix in logos set
+- React: `logos:react`
+- Vue: `logos:vue`
+- Angular: `logos:angular-icon`
+
+**Note**: Some icons have variants like `-icon`, `-wordmark`, etc. Prefer the icon variant for competencies.
 
 ## Notes
 

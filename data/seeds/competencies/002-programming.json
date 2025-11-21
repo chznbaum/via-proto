@@ -115,7 +115,7 @@
         "C# Language",
         ".NET Language"
       ],
-      "icon": "devicon:csharp",
+      "icon": "logos:c-sharp",
       "alternatives": [
         {
           "alternative_slug": "java",
@@ -283,7 +283,7 @@
         "Bourne Again Shell",
         "Linux Shell"
       ],
-      "icon": "devicon:bash"
+      "icon": "logos:bash-icon"
     },
     {
       "name": "PowerShell",
@@ -295,7 +295,7 @@
         "Windows PowerShell",
         "pwsh"
       ],
-      "icon": "devicon:powershell",
+      "icon": "logos:powershell",
       "alternatives": [
         {
           "alternative_slug": "bash",
@@ -324,7 +324,7 @@
         "Perl Language",
         "Perl Programming"
       ],
-      "icon": "devicon:perl"
+      "icon": "logos:perl"
     },
     {
       "name": "R",
@@ -336,7 +336,7 @@
         "R Programming",
         "R Statistical Computing"
       ],
-      "icon": "devicon:r",
+      "icon": "logos:r-lang",
       "alternatives": [
         {
           "alternative_slug": "python",
@@ -478,6 +478,614 @@
         "Code Debugging"
       ],
       "icon": "lucide:bug"
+    },
+    {
+      "name": "Scala",
+      "slug": "scala",
+      "description": "Multi-paradigm JVM language combining functional and object-oriented programming",
+      "category_slug": "programming",
+      "synonyms": [
+        "Scala Language",
+        "Scala Programming"
+      ],
+      "icon": "logos:scala",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Java and the JVM helps with Scala, but not strictly required"
+        },
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are central to Scala"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kotlin",
+          "relationship_type": "similar",
+          "notes": "Both are modern JVM languages, Kotlin is more pragmatic, Scala more academic"
+        }
+      ]
+    },
+    {
+      "name": "Haskell",
+      "slug": "haskell",
+      "description": "Pure functional programming language with strong static typing and lazy evaluation",
+      "category_slug": "programming",
+      "synonyms": [
+        "Haskell Language",
+        "Haskell Programming"
+      ],
+      "icon": "logos:haskell-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are essential for Haskell"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ocaml",
+          "relationship_type": "similar",
+          "notes": "Both are strongly-typed functional languages with academic roots"
+        },
+        {
+          "alternative_slug": "fsharp",
+          "relationship_type": "similar",
+          "notes": "F# is influenced by OCaml and Haskell but runs on .NET"
+        }
+      ]
+    },
+    {
+      "name": "F#",
+      "slug": "fsharp",
+      "description": "Functional-first .NET language with pragmatic functional programming features",
+      "category_slug": "programming",
+      "synonyms": [
+        "F Sharp",
+        "FSharp",
+        "F# Language"
+      ],
+      "icon": "logos:fsharp",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are central to F#"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "csharp",
+          "relationship_type": "similar",
+          "notes": "Both are .NET languages, F# is functional-first, C# is object-oriented with functional features"
+        },
+        {
+          "alternative_slug": "haskell",
+          "relationship_type": "similar",
+          "notes": "F# brings Haskell-inspired functional concepts to the .NET ecosystem"
+        }
+      ]
+    },
+    {
+      "name": "Clojure",
+      "slug": "clojure",
+      "description": "Modern Lisp dialect for the JVM emphasizing functional programming and immutability",
+      "category_slug": "programming",
+      "synonyms": [
+        "Clojure Language",
+        "Clojure Programming"
+      ],
+      "icon": "logos:clojure",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are core to Clojure"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "common-lisp",
+          "relationship_type": "similar",
+          "notes": "Both are Lisp dialects, Clojure is more modern and JVM-based"
+        },
+        {
+          "alternative_slug": "scala",
+          "relationship_type": "similar",
+          "notes": "Both are functional JVM languages with different syntax philosophies"
+        }
+      ]
+    },
+    {
+      "name": "Elixir",
+      "slug": "elixir",
+      "description": "Functional, concurrent language built on the Erlang VM for scalable applications",
+      "category_slug": "programming",
+      "synonyms": [
+        "Elixir Language",
+        "Elixir Programming"
+      ],
+      "icon": "devicon:elixir",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are essential for Elixir"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "erlang",
+          "relationship_type": "similar",
+          "notes": "Elixir runs on the Erlang VM and provides a more modern syntax"
+        },
+        {
+          "alternative_slug": "go",
+          "relationship_type": "similar",
+          "notes": "Both excel at concurrent programming but with different approaches"
+        }
+      ]
+    },
+    {
+      "name": "Erlang",
+      "slug": "erlang",
+      "description": "Concurrent, fault-tolerant language designed for distributed systems and telecom",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Erlang Language",
+        "Erlang Programming",
+        "Erlang/OTP"
+      ],
+      "icon": "logos:erlang",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Erlang uses functional programming principles"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "elixir",
+          "relationship_type": "similar",
+          "notes": "Elixir is a modern alternative running on the same Erlang VM"
+        }
+      ]
+    },
+    {
+      "name": "OCaml",
+      "slug": "ocaml",
+      "description": "Industrial-strength functional language with object-oriented features",
+      "category_slug": "programming",
+      "synonyms": [
+        "OCaml Language",
+        "Objective Caml",
+        "OCaml Programming"
+      ],
+      "icon": "logos:ocaml",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Functional programming concepts are core to OCaml"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "haskell",
+          "relationship_type": "similar",
+          "notes": "Both are strongly-typed functional languages, OCaml is more pragmatic"
+        },
+        {
+          "alternative_slug": "fsharp",
+          "relationship_type": "similar",
+          "notes": "F# was heavily influenced by OCaml"
+        }
+      ]
+    },
+    {
+      "name": "Common Lisp",
+      "slug": "common-lisp",
+      "description": "Powerful multi-paradigm language in the Lisp family with rich macro system",
+      "category_slug": "programming",
+      "synonyms": [
+        "CL",
+        "Common Lisp Language",
+        "ANSI Common Lisp"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Lisp pioneered many functional programming concepts"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "clojure",
+          "relationship_type": "similar",
+          "notes": "Clojure is a modern Lisp dialect with JVM integration"
+        },
+        {
+          "alternative_slug": "scheme",
+          "relationship_type": "similar",
+          "notes": "Both are Lisp dialects, Scheme is minimalist, Common Lisp is comprehensive"
+        }
+      ]
+    },
+    {
+      "name": "Scheme",
+      "slug": "scheme",
+      "description": "Minimalist Lisp dialect emphasizing simplicity and elegance",
+      "category_slug": "programming",
+      "synonyms": [
+        "Scheme Language",
+        "Scheme Programming",
+        "R5RS",
+        "R6RS"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "functional-programming",
+          "prerequisite_level": "recommended",
+          "notes": "Scheme is often used to teach functional programming concepts"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "common-lisp",
+          "relationship_type": "similar",
+          "notes": "Both are Lisp dialects with different design philosophies"
+        }
+      ]
+    },
+    {
+      "name": "Dart",
+      "slug": "dart",
+      "description": "Client-optimized language for building fast apps on any platform, used with Flutter",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Dart Language",
+        "Dart Programming",
+        "Google Dart"
+      ],
+      "icon": "logos:dart",
+      "alternatives": [
+        {
+          "alternative_slug": "javascript",
+          "relationship_type": "similar",
+          "notes": "Dart was designed as a JavaScript alternative for web and mobile"
+        },
+        {
+          "alternative_slug": "kotlin",
+          "relationship_type": "similar",
+          "notes": "Both are modern languages for mobile development"
+        }
+      ]
+    },
+    {
+      "name": "Julia",
+      "slug": "julia",
+      "description": "High-performance language for technical and scientific computing",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Julia Language",
+        "Julia Programming",
+        "JuliaLang"
+      ],
+      "icon": "logos:julia",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Julia aims to be as easy as Python but as fast as C"
+        },
+        {
+          "alternative_slug": "r",
+          "relationship_type": "similar",
+          "notes": "Both are used for statistical computing and data science"
+        },
+        {
+          "alternative_slug": "matlab",
+          "relationship_type": "similar",
+          "notes": "Both are used for numerical computing and scientific applications"
+        }
+      ]
+    },
+    {
+      "name": "MATLAB",
+      "slug": "matlab",
+      "description": "High-level language and environment for numerical computing and algorithm development",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Matlab",
+        "Matrix Laboratory"
+      ],
+      "icon": "devicon:matlab",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python with NumPy/SciPy is a free alternative to MATLAB"
+        },
+        {
+          "alternative_slug": "julia",
+          "relationship_type": "similar",
+          "notes": "Julia is designed for similar scientific computing tasks"
+        }
+      ]
+    },
+    {
+      "name": "Zig",
+      "slug": "zig",
+      "description": "General-purpose programming language emphasizing robustness, optimality, and clarity",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Zig Language",
+        "Zig Programming",
+        "Ziglang"
+      ],
+      "icon": "logos:zig",
+      "alternatives": [
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are modern systems languages focusing on safety and performance"
+        },
+        {
+          "alternative_slug": "c",
+          "relationship_type": "similar",
+          "notes": "Zig aims to be a better C with modern features"
+        }
+      ]
+    },
+    {
+      "name": "Solidity",
+      "slug": "solidity",
+      "description": "Contract-oriented language for writing smart contracts on Ethereum and other blockchains",
+      "category_slug": "programming",
+      "synonyms": [
+        "Solidity Language",
+        "Solidity Programming",
+        "Smart Contract Language"
+      ],
+      "icon": "logos:solidity",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "recommended",
+          "notes": "Solidity syntax is influenced by JavaScript"
+        }
+      ]
+    },
+    {
+      "name": "Nim",
+      "slug": "nim",
+      "description": "Statically typed compiled language combining efficiency with expressive Python-like syntax",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Nim Language",
+        "Nim Programming",
+        "NimLang"
+      ],
+      "icon": "logos:nim",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Nim has Python-like syntax but compiles to efficient native code"
+        },
+        {
+          "alternative_slug": "rust",
+          "relationship_type": "similar",
+          "notes": "Both are systems languages with memory safety focus"
+        }
+      ]
+    },
+    {
+      "name": "Crystal",
+      "slug": "crystal",
+      "description": "Statically typed compiled language with Ruby-inspired syntax",
+      "category_slug": "programming",
+      "synonyms": [
+        "Crystal Language",
+        "Crystal Programming"
+      ],
+      "icon": "logos:crystal",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "recommended",
+          "notes": "Crystal syntax is heavily inspired by Ruby"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ruby",
+          "relationship_type": "similar",
+          "notes": "Crystal aims to be as elegant as Ruby but as fast as C"
+        }
+      ]
+    },
+    {
+      "name": "Groovy",
+      "slug": "groovy",
+      "description": "Dynamic JVM language with Java-compatible syntax and powerful scripting capabilities",
+      "category_slug": "programming",
+      "synonyms": [
+        "Groovy Language",
+        "Groovy Programming",
+        "Apache Groovy"
+      ],
+      "icon": "devicon:groovy",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "recommended",
+          "notes": "Groovy runs on the JVM and is designed to complement Java"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "kotlin",
+          "relationship_type": "similar",
+          "notes": "Both are modern JVM languages improving on Java"
+        },
+        {
+          "alternative_slug": "scala",
+          "relationship_type": "similar",
+          "notes": "Both are JVM languages offering features beyond Java"
+        }
+      ]
+    },
+    {
+      "name": "Fortran",
+      "slug": "fortran",
+      "description": "High-performance language for numerical and scientific computing, still used in HPC",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Fortran Language",
+        "Fortran Programming",
+        "Formula Translation"
+      ],
+      "icon": "devicon:fortran",
+      "alternatives": [
+        {
+          "alternative_slug": "c",
+          "relationship_type": "similar",
+          "notes": "Both are used for high-performance computing"
+        },
+        {
+          "alternative_slug": "julia",
+          "relationship_type": "similar",
+          "notes": "Julia is a modern alternative for scientific computing"
+        }
+      ]
+    },
+    {
+      "name": "COBOL",
+      "slug": "cobol",
+      "description": "Business-oriented language still used in legacy banking and mainframe systems",
+      "category_slug": "programming",
+      "synonyms": [
+        "COBOL Language",
+        "COBOL Programming",
+        "Common Business Oriented Language"
+      ],
+      "icon": "devicon:cobol"
+    },
+    {
+      "name": "WebAssembly",
+      "slug": "webassembly",
+      "description": "Binary instruction format for stack-based virtual machine, enabling high-performance web applications",
+      "category_slug": "web-development",
+      "synonyms": [
+        "WASM",
+        "Web Assembly"
+      ],
+      "icon": "logos:webassembly",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "optional",
+          "notes": "C, C++, and Rust are common source languages compiled to WebAssembly"
+        }
+      ]
+    },
+    {
+      "name": "Assembly",
+      "slug": "assembly",
+      "description": "Low-level programming language with direct hardware instruction correspondence",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Assembly Language",
+        "ASM",
+        "Assembler",
+        "x86 Assembly",
+        "ARM Assembly"
+      ]
+    },
+    {
+      "name": "Prolog",
+      "slug": "prolog",
+      "description": "Logic programming language for artificial intelligence and computational linguistics",
+      "category_slug": "programming",
+      "synonyms": [
+        "Prolog Language",
+        "Prolog Programming",
+        "Logic Programming"
+      ],
+      "icon": "devicon:prolog"
+    },
+    {
+      "name": "Racket",
+      "slug": "racket",
+      "description": "General-purpose programming language in the Lisp/Scheme family with powerful macro system",
+      "category_slug": "programming",
+      "synonyms": [
+        "Racket Language",
+        "Racket Programming"
+      ],
+      "icon": "devicon:racket",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "scheme",
+          "prerequisite_level": "optional",
+          "notes": "Racket evolved from Scheme"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "scheme",
+          "relationship_type": "similar",
+          "notes": "Racket is a descendant of Scheme with more features"
+        }
+      ]
+    },
+    {
+      "name": "Delphi",
+      "slug": "delphi",
+      "description": "Object-oriented Pascal-based language for rapid application development",
+      "category_slug": "programming",
+      "synonyms": [
+        "Delphi Language",
+        "Object Pascal",
+        "Embarcadero Delphi"
+      ],
+      "icon": "devicon:delphi"
+    },
+    {
+      "name": "Visual Basic",
+      "slug": "visual-basic",
+      "description": "Event-driven programming language from Microsoft for Windows application development",
+      "category_slug": "programming",
+      "synonyms": [
+        "VB",
+        "VB.NET",
+        "Visual Basic .NET",
+        "VBA"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "csharp",
+          "relationship_type": "similar",
+          "notes": "C# is the modern successor to Visual Basic in the .NET ecosystem"
+        }
+      ]
+    },
+    {
+      "name": "Ada",
+      "slug": "ada",
+      "description": "Strongly typed language designed for safety-critical and high-integrity systems",
+      "category_slug": "systems-programming",
+      "synonyms": [
+        "Ada Language",
+        "Ada Programming"
+      ]
     }
   ]
 }
