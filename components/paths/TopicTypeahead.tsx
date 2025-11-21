@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import type { TopicSearchResult } from '@/types/search';
 
 export interface Topic {
   id: string;
@@ -24,7 +25,7 @@ export default function TopicTypeahead({
   initialValue = '',
 }: TopicTypeaheadProps) {
   const [query, setQuery] = useState(initialValue);
-  const [topics, setTopics] = useState<Topic[]>([]);
+  const [results, setResults] = useState<TopicSearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
@@ -58,7 +59,7 @@ export default function TopicTypeahead({
 
     // Don't search if query is too short or if a topic is already selected
     if (query.length < 2 || selectedTopic) {
-      setTopics([]);
+      setResults([]);
       setIsOpen(false);
       return;
     }
@@ -70,20 +71,20 @@ export default function TopicTypeahead({
     debounceTimerRef.current = setTimeout(async () => {
       try {
         const response = await fetch(
-          `/api/topics?q=${encodeURIComponent(query)}&limit=20`
+          `/api/search?q=${encodeURIComponent(query)}&limit=20`
         );
 
         if (!response.ok) {
-          throw new Error('Failed to fetch topics');
+          throw new Error('Failed to search topics');
         }
 
         const data = await response.json();
-        setTopics(data.topics || []);
+        setResults(data.results || []);
         setIsOpen(true);
         setHighlightedIndex(0);
       } catch (error) {
-        console.error('Error fetching topics:', error);
-        setTopics([]);
+        console.error('Error searching topics:', error);
+        setResults([]);
       } finally {
         setIsLoading(false);
       }
@@ -96,11 +97,19 @@ export default function TopicTypeahead({
     };
   }, [query, selectedTopic]);
 
-  const handleSelect = (topic: Topic) => {
+  const handleSelect = (result: TopicSearchResult) => {
+    // Convert TopicSearchResult to Topic interface for backwards compatibility
+    const topic: Topic = {
+      id: result.topic_id,
+      name: result.topic_name,
+      slug: result.topic_slug,
+      category: result.category_id, // This will need mapping if you want category name
+      description: result.topic_description,
+    };
     setSelectedTopic(topic);
-    setQuery(topic.name);
+    setQuery(result.topic_name);
     setIsOpen(false);
-    onSelect(topic.id, topic);
+    onSelect(result.topic_id, topic);
   };
 
   const handleInputChange = (value: string) => {
@@ -118,7 +127,7 @@ export default function TopicTypeahead({
       case 'ArrowDown':
         e.preventDefault();
         setHighlightedIndex((prev) =>
-          prev < topics.length - 1 ? prev + 1 : prev
+          prev < results.length - 1 ? prev + 1 : prev
         );
         break;
       case 'ArrowUp':
@@ -127,8 +136,8 @@ export default function TopicTypeahead({
         break;
       case 'Enter':
         e.preventDefault();
-        if (topics[highlightedIndex]) {
-          handleSelect(topics[highlightedIndex]);
+        if (results[highlightedIndex]) {
+          handleSelect(results[highlightedIndex]);
         }
         break;
       case 'Escape':
@@ -160,27 +169,57 @@ export default function TopicTypeahead({
       </div>
 
       {/* Dropdown */}
-      {isOpen && topics.length > 0 && (
-        <ul className="menu bg-base-100 w-full rounded-box shadow-lg absolute z-50 mt-1 max-h-60 overflow-y-auto border border-base-300">
-          {topics.map((topic, index) => (
-            <li key={topic.id}>
+      {isOpen && results.length > 0 && (
+        <ul className="menu bg-base-100 w-full rounded-box shadow-lg absolute z-50 mt-1 max-h-96 overflow-y-auto border border-base-300">
+          {results.map((result, index) => (
+            <li key={result.topic_id}>
               <a
-                className={`flex flex-col items-start ${
+                className={`flex flex-col items-start py-3 ${
                   index === highlightedIndex ? 'active' : ''
                 }`}
-                onClick={() => handleSelect(topic)}
+                onClick={() => handleSelect(result)}
                 onMouseEnter={() => setHighlightedIndex(index)}
               >
-                <div className="flex items-center gap-2 w-full">
-                  <span className="font-semibold flex-1">{topic.name}</span>
-                  <span className="badge badge-sm badge-outline">
-                    {topic.category}
-                  </span>
+                {/* Topic name */}
+                <div className="flex items-center gap-2 w-full mb-1">
+                  <span className="font-semibold flex-1">{result.topic_name}</span>
                 </div>
-                {topic.description && (
-                  <span className="text-xs text-base-content/60 line-clamp-1">
-                    {topic.description}
+
+                {/* Competencies as chips */}
+                {result.all_competency_names && result.all_competency_names.length > 0 && (
+                  <div className="flex flex-wrap gap-1 mb-1">
+                    {result.all_competency_names.map((comp, idx) => (
+                      <span
+                        key={idx}
+                        className={`badge badge-sm ${
+                          idx === 0 ? 'badge-primary' : 'badge-ghost'
+                        }`}
+                      >
+                        {comp}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Description */}
+                {result.topic_description && (
+                  <span className="text-xs text-base-content/60 line-clamp-2 mb-1">
+                    {result.topic_description}
                   </span>
+                )}
+
+                {/* Tags as badges */}
+                {result.tags && result.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-1">
+                    {result.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="badge badge-xs badge-outline"
+                      >
+                        🏷️ {tag}
+                      </span>
+                    ))}
+                  </div>
                 )}
               </a>
             </li>
@@ -189,7 +228,7 @@ export default function TopicTypeahead({
       )}
 
       {/* No results */}
-      {isOpen && !isLoading && topics.length === 0 && query.length >= 2 && (
+      {isOpen && !isLoading && results.length === 0 && query.length >= 2 && (
         <div className="absolute z-50 mt-1 w-full bg-base-100 rounded-box shadow-lg border border-base-300 p-4">
           <p className="text-sm text-base-content/60">
             No topics found for "{query}". Try a different search.
