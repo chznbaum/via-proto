@@ -1,0 +1,789 @@
+{
+  "competencies": [
+    {
+      "name": "PostgreSQL",
+      "slug": "postgresql",
+      "description": "Advanced open-source relational database with strong SQL compliance and extensibility",
+      "category_slug": "databases",
+      "synonyms": [
+        "Postgres",
+        "psql",
+        "PostgreSQL Database"
+      ],
+      "icon": "logos:postgresql"
+    },
+    {
+      "name": "MySQL",
+      "slug": "mysql",
+      "description": "Popular open-source relational database management system",
+      "category_slug": "databases",
+      "synonyms": [
+        "MySQL Database",
+        "MySQL Server"
+      ],
+      "icon": "logos:mysql",
+      "alternatives": [
+        {
+          "alternative_slug": "mariadb",
+          "relationship_type": "similar",
+          "notes": "MariaDB is a fork of MySQL with similar syntax and features"
+        }
+      ]
+    },
+    {
+      "name": "MariaDB",
+      "slug": "mariadb",
+      "description": "Community-developed fork of MySQL with enhanced features and performance",
+      "category_slug": "databases",
+      "synonyms": [
+        "MariaDB Server",
+        "MariaDB Database"
+      ],
+      "icon": "logos:mariadb-icon",
+      "alternatives": [
+        {
+          "alternative_slug": "mysql",
+          "relationship_type": "similar",
+          "notes": "MySQL is the original database that MariaDB forked from"
+        }
+      ]
+    },
+    {
+      "name": "SQLite",
+      "slug": "sqlite",
+      "description": "Lightweight embedded relational database, perfect for local storage and mobile apps",
+      "category_slug": "databases",
+      "synonyms": [
+        "SQLite3",
+        "SQLite Database"
+      ],
+      "icon": "logos:sqlite"
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "slug": "microsoft-sql-server",
+      "description": "Enterprise relational database management system by Microsoft",
+      "category_slug": "databases",
+      "synonyms": [
+        "SQL Server",
+        "MSSQL",
+        "MS SQL",
+        "T-SQL"
+      ],
+      "icon": "devicon:microsoftsqlserver"
+    },
+    {
+      "name": "Oracle Database",
+      "slug": "oracle-database",
+      "description": "Enterprise-grade relational database management system",
+      "category_slug": "databases",
+      "synonyms": [
+        "Oracle",
+        "Oracle DB",
+        "PL/SQL",
+        "Oracle RDBMS"
+      ],
+      "icon": "logos:oracle"
+    },
+    {
+      "name": "MongoDB",
+      "slug": "mongodb",
+      "description": "Popular NoSQL document database with flexible schema design",
+      "category_slug": "databases",
+      "synonyms": [
+        "Mongo",
+        "MongoDB Database"
+      ],
+      "icon": "logos:mongodb-icon"
+    },
+    {
+      "name": "Redis",
+      "slug": "redis",
+      "description": "In-memory data structure store used as cache, message broker, and database",
+      "category_slug": "databases",
+      "synonyms": [
+        "Redis Cache",
+        "Redis Database"
+      ],
+      "icon": "logos:redis"
+    },
+    {
+      "name": "Cassandra",
+      "slug": "cassandra",
+      "description": "Distributed NoSQL database designed for high availability and scalability",
+      "category_slug": "databases",
+      "synonyms": [
+        "Apache Cassandra",
+        "Cassandra Database"
+      ],
+      "icon": "logos:cassandra"
+    },
+    {
+      "name": "Neo4j",
+      "slug": "neo4j",
+      "description": "Graph database management system optimized for storing and querying connected data",
+      "category_slug": "databases",
+      "synonyms": [
+        "Neo4j Graph Database",
+        "Neo4j DB"
+      ],
+      "icon": "logos:neo4j"
+    },
+    {
+      "name": "CouchDB",
+      "slug": "couchdb",
+      "description": "Document-oriented NoSQL database with multi-master replication",
+      "category_slug": "databases",
+      "synonyms": [
+        "Apache CouchDB",
+        "Couch Database"
+      ],
+      "icon": "logos:couchdb-icon"
+    },
+    {
+      "name": "DynamoDB",
+      "slug": "dynamodb",
+      "description": "Fully managed NoSQL database service by AWS with single-digit millisecond performance",
+      "category_slug": "databases",
+      "synonyms": [
+        "Amazon DynamoDB",
+        "AWS DynamoDB"
+      ],
+      "icon": "logos:aws-dynamodb"
+    },
+    {
+      "name": "InfluxDB",
+      "slug": "influxdb",
+      "description": "Time-series database optimized for handling time-stamped data",
+      "category_slug": "databases",
+      "synonyms": [
+        "Influx",
+        "InfluxDB Time Series"
+      ],
+      "icon": "logos:influxdb"
+    },
+    {
+      "name": "PlanetScale",
+      "slug": "planetscale",
+      "description": "Serverless MySQL-compatible database platform with branching and schema management",
+      "category_slug": "databases",
+      "synonyms": [
+        "PlanetScale Database",
+        "PlanetScale DB"
+      ],
+      "icon": "logos:planetscale",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "mysql",
+          "prerequisite_level": "recommended",
+          "notes": "PlanetScale is MySQL-compatible, so MySQL knowledge is beneficial"
+        }
+      ]
+    },
+    {
+      "name": "CockroachDB",
+      "slug": "cockroachdb",
+      "description": "Distributed SQL database designed for cloud applications with PostgreSQL compatibility",
+      "category_slug": "databases",
+      "synonyms": [
+        "Cockroach DB",
+        "CockroachDB Database",
+        "CRDB"
+      ],
+      "icon": "devicon:cockroachdb",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "postgresql",
+          "prerequisite_level": "recommended",
+          "notes": "CockroachDB uses PostgreSQL-compatible SQL syntax"
+        }
+      ]
+    },
+    {
+      "name": "TimescaleDB",
+      "slug": "timescaledb",
+      "description": "Time-series database built as a PostgreSQL extension",
+      "category_slug": "databases",
+      "synonyms": [
+        "Timescale DB",
+        "Timescale"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "postgresql",
+          "prerequisite_level": "required",
+          "notes": "TimescaleDB is a PostgreSQL extension, so PostgreSQL knowledge is essential"
+        }
+      ]
+    },
+    {
+      "name": "Prisma",
+      "slug": "prisma",
+      "description": "Next-generation ORM for Node.js and TypeScript with type-safe database access",
+      "category_slug": "databases",
+      "synonyms": [
+        "Prisma ORM",
+        "Prisma Client"
+      ],
+      "icon": "logos:prisma",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "recommended",
+          "notes": "Prisma works best with TypeScript for full type safety"
+        }
+      ]
+    },
+    {
+      "name": "TypeORM",
+      "slug": "typeorm",
+      "description": "ORM for TypeScript and JavaScript supporting multiple databases",
+      "category_slug": "databases",
+      "synonyms": [
+        "Type ORM",
+        "TypeORM Framework"
+      ],
+      "icon": "devicon:typeorm",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "recommended",
+          "notes": "TypeORM is designed for TypeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "prisma",
+          "relationship_type": "similar",
+          "notes": "Prisma is a modern alternative TypeScript ORM"
+        }
+      ]
+    },
+    {
+      "name": "Sequelize",
+      "slug": "sequelize",
+      "description": "Promise-based Node.js ORM for multiple SQL databases",
+      "category_slug": "databases",
+      "synonyms": [
+        "Sequelize ORM",
+        "Sequelize.js"
+      ],
+      "icon": "devicon:sequelize",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Sequelize is a JavaScript/Node.js ORM"
+        }
+      ]
+    },
+    {
+      "name": "Drizzle ORM",
+      "slug": "drizzle-orm",
+      "description": "Lightweight TypeScript ORM with SQL-like syntax and excellent performance",
+      "category_slug": "databases",
+      "synonyms": [
+        "Drizzle",
+        "DrizzleORM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "recommended",
+          "notes": "Drizzle is designed for TypeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "prisma",
+          "relationship_type": "similar",
+          "notes": "Prisma is another modern TypeScript ORM"
+        }
+      ]
+    },
+    {
+      "name": "SQLAlchemy",
+      "slug": "sqlalchemy",
+      "description": "Python SQL toolkit and ORM providing flexibility and power",
+      "category_slug": "databases",
+      "synonyms": [
+        "SQL Alchemy",
+        "SQLAlchemy ORM"
+      ],
+      "icon": "devicon:sqlalchemy",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "SQLAlchemy is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Django ORM",
+      "slug": "django-orm",
+      "description": "Object-relational mapper built into Django framework",
+      "category_slug": "databases",
+      "synonyms": [
+        "Django Models",
+        "Django Database API"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Django ORM is part of the Django framework"
+        },
+        {
+          "prerequisite_slug": "django",
+          "prerequisite_level": "required",
+          "notes": "Django ORM is built into Django"
+        }
+      ]
+    },
+    {
+      "name": "Hibernate",
+      "slug": "hibernate",
+      "description": "Object-relational mapping framework for Java",
+      "category_slug": "databases",
+      "synonyms": [
+        "Hibernate ORM",
+        "Hibernate Framework"
+      ],
+      "icon": "devicon:hibernate",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "Hibernate is a Java framework"
+        }
+      ]
+    },
+    {
+      "name": "Entity Framework",
+      "slug": "entity-framework",
+      "description": "Object-relational mapper for .NET applications",
+      "category_slug": "databases",
+      "synonyms": [
+        "EF",
+        "EF Core",
+        "Entity Framework Core"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "Entity Framework is a .NET/C# framework"
+        }
+      ]
+    },
+    {
+      "name": "Mongoose",
+      "slug": "mongoose",
+      "description": "MongoDB object modeling tool for Node.js",
+      "category_slug": "databases",
+      "synonyms": [
+        "Mongoose ODM",
+        "Mongoose.js"
+      ],
+      "icon": "devicon:mongoose",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Mongoose is a Node.js library"
+        },
+        {
+          "prerequisite_slug": "mongodb",
+          "prerequisite_level": "required",
+          "notes": "Mongoose is specifically for MongoDB"
+        }
+      ]
+    },
+    {
+      "name": "Knex.js",
+      "slug": "knexjs",
+      "description": "SQL query builder for Node.js supporting multiple databases",
+      "category_slug": "databases",
+      "synonyms": [
+        "Knex",
+        "Knex Query Builder"
+      ],
+      "icon": "devicon:knexjs",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Knex.js is a JavaScript library"
+        }
+      ]
+    },
+    {
+      "name": "pgAdmin",
+      "slug": "pgadmin",
+      "description": "Popular open-source administration and development platform for PostgreSQL",
+      "category_slug": "databases",
+      "synonyms": [
+        "pgAdmin 4",
+        "PostgreSQL Admin"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "postgresql",
+          "prerequisite_level": "required",
+          "notes": "pgAdmin is specifically for PostgreSQL"
+        }
+      ]
+    },
+    {
+      "name": "MySQL Workbench",
+      "slug": "mysql-workbench",
+      "description": "Visual database design and administration tool for MySQL",
+      "category_slug": "databases",
+      "synonyms": [
+        "Workbench",
+        "MySQL Admin"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "mysql",
+          "prerequisite_level": "required",
+          "notes": "MySQL Workbench is specifically for MySQL"
+        }
+      ]
+    },
+    {
+      "name": "MongoDB Compass",
+      "slug": "mongodb-compass",
+      "description": "Official GUI for exploring and interacting with MongoDB data",
+      "category_slug": "databases",
+      "synonyms": [
+        "Compass",
+        "MongoDB GUI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "mongodb",
+          "prerequisite_level": "required",
+          "notes": "MongoDB Compass is specifically for MongoDB"
+        }
+      ]
+    },
+    {
+      "name": "DataGrip",
+      "slug": "datagrip",
+      "description": "JetBrains IDE for databases and SQL with intelligent query console",
+      "category_slug": "databases",
+      "synonyms": [
+        "DataGrip IDE",
+        "JetBrains DataGrip"
+      ],
+      "icon": "devicon:datagrip"
+    },
+    {
+      "name": "DBeaver",
+      "slug": "dbeaver",
+      "description": "Free universal database tool supporting multiple database systems",
+      "category_slug": "databases",
+      "synonyms": [
+        "DBeaver Community",
+        "DBeaver Universal"
+      ]
+    },
+    {
+      "name": "TablePlus",
+      "slug": "tableplus",
+      "description": "Modern database management tool with native interface and advanced features",
+      "category_slug": "databases",
+      "synonyms": [
+        "Table Plus",
+        "TablePlus GUI"
+      ]
+    },
+    {
+      "name": "Navicat",
+      "slug": "navicat",
+      "description": "Premium database administration tool supporting multiple database systems",
+      "category_slug": "databases",
+      "synonyms": [
+        "Navicat Premium",
+        "Navicat for MySQL"
+      ]
+    },
+    {
+      "name": "phpMyAdmin",
+      "slug": "phpmyadmin",
+      "description": "Web-based administration tool for MySQL and MariaDB",
+      "category_slug": "databases",
+      "synonyms": [
+        "php MyAdmin",
+        "phpMyAdmin Panel"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "mysql",
+          "prerequisite_level": "required",
+          "notes": "phpMyAdmin is for MySQL/MariaDB administration"
+        }
+      ]
+    },
+    {
+      "name": "Adminer",
+      "slug": "adminer",
+      "description": "Lightweight database management tool in a single PHP file",
+      "category_slug": "databases",
+      "synonyms": [
+        "Adminer Tool",
+        "phpMinAdmin"
+      ]
+    },
+    {
+      "name": "Memcached",
+      "slug": "memcached",
+      "description": "High-performance distributed memory caching system",
+      "category_slug": "databases",
+      "synonyms": [
+        "Memcache",
+        "Memcached Cache"
+      ],
+      "icon": "logos:memcached",
+      "alternatives": [
+        {
+          "alternative_slug": "redis",
+          "relationship_type": "similar",
+          "notes": "Redis is a more feature-rich alternative to Memcached"
+        }
+      ]
+    },
+    {
+      "name": "RavenDB",
+      "slug": "ravendb",
+      "description": "NoSQL document database with ACID guarantees",
+      "category_slug": "databases",
+      "synonyms": [
+        "Raven DB",
+        "RavenDB NoSQL"
+      ],
+      "icon": "devicon:ravendb"
+    },
+    {
+      "name": "ArangoDB",
+      "slug": "arangodb",
+      "description": "Multi-model database supporting document, graph, and key-value data models",
+      "category_slug": "databases",
+      "synonyms": [
+        "Arango DB",
+        "ArangoDB Multi-Model"
+      ],
+      "icon": "logos:arangodb-icon"
+    },
+    {
+      "name": "Couchbase",
+      "slug": "couchbase",
+      "description": "Distributed NoSQL document database with SQL-like query language",
+      "category_slug": "databases",
+      "synonyms": [
+        "Couchbase Server",
+        "Couchbase Database"
+      ],
+      "icon": "devicon:couchbase"
+    },
+    {
+      "name": "RethinkDB",
+      "slug": "rethinkdb",
+      "description": "Real-time database designed for building real-time web applications",
+      "category_slug": "databases",
+      "synonyms": [
+        "Rethink DB",
+        "RethinkDB Real-time"
+      ],
+      "icon": "logos:rethinkdb"
+    },
+    {
+      "name": "HBase",
+      "slug": "hbase",
+      "description": "Distributed column-oriented database built on Hadoop",
+      "category_slug": "databases",
+      "synonyms": [
+        "Apache HBase",
+        "HBase Database"
+      ],
+      "icon": "logos:hbase"
+    },
+    {
+      "name": "Algolia",
+      "slug": "algolia",
+      "description": "Hosted search API delivering instant and relevant results",
+      "category_slug": "databases",
+      "synonyms": [
+        "Algolia Search",
+        "Algolia API"
+      ],
+      "icon": "logos:algolia"
+    },
+    {
+      "name": "Meilisearch",
+      "slug": "meilisearch",
+      "description": "Lightning-fast open-source search engine",
+      "category_slug": "databases",
+      "synonyms": [
+        "Meili Search",
+        "Meilisearch Engine"
+      ],
+      "icon": "logos:meilisearch"
+    },
+    {
+      "name": "Apache Solr",
+      "slug": "apache-solr",
+      "description": "Enterprise search platform built on Apache Lucene",
+      "category_slug": "databases",
+      "synonyms": [
+        "Solr",
+        "Solr Search",
+        "Apache Solr Search"
+      ],
+      "icon": "logos:solr"
+    },
+    {
+      "name": "Liquibase",
+      "slug": "liquibase",
+      "description": "Database schema change management and version control tool",
+      "category_slug": "databases",
+      "synonyms": [
+        "Liquibase Migrations",
+        "Liquibase Tool"
+      ],
+      "icon": "devicon:liquibase"
+    },
+    {
+      "name": "Flyway",
+      "slug": "flyway",
+      "description": "Database migration tool with simple SQL-based migrations",
+      "category_slug": "databases",
+      "synonyms": [
+        "Flyway Migrations",
+        "Flyway DB"
+      ]
+    },
+    {
+      "name": "Alembic",
+      "slug": "alembic",
+      "description": "Database migration tool for SQLAlchemy",
+      "category_slug": "databases",
+      "synonyms": [
+        "Alembic Migrations",
+        "SQLAlchemy Migrations"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sqlalchemy",
+          "prerequisite_level": "required",
+          "notes": "Alembic is designed to work with SQLAlchemy"
+        }
+      ]
+    },
+    {
+      "name": "GraphQL",
+      "slug": "graphql",
+      "description": "Query language for APIs with strongly-typed schema",
+      "category_slug": "databases",
+      "synonyms": [
+        "Graph QL",
+        "GraphQL API"
+      ],
+      "icon": "logos:graphql"
+    },
+    {
+      "name": "MongoDB Atlas",
+      "slug": "mongodb-atlas",
+      "description": "Fully managed cloud database service for MongoDB",
+      "category_slug": "databases",
+      "synonyms": [
+        "Atlas MongoDB",
+        "Mongo Atlas",
+        "Atlas DB"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "mongodb",
+          "prerequisite_level": "required",
+          "notes": "MongoDB Atlas is a hosted MongoDB service"
+        }
+      ]
+    },
+    {
+      "name": "Amazon RDS",
+      "slug": "amazon-rds",
+      "description": "Managed relational database service supporting multiple engines",
+      "category_slug": "databases",
+      "synonyms": [
+        "AWS RDS",
+        "RDS",
+        "Relational Database Service"
+      ]
+    },
+    {
+      "name": "Azure SQL Database",
+      "slug": "azure-sql-database",
+      "description": "Managed SQL database service in Microsoft Azure",
+      "category_slug": "databases",
+      "synonyms": [
+        "Azure SQL",
+        "Azure Database"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "microsoft-sql-server",
+          "prerequisite_level": "recommended",
+          "notes": "Azure SQL Database is based on SQL Server"
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud SQL",
+      "slug": "google-cloud-sql",
+      "description": "Fully managed relational database service for MySQL, PostgreSQL, and SQL Server",
+      "category_slug": "databases",
+      "synonyms": [
+        "Cloud SQL",
+        "GCP Cloud SQL",
+        "Google SQL"
+      ]
+    },
+    {
+      "name": "ActiveRecord",
+      "slug": "activerecord",
+      "description": "Object-relational mapping framework built into Ruby on Rails",
+      "category_slug": "databases",
+      "synonyms": [
+        "Active Record",
+        "Rails ActiveRecord",
+        "AR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "required",
+          "notes": "ActiveRecord is part of Ruby on Rails"
+        }
+      ]
+    },
+    {
+      "name": "Eloquent",
+      "slug": "eloquent",
+      "description": "Laravel's elegant ORM for working with databases",
+      "category_slug": "databases",
+      "synonyms": [
+        "Eloquent ORM",
+        "Laravel Eloquent"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "php",
+          "prerequisite_level": "required",
+          "notes": "Eloquent is part of Laravel framework"
+        }
+      ]
+    }
+  ]
+}
