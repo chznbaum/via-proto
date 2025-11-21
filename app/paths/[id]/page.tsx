@@ -1,6 +1,15 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
+import { Topbar } from '@/components/Topbar';
+import Footer from '@/components/Footer';
+import { ShareSheet } from '@/components/paths/ShareSheet';
+import { SkillsDisplay } from '@/components/paths/SkillsDisplay';
+import { SectionTimeline } from '@/components/paths/SectionTimeline';
+import { TagsSection } from '@/components/paths/TagsSection';
+import { CommentForm } from '@/components/paths/CommentForm';
+import { RelatedPaths } from '@/components/paths/RelatedPaths';
+import config from '@/config';
 
 async function getPath(id: string) {
   const supabase = await createClient();
@@ -19,6 +28,7 @@ async function getPath(id: string) {
             name,
             slug,
             description,
+            icon,
             prerequisites:competency_prerequisites!competency_prerequisites_competency_id_fkey(
               prerequisite_level,
               prerequisite:competencies!competency_prerequisites_prerequisite_id_fkey(
@@ -66,6 +76,100 @@ async function getPath(id: string) {
   return path;
 }
 
+async function getRelatedPaths(pathId: string, competencyIds: string[]) {
+  if (!competencyIds || competencyIds.length === 0) {
+    return [];
+  }
+
+  const supabase = await createClient();
+
+  // Find other public paths that share competencies
+  const { data: relatedPaths, error } = await supabase
+    .from('learning_paths')
+    .select(`
+      *,
+      topic:topics(
+        *,
+        category:categories(name, slug, icon),
+        topic_competencies!inner(
+          competency_id
+        )
+      ),
+      creator:profiles!creator_id(id, name, avatar_url)
+    `)
+    .neq('id', pathId)
+    .eq('is_public', true)
+    .in('topic.topic_competencies.competency_id', competencyIds)
+    .limit(4);
+
+  if (error) {
+    console.error('Error fetching related paths:', error);
+    return [];
+  }
+
+  return relatedPaths || [];
+}
+
+async function getPathTags(pathId: string) {
+  const supabase = await createClient();
+
+  const { data: tags, error } = await supabase
+    .from('taggables')
+    .select('tag:tags(id, name)')
+    .eq('taggable_type', 'learning_path')
+    .eq('taggable_id', pathId);
+
+  if (error) {
+    console.error('Error fetching tags:', error);
+    return [];
+  }
+
+  return tags?.map((t: any) => t.tag).filter(Boolean) || [];
+}
+
+// Generate featured image URL using Unsplash
+function getFeaturedImageUrl(topicName: string): string {
+  const query = encodeURIComponent(topicName);
+  return `https://source.unsplash.com/1200x600/?${query},learning,education`;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const path = await getPath(id);
+
+  if (!path) {
+    return {
+      title: 'Path Not Found',
+    };
+  }
+
+  return {
+    title: `${path.title} | ${config.appName}`,
+    description: path.description || `Learn ${path.topic.name} - ${path.skill_level}`,
+    openGraph: {
+      title: path.title,
+      description: path.description,
+      type: 'website',
+      images: [
+        {
+          url: getFeaturedImageUrl(path.topic.name),
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: path.title,
+      description: path.description,
+    },
+  };
+}
+
 export default async function PathDetailPage({
   params,
 }: {
@@ -78,6 +182,15 @@ export default async function PathDetailPage({
     notFound();
   }
 
+  // Get competency IDs for related paths
+  const competencyIds =
+    path.topic?.topic_competencies?.map((tc: any) => tc.competency?.id).filter(Boolean) || [];
+
+  const [tags, relatedPaths] = await Promise.all([
+    getPathTags(id),
+    getRelatedPaths(id, competencyIds),
+  ]);
+
   const skillLevelColors = {
     beginner: 'badge-success',
     intermediate: 'badge-warning',
@@ -85,408 +198,150 @@ export default async function PathDetailPage({
   };
 
   const skillLevelColor =
-    skillLevelColors[path.skill_level as keyof typeof skillLevelColors] ||
-    'badge-neutral';
+    skillLevelColors[path.skill_level as keyof typeof skillLevelColors] || 'badge-neutral';
 
-  const resourceTypeIcons: Record<string, string> = {
-    video: '🎥',
-    article: '📄',
-    book: '📚',
-    project: '🛠️',
-    audio: '🎧',
-    graphic: '🎨',
-  };
+  const fullUrl = `${config.domainName}/paths/${id}`;
+  const featuredImageUrl = getFeaturedImageUrl(path.topic.name);
 
   return (
-    <main className="min-h-screen p-8 pb-24">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="mb-8">
-          <Link href="/dashboard" className="btn btn-ghost btn-sm mb-4">
-            ← Back to Dashboard
-          </Link>
+    <>
+      <Topbar />
+      <main className="min-h-screen pt-20 md:pt-24">
+        <div className="group/section container pb-8 sm:pt-4 xl:pb-16 2xl:pb-24">
+          <div className="lg:mx-16 xl:mx-32 2xl:mx-48">
+            {/* Back Link */}
+            <Link
+              href="/explore"
+              className="text-base-content/50 hover:text-base-content flex items-center gap-2 text-sm font-medium transition-all">
+              <span className="iconify lucide--arrow-left size-4"></span>
+              Back to explore
+            </Link>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            {path.title}
-          </h1>
+            {/* Featured Image */}
+            <img
+              src={featuredImageUrl}
+              className="mt-4 h-64 w-full rounded-lg object-cover sm:mt-6 sm:h-100 lg:h-120"
+              alt={path.title}
+            />
 
-          <div className="flex flex-wrap gap-2 mb-4">
-            <div className="badge badge-primary badge-lg">
-              {path.topic.name}
-            </div>
-            <div className={`badge badge-lg ${skillLevelColor}`}>
-              {path.skill_level.charAt(0).toUpperCase() +
-                path.skill_level.slice(1)}
-            </div>
-            {path.is_public && (
-              <div className="badge badge-ghost badge-lg">Public</div>
-            )}
-          </div>
+            {/* Meta Info */}
+            <div className="mt-4 sm:mt-8">
+              <div className="flex items-center justify-between">
+                <p className="text-base-content/60 font-mono text-xs font-medium tracking-wide uppercase">
+                  {path.topic.category?.name || 'Learning Path'}
+                </p>
+                <p className="text-base-content/80 text-sm">{path.total_estimated_hours}h</p>
+              </div>
+              <p className="mt-1 text-lg font-medium sm:text-xl">{path.title}</p>
+              <p className="text-base-content/80 mt-1 text-sm">{path.description}</p>
 
-          <p className="text-lg text-base-content/70 mb-4">
-            {path.description}
-          </p>
-
-          <div className="flex gap-6 text-sm text-base-content/60">
-            <span className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              {path.total_estimated_hours} hours total
-            </span>
-            <span className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                />
-              </svg>
-              {path.sections?.length || 0} sections
-            </span>
-            <span className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                />
-              </svg>
-              {path.view_count} views
-            </span>
-          </div>
-
-          <div className="flex items-center gap-2 text-sm text-base-content/50 mt-2">
-            {path.creator?.avatar_url ? (
-              <div className="avatar">
-                <div className="mask mask-circle w-6">
-                  <img src={path.creator.avatar_url} alt={path.creator.name || 'Creator'} />
+              {/* Badges */}
+              <div className="flex flex-wrap gap-2 mt-3">
+                <div className="badge badge-primary">{path.topic.name}</div>
+                <div className={`badge ${skillLevelColor}`}>
+                  {path.skill_level.charAt(0).toUpperCase() + path.skill_level.slice(1)}
                 </div>
-              </div>
-            ) : (
-              <div className="avatar placeholder">
-                <div className="mask mask-circle w-6 bg-base-300">
-                  <span className="text-xs">
-                    {(path.creator?.name || 'A')[0].toUpperCase()}
-                  </span>
-                </div>
-              </div>
-            )}
-            <span>
-              Created by {path.creator?.name || 'Anonymous'} •{' '}
-              {new Date(path.created_at).toLocaleDateString()}
-            </span>
-          </div>
-        </div>
-
-        {/* Competencies & Prerequisites */}
-        {path.topic?.topic_competencies && path.topic.topic_competencies.length > 0 && (
-          <div className="card bg-base-100 shadow-lg mb-8">
-            <div className="card-body">
-              <h2 className="card-title text-xl mb-4 flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                Skills Covered
-              </h2>
-              <p className="text-base-content/70 mb-4">
-                This learning path covers the following competencies:
-              </p>
-
-              <div className="space-y-4">
-                {path.topic.topic_competencies.map((tc: any) => {
-                  if (!tc.competency) return null;
-                  const comp = tc.competency;
-
-                  return (
-                    <div
-                      key={comp.id}
-                      className={`border-2 rounded-lg p-4 ${
-                        tc.is_primary
-                          ? 'border-primary bg-primary/5'
-                          : 'border-base-300'
-                      }`}
-                    >
-                      <div className="flex items-start gap-3">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2">
-                            <h3 className="font-semibold text-lg">{comp.name}</h3>
-                            {tc.is_primary && (
-                              <div className="badge badge-primary badge-sm">
-                                Primary
-                              </div>
-                            )}
-                          </div>
-
-                          {comp.description && (
-                            <p className="text-base-content/70 mt-1 text-sm">
-                              {comp.description}
-                            </p>
-                          )}
-
-                          {/* Prerequisites */}
-                          {comp.prerequisites && comp.prerequisites.length > 0 && (
-                            <div className="mt-3">
-                              <p className="text-sm font-medium text-base-content/60 mb-2">
-                                Prerequisites:
-                              </p>
-                              <div className="flex flex-wrap gap-2">
-                                {comp.prerequisites.map((prereq: any) => {
-                                  if (!prereq.prerequisite) return null;
-
-                                  const levelColors = {
-                                    required: 'badge-error',
-                                    recommended: 'badge-warning',
-                                    optional: 'badge-ghost',
-                                  };
-
-                                  return (
-                                    <div
-                                      key={prereq.prerequisite.id}
-                                      className="flex items-center gap-1"
-                                    >
-                                      <div className="badge badge-sm">
-                                        {prereq.prerequisite.name}
-                                      </div>
-                                      <div
-                                        className={`badge badge-sm ${
-                                          levelColors[
-                                            prereq.prerequisite_level as keyof typeof levelColors
-                                          ]
-                                        }`}
-                                      >
-                                        {prereq.prerequisite_level}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
+                {path.is_public && (
+                  <div className="badge badge-ghost">
+                    <span className="iconify lucide--globe size-3 mr-1"></span>
+                    Public
+                  </div>
+                )}
               </div>
 
-              <div className="alert alert-info mt-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="stroke-current shrink-0 w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <div>
-                  <p className="text-sm">
-                    Want personalized paths based on your current skills?{' '}
-                    <Link href="/skills" className="link link-primary font-medium">
-                      Track your competencies
-                    </Link>{' '}
-                    to get recommendations tailored to your proficiency level.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Sections */}
-        <div className="space-y-8">
-          {path.sections && path.sections.length > 0 ? (
-            path.sections.map((section: any, idx: number) => (
-              <div key={section.id} className="card bg-base-100 shadow-lg">
-                <div className="card-body">
-                  <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">
-                      {idx + 1}
-                    </div>
-                    <div className="flex-1">
-                      <h2 className="card-title text-2xl mb-2">
-                        {section.title}
-                      </h2>
-
-                      <p className="text-base-content/70 mb-4">
-                        {section.description}
-                      </p>
-
-                      <div className="flex gap-4 text-sm text-base-content/60 mb-4">
-                        <span className="flex items-center gap-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                          ~{section.estimated_hours}h
-                        </span>
-                        <div
-                          className={`badge ${
-                            section.prerequisite_level === 'required'
-                              ? 'badge-error'
-                              : section.prerequisite_level === 'recommended'
-                              ? 'badge-warning'
-                              : 'badge-ghost'
-                          }`}
-                        >
-                          {section.prerequisite_level}
-                        </div>
-                      </div>
-
-                      {section.notes && (
-                        <div className="alert alert-info mb-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            className="stroke-current shrink-0 w-6 h-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                          <span>{section.notes}</span>
-                        </div>
-                      )}
-
-                      {/* Resources */}
-                      {section.resources && section.resources.length > 0 && (
-                        <div className="space-y-3">
-                          <h3 className="font-semibold text-lg">Resources</h3>
-                          {section.resources.map((resource: any) => (
-                            <div
-                              key={resource.id}
-                              className="flex items-start gap-3 p-3 rounded-lg bg-base-200 hover:bg-base-300 transition-colors"
-                            >
-                              <span className="text-2xl flex-shrink-0">
-                                {resourceTypeIcons[resource.type] || '📌'}
-                              </span>
-                              <div className="flex-1 min-w-0">
-                                <a
-                                  href={resource.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="font-medium hover:underline block"
-                                >
-                                  {resource.title}
-                                </a>
-                                <p className="text-sm text-base-content/60 mt-1">
-                                  {resource.description}
-                                </p>
-                                <div className="flex gap-3 mt-2 text-xs text-base-content/50">
-                                  <span className="badge badge-sm">
-                                    {resource.type}
-                                  </span>
-                                  {resource.is_free !== null && (
-                                    <span
-                                      className={`badge badge-sm ${
-                                        resource.is_free
-                                          ? 'badge-success'
-                                          : 'badge-warning'
-                                      }`}
-                                    >
-                                      {resource.is_free ? 'Free' : 'Paid'}
-                                    </span>
-                                  )}
-                                  {resource.estimated_minutes && (
-                                    <span className="flex items-center gap-1">
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-3 w-3"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        />
-                                      </svg>
-                                      {resource.estimated_minutes}m
-                                    </span>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+              {/* Creator and Actions Bar */}
+              <div className="mt-6 flex items-start justify-between gap-3 sm:mt-8">
+                <div className="flex items-center gap-3">
+                  <div className="avatar cursor-pointer">
+                    <div className="mask mask-squircle bg-base-200 w-10">
+                      {path.creator?.avatar_url ? (
+                        <img src={path.creator.avatar_url} alt={path.creator.name || 'Creator'} />
+                      ) : (
+                        <div className="flex items-center justify-center w-full h-full bg-base-300">
+                          <span className="text-sm">
+                            {(path.creator?.name || 'A')[0].toUpperCase()}
+                          </span>
                         </div>
                       )}
                     </div>
                   </div>
+                  <div>
+                    <p className="font-medium sm:text-lg">{path.creator?.name || 'Anonymous'}</p>
+                    <p className="text-base-content/80 -mt-1 text-sm">Creator</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  {/* Favorites - placeholder for now */}
+                  <div className="flex items-center gap-0.5">
+                    <button className="btn btn-sm btn-ghost btn-circle">
+                      <span className="iconify lucide--heart size-4"></span>
+                    </button>
+                    <p className="text-sm">0</p>
+                  </div>
+                  {/* Comments - placeholder for now */}
+                  <div className="flex items-center gap-0.5">
+                    <button className="btn btn-sm btn-ghost btn-circle">
+                      <span className="iconify lucide--messages-square size-4"></span>
+                    </button>
+                    <p className="text-sm">0</p>
+                  </div>
+                  {/* Share */}
+                  <ShareSheet url={fullUrl} title={path.title} description={path.description} />
                 </div>
               </div>
-            ))
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-base-content/60">
-                No sections found in this learning path.
-              </p>
+
+              {/* View Count and Date */}
+              <div className="flex items-center gap-4 text-sm text-base-content/60 mt-4">
+                <span className="flex items-center gap-1">
+                  <span className="iconify lucide--eye size-4"></span>
+                  {path.view_count} views
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="iconify lucide--calendar size-4"></span>
+                  {new Date(path.created_at).toLocaleDateString()}
+                </span>
+              </div>
             </div>
-          )}
+
+            {/* Skills Display */}
+            {path.topic?.topic_competencies && path.topic.topic_competencies.length > 0 && (
+              <SkillsDisplay competencies={path.topic.topic_competencies} />
+            )}
+
+            {/* Sections Timeline */}
+            {path.sections && path.sections.length > 0 && (
+              <SectionTimeline sections={path.sections} />
+            )}
+
+            {/* Divider */}
+            <hr className="border-base-300 border-dashed my-8" />
+
+            {/* Tags */}
+            {tags.length > 0 && (
+              <>
+                <TagsSection tags={tags} />
+                <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+              </>
+            )}
+
+            {/* Comment Form */}
+            <div className="mt-6 sm:mt-8">
+              <CommentForm pathId={id} />
+            </div>
+
+            {/* Divider */}
+            <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+
+            {/* Related Paths */}
+            {relatedPaths.length > 0 && (
+              <div className="mt-6 sm:mt-8">
+                <RelatedPaths paths={relatedPaths} />
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

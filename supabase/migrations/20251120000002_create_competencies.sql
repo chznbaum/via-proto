@@ -8,6 +8,7 @@ CREATE TABLE public.competencies (
     name text NOT NULL UNIQUE,
     slug text NOT NULL UNIQUE,
     description text,
+    icon text,
     category_id uuid REFERENCES public.categories(id) ON DELETE SET NULL,
     is_active boolean NOT NULL DEFAULT true,
     created_at timestamptz NOT NULL DEFAULT now(),
@@ -58,4 +59,5 @@ CREATE TRIGGER update_competencies_updated_at
 
 -- Add comments
 COMMENT ON TABLE public.competencies IS 'Underlying skills and technologies that learning paths teach. Example: React, Python, Spanish. Topics are goal-oriented and map to one or more competencies.';
+COMMENT ON COLUMN public.competencies.icon IS 'Iconify class name for competency icon (e.g., "simple-icons:react")';
 COMMENT ON COLUMN public.competencies.category_id IS 'Optional category for organizational purposes. Helps with browsing competencies by category.';
