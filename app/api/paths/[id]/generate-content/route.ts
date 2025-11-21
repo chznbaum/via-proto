@@ -68,13 +68,97 @@ export async function POST(
 
     console.log('🚀 Starting generation for path:', pathId);
 
-    // 3. Update status to generating_metadata
+    // 3. Fetch competencies associated with this topic
+    const { data: topicCompetencies, error: competenciesError } = await supabase
+      .from('topic_competencies')
+      .select(`
+        is_primary,
+        competency:competencies(
+          id,
+          name,
+          slug,
+          description,
+          prerequisites:competency_prerequisites!competency_prerequisites_competency_id_fkey(
+            prerequisite_level,
+            prerequisite:competencies!competency_prerequisites_prerequisite_id_fkey(
+              id,
+              name,
+              slug,
+              description
+            )
+          ),
+          alternatives:competency_alternatives!competency_alternatives_competency_id_fkey(
+            alternative:competencies!competency_alternatives_alternative_id_fkey(
+              id,
+              name,
+              slug
+            )
+          )
+        )
+      `)
+      .eq('topic_id', path.topic.id);
+
+    // Debug: Log query results
+    console.log('\n🔍 DEBUG: Topic competencies query results:');
+    console.log('- topic.id:', path.topic.id);
+    console.log('- topicCompetencies:', topicCompetencies?.length || 0, 'items');
+    if (competenciesError) {
+      console.error('- ❌ Error fetching competencies:', competenciesError);
+    }
+    if (topicCompetencies && topicCompetencies.length > 0) {
+      console.log('- ✅ Sample competency:', JSON.stringify(topicCompetencies[0], null, 2));
+    } else {
+      console.log('- ⚠️ No competencies found for this topic');
+    }
+
+    // 4. Fetch user's competency proficiency levels
+    let userCompetencies: any[] = [];
+    if (topicCompetencies && topicCompetencies.length > 0) {
+      const competencyIds = topicCompetencies
+        .map((tc: any) => tc.competency?.id)
+        .filter(Boolean);
+
+      // Also get prerequisite IDs
+      const prerequisiteIds = topicCompetencies
+        .flatMap((tc: any) =>
+          tc.competency?.prerequisites?.map((p: any) => p.prerequisite?.id) || []
+        )
+        .filter(Boolean);
+
+      const allCompetencyIds = [...new Set([...competencyIds, ...prerequisiteIds])];
+
+      if (allCompetencyIds.length > 0) {
+        console.log('\n🔍 DEBUG: Fetching user competencies:');
+        console.log('- user.id:', user.id);
+        console.log('- allCompetencyIds:', allCompetencyIds);
+
+        const { data: userComps, error: userCompsError } = await supabase
+          .from('user_competencies')
+          .select('competency_id, proficiency_level')
+          .eq('user_id', user.id)
+          .in('competency_id', allCompetencyIds);
+
+        if (userCompsError) {
+          console.error('- ❌ Error fetching user competencies:', userCompsError);
+        }
+
+        userCompetencies = userComps || [];
+        console.log('- userCompetencies found:', userCompetencies.length);
+        if (userCompetencies.length > 0) {
+          console.log('- ✅ Sample user competency:', JSON.stringify(userCompetencies[0], null, 2));
+        } else {
+          console.log('- ⚠️ No user competencies found');
+        }
+      }
+    }
+
+    // 5. Update status to generating_metadata
     await supabase
       .from('learning_paths')
       .update({ generation_status: 'generating_metadata' })
       .eq('id', pathId);
 
-    // 4. Determine model to use
+    // 6. Determine model to use
     const requestedModel = path.generation_metadata?.model_requested;
     let selectedModel: string;
 
@@ -156,9 +240,10 @@ export async function POST(
     console.log('🧠 Generating path content with AI...');
     const aiResponse = await generateLearningPath({
       topic: path.topic.name,
-      skillLevel: path.skill_level,
       goals: path.generation_metadata?.goals,
       model: selectedModel,
+      competencies: topicCompetencies || [],
+      userCompetencies: userCompetencies,
     });
 
     // 9. Validate AI response

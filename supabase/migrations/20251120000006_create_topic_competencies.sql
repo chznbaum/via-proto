@@ -30,11 +30,11 @@ CREATE INDEX idx_topic_competencies_primary ON public.topic_competencies(is_prim
 ALTER TABLE public.topic_competencies ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
--- Topic competencies are publicly readable by all authenticated users
+-- Topic competencies are publicly readable by all users (authenticated and anonymous)
 CREATE POLICY "Topic competencies are publicly readable"
     ON public.topic_competencies
     FOR SELECT
-    TO authenticated
+    TO authenticated, anon
     USING (true);
 
 -- Only service role can modify topic competencies (admin operations)

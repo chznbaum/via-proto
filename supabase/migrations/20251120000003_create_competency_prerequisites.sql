@@ -26,11 +26,11 @@ CREATE INDEX idx_competency_prerequisites_prerequisite ON public.competency_prer
 ALTER TABLE public.competency_prerequisites ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
--- Prerequisites are publicly readable by all authenticated users
+-- Prerequisites are publicly readable by all users (authenticated and anonymous)
 CREATE POLICY "Competency prerequisites are publicly readable"
     ON public.competency_prerequisites
     FOR SELECT
-    TO authenticated
+    TO authenticated, anon
     USING (true);
 
 -- Only service role can modify prerequisites (admin operations)

@@ -110,6 +110,7 @@ export async function POST(req: NextRequest) {
 
     // 7. Create path record immediately with pending status
     // This enforces rate limits before generation starts
+    // Note: skill_level defaults to 'beginner' and will be calculated during generation
     const { data: newPath, error: pathError } = await supabase
       .from('learning_paths')
       .insert({
@@ -118,7 +119,7 @@ export async function POST(req: NextRequest) {
         topic_id: topic.id,
         title: `Learning ${topic.name}`, // Temporary title, will be updated
         description: `Your personalized learning path for ${topic.name}`, // Temporary
-        skill_level: validatedInput.skill_level,
+        skill_level: 'beginner', // Default, will be calculated during generation
         total_estimated_hours: 0, // Will be calculated after generation
         is_public: isPublic,
         model_used: '', // Will be set during generation

@@ -24,11 +24,11 @@ CREATE INDEX idx_competencies_name ON public.competencies(name);
 ALTER TABLE public.competencies ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
--- Competencies are publicly readable by all authenticated users
+-- Competencies are publicly readable by all users (authenticated and anonymous)
 CREATE POLICY "Competencies are publicly readable"
     ON public.competencies
     FOR SELECT
-    TO authenticated
+    TO authenticated, anon
     USING (is_active = true);
 
 -- Only service role can modify competencies (admin operations)

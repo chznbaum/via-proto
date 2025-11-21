@@ -38,10 +38,10 @@ export const AIPathResponseSchema = z.object({
 
 /**
  * Schema for validating the path generation request
+ * Note: skill_level is now calculated from user's competency proficiency levels
  */
 export const PathGenerationRequestSchema = z.object({
   topic_id: z.string().uuid(),
-  skill_level: z.enum(['beginner', 'intermediate', 'advanced']),
   goals: z.string().max(2000).optional(),
   is_public: z.boolean().optional().default(false),
   model_id: z.string().optional(), // User-selected model ID

@@ -11,7 +11,24 @@ async function getPath(id: string) {
       *,
       topic:topics(
         *,
-        category:categories(name, slug, icon)
+        category:categories(name, slug, icon),
+        topic_competencies(
+          is_primary,
+          competency:competencies(
+            id,
+            name,
+            slug,
+            description,
+            prerequisites:competency_prerequisites!competency_prerequisites_competency_id_fkey(
+              prerequisite_level,
+              prerequisite:competencies!competency_prerequisites_prerequisite_id_fkey(
+                id,
+                name,
+                slug
+              )
+            )
+          )
+        )
       ),
       creator:profiles!creator_id(id, name, avatar_url),
       account:accounts(id, name),
@@ -192,6 +209,136 @@ export default async function PathDetailPage({
             </span>
           </div>
         </div>
+
+        {/* Competencies & Prerequisites */}
+        {path.topic?.topic_competencies && path.topic.topic_competencies.length > 0 && (
+          <div className="card bg-base-100 shadow-lg mb-8">
+            <div className="card-body">
+              <h2 className="card-title text-xl mb-4 flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Skills Covered
+              </h2>
+              <p className="text-base-content/70 mb-4">
+                This learning path covers the following competencies:
+              </p>
+
+              <div className="space-y-4">
+                {path.topic.topic_competencies.map((tc: any) => {
+                  if (!tc.competency) return null;
+                  const comp = tc.competency;
+
+                  return (
+                    <div
+                      key={comp.id}
+                      className={`border-2 rounded-lg p-4 ${
+                        tc.is_primary
+                          ? 'border-primary bg-primary/5'
+                          : 'border-base-300'
+                      }`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2">
+                            <h3 className="font-semibold text-lg">{comp.name}</h3>
+                            {tc.is_primary && (
+                              <div className="badge badge-primary badge-sm">
+                                Primary
+                              </div>
+                            )}
+                          </div>
+
+                          {comp.description && (
+                            <p className="text-base-content/70 mt-1 text-sm">
+                              {comp.description}
+                            </p>
+                          )}
+
+                          {/* Prerequisites */}
+                          {comp.prerequisites && comp.prerequisites.length > 0 && (
+                            <div className="mt-3">
+                              <p className="text-sm font-medium text-base-content/60 mb-2">
+                                Prerequisites:
+                              </p>
+                              <div className="flex flex-wrap gap-2">
+                                {comp.prerequisites.map((prereq: any) => {
+                                  if (!prereq.prerequisite) return null;
+
+                                  const levelColors = {
+                                    required: 'badge-error',
+                                    recommended: 'badge-warning',
+                                    optional: 'badge-ghost',
+                                  };
+
+                                  return (
+                                    <div
+                                      key={prereq.prerequisite.id}
+                                      className="flex items-center gap-1"
+                                    >
+                                      <div className="badge badge-sm">
+                                        {prereq.prerequisite.name}
+                                      </div>
+                                      <div
+                                        className={`badge badge-sm ${
+                                          levelColors[
+                                            prereq.prerequisite_level as keyof typeof levelColors
+                                          ]
+                                        }`}
+                                      >
+                                        {prereq.prerequisite_level}
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="alert alert-info mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="stroke-current shrink-0 w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div>
+                  <p className="text-sm">
+                    Want personalized paths based on your current skills?{' '}
+                    <Link href="/skills" className="link link-primary font-medium">
+                      Track your competencies
+                    </Link>{' '}
+                    to get recommendations tailored to your proficiency level.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Sections */}
         <div className="space-y-8">

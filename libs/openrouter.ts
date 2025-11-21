@@ -136,16 +136,98 @@ FINAL REMINDERS:
  */
 function buildUserPrompt(
   topic: string,
-  skillLevel: string,
   goals?: string,
+  competencies?: any[],
+  userCompetencies?: any[],
 ): string {
-  let prompt = `Create a comprehensive learning path for: "${topic}"
-
-Skill Level: ${skillLevel}
-`;
+  let prompt = `Create a comprehensive learning path for: "${topic}"`;
 
   if (goals) {
-    prompt += `\nLearning Goals: ${goals}`;
+    prompt += `\n\nLearning Goals: ${goals}`;
+  }
+
+  // Add competency context
+  if (competencies && competencies.length > 0) {
+    prompt += `\n\nCOMPETENCY CONTEXT:`;
+    prompt += `\nThis topic involves the following competencies:\n`;
+
+    for (const tc of competencies) {
+      if (!tc.competency) continue;
+
+      const comp = tc.competency;
+      prompt += `\n- ${comp.name}${tc.is_primary ? ' (PRIMARY)' : ''}`;
+
+      if (comp.description) {
+        prompt += `\n  Description: ${comp.description}`;
+      }
+
+      // Check user's proficiency
+      if (userCompetencies && userCompetencies.length > 0) {
+        const userProf = userCompetencies.find(
+          (uc: any) => uc.competency_id === comp.id
+        );
+        if (userProf) {
+          prompt += `\n  User's Current Level: ${userProf.proficiency_level}`;
+        }
+      }
+
+      // Add prerequisites
+      if (comp.prerequisites && comp.prerequisites.length > 0) {
+        prompt += `\n  Prerequisites:`;
+        for (const prereq of comp.prerequisites) {
+          if (!prereq.prerequisite) continue;
+
+          prompt += `\n    - ${prereq.prerequisite.name} (${prereq.prerequisite_level})`;
+
+          // Check user's proficiency in prerequisite
+          if (userCompetencies && userCompetencies.length > 0) {
+            const userPrereqProf = userCompetencies.find(
+              (uc: any) => uc.competency_id === prereq.prerequisite.id
+            );
+            if (userPrereqProf) {
+              prompt += ` - User level: ${userPrereqProf.proficiency_level}`;
+            } else {
+              prompt += ` - User has NOT learned this yet`;
+            }
+          }
+        }
+      }
+
+      // Add alternatives
+      if (comp.alternatives && comp.alternatives.length > 0) {
+        const altNames = comp.alternatives
+          .map((a: any) => a.alternative?.name)
+          .filter(Boolean);
+        if (altNames.length > 0) {
+          prompt += `\n  Alternative competencies: ${altNames.join(', ')}`;
+        }
+      }
+    }
+
+    prompt += `\n\nIMPORTANT: Use this competency information to personalize the learning path:
+
+CRITICAL RULE: User proficiency ALWAYS takes priority over prerequisite labels. Check proficiency FIRST before including any content.
+
+WHEN TO SKIP PREREQUISITES (User Already Knows Them):
+- If user shows "intermediate", "advanced", or "expert" level in a prerequisite: SKIP teaching that prerequisite entirely
+- Example: React requires JavaScript. If user shows "JavaScript: expert", START directly with React concepts - do NOT include JavaScript sections
+- If user is advanced/expert in the main competency: Focus only on advanced topics, edge cases, and best practices
+
+WHEN TO INCLUDE PREREQUISITES (User Needs to Learn):
+- ONLY if prerequisite shows "User has NOT learned this yet" OR "User level: none" OR "User level: beginner"
+- For "required" prerequisites at none/beginner: Dedicate 1-2 full sections to fundamentals BEFORE the main topic
+- For "recommended" prerequisites at none/beginner: Include a condensed intro section or note which sections assume this knowledge
+- For "optional" prerequisites at none/beginner: Mention in notes but don't require
+
+PROFICIENCY-BASED CONTENT ADJUSTMENT:
+- none/beginner: Comprehensive fundamentals, step-by-step progression, lots of practice
+- intermediate: Skip basics entirely, focus on practical patterns and real-world application
+- advanced: Skip basics and intermediate, focus on optimization, architecture, edge cases
+- expert: Only cutting-edge topics, advanced patterns, assume deep knowledge
+
+Example 1: React path, JavaScript: none → Include 2 JavaScript fundamentals sections before React
+Example 2: React path, JavaScript: expert → Skip JavaScript entirely, assume advanced JS patterns knowledge
+Example 3: React path, JavaScript: intermediate → Start directly with React basics, assume JS knowledge`;
   }
 
   return prompt;
@@ -208,14 +290,39 @@ function parseAIResponse(responseText: string): any {
  */
 export async function generateLearningPath(params: {
   topic: string;
-  skillLevel: "beginner" | "intermediate" | "advanced";
   goals?: string;
   model: string;
+  competencies?: any[];
+  userCompetencies?: any[];
 }): Promise<any> {
-  const { topic, skillLevel, goals, model } = params;
+  const { topic, goals, model, competencies, userCompetencies } = params;
+
+  // Debug: Check what data we're receiving
+  console.log('\n🔍 DEBUG: Data received by generateLearningPath:');
+  console.log('- competencies:', competencies?.length || 0, 'items');
+  console.log('- userCompetencies:', userCompetencies?.length || 0, 'items');
+  if (competencies && competencies.length > 0) {
+    console.log('- competencies data:', JSON.stringify(competencies, null, 2));
+  } else {
+    console.log('- ⚠️ NO COMPETENCIES DATA - context will not be sent to LLM');
+  }
+  if (userCompetencies && userCompetencies.length > 0) {
+    console.log('- userCompetencies data:', JSON.stringify(userCompetencies, null, 2));
+  }
 
   const systemPrompt = buildSystemPrompt();
-  const userPrompt = buildUserPrompt(topic, skillLevel, goals);
+  const userPrompt = buildUserPrompt(topic, goals, competencies, userCompetencies);
+
+  // Temporary debug logging - log full prompts
+  console.log('\n' + '='.repeat(80));
+  console.log('🔍 FULL LLM PROMPT DEBUG');
+  console.log('='.repeat(80));
+  console.log('\n📋 SYSTEM PROMPT:');
+  console.log(systemPrompt);
+  console.log('\n' + '-'.repeat(80));
+  console.log('\n👤 USER PROMPT:');
+  console.log(userPrompt);
+  console.log('\n' + '='.repeat(80) + '\n');
 
   try {
     const completion = await openrouter.chat.completions.create({

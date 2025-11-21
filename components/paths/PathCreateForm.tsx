@@ -21,7 +21,6 @@ export default function PathCreateForm({
   const [formData, setFormData] = useState({
     topic_id: '',
     topicName: '',
-    skill_level: 'beginner' as 'beginner' | 'intermediate' | 'advanced',
     is_public: false,
     model_id: undefined as string | undefined,
   });
@@ -38,9 +37,9 @@ export default function PathCreateForm({
       // Prepare the request body
       // For free tier: don't send is_public (backend defaults to true)
       // For pro/team: send user's choice
+      // Note: skill_level is calculated from user's competency proficiency levels
       const requestBody: any = {
         topic_id: formData.topic_id,
-        skill_level: formData.skill_level,
       };
 
       if (subscriptionTier !== 'free') {
@@ -109,37 +108,6 @@ export default function PathCreateForm({
                 <p className="text-base-content/60 text-xs mt-1">
                   Start typing to search from <span className="font-semibold">hundreds of topics</span> across programming, design, business, and more
                 </p>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-
-        {/* Path Settings */}
-        <div className="card bg-base-100 shadow">
-          <div className="card-body">
-            <div className="card-title">Path Settings</div>
-            <fieldset className="fieldset mt-2 gap-4">
-              <div className="space-y-2">
-                <label className="fieldset-label" htmlFor="skill-level">
-                  Skill Level
-                </label>
-                <select
-                  className="select w-full"
-                  id="skill-level"
-                  value={formData.skill_level}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      skill_level: e.target.value as any,
-                    })
-                  }
-                >
-                  <option value="beginner">Beginner - I'm new to this</option>
-                  <option value="intermediate">
-                    Intermediate - I have some experience
-                  </option>
-                  <option value="advanced">Advanced - I want to master this</option>
-                </select>
               </div>
             </fieldset>
           </div>

@@ -32,11 +32,11 @@ CREATE INDEX idx_categories_parent_active ON public.categories(parent_id, is_act
 ALTER TABLE public.categories ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
--- Categories are publicly readable by all authenticated users
+-- Categories are publicly readable by all users (authenticated and anonymous)
 CREATE POLICY "Categories are publicly readable"
     ON public.categories
     FOR SELECT
-    TO authenticated
+    TO authenticated, anon
     USING (is_active = true);
 
 -- Only service role can modify categories (admin operations)

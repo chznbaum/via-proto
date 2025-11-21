@@ -13,6 +13,12 @@ export const dashboardMenuItems: ISidebarMenuItem[] = [
     url: "/dashboard",
   },
   {
+    id: "skills",
+    icon: "lucide--award",
+    label: "My Skills",
+    url: "/skills",
+  },
+  {
     id: "explore",
     icon: "lucide--compass",
     label: "Explore",
