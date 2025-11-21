@@ -119,7 +119,7 @@ export const Pricing = () => {
                                         <span className="iconify lucide--zap size-5 text-primary"></span>
                                     </div>
                                     <div>
-                                        <p className="text-primary text-sm/none italic font-semibold">Most Popular</p>
+                                        <p className="text-primary text-sm/none italic font-semibold">Track your progress</p>
                                         <p className="mt-0.5 text-lg/none font-medium">Pro</p>
                                     </div>
                                 </div>
@@ -138,11 +138,10 @@ export const Pricing = () => {
                             <div className="mt-4 space-y-2">
                                 {[
                                     "5 learning paths per month",
-                                    "Claude Sonnet 4.5 & premium models",
+                                    "Premium Anthropic models like Claude Sonnet 4.5",
                                     "GPT-4, Perplexity, Premium Gemini",
                                     "Private learning paths",
                                     "Progress tracking",
-                                    "Priority generation speed",
                                 ].map((feature, index) => (
                                     <div className="flex items-center gap-3" key={index}>
                                         <div className="bg-primary/20 text-primary rounded-full p-0.5">
@@ -184,7 +183,7 @@ export const Pricing = () => {
                                     <span className="iconify lucide--users size-5"></span>
                                 </div>
                                 <div>
-                                    <p className="text-base-content/80 text-sm/none italic">Ultimate</p>
+                                    <p className="text-base-content/80 text-sm/none italic">Learn together</p>
                                     <p className="mt-0.5 text-xl/none font-medium">Team</p>
                                 </div>
                             </div>
@@ -206,7 +205,6 @@ export const Pricing = () => {
                                 "Collaborate on resources",
                                 "Team analytics dashboard",
                                 "Priority support",
-                                "Custom onboarding",
                                 "Bulk path generation",
                             ].map((feature, index) => (
                                 <div className="flex items-center gap-3" key={index}>

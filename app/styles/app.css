@@ -28,3 +28,11 @@
   --font-sans: "Fixel", system-ui, sans-serif;
   --font-serif: "Young Serif", Georgia, serif;
 }
+
+.mockup-browser {
+    & .mockup-browser-toolbar {
+        .input {
+            @apply bg-white;
+        }
+    }
+}

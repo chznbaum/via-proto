@@ -76,7 +76,7 @@ export const Hero = () => {
                 <div className="grid gap-8 sm:gap-10 xl:grid-cols-2 xl:gap-12 2xl:gap-16">
                     <div className="flex flex-col items-center xl:mt-6 xl:items-start">
                         <div className="hover:bg-success/5 border-success/60 text-success inline-flex cursor-pointer items-center gap-2 rounded-full border px-2.5 py-0.5 text-xs transition-all">
-                            <p>AI-Powered Learning Curation</p>
+                            <p>AI-Curated Learning Paths</p>
                             <span className="iconify lucide--arrow-right inline-block size-3.5"></span>
                         </div>
                         <h1 className="mt-3 text-3xl leading-tight font-extrabold transition-all duration-1000 lg:text-4xl xl:text-5xl 2xl:text-6xl">
@@ -109,33 +109,30 @@ export const Hero = () => {
                             <div className="flex items-center gap-2.5">
                                 <span className="iconify lucide--check min-w-4"></span>
                                 <p className="text-base-content/80 max-sm:text-sm">
-                                    Curated from real creators—no AI-generated content
+                                    Links directly to real creators—no AI-generated content
                                 </p>
                             </div>
                             <div className="flex items-center gap-2.5">
                                 <span className="iconify lucide--check min-w-4"></span>
                                 <p className="text-base-content/80 max-sm:text-sm">
-                                    Links directly to sources—support the educators you learn from
+                                  Doesn’t take the “good struggle” out of learning
                                 </p>
                             </div>
                             <div className="flex items-center gap-2.5">
                                 <span className="iconify lucide--check min-w-4"></span>
                                 <p className="text-base-content/80 max-sm:text-sm">
-                                    Multiple AI models to choose from—free and premium options
+                                  Learn <strong>anything</strong> all in one place
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="relative px-4">
                         <div className="from-primary/80 to-secondary/70 bg-gradient-to-r rounded-xl p-1 sm:p-2 lg:p-3">
-                            {/* OBVIOUS PLACEHOLDER - Replace with actual dashboard screenshot */}
-                            <div className="h-56 w-full rounded-lg bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center sm:h-80 md:h-128">
-                                <div className="text-center p-8">
-                                    <p className="text-4xl font-black text-white mb-4">📸</p>
-                                    <p className="text-2xl font-bold text-white mb-2">REPLACE THIS</p>
-                                    <p className="text-lg text-white/90">Dashboard Screenshot Goes Here</p>
-                                </div>
-                            </div>
+                            <img
+                                src="/images/dashboard-screenshot.png"
+                                alt="ViaProto Dashboard"
+                                className="w-full rounded-lg"
+                            />
                         </div>
 
                         {/* Top-right popout: Generating path */}
