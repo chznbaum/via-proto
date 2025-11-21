@@ -2,6 +2,7 @@
 
 import { Variants, motion } from "motion/react";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 
 interface Competency {
   id: string;
@@ -49,7 +50,7 @@ export const SkillsDisplay = ({ competencies }: SkillsDisplayProps) => {
   }
 
   return (
-    <div className="group/section overflow-hidden py-8 md:py-12 lg:py-16">
+    <div className="group/section overflow-visible py-8 md:py-12 lg:py-16">
       <div className="flex items-center justify-center gap-1.5">
         <div className="bg-primary/80 h-4 w-0.5 translate-x-1.5 rounded-full opacity-0 transition-all group-hover/section:translate-x-0 group-hover/section:opacity-100" />
         <p className="text-base-content/60 group-hover/section:text-primary font-mono text-sm font-medium transition-all">
@@ -81,15 +82,8 @@ export const SkillsDisplay = ({ competencies }: SkillsDisplayProps) => {
               whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
               key={comp.id}>
               <div className="flex justify-between items-start">
-                <div className="flex items-center gap-3">
-                  {comp.icon && (
-                    <div className="bg-primary/10 text-primary rounded-lg p-2">
-                      <span className={`iconify ${comp.icon} size-6`}></span>
-                    </div>
-                  )}
-                  <div>
-                    <p className="text-lg font-medium">{comp.name}</p>
-                  </div>
+                <div>
+                  <p className="text-lg font-medium">{comp.name}</p>
                 </div>
                 {tc.is_primary && (
                   <span className="badge badge-primary badge-sm">Primary</span>
@@ -101,8 +95,10 @@ export const SkillsDisplay = ({ competencies }: SkillsDisplayProps) => {
                 </p>
               )}
               {comp.icon && (
-                <span
-                  className={`iconify ${comp.icon} absolute -end-2 -bottom-2 size-20 opacity-5 grayscale transition-all duration-300 group-hover:opacity-25 group-hover:grayscale-0`}></span>
+                <Icon
+                  icon={comp.icon}
+                  className="absolute -end-2 -bottom-2 size-20 opacity-20 bg-transparent grayscale transition-all duration-300 group-hover:opacity-20 group-hover:grayscale-0"
+                />
               )}
             </motion.div>
           );

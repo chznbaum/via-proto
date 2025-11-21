@@ -18,9 +18,9 @@
 /* Animations */
 @plugin "tailwindcss-motion";
 
-/* Iconify (Lucide and Tabler icons) */
+/* Iconify (Lucide, Tabler, Devicon, and Logos icons) */
 @plugin "@iconify/tailwind4" {
-    prefixes: lucide, tabler;
+    prefixes: lucide, tabler, devicon, logos;
 }
 
 /* Additional theme tokens */

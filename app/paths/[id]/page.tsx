@@ -9,6 +9,7 @@ import { SectionTimeline } from '@/components/paths/SectionTimeline';
 import { TagsSection } from '@/components/paths/TagsSection';
 import { CommentForm } from '@/components/paths/CommentForm';
 import { RelatedPaths } from '@/components/paths/RelatedPaths';
+import { getFallbackGradient } from '@/libs/unsplash';
 import config from '@/config';
 
 async function getPath(id: string) {
@@ -45,6 +46,11 @@ async function getPath(id: string) {
       sections(
         *,
         resources(*)
+      ),
+      unsplash_images(
+        url,
+        photographer,
+        photographer_url
       )
     `)
     .eq('id', id)
@@ -95,7 +101,12 @@ async function getRelatedPaths(pathId: string, competencyIds: string[]) {
           competency_id
         )
       ),
-      creator:profiles!creator_id(id, name, avatar_url)
+      creator:profiles!creator_id(id, name, avatar_url),
+      unsplash_images(
+        url,
+        photographer,
+        photographer_url
+      )
     `)
     .neq('id', pathId)
     .eq('is_public', true)
@@ -127,12 +138,6 @@ async function getPathTags(pathId: string) {
   return tags?.map((t: any) => t.tag).filter(Boolean) || [];
 }
 
-// Generate featured image URL using Unsplash
-function getFeaturedImageUrl(topicName: string): string {
-  const query = encodeURIComponent(topicName);
-  return `https://source.unsplash.com/1200x600/?${query},learning,education`;
-}
-
 export async function generateMetadata({
   params,
 }: {
@@ -147,6 +152,8 @@ export async function generateMetadata({
     };
   }
 
+  const ogImageUrl = path.unsplash_images?.url || `${config.domainName}/og-default.png`;
+
   return {
     title: `${path.title} | ${config.appName}`,
     description: path.description || `Learn ${path.topic.name} - ${path.skill_level}`,
@@ -156,7 +163,7 @@ export async function generateMetadata({
       type: 'website',
       images: [
         {
-          url: getFeaturedImageUrl(path.topic.name),
+          url: ogImageUrl,
           width: 1200,
           height: 630,
         },
@@ -182,6 +189,12 @@ export default async function PathDetailPage({
     notFound();
   }
 
+  // Check authentication for back link
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const backLink = user ? '/dashboard' : '/explore';
+  const backText = user ? 'Back to dashboard' : 'Back to explore';
+
   // Get competency IDs for related paths
   const competencyIds =
     path.topic?.topic_competencies?.map((tc: any) => tc.competency?.id).filter(Boolean) || [];
@@ -201,7 +214,10 @@ export default async function PathDetailPage({
     skillLevelColors[path.skill_level as keyof typeof skillLevelColors] || 'badge-neutral';
 
   const fullUrl = `${config.domainName}/paths/${id}`;
-  const featuredImageUrl = getFeaturedImageUrl(path.topic.name);
+  const unsplashImage = path.unsplash_images;
+  const fallbackStyle = unsplashImage
+    ? undefined
+    : { background: getFallbackGradient(path.topic.name || path.title) };
 
   return (
     <>
@@ -218,11 +234,37 @@ export default async function PathDetailPage({
             </Link>
 
             {/* Featured Image */}
-            <img
-              src={featuredImageUrl}
-              className="mt-4 h-64 w-full rounded-lg object-cover sm:mt-6 sm:h-100 lg:h-120"
-              alt={path.title}
-            />
+            <div
+              className="mt-4 h-64 w-full rounded-lg overflow-hidden relative sm:mt-6 sm:h-100 lg:h-120"
+              style={fallbackStyle}>
+              {unsplashImage && (
+                <img
+                  src={unsplashImage.url}
+                  alt={path.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              )}
+            </div>
+            {unsplashImage && (
+              <p className="text-xs text-base-content/50 mt-2">
+                Photo by{' '}
+                <a
+                  href={unsplashImage.photographer_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-base-content/70">
+                  {unsplashImage.photographer}
+                </a>{' '}
+                on{' '}
+                <a
+                  href="https://unsplash.com?utm_source=ViaProto&utm_medium=referral"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-base-content/70">
+                  Unsplash
+                </a>
+              </p>
+            )}
 
             {/* Meta Info */}
             <div className="mt-4 sm:mt-8">
@@ -290,17 +332,6 @@ export default async function PathDetailPage({
                 </div>
               </div>
 
-              {/* View Count and Date */}
-              <div className="flex items-center gap-4 text-sm text-base-content/60 mt-4">
-                <span className="flex items-center gap-1">
-                  <span className="iconify lucide--eye size-4"></span>
-                  {path.view_count} views
-                </span>
-                <span className="flex items-center gap-1">
-                  <span className="iconify lucide--calendar size-4"></span>
-                  {new Date(path.created_at).toLocaleDateString()}
-                </span>
-              </div>
             </div>
 
             {/* Skills Display */}
@@ -316,13 +347,21 @@ export default async function PathDetailPage({
             {/* Divider */}
             <hr className="border-base-300 border-dashed my-8" />
 
+            {/* Date */}
+            <div className="mb-6 sm:mb-8">
+              <p className="text-base-content/60 flex items-center gap-1 text-sm">
+                <span className="iconify lucide--calendar size-4"></span>
+                {new Date(path.created_at).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
+            </div>
+
             {/* Tags */}
-            {tags.length > 0 && (
-              <>
-                <TagsSection tags={tags} />
-                <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
-              </>
-            )}
+            <TagsSection tags={tags} />
+            <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
 
             {/* Comment Form */}
             <div className="mt-6 sm:mt-8">

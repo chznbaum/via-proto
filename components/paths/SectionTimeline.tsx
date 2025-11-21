@@ -79,18 +79,16 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-12 lg:space-y-16">
         {sections.map((section, sectionIndex) => {
           const isOpen = openSections.has(section.id);
           const hasResources = section.resources && section.resources.length > 0;
 
           return (
-            <div
-              key={section.id}
-              className="card bg-base-100 shadow-lg overflow-hidden">
+            <div key={section.id}>
               {/* Section Header - Always Visible */}
               <div
-                className={`card-body cursor-pointer ${isOpen && hasResources ? "pb-4" : ""}`}
+                className={`cursor-pointer ${hasResources ? "mb-6" : ""}`}
                 onClick={() => toggleSection(section.id)}>
                 <div className="flex items-start gap-4">
                   {/* Section Number Badge */}
@@ -110,10 +108,10 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                   )}
                 </div>
 
-                <h2 className="card-title text-2xl mt-2">{section.title}</h2>
+                <h2 className="text-2xl font-semibold mt-3 sm:text-3xl">{section.title}</h2>
 
                 {section.description && (
-                  <p className="text-base-content/70 mt-1">{section.description}</p>
+                  <p className="text-base-content/70 mt-2">{section.description}</p>
                 )}
 
                 <div className="flex flex-wrap gap-3 text-sm text-base-content/60 mt-3">
@@ -144,7 +142,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                 </div>
 
                 {section.notes && (
-                  <div className="alert alert-info mt-3">
+                  <div className="alert alert-info mt-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -164,60 +162,62 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
 
               {/* Collapsible Resources Timeline */}
               {isOpen && hasResources && (
-                <div className="px-6 pb-6">
-                  <div className="divider my-2"></div>
-                  <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact">
-                    {section.resources.map((resource, resourceIndex) => (
-                      <li key={resource.id}>
-                        <div className="timeline-middle">
-                          <div className="bg-primary text-primary-content flex items-center justify-center rounded-full p-1.5">
-                            <span
-                              className={`iconify ${
-                                resourceTypeIcons[resource.type] || "tabler--link"
-                              } size-4`}></span>
-                          </div>
+                <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact mt-6 lg:mt-8">
+                  {section.resources.map((resource, resourceIndex) => (
+                    <li key={resource.id} className="-mt-2">
+                      <div className="timeline-middle">
+                        <div className="bg-primary text-primary-content flex items-center justify-center rounded-full p-1.5">
+                          <span
+                            className={`iconify ${
+                              resourceTypeIcons[resource.type] || "tabler--link"
+                            } size-5`}></span>
                         </div>
-                        <div className="timeline-end mb-8">
-                          <div className="card bg-base-200 p-4 hover:bg-base-300 transition-colors">
-                            <a
-                              href={resource.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-medium hover:underline text-lg flex items-center gap-2">
-                              {resource.title}
-                              <span className="iconify lucide--external-link size-4"></span>
-                            </a>
-                            {resource.description && (
-                              <p className="text-base-content/80 text-sm mt-2">
-                                {resource.description}
-                              </p>
-                            )}
-                            <div className="flex flex-wrap gap-2 mt-3">
-                              <span className="badge badge-sm capitalize">
-                                {resource.type}
+                      </div>
+                      <div
+                        className={`mx-4 mb-8 sm:mb-12 ${
+                          resourceIndex % 2 === 0
+                            ? "timeline-start md:text-end"
+                            : "timeline-end max-md:-mt-9"
+                        }`}>
+                        <div className="card bg-base-100 p-6 shadow hover:shadow-lg transition-shadow">
+                          <a
+                            href={resource.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium hover:underline text-lg flex items-center gap-2">
+                            {resource.title}
+                            <span className="iconify lucide--external-link size-4"></span>
+                          </a>
+                          {resource.description && (
+                            <p className="text-base-content/80 text-sm mt-2">
+                              {resource.description}
+                            </p>
+                          )}
+                          <div className="flex flex-wrap gap-2 mt-3">
+                            <span className="badge badge-sm capitalize">
+                              {resource.type}
+                            </span>
+                            {resource.is_free !== null && (
+                              <span
+                                className={`badge badge-sm ${
+                                  resource.is_free ? "badge-success" : "badge-warning"
+                                }`}>
+                                {resource.is_free ? "Free" : "Paid"}
                               </span>
-                              {resource.is_free !== null && (
-                                <span
-                                  className={`badge badge-sm ${
-                                    resource.is_free ? "badge-success" : "badge-warning"
-                                  }`}>
-                                  {resource.is_free ? "Free" : "Paid"}
-                                </span>
-                              )}
-                              {resource.estimated_minutes && (
-                                <span className="badge badge-sm gap-1">
-                                  <span className="iconify lucide--clock size-3"></span>
-                                  {resource.estimated_minutes}m
-                                </span>
-                              )}
-                            </div>
+                            )}
+                            {resource.estimated_minutes && (
+                              <span className="badge badge-sm gap-1">
+                                <span className="iconify lucide--clock size-3"></span>
+                                {resource.estimated_minutes}m
+                              </span>
+                            )}
                           </div>
                         </div>
-                        {resourceIndex < section.resources.length - 1 && <hr />}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                      </div>
+                      <hr />
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
           );

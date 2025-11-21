@@ -8,20 +8,20 @@ interface TagsSectionProps {
 }
 
 export const TagsSection = ({ tags }: TagsSectionProps) => {
-  if (!tags || tags.length === 0) {
-    return null;
-  }
-
   return (
     <div>
       <p className="text-lg font-medium">Tags</p>
-      <div className="mt-2 flex flex-wrap items-center gap-2">
-        {tags.map((tag) => (
-          <div key={tag.id} className="badge badge-ghost hover:bg-base-200">
-            {tag.name}
-          </div>
-        ))}
-      </div>
+      {tags && tags.length > 0 ? (
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          {tags.map((tag) => (
+            <div key={tag.id} className="badge badge-ghost hover:bg-base-200">
+              {tag.name}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className="text-base-content/60 mt-2 text-sm">No tags yet</p>
+      )}
     </div>
   );
 };

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@iconify/react": "^6.0.2",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.8",
@@ -38,6 +39,8 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.2.50",
+    "@iconify-json/logos": "^1.2.10",
     "@iconify-json/lucide": "^1.2.73",
     "@iconify-json/tabler": "^1.2.23",
     "@iconify/tailwind4": "^1.1.0",
