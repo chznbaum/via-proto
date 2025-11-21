@@ -138,7 +138,7 @@ export const Hero = () => {
                         {/* Top-right popout: Generating path */}
                         <div className="card bg-base-100 absolute -end-0 top-16 w-60 p-3 shadow-md hover:shadow-lg max-lg:hidden sm:p-4 xl:-end-12 2xl:-end-32">
                             <p className="text-base-content/60 text-sm">
-                                Generate path for <span className="cursor-pointer underline">React Hooks</span>
+                                Generate path for <span className="cursor-pointer underline">Conversational Spanish</span>
                             </p>
                             <p className="mt-0.5 font-medium">Curating resources…</p>
                             <div className="mt-1.5 flex flex-col gap-1.5">

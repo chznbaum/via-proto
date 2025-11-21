@@ -202,7 +202,7 @@ export const ExamplePath = () => {
                                   : "timeline-end max-md:-mt-9"
                               }`}>
                               <div className="card bg-base-100 p-6 shadow hover:shadow-lg transition-shadow">
-                                <p className="font-medium text-lg flex items-center gap-2">
+                                <p className="font-medium text-lg flex items-center gap-2 underline">
                                   {resource.title}
                                 </p>
                                 {resource.description && (
