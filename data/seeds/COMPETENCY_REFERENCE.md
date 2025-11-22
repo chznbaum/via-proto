@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T14:40:23.465Z
-**Total Competencies:** 1483
+**Generated:** 2025-11-22T15:06:46.599Z
+**Total Competencies:** 1617
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -14,6 +14,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 - [advanced-math](#advanced-math) (9)
 - [algebra](#algebra) (3)
+- [alternative-medicine](#alternative-medicine) (16)
 - [applied-math](#applied-math) (10)
 - [architecture](#architecture) (7)
 - [arithmetic](#arithmetic) (1)
@@ -23,11 +24,12 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [biology](#biology) (9)
 - [blockchain-web3](#blockchain-web3) (41)
 - [calculus](#calculus) (3)
+- [cardio-endurance](#cardio-endurance) (12)
 - [chemistry](#chemistry) (7)
 - [cloud-devops](#cloud-devops) (169)
 - [cognitive-skills](#cognitive-skills) (5)
 - [communication-interpersonal](#communication-interpersonal) (9)
-- [corporate-finance](#corporate-finance) (7)
+- [corporate-finance](#corporate-finance) (14)
 - [critical-thinking](#critical-thinking) (1)
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
@@ -38,30 +40,34 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [discrete-mathematics](#discrete-mathematics) (6)
 - [environmental-science](#environmental-science) (9)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
-- [finance-accounting](#finance-accounting) (5)
+- [finance-accounting](#finance-accounting) (12)
+- [flexibility-mobility](#flexibility-mobility) (9)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (53)
 - [genetics](#genetics) (4)
 - [geometry](#geometry) (6)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
-- [investing-trading](#investing-trading) (8)
+- [investing-trading](#investing-trading) (26)
 - [languages](#languages) (169)
 - [leadership-communication](#leadership-communication) (12)
 - [life-sciences](#life-sciences) (6)
 - [linear-algebra](#linear-algebra) (1)
 - [linguistics](#linguistics) (15)
 - [marketing-sales](#marketing-sales) (18)
+- [meditation](#meditation) (8)
 - [memory-learning](#memory-learning) (9)
+- [mental-health](#mental-health) (8)
 - [mindfulness-wellness](#mindfulness-wellness) (9)
 - [mobile-development](#mobile-development) (48)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
 - [neuroscience](#neuroscience) (5)
 - [number-theory](#number-theory) (1)
+- [nutrition-diet](#nutrition-diet) (11)
 - [operations-strategy](#operations-strategy) (19)
 - [personal-development](#personal-development) (1)
-- [personal-finance](#personal-finance) (4)
+- [personal-finance](#personal-finance) (22)
 - [photography-video](#photography-video) (3)
 - [physics](#physics) (11)
 - [problem-solving](#problem-solving) (1)
@@ -70,6 +76,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
 - [statistics-probability](#statistics-probability) (6)
+- [strength-training](#strength-training) (10)
 - [systems-programming](#systems-programming) (17)
 - [theater](#theater) (20)
 - [trigonometry](#trigonometry) (1)
@@ -77,6 +84,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [visual-arts](#visual-arts) (50)
 - [web-development](#web-development) (1)
 - [writing](#writing) (52)
+- [yoga](#yoga) (10)
 
 ---
 
@@ -160,6 +168,78 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** Introductory Algebra, Beginning Algebra
 - **Prerequisites:**
   - `arithmetic` (required) - Arithmetic fundamentals are essential for understanding pre-algebra concepts
+
+---
+
+## alternative-medicine
+
+### Acupuncture
+- **Slug:** `acupuncture`
+- **Synonyms:** Traditional Acupuncture, Chinese Acupuncture
+
+### Aromatherapy
+- **Slug:** `aromatherapy`
+- **Synonyms:** Essential Oil Therapy
+
+### Ayurveda
+- **Slug:** `ayurveda`
+- **Synonyms:** Ayurvedic Medicine
+
+### Chiropractic
+- **Slug:** `chiropractic`
+- **Synonyms:** Chiropractic Care, Spinal Adjustment
+
+### Cupping Therapy
+- **Slug:** `cupping-therapy`
+- **Synonyms:** Cupping, Hijama
+
+### Deep Tissue Massage
+- **Slug:** `deep-tissue-massage`
+- **Synonyms:** Deep Tissue
+- **Prerequisites:**
+  - `massage-therapy` (recommended) - Foundation in massage therapy
+
+### Functional Medicine
+- **Slug:** `functional-medicine`
+- **Synonyms:** Integrative Medicine
+
+### Herbal Medicine
+- **Slug:** `herbal-medicine`
+- **Synonyms:** Herbalism, Botanical Medicine, Phytotherapy
+
+### Homeopathy
+- **Slug:** `homeopathy`
+- **Synonyms:** Homeopathic Medicine
+
+### Massage Therapy
+- **Slug:** `massage-therapy`
+- **Synonyms:** Therapeutic Massage, Bodywork
+
+### Naturopathy
+- **Slug:** `naturopathy`
+- **Synonyms:** Naturopathic Medicine, Natural Medicine
+
+### Reflexology
+- **Slug:** `reflexology`
+- **Synonyms:** Reflex Therapy
+
+### Reiki
+- **Slug:** `reiki`
+- **Synonyms:** Reiki Healing, Energy Healing
+
+### Sports Massage
+- **Slug:** `sports-massage`
+- **Synonyms:** Athletic Massage
+- **Prerequisites:**
+  - `massage-therapy` (recommended) - Basic massage knowledge helpful
+
+### Swedish Massage
+- **Slug:** `swedish-massage`
+- **Synonyms:** Swedish, Classic Massage
+
+### Traditional Chinese Medicine
+- **Slug:** `traditional-chinese-medicine`
+- **Synonyms:** TCM, Chinese Medicine
 
 ---
 
@@ -934,6 +1014,62 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** Multivariable Calculus, Calculus 3, Vector Calculus, Multivariate Calculus
 - **Prerequisites:**
   - `calculus-2` (required) - Calculus II concepts extend naturally to multiple variables
+
+---
+
+## cardio-endurance
+
+### Aerobics
+- **Slug:** `aerobics`
+- **Synonyms:** Aerobic Exercise, Cardio Dance
+
+### Circuit Training
+- **Slug:** `circuit-training`
+- **Synonyms:** Circuit Workout, Station Training
+
+### Elliptical Training
+- **Slug:** `elliptical-training`
+- **Synonyms:** Elliptical, Cross Trainer
+
+### HIIT
+- **Slug:** `hiit`
+- **Synonyms:** High-Intensity Interval Training, Interval Training, HIIT Training
+
+### Indoor Cycling
+- **Slug:** `indoor-cycling`
+- **Synonyms:** Spinning, Spin Class, Cycle Class
+
+### Jump Rope
+- **Slug:** `jump-rope`
+- **Synonyms:** Skipping, Rope Jumping, Skip Rope
+
+### Plyometrics
+- **Slug:** `plyometrics`
+- **Synonyms:** Jump Training, Plyo, Explosive Training
+
+### Rowing
+- **Slug:** `rowing-fitness`
+- **Synonyms:** Crew, Indoor Rowing, Erg Training
+
+### Stair Climbing
+- **Slug:** `stair-climbing`
+- **Synonyms:** Stair Master, Step Climbing
+
+### Step Aerobics
+- **Slug:** `step-aerobics`
+- **Synonyms:** Step Class, Step Workout
+
+### Track and Field
+- **Slug:** `track-and-field`
+- **Synonyms:** Athletics, Track, Track Sports
+
+### Triathlon Training
+- **Slug:** `triathlon-training`
+- **Synonyms:** Triathlon, Tri Training
+- **Prerequisites:**
+  - `swimming` (required) - Must know how to swim
+  - `cycling` (required) - Must know how to cycle
+  - `running` (required) - Must be able to run
 
 ---
 
@@ -2376,6 +2512,12 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## corporate-finance
 
+### Capital Structure
+- **Slug:** `capital-structure`
+- **Synonyms:** Capital Mix, Financing Structure, Debt-Equity Mix
+- **Prerequisites:**
+  - `corporate-finance` (required) - Corporate finance fundamentals required
+
 ### Corporate Budgeting
 - **Slug:** `corporate-budgeting`
 - **Synonyms:** Business Budgeting, Organizational Budgeting, Enterprise Budgeting
@@ -2389,11 +2531,28 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `accounting` (required) - Corporate finance requires accounting fundamentals
   - `financial-analysis` (required) - Financial analysis is essential for corporate finance
 
+### Corporate Strategy
+- **Slug:** `corporate-strategy`
+- **Synonyms:** Business Strategy, Strategic Planning, Corporate Planning
+
+### FP&A
+- **Slug:** `fpa`
+- **Synonyms:** Financial Planning & Analysis, Corporate Planning, Business Analytics
+- **Prerequisites:**
+  - `financial-modeling` (recommended) - Financial modeling skills are valuable for FP&A
+
 ### Fundraising
 - **Slug:** `fundraising`
 - **Synonyms:** Capital Raising, Investment Raising, Funding
 - **Prerequisites:**
   - `entrepreneurship` (recommended) - Fundraising is often needed in entrepreneurship
+
+### Investment Banking
+- **Slug:** `investment-banking`
+- **Synonyms:** I-Banking, Corporate Advisory, IB
+- **Prerequisites:**
+  - `financial-modeling` (required) - Financial modeling is core to investment banking
+  - `valuation` (required) - Valuation skills essential
 
 ### Management Accounting
 - **Slug:** `management-accounting`
@@ -2415,12 +2574,29 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `corporate-finance` (required) - Private equity requires corporate finance knowledge
   - `mergers-acquisitions` (recommended) - PE often involves acquisitions
 
+### Treasury Management
+- **Slug:** `treasury-management`
+- **Synonyms:** Cash Management, Corporate Treasury, Liquidity Management
+
+### Valuation
+- **Slug:** `valuation`
+- **Synonyms:** Business Valuation, Company Valuation, Asset Valuation
+- **Prerequisites:**
+  - `financial-modeling` (required) - Financial modeling essential for valuation
+  - `financial-statements` (required) - Must understand financial statements
+
 ### Venture Capital
 - **Slug:** `venture-capital`
 - **Synonyms:** VC, Startup Investing, Venture Funding
 - **Prerequisites:**
   - `investing` (required) - VC is a specialized form of investing
   - `entrepreneurship` (recommended) - Understanding startups helps in VC investing
+
+### Working Capital Management
+- **Slug:** `working-capital-management`
+- **Synonyms:** Working Capital, Current Assets Management, Cash Conversion
+- **Prerequisites:**
+  - `financial-statements` (required) - Understanding balance sheets is essential
 
 ---
 
@@ -3998,13 +4174,32 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `accounting`
 - **Synonyms:** Bookkeeping, Financial Accounting, Accounting Principles
 
+### Auditing
+- **Slug:** `auditing`
+- **Synonyms:** Financial Audit, External Audit, Internal Audit
+- **Prerequisites:**
+  - `accounting` (required) - Accounting expertise required
+  - `financial-statements` (required) - Must understand financial statements
+
 ### Budgeting
 - **Slug:** `budgeting`
 - **Synonyms:** Budget Planning, Financial Planning, Budget Management
 
+### Cost Accounting
+- **Slug:** `cost-accounting`
+- **Synonyms:** Costing, Cost Analysis, Manufacturing Accounting
+- **Prerequisites:**
+  - `accounting` (required) - General accounting foundation needed
+
 ### Financial Analysis
 - **Slug:** `financial-analysis`
 - **Synonyms:** Financial Assessment, Financial Evaluation, Investment Analysis
+
+### Financial Compliance
+- **Slug:** `financial-compliance`
+- **Synonyms:** Regulatory Compliance, SOX Compliance, Financial Regulation
+- **Prerequisites:**
+  - `accounting` (required) - Accounting knowledge required for compliance
 
 ### Financial Modeling
 - **Slug:** `financial-modeling`
@@ -4017,6 +4212,78 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** Financial Reports, Financial Reporting, GAAP Reporting
 - **Prerequisites:**
   - `accounting` (required) - Financial statements are created through accounting processes
+
+### Forensic Accounting
+- **Slug:** `forensic-accounting`
+- **Synonyms:** Fraud Investigation, Financial Investigation, Fraud Accounting
+- **Prerequisites:**
+  - `accounting` (required) - Strong accounting background required
+
+### GAAP
+- **Slug:** `gaap`
+- **Synonyms:** US GAAP, Accounting Standards, Accounting Principles
+- **Prerequisites:**
+  - `accounting` (required) - Accounting knowledge required
+
+### IFRS
+- **Slug:** `ifrs`
+- **Synonyms:** International Standards, IFRS Standards, Global Accounting
+- **Prerequisites:**
+  - `accounting` (required) - Accounting background required
+
+### Tax Accounting
+- **Slug:** `tax-accounting`
+- **Synonyms:** Tax Preparation, Tax Compliance, Business Tax
+- **Prerequisites:**
+  - `accounting` (required) - Accounting foundation needed
+
+---
+
+## flexibility-mobility
+
+### Barre
+- **Slug:** `barre`
+- **Synonyms:** Barre Fitness, Ballet Barre
+
+### Dynamic Stretching
+- **Slug:** `dynamic-stretching`
+- **Synonyms:** Active Stretching, Movement Prep
+- **Prerequisites:**
+  - `stretching` (recommended) - Basic stretching knowledge helpful
+
+### Foam Rolling
+- **Slug:** `foam-rolling`
+- **Synonyms:** Self-Myofascial Release, SMR, Rolling
+
+### Mobility Training
+- **Slug:** `mobility-training`
+- **Synonyms:** Mobility Work, Movement Training
+
+### Pilates
+- **Slug:** `pilates`
+- **Synonyms:** Classical Pilates, Mat Pilates
+
+### PNF Stretching
+- **Slug:** `pnf-stretching`
+- **Synonyms:** Proprioceptive Neuromuscular Facilitation, Partner Stretching
+- **Prerequisites:**
+  - `stretching` (required) - Understanding of stretching fundamentals required
+
+### Reformer Pilates
+- **Slug:** `reformer-pilates`
+- **Synonyms:** Reformer, Pilates Reformer
+- **Prerequisites:**
+  - `pilates` (recommended) - Basic Pilates knowledge helpful
+
+### Static Stretching
+- **Slug:** `static-stretching`
+- **Synonyms:** Passive Stretching
+- **Prerequisites:**
+  - `stretching` (recommended) - Basic stretching knowledge helpful
+
+### Stretching
+- **Slug:** `stretching`
+- **Synonyms:** Flexibility Training, Stretch Exercise
 
 ---
 
@@ -5130,6 +5397,24 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## investing-trading
 
+### Asset Allocation
+- **Slug:** `asset-allocation`
+- **Synonyms:** Portfolio Allocation, Investment Mix, Diversification Strategy
+- **Prerequisites:**
+  - `portfolio-management` (recommended) - Portfolio management knowledge helpful
+
+### Bond Investing
+- **Slug:** `bond-investing`
+- **Synonyms:** Fixed Income, Bond Portfolio, Bond Trading
+
+### Commodities Trading
+- **Slug:** `commodities-trading`
+- **Synonyms:** Commodity Investing, Futures Trading, Physical Assets
+
+### Corporate Bonds
+- **Slug:** `corporate-bonds`
+- **Synonyms:** Company Bonds, Business Bonds, Corporate Debt
+
 ### Cryptocurrency Investing
 - **Slug:** `cryptocurrency-investing`
 - **Synonyms:** Crypto Investing, Digital Currency Investment, Bitcoin Investing
@@ -5142,6 +5427,38 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `stock-market-investing` (required) - Day trading requires understanding stock markets
 
+### Dividend Investing
+- **Slug:** `dividend-investing`
+- **Synonyms:** Dividend Stocks, Income Investing, Dividend Portfolio
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Must understand stock investing basics
+
+### ETFs
+- **Slug:** `etfs`
+- **Synonyms:** Exchange-Traded Funds, ETF Investing, Index ETFs
+- **Prerequisites:**
+  - `stock-market-investing` (recommended) - Understanding stock markets helps with ETF trading
+
+### Forex Trading
+- **Slug:** `forex-trading`
+- **Synonyms:** FX Trading, Currency Trading, Foreign Exchange
+
+### Fundamental Analysis
+- **Slug:** `fundamental-analysis`
+- **Synonyms:** Company Analysis, Value Analysis, Financial Analysis
+- **Prerequisites:**
+  - `financial-statements` (required) - Must understand financial statements
+
+### Gold Investing
+- **Slug:** `gold-investing`
+- **Synonyms:** Gold Trading, Precious Metals, Gold Portfolio
+
+### Growth Investing
+- **Slug:** `growth-investing`
+- **Synonyms:** Growth Stocks, Growth Strategy, Momentum Investing
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Stock market knowledge required
+
 ### Index Fund Investing
 - **Slug:** `index-fund-investing`
 - **Synonyms:** Passive Investing, Index Investing, ETF Investing
@@ -5152,11 +5469,25 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `investing`
 - **Synonyms:** Investment, Asset Allocation, Portfolio Management
 
+### Municipal Bonds
+- **Slug:** `municipal-bonds`
+- **Synonyms:** Munis, Tax-Free Bonds, Muni Bonds
+
+### Mutual Funds
+- **Slug:** `mutual-funds`
+- **Synonyms:** Mutual Fund Investing, Fund Investment, Managed Funds
+
 ### Options Trading
 - **Slug:** `options-trading`
 - **Synonyms:** Options Strategies, Derivatives Trading, Option Contracts
 - **Prerequisites:**
   - `stock-market-investing` (required) - Options are derivatives of stocks
+
+### Portfolio Management
+- **Slug:** `portfolio-management`
+- **Synonyms:** Portfolio Strategy, Asset Management, Investment Portfolio
+- **Prerequisites:**
+  - `investing` (required) - Basic investing knowledge required
 
 ### Real Estate Investing
 - **Slug:** `real-estate-investing`
@@ -5164,11 +5495,35 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `investing` (required) - Real estate investing applies investment principles to property
 
+### REITs
+- **Slug:** `reits`
+- **Synonyms:** Real Estate Investment Trusts, REIT Investing, Property Trusts
+
+### Risk-Adjusted Returns
+- **Slug:** `risk-adjusted-returns`
+- **Synonyms:** Sharpe Ratio, Risk Metrics, Return Analysis
+- **Prerequisites:**
+  - `portfolio-management` (recommended) - Understanding portfolios helps with risk analysis
+
 ### Stock Market Investing
 - **Slug:** `stock-market-investing`
 - **Synonyms:** Stock Investing, Equity Investing, Stock Market
 - **Prerequisites:**
   - `investing` (required) - Stock investing requires understanding of investment fundamentals
+
+### Swing Trading
+- **Slug:** `swing-trading`
+- **Synonyms:** Swing Strategy, Short-Term Trading, Position Trading
+- **Prerequisites:**
+  - `technical-analysis` (recommended) - Technical analysis helps identify swing opportunities
+
+### Technical Analysis
+- **Slug:** `technical-analysis`
+- **Synonyms:** Chart Analysis, Technical Trading, Price Analysis
+
+### Treasury Securities
+- **Slug:** `treasury-securities`
+- **Synonyms:** T-Bills, Treasury Bonds, Government Bonds
 
 ### Value Investing
 - **Slug:** `value-investing`
@@ -6224,6 +6579,42 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## meditation
+
+### Body Scan Meditation
+- **Slug:** `body-scan-meditation`
+- **Synonyms:** Body Scan, Progressive Relaxation
+
+### Breathwork
+- **Slug:** `breathwork`
+- **Synonyms:** Pranayama, Breathing Exercises, Breath Training
+
+### Guided Meditation
+- **Slug:** `guided-meditation`
+- **Synonyms:** Guided Imagery, Visualization Meditation
+
+### Loving-Kindness Meditation
+- **Slug:** `loving-kindness-meditation`
+- **Synonyms:** Metta Meditation, Compassion Meditation, Metta
+
+### Transcendental Meditation
+- **Slug:** `transcendental-meditation`
+- **Synonyms:** TM, Transcendental
+
+### Vipassana Meditation
+- **Slug:** `vipassana-meditation`
+- **Synonyms:** Vipassana, Insight Meditation
+
+### Walking Meditation
+- **Slug:** `walking-meditation`
+- **Synonyms:** Mindful Walking
+
+### Zen Meditation
+- **Slug:** `zen-meditation`
+- **Synonyms:** Zazen, Zen
+
+---
+
 ## memory-learning
 
 ### Active Recall
@@ -6263,6 +6654,42 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Study Skills
 - **Slug:** `study-skills`
 - **Synonyms:** Learning Skills, Academic Skills, Study Techniques
+
+---
+
+## mental-health
+
+### Anxiety Management
+- **Slug:** `anxiety-management`
+- **Synonyms:** Anxiety Relief, Anxiety Treatment
+
+### Boundary Setting
+- **Slug:** `boundary-setting`
+- **Synonyms:** Personal Boundaries, Healthy Boundaries
+
+### Cognitive Behavioral Therapy
+- **Slug:** `cognitive-behavioral-therapy`
+- **Synonyms:** CBT, Cognitive Therapy
+
+### Depression Management
+- **Slug:** `depression-management`
+- **Synonyms:** Depression Treatment, Depression Support
+
+### Dialectical Behavior Therapy
+- **Slug:** `dialectical-behavior-therapy`
+- **Synonyms:** DBT
+
+### EMDR Therapy
+- **Slug:** `emdr-therapy`
+- **Synonyms:** Eye Movement Desensitization, EMDR
+
+### Mental Health First Aid
+- **Slug:** `mental-health-first-aid`
+- **Synonyms:** Psychological First Aid, Crisis Support
+
+### Sleep Hygiene
+- **Slug:** `sleep-hygiene`
+- **Synonyms:** Sleep Optimization, Better Sleep
 
 ---
 
@@ -7158,6 +7585,54 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## nutrition-diet
+
+### Calorie Counting
+- **Slug:** `calorie-counting`
+- **Synonyms:** Calorie Tracking, Energy Tracking
+
+### Intermittent Fasting
+- **Slug:** `intermittent-fasting`
+- **Synonyms:** IF, Time-Restricted Eating, Fasting
+
+### Intuitive Eating
+- **Slug:** `intuitive-eating`
+- **Synonyms:** Mindful Eating, Anti-Diet
+
+### Ketogenic Diet
+- **Slug:** `ketogenic-diet`
+- **Synonyms:** Keto, Keto Diet, Low Carb High Fat
+
+### Macronutrient Tracking
+- **Slug:** `macronutrient-tracking`
+- **Synonyms:** Macro Counting, Macros, Flexible Dieting, IIFYM
+
+### Meal Planning
+- **Slug:** `meal-planning`
+- **Synonyms:** Meal Prep Planning, Nutrition Planning
+
+### Mediterranean Diet
+- **Slug:** `mediterranean-diet`
+- **Synonyms:** Mediterranean Eating
+
+### Paleo Diet
+- **Slug:** `paleo-diet`
+- **Synonyms:** Paleo, Paleolithic Diet, Caveman Diet
+
+### Plant-Based Nutrition
+- **Slug:** `plant-based-nutrition`
+- **Synonyms:** Vegan Nutrition, Vegetarian Nutrition, Whole Food Plant-Based
+
+### Sports Nutrition
+- **Slug:** `sports-nutrition`
+- **Synonyms:** Performance Nutrition, Athletic Nutrition
+
+### Supplement Science
+- **Slug:** `supplement-science`
+- **Synonyms:** Supplementation, Nutritional Supplements
+
+---
+
 ## operations-strategy
 
 ### Business Intelligence
@@ -7266,6 +7741,58 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## personal-finance
 
+### Auto Insurance
+- **Slug:** `auto-insurance`
+- **Synonyms:** Car Insurance, Vehicle Insurance, Auto Coverage
+
+### Beneficiary Designation
+- **Slug:** `beneficiary-designation`
+- **Synonyms:** Beneficiaries, Heir Designation, Asset Assignment
+
+### Credit Cards
+- **Slug:** `credit-cards`
+- **Synonyms:** Credit Card Management, Card Rewards, Credit Card Strategy
+
+### Credit Management
+- **Slug:** `credit-management`
+- **Synonyms:** Credit Building, Credit Repair, Credit Score
+
+### Debt Consolidation
+- **Slug:** `debt-consolidation`
+- **Synonyms:** Debt Refinancing, Loan Consolidation, Debt Restructuring
+
+### Debt Management
+- **Slug:** `debt-management`
+- **Synonyms:** Debt Payoff, Debt Reduction, Debt Elimination
+
+### Disability Insurance
+- **Slug:** `disability-insurance`
+- **Synonyms:** Income Protection, Disability Coverage, Disability Protection
+
+### Estate Planning
+- **Slug:** `estate-planning`
+- **Synonyms:** Estate Management, Legacy Planning, Inheritance Planning
+
+### Estate Taxes
+- **Slug:** `estate-taxes`
+- **Synonyms:** Inheritance Tax, Estate Tax Planning, Death Taxes
+
+### Health Insurance
+- **Slug:** `health-insurance`
+- **Synonyms:** Medical Insurance, Healthcare Coverage, Health Coverage
+
+### Life Insurance
+- **Slug:** `life-insurance`
+- **Synonyms:** Term Life, Whole Life, Life Coverage
+
+### Long-Term Care Insurance
+- **Slug:** `long-term-care-insurance`
+- **Synonyms:** LTC Insurance, Nursing Care Coverage, Extended Care Insurance
+
+### Mortgages
+- **Slug:** `mortgages`
+- **Synonyms:** Home Loans, Mortgage Financing, Home Financing
+
 ### Personal Budgeting
 - **Slug:** `personal-budgeting`
 - **Synonyms:** Household Budgeting, Family Budgeting, Personal Money Management
@@ -7276,6 +7803,10 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `personal-finance`
 - **Synonyms:** Money Management, Personal Financial Planning, Wealth Management
 
+### Property Insurance
+- **Slug:** `property-insurance`
+- **Synonyms:** Homeowners Insurance, Property Coverage, Home Insurance
+
 ### Retirement Planning
 - **Slug:** `retirement-planning`
 - **Synonyms:** Retirement Savings, 401k Planning, Pension Planning
@@ -7283,11 +7814,27 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `personal-finance` (required) - Retirement planning is a component of personal finance
   - `investing` (recommended) - Investment knowledge helps optimize retirement savings
 
+### Student Loans
+- **Slug:** `student-loans`
+- **Synonyms:** Student Debt, Education Loans, College Loans
+
 ### Tax Planning
 - **Slug:** `tax-planning`
 - **Synonyms:** Tax Strategy, Tax Optimization, Tax Efficiency
 - **Prerequisites:**
   - `personal-finance` (required) - Tax planning is a key aspect of personal finance
+
+### Trusts
+- **Slug:** `trusts`
+- **Synonyms:** Trust Funds, Living Trusts, Trust Planning
+
+### Umbrella Insurance
+- **Slug:** `umbrella-insurance`
+- **Synonyms:** Excess Liability, Umbrella Coverage, Supplemental Liability
+
+### Wills
+- **Slug:** `wills`
+- **Synonyms:** Last Will, Will Preparation, Testament
 
 ---
 
@@ -8040,6 +8587,60 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `statistics` (required) - Statistical foundation is essential for time series
   - `probability` (required) - Probability helps with forecasting and modeling
+
+---
+
+## strength-training
+
+### Bodybuilding
+- **Slug:** `bodybuilding`
+- **Synonyms:** Physique Training, Muscle Building
+- **Prerequisites:**
+  - `weightlifting` (recommended) - Foundational strength training knowledge
+
+### Calisthenics
+- **Slug:** `calisthenics`
+- **Synonyms:** Bodyweight Training, Street Workout, Bodyweight Exercise
+
+### CrossFit
+- **Slug:** `crossfit`
+- **Synonyms:** Cross Fit, Functional Fitness
+- **Prerequisites:**
+  - `weightlifting` (recommended) - Basic lifting knowledge for safety
+
+### Kettlebell Training
+- **Slug:** `kettlebell-training`
+- **Synonyms:** Kettlebell, Kettlebell Sport
+
+### Olympic Weightlifting
+- **Slug:** `olympic-weightlifting`
+- **Synonyms:** Olympic Lifting, Oly Lifting
+- **Prerequisites:**
+  - `weightlifting` (recommended) - Basic weightlifting knowledge helps with proper form
+
+### Powerlifting
+- **Slug:** `powerlifting`
+- **Synonyms:** Power Lifting
+- **Prerequisites:**
+  - `weightlifting` (recommended) - Foundation in weightlifting is beneficial
+
+### Resistance Band Training
+- **Slug:** `resistance-band-training`
+- **Synonyms:** Band Training, Elastic Resistance
+
+### Strongman Training
+- **Slug:** `strongman-training`
+- **Synonyms:** Strongman, Strongwoman
+- **Prerequisites:**
+  - `weightlifting` (required) - Strong foundation in strength training required
+
+### Suspension Training
+- **Slug:** `suspension-training`
+- **Synonyms:** TRX Training, Strap Training
+
+### Weightlifting
+- **Slug:** `weightlifting`
+- **Synonyms:** Weight Training, Resistance Training, Strength Training
 
 ---
 
@@ -8842,6 +9443,50 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ### yWriter
 - **Slug:** `ywriter`
+
+---
+
+## yoga
+
+### Ashtanga Yoga
+- **Slug:** `ashtanga-yoga`
+- **Synonyms:** Ashtanga, Power Yoga Traditional
+
+### Bikram Yoga
+- **Slug:** `bikram-yoga`
+- **Synonyms:** Hot Yoga, Bikram
+
+### Hatha Yoga
+- **Slug:** `hatha-yoga`
+- **Synonyms:** Hatha
+
+### Iyengar Yoga
+- **Slug:** `iyengar-yoga`
+- **Synonyms:** Iyengar
+
+### Kundalini Yoga
+- **Slug:** `kundalini-yoga`
+- **Synonyms:** Kundalini
+
+### Power Yoga
+- **Slug:** `power-yoga`
+- **Synonyms:** Power
+
+### Prenatal Yoga
+- **Slug:** `prenatal-yoga`
+- **Synonyms:** Pregnancy Yoga, Maternity Yoga
+
+### Restorative Yoga
+- **Slug:** `restorative-yoga`
+- **Synonyms:** Restorative
+
+### Vinyasa Yoga
+- **Slug:** `vinyasa-yoga`
+- **Synonyms:** Vinyasa Flow, Flow Yoga
+
+### Yin Yoga
+- **Slug:** `yin-yoga`
+- **Synonyms:** Yin
 
 ---
 

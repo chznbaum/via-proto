@@ -1,0 +1,709 @@
+{
+  "competencies": [
+    {
+      "name": "Life Insurance",
+      "slug": "life-insurance",
+      "description": "Understanding and selecting life insurance policies to protect beneficiaries",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Term Life",
+        "Whole Life",
+        "Life Coverage"
+      ]
+    },
+    {
+      "name": "Health Insurance",
+      "slug": "health-insurance",
+      "description": "Navigating health insurance plans, coverage options, and healthcare costs",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Medical Insurance",
+        "Healthcare Coverage",
+        "Health Coverage"
+      ]
+    },
+    {
+      "name": "Disability Insurance",
+      "slug": "disability-insurance",
+      "description": "Protecting income through short-term and long-term disability coverage",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Income Protection",
+        "Disability Coverage",
+        "Disability Protection"
+      ]
+    },
+    {
+      "name": "Property Insurance",
+      "slug": "property-insurance",
+      "description": "Protecting real estate and personal property from damage and loss",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Homeowners Insurance",
+        "Property Coverage",
+        "Home Insurance"
+      ]
+    },
+    {
+      "name": "Auto Insurance",
+      "slug": "auto-insurance",
+      "description": "Understanding vehicle insurance coverage, liability, and claims",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Car Insurance",
+        "Vehicle Insurance",
+        "Auto Coverage"
+      ]
+    },
+    {
+      "name": "Umbrella Insurance",
+      "slug": "umbrella-insurance",
+      "description": "Additional liability coverage beyond standard insurance policies",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Excess Liability",
+        "Umbrella Coverage",
+        "Supplemental Liability"
+      ]
+    },
+    {
+      "name": "Long-Term Care Insurance",
+      "slug": "long-term-care-insurance",
+      "description": "Planning for assisted living, nursing home, and extended care costs",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "LTC Insurance",
+        "Nursing Care Coverage",
+        "Extended Care Insurance"
+      ]
+    },
+    {
+      "name": "Credit Management",
+      "slug": "credit-management",
+      "description": "Building and maintaining good credit scores and credit health",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Credit Building",
+        "Credit Repair",
+        "Credit Score"
+      ]
+    },
+    {
+      "name": "Credit Cards",
+      "slug": "credit-cards",
+      "description": "Managing credit card usage, rewards, and debt strategically",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Credit Card Management",
+        "Card Rewards",
+        "Credit Card Strategy"
+      ]
+    },
+    {
+      "name": "Mortgages",
+      "slug": "mortgages",
+      "description": "Understanding home loans, rates, terms, and refinancing options",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Home Loans",
+        "Mortgage Financing",
+        "Home Financing"
+      ]
+    },
+    {
+      "name": "Student Loans",
+      "slug": "student-loans",
+      "description": "Managing educational debt, repayment plans, and forgiveness programs",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Student Debt",
+        "Education Loans",
+        "College Loans"
+      ]
+    },
+    {
+      "name": "Debt Management",
+      "slug": "debt-management",
+      "description": "Strategies for paying down and eliminating various types of debt",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Debt Payoff",
+        "Debt Reduction",
+        "Debt Elimination"
+      ]
+    },
+    {
+      "name": "Debt Consolidation",
+      "slug": "debt-consolidation",
+      "description": "Combining multiple debts into single payment with better terms",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Debt Refinancing",
+        "Loan Consolidation",
+        "Debt Restructuring"
+      ]
+    },
+    {
+      "name": "Estate Planning",
+      "slug": "estate-planning",
+      "description": "Planning for asset distribution, taxes, and legacy after death",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Estate Management",
+        "Legacy Planning",
+        "Inheritance Planning"
+      ]
+    },
+    {
+      "name": "Wills",
+      "slug": "wills",
+      "description": "Creating legal documents to direct asset distribution after death",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Last Will",
+        "Will Preparation",
+        "Testament"
+      ]
+    },
+    {
+      "name": "Trusts",
+      "slug": "trusts",
+      "description": "Establishing legal entities to hold and manage assets for beneficiaries",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Trust Funds",
+        "Living Trusts",
+        "Trust Planning"
+      ]
+    },
+    {
+      "name": "Estate Taxes",
+      "slug": "estate-taxes",
+      "description": "Understanding and minimizing taxes on inherited wealth and estates",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Inheritance Tax",
+        "Estate Tax Planning",
+        "Death Taxes"
+      ]
+    },
+    {
+      "name": "Beneficiary Designation",
+      "slug": "beneficiary-designation",
+      "description": "Assigning recipients for retirement accounts, insurance, and assets",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Beneficiaries",
+        "Heir Designation",
+        "Asset Assignment"
+      ]
+    },
+    {
+      "name": "Bond Investing",
+      "slug": "bond-investing",
+      "description": "Investing in fixed-income securities for income and stability",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Fixed Income",
+        "Bond Portfolio",
+        "Bond Trading"
+      ]
+    },
+    {
+      "name": "Municipal Bonds",
+      "slug": "municipal-bonds",
+      "description": "Tax-advantaged bonds issued by state and local governments",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Munis",
+        "Tax-Free Bonds",
+        "Muni Bonds"
+      ]
+    },
+    {
+      "name": "Corporate Bonds",
+      "slug": "corporate-bonds",
+      "description": "Debt securities issued by companies for financing operations",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Company Bonds",
+        "Business Bonds",
+        "Corporate Debt"
+      ]
+    },
+    {
+      "name": "Treasury Securities",
+      "slug": "treasury-securities",
+      "description": "Government-issued bonds, bills, and notes for safe investing",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "T-Bills",
+        "Treasury Bonds",
+        "Government Bonds"
+      ]
+    },
+    {
+      "name": "Mutual Funds",
+      "slug": "mutual-funds",
+      "description": "Pooled investment vehicles managed by professional fund managers",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Mutual Fund Investing",
+        "Fund Investment",
+        "Managed Funds"
+      ]
+    },
+    {
+      "name": "ETFs",
+      "slug": "etfs",
+      "description": "Exchange-traded funds combining diversification with stock-like trading",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Exchange-Traded Funds",
+        "ETF Investing",
+        "Index ETFs"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding stock markets helps with ETF trading"
+        }
+      ]
+    },
+    {
+      "name": "REITs",
+      "slug": "reits",
+      "description": "Real estate investment trusts for property exposure without direct ownership",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Real Estate Investment Trusts",
+        "REIT Investing",
+        "Property Trusts"
+      ]
+    },
+    {
+      "name": "Commodities Trading",
+      "slug": "commodities-trading",
+      "description": "Trading raw materials, precious metals, energy, and agricultural products",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Commodity Investing",
+        "Futures Trading",
+        "Physical Assets"
+      ]
+    },
+    {
+      "name": "Gold Investing",
+      "slug": "gold-investing",
+      "description": "Investing in gold as a store of value and inflation hedge",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Gold Trading",
+        "Precious Metals",
+        "Gold Portfolio"
+      ]
+    },
+    {
+      "name": "Forex Trading",
+      "slug": "forex-trading",
+      "description": "Trading foreign currencies in the global exchange market",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "FX Trading",
+        "Currency Trading",
+        "Foreign Exchange"
+      ]
+    },
+    {
+      "name": "Dividend Investing",
+      "slug": "dividend-investing",
+      "description": "Building income streams through dividend-paying stocks",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Dividend Stocks",
+        "Income Investing",
+        "Dividend Portfolio"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Must understand stock investing basics"
+        }
+      ]
+    },
+    {
+      "name": "Growth Investing",
+      "slug": "growth-investing",
+      "description": "Investing in companies with high growth potential",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Growth Stocks",
+        "Growth Strategy",
+        "Momentum Investing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Stock market knowledge required"
+        }
+      ]
+    },
+    {
+      "name": "Technical Analysis",
+      "slug": "technical-analysis",
+      "description": "Analyzing price charts and patterns to predict market movements",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Chart Analysis",
+        "Technical Trading",
+        "Price Analysis"
+      ]
+    },
+    {
+      "name": "Fundamental Analysis",
+      "slug": "fundamental-analysis",
+      "description": "Evaluating securities based on financial statements and business value",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Company Analysis",
+        "Value Analysis",
+        "Financial Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-statements",
+          "prerequisite_level": "required",
+          "notes": "Must understand financial statements"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio Management",
+      "slug": "portfolio-management",
+      "description": "Building and maintaining diversified investment portfolios",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Portfolio Strategy",
+        "Asset Management",
+        "Investment Portfolio"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "required",
+          "notes": "Basic investing knowledge required"
+        }
+      ]
+    },
+    {
+      "name": "Asset Allocation",
+      "slug": "asset-allocation",
+      "description": "Distributing investments across different asset classes for optimal risk-return",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Portfolio Allocation",
+        "Investment Mix",
+        "Diversification Strategy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "portfolio-management",
+          "prerequisite_level": "recommended",
+          "notes": "Portfolio management knowledge helpful"
+        }
+      ]
+    },
+    {
+      "name": "Risk-Adjusted Returns",
+      "slug": "risk-adjusted-returns",
+      "description": "Evaluating investment performance relative to risk taken",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Sharpe Ratio",
+        "Risk Metrics",
+        "Return Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "portfolio-management",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding portfolios helps with risk analysis"
+        }
+      ]
+    },
+    {
+      "name": "Swing Trading",
+      "slug": "swing-trading",
+      "description": "Trading stocks over days to weeks to capture short-term price movements",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Swing Strategy",
+        "Short-Term Trading",
+        "Position Trading"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "technical-analysis",
+          "prerequisite_level": "recommended",
+          "notes": "Technical analysis helps identify swing opportunities"
+        }
+      ]
+    },
+    {
+      "name": "FP&A",
+      "slug": "fpa",
+      "description": "Financial planning and analysis for business decision-making",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Financial Planning & Analysis",
+        "Corporate Planning",
+        "Business Analytics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-modeling",
+          "prerequisite_level": "recommended",
+          "notes": "Financial modeling skills are valuable for FP&A"
+        }
+      ]
+    },
+    {
+      "name": "Treasury Management",
+      "slug": "treasury-management",
+      "description": "Managing corporate cash, liquidity, and financial risk",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Cash Management",
+        "Corporate Treasury",
+        "Liquidity Management"
+      ]
+    },
+    {
+      "name": "Capital Structure",
+      "slug": "capital-structure",
+      "description": "Optimizing mix of debt and equity financing for companies",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Capital Mix",
+        "Financing Structure",
+        "Debt-Equity Mix"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "corporate-finance",
+          "prerequisite_level": "required",
+          "notes": "Corporate finance fundamentals required"
+        }
+      ]
+    },
+    {
+      "name": "Valuation",
+      "slug": "valuation",
+      "description": "Determining fair value of businesses, assets, and securities",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Business Valuation",
+        "Company Valuation",
+        "Asset Valuation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-modeling",
+          "prerequisite_level": "required",
+          "notes": "Financial modeling essential for valuation"
+        },
+        {
+          "prerequisite_slug": "financial-statements",
+          "prerequisite_level": "required",
+          "notes": "Must understand financial statements"
+        }
+      ]
+    },
+    {
+      "name": "Investment Banking",
+      "slug": "investment-banking",
+      "description": "Advisory services for capital raising, M&A, and corporate restructuring",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "I-Banking",
+        "Corporate Advisory",
+        "IB"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-modeling",
+          "prerequisite_level": "required",
+          "notes": "Financial modeling is core to investment banking"
+        },
+        {
+          "prerequisite_slug": "valuation",
+          "prerequisite_level": "required",
+          "notes": "Valuation skills essential"
+        }
+      ]
+    },
+    {
+      "name": "Corporate Strategy",
+      "slug": "corporate-strategy",
+      "description": "Long-term planning for competitive advantage and business growth",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Business Strategy",
+        "Strategic Planning",
+        "Corporate Planning"
+      ]
+    },
+    {
+      "name": "Working Capital Management",
+      "slug": "working-capital-management",
+      "description": "Managing short-term assets and liabilities for operational efficiency",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Working Capital",
+        "Current Assets Management",
+        "Cash Conversion"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-statements",
+          "prerequisite_level": "required",
+          "notes": "Understanding balance sheets is essential"
+        }
+      ]
+    },
+    {
+      "name": "Financial Compliance",
+      "slug": "financial-compliance",
+      "description": "Ensuring adherence to accounting standards and financial regulations",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Regulatory Compliance",
+        "SOX Compliance",
+        "Financial Regulation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Accounting knowledge required for compliance"
+        }
+      ]
+    },
+    {
+      "name": "Cost Accounting",
+      "slug": "cost-accounting",
+      "description": "Tracking and analyzing costs for business decision-making",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Costing",
+        "Cost Analysis",
+        "Manufacturing Accounting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "General accounting foundation needed"
+        }
+      ]
+    },
+    {
+      "name": "Forensic Accounting",
+      "slug": "forensic-accounting",
+      "description": "Investigating financial fraud and irregularities",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Fraud Investigation",
+        "Financial Investigation",
+        "Fraud Accounting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Strong accounting background required"
+        }
+      ]
+    },
+    {
+      "name": "Auditing",
+      "slug": "auditing",
+      "description": "Examining financial records for accuracy and compliance",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Financial Audit",
+        "External Audit",
+        "Internal Audit"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Accounting expertise required"
+        },
+        {
+          "prerequisite_slug": "financial-statements",
+          "prerequisite_level": "required",
+          "notes": "Must understand financial statements"
+        }
+      ]
+    },
+    {
+      "name": "GAAP",
+      "slug": "gaap",
+      "description": "Generally Accepted Accounting Principles for financial reporting",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "US GAAP",
+        "Accounting Standards",
+        "Accounting Principles"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Accounting knowledge required"
+        }
+      ]
+    },
+    {
+      "name": "IFRS",
+      "slug": "ifrs",
+      "description": "International Financial Reporting Standards for global accounting",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "International Standards",
+        "IFRS Standards",
+        "Global Accounting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Accounting background required"
+        }
+      ]
+    },
+    {
+      "name": "Tax Accounting",
+      "slug": "tax-accounting",
+      "description": "Accounting for tax obligations and tax-efficient strategies",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Tax Preparation",
+        "Tax Compliance",
+        "Business Tax"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Accounting foundation needed"
+        }
+      ]
+    }
+  ]
+}
