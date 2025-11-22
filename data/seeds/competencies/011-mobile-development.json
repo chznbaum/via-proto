@@ -1,3 +1,1278 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "React Native",
+      "slug": "react-native",
+      "description": "Framework for building native mobile apps using React and JavaScript",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "ReactNative",
+        "RN"
+      ],
+      "icon": "devicon:reactnative",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "React Native is built on React, so React knowledge is essential"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript fundamentals required for React Native development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flutter",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform mobile frameworks. Flutter uses Dart, React Native uses JavaScript/React."
+        },
+        {
+          "alternative_slug": "ionic",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. React Native renders native components, Ionic uses web views."
+        }
+      ]
+    },
+    {
+      "name": "Flutter",
+      "slug": "flutter",
+      "description": "Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Flutter SDK",
+        "Flutter Framework"
+      ],
+      "icon": "logos:flutter",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "dart",
+          "prerequisite_level": "required",
+          "notes": "Flutter uses Dart as its primary language"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react-native",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform mobile frameworks. Flutter uses Dart, React Native uses JavaScript/React."
+        },
+        {
+          "alternative_slug": "dotnet-maui",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. Flutter uses Dart, .NET MAUI uses C#."
+        }
+      ]
+    },
+    {
+      "name": "Expo",
+      "slug": "expo",
+      "description": "Framework and platform for universal React applications, built on React Native",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Expo SDK",
+        "Expo Go"
+      ],
+      "icon": "logos:expo-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "required",
+          "notes": "Expo is built on top of React Native"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react-native",
+          "relationship_type": "similar",
+          "notes": "Expo provides additional tooling and services on top of bare React Native. Can start with Expo and eject to bare React Native if needed."
+        }
+      ]
+    },
+    {
+      "name": "Ionic",
+      "slug": "ionic",
+      "description": "Cross-platform mobile framework using web technologies (HTML, CSS, JavaScript)",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Ionic Framework"
+      ],
+      "icon": "logos:ionic-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "Ionic uses HTML for UI structure"
+        },
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Ionic uses CSS for styling"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript fundamentals required for Ionic development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react-native",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. React Native renders native components, Ionic uses web views."
+        },
+        {
+          "alternative_slug": "capacitor",
+          "relationship_type": "similar",
+          "notes": "Capacitor is the native runtime for Ionic apps. Often used together."
+        }
+      ]
+    },
+    {
+      "name": "Capacitor",
+      "slug": "capacitor",
+      "description": "Cross-platform native runtime for web apps, successor to Cordova",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "CapacitorJS",
+        "Ionic Capacitor"
+      ],
+      "icon": "logos:ionic-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript knowledge needed to use Capacitor APIs"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ionic",
+          "relationship_type": "similar",
+          "notes": "Capacitor is the native runtime for Ionic apps. Often used together."
+        }
+      ]
+    },
+    {
+      "name": "Xamarin",
+      "slug": "xamarin",
+      "description": "Microsoft framework for building cross-platform mobile apps using C# and .NET",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Xamarin.Forms",
+        "Xamarin.iOS",
+        "Xamarin.Android"
+      ],
+      "icon": "logos:xamarin",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "Xamarin uses C# for development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "dotnet-maui",
+          "relationship_type": "replaces",
+          "notes": ".NET MAUI is the evolution and successor of Xamarin.Forms"
+        },
+        {
+          "alternative_slug": "flutter",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. Flutter uses Dart, Xamarin uses C#."
+        }
+      ]
+    },
+    {
+      "name": ".NET MAUI",
+      "slug": "dotnet-maui",
+      "description": "Multi-platform app UI framework from Microsoft, evolution of Xamarin.Forms",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "MAUI",
+        "Microsoft MAUI",
+        ".NET Multi-platform App UI"
+      ],
+      "icon": "logos:dotnet",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": ".NET MAUI uses C# for development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "xamarin",
+          "relationship_type": "related",
+          "notes": ".NET MAUI is the evolution and successor of Xamarin.Forms"
+        },
+        {
+          "alternative_slug": "flutter",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. Flutter uses Dart, .NET MAUI uses C#."
+        }
+      ]
+    },
+    {
+      "name": "SwiftUI",
+      "slug": "swiftui",
+      "description": "Apple's declarative UI framework for building iOS, macOS, watchOS, and tvOS apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Swift UI"
+      ],
+      "icon": "logos:swift",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "required",
+          "notes": "SwiftUI is built on Swift"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "uikit",
+          "relationship_type": "related",
+          "notes": "UIKit is the older imperative UI framework. SwiftUI is the modern declarative approach."
+        }
+      ]
+    },
+    {
+      "name": "UIKit",
+      "slug": "uikit",
+      "description": "Apple's imperative framework for building iOS and iPadOS user interfaces",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "UI Kit",
+        "iOS UIKit"
+      ],
+      "icon": "logos:swift",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "recommended",
+          "notes": "Modern UIKit development typically uses Swift"
+        },
+        {
+          "prerequisite_slug": "objective-c",
+          "prerequisite_level": "optional",
+          "notes": "UIKit was originally designed for Objective-C but can be used with Swift"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "swiftui",
+          "relationship_type": "replaces",
+          "notes": "SwiftUI is Apple's newer declarative UI framework that is gradually replacing UIKit"
+        }
+      ]
+    },
+    {
+      "name": "Jetpack Compose",
+      "slug": "jetpack-compose",
+      "description": "Android's modern toolkit for building native UI with declarative Kotlin code",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Compose",
+        "Android Compose"
+      ],
+      "icon": "devicon:jetpackcompose",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "required",
+          "notes": "Jetpack Compose uses Kotlin"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "android-views",
+          "relationship_type": "related",
+          "notes": "XML-based Android Views is the older UI system. Jetpack Compose is the modern declarative approach."
+        }
+      ]
+    },
+    {
+      "name": "Android Views",
+      "slug": "android-views",
+      "description": "Traditional Android UI system using XML layouts and imperative code",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Android XML Layouts",
+        "Android View System"
+      ],
+      "icon": "logos:android-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "recommended",
+          "notes": "Modern Android development typically uses Kotlin"
+        },
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "optional",
+          "notes": "Legacy Android apps use Java, but Kotlin is now preferred"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jetpack-compose",
+          "relationship_type": "replaces",
+          "notes": "Jetpack Compose is Android's modern declarative UI toolkit replacing XML layouts"
+        }
+      ]
+    },
+    {
+      "name": "Xcode",
+      "slug": "xcode",
+      "description": "Apple's integrated development environment for iOS, macOS, watchOS, and tvOS development",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "XCode",
+        "Apple Xcode"
+      ],
+      "icon": "logos:xcode",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "recommended",
+          "notes": "Swift is the primary language used in Xcode for Apple platform development"
+        }
+      ]
+    },
+    {
+      "name": "Android Studio",
+      "slug": "android-studio",
+      "description": "Official IDE for Android app development based on IntelliJ IDEA",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "AndroidStudio"
+      ],
+      "icon": "devicon:androidstudio",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "recommended",
+          "notes": "Kotlin is the recommended language for Android development"
+        }
+      ]
+    },
+    {
+      "name": "CocoaPods",
+      "slug": "cocoapods",
+      "description": "Dependency manager for Swift and Objective-C projects",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Cocoa Pods",
+        "Pods"
+      ],
+      "icon": "logos:cocoapods",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "recommended",
+          "notes": "CocoaPods is commonly used in Swift projects"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "swift-package-manager",
+          "relationship_type": "similar",
+          "notes": "Both manage dependencies for iOS projects. SPM is Apple's official solution, CocoaPods has larger ecosystem."
+        }
+      ]
+    },
+    {
+      "name": "Swift Package Manager",
+      "slug": "swift-package-manager",
+      "description": "Apple's official tool for managing Swift code distribution and dependencies",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "SPM",
+        "Swift PM"
+      ],
+      "icon": "logos:swift",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "required",
+          "notes": "SPM is built for Swift projects"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cocoapods",
+          "relationship_type": "similar",
+          "notes": "Both manage dependencies for iOS projects. SPM is Apple's official solution, CocoaPods has larger ecosystem."
+        }
+      ]
+    },
+    {
+      "name": "Fastlane",
+      "slug": "fastlane",
+      "description": "Automation tool for iOS and Android deployment and release workflows",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Fastlane.tools"
+      ],
+      "icon": "logos:fastlane",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "optional",
+          "notes": "Helpful for iOS deployments"
+        },
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "optional",
+          "notes": "Helpful for Android deployments"
+        }
+      ]
+    },
+    {
+      "name": "TestFlight",
+      "slug": "testflight",
+      "description": "Apple's platform for beta testing iOS, iPadOS, watchOS, and tvOS apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Test Flight",
+        "Apple TestFlight"
+      ],
+      "icon": "logos:apple",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "xcode",
+          "prerequisite_level": "required",
+          "notes": "TestFlight is accessed through Xcode and App Store Connect"
+        }
+      ]
+    },
+    {
+      "name": "App Store Connect",
+      "slug": "app-store-connect",
+      "description": "Apple's platform for managing apps on the App Store",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "AppStore Connect",
+        "iTunes Connect"
+      ],
+      "icon": "logos:apple",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "recommended",
+          "notes": "Needed for building iOS apps to submit"
+        }
+      ]
+    },
+    {
+      "name": "Google Play Console",
+      "slug": "google-play-console",
+      "description": "Google's platform for publishing and managing Android apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Play Console",
+        "Google Play Developer Console"
+      ],
+      "icon": "logos:google-play-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "recommended",
+          "notes": "Needed for building Android apps to submit"
+        }
+      ]
+    },
+    {
+      "name": "XCTest",
+      "slug": "xctest",
+      "description": "Apple's framework for unit and UI testing in Xcode",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "XCTest Framework"
+      ],
+      "icon": "logos:xcode",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "required",
+          "notes": "XCTest is used with Swift for testing iOS apps"
+        },
+        {
+          "prerequisite_slug": "xcode",
+          "prerequisite_level": "required",
+          "notes": "XCTest is integrated into Xcode"
+        }
+      ]
+    },
+    {
+      "name": "Detox",
+      "slug": "detox",
+      "description": "Gray box end-to-end testing framework for React Native apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Detox Testing"
+      ],
+      "icon": "devicon:react",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "required",
+          "notes": "Detox is specifically for React Native apps"
+        }
+      ]
+    },
+    {
+      "name": "Appium",
+      "slug": "appium",
+      "description": "Open-source automation framework for mobile app testing (iOS and Android)",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Appium Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "optional",
+          "notes": "Helpful for testing iOS apps"
+        },
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "optional",
+          "notes": "Helpful for testing Android apps"
+        }
+      ]
+    },
+    {
+      "name": "Electron",
+      "slug": "electron",
+      "description": "Framework for building cross-platform desktop apps using web technologies (HTML, CSS, JavaScript) with Chromium and Node.js",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "ElectronJS",
+        "Electron.js"
+      ],
+      "icon": "logos:electron",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Electron apps are built with JavaScript/TypeScript"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Electron uses Node.js for backend functionality"
+        },
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "HTML is used for the UI structure"
+        },
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "CSS is used for styling"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tauri",
+          "relationship_type": "similar",
+          "notes": "Both build cross-platform apps with web tech. Tauri uses Rust and is more lightweight, Electron uses Node.js."
+        }
+      ]
+    },
+    {
+      "name": "Tauri",
+      "slug": "tauri",
+      "description": "Framework for building cross-platform desktop and mobile apps with web frontend and Rust backend",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Tauri 2.0",
+        "TauriApp"
+      ],
+      "icon": "logos:tauri",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "rust",
+          "prerequisite_level": "required",
+          "notes": "Tauri uses Rust for the backend/core logic"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Frontend is built with web technologies"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "electron",
+          "relationship_type": "similar",
+          "notes": "Both build cross-platform apps with web tech. Tauri uses Rust and is more lightweight, Electron uses Node.js."
+        }
+      ]
+    },
+    {
+      "name": "Kotlin Multiplatform",
+      "slug": "kotlin-multiplatform",
+      "description": "Technology for sharing code between platforms including Android, iOS, web, and desktop",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "KMP",
+        "KMM",
+        "Kotlin Multiplatform Mobile"
+      ],
+      "icon": "logos:kotlin",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "required",
+          "notes": "Kotlin Multiplatform is built on Kotlin"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flutter",
+          "relationship_type": "similar",
+          "notes": "Both enable cross-platform development. KMP shares logic code while keeping native UI, Flutter shares both logic and UI."
+        },
+        {
+          "alternative_slug": "react-native",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform frameworks. KMP uses Kotlin, React Native uses JavaScript."
+        }
+      ]
+    },
+    {
+      "name": "Cordova",
+      "slug": "cordova",
+      "description": "Mobile app development framework that wraps web apps in native containers",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Apache Cordova",
+        "PhoneGap"
+      ],
+      "icon": "logos:cordova",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "Cordova apps use HTML for structure"
+        },
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Cordova apps use CSS for styling"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Cordova apps use JavaScript for logic"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "capacitor",
+          "relationship_type": "replaces",
+          "notes": "Capacitor is the modern successor to Cordova with better performance and developer experience"
+        }
+      ]
+    },
+    {
+      "name": "NativeScript",
+      "slug": "nativescript",
+      "description": "Framework for building native mobile apps using JavaScript, TypeScript, or Angular",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "NativeScript Framework"
+      ],
+      "icon": "logos:nativescript",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript or TypeScript is used for NativeScript development"
+        },
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "recommended",
+          "notes": "TypeScript is commonly used with NativeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react-native",
+          "relationship_type": "similar",
+          "notes": "Both create native mobile apps with JavaScript. NativeScript supports multiple frameworks, React Native uses React."
+        },
+        {
+          "alternative_slug": "flutter",
+          "relationship_type": "similar",
+          "notes": "Both are cross-platform mobile frameworks. NativeScript uses JavaScript/TypeScript, Flutter uses Dart."
+        }
+      ]
+    },
+    {
+      "name": "Quasar Framework",
+      "slug": "quasar-framework",
+      "description": "Vue.js based framework for building responsive websites, PWAs, mobile apps, and Electron apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Quasar",
+        "QuasarJS"
+      ],
+      "icon": "devicon:quasar",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "vuejs",
+          "prerequisite_level": "required",
+          "notes": "Quasar is built on Vue.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ionic",
+          "relationship_type": "similar",
+          "notes": "Both build cross-platform apps with web tech. Quasar uses Vue, Ionic supports multiple frameworks."
+        }
+      ]
+    },
+    {
+      "name": "Framework7",
+      "slug": "framework7",
+      "description": "Full-featured framework for building iOS, Android, and desktop apps with HTML, CSS, and JavaScript",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "F7",
+        "Framework 7"
+      ],
+      "icon": "logos:framework7-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "Framework7 uses HTML for structure"
+        },
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Framework7 uses CSS for styling"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Framework7 uses JavaScript for interactivity"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ionic",
+          "relationship_type": "similar",
+          "notes": "Both are mobile UI frameworks using web technologies"
+        },
+        {
+          "alternative_slug": "onsen-ui",
+          "relationship_type": "similar",
+          "notes": "Both provide mobile UI components with native look and feel"
+        }
+      ]
+    },
+    {
+      "name": "Onsen UI",
+      "slug": "onsen-ui",
+      "description": "Mobile UI framework with native-looking components for hybrid and progressive web apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "OnsenUI",
+        "Onsen"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "Onsen UI uses HTML"
+        },
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Onsen UI uses CSS"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Onsen UI uses JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "framework7",
+          "relationship_type": "similar",
+          "notes": "Both provide mobile UI components with native look and feel"
+        },
+        {
+          "alternative_slug": "ionic",
+          "relationship_type": "similar",
+          "notes": "Both are mobile UI frameworks using web technologies"
+        }
+      ]
+    },
+    {
+      "name": "Riverpod",
+      "slug": "riverpod",
+      "description": "Reactive state management library for Flutter, successor to Provider",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Flutter Riverpod"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "required",
+          "notes": "Riverpod is a Flutter state management library"
+        },
+        {
+          "prerequisite_slug": "dart",
+          "prerequisite_level": "required",
+          "notes": "Dart is required for Flutter development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "provider-flutter",
+          "relationship_type": "related",
+          "notes": "Provider is the predecessor to Riverpod with similar concepts"
+        },
+        {
+          "alternative_slug": "bloc-flutter",
+          "relationship_type": "similar",
+          "notes": "Both are Flutter state management solutions with different patterns"
+        },
+        {
+          "alternative_slug": "getx-flutter",
+          "relationship_type": "similar",
+          "notes": "Both manage state in Flutter apps with different approaches"
+        }
+      ]
+    },
+    {
+      "name": "Provider",
+      "slug": "provider-flutter",
+      "description": "Wrapper around InheritedWidget for Flutter state management",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Flutter Provider",
+        "Provider Package"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "required",
+          "notes": "Provider is a Flutter state management library"
+        },
+        {
+          "prerequisite_slug": "dart",
+          "prerequisite_level": "required",
+          "notes": "Dart is required for Flutter development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "riverpod",
+          "relationship_type": "replaces",
+          "notes": "Riverpod is the improved successor to Provider"
+        },
+        {
+          "alternative_slug": "bloc-flutter",
+          "relationship_type": "similar",
+          "notes": "Both are Flutter state management solutions"
+        }
+      ]
+    },
+    {
+      "name": "Bloc",
+      "slug": "bloc-flutter",
+      "description": "Business Logic Component pattern for Flutter using streams and reactive programming",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Flutter Bloc",
+        "BLoC Pattern",
+        "flutter_bloc"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "required",
+          "notes": "Bloc is a Flutter state management library"
+        },
+        {
+          "prerequisite_slug": "dart",
+          "prerequisite_level": "required",
+          "notes": "Dart is required for Flutter development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "riverpod",
+          "relationship_type": "similar",
+          "notes": "Both are Flutter state management solutions with different patterns"
+        },
+        {
+          "alternative_slug": "provider-flutter",
+          "relationship_type": "similar",
+          "notes": "Both manage state in Flutter apps with different complexity levels"
+        }
+      ]
+    },
+    {
+      "name": "GetX",
+      "slug": "getx-flutter",
+      "description": "Powerful and lightweight Flutter framework for state management, routing, and dependency injection",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "GetX",
+        "Get",
+        "Flutter GetX"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "required",
+          "notes": "GetX is a Flutter framework"
+        },
+        {
+          "prerequisite_slug": "dart",
+          "prerequisite_level": "required",
+          "notes": "Dart is required for Flutter development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "riverpod",
+          "relationship_type": "similar",
+          "notes": "Both manage state in Flutter apps with different approaches"
+        },
+        {
+          "alternative_slug": "bloc-flutter",
+          "relationship_type": "similar",
+          "notes": "Both are Flutter state management solutions"
+        }
+      ]
+    },
+    {
+      "name": "React Navigation",
+      "slug": "react-navigation",
+      "description": "Routing and navigation library for React Native applications",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "React Navigation Library"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "required",
+          "notes": "React Navigation is built for React Native"
+        },
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "React knowledge required for React Navigation"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "expo-router",
+          "relationship_type": "similar",
+          "notes": "Both provide navigation for React Native. Expo Router uses file-based routing, React Navigation uses code-based routing."
+        }
+      ]
+    },
+    {
+      "name": "Expo Router",
+      "slug": "expo-router",
+      "description": "File-based routing library for React Native and Expo apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "ExpoRouter"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "expo",
+          "prerequisite_level": "required",
+          "notes": "Expo Router is built for Expo/React Native apps"
+        },
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "required",
+          "notes": "React Native knowledge required"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react-navigation",
+          "relationship_type": "similar",
+          "notes": "Both provide navigation for React Native. Expo Router uses file-based routing, React Navigation uses code-based routing."
+        }
+      ]
+    },
+    {
+      "name": "Gradle",
+      "slug": "gradle",
+      "description": "Build automation tool used for Android app development",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Gradle Build Tool",
+        "Android Gradle"
+      ],
+      "icon": "logos:gradle",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kotlin",
+          "prerequisite_level": "recommended",
+          "notes": "Gradle is commonly used with Kotlin for Android"
+        },
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "optional",
+          "notes": "Gradle can be used with Java for Android"
+        }
+      ]
+    },
+    {
+      "name": "Carthage",
+      "slug": "carthage",
+      "description": "Decentralized dependency manager for Cocoa applications",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Carthage Package Manager"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "recommended",
+          "notes": "Carthage is commonly used in Swift projects"
+        },
+        {
+          "prerequisite_slug": "xcode",
+          "prerequisite_level": "required",
+          "notes": "Carthage requires Xcode for iOS development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cocoapods",
+          "relationship_type": "similar",
+          "notes": "Both manage iOS dependencies. CocoaPods uses central repo, Carthage is decentralized."
+        },
+        {
+          "alternative_slug": "swift-package-manager",
+          "relationship_type": "similar",
+          "notes": "Both manage iOS dependencies. SPM is Apple's official solution."
+        }
+      ]
+    },
+    {
+      "name": "Maestro",
+      "slug": "maestro",
+      "description": "Modern mobile UI testing framework with simple YAML-based test definitions",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Maestro Mobile Testing"
+      ],
+      "icon": "logos:maestro",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "optional",
+          "notes": "Can be used to test React Native apps"
+        },
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "optional",
+          "notes": "Can be used to test Flutter apps"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "appium",
+          "relationship_type": "similar",
+          "notes": "Both are mobile UI testing frameworks. Maestro uses YAML, Appium uses code."
+        },
+        {
+          "alternative_slug": "detox",
+          "relationship_type": "similar",
+          "notes": "Both are mobile testing frameworks. Maestro is cross-platform, Detox is React Native specific."
+        }
+      ]
+    },
+    {
+      "name": "XCUITest",
+      "slug": "xcuitest",
+      "description": "Apple's UI testing framework for iOS applications integrated into Xcode",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "XCUITest Framework",
+        "XCUI Test"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swift",
+          "prerequisite_level": "required",
+          "notes": "XCUITest tests are written in Swift"
+        },
+        {
+          "prerequisite_slug": "xcode",
+          "prerequisite_level": "required",
+          "notes": "XCUITest is integrated into Xcode"
+        },
+        {
+          "prerequisite_slug": "xctest",
+          "prerequisite_level": "recommended",
+          "notes": "XCUITest extends XCTest for UI testing"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "appium",
+          "relationship_type": "similar",
+          "notes": "Both test iOS apps. XCUITest is Apple's native solution, Appium is cross-platform."
+        }
+      ]
+    },
+    {
+      "name": "Bitrise",
+      "slug": "bitrise",
+      "description": "Mobile-first CI/CD platform for automating iOS and Android builds and deployments",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Bitrise CI",
+        "Bitrise.io"
+      ],
+      "icon": "logos:bitrise-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "Bitrise integrates with Git repositories"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "codemagic",
+          "relationship_type": "similar",
+          "notes": "Both are mobile-focused CI/CD platforms"
+        },
+        {
+          "alternative_slug": "app-center",
+          "relationship_type": "similar",
+          "notes": "Both provide mobile CI/CD and distribution"
+        }
+      ]
+    },
+    {
+      "name": "Codemagic",
+      "slug": "codemagic",
+      "description": "CI/CD platform specialized for Flutter and mobile app development",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Codemagic CI/CD"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "Codemagic integrates with Git repositories"
+        },
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "optional",
+          "notes": "Codemagic has first-class Flutter support"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "bitrise",
+          "relationship_type": "similar",
+          "notes": "Both are mobile-focused CI/CD platforms"
+        },
+        {
+          "alternative_slug": "app-center",
+          "relationship_type": "similar",
+          "notes": "Both provide mobile CI/CD and distribution"
+        }
+      ]
+    },
+    {
+      "name": "App Center",
+      "slug": "app-center",
+      "description": "Microsoft's platform for building, testing, distributing, and monitoring mobile apps",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Visual Studio App Center",
+        "Microsoft App Center"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "App Center integrates with Git repositories"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "bitrise",
+          "relationship_type": "similar",
+          "notes": "Both provide mobile CI/CD and distribution"
+        },
+        {
+          "alternative_slug": "codemagic",
+          "relationship_type": "similar",
+          "notes": "Both are mobile-focused CI/CD platforms"
+        }
+      ]
+    },
+    {
+      "name": "AWS Amplify",
+      "slug": "aws-amplify",
+      "description": "AWS service for building and deploying full-stack mobile and web applications",
+      "category_slug": "mobile-development",
+      "synonyms": [
+        "Amplify",
+        "Amazon Amplify"
+      ],
+      "icon": "logos:aws-amplify",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "recommended",
+          "notes": "Amplify SDKs are available for JavaScript/TypeScript"
+        },
+        {
+          "prerequisite_slug": "react-native",
+          "prerequisite_level": "optional",
+          "notes": "Amplify has excellent React Native support"
+        },
+        {
+          "prerequisite_slug": "flutter",
+          "prerequisite_level": "optional",
+          "notes": "Amplify provides Flutter SDK"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "firebase",
+          "relationship_type": "similar",
+          "notes": "Both are Backend-as-a-Service platforms. Firebase is Google's offering, Amplify is AWS."
+        },
+        {
+          "alternative_slug": "supabase",
+          "relationship_type": "similar",
+          "notes": "Both are Backend-as-a-Service platforms with similar features"
+        }
+      ]
+    }
+  ]
 }

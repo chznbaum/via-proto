@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T04:53:24.896Z
-**Total Competencies:** 1155
+**Generated:** 2025-11-22T14:04:42.367Z
+**Total Competencies:** 1199
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -29,7 +29,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [home-lifestyle](#home-lifestyle) (50)
 - [languages](#languages) (169)
 - [linguistics](#linguistics) (15)
-- [mobile-development](#mobile-development) (4)
+- [mobile-development](#mobile-development) (48)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
 - [photography-video](#photography-video) (3)
@@ -4930,6 +4930,137 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## mobile-development
 
+### .NET MAUI
+- **Slug:** `dotnet-maui`
+- **Icon:** `logos:dotnet`
+- **Synonyms:** MAUI, Microsoft MAUI, .NET Multi-platform App UI
+- **Prerequisites:**
+  - `csharp` (required) - .NET MAUI uses C# for development
+- **Alternatives:**
+  - `xamarin` (related)
+  - `flutter` (similar)
+
+### Android Studio
+- **Slug:** `android-studio`
+- **Icon:** `devicon:androidstudio`
+- **Synonyms:** AndroidStudio
+- **Prerequisites:**
+  - `kotlin` (recommended) - Kotlin is the recommended language for Android development
+
+### Android Views
+- **Slug:** `android-views`
+- **Icon:** `logos:android-icon`
+- **Synonyms:** Android XML Layouts, Android View System
+- **Prerequisites:**
+  - `kotlin` (recommended) - Modern Android development typically uses Kotlin
+  - `java` (optional) - Legacy Android apps use Java, but Kotlin is now preferred
+- **Alternatives:**
+  - `jetpack-compose` (replaces)
+
+### App Center
+- **Slug:** `app-center`
+- **Synonyms:** Visual Studio App Center, Microsoft App Center
+- **Prerequisites:**
+  - `git` (required) - App Center integrates with Git repositories
+- **Alternatives:**
+  - `bitrise` (similar)
+  - `codemagic` (similar)
+
+### App Store Connect
+- **Slug:** `app-store-connect`
+- **Icon:** `logos:apple`
+- **Synonyms:** AppStore Connect, iTunes Connect
+- **Prerequisites:**
+  - `swift` (recommended) - Needed for building iOS apps to submit
+
+### Appium
+- **Slug:** `appium`
+- **Synonyms:** Appium Framework
+- **Prerequisites:**
+  - `swift` (optional) - Helpful for testing iOS apps
+  - `kotlin` (optional) - Helpful for testing Android apps
+
+### AWS Amplify
+- **Slug:** `aws-amplify`
+- **Icon:** `logos:aws-amplify`
+- **Synonyms:** Amplify, Amazon Amplify
+- **Prerequisites:**
+  - `javascript` (recommended) - Amplify SDKs are available for JavaScript/TypeScript
+  - `react-native` (optional) - Amplify has excellent React Native support
+  - `flutter` (optional) - Amplify provides Flutter SDK
+- **Alternatives:**
+  - `firebase` (similar)
+  - `supabase` (similar)
+
+### Bitrise
+- **Slug:** `bitrise`
+- **Icon:** `logos:bitrise-icon`
+- **Synonyms:** Bitrise CI, Bitrise.io
+- **Prerequisites:**
+  - `git` (required) - Bitrise integrates with Git repositories
+- **Alternatives:**
+  - `codemagic` (similar)
+  - `app-center` (similar)
+
+### Bloc
+- **Slug:** `bloc-flutter`
+- **Synonyms:** Flutter Bloc, BLoC Pattern, flutter_bloc
+- **Prerequisites:**
+  - `flutter` (required) - Bloc is a Flutter state management library
+  - `dart` (required) - Dart is required for Flutter development
+- **Alternatives:**
+  - `riverpod` (similar)
+  - `provider-flutter` (similar)
+
+### Capacitor
+- **Slug:** `capacitor`
+- **Icon:** `logos:ionic-icon`
+- **Synonyms:** CapacitorJS, Ionic Capacitor
+- **Prerequisites:**
+  - `javascript` (required) - JavaScript knowledge needed to use Capacitor APIs
+- **Alternatives:**
+  - `ionic` (similar)
+
+### Carthage
+- **Slug:** `carthage`
+- **Synonyms:** Carthage Package Manager
+- **Prerequisites:**
+  - `swift` (recommended) - Carthage is commonly used in Swift projects
+  - `xcode` (required) - Carthage requires Xcode for iOS development
+- **Alternatives:**
+  - `cocoapods` (similar)
+  - `swift-package-manager` (similar)
+
+### CocoaPods
+- **Slug:** `cocoapods`
+- **Icon:** `logos:cocoapods`
+- **Synonyms:** Cocoa Pods, Pods
+- **Prerequisites:**
+  - `swift` (recommended) - CocoaPods is commonly used in Swift projects
+- **Alternatives:**
+  - `swift-package-manager` (similar)
+
+### Codemagic
+- **Slug:** `codemagic`
+- **Synonyms:** Codemagic CI/CD
+- **Prerequisites:**
+  - `git` (required) - Codemagic integrates with Git repositories
+  - `flutter` (optional) - Codemagic has first-class Flutter support
+- **Alternatives:**
+  - `bitrise` (similar)
+  - `app-center` (similar)
+
+### Cordova
+- **Slug:** `cordova`
+- **Icon:** `logos:cordova`
+- **Synonyms:** Apache Cordova, PhoneGap
+- **Prerequisites:**
+  - `html` (required) - Cordova apps use HTML for structure
+  - `css` (required) - Cordova apps use CSS for styling
+  - `javascript` (required) - Cordova apps use JavaScript for logic
+- **Alternatives:**
+  - `capacitor` (replaces)
+
 ### Dart
 - **Slug:** `dart`
 - **Icon:** `logos:dart`
@@ -4937,6 +5068,119 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `javascript` (similar)
   - `kotlin` (similar)
+
+### Detox
+- **Slug:** `detox`
+- **Icon:** `devicon:react`
+- **Synonyms:** Detox Testing
+- **Prerequisites:**
+  - `react-native` (required) - Detox is specifically for React Native apps
+
+### Electron
+- **Slug:** `electron`
+- **Icon:** `logos:electron`
+- **Synonyms:** ElectronJS, Electron.js
+- **Prerequisites:**
+  - `javascript` (required) - Electron apps are built with JavaScript/TypeScript
+  - `nodejs` (required) - Electron uses Node.js for backend functionality
+  - `html` (required) - HTML is used for the UI structure
+  - `css` (required) - CSS is used for styling
+- **Alternatives:**
+  - `tauri` (similar)
+
+### Expo
+- **Slug:** `expo`
+- **Icon:** `logos:expo-icon`
+- **Synonyms:** Expo SDK, Expo Go
+- **Prerequisites:**
+  - `react-native` (required) - Expo is built on top of React Native
+- **Alternatives:**
+  - `react-native` (similar)
+
+### Expo Router
+- **Slug:** `expo-router`
+- **Synonyms:** ExpoRouter
+- **Prerequisites:**
+  - `expo` (required) - Expo Router is built for Expo/React Native apps
+  - `react-native` (required) - React Native knowledge required
+- **Alternatives:**
+  - `react-navigation` (similar)
+
+### Fastlane
+- **Slug:** `fastlane`
+- **Icon:** `logos:fastlane`
+- **Synonyms:** Fastlane.tools
+- **Prerequisites:**
+  - `swift` (optional) - Helpful for iOS deployments
+  - `kotlin` (optional) - Helpful for Android deployments
+
+### Flutter
+- **Slug:** `flutter`
+- **Icon:** `logos:flutter`
+- **Synonyms:** Flutter SDK, Flutter Framework
+- **Prerequisites:**
+  - `dart` (required) - Flutter uses Dart as its primary language
+- **Alternatives:**
+  - `react-native` (similar)
+  - `dotnet-maui` (similar)
+
+### Framework7
+- **Slug:** `framework7`
+- **Icon:** `logos:framework7-icon`
+- **Synonyms:** F7, Framework 7
+- **Prerequisites:**
+  - `html` (required) - Framework7 uses HTML for structure
+  - `css` (required) - Framework7 uses CSS for styling
+  - `javascript` (required) - Framework7 uses JavaScript for interactivity
+- **Alternatives:**
+  - `ionic` (similar)
+  - `onsen-ui` (similar)
+
+### GetX
+- **Slug:** `getx-flutter`
+- **Synonyms:** GetX, Get, Flutter GetX
+- **Prerequisites:**
+  - `flutter` (required) - GetX is a Flutter framework
+  - `dart` (required) - Dart is required for Flutter development
+- **Alternatives:**
+  - `riverpod` (similar)
+  - `bloc-flutter` (similar)
+
+### Google Play Console
+- **Slug:** `google-play-console`
+- **Icon:** `logos:google-play-icon`
+- **Synonyms:** Play Console, Google Play Developer Console
+- **Prerequisites:**
+  - `kotlin` (recommended) - Needed for building Android apps to submit
+
+### Gradle
+- **Slug:** `gradle`
+- **Icon:** `logos:gradle`
+- **Synonyms:** Gradle Build Tool, Android Gradle
+- **Prerequisites:**
+  - `kotlin` (recommended) - Gradle is commonly used with Kotlin for Android
+  - `java` (optional) - Gradle can be used with Java for Android
+
+### Ionic
+- **Slug:** `ionic`
+- **Icon:** `logos:ionic-icon`
+- **Synonyms:** Ionic Framework
+- **Prerequisites:**
+  - `html` (required) - Ionic uses HTML for UI structure
+  - `css` (required) - Ionic uses CSS for styling
+  - `javascript` (required) - JavaScript fundamentals required for Ionic development
+- **Alternatives:**
+  - `react-native` (similar)
+  - `capacitor` (similar)
+
+### Jetpack Compose
+- **Slug:** `jetpack-compose`
+- **Icon:** `devicon:jetpackcompose`
+- **Synonyms:** Compose, Android Compose
+- **Prerequisites:**
+  - `kotlin` (required) - Jetpack Compose uses Kotlin
+- **Alternatives:**
+  - `android-views` (related)
 
 ### Kotlin
 - **Slug:** `kotlin`
@@ -4947,6 +5191,38 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `java` (similar)
 
+### Kotlin Multiplatform
+- **Slug:** `kotlin-multiplatform`
+- **Icon:** `logos:kotlin`
+- **Synonyms:** KMP, KMM, Kotlin Multiplatform Mobile
+- **Prerequisites:**
+  - `kotlin` (required) - Kotlin Multiplatform is built on Kotlin
+- **Alternatives:**
+  - `flutter` (similar)
+  - `react-native` (similar)
+
+### Maestro
+- **Slug:** `maestro`
+- **Icon:** `logos:maestro`
+- **Synonyms:** Maestro Mobile Testing
+- **Prerequisites:**
+  - `react-native` (optional) - Can be used to test React Native apps
+  - `flutter` (optional) - Can be used to test Flutter apps
+- **Alternatives:**
+  - `appium` (similar)
+  - `detox` (similar)
+
+### NativeScript
+- **Slug:** `nativescript`
+- **Icon:** `logos:nativescript`
+- **Synonyms:** NativeScript Framework
+- **Prerequisites:**
+  - `javascript` (required) - JavaScript or TypeScript is used for NativeScript development
+  - `typescript` (recommended) - TypeScript is commonly used with NativeScript
+- **Alternatives:**
+  - `react-native` (similar)
+  - `flutter` (similar)
+
 ### Objective-C
 - **Slug:** `objective-c`
 - **Icon:** `devicon:objectivec`
@@ -4954,12 +5230,153 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `c` (required) - Objective-C is built on top of C
 
+### Onsen UI
+- **Slug:** `onsen-ui`
+- **Synonyms:** OnsenUI, Onsen
+- **Prerequisites:**
+  - `html` (required) - Onsen UI uses HTML
+  - `css` (required) - Onsen UI uses CSS
+  - `javascript` (required) - Onsen UI uses JavaScript
+- **Alternatives:**
+  - `framework7` (similar)
+  - `ionic` (similar)
+
+### Provider
+- **Slug:** `provider-flutter`
+- **Synonyms:** Flutter Provider, Provider Package
+- **Prerequisites:**
+  - `flutter` (required) - Provider is a Flutter state management library
+  - `dart` (required) - Dart is required for Flutter development
+- **Alternatives:**
+  - `riverpod` (replaces)
+  - `bloc-flutter` (similar)
+
+### Quasar Framework
+- **Slug:** `quasar-framework`
+- **Icon:** `devicon:quasar`
+- **Synonyms:** Quasar, QuasarJS
+- **Prerequisites:**
+  - `vuejs` (required) - Quasar is built on Vue.js
+- **Alternatives:**
+  - `ionic` (similar)
+
+### React Native
+- **Slug:** `react-native`
+- **Icon:** `devicon:reactnative`
+- **Synonyms:** ReactNative, RN
+- **Prerequisites:**
+  - `react` (required) - React Native is built on React, so React knowledge is essential
+  - `javascript` (required) - JavaScript fundamentals required for React Native development
+- **Alternatives:**
+  - `flutter` (similar)
+  - `ionic` (similar)
+
+### React Navigation
+- **Slug:** `react-navigation`
+- **Synonyms:** React Navigation Library
+- **Prerequisites:**
+  - `react-native` (required) - React Navigation is built for React Native
+  - `react` (required) - React knowledge required for React Navigation
+- **Alternatives:**
+  - `expo-router` (similar)
+
+### Riverpod
+- **Slug:** `riverpod`
+- **Synonyms:** Flutter Riverpod
+- **Prerequisites:**
+  - `flutter` (required) - Riverpod is a Flutter state management library
+  - `dart` (required) - Dart is required for Flutter development
+- **Alternatives:**
+  - `provider-flutter` (related)
+  - `bloc-flutter` (similar)
+  - `getx-flutter` (similar)
+
 ### Swift
 - **Slug:** `swift`
 - **Icon:** `logos:swift`
 - **Synonyms:** Swift Language, Swift Programming, Apple Swift
 - **Alternatives:**
   - `objective-c` (replaces)
+
+### Swift Package Manager
+- **Slug:** `swift-package-manager`
+- **Icon:** `logos:swift`
+- **Synonyms:** SPM, Swift PM
+- **Prerequisites:**
+  - `swift` (required) - SPM is built for Swift projects
+- **Alternatives:**
+  - `cocoapods` (similar)
+
+### SwiftUI
+- **Slug:** `swiftui`
+- **Icon:** `logos:swift`
+- **Synonyms:** Swift UI
+- **Prerequisites:**
+  - `swift` (required) - SwiftUI is built on Swift
+- **Alternatives:**
+  - `uikit` (related)
+
+### Tauri
+- **Slug:** `tauri`
+- **Icon:** `logos:tauri`
+- **Synonyms:** Tauri 2.0, TauriApp
+- **Prerequisites:**
+  - `rust` (required) - Tauri uses Rust for the backend/core logic
+  - `javascript` (required) - Frontend is built with web technologies
+- **Alternatives:**
+  - `electron` (similar)
+
+### TestFlight
+- **Slug:** `testflight`
+- **Icon:** `logos:apple`
+- **Synonyms:** Test Flight, Apple TestFlight
+- **Prerequisites:**
+  - `xcode` (required) - TestFlight is accessed through Xcode and App Store Connect
+
+### UIKit
+- **Slug:** `uikit`
+- **Icon:** `logos:swift`
+- **Synonyms:** UI Kit, iOS UIKit
+- **Prerequisites:**
+  - `swift` (recommended) - Modern UIKit development typically uses Swift
+  - `objective-c` (optional) - UIKit was originally designed for Objective-C but can be used with Swift
+- **Alternatives:**
+  - `swiftui` (replaces)
+
+### Xamarin
+- **Slug:** `xamarin`
+- **Icon:** `logos:xamarin`
+- **Synonyms:** Xamarin.Forms, Xamarin.iOS, Xamarin.Android
+- **Prerequisites:**
+  - `csharp` (required) - Xamarin uses C# for development
+- **Alternatives:**
+  - `dotnet-maui` (replaces)
+  - `flutter` (similar)
+
+### Xcode
+- **Slug:** `xcode`
+- **Icon:** `logos:xcode`
+- **Synonyms:** XCode, Apple Xcode
+- **Prerequisites:**
+  - `swift` (recommended) - Swift is the primary language used in Xcode for Apple platform development
+
+### XCTest
+- **Slug:** `xctest`
+- **Icon:** `logos:xcode`
+- **Synonyms:** XCTest Framework
+- **Prerequisites:**
+  - `swift` (required) - XCTest is used with Swift for testing iOS apps
+  - `xcode` (required) - XCTest is integrated into Xcode
+
+### XCUITest
+- **Slug:** `xcuitest`
+- **Synonyms:** XCUITest Framework, XCUI Test
+- **Prerequisites:**
+  - `swift` (required) - XCUITest tests are written in Swift
+  - `xcode` (required) - XCUITest is integrated into Xcode
+  - `xctest` (recommended) - XCUITest extends XCTest for UI testing
+- **Alternatives:**
+  - `appium` (similar)
 
 ---
 
