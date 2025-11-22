@@ -280,24 +280,6 @@
       ]
     },
     {
-      "name": "R",
-      "slug": "r",
-      "description": "Programming language and environment for statistical computing and graphics",
-      "category_slug": "data-science",
-      "synonyms": [
-        "R Programming",
-        "R Language",
-        "R Statistics"
-      ],
-      "alternatives": [
-        {
-          "alternative_slug": "python",
-          "relationship_type": "similar",
-          "notes": "Python is another popular language for data science"
-        }
-      ]
-    },
-    {
       "name": "JASP",
       "slug": "jasp",
       "description": "Free and open-source statistical software with graphical interface",
@@ -662,74 +644,6 @@
           "prerequisite_slug": "python",
           "prerequisite_level": "recommended",
           "notes": "DVC is commonly used in Python ML projects"
-        }
-      ]
-    },
-    {
-      "name": "Fortran",
-      "slug": "fortran",
-      "description": "Programming language for numerical and scientific computing",
-      "category_slug": "data-science",
-      "synonyms": [
-        "Fortran 90",
-        "Fortran 95",
-        "Fortran Programming"
-      ],
-      "alternatives": [
-        {
-          "alternative_slug": "python",
-          "relationship_type": "similar",
-          "notes": "Python with NumPy is a modern alternative for scientific computing"
-        },
-        {
-          "alternative_slug": "julia",
-          "relationship_type": "similar",
-          "notes": "Julia is a modern language for scientific computing"
-        }
-      ]
-    },
-    {
-      "name": "Julia",
-      "slug": "julia",
-      "description": "High-performance programming language for technical and scientific computing",
-      "category_slug": "data-science",
-      "synonyms": [
-        "Julia Language",
-        "Julia Programming"
-      ],
-      "alternatives": [
-        {
-          "alternative_slug": "python",
-          "relationship_type": "similar",
-          "notes": "Python is another popular language for data science"
-        },
-        {
-          "alternative_slug": "r",
-          "relationship_type": "similar",
-          "notes": "R is another language for statistical computing"
-        }
-      ]
-    },
-    {
-      "name": "MATLAB",
-      "slug": "matlab",
-      "description": "Programming platform for numerical computing and data analysis",
-      "category_slug": "data-science",
-      "synonyms": [
-        "MATLAB Software",
-        "MATLAB Programming"
-      ],
-      "icon": "devicon:matlab",
-      "alternatives": [
-        {
-          "alternative_slug": "python",
-          "relationship_type": "similar",
-          "notes": "Python with NumPy/SciPy is an open-source alternative"
-        },
-        {
-          "alternative_slug": "octave",
-          "relationship_type": "similar",
-          "notes": "GNU Octave is an open-source alternative to MATLAB"
         }
       ]
     },

@@ -480,15 +480,6 @@
       "alternatives": []
     },
     {
-      "name": "Sound Design",
-      "slug": "sound-design-music",
-      "description": "Creating and manipulating audio for music, games, and multimedia",
-      "category_slug": "music",
-      "synonyms": ["Audio Sound Design"],
-      "prerequisites": [],
-      "alternatives": []
-    },
-    {
       "name": "MIDI Programming",
       "slug": "midi-programming",
       "description": "Creating and editing music using MIDI protocol and virtual instruments",

@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T03:02:40.908Z
-**Total Competencies:** 982
+**Generated:** 2025-11-22T03:36:10.741Z
+**Total Competencies:** 974
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -20,24 +20,24 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
 - [data-engineering](#data-engineering) (8)
-- [data-science](#data-science) (99)
+- [data-science](#data-science) (95)
 - [databases](#databases) (55)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (3)
-- [graphic-design](#graphic-design) (18)
+- [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [languages](#languages) (3)
 - [mobile-development](#mobile-development) (4)
 - [motion-3d](#motion-3d) (16)
-- [music](#music) (59)
+- [music](#music) (58)
 - [photography-video](#photography-video) (3)
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
 - [systems-programming](#systems-programming) (17)
 - [theater](#theater) (20)
 - [uiux-design](#uiux-design) (19)
-- [visual-arts](#visual-arts) (51)
+- [visual-arts](#visual-arts) (50)
 - [web-development](#web-development) (1)
 - [writing](#writing) (52)
 
@@ -2393,13 +2393,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `c` (similar)
   - `julia` (similar)
 
-### Fortran
-- **Slug:** `fortran`
-- **Synonyms:** Fortran 90, Fortran 95, Fortran Programming
-- **Alternatives:**
-  - `python` (similar)
-  - `julia` (similar)
-
 ### Google Gemini API
 - **Slug:** `google-gemini-api`
 - **Icon:** `logos:google-gemini`
@@ -2454,13 +2447,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `python` (similar)
   - `r` (similar)
   - `matlab` (similar)
-
-### Julia
-- **Slug:** `julia`
-- **Synonyms:** Julia Language, Julia Programming
-- **Alternatives:**
-  - `python` (similar)
-  - `r` (similar)
 
 ### Jupyter
 - **Slug:** `jupyter`
@@ -2550,14 +2536,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `python` (similar)
   - `julia` (similar)
-
-### MATLAB
-- **Slug:** `matlab`
-- **Icon:** `devicon:matlab`
-- **Synonyms:** MATLAB Software, MATLAB Programming
-- **Alternatives:**
-  - `python` (similar)
-  - `octave` (similar)
 
 ### Matplotlib
 - **Slug:** `matplotlib`
@@ -2703,12 +2681,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `r`
 - **Icon:** `logos:r-lang`
 - **Synonyms:** R Language, R Programming, R Statistical Computing
-- **Alternatives:**
-  - `python` (similar)
-
-### R
-- **Slug:** `r`
-- **Synonyms:** R Programming, R Language, R Statistics
 - **Alternatives:**
   - `python` (similar)
 
@@ -3926,22 +3898,11 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `adobe-illustrator` (similar)
 
-### Krita
-- **Slug:** `krita`
-- **Alternatives:**
-  - `adobe-photoshop` (similar)
-  - `procreate` (similar)
-
 ### Paint Tool SAI
 - **Slug:** `paint-tool-sai`
 - **Synonyms:** SAI, PaintTool SAI
 - **Alternatives:**
   - `clip-studio-paint` (similar)
-
-### Procreate
-- **Slug:** `procreate`
-- **Alternatives:**
-  - `adobe-photoshop` (similar)
 
 ---
 
@@ -4504,10 +4465,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Singing
 - **Slug:** `singing`
 - **Synonyms:** Vocals, Voice
-
-### Sound Design
-- **Slug:** `sound-design-music`
-- **Synonyms:** Audio Sound Design
 
 ### Sound Engineering
 - **Slug:** `sound-engineering`
@@ -5541,10 +5498,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Oil Painting
 - **Slug:** `oil-painting`
 - **Synonyms:** Oil Paint
-
-### Paint Tool SAI
-- **Slug:** `paint-tool-sai`
-- **Synonyms:** SAI, PaintTool SAI
 
 ### Painting
 - **Slug:** `painting`

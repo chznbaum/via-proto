@@ -466,21 +466,6 @@
       ]
     },
     {
-      "name": "Procreate",
-      "slug": "procreate",
-      "description": "Digital painting and illustration app for iPad with intuitive brush engine and layer system",
-      "category_slug": "graphic-design",
-      "synonyms": [],
-      "prerequisites": [],
-      "alternatives": [
-        {
-          "alternative_slug": "adobe-photoshop",
-          "relationship_type": "similar",
-          "notes": "Photoshop offers more advanced features for desktop"
-        }
-      ]
-    },
-    {
       "name": "CorelDRAW",
       "slug": "coreldraw",
       "description": "Professional vector graphics editor for illustration, layout, and design",
@@ -497,26 +482,6 @@
           "alternative_slug": "affinity-designer",
           "relationship_type": "similar",
           "notes": "Affinity Designer is another professional alternative"
-        }
-      ]
-    },
-    {
-      "name": "Krita",
-      "slug": "krita",
-      "description": "Free and open-source digital painting and illustration software for artists",
-      "category_slug": "graphic-design",
-      "synonyms": [],
-      "prerequisites": [],
-      "alternatives": [
-        {
-          "alternative_slug": "adobe-photoshop",
-          "relationship_type": "similar",
-          "notes": "Photoshop is the industry-standard for digital painting"
-        },
-        {
-          "alternative_slug": "procreate",
-          "relationship_type": "similar",
-          "notes": "Procreate is popular for iPad digital painting"
         }
       ]
     },

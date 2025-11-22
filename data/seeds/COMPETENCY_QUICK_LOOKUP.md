@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T03:02:40.906Z
-**Total Competencies:** 982
+**Generated:** 2025-11-22T03:36:10.738Z
+**Total Competencies:** 974
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -20,24 +20,24 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **cybersecurity** (27)
 - **dance** (42)
 - **data-engineering** (8)
-- **data-science** (99)
+- **data-science** (95)
 - **databases** (55)
 - **fiber-arts-crafts** (46)
 - **frontend-development** (46)
 - **game-development** (3)
-- **graphic-design** (18)
+- **graphic-design** (16)
 - **home-lifestyle** (50)
 - **languages** (3)
 - **mobile-development** (4)
 - **motion-3d** (16)
-- **music** (59)
+- **music** (58)
 - **photography-video** (3)
 - **programming** (48)
 - **recreation-hobbies** (39)
 - **systems-programming** (17)
 - **theater** (20)
 - **uiux-design** (19)
-- **visual-arts** (51)
+- **visual-arts** (50)
 - **web-development** (1)
 - **writing** (52)
 
@@ -398,7 +398,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `fontforge` - FontForge (graphic-design)
 - `food-smoking` - Smoking (home-lifestyle)
 - `fortran` - Fortran (data-science)
-- `fortran` - Fortran (data-science)
 - `foundry` - Foundry (blockchain-web3)
 - `foxtrot` - Foxtrot (dance)
 - `framer` - Framer (uiux-design)
@@ -517,7 +516,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `jotai` - Jotai (frontend-development)
 - `journalism` - Journalism (writing)
 - `julia` - Julia (data-science)
-- `julia` - Julia (data-science)
 - `jupyter` - Jupyter (data-science)
 - `jwt` - JWT (cybersecurity)
 - `k6` - k6 (cloud-devops)
@@ -536,7 +534,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `koa` - Koa (backend-development)
 - `kong` - Kong (cloud-devops)
 - `kotlin` - Kotlin (mobile-development)
-- `krita` - Krita (graphic-design)
 - `krita` - Krita (visual-arts)
 - `kserve` - KServe (data-science)
 - `kubernetes` - Kubernetes (cloud-devops)
@@ -583,7 +580,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `martial-arts` - Martial Arts (recreation-hobbies)
 - `marvel` - Marvel (uiux-design)
 - `material-ui` - Material UI (frontend-development)
-- `matlab` - MATLAB (data-science)
 - `matlab` - MATLAB (data-science)
 - `matplotlib` - Matplotlib (data-science)
 - `maya` - Maya (motion-3d)
@@ -692,7 +688,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `packer` - Packer (cloud-devops)
 - `pagerduty` - PagerDuty (cloud-devops)
 - `paint-tool-sai` - Paint Tool SAI (graphic-design)
-- `paint-tool-sai` - Paint Tool SAI (visual-arts)
 - `painting` - Painting (visual-arts)
 - `pandas` - Pandas (data-science)
 - `paper-crafts` - Paper Crafts (fiber-arts-crafts)
@@ -745,7 +740,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `printmaking` - Printmaking (visual-arts)
 - `prisma` - Prisma (databases)
 - `pro-tools` - Pro Tools (music)
-- `procreate` - Procreate (graphic-design)
 - `procreate` - Procreate (visual-arts)
 - `prolog` - Prolog (programming)
 - `prometheus` - Prometheus (cloud-devops)
@@ -767,7 +761,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `quicknode` - QuickNode (blockchain-web3)
 - `quickstep` - Quickstep (dance)
 - `quilting` - Quilting (fiber-arts-crafts)
-- `r` - R (data-science)
 - `r` - R (data-science)
 - `rabbitmq` - RabbitMQ (cloud-devops)
 - `racket` - Racket (programming)
@@ -869,7 +862,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `solidworks` - SolidWorks (architecture)
 - `sonarqube` - SonarQube (cybersecurity)
 - `sound-design` - Sound Design (theater)
-- `sound-design-music` - Sound Design (music)
 - `sound-engineering` - Sound Engineering (music)
 - `sourdough-baking` - Sourdough Baking (home-lifestyle)
 - `sous-vide` - Sous Vide (home-lifestyle)

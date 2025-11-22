@@ -80,15 +80,6 @@
       "alternatives": []
     },
     {
-      "name": "Paint Tool SAI",
-      "slug": "paint-tool-sai",
-      "description": "Lightweight digital painting software popular for manga and anime-style illustration",
-      "category_slug": "visual-arts",
-      "synonyms": ["SAI", "PaintTool SAI"],
-      "prerequisites": [],
-      "alternatives": []
-    },
-    {
       "name": "MediBang Paint",
       "slug": "medibang-paint",
       "description": "Free lightweight digital painting and comic creation software with cloud features",
