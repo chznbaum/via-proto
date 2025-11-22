@@ -65,6 +65,14 @@
         {
           "competency_slug": "javascript",
           "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
         }
       ]
     },
@@ -84,6 +92,14 @@
         },
         {
           "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]
@@ -105,6 +121,14 @@
         {
           "competency_slug": "javascript",
           "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
         }
       ]
     },
@@ -120,6 +144,14 @@
         },
         {
           "competency_slug": "typescript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]
@@ -141,6 +173,14 @@
         {
           "competency_slug": "typescript",
           "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
         }
       ]
     },
@@ -156,6 +196,14 @@
         },
         {
           "competency_slug": "typescript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]
@@ -173,6 +221,14 @@
         {
           "competency_slug": "typescript",
           "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
         }
       ]
     },
@@ -188,6 +244,14 @@
         },
         {
           "competency_slug": "typescript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]
@@ -205,10 +269,6 @@
         {
           "competency_slug": "typescript",
           "is_primary": false
-        },
-        {
-          "competency_slug": "javascript",
-          "is_primary": false
         }
       ]
     },
@@ -223,7 +283,15 @@
           "is_primary": true
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "nodejs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]
@@ -243,7 +311,11 @@
           "is_primary": false
         },
         {
-          "competency_slug": "javascript",
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
           "is_primary": false
         }
       ]

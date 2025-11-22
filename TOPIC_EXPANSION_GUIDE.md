@@ -195,6 +195,155 @@ data/seeds/topics/
 
 ---
 
+## Understanding Competency Mapping
+
+### Core Principle: Direct Exposure
+
+**Competencies listed in a topic represent what the learner will be directly exposed to during the learning path.**
+
+Think of it as: "What technologies/skills will I actively use and learn while working on this topic?"
+
+### Competencies vs Prerequisites
+
+**Important:** Prerequisites are a **competency-to-competency relationship**, not a topic-to-competency relationship.
+
+- **Topic Competencies**: Technologies you'll actively use while learning this topic
+- **Competency Prerequisites**: Knowledge required before learning a competency (defined in the competency itself)
+
+**Example:**
+- Topic: "Type-safe React applications with TypeScript"
+  - Competencies: `typescript` (primary), `react`, `html`, `css`
+  - Note: `javascript` is NOT listed as a competency
+  - Why? JavaScript is a prerequisite of TypeScript (defined at the competency level)
+  - The learner writes TypeScript code, not JavaScript directly
+
+### Mapping Guidelines
+
+#### 1. Specific Technologies Over Concepts
+
+Use specific tools/technologies rather than abstract concepts when both exist.
+
+✅ **Correct:**
+- Django topic includes `django-orm` (the specific ORM)
+
+❌ **Incorrect:**
+- Django topic includes `orm` (the abstract concept)
+
+**Rationale:** When learning an ORM, you learn a specific implementation (Django ORM, Sequelize, etc.), not the abstract concept in isolation.
+
+#### 2. Abstraction Boundaries
+
+Only include underlying technologies if the abstraction **requires** direct interaction with them.
+
+✅ **Include underlying tech when:**
+- Vue.js topics include `html` and `css` - you write HTML-like templates and CSS styles
+- Django topics include `html` and `css` - you create templates and stylesheets
+- React topics include `html` and `css` - you write JSX (HTML-like) and styles
+
+❌ **Don't include underlying tech when:**
+- TypeScript topics should NOT include `javascript` - you write TypeScript, which compiles to JavaScript
+- Ruby topics should NOT include `c` - Ruby is built on C, but you never write C code
+
+**Rationale:** If the abstraction completely hides the underlying technology, don't include it. If you're actively writing in that technology (even in an abstracted form), include it.
+
+#### 3. Framework Dependencies
+
+Include frameworks/languages when you're actively coding in them, even if they're not the primary focus.
+
+✅ **Correct:**
+- "Testing Vue.js applications with Jest"
+  - Competencies: `jest` (primary), `vuejs`, `javascript`
+  - You're writing Jest tests for Vue components in JavaScript
+
+✅ **Correct:**
+- "Building web applications with Python and Django"
+  - Competencies: `django` (primary), `python`, `django-orm`, `html`, `css`
+  - You're writing Python/Django code, using the ORM, creating templates
+
+❌ **Incorrect:**
+- "Advanced TypeScript patterns and generics"
+  - Competencies: `typescript` (primary), ~~`javascript`~~
+  - You're only writing TypeScript code (JavaScript is a prerequisite)
+
+### Common Patterns
+
+#### Web Frontend Frameworks
+
+Topics about Vue, React, Angular, etc. should include:
+- The framework itself (primary or supporting)
+- `javascript` or `typescript` (depending on which you're writing)
+- `html` (template syntax)
+- `css` (styling)
+
+```json
+{
+  "name": "Building reactive web applications with Vue.js",
+  "competencies": [
+    {"competency_slug": "vuejs", "is_primary": true},
+    {"competency_slug": "javascript", "is_primary": false},
+    {"competency_slug": "html", "is_primary": false},
+    {"competency_slug": "css", "is_primary": false}
+  ]
+}
+```
+
+#### TypeScript-Only Topics
+
+Topics where you write only TypeScript (not JavaScript) should NOT include JavaScript:
+
+```json
+{
+  "name": "Type-safe JavaScript development with TypeScript",
+  "competencies": [
+    {"competency_slug": "typescript", "is_primary": true}
+    // No javascript - it's a prerequisite of TypeScript
+  ]
+}
+```
+
+#### Full-stack Web Frameworks
+
+Backend frameworks that serve HTML should include web technologies:
+
+```json
+{
+  "name": "Building web applications with Python and Django",
+  "competencies": [
+    {"competency_slug": "django", "is_primary": true},
+    {"competency_slug": "python", "is_primary": false},
+    {"competency_slug": "django-orm", "is_primary": false},
+    {"competency_slug": "html", "is_primary": false},
+    {"competency_slug": "css", "is_primary": false}
+  ]
+}
+```
+
+#### Testing Topics
+
+Testing frameworks should include the technology being tested:
+
+```json
+{
+  "name": "Testing Vue.js applications with Jest",
+  "competencies": [
+    {"competency_slug": "jest", "is_primary": true},
+    {"competency_slug": "vuejs", "is_primary": false},
+    {"competency_slug": "javascript", "is_primary": false}
+  ]
+}
+```
+
+### Decision Framework
+
+When deciding whether to include a competency, ask:
+
+1. **Will the learner write code in this technology?** → Include it
+2. **Is this a prerequisite handled at the competency level?** → Don't include it
+3. **Does the primary technology completely hide this?** → Don't include it
+4. **Is there a specific tool/technology for this concept?** → Use the specific one
+
+---
+
 ## Topic Expansion Workflow
 
 ### 1. Choose Target Category
@@ -323,9 +472,12 @@ Current: 23 topics (0.3% of conservative target)
 - Usually 0-1 per topic
 
 **Supporting Competency** (is_primary: false):
-- Prerequisites or related skills
-- Context the user should know
+- Technologies you'll actively use alongside the primary skill
+- Skills you'll be directly exposed to during the learning path
+- Not the main focus, but still something you'll practice
 - Can have many per topic
+
+**Note:** Don't confuse supporting competencies with prerequisites. Prerequisites are defined at the competency level (e.g., JavaScript is a prerequisite of TypeScript), not in the topic's competency list.
 
 **Examples:**
 
@@ -428,9 +580,11 @@ Create new domain files as needed, following the naming pattern.
 3. **Batch similar work**: Expand all topics for related competencies together
 4. **Test as you go**: Reset database and verify topics appear correctly in app
 5. **Think user outcomes**: Focus on what users want to achieve, not just learn
-6. **Check prerequisites**: Review competency prerequisites to inform topic difficulty
-7. **Leverage alternatives**: Create similar topics for alternative technologies (React vs Vue vs Angular)
-8. **CRITICAL RULE**: Do not add "for travelers" or similar goal framing to topic titles. We will track goals separately—topics should indicate what users will learn, not _why_.
+6. **Map competencies correctly**: Include only technologies the learner will directly use (see "Understanding Competency Mapping" section)
+7. **Check prerequisites**: Review competency prerequisites to understand learning paths, but don't add prerequisites as topic competencies
+8. **Leverage alternatives**: Create similar topics for alternative technologies (React vs Vue vs Angular)
+9. **Use specific over generic**: Prefer specific technologies (django-orm) over concepts (orm)
+10. **CRITICAL RULE**: Do not add "for travelers" or similar goal framing to topic titles. We will track goals separately—topics should indicate what users will learn, not _why_.
 
 ---
 

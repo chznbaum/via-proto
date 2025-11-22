@@ -13,6 +13,14 @@
         {
           "competency_slug": "javascript",
           "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
         }
       ]
     },
@@ -85,10 +93,6 @@
         {
           "competency_slug": "typescript",
           "is_primary": true
-        },
-        {
-          "competency_slug": "javascript",
-          "is_primary": false
         }
       ]
     },
@@ -117,10 +121,6 @@
         {
           "competency_slug": "typescript",
           "is_primary": true
-        },
-        {
-          "competency_slug": "javascript",
-          "is_primary": false
         }
       ]
     }
