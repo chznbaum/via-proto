@@ -1,3 +1,754 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Tableau",
+      "slug": "tableau",
+      "description": "Business intelligence and data visualization platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Tableau Desktop",
+        "Tableau Server",
+        "Tableau Public"
+      ],
+      "icon": "logos:tableau-icon",
+      "alternatives": [
+        {
+          "alternative_slug": "power-bi",
+          "relationship_type": "similar",
+          "notes": "Power BI is Microsoft's BI platform"
+        },
+        {
+          "alternative_slug": "looker",
+          "relationship_type": "similar",
+          "notes": "Looker is another enterprise BI platform"
+        }
+      ]
+    },
+    {
+      "name": "Power BI",
+      "slug": "power-bi",
+      "description": "Microsoft's business analytics and visualization platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "PowerBI",
+        "Microsoft Power BI",
+        "Power BI Desktop"
+      ],
+      "icon": "logos:microsoft-power-bi",
+      "alternatives": [
+        {
+          "alternative_slug": "tableau",
+          "relationship_type": "similar",
+          "notes": "Tableau is another leading BI platform"
+        },
+        {
+          "alternative_slug": "looker",
+          "relationship_type": "similar",
+          "notes": "Looker is Google's BI platform"
+        }
+      ]
+    },
+    {
+      "name": "Looker",
+      "slug": "looker",
+      "description": "Google Cloud's business intelligence and data analytics platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Looker Studio",
+        "Google Looker",
+        "LookML"
+      ],
+      "icon": "logos:looker-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "recommended",
+          "notes": "SQL knowledge helps with LookML and data modeling"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tableau",
+          "relationship_type": "similar",
+          "notes": "Tableau is another enterprise BI platform"
+        },
+        {
+          "alternative_slug": "power-bi",
+          "relationship_type": "similar",
+          "notes": "Power BI is Microsoft's BI platform"
+        }
+      ]
+    },
+    {
+      "name": "Qlik",
+      "slug": "qlik",
+      "description": "Data analytics and business intelligence platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "QlikView",
+        "Qlik Sense",
+        "Qlik Analytics"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tableau",
+          "relationship_type": "similar",
+          "notes": "Tableau is another BI platform"
+        },
+        {
+          "alternative_slug": "power-bi",
+          "relationship_type": "similar",
+          "notes": "Power BI is another BI platform"
+        }
+      ]
+    },
+    {
+      "name": "Sisense",
+      "slug": "sisense",
+      "description": "Business intelligence and analytics platform for complex data",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Sisense Analytics",
+        "Sisense BI"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tableau",
+          "relationship_type": "similar",
+          "notes": "Tableau is another BI platform"
+        }
+      ]
+    },
+    {
+      "name": "Metabase",
+      "slug": "metabase",
+      "description": "Open-source business intelligence and analytics tool",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Metabase BI",
+        "Metabase Analytics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "recommended",
+          "notes": "SQL is useful for creating queries in Metabase"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apache-superset",
+          "relationship_type": "similar",
+          "notes": "Apache Superset is another open-source BI tool"
+        },
+        {
+          "alternative_slug": "redash",
+          "relationship_type": "similar",
+          "notes": "Redash is another open-source BI tool"
+        }
+      ]
+    },
+    {
+      "name": "Apache Superset",
+      "slug": "apache-superset",
+      "description": "Open-source modern data exploration and visualization platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Superset",
+        "Superset BI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "recommended",
+          "notes": "SQL knowledge is essential for Superset"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Python is used for Superset deployment and customization"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "metabase",
+          "relationship_type": "similar",
+          "notes": "Metabase is another open-source BI tool"
+        },
+        {
+          "alternative_slug": "redash",
+          "relationship_type": "similar",
+          "notes": "Redash is another open-source BI tool"
+        }
+      ]
+    },
+    {
+      "name": "Redash",
+      "slug": "redash",
+      "description": "Open-source tool for querying and visualizing data",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Redash BI",
+        "Redash Analytics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "required",
+          "notes": "Redash is built around SQL queries"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "metabase",
+          "relationship_type": "similar",
+          "notes": "Metabase is another open-source BI tool"
+        },
+        {
+          "alternative_slug": "apache-superset",
+          "relationship_type": "similar",
+          "notes": "Apache Superset is another open-source BI tool"
+        }
+      ]
+    },
+    {
+      "name": "SAS",
+      "slug": "sas",
+      "description": "Statistical analysis software suite for advanced analytics",
+      "category_slug": "data-science",
+      "synonyms": [
+        "SAS Analytics",
+        "SAS Software",
+        "SAS Studio"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "spss",
+          "relationship_type": "similar",
+          "notes": "SPSS is another statistical software package"
+        },
+        {
+          "alternative_slug": "r",
+          "relationship_type": "similar",
+          "notes": "R is an open-source alternative for statistical analysis"
+        }
+      ]
+    },
+    {
+      "name": "SPSS",
+      "slug": "spss",
+      "description": "IBM's statistical analysis software for data science and research",
+      "category_slug": "data-science",
+      "synonyms": [
+        "IBM SPSS",
+        "SPSS Statistics",
+        "SPSS Modeler"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sas",
+          "relationship_type": "similar",
+          "notes": "SAS is another statistical software package"
+        },
+        {
+          "alternative_slug": "r",
+          "relationship_type": "similar",
+          "notes": "R is an open-source alternative for statistical analysis"
+        }
+      ]
+    },
+    {
+      "name": "Stata",
+      "slug": "stata",
+      "description": "Statistical software for data science, economics, and research",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Stata Software",
+        "Stata Statistics"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sas",
+          "relationship_type": "similar",
+          "notes": "SAS is another statistical software package"
+        },
+        {
+          "alternative_slug": "r",
+          "relationship_type": "similar",
+          "notes": "R is an open-source alternative"
+        }
+      ]
+    },
+    {
+      "name": "R",
+      "slug": "r",
+      "description": "Programming language and environment for statistical computing and graphics",
+      "category_slug": "data-science",
+      "synonyms": [
+        "R Programming",
+        "R Language",
+        "R Statistics"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python is another popular language for data science"
+        }
+      ]
+    },
+    {
+      "name": "JASP",
+      "slug": "jasp",
+      "description": "Free and open-source statistical software with graphical interface",
+      "category_slug": "data-science",
+      "synonyms": [
+        "JASP Statistics",
+        "JASP Software"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jamovi",
+          "relationship_type": "similar",
+          "notes": "jamovi is another open-source statistical software"
+        }
+      ]
+    },
+    {
+      "name": "jamovi",
+      "slug": "jamovi",
+      "description": "Open-source statistical software built on R with easy-to-use interface",
+      "category_slug": "data-science",
+      "synonyms": [
+        "jamovi Statistics",
+        "jamovi Software"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jasp",
+          "relationship_type": "similar",
+          "notes": "JASP is another open-source statistical software"
+        }
+      ]
+    },
+    {
+      "name": "Minitab",
+      "slug": "minitab",
+      "description": "Statistical software for quality improvement and statistics education",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Minitab Statistical Software",
+        "Minitab Statistics"
+      ]
+    },
+    {
+      "name": "JMP",
+      "slug": "jmp",
+      "description": "Statistical software from SAS for interactive data visualization and analysis",
+      "category_slug": "data-science",
+      "synonyms": [
+        "JMP Software",
+        "SAS JMP"
+      ]
+    },
+    {
+      "name": "Alteryx",
+      "slug": "alteryx",
+      "description": "Data analytics platform for data preparation, blending, and analysis",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Alteryx Designer",
+        "Alteryx Analytics"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "knime",
+          "relationship_type": "similar",
+          "notes": "KNIME is an open-source alternative for data analytics"
+        }
+      ]
+    },
+    {
+      "name": "KNIME",
+      "slug": "knime",
+      "description": "Open-source data analytics, reporting and integration platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "KNIME Analytics Platform",
+        "KNIME Workflow"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "alteryx",
+          "relationship_type": "similar",
+          "notes": "Alteryx is a commercial data analytics platform"
+        },
+        {
+          "alternative_slug": "rapidminer",
+          "relationship_type": "similar",
+          "notes": "RapidMiner is another data science platform"
+        }
+      ]
+    },
+    {
+      "name": "RapidMiner",
+      "slug": "rapidminer",
+      "description": "Data science platform for data preparation, machine learning, and deployment",
+      "category_slug": "data-science",
+      "synonyms": [
+        "RapidMiner Studio",
+        "RapidMiner Platform"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "knime",
+          "relationship_type": "similar",
+          "notes": "KNIME is another data analytics platform"
+        }
+      ]
+    },
+    {
+      "name": "Orange",
+      "slug": "orange",
+      "description": "Open-source data mining and machine learning toolkit with visual programming",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Orange Data Mining",
+        "Orange3"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Orange is built on Python and can be extended with Python scripts"
+        }
+      ]
+    },
+    {
+      "name": "Weka",
+      "slug": "weka",
+      "description": "Collection of machine learning algorithms for data mining tasks",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Weka Machine Learning",
+        "Waikato Environment for Knowledge Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "recommended",
+          "notes": "Weka is written in Java"
+        }
+      ]
+    },
+    {
+      "name": "Excel",
+      "slug": "excel",
+      "description": "Microsoft's spreadsheet application for data analysis and visualization",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Microsoft Excel",
+        "MS Excel",
+        "Excel Spreadsheet"
+      ]
+    },
+    {
+      "name": "Google Sheets",
+      "slug": "google-sheets",
+      "description": "Cloud-based spreadsheet application for data analysis and collaboration",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Sheets",
+        "Google Spreadsheets",
+        "GSheets"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "excel",
+          "relationship_type": "similar",
+          "notes": "Excel is Microsoft's spreadsheet application"
+        }
+      ]
+    },
+    {
+      "name": "Apache Airflow",
+      "slug": "apache-airflow",
+      "description": "Platform for programmatically authoring, scheduling and monitoring workflows",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Airflow",
+        "Airflow Orchestration"
+      ],
+      "icon": "logos:airflow-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Airflow DAGs are written in Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "prefect",
+          "relationship_type": "similar",
+          "notes": "Prefect is a modern workflow orchestration tool"
+        },
+        {
+          "alternative_slug": "dagster",
+          "relationship_type": "similar",
+          "notes": "Dagster is another data orchestration platform"
+        }
+      ]
+    },
+    {
+      "name": "dbt",
+      "slug": "dbt",
+      "description": "Data build tool for transforming data in warehouses using SQL and Python",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "dbt Core",
+        "dbt Cloud",
+        "data build tool"
+      ],
+      "icon": "logos:dbt-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "required",
+          "notes": "dbt models are written in SQL"
+        }
+      ]
+    },
+    {
+      "name": "Prefect",
+      "slug": "prefect",
+      "description": "Modern workflow orchestration platform for data pipelines",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Prefect Cloud",
+        "Prefect Orchestration"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Prefect flows are written in Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apache-airflow",
+          "relationship_type": "similar",
+          "notes": "Airflow is another workflow orchestration tool"
+        },
+        {
+          "alternative_slug": "dagster",
+          "relationship_type": "similar",
+          "notes": "Dagster is another data orchestration platform"
+        }
+      ]
+    },
+    {
+      "name": "Dagster",
+      "slug": "dagster",
+      "description": "Data orchestration platform for building, testing, and monitoring data pipelines",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Dagster Platform",
+        "Dagster Cloud"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Dagster pipelines are written in Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apache-airflow",
+          "relationship_type": "similar",
+          "notes": "Airflow is another workflow orchestration tool"
+        },
+        {
+          "alternative_slug": "prefect",
+          "relationship_type": "similar",
+          "notes": "Prefect is another workflow orchestration platform"
+        }
+      ]
+    },
+    {
+      "name": "Luigi",
+      "slug": "luigi",
+      "description": "Python package for building complex pipelines of batch jobs",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Spotify Luigi",
+        "Luigi Pipeline"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Luigi is a Python library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apache-airflow",
+          "relationship_type": "similar",
+          "notes": "Airflow is a more feature-rich orchestration tool"
+        }
+      ]
+    },
+    {
+      "name": "Great Expectations",
+      "slug": "great-expectations",
+      "description": "Python library for data validation and documentation",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "GX",
+        "Great Expectations Data Quality"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Great Expectations is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Soda",
+      "slug": "soda",
+      "description": "Data quality testing and monitoring platform",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Soda SQL",
+        "Soda Core",
+        "Soda Cloud"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sql",
+          "prerequisite_level": "recommended",
+          "notes": "Soda tests are often written in SQL"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "great-expectations",
+          "relationship_type": "similar",
+          "notes": "Great Expectations is another data quality tool"
+        }
+      ]
+    },
+    {
+      "name": "DVC",
+      "slug": "dvc",
+      "description": "Version control system for machine learning projects and data",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Data Version Control",
+        "DVC.org"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "git",
+          "prerequisite_level": "required",
+          "notes": "DVC works alongside Git"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "DVC is commonly used in Python ML projects"
+        }
+      ]
+    },
+    {
+      "name": "Fortran",
+      "slug": "fortran",
+      "description": "Programming language for numerical and scientific computing",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Fortran 90",
+        "Fortran 95",
+        "Fortran Programming"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python with NumPy is a modern alternative for scientific computing"
+        },
+        {
+          "alternative_slug": "julia",
+          "relationship_type": "similar",
+          "notes": "Julia is a modern language for scientific computing"
+        }
+      ]
+    },
+    {
+      "name": "Julia",
+      "slug": "julia",
+      "description": "High-performance programming language for technical and scientific computing",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Julia Language",
+        "Julia Programming"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python is another popular language for data science"
+        },
+        {
+          "alternative_slug": "r",
+          "relationship_type": "similar",
+          "notes": "R is another language for statistical computing"
+        }
+      ]
+    },
+    {
+      "name": "MATLAB",
+      "slug": "matlab",
+      "description": "Programming platform for numerical computing and data analysis",
+      "category_slug": "data-science",
+      "synonyms": [
+        "MATLAB Software",
+        "MATLAB Programming"
+      ],
+      "icon": "devicon:matlab",
+      "alternatives": [
+        {
+          "alternative_slug": "python",
+          "relationship_type": "similar",
+          "notes": "Python with NumPy/SciPy is an open-source alternative"
+        },
+        {
+          "alternative_slug": "octave",
+          "relationship_type": "similar",
+          "notes": "GNU Octave is an open-source alternative to MATLAB"
+        }
+      ]
+    },
+    {
+      "name": "Octave",
+      "slug": "octave",
+      "description": "Open-source software for numerical computations compatible with MATLAB",
+      "category_slug": "data-science",
+      "synonyms": [
+        "GNU Octave",
+        "Octave Programming"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "matlab",
+          "relationship_type": "similar",
+          "notes": "MATLAB is the commercial alternative"
+        }
+      ]
+    }
+  ]
 }

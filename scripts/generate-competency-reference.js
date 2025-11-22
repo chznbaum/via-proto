@@ -12,6 +12,7 @@ const path = require('path');
 
 const COMPETENCIES_DIR = path.join(__dirname, '../data/seeds/competencies');
 const OUTPUT_FILE = path.join(__dirname, '../data/seeds/COMPETENCY_REFERENCE.md');
+const QUICK_LOOKUP_FILE = path.join(__dirname, '../data/seeds/COMPETENCY_QUICK_LOOKUP.md');
 
 function loadAllCompetencies() {
   const files = fs.readdirSync(COMPETENCIES_DIR)
@@ -57,15 +58,47 @@ function groupByCategory(competencies) {
   return grouped;
 }
 
+function generateQuickLookup(competencies) {
+  const grouped = groupByCategory(competencies);
+  const categories = Object.keys(grouped).sort();
+
+  let md = `# Competency Quick Lookup\n\n`;
+  md += `**Generated:** ${new Date().toISOString()}\n`;
+  md += `**Total Competencies:** ${competencies.length}\n\n`;
+  md += `This file is auto-generated for quick reference during seed expansion.\n`;
+  md += `Run \`npm run generate:competency-reference\` to update.\n\n`;
+  md += `For detailed information (prerequisites, alternatives, icons), see COMPETENCY_REFERENCE.md\n\n`;
+  md += `---\n\n`;
+
+  // Table of Contents - Categories with counts
+  md += `## Categories\n\n`;
+  for (const category of categories) {
+    const count = grouped[category].length;
+    md += `- **${category}** (${count})\n`;
+  }
+  md += `\n---\n\n`;
+
+  // Alphabetical list of all slugs
+  md += `## Alphabetical by Slug\n\n`;
+  const sorted = [...competencies].sort((a, b) => a.slug.localeCompare(b.slug));
+  for (const comp of sorted) {
+    md += `- \`${comp.slug}\` - ${comp.name} (${comp.category_slug})\n`;
+  }
+  md += `\n`;
+
+  return md;
+}
+
 function generateMarkdown(competencies) {
   const grouped = groupByCategory(competencies);
   const categories = Object.keys(grouped).sort();
 
-  let md = `# Competency Reference\n\n`;
+  let md = `# Competency Reference (Detailed)\n\n`;
   md += `**Generated:** ${new Date().toISOString()}\n`;
   md += `**Total Competencies:** ${competencies.length}\n\n`;
   md += `This file is auto-generated for reference during seed expansion.\n`;
   md += `Run \`npm run generate:competency-reference\` to update.\n\n`;
+  md += `For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md\n\n`;
   md += `---\n\n`;
 
   // Table of Contents
@@ -73,14 +106,6 @@ function generateMarkdown(competencies) {
   for (const category of categories) {
     const count = grouped[category].length;
     md += `- [${category}](#${category.replace(/[^a-z0-9]+/g, '-')}) (${count})\n`;
-  }
-  md += `\n---\n\n`;
-
-  // Quick Lookup - Alphabetical list of all slugs
-  md += `## Quick Lookup (Alphabetical by Slug)\n\n`;
-  const sorted = [...competencies].sort((a, b) => a.slug.localeCompare(b.slug));
-  for (const comp of sorted) {
-    md += `- \`${comp.slug}\` - ${comp.name} (${comp.category_slug})\n`;
   }
   md += `\n---\n\n`;
 
@@ -184,11 +209,15 @@ function main() {
     console.log('✓ All prerequisite and alternative references are valid');
   }
 
-  console.log('Generating markdown reference...');
-  const markdown = generateMarkdown(competencies);
+  console.log('Generating markdown references...');
 
+  const quickLookup = generateQuickLookup(competencies);
+  fs.writeFileSync(QUICK_LOOKUP_FILE, quickLookup, 'utf8');
+  console.log(`✓ Quick lookup generated: ${QUICK_LOOKUP_FILE}`);
+
+  const markdown = generateMarkdown(competencies);
   fs.writeFileSync(OUTPUT_FILE, markdown, 'utf8');
-  console.log(`✓ Reference generated: ${OUTPUT_FILE}`);
+  console.log(`✓ Detailed reference generated: ${OUTPUT_FILE}`);
 
   // Summary stats
   const byCategory = groupByCategory(competencies);

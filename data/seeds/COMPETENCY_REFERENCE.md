@@ -1,10 +1,12 @@
-# Competency Reference
+# Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T02:23:39.313Z
-**Total Competencies:** 945
+**Generated:** 2025-11-22T02:49:39.142Z
+**Total Competencies:** 980
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
+
+For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
@@ -17,8 +19,8 @@ Run `npm run generate:competency-reference` to update.
 - [cloud-devops](#cloud-devops) (169)
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
-- [data-engineering](#data-engineering) (1)
-- [data-science](#data-science) (71)
+- [data-engineering](#data-engineering) (8)
+- [data-science](#data-science) (99)
 - [databases](#databases) (55)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [frontend-development](#frontend-development) (46)
@@ -38,956 +40,6 @@ Run `npm run generate:competency-reference` to update.
 - [visual-arts](#visual-arts) (51)
 - [web-development](#web-development) (1)
 - [writing](#writing) (52)
-
----
-
-## Quick Lookup (Alphabetical by Slug)
-
-- `3ds-max` - 3ds Max (motion-3d)
-- `ableton-live` - Ableton Live (music)
-- `abstract-art` - Abstract Art (visual-arts)
-- `academic-writing` - Academic Writing (writing)
-- `accordion` - Accordion (music)
-- `acme-sh` - acme.sh (cloud-devops)
-- `acrylic-painting` - Acrylic Painting (visual-arts)
-- `acting` - Acting (theater)
-- `actionscript` - ActionScript (programming)
-- `active-directory` - Active Directory (cybersecurity)
-- `activemq` - ActiveMQ (cloud-devops)
-- `activerecord` - ActiveRecord (databases)
-- `ada` - Ada (systems-programming)
-- `adminer` - Adminer (databases)
-- `adobe-after-effects` - Adobe After Effects (motion-3d)
-- `adobe-animate` - Adobe Animate (motion-3d)
-- `adobe-dreamweaver` - Adobe Dreamweaver (uiux-design)
-- `adobe-illustrator` - Adobe Illustrator (graphic-design)
-- `adobe-incopy` - Adobe InCopy (graphic-design)
-- `adobe-indesign` - Adobe InDesign (graphic-design)
-- `adobe-lightroom` - Adobe Lightroom (photography-video)
-- `adobe-photoshop` - Adobe Photoshop (graphic-design)
-- `adobe-premiere-pro` - Adobe Premiere Pro (motion-3d)
-- `adobe-xd` - Adobe XD (uiux-design)
-- `adonisjs` - AdonisJS (backend-development)
-- `aerial-dance` - Aerial Dance (dance)
-- `affinity-designer` - Affinity Designer (graphic-design)
-- `affinity-photo` - Affinity Photo (graphic-design)
-- `affinity-publisher` - Affinity Publisher (graphic-design)
-- `agda` - Agda (programming)
-- `alchemy` - Alchemy (blockchain-web3)
-- `alembic` - Alembic (databases)
-- `algolia` - Algolia (databases)
-- `algorithms` - Algorithms (programming)
-- `alibaba-cloud` - Alibaba Cloud (cloud-devops)
-- `amazon-lex` - Amazon Lex (data-science)
-- `amazon-rds` - Amazon RDS (databases)
-- `amazon-sagemaker` - Amazon SageMaker (data-science)
-- `anatomy-for-artists` - Anatomy for Artists (visual-arts)
-- `anchor` - Anchor (blockchain-web3)
-- `anchore` - Anchore (cloud-devops)
-- `angular` - Angular (frontend-development)
-- `ansible` - Ansible (cloud-devops)
-- `ant-design` - Ant Design (frontend-development)
-- `anthropic-claude-api` - Anthropic Claude API (data-science)
-- `apache` - Apache HTTP Server (cloud-devops)
-- `apache-bench` - Apache Bench (cloud-devops)
-- `apache-solr` - Apache Solr (databases)
-- `apache-spark` - Apache Spark (data-engineering)
-- `apollo-client` - Apollo Client (frontend-development)
-- `apollo-server` - Apollo Server (backend-development)
-- `appdynamics` - AppDynamics (cloud-devops)
-- `applique` - Appliqué (fiber-arts-crafts)
-- `aqua-security` - Aqua Security (cloud-devops)
-- `aquarium-keeping` - Aquarium Keeping (home-lifestyle)
-- `arangodb` - ArangoDB (databases)
-- `arbitrum` - Arbitrum (blockchain-web3)
-- `archery` - Archery (recreation-hobbies)
-- `archicad` - ArchiCAD (architecture)
-- `argentine-tango` - Argentine Tango (dance)
-- `argocd` - ArgoCD (cloud-devops)
-- `artillery` - Artillery (cloud-devops)
-- `artrage` - ArtRage (visual-arts)
-- `artstudio-pro` - ArtStudio Pro (visual-arts)
-- `aseprite` - Aseprite (graphic-design)
-- `aspnet-core` - ASP.NET Core (backend-development)
-- `assembly` - Assembly (systems-programming)
-- `assemblyai` - AssemblyAI (data-science)
-- `ats` - ATS (systems-programming)
-- `atticus` - Atticus (writing)
-- `audacity` - Audacity (music)
-- `audio-mastering` - Audio Mastering (music)
-- `audio-mixing` - Audio Mixing (music)
-- `audition-technique` - Audition Technique (theater)
-- `auth0` - Auth0 (cybersecurity)
-- `auto-maintenance` - Auto Maintenance (home-lifestyle)
-- `auto-repair` - Auto Repair (home-lifestyle)
-- `autocad` - AutoCAD (architecture)
-- `autogen` - AutoGen (data-science)
-- `avalanche` - Avalanche (blockchain-web3)
-- `awk` - AWK (systems-programming)
-- `aws` - Amazon Web Services (cloud-devops)
-- `aws-api-gateway` - AWS API Gateway (cloud-devops)
-- `aws-cdk` - AWS CDK (cloud-devops)
-- `aws-ecr` - Amazon Elastic Container Registry (cloud-devops)
-- `aws-eventbridge` - Amazon EventBridge (cloud-devops)
-- `aws-fargate` - AWS Fargate (cloud-devops)
-- `aws-iam` - AWS IAM (cybersecurity)
-- `aws-lambda` - AWS Lambda (cloud-devops)
-- `aws-parameter-store` - AWS Systems Manager Parameter Store (cloud-devops)
-- `aws-secrets-manager` - AWS Secrets Manager (cloud-devops)
-- `aws-sqs` - AWS SQS (cloud-devops)
-- `axure-rp` - Axure RP (uiux-design)
-- `azure` - Microsoft Azure (cloud-devops)
-- `azure-api-management` - Azure API Management (cloud-devops)
-- `azure-container-instances` - Azure Container Instances (cloud-devops)
-- `azure-container-registry` - Azure Container Registry (cloud-devops)
-- `azure-devops` - Azure DevOps (cloud-devops)
-- `azure-functions` - Azure Functions (cloud-devops)
-- `azure-key-vault` - Azure Key Vault (cloud-devops)
-- `azure-machine-learning` - Azure Machine Learning (data-science)
-- `azure-resource-manager` - Azure Resource Manager (cloud-devops)
-- `azure-service-bus` - Azure Service Bus (cloud-devops)
-- `azure-sql-database` - Azure SQL Database (databases)
-- `bachata` - Bachata (dance)
-- `backpacking` - Backpacking (recreation-hobbies)
-- `bagpipes` - Bagpipes (music)
-- `baking` - Baking (home-lifestyle)
-- `ballerina` - Ballerina (cloud-devops)
-- `ballet` - Ballet (dance)
-- `ballroom-choreography` - Ballroom Choreography (dance)
-- `ballroom-dance` - Ballroom Dance (dance)
-- `balsamiq` - Balsamiq (uiux-design)
-- `bamboo` - Bamboo (cloud-devops)
-- `banjo` - Banjo (music)
-- `bash` - Bash (systems-programming)
-- `basket-weaving` - Basket Weaving (fiber-arts-crafts)
-- `basketball` - Basketball (recreation-hobbies)
-- `bass-guitar` - Bass Guitar (music)
-- `bassoon` - Bassoon (music)
-- `batik` - Batik (fiber-arts-crafts)
-- `beading` - Beading (fiber-arts-crafts)
-- `beatboxing` - Beatboxing (music)
-- `beekeeping` - Beekeeping (home-lifestyle)
-- `belly-dance` - Belly Dance (dance)
-- `bentoml` - BentoML (data-science)
-- `bharatanatyam` - Bharatanatyam (dance)
-- `bicep` - Bicep (cloud-devops)
-- `biography-writing` - Biography (writing)
-- `bitbucket-pipelines` - Bitbucket Pipelines (cloud-devops)
-- `bitwig-studio` - Bitwig Studio (music)
-- `blender` - Blender (motion-3d)
-- `blogging` - Blogging (writing)
-- `bnb-chain` - BNB Chain (blockchain-web3)
-- `bollywood-dance` - Bollywood Dance (dance)
-- `bonsai` - Bonsai (home-lifestyle)
-- `book-publishing` - Book Publishing (writing)
-- `bookbinding` - Bookbinding (fiber-arts-crafts)
-- `bootstrap` - Bootstrap (frontend-development)
-- `borg` - BorgBackup (cloud-devops)
-- `botpress` - Botpress (data-science)
-- `bouldering` - Bouldering (recreation-hobbies)
-- `boxing` - Boxing (recreation-hobbies)
-- `brazilian-jiu-jitsu` - Brazilian Jiu-Jitsu (recreation-hobbies)
-- `bread-making` - Bread Making (home-lifestyle)
-- `breaking` - Breaking (dance)
-- `brownie` - Brownie (blockchain-web3)
-- `buddy` - Buddy (cloud-devops)
-- `buildkite` - Buildkite (cloud-devops)
-- `bun` - Bun (backend-development)
-- `burp-suite` - Burp Suite (cybersecurity)
-- `business-writing` - Business Writing (writing)
-- `c` - C (systems-programming)
-- `cabinet-making` - Cabinet Making (home-lifestyle)
-- `caddy` - Caddy (cloud-devops)
-- `cake-decorating` - Cake Decorating (home-lifestyle)
-- `calico` - Calico (cloud-devops)
-- `calligraphy` - Calligraphy (visual-arts)
-- `campfire-write` - Campfire Write (writing)
-- `camping` - Camping (recreation-hobbies)
-- `candle-making` - Candle Making (fiber-arts-crafts)
-- `canning` - Canning (home-lifestyle)
-- `canva` - Canva (graphic-design)
-- `capistrano` - Capistrano (cloud-devops)
-- `capture-one` - Capture One (photography-video)
-- `carbon` - Carbon (systems-programming)
-- `card-making` - Card Making (fiber-arts-crafts)
-- `cardano` - Cardano (blockchain-web3)
-- `caricature` - Caricature (visual-arts)
-- `carpentry` - Carpentry (home-lifestyle)
-- `cassandra` - Cassandra (databases)
-- `cello` - Cello (music)
-- `celtx` - Celtx (writing)
-- `ceramic-glazing` - Ceramic Glazing (fiber-arts-crafts)
-- `cert-manager` - cert-manager (cloud-devops)
-- `certbot` - Certbot (cloud-devops)
-- `cha-cha` - Cha-Cha (dance)
-- `chainlink` - Chainlink (blockchain-web3)
-- `chapel` - Chapel (systems-programming)
-- `character-design` - Character Design (visual-arts)
-- `character-development` - Character Development (writing)
-- `charcoal-drawing` - Charcoal Drawing (visual-arts)
-- `charleston` - Charleston (dance)
-- `chef` - Chef (cloud-devops)
-- `chess` - Chess (recreation-hobbies)
-- `chocolate-making` - Chocolate Making (home-lifestyle)
-- `choir-singing` - Choir Singing (music)
-- `choreography` - Choreography (dance)
-- `chroma` - Chroma (data-science)
-- `cilium` - Cilium (cloud-devops)
-- `cinema-4d` - Cinema 4D (motion-3d)
-- `circleci` - CircleCI (cloud-devops)
-- `clair` - Clair (cloud-devops)
-- `clarinet` - Clarinet (music)
-- `clip-studio-paint` - Clip Studio Paint (graphic-design)
-- `clojure` - Clojure (programming)
-- `cloudflare` - Cloudflare (cloud-devops)
-- `cloudformation` - AWS CloudFormation (cloud-devops)
-- `cobol` - COBOL (programming)
-- `cockroachdb` - CockroachDB (databases)
-- `codefresh` - Codefresh (cloud-devops)
-- `codeship` - CodeShip (cloud-devops)
-- `coffee-brewing` - Coffee Brewing (home-lifestyle)
-- `cohere-api` - Cohere API (data-science)
-- `collage` - Collage (visual-arts)
-- `color-theory` - Color Theory (visual-arts)
-- `colored-pencil` - Colored Pencil (visual-arts)
-- `comic-art` - Comic Art (visual-arts)
-- `common-lisp` - Common Lisp (programming)
-- `composition` - Composition (visual-arts)
-- `composting` - Composting (home-lifestyle)
-- `concept-art` - Concept Art (visual-arts)
-- `concepts-app` - Concepts (visual-arts)
-- `concourse` - Concourse CI (cloud-devops)
-- `conducting` - Conducting (music)
-- `consul` - HashiCorp Consul (cloud-devops)
-- `consul-service-mesh` - Consul Service Mesh (cloud-devops)
-- `container-gardening` - Container Gardening (home-lifestyle)
-- `containerd` - Containerd (cloud-devops)
-- `contemporary-dance` - Contemporary Dance (dance)
-- `content-writing` - Content Writing (writing)
-- `cooking` - Cooking (home-lifestyle)
-- `copywriting-skill` - Copywriting (writing)
-- `coq` - Coq (programming)
-- `corel-painter` - Corel Painter (visual-arts)
-- `coreldraw` - CorelDRAW (graphic-design)
-- `cors` - CORS (cybersecurity)
-- `cosmos` - Cosmos (blockchain-web3)
-- `costume-design` - Costume Design (theater)
-- `couchbase` - Couchbase (databases)
-- `couchdb` - CouchDB (databases)
-- `cpp` - C++ (systems-programming)
-- `creative-writing` - Creative Writing (writing)
-- `crewai` - CrewAI (data-science)
-- `cri-o` - CRI-O (cloud-devops)
-- `crochet` - Crochet (fiber-arts-crafts)
-- `cross-stitch` - Cross-Stitch (fiber-arts-crafts)
-- `crossplane` - Crossplane (cloud-devops)
-- `crystal` - Crystal (programming)
-- `csharp` - C# (programming)
-- `csp` - CSP (cybersecurity)
-- `css` - CSS (frontend-development)
-- `cubase` - Cubase (music)
-- `cuda` - CUDA (data-science)
-- `cycling` - Cycling (recreation-hobbies)
-- `cypress` - Cypress (frontend-development)
-- `d` - D (systems-programming)
-- `dart` - Dart (mobile-development)
-- `data-structures` - Data Structures (programming)
-- `databricks` - Databricks (data-science)
-- `datadog` - Datadog (cloud-devops)
-- `datagrip` - DataGrip (databases)
-- `davinci-resolve` - DaVinci Resolve (motion-3d)
-- `dbeaver` - DBeaver (databases)
-- `debugging` - Debugging (programming)
-- `decluttering` - Decluttering (home-lifestyle)
-- `delphi` - Delphi (programming)
-- `deno` - Deno (backend-development)
-- `design-patterns` - Design Patterns (programming)
-- `dialogflow` - Dialogflow (data-science)
-- `dialogue-writing` - Dialogue Writing (writing)
-- `digital-illustration` - Digital Illustration (visual-arts)
-- `digitalocean` - DigitalOcean (cloud-devops)
-- `django` - Django (backend-development)
-- `django-orm` - Django ORM (databases)
-- `django-rest-framework` - Django REST Framework (backend-development)
-- `djing` - DJing (music)
-- `docker` - Docker (cloud-devops)
-- `docker-compose` - Docker Compose (cloud-devops)
-- `docker-hub` - Docker Hub (cloud-devops)
-- `docker-swarm` - Docker Swarm (cloud-devops)
-- `dog-training` - Dog Training (home-lifestyle)
-- `double-bass` - Double Bass (music)
-- `drawing` - Drawing (visual-arts)
-- `drizzle-orm` - Drizzle ORM (databases)
-- `drone` - Drone (cloud-devops)
-- `drone-flying` - Drone Flying (recreation-hobbies)
-- `drums` - Drums (music)
-- `drywall` - Drywall (home-lifestyle)
-- `duplicati` - Duplicati (cloud-devops)
-- `dynamodb` - DynamoDB (databases)
-- `dynatrace` - Dynatrace (cloud-devops)
-- `ear-training` - Ear Training (music)
-- `east-coast-swing` - East Coast Swing (dance)
-- `echo` - Echo (backend-development)
-- `editing-writing` - Editing (writing)
-- `elasticsearch` - Elasticsearch (cloud-devops)
-- `electrical-work` - Electrical Work (home-lifestyle)
-- `electronic-music-production` - Electronic Music Production (music)
-- `elevenlabs` - ElevenLabs (data-science)
-- `elixir` - Elixir (programming)
-- `elm` - Elm (frontend-development)
-- `eloquent` - Eloquent (databases)
-- `embroidery` - Embroidery (fiber-arts-crafts)
-- `entity-framework` - Entity Framework (databases)
-- `envoy` - Envoy (cloud-devops)
-- `erlang` - Erlang (systems-programming)
-- `esbuild` - esbuild (frontend-development)
-- `eslint` - ESLint (frontend-development)
-- `esports` - Esports (recreation-hobbies)
-- `espresso` - Espresso (home-lifestyle)
-- `essay-writing` - Essay Writing (writing)
-- `etcd` - etcd (cloud-devops)
-- `etching` - Etching (visual-arts)
-- `ethereum` - Ethereum (blockchain-web3)
-- `etherscan` - Etherscan (blockchain-web3)
-- `ethersjs` - ethers.js (blockchain-web3)
-- `expressjs` - Express.js (backend-development)
-- `fabric` - Fabric (cloud-devops)
-- `fail2ban` - Fail2Ban (cybersecurity)
-- `faiss` - FAISS (data-science)
-- `falco` - Falco (cloud-devops)
-- `fantasy-writing` - Fantasy Writing (writing)
-- `fastapi` - FastAPI (backend-development)
-- `fastify` - Fastify (backend-development)
-- `fastly` - Fastly (cloud-devops)
-- `felting` - Felting (fiber-arts-crafts)
-- `fennel` - Fennel (game-development)
-- `fermentation` - Fermentation (home-lifestyle)
-- `fiber` - Fiber (backend-development)
-- `fiber-dyeing` - Dyeing (fiber-arts-crafts)
-- `fiber-spinning` - Spinning (fiber-arts-crafts)
-- `fiction-writing` - Fiction Writing (writing)
-- `figma` - Figma (uiux-design)
-- `figure-drawing` - Figure Drawing (visual-arts)
-- `final-cut-pro` - Final Cut Pro (motion-3d)
-- `final-draft` - Final Draft (writing)
-- `firealpaca` - FireAlpaca (visual-arts)
-- `firebase` - Firebase (cloud-devops)
-- `fishing` - Fishing (recreation-hobbies)
-- `fl-studio` - FL Studio (music)
-- `flamenco` - Flamenco (dance)
-- `flannel` - Flannel (cloud-devops)
-- `flash-fiction` - Flash Fiction (writing)
-- `flask` - Flask (backend-development)
-- `fluent-bit` - Fluent Bit (cloud-devops)
-- `fluentd` - Fluentd (cloud-devops)
-- `flute` - Flute (music)
-- `flux` - Flux (cloud-devops)
-- `fly-fishing` - Fly Fishing (recreation-hobbies)
-- `fly-io` - Fly.io (cloud-devops)
-- `flyway` - Flyway (databases)
-- `fontforge` - FontForge (graphic-design)
-- `food-smoking` - Smoking (home-lifestyle)
-- `fortran` - Fortran (data-science)
-- `foundry` - Foundry (blockchain-web3)
-- `foxtrot` - Foxtrot (dance)
-- `framer` - Framer (uiux-design)
-- `french-horn` - French Horn (music)
-- `fsharp` - F# (programming)
-- `functional-programming` - Functional Programming (programming)
-- `furniture-making` - Furniture Making (home-lifestyle)
-- `fusion-360` - Fusion 360 (architecture)
-- `game-mastering` - Game Mastering (recreation-hobbies)
-- `game-streaming` - Game Streaming (recreation-hobbies)
-- `ganache` - Ganache (blockchain-web3)
-- `garageband` - GarageBand (music)
-- `gardening` - Gardening (home-lifestyle)
-- `gatling` - Gatling (cloud-devops)
-- `gatsby` - Gatsby (frontend-development)
-- `gesture-drawing` - Gesture Drawing (visual-arts)
-- `ghostwriting` - Ghostwriting (writing)
-- `gimp` - GIMP (graphic-design)
-- `gin` - Gin (backend-development)
-- `git` - Git (programming)
-- `github-actions` - GitHub Actions (cloud-devops)
-- `github-container-registry` - GitHub Container Registry (cloud-devops)
-- `gitlab-cicd` - GitLab CI/CD (cloud-devops)
-- `glass-blowing` - Glass Blowing (fiber-arts-crafts)
-- `gleam` - Gleam (programming)
-- `glyphs` - Glyphs (graphic-design)
-- `go` - Go (programming)
-- `gocd` - GoCD (cloud-devops)
-- `golf` - Golf (recreation-hobbies)
-- `google-artifact-registry` - Google Artifact Registry (cloud-devops)
-- `google-cloud-endpoints` - Google Cloud Endpoints (cloud-devops)
-- `google-cloud-functions` - Google Cloud Functions (cloud-devops)
-- `google-cloud-platform` - Google Cloud Platform (cloud-devops)
-- `google-cloud-pub-sub` - Google Cloud Pub/Sub (cloud-devops)
-- `google-cloud-run` - Google Cloud Run (cloud-devops)
-- `google-cloud-secret-manager` - Google Cloud Secret Manager (cloud-devops)
-- `google-cloud-sql` - Google Cloud SQL (databases)
-- `google-container-registry` - Google Container Registry (cloud-devops)
-- `google-gemini-api` - Google Gemini API (data-science)
-- `gouache-painting` - Gouache Painting (visual-arts)
-- `gradio` - Gradio (data-science)
-- `grafana` - Grafana (cloud-devops)
-- `grammarly` - Grammarly (writing)
-- `grant-writing` - Grant Writing (writing)
-- `graphite-drawing` - Graphite Drawing (visual-arts)
-- `graphql` - GraphQL (databases)
-- `grilling` - Grilling (home-lifestyle)
-- `groovy` - Groovy (programming)
-- `grpc` - gRPC (backend-development)
-- `grype` - Grype (cloud-devops)
-- `guitar` - Guitar (music)
-- `hack` - Hack (backend-development)
-- `hand-building-pottery` - Hand-Building Pottery (fiber-arts-crafts)
-- `hapi` - Hapi (backend-development)
-- `haproxy` - HAProxy (cloud-devops)
-- `harbor` - Harbor (cloud-devops)
-- `hardhat` - Hardhat (blockchain-web3)
-- `harmonica` - Harmonica (music)
-- `harp` - Harp (music)
-- `haskell` - Haskell (programming)
-- `hbase` - HBase (databases)
-- `helicone` - Helicone (data-science)
-- `helm` - Helm (cloud-devops)
-- `hemingway-editor` - Hemingway Editor (writing)
-- `heroku` - Heroku (cloud-devops)
-- `hetzner-cloud` - Hetzner Cloud (cloud-devops)
-- `hibernate` - Hibernate (databases)
-- `hiking` - Hiking (recreation-hobbies)
-- `hip-hop-dance` - Hip Hop Dance (dance)
-- `home-organization` - Home Organization (home-lifestyle)
-- `home-repair` - Home Repair (home-lifestyle)
-- `honeycomb` - Honeycomb (cloud-devops)
-- `horror-writing` - Horror Writing (writing)
-- `houdini` - Houdini (motion-3d)
-- `house-dance` - House Dance (dance)
-- `house-painting` - House Painting (home-lifestyle)
-- `html` - HTML (frontend-development)
-- `hugging-face` - Hugging Face (data-science)
-- `hula` - Hula (dance)
-- `hunting` - Hunting (recreation-hobbies)
-- `hydroponics` - Hydroponics (home-lifestyle)
-- `ia-writer` - iA Writer (writing)
-- `ibm-cloud` - IBM Cloud (cloud-devops)
-- `idris` - Idris (programming)
-- `illustration` - Illustration (visual-arts)
-- `improvisation` - Improvisation (theater)
-- `infinite-painter` - Infinite Painter (visual-arts)
-- `influxdb` - InfluxDB (databases)
-- `infura` - Infura (blockchain-web3)
-- `ink-drawing` - Ink Drawing (visual-arts)
-- `inkscape` - Inkscape (graphic-design)
-- `insomnia` - Insomnia (backend-development)
-- `interior-design` - Interior Design (home-lifestyle)
-- `invision` - InVision (uiux-design)
-- `ipfs` - IPFS (blockchain-web3)
-- `irish-dance` - Irish Dance (dance)
-- `istio` - Istio (cloud-devops)
-- `jaeger` - Jaeger (cloud-devops)
-- `janet` - Janet (programming)
-- `jasmine` - Jasmine (frontend-development)
-- `java` - Java (programming)
-- `javascript` - JavaScript (programming)
-- `jazz-dance` - Jazz Dance (dance)
-- `jazz-improvisation` - Jazz Improvisation (music)
-- `jenkins` - Jenkins (cloud-devops)
-- `jest` - Jest (frontend-development)
-- `jewelry-making` - Jewelry Making (fiber-arts-crafts)
-- `jive` - Jive (dance)
-- `jmeter` - Apache JMeter (cloud-devops)
-- `jotai` - Jotai (frontend-development)
-- `journalism` - Journalism (writing)
-- `julia` - Julia (data-science)
-- `jupyter` - Jupyter (data-science)
-- `jwt` - JWT (cybersecurity)
-- `k6` - k6 (cloud-devops)
-- `kafka` - Apache Kafka (cloud-devops)
-- `kali-linux` - Kali Linux (cybersecurity)
-- `karate` - Karate (recreation-hobbies)
-- `kasten-k10` - Kasten K10 (cloud-devops)
-- `kathak` - Kathak (dance)
-- `keras` - Keras (data-science)
-- `keycloak` - Keycloak (cybersecurity)
-- `kibana` - Kibana (cloud-devops)
-- `knexjs` - Knex.js (databases)
-- `knife-skills` - Knife Skills (home-lifestyle)
-- `knitting` - Knitting (fiber-arts-crafts)
-- `koa` - Koa (backend-development)
-- `kong` - Kong (cloud-devops)
-- `kotlin` - Kotlin (mobile-development)
-- `krita` - Krita (graphic-design)
-- `krita` - Krita (visual-arts)
-- `kserve` - KServe (data-science)
-- `kubernetes` - Kubernetes (cloud-devops)
-- `lace-making` - Lace Making (fiber-arts-crafts)
-- `landscape-painting` - Landscape Painting (visual-arts)
-- `landscaping` - Landscaping (home-lifestyle)
-- `langchain` - LangChain (data-science)
-- `langfuse` - LangFuse (data-science)
-- `langgraph` - LangGraph (data-science)
-- `langsmith` - LangSmith (data-science)
-- `laravel` - Laravel (backend-development)
-- `latte-art` - Latte Art (home-lifestyle)
-- `ldap` - LDAP (cybersecurity)
-- `lean` - Lean (programming)
-- `leatherworking` - Leatherworking (fiber-arts-crafts)
-- `less` - Less (frontend-development)
-- `lets-encrypt` - Let's Encrypt (cloud-devops)
-- `lightgbm` - LightGBM (data-science)
-- `lighting-design` - Lighting Design (theater)
-- `lightstep` - Lightstep (cloud-devops)
-- `lindy-hop` - Lindy Hop (dance)
-- `linkerd` - Linkerd (cloud-devops)
-- `linocut` - Linocut (visual-arts)
-- `linode` - Linode (cloud-devops)
-- `liquibase` - Liquibase (databases)
-- `llamaindex` - LlamaIndex (data-science)
-- `lm-studio` - LM Studio (data-science)
-- `locking` - Locking (dance)
-- `locust` - Locust (cloud-devops)
-- `logic-pro` - Logic Pro (music)
-- `logstash` - Logstash (cloud-devops)
-- `loki` - Loki (cloud-devops)
-- `lua` - Lua (game-development)
-- `lunacy` - Lunacy (uiux-design)
-- `lyrical-dance` - Lyrical Dance (dance)
-- `macrame` - Macramé (fiber-arts-crafts)
-- `make` - Make (automation-integration)
-- `mandolin` - Mandolin (music)
-- `manga-art` - Manga Art (visual-arts)
-- `marathon-training` - Marathon Training (recreation-hobbies)
-- `mariadb` - MariaDB (databases)
-- `martial-arts` - Martial Arts (recreation-hobbies)
-- `marvel` - Marvel (uiux-design)
-- `material-ui` - Material UI (frontend-development)
-- `matlab` - MATLAB (data-science)
-- `matplotlib` - Matplotlib (data-science)
-- `maya` - Maya (motion-3d)
-- `meal-prep` - Meal Prep (home-lifestyle)
-- `medibang-paint` - MediBang Paint (visual-arts)
-- `meilisearch` - Meilisearch (databases)
-- `memcached` - Memcached (databases)
-- `memoir-writing` - Memoir Writing (writing)
-- `mercurial` - Mercurial (programming)
-- `merengue` - Merengue (dance)
-- `metamask` - MetaMask (blockchain-web3)
-- `metasploit` - Metasploit (cybersecurity)
-- `method-acting` - Method Acting (theater)
-- `micronaut` - Micronaut (backend-development)
-- `microsoft-copilot-studio` - Microsoft Copilot Studio (data-science)
-- `microsoft-sql-server` - Microsoft SQL Server (databases)
-- `midi-programming` - MIDI Programming (music)
-- `milvus` - Milvus (data-science)
-- `mime` - Mime (theater)
-- `miniature-painting` - Miniature Painting (recreation-hobbies)
-- `miro` - Miro (uiux-design)
-- `mixed-media-art` - Mixed Media Art (visual-arts)
-- `mixology` - Mixology (home-lifestyle)
-- `mlflow` - MLflow (data-science)
-- `mobx` - MobX (frontend-development)
-- `mocha` - Mocha (frontend-development)
-- `modal` - Modal (data-science)
-- `model-building` - Model Building (recreation-hobbies)
-- `modern-dance` - Modern Dance (dance)
-- `modsecurity` - ModSecurity (cybersecurity)
-- `mojo` - Mojo (data-science)
-- `mongodb` - MongoDB (databases)
-- `mongodb-atlas` - MongoDB Atlas (databases)
-- `mongodb-compass` - MongoDB Compass (databases)
-- `mongoose` - Mongoose (databases)
-- `monologue-performance` - Monologue Performance (theater)
-- `monoprint` - Monoprint (visual-arts)
-- `moralis` - Moralis (blockchain-web3)
-- `mosaic-art` - Mosaic Art (fiber-arts-crafts)
-- `mountain-biking` - Mountain Biking (recreation-hobbies)
-- `muay-thai` - Muay Thai (recreation-hobbies)
-- `mural-painting` - Mural Painting (visual-arts)
-- `music-arrangement` - Music Arrangement (music)
-- `music-composition` - Music Composition (music)
-- `music-production` - Music Production (music)
-- `music-theory` - Music Theory (music)
-- `musical-theater` - Musical Theater (theater)
-- `mysql` - MySQL (databases)
-- `mysql-workbench` - MySQL Workbench (databases)
-- `mystery-writing` - Mystery Writing (writing)
-- `n8n` - n8n (automation-integration)
-- `nagios` - Nagios (cloud-devops)
-- `nats` - NATS (cloud-devops)
-- `navicat` - Navicat (databases)
-- `near-protocol` - NEAR Protocol (blockchain-web3)
-- `needle-felting` - Needle Felting (fiber-arts-crafts)
-- `needlepoint` - Needlepoint (fiber-arts-crafts)
-- `neo4j` - Neo4j (databases)
-- `nestjs` - NestJS (backend-development)
-- `netlify` - Netlify (cloud-devops)
-- `new-relic` - New Relic (cloud-devops)
-- `nextjs` - Next.js (frontend-development)
-- `nginx` - Nginx (cloud-devops)
-- `nim` - Nim (systems-programming)
-- `nltk` - NLTK (data-science)
-- `nmap` - Nmap (cybersecurity)
-- `nodejs` - Node.js (backend-development)
-- `nomad` - HashiCorp Nomad (cloud-devops)
-- `notion` - Notion (writing)
-- `novel-writing` - Novel Writing (writing)
-- `novlr` - Novlr (writing)
-- `numpy` - NumPy (data-science)
-- `nuxt` - Nuxt (frontend-development)
-- `oauth` - OAuth (cybersecurity)
-- `objective-c` - Objective-C (mobile-development)
-- `oboe` - Oboe (music)
-- `obs-studio` - OBS Studio (photography-video)
-- `obsidian` - Obsidian (writing)
-- `ocaml` - OCaml (programming)
-- `odin` - Odin (game-development)
-- `oil-painting` - Oil Painting (visual-arts)
-- `okta` - Okta (cybersecurity)
-- `ollama` - Ollama (data-science)
-- `oop` - Object-Oriented Programming (programming)
-- `openai-api` - OpenAI API (data-science)
-- `opencv` - OpenCV (data-science)
-- `opentelemetry` - OpenTelemetry (cloud-devops)
-- `openzeppelin` - OpenZeppelin (blockchain-web3)
-- `opera-singing` - Opera Singing (music)
-- `opsgenie` - Opsgenie (cloud-devops)
-- `optimism` - Optimism (blockchain-web3)
-- `oracle-cloud` - Oracle Cloud (cloud-devops)
-- `oracle-database` - Oracle Database (databases)
-- `orchestration` - Orchestration (music)
-- `orchid-growing` - Orchid Growing (home-lifestyle)
-- `organ` - Organ (music)
-- `organic-gardening` - Organic Gardening (home-lifestyle)
-- `origami` - Origami (fiber-arts-crafts)
-- `origami-studio` - Origami Studio (uiux-design)
-- `ovh-cloud` - OVH Cloud (cloud-devops)
-- `owasp` - OWASP (cybersecurity)
-- `packer` - Packer (cloud-devops)
-- `pagerduty` - PagerDuty (cloud-devops)
-- `paint-tool-sai` - Paint Tool SAI (graphic-design)
-- `paint-tool-sai` - Paint Tool SAI (visual-arts)
-- `painting` - Painting (visual-arts)
-- `pandas` - Pandas (data-science)
-- `paper-crafts` - Paper Crafts (fiber-arts-crafts)
-- `parcel` - Parcel (frontend-development)
-- `pascal` - Pascal (programming)
-- `paso-doble` - Paso Doble (dance)
-- `passportjs` - Passport.js (cybersecurity)
-- `pastel-art` - Pastel Art (visual-arts)
-- `pastry` - Pastry (home-lifestyle)
-- `pattern-making` - Pattern Making (fiber-arts-crafts)
-- `penetration-testing` - Penetration Testing (cybersecurity)
-- `perl` - Perl (programming)
-- `permaculture` - Permaculture (home-lifestyle)
-- `perspective-drawing` - Perspective Drawing (visual-arts)
-- `pet-care` - Pet Care (home-lifestyle)
-- `pgadmin` - pgAdmin (databases)
-- `phoenix` - Phoenix (backend-development)
-- `php` - PHP (backend-development)
-- `phpmyadmin` - phpMyAdmin (databases)
-- `piano` - Piano (music)
-- `pickling` - Pickling (home-lifestyle)
-- `pinecone` - Pinecone (data-science)
-- `pinia` - Pinia (frontend-development)
-- `planetscale` - PlanetScale (databases)
-- `playwright` - Playwright (frontend-development)
-- `playwriting` - Playwriting (writing)
-- `plein-air-painting` - Plein Air Painting (visual-arts)
-- `plot-development` - Plot Development (writing)
-- `plotly` - Plotly (data-science)
-- `plumbing` - Plumbing (home-lifestyle)
-- `podman` - Podman (cloud-devops)
-- `poetry` - Poetry (writing)
-- `poker` - Poker (recreation-hobbies)
-- `pole-dancing` - Pole Dancing (dance)
-- `polkadot` - Polkadot (blockchain-web3)
-- `polygon` - Polygon (blockchain-web3)
-- `polymer-clay` - Polymer Clay (fiber-arts-crafts)
-- `pony` - Pony (systems-programming)
-- `popping` - Popping (dance)
-- `portrait-drawing` - Portrait Drawing (visual-arts)
-- `postcss` - PostCSS (frontend-development)
-- `postgresql` - PostgreSQL (databases)
-- `postman` - Postman (backend-development)
-- `pottery` - Pottery (fiber-arts-crafts)
-- `powershell` - PowerShell (systems-programming)
-- `prettier` - Prettier (frontend-development)
-- `principle` - Principle (uiux-design)
-- `printmaking` - Printmaking (visual-arts)
-- `prisma` - Prisma (databases)
-- `pro-tools` - Pro Tools (music)
-- `procreate` - Procreate (graphic-design)
-- `procreate` - Procreate (visual-arts)
-- `prolog` - Prolog (programming)
-- `prometheus` - Prometheus (cloud-devops)
-- `proofreading` - Proofreading (writing)
-- `props-making` - Props Making (theater)
-- `protopie` - ProtoPie (uiux-design)
-- `prowritingaid` - ProWritingAid (writing)
-- `pulsar` - Apache Pulsar (cloud-devops)
-- `pulumi` - Pulumi (cloud-devops)
-- `puppet` - Puppet (cloud-devops)
-- `puppetry` - Puppetry (theater)
-- `purescript` - PureScript (frontend-development)
-- `pwa` - Progressive Web App (frontend-development)
-- `python` - Python (programming)
-- `pytorch` - PyTorch (data-science)
-- `qdrant` - Qdrant (data-science)
-- `quarkus` - Quarkus (backend-development)
-- `quicknode` - QuickNode (blockchain-web3)
-- `quickstep` - Quickstep (dance)
-- `quilting` - Quilting (fiber-arts-crafts)
-- `r` - R (data-science)
-- `rabbitmq` - RabbitMQ (cloud-devops)
-- `racket` - Racket (programming)
-- `railway` - Railway (cloud-devops)
-- `rainbowkit` - RainbowKit (blockchain-web3)
-- `raku` - Raku (programming)
-- `rancher` - Rancher (cloud-devops)
-- `rasa` - Rasa (data-science)
-- `ravendb` - RavenDB (databases)
-- `ray` - Ray (data-science)
-- `rc-vehicles` - RC Vehicles (recreation-hobbies)
-- `react` - React (frontend-development)
-- `react-router` - React Router (frontend-development)
-- `reaper` - Reaper (music)
-- `reason` - Reason (music)
-- `rebelle` - Rebelle (visual-arts)
-- `recorder` - Recorder (music)
-- `red` - Red (programming)
-- `redis` - Redis (databases)
-- `redux` - Redux (frontend-development)
-- `reedsy-book-editor` - Reedsy Book Editor (writing)
-- `regular-expressions` - Regular Expressions (programming)
-- `remix` - Remix (frontend-development)
-- `remix-ide` - Remix IDE (blockchain-web3)
-- `render` - Render (cloud-devops)
-- `replicate` - Replicate (data-science)
-- `rescript` - ReScript (frontend-development)
-- `resin-crafts` - Resin Crafts (fiber-arts-crafts)
-- `rest-api` - REST API (backend-development)
-- `restic` - Restic (cloud-devops)
-- `rethinkdb` - RethinkDB (databases)
-- `revit` - Revit (architecture)
-- `rhino` - Rhino (architecture)
-- `ring` - Ring (programming)
-- `roam-research` - Roam Research (writing)
-- `roboflow` - Roboflow (data-science)
-- `rock-climbing` - Rock Climbing (recreation-hobbies)
-- `rollbar` - Rollbar (cloud-devops)
-- `rollup` - Rollup (frontend-development)
-- `romance-writing` - Romance Writing (writing)
-- `ruby` - Ruby (programming)
-- `ruby-on-rails` - Ruby on Rails (backend-development)
-- `rug-hooking` - Rug Hooking (fiber-arts-crafts)
-- `rumba` - Rumba (dance)
-- `running` - Running (recreation-hobbies)
-- `rust` - Rust (systems-programming)
-- `safe` - Safe (blockchain-web3)
-- `sailsjs` - Sails.js (backend-development)
-- `salsa` - Salsa (dance)
-- `saltstack` - SaltStack (cloud-devops)
-- `samba` - Samba (dance)
-- `saml` - SAML (cybersecurity)
-- `sass` - Sass (frontend-development)
-- `saxophone` - Saxophone (music)
-- `scala` - Scala (programming)
-- `scaleway` - Scaleway (cloud-devops)
-- `scheme` - Scheme (programming)
-- `science-fiction-writing` - Science Fiction Writing (writing)
-- `scikit-learn` - Scikit-learn (data-science)
-- `scrapbooking` - Scrapbooking (fiber-arts-crafts)
-- `scratch` - Scratch (programming)
-- `screen-printing` - Screen Printing (visual-arts)
-- `screenwriting` - Screenwriting (writing)
-- `scrivener` - Scrivener (writing)
-- `seaborn` - Seaborn (data-science)
-- `security-auditing` - Security Auditing (cybersecurity)
-- `seldon-core` - Seldon Core (data-science)
-- `self-publishing` - Self-Publishing (writing)
-- `semantic-kernel` - Semantic Kernel (data-science)
-- `semaphore` - Semaphore (cloud-devops)
-- `sentry` - Sentry (cloud-devops)
-- `sequelize` - Sequelize (databases)
-- `set-design` - Set Design (theater)
-- `sewing` - Sewing (fiber-arts-crafts)
-- `short-story-writing` - Short Story Writing (writing)
-- `siem` - SIEM (cybersecurity)
-- `sight-reading` - Sight-Reading (music)
-- `sinatra` - Sinatra (backend-development)
-- `singing` - Singing (music)
-- `skateboarding` - Skateboarding (recreation-hobbies)
-- `sketch` - Sketch (uiux-design)
-- `sketching` - Sketching (visual-arts)
-- `sketchup` - SketchUp (architecture)
-- `skiing` - Skiing (recreation-hobbies)
-- `smalltalk` - Smalltalk (programming)
-- `smocking` - Smocking (fiber-arts-crafts)
-- `snowboarding` - Snowboarding (recreation-hobbies)
-- `snyk` - Snyk (cybersecurity)
-- `snyk-container` - Snyk Container (cloud-devops)
-- `soap-making` - Soap Making (fiber-arts-crafts)
-- `soccer` - Soccer (recreation-hobbies)
-- `solana` - Solana (blockchain-web3)
-- `solidity` - Solidity (blockchain-web3)
-- `solidworks` - SolidWorks (architecture)
-- `sonarqube` - SonarQube (cybersecurity)
-- `sound-design` - Sound Design (theater)
-- `sound-design-music` - Sound Design (music)
-- `sound-engineering` - Sound Engineering (music)
-- `sourdough-baking` - Sourdough Baking (home-lifestyle)
-- `sous-vide` - Sous Vide (home-lifestyle)
-- `spacy` - spaCy (data-science)
-- `spanish` - Spanish (natural-languages)
-- `speedcubing` - Speedcubing (recreation-hobbies)
-- `speedrunning` - Speedrunning (recreation-hobbies)
-- `spine` - Spine (motion-3d)
-- `spinnaker` - Spinnaker (cloud-devops)
-- `splunk` - Splunk (cloud-devops)
-- `spring-boot` - Spring Boot (backend-development)
-- `sql` - SQL (databases)
-- `sqlalchemy` - SQLAlchemy (databases)
-- `sqlite` - SQLite (databases)
-- `squarespace` - Squarespace (uiux-design)
-- `ssl-tls` - SSL/TLS (cybersecurity)
-- `stable-diffusion` - Stable Diffusion (data-science)
-- `stage-acting` - Stage Acting (theater)
-- `stage-combat` - Stage Combat (theater)
-- `stage-makeup` - Stage Makeup (theater)
-- `stage-management` - Stage Management (theater)
-- `stained-glass` - Stained Glass (fiber-arts-crafts)
-- `stand-up-comedy` - Stand-up Comedy (theater)
-- `standard-ml` - Standard ML (programming)
-- `stash` - Stash (cloud-devops)
-- `still-life` - Still Life (visual-arts)
-- `storybook` - Storybook (frontend-development)
-- `storytelling` - Storytelling (writing)
-- `strapi` - Strapi (backend-development)
-- `streamlit` - Streamlit (data-science)
-- `studio-one` - Studio One (music)
-- `substance-designer` - Substance Designer (motion-3d)
-- `substance-painter` - Substance Painter (motion-3d)
-- `subversion` - Subversion (programming)
-- `supabase` - Supabase (cloud-devops)
-- `surfing` - Surfing (recreation-hobbies)
-- `svelte` - Svelte (frontend-development)
-- `sveltekit` - SvelteKit (frontend-development)
-- `swagger` - Swagger (backend-development)
-- `swift` - Swift (mobile-development)
-- `swimming` - Swimming (recreation-hobbies)
-- `swing-dance` - Swing Dance (dance)
-- `symfony` - Symfony (backend-development)
-- `synthesizer` - Synthesizer (music)
-- `sysdig` - Sysdig (cloud-devops)
-- `tableplus` - TablePlus (databases)
-- `taekwondo` - Taekwondo (recreation-hobbies)
-- `tailoring` - Tailoring (fiber-arts-crafts)
-- `tailwindcss` - Tailwind CSS (frontend-development)
-- `tango` - Tango (dance)
-- `tanstack-query` - TanStack Query (frontend-development)
-- `tap-dance` - Tap Dance (dance)
-- `tapestry-weaving` - Tapestry Weaving (fiber-arts-crafts)
-- `tatting` - Tatting (fiber-arts-crafts)
-- `tcl` - Tcl (programming)
-- `teamcity` - TeamCity (cloud-devops)
-- `technical-writing` - Technical Writing (writing)
-- `tempo` - Tempo (cloud-devops)
-- `tencent-cloud` - Tencent Cloud (cloud-devops)
-- `tenderly` - Tenderly (blockchain-web3)
-- `tennis` - Tennis (recreation-hobbies)
-- `tensorflow` - TensorFlow (data-science)
-- `terraform` - Terraform (cloud-devops)
-- `testing-library` - Testing Library (frontend-development)
-- `the-graph` - The Graph (blockchain-web3)
-- `theater-directing` - Directing (theater)
-- `thirdweb` - Thirdweb (blockchain-web3)
-- `tie-dye` - Tie-Dye (fiber-arts-crafts)
-- `tiling` - Tiling (home-lifestyle)
-- `timescaledb` - TimescaleDB (databases)
-- `together-ai` - Together AI (data-science)
-- `toon-boom-harmony` - Toon Boom Harmony (motion-3d)
-- `traefik` - Traefik (cloud-devops)
-- `travis-ci` - Travis CI (cloud-devops)
-- `trivy` - Trivy (cloud-devops)
-- `trombone` - Trombone (music)
-- `trpc` - tRPC (backend-development)
-- `truffle` - Truffle (blockchain-web3)
-- `trumpet` - Trumpet (music)
-- `tuba` - Tuba (music)
-- `turntablism` - Turntablism (music)
-- `typeorm` - TypeORM (databases)
-- `typescript` - TypeScript (programming)
-- `ukulele` - Ukulele (music)
-- `ultralytics` - Ultralytics (data-science)
-- `ulysses` - Ulysses (writing)
-- `uptrace` - Uptrace (cloud-devops)
-- `v` - V (systems-programming)
-- `vagrant` - Vagrant (cloud-devops)
-- `vault` - HashiCorp Vault (cloud-devops)
-- `vegetable-gardening` - Vegetable Gardening (home-lifestyle)
-- `velero` - Velero (cloud-devops)
-- `vellum` - Vellum (writing)
-- `vercel` - Vercel (cloud-devops)
-- `vertex-ai` - Vertex AI (data-science)
-- `viem` - viem (blockchain-web3)
-- `viennese-waltz` - Viennese Waltz (dance)
-- `viola` - Viola (music)
-- `violin` - Violin (music)
-- `visual-basic` - Visual Basic (programming)
-- `vite` - Vite (frontend-development)
-- `vitest` - Vitest (frontend-development)
-- `voice-acting` - Voice Acting (theater)
-- `voiceflow` - Voiceflow (data-science)
-- `vray` - V-Ray (motion-3d)
-- `vuejs` - Vue.js (frontend-development)
-- `vuex` - Vuex (frontend-development)
-- `vultr` - Vultr (cloud-devops)
-- `vyper` - Vyper (blockchain-web3)
-- `wagmi` - wagmi (blockchain-web3)
-- `walletconnect` - WalletConnect (blockchain-web3)
-- `waltz` - Waltz (dance)
-- `watercolor-painting` - Watercolor Painting (visual-arts)
-- `weave-net` - Weave Net (cloud-devops)
-- `weaviate` - Weaviate (data-science)
-- `weaving` - Weaving (fiber-arts-crafts)
-- `web3js` - web3.js (blockchain-web3)
-- `web3py` - web3.py (blockchain-web3)
-- `webassembly` - WebAssembly (web-development)
-- `webflow` - Webflow (uiux-design)
-- `webpack` - Webpack (frontend-development)
-- `weights-and-biases` - Weights & Biases (data-science)
-- `welding` - Welding (home-lifestyle)
-- `wercker` - Wercker (cloud-devops)
-- `west-coast-swing` - West Coast Swing (dance)
-- `wheel-throwing` - Wheel Throwing (fiber-arts-crafts)
-- `whisper` - Whisper (data-science)
-- `whittling` - Whittling (fiber-arts-crafts)
-- `wine-tasting` - Wine Tasting (home-lifestyle)
-- `wire-wrapping` - Wire Wrapping (fiber-arts-crafts)
-- `wireshark` - Wireshark (cybersecurity)
-- `wix` - Wix (uiux-design)
-- `woodcarving` - Woodcarving (fiber-arts-crafts)
-- `woodcut` - Woodcut (visual-arts)
-- `woodworking` - Woodworking (home-lifestyle)
-- `wordpress` - WordPress (uiux-design)
-- `world-anvil` - World Anvil (writing)
-- `worldbuilding` - Worldbuilding (writing)
-- `wrk` - wrk (cloud-devops)
-- `xgboost` - XGBoost (data-science)
-- `yolo` - YOLO (data-science)
-- `ywriter` - yWriter (writing)
-- `zabbix` - Zabbix (cloud-devops)
-- `zapier` - Zapier (automation-integration)
-- `zbrush` - ZBrush (motion-3d)
-- `zeplin` - Zeplin (uiux-design)
-- `zero-trust` - Zero Trust (cybersecurity)
-- `zerossl` - ZeroSSL (cloud-devops)
-- `zig` - Zig (systems-programming)
-- `zipkin` - Zipkin (cloud-devops)
-- `zksync` - zkSync (blockchain-web3)
-- `zookeeper` - Apache ZooKeeper (cloud-devops)
-- `zustand` - Zustand (frontend-development)
 
 ---
 
@@ -3155,15 +2207,78 @@ Run `npm run generate:competency-reference` to update.
 
 ## data-engineering
 
+### Apache Airflow
+- **Slug:** `apache-airflow`
+- **Icon:** `logos:airflow-icon`
+- **Synonyms:** Airflow, Airflow Orchestration
+- **Prerequisites:**
+  - `python` (required) - Airflow DAGs are written in Python
+- **Alternatives:**
+  - `prefect` (similar)
+  - `dagster` (similar)
+
 ### Apache Spark
 - **Slug:** `apache-spark`
 - **Synonyms:** Spark, PySpark, Spark ML
 - **Prerequisites:**
   - `python` (recommended) - PySpark is the Python API for Spark
 
+### Dagster
+- **Slug:** `dagster`
+- **Synonyms:** Dagster Platform, Dagster Cloud
+- **Prerequisites:**
+  - `python` (required) - Dagster pipelines are written in Python
+- **Alternatives:**
+  - `apache-airflow` (similar)
+  - `prefect` (similar)
+
+### dbt
+- **Slug:** `dbt`
+- **Icon:** `logos:dbt-icon`
+- **Synonyms:** dbt Core, dbt Cloud, data build tool
+- **Prerequisites:**
+  - `sql` (required) - dbt models are written in SQL
+
+### Great Expectations
+- **Slug:** `great-expectations`
+- **Synonyms:** GX, Great Expectations Data Quality
+- **Prerequisites:**
+  - `python` (required) - Great Expectations is a Python library
+
+### Luigi
+- **Slug:** `luigi`
+- **Synonyms:** Spotify Luigi, Luigi Pipeline
+- **Prerequisites:**
+  - `python` (required) - Luigi is a Python library
+- **Alternatives:**
+  - `apache-airflow` (similar)
+
+### Prefect
+- **Slug:** `prefect`
+- **Synonyms:** Prefect Cloud, Prefect Orchestration
+- **Prerequisites:**
+  - `python` (required) - Prefect flows are written in Python
+- **Alternatives:**
+  - `apache-airflow` (similar)
+  - `dagster` (similar)
+
+### Soda
+- **Slug:** `soda`
+- **Synonyms:** Soda SQL, Soda Core, Soda Cloud
+- **Prerequisites:**
+  - `sql` (recommended) - Soda tests are often written in SQL
+- **Alternatives:**
+  - `great-expectations` (similar)
+
 ---
 
 ## data-science
+
+### Alteryx
+- **Slug:** `alteryx`
+- **Synonyms:** Alteryx Designer, Alteryx Analytics
+- **Alternatives:**
+  - `knime` (similar)
 
 ### Amazon Lex
 - **Slug:** `amazon-lex`
@@ -3180,6 +2295,16 @@ Run `npm run generate:competency-reference` to update.
 ### Anthropic Claude API
 - **Slug:** `anthropic-claude-api`
 - **Synonyms:** Claude API, Anthropic API, Claude AI
+
+### Apache Superset
+- **Slug:** `apache-superset`
+- **Synonyms:** Superset, Superset BI
+- **Prerequisites:**
+  - `sql` (recommended) - SQL knowledge is essential for Superset
+  - `python` (recommended) - Python is used for Superset deployment and customization
+- **Alternatives:**
+  - `metabase` (similar)
+  - `redash` (similar)
 
 ### AssemblyAI
 - **Slug:** `assemblyai`
@@ -3239,9 +2364,20 @@ Run `npm run generate:competency-reference` to update.
 - **Icon:** `logos:dialogflow`
 - **Synonyms:** Google Dialogflow, Dialogflow CX, Dialogflow ES
 
+### DVC
+- **Slug:** `dvc`
+- **Synonyms:** Data Version Control, DVC.org
+- **Prerequisites:**
+  - `git` (required) - DVC works alongside Git
+  - `python` (recommended) - DVC is commonly used in Python ML projects
+
 ### ElevenLabs
 - **Slug:** `elevenlabs`
 - **Synonyms:** ElevenLabs AI, Eleven Labs TTS
+
+### Excel
+- **Slug:** `excel`
+- **Synonyms:** Microsoft Excel, MS Excel, Excel Spreadsheet
 
 ### FAISS
 - **Slug:** `faiss`
@@ -3257,10 +2393,23 @@ Run `npm run generate:competency-reference` to update.
   - `c` (similar)
   - `julia` (similar)
 
+### Fortran
+- **Slug:** `fortran`
+- **Synonyms:** Fortran 90, Fortran 95, Fortran Programming
+- **Alternatives:**
+  - `python` (similar)
+  - `julia` (similar)
+
 ### Google Gemini API
 - **Slug:** `google-gemini-api`
 - **Icon:** `logos:google-gemini`
 - **Synonyms:** Gemini API, Google Gemini
+
+### Google Sheets
+- **Slug:** `google-sheets`
+- **Synonyms:** Sheets, Google Spreadsheets, GSheets
+- **Alternatives:**
+  - `excel` (similar)
 
 ### Gradio
 - **Slug:** `gradio`
@@ -3281,6 +2430,22 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (required) - Hugging Face libraries are Python-based
 
+### jamovi
+- **Slug:** `jamovi`
+- **Synonyms:** jamovi Statistics, jamovi Software
+- **Alternatives:**
+  - `jasp` (similar)
+
+### JASP
+- **Slug:** `jasp`
+- **Synonyms:** JASP Statistics, JASP Software
+- **Alternatives:**
+  - `jamovi` (similar)
+
+### JMP
+- **Slug:** `jmp`
+- **Synonyms:** JMP Software, SAS JMP
+
 ### Julia
 - **Slug:** `julia`
 - **Icon:** `logos:julia`
@@ -3289,6 +2454,13 @@ Run `npm run generate:competency-reference` to update.
   - `python` (similar)
   - `r` (similar)
   - `matlab` (similar)
+
+### Julia
+- **Slug:** `julia`
+- **Synonyms:** Julia Language, Julia Programming
+- **Alternatives:**
+  - `python` (similar)
+  - `r` (similar)
 
 ### Jupyter
 - **Slug:** `jupyter`
@@ -3304,6 +2476,13 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `tensorflow` (recommended) - Keras is now integrated with TensorFlow
   - `python` (required) - Keras is a Python library
+
+### KNIME
+- **Slug:** `knime`
+- **Synonyms:** KNIME Analytics Platform, KNIME Workflow
+- **Alternatives:**
+  - `alteryx` (similar)
+  - `rapidminer` (similar)
 
 ### KServe
 - **Slug:** `kserve`
@@ -3354,6 +2533,16 @@ Run `npm run generate:competency-reference` to update.
 - **Slug:** `lm-studio`
 - **Synonyms:** LM Studio App, LMStudio
 
+### Looker
+- **Slug:** `looker`
+- **Icon:** `logos:looker-icon`
+- **Synonyms:** Looker Studio, Google Looker, LookML
+- **Prerequisites:**
+  - `sql` (recommended) - SQL knowledge helps with LookML and data modeling
+- **Alternatives:**
+  - `tableau` (similar)
+  - `power-bi` (similar)
+
 ### MATLAB
 - **Slug:** `matlab`
 - **Icon:** `devicon:matlab`
@@ -3362,12 +2551,29 @@ Run `npm run generate:competency-reference` to update.
   - `python` (similar)
   - `julia` (similar)
 
+### MATLAB
+- **Slug:** `matlab`
+- **Icon:** `devicon:matlab`
+- **Synonyms:** MATLAB Software, MATLAB Programming
+- **Alternatives:**
+  - `python` (similar)
+  - `octave` (similar)
+
 ### Matplotlib
 - **Slug:** `matplotlib`
 - **Synonyms:** matplotlib.pyplot, Matplotlib Python
 - **Prerequisites:**
   - `python` (required) - Matplotlib is a Python library
   - `numpy` (recommended) - Matplotlib works with NumPy arrays
+
+### Metabase
+- **Slug:** `metabase`
+- **Synonyms:** Metabase BI, Metabase Analytics
+- **Prerequisites:**
+  - `sql` (recommended) - SQL is useful for creating queries in Metabase
+- **Alternatives:**
+  - `apache-superset` (similar)
+  - `redash` (similar)
 
 ### Microsoft Copilot Studio
 - **Slug:** `microsoft-copilot-studio`
@@ -3376,6 +2582,10 @@ Run `npm run generate:competency-reference` to update.
 ### Milvus
 - **Slug:** `milvus`
 - **Synonyms:** Milvus DB, Milvus Vector Database
+
+### Minitab
+- **Slug:** `minitab`
+- **Synonyms:** Minitab Statistical Software, Minitab Statistics
 
 ### MLflow
 - **Slug:** `mlflow`
@@ -3413,6 +2623,12 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (required) - NumPy is a Python library
 
+### Octave
+- **Slug:** `octave`
+- **Synonyms:** GNU Octave, Octave Programming
+- **Alternatives:**
+  - `matlab` (similar)
+
 ### Ollama
 - **Slug:** `ollama`
 - **Synonyms:** Ollama AI, Ollama LLM
@@ -3428,6 +2644,12 @@ Run `npm run generate:competency-reference` to update.
 - **Synonyms:** Open CV, OpenCV Computer Vision
 - **Prerequisites:**
   - `python` (recommended) - OpenCV is commonly used with Python
+
+### Orange
+- **Slug:** `orange`
+- **Synonyms:** Orange Data Mining, Orange3
+- **Prerequisites:**
+  - `python` (recommended) - Orange is built on Python and can be extended with Python scripts
 
 ### Pandas
 - **Slug:** `pandas`
@@ -3448,6 +2670,14 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (recommended) - Plotly is commonly used with Python
 
+### Power BI
+- **Slug:** `power-bi`
+- **Icon:** `logos:microsoft-power-bi`
+- **Synonyms:** PowerBI, Microsoft Power BI, Power BI Desktop
+- **Alternatives:**
+  - `tableau` (similar)
+  - `looker` (similar)
+
 ### PyTorch
 - **Slug:** `pytorch`
 - **Icon:** `logos:pytorch-icon`
@@ -3462,12 +2692,31 @@ Run `npm run generate:competency-reference` to update.
 - **Icon:** `logos:qdrant-icon`
 - **Synonyms:** Qdrant DB, Qdrant Vector Database
 
+### Qlik
+- **Slug:** `qlik`
+- **Synonyms:** QlikView, Qlik Sense, Qlik Analytics
+- **Alternatives:**
+  - `tableau` (similar)
+  - `power-bi` (similar)
+
 ### R
 - **Slug:** `r`
 - **Icon:** `logos:r-lang`
 - **Synonyms:** R Language, R Programming, R Statistical Computing
 - **Alternatives:**
   - `python` (similar)
+
+### R
+- **Slug:** `r`
+- **Synonyms:** R Programming, R Language, R Statistics
+- **Alternatives:**
+  - `python` (similar)
+
+### RapidMiner
+- **Slug:** `rapidminer`
+- **Synonyms:** RapidMiner Studio, RapidMiner Platform
+- **Alternatives:**
+  - `knime` (similar)
 
 ### Rasa
 - **Slug:** `rasa`
@@ -3481,6 +2730,15 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (required) - Ray is a Python framework
 
+### Redash
+- **Slug:** `redash`
+- **Synonyms:** Redash BI, Redash Analytics
+- **Prerequisites:**
+  - `sql` (required) - Redash is built around SQL queries
+- **Alternatives:**
+  - `metabase` (similar)
+  - `apache-superset` (similar)
+
 ### Replicate
 - **Slug:** `replicate`
 - **Synonyms:** Replicate AI, Replicate Cloud
@@ -3488,6 +2746,13 @@ Run `npm run generate:competency-reference` to update.
 ### Roboflow
 - **Slug:** `roboflow`
 - **Synonyms:** Roboflow CV, Roboflow Platform
+
+### SAS
+- **Slug:** `sas`
+- **Synonyms:** SAS Analytics, SAS Software, SAS Studio
+- **Alternatives:**
+  - `spss` (similar)
+  - `r` (similar)
 
 ### Scikit-learn
 - **Slug:** `scikit-learn`
@@ -3514,11 +2779,24 @@ Run `npm run generate:competency-reference` to update.
 - **Slug:** `semantic-kernel`
 - **Synonyms:** Semantic Kernel SDK, Microsoft Semantic Kernel
 
+### Sisense
+- **Slug:** `sisense`
+- **Synonyms:** Sisense Analytics, Sisense BI
+- **Alternatives:**
+  - `tableau` (similar)
+
 ### spaCy
 - **Slug:** `spacy`
 - **Synonyms:** spaCy NLP, Spacy
 - **Prerequisites:**
   - `python` (required) - spaCy is a Python library
+
+### SPSS
+- **Slug:** `spss`
+- **Synonyms:** IBM SPSS, SPSS Statistics, SPSS Modeler
+- **Alternatives:**
+  - `sas` (similar)
+  - `r` (similar)
 
 ### Stable Diffusion
 - **Slug:** `stable-diffusion`
@@ -3526,11 +2804,26 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (recommended) - Stable Diffusion is typically used with Python
 
+### Stata
+- **Slug:** `stata`
+- **Synonyms:** Stata Software, Stata Statistics
+- **Alternatives:**
+  - `sas` (similar)
+  - `r` (similar)
+
 ### Streamlit
 - **Slug:** `streamlit`
 - **Synonyms:** Streamlit App, Streamlit Python
 - **Prerequisites:**
   - `python` (required) - Streamlit is a Python framework
+
+### Tableau
+- **Slug:** `tableau`
+- **Icon:** `logos:tableau-icon`
+- **Synonyms:** Tableau Desktop, Tableau Server, Tableau Public
+- **Alternatives:**
+  - `power-bi` (similar)
+  - `looker` (similar)
 
 ### TensorFlow
 - **Slug:** `tensorflow`
@@ -3570,6 +2863,12 @@ Run `npm run generate:competency-reference` to update.
 - **Synonyms:** wandb, W&B, Weights and Biases
 - **Prerequisites:**
   - `python` (required) - W&B is primarily used with Python
+
+### Weka
+- **Slug:** `weka`
+- **Synonyms:** Weka Machine Learning, Waikato Environment for Knowledge Analysis
+- **Prerequisites:**
+  - `java` (recommended) - Weka is written in Java
 
 ### Whisper
 - **Slug:** `whisper`
