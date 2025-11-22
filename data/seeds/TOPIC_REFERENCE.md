@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T19:34:34.921Z
-**Total Topics:** 297
+**Generated:** 2025-11-22T20:16:23.790Z
+**Total Topics:** 601
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -14,10 +14,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 - [backend-development](#backend-development) (3)
 - [cloud-devops](#cloud-devops) (170)
+- [databases](#databases) (72)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
 - [game-development](#game-development) (1)
-- [language](#language) (1)
+- [languages](#languages) (147)
+- [mobile-development](#mobile-development) (86)
 - [programming](#programming) (73)
 - [software-testing](#software-testing) (3)
 
@@ -1160,6 +1162,492 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## databases
+
+### .NET document databases with RavenDB
+- **Slug:** `dotnet-document-databases-ravendb`
+- **Description:** Build .NET applications using RavenDB's ACID-compliant NoSQL document database
+- **Primary Competencies:** `ravendb`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 003-databases.json
+
+### Advanced SQL for data analysis
+- **Slug:** `advanced-sql-data-analysis`
+- **Description:** Use advanced SQL techniques including window functions, CTEs, and complex joins for analytics
+- **Primary Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Big data storage with Apache HBase
+- **Slug:** `bigdata-storage-hbase`
+- **Description:** Store and retrieve massive datasets using Apache HBase on Hadoop
+- **Primary Competencies:** `hbase`
+- **Source File:** 003-databases.json
+
+### Building .NET applications with SQL Server and Entity Framework
+- **Slug:** `dotnet-apps-sqlserver-entity-framework`
+- **Description:** Develop ASP.NET Core applications using Entity Framework to work with SQL Server databases
+- **Primary Competencies:** `entity-framework`
+- **Supporting Competencies:** `microsoft-sql-server`, `csharp`, `aspnet-core`
+- **Source File:** 003-databases.json
+
+### Building data-driven web applications with PostgreSQL and Prisma
+- **Slug:** `building-web-apps-postgresql-prisma`
+- **Description:** Create type-safe web applications using PostgreSQL database with Prisma ORM for Node.js
+- **Primary Competencies:** `prisma`
+- **Supporting Competencies:** `postgresql`, `typescript`, `nodejs`
+- **Source File:** 003-databases.json
+
+### Building document-based applications with MongoDB and Mongoose
+- **Slug:** `document-apps-mongodb-mongoose`
+- **Description:** Create flexible Node.js applications using MongoDB with Mongoose ODM for schema modeling
+- **Primary Competencies:** `mongoose`
+- **Supporting Competencies:** `mongodb`, `nodejs`, `javascript`
+- **Source File:** 003-databases.json
+
+### Building graph databases with Neo4j
+- **Slug:** `graph-databases-neo4j`
+- **Description:** Model and query connected data using Neo4j graph database with Cypher query language
+- **Primary Competencies:** `neo4j`
+- **Source File:** 003-databases.json
+
+### Building GraphQL servers with Node.js and Apollo
+- **Slug:** `graphql-servers-nodejs-apollo`
+- **Description:** Create GraphQL APIs using Apollo Server with Node.js and TypeScript
+- **Primary Competencies:** `apollo-server`
+- **Supporting Competencies:** `graphql`, `nodejs`, `typescript`
+- **Source File:** 003-databases.json
+
+### Building Java enterprise applications with Oracle and Hibernate
+- **Slug:** `java-apps-oracle-hibernate`
+- **Description:** Create enterprise Java applications using Hibernate ORM with Oracle Database
+- **Primary Competencies:** `hibernate`
+- **Supporting Competencies:** `oracle-database`, `java`
+- **Source File:** 003-databases.json
+
+### Building mobile apps with SQLite and React Native
+- **Slug:** `mobile-apps-sqlite-react-native`
+- **Description:** Create offline-capable mobile applications using SQLite for local data storage in React Native
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `sqlite`, `javascript`, `react`
+- **Source File:** 003-databases.json
+
+### Building Next.js applications with PostgreSQL and Prisma
+- **Slug:** `nextjs-postgresql-prisma`
+- **Description:** Create full-stack Next.js applications using Prisma ORM with PostgreSQL database
+- **Primary Competencies:** `nextjs`
+- **Supporting Competencies:** `prisma`, `postgresql`, `typescript`, `react`
+- **Source File:** 003-databases.json
+
+### Building Python APIs with FastAPI and PostgreSQL
+- **Slug:** `python-apis-fastapi-postgresql`
+- **Description:** Create high-performance Python APIs using FastAPI with PostgreSQL and SQLAlchemy
+- **Primary Competencies:** `fastapi`
+- **Supporting Competencies:** `postgresql`, `sqlalchemy`, `python`
+- **Source File:** 003-databases.json
+
+### Building Python web applications with MySQL and SQLAlchemy
+- **Slug:** `python-web-apps-mysql-sqlalchemy`
+- **Description:** Develop Python applications using SQLAlchemy ORM to interact with MySQL databases
+- **Primary Competencies:** `sqlalchemy`
+- **Supporting Competencies:** `mysql`, `python`
+- **Source File:** 003-databases.json
+
+### Building real-time applications with MongoDB and Node.js
+- **Slug:** `realtime-apps-mongodb-nodejs`
+- **Description:** Create real-time web applications using MongoDB change streams with Node.js
+- **Primary Competencies:** `nodejs`
+- **Supporting Competencies:** `mongodb`, `javascript`
+- **Source File:** 003-databases.json
+
+### Building REST APIs with Node.js, Express, and PostgreSQL
+- **Slug:** `rest-apis-nodejs-express-postgresql`
+- **Description:** Develop backend APIs using Node.js and Express with PostgreSQL for data persistence
+- **Primary Competencies:** `expressjs`
+- **Supporting Competencies:** `postgresql`, `nodejs`, `javascript`, `sql`
+- **Source File:** 003-databases.json
+
+### Building scalable applications with Redis and Node.js
+- **Slug:** `scalable-apps-redis-nodejs`
+- **Description:** Use Redis for caching, pub/sub messaging, and session management in Node.js applications
+- **Primary Competencies:** `nodejs`
+- **Supporting Competencies:** `redis`, `javascript`
+- **Source File:** 003-databases.json
+
+### Building scalable web applications with MySQL and Sequelize
+- **Slug:** `web-apps-mysql-sequelize`
+- **Description:** Create robust Node.js applications using MySQL database with Sequelize ORM for data modeling
+- **Primary Competencies:** `sequelize`
+- **Supporting Competencies:** `mysql`, `nodejs`, `javascript`
+- **Source File:** 003-databases.json
+
+### Building search experiences with Algolia and React
+- **Slug:** `search-experiences-algolia-react`
+- **Description:** Create instant search interfaces using Algolia with React InstantSearch
+- **Primary Competencies:** `algolia`
+- **Supporting Competencies:** `react`, `javascript`
+- **Source File:** 003-databases.json
+
+### Building serverless applications with DynamoDB
+- **Slug:** `serverless-apps-dynamodb`
+- **Description:** Create serverless applications on AWS using DynamoDB for NoSQL data storage
+- **Primary Competencies:** `dynamodb`
+- **Supporting Competencies:** `aws`
+- **Source File:** 003-databases.json
+
+### Building Spring Boot applications with MySQL and Hibernate
+- **Slug:** `spring-boot-mysql-hibernate`
+- **Description:** Develop Java Spring Boot applications using Hibernate ORM with MySQL databases
+- **Primary Competencies:** `spring-boot`
+- **Supporting Competencies:** `hibernate`, `mysql`, `java`
+- **Source File:** 003-databases.json
+
+### Caching strategies with Redis
+- **Slug:** `caching-strategies-redis`
+- **Description:** Implement high-performance caching and session storage using Redis in-memory database
+- **Primary Competencies:** `redis`
+- **Source File:** 003-databases.json
+
+### Cloud databases with Azure SQL Database
+- **Slug:** `cloud-databases-azure-sql`
+- **Description:** Build cloud-native applications using Azure SQL Database with automatic scaling
+- **Primary Competencies:** `azure-sql-database`
+- **Supporting Competencies:** `microsoft-sql-server`, `azure`
+- **Source File:** 003-databases.json
+
+### Cross-database development with DataGrip
+- **Slug:** `cross-database-development-datagrip`
+- **Description:** Manage multiple databases using JetBrains DataGrip IDE for SQL development
+- **Primary Competencies:** `datagrip`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Database administration and monitoring with pgAdmin
+- **Slug:** `database-admin-monitoring-pgadmin`
+- **Description:** Manage and monitor PostgreSQL databases using pgAdmin for queries, backups, and performance analysis
+- **Primary Competencies:** `pgadmin`
+- **Supporting Competencies:** `postgresql`, `sql`
+- **Source File:** 003-databases.json
+
+### Database administration with Navicat
+- **Slug:** `database-administration-navicat`
+- **Description:** Administer multiple database types using Navicat's comprehensive management tools
+- **Primary Competencies:** `navicat`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Database migrations with Flyway
+- **Slug:** `database-migrations-flyway`
+- **Description:** Manage database schema changes using Flyway version-controlled migrations
+- **Primary Competencies:** `flyway`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Database schema design and modeling
+- **Slug:** `database-schema-design-modeling`
+- **Description:** Design efficient database schemas with proper relationships, indexes, and constraints
+- **Primary Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Deploying and scaling MongoDB with MongoDB Atlas
+- **Slug:** `deploying-scaling-mongodb-atlas`
+- **Description:** Deploy managed MongoDB clusters on MongoDB Atlas with automated scaling and backups
+- **Primary Competencies:** `mongodb-atlas`
+- **Supporting Competencies:** `mongodb`
+- **Source File:** 003-databases.json
+
+### Distributed databases with Apache Cassandra
+- **Slug:** `distributed-databases-cassandra`
+- **Description:** Build highly available, scalable applications using Apache Cassandra NoSQL database
+- **Primary Competencies:** `cassandra`
+- **Source File:** 003-databases.json
+
+### Distributed SQL with CockroachDB
+- **Slug:** `distributed-sql-cockroachdb`
+- **Description:** Build globally distributed applications using CockroachDB's resilient SQL database
+- **Primary Competencies:** `cockroachdb`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Document databases with CouchDB
+- **Slug:** `document-databases-couchdb`
+- **Description:** Create offline-first applications using CouchDB's document database with sync capabilities
+- **Primary Competencies:** `couchdb`
+- **Source File:** 003-databases.json
+
+### Document storage with Couchbase
+- **Slug:** `document-storage-couchbase`
+- **Description:** Build distributed applications using Couchbase for JSON document storage and caching
+- **Primary Competencies:** `couchbase`
+- **Source File:** 003-databases.json
+
+### Embedded database solutions with SQLite
+- **Slug:** `embedded-databases-sqlite`
+- **Description:** Implement lightweight embedded databases using SQLite for mobile apps and small applications
+- **Primary Competencies:** `sqlite`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Enterprise applications with Microsoft SQL Server
+- **Slug:** `enterprise-apps-sql-server`
+- **Description:** Build enterprise-grade applications using Microsoft SQL Server for data management and analytics
+- **Primary Competencies:** `microsoft-sql-server`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Enterprise search with Apache Solr
+- **Slug:** `enterprise-search-apache-solr`
+- **Description:** Build enterprise search solutions using Apache Solr for full-text indexing
+- **Primary Competencies:** `apache-solr`
+- **Source File:** 003-databases.json
+
+### Full-stack TypeScript applications with PostgreSQL and TypeORM
+- **Slug:** `fullstack-typescript-postgresql-typeorm`
+- **Description:** Build end-to-end type-safe applications using TypeORM to connect TypeScript backends with PostgreSQL
+- **Primary Competencies:** `typeorm`
+- **Supporting Competencies:** `postgresql`, `typescript`, `nodejs`
+- **Source File:** 003-databases.json
+
+### GraphQL clients with React and Apollo
+- **Slug:** `graphql-clients-react-apollo`
+- **Description:** Connect React applications to GraphQL APIs using Apollo Client
+- **Primary Competencies:** `apollo-client`
+- **Supporting Competencies:** `graphql`, `react`, `typescript`
+- **Source File:** 003-databases.json
+
+### High-performance caching with Memcached
+- **Slug:** `high-performance-caching-memcached`
+- **Description:** Implement distributed memory caching using Memcached to accelerate web applications
+- **Primary Competencies:** `memcached`
+- **Source File:** 003-databases.json
+
+### High-performance web applications with MariaDB
+- **Slug:** `high-performance-web-apps-mariadb`
+- **Description:** Build fast and scalable web applications using MariaDB as a MySQL-compatible database
+- **Primary Competencies:** `mariadb`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Hosted search with Algolia
+- **Slug:** `hosted-search-algolia`
+- **Description:** Implement fast, typo-tolerant search using Algolia's hosted search API
+- **Primary Competencies:** `algolia`
+- **Source File:** 003-databases.json
+
+### IoT and sensor data with InfluxDB
+- **Slug:** `iot-sensor-data-influxdb`
+- **Description:** Collect and visualize IoT sensor data using InfluxDB time-series database
+- **Primary Competencies:** `influxdb`
+- **Source File:** 003-databases.json
+
+### Java application migrations with Flyway
+- **Slug:** `java-migrations-flyway`
+- **Description:** Automate database schema evolution in Java applications using Flyway
+- **Primary Competencies:** `flyway`
+- **Supporting Competencies:** `java`, `sql`
+- **Source File:** 003-databases.json
+
+### Laravel applications with MySQL and Eloquent
+- **Slug:** `laravel-mysql-eloquent`
+- **Description:** Develop PHP applications using Laravel's Eloquent ORM with MySQL databases
+- **Primary Competencies:** `eloquent`
+- **Supporting Competencies:** `mysql`, `php`, `laravel`
+- **Source File:** 003-databases.json
+
+### Lightweight database management with Adminer
+- **Slug:** `lightweight-database-management-adminer`
+- **Description:** Manage databases using Adminer's single-file PHP database tool
+- **Primary Competencies:** `adminer`
+- **Supporting Competencies:** `mysql`, `php`
+- **Source File:** 003-databases.json
+
+### Managed databases with Google Cloud SQL
+- **Slug:** `managed-databases-google-cloud-sql`
+- **Description:** Deploy MySQL and PostgreSQL databases on Google Cloud SQL with automated management
+- **Primary Competencies:** `google-cloud-sql`
+- **Supporting Competencies:** `postgresql`, `google-cloud-platform`
+- **Source File:** 003-databases.json
+
+### Managed PostgreSQL with Amazon RDS
+- **Slug:** `managed-postgresql-amazon-rds`
+- **Description:** Deploy and manage PostgreSQL databases using Amazon RDS for automated backups and scaling
+- **Primary Competencies:** `amazon-rds`
+- **Supporting Competencies:** `postgresql`, `aws`
+- **Source File:** 003-databases.json
+
+### Managing MongoDB with MongoDB Compass
+- **Slug:** `managing-mongodb-compass`
+- **Description:** Use MongoDB Compass GUI to visualize, query, and optimize MongoDB databases
+- **Primary Competencies:** `mongodb-compass`
+- **Supporting Competencies:** `mongodb`
+- **Source File:** 003-databases.json
+
+### Managing MySQL databases with MySQL Workbench
+- **Slug:** `managing-mysql-workbench`
+- **Description:** Use MySQL Workbench for database design, development, administration, and data modeling
+- **Primary Competencies:** `mysql-workbench`
+- **Supporting Competencies:** `mysql`, `sql`
+- **Source File:** 003-databases.json
+
+### Microservices data patterns with MongoDB
+- **Slug:** `microservices-data-patterns-mongodb`
+- **Description:** Implement database-per-service patterns in microservices using MongoDB
+- **Supporting Competencies:** `mongodb`
+- **Source File:** 003-databases.json
+
+### Modern database GUI with TablePlus
+- **Slug:** `modern-database-gui-tableplus`
+- **Description:** Manage databases using TablePlus's native GUI for multiple database systems
+- **Primary Competencies:** `tableplus`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Multi-database management with DBeaver
+- **Slug:** `multi-database-management-dbeaver`
+- **Description:** Work with diverse database systems using DBeaver universal database tool
+- **Primary Competencies:** `dbeaver`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Multi-model databases with ArangoDB
+- **Slug:** `multimodel-databases-arangodb`
+- **Description:** Work with document, graph, and key-value data models in a single ArangoDB database
+- **Primary Competencies:** `arangodb`
+- **Source File:** 003-databases.json
+
+### MySQL database design and normalization
+- **Slug:** `mysql-database-design-normalization`
+- **Description:** Design efficient relational database schemas in MySQL with proper normalization and relationships
+- **Primary Competencies:** `mysql`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### MySQL web administration with phpMyAdmin
+- **Slug:** `mysql-web-admin-phpmyadmin`
+- **Description:** Manage MySQL databases through the web using phpMyAdmin interface
+- **Primary Competencies:** `phpmyadmin`
+- **Supporting Competencies:** `mysql`, `php`
+- **Source File:** 003-databases.json
+
+### NoSQL database design with MongoDB
+- **Slug:** `nosql-design-mongodb`
+- **Description:** Design schema-less, document-oriented databases using MongoDB for flexible data models
+- **Primary Competencies:** `mongodb`
+- **Source File:** 003-databases.json
+
+### Open-source search with Meilisearch
+- **Slug:** `opensource-search-meilisearch`
+- **Description:** Deploy fast and relevant search using Meilisearch's open-source search engine
+- **Primary Competencies:** `meilisearch`
+- **Source File:** 003-databases.json
+
+### Oracle database administration and development
+- **Slug:** `oracle-database-admin-development`
+- **Description:** Manage and develop enterprise applications using Oracle Database with PL/SQL
+- **Primary Competencies:** `oracle-database`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Python database migrations with Alembic
+- **Slug:** `python-migrations-alembic`
+- **Description:** Manage SQLAlchemy database migrations using Alembic for version control
+- **Primary Competencies:** `alembic`
+- **Supporting Competencies:** `sqlalchemy`, `python`
+- **Source File:** 003-databases.json
+
+### Query builders with Knex.js
+- **Slug:** `query-builders-knexjs`
+- **Description:** Build flexible SQL queries using Knex.js query builder for Node.js
+- **Primary Competencies:** `knexjs`
+- **Supporting Competencies:** `nodejs`, `javascript`, `sql`
+- **Source File:** 003-databases.json
+
+### Query optimization and performance tuning in PostgreSQL
+- **Slug:** `postgresql-query-optimization-performance`
+- **Description:** Master advanced PostgreSQL features including indexes, query plans, and performance optimization techniques
+- **Primary Competencies:** `postgresql`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Real-time data synchronization with PostgreSQL
+- **Slug:** `realtime-sync-postgresql`
+- **Description:** Implement real-time data updates using PostgreSQL logical replication and pub/sub
+- **Primary Competencies:** `postgresql`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Real-time databases with RethinkDB
+- **Slug:** `realtime-databases-rethinkdb`
+- **Description:** Create reactive applications using RethinkDB's real-time change feeds
+- **Primary Competencies:** `rethinkdb`
+- **Source File:** 003-databases.json
+
+### Real-time messaging and queues with Redis
+- **Slug:** `realtime-messaging-queues-redis`
+- **Description:** Build message queues and pub/sub systems using Redis for distributed applications
+- **Primary Competencies:** `redis`
+- **Source File:** 003-databases.json
+
+### Ruby on Rails applications with PostgreSQL and ActiveRecord
+- **Slug:** `rails-postgresql-activerecord`
+- **Description:** Build Ruby on Rails web applications using ActiveRecord ORM with PostgreSQL
+- **Primary Competencies:** `activerecord`
+- **Supporting Competencies:** `postgresql`, `ruby`, `ruby-on-rails`
+- **Source File:** 003-databases.json
+
+### Schema versioning with Liquibase
+- **Slug:** `schema-versioning-liquibase`
+- **Description:** Track and deploy database changes using Liquibase's database-independent migration tool
+- **Primary Competencies:** `liquibase`
+- **Supporting Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Serverless databases with PlanetScale
+- **Slug:** `serverless-databases-planetscale`
+- **Description:** Deploy and scale MySQL-compatible databases using PlanetScale's serverless platform
+- **Primary Competencies:** `planetscale`
+- **Supporting Competencies:** `mysql`
+- **Source File:** 003-databases.json
+
+### Social networks and recommendation engines with Neo4j
+- **Slug:** `social-networks-recommendations-neo4j`
+- **Description:** Build social network features and recommendation systems using Neo4j graph relationships
+- **Primary Competencies:** `neo4j`
+- **Source File:** 003-databases.json
+
+### SQL fundamentals for database development
+- **Slug:** `sql-fundamentals-database-development`
+- **Description:** Master SQL syntax for querying, manipulating, and managing relational databases
+- **Primary Competencies:** `sql`
+- **Source File:** 003-databases.json
+
+### Time-series analytics with TimescaleDB
+- **Slug:** `timeseries-analytics-timescaledb`
+- **Description:** Analyze time-series data using TimescaleDB's PostgreSQL extension for efficient queries
+- **Primary Competencies:** `timescaledb`
+- **Supporting Competencies:** `postgresql`, `sql`
+- **Source File:** 003-databases.json
+
+### Time-series data with InfluxDB
+- **Slug:** `timeseries-data-influxdb`
+- **Description:** Store and analyze time-series data using InfluxDB for metrics and monitoring
+- **Primary Competencies:** `influxdb`
+- **Source File:** 003-databases.json
+
+### Type-safe APIs with GraphQL
+- **Slug:** `typesafe-apis-graphql`
+- **Description:** Build flexible, type-safe APIs using GraphQL query language
+- **Primary Competencies:** `graphql`
+- **Source File:** 003-databases.json
+
+### Type-safe database queries with Drizzle ORM
+- **Slug:** `typesafe-queries-drizzle-orm`
+- **Description:** Build type-safe SQL applications using Drizzle ORM with TypeScript
+- **Primary Competencies:** `drizzle-orm`
+- **Supporting Competencies:** `typescript`, `postgresql`
+- **Source File:** 003-databases.json
+
+---
+
 ## frontend-development
 
 ### Advanced CSS with Sass
@@ -1499,13 +1987,1489 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
-## language
+## languages
+
+### Academic English writing
+- **Slug:** `academic-english-writing`
+- **Description:** Develop advanced English writing skills for academic and research contexts
+- **Primary Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Academic French reading and writing
+- **Slug:** `academic-french-reading-writing`
+- **Description:** Build advanced French literacy skills for academic and literary texts
+- **Primary Competencies:** `french`
+- **Source File:** 013-languages.json
+
+### Academic German reading
+- **Slug:** `academic-german-reading`
+- **Description:** Build reading comprehension skills for German academic and technical texts
+- **Primary Competencies:** `german`
+- **Source File:** 013-languages.json
+
+### Academic Spanish reading and writing
+- **Slug:** `academic-spanish-reading-writing`
+- **Description:** Master advanced Spanish grammar, literature, and academic writing
+- **Primary Competencies:** `spanish`
+- **Source File:** 013-languages.json
+
+### American Sign Language fundamentals
+- **Slug:** `american-sign-language-fundamentals`
+- **Description:** Learn to communicate using American Sign Language for everyday conversations
+- **Primary Competencies:** `american-sign-language`
+- **Source File:** 013-languages.json
+
+### Ancient Greek reading
+- **Slug:** `ancient-greek-reading`
+- **Description:** Learn to read classical Greek texts from ancient Greece
+- **Primary Competencies:** `ancient-greek`
+- **Source File:** 013-languages.json
+
+### Arabic-English translation
+- **Slug:** `arabic-english-translation`
+- **Description:** Master professional translation between Arabic and English
+- **Primary Competencies:** `arabic`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Aramaic reading
+- **Slug:** `aramaic-reading`
+- **Description:** Learn to read ancient Aramaic texts including biblical Aramaic
+- **Primary Competencies:** `aramaic`
+- **Source File:** 013-languages.json
+
+### ASL interpreting skills
+- **Slug:** `asl-interpreting-skills`
+- **Description:** Develop professional American Sign Language interpreting competency
+- **Primary Competencies:** `american-sign-language`
+- **Source File:** 013-languages.json
+
+### Biblical Hebrew reading
+- **Slug:** `biblical-hebrew-reading`
+- **Description:** Learn to read and interpret biblical Hebrew texts
+- **Primary Competencies:** `biblical-hebrew`
+- **Source File:** 013-languages.json
+
+### Brazilian Portuguese
+- **Slug:** `brazilian-portuguese`
+- **Description:** Learn Brazilian Portuguese dialect, pronunciation, and cultural context
+- **Primary Competencies:** `portuguese`
+- **Source File:** 013-languages.json
+
+### British Sign Language fundamentals
+- **Slug:** `british-sign-language-fundamentals`
+- **Description:** Learn to communicate using British Sign Language
+- **Primary Competencies:** `british-sign-language`
+- **Source File:** 013-languages.json
+
+### Business Arabic
+- **Slug:** `business-arabic`
+- **Description:** Learn professional Arabic for business contexts in the Arab world
+- **Primary Competencies:** `arabic`
+- **Source File:** 013-languages.json
+
+### Business Dutch
+- **Slug:** `business-dutch`
+- **Description:** Learn professional Dutch for workplace communication in the Netherlands and Belgium
+- **Primary Competencies:** `dutch`
+- **Source File:** 013-languages.json
+
+### Business English communication
+- **Slug:** `business-english-communication`
+- **Description:** Master professional English for business settings and workplace success
+- **Primary Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Business French
+- **Slug:** `business-french`
+- **Description:** Master professional French for business contexts and workplace communication
+- **Primary Competencies:** `french`
+- **Source File:** 013-languages.json
+
+### Business German
+- **Slug:** `business-german`
+- **Description:** Learn professional German for business environments and workplace communication
+- **Primary Competencies:** `german`
+- **Source File:** 013-languages.json
+
+### Business Indonesian
+- **Slug:** `business-indonesian`
+- **Description:** Master professional Indonesian for workplace and business contexts
+- **Primary Competencies:** `indonesian`
+- **Source File:** 013-languages.json
+
+### Business Italian
+- **Slug:** `business-italian`
+- **Description:** Master professional Italian for workplace and business contexts
+- **Primary Competencies:** `italian`
+- **Source File:** 013-languages.json
+
+### Business Japanese
+- **Slug:** `business-japanese`
+- **Description:** Learn professional Japanese honorifics and business communication etiquette
+- **Primary Competencies:** `japanese`
+- **Source File:** 013-languages.json
+
+### Business Korean
+- **Slug:** `business-korean`
+- **Description:** Master professional Korean for workplace communication and business etiquette
+- **Primary Competencies:** `korean`
+- **Source File:** 013-languages.json
+
+### Business Mandarin Chinese
+- **Slug:** `business-mandarin-chinese`
+- **Description:** Master professional Mandarin for business meetings, negotiations, and workplace communication
+- **Primary Competencies:** `mandarin-chinese`
+- **Source File:** 013-languages.json
+
+### Business Portuguese
+- **Slug:** `business-portuguese`
+- **Description:** Master professional Portuguese for business and workplace settings
+- **Primary Competencies:** `portuguese`
+- **Source File:** 013-languages.json
+
+### Business Russian
+- **Slug:** `business-russian`
+- **Description:** Master professional Russian for business and workplace communication
+- **Primary Competencies:** `russian`
+- **Source File:** 013-languages.json
+
+### Business Spanish
+- **Slug:** `business-spanish`
+- **Description:** Develop professional Spanish language skills for the workplace
+- **Primary Competencies:** `spanish`
+- **Source File:** 013-languages.json
+
+### Business Turkish
+- **Slug:** `business-turkish`
+- **Description:** Master professional Turkish for business contexts and workplace communication
+- **Primary Competencies:** `turkish`
+- **Source File:** 013-languages.json
+
+### Cantonese tones and pronunciation
+- **Slug:** `cantonese-tones-pronunciation`
+- **Description:** Master the nine tones of Cantonese for accurate pronunciation
+- **Primary Competencies:** `cantonese`
+- **Source File:** 013-languages.json
+
+### Classical Arabic reading
+- **Slug:** `classical-arabic-reading`
+- **Description:** Learn to read classical Arabic texts including Quranic Arabic
+- **Primary Competencies:** `classical-arabic`
+- **Source File:** 013-languages.json
+
+### Classical Latin reading
+- **Slug:** `classical-latin-reading`
+- **Description:** Learn to read classical Latin texts from ancient Rome
+- **Primary Competencies:** `latin`
+- **Source File:** 013-languages.json
+
+### Conference interpreting fundamentals
+- **Slug:** `conference-interpreting-fundamentals`
+- **Description:** Learn simultaneous and consecutive interpreting techniques for conferences
+- **Supporting Competencies:** `spanish`, `english-second-language`
+- **Source File:** 013-languages.json
+
+### Conversational Afrikaans
+- **Slug:** `conversational-afrikaans`
+- **Description:** Build speaking and listening proficiency for everyday Afrikaans conversations
+- **Primary Competencies:** `afrikaans`
+- **Source File:** 013-languages.json
+
+### Conversational Akan (Twi)
+- **Slug:** `conversational-akan-twi`
+- **Description:** Develop speaking and listening skills for everyday Akan conversations
+- **Primary Competencies:** `akan`
+- **Source File:** 013-languages.json
+
+### Conversational Albanian
+- **Slug:** `conversational-albanian`
+- **Description:** Build speaking and listening proficiency for everyday Albanian conversations
+- **Primary Competencies:** `albanian`
+- **Source File:** 013-languages.json
+
+### Conversational Amharic
+- **Slug:** `conversational-amharic`
+- **Description:** Build speaking and listening proficiency for everyday Amharic conversations
+- **Primary Competencies:** `amharic`
+- **Source File:** 013-languages.json
+
+### Conversational Arabic
+- **Slug:** `conversational-arabic`
+- **Description:** Build speaking and listening skills for Modern Standard Arabic
+- **Primary Competencies:** `arabic`
+- **Source File:** 013-languages.json
+
+### Conversational Armenian
+- **Slug:** `conversational-armenian`
+- **Description:** Develop speaking and listening skills for everyday Armenian conversations
+- **Primary Competencies:** `armenian`
+- **Source File:** 013-languages.json
+
+### Conversational Assamese
+- **Slug:** `conversational-assamese`
+- **Description:** Build speaking and listening proficiency for everyday Assamese conversations
+- **Primary Competencies:** `assamese`
+- **Source File:** 013-languages.json
+
+### Conversational Basque
+- **Slug:** `conversational-basque`
+- **Description:** Build speaking and listening proficiency for everyday Basque conversations
+- **Primary Competencies:** `basque`
+- **Source File:** 013-languages.json
+
+### Conversational Bengali
+- **Slug:** `conversational-bengali`
+- **Description:** Develop speaking and listening skills for everyday Bengali conversations
+- **Primary Competencies:** `bengali`
+- **Source File:** 013-languages.json
+
+### Conversational Bosnian
+- **Slug:** `conversational-bosnian`
+- **Description:** Develop speaking and listening skills for everyday Bosnian conversations
+- **Primary Competencies:** `bosnian`
+- **Source File:** 013-languages.json
+
+### Conversational Breton
+- **Slug:** `conversational-breton`
+- **Description:** Develop speaking and listening skills for everyday Breton conversations
+- **Primary Competencies:** `breton`
+- **Source File:** 013-languages.json
+
+### Conversational Bulgarian
+- **Slug:** `conversational-bulgarian`
+- **Description:** Build speaking and listening proficiency for everyday Bulgarian conversations
+- **Primary Competencies:** `bulgarian`
+- **Source File:** 013-languages.json
+
+### Conversational Burmese
+- **Slug:** `conversational-burmese`
+- **Description:** Develop speaking and listening skills for everyday Burmese conversations
+- **Primary Competencies:** `burmese`
+- **Source File:** 013-languages.json
+
+### Conversational Cantonese
+- **Slug:** `conversational-cantonese`
+- **Description:** Build speaking and listening proficiency for Cantonese conversations
+- **Primary Competencies:** `cantonese`
+- **Source File:** 013-languages.json
+
+### Conversational Catalan
+- **Slug:** `conversational-catalan`
+- **Description:** Build speaking and listening proficiency for everyday Catalan conversations
+- **Primary Competencies:** `catalan`
+- **Source File:** 013-languages.json
+
+### Conversational Croatian
+- **Slug:** `conversational-croatian`
+- **Description:** Build speaking and listening proficiency for everyday Croatian conversations
+- **Primary Competencies:** `croatian`
+- **Source File:** 013-languages.json
+
+### Conversational Czech
+- **Slug:** `conversational-czech`
+- **Description:** Develop speaking and listening skills for everyday Czech conversations
+- **Primary Competencies:** `czech`
+- **Source File:** 013-languages.json
+
+### Conversational Danish
+- **Slug:** `conversational-danish`
+- **Description:** Build speaking and listening proficiency for everyday Danish conversations
+- **Primary Competencies:** `danish`
+- **Source File:** 013-languages.json
+
+### Conversational Dutch
+- **Slug:** `conversational-dutch`
+- **Description:** Develop speaking and listening skills for everyday Dutch conversations
+- **Primary Competencies:** `dutch`
+- **Source File:** 013-languages.json
+
+### Conversational Esperanto
+- **Slug:** `conversational-esperanto`
+- **Description:** Learn the international auxiliary language Esperanto for global communication
+- **Primary Competencies:** `esperanto`
+- **Source File:** 013-languages.json
+
+### Conversational Estonian
+- **Slug:** `conversational-estonian`
+- **Description:** Build speaking and listening proficiency for everyday Estonian conversations
+- **Primary Competencies:** `estonian`
+- **Source File:** 013-languages.json
+
+### Conversational Filipino (Tagalog)
+- **Slug:** `conversational-filipino-tagalog`
+- **Description:** Build speaking and listening proficiency for everyday Filipino conversations
+- **Primary Competencies:** `filipino`
+- **Source File:** 013-languages.json
+
+### Conversational Finnish
+- **Slug:** `conversational-finnish`
+- **Description:** Build speaking and listening proficiency for everyday Finnish conversations
+- **Primary Competencies:** `finnish`
+- **Source File:** 013-languages.json
+
+### Conversational French
+- **Slug:** `conversational-french`
+- **Description:** Develop speaking and listening proficiency for everyday French conversations
+- **Primary Competencies:** `french`
+- **Source File:** 013-languages.json
+
+### Conversational Georgian
+- **Slug:** `conversational-georgian`
+- **Description:** Build speaking and listening proficiency for everyday Georgian conversations
+- **Primary Competencies:** `georgian`
+- **Source File:** 013-languages.json
+
+### Conversational German
+- **Slug:** `conversational-german`
+- **Description:** Develop speaking and listening skills for everyday German conversations
+- **Primary Competencies:** `german`
+- **Source File:** 013-languages.json
+
+### Conversational Gujarati
+- **Slug:** `conversational-gujarati`
+- **Description:** Build speaking and listening proficiency for everyday Gujarati conversations
+- **Primary Competencies:** `gujarati`
+- **Source File:** 013-languages.json
+
+### Conversational Hausa
+- **Slug:** `conversational-hausa`
+- **Description:** Build speaking and listening proficiency for everyday Hausa conversations
+- **Primary Competencies:** `hausa`
+- **Source File:** 013-languages.json
+
+### Conversational Hawaiian
+- **Slug:** `conversational-hawaiian`
+- **Description:** Build speaking and listening proficiency for everyday Hawaiian conversations
+- **Primary Competencies:** `hawaiian`
+- **Source File:** 013-languages.json
+
+### Conversational Hindi
+- **Slug:** `conversational-hindi`
+- **Description:** Build speaking and listening proficiency for everyday Hindi conversations
+- **Primary Competencies:** `hindi`
+- **Source File:** 013-languages.json
+
+### Conversational Hungarian
+- **Slug:** `conversational-hungarian`
+- **Description:** Develop speaking and listening skills for everyday Hungarian conversations
+- **Primary Competencies:** `hungarian`
+- **Source File:** 013-languages.json
+
+### Conversational Icelandic
+- **Slug:** `conversational-icelandic`
+- **Description:** Develop speaking and listening skills for everyday Icelandic conversations
+- **Primary Competencies:** `icelandic`
+- **Source File:** 013-languages.json
+
+### Conversational Igbo
+- **Slug:** `conversational-igbo`
+- **Description:** Develop speaking and listening skills for everyday Igbo conversations
+- **Primary Competencies:** `igbo`
+- **Source File:** 013-languages.json
+
+### Conversational Indonesian
+- **Slug:** `conversational-indonesian`
+- **Description:** Build speaking and listening proficiency for everyday Indonesian conversations
+- **Primary Competencies:** `indonesian`
+- **Source File:** 013-languages.json
+
+### Conversational Irish Gaelic
+- **Slug:** `conversational-irish-gaelic`
+- **Description:** Build speaking and listening proficiency for everyday Irish Gaelic conversations
+- **Primary Competencies:** `irish`
+- **Source File:** 013-languages.json
+
+### Conversational Italian
+- **Slug:** `conversational-italian`
+- **Description:** Build speaking and listening proficiency for everyday Italian conversations
+- **Primary Competencies:** `italian`
+- **Source File:** 013-languages.json
+
+### Conversational Japanese
+- **Slug:** `conversational-japanese`
+- **Description:** Build speaking and listening skills for everyday Japanese conversations
+- **Primary Competencies:** `japanese`
+- **Source File:** 013-languages.json
+
+### Conversational Javanese
+- **Slug:** `conversational-javanese`
+- **Description:** Build speaking and listening proficiency for everyday Javanese conversations
+- **Primary Competencies:** `javanese`
+- **Source File:** 013-languages.json
+
+### Conversational Kannada
+- **Slug:** `conversational-kannada`
+- **Description:** Build speaking and listening proficiency for everyday Kannada conversations
+- **Primary Competencies:** `kannada`
+- **Source File:** 013-languages.json
+
+### Conversational Kazakh
+- **Slug:** `conversational-kazakh`
+- **Description:** Develop speaking and listening skills for everyday Kazakh conversations
+- **Primary Competencies:** `kazakh`
+- **Source File:** 013-languages.json
+
+### Conversational Khmer (Cambodian)
+- **Slug:** `conversational-khmer-cambodian`
+- **Description:** Build speaking and listening proficiency for everyday Khmer conversations
+- **Primary Competencies:** `khmer`
+- **Source File:** 013-languages.json
+
+### Conversational Korean
+- **Slug:** `conversational-korean`
+- **Description:** Develop speaking and listening proficiency for everyday Korean conversations
+- **Primary Competencies:** `korean`
+- **Source File:** 013-languages.json
+
+### Conversational Lao
+- **Slug:** `conversational-lao`
+- **Description:** Develop speaking and listening skills for everyday Lao conversations
+- **Primary Competencies:** `lao`
+- **Source File:** 013-languages.json
+
+### Conversational Latvian
+- **Slug:** `conversational-latvian`
+- **Description:** Develop speaking and listening skills for everyday Latvian conversations
+- **Primary Competencies:** `latvian`
+- **Source File:** 013-languages.json
+
+### Conversational Lithuanian
+- **Slug:** `conversational-lithuanian`
+- **Description:** Build speaking and listening proficiency for everyday Lithuanian conversations
+- **Primary Competencies:** `lithuanian`
+- **Source File:** 013-languages.json
+
+### Conversational Malay
+- **Slug:** `conversational-malay`
+- **Description:** Develop speaking and listening skills for everyday Malay conversations
+- **Primary Competencies:** `malay`
+- **Source File:** 013-languages.json
+
+### Conversational Malayalam
+- **Slug:** `conversational-malayalam`
+- **Description:** Develop speaking and listening skills for everyday Malayalam conversations
+- **Primary Competencies:** `malayalam`
+- **Source File:** 013-languages.json
+
+### Conversational Mandarin Chinese
+- **Slug:** `conversational-mandarin-chinese`
+- **Description:** Develop speaking and listening skills for everyday conversations in Mandarin Chinese
+- **Primary Competencies:** `mandarin-chinese`
+- **Source File:** 013-languages.json
+
+### Conversational Maori
+- **Slug:** `conversational-maori`
+- **Description:** Develop speaking and listening skills for everyday Maori conversations
+- **Primary Competencies:** `maori`
+- **Source File:** 013-languages.json
+
+### Conversational Marathi
+- **Slug:** `conversational-marathi`
+- **Description:** Develop speaking and listening skills for everyday Marathi conversations
+- **Primary Competencies:** `marathi`
+- **Source File:** 013-languages.json
+
+### Conversational Modern Greek
+- **Slug:** `conversational-modern-greek`
+- **Description:** Develop speaking and listening skills for everyday Greek conversations
+- **Primary Competencies:** `greek-modern`
+- **Source File:** 013-languages.json
+
+### Conversational Modern Hebrew
+- **Slug:** `conversational-modern-hebrew`
+- **Description:** Build speaking and listening proficiency for everyday Hebrew conversations
+- **Primary Competencies:** `hebrew-modern`
+- **Source File:** 013-languages.json
+
+### Conversational Mongolian
+- **Slug:** `conversational-mongolian`
+- **Description:** Build speaking and listening proficiency for everyday Mongolian conversations
+- **Primary Competencies:** `mongolian`
+- **Source File:** 013-languages.json
+
+### Conversational Nepali
+- **Slug:** `conversational-nepali`
+- **Description:** Develop speaking and listening skills for everyday Nepali conversations
+- **Primary Competencies:** `nepali`
+- **Source File:** 013-languages.json
+
+### Conversational Norwegian
+- **Slug:** `conversational-norwegian`
+- **Description:** Develop speaking and listening skills for everyday Norwegian conversations
+- **Primary Competencies:** `norwegian`
+- **Source File:** 013-languages.json
+
+### Conversational Odia
+- **Slug:** `conversational-odia`
+- **Description:** Develop speaking and listening skills for everyday Odia conversations
+- **Primary Competencies:** `odia`
+- **Source File:** 013-languages.json
+
+### Conversational Pashto
+- **Slug:** `conversational-pashto`
+- **Description:** Develop speaking and listening skills for everyday Pashto conversations
+- **Primary Competencies:** `pashto`
+- **Source File:** 013-languages.json
+
+### Conversational Persian (Farsi)
+- **Slug:** `conversational-persian-farsi`
+- **Description:** Develop speaking and listening skills for everyday Persian conversations
+- **Primary Competencies:** `persian`
+- **Source File:** 013-languages.json
+
+### Conversational Polish
+- **Slug:** `conversational-polish`
+- **Description:** Develop speaking and listening skills for everyday Polish conversations
+- **Primary Competencies:** `polish`
+- **Source File:** 013-languages.json
+
+### Conversational Portuguese
+- **Slug:** `conversational-portuguese`
+- **Description:** Develop speaking and listening skills for everyday Portuguese conversations
+- **Primary Competencies:** `portuguese`
+- **Source File:** 013-languages.json
+
+### Conversational Punjabi
+- **Slug:** `conversational-punjabi`
+- **Description:** Develop speaking and listening skills for everyday Punjabi conversations
+- **Primary Competencies:** `punjabi`
+- **Source File:** 013-languages.json
+
+### Conversational Romanian
+- **Slug:** `conversational-romanian`
+- **Description:** Build speaking and listening proficiency for everyday Romanian conversations
+- **Primary Competencies:** `romanian`
+- **Source File:** 013-languages.json
+
+### Conversational Russian
+- **Slug:** `conversational-russian`
+- **Description:** Develop speaking and listening skills for everyday Russian conversations
+- **Primary Competencies:** `russian`
+- **Source File:** 013-languages.json
+
+### Conversational Samoan
+- **Slug:** `conversational-samoan`
+- **Description:** Develop speaking and listening skills for everyday Samoan conversations
+- **Primary Competencies:** `samoan`
+- **Source File:** 013-languages.json
+
+### Conversational Scottish Gaelic
+- **Slug:** `conversational-scottish-gaelic`
+- **Description:** Develop speaking and listening skills for everyday Scottish Gaelic conversations
+- **Primary Competencies:** `scottish-gaelic`
+- **Source File:** 013-languages.json
+
+### Conversational Serbian
+- **Slug:** `conversational-serbian`
+- **Description:** Develop speaking and listening skills for everyday Serbian conversations
+- **Primary Competencies:** `serbian`
+- **Source File:** 013-languages.json
+
+### Conversational Sindhi
+- **Slug:** `conversational-sindhi`
+- **Description:** Build speaking and listening proficiency for everyday Sindhi conversations
+- **Primary Competencies:** `sindhi`
+- **Source File:** 013-languages.json
+
+### Conversational Sinhala
+- **Slug:** `conversational-sinhala`
+- **Description:** Build speaking and listening proficiency for everyday Sinhala conversations
+- **Primary Competencies:** `sinhala`
+- **Source File:** 013-languages.json
+
+### Conversational Slovak
+- **Slug:** `conversational-slovak`
+- **Description:** Build speaking and listening proficiency for everyday Slovak conversations
+- **Primary Competencies:** `slovak`
+- **Source File:** 013-languages.json
+
+### Conversational Slovenian
+- **Slug:** `conversational-slovenian`
+- **Description:** Develop speaking and listening skills for everyday Slovenian conversations
+- **Primary Competencies:** `slovenian`
+- **Source File:** 013-languages.json
 
 ### Conversational Spanish
 - **Slug:** `conversational-spanish`
-- **Description:** Holding conversations in Spanish
+- **Description:** Build speaking and listening skills for everyday Spanish conversations
 - **Primary Competencies:** `spanish`
 - **Source File:** 013-languages.json
+
+### Conversational Swahili
+- **Slug:** `conversational-swahili`
+- **Description:** Develop speaking and listening skills for everyday Swahili conversations
+- **Primary Competencies:** `swahili`
+- **Source File:** 013-languages.json
+
+### Conversational Swedish
+- **Slug:** `conversational-swedish`
+- **Description:** Build speaking and listening proficiency for everyday Swedish conversations
+- **Primary Competencies:** `swedish`
+- **Source File:** 013-languages.json
+
+### Conversational Tamil
+- **Slug:** `conversational-tamil`
+- **Description:** Develop speaking and listening skills for everyday Tamil conversations
+- **Primary Competencies:** `tamil`
+- **Source File:** 013-languages.json
+
+### Conversational Telugu
+- **Slug:** `conversational-telugu`
+- **Description:** Build speaking and listening proficiency for everyday Telugu conversations
+- **Primary Competencies:** `telugu`
+- **Source File:** 013-languages.json
+
+### Conversational Thai
+- **Slug:** `conversational-thai`
+- **Description:** Build speaking and listening proficiency for everyday Thai conversations
+- **Primary Competencies:** `thai`
+- **Source File:** 013-languages.json
+
+### Conversational Turkish
+- **Slug:** `conversational-turkish`
+- **Description:** Build speaking and listening proficiency for everyday Turkish conversations
+- **Primary Competencies:** `turkish`
+- **Source File:** 013-languages.json
+
+### Conversational Ukrainian
+- **Slug:** `conversational-ukrainian`
+- **Description:** Develop speaking and listening skills for everyday Ukrainian conversations
+- **Primary Competencies:** `ukrainian`
+- **Source File:** 013-languages.json
+
+### Conversational Urdu
+- **Slug:** `conversational-urdu`
+- **Description:** Build speaking and listening proficiency for everyday Urdu conversations
+- **Primary Competencies:** `urdu`
+- **Source File:** 013-languages.json
+
+### Conversational Vietnamese
+- **Slug:** `conversational-vietnamese`
+- **Description:** Develop speaking and listening skills for everyday Vietnamese conversations
+- **Primary Competencies:** `vietnamese`
+- **Source File:** 013-languages.json
+
+### Conversational Welsh
+- **Slug:** `conversational-welsh`
+- **Description:** Develop speaking and listening skills for everyday Welsh conversations
+- **Primary Competencies:** `welsh`
+- **Source File:** 013-languages.json
+
+### Conversational Xhosa
+- **Slug:** `conversational-xhosa`
+- **Description:** Develop speaking and listening skills for everyday Xhosa conversations
+- **Primary Competencies:** `xhosa`
+- **Source File:** 013-languages.json
+
+### Conversational Yoruba
+- **Slug:** `conversational-yoruba`
+- **Description:** Develop speaking and listening skills for everyday Yoruba conversations
+- **Primary Competencies:** `yoruba`
+- **Source File:** 013-languages.json
+
+### Conversational Zulu
+- **Slug:** `conversational-zulu`
+- **Description:** Build speaking and listening proficiency for everyday Zulu conversations
+- **Primary Competencies:** `zulu`
+- **Source File:** 013-languages.json
+
+### Egyptian hieroglyphics reading
+- **Slug:** `egyptian-hieroglyphics-reading`
+- **Description:** Learn to read and interpret ancient Egyptian hieroglyphic texts
+- **Primary Competencies:** `egyptian-hieroglyphs`
+- **Source File:** 013-languages.json
+
+### English as a Second Language fundamentals
+- **Slug:** `esl-fundamentals`
+- **Description:** Build foundational English skills for non-native speakers
+- **Primary Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### English pronunciation and accent reduction
+- **Slug:** `english-pronunciation-accent-reduction`
+- **Description:** Improve English pronunciation and reduce native accent for clearer communication
+- **Primary Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### French-English translation
+- **Slug:** `french-english-translation`
+- **Description:** Master professional translation between French and English
+- **Primary Competencies:** `french`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### German-English translation
+- **Slug:** `german-english-translation`
+- **Description:** Develop professional translation skills between German and English
+- **Primary Competencies:** `german`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Italian culture through language
+- **Slug:** `italian-culture-through-language`
+- **Description:** Explore Italian culture, history, and society while learning the language
+- **Primary Competencies:** `italian`
+- **Source File:** 013-languages.json
+
+### Japanese-English translation
+- **Slug:** `japanese-english-translation`
+- **Description:** Develop professional translation skills between Japanese and English
+- **Primary Competencies:** `japanese`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Legal translation and interpretation
+- **Slug:** `legal-translation-interpretation`
+- **Description:** Master specialized translation for legal documents and court interpreting
+- **Supporting Competencies:** `spanish`, `english-second-language`
+- **Source File:** 013-languages.json
+
+### Literary translation techniques
+- **Slug:** `literary-translation-techniques`
+- **Description:** Master the art of translating literature while preserving style and meaning
+- **Supporting Competencies:** `spanish`, `french`
+- **Source File:** 013-languages.json
+
+### Mandarin-English translation
+- **Slug:** `mandarin-english-translation`
+- **Description:** Master professional translation between Mandarin Chinese and English
+- **Primary Competencies:** `mandarin-chinese`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Medical and scientific Latin
+- **Slug:** `medical-scientific-latin`
+- **Description:** Master Latin terminology used in medicine, biology, and scientific nomenclature
+- **Primary Competencies:** `latin`
+- **Source File:** 013-languages.json
+
+### Medical Spanish for healthcare professionals
+- **Slug:** `medical-spanish-healthcare`
+- **Description:** Learn specialized Spanish vocabulary and communication for medical settings
+- **Primary Competencies:** `spanish`
+- **Source File:** 013-languages.json
+
+### Medical translation and interpretation
+- **Slug:** `medical-translation-interpretation`
+- **Description:** Develop specialized skills for medical translation and healthcare interpreting
+- **Supporting Competencies:** `spanish`, `english-second-language`
+- **Source File:** 013-languages.json
+
+### Middle English literature
+- **Slug:** `middle-english-literature`
+- **Description:** Read and understand Middle English texts including Chaucer
+- **Primary Competencies:** `middle-english`
+- **Source File:** 013-languages.json
+
+### Old English reading
+- **Slug:** `old-english-reading`
+- **Description:** Learn to read Old English texts including Beowulf
+- **Primary Competencies:** `old-english`
+- **Source File:** 013-languages.json
+
+### Old Norse reading
+- **Slug:** `old-norse-reading`
+- **Description:** Learn to read Old Norse sagas and medieval Scandinavian texts
+- **Primary Competencies:** `old-norse`
+- **Source File:** 013-languages.json
+
+### Reading Akkadian cuneiform
+- **Slug:** `reading-akkadian-cuneiform`
+- **Description:** Learn to read cuneiform texts in ancient Akkadian language
+- **Primary Competencies:** `akkadian`
+- **Source File:** 013-languages.json
+
+### Reading and writing Arabic script
+- **Slug:** `reading-writing-arabic-script`
+- **Description:** Master the Arabic alphabet and develop reading and writing proficiency
+- **Primary Competencies:** `arabic`
+- **Source File:** 013-languages.json
+
+### Reading and writing Chinese characters
+- **Slug:** `reading-writing-chinese-characters`
+- **Description:** Learn to read and write traditional and simplified Chinese characters
+- **Primary Competencies:** `mandarin-chinese`
+- **Source File:** 013-languages.json
+
+### Reading and writing Devanagari script
+- **Slug:** `reading-writing-devanagari`
+- **Description:** Master the Devanagari writing system for Hindi and Sanskrit
+- **Primary Competencies:** `hindi`
+- **Source File:** 013-languages.json
+
+### Reading and writing Greek alphabet
+- **Slug:** `reading-writing-greek-alphabet`
+- **Description:** Master the Greek alphabet and develop reading proficiency
+- **Primary Competencies:** `greek-modern`
+- **Source File:** 013-languages.json
+
+### Reading and writing Hangul
+- **Slug:** `reading-writing-hangul`
+- **Description:** Learn the Korean alphabet (Hangul) and develop reading and writing skills
+- **Primary Competencies:** `korean`
+- **Source File:** 013-languages.json
+
+### Reading and writing Hebrew script
+- **Slug:** `reading-writing-hebrew-script`
+- **Description:** Learn the Hebrew alphabet and develop reading and writing skills
+- **Primary Competencies:** `hebrew-modern`
+- **Source File:** 013-languages.json
+
+### Reading and writing Persian script
+- **Slug:** `reading-writing-persian-script`
+- **Description:** Learn the Persian alphabet and develop reading and writing proficiency
+- **Primary Competencies:** `persian`
+- **Source File:** 013-languages.json
+
+### Reading and writing Thai script
+- **Slug:** `reading-writing-thai-script`
+- **Description:** Learn the Thai alphabet and develop reading and writing skills
+- **Primary Competencies:** `thai`
+- **Source File:** 013-languages.json
+
+### Reading and writing Urdu script
+- **Slug:** `reading-writing-urdu-script`
+- **Description:** Master the Urdu alphabet and develop reading and writing skills
+- **Primary Competencies:** `urdu`
+- **Source File:** 013-languages.json
+
+### Reading Japanese hiragana, katakana, and kanji
+- **Slug:** `reading-japanese-writing-systems`
+- **Description:** Master Japanese writing systems including hiragana, katakana, and common kanji
+- **Primary Competencies:** `japanese`
+- **Source File:** 013-languages.json
+
+### Reading Russian Cyrillic
+- **Slug:** `reading-russian-cyrillic`
+- **Description:** Learn the Cyrillic alphabet and develop Russian reading comprehension
+- **Primary Competencies:** `russian`
+- **Source File:** 013-languages.json
+
+### Reading Sumerian cuneiform
+- **Slug:** `reading-sumerian-cuneiform`
+- **Description:** Study ancient Sumerian language and cuneiform writing system
+- **Primary Competencies:** `sumerian`
+- **Source File:** 013-languages.json
+
+### Reading Ukrainian Cyrillic
+- **Slug:** `reading-ukrainian-cyrillic`
+- **Description:** Master the Cyrillic alphabet for Ukrainian reading comprehension
+- **Primary Competencies:** `ukrainian`
+- **Source File:** 013-languages.json
+
+### Sanskrit reading and grammar
+- **Slug:** `sanskrit-reading-grammar`
+- **Description:** Master Sanskrit grammar and learn to read classical texts
+- **Primary Competencies:** `sanskrit`
+- **Source File:** 013-languages.json
+
+### Spanish-English translation
+- **Slug:** `spanish-english-translation`
+- **Description:** Develop professional translation skills between Spanish and English
+- **Primary Competencies:** `spanish`
+- **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Vietnamese tones and pronunciation
+- **Slug:** `vietnamese-tones-pronunciation`
+- **Description:** Master the six tones of Vietnamese for accurate pronunciation
+- **Primary Competencies:** `vietnamese`
+- **Source File:** 013-languages.json
+
+---
+
+## mobile-development
+
+### Android app distribution with Google Play Console
+- **Slug:** `android-app-distribution-google-play`
+- **Description:** Publish and manage Android apps using Google Play Console
+- **Primary Competencies:** `google-play-console`
+- **Source File:** 011-mobile-development.json
+
+### Android build automation with Gradle
+- **Slug:** `android-build-automation-gradle`
+- **Description:** Configure and optimize Android builds using Gradle build system
+- **Primary Competencies:** `gradle`
+- **Supporting Competencies:** `kotlin`, `android-studio`
+- **Source File:** 011-mobile-development.json
+
+### Android CI/CD with Fastlane and Gradle
+- **Slug:** `android-cicd-fastlane-gradle`
+- **Description:** Automate Android app deployment pipelines using Fastlane with Gradle
+- **Primary Competencies:** `fastlane`
+- **Supporting Competencies:** `gradle`, `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Android development environment with Android Studio
+- **Slug:** `android-development-android-studio`
+- **Description:** Develop, debug, and deploy Android applications using Android Studio IDE
+- **Primary Competencies:** `android-studio`
+- **Supporting Competencies:** `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Android development with Android Views
+- **Slug:** `android-development-android-views`
+- **Description:** Build Android apps using traditional XML-based Android Views system
+- **Primary Competencies:** `android-views`
+- **Supporting Competencies:** `kotlin`, `android-studio`
+- **Source File:** 011-mobile-development.json
+
+### Android Wear apps with Jetpack Compose
+- **Slug:** `android-wear-apps-jetpack-compose`
+- **Description:** Develop Wear OS applications using Jetpack Compose for Wear with Kotlin
+- **Primary Competencies:** `jetpack-compose`
+- **Supporting Competencies:** `kotlin`, `android-studio`
+- **Source File:** 011-mobile-development.json
+
+### App localization and internationalization in Flutter
+- **Slug:** `app-localization-flutter`
+- **Description:** Create multilingual Flutter applications with built-in localization support
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### App localization and internationalization in React Native
+- **Slug:** `app-localization-react-native`
+- **Description:** Build multilingual React Native apps with internationalization and localization
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Building Android apps with Jetpack Compose
+- **Slug:** `building-android-apps-jetpack-compose`
+- **Description:** Create modern Android applications using Jetpack Compose declarative UI with Kotlin
+- **Primary Competencies:** `jetpack-compose`
+- **Supporting Competencies:** `kotlin`, `android-studio`
+- **Source File:** 011-mobile-development.json
+
+### Building AR experiences with React Native
+- **Slug:** `ar-experiences-react-native`
+- **Description:** Create augmented reality mobile applications using React Native with AR frameworks
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Building cross-platform mobile apps with React Native
+- **Slug:** `building-mobile-apps-react-native`
+- **Description:** Create iOS and Android applications using React Native with JavaScript and React
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `javascript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Building iOS apps with SwiftUI
+- **Slug:** `building-ios-apps-swiftui`
+- **Description:** Create modern iOS applications using SwiftUI declarative UI framework with Swift
+- **Primary Competencies:** `swiftui`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### Building native mobile apps with Flutter
+- **Slug:** `building-mobile-apps-flutter`
+- **Description:** Create high-performance iOS and Android applications using Flutter and Dart
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Building production-ready Flutter apps
+- **Slug:** `production-ready-flutter-apps`
+- **Description:** Create scalable, maintainable Flutter applications with clean architecture and testing
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Building watch apps with SwiftUI
+- **Slug:** `watch-apps-swiftui`
+- **Description:** Create Apple Watch applications using SwiftUI for watchOS
+- **Primary Competencies:** `swiftui`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform .NET mobile apps with .NET MAUI
+- **Slug:** `cross-platform-dotnet-maui`
+- **Description:** Build iOS, Android, and desktop apps using .NET MAUI with C#
+- **Primary Competencies:** `dotnet-maui`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform apps with NativeScript
+- **Slug:** `cross-platform-apps-nativescript`
+- **Description:** Create truly native mobile apps using NativeScript with JavaScript or TypeScript
+- **Primary Competencies:** `nativescript`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform desktop apps with Electron
+- **Slug:** `cross-platform-desktop-electron`
+- **Description:** Build desktop applications for Windows, macOS, and Linux using Electron with web technologies
+- **Primary Competencies:** `electron`
+- **Supporting Competencies:** `javascript`, `nodejs`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform mobile apps with Ionic
+- **Slug:** `cross-platform-mobile-ionic`
+- **Description:** Build hybrid mobile applications using Ionic framework with web technologies
+- **Primary Competencies:** `ionic`
+- **Supporting Competencies:** `typescript`, `angular`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform mobile testing with Appium
+- **Slug:** `cross-platform-testing-appium`
+- **Description:** Automate mobile app testing across iOS and Android using Appium
+- **Primary Competencies:** `appium`
+- **Source File:** 011-mobile-development.json
+
+### Cross-platform responsive design in React Native
+- **Slug:** `responsive-design-react-native`
+- **Description:** Build responsive mobile UIs that adapt to different screen sizes in React Native
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Dart programming for Flutter
+- **Slug:** `dart-programming-flutter`
+- **Description:** Learn Dart language fundamentals for building Flutter applications
+- **Primary Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Desktop applications with Electron and React
+- **Slug:** `desktop-apps-electron-react`
+- **Description:** Create desktop apps using Electron with React for the user interface
+- **Primary Competencies:** `electron`
+- **Supporting Competencies:** `react`, `typescript`, `nodejs`
+- **Source File:** 011-mobile-development.json
+
+### Desktop apps with Tauri and React
+- **Slug:** `desktop-apps-tauri-react`
+- **Description:** Create small, fast desktop applications using Tauri with React frontend
+- **Primary Competencies:** `tauri`
+- **Supporting Competencies:** `react`, `rust`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Expo bare workflow for native customization
+- **Slug:** `expo-bare-workflow-customization`
+- **Description:** Use Expo tools while maintaining full control over native code in bare workflow
+- **Primary Competencies:** `expo`
+- **Supporting Competencies:** `react-native`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Expo managed workflow for rapid prototyping
+- **Slug:** `expo-managed-workflow-prototyping`
+- **Description:** Quickly build and iterate on React Native apps using Expo's managed workflow
+- **Primary Competencies:** `expo`
+- **Supporting Competencies:** `react-native`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### File-based routing in React Native with Expo Router
+- **Slug:** `file-based-routing-expo-router`
+- **Description:** Build React Native apps with Next.js-style file-based routing using Expo Router
+- **Primary Competencies:** `expo-router`
+- **Supporting Competencies:** `expo`, `react-native`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Flutter animations and transitions
+- **Slug:** `flutter-animations-transitions`
+- **Description:** Build engaging user experiences with Flutter's animation framework and implicit animations
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter app monetization and in-app purchases
+- **Slug:** `flutter-app-monetization`
+- **Description:** Implement in-app purchases and subscription models in Flutter apps
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter CI/CD with Codemagic
+- **Slug:** `flutter-cicd-codemagic`
+- **Description:** Automate Flutter app builds and releases using Codemagic CI/CD
+- **Primary Competencies:** `codemagic`
+- **Supporting Competencies:** `flutter`, `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter state management with BLoC pattern
+- **Slug:** `flutter-state-management-bloc`
+- **Description:** Build scalable Flutter apps using BLoC pattern for predictable state management
+- **Primary Competencies:** `bloc-flutter`
+- **Supporting Competencies:** `flutter`, `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter state management with GetX
+- **Slug:** `flutter-state-management-getx`
+- **Description:** Manage state, routing, and dependencies in Flutter using GetX framework
+- **Primary Competencies:** `getx-flutter`
+- **Supporting Competencies:** `flutter`, `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter state management with Provider
+- **Slug:** `flutter-state-management-provider`
+- **Description:** Implement state management in Flutter using Provider for dependency injection
+- **Primary Competencies:** `provider-flutter`
+- **Supporting Competencies:** `flutter`, `dart`
+- **Source File:** 011-mobile-development.json
+
+### Flutter state management with Riverpod
+- **Slug:** `flutter-state-management-riverpod`
+- **Description:** Manage application state in Flutter apps using Riverpod for reactive updates
+- **Primary Competencies:** `riverpod`
+- **Supporting Competencies:** `flutter`, `dart`
+- **Source File:** 011-mobile-development.json
+
+### Framework7 applications with React
+- **Slug:** `framework7-apps-react`
+- **Description:** Build hybrid mobile apps using Framework7 components with React
+- **Primary Competencies:** `framework7`
+- **Supporting Competencies:** `react`, `javascript`
+- **Source File:** 011-mobile-development.json
+
+### Full-stack mobile apps with Quasar Framework
+- **Slug:** `fullstack-mobile-apps-quasar`
+- **Description:** Build mobile, desktop, and web apps from single codebase using Quasar with Vue
+- **Primary Competencies:** `quasar-framework`
+- **Supporting Competencies:** `vuejs`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Hybrid mobile apps with Framework7
+- **Slug:** `hybrid-mobile-apps-framework7`
+- **Description:** Create iOS and Android apps with native-like UI using Framework7
+- **Primary Competencies:** `framework7`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 011-mobile-development.json
+
+### Ionic applications with React and Capacitor
+- **Slug:** `ionic-react-capacitor`
+- **Description:** Build mobile apps using Ionic components with React and Capacitor for native features
+- **Primary Competencies:** `ionic`
+- **Supporting Competencies:** `capacitor`, `react`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Ionic applications with Vue and Capacitor
+- **Slug:** `ionic-vue-capacitor`
+- **Description:** Create mobile apps using Ionic framework with Vue.js and Capacitor
+- **Primary Competencies:** `ionic`
+- **Supporting Competencies:** `capacitor`, `vuejs`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### iOS app distribution with App Store Connect
+- **Slug:** `ios-app-distribution-app-store-connect`
+- **Description:** Manage iOS app releases, metadata, and analytics using App Store Connect
+- **Primary Competencies:** `app-store-connect`
+- **Source File:** 011-mobile-development.json
+
+### iOS beta testing with TestFlight
+- **Slug:** `ios-beta-testing-testflight`
+- **Description:** Distribute iOS app builds to beta testers using TestFlight
+- **Primary Competencies:** `testflight`
+- **Supporting Competencies:** `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS CI/CD with Fastlane and Xcode
+- **Slug:** `ios-cicd-fastlane-xcode`
+- **Description:** Set up continuous integration and deployment for iOS apps using Fastlane
+- **Primary Competencies:** `fastlane`
+- **Supporting Competencies:** `xcode`, `swift`
+- **Source File:** 011-mobile-development.json
+
+### iOS dependency management with Carthage
+- **Slug:** `ios-dependency-management-carthage`
+- **Description:** Manage iOS dependencies using Carthage decentralized package manager
+- **Primary Competencies:** `carthage`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS dependency management with CocoaPods
+- **Slug:** `ios-dependency-management-cocoapods`
+- **Description:** Manage iOS project dependencies and libraries using CocoaPods
+- **Primary Competencies:** `cocoapods`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS dependency management with Swift Package Manager
+- **Slug:** `ios-dependency-management-spm`
+- **Description:** Integrate third-party libraries in iOS projects using Swift Package Manager
+- **Primary Competencies:** `swift-package-manager`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS development environment with Xcode
+- **Slug:** `ios-development-xcode`
+- **Description:** Develop, debug, and deploy iOS applications using Xcode IDE
+- **Primary Competencies:** `xcode`
+- **Supporting Competencies:** `swift`
+- **Source File:** 011-mobile-development.json
+
+### iOS development with UIKit
+- **Slug:** `ios-development-uikit`
+- **Description:** Build iOS applications using UIKit framework with programmatic or storyboard UI
+- **Primary Competencies:** `uikit`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS UI testing with XCUITest
+- **Slug:** `ios-ui-testing-xcuitest`
+- **Description:** Automate UI testing for iOS applications using XCUITest framework
+- **Primary Competencies:** `xcuitest`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### iOS unit testing with XCTest
+- **Slug:** `ios-unit-testing-xctest`
+- **Description:** Write unit and integration tests for iOS apps using XCTest framework
+- **Primary Competencies:** `xctest`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### Jetpack Compose animations
+- **Slug:** `jetpack-compose-animations`
+- **Description:** Build fluid Android UIs with Jetpack Compose animation APIs and transitions
+- **Primary Competencies:** `jetpack-compose`
+- **Supporting Competencies:** `kotlin`, `android-studio`
+- **Source File:** 011-mobile-development.json
+
+### Kotlin for Android development
+- **Slug:** `kotlin-android-development`
+- **Description:** Master Kotlin programming language for modern Android app development
+- **Primary Competencies:** `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Kotlin Multiplatform with Jetpack Compose for Android
+- **Slug:** `kotlin-multiplatform-jetpack-compose`
+- **Description:** Build shared Kotlin logic with native Android UI using Jetpack Compose
+- **Primary Competencies:** `kotlin-multiplatform`
+- **Supporting Competencies:** `jetpack-compose`, `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Legacy cross-platform development with Xamarin
+- **Slug:** `legacy-cross-platform-xamarin`
+- **Description:** Develop iOS and Android applications using Xamarin with C#
+- **Primary Competencies:** `xamarin`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 011-mobile-development.json
+
+### Legacy hybrid apps with Apache Cordova
+- **Slug:** `legacy-hybrid-apps-cordova`
+- **Description:** Build mobile applications using Apache Cordova with HTML, CSS, and JavaScript
+- **Primary Competencies:** `cordova`
+- **Supporting Competencies:** `javascript`, `html`
+- **Source File:** 011-mobile-development.json
+
+### Legacy iOS development with Objective-C and UIKit
+- **Slug:** `legacy-ios-development-objective-c`
+- **Description:** Maintain and develop iOS applications using Objective-C with UIKit
+- **Primary Competencies:** `objective-c`
+- **Supporting Competencies:** `uikit`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### Lightweight desktop apps with Tauri
+- **Slug:** `lightweight-desktop-apps-tauri`
+- **Description:** Build performant desktop applications using Tauri with Rust and web technologies
+- **Primary Competencies:** `tauri`
+- **Supporting Competencies:** `rust`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Mobile app analytics and crash reporting
+- **Slug:** `mobile-app-analytics-crash-reporting`
+- **Description:** Track user behavior and monitor crashes in mobile apps using analytics tools
+- **Supporting Competencies:** `react-native`, `flutter`
+- **Source File:** 011-mobile-development.json
+
+### Mobile app animations in React Native
+- **Slug:** `mobile-animations-react-native`
+- **Description:** Create smooth, performant animations in React Native using Reanimated and Animated APIs
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Mobile app navigation with React Navigation
+- **Slug:** `mobile-navigation-react-navigation`
+- **Description:** Implement routing and navigation in React Native apps using React Navigation
+- **Primary Competencies:** `react-navigation`
+- **Supporting Competencies:** `react-native`, `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Mobile app security best practices
+- **Slug:** `mobile-app-security-best-practices`
+- **Description:** Implement security measures in mobile apps including secure storage, encryption, and authentication
+- **Supporting Competencies:** `react-native`, `flutter`
+- **Source File:** 011-mobile-development.json
+
+### Mobile apps with Onsen UI
+- **Slug:** `mobile-apps-onsen-ui`
+- **Description:** Create hybrid mobile applications using Onsen UI framework with web technologies
+- **Primary Competencies:** `onsen-ui`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 011-mobile-development.json
+
+### Mobile backend with AWS Amplify
+- **Slug:** `mobile-backend-aws-amplify`
+- **Description:** Build mobile app backends with authentication, APIs, and storage using AWS Amplify
+- **Primary Competencies:** `aws-amplify`
+- **Supporting Competencies:** `aws`
+- **Source File:** 011-mobile-development.json
+
+### Mobile CI/CD with Bitrise
+- **Slug:** `mobile-cicd-bitrise`
+- **Description:** Build and deploy iOS and Android apps using Bitrise cloud CI/CD platform
+- **Primary Competencies:** `bitrise`
+- **Source File:** 011-mobile-development.json
+
+### Mobile deployment automation with Fastlane
+- **Slug:** `mobile-deployment-fastlane`
+- **Description:** Automate iOS and Android app builds, testing, and releases using Fastlane
+- **Primary Competencies:** `fastlane`
+- **Source File:** 011-mobile-development.json
+
+### Mobile DevOps with App Center
+- **Slug:** `mobile-devops-app-center`
+- **Description:** Build, test, and distribute mobile apps using Visual Studio App Center
+- **Primary Competencies:** `app-center`
+- **Source File:** 011-mobile-development.json
+
+### Mobile UI testing with Maestro
+- **Slug:** `mobile-ui-testing-maestro`
+- **Description:** Write simple, reliable UI tests for mobile apps using Maestro
+- **Primary Competencies:** `maestro`
+- **Source File:** 011-mobile-development.json
+
+### Mobile-first Progressive Web Apps with React
+- **Slug:** `mobile-first-progressive-web-apps-react`
+- **Description:** Build installable web apps that work like native mobile apps using PWA technologies and React
+- **Primary Competencies:** `pwa`
+- **Supporting Competencies:** `react`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Native mobile features with Capacitor
+- **Slug:** `native-mobile-features-capacitor`
+- **Description:** Access native device APIs in web-based mobile apps using Capacitor
+- **Primary Competencies:** `capacitor`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Native modules in React Native
+- **Slug:** `native-modules-react-native`
+- **Description:** Bridge native iOS and Android code with React Native using native modules
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `swift`, `kotlin`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### NativeScript applications with Vue
+- **Slug:** `nativescript-apps-vue`
+- **Description:** Build native mobile apps using NativeScript with Vue.js framework
+- **Primary Competencies:** `nativescript`
+- **Supporting Competencies:** `vuejs`, `typescript`
+- **Source File:** 011-mobile-development.json
+
+### Offline-first Flutter applications
+- **Slug:** `offline-first-flutter-apps`
+- **Description:** Create Flutter apps with offline capabilities using local databases and synchronization
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Offline-first mobile apps with React Native
+- **Slug:** `offline-first-mobile-apps-react-native`
+- **Description:** Build mobile apps that work offline using React Native with local storage and sync
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Onsen UI applications with React
+- **Slug:** `onsen-ui-apps-react`
+- **Description:** Build mobile apps using Onsen UI components with React
+- **Primary Competencies:** `onsen-ui`
+- **Supporting Competencies:** `react`, `javascript`
+- **Source File:** 011-mobile-development.json
+
+### Platform channels in Flutter
+- **Slug:** `platform-channels-flutter`
+- **Description:** Communicate between Flutter and native platform code using platform channels
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`, `swift`, `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Push notifications in Flutter
+- **Slug:** `push-notifications-flutter`
+- **Description:** Set up Firebase Cloud Messaging for push notifications in Flutter applications
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Push notifications in React Native
+- **Slug:** `push-notifications-react-native`
+- **Description:** Implement push notifications in React Native apps for iOS and Android
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Rapid mobile development with React Native and Expo
+- **Slug:** `rapid-mobile-development-expo`
+- **Description:** Build and deploy React Native apps quickly using Expo's managed workflow and tools
+- **Primary Competencies:** `expo`
+- **Supporting Competencies:** `react-native`, `javascript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### React Native app architecture and performance
+- **Slug:** `react-native-architecture-performance`
+- **Description:** Optimize React Native apps with proper architecture, lazy loading, and performance best practices
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### React Native app monetization
+- **Slug:** `react-native-app-monetization`
+- **Description:** Integrate in-app purchases and subscriptions in React Native applications
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### React Native backends with AWS Amplify
+- **Slug:** `react-native-backends-aws-amplify`
+- **Description:** Integrate AWS Amplify backend services into React Native applications
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `aws-amplify`, `typescript`, `react`
+- **Source File:** 011-mobile-development.json
+
+### Responsive Flutter layouts
+- **Slug:** `responsive-flutter-layouts`
+- **Description:** Create adaptive Flutter UIs for phones, tablets, and different orientations
+- **Primary Competencies:** `flutter`
+- **Supporting Competencies:** `dart`
+- **Source File:** 011-mobile-development.json
+
+### Shared code with Kotlin Multiplatform
+- **Slug:** `shared-code-kotlin-multiplatform`
+- **Description:** Share business logic across iOS, Android, and web using Kotlin Multiplatform
+- **Primary Competencies:** `kotlin-multiplatform`
+- **Supporting Competencies:** `kotlin`
+- **Source File:** 011-mobile-development.json
+
+### Swift fundamentals for iOS development
+- **Slug:** `swift-fundamentals-ios-development`
+- **Description:** Learn Swift programming language for building iOS, macOS, and watchOS applications
+- **Primary Competencies:** `swift`
+- **Source File:** 011-mobile-development.json
+
+### SwiftUI animations and gestures
+- **Slug:** `swiftui-animations-gestures`
+- **Description:** Create interactive iOS apps with SwiftUI animations, transitions, and gesture recognizers
+- **Primary Competencies:** `swiftui`
+- **Supporting Competencies:** `swift`, `xcode`
+- **Source File:** 011-mobile-development.json
+
+### Testing React Native applications with Detox
+- **Slug:** `testing-react-native-detox`
+- **Description:** Write end-to-end tests for React Native apps using Detox testing framework
+- **Primary Competencies:** `detox`
+- **Supporting Competencies:** `react-native`, `javascript`
+- **Source File:** 011-mobile-development.json
+
+### Type-safe React Native development with TypeScript
+- **Slug:** `typesafe-react-native-typescript`
+- **Description:** Build robust mobile applications using React Native with TypeScript for type safety
+- **Primary Competencies:** `react-native`
+- **Supporting Competencies:** `typescript`, `react`
+- **Source File:** 011-mobile-development.json
 
 ---
 

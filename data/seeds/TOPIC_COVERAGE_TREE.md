@@ -1,8 +1,8 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T19:34:42.169Z
-**Total Topics:** 297
-**Total Competencies:** 1624
+**Generated:** 2025-11-22T20:16:42.160Z
+**Total Topics:** 601
+**Total Competencies:** 1625
 **Total Categories:** 89
 
 This file shows the category hierarchy with topic and competency counts.
@@ -19,14 +19,14 @@ Run `npm run topic:coverage` to update.
 │   │   │   ├── Frontend Development [40 topics, 47 competencies]
 │   │   │   ├── Full-stack Development [6 topics, 0 competencies]
 │   │   │   └── Backend Development [3 topics, 36 competencies]
-│   │   ├── Mobile Development [0 topics, 48 competencies]
+│   │   ├── Mobile Development [86 topics, 48 competencies]
 │   │   ├── Game Development [1 topics, 53 competencies]
 │   │   ├── Systems Programming [0 topics, 17 competencies]
 │   │   └── Software Testing [3 topics, 0 competencies]
 │   ├── Data & Analytics [0 topics, 0 competencies]
 │   │   ├── Data Science [0 topics, 97 competencies]
 │   │   ├── Data Engineering [0 topics, 8 competencies]
-│   │   └── Databases [0 topics, 55 competencies]
+│   │   └── Databases [72 topics, 55 competencies]
 │   ├── Cloud & DevOps [170 topics, 170 competencies]
 │   ├── Automation & Integration [0 topics, 3 competencies]
 │   ├── Information Security [0 topics, 0 competencies]
@@ -55,7 +55,7 @@ Run `npm run topic:coverage` to update.
 │   │   └── Corporate Finance [0 topics, 14 competencies]
 │   └── Operations & Strategy [0 topics, 19 competencies]
 ├── Linguistics [0 topics, 15 competencies]
-│   ├── Languages [0 topics, 169 competencies]
+│   ├── Languages [147 topics, 170 competencies]
 │   └── Speech Development & Pathology [0 topics, 0 competencies]
 ├── Mathematics [0 topics, 0 competencies]
 │   ├── Foundational Math [0 topics, 0 competencies]
@@ -248,7 +248,7 @@ Run `npm run topic:coverage` to update.
 
 ### Databases
 - **Slug:** `databases`
-- **Topics:** 0
+- **Topics:** 72
 - **Competencies:** 55
 - **Parent:** data-analytics
 
@@ -337,8 +337,8 @@ Run `npm run topic:coverage` to update.
 
 ### Languages
 - **Slug:** `languages`
-- **Topics:** 0
-- **Competencies:** 169
+- **Topics:** 147
+- **Competencies:** 170
 - **Parent:** linguistics
 
 ### Leadership & Communication
@@ -396,7 +396,7 @@ Run `npm run topic:coverage` to update.
 
 ### Mobile Development
 - **Slug:** `mobile-development`
-- **Topics:** 0
+- **Topics:** 86
 - **Competencies:** 48
 - **Parent:** programming
 

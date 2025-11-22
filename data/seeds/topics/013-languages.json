@@ -3,13 +3,1334 @@
     {
       "name": "Conversational Spanish",
       "slug": "conversational-spanish",
-      "description": "Holding conversations in Spanish",
-      "category_slug": "language",
+      "description": "Build speaking and listening skills for everyday Spanish conversations",
+      "category_slug": "languages",
       "competencies": [
-        {
-          "competency_slug": "spanish",
-          "is_primary": true
-        }
+        {"competency_slug": "spanish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Spanish",
+      "slug": "business-spanish",
+      "description": "Develop professional Spanish language skills for the workplace",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Academic Spanish reading and writing",
+      "slug": "academic-spanish-reading-writing",
+      "description": "Master advanced Spanish grammar, literature, and academic writing",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Medical Spanish for healthcare professionals",
+      "slug": "medical-spanish-healthcare",
+      "description": "Learn specialized Spanish vocabulary and communication for medical settings",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Mandarin Chinese",
+      "slug": "conversational-mandarin-chinese",
+      "description": "Develop speaking and listening skills for everyday conversations in Mandarin Chinese",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "mandarin-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Mandarin Chinese",
+      "slug": "business-mandarin-chinese",
+      "description": "Master professional Mandarin for business meetings, negotiations, and workplace communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "mandarin-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Chinese characters",
+      "slug": "reading-writing-chinese-characters",
+      "description": "Learn to read and write traditional and simplified Chinese characters",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "mandarin-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational French",
+      "slug": "conversational-french",
+      "description": "Develop speaking and listening proficiency for everyday French conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business French",
+      "slug": "business-french",
+      "description": "Master professional French for business contexts and workplace communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Academic French reading and writing",
+      "slug": "academic-french-reading-writing",
+      "description": "Build advanced French literacy skills for academic and literary texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french", "is_primary": true}
+      ]
+    },
+    {
+      "name": "English as a Second Language fundamentals",
+      "slug": "esl-fundamentals",
+      "description": "Build foundational English skills for non-native speakers",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "english-second-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business English communication",
+      "slug": "business-english-communication",
+      "description": "Master professional English for business settings and workplace success",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "english-second-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Academic English writing",
+      "slug": "academic-english-writing",
+      "description": "Develop advanced English writing skills for academic and research contexts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "english-second-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "English pronunciation and accent reduction",
+      "slug": "english-pronunciation-accent-reduction",
+      "description": "Improve English pronunciation and reduce native accent for clearer communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "english-second-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational German",
+      "slug": "conversational-german",
+      "description": "Develop speaking and listening skills for everyday German conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business German",
+      "slug": "business-german",
+      "description": "Learn professional German for business environments and workplace communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Academic German reading",
+      "slug": "academic-german-reading",
+      "description": "Build reading comprehension skills for German academic and technical texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Italian",
+      "slug": "conversational-italian",
+      "description": "Build speaking and listening proficiency for everyday Italian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "italian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Italian",
+      "slug": "business-italian",
+      "description": "Master professional Italian for workplace and business contexts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "italian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Italian culture through language",
+      "slug": "italian-culture-through-language",
+      "description": "Explore Italian culture, history, and society while learning the language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "italian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Portuguese",
+      "slug": "conversational-portuguese",
+      "description": "Develop speaking and listening skills for everyday Portuguese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "portuguese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Brazilian Portuguese",
+      "slug": "brazilian-portuguese",
+      "description": "Learn Brazilian Portuguese dialect, pronunciation, and cultural context",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "portuguese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Portuguese",
+      "slug": "business-portuguese",
+      "description": "Master professional Portuguese for business and workplace settings",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "portuguese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Japanese",
+      "slug": "conversational-japanese",
+      "description": "Build speaking and listening skills for everyday Japanese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Japanese",
+      "slug": "business-japanese",
+      "description": "Learn professional Japanese honorifics and business communication etiquette",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Japanese hiragana, katakana, and kanji",
+      "slug": "reading-japanese-writing-systems",
+      "description": "Master Japanese writing systems including hiragana, katakana, and common kanji",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Korean",
+      "slug": "conversational-korean",
+      "description": "Develop speaking and listening proficiency for everyday Korean conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "korean", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Korean",
+      "slug": "business-korean",
+      "description": "Master professional Korean for workplace communication and business etiquette",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "korean", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Hangul",
+      "slug": "reading-writing-hangul",
+      "description": "Learn the Korean alphabet (Hangul) and develop reading and writing skills",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "korean", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Arabic",
+      "slug": "conversational-arabic",
+      "description": "Build speaking and listening skills for Modern Standard Arabic",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "arabic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Arabic",
+      "slug": "business-arabic",
+      "description": "Learn professional Arabic for business contexts in the Arab world",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "arabic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Arabic script",
+      "slug": "reading-writing-arabic-script",
+      "description": "Master the Arabic alphabet and develop reading and writing proficiency",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "arabic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Russian",
+      "slug": "conversational-russian",
+      "description": "Develop speaking and listening skills for everyday Russian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "russian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Russian",
+      "slug": "business-russian",
+      "description": "Master professional Russian for business and workplace communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "russian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Russian Cyrillic",
+      "slug": "reading-russian-cyrillic",
+      "description": "Learn the Cyrillic alphabet and develop Russian reading comprehension",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "russian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hindi",
+      "slug": "conversational-hindi",
+      "description": "Build speaking and listening proficiency for everyday Hindi conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hindi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Devanagari script",
+      "slug": "reading-writing-devanagari",
+      "description": "Master the Devanagari writing system for Hindi and Sanskrit",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hindi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Bengali",
+      "slug": "conversational-bengali",
+      "description": "Develop speaking and listening skills for everyday Bengali conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "bengali", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Cantonese",
+      "slug": "conversational-cantonese",
+      "description": "Build speaking and listening proficiency for Cantonese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cantonese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cantonese tones and pronunciation",
+      "slug": "cantonese-tones-pronunciation",
+      "description": "Master the nine tones of Cantonese for accurate pronunciation",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cantonese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Dutch",
+      "slug": "conversational-dutch",
+      "description": "Develop speaking and listening skills for everyday Dutch conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "dutch", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Dutch",
+      "slug": "business-dutch",
+      "description": "Learn professional Dutch for workplace communication in the Netherlands and Belgium",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "dutch", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Swedish",
+      "slug": "conversational-swedish",
+      "description": "Build speaking and listening proficiency for everyday Swedish conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "swedish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Norwegian",
+      "slug": "conversational-norwegian",
+      "description": "Develop speaking and listening skills for everyday Norwegian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "norwegian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Danish",
+      "slug": "conversational-danish",
+      "description": "Build speaking and listening proficiency for everyday Danish conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "danish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Polish",
+      "slug": "conversational-polish",
+      "description": "Develop speaking and listening skills for everyday Polish conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "polish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Turkish",
+      "slug": "conversational-turkish",
+      "description": "Build speaking and listening proficiency for everyday Turkish conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "turkish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Turkish",
+      "slug": "business-turkish",
+      "description": "Master professional Turkish for business contexts and workplace communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "turkish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Vietnamese",
+      "slug": "conversational-vietnamese",
+      "description": "Develop speaking and listening skills for everyday Vietnamese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "vietnamese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Vietnamese tones and pronunciation",
+      "slug": "vietnamese-tones-pronunciation",
+      "description": "Master the six tones of Vietnamese for accurate pronunciation",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "vietnamese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Thai",
+      "slug": "conversational-thai",
+      "description": "Build speaking and listening proficiency for everyday Thai conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "thai", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Thai script",
+      "slug": "reading-writing-thai-script",
+      "description": "Learn the Thai alphabet and develop reading and writing skills",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "thai", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Modern Greek",
+      "slug": "conversational-modern-greek",
+      "description": "Develop speaking and listening skills for everyday Greek conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "greek-modern", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Greek alphabet",
+      "slug": "reading-writing-greek-alphabet",
+      "description": "Master the Greek alphabet and develop reading proficiency",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "greek-modern", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Modern Hebrew",
+      "slug": "conversational-modern-hebrew",
+      "description": "Build speaking and listening proficiency for everyday Hebrew conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hebrew-modern", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Hebrew script",
+      "slug": "reading-writing-hebrew-script",
+      "description": "Learn the Hebrew alphabet and develop reading and writing skills",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hebrew-modern", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Czech",
+      "slug": "conversational-czech",
+      "description": "Develop speaking and listening skills for everyday Czech conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "czech", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Slovak",
+      "slug": "conversational-slovak",
+      "description": "Build speaking and listening proficiency for everyday Slovak conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "slovak", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Ukrainian",
+      "slug": "conversational-ukrainian",
+      "description": "Develop speaking and listening skills for everyday Ukrainian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "ukrainian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Ukrainian Cyrillic",
+      "slug": "reading-ukrainian-cyrillic",
+      "description": "Master the Cyrillic alphabet for Ukrainian reading comprehension",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "ukrainian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Romanian",
+      "slug": "conversational-romanian",
+      "description": "Build speaking and listening proficiency for everyday Romanian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "romanian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Persian (Farsi)",
+      "slug": "conversational-persian-farsi",
+      "description": "Develop speaking and listening skills for everyday Persian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "persian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Persian script",
+      "slug": "reading-writing-persian-script",
+      "description": "Learn the Persian alphabet and develop reading and writing proficiency",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "persian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Urdu",
+      "slug": "conversational-urdu",
+      "description": "Build speaking and listening proficiency for everyday Urdu conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "urdu", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Urdu script",
+      "slug": "reading-writing-urdu-script",
+      "description": "Master the Urdu alphabet and develop reading and writing skills",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "urdu", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tamil",
+      "slug": "conversational-tamil",
+      "description": "Develop speaking and listening skills for everyday Tamil conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tamil", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Telugu",
+      "slug": "conversational-telugu",
+      "description": "Build speaking and listening proficiency for everyday Telugu conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "telugu", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Punjabi",
+      "slug": "conversational-punjabi",
+      "description": "Develop speaking and listening skills for everyday Punjabi conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "punjabi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Indonesian",
+      "slug": "conversational-indonesian",
+      "description": "Build speaking and listening proficiency for everyday Indonesian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "indonesian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Indonesian",
+      "slug": "business-indonesian",
+      "description": "Master professional Indonesian for workplace and business contexts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "indonesian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Malay",
+      "slug": "conversational-malay",
+      "description": "Develop speaking and listening skills for everyday Malay conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "malay", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Filipino (Tagalog)",
+      "slug": "conversational-filipino-tagalog",
+      "description": "Build speaking and listening proficiency for everyday Filipino conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "filipino", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Swahili",
+      "slug": "conversational-swahili",
+      "description": "Develop speaking and listening skills for everyday Swahili conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "swahili", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Finnish",
+      "slug": "conversational-finnish",
+      "description": "Build speaking and listening proficiency for everyday Finnish conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "finnish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hungarian",
+      "slug": "conversational-hungarian",
+      "description": "Develop speaking and listening skills for everyday Hungarian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hungarian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Catalan",
+      "slug": "conversational-catalan",
+      "description": "Build speaking and listening proficiency for everyday Catalan conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "catalan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Serbian",
+      "slug": "conversational-serbian",
+      "description": "Develop speaking and listening skills for everyday Serbian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "serbian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Croatian",
+      "slug": "conversational-croatian",
+      "description": "Build speaking and listening proficiency for everyday Croatian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "croatian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Bosnian",
+      "slug": "conversational-bosnian",
+      "description": "Develop speaking and listening skills for everyday Bosnian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "bosnian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Bulgarian",
+      "slug": "conversational-bulgarian",
+      "description": "Build speaking and listening proficiency for everyday Bulgarian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "bulgarian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Slovenian",
+      "slug": "conversational-slovenian",
+      "description": "Develop speaking and listening skills for everyday Slovenian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "slovenian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Estonian",
+      "slug": "conversational-estonian",
+      "description": "Build speaking and listening proficiency for everyday Estonian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "estonian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Latvian",
+      "slug": "conversational-latvian",
+      "description": "Develop speaking and listening skills for everyday Latvian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "latvian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Lithuanian",
+      "slug": "conversational-lithuanian",
+      "description": "Build speaking and listening proficiency for everyday Lithuanian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "lithuanian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Icelandic",
+      "slug": "conversational-icelandic",
+      "description": "Develop speaking and listening skills for everyday Icelandic conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "icelandic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Albanian",
+      "slug": "conversational-albanian",
+      "description": "Build speaking and listening proficiency for everyday Albanian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "albanian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Armenian",
+      "slug": "conversational-armenian",
+      "description": "Develop speaking and listening skills for everyday Armenian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "armenian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Georgian",
+      "slug": "conversational-georgian",
+      "description": "Build speaking and listening proficiency for everyday Georgian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "georgian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Kazakh",
+      "slug": "conversational-kazakh",
+      "description": "Develop speaking and listening skills for everyday Kazakh conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kazakh", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Mongolian",
+      "slug": "conversational-mongolian",
+      "description": "Build speaking and listening proficiency for everyday Mongolian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "mongolian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Nepali",
+      "slug": "conversational-nepali",
+      "description": "Develop speaking and listening skills for everyday Nepali conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "nepali", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Sinhala",
+      "slug": "conversational-sinhala",
+      "description": "Build speaking and listening proficiency for everyday Sinhala conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sinhala", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Burmese",
+      "slug": "conversational-burmese",
+      "description": "Develop speaking and listening skills for everyday Burmese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "burmese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Khmer (Cambodian)",
+      "slug": "conversational-khmer-cambodian",
+      "description": "Build speaking and listening proficiency for everyday Khmer conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "khmer", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Lao",
+      "slug": "conversational-lao",
+      "description": "Develop speaking and listening skills for everyday Lao conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "lao", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Amharic",
+      "slug": "conversational-amharic",
+      "description": "Build speaking and listening proficiency for everyday Amharic conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "amharic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Yoruba",
+      "slug": "conversational-yoruba",
+      "description": "Develop speaking and listening skills for everyday Yoruba conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "yoruba", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hausa",
+      "slug": "conversational-hausa",
+      "description": "Build speaking and listening proficiency for everyday Hausa conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hausa", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Igbo",
+      "slug": "conversational-igbo",
+      "description": "Develop speaking and listening skills for everyday Igbo conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "igbo", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Zulu",
+      "slug": "conversational-zulu",
+      "description": "Build speaking and listening proficiency for everyday Zulu conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "zulu", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Xhosa",
+      "slug": "conversational-xhosa",
+      "description": "Develop speaking and listening skills for everyday Xhosa conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "xhosa", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Afrikaans",
+      "slug": "conversational-afrikaans",
+      "description": "Build speaking and listening proficiency for everyday Afrikaans conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "afrikaans", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Maori",
+      "slug": "conversational-maori",
+      "description": "Develop speaking and listening skills for everyday Maori conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "maori", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hawaiian",
+      "slug": "conversational-hawaiian",
+      "description": "Build speaking and listening proficiency for everyday Hawaiian conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hawaiian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Samoan",
+      "slug": "conversational-samoan",
+      "description": "Develop speaking and listening skills for everyday Samoan conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "samoan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Classical Latin reading",
+      "slug": "classical-latin-reading",
+      "description": "Learn to read classical Latin texts from ancient Rome",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "latin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Medical and scientific Latin",
+      "slug": "medical-scientific-latin",
+      "description": "Master Latin terminology used in medicine, biology, and scientific nomenclature",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "latin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Ancient Greek reading",
+      "slug": "ancient-greek-reading",
+      "description": "Learn to read classical Greek texts from ancient Greece",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "ancient-greek", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Biblical Hebrew reading",
+      "slug": "biblical-hebrew-reading",
+      "description": "Learn to read and interpret biblical Hebrew texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "biblical-hebrew", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Classical Arabic reading",
+      "slug": "classical-arabic-reading",
+      "description": "Learn to read classical Arabic texts including Quranic Arabic",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "classical-arabic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sanskrit reading and grammar",
+      "slug": "sanskrit-reading-grammar",
+      "description": "Master Sanskrit grammar and learn to read classical texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sanskrit", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Old Norse reading",
+      "slug": "old-norse-reading",
+      "description": "Learn to read Old Norse sagas and medieval Scandinavian texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "old-norse", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Old English reading",
+      "slug": "old-english-reading",
+      "description": "Learn to read Old English texts including Beowulf",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "old-english", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Middle English literature",
+      "slug": "middle-english-literature",
+      "description": "Read and understand Middle English texts including Chaucer",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "middle-english", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Welsh",
+      "slug": "conversational-welsh",
+      "description": "Develop speaking and listening skills for everyday Welsh conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "welsh", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Irish Gaelic",
+      "slug": "conversational-irish-gaelic",
+      "description": "Build speaking and listening proficiency for everyday Irish Gaelic conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "irish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Scottish Gaelic",
+      "slug": "conversational-scottish-gaelic",
+      "description": "Develop speaking and listening skills for everyday Scottish Gaelic conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "scottish-gaelic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Basque",
+      "slug": "conversational-basque",
+      "description": "Build speaking and listening proficiency for everyday Basque conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "basque", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Breton",
+      "slug": "conversational-breton",
+      "description": "Develop speaking and listening skills for everyday Breton conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "breton", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Esperanto",
+      "slug": "conversational-esperanto",
+      "description": "Learn the international auxiliary language Esperanto for global communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "esperanto", "is_primary": true}
+      ]
+    },
+    {
+      "name": "American Sign Language fundamentals",
+      "slug": "american-sign-language-fundamentals",
+      "description": "Learn to communicate using American Sign Language for everyday conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "american-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "ASL interpreting skills",
+      "slug": "asl-interpreting-skills",
+      "description": "Develop professional American Sign Language interpreting competency",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "american-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "British Sign Language fundamentals",
+      "slug": "british-sign-language-fundamentals",
+      "description": "Learn to communicate using British Sign Language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "british-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Spanish-English translation",
+      "slug": "spanish-english-translation",
+      "description": "Develop professional translation skills between Spanish and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "French-English translation",
+      "slug": "french-english-translation",
+      "description": "Master professional translation between French and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "German-English translation",
+      "slug": "german-english-translation",
+      "description": "Develop professional translation skills between German and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mandarin-English translation",
+      "slug": "mandarin-english-translation",
+      "description": "Master professional translation between Mandarin Chinese and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "mandarin-chinese", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Japanese-English translation",
+      "slug": "japanese-english-translation",
+      "description": "Develop professional translation skills between Japanese and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Arabic-English translation",
+      "slug": "arabic-english-translation",
+      "description": "Master professional translation between Arabic and English",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "arabic", "is_primary": true},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Conference interpreting fundamentals",
+      "slug": "conference-interpreting-fundamentals",
+      "description": "Learn simultaneous and consecutive interpreting techniques for conferences",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": false},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Legal translation and interpretation",
+      "slug": "legal-translation-interpretation",
+      "description": "Master specialized translation for legal documents and court interpreting",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": false},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Medical translation and interpretation",
+      "slug": "medical-translation-interpretation",
+      "description": "Develop specialized skills for medical translation and healthcare interpreting",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": false},
+        {"competency_slug": "english-second-language", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Literary translation techniques",
+      "slug": "literary-translation-techniques",
+      "description": "Master the art of translating literature while preserving style and meaning",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish", "is_primary": false},
+        {"competency_slug": "french", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Reading Akkadian cuneiform",
+      "slug": "reading-akkadian-cuneiform",
+      "description": "Learn to read cuneiform texts in ancient Akkadian language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "akkadian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Sumerian cuneiform",
+      "slug": "reading-sumerian-cuneiform",
+      "description": "Study ancient Sumerian language and cuneiform writing system",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sumerian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Egyptian hieroglyphics reading",
+      "slug": "egyptian-hieroglyphics-reading",
+      "description": "Learn to read and interpret ancient Egyptian hieroglyphic texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "egyptian-hieroglyphs", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Aramaic reading",
+      "slug": "aramaic-reading",
+      "description": "Learn to read ancient Aramaic texts including biblical Aramaic",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "aramaic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Akan (Twi)",
+      "slug": "conversational-akan-twi",
+      "description": "Develop speaking and listening skills for everyday Akan conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "akan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Javanese",
+      "slug": "conversational-javanese",
+      "description": "Build speaking and listening proficiency for everyday Javanese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "javanese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Pashto",
+      "slug": "conversational-pashto",
+      "description": "Develop speaking and listening skills for everyday Pashto conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "pashto", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Assamese",
+      "slug": "conversational-assamese",
+      "description": "Build speaking and listening proficiency for everyday Assamese conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "assamese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Marathi",
+      "slug": "conversational-marathi",
+      "description": "Develop speaking and listening skills for everyday Marathi conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "marathi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Gujarati",
+      "slug": "conversational-gujarati",
+      "description": "Build speaking and listening proficiency for everyday Gujarati conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "gujarati", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Odia",
+      "slug": "conversational-odia",
+      "description": "Develop speaking and listening skills for everyday Odia conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "odia", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Kannada",
+      "slug": "conversational-kannada",
+      "description": "Build speaking and listening proficiency for everyday Kannada conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kannada", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Malayalam",
+      "slug": "conversational-malayalam",
+      "description": "Develop speaking and listening skills for everyday Malayalam conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "malayalam", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Sindhi",
+      "slug": "conversational-sindhi",
+      "description": "Build speaking and listening proficiency for everyday Sindhi conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sindhi", "is_primary": true}
       ]
     }
   ]

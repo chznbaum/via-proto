@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T19:34:32.231Z
-**Total Competencies:** 1624
+**Generated:** 2025-11-22T20:16:26.162Z
+**Total Competencies:** 1625
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -49,7 +49,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **graphic-design** (16)
 - **home-lifestyle** (50)
 - **investing-trading** (26)
-- **languages** (169)
+- **languages** (170)
 - **leadership-communication** (12)
 - **life-sciences** (6)
 - **linear-algebra** (1)
@@ -395,6 +395,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `circuit-training` - Circuit Training (cardio-endurance)
 - `clair` - Clair (cloud-devops)
 - `clarinet` - Clarinet (music)
+- `classical-arabic` - Classical Arabic (languages)
 - `classical-chinese` - Classical Chinese (languages)
 - `classical-mechanics` - Classical Mechanics (physics)
 - `climate-science` - Climate Science (environmental-science)

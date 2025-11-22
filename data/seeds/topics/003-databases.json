@@ -1,0 +1,750 @@
+{
+  "topics": [
+    {
+      "name": "Building data-driven web applications with PostgreSQL and Prisma",
+      "slug": "building-web-apps-postgresql-prisma",
+      "description": "Create type-safe web applications using PostgreSQL database with Prisma ORM for Node.js",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "prisma", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Query optimization and performance tuning in PostgreSQL",
+      "slug": "postgresql-query-optimization-performance",
+      "description": "Master advanced PostgreSQL features including indexes, query plans, and performance optimization techniques",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "postgresql", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building REST APIs with Node.js, Express, and PostgreSQL",
+      "slug": "rest-apis-nodejs-express-postgresql",
+      "description": "Develop backend APIs using Node.js and Express with PostgreSQL for data persistence",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "expressjs", "is_primary": true},
+        {"competency_slug": "nodejs", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Full-stack TypeScript applications with PostgreSQL and TypeORM",
+      "slug": "fullstack-typescript-postgresql-typeorm",
+      "description": "Build end-to-end type-safe applications using TypeORM to connect TypeScript backends with PostgreSQL",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "typeorm", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Database administration and monitoring with pgAdmin",
+      "slug": "database-admin-monitoring-pgadmin",
+      "description": "Manage and monitor PostgreSQL databases using pgAdmin for queries, backups, and performance analysis",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "pgadmin", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building scalable web applications with MySQL and Sequelize",
+      "slug": "web-apps-mysql-sequelize",
+      "description": "Create robust Node.js applications using MySQL database with Sequelize ORM for data modeling",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sequelize", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "MySQL database design and normalization",
+      "slug": "mysql-database-design-normalization",
+      "description": "Design efficient relational database schemas in MySQL with proper normalization and relationships",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mysql", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Managing MySQL databases with MySQL Workbench",
+      "slug": "managing-mysql-workbench",
+      "description": "Use MySQL Workbench for database design, development, administration, and data modeling",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mysql-workbench", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building Python web applications with MySQL and SQLAlchemy",
+      "slug": "python-web-apps-mysql-sqlalchemy",
+      "description": "Develop Python applications using SQLAlchemy ORM to interact with MySQL databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sqlalchemy", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "python", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Embedded database solutions with SQLite",
+      "slug": "embedded-databases-sqlite",
+      "description": "Implement lightweight embedded databases using SQLite for mobile apps and small applications",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sqlite", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building mobile apps with SQLite and React Native",
+      "slug": "mobile-apps-sqlite-react-native",
+      "description": "Create offline-capable mobile applications using SQLite for local data storage in React Native",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sqlite", "is_primary": false},
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Enterprise applications with Microsoft SQL Server",
+      "slug": "enterprise-apps-sql-server",
+      "description": "Build enterprise-grade applications using Microsoft SQL Server for data management and analytics",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "microsoft-sql-server", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building .NET applications with SQL Server and Entity Framework",
+      "slug": "dotnet-apps-sqlserver-entity-framework",
+      "description": "Develop ASP.NET Core applications using Entity Framework to work with SQL Server databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "entity-framework", "is_primary": true},
+        {"competency_slug": "microsoft-sql-server", "is_primary": false},
+        {"competency_slug": "csharp", "is_primary": false},
+        {"competency_slug": "aspnet-core", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Oracle database administration and development",
+      "slug": "oracle-database-admin-development",
+      "description": "Manage and develop enterprise applications using Oracle Database with PL/SQL",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "oracle-database", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building Java enterprise applications with Oracle and Hibernate",
+      "slug": "java-apps-oracle-hibernate",
+      "description": "Create enterprise Java applications using Hibernate ORM with Oracle Database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "hibernate", "is_primary": true},
+        {"competency_slug": "oracle-database", "is_primary": false},
+        {"competency_slug": "java", "is_primary": false}
+      ]
+    },
+    {
+      "name": "High-performance web applications with MariaDB",
+      "slug": "high-performance-web-apps-mariadb",
+      "description": "Build fast and scalable web applications using MariaDB as a MySQL-compatible database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mariadb", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building document-based applications with MongoDB and Mongoose",
+      "slug": "document-apps-mongodb-mongoose",
+      "description": "Create flexible Node.js applications using MongoDB with Mongoose ODM for schema modeling",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongoose", "is_primary": true},
+        {"competency_slug": "mongodb", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "NoSQL database design with MongoDB",
+      "slug": "nosql-design-mongodb",
+      "description": "Design schema-less, document-oriented databases using MongoDB for flexible data models",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongodb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Managing MongoDB with MongoDB Compass",
+      "slug": "managing-mongodb-compass",
+      "description": "Use MongoDB Compass GUI to visualize, query, and optimize MongoDB databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongodb-compass", "is_primary": true},
+        {"competency_slug": "mongodb", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Deploying and scaling MongoDB with MongoDB Atlas",
+      "slug": "deploying-scaling-mongodb-atlas",
+      "description": "Deploy managed MongoDB clusters on MongoDB Atlas with automated scaling and backups",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongodb-atlas", "is_primary": true},
+        {"competency_slug": "mongodb", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building real-time applications with MongoDB and Node.js",
+      "slug": "realtime-apps-mongodb-nodejs",
+      "description": "Create real-time web applications using MongoDB change streams with Node.js",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongodb", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Caching strategies with Redis",
+      "slug": "caching-strategies-redis",
+      "description": "Implement high-performance caching and session storage using Redis in-memory database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "redis", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building scalable applications with Redis and Node.js",
+      "slug": "scalable-apps-redis-nodejs",
+      "description": "Use Redis for caching, pub/sub messaging, and session management in Node.js applications",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "redis", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Real-time messaging and queues with Redis",
+      "slug": "realtime-messaging-queues-redis",
+      "description": "Build message queues and pub/sub systems using Redis for distributed applications",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "redis", "is_primary": true}
+      ]
+    },
+    {
+      "name": "High-performance caching with Memcached",
+      "slug": "high-performance-caching-memcached",
+      "description": "Implement distributed memory caching using Memcached to accelerate web applications",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "memcached", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building graph databases with Neo4j",
+      "slug": "graph-databases-neo4j",
+      "description": "Model and query connected data using Neo4j graph database with Cypher query language",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "neo4j", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Social networks and recommendation engines with Neo4j",
+      "slug": "social-networks-recommendations-neo4j",
+      "description": "Build social network features and recommendation systems using Neo4j graph relationships",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "neo4j", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Distributed databases with Apache Cassandra",
+      "slug": "distributed-databases-cassandra",
+      "description": "Build highly available, scalable applications using Apache Cassandra NoSQL database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "cassandra", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Document databases with CouchDB",
+      "slug": "document-databases-couchdb",
+      "description": "Create offline-first applications using CouchDB's document database with sync capabilities",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "couchdb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building serverless applications with DynamoDB",
+      "slug": "serverless-apps-dynamodb",
+      "description": "Create serverless applications on AWS using DynamoDB for NoSQL data storage",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "dynamodb", "is_primary": true},
+        {"competency_slug": "aws", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Time-series data with InfluxDB",
+      "slug": "timeseries-data-influxdb",
+      "description": "Store and analyze time-series data using InfluxDB for metrics and monitoring",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "influxdb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "IoT and sensor data with InfluxDB",
+      "slug": "iot-sensor-data-influxdb",
+      "description": "Collect and visualize IoT sensor data using InfluxDB time-series database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "influxdb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Serverless databases with PlanetScale",
+      "slug": "serverless-databases-planetscale",
+      "description": "Deploy and scale MySQL-compatible databases using PlanetScale's serverless platform",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "planetscale", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Distributed SQL with CockroachDB",
+      "slug": "distributed-sql-cockroachdb",
+      "description": "Build globally distributed applications using CockroachDB's resilient SQL database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "cockroachdb", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Time-series analytics with TimescaleDB",
+      "slug": "timeseries-analytics-timescaledb",
+      "description": "Analyze time-series data using TimescaleDB's PostgreSQL extension for efficient queries",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "timescaledb", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Multi-model databases with ArangoDB",
+      "slug": "multimodel-databases-arangodb",
+      "description": "Work with document, graph, and key-value data models in a single ArangoDB database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "arangodb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Document storage with Couchbase",
+      "slug": "document-storage-couchbase",
+      "description": "Build distributed applications using Couchbase for JSON document storage and caching",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "couchbase", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Real-time databases with RethinkDB",
+      "slug": "realtime-databases-rethinkdb",
+      "description": "Create reactive applications using RethinkDB's real-time change feeds",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "rethinkdb", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Big data storage with Apache HBase",
+      "slug": "bigdata-storage-hbase",
+      "description": "Store and retrieve massive datasets using Apache HBase on Hadoop",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "hbase", "is_primary": true}
+      ]
+    },
+    {
+      "name": ".NET document databases with RavenDB",
+      "slug": "dotnet-document-databases-ravendb",
+      "description": "Build .NET applications using RavenDB's ACID-compliant NoSQL document database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "ravendb", "is_primary": true},
+        {"competency_slug": "csharp", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Hosted search with Algolia",
+      "slug": "hosted-search-algolia",
+      "description": "Implement fast, typo-tolerant search using Algolia's hosted search API",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "algolia", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building search experiences with Algolia and React",
+      "slug": "search-experiences-algolia-react",
+      "description": "Create instant search interfaces using Algolia with React InstantSearch",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "algolia", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Open-source search with Meilisearch",
+      "slug": "opensource-search-meilisearch",
+      "description": "Deploy fast and relevant search using Meilisearch's open-source search engine",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "meilisearch", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Enterprise search with Apache Solr",
+      "slug": "enterprise-search-apache-solr",
+      "description": "Build enterprise search solutions using Apache Solr for full-text indexing",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "apache-solr", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Database migrations with Flyway",
+      "slug": "database-migrations-flyway",
+      "description": "Manage database schema changes using Flyway version-controlled migrations",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "flyway", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Java application migrations with Flyway",
+      "slug": "java-migrations-flyway",
+      "description": "Automate database schema evolution in Java applications using Flyway",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "flyway", "is_primary": true},
+        {"competency_slug": "java", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Schema versioning with Liquibase",
+      "slug": "schema-versioning-liquibase",
+      "description": "Track and deploy database changes using Liquibase's database-independent migration tool",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "liquibase", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Python database migrations with Alembic",
+      "slug": "python-migrations-alembic",
+      "description": "Manage SQLAlchemy database migrations using Alembic for version control",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "alembic", "is_primary": true},
+        {"competency_slug": "sqlalchemy", "is_primary": false},
+        {"competency_slug": "python", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Type-safe APIs with GraphQL",
+      "slug": "typesafe-apis-graphql",
+      "description": "Build flexible, type-safe APIs using GraphQL query language",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "graphql", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building GraphQL servers with Node.js and Apollo",
+      "slug": "graphql-servers-nodejs-apollo",
+      "description": "Create GraphQL APIs using Apollo Server with Node.js and TypeScript",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "apollo-server", "is_primary": true},
+        {"competency_slug": "graphql", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "GraphQL clients with React and Apollo",
+      "slug": "graphql-clients-react-apollo",
+      "description": "Connect React applications to GraphQL APIs using Apollo Client",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "apollo-client", "is_primary": true},
+        {"competency_slug": "graphql", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Managed PostgreSQL with Amazon RDS",
+      "slug": "managed-postgresql-amazon-rds",
+      "description": "Deploy and manage PostgreSQL databases using Amazon RDS for automated backups and scaling",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "amazon-rds", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "aws", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cloud databases with Azure SQL Database",
+      "slug": "cloud-databases-azure-sql",
+      "description": "Build cloud-native applications using Azure SQL Database with automatic scaling",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "azure-sql-database", "is_primary": true},
+        {"competency_slug": "microsoft-sql-server", "is_primary": false},
+        {"competency_slug": "azure", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Managed databases with Google Cloud SQL",
+      "slug": "managed-databases-google-cloud-sql",
+      "description": "Deploy MySQL and PostgreSQL databases on Google Cloud SQL with automated management",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "google-cloud-sql", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "google-cloud-platform", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ruby on Rails applications with PostgreSQL and ActiveRecord",
+      "slug": "rails-postgresql-activerecord",
+      "description": "Build Ruby on Rails web applications using ActiveRecord ORM with PostgreSQL",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "activerecord", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "ruby", "is_primary": false},
+        {"competency_slug": "ruby-on-rails", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Laravel applications with MySQL and Eloquent",
+      "slug": "laravel-mysql-eloquent",
+      "description": "Develop PHP applications using Laravel's Eloquent ORM with MySQL databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "eloquent", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "php", "is_primary": false},
+        {"competency_slug": "laravel", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Query builders with Knex.js",
+      "slug": "query-builders-knexjs",
+      "description": "Build flexible SQL queries using Knex.js query builder for Node.js",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "knexjs", "is_primary": true},
+        {"competency_slug": "nodejs", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Type-safe database queries with Drizzle ORM",
+      "slug": "typesafe-queries-drizzle-orm",
+      "description": "Build type-safe SQL applications using Drizzle ORM with TypeScript",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "drizzle-orm", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "postgresql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-database development with DataGrip",
+      "slug": "cross-database-development-datagrip",
+      "description": "Manage multiple databases using JetBrains DataGrip IDE for SQL development",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "datagrip", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Multi-database management with DBeaver",
+      "slug": "multi-database-management-dbeaver",
+      "description": "Work with diverse database systems using DBeaver universal database tool",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "dbeaver", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Modern database GUI with TablePlus",
+      "slug": "modern-database-gui-tableplus",
+      "description": "Manage databases using TablePlus's native GUI for multiple database systems",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "tableplus", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Database administration with Navicat",
+      "slug": "database-administration-navicat",
+      "description": "Administer multiple database types using Navicat's comprehensive management tools",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "navicat", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "MySQL web administration with phpMyAdmin",
+      "slug": "mysql-web-admin-phpmyadmin",
+      "description": "Manage MySQL databases through the web using phpMyAdmin interface",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "phpmyadmin", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "php", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Lightweight database management with Adminer",
+      "slug": "lightweight-database-management-adminer",
+      "description": "Manage databases using Adminer's single-file PHP database tool",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "adminer", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "php", "is_primary": false}
+      ]
+    },
+    {
+      "name": "SQL fundamentals for database development",
+      "slug": "sql-fundamentals-database-development",
+      "description": "Master SQL syntax for querying, manipulating, and managing relational databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sql", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced SQL for data analysis",
+      "slug": "advanced-sql-data-analysis",
+      "description": "Use advanced SQL techniques including window functions, CTEs, and complex joins for analytics",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sql", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building Next.js applications with PostgreSQL and Prisma",
+      "slug": "nextjs-postgresql-prisma",
+      "description": "Create full-stack Next.js applications using Prisma ORM with PostgreSQL database",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "prisma", "is_primary": false},
+        {"competency_slug": "nextjs", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Database schema design and modeling",
+      "slug": "database-schema-design-modeling",
+      "description": "Design efficient database schemas with proper relationships, indexes, and constraints",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "sql", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building Python APIs with FastAPI and PostgreSQL",
+      "slug": "python-apis-fastapi-postgresql",
+      "description": "Create high-performance Python APIs using FastAPI with PostgreSQL and SQLAlchemy",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "fastapi", "is_primary": true},
+        {"competency_slug": "postgresql", "is_primary": false},
+        {"competency_slug": "sqlalchemy", "is_primary": false},
+        {"competency_slug": "python", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Real-time data synchronization with PostgreSQL",
+      "slug": "realtime-sync-postgresql",
+      "description": "Implement real-time data updates using PostgreSQL logical replication and pub/sub",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "postgresql", "is_primary": true},
+        {"competency_slug": "sql", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building Spring Boot applications with MySQL and Hibernate",
+      "slug": "spring-boot-mysql-hibernate",
+      "description": "Develop Java Spring Boot applications using Hibernate ORM with MySQL databases",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "hibernate", "is_primary": false},
+        {"competency_slug": "spring-boot", "is_primary": true},
+        {"competency_slug": "mysql", "is_primary": false},
+        {"competency_slug": "java", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Microservices data patterns with MongoDB",
+      "slug": "microservices-data-patterns-mongodb",
+      "description": "Implement database-per-service patterns in microservices using MongoDB",
+      "category_slug": "databases",
+      "competencies": [
+        {"competency_slug": "mongodb", "is_primary": false}
+      ]
+    }
+  ]
+}

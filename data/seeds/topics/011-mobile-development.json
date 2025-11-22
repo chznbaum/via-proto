@@ -1,0 +1,919 @@
+{
+  "topics": [
+    {
+      "name": "Building cross-platform mobile apps with React Native",
+      "slug": "building-mobile-apps-react-native",
+      "description": "Create iOS and Android applications using React Native with JavaScript and React",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Type-safe React Native development with TypeScript",
+      "slug": "typesafe-react-native-typescript",
+      "description": "Build robust mobile applications using React Native with TypeScript for type safety",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Rapid mobile development with React Native and Expo",
+      "slug": "rapid-mobile-development-expo",
+      "description": "Build and deploy React Native apps quickly using Expo's managed workflow and tools",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "expo", "is_primary": true},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile app navigation with React Navigation",
+      "slug": "mobile-navigation-react-navigation",
+      "description": "Implement routing and navigation in React Native apps using React Navigation",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-navigation", "is_primary": true},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "File-based routing in React Native with Expo Router",
+      "slug": "file-based-routing-expo-router",
+      "description": "Build React Native apps with Next.js-style file-based routing using Expo Router",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "expo-router", "is_primary": true},
+        {"competency_slug": "expo", "is_primary": false},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Testing React Native applications with Detox",
+      "slug": "testing-react-native-detox",
+      "description": "Write end-to-end tests for React Native apps using Detox testing framework",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "detox", "is_primary": true},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-platform mobile testing with Appium",
+      "slug": "cross-platform-testing-appium",
+      "description": "Automate mobile app testing across iOS and Android using Appium",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "appium", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building native mobile apps with Flutter",
+      "slug": "building-mobile-apps-flutter",
+      "description": "Create high-performance iOS and Android applications using Flutter and Dart",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter state management with Riverpod",
+      "slug": "flutter-state-management-riverpod",
+      "description": "Manage application state in Flutter apps using Riverpod for reactive updates",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "riverpod", "is_primary": true},
+        {"competency_slug": "flutter", "is_primary": false},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter state management with Provider",
+      "slug": "flutter-state-management-provider",
+      "description": "Implement state management in Flutter using Provider for dependency injection",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "provider-flutter", "is_primary": true},
+        {"competency_slug": "flutter", "is_primary": false},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter state management with BLoC pattern",
+      "slug": "flutter-state-management-bloc",
+      "description": "Build scalable Flutter apps using BLoC pattern for predictable state management",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "bloc-flutter", "is_primary": true},
+        {"competency_slug": "flutter", "is_primary": false},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter state management with GetX",
+      "slug": "flutter-state-management-getx",
+      "description": "Manage state, routing, and dependencies in Flutter using GetX framework",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "getx-flutter", "is_primary": true},
+        {"competency_slug": "flutter", "is_primary": false},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building iOS apps with SwiftUI",
+      "slug": "building-ios-apps-swiftui",
+      "description": "Create modern iOS applications using SwiftUI declarative UI framework with Swift",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "swiftui", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS development with UIKit",
+      "slug": "ios-development-uikit",
+      "description": "Build iOS applications using UIKit framework with programmatic or storyboard UI",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "uikit", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Legacy iOS development with Objective-C and UIKit",
+      "slug": "legacy-ios-development-objective-c",
+      "description": "Maintain and develop iOS applications using Objective-C with UIKit",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "objective-c", "is_primary": true},
+        {"competency_slug": "uikit", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS development environment with Xcode",
+      "slug": "ios-development-xcode",
+      "description": "Develop, debug, and deploy iOS applications using Xcode IDE",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "xcode", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS dependency management with CocoaPods",
+      "slug": "ios-dependency-management-cocoapods",
+      "description": "Manage iOS project dependencies and libraries using CocoaPods",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "cocoapods", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS dependency management with Swift Package Manager",
+      "slug": "ios-dependency-management-spm",
+      "description": "Integrate third-party libraries in iOS projects using Swift Package Manager",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "swift-package-manager", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS unit testing with XCTest",
+      "slug": "ios-unit-testing-xctest",
+      "description": "Write unit and integration tests for iOS apps using XCTest framework",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "xctest", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS UI testing with XCUITest",
+      "slug": "ios-ui-testing-xcuitest",
+      "description": "Automate UI testing for iOS applications using XCUITest framework",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "xcuitest", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS beta testing with TestFlight",
+      "slug": "ios-beta-testing-testflight",
+      "description": "Distribute iOS app builds to beta testers using TestFlight",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "testflight", "is_primary": true},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS app distribution with App Store Connect",
+      "slug": "ios-app-distribution-app-store-connect",
+      "description": "Manage iOS app releases, metadata, and analytics using App Store Connect",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "app-store-connect", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building Android apps with Jetpack Compose",
+      "slug": "building-android-apps-jetpack-compose",
+      "description": "Create modern Android applications using Jetpack Compose declarative UI with Kotlin",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "jetpack-compose", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "android-studio", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android development with Android Views",
+      "slug": "android-development-android-views",
+      "description": "Build Android apps using traditional XML-based Android Views system",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "android-views", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "android-studio", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android development environment with Android Studio",
+      "slug": "android-development-android-studio",
+      "description": "Develop, debug, and deploy Android applications using Android Studio IDE",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "android-studio", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android build automation with Gradle",
+      "slug": "android-build-automation-gradle",
+      "description": "Configure and optimize Android builds using Gradle build system",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "gradle", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "android-studio", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android app distribution with Google Play Console",
+      "slug": "android-app-distribution-google-play",
+      "description": "Publish and manage Android apps using Google Play Console",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "google-play-console", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cross-platform mobile apps with Ionic",
+      "slug": "cross-platform-mobile-ionic",
+      "description": "Build hybrid mobile applications using Ionic framework with web technologies",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "ionic", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "angular", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Native mobile features with Capacitor",
+      "slug": "native-mobile-features-capacitor",
+      "description": "Access native device APIs in web-based mobile apps using Capacitor",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "capacitor", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ionic applications with React and Capacitor",
+      "slug": "ionic-react-capacitor",
+      "description": "Build mobile apps using Ionic components with React and Capacitor for native features",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "ionic", "is_primary": true},
+        {"competency_slug": "capacitor", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ionic applications with Vue and Capacitor",
+      "slug": "ionic-vue-capacitor",
+      "description": "Create mobile apps using Ionic framework with Vue.js and Capacitor",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "ionic", "is_primary": true},
+        {"competency_slug": "capacitor", "is_primary": false},
+        {"competency_slug": "vuejs", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-platform .NET mobile apps with .NET MAUI",
+      "slug": "cross-platform-dotnet-maui",
+      "description": "Build iOS, Android, and desktop apps using .NET MAUI with C#",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "dotnet-maui", "is_primary": true},
+        {"competency_slug": "csharp", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Legacy cross-platform development with Xamarin",
+      "slug": "legacy-cross-platform-xamarin",
+      "description": "Develop iOS and Android applications using Xamarin with C#",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "xamarin", "is_primary": true},
+        {"competency_slug": "csharp", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile deployment automation with Fastlane",
+      "slug": "mobile-deployment-fastlane",
+      "description": "Automate iOS and Android app builds, testing, and releases using Fastlane",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "fastlane", "is_primary": true}
+      ]
+    },
+    {
+      "name": "iOS CI/CD with Fastlane and Xcode",
+      "slug": "ios-cicd-fastlane-xcode",
+      "description": "Set up continuous integration and deployment for iOS apps using Fastlane",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "fastlane", "is_primary": true},
+        {"competency_slug": "xcode", "is_primary": false},
+        {"competency_slug": "swift", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android CI/CD with Fastlane and Gradle",
+      "slug": "android-cicd-fastlane-gradle",
+      "description": "Automate Android app deployment pipelines using Fastlane with Gradle",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "fastlane", "is_primary": true},
+        {"competency_slug": "gradle", "is_primary": false},
+        {"competency_slug": "kotlin", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile CI/CD with Bitrise",
+      "slug": "mobile-cicd-bitrise",
+      "description": "Build and deploy iOS and Android apps using Bitrise cloud CI/CD platform",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "bitrise", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Flutter CI/CD with Codemagic",
+      "slug": "flutter-cicd-codemagic",
+      "description": "Automate Flutter app builds and releases using Codemagic CI/CD",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "codemagic", "is_primary": true},
+        {"competency_slug": "flutter", "is_primary": false},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile DevOps with App Center",
+      "slug": "mobile-devops-app-center",
+      "description": "Build, test, and distribute mobile apps using Visual Studio App Center",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "app-center", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mobile backend with AWS Amplify",
+      "slug": "mobile-backend-aws-amplify",
+      "description": "Build mobile app backends with authentication, APIs, and storage using AWS Amplify",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "aws-amplify", "is_primary": true},
+        {"competency_slug": "aws", "is_primary": false}
+      ]
+    },
+    {
+      "name": "React Native backends with AWS Amplify",
+      "slug": "react-native-backends-aws-amplify",
+      "description": "Integrate AWS Amplify backend services into React Native applications",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "aws-amplify", "is_primary": false},
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-platform desktop apps with Electron",
+      "slug": "cross-platform-desktop-electron",
+      "description": "Build desktop applications for Windows, macOS, and Linux using Electron with web technologies",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "electron", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Desktop applications with Electron and React",
+      "slug": "desktop-apps-electron-react",
+      "description": "Create desktop apps using Electron with React for the user interface",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "electron", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "nodejs", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Lightweight desktop apps with Tauri",
+      "slug": "lightweight-desktop-apps-tauri",
+      "description": "Build performant desktop applications using Tauri with Rust and web technologies",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "tauri", "is_primary": true},
+        {"competency_slug": "rust", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Desktop apps with Tauri and React",
+      "slug": "desktop-apps-tauri-react",
+      "description": "Create small, fast desktop applications using Tauri with React frontend",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "tauri", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "rust", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Shared code with Kotlin Multiplatform",
+      "slug": "shared-code-kotlin-multiplatform",
+      "description": "Share business logic across iOS, Android, and web using Kotlin Multiplatform",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "kotlin-multiplatform", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Kotlin Multiplatform with Jetpack Compose for Android",
+      "slug": "kotlin-multiplatform-jetpack-compose",
+      "description": "Build shared Kotlin logic with native Android UI using Jetpack Compose",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "kotlin-multiplatform", "is_primary": true},
+        {"competency_slug": "jetpack-compose", "is_primary": false},
+        {"competency_slug": "kotlin", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Legacy hybrid apps with Apache Cordova",
+      "slug": "legacy-hybrid-apps-cordova",
+      "description": "Build mobile applications using Apache Cordova with HTML, CSS, and JavaScript",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "cordova", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false},
+        {"competency_slug": "html", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-platform apps with NativeScript",
+      "slug": "cross-platform-apps-nativescript",
+      "description": "Create truly native mobile apps using NativeScript with JavaScript or TypeScript",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "nativescript", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "NativeScript applications with Vue",
+      "slug": "nativescript-apps-vue",
+      "description": "Build native mobile apps using NativeScript with Vue.js framework",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "nativescript", "is_primary": true},
+        {"competency_slug": "vuejs", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Full-stack mobile apps with Quasar Framework",
+      "slug": "fullstack-mobile-apps-quasar",
+      "description": "Build mobile, desktop, and web apps from single codebase using Quasar with Vue",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "quasar-framework", "is_primary": true},
+        {"competency_slug": "vuejs", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Hybrid mobile apps with Framework7",
+      "slug": "hybrid-mobile-apps-framework7",
+      "description": "Create iOS and Android apps with native-like UI using Framework7",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "framework7", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Framework7 applications with React",
+      "slug": "framework7-apps-react",
+      "description": "Build hybrid mobile apps using Framework7 components with React",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "framework7", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile apps with Onsen UI",
+      "slug": "mobile-apps-onsen-ui",
+      "description": "Create hybrid mobile applications using Onsen UI framework with web technologies",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "onsen-ui", "is_primary": true},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Onsen UI applications with React",
+      "slug": "onsen-ui-apps-react",
+      "description": "Build mobile apps using Onsen UI components with React",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "onsen-ui", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "javascript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "iOS dependency management with Carthage",
+      "slug": "ios-dependency-management-carthage",
+      "description": "Manage iOS dependencies using Carthage decentralized package manager",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "carthage", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile UI testing with Maestro",
+      "slug": "mobile-ui-testing-maestro",
+      "description": "Write simple, reliable UI tests for mobile apps using Maestro",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "maestro", "is_primary": true}
+      ]
+    },
+    {
+      "name": "React Native app architecture and performance",
+      "slug": "react-native-architecture-performance",
+      "description": "Optimize React Native apps with proper architecture, lazy loading, and performance best practices",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building production-ready Flutter apps",
+      "slug": "production-ready-flutter-apps",
+      "description": "Create scalable, maintainable Flutter applications with clean architecture and testing",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Swift fundamentals for iOS development",
+      "slug": "swift-fundamentals-ios-development",
+      "description": "Learn Swift programming language for building iOS, macOS, and watchOS applications",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "swift", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kotlin for Android development",
+      "slug": "kotlin-android-development",
+      "description": "Master Kotlin programming language for modern Android app development",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "kotlin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Dart programming for Flutter",
+      "slug": "dart-programming-flutter",
+      "description": "Learn Dart language fundamentals for building Flutter applications",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "dart", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Offline-first mobile apps with React Native",
+      "slug": "offline-first-mobile-apps-react-native",
+      "description": "Build mobile apps that work offline using React Native with local storage and sync",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Offline-first Flutter applications",
+      "slug": "offline-first-flutter-apps",
+      "description": "Create Flutter apps with offline capabilities using local databases and synchronization",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile app animations in React Native",
+      "slug": "mobile-animations-react-native",
+      "description": "Create smooth, performant animations in React Native using Reanimated and Animated APIs",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter animations and transitions",
+      "slug": "flutter-animations-transitions",
+      "description": "Build engaging user experiences with Flutter's animation framework and implicit animations",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "SwiftUI animations and gestures",
+      "slug": "swiftui-animations-gestures",
+      "description": "Create interactive iOS apps with SwiftUI animations, transitions, and gesture recognizers",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "swiftui", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Jetpack Compose animations",
+      "slug": "jetpack-compose-animations",
+      "description": "Build fluid Android UIs with Jetpack Compose animation APIs and transitions",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "jetpack-compose", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "android-studio", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Push notifications in React Native",
+      "slug": "push-notifications-react-native",
+      "description": "Implement push notifications in React Native apps for iOS and Android",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Push notifications in Flutter",
+      "slug": "push-notifications-flutter",
+      "description": "Set up Firebase Cloud Messaging for push notifications in Flutter applications",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Native modules in React Native",
+      "slug": "native-modules-react-native",
+      "description": "Bridge native iOS and Android code with React Native using native modules",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Platform channels in Flutter",
+      "slug": "platform-channels-flutter",
+      "description": "Communicate between Flutter and native platform code using platform channels",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "kotlin", "is_primary": false}
+      ]
+    },
+    {
+      "name": "App localization and internationalization in React Native",
+      "slug": "app-localization-react-native",
+      "description": "Build multilingual React Native apps with internationalization and localization",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "App localization and internationalization in Flutter",
+      "slug": "app-localization-flutter",
+      "description": "Create multilingual Flutter applications with built-in localization support",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile app security best practices",
+      "slug": "mobile-app-security-best-practices",
+      "description": "Implement security measures in mobile apps including secure storage, encryption, and authentication",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "flutter", "is_primary": false}
+      ]
+    },
+    {
+      "name": "React Native app monetization",
+      "slug": "react-native-app-monetization",
+      "description": "Integrate in-app purchases and subscriptions in React Native applications",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flutter app monetization and in-app purchases",
+      "slug": "flutter-app-monetization",
+      "description": "Implement in-app purchases and subscription models in Flutter apps",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile app analytics and crash reporting",
+      "slug": "mobile-app-analytics-crash-reporting",
+      "description": "Track user behavior and monitor crashes in mobile apps using analytics tools",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "flutter", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building AR experiences with React Native",
+      "slug": "ar-experiences-react-native",
+      "description": "Create augmented reality mobile applications using React Native with AR frameworks",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Expo managed workflow for rapid prototyping",
+      "slug": "expo-managed-workflow-prototyping",
+      "description": "Quickly build and iterate on React Native apps using Expo's managed workflow",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "expo", "is_primary": true},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Expo bare workflow for native customization",
+      "slug": "expo-bare-workflow-customization",
+      "description": "Use Expo tools while maintaining full control over native code in bare workflow",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "expo", "is_primary": true},
+        {"competency_slug": "react-native", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cross-platform responsive design in React Native",
+      "slug": "responsive-design-react-native",
+      "description": "Build responsive mobile UIs that adapt to different screen sizes in React Native",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "react-native", "is_primary": true},
+        {"competency_slug": "typescript", "is_primary": false},
+        {"competency_slug": "react", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Responsive Flutter layouts",
+      "slug": "responsive-flutter-layouts",
+      "description": "Create adaptive Flutter UIs for phones, tablets, and different orientations",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "flutter", "is_primary": true},
+        {"competency_slug": "dart", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building watch apps with SwiftUI",
+      "slug": "watch-apps-swiftui",
+      "description": "Create Apple Watch applications using SwiftUI for watchOS",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "swiftui", "is_primary": true},
+        {"competency_slug": "swift", "is_primary": false},
+        {"competency_slug": "xcode", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Android Wear apps with Jetpack Compose",
+      "slug": "android-wear-apps-jetpack-compose",
+      "description": "Develop Wear OS applications using Jetpack Compose for Wear with Kotlin",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "jetpack-compose", "is_primary": true},
+        {"competency_slug": "kotlin", "is_primary": false},
+        {"competency_slug": "android-studio", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobile-first Progressive Web Apps with React",
+      "slug": "mobile-first-progressive-web-apps-react",
+      "description": "Build installable web apps that work like native mobile apps using PWA technologies and React",
+      "category_slug": "mobile-development",
+      "competencies": [
+        {"competency_slug": "pwa", "is_primary": true},
+        {"competency_slug": "react", "is_primary": false},
+        {"competency_slug": "typescript", "is_primary": false}
+      ]
+    }
+  ]
+}

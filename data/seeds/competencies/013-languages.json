@@ -142,6 +142,15 @@
       "alternatives": []
     },
     {
+      "name": "Classical Arabic",
+      "slug": "classical-arabic",
+      "description": "Semitic language spoken across the Middle East and North Africa",
+      "category_slug": "languages",
+      "synonyms": ["Quranic Arabic", "العربيالعربية الفصحى"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
       "name": "Russian",
       "slug": "russian",
       "description": "Slavic language using Cyrillic script",

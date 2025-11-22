@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T19:34:32.235Z
-**Total Competencies:** 1624
+**Generated:** 2025-11-22T20:16:26.165Z
+**Total Competencies:** 1625
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -49,7 +49,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [investing-trading](#investing-trading) (26)
-- [languages](#languages) (169)
+- [languages](#languages) (170)
 - [leadership-communication](#leadership-communication) (12)
 - [life-sciences](#life-sciences) (6)
 - [linear-algebra](#linear-algebra) (1)
@@ -5691,6 +5691,10 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Chinese Sign Language
 - **Slug:** `chinese-sign-language`
 - **Synonyms:** CSL, 中国手语
+
+### Classical Arabic
+- **Slug:** `classical-arabic`
+- **Synonyms:** Quranic Arabic, العربيالعربية الفصحى
 
 ### Classical Chinese
 - **Slug:** `classical-chinese`
