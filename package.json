@@ -9,7 +9,12 @@
     "start": "next start",
     "lint": "next lint",
     "generate:seed": "npx tsx scripts/generate-seed-sql.ts",
-    "generate:competency-reference": "node scripts/generate-competency-reference.js"
+    "generate:competency-reference": "node scripts/generate-competency-reference.js",
+    "generate:topic-reference": "node scripts/generate-topic-reference.js",
+    "check:competency-synonyms": "node scripts/check-competency-synonyms.js",
+    "check:topic-duplicates": "node scripts/check-topic-duplicates.js",
+    "topic:unused-competencies": "node scripts/find-unused-competencies.js",
+    "topic:coverage": "node scripts/topic-coverage-stats.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
