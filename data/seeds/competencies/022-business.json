@@ -1,0 +1,1365 @@
+{
+  "competencies": [
+    {
+      "name": "Product Management",
+      "slug": "product-management",
+      "description": "Defining product vision, strategy, and roadmap while working with cross-functional teams",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Product Manager",
+        "PM",
+        "Product Strategy",
+        "Product Development"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "slug": "project-management",
+      "description": "Planning, executing, and closing projects to achieve specific goals within constraints",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Project Manager",
+        "PM",
+        "Project Coordination",
+        "Project Planning"
+      ]
+    },
+    {
+      "name": "Agile",
+      "slug": "agile",
+      "description": "Iterative approach to project management and software development",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Agile Methodology",
+        "Agile Development",
+        "Agile Project Management",
+        "Agile Framework"
+      ]
+    },
+    {
+      "name": "Scrum",
+      "slug": "scrum",
+      "description": "Framework for managing work with emphasis on software development",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Scrum Framework",
+        "Scrum Master",
+        "Scrum Methodology"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "agile",
+          "prerequisite_level": "required",
+          "notes": "Scrum is an implementation of Agile principles"
+        }
+      ]
+    },
+    {
+      "name": "Kanban",
+      "slug": "kanban",
+      "description": "Visual workflow management method for optimizing processes",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Kanban Board",
+        "Kanban Method",
+        "Kanban System"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "scrum",
+          "relationship_type": "similar",
+          "notes": "Both are Agile frameworks with different approaches to work management"
+        }
+      ]
+    },
+    {
+      "name": "Product-Market Fit",
+      "slug": "product-market-fit",
+      "description": "Achieving alignment between product offering and market demand",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "PMF",
+        "Market Fit",
+        "Product Validation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "product-management",
+          "prerequisite_level": "required",
+          "notes": "Understanding product management principles is essential for finding product-market fit"
+        }
+      ]
+    },
+    {
+      "name": "Roadmapping",
+      "slug": "roadmapping",
+      "description": "Creating strategic plans showing product development timeline and priorities",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Product Roadmap",
+        "Roadmap Planning",
+        "Strategic Planning"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "product-management",
+          "prerequisite_level": "required",
+          "notes": "Roadmapping is a core product management skill"
+        }
+      ]
+    },
+    {
+      "name": "User Stories",
+      "slug": "user-stories",
+      "description": "Writing requirements from end-user perspective to guide development",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "User Story Writing",
+        "Story Mapping",
+        "Acceptance Criteria"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "agile",
+          "prerequisite_level": "recommended",
+          "notes": "User stories are commonly used in Agile development"
+        }
+      ]
+    },
+    {
+      "name": "Stakeholder Management",
+      "slug": "stakeholder-management",
+      "description": "Identifying, analyzing, and engaging with project stakeholders effectively",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Stakeholder Engagement",
+        "Stakeholder Communication",
+        "Stakeholder Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "project-management",
+          "prerequisite_level": "recommended",
+          "notes": "Stakeholder management is a key project management skill"
+        }
+      ]
+    },
+    {
+      "name": "OKRs",
+      "slug": "okrs",
+      "description": "Objectives and Key Results framework for goal setting and tracking",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Objectives and Key Results",
+        "Goal Setting",
+        "OKR Framework"
+      ]
+    },
+    {
+      "name": "KPIs",
+      "slug": "kpis",
+      "description": "Key Performance Indicators for measuring business success",
+      "category_slug": "product-project-management",
+      "synonyms": [
+        "Key Performance Indicators",
+        "Metrics",
+        "Performance Metrics",
+        "Business Metrics"
+      ]
+    },
+    {
+      "name": "Marketing",
+      "slug": "marketing",
+      "description": "Promoting and selling products or services through market research and advertising",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Marketing Strategy",
+        "Brand Marketing",
+        "Marketing Management"
+      ]
+    },
+    {
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "description": "Marketing products or services using digital channels and technologies",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Online Marketing",
+        "Internet Marketing",
+        "Web Marketing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "marketing",
+          "prerequisite_level": "recommended",
+          "notes": "Basic marketing principles help understand digital strategies"
+        }
+      ]
+    },
+    {
+      "name": "Content Marketing",
+      "slug": "content-marketing",
+      "description": "Creating and distributing valuable content to attract and retain audiences",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Content Strategy",
+        "Content Creation",
+        "Inbound Marketing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "marketing",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding marketing fundamentals helps with content strategy"
+        }
+      ]
+    },
+    {
+      "name": "SEO",
+      "slug": "seo",
+      "description": "Search Engine Optimization to improve organic search visibility",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Search Engine Optimization",
+        "SEO Strategy",
+        "Organic Search",
+        "Search Marketing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "recommended",
+          "notes": "SEO is a component of digital marketing"
+        }
+      ]
+    },
+    {
+      "name": "SEM",
+      "slug": "sem",
+      "description": "Search Engine Marketing including paid search advertising",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Search Engine Marketing",
+        "PPC",
+        "Pay-Per-Click",
+        "Paid Search",
+        "Google Ads"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "recommended",
+          "notes": "SEM is a key digital marketing channel"
+        }
+      ]
+    },
+    {
+      "name": "Social Media Marketing",
+      "slug": "social-media-marketing",
+      "description": "Using social media platforms to promote products and engage audiences",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "SMM",
+        "Social Marketing",
+        "Social Media Strategy",
+        "Social Media Management"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "recommended",
+          "notes": "Social media is a digital marketing channel"
+        }
+      ]
+    },
+    {
+      "name": "Email Marketing",
+      "slug": "email-marketing",
+      "description": "Sending commercial messages to groups of people via email",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Email Campaigns",
+        "Newsletter Marketing",
+        "Email Automation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "recommended",
+          "notes": "Email marketing is a digital marketing channel"
+        }
+      ]
+    },
+    {
+      "name": "Brand Strategy",
+      "slug": "brand-strategy",
+      "description": "Developing long-term plans for brand development and positioning",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Branding",
+        "Brand Development",
+        "Brand Positioning",
+        "Brand Management"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "marketing",
+          "prerequisite_level": "required",
+          "notes": "Brand strategy is built on marketing fundamentals"
+        }
+      ]
+    },
+    {
+      "name": "Market Research",
+      "slug": "market-research",
+      "description": "Gathering and analyzing information about markets and customers",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Consumer Research",
+        "Market Analysis",
+        "Customer Research"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "marketing",
+          "prerequisite_level": "recommended",
+          "notes": "Market research informs marketing strategy"
+        }
+      ]
+    },
+    {
+      "name": "Growth Marketing",
+      "slug": "growth-marketing",
+      "description": "Data-driven marketing focused on rapid experimentation and scalable growth",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Growth Hacking",
+        "Performance Marketing",
+        "Acquisition Marketing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "required",
+          "notes": "Growth marketing builds on digital marketing principles"
+        }
+      ]
+    },
+    {
+      "name": "Conversion Rate Optimization",
+      "slug": "conversion-rate-optimization",
+      "description": "Increasing the percentage of website visitors who take desired actions",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "CRO",
+        "Conversion Optimization",
+        "Landing Page Optimization"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-marketing",
+          "prerequisite_level": "required",
+          "notes": "CRO is applied to digital marketing campaigns"
+        }
+      ]
+    },
+    {
+      "name": "Marketing Analytics",
+      "slug": "marketing-analytics",
+      "description": "Measuring, managing, and analyzing marketing performance data",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Marketing Metrics",
+        "Marketing ROI",
+        "Campaign Analytics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "marketing",
+          "prerequisite_level": "required",
+          "notes": "Analytics measures marketing effectiveness"
+        }
+      ]
+    },
+    {
+      "name": "Sales",
+      "slug": "sales",
+      "description": "Techniques and processes for selling products or services",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Selling",
+        "Sales Techniques",
+        "Sales Strategy",
+        "Salesmanship"
+      ]
+    },
+    {
+      "name": "B2B Sales",
+      "slug": "b2b-sales",
+      "description": "Business-to-business sales strategies and relationship building",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Business Sales",
+        "Enterprise Sales",
+        "Corporate Sales"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sales",
+          "prerequisite_level": "required",
+          "notes": "B2B sales builds on general sales principles"
+        }
+      ]
+    },
+    {
+      "name": "B2C Sales",
+      "slug": "b2c-sales",
+      "description": "Business-to-consumer sales techniques and customer engagement",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Consumer Sales",
+        "Retail Sales",
+        "Direct Sales"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sales",
+          "prerequisite_level": "required",
+          "notes": "B2C sales applies general sales principles to consumers"
+        }
+      ]
+    },
+    {
+      "name": "Sales Prospecting",
+      "slug": "sales-prospecting",
+      "description": "Identifying and reaching out to potential customers",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Lead Generation",
+        "Prospecting",
+        "Outbound Sales",
+        "Cold Calling"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sales",
+          "prerequisite_level": "required",
+          "notes": "Prospecting is the first stage of the sales process"
+        }
+      ]
+    },
+    {
+      "name": "Sales Negotiation",
+      "slug": "sales-negotiation",
+      "description": "Negotiating terms and closing deals with customers",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "Deal Negotiation",
+        "Contract Negotiation",
+        "Closing Sales"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sales",
+          "prerequisite_level": "required",
+          "notes": "Negotiation is a core sales skill"
+        }
+      ]
+    },
+    {
+      "name": "Customer Relationship Management",
+      "slug": "customer-relationship-management",
+      "description": "Managing interactions and relationships with customers",
+      "category_slug": "marketing-sales",
+      "synonyms": [
+        "CRM",
+        "Customer Relations",
+        "Account Management"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "slug": "leadership",
+      "description": "Guiding and inspiring individuals and teams to achieve goals",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Leadership Skills",
+        "Team Leadership",
+        "Management Leadership"
+      ]
+    },
+    {
+      "name": "Executive Leadership",
+      "slug": "executive-leadership",
+      "description": "Strategic leadership at senior management and C-suite level",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "C-Suite Leadership",
+        "Senior Leadership",
+        "Executive Management"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "leadership",
+          "prerequisite_level": "required",
+          "notes": "Executive leadership requires foundational leadership skills"
+        }
+      ]
+    },
+    {
+      "name": "Team Management",
+      "slug": "team-management",
+      "description": "Coordinating and developing team members to achieve objectives",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Team Leadership",
+        "People Management",
+        "Team Building"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "leadership",
+          "prerequisite_level": "required",
+          "notes": "Team management requires leadership fundamentals"
+        }
+      ]
+    },
+    {
+      "name": "Change Management",
+      "slug": "change-management",
+      "description": "Leading organizations through transitions and transformations",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Organizational Change",
+        "Transformation Management",
+        "Change Leadership"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "leadership",
+          "prerequisite_level": "required",
+          "notes": "Change management requires strong leadership skills"
+        }
+      ]
+    },
+    {
+      "name": "Public Speaking",
+      "slug": "public-speaking",
+      "description": "Delivering presentations and speeches to audiences effectively",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Presentation Skills",
+        "Speaking",
+        "Oratory",
+        "Presentations"
+      ]
+    },
+    {
+      "name": "Business Presentations",
+      "slug": "business-presentations",
+      "description": "Creating and delivering professional business presentations",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Corporate Presentations",
+        "Executive Presentations",
+        "Pitch Presentations"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "public-speaking",
+          "prerequisite_level": "recommended",
+          "notes": "Public speaking skills enhance business presentations"
+        }
+      ]
+    },
+    {
+      "name": "Negotiation",
+      "slug": "negotiation",
+      "description": "Reaching mutually beneficial agreements through discussion",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Negotiating",
+        "Deal Making",
+        "Bargaining"
+      ]
+    },
+    {
+      "name": "Executive Communication",
+      "slug": "executive-communication",
+      "description": "High-level communication strategies for senior leadership",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "C-Suite Communication",
+        "Senior Leadership Communication",
+        "Strategic Communication"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "business-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Strong writing skills support executive communication"
+        },
+        {
+          "prerequisite_slug": "public-speaking",
+          "prerequisite_level": "recommended",
+          "notes": "Presentation skills are key for executive communication"
+        }
+      ]
+    },
+    {
+      "name": "Conflict Resolution",
+      "slug": "conflict-resolution",
+      "description": "Resolving disagreements and disputes constructively",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Dispute Resolution",
+        "Mediation",
+        "Problem Resolution"
+      ]
+    },
+    {
+      "name": "Emotional Intelligence",
+      "slug": "emotional-intelligence",
+      "description": "Understanding and managing emotions in self and others",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "EQ",
+        "EI",
+        "Emotional Quotient",
+        "Social Intelligence"
+      ]
+    },
+    {
+      "name": "Networking",
+      "slug": "networking",
+      "description": "Building and maintaining professional relationships",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Professional Networking",
+        "Business Networking",
+        "Relationship Building"
+      ]
+    },
+    {
+      "name": "Coaching and Mentoring",
+      "slug": "coaching-mentoring",
+      "description": "Guiding others in their professional development",
+      "category_slug": "leadership-communication",
+      "synonyms": [
+        "Coaching",
+        "Mentoring",
+        "Career Development",
+        "Professional Development"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "leadership",
+          "prerequisite_level": "recommended",
+          "notes": "Leadership skills enhance coaching effectiveness"
+        }
+      ]
+    },
+    {
+      "name": "Entrepreneurship",
+      "slug": "entrepreneurship",
+      "description": "Starting and running new business ventures",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Starting a Business",
+        "Business Startup",
+        "Venture Creation"
+      ]
+    },
+    {
+      "name": "Business Strategy",
+      "slug": "business-strategy",
+      "description": "Developing long-term plans to achieve business objectives",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Strategic Planning",
+        "Corporate Strategy",
+        "Business Planning"
+      ]
+    },
+    {
+      "name": "Competitive Strategy",
+      "slug": "competitive-strategy",
+      "description": "Analyzing competitors and positioning for market advantage",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Competitive Analysis",
+        "Market Positioning",
+        "Competitive Advantage"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "business-strategy",
+          "prerequisite_level": "required",
+          "notes": "Competitive strategy is a component of overall business strategy"
+        }
+      ]
+    },
+    {
+      "name": "Business Model Design",
+      "slug": "business-model-design",
+      "description": "Creating frameworks for how businesses create and capture value",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Business Models",
+        "Revenue Models",
+        "Value Proposition Design"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "business-strategy",
+          "prerequisite_level": "recommended",
+          "notes": "Business model design supports strategic planning"
+        }
+      ]
+    },
+    {
+      "name": "Financial Analysis",
+      "slug": "financial-analysis",
+      "description": "Evaluating businesses and projects through financial data",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Financial Assessment",
+        "Financial Evaluation",
+        "Investment Analysis"
+      ]
+    },
+    {
+      "name": "Financial Modeling",
+      "slug": "financial-modeling",
+      "description": "Building mathematical models to forecast financial performance",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Financial Forecasting",
+        "Valuation Modeling",
+        "Pro Forma Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "financial-analysis",
+          "prerequisite_level": "required",
+          "notes": "Financial modeling requires understanding of financial analysis"
+        }
+      ]
+    },
+    {
+      "name": "Accounting",
+      "slug": "accounting",
+      "description": "Recording, classifying, and reporting financial transactions",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Bookkeeping",
+        "Financial Accounting",
+        "Accounting Principles"
+      ]
+    },
+    {
+      "name": "Management Accounting",
+      "slug": "management-accounting",
+      "description": "Internal accounting for decision-making and planning",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Managerial Accounting",
+        "Cost Accounting",
+        "Internal Accounting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Management accounting builds on general accounting principles"
+        }
+      ]
+    },
+    {
+      "name": "Financial Statements",
+      "slug": "financial-statements",
+      "description": "Understanding and analyzing balance sheets, income statements, and cash flows",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Financial Reports",
+        "Financial Reporting",
+        "GAAP Reporting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Financial statements are created through accounting processes"
+        }
+      ]
+    },
+    {
+      "name": "Budgeting",
+      "slug": "budgeting",
+      "description": "Planning and allocating financial resources",
+      "category_slug": "finance-accounting",
+      "synonyms": [
+        "Budget Planning",
+        "Financial Planning",
+        "Budget Management"
+      ]
+    },
+    {
+      "name": "Corporate Budgeting",
+      "slug": "corporate-budgeting",
+      "description": "Creating and managing organizational budgets",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Business Budgeting",
+        "Organizational Budgeting",
+        "Enterprise Budgeting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "budgeting",
+          "prerequisite_level": "required",
+          "notes": "Corporate budgeting applies budgeting principles at organizational scale"
+        }
+      ]
+    },
+    {
+      "name": "Personal Finance",
+      "slug": "personal-finance",
+      "description": "Managing individual money, savings, and investments",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Money Management",
+        "Personal Financial Planning",
+        "Wealth Management"
+      ]
+    },
+    {
+      "name": "Personal Budgeting",
+      "slug": "personal-budgeting",
+      "description": "Creating and managing personal household budgets",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Household Budgeting",
+        "Family Budgeting",
+        "Personal Money Management"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "budgeting",
+          "prerequisite_level": "required",
+          "notes": "Personal budgeting applies general budgeting principles"
+        }
+      ]
+    },
+    {
+      "name": "Investing",
+      "slug": "investing",
+      "description": "Allocating capital to generate returns over time",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Investment",
+        "Asset Allocation",
+        "Portfolio Management"
+      ]
+    },
+    {
+      "name": "Stock Market Investing",
+      "slug": "stock-market-investing",
+      "description": "Buying and selling shares in public companies",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Stock Investing",
+        "Equity Investing",
+        "Stock Market"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "required",
+          "notes": "Stock investing requires understanding of investment fundamentals"
+        }
+      ]
+    },
+    {
+      "name": "Value Investing",
+      "slug": "value-investing",
+      "description": "Investment strategy focusing on undervalued securities",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Value Strategy",
+        "Fundamental Investing",
+        "Warren Buffett Strategy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Value investing is an approach to stock market investing"
+        },
+        {
+          "prerequisite_slug": "financial-analysis",
+          "prerequisite_level": "required",
+          "notes": "Value investing requires financial analysis skills"
+        }
+      ]
+    },
+    {
+      "name": "Day Trading",
+      "slug": "day-trading",
+      "description": "Buying and selling securities within the same trading day",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Active Trading",
+        "Intraday Trading",
+        "Short-term Trading"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Day trading requires understanding stock markets"
+        }
+      ]
+    },
+    {
+      "name": "Options Trading",
+      "slug": "options-trading",
+      "description": "Trading options contracts for hedging or speculation",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Options Strategies",
+        "Derivatives Trading",
+        "Option Contracts"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Options are derivatives of stocks"
+        }
+      ]
+    },
+    {
+      "name": "Real Estate Investing",
+      "slug": "real-estate-investing",
+      "description": "Investing in property for income or appreciation",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Property Investing",
+        "Real Estate Investment",
+        "Property Investment"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "required",
+          "notes": "Real estate investing applies investment principles to property"
+        }
+      ]
+    },
+    {
+      "name": "Cryptocurrency Investing",
+      "slug": "cryptocurrency-investing",
+      "description": "Investing in digital currencies and crypto assets",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Crypto Investing",
+        "Digital Currency Investment",
+        "Bitcoin Investing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "required",
+          "notes": "Crypto investing requires understanding investment fundamentals"
+        }
+      ]
+    },
+    {
+      "name": "Index Fund Investing",
+      "slug": "index-fund-investing",
+      "description": "Passive investment strategy tracking market indices",
+      "category_slug": "investing-trading",
+      "synonyms": [
+        "Passive Investing",
+        "Index Investing",
+        "ETF Investing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stock-market-investing",
+          "prerequisite_level": "required",
+          "notes": "Index funds are a stock market investment vehicle"
+        }
+      ]
+    },
+    {
+      "name": "Retirement Planning",
+      "slug": "retirement-planning",
+      "description": "Planning finances for retirement years",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Retirement Savings",
+        "401k Planning",
+        "Pension Planning"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "personal-finance",
+          "prerequisite_level": "required",
+          "notes": "Retirement planning is a component of personal finance"
+        },
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "recommended",
+          "notes": "Investment knowledge helps optimize retirement savings"
+        }
+      ]
+    },
+    {
+      "name": "Tax Planning",
+      "slug": "tax-planning",
+      "description": "Optimizing financial decisions to minimize tax liability",
+      "category_slug": "personal-finance",
+      "synonyms": [
+        "Tax Strategy",
+        "Tax Optimization",
+        "Tax Efficiency"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "personal-finance",
+          "prerequisite_level": "required",
+          "notes": "Tax planning is a key aspect of personal finance"
+        }
+      ]
+    },
+    {
+      "name": "Corporate Finance",
+      "slug": "corporate-finance",
+      "description": "Financial management and capital structure of corporations",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Business Finance",
+        "Corporate Financial Management",
+        "Enterprise Finance"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "accounting",
+          "prerequisite_level": "required",
+          "notes": "Corporate finance requires accounting fundamentals"
+        },
+        {
+          "prerequisite_slug": "financial-analysis",
+          "prerequisite_level": "required",
+          "notes": "Financial analysis is essential for corporate finance"
+        }
+      ]
+    },
+    {
+      "name": "Mergers and Acquisitions",
+      "slug": "mergers-acquisitions",
+      "description": "Combining companies through purchases or mergers",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "M&A",
+        "Corporate M&A",
+        "Acquisitions",
+        "Mergers"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "corporate-finance",
+          "prerequisite_level": "required",
+          "notes": "M&A requires corporate finance expertise"
+        },
+        {
+          "prerequisite_slug": "financial-modeling",
+          "prerequisite_level": "required",
+          "notes": "Financial modeling is used to evaluate M&A deals"
+        }
+      ]
+    },
+    {
+      "name": "Venture Capital",
+      "slug": "venture-capital",
+      "description": "Investing in early-stage, high-growth companies",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "VC",
+        "Startup Investing",
+        "Venture Funding"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "investing",
+          "prerequisite_level": "required",
+          "notes": "VC is a specialized form of investing"
+        },
+        {
+          "prerequisite_slug": "entrepreneurship",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding startups helps in VC investing"
+        }
+      ]
+    },
+    {
+      "name": "Private Equity",
+      "slug": "private-equity",
+      "description": "Investing in private companies or taking public companies private",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "PE",
+        "Buyout",
+        "Private Investment"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "corporate-finance",
+          "prerequisite_level": "required",
+          "notes": "Private equity requires corporate finance knowledge"
+        },
+        {
+          "prerequisite_slug": "mergers-acquisitions",
+          "prerequisite_level": "recommended",
+          "notes": "PE often involves acquisitions"
+        }
+      ]
+    },
+    {
+      "name": "Fundraising",
+      "slug": "fundraising",
+      "description": "Raising capital from investors for business ventures",
+      "category_slug": "corporate-finance",
+      "synonyms": [
+        "Capital Raising",
+        "Investment Raising",
+        "Funding"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "entrepreneurship",
+          "prerequisite_level": "recommended",
+          "notes": "Fundraising is often needed in entrepreneurship"
+        }
+      ]
+    },
+    {
+      "name": "Supply Chain Management",
+      "slug": "supply-chain-management",
+      "description": "Managing the flow of goods and services from suppliers to customers",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "SCM",
+        "Supply Chain",
+        "Logistics Management"
+      ]
+    },
+    {
+      "name": "Operations Management",
+      "slug": "operations-management",
+      "description": "Overseeing business operations and production processes",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Operations",
+        "Process Management",
+        "Production Management"
+      ]
+    },
+    {
+      "name": "Lean Management",
+      "slug": "lean-management",
+      "description": "Eliminating waste and maximizing value in business processes",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Lean",
+        "Lean Manufacturing",
+        "Lean Thinking"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "operations-management",
+          "prerequisite_level": "recommended",
+          "notes": "Lean is applied to operations management"
+        }
+      ]
+    },
+    {
+      "name": "Six Sigma",
+      "slug": "six-sigma",
+      "description": "Data-driven methodology for improving quality and reducing defects",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Six Sigma Method",
+        "DMAIC",
+        "Quality Management"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "operations-management",
+          "prerequisite_level": "recommended",
+          "notes": "Six Sigma improves operational processes"
+        }
+      ]
+    },
+    {
+      "name": "Process Improvement",
+      "slug": "process-improvement",
+      "description": "Analyzing and optimizing business processes for efficiency",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Process Optimization",
+        "Continuous Improvement",
+        "Business Process Improvement"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "operations-management",
+          "prerequisite_level": "recommended",
+          "notes": "Process improvement enhances operations"
+        }
+      ]
+    },
+    {
+      "name": "Human Resources",
+      "slug": "human-resources",
+      "description": "Managing recruitment, development, and employee relations",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "HR",
+        "People Operations",
+        "Personnel Management",
+        "HR Management"
+      ]
+    },
+    {
+      "name": "Talent Acquisition",
+      "slug": "talent-acquisition",
+      "description": "Recruiting and hiring qualified candidates",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Recruitment",
+        "Hiring",
+        "Recruiting"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "human-resources",
+          "prerequisite_level": "required",
+          "notes": "Talent acquisition is a core HR function"
+        }
+      ]
+    },
+    {
+      "name": "Employee Development",
+      "slug": "employee-development",
+      "description": "Training and developing workforce skills and capabilities",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Training and Development",
+        "Workforce Development",
+        "L&D",
+        "Learning and Development"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "human-resources",
+          "prerequisite_level": "required",
+          "notes": "Employee development is a key HR function"
+        }
+      ]
+    },
+    {
+      "name": "Performance Management",
+      "slug": "performance-management",
+      "description": "Evaluating and improving employee performance",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Performance Reviews",
+        "Employee Evaluation",
+        "Performance Appraisal"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "human-resources",
+          "prerequisite_level": "required",
+          "notes": "Performance management is an HR responsibility"
+        }
+      ]
+    },
+    {
+      "name": "Compensation and Benefits",
+      "slug": "compensation-benefits",
+      "description": "Designing and managing employee pay and benefit programs",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Comp and Ben",
+        "Salary Management",
+        "Benefits Administration"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "human-resources",
+          "prerequisite_level": "required",
+          "notes": "Compensation is a core HR function"
+        }
+      ]
+    },
+    {
+      "name": "Business Intelligence",
+      "slug": "business-intelligence",
+      "description": "Using data analytics to inform business decisions",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "BI",
+        "Business Analytics",
+        "Data-Driven Decision Making"
+      ]
+    },
+    {
+      "name": "Risk Management",
+      "slug": "risk-management",
+      "description": "Identifying and mitigating business risks",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Enterprise Risk Management",
+        "Risk Assessment",
+        "Risk Mitigation"
+      ]
+    },
+    {
+      "name": "Compliance",
+      "slug": "compliance",
+      "description": "Ensuring adherence to laws, regulations, and policies",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Regulatory Compliance",
+        "Corporate Compliance",
+        "Legal Compliance"
+      ]
+    },
+    {
+      "name": "Business Law",
+      "slug": "business-law",
+      "description": "Legal principles governing business operations and transactions",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Commercial Law",
+        "Corporate Law",
+        "Business Legal"
+      ]
+    },
+    {
+      "name": "Contract Management",
+      "slug": "contract-management",
+      "description": "Creating, executing, and managing business contracts",
+      "category_slug": "operations-strategy",
+      "synonyms": [
+        "Contract Administration",
+        "Contracting",
+        "Agreement Management"
+      ]
+    }
+  ]
+}
