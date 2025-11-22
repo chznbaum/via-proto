@@ -1,3 +1,304 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Auth0",
+      "slug": "auth0",
+      "description": "Authentication and authorization platform for web and mobile apps",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Auth0 Platform",
+        "Auth Zero"
+      ],
+      "icon": "logos:auth0-icon"
+    },
+    {
+      "name": "Okta",
+      "slug": "okta",
+      "description": "Identity and access management platform",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Okta IAM",
+        "Okta Identity"
+      ],
+      "icon": "logos:okta-icon",
+      "alternatives": [
+        {
+          "alternative_slug": "auth0",
+          "relationship_type": "similar",
+          "notes": "Auth0 is another authentication platform"
+        }
+      ]
+    },
+    {
+      "name": "JWT",
+      "slug": "jwt",
+      "description": "JSON Web Tokens for secure information exchange",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "JSON Web Token",
+        "JWT Token"
+      ],
+      "icon": "logos:jwt-icon"
+    },
+    {
+      "name": "OAuth",
+      "slug": "oauth",
+      "description": "Open standard for access delegation and authorization",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "OAuth 2.0",
+        "OAuth2",
+        "Open Authorization"
+      ],
+      "icon": "devicon:oauth"
+    },
+    {
+      "name": "Passport.js",
+      "slug": "passportjs",
+      "description": "Authentication middleware for Node.js",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Passport",
+        "Passport.js Auth"
+      ],
+      "icon": "devicon:passport",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Passport.js is a Node.js library"
+        }
+      ]
+    },
+    {
+      "name": "Keycloak",
+      "slug": "keycloak",
+      "description": "Open-source identity and access management solution",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Keycloak IAM",
+        "Keycloak SSO"
+      ]
+    },
+    {
+      "name": "OWASP",
+      "slug": "owasp",
+      "description": "Open Web Application Security Project standards and best practices",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "OWASP Top 10",
+        "Open Web Application Security Project"
+      ]
+    },
+    {
+      "name": "Burp Suite",
+      "slug": "burp-suite",
+      "description": "Web application security testing platform",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Burp",
+        "Burp Suite Pro"
+      ]
+    },
+    {
+      "name": "Metasploit",
+      "slug": "metasploit",
+      "description": "Penetration testing framework for finding security vulnerabilities",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Metasploit Framework",
+        "MSF"
+      ]
+    },
+    {
+      "name": "Nmap",
+      "slug": "nmap",
+      "description": "Network scanner for discovering hosts and services",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Network Mapper",
+        "Nmap Scanner"
+      ]
+    },
+    {
+      "name": "Wireshark",
+      "slug": "wireshark",
+      "description": "Network protocol analyzer for troubleshooting and security analysis",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Wireshark Analyzer",
+        "Packet Analyzer"
+      ]
+    },
+    {
+      "name": "Kali Linux",
+      "slug": "kali-linux",
+      "description": "Linux distribution for penetration testing and security auditing",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Kali",
+        "Kali Linux OS"
+      ]
+    },
+    {
+      "name": "Snyk",
+      "slug": "snyk",
+      "description": "Developer security platform for finding and fixing vulnerabilities",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Snyk Security",
+        "Snyk Vulnerability Scanner"
+      ]
+    },
+    {
+      "name": "SonarQube",
+      "slug": "sonarqube",
+      "description": "Code quality and security analysis platform",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "SonarQube Scanner",
+        "Sonar"
+      ]
+    },
+    {
+      "name": "SIEM",
+      "slug": "siem",
+      "description": "Security Information and Event Management systems",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Security Information Event Management",
+        "SIEM System"
+      ]
+    },
+    {
+      "name": "SSL/TLS",
+      "slug": "ssl-tls",
+      "description": "Cryptographic protocols for secure communications",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "SSL",
+        "TLS",
+        "HTTPS",
+        "Transport Layer Security"
+      ]
+    },
+    {
+      "name": "AWS IAM",
+      "slug": "aws-iam",
+      "description": "AWS Identity and Access Management for secure resource access",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "IAM",
+        "AWS Identity Management"
+      ]
+    },
+    {
+      "name": "SAML",
+      "slug": "saml",
+      "description": "Security Assertion Markup Language for single sign-on",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "SAML 2.0",
+        "Security Assertion Markup Language"
+      ]
+    },
+    {
+      "name": "LDAP",
+      "slug": "ldap",
+      "description": "Lightweight Directory Access Protocol for directory services",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Lightweight Directory Access Protocol",
+        "LDAP Directory"
+      ]
+    },
+    {
+      "name": "Active Directory",
+      "slug": "active-directory",
+      "description": "Microsoft's directory service for Windows domain networks",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "AD",
+        "Microsoft Active Directory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ldap",
+          "prerequisite_level": "recommended",
+          "notes": "Active Directory uses LDAP"
+        }
+      ]
+    },
+    {
+      "name": "Zero Trust",
+      "slug": "zero-trust",
+      "description": "Security model that requires strict identity verification",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Zero Trust Architecture",
+        "Zero Trust Security"
+      ]
+    },
+    {
+      "name": "Penetration Testing",
+      "slug": "penetration-testing",
+      "description": "Authorized simulated cyberattack to evaluate security",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Pen Testing",
+        "PenTest",
+        "Ethical Hacking"
+      ]
+    },
+    {
+      "name": "Security Auditing",
+      "slug": "security-auditing",
+      "description": "Systematic evaluation of security measures and compliance",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Security Audit",
+        "Compliance Auditing"
+      ]
+    },
+    {
+      "name": "Fail2Ban",
+      "slug": "fail2ban",
+      "description": "Intrusion prevention software that protects against brute-force attacks",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Fail2ban",
+        "Fail 2 Ban"
+      ]
+    },
+    {
+      "name": "ModSecurity",
+      "slug": "modsecurity",
+      "description": "Open-source web application firewall",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Mod Security",
+        "ModSecurity WAF"
+      ]
+    },
+    {
+      "name": "CSP",
+      "slug": "csp",
+      "description": "Content Security Policy for preventing XSS attacks",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Content Security Policy",
+        "CSP Headers"
+      ]
+    },
+    {
+      "name": "CORS",
+      "slug": "cors",
+      "description": "Cross-Origin Resource Sharing security mechanism",
+      "category_slug": "cybersecurity",
+      "synonyms": [
+        "Cross-Origin Resource Sharing",
+        "CORS Policy"
+      ]
+    }
+  ]
 }

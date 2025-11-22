@@ -1,3 +1,713 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Express.js",
+      "slug": "expressjs",
+      "description": "Fast, unopinionated web framework for Node.js",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Express",
+        "Express Framework"
+      ],
+      "icon": "logos:express",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Express.js is a Node.js framework"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Express.js runs on Node.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "fastify",
+          "relationship_type": "similar",
+          "notes": "Fastify is a faster alternative to Express"
+        },
+        {
+          "alternative_slug": "koa",
+          "relationship_type": "similar",
+          "notes": "Koa is a modern alternative by Express creators"
+        }
+      ]
+    },
+    {
+      "name": "Fastify",
+      "slug": "fastify",
+      "description": "Fast and low overhead web framework for Node.js",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Fastify Framework",
+        "Fastify.js"
+      ],
+      "icon": "logos:fastify-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Fastify is a Node.js framework"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Fastify runs on Node.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "expressjs",
+          "relationship_type": "similar",
+          "notes": "Express.js is the most popular Node.js framework"
+        }
+      ]
+    },
+    {
+      "name": "Koa",
+      "slug": "koa",
+      "description": "Next generation web framework for Node.js by Express team",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Koa.js",
+        "Koa Framework"
+      ],
+      "icon": "logos:koa",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Koa is a Node.js framework"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Koa runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "NestJS",
+      "slug": "nestjs",
+      "description": "Progressive Node.js framework for building scalable server-side applications",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Nest.js",
+        "Nest Framework"
+      ],
+      "icon": "logos:nestjs",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "required",
+          "notes": "NestJS is built with TypeScript"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "NestJS runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Django",
+      "slug": "django",
+      "description": "High-level Python web framework encouraging rapid development",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Django Framework",
+        "Django Web"
+      ],
+      "icon": "logos:django-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Django is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flask",
+          "relationship_type": "similar",
+          "notes": "Flask is a lighter alternative to Django"
+        },
+        {
+          "alternative_slug": "fastapi",
+          "relationship_type": "similar",
+          "notes": "FastAPI is a modern Python API framework"
+        }
+      ]
+    },
+    {
+      "name": "Flask",
+      "slug": "flask",
+      "description": "Lightweight WSGI web application framework for Python",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Flask Framework",
+        "Flask Python"
+      ],
+      "icon": "logos:flask",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Flask is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "django",
+          "relationship_type": "similar",
+          "notes": "Django is a full-featured alternative to Flask"
+        },
+        {
+          "alternative_slug": "fastapi",
+          "relationship_type": "similar",
+          "notes": "FastAPI is a modern alternative for APIs"
+        }
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "slug": "fastapi",
+      "description": "Modern, fast web framework for building APIs with Python based on type hints",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Fast API",
+        "FastAPI Framework"
+      ],
+      "icon": "logos:fastapi-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "FastAPI is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "flask",
+          "relationship_type": "similar",
+          "notes": "Flask is a flexible alternative"
+        },
+        {
+          "alternative_slug": "django",
+          "relationship_type": "similar",
+          "notes": "Django is a full-stack alternative"
+        }
+      ]
+    },
+    {
+      "name": "Django REST Framework",
+      "slug": "django-rest-framework",
+      "description": "Powerful toolkit for building Web APIs in Django",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "DRF",
+        "Django REST",
+        "REST Framework"
+      ],
+      "icon": "devicon:djangorest",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "django",
+          "prerequisite_level": "required",
+          "notes": "Django REST Framework is built on Django"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Django REST Framework is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Ruby on Rails",
+      "slug": "ruby-on-rails",
+      "description": "Server-side web application framework written in Ruby",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Rails",
+        "RoR",
+        "Rails Framework"
+      ],
+      "icon": "logos:rails",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "required",
+          "notes": "Rails is a Ruby framework"
+        }
+      ]
+    },
+    {
+      "name": "Laravel",
+      "slug": "laravel",
+      "description": "PHP web framework with expressive, elegant syntax",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Laravel Framework",
+        "Laravel PHP"
+      ],
+      "icon": "logos:laravel",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "php",
+          "prerequisite_level": "required",
+          "notes": "Laravel is a PHP framework"
+        }
+      ]
+    },
+    {
+      "name": "Spring Boot",
+      "slug": "spring-boot",
+      "description": "Opinionated framework for building production-ready Spring applications",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Spring Boot Framework",
+        "SpringBoot"
+      ],
+      "icon": "logos:spring-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "Spring Boot is a Java framework"
+        }
+      ]
+    },
+    {
+      "name": "Phoenix",
+      "slug": "phoenix",
+      "description": "Productive web framework for Elixir with real-time features",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Phoenix Framework",
+        "Phoenix Elixir"
+      ],
+      "icon": "devicon:phoenix",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "elixir",
+          "prerequisite_level": "required",
+          "notes": "Phoenix is an Elixir framework"
+        }
+      ]
+    },
+    {
+      "name": "AdonisJS",
+      "slug": "adonisjs",
+      "description": "Fully featured Node.js framework with TypeScript support",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Adonis.js",
+        "Adonis Framework"
+      ],
+      "icon": "devicon:adonisjs",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "AdonisJS is a Node.js framework"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "AdonisJS runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Strapi",
+      "slug": "strapi",
+      "description": "Open-source headless CMS built with Node.js",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Strapi CMS",
+        "Strapi Headless CMS"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Strapi is built with JavaScript"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Strapi runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Apollo Server",
+      "slug": "apollo-server",
+      "description": "GraphQL server for Node.js with schema-first development",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Apollo GraphQL",
+        "Apollo Server GraphQL"
+      ],
+      "icon": "logos:apollostack",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "graphql",
+          "prerequisite_level": "required",
+          "notes": "Apollo Server implements GraphQL"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Apollo Server runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Swagger",
+      "slug": "swagger",
+      "description": "API documentation and design tools for OpenAPI specification",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "OpenAPI",
+        "Swagger UI",
+        "OpenAPI Specification"
+      ],
+      "icon": "logos:swagger"
+    },
+    {
+      "name": "Postman",
+      "slug": "postman",
+      "description": "API platform for building, testing, and documenting APIs",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Postman API",
+        "Postman Tool"
+      ],
+      "icon": "logos:postman-icon"
+    },
+    {
+      "name": "Insomnia",
+      "slug": "insomnia",
+      "description": "API client for REST and GraphQL with debugging and testing features",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Insomnia REST",
+        "Insomnia API Client"
+      ],
+      "icon": "logos:insomnia"
+    },
+    {
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "JavaScript runtime built on Chrome's V8 engine for server-side development",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Node",
+        "NodeJS",
+        "Node.js Runtime"
+      ],
+      "icon": "logos:nodejs-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Node.js executes JavaScript code"
+        }
+      ]
+    },
+    {
+      "name": "Deno",
+      "slug": "deno",
+      "description": "Secure runtime for JavaScript and TypeScript by Node.js creator",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Deno Runtime",
+        "DenoJS"
+      ],
+      "icon": "logos:deno",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "recommended",
+          "notes": "Deno has first-class TypeScript support"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nodejs",
+          "relationship_type": "similar",
+          "notes": "Node.js is the original JavaScript runtime"
+        },
+        {
+          "alternative_slug": "bun",
+          "relationship_type": "similar",
+          "notes": "Bun is another modern JavaScript runtime"
+        }
+      ]
+    },
+    {
+      "name": "Bun",
+      "slug": "bun",
+      "description": "Fast all-in-one JavaScript runtime with built-in bundler and package manager",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Bun Runtime",
+        "Bun.js"
+      ],
+      "icon": "logos:bun",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Bun executes JavaScript and TypeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nodejs",
+          "relationship_type": "similar",
+          "notes": "Node.js is the established JavaScript runtime"
+        },
+        {
+          "alternative_slug": "deno",
+          "relationship_type": "similar",
+          "notes": "Deno is another modern runtime alternative"
+        }
+      ]
+    },
+    {
+      "name": "REST API",
+      "slug": "rest-api",
+      "description": "Architectural style for designing networked applications using HTTP",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "REST",
+        "RESTful API",
+        "RESTful Web Services"
+      ]
+    },
+    {
+      "name": "tRPC",
+      "slug": "trpc",
+      "description": "End-to-end typesafe APIs made easy with TypeScript",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "tRPC Framework",
+        "TypeScript RPC"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "required",
+          "notes": "tRPC is designed for TypeScript"
+        }
+      ]
+    },
+    {
+      "name": "gRPC",
+      "slug": "grpc",
+      "description": "High-performance RPC framework by Google",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "gRPC Framework",
+        "Google RPC"
+      ]
+    },
+    {
+      "name": "Hapi",
+      "slug": "hapi",
+      "description": "Rich framework for building applications and services in Node.js",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Hapi.js",
+        "HapiJS"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Hapi runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Sails.js",
+      "slug": "sailsjs",
+      "description": "MVC framework for Node.js inspired by Ruby on Rails",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Sails",
+        "Sails Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Sails.js runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "Symfony",
+      "slug": "symfony",
+      "description": "PHP framework for web applications and reusable components",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Symfony Framework",
+        "Symfony PHP"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "php",
+          "prerequisite_level": "required",
+          "notes": "Symfony is a PHP framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "laravel",
+          "relationship_type": "similar",
+          "notes": "Laravel is built on Symfony components"
+        }
+      ]
+    },
+    {
+      "name": "ASP.NET Core",
+      "slug": "aspnet-core",
+      "description": "Cross-platform framework for building modern web applications",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "ASP.NET",
+        "ASP.NET Core Framework",
+        "dotnet core"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "ASP.NET Core uses C#"
+        }
+      ]
+    },
+    {
+      "name": "Gin",
+      "slug": "gin",
+      "description": "High-performance web framework for Go",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Gin Framework",
+        "Gin Gonic"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "go",
+          "prerequisite_level": "required",
+          "notes": "Gin is a Go framework"
+        }
+      ]
+    },
+    {
+      "name": "Echo",
+      "slug": "echo",
+      "description": "High performance, minimalist Go web framework",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Echo Framework",
+        "Echo Go"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "go",
+          "prerequisite_level": "required",
+          "notes": "Echo is a Go framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "gin",
+          "relationship_type": "similar",
+          "notes": "Gin is another popular Go web framework"
+        }
+      ]
+    },
+    {
+      "name": "Fiber",
+      "slug": "fiber",
+      "description": "Express-inspired web framework built on Fasthttp for Go",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Fiber Framework",
+        "Go Fiber"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "go",
+          "prerequisite_level": "required",
+          "notes": "Fiber is a Go framework"
+        }
+      ]
+    },
+    {
+      "name": "Sinatra",
+      "slug": "sinatra",
+      "description": "Lightweight DSL for quickly creating web applications in Ruby",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Sinatra Framework",
+        "Sinatra Ruby"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "required",
+          "notes": "Sinatra is a Ruby framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ruby-on-rails",
+          "relationship_type": "similar",
+          "notes": "Rails is a full-featured Ruby framework"
+        }
+      ]
+    },
+    {
+      "name": "Micronaut",
+      "slug": "micronaut",
+      "description": "Modern JVM-based framework for building microservices",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Micronaut Framework",
+        "Micronaut Java"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "Micronaut is a JVM framework"
+        }
+      ]
+    },
+    {
+      "name": "Quarkus",
+      "slug": "quarkus",
+      "description": "Kubernetes-native Java framework tailored for GraalVM and HotSpot",
+      "category_slug": "backend-development",
+      "synonyms": [
+        "Quarkus Framework",
+        "Quarkus Java"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "Quarkus is a Java framework"
+        }
+      ]
+    }
+  ]
 }

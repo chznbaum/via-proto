@@ -100,47 +100,6 @@
       "icon": "logos:css-3-official"
     },
     {
-      "name": "Flask",
-      "slug": "flask",
-      "description": "Lightweight Python web framework",
-      "category_slug": "backend-development",
-      "synonyms": [
-        "Flask Framework"
-      ],
-      "icon": "logos:flask",
-      "prerequisites": [
-        {
-          "prerequisite_slug": "python",
-          "prerequisite_level": "required",
-          "notes": "Python basics required for Flask development"
-        }
-      ],
-      "alternatives": [
-        {
-          "alternative_slug": "django",
-          "relationship_type": "similar",
-          "notes": "Both are Python web frameworks. Flask is lightweight, Django is full-featured."
-        }
-      ]
-    },
-    {
-      "name": "Django",
-      "slug": "django",
-      "description": "High-level Python web framework",
-      "category_slug": "backend-development",
-      "synonyms": [
-        "Django Framework"
-      ],
-      "icon": "logos:django-icon",
-      "prerequisites": [
-        {
-          "prerequisite_slug": "python",
-          "prerequisite_level": "required",
-          "notes": "Python basics required for Django development"
-        }
-      ]
-    },
-    {
       "name": "Pinia",
       "slug": "pinia",
       "description": "A more modular and intuitive store for Vue.js",
@@ -190,17 +149,6 @@
         "pwa"
       ],
       "icon": "logos:pwa"
-    },
-    {
-      "name": "Node.js",
-      "slug": "nodejs",
-      "description": "Cross-platform JavaScript runtime that lets you make almost anything",
-      "category_slug": "frontend-development",
-      "synonyms": [
-        "node",
-        "nodejs"
-      ],
-      "icon": "logos:nodejs-icon"
     }
   ]
 }

@@ -1,3 +1,548 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "TensorFlow",
+      "slug": "tensorflow",
+      "description": "Open-source machine learning framework by Google",
+      "category_slug": "data-science",
+      "synonyms": [
+        "TF",
+        "TensorFlow ML"
+      ],
+      "icon": "logos:tensorflow",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "TensorFlow is primarily used with Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "pytorch",
+          "relationship_type": "similar",
+          "notes": "PyTorch is another popular deep learning framework"
+        }
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "slug": "pytorch",
+      "description": "Open-source machine learning library based on Torch",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Torch",
+        "PyTorch ML"
+      ],
+      "icon": "logos:pytorch-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "PyTorch is a Python library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tensorflow",
+          "relationship_type": "similar",
+          "notes": "TensorFlow is another popular deep learning framework"
+        }
+      ]
+    },
+    {
+      "name": "Keras",
+      "slug": "keras",
+      "description": "High-level neural networks API running on top of TensorFlow",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Keras API",
+        "Keras Neural Networks"
+      ],
+      "icon": "devicon:keras",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "tensorflow",
+          "prerequisite_level": "recommended",
+          "notes": "Keras is now integrated with TensorFlow"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Keras is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Scikit-learn",
+      "slug": "scikit-learn",
+      "description": "Machine learning library for Python featuring various algorithms",
+      "category_slug": "data-science",
+      "synonyms": [
+        "sklearn",
+        "Scikit Learn"
+      ],
+      "icon": "devicon:scikitlearn",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Scikit-learn is a Python library"
+        },
+        {
+          "prerequisite_slug": "numpy",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding NumPy helps with scikit-learn"
+        }
+      ]
+    },
+    {
+      "name": "NumPy",
+      "slug": "numpy",
+      "description": "Fundamental package for scientific computing with Python",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Numpy",
+        "NumPy Array"
+      ],
+      "icon": "logos:numpy",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "NumPy is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Pandas",
+      "slug": "pandas",
+      "description": "Data manipulation and analysis library for Python",
+      "category_slug": "data-science",
+      "synonyms": [
+        "pandas DataFrame",
+        "pandas Python"
+      ],
+      "icon": "logos:pandas-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Pandas is a Python library"
+        },
+        {
+          "prerequisite_slug": "numpy",
+          "prerequisite_level": "recommended",
+          "notes": "Pandas is built on NumPy"
+        }
+      ]
+    },
+    {
+      "name": "Jupyter",
+      "slug": "jupyter",
+      "description": "Interactive computing environment for data science and machine learning",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Jupyter Notebook",
+        "JupyterLab",
+        "IPython Notebook"
+      ],
+      "icon": "logos:jupyter",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Jupyter is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "slug": "opencv",
+      "description": "Open-source computer vision and machine learning library",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Open CV",
+        "OpenCV Computer Vision"
+      ],
+      "icon": "logos:opencv",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "OpenCV is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "Hugging Face",
+      "slug": "hugging-face",
+      "description": "Platform for machine learning models, especially NLP transformers",
+      "category_slug": "data-science",
+      "synonyms": [
+        "HuggingFace",
+        "Hugging Face Transformers",
+        "HF"
+      ],
+      "icon": "logos:hugging-face-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Hugging Face libraries are Python-based"
+        }
+      ]
+    },
+    {
+      "name": "LangChain",
+      "slug": "langchain",
+      "description": "Framework for developing applications powered by language models",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Lang Chain",
+        "LangChain Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "LangChain is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "OpenAI API",
+      "slug": "openai-api",
+      "description": "API for accessing OpenAI's language models like GPT",
+      "category_slug": "data-science",
+      "synonyms": [
+        "OpenAI",
+        "ChatGPT API",
+        "GPT API"
+      ],
+      "icon": "logos:openai-icon"
+    },
+    {
+      "name": "Anthropic Claude API",
+      "slug": "anthropic-claude-api",
+      "description": "API for accessing Anthropic's Claude language models",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Claude API",
+        "Anthropic API",
+        "Claude AI"
+      ]
+    },
+    {
+      "name": "spaCy",
+      "slug": "spacy",
+      "description": "Industrial-strength natural language processing library",
+      "category_slug": "data-science",
+      "synonyms": [
+        "spaCy NLP",
+        "Spacy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "spaCy is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "NLTK",
+      "slug": "nltk",
+      "description": "Natural Language Toolkit for Python",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Natural Language Toolkit",
+        "NLTK Python"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "NLTK is a Python library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "spacy",
+          "relationship_type": "similar",
+          "notes": "spaCy is a modern alternative to NLTK"
+        }
+      ]
+    },
+    {
+      "name": "MLflow",
+      "slug": "mlflow",
+      "description": "Open-source platform for managing ML lifecycle",
+      "category_slug": "data-science",
+      "synonyms": [
+        "ML Flow",
+        "MLflow Platform"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "MLflow is primarily used with Python"
+        }
+      ]
+    },
+    {
+      "name": "Weights & Biases",
+      "slug": "weights-and-biases",
+      "description": "ML experiment tracking and model management platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "wandb",
+        "W&B",
+        "Weights and Biases"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "W&B is primarily used with Python"
+        }
+      ]
+    },
+    {
+      "name": "Matplotlib",
+      "slug": "matplotlib",
+      "description": "Comprehensive library for creating visualizations in Python",
+      "category_slug": "data-science",
+      "synonyms": [
+        "matplotlib.pyplot",
+        "Matplotlib Python"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Matplotlib is a Python library"
+        },
+        {
+          "prerequisite_slug": "numpy",
+          "prerequisite_level": "recommended",
+          "notes": "Matplotlib works with NumPy arrays"
+        }
+      ]
+    },
+    {
+      "name": "Seaborn",
+      "slug": "seaborn",
+      "description": "Statistical data visualization library based on Matplotlib",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Seaborn Python",
+        "Seaborn Visualization"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "matplotlib",
+          "prerequisite_level": "recommended",
+          "notes": "Seaborn is built on Matplotlib"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Seaborn is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Plotly",
+      "slug": "plotly",
+      "description": "Interactive graphing library for Python, R, and JavaScript",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Plotly Python",
+        "Plotly.js"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Plotly is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "Apache Spark",
+      "slug": "apache-spark",
+      "description": "Unified analytics engine for large-scale data processing",
+      "category_slug": "data-engineering",
+      "synonyms": [
+        "Spark",
+        "PySpark",
+        "Spark ML"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "PySpark is the Python API for Spark"
+        }
+      ]
+    },
+    {
+      "name": "XGBoost",
+      "slug": "xgboost",
+      "description": "Optimized gradient boosting library for machine learning",
+      "category_slug": "data-science",
+      "synonyms": [
+        "XGB",
+        "XGBoost ML"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "XGBoost is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "LightGBM",
+      "slug": "lightgbm",
+      "description": "Gradient boosting framework by Microsoft",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Light GBM",
+        "LGBM"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "LightGBM is commonly used with Python"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "xgboost",
+          "relationship_type": "similar",
+          "notes": "XGBoost is another gradient boosting library"
+        }
+      ]
+    },
+    {
+      "name": "YOLO",
+      "slug": "yolo",
+      "description": "Real-time object detection system",
+      "category_slug": "data-science",
+      "synonyms": [
+        "YOLOv5",
+        "YOLOv8",
+        "You Only Look Once"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "YOLO implementations typically use Python"
+        },
+        {
+          "prerequisite_slug": "opencv",
+          "prerequisite_level": "recommended",
+          "notes": "YOLO often works with OpenCV"
+        }
+      ]
+    },
+    {
+      "name": "Stable Diffusion",
+      "slug": "stable-diffusion",
+      "description": "Text-to-image diffusion model for AI image generation",
+      "category_slug": "data-science",
+      "synonyms": [
+        "SD",
+        "Stable Diffusion AI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Stable Diffusion is typically used with Python"
+        }
+      ]
+    },
+    {
+      "name": "CUDA",
+      "slug": "cuda",
+      "description": "Parallel computing platform and API by NVIDIA for GPU acceleration",
+      "category_slug": "data-science",
+      "synonyms": [
+        "NVIDIA CUDA",
+        "CUDA Programming"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "recommended",
+          "notes": "CUDA programming often involves C++"
+        }
+      ]
+    },
+    {
+      "name": "Ray",
+      "slug": "ray",
+      "description": "Framework for scaling Python and AI applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Ray Framework",
+        "Ray.io"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Ray is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "Streamlit",
+      "slug": "streamlit",
+      "description": "Framework for creating data apps and ML web applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Streamlit App",
+        "Streamlit Python"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Streamlit is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "Gradio",
+      "slug": "gradio",
+      "description": "Library for creating ML demo interfaces and web apps",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Gradio ML",
+        "Gradio Interface"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Gradio is a Python library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "streamlit",
+          "relationship_type": "similar",
+          "notes": "Streamlit is another framework for ML web apps"
+        }
+      ]
+    }
+  ]
 }
