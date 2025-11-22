@@ -1,0 +1,686 @@
+{
+  "competencies": [
+    {
+      "name": "Weightlifting",
+      "slug": "weightlifting",
+      "description": "Strength training using barbells, dumbbells, and weight machines",
+      "category_slug": "strength-training",
+      "synonyms": ["Weight Training", "Resistance Training", "Strength Training"]
+    },
+    {
+      "name": "Olympic Weightlifting",
+      "slug": "olympic-weightlifting",
+      "description": "Competitive weightlifting focused on the snatch and clean & jerk",
+      "category_slug": "strength-training",
+      "synonyms": ["Olympic Lifting", "Oly Lifting"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weightlifting",
+          "prerequisite_level": "recommended",
+          "notes": "Basic weightlifting knowledge helps with proper form"
+        }
+      ]
+    },
+    {
+      "name": "Powerlifting",
+      "slug": "powerlifting",
+      "description": "Competitive strength sport focused on squat, bench press, and deadlift",
+      "category_slug": "strength-training",
+      "synonyms": ["Power Lifting"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weightlifting",
+          "prerequisite_level": "recommended",
+          "notes": "Foundation in weightlifting is beneficial"
+        }
+      ]
+    },
+    {
+      "name": "Bodybuilding",
+      "slug": "bodybuilding",
+      "description": "Resistance training focused on muscle hypertrophy and physique development",
+      "category_slug": "strength-training",
+      "synonyms": ["Physique Training", "Muscle Building"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weightlifting",
+          "prerequisite_level": "recommended",
+          "notes": "Foundational strength training knowledge"
+        }
+      ]
+    },
+    {
+      "name": "Calisthenics",
+      "slug": "calisthenics",
+      "description": "Bodyweight strength training and gymnastics-based movements",
+      "category_slug": "strength-training",
+      "synonyms": ["Bodyweight Training", "Street Workout", "Bodyweight Exercise"]
+    },
+    {
+      "name": "Kettlebell Training",
+      "slug": "kettlebell-training",
+      "description": "Strength and conditioning using kettlebells",
+      "category_slug": "strength-training",
+      "synonyms": ["Kettlebell", "Kettlebell Sport"]
+    },
+    {
+      "name": "Resistance Band Training",
+      "slug": "resistance-band-training",
+      "description": "Strength training using elastic resistance bands",
+      "category_slug": "strength-training",
+      "synonyms": ["Band Training", "Elastic Resistance"]
+    },
+    {
+      "name": "Suspension Training",
+      "slug": "suspension-training",
+      "description": "Bodyweight resistance training using suspended straps",
+      "category_slug": "strength-training",
+      "synonyms": ["TRX Training", "Strap Training"]
+    },
+    {
+      "name": "CrossFit",
+      "slug": "crossfit",
+      "description": "High-intensity functional fitness combining weightlifting, gymnastics, and metabolic conditioning",
+      "category_slug": "strength-training",
+      "synonyms": ["Cross Fit", "Functional Fitness"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weightlifting",
+          "prerequisite_level": "recommended",
+          "notes": "Basic lifting knowledge for safety"
+        }
+      ]
+    },
+    {
+      "name": "Strongman Training",
+      "slug": "strongman-training",
+      "description": "Strength sport involving unconventional lifting and carrying heavy objects",
+      "category_slug": "strength-training",
+      "synonyms": ["Strongman", "Strongwoman"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weightlifting",
+          "prerequisite_level": "required",
+          "notes": "Strong foundation in strength training required"
+        }
+      ]
+    },
+    {
+      "name": "HIIT",
+      "slug": "hiit",
+      "description": "High-Intensity Interval Training alternating intense bursts with recovery periods",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["High-Intensity Interval Training", "Interval Training", "HIIT Training"]
+    },
+    {
+      "name": "Rowing",
+      "slug": "rowing-fitness",
+      "description": "Indoor or outdoor rowing for cardiovascular fitness and full-body conditioning",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Crew", "Indoor Rowing", "Erg Training"]
+    },
+    {
+      "name": "Jump Rope",
+      "slug": "jump-rope",
+      "description": "Cardiovascular exercise using a skipping rope",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Skipping", "Rope Jumping", "Skip Rope"]
+    },
+    {
+      "name": "Indoor Cycling",
+      "slug": "indoor-cycling",
+      "description": "Group indoor cycling classes set to music",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Spinning", "Spin Class", "Cycle Class"]
+    },
+    {
+      "name": "Stair Climbing",
+      "slug": "stair-climbing",
+      "description": "Cardiovascular exercise using stairs or stair-climbing machines",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Stair Master", "Step Climbing"]
+    },
+    {
+      "name": "Elliptical Training",
+      "slug": "elliptical-training",
+      "description": "Low-impact cardio exercise using an elliptical machine",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Elliptical", "Cross Trainer"]
+    },
+    {
+      "name": "Plyometrics",
+      "slug": "plyometrics",
+      "description": "Explosive jumping and bounding exercises for power development",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Jump Training", "Plyo", "Explosive Training"]
+    },
+    {
+      "name": "Track and Field",
+      "slug": "track-and-field",
+      "description": "Athletic sports including sprinting, jumping, and throwing events",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Athletics", "Track", "Track Sports"]
+    },
+    {
+      "name": "Triathlon Training",
+      "slug": "triathlon-training",
+      "description": "Multi-sport endurance training combining swimming, cycling, and running",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Triathlon", "Tri Training"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "swimming",
+          "prerequisite_level": "required",
+          "notes": "Must know how to swim"
+        },
+        {
+          "prerequisite_slug": "cycling",
+          "prerequisite_level": "required",
+          "notes": "Must know how to cycle"
+        },
+        {
+          "prerequisite_slug": "running",
+          "prerequisite_level": "required",
+          "notes": "Must be able to run"
+        }
+      ]
+    },
+    {
+      "name": "Circuit Training",
+      "slug": "circuit-training",
+      "description": "Workout format rotating through different exercise stations",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Circuit Workout", "Station Training"]
+    },
+    {
+      "name": "Aerobics",
+      "slug": "aerobics",
+      "description": "Rhythmic cardiovascular exercise often performed to music",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Aerobic Exercise", "Cardio Dance"]
+    },
+    {
+      "name": "Step Aerobics",
+      "slug": "step-aerobics",
+      "description": "Choreographed stepping exercises using an elevated platform",
+      "category_slug": "cardio-endurance",
+      "synonyms": ["Step Class", "Step Workout"]
+    },
+    {
+      "name": "Stretching",
+      "slug": "stretching",
+      "description": "Exercises to improve flexibility and range of motion",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Flexibility Training", "Stretch Exercise"]
+    },
+    {
+      "name": "Dynamic Stretching",
+      "slug": "dynamic-stretching",
+      "description": "Active movement-based stretching to prepare muscles for activity",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Active Stretching", "Movement Prep"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stretching",
+          "prerequisite_level": "recommended",
+          "notes": "Basic stretching knowledge helpful"
+        }
+      ]
+    },
+    {
+      "name": "Static Stretching",
+      "slug": "static-stretching",
+      "description": "Holding stretches in a stationary position to improve flexibility",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Passive Stretching"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stretching",
+          "prerequisite_level": "recommended",
+          "notes": "Basic stretching knowledge helpful"
+        }
+      ]
+    },
+    {
+      "name": "PNF Stretching",
+      "slug": "pnf-stretching",
+      "description": "Proprioceptive Neuromuscular Facilitation stretching technique",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Proprioceptive Neuromuscular Facilitation", "Partner Stretching"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "stretching",
+          "prerequisite_level": "required",
+          "notes": "Understanding of stretching fundamentals required"
+        }
+      ]
+    },
+    {
+      "name": "Foam Rolling",
+      "slug": "foam-rolling",
+      "description": "Self-myofascial release technique using a foam roller",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Self-Myofascial Release", "SMR", "Rolling"]
+    },
+    {
+      "name": "Pilates",
+      "slug": "pilates",
+      "description": "Low-impact exercise focused on core strength, flexibility, and body awareness",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Classical Pilates", "Mat Pilates"]
+    },
+    {
+      "name": "Reformer Pilates",
+      "slug": "reformer-pilates",
+      "description": "Pilates exercises performed on a specialized resistance machine",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Reformer", "Pilates Reformer"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "pilates",
+          "prerequisite_level": "recommended",
+          "notes": "Basic Pilates knowledge helpful"
+        }
+      ]
+    },
+    {
+      "name": "Mobility Training",
+      "slug": "mobility-training",
+      "description": "Training to improve joint range of motion and movement quality",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Mobility Work", "Movement Training"]
+    },
+    {
+      "name": "Barre",
+      "slug": "barre",
+      "description": "Fitness method combining ballet, Pilates, and yoga movements",
+      "category_slug": "flexibility-mobility",
+      "synonyms": ["Barre Fitness", "Ballet Barre"]
+    },
+    {
+      "name": "Meal Planning",
+      "slug": "meal-planning",
+      "description": "Organizing and preparing meals in advance for nutritional goals",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Meal Prep Planning", "Nutrition Planning"]
+    },
+    {
+      "name": "Macronutrient Tracking",
+      "slug": "macronutrient-tracking",
+      "description": "Monitoring protein, carbohydrate, and fat intake",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Macro Counting", "Macros", "Flexible Dieting", "IIFYM"]
+    },
+    {
+      "name": "Calorie Counting",
+      "slug": "calorie-counting",
+      "description": "Tracking daily caloric intake for weight management",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Calorie Tracking", "Energy Tracking"]
+    },
+    {
+      "name": "Intermittent Fasting",
+      "slug": "intermittent-fasting",
+      "description": "Eating pattern alternating between fasting and eating windows",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["IF", "Time-Restricted Eating", "Fasting"]
+    },
+    {
+      "name": "Ketogenic Diet",
+      "slug": "ketogenic-diet",
+      "description": "High-fat, low-carbohydrate diet for metabolic benefits",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Keto", "Keto Diet", "Low Carb High Fat"]
+    },
+    {
+      "name": "Plant-Based Nutrition",
+      "slug": "plant-based-nutrition",
+      "description": "Nutrition focused on whole plant foods",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Vegan Nutrition", "Vegetarian Nutrition", "Whole Food Plant-Based"]
+    },
+    {
+      "name": "Sports Nutrition",
+      "slug": "sports-nutrition",
+      "description": "Nutrition strategies for athletic performance and recovery",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Performance Nutrition", "Athletic Nutrition"]
+    },
+    {
+      "name": "Supplement Science",
+      "slug": "supplement-science",
+      "description": "Understanding dietary supplements and their effects",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Supplementation", "Nutritional Supplements"]
+    },
+    {
+      "name": "Intuitive Eating",
+      "slug": "intuitive-eating",
+      "description": "Non-diet approach to food based on internal hunger and fullness cues",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Mindful Eating", "Anti-Diet"]
+    },
+    {
+      "name": "Paleo Diet",
+      "slug": "paleo-diet",
+      "description": "Eating pattern based on presumed ancient human diets",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Paleo", "Paleolithic Diet", "Caveman Diet"]
+    },
+    {
+      "name": "Mediterranean Diet",
+      "slug": "mediterranean-diet",
+      "description": "Eating pattern based on traditional Mediterranean cuisine",
+      "category_slug": "nutrition-diet",
+      "synonyms": ["Mediterranean Eating"]
+    },
+    {
+      "name": "Anxiety Management",
+      "slug": "anxiety-management",
+      "description": "Techniques and strategies for managing anxiety symptoms",
+      "category_slug": "mental-health",
+      "synonyms": ["Anxiety Relief", "Anxiety Treatment"]
+    },
+    {
+      "name": "Depression Management",
+      "slug": "depression-management",
+      "description": "Coping strategies and treatment approaches for depression",
+      "category_slug": "mental-health",
+      "synonyms": ["Depression Treatment", "Depression Support"]
+    },
+    {
+      "name": "Cognitive Behavioral Therapy",
+      "slug": "cognitive-behavioral-therapy",
+      "description": "Psychotherapy approach addressing negative thought patterns",
+      "category_slug": "mental-health",
+      "synonyms": ["CBT", "Cognitive Therapy"]
+    },
+    {
+      "name": "Dialectical Behavior Therapy",
+      "slug": "dialectical-behavior-therapy",
+      "description": "Therapy combining cognitive-behavioral techniques with mindfulness",
+      "category_slug": "mental-health",
+      "synonyms": ["DBT"]
+    },
+    {
+      "name": "EMDR Therapy",
+      "slug": "emdr-therapy",
+      "description": "Eye Movement Desensitization and Reprocessing for trauma treatment",
+      "category_slug": "mental-health",
+      "synonyms": ["Eye Movement Desensitization", "EMDR"]
+    },
+    {
+      "name": "Mental Health First Aid",
+      "slug": "mental-health-first-aid",
+      "description": "Initial support and crisis intervention for mental health issues",
+      "category_slug": "mental-health",
+      "synonyms": ["Psychological First Aid", "Crisis Support"]
+    },
+    {
+      "name": "Sleep Hygiene",
+      "slug": "sleep-hygiene",
+      "description": "Practices and habits for optimal sleep quality",
+      "category_slug": "mental-health",
+      "synonyms": ["Sleep Optimization", "Better Sleep"]
+    },
+    {
+      "name": "Boundary Setting",
+      "slug": "boundary-setting",
+      "description": "Establishing and maintaining healthy personal boundaries",
+      "category_slug": "mental-health",
+      "synonyms": ["Personal Boundaries", "Healthy Boundaries"]
+    },
+    {
+      "name": "Hatha Yoga",
+      "slug": "hatha-yoga",
+      "description": "Traditional yoga focusing on physical postures and breathing",
+      "category_slug": "yoga",
+      "synonyms": ["Hatha"]
+    },
+    {
+      "name": "Vinyasa Yoga",
+      "slug": "vinyasa-yoga",
+      "description": "Dynamic yoga style linking breath with flowing movements",
+      "category_slug": "yoga",
+      "synonyms": ["Vinyasa Flow", "Flow Yoga"]
+    },
+    {
+      "name": "Ashtanga Yoga",
+      "slug": "ashtanga-yoga",
+      "description": "Rigorous yoga style following specific sequence of postures",
+      "category_slug": "yoga",
+      "synonyms": ["Ashtanga", "Power Yoga Traditional"]
+    },
+    {
+      "name": "Bikram Yoga",
+      "slug": "bikram-yoga",
+      "description": "Yoga practiced in heated room with specific 26-posture sequence",
+      "category_slug": "yoga",
+      "synonyms": ["Hot Yoga", "Bikram"]
+    },
+    {
+      "name": "Yin Yoga",
+      "slug": "yin-yoga",
+      "description": "Slow-paced yoga with longer-held passive poses",
+      "category_slug": "yoga",
+      "synonyms": ["Yin"]
+    },
+    {
+      "name": "Restorative Yoga",
+      "slug": "restorative-yoga",
+      "description": "Gentle yoga using props for deep relaxation",
+      "category_slug": "yoga",
+      "synonyms": ["Restorative"]
+    },
+    {
+      "name": "Kundalini Yoga",
+      "slug": "kundalini-yoga",
+      "description": "Spiritual yoga practice emphasizing breath, mantras, and energy",
+      "category_slug": "yoga",
+      "synonyms": ["Kundalini"]
+    },
+    {
+      "name": "Power Yoga",
+      "slug": "power-yoga",
+      "description": "Athletic, fitness-based yoga derived from Ashtanga",
+      "category_slug": "yoga",
+      "synonyms": ["Power"]
+    },
+    {
+      "name": "Prenatal Yoga",
+      "slug": "prenatal-yoga",
+      "description": "Yoga modified for pregnant individuals",
+      "category_slug": "yoga",
+      "synonyms": ["Pregnancy Yoga", "Maternity Yoga"]
+    },
+    {
+      "name": "Iyengar Yoga",
+      "slug": "iyengar-yoga",
+      "description": "Precise alignment-focused yoga using props",
+      "category_slug": "yoga",
+      "synonyms": ["Iyengar"]
+    },
+    {
+      "name": "Transcendental Meditation",
+      "slug": "transcendental-meditation",
+      "description": "Mantra-based meditation technique practiced twice daily",
+      "category_slug": "meditation",
+      "synonyms": ["TM", "Transcendental"]
+    },
+    {
+      "name": "Guided Meditation",
+      "slug": "guided-meditation",
+      "description": "Meditation led by instructor or recording",
+      "category_slug": "meditation",
+      "synonyms": ["Guided Imagery", "Visualization Meditation"]
+    },
+    {
+      "name": "Body Scan Meditation",
+      "slug": "body-scan-meditation",
+      "description": "Systematic attention to different parts of the body",
+      "category_slug": "meditation",
+      "synonyms": ["Body Scan", "Progressive Relaxation"]
+    },
+    {
+      "name": "Loving-Kindness Meditation",
+      "slug": "loving-kindness-meditation",
+      "description": "Meditation cultivating compassion and goodwill",
+      "category_slug": "meditation",
+      "synonyms": ["Metta Meditation", "Compassion Meditation", "Metta"]
+    },
+    {
+      "name": "Breathwork",
+      "slug": "breathwork",
+      "description": "Conscious breathing techniques for physical and mental benefits",
+      "category_slug": "meditation",
+      "synonyms": ["Pranayama", "Breathing Exercises", "Breath Training"]
+    },
+    {
+      "name": "Zen Meditation",
+      "slug": "zen-meditation",
+      "description": "Seated meditation practice from Zen Buddhism",
+      "category_slug": "meditation",
+      "synonyms": ["Zazen", "Zen"]
+    },
+    {
+      "name": "Vipassana Meditation",
+      "slug": "vipassana-meditation",
+      "description": "Insight meditation observing sensations and thoughts",
+      "category_slug": "meditation",
+      "synonyms": ["Vipassana", "Insight Meditation"]
+    },
+    {
+      "name": "Walking Meditation",
+      "slug": "walking-meditation",
+      "description": "Mindfulness practice while walking slowly",
+      "category_slug": "meditation",
+      "synonyms": ["Mindful Walking"]
+    },
+    {
+      "name": "Acupuncture",
+      "slug": "acupuncture",
+      "description": "Traditional Chinese medicine using needle insertion at specific points",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Traditional Acupuncture", "Chinese Acupuncture"]
+    },
+    {
+      "name": "Chiropractic",
+      "slug": "chiropractic",
+      "description": "Manual spinal manipulation and musculoskeletal treatment",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Chiropractic Care", "Spinal Adjustment"]
+    },
+    {
+      "name": "Massage Therapy",
+      "slug": "massage-therapy",
+      "description": "Manual manipulation of soft tissues for therapeutic purposes",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Therapeutic Massage", "Bodywork"]
+    },
+    {
+      "name": "Sports Massage",
+      "slug": "sports-massage",
+      "description": "Massage techniques for athletes and active individuals",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Athletic Massage"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "massage-therapy",
+          "prerequisite_level": "recommended",
+          "notes": "Basic massage knowledge helpful"
+        }
+      ]
+    },
+    {
+      "name": "Deep Tissue Massage",
+      "slug": "deep-tissue-massage",
+      "description": "Massage using firm pressure on deeper muscle layers",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Deep Tissue"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "massage-therapy",
+          "prerequisite_level": "recommended",
+          "notes": "Foundation in massage therapy"
+        }
+      ]
+    },
+    {
+      "name": "Swedish Massage",
+      "slug": "swedish-massage",
+      "description": "Classic Western massage using long gliding strokes",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Swedish", "Classic Massage"]
+    },
+    {
+      "name": "Herbal Medicine",
+      "slug": "herbal-medicine",
+      "description": "Use of plant-based remedies for health and healing",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Herbalism", "Botanical Medicine", "Phytotherapy"]
+    },
+    {
+      "name": "Naturopathy",
+      "slug": "naturopathy",
+      "description": "Holistic healthcare emphasizing natural remedies and self-healing",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Naturopathic Medicine", "Natural Medicine"]
+    },
+    {
+      "name": "Ayurveda",
+      "slug": "ayurveda",
+      "description": "Traditional Indian system of medicine and wellness",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Ayurvedic Medicine"]
+    },
+    {
+      "name": "Traditional Chinese Medicine",
+      "slug": "traditional-chinese-medicine",
+      "description": "Ancient Chinese medical system including herbs, acupuncture, and more",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["TCM", "Chinese Medicine"]
+    },
+    {
+      "name": "Homeopathy",
+      "slug": "homeopathy",
+      "description": "Alternative medicine using highly diluted substances",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Homeopathic Medicine"]
+    },
+    {
+      "name": "Aromatherapy",
+      "slug": "aromatherapy",
+      "description": "Therapeutic use of essential oils for health and well-being",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Essential Oil Therapy"]
+    },
+    {
+      "name": "Reflexology",
+      "slug": "reflexology",
+      "description": "Pressure point therapy on feet, hands, or ears",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Reflex Therapy"]
+    },
+    {
+      "name": "Reiki",
+      "slug": "reiki",
+      "description": "Energy healing practice using palm healing techniques",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Reiki Healing", "Energy Healing"]
+    },
+    {
+      "name": "Cupping Therapy",
+      "slug": "cupping-therapy",
+      "description": "Traditional therapy using suction cups on skin",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Cupping", "Hijama"]
+    },
+    {
+      "name": "Functional Medicine",
+      "slug": "functional-medicine",
+      "description": "Systems-based approach addressing root causes of disease",
+      "category_slug": "alternative-medicine",
+      "synonyms": ["Integrative Medicine"]
+    }
+  ]
+}
