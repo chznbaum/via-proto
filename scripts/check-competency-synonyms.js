@@ -23,29 +23,29 @@ competencyFiles.forEach(file => {
   data.competencies.forEach(comp => {
     if (!comp.synonyms || comp.synonyms.length === 0) return;
 
-    // Check for duplicate slugified synonyms within same competency
-    const slugMap = new Map();
+    // Check for case-insensitive duplicate synonyms within same competency
+    const lowerMap = new Map();
     const duplicates = [];
 
     comp.synonyms.forEach(synonym => {
-      const slug = slugify(synonym);
+      const lower = synonym.toLowerCase();
 
-      // Check if this slug already exists for this competency
-      if (slugMap.has(slug)) {
+      // Check if this case-insensitive synonym already exists for this competency
+      if (lowerMap.has(lower)) {
         duplicates.push({
-          original1: slugMap.get(slug),
+          original1: lowerMap.get(lower),
           original2: synonym,
-          slug
+          lower
         });
       } else {
-        slugMap.set(slug, synonym);
+        lowerMap.set(lower, synonym);
       }
 
       // Also track across all competencies
-      if (allSlugs.has(slug)) {
+      if (allSlugs.has(lower)) {
         // This is a cross-competency duplicate (might be intentional)
       } else {
-        allSlugs.add(slug);
+        allSlugs.add(lower);
       }
     });
 
@@ -62,24 +62,24 @@ competencyFiles.forEach(file => {
 });
 
 if (issues.length > 0) {
-  console.log('=== DUPLICATE SLUGIFIED SYNONYMS ===\n');
+  console.log('=== DUPLICATE CASE-INSENSITIVE SYNONYMS ===\n');
   console.log('These synonyms will create duplicate keys in the database:\n');
 
   issues.forEach(issue => {
     console.log(`File: ${issue.file}`);
     console.log(`Competency: ${issue.competency} (${issue.slug})`);
-    console.log('Duplicate slugs found:');
+    console.log('Duplicate case-insensitive synonyms found:');
     issue.duplicates.forEach(dup => {
-      console.log(`  - "${dup.original1}" and "${dup.original2}" both slugify to "${dup.slug}"`);
+      console.log(`  - "${dup.original1}" and "${dup.original2}" both become "${dup.lower}" when lowercased`);
     });
     console.log('All synonyms:', issue.allSynonyms.join(', '));
     console.log('');
   });
 
-  console.log(`\n❌ Found ${issues.length} competenc${issues.length === 1 ? 'y' : 'ies'} with duplicate slugified synonyms`);
-  console.log('\nTo fix: Remove or rename synonyms so they slugify differently');
+  console.log(`\n❌ Found ${issues.length} competenc${issues.length === 1 ? 'y' : 'ies'} with duplicate case-insensitive synonyms`);
+  console.log('\nTo fix: Remove or rename synonyms so they are unique when lowercased');
   process.exit(1);
 } else {
-  console.log('✅ No duplicate slugified synonyms found!');
+  console.log('✅ No duplicate case-insensitive synonyms found!');
   process.exit(0);
 }

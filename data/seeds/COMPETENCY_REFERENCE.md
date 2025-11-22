@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T03:36:10.741Z
-**Total Competencies:** 974
+**Generated:** 2025-11-22T04:53:24.896Z
+**Total Competencies:** 1155
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -27,7 +27,8 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [game-development](#game-development) (3)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
-- [languages](#languages) (3)
+- [languages](#languages) (169)
+- [linguistics](#linguistics) (15)
 - [mobile-development](#mobile-development) (4)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
@@ -4109,17 +4110,821 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## languages
 
-### Conversational Spanish
-- **Slug:** `conversational-spanish`
-- **Icon:** `lucide:message-circle`
+### Afrikaans
+- **Slug:** `afrikaans`
+- **Alternatives:**
+  - `dutch` (similar)
 
-### Interpretation: English-Spanish
-- **Slug:** `interpretation-english-spanish`
-- **Icon:** `lucide:message-circle`
+### Akan
+- **Slug:** `akan`
+- **Synonyms:** Twi, Fante
 
-### Translation: English-Spanish
-- **Slug:** `translation-english-spanish`
-- **Icon:** `lucide:message-circle`
+### Akkadian
+- **Slug:** `akkadian`
+
+### Albanian
+- **Slug:** `albanian`
+- **Synonyms:** Shqip
+
+### American Sign Language
+- **Slug:** `american-sign-language`
+- **Synonyms:** ASL
+- **Alternatives:**
+  - `british-sign-language` (related)
+
+### Amharic
+- **Slug:** `amharic`
+- **Synonyms:** አማርኛ
+
+### Ancient Greek
+- **Slug:** `ancient-greek`
+- **Synonyms:** Classical Greek, Koine Greek
+
+### Arabic
+- **Slug:** `arabic`
+- **Synonyms:** Modern Standard Arabic, العربية
+
+### Aramaic
+- **Slug:** `aramaic`
+- **Synonyms:** Classical Aramaic
+
+### Armenian
+- **Slug:** `armenian`
+- **Synonyms:** Հայերեն, Hayeren
+
+### Assamese
+- **Slug:** `assamese`
+- **Synonyms:** অসমীয়া
+
+### Australian Sign Language
+- **Slug:** `australian-sign-language`
+- **Synonyms:** Auslan
+- **Alternatives:**
+  - `british-sign-language` (similar)
+
+### Azerbaijani
+- **Slug:** `azerbaijani`
+- **Synonyms:** Azeri, Azərbaycan dili
+
+### Balochi
+- **Slug:** `balochi`
+- **Synonyms:** Baluchi, بلۏچی
+
+### Basque
+- **Slug:** `basque`
+- **Synonyms:** Euskara
+
+### Belarusian
+- **Slug:** `belarusian`
+- **Synonyms:** Беларуская
+
+### Bengali
+- **Slug:** `bengali`
+- **Synonyms:** Bangla, বাংলা
+
+### Biblical Hebrew
+- **Slug:** `biblical-hebrew`
+- **Synonyms:** Classical Hebrew, Ancient Hebrew
+
+### Bosnian
+- **Slug:** `bosnian`
+- **Synonyms:** Bosanski
+- **Alternatives:**
+  - `serbian` (similar)
+  - `croatian` (similar)
+
+### Breton
+- **Slug:** `breton`
+- **Synonyms:** Brezhoneg
+
+### British Sign Language
+- **Slug:** `british-sign-language`
+- **Synonyms:** BSL
+- **Alternatives:**
+  - `american-sign-language` (related)
+
+### Bulgarian
+- **Slug:** `bulgarian`
+- **Synonyms:** Български
+
+### Burmese
+- **Slug:** `burmese`
+- **Synonyms:** မြန်မာဘာသာ
+
+### Cantonese
+- **Slug:** `cantonese`
+- **Synonyms:** Yue Chinese, 粵語
+- **Alternatives:**
+  - `mandarin-chinese` (related)
+
+### Catalan
+- **Slug:** `catalan`
+- **Synonyms:** Català, Valencian
+- **Alternatives:**
+  - `spanish` (similar)
+
+### Cebuano
+- **Slug:** `cebuano`
+- **Synonyms:** Bisaya
+
+### Cherokee
+- **Slug:** `cherokee`
+- **Synonyms:** ᏣᎳᎩ
+
+### Chinese Sign Language
+- **Slug:** `chinese-sign-language`
+- **Synonyms:** CSL, 中国手语
+
+### Classical Chinese
+- **Slug:** `classical-chinese`
+- **Synonyms:** Literary Chinese, 文言文
+
+### Coptic
+- **Slug:** `coptic`
+
+### Cornish
+- **Slug:** `cornish`
+- **Synonyms:** Kernewek
+
+### Croatian
+- **Slug:** `croatian`
+- **Synonyms:** Hrvatski
+- **Alternatives:**
+  - `serbian` (similar)
+  - `bosnian` (similar)
+
+### Czech
+- **Slug:** `czech`
+- **Synonyms:** Čeština
+- **Alternatives:**
+  - `slovak` (similar)
+
+### Danish
+- **Slug:** `danish`
+- **Synonyms:** Dansk
+- **Alternatives:**
+  - `norwegian` (similar)
+  - `swedish` (similar)
+
+### Dothraki
+- **Slug:** `dothraki`
+
+### Dutch
+- **Slug:** `dutch`
+- **Synonyms:** Nederlands, Flemish
+- **Alternatives:**
+  - `german` (similar)
+
+### Egyptian Hieroglyphs
+- **Slug:** `egyptian-hieroglyphs`
+- **Synonyms:** Ancient Egyptian, Middle Egyptian
+
+### English as a Second Language
+- **Slug:** `english-second-language`
+- **Synonyms:** ESL, EFL, English as Foreign Language, ESOL
+
+### Esperanto
+- **Slug:** `esperanto`
+
+### Estonian
+- **Slug:** `estonian`
+- **Synonyms:** Eesti keel
+- **Alternatives:**
+  - `finnish` (similar)
+
+### Faroese
+- **Slug:** `faroese`
+- **Synonyms:** Føroyskt
+
+### Fijian
+- **Slug:** `fijian`
+- **Synonyms:** Na Vosa Vakaviti
+
+### Filipino
+- **Slug:** `filipino`
+- **Synonyms:** Tagalog, Pilipino
+
+### Finnish
+- **Slug:** `finnish`
+- **Synonyms:** Suomi
+- **Alternatives:**
+  - `hungarian` (similar)
+
+### French
+- **Slug:** `french`
+- **Synonyms:** Français
+- **Alternatives:**
+  - `spanish` (similar)
+  - `italian` (similar)
+
+### French Sign Language
+- **Slug:** `french-sign-language`
+- **Synonyms:** LSF, Langue des Signes Française
+
+### Fulani
+- **Slug:** `fulani`
+- **Synonyms:** Fula, Pulaar, Fulfulde
+
+### Galician
+- **Slug:** `galician`
+- **Synonyms:** Galego
+- **Alternatives:**
+  - `portuguese` (similar)
+
+### Georgian
+- **Slug:** `georgian`
+- **Synonyms:** ქართული, Kartuli
+
+### German
+- **Slug:** `german`
+- **Synonyms:** Deutsch
+- **Alternatives:**
+  - `dutch` (similar)
+
+### German Sign Language
+- **Slug:** `german-sign-language`
+- **Synonyms:** DGS, Deutsche Gebärdensprache
+
+### Greek
+- **Slug:** `greek-modern`
+- **Synonyms:** Modern Greek, Ελληνικά, Nea Ellinika
+
+### Greenlandic
+- **Slug:** `greenlandic`
+- **Synonyms:** Kalaallisut
+
+### Guarani
+- **Slug:** `guarani`
+- **Synonyms:** Avañe'ẽ
+
+### Gujarati
+- **Slug:** `gujarati`
+- **Synonyms:** ગુજરાતી
+
+### Hakka
+- **Slug:** `hakka`
+- **Synonyms:** 客家话
+
+### Hausa
+- **Slug:** `hausa`
+- **Synonyms:** Harshen Hausa
+
+### Hawaiian
+- **Slug:** `hawaiian`
+- **Synonyms:** ʻŌlelo Hawaiʻi
+
+### Hebrew
+- **Slug:** `hebrew-modern`
+- **Synonyms:** Modern Hebrew, עברית, Ivrit
+
+### High Valyrian
+- **Slug:** `high-valyrian`
+
+### Hindi
+- **Slug:** `hindi`
+- **Synonyms:** हिन्दी
+- **Alternatives:**
+  - `urdu` (similar)
+
+### Hmong
+- **Slug:** `hmong`
+- **Synonyms:** Miao
+
+### Hungarian
+- **Slug:** `hungarian`
+- **Synonyms:** Magyar
+- **Alternatives:**
+  - `finnish` (similar)
+
+### Icelandic
+- **Slug:** `icelandic`
+- **Synonyms:** Íslenska
+
+### Ido
+- **Slug:** `ido`
+- **Alternatives:**
+  - `esperanto` (similar)
+
+### Igbo
+- **Slug:** `igbo`
+- **Synonyms:** Ibo, Asụsụ Igbo
+
+### Indian Sign Language
+- **Slug:** `indian-sign-language`
+- **Synonyms:** ISL
+
+### Indonesian
+- **Slug:** `indonesian`
+- **Synonyms:** Bahasa Indonesia
+- **Alternatives:**
+  - `malay` (similar)
+
+### Interlingua
+- **Slug:** `interlingua`
+- **Synonyms:** IALA Interlingua
+- **Alternatives:**
+  - `esperanto` (similar)
+
+### International Sign
+- **Slug:** `international-sign`
+- **Synonyms:** IS, Gestuno
+
+### Inuktitut
+- **Slug:** `inuktitut`
+- **Synonyms:** ᐃᓄᒃᑎᑐᑦ
+
+### Irish
+- **Slug:** `irish`
+- **Synonyms:** Gaeilge, Irish Gaelic
+- **Alternatives:**
+  - `scottish-gaelic` (similar)
+
+### Italian
+- **Slug:** `italian`
+- **Synonyms:** Italiano
+- **Alternatives:**
+  - `spanish` (similar)
+  - `french` (similar)
+
+### Italian Sign Language
+- **Slug:** `italian-sign-language`
+- **Synonyms:** LIS, Lingua dei Segni Italiana
+
+### Japanese
+- **Slug:** `japanese`
+- **Synonyms:** Nihongo, 日本語
+
+### Japanese Sign Language
+- **Slug:** `japanese-sign-language`
+- **Synonyms:** JSL, 日本手話
+
+### Javanese
+- **Slug:** `javanese`
+- **Synonyms:** Basa Jawa
+
+### Kannada
+- **Slug:** `kannada`
+- **Synonyms:** ಕನ್ನಡ
+
+### Kazakh
+- **Slug:** `kazakh`
+- **Synonyms:** Қазақ тілі
+
+### Khmer
+- **Slug:** `khmer`
+- **Synonyms:** Cambodian, ភាសាខ្មែរ
+
+### Klingon
+- **Slug:** `klingon`
+- **Synonyms:** tlhIngan Hol
+
+### Korean
+- **Slug:** `korean`
+- **Synonyms:** Hangugeo, 한국어, Hangul
+
+### Kurdish
+- **Slug:** `kurdish`
+- **Synonyms:** Kurdî, کوردی
+
+### Kyrgyz
+- **Slug:** `kyrgyz`
+- **Synonyms:** Кыргызча
+
+### Lao
+- **Slug:** `lao`
+- **Synonyms:** Laotian, ພາສາລາວ
+
+### Latin
+- **Slug:** `latin`
+- **Synonyms:** Classical Latin, Latina
+
+### Latvian
+- **Slug:** `latvian`
+- **Synonyms:** Latviešu valoda
+- **Alternatives:**
+  - `lithuanian` (similar)
+
+### Lingala
+- **Slug:** `lingala`
+
+### Lithuanian
+- **Slug:** `lithuanian`
+- **Synonyms:** Lietuvių kalba
+- **Alternatives:**
+  - `latvian` (similar)
+
+### Lojban
+- **Slug:** `lojban`
+
+### Luxembourgish
+- **Slug:** `luxembourgish`
+- **Synonyms:** Lëtzebuergesch
+
+### Macedonian
+- **Slug:** `macedonian`
+- **Synonyms:** Македонски
+
+### Malagasy
+- **Slug:** `malagasy`
+
+### Malay
+- **Slug:** `malay`
+- **Synonyms:** Bahasa Melayu
+- **Alternatives:**
+  - `indonesian` (similar)
+
+### Malayalam
+- **Slug:** `malayalam`
+- **Synonyms:** മലയാളം
+
+### Maltese
+- **Slug:** `maltese`
+- **Synonyms:** Malti
+
+### Mandarin Chinese
+- **Slug:** `mandarin-chinese`
+- **Synonyms:** Mandarin, Putonghua, Standard Chinese
+- **Alternatives:**
+  - `cantonese` (related)
+
+### Manx
+- **Slug:** `manx`
+- **Synonyms:** Gaelg
+
+### Maori
+- **Slug:** `maori`
+- **Synonyms:** Te Reo Māori
+
+### Marathi
+- **Slug:** `marathi`
+- **Synonyms:** मराठी
+
+### Middle English
+- **Slug:** `middle-english`
+- **Alternatives:**
+  - `old-english` (related)
+
+### Min Nan
+- **Slug:** `min-nan`
+- **Synonyms:** Hokkien, Taiwanese, 闽南语
+
+### Mongolian
+- **Slug:** `mongolian`
+- **Synonyms:** Монгол хэл
+
+### Na'vi
+- **Slug:** `navi`
+
+### Nahuatl
+- **Slug:** `nahuatl`
+- **Synonyms:** Aztec
+
+### Navajo
+- **Slug:** `navajo`
+- **Synonyms:** Diné bizaad
+
+### Nepali
+- **Slug:** `nepali`
+- **Synonyms:** नेपाली
+
+### Norwegian
+- **Slug:** `norwegian`
+- **Synonyms:** Norsk, Bokmål, Nynorsk
+- **Alternatives:**
+  - `swedish` (similar)
+  - `danish` (similar)
+
+### Occitan
+- **Slug:** `occitan`
+- **Synonyms:** Provençal
+
+### Odia
+- **Slug:** `odia`
+- **Synonyms:** Oriya, ଓଡ଼ିଆ
+
+### Old English
+- **Slug:** `old-english`
+- **Synonyms:** Anglo-Saxon
+
+### Old Norse
+- **Slug:** `old-norse`
+- **Synonyms:** Old Scandinavian
+
+### Oromo
+- **Slug:** `oromo`
+- **Synonyms:** Afaan Oromoo
+
+### Pashto
+- **Slug:** `pashto`
+- **Synonyms:** Pushto, پښتو
+
+### Persian
+- **Slug:** `persian`
+- **Synonyms:** Farsi, فارسی, Dari
+
+### Phoenician
+- **Slug:** `phoenician`
+
+### Polish
+- **Slug:** `polish`
+- **Synonyms:** Polski, Język polski
+- **Alternatives:**
+  - `czech` (similar)
+
+### Portuguese
+- **Slug:** `portuguese`
+- **Synonyms:** Português, Brazilian Portuguese
+- **Alternatives:**
+  - `spanish` (similar)
+
+### Punjabi
+- **Slug:** `punjabi`
+- **Synonyms:** Panjabi, ਪੰਜਾਬੀ, پنجابی
+
+### Quechua
+- **Slug:** `quechua`
+- **Synonyms:** Runasimi
+
+### Quenya
+- **Slug:** `quenya`
+- **Synonyms:** High-elven
+- **Alternatives:**
+  - `sindarin` (related)
+
+### Romanian
+- **Slug:** `romanian`
+- **Synonyms:** Română, Rumanian
+- **Alternatives:**
+  - `italian` (similar)
+
+### Russian
+- **Slug:** `russian`
+- **Synonyms:** Русский
+- **Alternatives:**
+  - `ukrainian` (similar)
+  - `polish` (similar)
+
+### Russian Sign Language
+- **Slug:** `russian-sign-language`
+- **Synonyms:** RSL
+
+### Sami
+- **Slug:** `sami`
+- **Synonyms:** Saami, Northern Sami
+
+### Samoan
+- **Slug:** `samoan`
+- **Synonyms:** Gagana Samoa
+
+### Sanskrit
+- **Slug:** `sanskrit`
+- **Synonyms:** संस्कृतम्, Saṃskṛtam
+
+### Scottish Gaelic
+- **Slug:** `scottish-gaelic`
+- **Synonyms:** Gàidhlig, Scots Gaelic
+- **Alternatives:**
+  - `irish` (similar)
+
+### Serbian
+- **Slug:** `serbian`
+- **Synonyms:** Српски, Srpski
+- **Alternatives:**
+  - `croatian` (similar)
+  - `bosnian` (similar)
+
+### Shona
+- **Slug:** `shona`
+- **Synonyms:** chiShona
+
+### Sign Language (General)
+- **Slug:** `sign-language-general`
+- **Synonyms:** Sign
+
+### Sindarin
+- **Slug:** `sindarin`
+- **Synonyms:** Grey-elven
+- **Alternatives:**
+  - `quenya` (related)
+
+### Sindhi
+- **Slug:** `sindhi`
+- **Synonyms:** سنڌي, सिन्धी
+
+### Sinhala
+- **Slug:** `sinhala`
+- **Synonyms:** Sinhalese, සිංහල
+
+### Slovak
+- **Slug:** `slovak`
+- **Synonyms:** Slovenčina
+- **Alternatives:**
+  - `czech` (similar)
+
+### Slovenian
+- **Slug:** `slovenian`
+- **Synonyms:** Slovenščina
+
+### Somali
+- **Slug:** `somali`
+- **Synonyms:** Soomaali
+
+### Spanish
+- **Slug:** `spanish`
+- **Synonyms:** Español, Castilian, Castellano
+- **Alternatives:**
+  - `portuguese` (similar)
+  - `french` (similar)
+
+### Spanish Sign Language
+- **Slug:** `spanish-sign-language`
+- **Synonyms:** LSE, Lengua de Signos Española
+
+### Sumerian
+- **Slug:** `sumerian`
+
+### Sundanese
+- **Slug:** `sundanese`
+- **Synonyms:** Basa Sunda
+
+### Swahili
+- **Slug:** `swahili`
+- **Synonyms:** Kiswahili
+
+### Swedish
+- **Slug:** `swedish`
+- **Synonyms:** Svenska
+- **Alternatives:**
+  - `norwegian` (similar)
+  - `danish` (similar)
+
+### Tahitian
+- **Slug:** `tahitian`
+- **Synonyms:** Reo Tahiti
+
+### Tajik
+- **Slug:** `tajik`
+- **Synonyms:** Тоҷикӣ
+
+### Tamil
+- **Slug:** `tamil`
+- **Synonyms:** தமிழ்
+
+### Tatar
+- **Slug:** `tatar`
+- **Synonyms:** Татар теле
+
+### Telugu
+- **Slug:** `telugu`
+- **Synonyms:** తెలుగు
+
+### Thai
+- **Slug:** `thai`
+- **Synonyms:** ภาษาไทย
+
+### Tibetan
+- **Slug:** `tibetan`
+- **Synonyms:** བོད་སྐད་
+
+### Tigrinya
+- **Slug:** `tigrinya`
+- **Synonyms:** ትግርኛ
+
+### Toki Pona
+- **Slug:** `toki-pona`
+
+### Tongan
+- **Slug:** `tongan`
+- **Synonyms:** Lea Fakatonga
+
+### Turkish
+- **Slug:** `turkish`
+- **Synonyms:** Türkçe
+
+### Turkmen
+- **Slug:** `turkmen`
+- **Synonyms:** Türkmençe
+
+### Ukrainian
+- **Slug:** `ukrainian`
+- **Synonyms:** Українська
+- **Alternatives:**
+  - `russian` (similar)
+
+### Urdu
+- **Slug:** `urdu`
+- **Synonyms:** اردو
+- **Alternatives:**
+  - `hindi` (similar)
+
+### Uyghur
+- **Slug:** `uyghur`
+- **Synonyms:** ئۇيغۇرچە
+
+### Uzbek
+- **Slug:** `uzbek`
+- **Synonyms:** Oʻzbek tili
+
+### Vietnamese
+- **Slug:** `vietnamese`
+- **Synonyms:** Tiếng Việt
+
+### Volapük
+- **Slug:** `volapuk`
+
+### Welsh
+- **Slug:** `welsh`
+- **Synonyms:** Cymraeg
+- **Alternatives:**
+  - `irish` (similar)
+
+### Wolof
+- **Slug:** `wolof`
+
+### Wu Chinese
+- **Slug:** `wu-chinese`
+- **Synonyms:** Shanghainese, 吴语
+
+### Xhosa
+- **Slug:** `xhosa`
+- **Synonyms:** isiXhosa
+
+### Yiddish
+- **Slug:** `yiddish`
+- **Synonyms:** ייִדיש
+
+### Yoruba
+- **Slug:** `yoruba`
+- **Synonyms:** Èdè Yorùbá
+
+### Zhuang
+- **Slug:** `zhuang`
+- **Synonyms:** 壮语
+
+### Zulu
+- **Slug:** `zulu`
+- **Synonyms:** isiZulu
+
+---
+
+## linguistics
+
+### Bilingualism
+- **Slug:** `bilingualism`
+- **Synonyms:** Multilingualism
+
+### Comparative Linguistics
+- **Slug:** `comparative-linguistics`
+
+### Creole Languages
+- **Slug:** `creole-languages`
+- **Synonyms:** Pidgin Languages
+
+### Grammar Fundamentals
+- **Slug:** `grammar-fundamentals`
+- **Synonyms:** Syntax, Morphology
+
+### Historical Linguistics
+- **Slug:** `historical-linguistics`
+- **Synonyms:** Diachronic Linguistics
+
+### Interpretation
+- **Slug:** `interpretation`
+- **Synonyms:** Simultaneous Interpretation, Consecutive Interpretation
+
+### Language Acquisition
+- **Slug:** `language-acquisition`
+- **Synonyms:** Second Language Acquisition, SLA
+
+### Language Immersion
+- **Slug:** `language-immersion`
+- **Synonyms:** Immersion Learning
+
+### Language Pedagogy
+- **Slug:** `language-pedagogy`
+- **Synonyms:** Language Teaching, TESOL, TEFL
+
+### Linguistics
+- **Slug:** `linguistics-study`
+- **Synonyms:** Language Science
+
+### Phonetics
+- **Slug:** `phonetics`
+- **Synonyms:** Pronunciation, Articulatory Phonetics
+
+### Psycholinguistics
+- **Slug:** `psycholinguistics`
+
+### Sociolinguistics
+- **Slug:** `sociolinguistics`
+
+### Translation
+- **Slug:** `translation`
+- **Synonyms:** Literary Translation
+
+### Vocabulary Building
+- **Slug:** `vocabulary-building`
+- **Synonyms:** Lexical Acquisition, Word Learning
 
 ---
 

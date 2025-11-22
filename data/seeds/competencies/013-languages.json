@@ -1,43 +1,1968 @@
 {
   "competencies": [
     {
-      "name": "Conversational Spanish",
-      "slug": "conversational-spanish",
-      "description": "Ability to hold conversations in Spanish",
+      "name": "Spanish",
+      "slug": "spanish",
+      "description": "Romance language spoken in Spain and Latin America",
       "category_slug": "languages",
-      "synonyms": [],
-      "tags": [
-        "Español",
-        "Spanish",
-        "Castellano"
-      ],
-      "icon": "lucide:message-circle"
+      "synonyms": ["Español", "Castilian", "Castellano"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "portuguese",
+          "relationship_type": "similar",
+          "notes": "Similar Romance language structure"
+        },
+        {
+          "alternative_slug": "french",
+          "relationship_type": "similar",
+          "notes": "Related Romance language"
+        }
+      ]
     },
     {
-      "name": "Translation: English-Spanish",
-      "slug": "translation-english-spanish",
-      "description": "Written conversion from English to Spanish and back",
+      "name": "Mandarin Chinese",
+      "slug": "mandarin-chinese",
+      "description": "Standard Chinese language and most widely spoken language in the world",
       "category_slug": "languages",
-      "synonyms": [],
-      "tags": [
-        "Español",
-        "Spanish",
-        "Castellano"
-      ],
-      "icon": "lucide:message-circle"
+      "synonyms": ["Mandarin", "Putonghua", "Standard Chinese"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "cantonese",
+          "relationship_type": "related",
+          "notes": "Different Chinese language variety"
+        }
+      ]
     },
     {
-      "name": "Interpretation: English-Spanish",
-      "slug": "interpretation-english-spanish",
-      "description": "Verbal/auditory conversion from English to Spanish and back for the accessibility of the audience",
+      "name": "French",
+      "slug": "french",
+      "description": "Romance language spoken in France and many countries worldwide",
+      "category_slug": "languages",
+      "synonyms": ["Français"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "spanish",
+          "relationship_type": "similar",
+          "notes": "Similar Romance language structure"
+        },
+        {
+          "alternative_slug": "italian",
+          "relationship_type": "similar",
+          "notes": "Related Romance language"
+        }
+      ]
+    },
+    {
+      "name": "English as a Second Language",
+      "slug": "english-second-language",
+      "description": "Learning English for non-native speakers",
+      "category_slug": "languages",
+      "synonyms": ["ESL", "EFL", "English as Foreign Language", "ESOL"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "German",
+      "slug": "german",
+      "description": "Germanic language spoken in Germany, Austria, and Switzerland",
+      "category_slug": "languages",
+      "synonyms": ["Deutsch"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "dutch",
+          "relationship_type": "similar",
+          "notes": "Related Germanic language"
+        }
+      ]
+    },
+    {
+      "name": "Italian",
+      "slug": "italian",
+      "description": "Romance language spoken in Italy and Switzerland",
+      "category_slug": "languages",
+      "synonyms": ["Italiano"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "spanish",
+          "relationship_type": "similar",
+          "notes": "Similar Romance language structure"
+        },
+        {
+          "alternative_slug": "french",
+          "relationship_type": "similar",
+          "notes": "Related Romance language"
+        }
+      ]
+    },
+    {
+      "name": "Portuguese",
+      "slug": "portuguese",
+      "description": "Romance language spoken in Portugal and Brazil",
+      "category_slug": "languages",
+      "synonyms": ["Português", "Brazilian Portuguese"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "spanish",
+          "relationship_type": "similar",
+          "notes": "Very similar Romance language"
+        }
+      ]
+    },
+    {
+      "name": "Japanese",
+      "slug": "japanese",
+      "description": "East Asian language with three writing systems (hiragana, katakana, kanji)",
+      "category_slug": "languages",
+      "synonyms": ["Nihongo", "日本語"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Korean",
+      "slug": "korean",
+      "description": "Language of Korea with unique Hangul writing system",
+      "category_slug": "languages",
+      "synonyms": ["Hangugeo", "한국어", "Hangul"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Arabic",
+      "slug": "arabic",
+      "description": "Semitic language spoken across the Middle East and North Africa",
+      "category_slug": "languages",
+      "synonyms": ["Modern Standard Arabic", "العربية"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Russian",
+      "slug": "russian",
+      "description": "Slavic language using Cyrillic script",
+      "category_slug": "languages",
+      "synonyms": ["Русский"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "ukrainian",
+          "relationship_type": "similar",
+          "notes": "Related Slavic language"
+        },
+        {
+          "alternative_slug": "polish",
+          "relationship_type": "similar",
+          "notes": "Related Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Hindi",
+      "slug": "hindi",
+      "description": "Indo-Aryan language and official language of India",
+      "category_slug": "languages",
+      "synonyms": ["हिन्दी"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "urdu",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible spoken form"
+        }
+      ]
+    },
+    {
+      "name": "Bengali",
+      "slug": "bengali",
+      "description": "Indo-Aryan language spoken in Bangladesh and West Bengal",
+      "category_slug": "languages",
+      "synonyms": ["Bangla", "বাংলা"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cantonese",
+      "slug": "cantonese",
+      "description": "Chinese language variety spoken in Hong Kong and Guangdong",
+      "category_slug": "languages",
+      "synonyms": ["Yue Chinese", "粵語"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "mandarin-chinese",
+          "relationship_type": "related",
+          "notes": "Different Chinese language variety"
+        }
+      ]
+    },
+    {
+      "name": "Dutch",
+      "slug": "dutch",
+      "description": "Germanic language spoken in the Netherlands and Belgium",
+      "category_slug": "languages",
+      "synonyms": ["Nederlands", "Flemish"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "german",
+          "relationship_type": "similar",
+          "notes": "Related Germanic language"
+        }
+      ]
+    },
+    {
+      "name": "Swedish",
+      "slug": "swedish",
+      "description": "North Germanic language spoken in Sweden and Finland",
+      "category_slug": "languages",
+      "synonyms": ["Svenska"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "norwegian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        },
+        {
+          "alternative_slug": "danish",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        }
+      ]
+    },
+    {
+      "name": "Norwegian",
+      "slug": "norwegian",
+      "description": "North Germanic language with two written forms (Bokmål and Nynorsk)",
+      "category_slug": "languages",
+      "synonyms": ["Norsk", "Bokmål", "Nynorsk"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "swedish",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        },
+        {
+          "alternative_slug": "danish",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        }
+      ]
+    },
+    {
+      "name": "Danish",
+      "slug": "danish",
+      "description": "North Germanic language spoken in Denmark",
+      "category_slug": "languages",
+      "synonyms": ["Dansk"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "norwegian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        },
+        {
+          "alternative_slug": "swedish",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Nordic language"
+        }
+      ]
+    },
+    {
+      "name": "Polish",
+      "slug": "polish",
+      "description": "West Slavic language using Latin script",
+      "category_slug": "languages",
+      "synonyms": ["Polski", "Język polski"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "czech",
+          "relationship_type": "similar",
+          "notes": "Related West Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Turkish",
+      "slug": "turkish",
+      "description": "Turkic language spoken in Turkey and Cyprus",
+      "category_slug": "languages",
+      "synonyms": ["Türkçe"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Vietnamese",
+      "slug": "vietnamese",
+      "description": "Austroasiatic language using Latin script with tone marks",
+      "category_slug": "languages",
+      "synonyms": ["Tiếng Việt"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Thai",
+      "slug": "thai",
+      "description": "Tai-Kadai language with unique script",
+      "category_slug": "languages",
+      "synonyms": ["ภาษาไทย"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Greek",
+      "slug": "greek-modern",
+      "description": "Modern Greek language descended from Ancient Greek",
+      "category_slug": "languages",
+      "synonyms": ["Modern Greek", "Ελληνικά", "Nea Ellinika"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hebrew",
+      "slug": "hebrew-modern",
+      "description": "Modern Hebrew language revived from Biblical Hebrew",
+      "category_slug": "languages",
+      "synonyms": ["Modern Hebrew", "עברית", "Ivrit"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Czech",
+      "slug": "czech",
+      "description": "West Slavic language spoken in the Czech Republic",
+      "category_slug": "languages",
+      "synonyms": ["Čeština"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "slovak",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Slovak",
+      "slug": "slovak",
+      "description": "West Slavic language spoken in Slovakia",
+      "category_slug": "languages",
+      "synonyms": ["Slovenčina"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "czech",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "description": "East Slavic language using Cyrillic script",
+      "category_slug": "languages",
+      "synonyms": ["Українська"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "russian",
+          "relationship_type": "similar",
+          "notes": "Related East Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Romanian",
+      "slug": "romanian",
+      "description": "Romance language with Slavic influences",
+      "category_slug": "languages",
+      "synonyms": ["Română", "Rumanian"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "italian",
+          "relationship_type": "similar",
+          "notes": "Related Romance language"
+        }
+      ]
+    },
+    {
+      "name": "Persian",
+      "slug": "persian",
+      "description": "Iranian language spoken in Iran, Afghanistan, and Tajikistan",
+      "category_slug": "languages",
+      "synonyms": ["Farsi", "فارسی", "Dari"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Urdu",
+      "slug": "urdu",
+      "description": "Indo-Aryan language official in Pakistan",
+      "category_slug": "languages",
+      "synonyms": ["اردو"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "hindi",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible spoken form"
+        }
+      ]
+    },
+    {
+      "name": "Tamil",
+      "slug": "tamil",
+      "description": "Dravidian language spoken in South India and Sri Lanka",
+      "category_slug": "languages",
+      "synonyms": ["தமிழ்"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Telugu",
+      "slug": "telugu",
+      "description": "Dravidian language spoken in South India",
+      "category_slug": "languages",
+      "synonyms": ["తెలుగు"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Punjabi",
+      "slug": "punjabi",
+      "description": "Indo-Aryan language spoken in Punjab region",
+      "category_slug": "languages",
+      "synonyms": ["Panjabi", "ਪੰਜਾਬੀ", "پنجابی"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Indonesian",
+      "slug": "indonesian",
+      "description": "Austronesian language and official language of Indonesia",
+      "category_slug": "languages",
+      "synonyms": ["Bahasa Indonesia"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "malay",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible standardized form"
+        }
+      ]
+    },
+    {
+      "name": "Malay",
+      "slug": "malay",
+      "description": "Austronesian language spoken in Malaysia and Brunei",
+      "category_slug": "languages",
+      "synonyms": ["Bahasa Melayu"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "indonesian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible standardized form"
+        }
+      ]
+    },
+    {
+      "name": "Filipino",
+      "slug": "filipino",
+      "description": "National language of the Philippines based on Tagalog",
+      "category_slug": "languages",
+      "synonyms": ["Tagalog", "Pilipino"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Swahili",
+      "slug": "swahili",
+      "description": "Bantu language widely spoken in East Africa",
+      "category_slug": "languages",
+      "synonyms": ["Kiswahili"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Finnish",
+      "slug": "finnish",
+      "description": "Finnic language unrelated to most European languages",
+      "category_slug": "languages",
+      "synonyms": ["Suomi"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "hungarian",
+          "relationship_type": "similar",
+          "notes": "Distantly related Uralic language"
+        }
+      ]
+    },
+    {
+      "name": "Hungarian",
+      "slug": "hungarian",
+      "description": "Uralic language unrelated to most European languages",
+      "category_slug": "languages",
+      "synonyms": ["Magyar"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "finnish",
+          "relationship_type": "similar",
+          "notes": "Distantly related Uralic language"
+        }
+      ]
+    },
+    {
+      "name": "Catalan",
+      "slug": "catalan",
+      "description": "Romance language spoken in Catalonia, Valencia, and Balearic Islands",
+      "category_slug": "languages",
+      "synonyms": ["Català", "Valencian"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "spanish",
+          "relationship_type": "similar",
+          "notes": "Related Romance language"
+        }
+      ]
+    },
+    {
+      "name": "Serbian",
+      "slug": "serbian",
+      "description": "South Slavic language using both Cyrillic and Latin scripts",
+      "category_slug": "languages",
+      "synonyms": ["Српски", "Srpski"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "croatian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        },
+        {
+          "alternative_slug": "bosnian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Croatian",
+      "slug": "croatian",
+      "description": "South Slavic language using Latin script",
+      "category_slug": "languages",
+      "synonyms": ["Hrvatski"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "serbian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        },
+        {
+          "alternative_slug": "bosnian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Bosnian",
+      "slug": "bosnian",
+      "description": "South Slavic language spoken in Bosnia and Herzegovina",
+      "category_slug": "languages",
+      "synonyms": ["Bosanski"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "serbian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        },
+        {
+          "alternative_slug": "croatian",
+          "relationship_type": "similar",
+          "notes": "Mutually intelligible South Slavic language"
+        }
+      ]
+    },
+    {
+      "name": "Bulgarian",
+      "slug": "bulgarian",
+      "description": "South Slavic language using Cyrillic script",
+      "category_slug": "languages",
+      "synonyms": ["Български"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Icelandic",
+      "slug": "icelandic",
+      "description": "North Germanic language preserving Old Norse features",
+      "category_slug": "languages",
+      "synonyms": ["Íslenska"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Welsh",
+      "slug": "welsh",
+      "description": "Celtic language spoken in Wales",
+      "category_slug": "languages",
+      "synonyms": ["Cymraeg"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "irish",
+          "relationship_type": "similar",
+          "notes": "Related Celtic language"
+        }
+      ]
+    },
+    {
+      "name": "Irish",
+      "slug": "irish",
+      "description": "Celtic language and first official language of Ireland",
+      "category_slug": "languages",
+      "synonyms": ["Gaeilge", "Irish Gaelic"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "scottish-gaelic",
+          "relationship_type": "similar",
+          "notes": "Related Goidelic language"
+        }
+      ]
+    },
+    {
+      "name": "Scottish Gaelic",
+      "slug": "scottish-gaelic",
+      "description": "Celtic language spoken in Scotland",
+      "category_slug": "languages",
+      "synonyms": ["Gàidhlig", "Scots Gaelic"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "irish",
+          "relationship_type": "similar",
+          "notes": "Related Goidelic language"
+        }
+      ]
+    },
+    {
+      "name": "Basque",
+      "slug": "basque",
+      "description": "Language isolate spoken in the Basque Country",
+      "category_slug": "languages",
+      "synonyms": ["Euskara"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Amharic",
+      "slug": "amharic",
+      "description": "Semitic language and official language of Ethiopia",
+      "category_slug": "languages",
+      "synonyms": ["አማርኛ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Zulu",
+      "slug": "zulu",
+      "description": "Bantu language spoken in South Africa",
+      "category_slug": "languages",
+      "synonyms": ["isiZulu"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Yoruba",
+      "slug": "yoruba",
+      "description": "Niger-Congo language spoken in West Africa",
+      "category_slug": "languages",
+      "synonyms": ["Èdè Yorùbá"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hausa",
+      "slug": "hausa",
+      "description": "Chadic language spoken in West Africa",
+      "category_slug": "languages",
+      "synonyms": ["Harshen Hausa"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Burmese",
+      "slug": "burmese",
+      "description": "Sino-Tibetan language spoken in Myanmar",
+      "category_slug": "languages",
+      "synonyms": ["မြန်မာဘာသာ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Khmer",
+      "slug": "khmer",
+      "description": "Austroasiatic language spoken in Cambodia",
+      "category_slug": "languages",
+      "synonyms": ["Cambodian", "ភាសាខ្មែរ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Latin",
+      "slug": "latin",
+      "description": "Classical language of ancient Rome and foundation of Romance languages",
+      "category_slug": "languages",
+      "synonyms": ["Classical Latin", "Latina"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ancient Greek",
+      "slug": "ancient-greek",
+      "description": "Classical language of ancient Greece",
+      "category_slug": "languages",
+      "synonyms": ["Classical Greek", "Koine Greek"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sanskrit",
+      "slug": "sanskrit",
+      "description": "Ancient Indo-Aryan language of Hindu scriptures",
+      "category_slug": "languages",
+      "synonyms": ["संस्कृतम्", "Saṃskṛtam"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Biblical Hebrew",
+      "slug": "biblical-hebrew",
+      "description": "Ancient form of Hebrew used in Hebrew Bible",
+      "category_slug": "languages",
+      "synonyms": ["Classical Hebrew", "Ancient Hebrew"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Old English",
+      "slug": "old-english",
+      "description": "Anglo-Saxon language from 450-1150 CE",
+      "category_slug": "languages",
+      "synonyms": ["Anglo-Saxon"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Classical Chinese",
+      "slug": "classical-chinese",
+      "description": "Literary form of Chinese used in classical texts",
+      "category_slug": "languages",
+      "synonyms": ["Literary Chinese", "文言文"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "American Sign Language",
+      "slug": "american-sign-language",
+      "description": "Visual language used by deaf communities in North America",
+      "category_slug": "languages",
+      "synonyms": ["ASL"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "british-sign-language",
+          "relationship_type": "related",
+          "notes": "Different sign language system"
+        }
+      ]
+    },
+    {
+      "name": "British Sign Language",
+      "slug": "british-sign-language",
+      "description": "Visual language used by deaf communities in the UK",
+      "category_slug": "languages",
+      "synonyms": ["BSL"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "american-sign-language",
+          "relationship_type": "related",
+          "notes": "Different sign language system"
+        }
+      ]
+    },
+    {
+      "name": "International Sign",
+      "slug": "international-sign",
+      "description": "Pidgin sign language used at international events",
+      "category_slug": "languages",
+      "synonyms": ["IS", "Gestuno"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Esperanto",
+      "slug": "esperanto",
+      "description": "Constructed international auxiliary language",
       "category_slug": "languages",
       "synonyms": [],
-      "tags": [
-        "Español",
-        "Spanish",
-        "Castellano"
-      ],
-      "icon": "lucide:message-circle"
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Klingon",
+      "slug": "klingon",
+      "description": "Constructed language from Star Trek universe",
+      "category_slug": "languages",
+      "synonyms": ["tlhIngan Hol"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sindarin",
+      "slug": "sindarin",
+      "description": "Elvish language created by J.R.R. Tolkien",
+      "category_slug": "languages",
+      "synonyms": ["Grey-elven"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "quenya",
+          "relationship_type": "related",
+          "notes": "Different Elvish language by Tolkien"
+        }
+      ]
+    },
+    {
+      "name": "Quenya",
+      "slug": "quenya",
+      "description": "High-elven language created by J.R.R. Tolkien",
+      "category_slug": "languages",
+      "synonyms": ["High-elven"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "sindarin",
+          "relationship_type": "related",
+          "notes": "Different Elvish language by Tolkien"
+        }
+      ]
+    },
+    {
+      "name": "High Valyrian",
+      "slug": "high-valyrian",
+      "description": "Constructed language from Game of Thrones",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Dothraki",
+      "slug": "dothraki",
+      "description": "Constructed language from Game of Thrones",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Albanian",
+      "slug": "albanian",
+      "description": "Indo-European language isolate spoken in Albania",
+      "category_slug": "languages",
+      "synonyms": ["Shqip"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Armenian",
+      "slug": "armenian",
+      "description": "Indo-European language with unique alphabet",
+      "category_slug": "languages",
+      "synonyms": ["Հայերեն", "Hayeren"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Georgian",
+      "slug": "georgian",
+      "description": "Kartvelian language with unique script",
+      "category_slug": "languages",
+      "synonyms": ["ქართული", "Kartuli"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mongolian",
+      "slug": "mongolian",
+      "description": "Mongolic language spoken in Mongolia",
+      "category_slug": "languages",
+      "synonyms": ["Монгол хэл"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Nepali",
+      "slug": "nepali",
+      "description": "Indo-Aryan language official in Nepal",
+      "category_slug": "languages",
+      "synonyms": ["नेपाली"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sinhala",
+      "slug": "sinhala",
+      "description": "Indo-Aryan language spoken in Sri Lanka",
+      "category_slug": "languages",
+      "synonyms": ["Sinhalese", "සිංහල"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lao",
+      "slug": "lao",
+      "description": "Tai-Kadai language spoken in Laos",
+      "category_slug": "languages",
+      "synonyms": ["Laotian", "ພາສາລາວ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lithuanian",
+      "slug": "lithuanian",
+      "description": "Baltic language preserving archaic features",
+      "category_slug": "languages",
+      "synonyms": ["Lietuvių kalba"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "latvian",
+          "relationship_type": "similar",
+          "notes": "Related Baltic language"
+        }
+      ]
+    },
+    {
+      "name": "Latvian",
+      "slug": "latvian",
+      "description": "Baltic language spoken in Latvia",
+      "category_slug": "languages",
+      "synonyms": ["Latviešu valoda"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "lithuanian",
+          "relationship_type": "similar",
+          "notes": "Related Baltic language"
+        }
+      ]
+    },
+    {
+      "name": "Estonian",
+      "slug": "estonian",
+      "description": "Finnic language spoken in Estonia",
+      "category_slug": "languages",
+      "synonyms": ["Eesti keel"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "finnish",
+          "relationship_type": "similar",
+          "notes": "Related Finnic language"
+        }
+      ]
+    },
+    {
+      "name": "Afrikaans",
+      "slug": "afrikaans",
+      "description": "West Germanic language developed from Dutch",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "dutch",
+          "relationship_type": "similar",
+          "notes": "Descended from Dutch"
+        }
+      ]
+    },
+    {
+      "name": "Xhosa",
+      "slug": "xhosa",
+      "description": "Bantu language with click consonants",
+      "category_slug": "languages",
+      "synonyms": ["isiXhosa"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Somali",
+      "slug": "somali",
+      "description": "Cushitic language spoken in Somalia",
+      "category_slug": "languages",
+      "synonyms": ["Soomaali"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tigrinya",
+      "slug": "tigrinya",
+      "description": "Semitic language spoken in Eritrea and Ethiopia",
+      "category_slug": "languages",
+      "synonyms": ["ትግርኛ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Igbo",
+      "slug": "igbo",
+      "description": "Niger-Congo language spoken in Nigeria",
+      "category_slug": "languages",
+      "synonyms": ["Ibo", "Asụsụ Igbo"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Shona",
+      "slug": "shona",
+      "description": "Bantu language spoken in Zimbabwe",
+      "category_slug": "languages",
+      "synonyms": ["chiShona"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lingala",
+      "slug": "lingala",
+      "description": "Bantu language spoken in Central Africa",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Malagasy",
+      "slug": "malagasy",
+      "description": "Austronesian language spoken in Madagascar",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Kazakh",
+      "slug": "kazakh",
+      "description": "Turkic language spoken in Kazakhstan",
+      "category_slug": "languages",
+      "synonyms": ["Қазақ тілі"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Uzbek",
+      "slug": "uzbek",
+      "description": "Turkic language spoken in Uzbekistan",
+      "category_slug": "languages",
+      "synonyms": ["Oʻzbek tili"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Azerbaijani",
+      "slug": "azerbaijani",
+      "description": "Turkic language spoken in Azerbaijan",
+      "category_slug": "languages",
+      "synonyms": ["Azeri", "Azərbaycan dili"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pashto",
+      "slug": "pashto",
+      "description": "Iranian language spoken in Afghanistan and Pakistan",
+      "category_slug": "languages",
+      "synonyms": ["Pushto", "پښتو"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Kurdish",
+      "slug": "kurdish",
+      "description": "Iranian language spoken by Kurdish people",
+      "category_slug": "languages",
+      "synonyms": ["Kurdî", "کوردی"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Marathi",
+      "slug": "marathi",
+      "description": "Indo-Aryan language spoken in Maharashtra",
+      "category_slug": "languages",
+      "synonyms": ["मराठी"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Gujarati",
+      "slug": "gujarati",
+      "description": "Indo-Aryan language spoken in Gujarat",
+      "category_slug": "languages",
+      "synonyms": ["ગુજરાતી"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Kannada",
+      "slug": "kannada",
+      "description": "Dravidian language spoken in Karnataka",
+      "category_slug": "languages",
+      "synonyms": ["ಕನ್ನಡ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Malayalam",
+      "slug": "malayalam",
+      "description": "Dravidian language spoken in Kerala",
+      "category_slug": "languages",
+      "synonyms": ["മലയാളം"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Odia",
+      "slug": "odia",
+      "description": "Indo-Aryan language spoken in Odisha",
+      "category_slug": "languages",
+      "synonyms": ["Oriya", "ଓଡ଼ିଆ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Assamese",
+      "slug": "assamese",
+      "description": "Indo-Aryan language spoken in Assam",
+      "category_slug": "languages",
+      "synonyms": ["অসমীয়া"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Maltese",
+      "slug": "maltese",
+      "description": "Semitic language with Romance influences",
+      "category_slug": "languages",
+      "synonyms": ["Malti"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Slovenian",
+      "slug": "slovenian",
+      "description": "South Slavic language spoken in Slovenia",
+      "category_slug": "languages",
+      "synonyms": ["Slovenščina"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Macedonian",
+      "slug": "macedonian",
+      "description": "South Slavic language using Cyrillic script",
+      "category_slug": "languages",
+      "synonyms": ["Македонски"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Belarusian",
+      "slug": "belarusian",
+      "description": "East Slavic language spoken in Belarus",
+      "category_slug": "languages",
+      "synonyms": ["Беларуская"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Luxembourgish",
+      "slug": "luxembourgish",
+      "description": "Germanic language spoken in Luxembourg",
+      "category_slug": "languages",
+      "synonyms": ["Lëtzebuergesch"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Faroese",
+      "slug": "faroese",
+      "description": "North Germanic language spoken in Faroe Islands",
+      "category_slug": "languages",
+      "synonyms": ["Føroyskt"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Breton",
+      "slug": "breton",
+      "description": "Celtic language spoken in Brittany",
+      "category_slug": "languages",
+      "synonyms": ["Brezhoneg"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cornish",
+      "slug": "cornish",
+      "description": "Revived Celtic language of Cornwall",
+      "category_slug": "languages",
+      "synonyms": ["Kernewek"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Manx",
+      "slug": "manx",
+      "description": "Revived Celtic language of Isle of Man",
+      "category_slug": "languages",
+      "synonyms": ["Gaelg"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Galician",
+      "slug": "galician",
+      "description": "Romance language spoken in Galicia",
+      "category_slug": "languages",
+      "synonyms": ["Galego"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "portuguese",
+          "relationship_type": "similar",
+          "notes": "Very similar to Portuguese"
+        }
+      ]
+    },
+    {
+      "name": "Occitan",
+      "slug": "occitan",
+      "description": "Romance language spoken in southern France",
+      "category_slug": "languages",
+      "synonyms": ["Provençal"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Yiddish",
+      "slug": "yiddish",
+      "description": "Germanic language with Hebrew influences",
+      "category_slug": "languages",
+      "synonyms": ["ייִדיש"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Nahuatl",
+      "slug": "nahuatl",
+      "description": "Uto-Aztecan language of the Aztecs",
+      "category_slug": "languages",
+      "synonyms": ["Aztec"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Quechua",
+      "slug": "quechua",
+      "description": "Indigenous language family of the Andes",
+      "category_slug": "languages",
+      "synonyms": ["Runasimi"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Guarani",
+      "slug": "guarani",
+      "description": "Indigenous language co-official in Paraguay",
+      "category_slug": "languages",
+      "synonyms": ["Avañe'ẽ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hawaiian",
+      "slug": "hawaiian",
+      "description": "Polynesian language of Hawaii",
+      "category_slug": "languages",
+      "synonyms": ["ʻŌlelo Hawaiʻi"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Maori",
+      "slug": "maori",
+      "description": "Polynesian language of New Zealand",
+      "category_slug": "languages",
+      "synonyms": ["Te Reo Māori"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Samoan",
+      "slug": "samoan",
+      "description": "Polynesian language of Samoa",
+      "category_slug": "languages",
+      "synonyms": ["Gagana Samoa"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tahitian",
+      "slug": "tahitian",
+      "description": "Polynesian language of French Polynesia",
+      "category_slug": "languages",
+      "synonyms": ["Reo Tahiti"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Navajo",
+      "slug": "navajo",
+      "description": "Na-Dené language of the Navajo people",
+      "category_slug": "languages",
+      "synonyms": ["Diné bizaad"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cherokee",
+      "slug": "cherokee",
+      "description": "Iroquoian language with unique syllabary",
+      "category_slug": "languages",
+      "synonyms": ["ᏣᎳᎩ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Inuktitut",
+      "slug": "inuktitut",
+      "description": "Eskimo-Aleut language spoken by Inuit",
+      "category_slug": "languages",
+      "synonyms": ["ᐃᓄᒃᑎᑐᑦ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Greenlandic",
+      "slug": "greenlandic",
+      "description": "Eskimo-Aleut language of Greenland",
+      "category_slug": "languages",
+      "synonyms": ["Kalaallisut"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sami",
+      "slug": "sami",
+      "description": "Uralic language family of northern Scandinavia",
+      "category_slug": "languages",
+      "synonyms": ["Saami", "Northern Sami"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tibetan",
+      "slug": "tibetan",
+      "description": "Sino-Tibetan language with unique script",
+      "category_slug": "languages",
+      "synonyms": ["བོད་སྐད་"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Uyghur",
+      "slug": "uyghur",
+      "description": "Turkic language spoken in Xinjiang",
+      "category_slug": "languages",
+      "synonyms": ["ئۇيغۇرچە"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tatar",
+      "slug": "tatar",
+      "description": "Turkic language spoken in Tatarstan",
+      "category_slug": "languages",
+      "synonyms": ["Татар теле"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Kyrgyz",
+      "slug": "kyrgyz",
+      "description": "Turkic language spoken in Kyrgyzstan",
+      "category_slug": "languages",
+      "synonyms": ["Кыргызча"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Turkmen",
+      "slug": "turkmen",
+      "description": "Turkic language spoken in Turkmenistan",
+      "category_slug": "languages",
+      "synonyms": ["Türkmençe"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tajik",
+      "slug": "tajik",
+      "description": "Iranian language spoken in Tajikistan",
+      "category_slug": "languages",
+      "synonyms": ["Тоҷикӣ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Javanese",
+      "slug": "javanese",
+      "description": "Austronesian language spoken in Java",
+      "category_slug": "languages",
+      "synonyms": ["Basa Jawa"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sundanese",
+      "slug": "sundanese",
+      "description": "Austronesian language spoken in West Java",
+      "category_slug": "languages",
+      "synonyms": ["Basa Sunda"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cebuano",
+      "slug": "cebuano",
+      "description": "Austronesian language spoken in the Philippines",
+      "category_slug": "languages",
+      "synonyms": ["Bisaya"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hmong",
+      "slug": "hmong",
+      "description": "Hmong-Mien language of Southeast Asia",
+      "category_slug": "languages",
+      "synonyms": ["Miao"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Zhuang",
+      "slug": "zhuang",
+      "description": "Tai-Kadai language spoken in southern China",
+      "category_slug": "languages",
+      "synonyms": ["壮语"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sign Language (General)",
+      "slug": "sign-language-general",
+      "description": "General sign language fundamentals applicable to multiple sign languages",
+      "category_slug": "languages",
+      "synonyms": ["Sign"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "French Sign Language",
+      "slug": "french-sign-language",
+      "description": "Visual language used by deaf communities in France",
+      "category_slug": "languages",
+      "synonyms": ["LSF", "Langue des Signes Française"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "German Sign Language",
+      "slug": "german-sign-language",
+      "description": "Visual language used by deaf communities in Germany",
+      "category_slug": "languages",
+      "synonyms": ["DGS", "Deutsche Gebärdensprache"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Japanese Sign Language",
+      "slug": "japanese-sign-language",
+      "description": "Visual language used by deaf communities in Japan",
+      "category_slug": "languages",
+      "synonyms": ["JSL", "日本手話"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Chinese Sign Language",
+      "slug": "chinese-sign-language",
+      "description": "Visual language used by deaf communities in China",
+      "category_slug": "languages",
+      "synonyms": ["CSL", "中国手语"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Australian Sign Language",
+      "slug": "australian-sign-language",
+      "description": "Visual language used by deaf communities in Australia",
+      "category_slug": "languages",
+      "synonyms": ["Auslan"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "british-sign-language",
+          "relationship_type": "similar",
+          "notes": "Historically related to BSL"
+        }
+      ]
+    },
+    {
+      "name": "Spanish Sign Language",
+      "slug": "spanish-sign-language",
+      "description": "Visual language used by deaf communities in Spain",
+      "category_slug": "languages",
+      "synonyms": ["LSE", "Lengua de Signos Española"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Italian Sign Language",
+      "slug": "italian-sign-language",
+      "description": "Visual language used by deaf communities in Italy",
+      "category_slug": "languages",
+      "synonyms": ["LIS", "Lingua dei Segni Italiana"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Russian Sign Language",
+      "slug": "russian-sign-language",
+      "description": "Visual language used by deaf communities in Russia",
+      "category_slug": "languages",
+      "synonyms": ["RSL"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Indian Sign Language",
+      "slug": "indian-sign-language",
+      "description": "Visual language used by deaf communities in India",
+      "category_slug": "languages",
+      "synonyms": ["ISL"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Oromo",
+      "slug": "oromo",
+      "description": "Cushitic language spoken in Ethiopia and Kenya",
+      "category_slug": "languages",
+      "synonyms": ["Afaan Oromoo"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Wolof",
+      "slug": "wolof",
+      "description": "Niger-Congo language spoken in Senegal and Gambia",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Fulani",
+      "slug": "fulani",
+      "description": "Niger-Congo language spoken across West Africa",
+      "category_slug": "languages",
+      "synonyms": ["Fula", "Pulaar", "Fulfulde"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Akan",
+      "slug": "akan",
+      "description": "Niger-Congo language spoken in Ghana",
+      "category_slug": "languages",
+      "synonyms": ["Twi", "Fante"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sindhi",
+      "slug": "sindhi",
+      "description": "Indo-Aryan language spoken in Pakistan and India",
+      "category_slug": "languages",
+      "synonyms": ["سنڌي", "सिन्धी"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Balochi",
+      "slug": "balochi",
+      "description": "Iranian language spoken in Pakistan, Iran, and Afghanistan",
+      "category_slug": "languages",
+      "synonyms": ["Baluchi", "بلۏچی"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Wu Chinese",
+      "slug": "wu-chinese",
+      "description": "Chinese language variety spoken in Shanghai and surrounding regions",
+      "category_slug": "languages",
+      "synonyms": ["Shanghainese", "吴语"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Min Nan",
+      "slug": "min-nan",
+      "description": "Chinese language variety spoken in southern Fujian and Taiwan",
+      "category_slug": "languages",
+      "synonyms": ["Hokkien", "Taiwanese", "闽南语"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hakka",
+      "slug": "hakka",
+      "description": "Chinese language variety spoken in southern China",
+      "category_slug": "languages",
+      "synonyms": ["客家话"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Fijian",
+      "slug": "fijian",
+      "description": "Austronesian language spoken in Fiji",
+      "category_slug": "languages",
+      "synonyms": ["Na Vosa Vakaviti"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tongan",
+      "slug": "tongan",
+      "description": "Polynesian language spoken in Tonga",
+      "category_slug": "languages",
+      "synonyms": ["Lea Fakatonga"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Toki Pona",
+      "slug": "toki-pona",
+      "description": "Minimalist constructed language with only 120-137 words",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lojban",
+      "slug": "lojban",
+      "description": "Logical constructed language based on predicate logic",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Na'vi",
+      "slug": "navi",
+      "description": "Constructed language from Avatar created by Paul Frommer",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Interlingua",
+      "slug": "interlingua",
+      "description": "International auxiliary language based on Romance languages",
+      "category_slug": "languages",
+      "synonyms": ["IALA Interlingua"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "esperanto",
+          "relationship_type": "similar",
+          "notes": "Alternative international auxiliary language"
+        }
+      ]
+    },
+    {
+      "name": "Ido",
+      "slug": "ido",
+      "description": "Reformed version of Esperanto",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "esperanto",
+          "relationship_type": "similar",
+          "notes": "Derived from Esperanto"
+        }
+      ]
+    },
+    {
+      "name": "Volapük",
+      "slug": "volapuk",
+      "description": "Early constructed international auxiliary language",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Middle English",
+      "slug": "middle-english",
+      "description": "Form of English from 1150-1500 CE",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "old-english",
+          "relationship_type": "related",
+          "notes": "Earlier form of English"
+        }
+      ]
+    },
+    {
+      "name": "Old Norse",
+      "slug": "old-norse",
+      "description": "North Germanic language of medieval Scandinavia",
+      "category_slug": "languages",
+      "synonyms": ["Old Scandinavian"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Akkadian",
+      "slug": "akkadian",
+      "description": "Ancient Semitic language of Mesopotamia",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sumerian",
+      "slug": "sumerian",
+      "description": "Ancient language isolate of Sumer",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Egyptian Hieroglyphs",
+      "slug": "egyptian-hieroglyphs",
+      "description": "Ancient Egyptian writing system and language",
+      "category_slug": "languages",
+      "synonyms": ["Ancient Egyptian", "Middle Egyptian"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Coptic",
+      "slug": "coptic",
+      "description": "Latest stage of Egyptian language written in Greek alphabet",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Aramaic",
+      "slug": "aramaic",
+      "description": "Ancient Semitic language still spoken in small communities",
+      "category_slug": "languages",
+      "synonyms": ["Classical Aramaic"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Phoenician",
+      "slug": "phoenician",
+      "description": "Ancient Semitic language of Phoenicia",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Phonetics",
+      "slug": "phonetics",
+      "description": "Study of speech sounds and pronunciation across languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Pronunciation", "Articulatory Phonetics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Grammar Fundamentals",
+      "slug": "grammar-fundamentals",
+      "description": "Core grammatical concepts applicable to multiple languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Syntax", "Morphology"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Vocabulary Building",
+      "slug": "vocabulary-building",
+      "description": "Techniques for expanding and retaining vocabulary in any language",
+      "category_slug": "linguistics",
+      "synonyms": ["Lexical Acquisition", "Word Learning"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Language Immersion",
+      "slug": "language-immersion",
+      "description": "Techniques for immersive language learning and practice",
+      "category_slug": "linguistics",
+      "synonyms": ["Immersion Learning"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Translation",
+      "slug": "translation",
+      "description": "Art and practice of translating between languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Literary Translation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Interpretation",
+      "slug": "interpretation",
+      "description": "Real-time oral translation between languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Simultaneous Interpretation", "Consecutive Interpretation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Linguistics",
+      "slug": "linguistics-study",
+      "description": "Scientific study of language structure and evolution",
+      "category_slug": "linguistics",
+      "synonyms": ["Language Science"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sociolinguistics",
+      "slug": "sociolinguistics",
+      "description": "Study of language in social contexts",
+      "category_slug": "linguistics",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Psycholinguistics",
+      "slug": "psycholinguistics",
+      "description": "Study of psychological processes in language",
+      "category_slug": "linguistics",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Historical Linguistics",
+      "slug": "historical-linguistics",
+      "description": "Study of language change and evolution over time",
+      "category_slug": "linguistics",
+      "synonyms": ["Diachronic Linguistics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Comparative Linguistics",
+      "slug": "comparative-linguistics",
+      "description": "Study of similarities and differences between languages",
+      "category_slug": "linguistics",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Language Pedagogy",
+      "slug": "language-pedagogy",
+      "description": "Teaching methodologies for language instruction",
+      "category_slug": "linguistics",
+      "synonyms": ["Language Teaching", "TESOL", "TEFL"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bilingualism",
+      "slug": "bilingualism",
+      "description": "Study and practice of using two languages fluently",
+      "category_slug": "linguistics",
+      "synonyms": ["Multilingualism"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Language Acquisition",
+      "slug": "language-acquisition",
+      "description": "Process and theory of learning languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Second Language Acquisition", "SLA"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Creole Languages",
+      "slug": "creole-languages",
+      "description": "Study of creole and pidgin languages",
+      "category_slug": "linguistics",
+      "synonyms": ["Pidgin Languages"],
+      "prerequisites": [],
+      "alternatives": []
     }
   ]
 }
