@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T02:49:39.139Z
-**Total Competencies:** 980
+**Generated:** 2025-11-22T03:02:40.906Z
+**Total Competencies:** 982
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -27,10 +27,10 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **game-development** (3)
 - **graphic-design** (18)
 - **home-lifestyle** (50)
+- **languages** (3)
 - **mobile-development** (4)
 - **motion-3d** (16)
 - **music** (59)
-- **natural-languages** (1)
 - **photography-video** (3)
 - **programming** (48)
 - **recreation-hobbies** (39)
@@ -269,6 +269,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `containerd` - Containerd (cloud-devops)
 - `contemporary-dance` - Contemporary Dance (dance)
 - `content-writing` - Content Writing (writing)
+- `conversational-spanish` - Conversational Spanish (languages)
 - `cooking` - Cooking (home-lifestyle)
 - `copywriting-skill` - Copywriting (writing)
 - `coq` - Coq (programming)
@@ -493,6 +494,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `inkscape` - Inkscape (graphic-design)
 - `insomnia` - Insomnia (backend-development)
 - `interior-design` - Interior Design (home-lifestyle)
+- `interpretation-english-spanish` - Interpretation: English-Spanish (languages)
 - `invision` - InVision (uiux-design)
 - `ipfs` - IPFS (blockchain-web3)
 - `irish-dance` - Irish Dance (dance)
@@ -872,7 +874,6 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `sourdough-baking` - Sourdough Baking (home-lifestyle)
 - `sous-vide` - Sous Vide (home-lifestyle)
 - `spacy` - spaCy (data-science)
-- `spanish` - Spanish (natural-languages)
 - `speedcubing` - Speedcubing (recreation-hobbies)
 - `speedrunning` - Speedrunning (recreation-hobbies)
 - `spine` - Spine (motion-3d)
@@ -944,6 +945,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `together-ai` - Together AI (data-science)
 - `toon-boom-harmony` - Toon Boom Harmony (motion-3d)
 - `traefik` - Traefik (cloud-devops)
+- `translation-english-spanish` - Translation: English-Spanish (languages)
 - `travis-ci` - Travis CI (cloud-devops)
 - `trivy` - Trivy (cloud-devops)
 - `trombone` - Trombone (music)

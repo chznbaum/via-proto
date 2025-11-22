@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T02:49:39.142Z
-**Total Competencies:** 980
+**Generated:** 2025-11-22T03:02:40.908Z
+**Total Competencies:** 982
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -27,10 +27,10 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [game-development](#game-development) (3)
 - [graphic-design](#graphic-design) (18)
 - [home-lifestyle](#home-lifestyle) (50)
+- [languages](#languages) (3)
 - [mobile-development](#mobile-development) (4)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (59)
-- [natural-languages](#natural-languages) (1)
 - [photography-video](#photography-video) (3)
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
@@ -4146,6 +4146,22 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## languages
+
+### Conversational Spanish
+- **Slug:** `conversational-spanish`
+- **Icon:** `lucide:message-circle`
+
+### Interpretation: English-Spanish
+- **Slug:** `interpretation-english-spanish`
+- **Icon:** `lucide:message-circle`
+
+### Translation: English-Spanish
+- **Slug:** `translation-english-spanish`
+- **Icon:** `lucide:message-circle`
+
+---
+
 ## mobile-development
 
 ### Dart
@@ -4532,15 +4548,6 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Violin
 - **Slug:** `violin`
 - **Synonyms:** Violin Playing
-
----
-
-## natural-languages
-
-### Spanish
-- **Slug:** `spanish`
-- **Icon:** `lucide:message-circle`
-- **Synonyms:** Español, Spanish Language, Castellano
 
 ---
 

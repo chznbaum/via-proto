@@ -1,13 +1,40 @@
 {
   "competencies": [
     {
-      "name": "Spanish",
-      "slug": "spanish",
-      "description": "Romance language spoken by over 500 million people worldwide",
-      "category_slug": "natural-languages",
-      "synonyms": [
+      "name": "Conversational Spanish",
+      "slug": "conversational-spanish",
+      "description": "Ability to hold conversations in Spanish",
+      "category_slug": "languages",
+      "synonyms": [],
+      "tags": [
         "Español",
-        "Spanish Language",
+        "Spanish",
+        "Castellano"
+      ],
+      "icon": "lucide:message-circle"
+    },
+    {
+      "name": "Translation: English-Spanish",
+      "slug": "translation-english-spanish",
+      "description": "Written conversion from English to Spanish and back",
+      "category_slug": "languages",
+      "synonyms": [],
+      "tags": [
+        "Español",
+        "Spanish",
+        "Castellano"
+      ],
+      "icon": "lucide:message-circle"
+    },
+    {
+      "name": "Interpretation: English-Spanish",
+      "slug": "interpretation-english-spanish",
+      "description": "Verbal/auditory conversion from English to Spanish and back for the accessibility of the audience",
+      "category_slug": "languages",
+      "synonyms": [],
+      "tags": [
+        "Español",
+        "Spanish",
         "Castellano"
       ],
       "icon": "lucide:message-circle"
