@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T20:38:18.565Z
-**Total Topics:** 782
+**Generated:** 2025-11-22T20:50:30.948Z
+**Total Topics:** 877
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -23,6 +23,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [music](#music) (181)
 - [programming](#programming) (73)
 - [software-testing](#software-testing) (3)
+- [writing](#writing) (95)
 
 ---
 
@@ -5222,6 +5223,663 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `mocha`
 - **Supporting Competencies:** `vuejs`, `javascript`
 - **Source File:** 001-programming.json
+
+---
+
+## writing
+
+### Academic writing and research papers
+- **Slug:** `academic-writing-research`
+- **Description:** Write scholarly papers with proper citations, methodology, and academic conventions
+- **Primary Competencies:** `academic-writing`
+- **Supporting Competencies:** `essay-writing`
+- **Source File:** 015-writing.json
+
+### Blogging and building an audience
+- **Slug:** `blogging-audience-building`
+- **Description:** Write engaging blog posts that attract and retain readers over time
+- **Primary Competencies:** `blogging`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Building a knowledge base with Obsidian
+- **Slug:** `knowledge-base-obsidian`
+- **Description:** Create interconnected notes and build a personal knowledge system with Obsidian
+- **Primary Competencies:** `obsidian`
+- **Source File:** 015-writing.json
+
+### Building fantasy worlds with World Anvil
+- **Slug:** `worldbuilding-world-anvil`
+- **Description:** Create and organize detailed fantasy and sci-fi worlds using World Anvil
+- **Primary Competencies:** `world-anvil`
+- **Supporting Competencies:** `worldbuilding`, `fantasy-writing`
+- **Source File:** 015-writing.json
+
+### Business writing for professionals
+- **Slug:** `business-writing-professional`
+- **Description:** Write clear business documents including reports, proposals, and emails
+- **Primary Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Content writing for websites and marketing
+- **Slug:** `content-writing-web`
+- **Description:** Write engaging web content that informs readers and drives conversions
+- **Primary Competencies:** `content-writing`
+- **Supporting Competencies:** `copywriting-skill`
+- **Source File:** 015-writing.json
+
+### Copy editing for grammar and consistency
+- **Slug:** `copy-editing-grammar`
+- **Description:** Correct grammar, spelling, and ensure style guide consistency
+- **Primary Competencies:** `editing-writing`
+- **Supporting Competencies:** `proofreading`
+- **Source File:** 015-writing.json
+
+### Copywriting for advertising and sales
+- **Slug:** `copywriting-advertising`
+- **Description:** Write persuasive copy for ads, landing pages, and marketing campaigns
+- **Primary Competencies:** `copywriting-skill`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Crafting compelling short stories
+- **Slug:** `crafting-short-stories`
+- **Description:** Write complete short stories with strong openings, middles, and endings
+- **Primary Competencies:** `short-story-writing`
+- **Supporting Competencies:** `fiction-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Creating character backstories
+- **Slug:** `character-backstories`
+- **Description:** Develop rich character histories that inform present-day actions and motivations
+- **Primary Competencies:** `character-development`
+- **Supporting Competencies:** `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Creating fictional cultures and societies
+- **Slug:** `fictional-cultures-worldbuilding`
+- **Description:** Design believable cultures with customs, religions, and social structures
+- **Primary Competencies:** `worldbuilding`
+- **Supporting Competencies:** `fantasy-writing`
+- **Source File:** 015-writing.json
+
+### Creative writing fundamentals
+- **Slug:** `creative-writing-fundamentals`
+- **Description:** Develop your creative voice and learn essential techniques for imaginative storytelling
+- **Primary Competencies:** `creative-writing`
+- **Supporting Competencies:** `storytelling`
+- **Source File:** 015-writing.json
+
+### Developing memorable characters
+- **Slug:** `character-development-fiction`
+- **Description:** Create three-dimensional characters with motivations, flaws, and authentic arcs
+- **Primary Competencies:** `character-development`
+- **Supporting Competencies:** `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Developmental editing for fiction
+- **Slug:** `developmental-editing-fiction`
+- **Description:** Revise story structure, character arcs, and plot for stronger narratives
+- **Primary Competencies:** `editing-writing`
+- **Supporting Competencies:** `fiction-writing`, `plot-development`
+- **Source File:** 015-writing.json
+
+### Editing and formatting with Reedsy Book Editor
+- **Slug:** `editing-reedsy-book-editor`
+- **Description:** Format and export professionally typeset books using Reedsy Book Editor
+- **Primary Competencies:** `reedsy-book-editor`
+- **Supporting Competencies:** `book-publishing`
+- **Source File:** 015-writing.json
+
+### Editing and revising manuscripts
+- **Slug:** `editing-revising-manuscripts`
+- **Description:** Revise and polish your writing through developmental and line editing
+- **Primary Competencies:** `editing-writing`
+- **Source File:** 015-writing.json
+
+### Editing manuscripts with ProWritingAid
+- **Slug:** `editing-prowritingaid`
+- **Description:** Strengthen your writing with ProWritingAid's in-depth style and grammar analysis
+- **Primary Competencies:** `prowritingaid`
+- **Supporting Competencies:** `editing-writing`
+- **Source File:** 015-writing.json
+
+### Email copywriting for conversions
+- **Slug:** `email-copywriting`
+- **Description:** Write compelling email campaigns that drive opens, clicks, and sales
+- **Primary Competencies:** `copywriting-skill`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Feature article writing
+- **Slug:** `feature-article-writing`
+- **Description:** Write long-form magazine and newspaper feature articles with narrative depth
+- **Primary Competencies:** `journalism`
+- **Supporting Competencies:** `storytelling`
+- **Source File:** 015-writing.json
+
+### Focused writing with Ulysses
+- **Slug:** `focused-writing-ulysses`
+- **Description:** Write distraction-free prose and organize your work with Ulysses
+- **Primary Competencies:** `ulysses`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Formatting books for print with Vellum
+- **Slug:** `book-formatting-vellum`
+- **Description:** Create beautiful print and ebook layouts using Vellum's design templates
+- **Primary Competencies:** `vellum`
+- **Supporting Competencies:** `self-publishing`
+- **Source File:** 015-writing.json
+
+### Formatting books with Atticus
+- **Slug:** `book-formatting-atticus`
+- **Description:** Format and design professional ebooks and print books using Atticus
+- **Primary Competencies:** `atticus`
+- **Supporting Competencies:** `self-publishing`
+- **Source File:** 015-writing.json
+
+### Ghostwriting business books
+- **Slug:** `ghostwriting-business-books`
+- **Description:** Write business books and thought leadership content for executives
+- **Primary Competencies:** `ghostwriting`
+- **Supporting Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Ghostwriting for clients and brands
+- **Slug:** `ghostwriting-clients`
+- **Description:** Write in others' voices for books, articles, and speeches as a ghostwriter
+- **Primary Competencies:** `ghostwriting`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Ghostwriting memoirs for clients
+- **Slug:** `ghostwriting-memoirs`
+- **Description:** Interview clients and craft their life stories as a memoir ghostwriter
+- **Primary Competencies:** `ghostwriting`
+- **Supporting Competencies:** `memoir-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Grammar checking with Grammarly
+- **Slug:** `grammar-checking-grammarly`
+- **Description:** Improve writing clarity and correctness using Grammarly's AI-powered suggestions
+- **Primary Competencies:** `grammarly`
+- **Supporting Competencies:** `editing-writing`, `proofreading`
+- **Source File:** 015-writing.json
+
+### Grant writing for nonprofits
+- **Slug:** `grant-writing-nonprofits`
+- **Description:** Write compelling grant proposals that secure funding for nonprofit organizations
+- **Primary Competencies:** `grant-writing`
+- **Supporting Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Investigative journalism
+- **Slug:** `investigative-journalism`
+- **Description:** Research and write in-depth investigative stories that uncover truth
+- **Primary Competencies:** `journalism`
+- **Source File:** 015-writing.json
+
+### Journalism and news writing
+- **Slug:** `journalism-news-writing`
+- **Description:** Write accurate news stories with the inverted pyramid and journalistic standards
+- **Primary Competencies:** `journalism`
+- **Source File:** 015-writing.json
+
+### Landing page copywriting
+- **Slug:** `landing-page-copy`
+- **Description:** Create persuasive landing pages that convert visitors into customers
+- **Primary Competencies:** `copywriting-skill`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Line editing for style and flow
+- **Slug:** `line-editing-style`
+- **Description:** Polish prose at the sentence level for clarity, rhythm, and impact
+- **Primary Competencies:** `editing-writing`
+- **Source File:** 015-writing.json
+
+### Managing research and notes with Scrivener
+- **Slug:** `research-notes-scrivener`
+- **Description:** Organize research materials and writing notes for complex projects in Scrivener
+- **Primary Competencies:** `scrivener`
+- **Supporting Competencies:** `academic-writing`
+- **Source File:** 015-writing.json
+
+### Mapping fictional worlds
+- **Slug:** `mapping-fictional-worlds`
+- **Description:** Design geography, cities, and landmarks for fantasy and science fiction settings
+- **Primary Competencies:** `worldbuilding`
+- **Supporting Competencies:** `fantasy-writing`, `science-fiction-writing`
+- **Source File:** 015-writing.json
+
+### Marketing self-published books
+- **Slug:** `marketing-self-published-books`
+- **Description:** Promote and sell self-published books through ads, social media, and email
+- **Primary Competencies:** `self-publishing`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Minimalist writing with iA Writer
+- **Slug:** `minimalist-writing-ia-writer`
+- **Description:** Focus on your words with iA Writer's clean, distraction-free interface
+- **Primary Competencies:** `ia-writer`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Networked thinking with Roam Research
+- **Slug:** `networked-thinking-roam`
+- **Description:** Develop ideas through bi-directional linking and daily notes in Roam Research
+- **Primary Competencies:** `roam-research`
+- **Source File:** 015-writing.json
+
+### Organizing novels with yWriter
+- **Slug:** `organizing-novels-ywriter`
+- **Description:** Structure and track novel scenes, chapters, and characters with yWriter
+- **Primary Competencies:** `ywriter`
+- **Supporting Competencies:** `novel-writing`
+- **Source File:** 015-writing.json
+
+### Outlining novels and series
+- **Slug:** `novel-outlining`
+- **Description:** Plan and outline complete novels and multi-book series with detailed structure
+- **Primary Competencies:** `plot-development`
+- **Supporting Competencies:** `novel-writing`
+- **Source File:** 015-writing.json
+
+### Planning stories with Campfire Write
+- **Slug:** `story-planning-campfire`
+- **Description:** Develop characters, worlds, and plots using Campfire Write's planning tools
+- **Primary Competencies:** `campfire-write`
+- **Supporting Competencies:** `fiction-writing`, `worldbuilding`
+- **Source File:** 015-writing.json
+
+### Plotting novels and story structure
+- **Slug:** `plot-development-novels`
+- **Description:** Design compelling plots with rising action, conflicts, and satisfying resolutions
+- **Primary Competencies:** `plot-development`
+- **Supporting Competencies:** `fiction-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Professional blogging for income
+- **Slug:** `professional-blogging-income`
+- **Description:** Build and monetize a professional blog with consistent quality content
+- **Primary Competencies:** `blogging`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Proofreading for error-free writing
+- **Slug:** `proofreading-error-free`
+- **Description:** Catch and correct grammar, spelling, and formatting errors in final manuscripts
+- **Primary Competencies:** `proofreading`
+- **Supporting Competencies:** `editing-writing`
+- **Source File:** 015-writing.json
+
+### Querying literary agents
+- **Slug:** `querying-literary-agents`
+- **Description:** Write compelling query letters and synopses to secure agent representation
+- **Primary Competencies:** `book-publishing`
+- **Supporting Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Self-publishing books successfully
+- **Slug:** `self-publishing-success`
+- **Description:** Publish and market your own books through Amazon KDP and other platforms
+- **Primary Competencies:** `self-publishing`
+- **Supporting Competencies:** `book-publishing`
+- **Source File:** 015-writing.json
+
+### SEO content writing
+- **Slug:** `seo-content-writing`
+- **Description:** Write search-optimized content that ranks well and engages readers
+- **Primary Competencies:** `content-writing`
+- **Supporting Competencies:** `copywriting-skill`
+- **Source File:** 015-writing.json
+
+### Storytelling techniques for engaging narratives
+- **Slug:** `storytelling-techniques`
+- **Description:** Master the art of engaging readers through narrative structure and pacing
+- **Primary Competencies:** `storytelling`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Technical writing for engineering
+- **Slug:** `technical-writing-engineering`
+- **Description:** Document engineering processes, specifications, and technical reports
+- **Primary Competencies:** `technical-writing`
+- **Source File:** 015-writing.json
+
+### Technical writing for software documentation
+- **Slug:** `technical-writing-software`
+- **Description:** Create clear technical documentation, user guides, and API references
+- **Primary Competencies:** `technical-writing`
+- **Source File:** 015-writing.json
+
+### Traditional book publishing process
+- **Slug:** `traditional-book-publishing`
+- **Description:** Navigate the traditional publishing industry from query letters to book deals
+- **Primary Competencies:** `book-publishing`
+- **Source File:** 015-writing.json
+
+### Worldbuilding for fiction
+- **Slug:** `worldbuilding-fiction`
+- **Description:** Create immersive fictional worlds with consistent rules, cultures, and histories
+- **Primary Competencies:** `worldbuilding`
+- **Supporting Competencies:** `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing and completing your first novel
+- **Slug:** `writing-first-novel`
+- **Description:** Develop, write, and finish a complete novel manuscript from concept to final draft
+- **Primary Competencies:** `novel-writing`
+- **Supporting Competencies:** `fiction-writing`, `plot-development`, `character-development`
+- **Source File:** 015-writing.json
+
+### Writing and organizing with Notion
+- **Slug:** `writing-organizing-notion`
+- **Description:** Manage writing projects and documentation using Notion's flexible workspace
+- **Primary Competencies:** `notion`
+- **Supporting Competencies:** `content-writing`
+- **Source File:** 015-writing.json
+
+### Writing authentic dialogue
+- **Slug:** `dialogue-writing-authentic`
+- **Description:** Craft realistic dialogue that reveals character and advances the story
+- **Primary Competencies:** `dialogue-writing`
+- **Supporting Competencies:** `fiction-writing`, `character-development`
+- **Source File:** 015-writing.json
+
+### Writing biographies and life histories
+- **Slug:** `biography-writing`
+- **Description:** Research and write biographies that bring historical figures and real people to life
+- **Primary Competencies:** `biography-writing`
+- **Supporting Competencies:** `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing business proposals
+- **Slug:** `business-proposal-writing`
+- **Description:** Create persuasive business proposals that win clients and contracts
+- **Primary Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Writing character arcs
+- **Slug:** `character-arc-writing`
+- **Description:** Design transformative character journeys with clear change and growth
+- **Primary Competencies:** `character-development`
+- **Supporting Competencies:** `plot-development`, `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing clearly with Hemingway Editor
+- **Slug:** `clear-writing-hemingway`
+- **Description:** Simplify and strengthen your prose using Hemingway Editor's readability tools
+- **Primary Competencies:** `hemingway-editor`
+- **Supporting Competencies:** `editing-writing`
+- **Source File:** 015-writing.json
+
+### Writing contemporary poetry
+- **Slug:** `contemporary-poetry`
+- **Description:** Compose modern free verse and experimental poetry with vivid imagery
+- **Primary Competencies:** `poetry`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Writing detective mysteries
+- **Slug:** `detective-mystery-writing`
+- **Description:** Craft fair-play detective mysteries with clues, suspects, and logical solutions
+- **Primary Competencies:** `mystery-writing`
+- **Supporting Competencies:** `plot-development`, `novel-writing`
+- **Source File:** 015-writing.json
+
+### Writing dialect and accents
+- **Slug:** `dialect-accent-writing`
+- **Description:** Represent regional dialects and accents authentically in dialogue
+- **Primary Competencies:** `dialogue-writing`
+- **Supporting Competencies:** `character-development`
+- **Source File:** 015-writing.json
+
+### Writing family memoirs
+- **Slug:** `family-memoir-writing`
+- **Description:** Preserve family stories and histories in engaging memoir narratives
+- **Primary Competencies:** `memoir-writing`
+- **Supporting Competencies:** `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing fantasy novels and magic systems
+- **Slug:** `fantasy-novel-writing`
+- **Description:** Build fantasy worlds with consistent magic systems, mythologies, and epic storytelling
+- **Primary Competencies:** `fantasy-writing`
+- **Supporting Competencies:** `fiction-writing`, `worldbuilding`
+- **Source File:** 015-writing.json
+
+### Writing fantasy with magic systems
+- **Slug:** `fantasy-magic-systems`
+- **Description:** Design internally consistent magic systems for fantasy novels and worlds
+- **Primary Competencies:** `fantasy-writing`
+- **Supporting Competencies:** `worldbuilding`, `novel-writing`
+- **Source File:** 015-writing.json
+
+### Writing feature film screenplays
+- **Slug:** `feature-screenplay-writing`
+- **Description:** Structure and write 90-120 page feature film scripts with three-act structure
+- **Primary Competencies:** `screenwriting`
+- **Supporting Competencies:** `plot-development`, `dialogue-writing`
+- **Source File:** 015-writing.json
+
+### Writing fiction for beginners
+- **Slug:** `fiction-writing-beginners`
+- **Description:** Learn to craft compelling fictional narratives with plot, character, and setting
+- **Primary Competencies:** `fiction-writing`
+- **Supporting Competencies:** `creative-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing flash fiction and microstories
+- **Slug:** `flash-fiction-microstories`
+- **Description:** Create impactful ultra-short stories under 1000 words with precision and economy
+- **Primary Competencies:** `flash-fiction`
+- **Supporting Competencies:** `short-story-writing`, `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing formal poetry and sonnets
+- **Slug:** `formal-poetry-sonnets`
+- **Description:** Master traditional poetic forms including sonnets, villanelles, and haiku
+- **Primary Competencies:** `poetry`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Writing full-length plays
+- **Slug:** `full-length-play-writing`
+- **Description:** Develop multi-act stage plays with complex characters and dramatic arcs
+- **Primary Competencies:** `playwriting`
+- **Supporting Competencies:** `character-development`, `dialogue-writing`, `plot-development`
+- **Source File:** 015-writing.json
+
+### Writing historical biographies
+- **Slug:** `historical-biography-writing`
+- **Description:** Research and write comprehensive biographies of historical figures
+- **Primary Competencies:** `biography-writing`
+- **Supporting Competencies:** `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing horror that terrifies readers
+- **Slug:** `horror-writing-techniques`
+- **Description:** Create suspenseful horror fiction with atmosphere, dread, and psychological impact
+- **Primary Competencies:** `horror-writing`
+- **Supporting Competencies:** `fiction-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing literary essays
+- **Slug:** `literary-essay-writing`
+- **Description:** Analyze literature and craft insightful critical essays
+- **Primary Competencies:** `essay-writing`
+- **Supporting Competencies:** `academic-writing`
+- **Source File:** 015-writing.json
+
+### Writing mystery novels and plotting clues
+- **Slug:** `mystery-novel-writing`
+- **Description:** Craft mystery stories with fair-play clues, red herrings, and satisfying revelations
+- **Primary Competencies:** `mystery-writing`
+- **Supporting Competencies:** `fiction-writing`, `plot-development`
+- **Source File:** 015-writing.json
+
+### Writing novels with Novlr
+- **Slug:** `novel-writing-novlr`
+- **Description:** Draft and track your novel progress with Novlr's cloud-based writing platform
+- **Primary Competencies:** `novlr`
+- **Supporting Competencies:** `novel-writing`
+- **Source File:** 015-writing.json
+
+### Writing novels with Scrivener
+- **Slug:** `novel-writing-scrivener`
+- **Description:** Organize and write long-form fiction using Scrivener's powerful writing tools
+- **Primary Competencies:** `scrivener`
+- **Supporting Competencies:** `novel-writing`, `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing one-act plays
+- **Slug:** `one-act-play-writing`
+- **Description:** Craft short theatrical plays with focused action and limited characters
+- **Primary Competencies:** `playwriting`
+- **Supporting Competencies:** `dialogue-writing`
+- **Source File:** 015-writing.json
+
+### Writing personal essays
+- **Slug:** `personal-essay-writing`
+- **Description:** Craft reflective personal essays that explore ideas through experience
+- **Primary Competencies:** `essay-writing`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Writing personal memoirs and life stories
+- **Slug:** `memoir-writing-personal`
+- **Description:** Craft compelling memoirs that transform personal experiences into universal stories
+- **Primary Competencies:** `memoir-writing`
+- **Supporting Competencies:** `creative-writing`, `storytelling`
+- **Source File:** 015-writing.json
+
+### Writing persuasive essays
+- **Slug:** `persuasive-essay-writing`
+- **Description:** Craft well-structured essays that argue positions with logic and evidence
+- **Primary Competencies:** `essay-writing`
+- **Source File:** 015-writing.json
+
+### Writing poetry with rhythm and imagery
+- **Slug:** `poetry-writing-fundamentals`
+- **Description:** Compose poetry using meter, rhyme, free verse, and vivid imagery
+- **Primary Competencies:** `poetry`
+- **Supporting Competencies:** `creative-writing`
+- **Source File:** 015-writing.json
+
+### Writing psychological horror
+- **Slug:** `psychological-horror-writing`
+- **Description:** Create horror through psychological tension, atmosphere, and character fears
+- **Primary Competencies:** `horror-writing`
+- **Supporting Competencies:** `character-development`, `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing romance with character chemistry
+- **Slug:** `romance-character-chemistry`
+- **Description:** Develop believable romantic relationships with tension and emotional payoff
+- **Primary Competencies:** `romance-writing`
+- **Supporting Competencies:** `character-development`, `dialogue-writing`
+- **Source File:** 015-writing.json
+
+### Writing romance with emotional depth
+- **Slug:** `romance-writing-emotional`
+- **Description:** Write romance stories with authentic relationships, chemistry, and emotional arcs
+- **Primary Competencies:** `romance-writing`
+- **Supporting Competencies:** `fiction-writing`, `character-development`, `dialogue-writing`
+- **Source File:** 015-writing.json
+
+### Writing science fiction with worldbuilding
+- **Slug:** `sci-fi-worldbuilding`
+- **Description:** Build believable future societies and technologies for science fiction stories
+- **Primary Competencies:** `science-fiction-writing`
+- **Supporting Competencies:** `worldbuilding`, `novel-writing`
+- **Source File:** 015-writing.json
+
+### Writing science fiction worlds and stories
+- **Slug:** `science-fiction-writing`
+- **Description:** Create compelling science fiction with plausible technology, alien worlds, and speculative concepts
+- **Primary Competencies:** `science-fiction-writing`
+- **Supporting Competencies:** `fiction-writing`, `worldbuilding`
+- **Source File:** 015-writing.json
+
+### Writing screenplays for film and television
+- **Slug:** `screenplay-writing-film-tv`
+- **Description:** Write properly formatted screenplays with strong visual storytelling and dialogue
+- **Primary Competencies:** `screenwriting`
+- **Supporting Competencies:** `dialogue-writing`, `character-development`
+- **Source File:** 015-writing.json
+
+### Writing screenplays with Final Draft
+- **Slug:** `screenwriting-final-draft`
+- **Description:** Write professionally formatted screenplays using industry-standard Final Draft
+- **Primary Competencies:** `final-draft`
+- **Supporting Competencies:** `screenwriting`
+- **Source File:** 015-writing.json
+
+### Writing scripts with Celtx
+- **Slug:** `scriptwriting-celtx`
+- **Description:** Write screenplays, stage plays, and audio-visual scripts with Celtx
+- **Primary Competencies:** `celtx`
+- **Supporting Competencies:** `screenwriting`, `playwriting`
+- **Source File:** 015-writing.json
+
+### Writing stage plays and theatrical dialogue
+- **Slug:** `playwriting-stage`
+- **Description:** Craft plays for live performance with compelling dialogue and stage-worthy action
+- **Primary Competencies:** `playwriting`
+- **Supporting Competencies:** `dialogue-writing`, `character-development`
+- **Source File:** 015-writing.json
+
+### Writing subplots and parallel storylines
+- **Slug:** `subplots-parallel-stories`
+- **Description:** Weave multiple plot threads together in complex narratives
+- **Primary Competencies:** `plot-development`
+- **Supporting Competencies:** `fiction-writing`
+- **Source File:** 015-writing.json
+
+### Writing successful grant proposals
+- **Slug:** `grant-proposal-writing`
+- **Description:** Research funders and write compelling proposals that win grants
+- **Primary Competencies:** `grant-writing`
+- **Supporting Competencies:** `business-writing`
+- **Source File:** 015-writing.json
+
+### Writing television pilot scripts
+- **Slug:** `tv-pilot-writing`
+- **Description:** Create compelling TV pilot episodes that launch series with strong characters
+- **Primary Competencies:** `screenwriting`
+- **Supporting Competencies:** `character-development`, `dialogue-writing`
+- **Source File:** 015-writing.json
+
+### Writing thesis and dissertations
+- **Slug:** `thesis-dissertation-writing`
+- **Description:** Complete graduate-level research theses with proper academic methodology
+- **Primary Competencies:** `academic-writing`
+- **Supporting Competencies:** `essay-writing`
+- **Source File:** 015-writing.json
+
+### Writing travel memoirs
+- **Slug:** `travel-memoir-writing`
+- **Description:** Chronicle journeys and adventures in compelling narrative memoir form
+- **Primary Competencies:** `memoir-writing`
+- **Supporting Competencies:** `storytelling`, `creative-writing`
+- **Source File:** 015-writing.json
+
+### Writing white papers
+- **Slug:** `white-paper-writing`
+- **Description:** Develop authoritative white papers that establish thought leadership
+- **Primary Competencies:** `business-writing`
+- **Supporting Competencies:** `technical-writing`
+- **Source File:** 015-writing.json
+
+### Writing witty banter and repartee
+- **Slug:** `witty-dialogue-writing`
+- **Description:** Craft sharp, entertaining dialogue exchanges that reveal character
+- **Primary Competencies:** `dialogue-writing`
+- **Supporting Competencies:** `character-development`
+- **Source File:** 015-writing.json
 
 ---
 

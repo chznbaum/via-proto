@@ -1,0 +1,1616 @@
+{
+  "topics": [
+    {
+      "name": "Creative writing fundamentals",
+      "slug": "creative-writing-fundamentals",
+      "description": "Develop your creative voice and learn essential techniques for imaginative storytelling",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing fiction for beginners",
+      "slug": "fiction-writing-beginners",
+      "description": "Learn to craft compelling fictional narratives with plot, character, and setting",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing and completing your first novel",
+      "slug": "writing-first-novel",
+      "description": "Develop, write, and finish a complete novel manuscript from concept to final draft",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Crafting compelling short stories",
+      "slug": "crafting-short-stories",
+      "description": "Write complete short stories with strong openings, middles, and endings",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "short-story-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing flash fiction and microstories",
+      "slug": "flash-fiction-microstories",
+      "description": "Create impactful ultra-short stories under 1000 words with precision and economy",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "flash-fiction",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "short-story-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storytelling techniques for engaging narratives",
+      "slug": "storytelling-techniques",
+      "description": "Master the art of engaging readers through narrative structure and pacing",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "storytelling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing science fiction worlds and stories",
+      "slug": "science-fiction-writing",
+      "description": "Create compelling science fiction with plausible technology, alien worlds, and speculative concepts",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "science-fiction-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing fantasy novels and magic systems",
+      "slug": "fantasy-novel-writing",
+      "description": "Build fantasy worlds with consistent magic systems, mythologies, and epic storytelling",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "fantasy-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing mystery novels and plotting clues",
+      "slug": "mystery-novel-writing",
+      "description": "Craft mystery stories with fair-play clues, red herrings, and satisfying revelations",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "mystery-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing romance with emotional depth",
+      "slug": "romance-writing-emotional",
+      "description": "Write romance stories with authentic relationships, chemistry, and emotional arcs",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "romance-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing horror that terrifies readers",
+      "slug": "horror-writing-techniques",
+      "description": "Create suspenseful horror fiction with atmosphere, dread, and psychological impact",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "horror-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing screenplays for film and television",
+      "slug": "screenplay-writing-film-tv",
+      "description": "Write properly formatted screenplays with strong visual storytelling and dialogue",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "screenwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing stage plays and theatrical dialogue",
+      "slug": "playwriting-stage",
+      "description": "Craft plays for live performance with compelling dialogue and stage-worthy action",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "playwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing poetry with rhythm and imagery",
+      "slug": "poetry-writing-fundamentals",
+      "description": "Compose poetry using meter, rhyme, free verse, and vivid imagery",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "poetry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing personal memoirs and life stories",
+      "slug": "memoir-writing-personal",
+      "description": "Craft compelling memoirs that transform personal experiences into universal stories",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "memoir-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing biographies and life histories",
+      "slug": "biography-writing",
+      "description": "Research and write biographies that bring historical figures and real people to life",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "biography-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing persuasive essays",
+      "slug": "persuasive-essay-writing",
+      "description": "Craft well-structured essays that argue positions with logic and evidence",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "essay-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Academic writing and research papers",
+      "slug": "academic-writing-research",
+      "description": "Write scholarly papers with proper citations, methodology, and academic conventions",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "academic-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "essay-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Technical writing for software documentation",
+      "slug": "technical-writing-software",
+      "description": "Create clear technical documentation, user guides, and API references",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "technical-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Content writing for websites and marketing",
+      "slug": "content-writing-web",
+      "description": "Write engaging web content that informs readers and drives conversions",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "content-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "copywriting-skill",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Copywriting for advertising and sales",
+      "slug": "copywriting-advertising",
+      "description": "Write persuasive copy for ads, landing pages, and marketing campaigns",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "copywriting-skill",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blogging and building an audience",
+      "slug": "blogging-audience-building",
+      "description": "Write engaging blog posts that attract and retain readers over time",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "blogging",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Journalism and news writing",
+      "slug": "journalism-news-writing",
+      "description": "Write accurate news stories with the inverted pyramid and journalistic standards",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "journalism",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Grant writing for nonprofits",
+      "slug": "grant-writing-nonprofits",
+      "description": "Write compelling grant proposals that secure funding for nonprofit organizations",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "grant-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Business writing for professionals",
+      "slug": "business-writing-professional",
+      "description": "Write clear business documents including reports, proposals, and emails",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "business-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Ghostwriting for clients and brands",
+      "slug": "ghostwriting-clients",
+      "description": "Write in others' voices for books, articles, and speeches as a ghostwriter",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ghostwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Developing memorable characters",
+      "slug": "character-development-fiction",
+      "description": "Create three-dimensional characters with motivations, flaws, and authentic arcs",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "character-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Plotting novels and story structure",
+      "slug": "plot-development-novels",
+      "description": "Design compelling plots with rising action, conflicts, and satisfying resolutions",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "plot-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing authentic dialogue",
+      "slug": "dialogue-writing-authentic",
+      "description": "Craft realistic dialogue that reveals character and advances the story",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Worldbuilding for fiction",
+      "slug": "worldbuilding-fiction",
+      "description": "Create immersive fictional worlds with consistent rules, cultures, and histories",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Editing and revising manuscripts",
+      "slug": "editing-revising-manuscripts",
+      "description": "Revise and polish your writing through developmental and line editing",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Proofreading for error-free writing",
+      "slug": "proofreading-error-free",
+      "description": "Catch and correct grammar, spelling, and formatting errors in final manuscripts",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "proofreading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Traditional book publishing process",
+      "slug": "traditional-book-publishing",
+      "description": "Navigate the traditional publishing industry from query letters to book deals",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "book-publishing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Self-publishing books successfully",
+      "slug": "self-publishing-success",
+      "description": "Publish and market your own books through Amazon KDP and other platforms",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "self-publishing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "book-publishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing novels with Scrivener",
+      "slug": "novel-writing-scrivener",
+      "description": "Organize and write long-form fiction using Scrivener's powerful writing tools",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "scrivener",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing research and notes with Scrivener",
+      "slug": "research-notes-scrivener",
+      "description": "Organize research materials and writing notes for complex projects in Scrivener",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "scrivener",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "academic-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing screenplays with Final Draft",
+      "slug": "screenwriting-final-draft",
+      "description": "Write professionally formatted screenplays using industry-standard Final Draft",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "final-draft",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "screenwriting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Focused writing with Ulysses",
+      "slug": "focused-writing-ulysses",
+      "description": "Write distraction-free prose and organize your work with Ulysses",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ulysses",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Minimalist writing with iA Writer",
+      "slug": "minimalist-writing-ia-writer",
+      "description": "Focus on your words with iA Writer's clean, distraction-free interface",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ia-writer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building a knowledge base with Obsidian",
+      "slug": "knowledge-base-obsidian",
+      "description": "Create interconnected notes and build a personal knowledge system with Obsidian",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "obsidian",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Writing and organizing with Notion",
+      "slug": "writing-organizing-notion",
+      "description": "Manage writing projects and documentation using Notion's flexible workspace",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "notion",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Networked thinking with Roam Research",
+      "slug": "networked-thinking-roam",
+      "description": "Develop ideas through bi-directional linking and daily notes in Roam Research",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "roam-research",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Grammar checking with Grammarly",
+      "slug": "grammar-checking-grammarly",
+      "description": "Improve writing clarity and correctness using Grammarly's AI-powered suggestions",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "grammarly",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "proofreading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Editing manuscripts with ProWritingAid",
+      "slug": "editing-prowritingaid",
+      "description": "Strengthen your writing with ProWritingAid's in-depth style and grammar analysis",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "prowritingaid",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing clearly with Hemingway Editor",
+      "slug": "clear-writing-hemingway",
+      "description": "Simplify and strengthen your prose using Hemingway Editor's readability tools",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "hemingway-editor",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Organizing novels with yWriter",
+      "slug": "organizing-novels-ywriter",
+      "description": "Structure and track novel scenes, chapters, and characters with yWriter",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ywriter",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing novels with Novlr",
+      "slug": "novel-writing-novlr",
+      "description": "Draft and track your novel progress with Novlr's cloud-based writing platform",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "novlr",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Planning stories with Campfire Write",
+      "slug": "story-planning-campfire",
+      "description": "Develop characters, worlds, and plots using Campfire Write's planning tools",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "campfire-write",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building fantasy worlds with World Anvil",
+      "slug": "worldbuilding-world-anvil",
+      "description": "Create and organize detailed fantasy and sci-fi worlds using World Anvil",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "world-anvil",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fantasy-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Editing and formatting with Reedsy Book Editor",
+      "slug": "editing-reedsy-book-editor",
+      "description": "Format and export professionally typeset books using Reedsy Book Editor",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "reedsy-book-editor",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "book-publishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing scripts with Celtx",
+      "slug": "scriptwriting-celtx",
+      "description": "Write screenplays, stage plays, and audio-visual scripts with Celtx",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "celtx",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "screenwriting",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "playwriting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Formatting books with Atticus",
+      "slug": "book-formatting-atticus",
+      "description": "Format and design professional ebooks and print books using Atticus",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "atticus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "self-publishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Formatting books for print with Vellum",
+      "slug": "book-formatting-vellum",
+      "description": "Create beautiful print and ebook layouts using Vellum's design templates",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "vellum",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "self-publishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing science fiction with worldbuilding",
+      "slug": "sci-fi-worldbuilding",
+      "description": "Build believable future societies and technologies for science fiction stories",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "science-fiction-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing fantasy with magic systems",
+      "slug": "fantasy-magic-systems",
+      "description": "Design internally consistent magic systems for fantasy novels and worlds",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "fantasy-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing detective mysteries",
+      "slug": "detective-mystery-writing",
+      "description": "Craft fair-play detective mysteries with clues, suspects, and logical solutions",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "mystery-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing romance with character chemistry",
+      "slug": "romance-character-chemistry",
+      "description": "Develop believable romantic relationships with tension and emotional payoff",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "romance-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing psychological horror",
+      "slug": "psychological-horror-writing",
+      "description": "Create horror through psychological tension, atmosphere, and character fears",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "horror-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing feature film screenplays",
+      "slug": "feature-screenplay-writing",
+      "description": "Structure and write 90-120 page feature film scripts with three-act structure",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "screenwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing television pilot scripts",
+      "slug": "tv-pilot-writing",
+      "description": "Create compelling TV pilot episodes that launch series with strong characters",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "screenwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing one-act plays",
+      "slug": "one-act-play-writing",
+      "description": "Craft short theatrical plays with focused action and limited characters",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "playwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing full-length plays",
+      "slug": "full-length-play-writing",
+      "description": "Develop multi-act stage plays with complex characters and dramatic arcs",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "playwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing contemporary poetry",
+      "slug": "contemporary-poetry",
+      "description": "Compose modern free verse and experimental poetry with vivid imagery",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "poetry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing formal poetry and sonnets",
+      "slug": "formal-poetry-sonnets",
+      "description": "Master traditional poetic forms including sonnets, villanelles, and haiku",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "poetry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing travel memoirs",
+      "slug": "travel-memoir-writing",
+      "description": "Chronicle journeys and adventures in compelling narrative memoir form",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "memoir-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing family memoirs",
+      "slug": "family-memoir-writing",
+      "description": "Preserve family stories and histories in engaging memoir narratives",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "memoir-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing historical biographies",
+      "slug": "historical-biography-writing",
+      "description": "Research and write comprehensive biographies of historical figures",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "biography-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing literary essays",
+      "slug": "literary-essay-writing",
+      "description": "Analyze literature and craft insightful critical essays",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "essay-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "academic-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing personal essays",
+      "slug": "personal-essay-writing",
+      "description": "Craft reflective personal essays that explore ideas through experience",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "essay-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "creative-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing thesis and dissertations",
+      "slug": "thesis-dissertation-writing",
+      "description": "Complete graduate-level research theses with proper academic methodology",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "academic-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "essay-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Technical writing for engineering",
+      "slug": "technical-writing-engineering",
+      "description": "Document engineering processes, specifications, and technical reports",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "technical-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SEO content writing",
+      "slug": "seo-content-writing",
+      "description": "Write search-optimized content that ranks well and engages readers",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "content-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "copywriting-skill",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Email copywriting for conversions",
+      "slug": "email-copywriting",
+      "description": "Write compelling email campaigns that drive opens, clicks, and sales",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "copywriting-skill",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Landing page copywriting",
+      "slug": "landing-page-copy",
+      "description": "Create persuasive landing pages that convert visitors into customers",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "copywriting-skill",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Professional blogging for income",
+      "slug": "professional-blogging-income",
+      "description": "Build and monetize a professional blog with consistent quality content",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "blogging",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Investigative journalism",
+      "slug": "investigative-journalism",
+      "description": "Research and write in-depth investigative stories that uncover truth",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "journalism",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Feature article writing",
+      "slug": "feature-article-writing",
+      "description": "Write long-form magazine and newspaper feature articles with narrative depth",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "journalism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing successful grant proposals",
+      "slug": "grant-proposal-writing",
+      "description": "Research funders and write compelling proposals that win grants",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "grant-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing business proposals",
+      "slug": "business-proposal-writing",
+      "description": "Create persuasive business proposals that win clients and contracts",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "business-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Writing white papers",
+      "slug": "white-paper-writing",
+      "description": "Develop authoritative white papers that establish thought leadership",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "business-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "technical-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ghostwriting memoirs for clients",
+      "slug": "ghostwriting-memoirs",
+      "description": "Interview clients and craft their life stories as a memoir ghostwriter",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ghostwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "memoir-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "storytelling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ghostwriting business books",
+      "slug": "ghostwriting-business-books",
+      "description": "Write business books and thought leadership content for executives",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "ghostwriting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating character backstories",
+      "slug": "character-backstories",
+      "description": "Develop rich character histories that inform present-day actions and motivations",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "character-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing character arcs",
+      "slug": "character-arc-writing",
+      "description": "Design transformative character journeys with clear change and growth",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "character-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Outlining novels and series",
+      "slug": "novel-outlining",
+      "description": "Plan and outline complete novels and multi-book series with detailed structure",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "plot-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "novel-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing subplots and parallel storylines",
+      "slug": "subplots-parallel-stories",
+      "description": "Weave multiple plot threads together in complex narratives",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "plot-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing witty banter and repartee",
+      "slug": "witty-dialogue-writing",
+      "description": "Craft sharp, entertaining dialogue exchanges that reveal character",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing dialect and accents",
+      "slug": "dialect-accent-writing",
+      "description": "Represent regional dialects and accents authentically in dialogue",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "dialogue-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "character-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating fictional cultures and societies",
+      "slug": "fictional-cultures-worldbuilding",
+      "description": "Design believable cultures with customs, religions, and social structures",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fantasy-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mapping fictional worlds",
+      "slug": "mapping-fictional-worlds",
+      "description": "Design geography, cities, and landmarks for fantasy and science fiction settings",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "worldbuilding",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fantasy-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "science-fiction-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Developmental editing for fiction",
+      "slug": "developmental-editing-fiction",
+      "description": "Revise story structure, character arcs, and plot for stronger narratives",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiction-writing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plot-development",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Line editing for style and flow",
+      "slug": "line-editing-style",
+      "description": "Polish prose at the sentence level for clarity, rhythm, and impact",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Copy editing for grammar and consistency",
+      "slug": "copy-editing-grammar",
+      "description": "Correct grammar, spelling, and ensure style guide consistency",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "editing-writing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "proofreading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Querying literary agents",
+      "slug": "querying-literary-agents",
+      "description": "Write compelling query letters and synopses to secure agent representation",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "book-publishing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-writing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Marketing self-published books",
+      "slug": "marketing-self-published-books",
+      "description": "Promote and sell self-published books through ads, social media, and email",
+      "category_slug": "writing",
+      "competencies": [
+        {
+          "competency_slug": "self-publishing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-writing",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}
