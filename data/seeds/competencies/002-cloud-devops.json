@@ -1327,6 +1327,30 @@
       ]
     },
     {
+      "name": "Kamal",
+      "slug": "kamal",
+      "description": "Zero-downtime deployment tool for web applications using Docker containers",
+      "category_slug": "cloud-devops",
+      "synonyms": [
+        "Kamal Deploy",
+        "MRSK"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "docker",
+          "prerequisite_level": "required",
+          "notes": "Kamal deploys applications as Docker containers"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "capistrano",
+          "relationship_type": "similar",
+          "notes": "Capistrano is a predecessor; Kamal is the modern Docker-based approach"
+        }
+      ]
+    },
+    {
       "name": "AWS CDK",
       "slug": "aws-cdk",
       "description": "Infrastructure as code framework for defining cloud resources using programming languages",

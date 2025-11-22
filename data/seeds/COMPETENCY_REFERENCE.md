@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T19:08:21.836Z
-**Total Competencies:** 1623
+**Generated:** 2025-11-22T19:34:32.235Z
+**Total Competencies:** 1624
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -26,7 +26,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [calculus](#calculus) (3)
 - [cardio-endurance](#cardio-endurance) (12)
 - [chemistry](#chemistry) (7)
-- [cloud-devops](#cloud-devops) (169)
+- [cloud-devops](#cloud-devops) (170)
 - [cognitive-skills](#cognitive-skills) (5)
 - [communication-interpersonal](#communication-interpersonal) (9)
 - [corporate-finance](#corporate-finance) (14)
@@ -1998,6 +1998,14 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `gatling` (similar)
   - `locust` (similar)
+
+### Kamal
+- **Slug:** `kamal`
+- **Synonyms:** Kamal Deploy, MRSK
+- **Prerequisites:**
+  - `docker` (required) - Kamal deploys applications as Docker containers
+- **Alternatives:**
+  - `capistrano` (similar)
 
 ### Kasten K10
 - **Slug:** `kasten-k10`

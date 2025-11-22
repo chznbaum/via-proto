@@ -1,8 +1,8 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T19:09:04.361Z
-**Total Topics:** 127
-**Total Competencies:** 1623
+**Generated:** 2025-11-22T19:34:42.169Z
+**Total Topics:** 297
+**Total Competencies:** 1624
 **Total Categories:** 89
 
 This file shows the category hierarchy with topic and competency counts.
@@ -27,7 +27,7 @@ Run `npm run topic:coverage` to update.
 │   │   ├── Data Science [0 topics, 97 competencies]
 │   │   ├── Data Engineering [0 topics, 8 competencies]
 │   │   └── Databases [0 topics, 55 competencies]
-│   ├── Cloud & DevOps [0 topics, 169 competencies]
+│   ├── Cloud & DevOps [170 topics, 170 competencies]
 │   ├── Automation & Integration [0 topics, 3 competencies]
 │   ├── Information Security [0 topics, 0 competencies]
 │   │   └── Cybersecurity [0 topics, 27 competencies]
@@ -194,8 +194,8 @@ Run `npm run topic:coverage` to update.
 
 ### Cloud & DevOps
 - **Slug:** `cloud-devops`
-- **Topics:** 0
-- **Competencies:** 169
+- **Topics:** 170
+- **Competencies:** 170
 - **Parent:** information-technology
 
 ### Cognitive Skills

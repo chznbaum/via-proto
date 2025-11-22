@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T19:08:21.832Z
-**Total Competencies:** 1623
+**Generated:** 2025-11-22T19:34:32.231Z
+**Total Competencies:** 1624
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -26,7 +26,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **calculus** (3)
 - **cardio-endurance** (12)
 - **chemistry** (7)
-- **cloud-devops** (169)
+- **cloud-devops** (170)
 - **cognitive-skills** (5)
 - **communication-interpersonal** (9)
 - **corporate-finance** (14)
@@ -885,6 +885,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `k6` - k6 (cloud-devops)
 - `kafka` - Apache Kafka (cloud-devops)
 - `kali-linux` - Kali Linux (cybersecurity)
+- `kamal` - Kamal (cloud-devops)
 - `kanban` - Kanban (product-project-management)
 - `kannada` - Kannada (languages)
 - `karate` - Karate (recreation-hobbies)

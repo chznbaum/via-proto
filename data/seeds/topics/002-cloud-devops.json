@@ -1,0 +1,2476 @@
+{
+  "topics": [
+    {
+      "name": "Containerizing web applications with Docker",
+      "slug": "containerizing-web-apps-docker",
+      "description": "Package web applications into portable Docker containers for consistent deployment across environments",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building multi-container applications with Docker Compose",
+      "slug": "multi-container-apps-docker-compose",
+      "description": "Orchestrate multiple Docker containers for local development and testing environments",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker-compose",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Optimizing Docker images for production deployments",
+      "slug": "optimizing-docker-images-production",
+      "description": "Create efficient, secure, and minimal Docker images using multi-stage builds and best practices",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Container security scanning with Trivy",
+      "slug": "container-security-trivy",
+      "description": "Scan Docker images for vulnerabilities and security issues using Trivy",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "trivy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building container images without Docker using Podman",
+      "slug": "building-containers-podman",
+      "description": "Create and manage containers using Podman as a Docker-compatible alternative",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "podman",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying containerized applications with Kubernetes",
+      "slug": "deploying-apps-kubernetes",
+      "description": "Deploy and manage containerized applications at scale using Kubernetes orchestration",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing Kubernetes applications with Helm charts",
+      "slug": "managing-k8s-helm",
+      "description": "Package and deploy Kubernetes applications using Helm for templating and version control",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "helm",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes cluster networking with Cilium",
+      "slug": "k8s-networking-cilium",
+      "description": "Implement advanced networking, security policies, and observability in Kubernetes using Cilium",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "cilium",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Securing Kubernetes clusters with network policies",
+      "slug": "k8s-network-policies",
+      "description": "Implement network security and traffic control in Kubernetes clusters using Calico",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "calico",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "GitOps continuous delivery with ArgoCD",
+      "slug": "gitops-argocd",
+      "description": "Automate Kubernetes deployments using GitOps principles with ArgoCD",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "argocd",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "GitOps continuous delivery with Flux",
+      "slug": "gitops-flux",
+      "description": "Implement GitOps workflows for Kubernetes using Flux for automated deployments",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "flux",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Service mesh architecture with Istio",
+      "slug": "service-mesh-istio",
+      "description": "Implement traffic management, security, and observability for microservices with Istio",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "istio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "envoy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Lightweight service mesh with Linkerd",
+      "slug": "service-mesh-linkerd",
+      "description": "Add reliability, security, and observability to Kubernetes services with Linkerd",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "linkerd",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Backing up Kubernetes clusters with Velero",
+      "slug": "k8s-backup-velero",
+      "description": "Implement disaster recovery and data protection for Kubernetes using Velero",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "velero",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications on AWS",
+      "slug": "deploying-web-apps-aws",
+      "description": "Deploy and manage web applications using AWS services like EC2, S3, and RDS",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building serverless applications with AWS Lambda",
+      "slug": "serverless-aws-lambda",
+      "description": "Create event-driven, scalable applications using AWS Lambda functions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-lambda",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing AWS infrastructure with Terraform",
+      "slug": "aws-infrastructure-terraform",
+      "description": "Define and provision AWS infrastructure as code using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying containers on AWS with Fargate",
+      "slug": "deploying-containers-aws-fargate",
+      "description": "Run containerized applications without managing servers using AWS Fargate",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-fargate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building REST APIs with AWS API Gateway",
+      "slug": "rest-apis-aws-api-gateway",
+      "description": "Create, publish, and manage RESTful APIs using AWS API Gateway",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-api-gateway",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws-lambda",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing secrets with AWS Secrets Manager",
+      "slug": "secrets-aws-secrets-manager",
+      "description": "Securely store and rotate application secrets using AWS Secrets Manager",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-secrets-manager",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storing container images with Amazon ECR",
+      "slug": "container-registry-aws-ecr",
+      "description": "Manage and store Docker container images using Amazon Elastic Container Registry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-ecr",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Event-driven architecture with AWS EventBridge",
+      "slug": "event-driven-aws-eventbridge",
+      "description": "Build event-driven applications using AWS EventBridge for event routing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-eventbridge",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "aws-lambda",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications on Microsoft Azure",
+      "slug": "deploying-web-apps-azure",
+      "description": "Deploy and manage web applications using Azure App Service and other Azure services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building serverless applications with Azure Functions",
+      "slug": "serverless-azure-functions",
+      "description": "Create event-driven, scalable applications using Azure Functions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-functions",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing Azure infrastructure with Terraform",
+      "slug": "azure-infrastructure-terraform",
+      "description": "Define and provision Azure infrastructure as code using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing secrets with Azure Key Vault",
+      "slug": "secrets-azure-key-vault",
+      "description": "Securely store and manage application secrets, keys, and certificates using Azure Key Vault",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-key-vault",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Running containers on Azure with Container Instances",
+      "slug": "containers-azure-aci",
+      "description": "Deploy and run containerized applications without managing servers using Azure Container Instances",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-container-instances",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storing container images with Azure Container Registry",
+      "slug": "container-registry-azure-acr",
+      "description": "Manage and store Docker container images using Azure Container Registry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-container-registry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications on Google Cloud Platform",
+      "slug": "deploying-web-apps-gcp",
+      "description": "Deploy and manage web applications using Google Cloud Platform services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building serverless applications with Google Cloud Functions",
+      "slug": "serverless-google-cloud-functions",
+      "description": "Create event-driven, scalable applications using Google Cloud Functions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-functions",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying containerized applications with Google Cloud Run",
+      "slug": "deploying-containers-cloud-run",
+      "description": "Run containerized applications in a serverless environment using Google Cloud Run",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-run",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing secrets with Google Cloud Secret Manager",
+      "slug": "secrets-google-cloud-secret-manager",
+      "description": "Securely store and manage application secrets using Google Cloud Secret Manager",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-secret-manager",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storing container images with Google Container Registry",
+      "slug": "container-registry-gcr",
+      "description": "Manage and store Docker container images using Google Container Registry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-container-registry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing Google Cloud infrastructure with Terraform",
+      "slug": "gcp-infrastructure-terraform",
+      "description": "Define and provision Google Cloud infrastructure as code using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure as code with Terraform",
+      "slug": "infrastructure-as-code-terraform",
+      "description": "Define, version, and manage infrastructure across cloud providers using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-cloud infrastructure with Terraform",
+      "slug": "multi-cloud-terraform",
+      "description": "Manage infrastructure across multiple cloud providers using unified Terraform workflows",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure as code with Pulumi",
+      "slug": "infrastructure-as-code-pulumi",
+      "description": "Define cloud infrastructure using familiar programming languages with Pulumi",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "pulumi",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "AWS infrastructure as code with CloudFormation",
+      "slug": "aws-infrastructure-cloudformation",
+      "description": "Define and provision AWS infrastructure using CloudFormation templates",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "cloudformation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "AWS infrastructure with the AWS CDK",
+      "slug": "aws-infrastructure-cdk",
+      "description": "Define AWS infrastructure using familiar programming languages with AWS CDK",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-cdk",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Azure infrastructure with Bicep",
+      "slug": "azure-infrastructure-bicep",
+      "description": "Define and deploy Azure infrastructure using Bicep's declarative syntax",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "bicep",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Configuration management with Ansible",
+      "slug": "configuration-management-ansible",
+      "description": "Automate server provisioning, configuration, and application deployment with Ansible",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "ansible",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-cloud infrastructure orchestration with Ansible",
+      "slug": "multi-cloud-ansible",
+      "description": "Manage infrastructure and deployments across cloud providers using Ansible playbooks",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "ansible",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Managing secrets with HashiCorp Vault",
+      "slug": "secrets-vault",
+      "description": "Securely store, access, and manage secrets and sensitive data using Vault",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "vault",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes secrets management with Vault",
+      "slug": "k8s-secrets-vault",
+      "description": "Integrate HashiCorp Vault with Kubernetes for dynamic secrets management",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "vault",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with GitHub Actions",
+      "slug": "cicd-github-actions",
+      "description": "Automate build, test, and deployment workflows using GitHub Actions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "github-actions",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying to cloud platforms with GitHub Actions",
+      "slug": "deploying-cloud-github-actions",
+      "description": "Automate deployments to AWS, Azure, and GCP using GitHub Actions workflows",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "github-actions",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Container image builds with GitHub Actions",
+      "slug": "container-builds-github-actions",
+      "description": "Automate Docker image builds and registry pushes using GitHub Actions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "github-actions",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with GitLab CI/CD",
+      "slug": "cicd-gitlab",
+      "description": "Automate build, test, and deployment workflows using GitLab CI/CD",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "gitlab-cicd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with Jenkins",
+      "slug": "cicd-jenkins",
+      "description": "Build automated CI/CD pipelines using Jenkins for continuous integration and delivery",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "jenkins",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with CircleCI",
+      "slug": "cicd-circleci",
+      "description": "Automate build, test, and deployment workflows using CircleCI",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "circleci",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Application monitoring with Prometheus",
+      "slug": "monitoring-prometheus",
+      "description": "Collect and query metrics from applications and infrastructure using Prometheus",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "prometheus",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes monitoring with Prometheus",
+      "slug": "k8s-monitoring-prometheus",
+      "description": "Monitor Kubernetes clusters, pods, and services using Prometheus",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "prometheus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building monitoring dashboards with Grafana",
+      "slug": "dashboards-grafana",
+      "description": "Create interactive visualizations and dashboards for metrics using Grafana",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "grafana",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "prometheus",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Observability stack with Prometheus and Grafana",
+      "slug": "observability-prometheus-grafana",
+      "description": "Build complete monitoring and alerting solutions using Prometheus and Grafana",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "prometheus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "grafana",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Log aggregation with the ELK Stack",
+      "slug": "log-aggregation-elk",
+      "description": "Collect, process, and visualize logs using Elasticsearch, Logstash, and Kibana",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "elasticsearch",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "logstash",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "kibana",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Centralized logging with Loki and Grafana",
+      "slug": "logging-loki-grafana",
+      "description": "Implement scalable log aggregation and querying using Loki and Grafana",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "loki",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "grafana",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Error tracking with Sentry",
+      "slug": "error-tracking-sentry",
+      "description": "Monitor and debug application errors in production using Sentry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "sentry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Distributed tracing with Jaeger",
+      "slug": "distributed-tracing-jaeger",
+      "description": "Track and analyze requests across microservices using Jaeger tracing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "jaeger",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Application performance monitoring with Datadog",
+      "slug": "apm-datadog",
+      "description": "Monitor application performance, infrastructure, and logs using Datadog",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "datadog",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Application performance monitoring with New Relic",
+      "slug": "apm-new-relic",
+      "description": "Monitor application performance and user experience using New Relic",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "new-relic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Observability with OpenTelemetry",
+      "slug": "observability-opentelemetry",
+      "description": "Instrument applications for metrics, traces, and logs using OpenTelemetry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "opentelemetry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Reverse proxy and load balancing with Nginx",
+      "slug": "reverse-proxy-nginx",
+      "description": "Configure Nginx for load balancing, reverse proxying, and serving web content",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "nginx",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Reverse proxy and load balancing with Traefik",
+      "slug": "reverse-proxy-traefik",
+      "description": "Set up dynamic routing, load balancing, and SSL termination with Traefik",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "traefik",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes ingress with Traefik",
+      "slug": "k8s-ingress-traefik",
+      "description": "Manage Kubernetes ingress traffic and routing using Traefik",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "traefik",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Load balancing with HAProxy",
+      "slug": "load-balancing-haproxy",
+      "description": "Configure high-performance load balancing and traffic management with HAProxy",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "haproxy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "API gateway with Kong",
+      "slug": "api-gateway-kong",
+      "description": "Build and manage API gateways with Kong for routing, authentication, and rate limiting",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kong",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Modern web server with Caddy",
+      "slug": "web-server-caddy",
+      "description": "Deploy web applications with automatic HTTPS using Caddy web server",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "caddy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SSL/TLS certificates with Let's Encrypt",
+      "slug": "ssl-lets-encrypt",
+      "description": "Automate free SSL/TLS certificate issuance and renewal using Let's Encrypt",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "lets-encrypt",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes certificate management with cert-manager",
+      "slug": "k8s-certificates-cert-manager",
+      "description": "Automate SSL/TLS certificate management in Kubernetes using cert-manager",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "cert-manager",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "lets-encrypt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Message queuing with RabbitMQ",
+      "slug": "message-queue-rabbitmq",
+      "description": "Build asynchronous messaging systems using RabbitMQ",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "rabbitmq",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Event streaming with Apache Kafka",
+      "slug": "event-streaming-kafka",
+      "description": "Build real-time data pipelines and streaming applications with Apache Kafka",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kafka",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cloud-native messaging with NATS",
+      "slug": "messaging-nats",
+      "description": "Build lightweight, high-performance messaging systems with NATS",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "nats",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Message queuing with AWS SQS",
+      "slug": "message-queue-aws-sqs",
+      "description": "Build decoupled, scalable applications using AWS Simple Queue Service",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aws-sqs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Load testing with Apache JMeter",
+      "slug": "load-testing-jmeter",
+      "description": "Performance test web applications and APIs using Apache JMeter",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "jmeter",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Load testing with k6",
+      "slug": "load-testing-k6",
+      "description": "Write performance tests as code using k6 for APIs and web applications",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "k6",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Load testing with Gatling",
+      "slug": "load-testing-gatling",
+      "description": "Simulate high-load scenarios and analyze performance using Gatling",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "gatling",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Service discovery with Consul",
+      "slug": "service-discovery-consul",
+      "description": "Implement service discovery and configuration management with HashiCorp Consul",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "consul",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Heroku",
+      "slug": "deploying-web-apps-heroku",
+      "description": "Deploy and scale web applications quickly using Heroku platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "heroku",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Vercel",
+      "slug": "deploying-web-apps-vercel",
+      "description": "Deploy frontend applications and serverless functions using Vercel",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "vercel",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Netlify",
+      "slug": "deploying-web-apps-netlify",
+      "description": "Deploy static sites and serverless functions using Netlify",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "netlify",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying full-stack applications to Railway",
+      "slug": "deploying-apps-railway",
+      "description": "Deploy databases, backends, and frontends together using Railway",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "railway",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications to Fly.io",
+      "slug": "deploying-apps-fly-io",
+      "description": "Deploy applications globally at the edge using Fly.io platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "fly-io",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building backends with Supabase",
+      "slug": "backend-supabase",
+      "description": "Build application backends using Supabase for database, auth, and storage",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "supabase",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building backends with Firebase",
+      "slug": "backend-firebase",
+      "description": "Build application backends using Firebase for database, auth, and hosting",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "firebase",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Container registry management with Harbor",
+      "slug": "container-registry-harbor",
+      "description": "Host and secure Docker images using Harbor container registry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "harbor",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Incident management with PagerDuty",
+      "slug": "incident-management-pagerduty",
+      "description": "Manage on-call schedules, alerts, and incident response with PagerDuty",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "pagerduty",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to DigitalOcean",
+      "slug": "deploying-web-apps-digitalocean",
+      "description": "Deploy and manage web applications using DigitalOcean droplets and services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications to Render",
+      "slug": "deploying-apps-render",
+      "description": "Deploy web services, databases, and static sites using Render",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "render",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Container orchestration with Docker Swarm",
+      "slug": "orchestration-docker-swarm",
+      "description": "Deploy and manage containerized applications using Docker Swarm clustering",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker-swarm",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing Kubernetes clusters with Rancher",
+      "slug": "k8s-management-rancher",
+      "description": "Centrally manage multiple Kubernetes clusters using Rancher platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "rancher",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing Kubernetes clusters with HashiCorp Nomad",
+      "slug": "orchestration-nomad",
+      "description": "Deploy and manage containerized and non-containerized applications with Nomad",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "nomad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Configuration management with Chef",
+      "slug": "configuration-chef",
+      "description": "Automate infrastructure configuration and compliance using Chef",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "chef",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Configuration management with Puppet",
+      "slug": "configuration-puppet",
+      "description": "Automate infrastructure provisioning and configuration using Puppet",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "puppet",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Configuration management with SaltStack",
+      "slug": "configuration-saltstack",
+      "description": "Manage infrastructure at scale using SaltStack automation",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "saltstack",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Development environments with Vagrant",
+      "slug": "dev-environments-vagrant",
+      "description": "Create reproducible development environments using Vagrant",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "vagrant",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building machine images with Packer",
+      "slug": "machine-images-packer",
+      "description": "Automate creation of identical machine images for multiple platforms using Packer",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "packer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with Azure DevOps",
+      "slug": "cicd-azure-devops",
+      "description": "Build comprehensive CI/CD pipelines using Azure DevOps services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-devops",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with Bitbucket Pipelines",
+      "slug": "cicd-bitbucket-pipelines",
+      "description": "Automate builds and deployments using Bitbucket Pipelines",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "bitbucket-pipelines",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Continuous delivery with Spinnaker",
+      "slug": "continuous-delivery-spinnaker",
+      "description": "Deploy applications to cloud platforms using Spinnaker multi-cloud delivery",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "spinnaker",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Distributed tracing with Zipkin",
+      "slug": "distributed-tracing-zipkin",
+      "description": "Troubleshoot latency issues in microservices using Zipkin tracing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "zipkin",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Error monitoring with Rollbar",
+      "slug": "error-monitoring-rollbar",
+      "description": "Track and debug errors in production applications using Rollbar",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "rollbar",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Incident management with Opsgenie",
+      "slug": "incident-management-opsgenie",
+      "description": "Manage alerts, on-call schedules, and incident response with Opsgenie",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "opsgenie",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure monitoring with Nagios",
+      "slug": "monitoring-nagios",
+      "description": "Monitor servers, networks, and applications using Nagios",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "nagios",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Enterprise monitoring with Zabbix",
+      "slug": "monitoring-zabbix",
+      "description": "Monitor distributed infrastructure and applications using Zabbix",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "zabbix",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Log collection with Fluentd",
+      "slug": "log-collection-fluentd",
+      "description": "Unify log collection and forwarding across infrastructure using Fluentd",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "fluentd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Lightweight log forwarding with Fluent Bit",
+      "slug": "log-forwarding-fluent-bit",
+      "description": "Collect and forward logs efficiently using Fluent Bit",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "fluent-bit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Application performance monitoring with Dynatrace",
+      "slug": "apm-dynatrace",
+      "description": "Monitor application performance with AI-powered insights using Dynatrace",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "dynatrace",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Application performance monitoring with AppDynamics",
+      "slug": "apm-appdynamics",
+      "description": "Monitor business performance and application metrics using AppDynamics",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "appdynamics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Distributed tracing with Tempo",
+      "slug": "distributed-tracing-tempo",
+      "description": "Implement cost-effective distributed tracing using Grafana Tempo",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "tempo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "grafana",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Observability with Honeycomb",
+      "slug": "observability-honeycomb",
+      "description": "Debug complex systems with event-based observability using Honeycomb",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "honeycomb",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Service mesh with Consul Service Mesh",
+      "slug": "service-mesh-consul",
+      "description": "Secure service-to-service communication using Consul Service Mesh",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "consul-service-mesh",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "consul",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Distributed configuration with etcd",
+      "slug": "distributed-config-etcd",
+      "description": "Store and manage distributed configuration using etcd key-value store",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "etcd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Coordination services with Apache ZooKeeper",
+      "slug": "coordination-zookeeper",
+      "description": "Manage distributed system coordination using Apache ZooKeeper",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "zookeeper",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "API management with Azure API Management",
+      "slug": "api-management-azure",
+      "description": "Publish, secure, and analyze APIs using Azure API Management",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-api-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "API management with Google Cloud Endpoints",
+      "slug": "api-management-gcp-endpoints",
+      "description": "Deploy and manage APIs using Google Cloud Endpoints",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-endpoints",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Container security with Aqua Security",
+      "slug": "container-security-aqua",
+      "description": "Secure containerized applications throughout the lifecycle using Aqua",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "aqua-security",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Container security with Snyk Container",
+      "slug": "container-security-snyk",
+      "description": "Find and fix vulnerabilities in container images using Snyk",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "snyk-container",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Runtime security for Kubernetes with Falco",
+      "slug": "k8s-runtime-security-falco",
+      "description": "Detect threats and anomalies in Kubernetes using Falco runtime security",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "falco",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Container vulnerability scanning with Clair",
+      "slug": "container-scanning-clair",
+      "description": "Scan container images for vulnerabilities using Clair",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "clair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Container vulnerability scanning with Grype",
+      "slug": "container-scanning-grype",
+      "description": "Detect vulnerabilities in container images and filesystems using Grype",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "grype",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Container and Kubernetes security with Sysdig",
+      "slug": "security-monitoring-sysdig",
+      "description": "Secure and monitor containerized applications using Sysdig",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "sysdig",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Message queuing with Azure Service Bus",
+      "slug": "messaging-azure-service-bus",
+      "description": "Build reliable messaging applications using Azure Service Bus",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-service-bus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Event streaming with Google Cloud Pub/Sub",
+      "slug": "messaging-google-pubsub",
+      "description": "Build event-driven systems using Google Cloud Pub/Sub messaging",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-cloud-pub-sub",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Event streaming with Apache Pulsar",
+      "slug": "event-streaming-pulsar",
+      "description": "Build multi-tenant messaging and streaming systems with Apache Pulsar",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "pulsar",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Message queuing with ActiveMQ",
+      "slug": "messaging-activemq",
+      "description": "Implement enterprise messaging with Apache ActiveMQ",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "activemq",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Load testing with Locust",
+      "slug": "load-testing-locust",
+      "description": "Write scalable load tests in Python using Locust",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "locust",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Load testing with Artillery",
+      "slug": "load-testing-artillery",
+      "description": "Performance test APIs and web applications using Artillery",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "artillery",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SSL certificate automation with Certbot",
+      "slug": "ssl-certbot",
+      "description": "Automate Let's Encrypt certificate requests and renewals using Certbot",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "certbot",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "lets-encrypt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "SSL certificate automation with acme.sh",
+      "slug": "ssl-acme-sh",
+      "description": "Manage SSL/TLS certificates from Let's Encrypt using acme.sh",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "acme-sh",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "lets-encrypt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Backup and disaster recovery with Restic",
+      "slug": "backup-restic",
+      "description": "Create encrypted, deduplicated backups using Restic",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "restic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes data protection with Kasten K10",
+      "slug": "k8s-backup-kasten",
+      "description": "Backup and restore Kubernetes applications using Kasten K10",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kasten-k10",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Encrypted backups with BorgBackup",
+      "slug": "backup-borg",
+      "description": "Create deduplicated, encrypted backups using BorgBackup",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "borg",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes networking with Flannel",
+      "slug": "k8s-networking-flannel",
+      "description": "Configure simple overlay networking for Kubernetes using Flannel",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "flannel",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes networking with Weave Net",
+      "slug": "k8s-networking-weave",
+      "description": "Implement Kubernetes networking and service discovery with Weave Net",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "weave-net",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Edge computing with Cloudflare Workers",
+      "slug": "edge-computing-cloudflare",
+      "description": "Deploy serverless functions at the edge using Cloudflare Workers",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "cloudflare",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CDN and edge services with Fastly",
+      "slug": "cdn-edge-fastly",
+      "description": "Deliver content and edge computing at scale using Fastly",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "fastly",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-cloud Kubernetes with Crossplane",
+      "slug": "multi-cloud-crossplane",
+      "description": "Manage cloud infrastructure using Kubernetes APIs with Crossplane",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "crossplane",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing container images with Docker Hub",
+      "slug": "container-registry-docker-hub",
+      "description": "Store, share, and manage Docker images using Docker Hub",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker-hub",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storing container images with GitHub Container Registry",
+      "slug": "container-registry-github",
+      "description": "Host and manage container images alongside code in GitHub",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "github-container-registry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Storing artifacts with Google Artifact Registry",
+      "slug": "artifact-registry-google",
+      "description": "Manage container images and language packages using Google Artifact Registry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "google-artifact-registry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Application deployment with Capistrano",
+      "slug": "deployment-capistrano",
+      "description": "Automate Ruby application deployments using Capistrano",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "capistrano",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Remote task execution with Fabric",
+      "slug": "remote-tasks-fabric",
+      "description": "Execute shell commands remotely using Python Fabric",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "fabric",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Managing Azure infrastructure with ARM templates",
+      "slug": "azure-infrastructure-arm",
+      "description": "Define Azure infrastructure using Azure Resource Manager templates",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "azure-resource-manager",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Low-level container runtime with containerd",
+      "slug": "container-runtime-containerd",
+      "description": "Manage container lifecycle with containerd runtime",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "containerd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes container runtime with CRI-O",
+      "slug": "k8s-runtime-cri-o",
+      "description": "Run containers in Kubernetes using the lightweight CRI-O runtime",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "cri-o",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Proxy servers with Envoy",
+      "slug": "proxy-envoy",
+      "description": "Build service meshes and API gateways using Envoy proxy",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "envoy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Linode",
+      "slug": "deploying-web-apps-linode",
+      "description": "Deploy and manage applications on Linode cloud infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "linode",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Vultr",
+      "slug": "deploying-web-apps-vultr",
+      "description": "Deploy applications using Vultr cloud compute services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "vultr",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications to Hetzner Cloud",
+      "slug": "deploying-web-apps-hetzner",
+      "description": "Deploy cost-effective applications on Hetzner Cloud",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deploying web applications with Kamal",
+      "slug": "deploying-apps-kamal",
+      "description": "Deploy containerized applications with zero downtime using Kamal",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kamal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying Rails applications to DigitalOcean with Kamal",
+      "slug": "deploying-rails-digitalocean-kamal",
+      "description": "Deploy Ruby on Rails applications to DigitalOcean using Kamal and Docker",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kamal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications to Hetzner with Kamal and Traefik",
+      "slug": "deploying-apps-hetzner-kamal-traefik",
+      "description": "Deploy containerized applications to Hetzner Cloud with Kamal and Traefik for SSL and routing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kamal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "traefik",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications to Linode with Kamal",
+      "slug": "deploying-apps-linode-kamal",
+      "description": "Deploy web applications to Linode using Kamal for zero-downtime deployments",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kamal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linode",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications to Vultr with Kamal",
+      "slug": "deploying-apps-vultr-kamal",
+      "description": "Deploy containerized applications to Vultr using Kamal",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kamal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vultr",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up reverse proxy with Nginx on DigitalOcean",
+      "slug": "reverse-proxy-nginx-digitalocean",
+      "description": "Configure Nginx as a reverse proxy and load balancer on DigitalOcean droplets",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "nginx",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up Traefik on Hetzner Cloud",
+      "slug": "traefik-setup-hetzner",
+      "description": "Deploy Traefik reverse proxy with automatic SSL on Hetzner Cloud",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "traefik",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying Node.js applications to DigitalOcean with Docker",
+      "slug": "deploying-nodejs-digitalocean-docker",
+      "description": "Deploy and manage Node.js applications on DigitalOcean using Docker containers",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying Python applications to Linode with Docker and Nginx",
+      "slug": "deploying-python-linode-docker-nginx",
+      "description": "Deploy Python web applications to Linode using Docker containers behind Nginx",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linode",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "nginx",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up Kubernetes on Hetzner Cloud",
+      "slug": "kubernetes-setup-hetzner",
+      "description": "Deploy and configure a Kubernetes cluster on Hetzner Cloud infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing infrastructure on DigitalOcean with Terraform",
+      "slug": "digitalocean-infrastructure-terraform",
+      "description": "Provision and manage DigitalOcean resources using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing infrastructure on Linode with Terraform",
+      "slug": "linode-infrastructure-terraform",
+      "description": "Define and provision Linode infrastructure as code using Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linode",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing infrastructure on Hetzner with Terraform",
+      "slug": "hetzner-infrastructure-terraform",
+      "description": "Automate Hetzner Cloud infrastructure provisioning with Terraform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "terraform",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up monitoring with Prometheus on DigitalOcean",
+      "slug": "prometheus-monitoring-digitalocean",
+      "description": "Deploy Prometheus monitoring stack on DigitalOcean droplets",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "prometheus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying databases on Hetzner Cloud",
+      "slug": "deploying-databases-hetzner",
+      "description": "Set up and manage PostgreSQL or MySQL databases on Hetzner Cloud servers",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Setting up CI/CD with GitHub Actions and DigitalOcean",
+      "slug": "cicd-github-actions-digitalocean",
+      "description": "Automate deployments to DigitalOcean using GitHub Actions workflows",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "github-actions",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying multi-container applications with Docker Compose on Linode",
+      "slug": "docker-compose-apps-linode",
+      "description": "Deploy and manage multi-container applications on Linode using Docker Compose",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "docker-compose",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linode",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "docker",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up load balancing with HAProxy on DigitalOcean",
+      "slug": "haproxy-load-balancing-digitalocean",
+      "description": "Configure HAProxy for high-availability load balancing on DigitalOcean",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "haproxy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying applications with Ansible to Hetzner Cloud",
+      "slug": "ansible-deployment-hetzner",
+      "description": "Automate application deployment and server configuration on Hetzner using Ansible",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "ansible",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hetzner-cloud",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Setting up automated backups on DigitalOcean with Restic",
+      "slug": "backup-restic-digitalocean",
+      "description": "Implement automated, encrypted backups for DigitalOcean servers using Restic",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "restic",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digitalocean",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying message queues with RabbitMQ on Linode",
+      "slug": "rabbitmq-deployment-linode",
+      "description": "Set up and manage RabbitMQ message queuing on Linode servers",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        {
+          "competency_slug": "rabbitmq",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linode",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}
