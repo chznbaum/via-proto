@@ -1,0 +1,16 @@
+{
+  "topics": [
+    {
+      "name": "Conversational Spanish",
+      "slug": "conversational-spanish",
+      "description": "Holding conversations in Spanish",
+      "category_slug": "language",
+      "competencies": [
+        {
+          "competency_slug": "spanish",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

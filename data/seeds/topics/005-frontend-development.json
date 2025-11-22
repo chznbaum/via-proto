@@ -25,38 +25,6 @@
       ]
     },
     {
-      "name": "Building web applications with Python and Flask",
-      "slug": "building-web-applications-with-python-flask",
-      "description": "Learn to build small and flexible web applications using Python and Flask",
-      "category_slug": "backend-development",
-      "competencies": [
-        {
-          "competency_slug": "flask",
-          "is_primary": true
-        },
-        {
-          "competency_slug": "python",
-          "is_primary": false
-        }
-      ]
-    },
-    {
-      "name": "Building web applications with Python and Django",
-      "slug": "building-web-applications-with-python-django",
-      "description": "Learn to build full-featured web applications using Python and Django",
-      "category_slug": "backend-development",
-      "competencies": [
-        {
-          "competency_slug": "django",
-          "is_primary": true
-        },
-        {
-          "competency_slug": "python",
-          "is_primary": false
-        }
-      ]
-    },
-    {
       "name": "Building reactive web applications with Vue.js",
       "slug": "building-reactive-web-apps-vuejs",
       "description": "Create responsive, data-driven web applications using Vue.js's reactive framework",
