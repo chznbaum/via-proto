@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T14:18:19.918Z
-**Total Competencies:** 1249
+**Generated:** 2025-11-22T14:25:01.613Z
+**Total Competencies:** 1333
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -17,22 +17,30 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [backend-development](#backend-development) (36)
 - [blockchain-web3](#blockchain-web3) (41)
 - [cloud-devops](#cloud-devops) (169)
+- [corporate-finance](#corporate-finance) (7)
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
 - [data-engineering](#data-engineering) (8)
 - [data-science](#data-science) (95)
 - [databases](#databases) (55)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
+- [finance-accounting](#finance-accounting) (5)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (53)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
+- [investing-trading](#investing-trading) (8)
 - [languages](#languages) (169)
+- [leadership-communication](#leadership-communication) (12)
 - [linguistics](#linguistics) (15)
+- [marketing-sales](#marketing-sales) (18)
 - [mobile-development](#mobile-development) (48)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
+- [operations-strategy](#operations-strategy) (19)
+- [personal-finance](#personal-finance) (4)
 - [photography-video](#photography-video) (3)
+- [product-project-management](#product-project-management) (11)
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
 - [systems-programming](#systems-programming) (17)
@@ -1929,6 +1937,56 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## corporate-finance
+
+### Corporate Budgeting
+- **Slug:** `corporate-budgeting`
+- **Synonyms:** Business Budgeting, Organizational Budgeting, Enterprise Budgeting
+- **Prerequisites:**
+  - `budgeting` (required) - Corporate budgeting applies budgeting principles at organizational scale
+
+### Corporate Finance
+- **Slug:** `corporate-finance`
+- **Synonyms:** Business Finance, Corporate Financial Management, Enterprise Finance
+- **Prerequisites:**
+  - `accounting` (required) - Corporate finance requires accounting fundamentals
+  - `financial-analysis` (required) - Financial analysis is essential for corporate finance
+
+### Fundraising
+- **Slug:** `fundraising`
+- **Synonyms:** Capital Raising, Investment Raising, Funding
+- **Prerequisites:**
+  - `entrepreneurship` (recommended) - Fundraising is often needed in entrepreneurship
+
+### Management Accounting
+- **Slug:** `management-accounting`
+- **Synonyms:** Managerial Accounting, Cost Accounting, Internal Accounting
+- **Prerequisites:**
+  - `accounting` (required) - Management accounting builds on general accounting principles
+
+### Mergers and Acquisitions
+- **Slug:** `mergers-acquisitions`
+- **Synonyms:** M&A, Corporate M&A, Acquisitions, Mergers
+- **Prerequisites:**
+  - `corporate-finance` (required) - M&A requires corporate finance expertise
+  - `financial-modeling` (required) - Financial modeling is used to evaluate M&A deals
+
+### Private Equity
+- **Slug:** `private-equity`
+- **Synonyms:** PE, Buyout, Private Investment
+- **Prerequisites:**
+  - `corporate-finance` (required) - Private equity requires corporate finance knowledge
+  - `mergers-acquisitions` (recommended) - PE often involves acquisitions
+
+### Venture Capital
+- **Slug:** `venture-capital`
+- **Synonyms:** VC, Startup Investing, Venture Funding
+- **Prerequisites:**
+  - `investing` (required) - VC is a specialized form of investing
+  - `entrepreneurship` (recommended) - Understanding startups helps in VC investing
+
+---
+
 ## cybersecurity
 
 ### Active Directory
@@ -3366,6 +3424,34 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## finance-accounting
+
+### Accounting
+- **Slug:** `accounting`
+- **Synonyms:** Bookkeeping, Financial Accounting, Accounting Principles
+
+### Budgeting
+- **Slug:** `budgeting`
+- **Synonyms:** Budget Planning, Financial Planning, Budget Management
+
+### Financial Analysis
+- **Slug:** `financial-analysis`
+- **Synonyms:** Financial Assessment, Financial Evaluation, Investment Analysis
+
+### Financial Modeling
+- **Slug:** `financial-modeling`
+- **Synonyms:** Financial Forecasting, Valuation Modeling, Pro Forma Analysis
+- **Prerequisites:**
+  - `financial-analysis` (required) - Financial modeling requires understanding of financial analysis
+
+### Financial Statements
+- **Slug:** `financial-statements`
+- **Synonyms:** Financial Reports, Financial Reporting, GAAP Reporting
+- **Prerequisites:**
+  - `accounting` (required) - Financial statements are created through accounting processes
+
+---
+
 ## frontend-development
 
 ### Angular
@@ -4401,6 +4487,57 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## investing-trading
+
+### Cryptocurrency Investing
+- **Slug:** `cryptocurrency-investing`
+- **Synonyms:** Crypto Investing, Digital Currency Investment, Bitcoin Investing
+- **Prerequisites:**
+  - `investing` (required) - Crypto investing requires understanding investment fundamentals
+
+### Day Trading
+- **Slug:** `day-trading`
+- **Synonyms:** Active Trading, Intraday Trading, Short-term Trading
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Day trading requires understanding stock markets
+
+### Index Fund Investing
+- **Slug:** `index-fund-investing`
+- **Synonyms:** Passive Investing, Index Investing, ETF Investing
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Index funds are a stock market investment vehicle
+
+### Investing
+- **Slug:** `investing`
+- **Synonyms:** Investment, Asset Allocation, Portfolio Management
+
+### Options Trading
+- **Slug:** `options-trading`
+- **Synonyms:** Options Strategies, Derivatives Trading, Option Contracts
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Options are derivatives of stocks
+
+### Real Estate Investing
+- **Slug:** `real-estate-investing`
+- **Synonyms:** Property Investing, Real Estate Investment, Property Investment
+- **Prerequisites:**
+  - `investing` (required) - Real estate investing applies investment principles to property
+
+### Stock Market Investing
+- **Slug:** `stock-market-investing`
+- **Synonyms:** Stock Investing, Equity Investing, Stock Market
+- **Prerequisites:**
+  - `investing` (required) - Stock investing requires understanding of investment fundamentals
+
+### Value Investing
+- **Slug:** `value-investing`
+- **Synonyms:** Value Strategy, Fundamental Investing, Warren Buffett Strategy
+- **Prerequisites:**
+  - `stock-market-investing` (required) - Value investing is an approach to stock market investing
+  - `financial-analysis` (required) - Value investing requires financial analysis skills
+
+---
+
 ## languages
 
 ### Afrikaans
@@ -5160,6 +5297,71 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## leadership-communication
+
+### Business Presentations
+- **Slug:** `business-presentations`
+- **Synonyms:** Corporate Presentations, Executive Presentations, Pitch Presentations
+- **Prerequisites:**
+  - `public-speaking` (recommended) - Public speaking skills enhance business presentations
+
+### Change Management
+- **Slug:** `change-management`
+- **Synonyms:** Organizational Change, Transformation Management, Change Leadership
+- **Prerequisites:**
+  - `leadership` (required) - Change management requires strong leadership skills
+
+### Coaching and Mentoring
+- **Slug:** `coaching-mentoring`
+- **Synonyms:** Coaching, Mentoring, Career Development, Professional Development
+- **Prerequisites:**
+  - `leadership` (recommended) - Leadership skills enhance coaching effectiveness
+
+### Conflict Resolution
+- **Slug:** `conflict-resolution`
+- **Synonyms:** Dispute Resolution, Mediation, Problem Resolution
+
+### Emotional Intelligence
+- **Slug:** `emotional-intelligence`
+- **Synonyms:** EQ, EI, Emotional Quotient, Social Intelligence
+
+### Executive Communication
+- **Slug:** `executive-communication`
+- **Synonyms:** C-Suite Communication, Senior Leadership Communication, Strategic Communication
+- **Prerequisites:**
+  - `business-writing` (recommended) - Strong writing skills support executive communication
+  - `public-speaking` (recommended) - Presentation skills are key for executive communication
+
+### Executive Leadership
+- **Slug:** `executive-leadership`
+- **Synonyms:** C-Suite Leadership, Senior Leadership, Executive Management
+- **Prerequisites:**
+  - `leadership` (required) - Executive leadership requires foundational leadership skills
+
+### Leadership
+- **Slug:** `leadership`
+- **Synonyms:** Leadership Skills, Team Leadership, Management Leadership
+
+### Negotiation
+- **Slug:** `negotiation`
+- **Synonyms:** Negotiating, Deal Making, Bargaining
+
+### Networking
+- **Slug:** `networking`
+- **Synonyms:** Professional Networking, Business Networking, Relationship Building
+
+### Public Speaking
+- **Slug:** `public-speaking`
+- **Synonyms:** Presentation Skills, Speaking, Oratory, Presentations
+
+### Team Management
+- **Slug:** `team-management`
+- **Synonyms:** Team Leadership, People Management, Team Building
+- **Prerequisites:**
+  - `leadership` (required) - Team management requires leadership fundamentals
+
+---
+
 ## linguistics
 
 ### Bilingualism
@@ -5218,6 +5420,112 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Vocabulary Building
 - **Slug:** `vocabulary-building`
 - **Synonyms:** Lexical Acquisition, Word Learning
+
+---
+
+## marketing-sales
+
+### B2B Sales
+- **Slug:** `b2b-sales`
+- **Synonyms:** Business Sales, Enterprise Sales, Corporate Sales
+- **Prerequisites:**
+  - `sales` (required) - B2B sales builds on general sales principles
+
+### B2C Sales
+- **Slug:** `b2c-sales`
+- **Synonyms:** Consumer Sales, Retail Sales, Direct Sales
+- **Prerequisites:**
+  - `sales` (required) - B2C sales applies general sales principles to consumers
+
+### Brand Strategy
+- **Slug:** `brand-strategy`
+- **Synonyms:** Branding, Brand Development, Brand Positioning, Brand Management
+- **Prerequisites:**
+  - `marketing` (required) - Brand strategy is built on marketing fundamentals
+
+### Content Marketing
+- **Slug:** `content-marketing`
+- **Synonyms:** Content Strategy, Content Creation, Inbound Marketing
+- **Prerequisites:**
+  - `marketing` (recommended) - Understanding marketing fundamentals helps with content strategy
+
+### Conversion Rate Optimization
+- **Slug:** `conversion-rate-optimization`
+- **Synonyms:** CRO, Conversion Optimization, Landing Page Optimization
+- **Prerequisites:**
+  - `digital-marketing` (required) - CRO is applied to digital marketing campaigns
+
+### Customer Relationship Management
+- **Slug:** `customer-relationship-management`
+- **Synonyms:** CRM, Customer Relations, Account Management
+
+### Digital Marketing
+- **Slug:** `digital-marketing`
+- **Synonyms:** Online Marketing, Internet Marketing, Web Marketing
+- **Prerequisites:**
+  - `marketing` (recommended) - Basic marketing principles help understand digital strategies
+
+### Email Marketing
+- **Slug:** `email-marketing`
+- **Synonyms:** Email Campaigns, Newsletter Marketing, Email Automation
+- **Prerequisites:**
+  - `digital-marketing` (recommended) - Email marketing is a digital marketing channel
+
+### Growth Marketing
+- **Slug:** `growth-marketing`
+- **Synonyms:** Growth Hacking, Performance Marketing, Acquisition Marketing
+- **Prerequisites:**
+  - `digital-marketing` (required) - Growth marketing builds on digital marketing principles
+
+### Market Research
+- **Slug:** `market-research`
+- **Synonyms:** Consumer Research, Market Analysis, Customer Research
+- **Prerequisites:**
+  - `marketing` (recommended) - Market research informs marketing strategy
+
+### Marketing
+- **Slug:** `marketing`
+- **Synonyms:** Marketing Strategy, Brand Marketing, Marketing Management
+
+### Marketing Analytics
+- **Slug:** `marketing-analytics`
+- **Synonyms:** Marketing Metrics, Marketing ROI, Campaign Analytics
+- **Prerequisites:**
+  - `marketing` (required) - Analytics measures marketing effectiveness
+
+### Sales
+- **Slug:** `sales`
+- **Synonyms:** Selling, Sales Techniques, Sales Strategy, Salesmanship
+
+### Sales Negotiation
+- **Slug:** `sales-negotiation`
+- **Synonyms:** Deal Negotiation, Contract Negotiation, Closing Sales
+- **Prerequisites:**
+  - `sales` (required) - Negotiation is a core sales skill
+
+### Sales Prospecting
+- **Slug:** `sales-prospecting`
+- **Synonyms:** Lead Generation, Prospecting, Outbound Sales, Cold Calling
+- **Prerequisites:**
+  - `sales` (required) - Prospecting is the first stage of the sales process
+
+### SEM
+- **Slug:** `sem`
+- **Synonyms:** Search Engine Marketing, PPC, Pay-Per-Click, Paid Search, Google Ads
+- **Prerequisites:**
+  - `digital-marketing` (recommended) - SEM is a key digital marketing channel
+
+### SEO
+- **Slug:** `seo`
+- **Synonyms:** Search Engine Optimization, SEO Strategy, Organic Search, Search Marketing
+- **Prerequisites:**
+  - `digital-marketing` (recommended) - SEO is a component of digital marketing
+
+### Social Media Marketing
+- **Slug:** `social-media-marketing`
+- **Synonyms:** SMM, Social Marketing, Social Media Strategy, Social Media Management
+- **Prerequisites:**
+  - `digital-marketing` (recommended) - Social media is a digital marketing channel
 
 ---
 
@@ -6023,6 +6331,131 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## operations-strategy
+
+### Business Intelligence
+- **Slug:** `business-intelligence`
+- **Synonyms:** BI, Business Analytics, Data-Driven Decision Making
+
+### Business Law
+- **Slug:** `business-law`
+- **Synonyms:** Commercial Law, Corporate Law, Business Legal
+
+### Business Model Design
+- **Slug:** `business-model-design`
+- **Synonyms:** Business Models, Revenue Models, Value Proposition Design
+- **Prerequisites:**
+  - `business-strategy` (recommended) - Business model design supports strategic planning
+
+### Business Strategy
+- **Slug:** `business-strategy`
+- **Synonyms:** Strategic Planning, Corporate Strategy, Business Planning
+
+### Compensation and Benefits
+- **Slug:** `compensation-benefits`
+- **Synonyms:** Comp and Ben, Salary Management, Benefits Administration
+- **Prerequisites:**
+  - `human-resources` (required) - Compensation is a core HR function
+
+### Competitive Strategy
+- **Slug:** `competitive-strategy`
+- **Synonyms:** Competitive Analysis, Market Positioning, Competitive Advantage
+- **Prerequisites:**
+  - `business-strategy` (required) - Competitive strategy is a component of overall business strategy
+
+### Compliance
+- **Slug:** `compliance`
+- **Synonyms:** Regulatory Compliance, Corporate Compliance, Legal Compliance
+
+### Contract Management
+- **Slug:** `contract-management`
+- **Synonyms:** Contract Administration, Contracting, Agreement Management
+
+### Employee Development
+- **Slug:** `employee-development`
+- **Synonyms:** Training and Development, Workforce Development, L&D, Learning and Development
+- **Prerequisites:**
+  - `human-resources` (required) - Employee development is a key HR function
+
+### Entrepreneurship
+- **Slug:** `entrepreneurship`
+- **Synonyms:** Starting a Business, Business Startup, Venture Creation
+
+### Human Resources
+- **Slug:** `human-resources`
+- **Synonyms:** HR, People Operations, Personnel Management, HR Management
+
+### Lean Management
+- **Slug:** `lean-management`
+- **Synonyms:** Lean, Lean Manufacturing, Lean Thinking
+- **Prerequisites:**
+  - `operations-management` (recommended) - Lean is applied to operations management
+
+### Operations Management
+- **Slug:** `operations-management`
+- **Synonyms:** Operations, Process Management, Production Management
+
+### Performance Management
+- **Slug:** `performance-management`
+- **Synonyms:** Performance Reviews, Employee Evaluation, Performance Appraisal
+- **Prerequisites:**
+  - `human-resources` (required) - Performance management is an HR responsibility
+
+### Process Improvement
+- **Slug:** `process-improvement`
+- **Synonyms:** Process Optimization, Continuous Improvement, Business Process Improvement
+- **Prerequisites:**
+  - `operations-management` (recommended) - Process improvement enhances operations
+
+### Risk Management
+- **Slug:** `risk-management`
+- **Synonyms:** Enterprise Risk Management, Risk Assessment, Risk Mitigation
+
+### Six Sigma
+- **Slug:** `six-sigma`
+- **Synonyms:** Six Sigma Method, DMAIC, Quality Management
+- **Prerequisites:**
+  - `operations-management` (recommended) - Six Sigma improves operational processes
+
+### Supply Chain Management
+- **Slug:** `supply-chain-management`
+- **Synonyms:** SCM, Supply Chain, Logistics Management
+
+### Talent Acquisition
+- **Slug:** `talent-acquisition`
+- **Synonyms:** Recruitment, Hiring, Recruiting
+- **Prerequisites:**
+  - `human-resources` (required) - Talent acquisition is a core HR function
+
+---
+
+## personal-finance
+
+### Personal Budgeting
+- **Slug:** `personal-budgeting`
+- **Synonyms:** Household Budgeting, Family Budgeting, Personal Money Management
+- **Prerequisites:**
+  - `budgeting` (required) - Personal budgeting applies general budgeting principles
+
+### Personal Finance
+- **Slug:** `personal-finance`
+- **Synonyms:** Money Management, Personal Financial Planning, Wealth Management
+
+### Retirement Planning
+- **Slug:** `retirement-planning`
+- **Synonyms:** Retirement Savings, 401k Planning, Pension Planning
+- **Prerequisites:**
+  - `personal-finance` (required) - Retirement planning is a component of personal finance
+  - `investing` (recommended) - Investment knowledge helps optimize retirement savings
+
+### Tax Planning
+- **Slug:** `tax-planning`
+- **Synonyms:** Tax Strategy, Tax Optimization, Tax Efficiency
+- **Prerequisites:**
+  - `personal-finance` (required) - Tax planning is a key aspect of personal finance
+
+---
+
 ## photography-video
 
 ### Adobe Lightroom
@@ -6039,6 +6472,66 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### OBS Studio
 - **Slug:** `obs-studio`
 - **Synonyms:** OBS, Open Broadcaster Software
+
+---
+
+## product-project-management
+
+### Agile
+- **Slug:** `agile`
+- **Synonyms:** Agile Methodology, Agile Development, Agile Project Management, Agile Framework
+
+### Kanban
+- **Slug:** `kanban`
+- **Synonyms:** Kanban Board, Kanban Method, Kanban System
+- **Alternatives:**
+  - `scrum` (similar)
+
+### KPIs
+- **Slug:** `kpis`
+- **Synonyms:** Key Performance Indicators, Metrics, Performance Metrics, Business Metrics
+
+### OKRs
+- **Slug:** `okrs`
+- **Synonyms:** Objectives and Key Results, Goal Setting, OKR Framework
+
+### Product Management
+- **Slug:** `product-management`
+- **Synonyms:** Product Manager, PM, Product Strategy, Product Development
+
+### Product-Market Fit
+- **Slug:** `product-market-fit`
+- **Synonyms:** PMF, Market Fit, Product Validation
+- **Prerequisites:**
+  - `product-management` (required) - Understanding product management principles is essential for finding product-market fit
+
+### Project Management
+- **Slug:** `project-management`
+- **Synonyms:** Project Manager, PM, Project Coordination, Project Planning
+
+### Roadmapping
+- **Slug:** `roadmapping`
+- **Synonyms:** Product Roadmap, Roadmap Planning, Strategic Planning
+- **Prerequisites:**
+  - `product-management` (required) - Roadmapping is a core product management skill
+
+### Scrum
+- **Slug:** `scrum`
+- **Synonyms:** Scrum Framework, Scrum Master, Scrum Methodology
+- **Prerequisites:**
+  - `agile` (required) - Scrum is an implementation of Agile principles
+
+### Stakeholder Management
+- **Slug:** `stakeholder-management`
+- **Synonyms:** Stakeholder Engagement, Stakeholder Communication, Stakeholder Analysis
+- **Prerequisites:**
+  - `project-management` (recommended) - Stakeholder management is a key project management skill
+
+### User Stories
+- **Slug:** `user-stories`
+- **Synonyms:** User Story Writing, Story Mapping, Acceptance Criteria
+- **Prerequisites:**
+  - `agile` (recommended) - User stories are commonly used in Agile development
 
 ---
 

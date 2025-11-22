@@ -1,0 +1,957 @@
+{
+  "competencies": [
+    {
+      "name": "Arithmetic",
+      "slug": "arithmetic",
+      "description": "Fundamental operations with numbers including addition, subtraction, multiplication, and division",
+      "category_slug": "arithmetic",
+      "synonyms": [
+        "Basic Math",
+        "Elementary Math",
+        "Number Operations",
+        "Basic Arithmetic"
+      ]
+    },
+    {
+      "name": "Pre-Algebra",
+      "slug": "pre-algebra",
+      "description": "Foundation for algebra including integers, fractions, decimals, and basic equations",
+      "category_slug": "algebra",
+      "synonyms": [
+        "Introductory Algebra",
+        "Beginning Algebra"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "arithmetic",
+          "prerequisite_level": "required",
+          "notes": "Arithmetic fundamentals are essential for understanding pre-algebra concepts"
+        }
+      ]
+    },
+    {
+      "name": "Algebra I",
+      "slug": "algebra-1",
+      "description": "Study of linear equations, inequalities, polynomials, and factoring",
+      "category_slug": "algebra",
+      "synonyms": [
+        "Elementary Algebra",
+        "Algebra 1",
+        "Beginning Algebra",
+        "Introductory Algebra"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "pre-algebra",
+          "prerequisite_level": "required",
+          "notes": "Pre-algebra concepts are foundational for Algebra I"
+        }
+      ]
+    },
+    {
+      "name": "Algebra II",
+      "slug": "algebra-2",
+      "description": "Advanced algebraic concepts including quadratic equations, exponential functions, and logarithms",
+      "category_slug": "algebra",
+      "synonyms": [
+        "Intermediate Algebra",
+        "Algebra 2",
+        "Advanced Algebra"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-1",
+          "prerequisite_level": "required",
+          "notes": "Algebra I is essential foundation for Algebra II concepts"
+        }
+      ]
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry",
+      "description": "Study of shapes, sizes, positions, and properties of space including points, lines, angles, and solids",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Euclidean Geometry",
+        "Plane Geometry",
+        "Geometric Reasoning"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-1",
+          "prerequisite_level": "recommended",
+          "notes": "Basic algebra helps with geometric proofs and calculations"
+        }
+      ]
+    },
+    {
+      "name": "Trigonometry",
+      "slug": "trigonometry",
+      "description": "Study of relationships between angles and sides of triangles, including sine, cosine, and tangent functions",
+      "category_slug": "trigonometry",
+      "synonyms": [
+        "Trig",
+        "Trigonometric Functions"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra II provides necessary foundation for understanding trigonometric concepts"
+        },
+        {
+          "prerequisite_slug": "geometry",
+          "prerequisite_level": "required",
+          "notes": "Geometric understanding is essential for trigonometry"
+        }
+      ]
+    },
+    {
+      "name": "Pre-Calculus",
+      "slug": "pre-calculus",
+      "description": "Advanced preparation for calculus including functions, analytical geometry, and trigonometry",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Precalculus",
+        "Pre-Calc"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra II is essential for pre-calculus"
+        },
+        {
+          "prerequisite_slug": "trigonometry",
+          "prerequisite_level": "required",
+          "notes": "Trigonometry is a major component of pre-calculus"
+        }
+      ]
+    },
+    {
+      "name": "Calculus I",
+      "slug": "calculus-1",
+      "description": "Introduction to differential calculus including limits, derivatives, and their applications",
+      "category_slug": "calculus",
+      "synonyms": [
+        "Differential Calculus",
+        "Single Variable Calculus",
+        "Calculus 1",
+        "AP Calculus AB"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "pre-calculus",
+          "prerequisite_level": "required",
+          "notes": "Pre-calculus provides essential foundation for understanding limits and derivatives"
+        }
+      ]
+    },
+    {
+      "name": "Calculus II",
+      "slug": "calculus-2",
+      "description": "Integral calculus including techniques of integration, applications, and series",
+      "category_slug": "calculus",
+      "synonyms": [
+        "Integral Calculus",
+        "Calculus 2",
+        "AP Calculus BC"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "required",
+          "notes": "Calculus I is essential foundation for integral calculus"
+        }
+      ]
+    },
+    {
+      "name": "Calculus III",
+      "slug": "calculus-3",
+      "description": "Multivariable calculus including partial derivatives, multiple integrals, and vector calculus",
+      "category_slug": "calculus",
+      "synonyms": [
+        "Multivariable Calculus",
+        "Calculus 3",
+        "Vector Calculus",
+        "Multivariate Calculus"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus II concepts extend naturally to multiple variables"
+        }
+      ]
+    },
+    {
+      "name": "Linear Algebra",
+      "slug": "linear-algebra",
+      "description": "Study of vector spaces, linear transformations, matrices, and systems of linear equations",
+      "category_slug": "linear-algebra",
+      "synonyms": [
+        "Matrix Theory",
+        "Vector Algebra"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Strong algebraic foundation is essential for linear algebra"
+        },
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "recommended",
+          "notes": "Calculus helps with understanding some linear algebra applications"
+        }
+      ]
+    },
+    {
+      "name": "Differential Equations",
+      "slug": "differential-equations",
+      "description": "Study of equations involving derivatives and their solutions, with applications in science and engineering",
+      "category_slug": "differential-equations",
+      "synonyms": [
+        "ODEs",
+        "Ordinary Differential Equations",
+        "DiffEq"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Integration techniques from Calculus II are essential for solving differential equations"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "recommended",
+          "notes": "Linear algebra is useful for systems of differential equations"
+        }
+      ]
+    },
+    {
+      "name": "Partial Differential Equations",
+      "slug": "partial-differential-equations",
+      "description": "Study of differential equations with multiple independent variables",
+      "category_slug": "differential-equations",
+      "synonyms": [
+        "PDEs",
+        "PDE Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-3",
+          "prerequisite_level": "required",
+          "notes": "Multivariable calculus is essential for PDEs"
+        },
+        {
+          "prerequisite_slug": "differential-equations",
+          "prerequisite_level": "required",
+          "notes": "Understanding ODEs is foundational for PDEs"
+        }
+      ]
+    },
+    {
+      "name": "Real Analysis",
+      "slug": "real-analysis",
+      "description": "Rigorous study of real numbers, sequences, series, continuity, and differentiability",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Advanced Calculus",
+        "Mathematical Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus provides intuition that real analysis makes rigorous"
+        }
+      ]
+    },
+    {
+      "name": "Complex Analysis",
+      "slug": "complex-analysis",
+      "description": "Study of functions of complex variables including analytic functions and contour integration",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Complex Variables",
+        "Theory of Complex Functions"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Single variable calculus extends to complex variables"
+        }
+      ]
+    },
+    {
+      "name": "Abstract Algebra",
+      "slug": "abstract-algebra",
+      "description": "Study of algebraic structures including groups, rings, and fields",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Modern Algebra",
+        "Group Theory",
+        "Ring Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra provides concrete examples of algebraic structures"
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "slug": "statistics",
+      "description": "Collection, analysis, interpretation, and presentation of data",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Statistical Analysis",
+        "Descriptive Statistics",
+        "Inferential Statistics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebraic skills are needed for statistical formulas and calculations"
+        }
+      ]
+    },
+    {
+      "name": "Probability",
+      "slug": "probability",
+      "description": "Mathematical study of randomness, chance events, and their likelihood",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Probability Theory",
+        "Probabilistic Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra is essential for probability calculations"
+        }
+      ]
+    },
+    {
+      "name": "Bayesian Statistics",
+      "slug": "bayesian-statistics",
+      "description": "Statistical inference using Bayes' theorem and prior probability distributions",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Bayesian Inference",
+        "Bayesian Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "statistics",
+          "prerequisite_level": "required",
+          "notes": "Foundation in statistics is essential for Bayesian methods"
+        },
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability theory is core to Bayesian statistics"
+        }
+      ]
+    },
+    {
+      "name": "Discrete Mathematics",
+      "slug": "discrete-mathematics",
+      "description": "Study of mathematical structures that are discrete rather than continuous, including logic, sets, and graph theory",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Discrete Math",
+        "Discrete Structures"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-1",
+          "prerequisite_level": "required",
+          "notes": "Basic algebra is needed for discrete math concepts"
+        }
+      ]
+    },
+    {
+      "name": "Graph Theory",
+      "slug": "graph-theory",
+      "description": "Study of graphs as mathematical structures modeling relationships between objects",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Network Theory",
+        "Graph Mathematics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "discrete-mathematics",
+          "prerequisite_level": "recommended",
+          "notes": "Discrete math provides helpful background for graph theory"
+        }
+      ]
+    },
+    {
+      "name": "Combinatorics",
+      "slug": "combinatorics",
+      "description": "Study of counting, arrangement, and combination of objects",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Combinatorial Mathematics",
+        "Counting Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra is essential for combinatorial formulas"
+        }
+      ]
+    },
+    {
+      "name": "Number Theory",
+      "slug": "number-theory",
+      "description": "Study of properties and relationships of integers, including prime numbers and divisibility",
+      "category_slug": "number-theory",
+      "synonyms": [
+        "Theory of Numbers",
+        "Elementary Number Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebraic reasoning is essential for number theory"
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Logic",
+      "slug": "mathematical-logic",
+      "description": "Study of formal systems, proof theory, and the foundations of mathematics",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Formal Logic",
+        "Symbolic Logic",
+        "Logic Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "discrete-mathematics",
+          "prerequisite_level": "recommended",
+          "notes": "Discrete math introduces logical reasoning concepts"
+        }
+      ]
+    },
+    {
+      "name": "Set Theory",
+      "slug": "set-theory",
+      "description": "Study of collections of objects and their properties, fundamental to modern mathematics",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Naive Set Theory",
+        "Axiomatic Set Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "discrete-mathematics",
+          "prerequisite_level": "recommended",
+          "notes": "Discrete math introduces basic set concepts"
+        }
+      ]
+    },
+    {
+      "name": "Topology",
+      "slug": "topology",
+      "description": "Study of properties preserved under continuous deformations including space, dimension, and continuity",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Point-Set Topology",
+        "General Topology"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "real-analysis",
+          "prerequisite_level": "required",
+          "notes": "Real analysis provides foundation for topological concepts"
+        }
+      ]
+    },
+    {
+      "name": "Numerical Analysis",
+      "slug": "numerical-analysis",
+      "description": "Study of algorithms for solving mathematical problems numerically",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Numerical Methods",
+        "Computational Mathematics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus is essential for understanding numerical methods"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra is used extensively in numerical algorithms"
+        }
+      ]
+    },
+    {
+      "name": "Operations Research",
+      "slug": "operations-research",
+      "description": "Application of mathematical methods to optimize decision-making in complex systems",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Operational Research",
+        "Management Science",
+        "OR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear programming and optimization require linear algebra"
+        },
+        {
+          "prerequisite_slug": "statistics",
+          "prerequisite_level": "recommended",
+          "notes": "Statistical methods are used in OR"
+        }
+      ]
+    },
+    {
+      "name": "Game Theory",
+      "slug": "game-theory",
+      "description": "Mathematical study of strategic decision-making and competitive interactions",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Strategic Game Theory",
+        "Mathematical Game Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability is essential for analyzing game strategies"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "recommended",
+          "notes": "Linear algebra helps with matrix games"
+        }
+      ]
+    },
+    {
+      "name": "Cryptography",
+      "slug": "cryptography-math",
+      "description": "Mathematical foundations of encryption, code-making, and information security",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Mathematical Cryptography",
+        "Cryptographic Mathematics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "number-theory",
+          "prerequisite_level": "required",
+          "notes": "Number theory is fundamental to modern cryptography"
+        },
+        {
+          "prerequisite_slug": "abstract-algebra",
+          "prerequisite_level": "recommended",
+          "notes": "Abstract algebra provides tools for advanced cryptography"
+        }
+      ]
+    },
+    {
+      "name": "Optimization",
+      "slug": "optimization",
+      "description": "Mathematical techniques for finding best solutions from a set of alternatives",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Mathematical Optimization",
+        "Linear Programming",
+        "Nonlinear Optimization"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-3",
+          "prerequisite_level": "required",
+          "notes": "Multivariable calculus is essential for optimization"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra is fundamental to optimization methods"
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Modeling",
+      "slug": "mathematical-modeling",
+      "description": "Creating mathematical representations of real-world systems and phenomena",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Applied Mathematics",
+        "Mathematical Simulation"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus is essential for continuous models"
+        },
+        {
+          "prerequisite_slug": "differential-equations",
+          "prerequisite_level": "recommended",
+          "notes": "Differential equations model dynamic systems"
+        }
+      ]
+    },
+    {
+      "name": "Actuarial Mathematics",
+      "slug": "actuarial-mathematics",
+      "description": "Mathematical and statistical methods for assessing risk in insurance and finance",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Actuarial Science",
+        "Risk Mathematics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability is fundamental to risk assessment"
+        },
+        {
+          "prerequisite_slug": "statistics",
+          "prerequisite_level": "required",
+          "notes": "Statistical methods are core to actuarial work"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus is needed for actuarial models"
+        }
+      ]
+    },
+    {
+      "name": "Euclidean Geometry",
+      "slug": "euclidean-geometry",
+      "description": "Classical geometry based on Euclid's axioms studying flat space and geometric figures",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Classical Geometry",
+        "Plane Geometry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "geometry",
+          "prerequisite_level": "required",
+          "notes": "Basic geometry provides foundation for Euclidean geometry"
+        }
+      ]
+    },
+    {
+      "name": "Non-Euclidean Geometry",
+      "slug": "non-euclidean-geometry",
+      "description": "Geometry that rejects Euclid's parallel postulate, including hyperbolic and elliptic geometry",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Hyperbolic Geometry",
+        "Elliptic Geometry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "euclidean-geometry",
+          "prerequisite_level": "required",
+          "notes": "Understanding Euclidean geometry is essential before studying alternatives"
+        }
+      ]
+    },
+    {
+      "name": "Analytic Geometry",
+      "slug": "analytic-geometry",
+      "description": "Study of geometry using coordinate systems and algebraic principles",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Coordinate Geometry",
+        "Cartesian Geometry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra is essential for coordinate-based geometry"
+        },
+        {
+          "prerequisite_slug": "geometry",
+          "prerequisite_level": "required",
+          "notes": "Basic geometry concepts are foundational"
+        }
+      ]
+    },
+    {
+      "name": "Differential Geometry",
+      "slug": "differential-geometry",
+      "description": "Study of geometric properties using calculus and differential equations",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Curved Space Geometry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-3",
+          "prerequisite_level": "required",
+          "notes": "Multivariable calculus is essential for differential geometry"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra is fundamental to differential geometry"
+        }
+      ]
+    },
+    {
+      "name": "Projective Geometry",
+      "slug": "projective-geometry",
+      "description": "Study of geometric properties invariant under projective transformations",
+      "category_slug": "geometry",
+      "synonyms": [
+        "Perspective Geometry"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra provides tools for projective transformations"
+        }
+      ]
+    },
+    {
+      "name": "Measure Theory",
+      "slug": "measure-theory",
+      "description": "Systematic way to assign numbers to sets, foundational for modern probability and analysis",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Lebesgue Integration",
+        "Measure and Integration"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "real-analysis",
+          "prerequisite_level": "required",
+          "notes": "Real analysis is essential foundation for measure theory"
+        }
+      ]
+    },
+    {
+      "name": "Functional Analysis",
+      "slug": "functional-analysis",
+      "description": "Study of vector spaces with topological structure and linear operators between them",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Operator Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "real-analysis",
+          "prerequisite_level": "required",
+          "notes": "Real analysis provides foundation for functional spaces"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra extends to infinite-dimensional spaces in functional analysis"
+        }
+      ]
+    },
+    {
+      "name": "Algebraic Geometry",
+      "slug": "algebraic-geometry",
+      "description": "Study of geometric objects defined by polynomial equations",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Algebraic Varieties"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "abstract-algebra",
+          "prerequisite_level": "required",
+          "notes": "Abstract algebra is essential for algebraic geometry"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra provides tools for algebraic geometry"
+        }
+      ]
+    },
+    {
+      "name": "Dynamical Systems",
+      "slug": "dynamical-systems",
+      "description": "Study of systems that evolve over time according to fixed rules",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Chaos Theory",
+        "Systems Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "differential-equations",
+          "prerequisite_level": "required",
+          "notes": "Differential equations model dynamical systems"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra is used to analyze system behavior"
+        }
+      ]
+    },
+    {
+      "name": "Stochastic Processes",
+      "slug": "stochastic-processes",
+      "description": "Mathematical models of random processes evolving over time",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Random Processes",
+        "Markov Chains"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability theory is fundamental to stochastic processes"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus is needed for continuous-time processes"
+        }
+      ]
+    },
+    {
+      "name": "Time Series Analysis",
+      "slug": "time-series-analysis",
+      "description": "Statistical methods for analyzing data points collected over time",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Temporal Analysis",
+        "Sequential Data Analysis"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "statistics",
+          "prerequisite_level": "required",
+          "notes": "Statistical foundation is essential for time series"
+        },
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability helps with forecasting and modeling"
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Statistics",
+      "slug": "mathematical-statistics",
+      "description": "Theoretical foundation of statistical methods using probability and analysis",
+      "category_slug": "statistics-probability",
+      "synonyms": [
+        "Theoretical Statistics",
+        "Statistical Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "probability",
+          "prerequisite_level": "required",
+          "notes": "Probability theory is the foundation of mathematical statistics"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus is essential for continuous distributions"
+        }
+      ]
+    },
+    {
+      "name": "Fourier Analysis",
+      "slug": "fourier-analysis",
+      "description": "Study of representing functions as sums of sinusoidal waves",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Harmonic Analysis",
+        "Fourier Transform"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Integration is essential for Fourier transforms"
+        },
+        {
+          "prerequisite_slug": "differential-equations",
+          "prerequisite_level": "recommended",
+          "notes": "Fourier analysis is used to solve differential equations"
+        }
+      ]
+    },
+    {
+      "name": "Boolean Algebra",
+      "slug": "boolean-algebra",
+      "description": "Algebraic structure for logical operations used in digital logic and computer science",
+      "category_slug": "discrete-mathematics",
+      "synonyms": [
+        "Logic Algebra",
+        "Binary Algebra"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "discrete-mathematics",
+          "prerequisite_level": "recommended",
+          "notes": "Discrete math introduces logical structures"
+        }
+      ]
+    },
+    {
+      "name": "Category Theory",
+      "slug": "category-theory",
+      "description": "Abstract study of mathematical structures and relationships between them",
+      "category_slug": "advanced-math",
+      "synonyms": [
+        "Abstract Category Theory"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "abstract-algebra",
+          "prerequisite_level": "required",
+          "notes": "Abstract algebra provides concrete examples for category theory"
+        }
+      ]
+    },
+    {
+      "name": "Finite Mathematics",
+      "slug": "finite-mathematics",
+      "description": "Mathematics of finite sets including linear programming, probability, and matrices",
+      "category_slug": "applied-math",
+      "synonyms": [
+        "Finite Math",
+        "Business Mathematics"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra provides foundation for finite mathematics"
+        }
+      ]
+    }
+  ]
+}
