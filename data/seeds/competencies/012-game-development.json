@@ -1,3 +1,763 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Unity",
+      "slug": "unity",
+      "description": "Cross-platform game engine for 2D and 3D game development",
+      "category_slug": "game-development",
+      "icon": "logos:unity",
+      "synonyms": ["Unity3D", "Unity Engine", "Unity Game Engine"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "C# is the primary scripting language for Unity"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "unreal-engine",
+          "relationship_type": "similar",
+          "notes": "Unreal Engine is a comparable game engine with different strengths"
+        },
+        {
+          "alternative_slug": "godot",
+          "relationship_type": "similar",
+          "notes": "Godot is an open-source alternative game engine"
+        }
+      ]
+    },
+    {
+      "name": "Unreal Engine",
+      "slug": "unreal-engine",
+      "description": "Advanced game engine known for high-fidelity 3D graphics and AAA game development",
+      "category_slug": "game-development",
+      "synonyms": ["UE4", "UE5", "Unreal Engine 4", "Unreal Engine 5"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "required",
+          "notes": "C++ is used for Unreal Engine programming"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "unity",
+          "relationship_type": "similar",
+          "notes": "Unity is a comparable game engine"
+        }
+      ]
+    },
+    {
+      "name": "Godot",
+      "slug": "godot",
+      "description": "Open-source game engine for 2D and 3D games with its own scripting language",
+      "category_slug": "game-development",
+      "icon": "logos:godot-icon",
+      "synonyms": ["Godot Engine"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "unity",
+          "relationship_type": "similar",
+          "notes": "Unity is a commercial alternative"
+        }
+      ]
+    },
+    {
+      "name": "GameMaker Studio",
+      "slug": "gamemaker-studio",
+      "description": "Game development platform focused on 2D games with drag-and-drop and scripting",
+      "category_slug": "game-development",
+      "synonyms": ["GameMaker", "GMS2", "GameMaker Studio 2"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "CryEngine",
+      "slug": "cryengine",
+      "description": "Game engine known for advanced graphics and used in games like Crysis",
+      "category_slug": "game-development",
+      "synonyms": ["CRYENGINE"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "required",
+          "notes": "C++ is used for CryEngine development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "unreal-engine",
+          "relationship_type": "similar",
+          "notes": "Similar AAA-focused engine"
+        }
+      ]
+    },
+    {
+      "name": "RPG Maker",
+      "slug": "rpg-maker",
+      "description": "Game development software focused on creating role-playing games",
+      "category_slug": "game-development",
+      "synonyms": ["RPG Maker MV", "RPG Maker MZ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Construct",
+      "slug": "construct",
+      "description": "Game engine for 2D games using visual scripting and event-based logic",
+      "category_slug": "game-development",
+      "synonyms": ["Construct 2", "Construct 3"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "gamemaker-studio",
+          "relationship_type": "similar",
+          "notes": "Similar 2D game development tool"
+        }
+      ]
+    },
+    {
+      "name": "Defold",
+      "slug": "defold",
+      "description": "Free game engine for cross-platform 2D games with Lua scripting",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lua",
+          "prerequisite_level": "required",
+          "notes": "Lua is the scripting language for Defold"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cocos2d",
+      "slug": "cocos2d",
+      "description": "Open-source framework for building 2D games and graphical applications",
+      "category_slug": "game-development",
+      "icon": "logos:cocos",
+      "synonyms": ["Cocos2d-x"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "recommended",
+          "notes": "C++ is commonly used with Cocos2d-x"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "LibGDX",
+      "slug": "libgdx",
+      "description": "Java-based game development framework for cross-platform games",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "Java is the primary language for LibGDX"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Phaser",
+      "slug": "phaser",
+      "description": "Fast, free, and fun HTML5 game framework for browser-based games",
+      "category_slug": "game-development",
+      "icon": "logos:phaser",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript is used for Phaser game development"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "PlayCanvas",
+      "slug": "playcanvas",
+      "description": "WebGL game engine for browser-based 3D games and interactive content",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript is the scripting language for PlayCanvas"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "OpenGL",
+      "slug": "opengl",
+      "description": "Cross-platform graphics API for rendering 2D and 3D graphics",
+      "category_slug": "game-development",
+      "icon": "logos:opengl",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "recommended",
+          "notes": "Often used with C or C++"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vulkan",
+          "relationship_type": "similar",
+          "notes": "Modern low-level graphics API"
+        },
+        {
+          "alternative_slug": "directx",
+          "relationship_type": "similar",
+          "notes": "Windows-specific graphics API"
+        }
+      ]
+    },
+    {
+      "name": "DirectX",
+      "slug": "directx",
+      "description": "Microsoft's collection of APIs for multimedia and game programming on Windows",
+      "category_slug": "game-development",
+      "synonyms": ["Direct3D", "DX11", "DX12"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "required",
+          "notes": "C++ is commonly used with DirectX"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "opengl",
+          "relationship_type": "similar",
+          "notes": "Cross-platform alternative"
+        },
+        {
+          "alternative_slug": "vulkan",
+          "relationship_type": "similar",
+          "notes": "Modern cross-platform low-level API"
+        }
+      ]
+    },
+    {
+      "name": "Vulkan",
+      "slug": "vulkan",
+      "description": "Modern low-level graphics API for high-performance 3D graphics",
+      "category_slug": "game-development",
+      "icon": "logos:vulkan",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "required",
+          "notes": "C++ is the primary language for Vulkan development"
+        },
+        {
+          "prerequisite_slug": "opengl",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding OpenGL helps when learning Vulkan"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "opengl",
+          "relationship_type": "similar",
+          "notes": "Higher-level graphics API"
+        },
+        {
+          "alternative_slug": "directx",
+          "relationship_type": "similar",
+          "notes": "Windows-specific alternative"
+        }
+      ]
+    },
+    {
+      "name": "GLSL",
+      "slug": "glsl",
+      "description": "OpenGL Shading Language for writing shaders for graphics rendering",
+      "category_slug": "game-development",
+      "synonyms": ["OpenGL Shading Language"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "opengl",
+          "prerequisite_level": "required",
+          "notes": "GLSL is used within OpenGL"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "hlsl",
+          "relationship_type": "similar",
+          "notes": "DirectX shading language"
+        }
+      ]
+    },
+    {
+      "name": "HLSL",
+      "slug": "hlsl",
+      "description": "High-Level Shading Language for DirectX shader programming",
+      "category_slug": "game-development",
+      "synonyms": ["High-Level Shading Language"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "directx",
+          "prerequisite_level": "required",
+          "notes": "HLSL is used with DirectX"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "glsl",
+          "relationship_type": "similar",
+          "notes": "OpenGL shading language"
+        }
+      ]
+    },
+    {
+      "name": "Box2D",
+      "slug": "box2d",
+      "description": "Open-source 2D physics engine for games",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bullet Physics",
+      "slug": "bullet-physics",
+      "description": "Real-time 3D physics simulation library for games and simulations",
+      "category_slug": "game-development",
+      "synonyms": ["Bullet"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cpp",
+          "prerequisite_level": "required",
+          "notes": "C++ is used with Bullet Physics"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "PhysX",
+      "slug": "physx",
+      "description": "NVIDIA's physics engine for realistic physical simulation in games",
+      "category_slug": "game-development",
+      "icon": "logos:nvidia",
+      "synonyms": ["NVIDIA PhysX"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "bullet-physics",
+          "relationship_type": "similar",
+          "notes": "Open-source physics engine alternative"
+        }
+      ]
+    },
+    {
+      "name": "FMOD",
+      "slug": "fmod",
+      "description": "Audio engine and middleware for interactive audio in games",
+      "category_slug": "game-development",
+      "synonyms": ["FMOD Studio"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "wwise",
+          "relationship_type": "similar",
+          "notes": "Alternative audio middleware"
+        }
+      ]
+    },
+    {
+      "name": "Wwise",
+      "slug": "wwise",
+      "description": "Audio middleware for interactive media and video games",
+      "category_slug": "game-development",
+      "synonyms": ["Audiokinetic Wwise"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "fmod",
+          "relationship_type": "similar",
+          "notes": "Alternative audio middleware"
+        }
+      ]
+    },
+    {
+      "name": "MonoGame",
+      "slug": "monogame",
+      "description": "Open-source framework for creating cross-platform games in C#",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "C# is the language for MonoGame"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "XNA",
+      "slug": "xna",
+      "description": "Microsoft's game development framework (discontinued but still used)",
+      "category_slug": "game-development",
+      "synonyms": ["Microsoft XNA"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "C# is the language for XNA"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "monogame",
+          "relationship_type": "similar",
+          "notes": "MonoGame is the spiritual successor to XNA"
+        }
+      ]
+    },
+    {
+      "name": "SDL",
+      "slug": "sdl",
+      "description": "Simple DirectMedia Layer - cross-platform library for multimedia and input",
+      "category_slug": "game-development",
+      "synonyms": ["Simple DirectMedia Layer", "SDL2"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "required",
+          "notes": "C is the primary language for SDL"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Raylib",
+      "slug": "raylib",
+      "description": "Simple and easy-to-use library for game programming in C",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "c",
+          "prerequisite_level": "required",
+          "notes": "C is the primary language for Raylib"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sdl",
+          "relationship_type": "similar",
+          "notes": "Another C-based multimedia library"
+        }
+      ]
+    },
+    {
+      "name": "Love2D",
+      "slug": "love2d",
+      "description": "Framework for making 2D games in Lua",
+      "category_slug": "game-development",
+      "icon": "logos:love",
+      "synonyms": ["LÖVE"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lua",
+          "prerequisite_level": "required",
+          "notes": "Lua is the scripting language for Love2D"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Pico-8",
+      "slug": "pico-8",
+      "description": "Fantasy console for making, sharing and playing tiny games",
+      "category_slug": "game-development",
+      "synonyms": ["PICO-8"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "lua",
+          "prerequisite_level": "required",
+          "notes": "Pico-8 uses a Lua-like language"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Design",
+      "slug": "game-design",
+      "description": "The art of creating game rules, mechanics, and player experiences",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Level Design",
+      "slug": "level-design",
+      "description": "Creating game environments, layouts, and spatial experiences",
+      "category_slug": "game-development",
+      "synonyms": ["Environment Design"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "game-design",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding game design principles helps with level design"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Mechanics Design",
+      "slug": "game-mechanics-design",
+      "description": "Designing the rules and systems that govern gameplay",
+      "category_slug": "game-development",
+      "synonyms": ["Systems Design"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "game-design",
+          "prerequisite_level": "recommended",
+          "notes": "Core game design knowledge is beneficial"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game UI/UX Design",
+      "slug": "game-ui-ux-design",
+      "description": "Designing user interfaces and experiences specific to games",
+      "category_slug": "game-development",
+      "synonyms": ["Game Interface Design"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game Balancing",
+      "slug": "game-balancing",
+      "description": "Tuning game difficulty, economy, and mechanics for optimal player experience",
+      "category_slug": "game-development",
+      "synonyms": ["Game Balance"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "game-design",
+          "prerequisite_level": "required",
+          "notes": "Understanding game design is essential for balancing"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Narrative Design",
+      "slug": "narrative-design-games",
+      "description": "Crafting stories and interactive narratives for games",
+      "category_slug": "game-development",
+      "synonyms": ["Game Writing", "Interactive Storytelling"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Quest Design",
+      "slug": "quest-design",
+      "description": "Creating missions, objectives, and player-driven narratives in games",
+      "category_slug": "game-development",
+      "synonyms": ["Mission Design"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "narrative-design-games",
+          "prerequisite_level": "recommended",
+          "notes": "Narrative skills enhance quest design"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Networking",
+      "slug": "game-networking",
+      "description": "Implementing multiplayer and networked gameplay systems",
+      "category_slug": "game-development",
+      "synonyms": ["Multiplayer Programming", "Network Programming for Games"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game AI Programming",
+      "slug": "game-ai-programming",
+      "description": "Programming artificial intelligence for non-player characters and game systems",
+      "category_slug": "game-development",
+      "synonyms": ["Game Artificial Intelligence", "NPC AI"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algorithms",
+          "prerequisite_level": "recommended",
+          "notes": "Algorithm knowledge helps with AI programming"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Procedural Generation",
+      "slug": "procedural-generation",
+      "description": "Creating game content algorithmically rather than manually",
+      "category_slug": "game-development",
+      "synonyms": ["Procedural Content Generation", "PCG"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algorithms",
+          "prerequisite_level": "recommended",
+          "notes": "Algorithm knowledge is beneficial for procedural generation"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Analytics",
+      "slug": "game-analytics",
+      "description": "Analyzing player data and metrics to improve game design and engagement",
+      "category_slug": "game-development",
+      "synonyms": ["Player Analytics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game Monetization Design",
+      "slug": "game-monetization",
+      "description": "Designing revenue models and in-game economies for games",
+      "category_slug": "game-development",
+      "synonyms": ["F2P Design", "Live Ops"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "game-design",
+          "prerequisite_level": "required",
+          "notes": "Game design understanding is essential for ethical monetization"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Testing",
+      "slug": "game-testing",
+      "description": "Quality assurance and testing methodologies for games",
+      "category_slug": "game-development",
+      "synonyms": ["Game QA", "Quality Assurance for Games"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Shader Programming",
+      "slug": "shader-programming",
+      "description": "Programming visual effects and rendering techniques using shaders",
+      "category_slug": "game-development",
+      "synonyms": ["Graphics Programming"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "glsl",
+          "prerequisite_level": "recommended",
+          "notes": "GLSL or HLSL knowledge is beneficial"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Unity Shader Graph",
+      "slug": "unity-shader-graph",
+      "description": "Visual shader creation tool in Unity for creating custom shaders without code",
+      "category_slug": "game-development",
+      "synonyms": ["Shader Graph"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "unity",
+          "prerequisite_level": "required",
+          "notes": "Unity knowledge is required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Blueprint Visual Scripting",
+      "slug": "blueprint-visual-scripting",
+      "description": "Unreal Engine's node-based visual scripting system for game logic",
+      "category_slug": "game-development",
+      "synonyms": ["Blueprints", "UE Blueprints"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "unreal-engine",
+          "prerequisite_level": "required",
+          "notes": "Unreal Engine knowledge is required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "GDScript",
+      "slug": "gdscript",
+      "description": "Godot's built-in scripting language for game development",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "godot",
+          "prerequisite_level": "required",
+          "notes": "Used within Godot engine"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Game Audio Design",
+      "slug": "game-audio-design",
+      "description": "Creating and implementing sound effects and music for games",
+      "category_slug": "game-development",
+      "synonyms": ["Sound Design for Games"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "3D Modeling for Games",
+      "slug": "3d-modeling-games",
+      "description": "Creating 3D assets and characters optimized for game engines",
+      "category_slug": "game-development",
+      "synonyms": ["Game Asset Creation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game Animation",
+      "slug": "game-animation",
+      "description": "Creating and implementing character and object animations for games",
+      "category_slug": "game-development",
+      "synonyms": ["Animation for Games"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pixel Art",
+      "slug": "pixel-art",
+      "description": "Creating retro-style graphics using individual pixels for games",
+      "category_slug": "game-development",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "VFX for Games",
+      "slug": "vfx-games",
+      "description": "Creating visual effects like particles, explosions, and magic for games",
+      "category_slug": "game-development",
+      "synonyms": ["Game Visual Effects", "Particle Systems"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
 }

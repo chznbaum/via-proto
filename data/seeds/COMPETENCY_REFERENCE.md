@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T14:04:42.367Z
-**Total Competencies:** 1199
+**Generated:** 2025-11-22T14:15:37.256Z
+**Total Competencies:** 1249
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -24,7 +24,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [databases](#databases) (55)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [frontend-development](#frontend-development) (46)
-- [game-development](#game-development) (3)
+- [game-development](#game-development) (53)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [languages](#languages) (169)
@@ -3785,6 +3785,60 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## game-development
 
+### 3D Modeling for Games
+- **Slug:** `3d-modeling-games`
+- **Synonyms:** Game Asset Creation
+
+### Blueprint Visual Scripting
+- **Slug:** `blueprint-visual-scripting`
+- **Synonyms:** Blueprints, UE Blueprints
+- **Prerequisites:**
+  - `unreal-engine` (required) - Unreal Engine knowledge is required
+
+### Box2D
+- **Slug:** `box2d`
+
+### Bullet Physics
+- **Slug:** `bullet-physics`
+- **Synonyms:** Bullet
+- **Prerequisites:**
+  - `cpp` (required) - C++ is used with Bullet Physics
+
+### Cocos2d
+- **Slug:** `cocos2d`
+- **Icon:** `logos:cocos`
+- **Synonyms:** Cocos2d-x
+- **Prerequisites:**
+  - `cpp` (recommended) - C++ is commonly used with Cocos2d-x
+
+### Construct
+- **Slug:** `construct`
+- **Synonyms:** Construct 2, Construct 3
+- **Alternatives:**
+  - `gamemaker-studio` (similar)
+
+### CryEngine
+- **Slug:** `cryengine`
+- **Synonyms:** CRYENGINE
+- **Prerequisites:**
+  - `cpp` (required) - C++ is used for CryEngine development
+- **Alternatives:**
+  - `unreal-engine` (similar)
+
+### Defold
+- **Slug:** `defold`
+- **Prerequisites:**
+  - `lua` (required) - Lua is the scripting language for Defold
+
+### DirectX
+- **Slug:** `directx`
+- **Synonyms:** Direct3D, DX11, DX12
+- **Prerequisites:**
+  - `cpp` (required) - C++ is commonly used with DirectX
+- **Alternatives:**
+  - `opengl` (similar)
+  - `vulkan` (similar)
+
 ### Fennel
 - **Slug:** `fennel`
 - **Synonyms:** Fennel Language, Fennel Lisp
@@ -3794,10 +3848,126 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `lua` (similar)
 
+### FMOD
+- **Slug:** `fmod`
+- **Synonyms:** FMOD Studio
+- **Alternatives:**
+  - `wwise` (similar)
+
+### Game AI Programming
+- **Slug:** `game-ai-programming`
+- **Synonyms:** Game Artificial Intelligence, NPC AI
+- **Prerequisites:**
+  - `algorithms` (recommended) - Algorithm knowledge helps with AI programming
+
+### Game Analytics
+- **Slug:** `game-analytics`
+- **Synonyms:** Player Analytics
+
+### Game Animation
+- **Slug:** `game-animation`
+- **Synonyms:** Animation for Games
+
+### Game Audio Design
+- **Slug:** `game-audio-design`
+- **Synonyms:** Sound Design for Games
+
+### Game Balancing
+- **Slug:** `game-balancing`
+- **Synonyms:** Game Balance
+- **Prerequisites:**
+  - `game-design` (required) - Understanding game design is essential for balancing
+
+### Game Design
+- **Slug:** `game-design`
+
+### Game Mechanics Design
+- **Slug:** `game-mechanics-design`
+- **Synonyms:** Systems Design
+- **Prerequisites:**
+  - `game-design` (recommended) - Core game design knowledge is beneficial
+
+### Game Monetization Design
+- **Slug:** `game-monetization`
+- **Synonyms:** F2P Design, Live Ops
+- **Prerequisites:**
+  - `game-design` (required) - Game design understanding is essential for ethical monetization
+
+### Game Networking
+- **Slug:** `game-networking`
+- **Synonyms:** Multiplayer Programming, Network Programming for Games
+
+### Game Testing
+- **Slug:** `game-testing`
+- **Synonyms:** Game QA, Quality Assurance for Games
+
+### Game UI/UX Design
+- **Slug:** `game-ui-ux-design`
+- **Synonyms:** Game Interface Design
+
+### GameMaker Studio
+- **Slug:** `gamemaker-studio`
+- **Synonyms:** GameMaker, GMS2, GameMaker Studio 2
+
+### GDScript
+- **Slug:** `gdscript`
+- **Prerequisites:**
+  - `godot` (required) - Used within Godot engine
+
+### GLSL
+- **Slug:** `glsl`
+- **Synonyms:** OpenGL Shading Language
+- **Prerequisites:**
+  - `opengl` (required) - GLSL is used within OpenGL
+- **Alternatives:**
+  - `hlsl` (similar)
+
+### Godot
+- **Slug:** `godot`
+- **Icon:** `logos:godot-icon`
+- **Synonyms:** Godot Engine
+- **Alternatives:**
+  - `unity` (similar)
+
+### HLSL
+- **Slug:** `hlsl`
+- **Synonyms:** High-Level Shading Language
+- **Prerequisites:**
+  - `directx` (required) - HLSL is used with DirectX
+- **Alternatives:**
+  - `glsl` (similar)
+
+### Level Design
+- **Slug:** `level-design`
+- **Synonyms:** Environment Design
+- **Prerequisites:**
+  - `game-design` (recommended) - Understanding game design principles helps with level design
+
+### LibGDX
+- **Slug:** `libgdx`
+- **Prerequisites:**
+  - `java` (required) - Java is the primary language for LibGDX
+
+### Love2D
+- **Slug:** `love2d`
+- **Icon:** `logos:love`
+- **Synonyms:** LÖVE
+- **Prerequisites:**
+  - `lua` (required) - Lua is the scripting language for Love2D
+
 ### Lua
 - **Slug:** `lua`
 - **Icon:** `logos:lua`
 - **Synonyms:** Lua Language, Lua Scripting
+
+### MonoGame
+- **Slug:** `monogame`
+- **Prerequisites:**
+  - `csharp` (required) - C# is the language for MonoGame
+
+### Narrative Design
+- **Slug:** `narrative-design-games`
+- **Synonyms:** Game Writing, Interactive Storytelling
 
 ### Odin
 - **Slug:** `odin`
@@ -3807,6 +3977,129 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `c` (similar)
   - `zig` (similar)
+
+### OpenGL
+- **Slug:** `opengl`
+- **Icon:** `logos:opengl`
+- **Prerequisites:**
+  - `cpp` (recommended) - Often used with C or C++
+- **Alternatives:**
+  - `vulkan` (similar)
+  - `directx` (similar)
+
+### Phaser
+- **Slug:** `phaser`
+- **Icon:** `logos:phaser`
+- **Prerequisites:**
+  - `javascript` (required) - JavaScript is used for Phaser game development
+
+### PhysX
+- **Slug:** `physx`
+- **Icon:** `logos:nvidia`
+- **Synonyms:** NVIDIA PhysX
+- **Alternatives:**
+  - `bullet-physics` (similar)
+
+### Pico-8
+- **Slug:** `pico-8`
+- **Synonyms:** PICO-8
+- **Prerequisites:**
+  - `lua` (required) - Pico-8 uses a Lua-like language
+
+### Pixel Art
+- **Slug:** `pixel-art`
+
+### PlayCanvas
+- **Slug:** `playcanvas`
+- **Prerequisites:**
+  - `javascript` (required) - JavaScript is the scripting language for PlayCanvas
+
+### Procedural Generation
+- **Slug:** `procedural-generation`
+- **Synonyms:** Procedural Content Generation, PCG
+- **Prerequisites:**
+  - `algorithms` (recommended) - Algorithm knowledge is beneficial for procedural generation
+
+### Quest Design
+- **Slug:** `quest-design`
+- **Synonyms:** Mission Design
+- **Prerequisites:**
+  - `narrative-design-games` (recommended) - Narrative skills enhance quest design
+
+### Raylib
+- **Slug:** `raylib`
+- **Prerequisites:**
+  - `c` (required) - C is the primary language for Raylib
+- **Alternatives:**
+  - `sdl` (similar)
+
+### RPG Maker
+- **Slug:** `rpg-maker`
+- **Synonyms:** RPG Maker MV, RPG Maker MZ
+
+### SDL
+- **Slug:** `sdl`
+- **Synonyms:** Simple DirectMedia Layer, SDL2
+- **Prerequisites:**
+  - `c` (required) - C is the primary language for SDL
+
+### Shader Programming
+- **Slug:** `shader-programming`
+- **Synonyms:** Graphics Programming
+- **Prerequisites:**
+  - `glsl` (recommended) - GLSL or HLSL knowledge is beneficial
+
+### Unity
+- **Slug:** `unity`
+- **Icon:** `logos:unity`
+- **Synonyms:** Unity3D, Unity Engine, Unity Game Engine
+- **Prerequisites:**
+  - `csharp` (required) - C# is the primary scripting language for Unity
+- **Alternatives:**
+  - `unreal-engine` (similar)
+  - `godot` (similar)
+
+### Unity Shader Graph
+- **Slug:** `unity-shader-graph`
+- **Synonyms:** Shader Graph
+- **Prerequisites:**
+  - `unity` (required) - Unity knowledge is required
+
+### Unreal Engine
+- **Slug:** `unreal-engine`
+- **Synonyms:** UE4, UE5, Unreal Engine 4, Unreal Engine 5
+- **Prerequisites:**
+  - `cpp` (required) - C++ is used for Unreal Engine programming
+- **Alternatives:**
+  - `unity` (similar)
+
+### VFX for Games
+- **Slug:** `vfx-games`
+- **Synonyms:** Game Visual Effects, Particle Systems
+
+### Vulkan
+- **Slug:** `vulkan`
+- **Icon:** `logos:vulkan`
+- **Prerequisites:**
+  - `cpp` (required) - C++ is the primary language for Vulkan development
+  - `opengl` (recommended) - Understanding OpenGL helps when learning Vulkan
+- **Alternatives:**
+  - `opengl` (similar)
+  - `directx` (similar)
+
+### Wwise
+- **Slug:** `wwise`
+- **Synonyms:** Audiokinetic Wwise
+- **Alternatives:**
+  - `fmod` (similar)
+
+### XNA
+- **Slug:** `xna`
+- **Synonyms:** Microsoft XNA
+- **Prerequisites:**
+  - `csharp` (required) - C# is the language for XNA
+- **Alternatives:**
+  - `monogame` (similar)
 
 ---
 
