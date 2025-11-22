@@ -91,7 +91,6 @@ function generateMarkdown(competencies) {
     for (const comp of grouped[category]) {
       md += `### ${comp.name}\n`;
       md += `- **Slug:** \`${comp.slug}\`\n`;
-      md += `- **File:** \`${comp.source_file}\`\n`;
 
       if (comp.icon) {
         md += `- **Icon:** \`${comp.icon}\`\n`;
@@ -99,10 +98,6 @@ function generateMarkdown(competencies) {
 
       if (comp.synonyms && comp.synonyms.length > 0) {
         md += `- **Synonyms:** ${comp.synonyms.join(', ')}\n`;
-      }
-
-      if (comp.description) {
-        md += `- **Description:** ${comp.description}\n`;
       }
 
       if (comp.prerequisites && comp.prerequisites.length > 0) {
@@ -120,9 +115,6 @@ function generateMarkdown(competencies) {
         md += `- **Alternatives:**\n`;
         for (const alt of comp.alternatives) {
           md += `  - \`${alt.alternative_slug}\` (${alt.relationship_type})`;
-          if (alt.notes) {
-            md += ` - ${alt.notes}`;
-          }
           md += `\n`;
         }
       }

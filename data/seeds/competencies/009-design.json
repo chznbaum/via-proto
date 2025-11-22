@@ -1,3 +1,1048 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Figma",
+      "slug": "figma",
+      "description": "Collaborative interface design tool for UI/UX design, prototyping, and design systems",
+      "category_slug": "uiux-design",
+      "icon": "logos:figma",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "sketch",
+          "relationship_type": "similar",
+          "notes": "Sketch is a similar UI design tool"
+        },
+        {
+          "alternative_slug": "adobe-xd",
+          "relationship_type": "similar",
+          "notes": "Adobe XD is a similar UI design tool"
+        }
+      ]
+    },
+    {
+      "name": "Sketch",
+      "slug": "sketch",
+      "description": "Vector-based UI design tool for macOS focused on interface and icon design",
+      "category_slug": "uiux-design",
+      "icon": "logos:sketch",
+      "synonyms": ["Sketch App"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "figma",
+          "relationship_type": "similar",
+          "notes": "Figma is a similar UI design tool with collaboration features"
+        },
+        {
+          "alternative_slug": "adobe-xd",
+          "relationship_type": "similar",
+          "notes": "Adobe XD is a similar UI design tool"
+        }
+      ]
+    },
+    {
+      "name": "Adobe XD",
+      "slug": "adobe-xd",
+      "description": "UI/UX design and prototyping tool from Adobe for creating wireframes, mockups, and interactive prototypes",
+      "category_slug": "uiux-design",
+      "icon": "logos:adobe-xd",
+      "synonyms": ["XD", "Adobe Experience Design"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "figma",
+          "relationship_type": "similar",
+          "notes": "Figma is a similar UI design tool with stronger collaboration"
+        },
+        {
+          "alternative_slug": "sketch",
+          "relationship_type": "similar",
+          "notes": "Sketch is a similar UI design tool"
+        }
+      ]
+    },
+    {
+      "name": "InVision",
+      "slug": "invision",
+      "description": "Digital product design platform for prototyping, collaboration, and workflow management",
+      "category_slug": "uiux-design",
+      "icon": "logos:invision",
+      "synonyms": ["InVision Studio", "InVision App"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Framer",
+      "slug": "framer",
+      "description": "Interactive design and prototyping tool with code-based capabilities for advanced animations",
+      "category_slug": "uiux-design",
+      "icon": "logos:framer",
+      "synonyms": ["Framer X"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Marvel",
+      "slug": "marvel",
+      "description": "Design and prototyping platform for creating interactive mockups and user flows",
+      "category_slug": "uiux-design",
+      "icon": "logos:marvel",
+      "synonyms": ["Marvel App"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "slug": "adobe-photoshop",
+      "description": "Industry-standard raster graphics editor for photo editing, digital painting, and graphic design",
+      "category_slug": "graphic-design",
+      "icon": "logos:adobe-photoshop",
+      "synonyms": ["Photoshop", "PS"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "affinity-photo",
+          "relationship_type": "similar",
+          "notes": "Affinity Photo is a professional commercial alternative"
+        },
+        {
+          "alternative_slug": "gimp",
+          "relationship_type": "similar",
+          "notes": "GIMP is a free, open-source alternative for raster graphics editing"
+        }
+      ]
+    },
+    {
+      "name": "Adobe Illustrator",
+      "slug": "adobe-illustrator",
+      "description": "Industry-standard vector graphics editor for logo design, illustration, and scalable artwork",
+      "category_slug": "graphic-design",
+      "icon": "logos:adobe-illustrator",
+      "synonyms": ["Illustrator", "AI"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "affinity-designer",
+          "relationship_type": "similar",
+          "notes": "Affinity Designer is a professional commercial alternative"
+        },
+        {
+          "alternative_slug": "inkscape",
+          "relationship_type": "similar",
+          "notes": "Inkscape is a free, open-source alternative for vector graphics"
+        }
+      ]
+    },
+    {
+      "name": "Adobe InDesign",
+      "slug": "adobe-indesign",
+      "description": "Professional page layout and desktop publishing software for creating print and digital publications",
+      "category_slug": "graphic-design",
+      "icon": "logos:adobe-indesign",
+      "synonyms": ["InDesign", "ID"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "affinity-publisher",
+          "relationship_type": "similar",
+          "notes": "Affinity Publisher is a professional commercial alternative"
+        }
+      ]
+    },
+    {
+      "name": "GIMP",
+      "slug": "gimp",
+      "description": "Free and open-source raster graphics editor for image manipulation, photo retouching, and graphic design",
+      "category_slug": "graphic-design",
+      "icon": "devicon:gimp",
+      "synonyms": ["GNU Image Manipulation Program"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-photoshop",
+          "relationship_type": "similar",
+          "notes": "Adobe Photoshop is the industry-standard commercial alternative"
+        }
+      ]
+    },
+    {
+      "name": "Inkscape",
+      "slug": "inkscape",
+      "description": "Free and open-source vector graphics editor for creating illustrations, logos, and scalable designs",
+      "category_slug": "graphic-design",
+      "icon": "devicon:inkscape",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-illustrator",
+          "relationship_type": "similar",
+          "notes": "Adobe Illustrator is the industry-standard commercial alternative"
+        }
+      ]
+    },
+    {
+      "name": "Canva",
+      "slug": "canva",
+      "description": "Web-based graphic design platform for creating social media graphics, presentations, and marketing materials",
+      "category_slug": "graphic-design",
+      "icon": "devicon:canva",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe After Effects",
+      "slug": "adobe-after-effects",
+      "description": "Motion graphics and visual effects software for creating animations, compositing, and video post-production",
+      "category_slug": "motion-3d",
+      "icon": "logos:adobe-after-effects",
+      "synonyms": ["After Effects", "AE"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "slug": "adobe-premiere-pro",
+      "description": "Professional video editing software for film, TV, and web content production",
+      "category_slug": "motion-3d",
+      "icon": "logos:adobe-premiere",
+      "synonyms": ["Premiere Pro", "Premiere", "PPro"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Blender",
+      "slug": "blender",
+      "description": "Free and open-source 3D creation suite for modeling, animation, rendering, and VFX",
+      "category_slug": "motion-3d",
+      "icon": "logos:blender",
+      "synonyms": ["Blender 3D"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "maya",
+          "relationship_type": "similar",
+          "notes": "Maya is an industry-standard commercial 3D tool"
+        }
+      ]
+    },
+    {
+      "name": "Maya",
+      "slug": "maya",
+      "description": "Professional 3D computer animation, modeling, and rendering software used in film, TV, and games",
+      "category_slug": "motion-3d",
+      "icon": "devicon:maya",
+      "synonyms": ["Autodesk Maya"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "blender",
+          "relationship_type": "similar",
+          "notes": "Blender is a free, open-source alternative for 3D creation"
+        }
+      ]
+    },
+    {
+      "name": "Adobe Lightroom",
+      "slug": "adobe-lightroom",
+      "description": "Photo editing and organization software for photographers with non-destructive editing workflow",
+      "category_slug": "photography-video",
+      "icon": "logos:adobe-lightroom",
+      "synonyms": ["Lightroom", "LR", "Lightroom Classic"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "3ds Max",
+      "slug": "3ds-max",
+      "description": "Professional 3D modeling, animation, and rendering software for architecture, games, and visualization",
+      "category_slug": "motion-3d",
+      "icon": "devicon:threedsmax",
+      "synonyms": ["3D Studio Max", "Autodesk 3ds Max"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "blender",
+          "relationship_type": "similar",
+          "notes": "Blender is a free, open-source alternative for 3D creation"
+        },
+        {
+          "alternative_slug": "maya",
+          "relationship_type": "similar",
+          "notes": "Maya is another industry-standard 3D tool"
+        }
+      ]
+    },
+    {
+      "name": "Webflow",
+      "slug": "webflow",
+      "description": "Visual web design platform for building responsive websites without code",
+      "category_slug": "uiux-design",
+      "icon": "logos:webflow",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "wordpress",
+          "relationship_type": "similar",
+          "notes": "WordPress is an alternative website builder/CMS"
+        }
+      ]
+    },
+    {
+      "name": "WordPress",
+      "slug": "wordpress",
+      "description": "Popular content management system and website builder for creating blogs, websites, and online stores",
+      "category_slug": "uiux-design",
+      "icon": "logos:wordpress-icon",
+      "synonyms": ["WP"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "webflow",
+          "relationship_type": "similar",
+          "notes": "Webflow is a modern visual web design alternative"
+        },
+        {
+          "alternative_slug": "wix",
+          "relationship_type": "similar",
+          "notes": "Wix is another website builder platform"
+        }
+      ]
+    },
+    {
+      "name": "Wix",
+      "slug": "wix",
+      "description": "Drag-and-drop website builder for creating professional websites without coding",
+      "category_slug": "uiux-design",
+      "icon": "logos:wix",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "wordpress",
+          "relationship_type": "similar",
+          "notes": "WordPress is an alternative website builder"
+        },
+        {
+          "alternative_slug": "squarespace",
+          "relationship_type": "similar",
+          "notes": "Squarespace is another website builder platform"
+        }
+      ]
+    },
+    {
+      "name": "Squarespace",
+      "slug": "squarespace",
+      "description": "All-in-one website builder and hosting platform for creating elegant websites",
+      "category_slug": "uiux-design",
+      "icon": "logos:squarespace",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "wix",
+          "relationship_type": "similar",
+          "notes": "Wix is another drag-and-drop website builder"
+        }
+      ]
+    },
+    {
+      "name": "Origami Studio",
+      "slug": "origami-studio",
+      "description": "Free design prototyping tool by Meta for creating interactive UI animations and prototypes",
+      "category_slug": "uiux-design",
+      "icon": "logos:origami",
+      "synonyms": ["Origami"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe Animate",
+      "slug": "adobe-animate",
+      "description": "Vector animation and interactive content creation software for web, games, and video",
+      "category_slug": "motion-3d",
+      "icon": "logos:adobe-animate",
+      "synonyms": ["Animate", "Flash Professional"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe Dreamweaver",
+      "slug": "adobe-dreamweaver",
+      "description": "Web development tool combining visual design with code editing for building responsive websites",
+      "category_slug": "uiux-design",
+      "icon": "logos:adobe-dreamweaver",
+      "synonyms": ["Dreamweaver"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Zeplin",
+      "slug": "zeplin",
+      "description": "Design handoff and collaboration tool for developers and designers to inspect designs and assets",
+      "category_slug": "uiux-design",
+      "icon": "logos:zeplin",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Miro",
+      "slug": "miro",
+      "description": "Online collaborative whiteboard platform for visual collaboration, brainstorming, and design workshops",
+      "category_slug": "uiux-design",
+      "icon": "logos:miro",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Adobe InCopy",
+      "slug": "adobe-incopy",
+      "description": "Professional writing and editing software designed to integrate with InDesign for collaborative publishing workflows",
+      "category_slug": "graphic-design",
+      "icon": "logos:adobe-incopy",
+      "synonyms": ["InCopy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Affinity Designer",
+      "slug": "affinity-designer",
+      "description": "Professional vector graphics editor as an alternative to Adobe Illustrator for illustration and design",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-illustrator",
+          "relationship_type": "similar",
+          "notes": "Adobe Illustrator is the industry-standard commercial alternative"
+        },
+        {
+          "alternative_slug": "inkscape",
+          "relationship_type": "similar",
+          "notes": "Inkscape is a free, open-source alternative"
+        }
+      ]
+    },
+    {
+      "name": "Affinity Photo",
+      "slug": "affinity-photo",
+      "description": "Professional raster graphics editor as an alternative to Adobe Photoshop for photo editing and manipulation",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-photoshop",
+          "relationship_type": "similar",
+          "notes": "Adobe Photoshop is the industry-standard commercial alternative"
+        },
+        {
+          "alternative_slug": "gimp",
+          "relationship_type": "similar",
+          "notes": "GIMP is a free, open-source alternative"
+        }
+      ]
+    },
+    {
+      "name": "Affinity Publisher",
+      "slug": "affinity-publisher",
+      "description": "Professional page layout and desktop publishing software as an alternative to Adobe InDesign",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-indesign",
+          "relationship_type": "similar",
+          "notes": "Adobe InDesign is the industry-standard commercial alternative"
+        }
+      ]
+    },
+    {
+      "name": "Procreate",
+      "slug": "procreate",
+      "description": "Digital painting and illustration app for iPad with intuitive brush engine and layer system",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-photoshop",
+          "relationship_type": "similar",
+          "notes": "Photoshop offers more advanced features for desktop"
+        }
+      ]
+    },
+    {
+      "name": "CorelDRAW",
+      "slug": "coreldraw",
+      "description": "Professional vector graphics editor for illustration, layout, and design",
+      "category_slug": "graphic-design",
+      "synonyms": ["Corel DRAW"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-illustrator",
+          "relationship_type": "similar",
+          "notes": "Adobe Illustrator is the industry-standard vector editor"
+        },
+        {
+          "alternative_slug": "affinity-designer",
+          "relationship_type": "similar",
+          "notes": "Affinity Designer is another professional alternative"
+        }
+      ]
+    },
+    {
+      "name": "Krita",
+      "slug": "krita",
+      "description": "Free and open-source digital painting and illustration software for artists",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-photoshop",
+          "relationship_type": "similar",
+          "notes": "Photoshop is the industry-standard for digital painting"
+        },
+        {
+          "alternative_slug": "procreate",
+          "relationship_type": "similar",
+          "notes": "Procreate is popular for iPad digital painting"
+        }
+      ]
+    },
+    {
+      "name": "Clip Studio Paint",
+      "slug": "clip-studio-paint",
+      "description": "Digital art software for illustration, manga, and animation with specialized comic tools",
+      "category_slug": "graphic-design",
+      "synonyms": ["CSP", "Manga Studio"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "procreate",
+          "relationship_type": "similar",
+          "notes": "Procreate is another digital illustration tool"
+        }
+      ]
+    },
+    {
+      "name": "Cinema 4D",
+      "slug": "cinema-4d",
+      "description": "Professional 3D modeling, animation, and rendering software for motion graphics and VFX",
+      "category_slug": "motion-3d",
+      "synonyms": ["C4D", "Cinema4D"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "blender",
+          "relationship_type": "similar",
+          "notes": "Blender is a free, open-source 3D alternative"
+        },
+        {
+          "alternative_slug": "maya",
+          "relationship_type": "similar",
+          "notes": "Maya is another industry-standard 3D tool"
+        }
+      ]
+    },
+    {
+      "name": "SketchUp",
+      "slug": "sketchup",
+      "description": "3D modeling software for architecture, interior design, and product design",
+      "category_slug": "architecture",
+      "synonyms": ["SketchUp Pro"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "DaVinci Resolve",
+      "slug": "davinci-resolve",
+      "description": "Professional video editing, color grading, and post-production software",
+      "category_slug": "motion-3d",
+      "synonyms": ["DaVinci", "Resolve"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-premiere-pro",
+          "relationship_type": "similar",
+          "notes": "Premiere Pro is Adobe's video editing solution"
+        }
+      ]
+    },
+    {
+      "name": "Final Cut Pro",
+      "slug": "final-cut-pro",
+      "description": "Professional video editing software for macOS with magnetic timeline and advanced media organization",
+      "category_slug": "motion-3d",
+      "synonyms": ["FCP", "Final Cut"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-premiere-pro",
+          "relationship_type": "similar",
+          "notes": "Premiere Pro is the cross-platform industry standard"
+        },
+        {
+          "alternative_slug": "davinci-resolve",
+          "relationship_type": "similar",
+          "notes": "DaVinci Resolve offers powerful color grading"
+        }
+      ]
+    },
+    {
+      "name": "Ableton Live",
+      "slug": "ableton-live",
+      "description": "Digital audio workstation for music production, composition, and live performance",
+      "category_slug": "music",
+      "synonyms": ["Ableton"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "fl-studio",
+          "relationship_type": "similar",
+          "notes": "FL Studio is another popular DAW"
+        },
+        {
+          "alternative_slug": "logic-pro",
+          "relationship_type": "similar",
+          "notes": "Logic Pro is Apple's professional DAW"
+        }
+      ]
+    },
+    {
+      "name": "Logic Pro",
+      "slug": "logic-pro",
+      "description": "Professional music production software for macOS with comprehensive tools for recording, editing, and mixing",
+      "category_slug": "music",
+      "synonyms": ["Logic Pro X"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "ableton-live",
+          "relationship_type": "similar",
+          "notes": "Ableton Live is popular for electronic music and live performance"
+        },
+        {
+          "alternative_slug": "pro-tools",
+          "relationship_type": "similar",
+          "notes": "Pro Tools is the industry standard for audio post-production"
+        }
+      ]
+    },
+    {
+      "name": "FL Studio",
+      "slug": "fl-studio",
+      "description": "Digital audio workstation for music production with pattern-based workflow and extensive plugin support",
+      "category_slug": "music",
+      "synonyms": ["FruityLoops", "Fruity Loops"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "ableton-live",
+          "relationship_type": "similar",
+          "notes": "Ableton Live is another DAW with strong electronic music features"
+        }
+      ]
+    },
+    {
+      "name": "Pro Tools",
+      "slug": "pro-tools",
+      "description": "Industry-standard digital audio workstation for professional music production and audio post-production",
+      "category_slug": "music",
+      "synonyms": ["Avid Pro Tools"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "logic-pro",
+          "relationship_type": "similar",
+          "notes": "Logic Pro is Apple's professional DAW"
+        }
+      ]
+    },
+    {
+      "name": "Cubase",
+      "slug": "cubase",
+      "description": "Professional music production software with MIDI sequencing and audio recording capabilities",
+      "category_slug": "music",
+      "synonyms": ["Steinberg Cubase"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "logic-pro",
+          "relationship_type": "similar",
+          "notes": "Logic Pro is another professional DAW"
+        }
+      ]
+    },
+    {
+      "name": "GarageBand",
+      "slug": "garageband",
+      "description": "Beginner-friendly music creation software for macOS and iOS with loops and virtual instruments",
+      "category_slug": "music",
+      "synonyms": ["Garage Band"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "AutoCAD",
+      "slug": "autocad",
+      "description": "Industry-standard computer-aided design software for 2D and 3D drafting, modeling, and engineering",
+      "category_slug": "architecture",
+      "synonyms": ["AutoCAD LT"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "sketchup",
+          "relationship_type": "similar",
+          "notes": "SketchUp is easier to learn for architectural modeling"
+        }
+      ]
+    },
+    {
+      "name": "Revit",
+      "slug": "revit",
+      "description": "Building information modeling (BIM) software for architects, engineers, and construction professionals",
+      "category_slug": "architecture",
+      "synonyms": ["Autodesk Revit"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "ArchiCAD",
+      "slug": "archicad",
+      "description": "BIM software for architects with integrated design and documentation tools",
+      "category_slug": "architecture",
+      "synonyms": ["ArchiCAD by Graphisoft"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "revit",
+          "relationship_type": "similar",
+          "notes": "Revit is Autodesk's BIM solution"
+        }
+      ]
+    },
+    {
+      "name": "Capture One",
+      "slug": "capture-one",
+      "description": "Professional photo editing and RAW image processing software with advanced color grading",
+      "category_slug": "photography-video",
+      "synonyms": ["Capture One Pro"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-lightroom",
+          "relationship_type": "similar",
+          "notes": "Lightroom is Adobe's photo editing solution"
+        }
+      ]
+    },
+    {
+      "name": "Reaper",
+      "slug": "reaper",
+      "description": "Affordable and customizable digital audio workstation for music production and audio editing",
+      "category_slug": "music",
+      "synonyms": ["REAPER"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "pro-tools",
+          "relationship_type": "similar",
+          "notes": "Pro Tools is the industry standard DAW"
+        }
+      ]
+    },
+    {
+      "name": "Studio One",
+      "slug": "studio-one",
+      "description": "Modern digital audio workstation with drag-and-drop workflow and integrated mastering suite",
+      "category_slug": "music",
+      "synonyms": ["PreSonus Studio One"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "logic-pro",
+          "relationship_type": "similar",
+          "notes": "Logic Pro is another professional DAW"
+        }
+      ]
+    },
+    {
+      "name": "Reason",
+      "slug": "reason",
+      "description": "Music production software with virtual rack system and modular synthesis capabilities",
+      "category_slug": "music",
+      "synonyms": ["Reason Studios"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bitwig Studio",
+      "slug": "bitwig-studio",
+      "description": "Modern DAW for music production with modular design and advanced MIDI capabilities",
+      "category_slug": "music",
+      "synonyms": ["Bitwig"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "ableton-live",
+          "relationship_type": "similar",
+          "notes": "Ableton Live has similar live performance features"
+        }
+      ]
+    },
+    {
+      "name": "Audacity",
+      "slug": "audacity",
+      "description": "Free and open-source audio editor for recording and editing sound files",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Toon Boom Harmony",
+      "slug": "toon-boom-harmony",
+      "description": "Professional 2D animation software for frame-by-frame and rigged animation production",
+      "category_slug": "motion-3d",
+      "synonyms": ["Toon Boom", "Harmony"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "adobe-animate",
+          "relationship_type": "similar",
+          "notes": "Adobe Animate is another 2D animation tool"
+        }
+      ]
+    },
+    {
+      "name": "Spine",
+      "slug": "spine",
+      "description": "2D skeletal animation software for games with efficient runtime and mesh deformation",
+      "category_slug": "motion-3d",
+      "synonyms": ["Spine 2D"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "ZBrush",
+      "slug": "zbrush",
+      "description": "Digital sculpting software for creating highly detailed 3D models and characters",
+      "category_slug": "motion-3d",
+      "synonyms": ["Pixologic ZBrush"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "blender",
+          "relationship_type": "similar",
+          "notes": "Blender includes sculpting features"
+        }
+      ]
+    },
+    {
+      "name": "Houdini",
+      "slug": "houdini",
+      "description": "Procedural 3D animation and VFX software with node-based workflow for complex simulations",
+      "category_slug": "motion-3d",
+      "synonyms": ["SideFX Houdini"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "blender",
+          "relationship_type": "similar",
+          "notes": "Blender is a free alternative with procedural capabilities"
+        }
+      ]
+    },
+    {
+      "name": "Substance Painter",
+      "slug": "substance-painter",
+      "description": "3D texture painting software for creating realistic materials and textures for 3D models",
+      "category_slug": "motion-3d",
+      "synonyms": ["Adobe Substance Painter"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Substance Designer",
+      "slug": "substance-designer",
+      "description": "Node-based tool for creating procedural materials and textures for 3D assets",
+      "category_slug": "motion-3d",
+      "synonyms": ["Adobe Substance Designer"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "V-Ray",
+      "slug": "vray",
+      "description": "Professional rendering engine for photorealistic visualization in 3D applications",
+      "category_slug": "motion-3d",
+      "synonyms": ["V-Ray Renderer"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "OBS Studio",
+      "slug": "obs-studio",
+      "description": "Free and open-source software for video recording and live streaming",
+      "category_slug": "photography-video",
+      "synonyms": ["OBS", "Open Broadcaster Software"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "FontForge",
+      "slug": "fontforge",
+      "description": "Free and open-source font editor for creating and modifying fonts",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Glyphs",
+      "slug": "glyphs",
+      "description": "Professional font editor for macOS for designing and producing fonts",
+      "category_slug": "graphic-design",
+      "synonyms": ["Glyphs App"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "fontforge",
+          "relationship_type": "similar",
+          "notes": "FontForge is a free alternative font editor"
+        }
+      ]
+    },
+    {
+      "name": "Fusion 360",
+      "slug": "fusion-360",
+      "description": "Cloud-based 3D CAD/CAM/CAE software for product design and engineering",
+      "category_slug": "architecture",
+      "synonyms": ["Autodesk Fusion 360"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "SolidWorks",
+      "slug": "solidworks",
+      "description": "Professional 3D CAD software for mechanical design and engineering",
+      "category_slug": "architecture",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "fusion-360",
+          "relationship_type": "similar",
+          "notes": "Fusion 360 is a cloud-based CAD alternative"
+        }
+      ]
+    },
+    {
+      "name": "Rhino",
+      "slug": "rhino",
+      "description": "3D modeling software for industrial design, architecture, and product development with NURBS geometry",
+      "category_slug": "architecture",
+      "synonyms": ["Rhino 3D", "Rhinoceros"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Paint Tool SAI",
+      "slug": "paint-tool-sai",
+      "description": "Lightweight digital painting software popular for anime and manga-style illustration",
+      "category_slug": "graphic-design",
+      "synonyms": ["SAI", "PaintTool SAI"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "clip-studio-paint",
+          "relationship_type": "similar",
+          "notes": "Clip Studio Paint is more feature-rich for manga"
+        }
+      ]
+    },
+    {
+      "name": "Aseprite",
+      "slug": "aseprite",
+      "description": "Pixel art tool and sprite editor for creating retro-style game graphics and animations",
+      "category_slug": "graphic-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lunacy",
+      "slug": "lunacy",
+      "description": "Free graphic design software for Windows and macOS with built-in graphics and icons",
+      "category_slug": "uiux-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "figma",
+          "relationship_type": "similar",
+          "notes": "Figma is a similar UI design tool with collaboration"
+        }
+      ]
+    },
+    {
+      "name": "Principle",
+      "slug": "principle",
+      "description": "Interaction design tool for creating animated and interactive user interface prototypes",
+      "category_slug": "uiux-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "framer",
+          "relationship_type": "similar",
+          "notes": "Framer offers similar prototyping capabilities"
+        }
+      ]
+    },
+    {
+      "name": "ProtoPie",
+      "slug": "protopie",
+      "description": "Advanced prototyping tool for creating highly interactive prototypes without code",
+      "category_slug": "uiux-design",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "principle",
+          "relationship_type": "similar",
+          "notes": "Principle is another interaction design tool"
+        }
+      ]
+    },
+    {
+      "name": "Axure RP",
+      "slug": "axure-rp",
+      "description": "Wireframing and prototyping tool for creating detailed UX specifications and documentation",
+      "category_slug": "uiux-design",
+      "synonyms": ["Axure"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Balsamiq",
+      "slug": "balsamiq",
+      "description": "Rapid wireframing tool for creating low-fidelity mockups and sketches",
+      "category_slug": "uiux-design",
+      "synonyms": ["Balsamiq Mockups"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
 }
