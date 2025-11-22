@@ -1,0 +1,536 @@
+{
+  "topics": [
+    {
+      "name": "User authentication with Auth0",
+      "slug": "user-authentication-auth0",
+      "description": "Implement secure login and user management using Auth0's identity platform",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "auth0",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "jwt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Enterprise identity management with Okta",
+      "slug": "enterprise-identity-management-okta",
+      "description": "Deploy enterprise SSO and identity governance using Okta's platform",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "okta",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "saml",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Stateless authentication with JWT",
+      "slug": "stateless-authentication-jwt",
+      "description": "Secure APIs using JSON Web Tokens for authentication and authorization",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "jwt",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "OAuth 2.0 authorization flows",
+      "slug": "oauth-2-authorization-flows",
+      "description": "Implement secure third-party authentication using OAuth 2.0 grant types",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "oauth",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jwt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Node.js authentication with Passport.js",
+      "slug": "nodejs-authentication-passportjs",
+      "description": "Add flexible authentication strategies to Node.js apps using Passport.js",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "passportjs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "jwt",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Open-source identity with Keycloak",
+      "slug": "open-source-identity-keycloak",
+      "description": "Deploy self-hosted SSO and identity management using Keycloak",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "keycloak",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "saml",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ldap",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web application security testing with OWASP",
+      "slug": "web-application-security-testing-owasp",
+      "description": "Identify and remediate OWASP Top 10 vulnerabilities in web applications",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "owasp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Web security scanning with Burp Suite",
+      "slug": "web-security-scanning-burp-suite",
+      "description": "Test web applications for vulnerabilities using Burp Suite's proxy and scanner",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "burp-suite",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "owasp",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Exploitation framework with Metasploit",
+      "slug": "exploitation-framework-metasploit",
+      "description": "Conduct penetration tests and exploit development using Metasploit",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "metasploit",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kali-linux",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "penetration-testing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Network reconnaissance with Nmap",
+      "slug": "network-reconnaissance-nmap",
+      "description": "Scan networks and discover hosts, ports, and services using Nmap",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "nmap",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "penetration-testing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Network traffic analysis with Wireshark",
+      "slug": "network-traffic-analysis-wireshark",
+      "description": "Capture and analyze network packets for troubleshooting and security analysis",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "wireshark",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Penetration testing with Kali Linux",
+      "slug": "penetration-testing-kali-linux",
+      "description": "Perform security assessments using Kali Linux's comprehensive toolkit",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "kali-linux",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "penetration-testing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "nmap",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "metasploit",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Code vulnerability scanning with Snyk",
+      "slug": "code-vulnerability-scanning-snyk",
+      "description": "Find and fix security vulnerabilities in dependencies and container images with Snyk",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "snyk",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Code quality and security with SonarQube",
+      "slug": "code-quality-security-sonarqube",
+      "description": "Analyze code for bugs, vulnerabilities, and code smells using SonarQube",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "sonarqube",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Security information and event management",
+      "slug": "security-information-event-management",
+      "description": "Monitor and analyze security events using SIEM platforms for threat detection",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "siem",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "TLS certificate management and HTTPS",
+      "slug": "tls-certificate-management-https",
+      "description": "Configure SSL/TLS certificates and enforce encrypted connections",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "ssl-tls",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "AWS access control with IAM",
+      "slug": "aws-access-control-iam",
+      "description": "Manage AWS permissions, roles, and policies using Identity and Access Management",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "aws-iam",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Enterprise SSO with SAML",
+      "slug": "enterprise-sso-saml",
+      "description": "Implement single sign-on between identity providers and service providers using SAML",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "saml",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Directory services with LDAP",
+      "slug": "directory-services-ldap",
+      "description": "Manage user directories and authentication using LDAP protocol",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "ldap",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Windows domain management with Active Directory",
+      "slug": "windows-domain-management-active-directory",
+      "description": "Administer enterprise networks using Active Directory for user and device management",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "active-directory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ldap",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Zero Trust security architecture",
+      "slug": "zero-trust-security-architecture",
+      "description": "Design and implement Zero Trust network security models and policies",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "zero-trust",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Ethical hacking and penetration testing",
+      "slug": "ethical-hacking-penetration-testing",
+      "description": "Conduct authorized security assessments to identify system vulnerabilities",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "penetration-testing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "kali-linux",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "nmap",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "burp-suite",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Security compliance auditing",
+      "slug": "security-compliance-auditing",
+      "description": "Assess systems for security compliance with frameworks like SOC 2, ISO 27001, and PCI DSS",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "security-auditing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Intrusion prevention with Fail2Ban",
+      "slug": "intrusion-prevention-fail2ban",
+      "description": "Protect servers from brute-force attacks using Fail2Ban IP blocking",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "fail2ban",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Web application firewall with ModSecurity",
+      "slug": "web-application-firewall-modsecurity",
+      "description": "Deploy ModSecurity WAF to protect web applications from common attacks",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "modsecurity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "owasp",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Content Security Policy implementation",
+      "slug": "content-security-policy-implementation",
+      "description": "Prevent XSS and injection attacks using Content Security Policy headers",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "csp",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "owasp",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Cross-origin security with CORS",
+      "slug": "cross-origin-security-cors",
+      "description": "Configure Cross-Origin Resource Sharing to control API access from web browsers",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "cors",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Secure API development practices",
+      "slug": "secure-api-development-practices",
+      "description": "Build APIs with authentication, rate limiting, and protection against common vulnerabilities",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "owasp",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jwt",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cors",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "DevSecOps security automation",
+      "slug": "devsecops-security-automation",
+      "description": "Integrate security scanning and testing into CI/CD pipelines",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "snyk",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sonarqube",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "owasp",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Identity federation and SSO implementation",
+      "slug": "identity-federation-sso-implementation",
+      "description": "Connect multiple identity providers with federated authentication and single sign-on",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "saml",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "oauth",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "okta",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Security monitoring and incident response",
+      "slug": "security-monitoring-incident-response",
+      "description": "Detect, analyze, and respond to security incidents using monitoring tools and procedures",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "siem",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "wireshark",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Multi-factor authentication implementation",
+      "slug": "multi-factor-authentication-implementation",
+      "description": "Add MFA to applications using TOTP, SMS, or hardware tokens for enhanced security",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "auth0",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "okta",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Cloud security best practices",
+      "slug": "cloud-security-best-practices",
+      "description": "Secure cloud infrastructure with proper IAM, encryption, and network controls",
+      "category_slug": "cybersecurity",
+      "competencies": [
+        {
+          "competency_slug": "aws-iam",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "zero-trust",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

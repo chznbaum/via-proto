@@ -1,0 +1,916 @@
+{
+  "topics": [
+    {
+      "name": "Chess strategy and tactics",
+      "slug": "chess-strategy-tactics",
+      "description": "Master fundamental chess concepts including opening principles, tactical patterns, and positional play",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "chess",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Chess opening repertoire",
+      "slug": "chess-opening-repertoire",
+      "description": "Build a solid opening repertoire for both white and black pieces",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "chess",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Chess endgame mastery",
+      "slug": "chess-endgame-mastery",
+      "description": "Learn essential endgame positions and techniques to convert advantages into wins",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "chess",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Texas Hold'em poker strategy",
+      "slug": "texas-holdem-poker-strategy",
+      "description": "Master betting, position, hand reading, and tournament play in Texas Hold'em",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "poker",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Poker bankroll management",
+      "slug": "poker-bankroll-management",
+      "description": "Manage poker funds, variance, and move up stakes responsibly",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "poker",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Running a tabletop RPG campaign",
+      "slug": "running-tabletop-rpg-campaign",
+      "description": "Create engaging narratives, manage player expectations, and run memorable tabletop RPG sessions",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "game-mastering",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "World-building for RPGs",
+      "slug": "world-building-for-rpgs",
+      "description": "Design rich, immersive fantasy worlds with geography, cultures, and histories",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "game-mastering",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Painting tabletop miniatures",
+      "slug": "painting-tabletop-miniatures",
+      "description": "Paint detailed miniatures using brushwork, layering, and weathering techniques",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "miniature-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced miniature painting techniques",
+      "slug": "advanced-miniature-painting-techniques",
+      "description": "Master airbrushing, non-metallic metals, and competition-level painting",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "miniature-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Video game speedrunning",
+      "slug": "video-game-speedrunning",
+      "description": "Learn speedrun techniques, route optimization, and execution for completing games quickly",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "speedrunning",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Live game streaming production",
+      "slug": "live-game-streaming-production",
+      "description": "Set up streaming equipment, engage viewers, and build an audience on Twitch or YouTube",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "game-streaming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Competitive esports training",
+      "slug": "competitive-esports-training",
+      "description": "Develop competitive gaming skills, practice routines, and team coordination for esports",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "esports",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Esports team management",
+      "slug": "esports-team-management",
+      "description": "Coach esports teams, analyze gameplay, and develop competitive strategies",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "esports",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Running form and technique",
+      "slug": "running-form-technique",
+      "description": "Improve running efficiency, cadence, and injury prevention through proper form",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "running",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Couch to 5K running program",
+      "slug": "couch-to-5k-running-program",
+      "description": "Build running endurance from beginner to completing a 5K race",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "running",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Marathon and half-marathon training",
+      "slug": "marathon-half-marathon-training",
+      "description": "Train for long-distance races with structured weekly mileage, tempo runs, and tapering",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "marathon-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "running",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Swimming stroke technique",
+      "slug": "swimming-stroke-technique",
+      "description": "Master freestyle, backstroke, breaststroke, and butterfly with proper mechanics",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "swimming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Open water swimming",
+      "slug": "open-water-swimming",
+      "description": "Navigate lakes, oceans, and rivers with sighting, safety, and endurance techniques",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "swimming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Road cycling fundamentals",
+      "slug": "road-cycling-fundamentals",
+      "description": "Learn bike handling, gear shifting, and group riding etiquette for road cycling",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "cycling",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cycling training and performance",
+      "slug": "cycling-training-performance",
+      "description": "Build cycling fitness with structured intervals, power training, and periodization",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "cycling",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mountain bike trail riding",
+      "slug": "mountain-bike-trail-riding",
+      "description": "Ride technical terrain with cornering, climbing, and descending skills",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "mountain-biking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cycling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mountain bike maintenance and repair",
+      "slug": "mountain-bike-maintenance-repair",
+      "description": "Service suspension, brakes, and drivetrains for off-road mountain bikes",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "mountain-biking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cycling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tennis strokes and footwork",
+      "slug": "tennis-strokes-footwork",
+      "description": "Master groundstrokes, volleys, serves, and court movement in tennis",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "tennis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Tennis match strategy",
+      "slug": "tennis-match-strategy",
+      "description": "Develop tactical awareness, shot selection, and mental game for competitive tennis",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "tennis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Golf swing fundamentals",
+      "slug": "golf-swing-fundamentals",
+      "description": "Build a consistent golf swing with proper grip, stance, and tempo",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "golf",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Golf short game and putting",
+      "slug": "golf-short-game-putting",
+      "description": "Master chipping, pitching, bunker shots, and putting to lower scores",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "golf",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Basketball skills and drills",
+      "slug": "basketball-skills-drills",
+      "description": "Develop shooting, dribbling, passing, and defensive fundamentals",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "basketball",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Basketball team offense and defense",
+      "slug": "basketball-team-offense-defense",
+      "description": "Learn team strategies, set plays, and defensive schemes for organized basketball",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "basketball",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Soccer technique and ball control",
+      "slug": "soccer-technique-ball-control",
+      "description": "Master passing, dribbling, shooting, and first touch in soccer",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "soccer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Soccer tactics and positioning",
+      "slug": "soccer-tactics-positioning",
+      "description": "Understand formations, team shape, and tactical awareness for competitive soccer",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "soccer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Martial arts fundamentals",
+      "slug": "martial-arts-fundamentals",
+      "description": "Learn striking, blocking, and basic self-defense principles across martial arts",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Karate kata and kumite",
+      "slug": "karate-kata-kumite",
+      "description": "Practice karate forms and sparring with traditional techniques",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "karate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Taekwondo kicking techniques",
+      "slug": "taekwondo-kicking-techniques",
+      "description": "Master high kicks, spinning kicks, and Olympic-style taekwondo sparring",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "taekwondo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Brazilian Jiu-Jitsu ground fighting",
+      "slug": "brazilian-jiu-jitsu-ground-fighting",
+      "description": "Learn submissions, escapes, and positional control in BJJ grappling",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "brazilian-jiu-jitsu",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "BJJ competition and rolling strategy",
+      "slug": "bjj-competition-rolling-strategy",
+      "description": "Develop game plans, transitions, and live sparring skills for Brazilian Jiu-Jitsu",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "brazilian-jiu-jitsu",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Boxing fundamentals and footwork",
+      "slug": "boxing-fundamentals-footwork",
+      "description": "Master jabs, crosses, hooks, and defensive movement in boxing",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "boxing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Boxing combinations and ring strategy",
+      "slug": "boxing-combinations-ring-strategy",
+      "description": "Develop punch combinations, counter-punching, and ring generalship",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "boxing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Muay Thai striking and clinch",
+      "slug": "muay-thai-striking-clinch",
+      "description": "Train in Thai boxing with elbows, knees, kicks, and clinch techniques",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "muay-thai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "martial-arts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Indoor rock climbing techniques",
+      "slug": "indoor-rock-climbing-techniques",
+      "description": "Learn climbing movement, belaying, and gym safety for indoor walls",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "rock-climbing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Outdoor sport climbing and trad climbing",
+      "slug": "outdoor-sport-climbing-trad-climbing",
+      "description": "Climb natural rock faces with rope systems, protection placement, and route reading",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "rock-climbing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Bouldering problems and techniques",
+      "slug": "bouldering-problems-techniques",
+      "description": "Solve short, powerful climbing routes without ropes using crash pads",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "bouldering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "rock-climbing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Skateboarding tricks and fundamentals",
+      "slug": "skateboarding-tricks-fundamentals",
+      "description": "Master ollies, kickflips, grinds, and street skating basics",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "skateboarding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Skateboard park and vert riding",
+      "slug": "skateboard-park-vert-riding",
+      "description": "Ride ramps, bowls, and halfpipes with transitions and aerial tricks",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "skateboarding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Surfing fundamentals and wave reading",
+      "slug": "surfing-fundamentals-wave-reading",
+      "description": "Learn to paddle, pop up, and catch waves with proper surf etiquette",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "surfing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Surfing maneuvers and progression",
+      "slug": "surfing-maneuvers-progression",
+      "description": "Execute turns, cutbacks, and advanced surfing techniques",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "surfing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Alpine skiing technique",
+      "slug": "alpine-skiing-technique",
+      "description": "Ski downhill with proper turning, edging, and speed control",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "skiing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Backcountry skiing and avalanche safety",
+      "slug": "backcountry-skiing-avalanche-safety",
+      "description": "Ski ungroomed terrain with avalanche awareness and safety equipment",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "skiing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Snowboarding fundamentals",
+      "slug": "snowboarding-fundamentals",
+      "description": "Learn to ride, turn, and stop on a snowboard",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "snowboarding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Freestyle snowboarding and terrain parks",
+      "slug": "freestyle-snowboarding-terrain-parks",
+      "description": "Hit jumps, rails, and halfpipes with tricks and style",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "snowboarding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Day hiking and trail navigation",
+      "slug": "day-hiking-trail-navigation",
+      "description": "Plan and execute day hikes with map reading and Leave No Trace principles",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "hiking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Camping essentials and outdoor living",
+      "slug": "camping-essentials-outdoor-living",
+      "description": "Set up camp, cook outdoors, and practice campfire safety",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "camping",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Car camping and campground setup",
+      "slug": "car-camping-campground-setup",
+      "description": "Plan family camping trips with tents, camp kitchens, and gear organization",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "camping",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Backpacking and wilderness camping",
+      "slug": "backpacking-wilderness-camping",
+      "description": "Carry multi-day supplies, navigate backcountry, and practice wilderness skills",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "backpacking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hiking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "camping",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Lightweight backpacking and ultralight gear",
+      "slug": "lightweight-backpacking-ultralight-gear",
+      "description": "Minimize pack weight and maximize comfort on long-distance trails",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "backpacking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hiking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "camping",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Freshwater fishing techniques",
+      "slug": "freshwater-fishing-techniques",
+      "description": "Catch bass, trout, and panfish with rods, reels, and bait selection",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "fishing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Saltwater fishing and tackle",
+      "slug": "saltwater-fishing-tackle",
+      "description": "Fish coastal waters for game fish using appropriate saltwater gear",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "fishing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Fly fishing casting and presentation",
+      "slug": "fly-fishing-casting-presentation",
+      "description": "Cast fly rods, tie flies, and present to fish in rivers and streams",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "fly-fishing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fly tying and pattern design",
+      "slug": "fly-tying-pattern-design",
+      "description": "Tie custom flies with materials and create effective fishing patterns",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "fly-fishing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fishing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ethical hunting and game processing",
+      "slug": "ethical-hunting-game-processing",
+      "description": "Hunt responsibly, field dress game, and process meat",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "hunting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Deer hunting strategies",
+      "slug": "deer-hunting-strategies",
+      "description": "Scout locations, use stands or blinds, and harvest whitetail or mule deer",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "hunting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "archery",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Traditional and compound archery",
+      "slug": "traditional-compound-archery",
+      "description": "Shoot recurve or compound bows with proper form and accuracy",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "archery",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Target archery and competition",
+      "slug": "target-archery-competition",
+      "description": "Compete in archery tournaments with scoring and Olympic-style shooting",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "archery",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Scale model building and detailing",
+      "slug": "scale-model-building-detailing",
+      "description": "Assemble and detail plastic model kits of cars, planes, and military vehicles",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "model-building",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Model aircraft building and balsa construction",
+      "slug": "model-aircraft-building-balsa-construction",
+      "description": "Build flying model airplanes from scratch using balsa wood and covering",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "model-building",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "RC car racing and tuning",
+      "slug": "rc-car-racing-tuning",
+      "description": "Race and tune radio-controlled cars for speed and handling",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "rc-vehicles",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "RC airplane and helicopter flying",
+      "slug": "rc-airplane-helicopter-flying",
+      "description": "Fly remote-controlled aircraft with transmitter controls and aerobatic maneuvers",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "rc-vehicles",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "FPV drone racing",
+      "slug": "fpv-drone-racing",
+      "description": "Race quadcopters through courses using first-person view goggles",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "drone-flying",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Aerial photography and videography with drones",
+      "slug": "aerial-photography-videography-drones",
+      "description": "Capture stunning aerial footage using camera drones and editing software",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "drone-flying",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Speedcubing and Rubik's Cube solving",
+      "slug": "speedcubing-rubiks-cube-solving",
+      "description": "Solve twisty puzzles quickly using finger tricks and speedcubing methods",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "speedcubing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced speedcubing methods and algorithms",
+      "slug": "advanced-speedcubing-methods-algorithms",
+      "description": "Master CFOP, Roux, and other advanced solving methods for competition",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {
+          "competency_slug": "speedcubing",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

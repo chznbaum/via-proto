@@ -1,0 +1,520 @@
+{
+  "topics": [
+    {
+      "name": "Building a diversified investment portfolio",
+      "slug": "building-diversified-investment-portfolio",
+      "description": "Create balanced portfolios with stocks, bonds, and alternative assets for long-term growth",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "portfolio-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "asset-allocation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Asset allocation and rebalancing strategies",
+      "slug": "asset-allocation-rebalancing-strategies",
+      "description": "Optimize portfolio mix across asset classes and maintain target allocations over time",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "asset-allocation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "portfolio-management",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Risk-adjusted portfolio performance",
+      "slug": "risk-adjusted-portfolio-performance",
+      "description": "Evaluate investments using Sharpe ratio, Sortino ratio, and other risk metrics",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "risk-adjusted-returns",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "portfolio-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Stock market investing fundamentals",
+      "slug": "stock-market-investing-fundamentals",
+      "description": "Buy and hold equities with understanding of market mechanics and company analysis",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Value investing and undervalued stocks",
+      "slug": "value-investing-undervalued-stocks",
+      "description": "Identify and invest in undervalued companies using fundamental analysis",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "value-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fundamental-analysis",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Growth stock investing strategies",
+      "slug": "growth-stock-investing-strategies",
+      "description": "Invest in high-growth companies with strong earnings potential",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "growth-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fundamental-analysis",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Dividend income investing",
+      "slug": "dividend-income-investing",
+      "description": "Build passive income streams through dividend-paying stocks and reinvestment",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "dividend-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Index fund passive investing",
+      "slug": "index-fund-passive-investing",
+      "description": "Build wealth with low-cost index funds tracking market benchmarks",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "index-fund-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "etfs",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "ETF investing and trading",
+      "slug": "etf-investing-trading",
+      "description": "Invest in exchange-traded funds for diversified, liquid market exposure",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "etfs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mutual fund selection and analysis",
+      "slug": "mutual-fund-selection-analysis",
+      "description": "Choose actively managed mutual funds using expense ratios and performance metrics",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "mutual-funds",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bond investing for fixed income",
+      "slug": "bond-investing-fixed-income",
+      "description": "Generate stable returns with government and corporate bonds",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "bond-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Municipal bonds and tax-free income",
+      "slug": "municipal-bonds-tax-free-income",
+      "description": "Invest in state and local government bonds for tax-advantaged returns",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "municipal-bonds",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "bond-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Corporate bond investing",
+      "slug": "corporate-bond-investing",
+      "description": "Invest in company debt securities with credit analysis and yield evaluation",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "corporate-bonds",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "bond-investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fundamental-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "US Treasury securities investing",
+      "slug": "us-treasury-securities-investing",
+      "description": "Invest in risk-free government bonds including T-bills, notes, and bonds",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "treasury-securities",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "bond-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Real estate investment trusts",
+      "slug": "real-estate-investment-trusts",
+      "description": "Invest in real estate through publicly traded REITs for passive income",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "reits",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dividend-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rental property investing",
+      "slug": "rental-property-investing",
+      "description": "Buy and manage rental properties for cash flow and appreciation",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "real-estate-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Commodities and futures trading",
+      "slug": "commodities-futures-trading",
+      "description": "Trade raw materials and commodities using futures contracts and ETFs",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "commodities-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Gold and precious metals investing",
+      "slug": "gold-precious-metals-investing",
+      "description": "Hedge portfolios with physical gold, ETFs, and mining stocks",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "gold-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "commodities-trading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Cryptocurrency investing strategies",
+      "slug": "cryptocurrency-investing-strategies",
+      "description": "Invest in digital assets with proper risk management and security practices",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "cryptocurrency-investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Foreign exchange trading",
+      "slug": "foreign-exchange-trading",
+      "description": "Trade currency pairs on the forex market with leverage and technical analysis",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "forex-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "technical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Technical analysis for trading",
+      "slug": "technical-analysis-trading",
+      "description": "Analyze price charts, indicators, and patterns to time market entries and exits",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "technical-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Fundamental analysis of stocks",
+      "slug": "fundamental-analysis-stocks",
+      "description": "Evaluate companies using financial statements, ratios, and industry analysis",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "fundamental-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Day trading strategies",
+      "slug": "day-trading-strategies",
+      "description": "Execute intraday trades using technical analysis and momentum strategies",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "day-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "technical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Swing trading techniques",
+      "slug": "swing-trading-techniques",
+      "description": "Capture short to medium-term price moves over days to weeks",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "swing-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "technical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Options trading strategies",
+      "slug": "options-trading-strategies",
+      "description": "Trade call and put options for hedging, income, and speculation",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "options-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Covered calls and income strategies",
+      "slug": "covered-calls-income-strategies",
+      "description": "Generate income from stock holdings by selling covered call options",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "options-trading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dividend-investing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Long-term wealth building strategies",
+      "slug": "long-term-wealth-building-strategies",
+      "description": "Grow wealth over decades with buy-and-hold investing and compound returns",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "investing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "portfolio-management",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "asset-allocation",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Sector rotation investing",
+      "slug": "sector-rotation-investing",
+      "description": "Shift investments between market sectors based on economic cycles",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "etfs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stock-market-investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "technical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Retirement portfolio construction",
+      "slug": "retirement-portfolio-construction",
+      "description": "Build age-appropriate portfolios for retirement savings and income",
+      "category_slug": "investing-trading",
+      "competencies": [
+        {
+          "competency_slug": "portfolio-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "asset-allocation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "bond-investing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "dividend-investing",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T21:08:29.014Z
-**Total Topics:** 1037
+**Generated:** 2025-11-22T21:45:02.196Z
+**Total Topics:** 1320
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -30,8 +30,8 @@ Run `npm run topic:coverage` to update.
 │   ├── Cloud & DevOps [170 topics, 170 competencies]
 │   ├── Automation & Integration [0 topics, 3 competencies]
 │   ├── Information Security [0 topics, 0 competencies]
-│   │   └── Cybersecurity [0 topics, 27 competencies]
-│   └── Blockchain & Web3 [0 topics, 41 competencies]
+│   │   └── Cybersecurity [33 topics, 27 competencies]
+│   └── Blockchain & Web3 [45 topics, 41 competencies]
 ├── Design & Creativity [0 topics, 0 competencies]
 │   ├── UI/UX Design [0 topics, 19 competencies]
 │   ├── Graphic Design [0 topics, 16 competencies]
@@ -50,8 +50,8 @@ Run `npm run topic:coverage` to update.
 │   ├── Marketing & Sales [0 topics, 18 competencies]
 │   ├── Leadership & Communication [0 topics, 12 competencies]
 │   ├── Finance & Accounting [0 topics, 12 competencies]
-│   │   ├── Personal Finance [0 topics, 22 competencies]
-│   │   ├── Investing & Trading [0 topics, 26 competencies]
+│   │   ├── Personal Finance [26 topics, 22 competencies]
+│   │   ├── Investing & Trading [29 topics, 26 competencies]
 │   │   └── Corporate Finance [0 topics, 14 competencies]
 │   └── Operations & Strategy [0 topics, 19 competencies]
 ├── Linguistics [0 topics, 15 competencies]
@@ -100,8 +100,8 @@ Run `npm run topic:coverage` to update.
 │       ├── Yoga [0 topics, 10 competencies]
 │       ├── Meditation [0 topics, 8 competencies]
 │       └── Alternative Medicine [0 topics, 16 competencies]
-├── Home & Lifestyle [0 topics, 50 competencies]
-└── Recreation & Hobbies [0 topics, 39 competencies]
+├── Home & Lifestyle [80 topics, 50 competencies]
+└── Recreation & Hobbies [70 topics, 39 competencies]
 ```
 
 ---
@@ -170,7 +170,7 @@ Run `npm run topic:coverage` to update.
 
 ### Blockchain & Web3
 - **Slug:** `blockchain-web3`
-- **Topics:** 0
+- **Topics:** 45
 - **Competencies:** 41
 - **Parent:** information-technology
 
@@ -224,7 +224,7 @@ Run `npm run topic:coverage` to update.
 
 ### Cybersecurity
 - **Slug:** `cybersecurity`
-- **Topics:** 0
+- **Topics:** 33
 - **Competencies:** 27
 - **Parent:** information-security
 
@@ -326,12 +326,12 @@ Run `npm run topic:coverage` to update.
 
 ### Home & Lifestyle
 - **Slug:** `home-lifestyle`
-- **Topics:** 0
+- **Topics:** 80
 - **Competencies:** 50
 
 ### Investing & Trading
 - **Slug:** `investing-trading`
-- **Topics:** 0
+- **Topics:** 29
 - **Competencies:** 26
 - **Parent:** finance-accounting
 
@@ -443,7 +443,7 @@ Run `npm run topic:coverage` to update.
 
 ### Personal Finance
 - **Slug:** `personal-finance`
-- **Topics:** 0
+- **Topics:** 26
 - **Competencies:** 22
 - **Parent:** finance-accounting
 
@@ -485,7 +485,7 @@ Run `npm run topic:coverage` to update.
 
 ### Recreation & Hobbies
 - **Slug:** `recreation-hobbies`
-- **Topics:** 0
+- **Topics:** 70
 - **Competencies:** 39
 
 ### Software Testing

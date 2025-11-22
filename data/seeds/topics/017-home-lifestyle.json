@@ -1,0 +1,1324 @@
+{
+  "topics": [
+    {
+      "name": "Home cooking fundamentals",
+      "slug": "home-cooking-fundamentals",
+      "description": "Master essential cooking techniques, ingredient preparation, and kitchen safety for everyday meals",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cooking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Baking cakes, cookies, and desserts",
+      "slug": "baking-cakes-cookies-desserts",
+      "description": "Learn to bake a variety of sweet treats using proper oven techniques and ingredient measurements",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "baking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Artisan bread baking",
+      "slug": "artisan-bread-baking",
+      "description": "Create crusty artisan loaves with proper kneading, shaping, and fermentation techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "bread-making",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Sourdough bread from starter to loaf",
+      "slug": "sourdough-bread-starter-to-loaf",
+      "description": "Master sourdough starter maintenance, fermentation timing, and baking naturally leavened bread",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "sourdough-baking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "bread-making",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "fermentation",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "French pastry techniques",
+      "slug": "french-pastry-techniques",
+      "description": "Learn classical pastry methods including laminated doughs, choux, and delicate tarts",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "pastry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Custom cake design and decoration",
+      "slug": "custom-cake-design-decoration",
+      "description": "Create beautifully decorated cakes using fondant, buttercream, and advanced piping techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cake-decorating",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Handcrafted chocolate making",
+      "slug": "handcrafted-chocolate-making",
+      "description": "Temper chocolate and create truffles, bonbons, and molded confections",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "chocolate-making",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "BBQ and grilling mastery",
+      "slug": "bbq-grilling-mastery",
+      "description": "Master charcoal and gas grilling, temperature control, and smoking techniques for meats and vegetables",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "grilling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "food-smoking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Low-temperature precision cooking",
+      "slug": "low-temperature-precision-cooking",
+      "description": "Cook restaurant-quality meals using sous vide equipment and vacuum-sealing techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "sous-vide",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fermenting foods at home",
+      "slug": "fermenting-foods-at-home",
+      "description": "Create kimchi, sauerkraut, kombucha, and other fermented foods using natural fermentation",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "fermentation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home food preservation",
+      "slug": "home-food-preservation",
+      "description": "Safely preserve seasonal produce through pickling, canning, and jarring techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "canning",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pickling",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Weekly meal planning and batch cooking",
+      "slug": "weekly-meal-planning-batch-cooking",
+      "description": "Efficiently plan and prepare nutritious meals in advance for busy schedules",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "meal-prep",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Wine tasting and appreciation",
+      "slug": "wine-tasting-appreciation",
+      "description": "Develop your palate to identify wine characteristics, regions, and food pairings",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "wine-tasting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Manual coffee brewing methods",
+      "slug": "manual-coffee-brewing-methods",
+      "description": "Master pour-over, French press, and other manual brewing techniques for exceptional coffee",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "coffee-brewing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Espresso and milk-based coffee drinks",
+      "slug": "espresso-milk-based-coffee-drinks",
+      "description": "Pull perfect espresso shots, steam milk, and create latte art for cafe-quality drinks",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "espresso",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "latte-art",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "coffee-brewing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Craft cocktail making",
+      "slug": "craft-cocktail-making",
+      "description": "Mix classic and modern cocktails with proper techniques, ingredients, and presentation",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "mixology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Home vegetable gardening",
+      "slug": "home-vegetable-gardening",
+      "description": "Grow fresh vegetables and herbs from seed to harvest in your backyard or raised beds",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "vegetable-gardening",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "composting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Organic gardening practices",
+      "slug": "organic-gardening-practices",
+      "description": "Cultivate gardens without synthetic pesticides using natural pest control and soil management",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "organic-gardening",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "composting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Small-space container gardening",
+      "slug": "small-space-container-gardening",
+      "description": "Grow plants in pots and containers for balconies, patios, and limited outdoor spaces",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "container-gardening",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Indoor hydroponic growing systems",
+      "slug": "indoor-hydroponic-growing-systems",
+      "description": "Set up and maintain soil-free growing systems for year-round indoor cultivation",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "hydroponics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Backyard composting systems",
+      "slug": "backyard-composting-systems",
+      "description": "Turn kitchen scraps and yard waste into nutrient-rich compost for gardens",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "composting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Landscape design and maintenance",
+      "slug": "landscape-design-maintenance",
+      "description": "Plan and maintain beautiful outdoor spaces with plants, hardscaping, and seasonal care",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "landscaping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Sustainable permaculture gardens",
+      "slug": "sustainable-permaculture-gardens",
+      "description": "Design self-sustaining food forests and gardens that work with natural ecosystems",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "permaculture",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "composting",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "organic-gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Backyard beekeeping",
+      "slug": "backyard-beekeeping",
+      "description": "Maintain healthy bee colonies, harvest honey, and support local pollinator populations",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "beekeeping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bonsai tree cultivation",
+      "slug": "bonsai-tree-cultivation",
+      "description": "Shape and maintain miniature trees through pruning, wiring, and specialized care techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "bonsai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Growing and caring for orchids",
+      "slug": "growing-caring-for-orchids",
+      "description": "Cultivate exotic orchids with proper light, humidity, and repotting techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "orchid-growing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Basic home repairs",
+      "slug": "basic-home-repairs",
+      "description": "Fix common household issues like leaky faucets, squeaky doors, and minor wall damage",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home plumbing repairs",
+      "slug": "home-plumbing-repairs",
+      "description": "Troubleshoot and fix household plumbing issues like clogs, leaks, and fixture replacements",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "plumbing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Residential electrical work",
+      "slug": "residential-electrical-work",
+      "description": "Safely install outlets, switches, and light fixtures following electrical codes",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "electrical-work",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Carpentry and woodworking projects",
+      "slug": "carpentry-woodworking-projects",
+      "description": "Build shelves, frames, and small structures using hand and power tools",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "carpentry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "woodworking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Custom furniture building",
+      "slug": "custom-furniture-building",
+      "description": "Design and construct tables, chairs, and storage pieces from raw lumber",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "furniture-making",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "woodworking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Custom kitchen and built-in cabinetry",
+      "slug": "custom-kitchen-built-in-cabinetry",
+      "description": "Build and install fitted cabinets with precision joinery and hardware",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cabinet-making",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "woodworking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Interior and exterior house painting",
+      "slug": "interior-exterior-house-painting",
+      "description": "Prepare surfaces and apply paint for professional-looking walls, trim, and exteriors",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "house-painting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ceramic and stone tile installation",
+      "slug": "ceramic-stone-tile-installation",
+      "description": "Install tile flooring, backsplashes, and shower walls with proper layout and grouting",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "tiling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Drywall installation and finishing",
+      "slug": "drywall-installation-finishing",
+      "description": "Hang, tape, and finish drywall for smooth walls and ceilings",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "drywall",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Basic MIG and stick welding",
+      "slug": "basic-mig-stick-welding",
+      "description": "Join metal using arc welding techniques for repairs and fabrication projects",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "welding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Car maintenance and fluid changes",
+      "slug": "car-maintenance-fluid-changes",
+      "description": "Perform routine vehicle maintenance like oil changes, tire rotations, and filter replacements",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "auto-maintenance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "auto-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Auto troubleshooting and repair",
+      "slug": "auto-troubleshooting-repair",
+      "description": "Diagnose and fix common vehicle problems like brake issues, electrical faults, and engine troubles",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "auto-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "auto-maintenance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home organization and decluttering systems",
+      "slug": "home-organization-decluttering-systems",
+      "description": "Create functional storage solutions and reduce clutter using proven organizational methods",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-organization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "decluttering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Interior design for living spaces",
+      "slug": "interior-design-living-spaces",
+      "description": "Design cohesive interiors using color theory, furniture arrangement, and style principles",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "interior-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Dog training and obedience",
+      "slug": "dog-training-obedience",
+      "description": "Train dogs using positive reinforcement for basic commands, leash manners, and behavioral issues",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "dog-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Freshwater aquarium setup and care",
+      "slug": "freshwater-aquarium-setup-care",
+      "description": "Establish and maintain healthy aquarium ecosystems with proper filtration, cycling, and fish care",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "aquarium-keeping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Asian cuisine cooking techniques",
+      "slug": "asian-cuisine-cooking-techniques",
+      "description": "Master stir-frying, steaming, and other techniques for Chinese, Thai, and Japanese dishes",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cooking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Italian pasta and sauce making",
+      "slug": "italian-pasta-sauce-making",
+      "description": "Create fresh pasta by hand and prepare classic Italian sauces from scratch",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cooking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Plant-based and vegan cooking",
+      "slug": "plant-based-vegan-cooking",
+      "description": "Prepare flavorful vegan meals with proper nutrition and meat alternative techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cooking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Professional knife techniques",
+      "slug": "professional-knife-techniques",
+      "description": "Master precise cutting methods including julienne, brunoise, and chiffonade",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "knife-skills",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Texas-style BBQ smoking",
+      "slug": "texas-style-bbq-smoking",
+      "description": "Smoke brisket, ribs, and other meats low and slow with wood smoke",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "food-smoking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "grilling",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Quick pickling and refrigerator pickles",
+      "slug": "quick-pickling-refrigerator-pickles",
+      "description": "Create tangy pickled vegetables and fruits without traditional canning",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "pickling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Gluten-free baking substitutions",
+      "slug": "gluten-free-baking-substitutions",
+      "description": "Bake delicious breads and desserts using gluten-free flour blends and techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "baking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Wedding and special occasion cakes",
+      "slug": "wedding-special-occasion-cakes",
+      "description": "Design and construct multi-tier cakes with structural support and elegant decoration",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "cake-decorating",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Croissant and laminated pastry",
+      "slug": "croissant-laminated-pastry",
+      "description": "Create flaky croissants and Danish pastries with butter lamination techniques",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "pastry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "baking",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "cooking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home coffee roasting",
+      "slug": "home-coffee-roasting",
+      "description": "Roast green coffee beans at home to customize flavor profiles and freshness",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "coffee-brewing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cold brew and nitro coffee",
+      "slug": "cold-brew-nitro-coffee",
+      "description": "Brew smooth cold coffee concentrate and create nitrogen-infused coffee drinks",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "coffee-brewing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Classic cocktail recipes and variations",
+      "slug": "classic-cocktail-recipes-variations",
+      "description": "Master timeless cocktails like martinis, old fashioneds, and negronis with creative twists",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "mixology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Flower gardening and perennial beds",
+      "slug": "flower-gardening-perennial-beds",
+      "description": "Design and maintain colorful flower gardens with seasonal blooms and perennials",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "gardening",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "composting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Raised bed gardening systems",
+      "slug": "raised-bed-gardening-systems",
+      "description": "Build and plant raised garden beds for improved drainage and accessibility",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "vegetable-gardening",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Native plant landscaping",
+      "slug": "native-plant-landscaping",
+      "description": "Design low-maintenance landscapes using native plants adapted to local conditions",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "landscaping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "gardening",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Woodturning bowls and spindles",
+      "slug": "woodturning-bowls-spindles",
+      "description": "Shape wood on a lathe to create bowls, pens, and decorative turned pieces",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "woodworking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Fine woodworking joinery",
+      "slug": "fine-woodworking-joinery",
+      "description": "Create strong, beautiful joints using dovetails, mortise and tenon, and finger joints",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "woodworking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "furniture-making",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Outdoor deck and fence building",
+      "slug": "outdoor-deck-fence-building",
+      "description": "Construct durable outdoor structures with proper framing and weather protection",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "carpentry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "woodworking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Small engine repair and maintenance",
+      "slug": "small-engine-repair-maintenance",
+      "description": "Service lawn mowers, chainsaws, and other small gas engines",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-repair",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Bathroom renovation and remodeling",
+      "slug": "bathroom-renovation-remodeling",
+      "description": "Plan and execute bathroom upgrades including fixtures, tile, and plumbing",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "plumbing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "tiling",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Kitchen renovation projects",
+      "slug": "kitchen-renovation-projects",
+      "description": "Update kitchens with new cabinets, countertops, and appliance installation",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plumbing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "electrical-work",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "PEX and copper pipe plumbing",
+      "slug": "pex-copper-pipe-plumbing",
+      "description": "Install water supply lines using modern PEX and traditional copper piping",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "plumbing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home electrical panel and wiring",
+      "slug": "home-electrical-panel-wiring",
+      "description": "Understand and safely work with circuit breakers, electrical panels, and home wiring",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "electrical-work",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Decorative paint techniques and faux finishes",
+      "slug": "decorative-paint-techniques-faux-finishes",
+      "description": "Create textured walls, color washing, and faux marble effects with specialty painting",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "house-painting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mosaic tile art and installation",
+      "slug": "mosaic-tile-art-installation",
+      "description": "Design and install decorative mosaic patterns for backsplashes and accent walls",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "tiling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-repair",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Metal fabrication and welding projects",
+      "slug": "metal-fabrication-welding-projects",
+      "description": "Design and build custom metal furniture, gates, and decorative pieces",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "welding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brake system repair and replacement",
+      "slug": "brake-system-repair-replacement",
+      "description": "Service disc and drum brakes including pads, rotors, and brake fluid",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "auto-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "auto-maintenance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Engine diagnostics and sensor replacement",
+      "slug": "engine-diagnostics-sensor-replacement",
+      "description": "Use OBD scanners to diagnose check engine lights and replace faulty sensors",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "auto-repair",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "auto-maintenance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Minimalist home decluttering",
+      "slug": "minimalist-home-decluttering",
+      "description": "Simplify living spaces by removing excess possessions using minimalist principles",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "decluttering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-organization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Closet organization systems",
+      "slug": "closet-organization-systems",
+      "description": "Design efficient closet layouts with shelving, hanging systems, and storage solutions",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "home-organization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "carpentry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Small apartment interior design",
+      "slug": "small-apartment-interior-design",
+      "description": "Maximize small spaces with smart furniture placement and multi-functional design",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "interior-design",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "home-organization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Color theory for interior spaces",
+      "slug": "color-theory-interior-spaces",
+      "description": "Choose and combine paint colors and decor to create mood and visual harmony",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "interior-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Basic pet first aid and health care",
+      "slug": "basic-pet-first-aid-health-care",
+      "description": "Recognize common pet health issues and provide emergency first aid",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "pet-care",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cat behavior and enrichment",
+      "slug": "cat-behavior-enrichment",
+      "description": "Understand feline behavior and create engaging environments for indoor cats",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "pet-care",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Puppy training and socialization",
+      "slug": "puppy-training-socialization",
+      "description": "Raise well-adjusted puppies through early training and positive social experiences",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "dog-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Advanced dog tricks and agility",
+      "slug": "advanced-dog-tricks-agility",
+      "description": "Teach complex behaviors and train dogs for agility courses and competitions",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "dog-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Saltwater reef aquarium systems",
+      "slug": "saltwater-reef-aquarium-systems",
+      "description": "Maintain complex marine ecosystems with corals, fish, and precise water chemistry",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "aquarium-keeping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Aquascaping planted aquariums",
+      "slug": "aquascaping-planted-aquariums",
+      "description": "Design underwater landscapes with live plants, rocks, and driftwood",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {
+          "competency_slug": "aquarium-keeping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pet-care",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

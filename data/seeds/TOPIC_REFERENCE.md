@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T21:08:18.061Z
-**Total Topics:** 1037
+**Generated:** 2025-11-22T21:44:43.477Z
+**Total Topics:** 1320
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -13,17 +13,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 ## Table of Contents
 
 - [backend-development](#backend-development) (3)
+- [blockchain-web3](#blockchain-web3) (45)
 - [cloud-devops](#cloud-devops) (170)
+- [cybersecurity](#cybersecurity) (33)
 - [dance](#dance) (42)
 - [databases](#databases) (72)
 - [fiber-arts-crafts](#fiber-arts-crafts) (47)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
 - [game-development](#game-development) (1)
+- [home-lifestyle](#home-lifestyle) (80)
+- [investing-trading](#investing-trading) (29)
 - [languages](#languages) (147)
 - [mobile-development](#mobile-development) (86)
 - [music](#music) (181)
+- [personal-finance](#personal-finance) (26)
 - [programming](#programming) (73)
+- [recreation-hobbies](#recreation-hobbies) (70)
 - [software-testing](#software-testing) (3)
 - [theater](#theater) (20)
 - [visual-arts](#visual-arts) (51)
@@ -53,6 +59,319 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `flask`
 - **Supporting Competencies:** `python`, `html`, `css`
 - **Source File:** 004-backend-apis.json
+
+---
+
+## blockchain-web3
+
+### Arbitrum layer 2 applications
+- **Slug:** `arbitrum-layer-2-applications`
+- **Description:** Deploy dApps on Arbitrum's optimistic rollup for Ethereum scaling
+- **Primary Competencies:** `arbitrum`
+- **Supporting Competencies:** `ethereum`, `solidity`
+- **Source File:** 008-blockchain-web3.json
+
+### Avalanche subnet development
+- **Slug:** `avalanche-subnet-development`
+- **Description:** Create custom blockchains on Avalanche's subnet infrastructure
+- **Primary Competencies:** `avalanche`
+- **Supporting Competencies:** `solidity`
+- **Source File:** 008-blockchain-web3.json
+
+### Blockchain data analysis with Etherscan
+- **Slug:** `blockchain-data-analysis-etherscan`
+- **Description:** Explore and verify Ethereum transactions and contracts using Etherscan
+- **Primary Competencies:** `etherscan`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Blockchain data indexing with The Graph
+- **Slug:** `blockchain-data-indexing-the-graph`
+- **Description:** Query blockchain data efficiently using The Graph's decentralized indexing protocol
+- **Primary Competencies:** `the-graph`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Blockchain development with Alchemy
+- **Slug:** `blockchain-development-alchemy`
+- **Description:** Build Web3 apps using Alchemy's enhanced node services and developer tools
+- **Primary Competencies:** `alchemy`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### BNB Chain smart contract development
+- **Slug:** `bnb-chain-smart-contract-development`
+- **Description:** Build dApps on BNB Chain with EVM-compatible smart contracts
+- **Primary Competencies:** `bnb-chain`
+- **Supporting Competencies:** `solidity`
+- **Source File:** 008-blockchain-web3.json
+
+### Browser-based Solidity development with Remix
+- **Slug:** `browser-based-solidity-development-remix`
+- **Description:** Write and test smart contracts directly in the browser using Remix IDE
+- **Primary Competencies:** `remix-ide`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Cardano smart contract development
+- **Slug:** `cardano-smart-contract-development`
+- **Description:** Develop smart contracts on Cardano using Plutus and Marlowe
+- **Primary Competencies:** `cardano`
+- **Source File:** 008-blockchain-web3.json
+
+### Cosmos SDK blockchain development
+- **Slug:** `cosmos-sdk-blockchain-development`
+- **Description:** Create interoperable blockchains using the Cosmos SDK
+- **Primary Competencies:** `cosmos`
+- **Source File:** 008-blockchain-web3.json
+
+### Decentralized oracles with Chainlink
+- **Slug:** `decentralized-oracles-chainlink`
+- **Description:** Integrate real-world data into smart contracts using Chainlink oracles
+- **Primary Competencies:** `chainlink`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Decentralized storage with IPFS
+- **Slug:** `decentralized-storage-ipfs`
+- **Description:** Store and retrieve files on the InterPlanetary File System
+- **Primary Competencies:** `ipfs`
+- **Source File:** 008-blockchain-web3.json
+
+### DeFi protocol development
+- **Slug:** `defi-protocol-development`
+- **Description:** Build decentralized finance protocols with lending, swapping, and yield farming
+- **Primary Competencies:** `solidity`
+- **Supporting Competencies:** `ethereum`, `openzeppelin`
+- **Source File:** 008-blockchain-web3.json
+
+### ERC-20 token smart contracts
+- **Slug:** `erc20-token-smart-contracts`
+- **Description:** Create fungible tokens on Ethereum using the ERC-20 token standard
+- **Primary Competencies:** `solidity`
+- **Supporting Competencies:** `ethereum`, `openzeppelin`
+- **Source File:** 008-blockchain-web3.json
+
+### Ethereum node infrastructure with Infura
+- **Slug:** `ethereum-node-infrastructure-infura`
+- **Description:** Access Ethereum networks using Infura's node infrastructure and APIs
+- **Primary Competencies:** `infura`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Full-stack dApp development
+- **Slug:** `fullstack-dapp-development`
+- **Description:** Build end-to-end decentralized applications with smart contracts and Web3 frontends
+- **Primary Competencies:** `ethereum`
+- **Supporting Competencies:** `solidity`, `hardhat`, `wagmi`, `rainbowkit`
+- **Source File:** 008-blockchain-web3.json
+
+### Legacy smart contract development with Truffle
+- **Slug:** `legacy-smart-contract-development-truffle`
+- **Description:** Work with Truffle suite for Ethereum smart contract compilation and deployment
+- **Primary Competencies:** `truffle`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Legacy Web3 development with web3.js
+- **Slug:** `legacy-web3-development-web3js`
+- **Description:** Interact with Ethereum blockchain using the original web3.js library
+- **Primary Competencies:** `web3js`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Local blockchain testing with Ganache
+- **Slug:** `local-blockchain-testing-ganache`
+- **Description:** Run local Ethereum blockchain for rapid development and testing
+- **Primary Competencies:** `ganache`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Multi-signature wallets with Safe
+- **Slug:** `multi-signature-wallets-safe`
+- **Description:** Manage crypto assets securely using Safe multi-signature wallet infrastructure
+- **Primary Competencies:** `safe`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Multi-wallet support with WalletConnect
+- **Slug:** `multi-wallet-support-walletconnect`
+- **Description:** Integrate multiple wallet providers into dApps using WalletConnect protocol
+- **Primary Competencies:** `walletconnect`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### NEAR Protocol application development
+- **Slug:** `near-protocol-application-development`
+- **Description:** Build scalable dApps on NEAR using AssemblyScript or Rust
+- **Primary Competencies:** `near-protocol`
+- **Source File:** 008-blockchain-web3.json
+
+### NFT metadata and assets on IPFS
+- **Slug:** `nft-metadata-assets-ipfs`
+- **Description:** Host NFT images and metadata using IPFS for decentralized permanence
+- **Primary Competencies:** `ipfs`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### NFT smart contracts with ERC-721
+- **Slug:** `nft-smart-contracts-erc721`
+- **Description:** Build non-fungible token collections using the ERC-721 standard
+- **Primary Competencies:** `solidity`
+- **Supporting Competencies:** `ethereum`, `openzeppelin`, `ipfs`
+- **Source File:** 008-blockchain-web3.json
+
+### Optimism rollup development
+- **Slug:** `optimism-rollup-development`
+- **Description:** Build on Optimism's optimistic rollup for faster and cheaper Ethereum transactions
+- **Primary Competencies:** `optimism`
+- **Supporting Competencies:** `ethereum`, `solidity`
+- **Source File:** 008-blockchain-web3.json
+
+### Polkadot parachain development
+- **Slug:** `polkadot-parachain-development`
+- **Description:** Build custom blockchains on Polkadot using Substrate framework
+- **Primary Competencies:** `polkadot`
+- **Source File:** 008-blockchain-web3.json
+
+### Polygon layer 2 development
+- **Slug:** `polygon-layer-2-development`
+- **Description:** Deploy scalable Ethereum dApps on Polygon's layer 2 network
+- **Primary Competencies:** `polygon`
+- **Supporting Competencies:** `ethereum`, `solidity`
+- **Source File:** 008-blockchain-web3.json
+
+### Python blockchain development with web3.py
+- **Slug:** `python-blockchain-development-web3py`
+- **Description:** Interact with Ethereum and write scripts using Python's web3.py library
+- **Primary Competencies:** `web3py`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Python smart contract testing with Brownie
+- **Slug:** `python-smart-contract-testing-brownie`
+- **Description:** Test and deploy Ethereum contracts using the Brownie Python framework
+- **Primary Competencies:** `brownie`
+- **Supporting Competencies:** `vyper`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Rapid Web3 development with Thirdweb
+- **Slug:** `rapid-web3-development-thirdweb`
+- **Description:** Build and deploy Web3 applications quickly using Thirdweb's SDK and tools
+- **Primary Competencies:** `thirdweb`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### React Web3 applications with wagmi
+- **Slug:** `react-web3-applications-wagmi`
+- **Description:** Build decentralized React apps using wagmi hooks for Ethereum interactions
+- **Primary Competencies:** `wagmi`
+- **Supporting Competencies:** `viem`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Secure smart contracts with OpenZeppelin
+- **Slug:** `secure-smart-contracts-openzeppelin`
+- **Description:** Build audited smart contracts using OpenZeppelin's battle-tested contract libraries
+- **Primary Competencies:** `openzeppelin`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Smart contract development with Foundry
+- **Slug:** `smart-contract-development-foundry`
+- **Description:** Develop and test Solidity contracts using Foundry's fast Rust-based toolchain
+- **Primary Competencies:** `foundry`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Smart contract development with Solidity
+- **Slug:** `smart-contract-development-solidity`
+- **Description:** Write, test, and deploy Ethereum smart contracts using Solidity programming language
+- **Primary Competencies:** `solidity`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Smart contract development with Vyper
+- **Slug:** `smart-contract-development-vyper`
+- **Description:** Write Ethereum smart contracts using Python-like Vyper language
+- **Primary Competencies:** `vyper`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Smart contract monitoring with Tenderly
+- **Slug:** `smart-contract-monitoring-tenderly`
+- **Description:** Debug, monitor, and simulate smart contracts using Tenderly's development platform
+- **Primary Competencies:** `tenderly`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Solana program development
+- **Slug:** `solana-program-development`
+- **Description:** Write high-performance blockchain programs on Solana using Rust
+- **Primary Competencies:** `solana`
+- **Source File:** 008-blockchain-web3.json
+
+### Solana smart contracts with Anchor
+- **Slug:** `solana-smart-contracts-anchor`
+- **Description:** Build Solana programs using the Anchor framework for secure and efficient development
+- **Primary Competencies:** `anchor`
+- **Supporting Competencies:** `solana`
+- **Source File:** 008-blockchain-web3.json
+
+### Solidity smart contract testing with Hardhat
+- **Slug:** `solidity-smart-contract-testing-hardhat`
+- **Description:** Build and test Ethereum smart contracts using the Hardhat development environment
+- **Primary Competencies:** `hardhat`
+- **Supporting Competencies:** `solidity`, `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Type-safe Ethereum interactions with viem
+- **Slug:** `type-safe-ethereum-interactions-viem`
+- **Description:** Build type-safe Web3 applications using viem's TypeScript-first library
+- **Primary Competencies:** `viem`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Wallet integration with MetaMask
+- **Slug:** `wallet-integration-metamask`
+- **Description:** Connect dApps to user wallets using the MetaMask browser extension
+- **Primary Competencies:** `metamask`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Wallet UI with RainbowKit
+- **Slug:** `wallet-ui-rainbowkit`
+- **Description:** Build beautiful wallet connection interfaces using RainbowKit components
+- **Primary Competencies:** `rainbowkit`
+- **Supporting Competencies:** `wagmi`, `walletconnect`
+- **Source File:** 008-blockchain-web3.json
+
+### Web3 backend with Moralis
+- **Slug:** `web3-backend-moralis`
+- **Description:** Build dApp backends using Moralis APIs for authentication and blockchain data
+- **Primary Competencies:** `moralis`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Web3 frontend integration with ethers.js
+- **Slug:** `web3-frontend-integration-ethersjs`
+- **Description:** Connect web applications to Ethereum using the ethers.js library
+- **Primary Competencies:** `ethersjs`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### Web3 infrastructure with QuickNode
+- **Slug:** `web3-infrastructure-quicknode`
+- **Description:** Deploy and scale dApps using QuickNode's multi-chain node infrastructure
+- **Primary Competencies:** `quicknode`
+- **Supporting Competencies:** `ethereum`
+- **Source File:** 008-blockchain-web3.json
+
+### zkSync zero-knowledge rollups
+- **Slug:** `zksync-zero-knowledge-rollups`
+- **Description:** Build privacy-preserving applications using zkSync's zero-knowledge technology
+- **Primary Competencies:** `zksync`
+- **Supporting Competencies:** `ethereum`, `solidity`
+- **Source File:** 008-blockchain-web3.json
 
 ---
 
@@ -1165,6 +1484,228 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `google-container-registry`
 - **Supporting Competencies:** `google-cloud-platform`, `docker`
 - **Source File:** 002-cloud-devops.json
+
+---
+
+## cybersecurity
+
+### AWS access control with IAM
+- **Slug:** `aws-access-control-iam`
+- **Description:** Manage AWS permissions, roles, and policies using Identity and Access Management
+- **Primary Competencies:** `aws-iam`
+- **Source File:** 007-security.json
+
+### Cloud security best practices
+- **Slug:** `cloud-security-best-practices`
+- **Description:** Secure cloud infrastructure with proper IAM, encryption, and network controls
+- **Primary Competencies:** `aws-iam`
+- **Supporting Competencies:** `zero-trust`
+- **Source File:** 007-security.json
+
+### Code quality and security with SonarQube
+- **Slug:** `code-quality-security-sonarqube`
+- **Description:** Analyze code for bugs, vulnerabilities, and code smells using SonarQube
+- **Primary Competencies:** `sonarqube`
+- **Source File:** 007-security.json
+
+### Code vulnerability scanning with Snyk
+- **Slug:** `code-vulnerability-scanning-snyk`
+- **Description:** Find and fix security vulnerabilities in dependencies and container images with Snyk
+- **Primary Competencies:** `snyk`
+- **Source File:** 007-security.json
+
+### Content Security Policy implementation
+- **Slug:** `content-security-policy-implementation`
+- **Description:** Prevent XSS and injection attacks using Content Security Policy headers
+- **Primary Competencies:** `csp`
+- **Supporting Competencies:** `owasp`
+- **Source File:** 007-security.json
+
+### Cross-origin security with CORS
+- **Slug:** `cross-origin-security-cors`
+- **Description:** Configure Cross-Origin Resource Sharing to control API access from web browsers
+- **Primary Competencies:** `cors`
+- **Source File:** 007-security.json
+
+### DevSecOps security automation
+- **Slug:** `devsecops-security-automation`
+- **Description:** Integrate security scanning and testing into CI/CD pipelines
+- **Primary Competencies:** `snyk`
+- **Supporting Competencies:** `sonarqube`, `owasp`
+- **Source File:** 007-security.json
+
+### Directory services with LDAP
+- **Slug:** `directory-services-ldap`
+- **Description:** Manage user directories and authentication using LDAP protocol
+- **Primary Competencies:** `ldap`
+- **Source File:** 007-security.json
+
+### Enterprise identity management with Okta
+- **Slug:** `enterprise-identity-management-okta`
+- **Description:** Deploy enterprise SSO and identity governance using Okta's platform
+- **Primary Competencies:** `okta`
+- **Supporting Competencies:** `saml`, `oauth`
+- **Source File:** 007-security.json
+
+### Enterprise SSO with SAML
+- **Slug:** `enterprise-sso-saml`
+- **Description:** Implement single sign-on between identity providers and service providers using SAML
+- **Primary Competencies:** `saml`
+- **Supporting Competencies:** `oauth`
+- **Source File:** 007-security.json
+
+### Ethical hacking and penetration testing
+- **Slug:** `ethical-hacking-penetration-testing`
+- **Description:** Conduct authorized security assessments to identify system vulnerabilities
+- **Primary Competencies:** `penetration-testing`
+- **Supporting Competencies:** `kali-linux`, `nmap`, `burp-suite`
+- **Source File:** 007-security.json
+
+### Exploitation framework with Metasploit
+- **Slug:** `exploitation-framework-metasploit`
+- **Description:** Conduct penetration tests and exploit development using Metasploit
+- **Primary Competencies:** `metasploit`
+- **Supporting Competencies:** `kali-linux`, `penetration-testing`
+- **Source File:** 007-security.json
+
+### Identity federation and SSO implementation
+- **Slug:** `identity-federation-sso-implementation`
+- **Description:** Connect multiple identity providers with federated authentication and single sign-on
+- **Primary Competencies:** `saml`
+- **Supporting Competencies:** `oauth`, `okta`
+- **Source File:** 007-security.json
+
+### Intrusion prevention with Fail2Ban
+- **Slug:** `intrusion-prevention-fail2ban`
+- **Description:** Protect servers from brute-force attacks using Fail2Ban IP blocking
+- **Primary Competencies:** `fail2ban`
+- **Source File:** 007-security.json
+
+### Multi-factor authentication implementation
+- **Slug:** `multi-factor-authentication-implementation`
+- **Description:** Add MFA to applications using TOTP, SMS, or hardware tokens for enhanced security
+- **Primary Competencies:** `auth0`
+- **Supporting Competencies:** `okta`
+- **Source File:** 007-security.json
+
+### Network reconnaissance with Nmap
+- **Slug:** `network-reconnaissance-nmap`
+- **Description:** Scan networks and discover hosts, ports, and services using Nmap
+- **Primary Competencies:** `nmap`
+- **Supporting Competencies:** `penetration-testing`
+- **Source File:** 007-security.json
+
+### Network traffic analysis with Wireshark
+- **Slug:** `network-traffic-analysis-wireshark`
+- **Description:** Capture and analyze network packets for troubleshooting and security analysis
+- **Primary Competencies:** `wireshark`
+- **Source File:** 007-security.json
+
+### Node.js authentication with Passport.js
+- **Slug:** `nodejs-authentication-passportjs`
+- **Description:** Add flexible authentication strategies to Node.js apps using Passport.js
+- **Primary Competencies:** `passportjs`
+- **Supporting Competencies:** `oauth`, `jwt`
+- **Source File:** 007-security.json
+
+### OAuth 2.0 authorization flows
+- **Slug:** `oauth-2-authorization-flows`
+- **Description:** Implement secure third-party authentication using OAuth 2.0 grant types
+- **Primary Competencies:** `oauth`
+- **Supporting Competencies:** `jwt`
+- **Source File:** 007-security.json
+
+### Open-source identity with Keycloak
+- **Slug:** `open-source-identity-keycloak`
+- **Description:** Deploy self-hosted SSO and identity management using Keycloak
+- **Primary Competencies:** `keycloak`
+- **Supporting Competencies:** `oauth`, `saml`, `ldap`
+- **Source File:** 007-security.json
+
+### Penetration testing with Kali Linux
+- **Slug:** `penetration-testing-kali-linux`
+- **Description:** Perform security assessments using Kali Linux's comprehensive toolkit
+- **Primary Competencies:** `kali-linux`
+- **Supporting Competencies:** `penetration-testing`, `nmap`, `metasploit`
+- **Source File:** 007-security.json
+
+### Secure API development practices
+- **Slug:** `secure-api-development-practices`
+- **Description:** Build APIs with authentication, rate limiting, and protection against common vulnerabilities
+- **Primary Competencies:** `owasp`
+- **Supporting Competencies:** `jwt`, `oauth`, `cors`
+- **Source File:** 007-security.json
+
+### Security compliance auditing
+- **Slug:** `security-compliance-auditing`
+- **Description:** Assess systems for security compliance with frameworks like SOC 2, ISO 27001, and PCI DSS
+- **Primary Competencies:** `security-auditing`
+- **Source File:** 007-security.json
+
+### Security information and event management
+- **Slug:** `security-information-event-management`
+- **Description:** Monitor and analyze security events using SIEM platforms for threat detection
+- **Primary Competencies:** `siem`
+- **Source File:** 007-security.json
+
+### Security monitoring and incident response
+- **Slug:** `security-monitoring-incident-response`
+- **Description:** Detect, analyze, and respond to security incidents using monitoring tools and procedures
+- **Primary Competencies:** `siem`
+- **Supporting Competencies:** `wireshark`
+- **Source File:** 007-security.json
+
+### Stateless authentication with JWT
+- **Slug:** `stateless-authentication-jwt`
+- **Description:** Secure APIs using JSON Web Tokens for authentication and authorization
+- **Primary Competencies:** `jwt`
+- **Source File:** 007-security.json
+
+### TLS certificate management and HTTPS
+- **Slug:** `tls-certificate-management-https`
+- **Description:** Configure SSL/TLS certificates and enforce encrypted connections
+- **Primary Competencies:** `ssl-tls`
+- **Source File:** 007-security.json
+
+### User authentication with Auth0
+- **Slug:** `user-authentication-auth0`
+- **Description:** Implement secure login and user management using Auth0's identity platform
+- **Primary Competencies:** `auth0`
+- **Supporting Competencies:** `oauth`, `jwt`
+- **Source File:** 007-security.json
+
+### Web application firewall with ModSecurity
+- **Slug:** `web-application-firewall-modsecurity`
+- **Description:** Deploy ModSecurity WAF to protect web applications from common attacks
+- **Primary Competencies:** `modsecurity`
+- **Supporting Competencies:** `owasp`
+- **Source File:** 007-security.json
+
+### Web application security testing with OWASP
+- **Slug:** `web-application-security-testing-owasp`
+- **Description:** Identify and remediate OWASP Top 10 vulnerabilities in web applications
+- **Primary Competencies:** `owasp`
+- **Source File:** 007-security.json
+
+### Web security scanning with Burp Suite
+- **Slug:** `web-security-scanning-burp-suite`
+- **Description:** Test web applications for vulnerabilities using Burp Suite's proxy and scanner
+- **Primary Competencies:** `burp-suite`
+- **Supporting Competencies:** `owasp`
+- **Source File:** 007-security.json
+
+### Windows domain management with Active Directory
+- **Slug:** `windows-domain-management-active-directory`
+- **Description:** Administer enterprise networks using Active Directory for user and device management
+- **Primary Competencies:** `active-directory`
+- **Supporting Competencies:** `ldap`
+- **Source File:** 007-security.json
+
+### Zero Trust security architecture
+- **Slug:** `zero-trust-security-architecture`
+- **Description:** Design and implement Zero Trust network security models and policies
+- **Primary Competencies:** `zero-trust`
+- **Source File:** 007-security.json
 
 ---
 
@@ -2565,6 +3106,762 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `vuejs`
 - **Supporting Competencies:** `javascript`, `html`, `css`
 - **Source File:** 001-programming.json
+
+---
+
+## home-lifestyle
+
+### Advanced dog tricks and agility
+- **Slug:** `advanced-dog-tricks-agility`
+- **Description:** Teach complex behaviors and train dogs for agility courses and competitions
+- **Primary Competencies:** `dog-training`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Aquascaping planted aquariums
+- **Slug:** `aquascaping-planted-aquariums`
+- **Description:** Design underwater landscapes with live plants, rocks, and driftwood
+- **Primary Competencies:** `aquarium-keeping`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Artisan bread baking
+- **Slug:** `artisan-bread-baking`
+- **Description:** Create crusty artisan loaves with proper kneading, shaping, and fermentation techniques
+- **Primary Competencies:** `bread-making`
+- **Supporting Competencies:** `baking`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Asian cuisine cooking techniques
+- **Slug:** `asian-cuisine-cooking-techniques`
+- **Description:** Master stir-frying, steaming, and other techniques for Chinese, Thai, and Japanese dishes
+- **Primary Competencies:** `cooking`
+- **Supporting Competencies:** `knife-skills`
+- **Source File:** 017-home-lifestyle.json
+
+### Auto troubleshooting and repair
+- **Slug:** `auto-troubleshooting-repair`
+- **Description:** Diagnose and fix common vehicle problems like brake issues, electrical faults, and engine troubles
+- **Primary Competencies:** `auto-repair`
+- **Supporting Competencies:** `auto-maintenance`
+- **Source File:** 017-home-lifestyle.json
+
+### Backyard beekeeping
+- **Slug:** `backyard-beekeeping`
+- **Description:** Maintain healthy bee colonies, harvest honey, and support local pollinator populations
+- **Primary Competencies:** `beekeeping`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Backyard composting systems
+- **Slug:** `backyard-composting-systems`
+- **Description:** Turn kitchen scraps and yard waste into nutrient-rich compost for gardens
+- **Primary Competencies:** `composting`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Baking cakes, cookies, and desserts
+- **Slug:** `baking-cakes-cookies-desserts`
+- **Description:** Learn to bake a variety of sweet treats using proper oven techniques and ingredient measurements
+- **Primary Competencies:** `baking`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Basic home repairs
+- **Slug:** `basic-home-repairs`
+- **Description:** Fix common household issues like leaky faucets, squeaky doors, and minor wall damage
+- **Primary Competencies:** `home-repair`
+- **Supporting Competencies:** `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### Basic MIG and stick welding
+- **Slug:** `basic-mig-stick-welding`
+- **Description:** Join metal using arc welding techniques for repairs and fabrication projects
+- **Primary Competencies:** `welding`
+- **Source File:** 017-home-lifestyle.json
+
+### Basic pet first aid and health care
+- **Slug:** `basic-pet-first-aid-health-care`
+- **Description:** Recognize common pet health issues and provide emergency first aid
+- **Primary Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Bathroom renovation and remodeling
+- **Slug:** `bathroom-renovation-remodeling`
+- **Description:** Plan and execute bathroom upgrades including fixtures, tile, and plumbing
+- **Primary Competencies:** `home-repair`
+- **Supporting Competencies:** `plumbing`, `tiling`, `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### BBQ and grilling mastery
+- **Slug:** `bbq-grilling-mastery`
+- **Description:** Master charcoal and gas grilling, temperature control, and smoking techniques for meats and vegetables
+- **Primary Competencies:** `grilling`
+- **Supporting Competencies:** `cooking`, `food-smoking`
+- **Source File:** 017-home-lifestyle.json
+
+### Bonsai tree cultivation
+- **Slug:** `bonsai-tree-cultivation`
+- **Description:** Shape and maintain miniature trees through pruning, wiring, and specialized care techniques
+- **Primary Competencies:** `bonsai`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Brake system repair and replacement
+- **Slug:** `brake-system-repair-replacement`
+- **Description:** Service disc and drum brakes including pads, rotors, and brake fluid
+- **Primary Competencies:** `auto-repair`
+- **Supporting Competencies:** `auto-maintenance`
+- **Source File:** 017-home-lifestyle.json
+
+### Car maintenance and fluid changes
+- **Slug:** `car-maintenance-fluid-changes`
+- **Description:** Perform routine vehicle maintenance like oil changes, tire rotations, and filter replacements
+- **Primary Competencies:** `auto-maintenance`
+- **Supporting Competencies:** `auto-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Carpentry and woodworking projects
+- **Slug:** `carpentry-woodworking-projects`
+- **Description:** Build shelves, frames, and small structures using hand and power tools
+- **Primary Competencies:** `carpentry`
+- **Supporting Competencies:** `woodworking`
+- **Source File:** 017-home-lifestyle.json
+
+### Cat behavior and enrichment
+- **Slug:** `cat-behavior-enrichment`
+- **Description:** Understand feline behavior and create engaging environments for indoor cats
+- **Primary Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Ceramic and stone tile installation
+- **Slug:** `ceramic-stone-tile-installation`
+- **Description:** Install tile flooring, backsplashes, and shower walls with proper layout and grouting
+- **Primary Competencies:** `tiling`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Classic cocktail recipes and variations
+- **Slug:** `classic-cocktail-recipes-variations`
+- **Description:** Master timeless cocktails like martinis, old fashioneds, and negronis with creative twists
+- **Primary Competencies:** `mixology`
+- **Source File:** 017-home-lifestyle.json
+
+### Closet organization systems
+- **Slug:** `closet-organization-systems`
+- **Description:** Design efficient closet layouts with shelving, hanging systems, and storage solutions
+- **Primary Competencies:** `home-organization`
+- **Supporting Competencies:** `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### Cold brew and nitro coffee
+- **Slug:** `cold-brew-nitro-coffee`
+- **Description:** Brew smooth cold coffee concentrate and create nitrogen-infused coffee drinks
+- **Primary Competencies:** `coffee-brewing`
+- **Source File:** 017-home-lifestyle.json
+
+### Color theory for interior spaces
+- **Slug:** `color-theory-interior-spaces`
+- **Description:** Choose and combine paint colors and decor to create mood and visual harmony
+- **Primary Competencies:** `interior-design`
+- **Source File:** 017-home-lifestyle.json
+
+### Craft cocktail making
+- **Slug:** `craft-cocktail-making`
+- **Description:** Mix classic and modern cocktails with proper techniques, ingredients, and presentation
+- **Primary Competencies:** `mixology`
+- **Source File:** 017-home-lifestyle.json
+
+### Croissant and laminated pastry
+- **Slug:** `croissant-laminated-pastry`
+- **Description:** Create flaky croissants and Danish pastries with butter lamination techniques
+- **Primary Competencies:** `pastry`
+- **Supporting Competencies:** `baking`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Custom cake design and decoration
+- **Slug:** `custom-cake-design-decoration`
+- **Description:** Create beautifully decorated cakes using fondant, buttercream, and advanced piping techniques
+- **Primary Competencies:** `cake-decorating`
+- **Supporting Competencies:** `baking`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Custom furniture building
+- **Slug:** `custom-furniture-building`
+- **Description:** Design and construct tables, chairs, and storage pieces from raw lumber
+- **Primary Competencies:** `furniture-making`
+- **Supporting Competencies:** `woodworking`, `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### Custom kitchen and built-in cabinetry
+- **Slug:** `custom-kitchen-built-in-cabinetry`
+- **Description:** Build and install fitted cabinets with precision joinery and hardware
+- **Primary Competencies:** `cabinet-making`
+- **Supporting Competencies:** `woodworking`, `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### Decorative paint techniques and faux finishes
+- **Slug:** `decorative-paint-techniques-faux-finishes`
+- **Description:** Create textured walls, color washing, and faux marble effects with specialty painting
+- **Primary Competencies:** `house-painting`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Dog training and obedience
+- **Slug:** `dog-training-obedience`
+- **Description:** Train dogs using positive reinforcement for basic commands, leash manners, and behavioral issues
+- **Primary Competencies:** `dog-training`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Drywall installation and finishing
+- **Slug:** `drywall-installation-finishing`
+- **Description:** Hang, tape, and finish drywall for smooth walls and ceilings
+- **Primary Competencies:** `drywall`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Engine diagnostics and sensor replacement
+- **Slug:** `engine-diagnostics-sensor-replacement`
+- **Description:** Use OBD scanners to diagnose check engine lights and replace faulty sensors
+- **Primary Competencies:** `auto-repair`
+- **Supporting Competencies:** `auto-maintenance`
+- **Source File:** 017-home-lifestyle.json
+
+### Espresso and milk-based coffee drinks
+- **Slug:** `espresso-milk-based-coffee-drinks`
+- **Description:** Pull perfect espresso shots, steam milk, and create latte art for cafe-quality drinks
+- **Primary Competencies:** `espresso`
+- **Supporting Competencies:** `latte-art`, `coffee-brewing`
+- **Source File:** 017-home-lifestyle.json
+
+### Fermenting foods at home
+- **Slug:** `fermenting-foods-at-home`
+- **Description:** Create kimchi, sauerkraut, kombucha, and other fermented foods using natural fermentation
+- **Primary Competencies:** `fermentation`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Fine woodworking joinery
+- **Slug:** `fine-woodworking-joinery`
+- **Description:** Create strong, beautiful joints using dovetails, mortise and tenon, and finger joints
+- **Primary Competencies:** `woodworking`
+- **Supporting Competencies:** `furniture-making`
+- **Source File:** 017-home-lifestyle.json
+
+### Flower gardening and perennial beds
+- **Slug:** `flower-gardening-perennial-beds`
+- **Description:** Design and maintain colorful flower gardens with seasonal blooms and perennials
+- **Primary Competencies:** `gardening`
+- **Supporting Competencies:** `composting`
+- **Source File:** 017-home-lifestyle.json
+
+### French pastry techniques
+- **Slug:** `french-pastry-techniques`
+- **Description:** Learn classical pastry methods including laminated doughs, choux, and delicate tarts
+- **Primary Competencies:** `pastry`
+- **Supporting Competencies:** `baking`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Freshwater aquarium setup and care
+- **Slug:** `freshwater-aquarium-setup-care`
+- **Description:** Establish and maintain healthy aquarium ecosystems with proper filtration, cycling, and fish care
+- **Primary Competencies:** `aquarium-keeping`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Gluten-free baking substitutions
+- **Slug:** `gluten-free-baking-substitutions`
+- **Description:** Bake delicious breads and desserts using gluten-free flour blends and techniques
+- **Primary Competencies:** `baking`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Growing and caring for orchids
+- **Slug:** `growing-caring-for-orchids`
+- **Description:** Cultivate exotic orchids with proper light, humidity, and repotting techniques
+- **Primary Competencies:** `orchid-growing`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Handcrafted chocolate making
+- **Slug:** `handcrafted-chocolate-making`
+- **Description:** Temper chocolate and create truffles, bonbons, and molded confections
+- **Primary Competencies:** `chocolate-making`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Home coffee roasting
+- **Slug:** `home-coffee-roasting`
+- **Description:** Roast green coffee beans at home to customize flavor profiles and freshness
+- **Primary Competencies:** `coffee-brewing`
+- **Source File:** 017-home-lifestyle.json
+
+### Home cooking fundamentals
+- **Slug:** `home-cooking-fundamentals`
+- **Description:** Master essential cooking techniques, ingredient preparation, and kitchen safety for everyday meals
+- **Primary Competencies:** `cooking`
+- **Supporting Competencies:** `knife-skills`
+- **Source File:** 017-home-lifestyle.json
+
+### Home electrical panel and wiring
+- **Slug:** `home-electrical-panel-wiring`
+- **Description:** Understand and safely work with circuit breakers, electrical panels, and home wiring
+- **Primary Competencies:** `electrical-work`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Home food preservation
+- **Slug:** `home-food-preservation`
+- **Description:** Safely preserve seasonal produce through pickling, canning, and jarring techniques
+- **Primary Competencies:** `canning`
+- **Supporting Competencies:** `pickling`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Home organization and decluttering systems
+- **Slug:** `home-organization-decluttering-systems`
+- **Description:** Create functional storage solutions and reduce clutter using proven organizational methods
+- **Primary Competencies:** `home-organization`
+- **Supporting Competencies:** `decluttering`
+- **Source File:** 017-home-lifestyle.json
+
+### Home plumbing repairs
+- **Slug:** `home-plumbing-repairs`
+- **Description:** Troubleshoot and fix household plumbing issues like clogs, leaks, and fixture replacements
+- **Primary Competencies:** `plumbing`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Home vegetable gardening
+- **Slug:** `home-vegetable-gardening`
+- **Description:** Grow fresh vegetables and herbs from seed to harvest in your backyard or raised beds
+- **Primary Competencies:** `vegetable-gardening`
+- **Supporting Competencies:** `gardening`, `composting`
+- **Source File:** 017-home-lifestyle.json
+
+### Indoor hydroponic growing systems
+- **Slug:** `indoor-hydroponic-growing-systems`
+- **Description:** Set up and maintain soil-free growing systems for year-round indoor cultivation
+- **Primary Competencies:** `hydroponics`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Interior and exterior house painting
+- **Slug:** `interior-exterior-house-painting`
+- **Description:** Prepare surfaces and apply paint for professional-looking walls, trim, and exteriors
+- **Primary Competencies:** `house-painting`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Interior design for living spaces
+- **Slug:** `interior-design-living-spaces`
+- **Description:** Design cohesive interiors using color theory, furniture arrangement, and style principles
+- **Primary Competencies:** `interior-design`
+- **Source File:** 017-home-lifestyle.json
+
+### Italian pasta and sauce making
+- **Slug:** `italian-pasta-sauce-making`
+- **Description:** Create fresh pasta by hand and prepare classic Italian sauces from scratch
+- **Primary Competencies:** `cooking`
+- **Supporting Competencies:** `knife-skills`
+- **Source File:** 017-home-lifestyle.json
+
+### Kitchen renovation projects
+- **Slug:** `kitchen-renovation-projects`
+- **Description:** Update kitchens with new cabinets, countertops, and appliance installation
+- **Primary Competencies:** `home-repair`
+- **Supporting Competencies:** `carpentry`, `plumbing`, `electrical-work`
+- **Source File:** 017-home-lifestyle.json
+
+### Landscape design and maintenance
+- **Slug:** `landscape-design-maintenance`
+- **Description:** Plan and maintain beautiful outdoor spaces with plants, hardscaping, and seasonal care
+- **Primary Competencies:** `landscaping`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Low-temperature precision cooking
+- **Slug:** `low-temperature-precision-cooking`
+- **Description:** Cook restaurant-quality meals using sous vide equipment and vacuum-sealing techniques
+- **Primary Competencies:** `sous-vide`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Manual coffee brewing methods
+- **Slug:** `manual-coffee-brewing-methods`
+- **Description:** Master pour-over, French press, and other manual brewing techniques for exceptional coffee
+- **Primary Competencies:** `coffee-brewing`
+- **Source File:** 017-home-lifestyle.json
+
+### Metal fabrication and welding projects
+- **Slug:** `metal-fabrication-welding-projects`
+- **Description:** Design and build custom metal furniture, gates, and decorative pieces
+- **Primary Competencies:** `welding`
+- **Source File:** 017-home-lifestyle.json
+
+### Minimalist home decluttering
+- **Slug:** `minimalist-home-decluttering`
+- **Description:** Simplify living spaces by removing excess possessions using minimalist principles
+- **Primary Competencies:** `decluttering`
+- **Supporting Competencies:** `home-organization`
+- **Source File:** 017-home-lifestyle.json
+
+### Mosaic tile art and installation
+- **Slug:** `mosaic-tile-art-installation`
+- **Description:** Design and install decorative mosaic patterns for backsplashes and accent walls
+- **Primary Competencies:** `tiling`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Native plant landscaping
+- **Slug:** `native-plant-landscaping`
+- **Description:** Design low-maintenance landscapes using native plants adapted to local conditions
+- **Primary Competencies:** `landscaping`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Organic gardening practices
+- **Slug:** `organic-gardening-practices`
+- **Description:** Cultivate gardens without synthetic pesticides using natural pest control and soil management
+- **Primary Competencies:** `organic-gardening`
+- **Supporting Competencies:** `gardening`, `composting`
+- **Source File:** 017-home-lifestyle.json
+
+### Outdoor deck and fence building
+- **Slug:** `outdoor-deck-fence-building`
+- **Description:** Construct durable outdoor structures with proper framing and weather protection
+- **Primary Competencies:** `carpentry`
+- **Supporting Competencies:** `woodworking`
+- **Source File:** 017-home-lifestyle.json
+
+### PEX and copper pipe plumbing
+- **Slug:** `pex-copper-pipe-plumbing`
+- **Description:** Install water supply lines using modern PEX and traditional copper piping
+- **Primary Competencies:** `plumbing`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Plant-based and vegan cooking
+- **Slug:** `plant-based-vegan-cooking`
+- **Description:** Prepare flavorful vegan meals with proper nutrition and meat alternative techniques
+- **Primary Competencies:** `cooking`
+- **Supporting Competencies:** `knife-skills`
+- **Source File:** 017-home-lifestyle.json
+
+### Professional knife techniques
+- **Slug:** `professional-knife-techniques`
+- **Description:** Master precise cutting methods including julienne, brunoise, and chiffonade
+- **Primary Competencies:** `knife-skills`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Puppy training and socialization
+- **Slug:** `puppy-training-socialization`
+- **Description:** Raise well-adjusted puppies through early training and positive social experiences
+- **Primary Competencies:** `dog-training`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Quick pickling and refrigerator pickles
+- **Slug:** `quick-pickling-refrigerator-pickles`
+- **Description:** Create tangy pickled vegetables and fruits without traditional canning
+- **Primary Competencies:** `pickling`
+- **Supporting Competencies:** `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Raised bed gardening systems
+- **Slug:** `raised-bed-gardening-systems`
+- **Description:** Build and plant raised garden beds for improved drainage and accessibility
+- **Primary Competencies:** `vegetable-gardening`
+- **Supporting Competencies:** `gardening`, `carpentry`
+- **Source File:** 017-home-lifestyle.json
+
+### Residential electrical work
+- **Slug:** `residential-electrical-work`
+- **Description:** Safely install outlets, switches, and light fixtures following electrical codes
+- **Primary Competencies:** `electrical-work`
+- **Supporting Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Saltwater reef aquarium systems
+- **Slug:** `saltwater-reef-aquarium-systems`
+- **Description:** Maintain complex marine ecosystems with corals, fish, and precise water chemistry
+- **Primary Competencies:** `aquarium-keeping`
+- **Supporting Competencies:** `pet-care`
+- **Source File:** 017-home-lifestyle.json
+
+### Small apartment interior design
+- **Slug:** `small-apartment-interior-design`
+- **Description:** Maximize small spaces with smart furniture placement and multi-functional design
+- **Primary Competencies:** `interior-design`
+- **Supporting Competencies:** `home-organization`
+- **Source File:** 017-home-lifestyle.json
+
+### Small engine repair and maintenance
+- **Slug:** `small-engine-repair-maintenance`
+- **Description:** Service lawn mowers, chainsaws, and other small gas engines
+- **Primary Competencies:** `home-repair`
+- **Source File:** 017-home-lifestyle.json
+
+### Small-space container gardening
+- **Slug:** `small-space-container-gardening`
+- **Description:** Grow plants in pots and containers for balconies, patios, and limited outdoor spaces
+- **Primary Competencies:** `container-gardening`
+- **Supporting Competencies:** `gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Sourdough bread from starter to loaf
+- **Slug:** `sourdough-bread-starter-to-loaf`
+- **Description:** Master sourdough starter maintenance, fermentation timing, and baking naturally leavened bread
+- **Primary Competencies:** `sourdough-baking`
+- **Supporting Competencies:** `bread-making`, `baking`, `cooking`, `fermentation`
+- **Source File:** 017-home-lifestyle.json
+
+### Sustainable permaculture gardens
+- **Slug:** `sustainable-permaculture-gardens`
+- **Description:** Design self-sustaining food forests and gardens that work with natural ecosystems
+- **Primary Competencies:** `permaculture`
+- **Supporting Competencies:** `gardening`, `composting`, `organic-gardening`
+- **Source File:** 017-home-lifestyle.json
+
+### Texas-style BBQ smoking
+- **Slug:** `texas-style-bbq-smoking`
+- **Description:** Smoke brisket, ribs, and other meats low and slow with wood smoke
+- **Primary Competencies:** `food-smoking`
+- **Supporting Competencies:** `grilling`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Wedding and special occasion cakes
+- **Slug:** `wedding-special-occasion-cakes`
+- **Description:** Design and construct multi-tier cakes with structural support and elegant decoration
+- **Primary Competencies:** `cake-decorating`
+- **Supporting Competencies:** `baking`, `cooking`
+- **Source File:** 017-home-lifestyle.json
+
+### Weekly meal planning and batch cooking
+- **Slug:** `weekly-meal-planning-batch-cooking`
+- **Description:** Efficiently plan and prepare nutritious meals in advance for busy schedules
+- **Primary Competencies:** `meal-prep`
+- **Supporting Competencies:** `cooking`, `knife-skills`
+- **Source File:** 017-home-lifestyle.json
+
+### Wine tasting and appreciation
+- **Slug:** `wine-tasting-appreciation`
+- **Description:** Develop your palate to identify wine characteristics, regions, and food pairings
+- **Primary Competencies:** `wine-tasting`
+- **Source File:** 017-home-lifestyle.json
+
+### Woodturning bowls and spindles
+- **Slug:** `woodturning-bowls-spindles`
+- **Description:** Shape wood on a lathe to create bowls, pens, and decorative turned pieces
+- **Primary Competencies:** `woodworking`
+- **Source File:** 017-home-lifestyle.json
+
+---
+
+## investing-trading
+
+### Asset allocation and rebalancing strategies
+- **Slug:** `asset-allocation-rebalancing-strategies`
+- **Description:** Optimize portfolio mix across asset classes and maintain target allocations over time
+- **Primary Competencies:** `asset-allocation`
+- **Supporting Competencies:** `portfolio-management`, `investing`
+- **Source File:** 025-finance.json
+
+### Bond investing for fixed income
+- **Slug:** `bond-investing-fixed-income`
+- **Description:** Generate stable returns with government and corporate bonds
+- **Primary Competencies:** `bond-investing`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Building a diversified investment portfolio
+- **Slug:** `building-diversified-investment-portfolio`
+- **Description:** Create balanced portfolios with stocks, bonds, and alternative assets for long-term growth
+- **Primary Competencies:** `portfolio-management`
+- **Supporting Competencies:** `asset-allocation`, `investing`
+- **Source File:** 025-finance.json
+
+### Commodities and futures trading
+- **Slug:** `commodities-futures-trading`
+- **Description:** Trade raw materials and commodities using futures contracts and ETFs
+- **Primary Competencies:** `commodities-trading`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Corporate bond investing
+- **Slug:** `corporate-bond-investing`
+- **Description:** Invest in company debt securities with credit analysis and yield evaluation
+- **Primary Competencies:** `corporate-bonds`
+- **Supporting Competencies:** `bond-investing`, `fundamental-analysis`
+- **Source File:** 025-finance.json
+
+### Covered calls and income strategies
+- **Slug:** `covered-calls-income-strategies`
+- **Description:** Generate income from stock holdings by selling covered call options
+- **Primary Competencies:** `options-trading`
+- **Supporting Competencies:** `stock-market-investing`, `dividend-investing`
+- **Source File:** 025-finance.json
+
+### Cryptocurrency investing strategies
+- **Slug:** `cryptocurrency-investing-strategies`
+- **Description:** Invest in digital assets with proper risk management and security practices
+- **Primary Competencies:** `cryptocurrency-investing`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Day trading strategies
+- **Slug:** `day-trading-strategies`
+- **Description:** Execute intraday trades using technical analysis and momentum strategies
+- **Primary Competencies:** `day-trading`
+- **Supporting Competencies:** `technical-analysis`
+- **Source File:** 025-finance.json
+
+### Dividend income investing
+- **Slug:** `dividend-income-investing`
+- **Description:** Build passive income streams through dividend-paying stocks and reinvestment
+- **Primary Competencies:** `dividend-investing`
+- **Supporting Competencies:** `stock-market-investing`, `investing`
+- **Source File:** 025-finance.json
+
+### ETF investing and trading
+- **Slug:** `etf-investing-trading`
+- **Description:** Invest in exchange-traded funds for diversified, liquid market exposure
+- **Primary Competencies:** `etfs`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Foreign exchange trading
+- **Slug:** `foreign-exchange-trading`
+- **Description:** Trade currency pairs on the forex market with leverage and technical analysis
+- **Primary Competencies:** `forex-trading`
+- **Supporting Competencies:** `technical-analysis`
+- **Source File:** 025-finance.json
+
+### Fundamental analysis of stocks
+- **Slug:** `fundamental-analysis-stocks`
+- **Description:** Evaluate companies using financial statements, ratios, and industry analysis
+- **Primary Competencies:** `fundamental-analysis`
+- **Supporting Competencies:** `stock-market-investing`
+- **Source File:** 025-finance.json
+
+### Gold and precious metals investing
+- **Slug:** `gold-precious-metals-investing`
+- **Description:** Hedge portfolios with physical gold, ETFs, and mining stocks
+- **Primary Competencies:** `gold-investing`
+- **Supporting Competencies:** `commodities-trading`, `investing`
+- **Source File:** 025-finance.json
+
+### Growth stock investing strategies
+- **Slug:** `growth-stock-investing-strategies`
+- **Description:** Invest in high-growth companies with strong earnings potential
+- **Primary Competencies:** `growth-investing`
+- **Supporting Competencies:** `fundamental-analysis`, `stock-market-investing`
+- **Source File:** 025-finance.json
+
+### Index fund passive investing
+- **Slug:** `index-fund-passive-investing`
+- **Description:** Build wealth with low-cost index funds tracking market benchmarks
+- **Primary Competencies:** `index-fund-investing`
+- **Supporting Competencies:** `etfs`, `investing`
+- **Source File:** 025-finance.json
+
+### Long-term wealth building strategies
+- **Slug:** `long-term-wealth-building-strategies`
+- **Description:** Grow wealth over decades with buy-and-hold investing and compound returns
+- **Primary Competencies:** `investing`
+- **Supporting Competencies:** `portfolio-management`, `asset-allocation`
+- **Source File:** 025-finance.json
+
+### Municipal bonds and tax-free income
+- **Slug:** `municipal-bonds-tax-free-income`
+- **Description:** Invest in state and local government bonds for tax-advantaged returns
+- **Primary Competencies:** `municipal-bonds`
+- **Supporting Competencies:** `bond-investing`
+- **Source File:** 025-finance.json
+
+### Mutual fund selection and analysis
+- **Slug:** `mutual-fund-selection-analysis`
+- **Description:** Choose actively managed mutual funds using expense ratios and performance metrics
+- **Primary Competencies:** `mutual-funds`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Options trading strategies
+- **Slug:** `options-trading-strategies`
+- **Description:** Trade call and put options for hedging, income, and speculation
+- **Primary Competencies:** `options-trading`
+- **Supporting Competencies:** `stock-market-investing`
+- **Source File:** 025-finance.json
+
+### Real estate investment trusts
+- **Slug:** `real-estate-investment-trusts`
+- **Description:** Invest in real estate through publicly traded REITs for passive income
+- **Primary Competencies:** `reits`
+- **Supporting Competencies:** `investing`, `dividend-investing`
+- **Source File:** 025-finance.json
+
+### Rental property investing
+- **Slug:** `rental-property-investing`
+- **Description:** Buy and manage rental properties for cash flow and appreciation
+- **Primary Competencies:** `real-estate-investing`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Retirement portfolio construction
+- **Slug:** `retirement-portfolio-construction`
+- **Description:** Build age-appropriate portfolios for retirement savings and income
+- **Primary Competencies:** `portfolio-management`
+- **Supporting Competencies:** `asset-allocation`, `bond-investing`, `dividend-investing`
+- **Source File:** 025-finance.json
+
+### Risk-adjusted portfolio performance
+- **Slug:** `risk-adjusted-portfolio-performance`
+- **Description:** Evaluate investments using Sharpe ratio, Sortino ratio, and other risk metrics
+- **Primary Competencies:** `risk-adjusted-returns`
+- **Supporting Competencies:** `portfolio-management`
+- **Source File:** 025-finance.json
+
+### Sector rotation investing
+- **Slug:** `sector-rotation-investing`
+- **Description:** Shift investments between market sectors based on economic cycles
+- **Primary Competencies:** `etfs`
+- **Supporting Competencies:** `stock-market-investing`, `technical-analysis`
+- **Source File:** 025-finance.json
+
+### Stock market investing fundamentals
+- **Slug:** `stock-market-investing-fundamentals`
+- **Description:** Buy and hold equities with understanding of market mechanics and company analysis
+- **Primary Competencies:** `stock-market-investing`
+- **Supporting Competencies:** `investing`
+- **Source File:** 025-finance.json
+
+### Swing trading techniques
+- **Slug:** `swing-trading-techniques`
+- **Description:** Capture short to medium-term price moves over days to weeks
+- **Primary Competencies:** `swing-trading`
+- **Supporting Competencies:** `technical-analysis`
+- **Source File:** 025-finance.json
+
+### Technical analysis for trading
+- **Slug:** `technical-analysis-trading`
+- **Description:** Analyze price charts, indicators, and patterns to time market entries and exits
+- **Primary Competencies:** `technical-analysis`
+- **Source File:** 025-finance.json
+
+### US Treasury securities investing
+- **Slug:** `us-treasury-securities-investing`
+- **Description:** Invest in risk-free government bonds including T-bills, notes, and bonds
+- **Primary Competencies:** `treasury-securities`
+- **Supporting Competencies:** `bond-investing`
+- **Source File:** 025-finance.json
+
+### Value investing and undervalued stocks
+- **Slug:** `value-investing-undervalued-stocks`
+- **Description:** Identify and invest in undervalued companies using fundamental analysis
+- **Primary Competencies:** `value-investing`
+- **Supporting Competencies:** `fundamental-analysis`, `stock-market-investing`
+- **Source File:** 025-finance.json
 
 ---
 
@@ -5320,6 +6617,192 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## personal-finance
+
+### Auto insurance coverage optimization
+- **Slug:** `auto-insurance-coverage-optimization`
+- **Description:** Balance coverage and costs with liability, collision, and comprehensive insurance
+- **Primary Competencies:** `auto-insurance`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Beneficiary designation management
+- **Slug:** `beneficiary-designation-management`
+- **Description:** Update beneficiaries on retirement accounts, insurance, and other assets
+- **Primary Competencies:** `beneficiary-designation`
+- **Supporting Competencies:** `estate-planning`, `retirement-planning`
+- **Source File:** 025-personal-finance.json
+
+### Building an emergency fund
+- **Slug:** `building-emergency-fund`
+- **Description:** Save 3-6 months of expenses for financial security and unexpected costs
+- **Primary Competencies:** `personal-finance`
+- **Supporting Competencies:** `personal-budgeting`
+- **Source File:** 025-personal-finance.json
+
+### College savings plans
+- **Slug:** `college-savings-plans`
+- **Description:** Save for education with 529 plans and other tax-advantaged accounts
+- **Primary Competencies:** `personal-finance`
+- **Supporting Competencies:** `tax-planning`
+- **Source File:** 025-personal-finance.json
+
+### Credit card rewards optimization
+- **Slug:** `credit-card-rewards-optimization`
+- **Description:** Maximize credit card benefits while avoiding debt and fees
+- **Primary Competencies:** `credit-cards`
+- **Supporting Competencies:** `credit-management`, `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Credit score improvement
+- **Slug:** `credit-score-improvement`
+- **Description:** Build and maintain excellent credit through responsible credit management
+- **Primary Competencies:** `credit-management`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Debt consolidation and refinancing
+- **Slug:** `debt-consolidation-refinancing`
+- **Description:** Combine multiple debts into single payments with lower interest rates
+- **Primary Competencies:** `debt-consolidation`
+- **Supporting Competencies:** `debt-management`, `credit-management`
+- **Source File:** 025-personal-finance.json
+
+### Debt payoff strategies
+- **Slug:** `debt-payoff-strategies`
+- **Description:** Eliminate debt using avalanche, snowball, and other repayment methods
+- **Primary Competencies:** `debt-management`
+- **Supporting Competencies:** `personal-finance`, `personal-budgeting`
+- **Source File:** 025-personal-finance.json
+
+### Disability insurance planning
+- **Slug:** `disability-insurance-planning`
+- **Description:** Protect income with short-term and long-term disability coverage
+- **Primary Competencies:** `disability-insurance`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Estate planning fundamentals
+- **Slug:** `estate-planning-fundamentals`
+- **Description:** Plan asset distribution and protect heirs with wills, trusts, and beneficiaries
+- **Primary Competencies:** `estate-planning`
+- **Supporting Competencies:** `wills`, `trusts`
+- **Source File:** 025-personal-finance.json
+
+### Estate tax planning strategies
+- **Slug:** `estate-tax-planning-strategies`
+- **Description:** Minimize estate and inheritance taxes through gifting and trust strategies
+- **Primary Competencies:** `estate-taxes`
+- **Supporting Competencies:** `estate-planning`, `trusts`
+- **Source File:** 025-personal-finance.json
+
+### Financial independence planning
+- **Slug:** `financial-independence-planning`
+- **Description:** Build wealth to achieve financial independence and early retirement
+- **Primary Competencies:** `personal-finance`
+- **Supporting Competencies:** `retirement-planning`, `personal-budgeting`
+- **Source File:** 025-personal-finance.json
+
+### Health insurance selection
+- **Slug:** `health-insurance-selection`
+- **Description:** Choose health plans comparing deductibles, premiums, and coverage options
+- **Primary Competencies:** `health-insurance`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Home mortgage planning
+- **Slug:** `home-mortgage-planning`
+- **Description:** Navigate home loans, rates, and mortgage options for homeownership
+- **Primary Competencies:** `mortgages`
+- **Supporting Competencies:** `personal-finance`, `credit-management`
+- **Source File:** 025-personal-finance.json
+
+### Homeowners and renters insurance
+- **Slug:** `homeowners-renters-insurance`
+- **Description:** Protect property with adequate coverage for dwelling, contents, and liability
+- **Primary Competencies:** `property-insurance`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Insurance policy review and optimization
+- **Slug:** `insurance-policy-review-optimization`
+- **Description:** Audit all insurance policies to ensure adequate coverage at best rates
+- **Primary Competencies:** `personal-finance`
+- **Supporting Competencies:** `life-insurance`, `health-insurance`, `auto-insurance`, `property-insurance`
+- **Source File:** 025-personal-finance.json
+
+### Life insurance needs analysis
+- **Slug:** `life-insurance-needs-analysis`
+- **Description:** Determine coverage needs and choose between term and permanent life insurance
+- **Primary Competencies:** `life-insurance`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Living trusts and asset protection
+- **Slug:** `living-trusts-asset-protection`
+- **Description:** Use revocable and irrevocable trusts to manage and protect wealth
+- **Primary Competencies:** `trusts`
+- **Supporting Competencies:** `estate-planning`, `estate-taxes`
+- **Source File:** 025-personal-finance.json
+
+### Long-term care planning
+- **Slug:** `long-term-care-planning`
+- **Description:** Plan for future care needs with long-term care insurance or self-funding
+- **Primary Competencies:** `long-term-care-insurance`
+- **Supporting Competencies:** `retirement-planning`
+- **Source File:** 025-personal-finance.json
+
+### Mortgage refinancing strategies
+- **Slug:** `mortgage-refinancing-strategies`
+- **Description:** Lower monthly payments and save interest through mortgage refinancing
+- **Primary Competencies:** `mortgages`
+- **Supporting Competencies:** `debt-management`
+- **Source File:** 025-personal-finance.json
+
+### Personal budgeting and expense tracking
+- **Slug:** `personal-budgeting-expense-tracking`
+- **Description:** Create and maintain budgets to manage income, expenses, and savings goals
+- **Primary Competencies:** `personal-budgeting`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Retirement planning and 401k optimization
+- **Slug:** `retirement-planning-401k-optimization`
+- **Description:** Plan for retirement with 401k, IRA, and Social Security strategy
+- **Primary Competencies:** `retirement-planning`
+- **Supporting Competencies:** `personal-finance`, `tax-planning`
+- **Source File:** 025-personal-finance.json
+
+### Student loan repayment planning
+- **Slug:** `student-loan-repayment-planning`
+- **Description:** Navigate federal and private student loans with repayment and forgiveness options
+- **Primary Competencies:** `student-loans`
+- **Supporting Competencies:** `debt-management`, `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Tax optimization strategies
+- **Slug:** `tax-optimization-strategies`
+- **Description:** Minimize tax liability through deductions, credits, and strategic planning
+- **Primary Competencies:** `tax-planning`
+- **Supporting Competencies:** `personal-finance`
+- **Source File:** 025-personal-finance.json
+
+### Umbrella liability insurance
+- **Slug:** `umbrella-liability-insurance`
+- **Description:** Add extra liability protection beyond home and auto insurance limits
+- **Primary Competencies:** `umbrella-insurance`
+- **Supporting Competencies:** `property-insurance`, `auto-insurance`
+- **Source File:** 025-personal-finance.json
+
+### Wills and power of attorney
+- **Slug:** `wills-power-of-attorney`
+- **Description:** Create legal documents for asset distribution and healthcare decisions
+- **Primary Competencies:** `wills`
+- **Supporting Competencies:** `estate-planning`
+- **Source File:** 025-personal-finance.json
+
+---
+
 ## programming
 
 ### Advanced Git techniques and troubleshooting
@@ -5777,6 +7260,446 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Create automation and system administration scripts using Ruby
 - **Primary Competencies:** `ruby`
 - **Source File:** 001-programming.json
+
+---
+
+## recreation-hobbies
+
+### Advanced miniature painting techniques
+- **Slug:** `advanced-miniature-painting-techniques`
+- **Description:** Master airbrushing, non-metallic metals, and competition-level painting
+- **Primary Competencies:** `miniature-painting`
+- **Source File:** 019-recreation-hobbies.json
+
+### Advanced speedcubing methods and algorithms
+- **Slug:** `advanced-speedcubing-methods-algorithms`
+- **Description:** Master CFOP, Roux, and other advanced solving methods for competition
+- **Primary Competencies:** `speedcubing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Aerial photography and videography with drones
+- **Slug:** `aerial-photography-videography-drones`
+- **Description:** Capture stunning aerial footage using camera drones and editing software
+- **Primary Competencies:** `drone-flying`
+- **Source File:** 019-recreation-hobbies.json
+
+### Alpine skiing technique
+- **Slug:** `alpine-skiing-technique`
+- **Description:** Ski downhill with proper turning, edging, and speed control
+- **Primary Competencies:** `skiing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Backcountry skiing and avalanche safety
+- **Slug:** `backcountry-skiing-avalanche-safety`
+- **Description:** Ski ungroomed terrain with avalanche awareness and safety equipment
+- **Primary Competencies:** `skiing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Backpacking and wilderness camping
+- **Slug:** `backpacking-wilderness-camping`
+- **Description:** Carry multi-day supplies, navigate backcountry, and practice wilderness skills
+- **Primary Competencies:** `backpacking`
+- **Supporting Competencies:** `hiking`, `camping`
+- **Source File:** 019-recreation-hobbies.json
+
+### Basketball skills and drills
+- **Slug:** `basketball-skills-drills`
+- **Description:** Develop shooting, dribbling, passing, and defensive fundamentals
+- **Primary Competencies:** `basketball`
+- **Source File:** 019-recreation-hobbies.json
+
+### Basketball team offense and defense
+- **Slug:** `basketball-team-offense-defense`
+- **Description:** Learn team strategies, set plays, and defensive schemes for organized basketball
+- **Primary Competencies:** `basketball`
+- **Source File:** 019-recreation-hobbies.json
+
+### BJJ competition and rolling strategy
+- **Slug:** `bjj-competition-rolling-strategy`
+- **Description:** Develop game plans, transitions, and live sparring skills for Brazilian Jiu-Jitsu
+- **Primary Competencies:** `brazilian-jiu-jitsu`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Bouldering problems and techniques
+- **Slug:** `bouldering-problems-techniques`
+- **Description:** Solve short, powerful climbing routes without ropes using crash pads
+- **Primary Competencies:** `bouldering`
+- **Supporting Competencies:** `rock-climbing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Boxing combinations and ring strategy
+- **Slug:** `boxing-combinations-ring-strategy`
+- **Description:** Develop punch combinations, counter-punching, and ring generalship
+- **Primary Competencies:** `boxing`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Boxing fundamentals and footwork
+- **Slug:** `boxing-fundamentals-footwork`
+- **Description:** Master jabs, crosses, hooks, and defensive movement in boxing
+- **Primary Competencies:** `boxing`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Brazilian Jiu-Jitsu ground fighting
+- **Slug:** `brazilian-jiu-jitsu-ground-fighting`
+- **Description:** Learn submissions, escapes, and positional control in BJJ grappling
+- **Primary Competencies:** `brazilian-jiu-jitsu`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Camping essentials and outdoor living
+- **Slug:** `camping-essentials-outdoor-living`
+- **Description:** Set up camp, cook outdoors, and practice campfire safety
+- **Primary Competencies:** `camping`
+- **Source File:** 019-recreation-hobbies.json
+
+### Car camping and campground setup
+- **Slug:** `car-camping-campground-setup`
+- **Description:** Plan family camping trips with tents, camp kitchens, and gear organization
+- **Primary Competencies:** `camping`
+- **Source File:** 019-recreation-hobbies.json
+
+### Chess endgame mastery
+- **Slug:** `chess-endgame-mastery`
+- **Description:** Learn essential endgame positions and techniques to convert advantages into wins
+- **Primary Competencies:** `chess`
+- **Source File:** 019-recreation-hobbies.json
+
+### Chess opening repertoire
+- **Slug:** `chess-opening-repertoire`
+- **Description:** Build a solid opening repertoire for both white and black pieces
+- **Primary Competencies:** `chess`
+- **Source File:** 019-recreation-hobbies.json
+
+### Chess strategy and tactics
+- **Slug:** `chess-strategy-tactics`
+- **Description:** Master fundamental chess concepts including opening principles, tactical patterns, and positional play
+- **Primary Competencies:** `chess`
+- **Source File:** 019-recreation-hobbies.json
+
+### Competitive esports training
+- **Slug:** `competitive-esports-training`
+- **Description:** Develop competitive gaming skills, practice routines, and team coordination for esports
+- **Primary Competencies:** `esports`
+- **Source File:** 019-recreation-hobbies.json
+
+### Couch to 5K running program
+- **Slug:** `couch-to-5k-running-program`
+- **Description:** Build running endurance from beginner to completing a 5K race
+- **Primary Competencies:** `running`
+- **Source File:** 019-recreation-hobbies.json
+
+### Cycling training and performance
+- **Slug:** `cycling-training-performance`
+- **Description:** Build cycling fitness with structured intervals, power training, and periodization
+- **Primary Competencies:** `cycling`
+- **Source File:** 019-recreation-hobbies.json
+
+### Day hiking and trail navigation
+- **Slug:** `day-hiking-trail-navigation`
+- **Description:** Plan and execute day hikes with map reading and Leave No Trace principles
+- **Primary Competencies:** `hiking`
+- **Source File:** 019-recreation-hobbies.json
+
+### Deer hunting strategies
+- **Slug:** `deer-hunting-strategies`
+- **Description:** Scout locations, use stands or blinds, and harvest whitetail or mule deer
+- **Primary Competencies:** `hunting`
+- **Supporting Competencies:** `archery`
+- **Source File:** 019-recreation-hobbies.json
+
+### Esports team management
+- **Slug:** `esports-team-management`
+- **Description:** Coach esports teams, analyze gameplay, and develop competitive strategies
+- **Primary Competencies:** `esports`
+- **Source File:** 019-recreation-hobbies.json
+
+### Ethical hunting and game processing
+- **Slug:** `ethical-hunting-game-processing`
+- **Description:** Hunt responsibly, field dress game, and process meat
+- **Primary Competencies:** `hunting`
+- **Source File:** 019-recreation-hobbies.json
+
+### Fly fishing casting and presentation
+- **Slug:** `fly-fishing-casting-presentation`
+- **Description:** Cast fly rods, tie flies, and present to fish in rivers and streams
+- **Primary Competencies:** `fly-fishing`
+- **Supporting Competencies:** `fishing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Fly tying and pattern design
+- **Slug:** `fly-tying-pattern-design`
+- **Description:** Tie custom flies with materials and create effective fishing patterns
+- **Primary Competencies:** `fly-fishing`
+- **Supporting Competencies:** `fishing`
+- **Source File:** 019-recreation-hobbies.json
+
+### FPV drone racing
+- **Slug:** `fpv-drone-racing`
+- **Description:** Race quadcopters through courses using first-person view goggles
+- **Primary Competencies:** `drone-flying`
+- **Source File:** 019-recreation-hobbies.json
+
+### Freestyle snowboarding and terrain parks
+- **Slug:** `freestyle-snowboarding-terrain-parks`
+- **Description:** Hit jumps, rails, and halfpipes with tricks and style
+- **Primary Competencies:** `snowboarding`
+- **Source File:** 019-recreation-hobbies.json
+
+### Freshwater fishing techniques
+- **Slug:** `freshwater-fishing-techniques`
+- **Description:** Catch bass, trout, and panfish with rods, reels, and bait selection
+- **Primary Competencies:** `fishing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Golf short game and putting
+- **Slug:** `golf-short-game-putting`
+- **Description:** Master chipping, pitching, bunker shots, and putting to lower scores
+- **Primary Competencies:** `golf`
+- **Source File:** 019-recreation-hobbies.json
+
+### Golf swing fundamentals
+- **Slug:** `golf-swing-fundamentals`
+- **Description:** Build a consistent golf swing with proper grip, stance, and tempo
+- **Primary Competencies:** `golf`
+- **Source File:** 019-recreation-hobbies.json
+
+### Indoor rock climbing techniques
+- **Slug:** `indoor-rock-climbing-techniques`
+- **Description:** Learn climbing movement, belaying, and gym safety for indoor walls
+- **Primary Competencies:** `rock-climbing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Karate kata and kumite
+- **Slug:** `karate-kata-kumite`
+- **Description:** Practice karate forms and sparring with traditional techniques
+- **Primary Competencies:** `karate`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Lightweight backpacking and ultralight gear
+- **Slug:** `lightweight-backpacking-ultralight-gear`
+- **Description:** Minimize pack weight and maximize comfort on long-distance trails
+- **Primary Competencies:** `backpacking`
+- **Supporting Competencies:** `hiking`, `camping`
+- **Source File:** 019-recreation-hobbies.json
+
+### Live game streaming production
+- **Slug:** `live-game-streaming-production`
+- **Description:** Set up streaming equipment, engage viewers, and build an audience on Twitch or YouTube
+- **Primary Competencies:** `game-streaming`
+- **Source File:** 019-recreation-hobbies.json
+
+### Marathon and half-marathon training
+- **Slug:** `marathon-half-marathon-training`
+- **Description:** Train for long-distance races with structured weekly mileage, tempo runs, and tapering
+- **Primary Competencies:** `marathon-training`
+- **Supporting Competencies:** `running`
+- **Source File:** 019-recreation-hobbies.json
+
+### Martial arts fundamentals
+- **Slug:** `martial-arts-fundamentals`
+- **Description:** Learn striking, blocking, and basic self-defense principles across martial arts
+- **Primary Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Model aircraft building and balsa construction
+- **Slug:** `model-aircraft-building-balsa-construction`
+- **Description:** Build flying model airplanes from scratch using balsa wood and covering
+- **Primary Competencies:** `model-building`
+- **Source File:** 019-recreation-hobbies.json
+
+### Mountain bike maintenance and repair
+- **Slug:** `mountain-bike-maintenance-repair`
+- **Description:** Service suspension, brakes, and drivetrains for off-road mountain bikes
+- **Primary Competencies:** `mountain-biking`
+- **Supporting Competencies:** `cycling`
+- **Source File:** 019-recreation-hobbies.json
+
+### Mountain bike trail riding
+- **Slug:** `mountain-bike-trail-riding`
+- **Description:** Ride technical terrain with cornering, climbing, and descending skills
+- **Primary Competencies:** `mountain-biking`
+- **Supporting Competencies:** `cycling`
+- **Source File:** 019-recreation-hobbies.json
+
+### Muay Thai striking and clinch
+- **Slug:** `muay-thai-striking-clinch`
+- **Description:** Train in Thai boxing with elbows, knees, kicks, and clinch techniques
+- **Primary Competencies:** `muay-thai`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Open water swimming
+- **Slug:** `open-water-swimming`
+- **Description:** Navigate lakes, oceans, and rivers with sighting, safety, and endurance techniques
+- **Primary Competencies:** `swimming`
+- **Source File:** 019-recreation-hobbies.json
+
+### Outdoor sport climbing and trad climbing
+- **Slug:** `outdoor-sport-climbing-trad-climbing`
+- **Description:** Climb natural rock faces with rope systems, protection placement, and route reading
+- **Primary Competencies:** `rock-climbing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Painting tabletop miniatures
+- **Slug:** `painting-tabletop-miniatures`
+- **Description:** Paint detailed miniatures using brushwork, layering, and weathering techniques
+- **Primary Competencies:** `miniature-painting`
+- **Source File:** 019-recreation-hobbies.json
+
+### Poker bankroll management
+- **Slug:** `poker-bankroll-management`
+- **Description:** Manage poker funds, variance, and move up stakes responsibly
+- **Primary Competencies:** `poker`
+- **Source File:** 019-recreation-hobbies.json
+
+### RC airplane and helicopter flying
+- **Slug:** `rc-airplane-helicopter-flying`
+- **Description:** Fly remote-controlled aircraft with transmitter controls and aerobatic maneuvers
+- **Primary Competencies:** `rc-vehicles`
+- **Source File:** 019-recreation-hobbies.json
+
+### RC car racing and tuning
+- **Slug:** `rc-car-racing-tuning`
+- **Description:** Race and tune radio-controlled cars for speed and handling
+- **Primary Competencies:** `rc-vehicles`
+- **Source File:** 019-recreation-hobbies.json
+
+### Road cycling fundamentals
+- **Slug:** `road-cycling-fundamentals`
+- **Description:** Learn bike handling, gear shifting, and group riding etiquette for road cycling
+- **Primary Competencies:** `cycling`
+- **Source File:** 019-recreation-hobbies.json
+
+### Running a tabletop RPG campaign
+- **Slug:** `running-tabletop-rpg-campaign`
+- **Description:** Create engaging narratives, manage player expectations, and run memorable tabletop RPG sessions
+- **Primary Competencies:** `game-mastering`
+- **Source File:** 019-recreation-hobbies.json
+
+### Running form and technique
+- **Slug:** `running-form-technique`
+- **Description:** Improve running efficiency, cadence, and injury prevention through proper form
+- **Primary Competencies:** `running`
+- **Source File:** 019-recreation-hobbies.json
+
+### Saltwater fishing and tackle
+- **Slug:** `saltwater-fishing-tackle`
+- **Description:** Fish coastal waters for game fish using appropriate saltwater gear
+- **Primary Competencies:** `fishing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Scale model building and detailing
+- **Slug:** `scale-model-building-detailing`
+- **Description:** Assemble and detail plastic model kits of cars, planes, and military vehicles
+- **Primary Competencies:** `model-building`
+- **Source File:** 019-recreation-hobbies.json
+
+### Skateboard park and vert riding
+- **Slug:** `skateboard-park-vert-riding`
+- **Description:** Ride ramps, bowls, and halfpipes with transitions and aerial tricks
+- **Primary Competencies:** `skateboarding`
+- **Source File:** 019-recreation-hobbies.json
+
+### Skateboarding tricks and fundamentals
+- **Slug:** `skateboarding-tricks-fundamentals`
+- **Description:** Master ollies, kickflips, grinds, and street skating basics
+- **Primary Competencies:** `skateboarding`
+- **Source File:** 019-recreation-hobbies.json
+
+### Snowboarding fundamentals
+- **Slug:** `snowboarding-fundamentals`
+- **Description:** Learn to ride, turn, and stop on a snowboard
+- **Primary Competencies:** `snowboarding`
+- **Source File:** 019-recreation-hobbies.json
+
+### Soccer tactics and positioning
+- **Slug:** `soccer-tactics-positioning`
+- **Description:** Understand formations, team shape, and tactical awareness for competitive soccer
+- **Primary Competencies:** `soccer`
+- **Source File:** 019-recreation-hobbies.json
+
+### Soccer technique and ball control
+- **Slug:** `soccer-technique-ball-control`
+- **Description:** Master passing, dribbling, shooting, and first touch in soccer
+- **Primary Competencies:** `soccer`
+- **Source File:** 019-recreation-hobbies.json
+
+### Speedcubing and Rubik's Cube solving
+- **Slug:** `speedcubing-rubiks-cube-solving`
+- **Description:** Solve twisty puzzles quickly using finger tricks and speedcubing methods
+- **Primary Competencies:** `speedcubing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Surfing fundamentals and wave reading
+- **Slug:** `surfing-fundamentals-wave-reading`
+- **Description:** Learn to paddle, pop up, and catch waves with proper surf etiquette
+- **Primary Competencies:** `surfing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Surfing maneuvers and progression
+- **Slug:** `surfing-maneuvers-progression`
+- **Description:** Execute turns, cutbacks, and advanced surfing techniques
+- **Primary Competencies:** `surfing`
+- **Source File:** 019-recreation-hobbies.json
+
+### Swimming stroke technique
+- **Slug:** `swimming-stroke-technique`
+- **Description:** Master freestyle, backstroke, breaststroke, and butterfly with proper mechanics
+- **Primary Competencies:** `swimming`
+- **Source File:** 019-recreation-hobbies.json
+
+### Taekwondo kicking techniques
+- **Slug:** `taekwondo-kicking-techniques`
+- **Description:** Master high kicks, spinning kicks, and Olympic-style taekwondo sparring
+- **Primary Competencies:** `taekwondo`
+- **Supporting Competencies:** `martial-arts`
+- **Source File:** 019-recreation-hobbies.json
+
+### Target archery and competition
+- **Slug:** `target-archery-competition`
+- **Description:** Compete in archery tournaments with scoring and Olympic-style shooting
+- **Primary Competencies:** `archery`
+- **Source File:** 019-recreation-hobbies.json
+
+### Tennis match strategy
+- **Slug:** `tennis-match-strategy`
+- **Description:** Develop tactical awareness, shot selection, and mental game for competitive tennis
+- **Primary Competencies:** `tennis`
+- **Source File:** 019-recreation-hobbies.json
+
+### Tennis strokes and footwork
+- **Slug:** `tennis-strokes-footwork`
+- **Description:** Master groundstrokes, volleys, serves, and court movement in tennis
+- **Primary Competencies:** `tennis`
+- **Source File:** 019-recreation-hobbies.json
+
+### Texas Hold'em poker strategy
+- **Slug:** `texas-holdem-poker-strategy`
+- **Description:** Master betting, position, hand reading, and tournament play in Texas Hold'em
+- **Primary Competencies:** `poker`
+- **Source File:** 019-recreation-hobbies.json
+
+### Traditional and compound archery
+- **Slug:** `traditional-compound-archery`
+- **Description:** Shoot recurve or compound bows with proper form and accuracy
+- **Primary Competencies:** `archery`
+- **Source File:** 019-recreation-hobbies.json
+
+### Video game speedrunning
+- **Slug:** `video-game-speedrunning`
+- **Description:** Learn speedrun techniques, route optimization, and execution for completing games quickly
+- **Primary Competencies:** `speedrunning`
+- **Source File:** 019-recreation-hobbies.json
+
+### World-building for RPGs
+- **Slug:** `world-building-for-rpgs`
+- **Description:** Design rich, immersive fantasy worlds with geography, cultures, and histories
+- **Primary Competencies:** `game-mastering`
+- **Source File:** 019-recreation-hobbies.json
 
 ---
 

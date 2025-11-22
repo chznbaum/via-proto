@@ -1,0 +1,480 @@
+{
+  "topics": [
+    {
+      "name": "Personal budgeting and expense tracking",
+      "slug": "personal-budgeting-expense-tracking",
+      "description": "Create and maintain budgets to manage income, expenses, and savings goals",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "personal-budgeting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building an emergency fund",
+      "slug": "building-emergency-fund",
+      "description": "Save 3-6 months of expenses for financial security and unexpected costs",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-budgeting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Retirement planning and 401k optimization",
+      "slug": "retirement-planning-401k-optimization",
+      "description": "Plan for retirement with 401k, IRA, and Social Security strategy",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "retirement-planning",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "tax-planning",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tax optimization strategies",
+      "slug": "tax-optimization-strategies",
+      "description": "Minimize tax liability through deductions, credits, and strategic planning",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "tax-planning",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Credit score improvement",
+      "slug": "credit-score-improvement",
+      "description": "Build and maintain excellent credit through responsible credit management",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "credit-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Credit card rewards optimization",
+      "slug": "credit-card-rewards-optimization",
+      "description": "Maximize credit card benefits while avoiding debt and fees",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "credit-cards",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "credit-management",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Debt payoff strategies",
+      "slug": "debt-payoff-strategies",
+      "description": "Eliminate debt using avalanche, snowball, and other repayment methods",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "debt-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "personal-budgeting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Debt consolidation and refinancing",
+      "slug": "debt-consolidation-refinancing",
+      "description": "Combine multiple debts into single payments with lower interest rates",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "debt-consolidation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "debt-management",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "credit-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home mortgage planning",
+      "slug": "home-mortgage-planning",
+      "description": "Navigate home loans, rates, and mortgage options for homeownership",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "mortgages",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "credit-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mortgage refinancing strategies",
+      "slug": "mortgage-refinancing-strategies",
+      "description": "Lower monthly payments and save interest through mortgage refinancing",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "mortgages",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "debt-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Student loan repayment planning",
+      "slug": "student-loan-repayment-planning",
+      "description": "Navigate federal and private student loans with repayment and forgiveness options",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "student-loans",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "debt-management",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Life insurance needs analysis",
+      "slug": "life-insurance-needs-analysis",
+      "description": "Determine coverage needs and choose between term and permanent life insurance",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "life-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Health insurance selection",
+      "slug": "health-insurance-selection",
+      "description": "Choose health plans comparing deductibles, premiums, and coverage options",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "health-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Disability insurance planning",
+      "slug": "disability-insurance-planning",
+      "description": "Protect income with short-term and long-term disability coverage",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "disability-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Homeowners and renters insurance",
+      "slug": "homeowners-renters-insurance",
+      "description": "Protect property with adequate coverage for dwelling, contents, and liability",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "property-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Auto insurance coverage optimization",
+      "slug": "auto-insurance-coverage-optimization",
+      "description": "Balance coverage and costs with liability, collision, and comprehensive insurance",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "auto-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Umbrella liability insurance",
+      "slug": "umbrella-liability-insurance",
+      "description": "Add extra liability protection beyond home and auto insurance limits",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "umbrella-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "property-insurance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "auto-insurance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Long-term care planning",
+      "slug": "long-term-care-planning",
+      "description": "Plan for future care needs with long-term care insurance or self-funding",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "long-term-care-insurance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "retirement-planning",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Estate planning fundamentals",
+      "slug": "estate-planning-fundamentals",
+      "description": "Plan asset distribution and protect heirs with wills, trusts, and beneficiaries",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "estate-planning",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "wills",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "trusts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Wills and power of attorney",
+      "slug": "wills-power-of-attorney",
+      "description": "Create legal documents for asset distribution and healthcare decisions",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "wills",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "estate-planning",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Living trusts and asset protection",
+      "slug": "living-trusts-asset-protection",
+      "description": "Use revocable and irrevocable trusts to manage and protect wealth",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "trusts",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "estate-planning",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "estate-taxes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Estate tax planning strategies",
+      "slug": "estate-tax-planning-strategies",
+      "description": "Minimize estate and inheritance taxes through gifting and trust strategies",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "estate-taxes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "estate-planning",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "trusts",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Beneficiary designation management",
+      "slug": "beneficiary-designation-management",
+      "description": "Update beneficiaries on retirement accounts, insurance, and other assets",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "beneficiary-designation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "estate-planning",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "retirement-planning",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Financial independence planning",
+      "slug": "financial-independence-planning",
+      "description": "Build wealth to achieve financial independence and early retirement",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "retirement-planning",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "personal-budgeting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "College savings plans",
+      "slug": "college-savings-plans",
+      "description": "Save for education with 529 plans and other tax-advantaged accounts",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "tax-planning",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Insurance policy review and optimization",
+      "slug": "insurance-policy-review-optimization",
+      "description": "Audit all insurance policies to ensure adequate coverage at best rates",
+      "category_slug": "personal-finance",
+      "competencies": [
+        {
+          "competency_slug": "personal-finance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "life-insurance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "health-insurance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "auto-insurance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "property-insurance",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

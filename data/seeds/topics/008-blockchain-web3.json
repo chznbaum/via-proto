@@ -1,0 +1,780 @@
+{
+  "topics": [
+    {
+      "name": "Smart contract development with Solidity",
+      "slug": "smart-contract-development-solidity",
+      "description": "Write, test, and deploy Ethereum smart contracts using Solidity programming language",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "solidity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solidity smart contract testing with Hardhat",
+      "slug": "solidity-smart-contract-testing-hardhat",
+      "description": "Build and test Ethereum smart contracts using the Hardhat development environment",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "hardhat",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Smart contract development with Foundry",
+      "slug": "smart-contract-development-foundry",
+      "description": "Develop and test Solidity contracts using Foundry's fast Rust-based toolchain",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "foundry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Legacy smart contract development with Truffle",
+      "slug": "legacy-smart-contract-development-truffle",
+      "description": "Work with Truffle suite for Ethereum smart contract compilation and deployment",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "truffle",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web3 frontend integration with ethers.js",
+      "slug": "web3-frontend-integration-ethersjs",
+      "description": "Connect web applications to Ethereum using the ethers.js library",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "ethersjs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Legacy Web3 development with web3.js",
+      "slug": "legacy-web3-development-web3js",
+      "description": "Interact with Ethereum blockchain using the original web3.js library",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "web3js",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Type-safe Ethereum interactions with viem",
+      "slug": "type-safe-ethereum-interactions-viem",
+      "description": "Build type-safe Web3 applications using viem's TypeScript-first library",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "viem",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "React Web3 applications with wagmi",
+      "slug": "react-web3-applications-wagmi",
+      "description": "Build decentralized React apps using wagmi hooks for Ethereum interactions",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "wagmi",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "viem",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Python blockchain development with web3.py",
+      "slug": "python-blockchain-development-web3py",
+      "description": "Interact with Ethereum and write scripts using Python's web3.py library",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "web3py",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Wallet integration with MetaMask",
+      "slug": "wallet-integration-metamask",
+      "description": "Connect dApps to user wallets using the MetaMask browser extension",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "metamask",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Multi-wallet support with WalletConnect",
+      "slug": "multi-wallet-support-walletconnect",
+      "description": "Integrate multiple wallet providers into dApps using WalletConnect protocol",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "walletconnect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Wallet UI with RainbowKit",
+      "slug": "wallet-ui-rainbowkit",
+      "description": "Build beautiful wallet connection interfaces using RainbowKit components",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "rainbowkit",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "wagmi",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "walletconnect",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ethereum node infrastructure with Infura",
+      "slug": "ethereum-node-infrastructure-infura",
+      "description": "Access Ethereum networks using Infura's node infrastructure and APIs",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "infura",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blockchain development with Alchemy",
+      "slug": "blockchain-development-alchemy",
+      "description": "Build Web3 apps using Alchemy's enhanced node services and developer tools",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "alchemy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blockchain data indexing with The Graph",
+      "slug": "blockchain-data-indexing-the-graph",
+      "description": "Query blockchain data efficiently using The Graph's decentralized indexing protocol",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "the-graph",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web3 infrastructure with QuickNode",
+      "slug": "web3-infrastructure-quicknode",
+      "description": "Deploy and scale dApps using QuickNode's multi-chain node infrastructure",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "quicknode",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Secure smart contracts with OpenZeppelin",
+      "slug": "secure-smart-contracts-openzeppelin",
+      "description": "Build audited smart contracts using OpenZeppelin's battle-tested contract libraries",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "openzeppelin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solana program development",
+      "slug": "solana-program-development",
+      "description": "Write high-performance blockchain programs on Solana using Rust",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "solana",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solana smart contracts with Anchor",
+      "slug": "solana-smart-contracts-anchor",
+      "description": "Build Solana programs using the Anchor framework for secure and efficient development",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "anchor",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solana",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Polygon layer 2 development",
+      "slug": "polygon-layer-2-development",
+      "description": "Deploy scalable Ethereum dApps on Polygon's layer 2 network",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "polygon",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Optimism rollup development",
+      "slug": "optimism-rollup-development",
+      "description": "Build on Optimism's optimistic rollup for faster and cheaper Ethereum transactions",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "optimism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Arbitrum layer 2 applications",
+      "slug": "arbitrum-layer-2-applications",
+      "description": "Deploy dApps on Arbitrum's optimistic rollup for Ethereum scaling",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "arbitrum",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "zkSync zero-knowledge rollups",
+      "slug": "zksync-zero-knowledge-rollups",
+      "description": "Build privacy-preserving applications using zkSync's zero-knowledge technology",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "zksync",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Avalanche subnet development",
+      "slug": "avalanche-subnet-development",
+      "description": "Create custom blockchains on Avalanche's subnet infrastructure",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "avalanche",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "BNB Chain smart contract development",
+      "slug": "bnb-chain-smart-contract-development",
+      "description": "Build dApps on BNB Chain with EVM-compatible smart contracts",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "bnb-chain",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "NEAR Protocol application development",
+      "slug": "near-protocol-application-development",
+      "description": "Build scalable dApps on NEAR using AssemblyScript or Rust",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "near-protocol",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cardano smart contract development",
+      "slug": "cardano-smart-contract-development",
+      "description": "Develop smart contracts on Cardano using Plutus and Marlowe",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "cardano",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Polkadot parachain development",
+      "slug": "polkadot-parachain-development",
+      "description": "Build custom blockchains on Polkadot using Substrate framework",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "polkadot",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cosmos SDK blockchain development",
+      "slug": "cosmos-sdk-blockchain-development",
+      "description": "Create interoperable blockchains using the Cosmos SDK",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "cosmos",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Decentralized oracles with Chainlink",
+      "slug": "decentralized-oracles-chainlink",
+      "description": "Integrate real-world data into smart contracts using Chainlink oracles",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "chainlink",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Decentralized storage with IPFS",
+      "slug": "decentralized-storage-ipfs",
+      "description": "Store and retrieve files on the InterPlanetary File System",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "ipfs",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "NFT metadata and assets on IPFS",
+      "slug": "nft-metadata-assets-ipfs",
+      "description": "Host NFT images and metadata using IPFS for decentralized permanence",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "ipfs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Smart contract development with Vyper",
+      "slug": "smart-contract-development-vyper",
+      "description": "Write Ethereum smart contracts using Python-like Vyper language",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "vyper",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Python smart contract testing with Brownie",
+      "slug": "python-smart-contract-testing-brownie",
+      "description": "Test and deploy Ethereum contracts using the Brownie Python framework",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "brownie",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "vyper",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Local blockchain testing with Ganache",
+      "slug": "local-blockchain-testing-ganache",
+      "description": "Run local Ethereum blockchain for rapid development and testing",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "ganache",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blockchain data analysis with Etherscan",
+      "slug": "blockchain-data-analysis-etherscan",
+      "description": "Explore and verify Ethereum transactions and contracts using Etherscan",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "etherscan",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web3 backend with Moralis",
+      "slug": "web3-backend-moralis",
+      "description": "Build dApp backends using Moralis APIs for authentication and blockchain data",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "moralis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rapid Web3 development with Thirdweb",
+      "slug": "rapid-web3-development-thirdweb",
+      "description": "Build and deploy Web3 applications quickly using Thirdweb's SDK and tools",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "thirdweb",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Browser-based Solidity development with Remix",
+      "slug": "browser-based-solidity-development-remix",
+      "description": "Write and test smart contracts directly in the browser using Remix IDE",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "remix-ide",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Smart contract monitoring with Tenderly",
+      "slug": "smart-contract-monitoring-tenderly",
+      "description": "Debug, monitor, and simulate smart contracts using Tenderly's development platform",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "tenderly",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Multi-signature wallets with Safe",
+      "slug": "multi-signature-wallets-safe",
+      "description": "Manage crypto assets securely using Safe multi-signature wallet infrastructure",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "safe",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "ERC-20 token smart contracts",
+      "slug": "erc20-token-smart-contracts",
+      "description": "Create fungible tokens on Ethereum using the ERC-20 token standard",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "solidity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "openzeppelin",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "NFT smart contracts with ERC-721",
+      "slug": "nft-smart-contracts-erc721",
+      "description": "Build non-fungible token collections using the ERC-721 standard",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "solidity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "openzeppelin",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ipfs",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "DeFi protocol development",
+      "slug": "defi-protocol-development",
+      "description": "Build decentralized finance protocols with lending, swapping, and yield farming",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "solidity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ethereum",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "openzeppelin",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Full-stack dApp development",
+      "slug": "fullstack-dapp-development",
+      "description": "Build end-to-end decentralized applications with smart contracts and Web3 frontends",
+      "category_slug": "blockchain-web3",
+      "competencies": [
+        {
+          "competency_slug": "ethereum",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "solidity",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "hardhat",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "wagmi",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "rainbowkit",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}
