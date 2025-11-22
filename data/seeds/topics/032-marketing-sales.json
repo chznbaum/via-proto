@@ -1,0 +1,612 @@
+{
+  "topics": [
+    {
+      "name": "Marketing fundamentals and strategy",
+      "slug": "marketing-fundamentals-strategy",
+      "description": "Develop effective marketing strategies and campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Integrated marketing campaigns",
+      "slug": "integrated-marketing-campaigns",
+      "description": "Plan and execute multi-channel marketing campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Digital marketing strategy and execution",
+      "slug": "digital-marketing-strategy-execution",
+      "description": "Develop and implement comprehensive digital marketing strategies",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "digital-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-channel digital marketing",
+      "slug": "multi-channel-digital-marketing",
+      "description": "Execute integrated digital marketing across SEO, SEM, social, and email",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "digital-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "seo",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sem",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "social-media-marketing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "email-marketing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Content marketing strategy and creation",
+      "slug": "content-marketing-strategy-creation",
+      "description": "Create and distribute valuable content to attract and engage audiences",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "content-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SEO-driven content marketing",
+      "slug": "seo-driven-content-marketing",
+      "description": "Create content optimized for search engines and user engagement",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "content-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "seo",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Content marketing for social media",
+      "slug": "content-marketing-social-media",
+      "description": "Develop content strategies for social media platforms",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "content-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "social-media-marketing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Search engine optimization",
+      "slug": "search-engine-optimization",
+      "description": "Optimize websites and content for organic search rankings",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "seo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Technical SEO optimization",
+      "slug": "technical-seo-optimization",
+      "description": "Improve website technical performance for better search rankings",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "seo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Local SEO and Google Business optimization",
+      "slug": "local-seo-google-business",
+      "description": "Optimize for local search and Google Business Profile",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "seo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Search engine marketing and paid search",
+      "slug": "search-engine-marketing-paid-search",
+      "description": "Manage Google Ads and paid search campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sem",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Google Ads campaign optimization",
+      "slug": "google-ads-campaign-optimization",
+      "description": "Create and optimize high-performing Google Ads campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sem",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Social media marketing and management",
+      "slug": "social-media-marketing-management",
+      "description": "Build brand presence and engage audiences on social platforms",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "social-media-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Social media advertising campaigns",
+      "slug": "social-media-advertising-campaigns",
+      "description": "Create and manage paid advertising on social media platforms",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "social-media-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Social media content strategy",
+      "slug": "social-media-content-strategy",
+      "description": "Develop engaging content strategies for social platforms",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "social-media-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "content-marketing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Email marketing campaigns",
+      "slug": "email-marketing-campaigns",
+      "description": "Design and execute effective email marketing campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "email-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Email automation and nurture campaigns",
+      "slug": "email-automation-nurture-campaigns",
+      "description": "Build automated email sequences to nurture leads and customers",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "email-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Email deliverability and optimization",
+      "slug": "email-deliverability-optimization",
+      "description": "Improve email deliverability and campaign performance",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "email-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building brand strategy and identity",
+      "slug": "building-brand-strategy-identity",
+      "description": "Develop comprehensive brand strategies and positioning",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "brand-strategy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brand positioning and differentiation",
+      "slug": "brand-positioning-differentiation",
+      "description": "Position brands in competitive markets with clear differentiation",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "brand-strategy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "market-research",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Market research and consumer insights",
+      "slug": "market-research-consumer-insights",
+      "description": "Conduct research to understand markets, competitors, and customers",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "market-research",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Qualitative and quantitative market research",
+      "slug": "qualitative-quantitative-market-research",
+      "description": "Design and execute market research studies using various methodologies",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "market-research",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Growth marketing and experimentation",
+      "slug": "growth-marketing-experimentation",
+      "description": "Drive rapid growth through data-driven experimentation",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "growth-marketing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Growth hacking strategies and tactics",
+      "slug": "growth-hacking-strategies-tactics",
+      "description": "Implement creative growth tactics to scale user acquisition",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "growth-marketing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conversion rate optimization",
+      "slug": "conversion-rate-optimization",
+      "description": "Optimize websites and funnels to increase conversion rates",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "conversion-rate-optimization",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "A/B testing and conversion optimization",
+      "slug": "ab-testing-conversion-optimization",
+      "description": "Design and execute A/B tests to improve conversion rates",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "conversion-rate-optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Landing page optimization",
+      "slug": "landing-page-optimization",
+      "description": "Design and optimize landing pages for maximum conversions",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "conversion-rate-optimization",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Marketing analytics and measurement",
+      "slug": "marketing-analytics-measurement",
+      "description": "Measure and analyze marketing performance with data and metrics",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data-driven marketing decision making",
+      "slug": "data-driven-marketing-decisions",
+      "description": "Use analytics to inform marketing strategies and optimize campaigns",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Marketing attribution modeling",
+      "slug": "marketing-attribution-modeling",
+      "description": "Track and attribute conversions across marketing touchpoints",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "marketing-analytics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sales fundamentals and techniques",
+      "slug": "sales-fundamentals-techniques",
+      "description": "Master core sales skills and methodologies",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Consultative selling approach",
+      "slug": "consultative-selling-approach",
+      "description": "Sell by understanding customer needs and providing solutions",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "B2B sales strategies and processes",
+      "slug": "b2b-sales-strategies-processes",
+      "description": "Navigate complex B2B sales cycles and organizational buying",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "b2b-sales",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Enterprise sales and account management",
+      "slug": "enterprise-sales-account-management",
+      "description": "Close large enterprise deals and manage strategic accounts",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "b2b-sales",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sales-negotiation",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "B2B lead generation and prospecting",
+      "slug": "b2b-lead-generation-prospecting",
+      "description": "Generate and qualify B2B leads through various channels",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "b2b-sales",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sales-prospecting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "B2C sales and customer engagement",
+      "slug": "b2c-sales-customer-engagement",
+      "description": "Sell directly to consumers and build customer relationships",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "b2c-sales",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Retail sales and customer service",
+      "slug": "retail-sales-customer-service",
+      "description": "Excel at in-store and online B2C sales interactions",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "b2c-sales",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sales prospecting and outreach",
+      "slug": "sales-prospecting-outreach",
+      "description": "Identify and reach out to qualified prospects effectively",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales-prospecting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cold calling and outbound prospecting",
+      "slug": "cold-calling-outbound-prospecting",
+      "description": "Master cold calling and outbound sales techniques",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales-prospecting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Social selling and LinkedIn prospecting",
+      "slug": "social-selling-linkedin-prospecting",
+      "description": "Use social media and LinkedIn for modern sales prospecting",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales-prospecting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sales negotiation skills",
+      "slug": "sales-negotiation-skills",
+      "description": "Negotiate effectively to close deals and maximize value",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales-negotiation",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Handling objections and closing deals",
+      "slug": "handling-objections-closing-deals",
+      "description": "Overcome sales objections and close more deals",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "sales-negotiation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sales",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Customer relationship management strategies",
+      "slug": "customer-relationship-management-strategies",
+      "description": "Build and maintain strong customer relationships for retention and growth",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "customer-relationship-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CRM systems and sales pipeline management",
+      "slug": "crm-systems-sales-pipeline-management",
+      "description": "Use CRM tools to manage sales pipelines and customer data",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "customer-relationship-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sales",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Customer success and account growth",
+      "slug": "customer-success-account-growth",
+      "description": "Drive customer retention, satisfaction, and revenue expansion",
+      "category_slug": "marketing-sales",
+      "competencies": [
+        {
+          "competency_slug": "customer-relationship-management",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

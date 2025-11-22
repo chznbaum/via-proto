@@ -1,0 +1,600 @@
+{
+  "topics": [
+    {
+      "name": "Designing user interfaces with Figma",
+      "slug": "designing-user-interfaces-figma",
+      "description": "Create modern user interfaces and design systems using Figma",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "figma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building design systems in Figma",
+      "slug": "building-design-systems-figma",
+      "description": "Create scalable design systems with components and variants in Figma",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "figma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating interactive prototypes with Figma",
+      "slug": "interactive-prototypes-figma",
+      "description": "Design and test interactive user flows using Figma's prototyping features",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "figma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Collaborative design workflows with Figma",
+      "slug": "collaborative-design-figma",
+      "description": "Work with design teams using Figma's collaboration and feedback tools",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "figma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing mobile apps with Figma",
+      "slug": "mobile-app-design-figma",
+      "description": "Create mobile application designs and prototypes using Figma",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "figma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing user interfaces with Sketch",
+      "slug": "designing-user-interfaces-sketch",
+      "description": "Create digital product designs using Sketch",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "sketch",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building design systems in Sketch",
+      "slug": "building-design-systems-sketch",
+      "description": "Develop reusable design systems using Sketch's symbols and libraries",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "sketch",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing user interfaces with Adobe XD",
+      "slug": "designing-user-interfaces-adobe-xd",
+      "description": "Design and prototype user experiences using Adobe XD",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-xd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating interactive prototypes with Adobe XD",
+      "slug": "interactive-prototypes-adobe-xd",
+      "description": "Build clickable prototypes and user flows with Adobe XD",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-xd",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Interactive prototyping with InVision",
+      "slug": "interactive-prototyping-invision",
+      "description": "Create interactive prototypes and gather stakeholder feedback using InVision",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "invision",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Design collaboration and handoff with InVision",
+      "slug": "design-collaboration-invision",
+      "description": "Collaborate with teams and hand off designs to developers using InVision",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "invision",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building interactive prototypes with Framer",
+      "slug": "interactive-prototypes-framer",
+      "description": "Create high-fidelity interactive prototypes using Framer",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "framer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing interactive websites with Framer",
+      "slug": "interactive-websites-framer",
+      "description": "Build production-ready interactive websites using Framer",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "framer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Code-based design with Framer and React",
+      "slug": "code-based-design-framer-react",
+      "description": "Create custom interactive components in Framer using React",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "framer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rapid prototyping with Marvel",
+      "slug": "rapid-prototyping-marvel",
+      "description": "Create quick interactive prototypes and mockups using Marvel",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "marvel",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building visual websites with Webflow",
+      "slug": "visual-websites-webflow",
+      "description": "Design and build production-ready websites visually using Webflow",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "webflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building responsive websites with Webflow",
+      "slug": "responsive-websites-webflow",
+      "description": "Create responsive, mobile-friendly websites using Webflow",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "webflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building custom websites with Webflow CMS",
+      "slug": "custom-websites-webflow-cms",
+      "description": "Create content-driven websites using Webflow's CMS features",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "webflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building websites with WordPress",
+      "slug": "building-websites-wordpress",
+      "description": "Create and manage websites using WordPress CMS",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wordpress",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Customizing WordPress themes",
+      "slug": "customizing-wordpress-themes",
+      "description": "Modify and customize WordPress themes for unique designs",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wordpress",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "php",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building WordPress sites with page builders",
+      "slug": "wordpress-sites-page-builders",
+      "description": "Create custom WordPress sites using visual page builders",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wordpress",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building e-commerce sites with WordPress and WooCommerce",
+      "slug": "ecommerce-wordpress-woocommerce",
+      "description": "Create online stores using WordPress and the WooCommerce plugin",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wordpress",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building websites with Wix",
+      "slug": "building-websites-wix",
+      "description": "Create professional websites using the Wix drag-and-drop builder",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wix",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building online stores with Wix",
+      "slug": "online-stores-wix",
+      "description": "Create e-commerce websites using Wix's online store features",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "wix",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building websites with Squarespace",
+      "slug": "building-websites-squarespace",
+      "description": "Design and launch professional websites using Squarespace",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "squarespace",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building online stores with Squarespace",
+      "slug": "online-stores-squarespace",
+      "description": "Create e-commerce sites using Squarespace's commerce features",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "squarespace",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing micro-interactions with Origami Studio",
+      "slug": "micro-interactions-origami-studio",
+      "description": "Create detailed interaction designs and animations using Origami Studio",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "origami-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Prototyping mobile interactions with Origami Studio",
+      "slug": "mobile-interactions-origami-studio",
+      "description": "Design complex mobile app interactions using Origami Studio",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "origami-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building websites with Adobe Dreamweaver",
+      "slug": "building-websites-dreamweaver",
+      "description": "Design and code websites using Adobe Dreamweaver",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-dreamweaver",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Design-to-development handoff with Zeplin",
+      "slug": "design-handoff-zeplin",
+      "description": "Streamline design handoff to developers using Zeplin",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "zeplin",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Integrating Figma with Zeplin for handoff",
+      "slug": "figma-zeplin-handoff",
+      "description": "Export Figma designs and hand them off to developers using Zeplin",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "zeplin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "figma",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Collaborative whiteboarding with Miro",
+      "slug": "collaborative-whiteboarding-miro",
+      "description": "Facilitate remote collaboration and brainstorming using Miro",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "miro",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "User research and mapping with Miro",
+      "slug": "user-research-mapping-miro",
+      "description": "Conduct user research, create journey maps, and organize insights using Miro",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "miro",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Design workflows from Miro to Figma",
+      "slug": "miro-to-figma-workflow",
+      "description": "Move from ideation in Miro to detailed design in Figma",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "miro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "figma",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Designing user interfaces with Lunacy",
+      "slug": "designing-user-interfaces-lunacy",
+      "description": "Create UI designs using the Lunacy design tool",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "lunacy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with Sketch files in Lunacy",
+      "slug": "sketch-files-lunacy",
+      "description": "Open and edit Sketch files on Windows using Lunacy",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "lunacy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing interface animations with Principle",
+      "slug": "interface-animations-principle",
+      "description": "Create animated and interactive UI prototypes using Principle",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "principle",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Animating Sketch designs with Principle",
+      "slug": "animating-sketch-principle",
+      "description": "Import Sketch designs and add animations using Principle",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "principle",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sketch",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Advanced prototyping with ProtoPie",
+      "slug": "advanced-prototyping-protopie",
+      "description": "Create high-fidelity interactive prototypes using ProtoPie",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "protopie",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sensor-based prototyping with ProtoPie",
+      "slug": "sensor-prototyping-protopie",
+      "description": "Design prototypes with device sensors and advanced interactions using ProtoPie",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "protopie",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Wireframing and prototyping with Axure RP",
+      "slug": "wireframing-prototyping-axure",
+      "description": "Create detailed wireframes and interactive prototypes using Axure RP",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "axure-rp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building complex prototypes with Axure RP",
+      "slug": "complex-prototypes-axure",
+      "description": "Create dynamic, data-driven prototypes with conditional logic using Axure RP",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "axure-rp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Rapid wireframing with Balsamiq",
+      "slug": "rapid-wireframing-balsamiq",
+      "description": "Create low-fidelity wireframes and mockups using Balsamiq",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "balsamiq",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "User flow wireframing with Balsamiq",
+      "slug": "user-flow-wireframing-balsamiq",
+      "description": "Map out user flows and create quick wireframes using Balsamiq",
+      "category_slug": "uiux-design",
+      "competencies": [
+        {
+          "competency_slug": "balsamiq",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

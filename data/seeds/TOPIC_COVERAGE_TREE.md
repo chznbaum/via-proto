@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T21:45:02.196Z
-**Total Topics:** 1320
+**Generated:** 2025-11-22T22:17:35.075Z
+**Total Topics:** 1591
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -21,10 +21,10 @@ Run `npm run topic:coverage` to update.
 │   │   │   └── Backend Development [3 topics, 36 competencies]
 │   │   ├── Mobile Development [86 topics, 48 competencies]
 │   │   ├── Game Development [1 topics, 53 competencies]
-│   │   ├── Systems Programming [0 topics, 17 competencies]
+│   │   ├── Systems Programming [39 topics, 17 competencies]
 │   │   └── Software Testing [3 topics, 0 competencies]
 │   ├── Data & Analytics [0 topics, 0 competencies]
-│   │   ├── Data Science [0 topics, 97 competencies]
+│   │   ├── Data Science [104 topics, 97 competencies]
 │   │   ├── Data Engineering [0 topics, 8 competencies]
 │   │   └── Databases [72 topics, 55 competencies]
 │   ├── Cloud & DevOps [170 topics, 170 competencies]
@@ -33,7 +33,7 @@ Run `npm run topic:coverage` to update.
 │   │   └── Cybersecurity [33 topics, 27 competencies]
 │   └── Blockchain & Web3 [45 topics, 41 competencies]
 ├── Design & Creativity [0 topics, 0 competencies]
-│   ├── UI/UX Design [0 topics, 19 competencies]
+│   ├── UI/UX Design [44 topics, 19 competencies]
 │   ├── Graphic Design [0 topics, 16 competencies]
 │   ├── Motion & 3D [0 topics, 16 competencies]
 │   ├── Creative Arts [0 topics, 0 competencies]
@@ -47,13 +47,13 @@ Run `npm run topic:coverage` to update.
 │   └── Fiber Arts & Crafts [47 topics, 46 competencies]
 ├── Business & Management [0 topics, 0 competencies]
 │   ├── Product & Project Management [0 topics, 11 competencies]
-│   ├── Marketing & Sales [0 topics, 18 competencies]
+│   ├── Marketing & Sales [45 topics, 18 competencies]
 │   ├── Leadership & Communication [0 topics, 12 competencies]
 │   ├── Finance & Accounting [0 topics, 12 competencies]
 │   │   ├── Personal Finance [26 topics, 22 competencies]
 │   │   ├── Investing & Trading [29 topics, 26 competencies]
 │   │   └── Corporate Finance [0 topics, 14 competencies]
-│   └── Operations & Strategy [0 topics, 19 competencies]
+│   └── Operations & Strategy [39 topics, 19 competencies]
 ├── Linguistics [0 topics, 15 competencies]
 │   ├── Languages [147 topics, 170 competencies]
 │   └── Speech Development & Pathology [0 topics, 0 competencies]
@@ -242,7 +242,7 @@ Run `npm run topic:coverage` to update.
 
 ### Data Science
 - **Slug:** `data-science`
-- **Topics:** 0
+- **Topics:** 104
 - **Competencies:** 97
 - **Parent:** data-analytics
 
@@ -366,7 +366,7 @@ Run `npm run topic:coverage` to update.
 
 ### Marketing & Sales
 - **Slug:** `marketing-sales`
-- **Topics:** 0
+- **Topics:** 45
 - **Competencies:** 18
 - **Parent:** business-management
 
@@ -432,7 +432,7 @@ Run `npm run topic:coverage` to update.
 
 ### Operations & Strategy
 - **Slug:** `operations-strategy`
-- **Topics:** 0
+- **Topics:** 39
 - **Competencies:** 19
 - **Parent:** business-management
 
@@ -508,7 +508,7 @@ Run `npm run topic:coverage` to update.
 
 ### Systems Programming
 - **Slug:** `systems-programming`
-- **Topics:** 0
+- **Topics:** 39
 - **Competencies:** 17
 - **Parent:** programming
 
@@ -526,7 +526,7 @@ Run `npm run topic:coverage` to update.
 
 ### UI/UX Design
 - **Slug:** `uiux-design`
-- **Topics:** 0
+- **Topics:** 44
 - **Competencies:** 19
 - **Parent:** design-creativity
 

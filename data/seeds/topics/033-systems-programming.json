@@ -1,0 +1,476 @@
+{
+  "topics": [
+    {
+      "name": "Systems programming with C",
+      "slug": "systems-programming-c",
+      "description": "Build low-level systems software using the C programming language",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "c",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Operating systems development with C",
+      "slug": "operating-systems-development-c",
+      "description": "Develop operating system kernels and components using C",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "c",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Embedded systems programming with C",
+      "slug": "embedded-systems-programming-c",
+      "description": "Program microcontrollers and embedded devices using C",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "c",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Network programming with C",
+      "slug": "network-programming-c",
+      "description": "Build network applications and protocols using C sockets",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "c",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with C++",
+      "slug": "systems-programming-cpp",
+      "description": "Build high-performance systems software using modern C++",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "cpp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Game engine development with C++",
+      "slug": "game-engine-development-cpp",
+      "description": "Build game engines and graphics systems using C++",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "cpp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance computing with C++",
+      "slug": "high-performance-computing-cpp",
+      "description": "Write optimized high-performance applications using C++",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "cpp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Embedded systems with C++",
+      "slug": "embedded-systems-cpp",
+      "description": "Program embedded systems using modern C++ features",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "cpp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Modern C++ development",
+      "slug": "modern-cpp-development",
+      "description": "Use modern C++ features and best practices for software development",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "cpp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Shell scripting with Bash",
+      "slug": "shell-scripting-bash",
+      "description": "Automate tasks and system administration with Bash scripts",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "bash",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Linux system administration with Bash",
+      "slug": "linux-system-administration-bash",
+      "description": "Manage Linux systems using Bash scripting",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "bash",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "DevOps automation with Bash",
+      "slug": "devops-automation-bash",
+      "description": "Create CI/CD and deployment automation scripts using Bash",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "bash",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Windows automation with PowerShell",
+      "slug": "windows-automation-powershell",
+      "description": "Automate Windows administration tasks using PowerShell",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "powershell",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "PowerShell scripting for system administration",
+      "slug": "powershell-scripting-system-administration",
+      "description": "Manage Windows systems and Active Directory with PowerShell",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "powershell",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cloud automation with PowerShell",
+      "slug": "cloud-automation-powershell",
+      "description": "Automate Azure and cloud infrastructure using PowerShell",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "powershell",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Concurrent systems with Erlang",
+      "slug": "concurrent-systems-erlang",
+      "description": "Build fault-tolerant distributed systems using Erlang",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "erlang",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Distributed applications with Erlang",
+      "slug": "distributed-applications-erlang",
+      "description": "Create scalable distributed applications using Erlang's actor model",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "erlang",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Telecommunication systems with Erlang",
+      "slug": "telecommunication-systems-erlang",
+      "description": "Build telecom and messaging systems using Erlang",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "erlang",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with Zig",
+      "slug": "systems-programming-zig",
+      "description": "Build robust, optimized systems software using Zig",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "zig",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Low-level programming with Zig",
+      "slug": "low-level-programming-zig",
+      "description": "Write memory-safe low-level code using Zig",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "zig",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with Nim",
+      "slug": "systems-programming-nim",
+      "description": "Build efficient systems software using Nim",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "nim",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance applications with Nim",
+      "slug": "high-performance-applications-nim",
+      "description": "Create fast, compiled applications using Nim",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "nim",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Assembly language programming",
+      "slug": "assembly-language-programming",
+      "description": "Write low-level code in assembly for specific architectures",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "assembly",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "x86 assembly programming",
+      "slug": "x86-assembly-programming",
+      "description": "Program in x86/x64 assembly language",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "assembly",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "ARM assembly programming",
+      "slug": "arm-assembly-programming",
+      "description": "Write ARM assembly code for embedded and mobile processors",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "assembly",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Reverse engineering with assembly",
+      "slug": "reverse-engineering-assembly",
+      "description": "Analyze and reverse engineer software using assembly knowledge",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "assembly",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Safety-critical systems with Ada",
+      "slug": "safety-critical-systems-ada",
+      "description": "Develop high-reliability safety-critical systems using Ada",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "ada",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Embedded real-time systems with Ada",
+      "slug": "embedded-real-time-systems-ada",
+      "description": "Build real-time embedded systems using Ada",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "ada",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Text processing with AWK",
+      "slug": "text-processing-awk",
+      "description": "Process and analyze text files using AWK scripting",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "awk",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data extraction and reporting with AWK",
+      "slug": "data-extraction-reporting-awk",
+      "description": "Extract and transform data from text files using AWK",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "awk",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with Carbon",
+      "slug": "systems-programming-carbon",
+      "description": "Build modern systems software using Google's Carbon language",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "carbon",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Migrating C++ to Carbon",
+      "slug": "migrating-cpp-to-carbon",
+      "description": "Transition C++ codebases to Carbon incrementally",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "carbon",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cpp",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with D",
+      "slug": "systems-programming-d",
+      "description": "Build high-performance systems software using the D language",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "d",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with V",
+      "slug": "systems-programming-v",
+      "description": "Build fast, safe applications using the V programming language",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "v",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Actor-based programming with Pony",
+      "slug": "actor-based-programming-pony",
+      "description": "Build concurrent systems using Pony's actor model",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "pony",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance concurrent systems with Pony",
+      "slug": "high-performance-concurrent-pony",
+      "description": "Create fast, safe concurrent applications using Pony",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "pony",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Parallel programming with Chapel",
+      "slug": "parallel-programming-chapel",
+      "description": "Write parallel and distributed programs using Chapel",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "chapel",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance computing with Chapel",
+      "slug": "high-performance-computing-chapel",
+      "description": "Build scalable scientific computing applications using Chapel",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "chapel",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Theorem-proving systems programming with ATS",
+      "slug": "theorem-proving-systems-ats",
+      "description": "Build formally verified systems software using ATS",
+      "category_slug": "systems-programming",
+      "competencies": [
+        {
+          "competency_slug": "ats",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1628 @@
+{
+  "topics": [
+    {
+      "name": "Building data visualizations from Excel with Tableau",
+      "slug": "excel-data-visualizations-tableau",
+      "description": "Create interactive dashboards and visual reports from Excel data using Tableau",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "tableau",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "excel",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations from Google Sheets with Tableau",
+      "slug": "google-sheets-data-visualizations-tableau",
+      "description": "Create interactive dashboards and visual reports from Google Sheets data using Tableau",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "tableau",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-sheets",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations from SQL databases with Tableau",
+      "slug": "sql-data-visualizations-tableau",
+      "description": "Create interactive dashboards connecting to SQL databases using Tableau",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "tableau",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating executive dashboards with Tableau",
+      "slug": "executive-dashboards-tableau",
+      "description": "Design compelling executive-level dashboards and KPI reports using Tableau",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "tableau",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations from Excel with Power BI",
+      "slug": "excel-data-visualizations-power-bi",
+      "description": "Create interactive reports and dashboards from Excel data using Power BI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "power-bi",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "excel",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations from SQL databases with Power BI",
+      "slug": "sql-data-visualizations-power-bi",
+      "description": "Connect Power BI to SQL databases and create dynamic reports",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "power-bi",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating executive dashboards with Power BI",
+      "slug": "executive-dashboards-power-bi",
+      "description": "Design executive-level dashboards and business intelligence reports with Power BI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "power-bi",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations with Looker",
+      "slug": "data-visualizations-looker",
+      "description": "Create data visualizations and business intelligence dashboards using Looker",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "looker",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building analytics dashboards with Metabase",
+      "slug": "analytics-dashboards-metabase",
+      "description": "Create self-service analytics dashboards with the open-source Metabase platform",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "metabase",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations with Apache Superset",
+      "slug": "data-visualizations-apache-superset",
+      "description": "Create interactive dashboards using the open-source Apache Superset platform",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "apache-superset",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with SAS",
+      "slug": "statistical-analysis-sas",
+      "description": "Perform statistical analysis and data management using SAS software",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "sas",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with SPSS",
+      "slug": "statistical-analysis-spss",
+      "description": "Conduct statistical analysis and create reports using IBM SPSS Statistics",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "spss",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with Stata",
+      "slug": "statistical-analysis-stata",
+      "description": "Perform econometric and statistical analysis using Stata",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "stata",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data analysis workflows with Alteryx",
+      "slug": "data-analysis-workflows-alteryx",
+      "description": "Build automated data preparation and analysis workflows using Alteryx",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "alteryx",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data analysis workflows with KNIME",
+      "slug": "data-analysis-workflows-knime",
+      "description": "Create visual data analysis pipelines using the open-source KNIME platform",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "knime",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Machine learning workflows with RapidMiner",
+      "slug": "machine-learning-rapidminer",
+      "description": "Build machine learning models using RapidMiner's visual workflow designer",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "rapidminer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data analysis and exploration with Python and Pandas",
+      "slug": "data-analysis-python-pandas",
+      "description": "Analyze and manipulate structured data using Python's Pandas library",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "pandas",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Numerical computing with Python and NumPy",
+      "slug": "numerical-computing-python-numpy",
+      "description": "Perform numerical and scientific computing operations using NumPy",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "numpy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Data visualization with Python and Matplotlib",
+      "slug": "data-visualization-python-matplotlib",
+      "description": "Create static, animated, and interactive visualizations using Matplotlib",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "matplotlib",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Statistical data visualization with Python and Seaborn",
+      "slug": "statistical-visualization-python-seaborn",
+      "description": "Create informative statistical graphics using Seaborn",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "seaborn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "matplotlib",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Interactive data visualization with Python and Plotly",
+      "slug": "interactive-visualization-python-plotly",
+      "description": "Build interactive, publication-quality graphs using Plotly",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "plotly",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building machine learning models with Python and scikit-learn",
+      "slug": "machine-learning-python-scikit-learn",
+      "description": "Train and deploy machine learning models using scikit-learn",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "scikit-learn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pandas",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "numpy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deep learning with Python and PyTorch",
+      "slug": "deep-learning-python-pytorch",
+      "description": "Build and train neural networks using PyTorch",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "pytorch",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "numpy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deep learning with Python and TensorFlow",
+      "slug": "deep-learning-python-tensorflow",
+      "description": "Build and train neural networks using TensorFlow",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "tensorflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "numpy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deep learning with Python and Keras",
+      "slug": "deep-learning-python-keras",
+      "description": "Build neural network models using the high-level Keras API",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "keras",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "tensorflow",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Gradient boosting with XGBoost",
+      "slug": "gradient-boosting-xgboost",
+      "description": "Build high-performance gradient boosting models using XGBoost",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "xgboost",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pandas",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Gradient boosting with LightGBM",
+      "slug": "gradient-boosting-lightgbm",
+      "description": "Train fast and accurate gradient boosting models using LightGBM",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "lightgbm",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pandas",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Computer vision with Python and OpenCV",
+      "slug": "computer-vision-python-opencv",
+      "description": "Process images and video using OpenCV for computer vision tasks",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "opencv",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "numpy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Object detection with YOLO",
+      "slug": "object-detection-yolo",
+      "description": "Build real-time object detection systems using YOLO algorithms",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "yolo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "opencv",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Training custom computer vision models with Roboflow",
+      "slug": "custom-computer-vision-roboflow",
+      "description": "Annotate, train, and deploy custom object detection models using Roboflow",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "roboflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Training computer vision models with Ultralytics",
+      "slug": "computer-vision-ultralytics",
+      "description": "Build and deploy YOLO-based computer vision models using Ultralytics",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "ultralytics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pytorch",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Natural language processing with Python and spaCy",
+      "slug": "nlp-python-spacy",
+      "description": "Process and analyze text using spaCy's industrial-strength NLP library",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "spacy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Natural language processing with Python and NLTK",
+      "slug": "nlp-python-nltk",
+      "description": "Build text processing and analysis tools using the NLTK library",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "nltk",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with Hugging Face models and datasets",
+      "slug": "hugging-face-models-datasets",
+      "description": "Use pre-trained models and datasets from the Hugging Face ecosystem",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "hugging-face",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pytorch",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fine-tuning language models with Hugging Face",
+      "slug": "fine-tuning-llms-hugging-face",
+      "description": "Customize pre-trained language models for specific tasks using Hugging Face",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "hugging-face",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pytorch",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building LLM applications with LangChain",
+      "slug": "llm-applications-langchain",
+      "description": "Create AI-powered applications using LangChain's composable framework",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "langchain",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building RAG applications with LangChain",
+      "slug": "rag-applications-langchain",
+      "description": "Build retrieval-augmented generation systems using LangChain",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "langchain",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building RAG systems with LlamaIndex",
+      "slug": "rag-systems-llamaindex",
+      "description": "Create retrieval-augmented generation applications using LlamaIndex",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "llamaindex",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI agents with LangGraph",
+      "slug": "ai-agents-langgraph",
+      "description": "Create stateful, multi-actor AI applications using LangGraph",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "langgraph",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "langchain",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building multi-agent AI systems with CrewAI",
+      "slug": "multi-agent-systems-crewai",
+      "description": "Create collaborative AI agent teams using CrewAI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "crewai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building multi-agent AI systems with AutoGen",
+      "slug": "multi-agent-systems-autogen",
+      "description": "Create conversational AI agents using Microsoft AutoGen",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "autogen",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI applications with Semantic Kernel",
+      "slug": "ai-applications-semantic-kernel",
+      "description": "Integrate LLMs into applications using Microsoft Semantic Kernel",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "semantic-kernel",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI-powered applications with OpenAI API",
+      "slug": "ai-applications-openai-api",
+      "description": "Integrate GPT models into applications using the OpenAI API",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "openai-api",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI applications with Anthropic Claude API",
+      "slug": "ai-applications-anthropic-claude-api",
+      "description": "Integrate Claude models into applications using the Anthropic API",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "anthropic-claude-api",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI applications with Google Gemini API",
+      "slug": "ai-applications-google-gemini-api",
+      "description": "Integrate Gemini models into applications using the Google AI API",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "google-gemini-api",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building AI applications with Cohere API",
+      "slug": "ai-applications-cohere-api",
+      "description": "Build natural language applications using the Cohere API",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "cohere-api",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building semantic search with Pinecone",
+      "slug": "semantic-search-pinecone",
+      "description": "Create vector-based semantic search systems using Pinecone",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "pinecone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building semantic search with Weaviate",
+      "slug": "semantic-search-weaviate",
+      "description": "Create AI-native vector databases and search systems using Weaviate",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "weaviate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building vector databases with Chroma",
+      "slug": "vector-databases-chroma",
+      "description": "Create embeddings databases for AI applications using Chroma",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "chroma",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building vector search with Qdrant",
+      "slug": "vector-search-qdrant",
+      "description": "Create high-performance vector similarity search using Qdrant",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "qdrant",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building vector databases with Milvus",
+      "slug": "vector-databases-milvus",
+      "description": "Create scalable vector databases for similarity search using Milvus",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "milvus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Efficient similarity search with FAISS",
+      "slug": "similarity-search-faiss",
+      "description": "Build high-performance vector similarity search using Facebook's FAISS",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "faiss",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "numpy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building interactive ML demos with Streamlit",
+      "slug": "interactive-ml-demos-streamlit",
+      "description": "Create web applications for machine learning models using Streamlit",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "streamlit",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building ML web interfaces with Gradio",
+      "slug": "ml-web-interfaces-gradio",
+      "description": "Create shareable web interfaces for machine learning models using Gradio",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "gradio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tracking ML experiments with MLflow",
+      "slug": "ml-experiment-tracking-mlflow",
+      "description": "Track, organize, and reproduce machine learning experiments using MLflow",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "mlflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tracking ML experiments with Weights & Biases",
+      "slug": "ml-experiment-tracking-wandb",
+      "description": "Monitor and visualize machine learning experiments using Weights & Biases",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "weights-and-biases",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying ML models with BentoML",
+      "slug": "ml-deployment-bentoml",
+      "description": "Package and deploy machine learning models to production using BentoML",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "bentoml",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying ML models with Seldon Core",
+      "slug": "ml-deployment-seldon-core",
+      "description": "Deploy machine learning models on Kubernetes using Seldon Core",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "seldon-core",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Serving ML models with KServe",
+      "slug": "ml-serving-kserve",
+      "description": "Deploy and serve machine learning models on Kubernetes using KServe",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "kserve",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "kubernetes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying ML models with Modal",
+      "slug": "ml-deployment-modal",
+      "description": "Deploy serverless machine learning applications using Modal",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "modal",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying ML models with Replicate",
+      "slug": "ml-deployment-replicate",
+      "description": "Deploy and share machine learning models using Replicate",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "replicate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Running local LLMs with Ollama",
+      "slug": "local-llms-ollama",
+      "description": "Run and manage large language models locally using Ollama",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "ollama",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Running local LLMs with LM Studio",
+      "slug": "local-llms-lm-studio",
+      "description": "Run large language models locally using LM Studio",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "lm-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building conversational AI with Rasa",
+      "slug": "conversational-ai-rasa",
+      "description": "Create open-source conversational AI assistants using Rasa",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "rasa",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building chatbots with Botpress",
+      "slug": "chatbots-botpress",
+      "description": "Create enterprise chatbots using the Botpress platform",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "botpress",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building conversational AI with Dialogflow",
+      "slug": "conversational-ai-dialogflow",
+      "description": "Create voice and text-based conversational interfaces using Google Dialogflow",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "dialogflow",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building voice assistants with Amazon Lex",
+      "slug": "voice-assistants-amazon-lex",
+      "description": "Create conversational interfaces using Amazon Lex",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "amazon-lex",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building conversational flows with Voiceflow",
+      "slug": "conversational-flows-voiceflow",
+      "description": "Design and deploy conversational AI experiences using Voiceflow",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "voiceflow",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building AI copilots with Microsoft Copilot Studio",
+      "slug": "ai-copilots-microsoft-copilot-studio",
+      "description": "Create custom AI assistants using Microsoft Copilot Studio",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "microsoft-copilot-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Speech recognition with OpenAI Whisper",
+      "slug": "speech-recognition-whisper",
+      "description": "Transcribe and translate speech using OpenAI's Whisper model",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "whisper",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Text-to-speech with ElevenLabs",
+      "slug": "text-to-speech-elevenlabs",
+      "description": "Generate realistic AI voices using ElevenLabs text-to-speech",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "elevenlabs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Speech-to-text with AssemblyAI",
+      "slug": "speech-to-text-assemblyai",
+      "description": "Transcribe and analyze audio using AssemblyAI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "assemblyai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Generating images with Stable Diffusion",
+      "slug": "image-generation-stable-diffusion",
+      "description": "Create AI-generated images using Stable Diffusion models",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "stable-diffusion",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Machine learning on AWS with Amazon SageMaker",
+      "slug": "ml-aws-sagemaker",
+      "description": "Build, train, and deploy ML models using Amazon SageMaker",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "amazon-sagemaker",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Machine learning on Azure with Azure Machine Learning",
+      "slug": "ml-azure-machine-learning",
+      "description": "Build and deploy ML models using Azure Machine Learning",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "azure-machine-learning",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Machine learning on Google Cloud with Vertex AI",
+      "slug": "ml-google-cloud-vertex-ai",
+      "description": "Build and deploy ML models using Google Cloud Vertex AI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "vertex-ai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data and ML pipelines with Databricks",
+      "slug": "data-ml-pipelines-databricks",
+      "description": "Create unified data analytics and ML workflows using Databricks",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "databricks",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "GPU-accelerated computing with CUDA",
+      "slug": "gpu-computing-cuda",
+      "description": "Accelerate computations using NVIDIA CUDA for parallel processing",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "cuda",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Distributed computing with Ray",
+      "slug": "distributed-computing-ray",
+      "description": "Scale Python applications and ML workloads using Ray",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "ray",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Data versioning with DVC",
+      "slug": "data-versioning-dvc",
+      "description": "Version control for datasets and ML models using DVC",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "dvc",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Interactive data analysis with Jupyter notebooks",
+      "slug": "interactive-data-analysis-jupyter",
+      "description": "Create interactive computational notebooks for data analysis using Jupyter",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "jupyter",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Scientific computing with MATLAB",
+      "slug": "scientific-computing-matlab",
+      "description": "Perform numerical computing and algorithm development using MATLAB",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "matlab",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Numerical computing with Octave",
+      "slug": "numerical-computing-octave",
+      "description": "Perform numerical computations using the open-source Octave platform",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "octave",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis and visualization with R",
+      "slug": "statistical-analysis-r",
+      "description": "Perform statistical computing and create visualizations using R",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "r",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Scientific computing with Julia",
+      "slug": "scientific-computing-julia",
+      "description": "Perform high-performance numerical and scientific computing using Julia",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "julia",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance computing with Fortran",
+      "slug": "high-performance-computing-fortran",
+      "description": "Build numerical and scientific computing applications using Fortran",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "fortran",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "High-performance Python with Mojo",
+      "slug": "high-performance-python-mojo",
+      "description": "Write high-performance AI code using the Mojo programming language",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "mojo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Web scraping with Python and BeautifulSoup",
+      "slug": "web-scraping-python-beautifulsoup",
+      "description": "Extract data from websites using BeautifulSoup",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "beautifulsoup",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web scraping with Python and Scrapy",
+      "slug": "web-scraping-python-scrapy",
+      "description": "Build scalable web scraping applications using Scrapy",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "scrapy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Monitoring LLM applications with LangSmith",
+      "slug": "llm-monitoring-langsmith",
+      "description": "Debug and monitor LLM applications using LangSmith",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "langsmith",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "langchain",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Monitoring LLM applications with Helicone",
+      "slug": "llm-monitoring-helicone",
+      "description": "Track and analyze LLM API usage with Helicone",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "helicone",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Monitoring LLM applications with LangFuse",
+      "slug": "llm-monitoring-langfuse",
+      "description": "Observe and debug LLM applications using LangFuse",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "langfuse",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deploying LLMs with Together AI",
+      "slug": "llm-deployment-together-ai",
+      "description": "Deploy and scale open-source language models using Together AI",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "together-ai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Data analysis with Excel",
+      "slug": "data-analysis-excel",
+      "description": "Analyze and visualize data using Microsoft Excel",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "excel",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data analysis with Google Sheets",
+      "slug": "data-analysis-google-sheets",
+      "description": "Analyze and visualize data using Google Sheets",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "google-sheets",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with JASP",
+      "slug": "statistical-analysis-jasp",
+      "description": "Perform Bayesian and frequentist statistical analyses using JASP",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "jasp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with jamovi",
+      "slug": "statistical-analysis-jamovi",
+      "description": "Conduct statistical analyses with the user-friendly jamovi interface",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "jamovi",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with Minitab",
+      "slug": "statistical-analysis-minitab",
+      "description": "Perform quality and statistical analysis using Minitab",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "minitab",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Statistical analysis with JMP",
+      "slug": "statistical-analysis-jmp",
+      "description": "Conduct dynamic data analysis and visualization using JMP",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "jmp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building data analysis workflows with Orange",
+      "slug": "data-analysis-orange",
+      "description": "Create visual data mining and analysis workflows using Orange",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "orange",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Machine learning with Weka",
+      "slug": "machine-learning-weka",
+      "description": "Build and evaluate machine learning models using Weka",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "weka",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building BI dashboards with Qlik",
+      "slug": "bi-dashboards-qlik",
+      "description": "Create interactive business intelligence dashboards using Qlik Sense",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "qlik",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building analytics dashboards with Sisense",
+      "slug": "analytics-dashboards-sisense",
+      "description": "Create embedded analytics and dashboards using Sisense",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "sisense",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data visualizations with Redash",
+      "slug": "data-visualizations-redash",
+      "description": "Create SQL-based dashboards and visualizations using Redash",
+      "category_slug": "data-science",
+      "competencies": [
+        {
+          "competency_slug": "redash",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

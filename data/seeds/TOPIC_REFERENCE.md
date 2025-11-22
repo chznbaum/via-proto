@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T21:44:43.477Z
-**Total Topics:** 1320
+**Generated:** 2025-11-22T22:17:20.809Z
+**Total Topics:** 1591
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -17,6 +17,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [cloud-devops](#cloud-devops) (170)
 - [cybersecurity](#cybersecurity) (33)
 - [dance](#dance) (42)
+- [data-science](#data-science) (104)
 - [databases](#databases) (72)
 - [fiber-arts-crafts](#fiber-arts-crafts) (47)
 - [frontend-development](#frontend-development) (40)
@@ -25,13 +26,17 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [home-lifestyle](#home-lifestyle) (80)
 - [investing-trading](#investing-trading) (29)
 - [languages](#languages) (147)
+- [marketing-sales](#marketing-sales) (45)
 - [mobile-development](#mobile-development) (86)
 - [music](#music) (181)
+- [operations-strategy](#operations-strategy) (39)
 - [personal-finance](#personal-finance) (26)
 - [programming](#programming) (73)
 - [recreation-hobbies](#recreation-hobbies) (70)
 - [software-testing](#software-testing) (3)
+- [systems-programming](#systems-programming) (39)
 - [theater](#theater) (20)
+- [uiux-design](#uiux-design) (44)
 - [visual-arts](#visual-arts) (51)
 - [writing](#writing) (95)
 
@@ -1982,6 +1987,708 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `west-coast-swing`
 - **Supporting Competencies:** `swing-dance`
 - **Source File:** 021-dance.json
+
+---
+
+## data-science
+
+### Building AI agents with LangGraph
+- **Slug:** `ai-agents-langgraph`
+- **Description:** Create stateful, multi-actor AI applications using LangGraph
+- **Primary Competencies:** `langgraph`
+- **Supporting Competencies:** `python`, `langchain`
+- **Source File:** 010-data-science.json
+
+### Building AI applications with Anthropic Claude API
+- **Slug:** `ai-applications-anthropic-claude-api`
+- **Description:** Integrate Claude models into applications using the Anthropic API
+- **Primary Competencies:** `anthropic-claude-api`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building AI applications with Cohere API
+- **Slug:** `ai-applications-cohere-api`
+- **Description:** Build natural language applications using the Cohere API
+- **Primary Competencies:** `cohere-api`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building AI applications with Google Gemini API
+- **Slug:** `ai-applications-google-gemini-api`
+- **Description:** Integrate Gemini models into applications using the Google AI API
+- **Primary Competencies:** `google-gemini-api`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building AI applications with Semantic Kernel
+- **Slug:** `ai-applications-semantic-kernel`
+- **Description:** Integrate LLMs into applications using Microsoft Semantic Kernel
+- **Primary Competencies:** `semantic-kernel`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building AI copilots with Microsoft Copilot Studio
+- **Slug:** `ai-copilots-microsoft-copilot-studio`
+- **Description:** Create custom AI assistants using Microsoft Copilot Studio
+- **Primary Competencies:** `microsoft-copilot-studio`
+- **Source File:** 010-data-science.json
+
+### Building AI-powered applications with OpenAI API
+- **Slug:** `ai-applications-openai-api`
+- **Description:** Integrate GPT models into applications using the OpenAI API
+- **Primary Competencies:** `openai-api`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building analytics dashboards with Metabase
+- **Slug:** `analytics-dashboards-metabase`
+- **Description:** Create self-service analytics dashboards with the open-source Metabase platform
+- **Primary Competencies:** `metabase`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building analytics dashboards with Sisense
+- **Slug:** `analytics-dashboards-sisense`
+- **Description:** Create embedded analytics and dashboards using Sisense
+- **Primary Competencies:** `sisense`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building BI dashboards with Qlik
+- **Slug:** `bi-dashboards-qlik`
+- **Description:** Create interactive business intelligence dashboards using Qlik Sense
+- **Primary Competencies:** `qlik`
+- **Source File:** 010-data-science.json
+
+### Building chatbots with Botpress
+- **Slug:** `chatbots-botpress`
+- **Description:** Create enterprise chatbots using the Botpress platform
+- **Primary Competencies:** `botpress`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 010-data-science.json
+
+### Building conversational AI with Dialogflow
+- **Slug:** `conversational-ai-dialogflow`
+- **Description:** Create voice and text-based conversational interfaces using Google Dialogflow
+- **Primary Competencies:** `dialogflow`
+- **Source File:** 010-data-science.json
+
+### Building conversational AI with Rasa
+- **Slug:** `conversational-ai-rasa`
+- **Description:** Create open-source conversational AI assistants using Rasa
+- **Primary Competencies:** `rasa`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building conversational flows with Voiceflow
+- **Slug:** `conversational-flows-voiceflow`
+- **Description:** Design and deploy conversational AI experiences using Voiceflow
+- **Primary Competencies:** `voiceflow`
+- **Source File:** 010-data-science.json
+
+### Building data analysis workflows with Orange
+- **Slug:** `data-analysis-orange`
+- **Description:** Create visual data mining and analysis workflows using Orange
+- **Primary Competencies:** `orange`
+- **Source File:** 010-data-science.json
+
+### Building data and ML pipelines with Databricks
+- **Slug:** `data-ml-pipelines-databricks`
+- **Description:** Create unified data analytics and ML workflows using Databricks
+- **Primary Competencies:** `databricks`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations from Excel with Power BI
+- **Slug:** `excel-data-visualizations-power-bi`
+- **Description:** Create interactive reports and dashboards from Excel data using Power BI
+- **Primary Competencies:** `power-bi`
+- **Supporting Competencies:** `excel`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations from Excel with Tableau
+- **Slug:** `excel-data-visualizations-tableau`
+- **Description:** Create interactive dashboards and visual reports from Excel data using Tableau
+- **Primary Competencies:** `tableau`
+- **Supporting Competencies:** `excel`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations from Google Sheets with Tableau
+- **Slug:** `google-sheets-data-visualizations-tableau`
+- **Description:** Create interactive dashboards and visual reports from Google Sheets data using Tableau
+- **Primary Competencies:** `tableau`
+- **Supporting Competencies:** `google-sheets`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations from SQL databases with Power BI
+- **Slug:** `sql-data-visualizations-power-bi`
+- **Description:** Connect Power BI to SQL databases and create dynamic reports
+- **Primary Competencies:** `power-bi`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations from SQL databases with Tableau
+- **Slug:** `sql-data-visualizations-tableau`
+- **Description:** Create interactive dashboards connecting to SQL databases using Tableau
+- **Primary Competencies:** `tableau`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations with Apache Superset
+- **Slug:** `data-visualizations-apache-superset`
+- **Description:** Create interactive dashboards using the open-source Apache Superset platform
+- **Primary Competencies:** `apache-superset`
+- **Supporting Competencies:** `sql`, `python`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations with Looker
+- **Slug:** `data-visualizations-looker`
+- **Description:** Create data visualizations and business intelligence dashboards using Looker
+- **Primary Competencies:** `looker`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building data visualizations with Redash
+- **Slug:** `data-visualizations-redash`
+- **Description:** Create SQL-based dashboards and visualizations using Redash
+- **Primary Competencies:** `redash`
+- **Supporting Competencies:** `sql`
+- **Source File:** 010-data-science.json
+
+### Building interactive ML demos with Streamlit
+- **Slug:** `interactive-ml-demos-streamlit`
+- **Description:** Create web applications for machine learning models using Streamlit
+- **Primary Competencies:** `streamlit`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building LLM applications with LangChain
+- **Slug:** `llm-applications-langchain`
+- **Description:** Create AI-powered applications using LangChain's composable framework
+- **Primary Competencies:** `langchain`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building machine learning models with Python and scikit-learn
+- **Slug:** `machine-learning-python-scikit-learn`
+- **Description:** Train and deploy machine learning models using scikit-learn
+- **Primary Competencies:** `scikit-learn`
+- **Supporting Competencies:** `python`, `pandas`, `numpy`
+- **Source File:** 010-data-science.json
+
+### Building ML web interfaces with Gradio
+- **Slug:** `ml-web-interfaces-gradio`
+- **Description:** Create shareable web interfaces for machine learning models using Gradio
+- **Primary Competencies:** `gradio`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building multi-agent AI systems with AutoGen
+- **Slug:** `multi-agent-systems-autogen`
+- **Description:** Create conversational AI agents using Microsoft AutoGen
+- **Primary Competencies:** `autogen`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building multi-agent AI systems with CrewAI
+- **Slug:** `multi-agent-systems-crewai`
+- **Description:** Create collaborative AI agent teams using CrewAI
+- **Primary Competencies:** `crewai`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building RAG applications with LangChain
+- **Slug:** `rag-applications-langchain`
+- **Description:** Build retrieval-augmented generation systems using LangChain
+- **Primary Competencies:** `langchain`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building RAG systems with LlamaIndex
+- **Slug:** `rag-systems-llamaindex`
+- **Description:** Create retrieval-augmented generation applications using LlamaIndex
+- **Primary Competencies:** `llamaindex`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building semantic search with Pinecone
+- **Slug:** `semantic-search-pinecone`
+- **Description:** Create vector-based semantic search systems using Pinecone
+- **Primary Competencies:** `pinecone`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building semantic search with Weaviate
+- **Slug:** `semantic-search-weaviate`
+- **Description:** Create AI-native vector databases and search systems using Weaviate
+- **Primary Competencies:** `weaviate`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building vector databases with Chroma
+- **Slug:** `vector-databases-chroma`
+- **Description:** Create embeddings databases for AI applications using Chroma
+- **Primary Competencies:** `chroma`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building vector databases with Milvus
+- **Slug:** `vector-databases-milvus`
+- **Description:** Create scalable vector databases for similarity search using Milvus
+- **Primary Competencies:** `milvus`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building vector search with Qdrant
+- **Slug:** `vector-search-qdrant`
+- **Description:** Create high-performance vector similarity search using Qdrant
+- **Primary Competencies:** `qdrant`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Building voice assistants with Amazon Lex
+- **Slug:** `voice-assistants-amazon-lex`
+- **Description:** Create conversational interfaces using Amazon Lex
+- **Primary Competencies:** `amazon-lex`
+- **Source File:** 010-data-science.json
+
+### Computer vision with Python and OpenCV
+- **Slug:** `computer-vision-python-opencv`
+- **Description:** Process images and video using OpenCV for computer vision tasks
+- **Primary Competencies:** `opencv`
+- **Supporting Competencies:** `python`, `numpy`
+- **Source File:** 010-data-science.json
+
+### Creating executive dashboards with Power BI
+- **Slug:** `executive-dashboards-power-bi`
+- **Description:** Design executive-level dashboards and business intelligence reports with Power BI
+- **Primary Competencies:** `power-bi`
+- **Source File:** 010-data-science.json
+
+### Creating executive dashboards with Tableau
+- **Slug:** `executive-dashboards-tableau`
+- **Description:** Design compelling executive-level dashboards and KPI reports using Tableau
+- **Primary Competencies:** `tableau`
+- **Source File:** 010-data-science.json
+
+### Data analysis and exploration with Python and Pandas
+- **Slug:** `data-analysis-python-pandas`
+- **Description:** Analyze and manipulate structured data using Python's Pandas library
+- **Primary Competencies:** `pandas`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Data analysis with Excel
+- **Slug:** `data-analysis-excel`
+- **Description:** Analyze and visualize data using Microsoft Excel
+- **Primary Competencies:** `excel`
+- **Source File:** 010-data-science.json
+
+### Data analysis with Google Sheets
+- **Slug:** `data-analysis-google-sheets`
+- **Description:** Analyze and visualize data using Google Sheets
+- **Primary Competencies:** `google-sheets`
+- **Source File:** 010-data-science.json
+
+### Data analysis workflows with Alteryx
+- **Slug:** `data-analysis-workflows-alteryx`
+- **Description:** Build automated data preparation and analysis workflows using Alteryx
+- **Primary Competencies:** `alteryx`
+- **Source File:** 010-data-science.json
+
+### Data analysis workflows with KNIME
+- **Slug:** `data-analysis-workflows-knime`
+- **Description:** Create visual data analysis pipelines using the open-source KNIME platform
+- **Primary Competencies:** `knime`
+- **Source File:** 010-data-science.json
+
+### Data versioning with DVC
+- **Slug:** `data-versioning-dvc`
+- **Description:** Version control for datasets and ML models using DVC
+- **Primary Competencies:** `dvc`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Data visualization with Python and Matplotlib
+- **Slug:** `data-visualization-python-matplotlib`
+- **Description:** Create static, animated, and interactive visualizations using Matplotlib
+- **Primary Competencies:** `matplotlib`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Deep learning with Python and Keras
+- **Slug:** `deep-learning-python-keras`
+- **Description:** Build neural network models using the high-level Keras API
+- **Primary Competencies:** `keras`
+- **Supporting Competencies:** `tensorflow`, `python`
+- **Source File:** 010-data-science.json
+
+### Deep learning with Python and PyTorch
+- **Slug:** `deep-learning-python-pytorch`
+- **Description:** Build and train neural networks using PyTorch
+- **Primary Competencies:** `pytorch`
+- **Supporting Competencies:** `python`, `numpy`
+- **Source File:** 010-data-science.json
+
+### Deep learning with Python and TensorFlow
+- **Slug:** `deep-learning-python-tensorflow`
+- **Description:** Build and train neural networks using TensorFlow
+- **Primary Competencies:** `tensorflow`
+- **Supporting Competencies:** `python`, `numpy`
+- **Source File:** 010-data-science.json
+
+### Deploying LLMs with Together AI
+- **Slug:** `llm-deployment-together-ai`
+- **Description:** Deploy and scale open-source language models using Together AI
+- **Primary Competencies:** `together-ai`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Deploying ML models with BentoML
+- **Slug:** `ml-deployment-bentoml`
+- **Description:** Package and deploy machine learning models to production using BentoML
+- **Primary Competencies:** `bentoml`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Deploying ML models with Modal
+- **Slug:** `ml-deployment-modal`
+- **Description:** Deploy serverless machine learning applications using Modal
+- **Primary Competencies:** `modal`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Deploying ML models with Replicate
+- **Slug:** `ml-deployment-replicate`
+- **Description:** Deploy and share machine learning models using Replicate
+- **Primary Competencies:** `replicate`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Deploying ML models with Seldon Core
+- **Slug:** `ml-deployment-seldon-core`
+- **Description:** Deploy machine learning models on Kubernetes using Seldon Core
+- **Primary Competencies:** `seldon-core`
+- **Supporting Competencies:** `python`, `kubernetes`
+- **Source File:** 010-data-science.json
+
+### Distributed computing with Ray
+- **Slug:** `distributed-computing-ray`
+- **Description:** Scale Python applications and ML workloads using Ray
+- **Primary Competencies:** `ray`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Efficient similarity search with FAISS
+- **Slug:** `similarity-search-faiss`
+- **Description:** Build high-performance vector similarity search using Facebook's FAISS
+- **Primary Competencies:** `faiss`
+- **Supporting Competencies:** `python`, `numpy`
+- **Source File:** 010-data-science.json
+
+### Fine-tuning language models with Hugging Face
+- **Slug:** `fine-tuning-llms-hugging-face`
+- **Description:** Customize pre-trained language models for specific tasks using Hugging Face
+- **Primary Competencies:** `hugging-face`
+- **Supporting Competencies:** `python`, `pytorch`
+- **Source File:** 010-data-science.json
+
+### Generating images with Stable Diffusion
+- **Slug:** `image-generation-stable-diffusion`
+- **Description:** Create AI-generated images using Stable Diffusion models
+- **Primary Competencies:** `stable-diffusion`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### GPU-accelerated computing with CUDA
+- **Slug:** `gpu-computing-cuda`
+- **Description:** Accelerate computations using NVIDIA CUDA for parallel processing
+- **Primary Competencies:** `cuda`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Gradient boosting with LightGBM
+- **Slug:** `gradient-boosting-lightgbm`
+- **Description:** Train fast and accurate gradient boosting models using LightGBM
+- **Primary Competencies:** `lightgbm`
+- **Supporting Competencies:** `python`, `pandas`
+- **Source File:** 010-data-science.json
+
+### Gradient boosting with XGBoost
+- **Slug:** `gradient-boosting-xgboost`
+- **Description:** Build high-performance gradient boosting models using XGBoost
+- **Primary Competencies:** `xgboost`
+- **Supporting Competencies:** `python`, `pandas`
+- **Source File:** 010-data-science.json
+
+### High-performance computing with Fortran
+- **Slug:** `high-performance-computing-fortran`
+- **Description:** Build numerical and scientific computing applications using Fortran
+- **Primary Competencies:** `fortran`
+- **Source File:** 010-data-science.json
+
+### High-performance Python with Mojo
+- **Slug:** `high-performance-python-mojo`
+- **Description:** Write high-performance AI code using the Mojo programming language
+- **Primary Competencies:** `mojo`
+- **Source File:** 010-data-science.json
+
+### Interactive data analysis with Jupyter notebooks
+- **Slug:** `interactive-data-analysis-jupyter`
+- **Description:** Create interactive computational notebooks for data analysis using Jupyter
+- **Primary Competencies:** `jupyter`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Interactive data visualization with Python and Plotly
+- **Slug:** `interactive-visualization-python-plotly`
+- **Description:** Build interactive, publication-quality graphs using Plotly
+- **Primary Competencies:** `plotly`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Machine learning on AWS with Amazon SageMaker
+- **Slug:** `ml-aws-sagemaker`
+- **Description:** Build, train, and deploy ML models using Amazon SageMaker
+- **Primary Competencies:** `amazon-sagemaker`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Machine learning on Azure with Azure Machine Learning
+- **Slug:** `ml-azure-machine-learning`
+- **Description:** Build and deploy ML models using Azure Machine Learning
+- **Primary Competencies:** `azure-machine-learning`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Machine learning on Google Cloud with Vertex AI
+- **Slug:** `ml-google-cloud-vertex-ai`
+- **Description:** Build and deploy ML models using Google Cloud Vertex AI
+- **Primary Competencies:** `vertex-ai`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Machine learning with Weka
+- **Slug:** `machine-learning-weka`
+- **Description:** Build and evaluate machine learning models using Weka
+- **Primary Competencies:** `weka`
+- **Source File:** 010-data-science.json
+
+### Machine learning workflows with RapidMiner
+- **Slug:** `machine-learning-rapidminer`
+- **Description:** Build machine learning models using RapidMiner's visual workflow designer
+- **Primary Competencies:** `rapidminer`
+- **Source File:** 010-data-science.json
+
+### Monitoring LLM applications with Helicone
+- **Slug:** `llm-monitoring-helicone`
+- **Description:** Track and analyze LLM API usage with Helicone
+- **Primary Competencies:** `helicone`
+- **Source File:** 010-data-science.json
+
+### Monitoring LLM applications with LangFuse
+- **Slug:** `llm-monitoring-langfuse`
+- **Description:** Observe and debug LLM applications using LangFuse
+- **Primary Competencies:** `langfuse`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Monitoring LLM applications with LangSmith
+- **Slug:** `llm-monitoring-langsmith`
+- **Description:** Debug and monitor LLM applications using LangSmith
+- **Primary Competencies:** `langsmith`
+- **Supporting Competencies:** `python`, `langchain`
+- **Source File:** 010-data-science.json
+
+### Natural language processing with Python and NLTK
+- **Slug:** `nlp-python-nltk`
+- **Description:** Build text processing and analysis tools using the NLTK library
+- **Primary Competencies:** `nltk`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Natural language processing with Python and spaCy
+- **Slug:** `nlp-python-spacy`
+- **Description:** Process and analyze text using spaCy's industrial-strength NLP library
+- **Primary Competencies:** `spacy`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Numerical computing with Octave
+- **Slug:** `numerical-computing-octave`
+- **Description:** Perform numerical computations using the open-source Octave platform
+- **Primary Competencies:** `octave`
+- **Source File:** 010-data-science.json
+
+### Numerical computing with Python and NumPy
+- **Slug:** `numerical-computing-python-numpy`
+- **Description:** Perform numerical and scientific computing operations using NumPy
+- **Primary Competencies:** `numpy`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Object detection with YOLO
+- **Slug:** `object-detection-yolo`
+- **Description:** Build real-time object detection systems using YOLO algorithms
+- **Primary Competencies:** `yolo`
+- **Supporting Competencies:** `python`, `opencv`
+- **Source File:** 010-data-science.json
+
+### Running local LLMs with LM Studio
+- **Slug:** `local-llms-lm-studio`
+- **Description:** Run large language models locally using LM Studio
+- **Primary Competencies:** `lm-studio`
+- **Source File:** 010-data-science.json
+
+### Running local LLMs with Ollama
+- **Slug:** `local-llms-ollama`
+- **Description:** Run and manage large language models locally using Ollama
+- **Primary Competencies:** `ollama`
+- **Source File:** 010-data-science.json
+
+### Scientific computing with Julia
+- **Slug:** `scientific-computing-julia`
+- **Description:** Perform high-performance numerical and scientific computing using Julia
+- **Primary Competencies:** `julia`
+- **Source File:** 010-data-science.json
+
+### Scientific computing with MATLAB
+- **Slug:** `scientific-computing-matlab`
+- **Description:** Perform numerical computing and algorithm development using MATLAB
+- **Primary Competencies:** `matlab`
+- **Source File:** 010-data-science.json
+
+### Serving ML models with KServe
+- **Slug:** `ml-serving-kserve`
+- **Description:** Deploy and serve machine learning models on Kubernetes using KServe
+- **Primary Competencies:** `kserve`
+- **Supporting Competencies:** `python`, `kubernetes`
+- **Source File:** 010-data-science.json
+
+### Speech recognition with OpenAI Whisper
+- **Slug:** `speech-recognition-whisper`
+- **Description:** Transcribe and translate speech using OpenAI's Whisper model
+- **Primary Competencies:** `whisper`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Speech-to-text with AssemblyAI
+- **Slug:** `speech-to-text-assemblyai`
+- **Description:** Transcribe and analyze audio using AssemblyAI
+- **Primary Competencies:** `assemblyai`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis and visualization with R
+- **Slug:** `statistical-analysis-r`
+- **Description:** Perform statistical computing and create visualizations using R
+- **Primary Competencies:** `r`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with jamovi
+- **Slug:** `statistical-analysis-jamovi`
+- **Description:** Conduct statistical analyses with the user-friendly jamovi interface
+- **Primary Competencies:** `jamovi`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with JASP
+- **Slug:** `statistical-analysis-jasp`
+- **Description:** Perform Bayesian and frequentist statistical analyses using JASP
+- **Primary Competencies:** `jasp`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with JMP
+- **Slug:** `statistical-analysis-jmp`
+- **Description:** Conduct dynamic data analysis and visualization using JMP
+- **Primary Competencies:** `jmp`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with Minitab
+- **Slug:** `statistical-analysis-minitab`
+- **Description:** Perform quality and statistical analysis using Minitab
+- **Primary Competencies:** `minitab`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with SAS
+- **Slug:** `statistical-analysis-sas`
+- **Description:** Perform statistical analysis and data management using SAS software
+- **Primary Competencies:** `sas`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with SPSS
+- **Slug:** `statistical-analysis-spss`
+- **Description:** Conduct statistical analysis and create reports using IBM SPSS Statistics
+- **Primary Competencies:** `spss`
+- **Source File:** 010-data-science.json
+
+### Statistical analysis with Stata
+- **Slug:** `statistical-analysis-stata`
+- **Description:** Perform econometric and statistical analysis using Stata
+- **Primary Competencies:** `stata`
+- **Source File:** 010-data-science.json
+
+### Statistical data visualization with Python and Seaborn
+- **Slug:** `statistical-visualization-python-seaborn`
+- **Description:** Create informative statistical graphics using Seaborn
+- **Primary Competencies:** `seaborn`
+- **Supporting Competencies:** `python`, `matplotlib`
+- **Source File:** 010-data-science.json
+
+### Text-to-speech with ElevenLabs
+- **Slug:** `text-to-speech-elevenlabs`
+- **Description:** Generate realistic AI voices using ElevenLabs text-to-speech
+- **Primary Competencies:** `elevenlabs`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Tracking ML experiments with MLflow
+- **Slug:** `ml-experiment-tracking-mlflow`
+- **Description:** Track, organize, and reproduce machine learning experiments using MLflow
+- **Primary Competencies:** `mlflow`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Tracking ML experiments with Weights & Biases
+- **Slug:** `ml-experiment-tracking-wandb`
+- **Description:** Monitor and visualize machine learning experiments using Weights & Biases
+- **Primary Competencies:** `weights-and-biases`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Training computer vision models with Ultralytics
+- **Slug:** `computer-vision-ultralytics`
+- **Description:** Build and deploy YOLO-based computer vision models using Ultralytics
+- **Primary Competencies:** `ultralytics`
+- **Supporting Competencies:** `python`, `pytorch`
+- **Source File:** 010-data-science.json
+
+### Training custom computer vision models with Roboflow
+- **Slug:** `custom-computer-vision-roboflow`
+- **Description:** Annotate, train, and deploy custom object detection models using Roboflow
+- **Primary Competencies:** `roboflow`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Web scraping with Python and BeautifulSoup
+- **Slug:** `web-scraping-python-beautifulsoup`
+- **Description:** Extract data from websites using BeautifulSoup
+- **Primary Competencies:** `beautifulsoup`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Web scraping with Python and Scrapy
+- **Slug:** `web-scraping-python-scrapy`
+- **Description:** Build scalable web scraping applications using Scrapy
+- **Primary Competencies:** `scrapy`
+- **Supporting Competencies:** `python`
+- **Source File:** 010-data-science.json
+
+### Working with Hugging Face models and datasets
+- **Slug:** `hugging-face-models-datasets`
+- **Description:** Use pre-trained models and datasets from the Hugging Face ecosystem
+- **Primary Competencies:** `hugging-face`
+- **Supporting Competencies:** `python`, `pytorch`
+- **Source File:** 010-data-science.json
 
 ---
 
@@ -4757,6 +5464,294 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## marketing-sales
+
+### A/B testing and conversion optimization
+- **Slug:** `ab-testing-conversion-optimization`
+- **Description:** Design and execute A/B tests to improve conversion rates
+- **Primary Competencies:** `conversion-rate-optimization`
+- **Supporting Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### B2B lead generation and prospecting
+- **Slug:** `b2b-lead-generation-prospecting`
+- **Description:** Generate and qualify B2B leads through various channels
+- **Primary Competencies:** `b2b-sales`
+- **Supporting Competencies:** `sales-prospecting`
+- **Source File:** 032-marketing-sales.json
+
+### B2B sales strategies and processes
+- **Slug:** `b2b-sales-strategies-processes`
+- **Description:** Navigate complex B2B sales cycles and organizational buying
+- **Primary Competencies:** `b2b-sales`
+- **Source File:** 032-marketing-sales.json
+
+### B2C sales and customer engagement
+- **Slug:** `b2c-sales-customer-engagement`
+- **Description:** Sell directly to consumers and build customer relationships
+- **Primary Competencies:** `b2c-sales`
+- **Source File:** 032-marketing-sales.json
+
+### Brand positioning and differentiation
+- **Slug:** `brand-positioning-differentiation`
+- **Description:** Position brands in competitive markets with clear differentiation
+- **Primary Competencies:** `brand-strategy`
+- **Supporting Competencies:** `market-research`
+- **Source File:** 032-marketing-sales.json
+
+### Building brand strategy and identity
+- **Slug:** `building-brand-strategy-identity`
+- **Description:** Develop comprehensive brand strategies and positioning
+- **Primary Competencies:** `brand-strategy`
+- **Source File:** 032-marketing-sales.json
+
+### Cold calling and outbound prospecting
+- **Slug:** `cold-calling-outbound-prospecting`
+- **Description:** Master cold calling and outbound sales techniques
+- **Primary Competencies:** `sales-prospecting`
+- **Source File:** 032-marketing-sales.json
+
+### Consultative selling approach
+- **Slug:** `consultative-selling-approach`
+- **Description:** Sell by understanding customer needs and providing solutions
+- **Primary Competencies:** `sales`
+- **Source File:** 032-marketing-sales.json
+
+### Content marketing for social media
+- **Slug:** `content-marketing-social-media`
+- **Description:** Develop content strategies for social media platforms
+- **Primary Competencies:** `content-marketing`
+- **Supporting Competencies:** `social-media-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Content marketing strategy and creation
+- **Slug:** `content-marketing-strategy-creation`
+- **Description:** Create and distribute valuable content to attract and engage audiences
+- **Primary Competencies:** `content-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Conversion rate optimization
+- **Slug:** `conversion-rate-optimization`
+- **Description:** Optimize websites and funnels to increase conversion rates
+- **Primary Competencies:** `conversion-rate-optimization`
+- **Source File:** 032-marketing-sales.json
+
+### CRM systems and sales pipeline management
+- **Slug:** `crm-systems-sales-pipeline-management`
+- **Description:** Use CRM tools to manage sales pipelines and customer data
+- **Primary Competencies:** `customer-relationship-management`
+- **Supporting Competencies:** `sales`
+- **Source File:** 032-marketing-sales.json
+
+### Customer relationship management strategies
+- **Slug:** `customer-relationship-management-strategies`
+- **Description:** Build and maintain strong customer relationships for retention and growth
+- **Primary Competencies:** `customer-relationship-management`
+- **Source File:** 032-marketing-sales.json
+
+### Customer success and account growth
+- **Slug:** `customer-success-account-growth`
+- **Description:** Drive customer retention, satisfaction, and revenue expansion
+- **Primary Competencies:** `customer-relationship-management`
+- **Source File:** 032-marketing-sales.json
+
+### Data-driven marketing decision making
+- **Slug:** `data-driven-marketing-decisions`
+- **Description:** Use analytics to inform marketing strategies and optimize campaigns
+- **Primary Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Digital marketing strategy and execution
+- **Slug:** `digital-marketing-strategy-execution`
+- **Description:** Develop and implement comprehensive digital marketing strategies
+- **Primary Competencies:** `digital-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Email automation and nurture campaigns
+- **Slug:** `email-automation-nurture-campaigns`
+- **Description:** Build automated email sequences to nurture leads and customers
+- **Primary Competencies:** `email-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Email deliverability and optimization
+- **Slug:** `email-deliverability-optimization`
+- **Description:** Improve email deliverability and campaign performance
+- **Primary Competencies:** `email-marketing`
+- **Supporting Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Email marketing campaigns
+- **Slug:** `email-marketing-campaigns`
+- **Description:** Design and execute effective email marketing campaigns
+- **Primary Competencies:** `email-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Enterprise sales and account management
+- **Slug:** `enterprise-sales-account-management`
+- **Description:** Close large enterprise deals and manage strategic accounts
+- **Primary Competencies:** `b2b-sales`
+- **Supporting Competencies:** `sales-negotiation`
+- **Source File:** 032-marketing-sales.json
+
+### Google Ads campaign optimization
+- **Slug:** `google-ads-campaign-optimization`
+- **Description:** Create and optimize high-performing Google Ads campaigns
+- **Primary Competencies:** `sem`
+- **Supporting Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Growth hacking strategies and tactics
+- **Slug:** `growth-hacking-strategies-tactics`
+- **Description:** Implement creative growth tactics to scale user acquisition
+- **Primary Competencies:** `growth-marketing`
+- **Supporting Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Growth marketing and experimentation
+- **Slug:** `growth-marketing-experimentation`
+- **Description:** Drive rapid growth through data-driven experimentation
+- **Primary Competencies:** `growth-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Handling objections and closing deals
+- **Slug:** `handling-objections-closing-deals`
+- **Description:** Overcome sales objections and close more deals
+- **Primary Competencies:** `sales-negotiation`
+- **Supporting Competencies:** `sales`
+- **Source File:** 032-marketing-sales.json
+
+### Integrated marketing campaigns
+- **Slug:** `integrated-marketing-campaigns`
+- **Description:** Plan and execute multi-channel marketing campaigns
+- **Primary Competencies:** `marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Landing page optimization
+- **Slug:** `landing-page-optimization`
+- **Description:** Design and optimize landing pages for maximum conversions
+- **Primary Competencies:** `conversion-rate-optimization`
+- **Source File:** 032-marketing-sales.json
+
+### Local SEO and Google Business optimization
+- **Slug:** `local-seo-google-business`
+- **Description:** Optimize for local search and Google Business Profile
+- **Primary Competencies:** `seo`
+- **Source File:** 032-marketing-sales.json
+
+### Market research and consumer insights
+- **Slug:** `market-research-consumer-insights`
+- **Description:** Conduct research to understand markets, competitors, and customers
+- **Primary Competencies:** `market-research`
+- **Source File:** 032-marketing-sales.json
+
+### Marketing analytics and measurement
+- **Slug:** `marketing-analytics-measurement`
+- **Description:** Measure and analyze marketing performance with data and metrics
+- **Primary Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Marketing attribution modeling
+- **Slug:** `marketing-attribution-modeling`
+- **Description:** Track and attribute conversions across marketing touchpoints
+- **Primary Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Marketing fundamentals and strategy
+- **Slug:** `marketing-fundamentals-strategy`
+- **Description:** Develop effective marketing strategies and campaigns
+- **Primary Competencies:** `marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Multi-channel digital marketing
+- **Slug:** `multi-channel-digital-marketing`
+- **Description:** Execute integrated digital marketing across SEO, SEM, social, and email
+- **Primary Competencies:** `digital-marketing`
+- **Supporting Competencies:** `seo`, `sem`, `social-media-marketing`, `email-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Qualitative and quantitative market research
+- **Slug:** `qualitative-quantitative-market-research`
+- **Description:** Design and execute market research studies using various methodologies
+- **Primary Competencies:** `market-research`
+- **Source File:** 032-marketing-sales.json
+
+### Retail sales and customer service
+- **Slug:** `retail-sales-customer-service`
+- **Description:** Excel at in-store and online B2C sales interactions
+- **Primary Competencies:** `b2c-sales`
+- **Source File:** 032-marketing-sales.json
+
+### Sales fundamentals and techniques
+- **Slug:** `sales-fundamentals-techniques`
+- **Description:** Master core sales skills and methodologies
+- **Primary Competencies:** `sales`
+- **Source File:** 032-marketing-sales.json
+
+### Sales negotiation skills
+- **Slug:** `sales-negotiation-skills`
+- **Description:** Negotiate effectively to close deals and maximize value
+- **Primary Competencies:** `sales-negotiation`
+- **Source File:** 032-marketing-sales.json
+
+### Sales prospecting and outreach
+- **Slug:** `sales-prospecting-outreach`
+- **Description:** Identify and reach out to qualified prospects effectively
+- **Primary Competencies:** `sales-prospecting`
+- **Source File:** 032-marketing-sales.json
+
+### Search engine marketing and paid search
+- **Slug:** `search-engine-marketing-paid-search`
+- **Description:** Manage Google Ads and paid search campaigns
+- **Primary Competencies:** `sem`
+- **Source File:** 032-marketing-sales.json
+
+### Search engine optimization
+- **Slug:** `search-engine-optimization`
+- **Description:** Optimize websites and content for organic search rankings
+- **Primary Competencies:** `seo`
+- **Source File:** 032-marketing-sales.json
+
+### SEO-driven content marketing
+- **Slug:** `seo-driven-content-marketing`
+- **Description:** Create content optimized for search engines and user engagement
+- **Primary Competencies:** `content-marketing`
+- **Supporting Competencies:** `seo`
+- **Source File:** 032-marketing-sales.json
+
+### Social media advertising campaigns
+- **Slug:** `social-media-advertising-campaigns`
+- **Description:** Create and manage paid advertising on social media platforms
+- **Primary Competencies:** `social-media-marketing`
+- **Supporting Competencies:** `marketing-analytics`
+- **Source File:** 032-marketing-sales.json
+
+### Social media content strategy
+- **Slug:** `social-media-content-strategy`
+- **Description:** Develop engaging content strategies for social platforms
+- **Primary Competencies:** `social-media-marketing`
+- **Supporting Competencies:** `content-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Social media marketing and management
+- **Slug:** `social-media-marketing-management`
+- **Description:** Build brand presence and engage audiences on social platforms
+- **Primary Competencies:** `social-media-marketing`
+- **Source File:** 032-marketing-sales.json
+
+### Social selling and LinkedIn prospecting
+- **Slug:** `social-selling-linkedin-prospecting`
+- **Description:** Use social media and LinkedIn for modern sales prospecting
+- **Primary Competencies:** `sales-prospecting`
+- **Source File:** 032-marketing-sales.json
+
+### Technical SEO optimization
+- **Slug:** `technical-seo-optimization`
+- **Description:** Improve website technical performance for better search rankings
+- **Primary Competencies:** `seo`
+- **Source File:** 032-marketing-sales.json
+
+---
+
 ## mobile-development
 
 ### Android app distribution with Google Play Console
@@ -6617,6 +7612,262 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## operations-strategy
+
+### BI reporting and analytics for executives
+- **Slug:** `bi-reporting-analytics-executives`
+- **Description:** Create executive dashboards and KPI reporting systems
+- **Primary Competencies:** `business-intelligence`
+- **Source File:** 031-operations-strategy.json
+
+### Building a startup business model
+- **Slug:** `building-startup-business-model`
+- **Description:** Design viable business models for startup ventures
+- **Primary Competencies:** `entrepreneurship`
+- **Supporting Competencies:** `business-model-design`
+- **Source File:** 031-operations-strategy.json
+
+### Building compliance programs
+- **Slug:** `building-compliance-programs`
+- **Description:** Design and implement comprehensive compliance frameworks
+- **Primary Competencies:** `compliance`
+- **Supporting Competencies:** `risk-management`
+- **Source File:** 031-operations-strategy.json
+
+### Building data-driven organizations with business intelligence
+- **Slug:** `data-driven-organizations-bi`
+- **Description:** Implement BI strategies to drive data-informed decision making
+- **Primary Competencies:** `business-intelligence`
+- **Source File:** 031-operations-strategy.json
+
+### Building learning and development programs
+- **Slug:** `building-learning-development-programs`
+- **Description:** Create comprehensive L&D strategies to upskill your workforce
+- **Primary Competencies:** `employee-development`
+- **Supporting Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Building talent acquisition strategies
+- **Slug:** `building-talent-acquisition-strategies`
+- **Description:** Develop comprehensive talent acquisition and employer branding strategies
+- **Primary Competencies:** `talent-acquisition`
+- **Supporting Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Business law fundamentals
+- **Slug:** `business-law-fundamentals`
+- **Description:** Understand legal frameworks governing business operations
+- **Primary Competencies:** `business-law`
+- **Source File:** 031-operations-strategy.json
+
+### Business model innovation and transformation
+- **Slug:** `business-model-innovation-transformation`
+- **Description:** Transform existing business models for changing markets
+- **Primary Competencies:** `business-model-design`
+- **Supporting Competencies:** `business-strategy`
+- **Source File:** 031-operations-strategy.json
+
+### Business process reengineering
+- **Slug:** `business-process-reengineering`
+- **Description:** Fundamentally redesign business processes for dramatic improvements
+- **Primary Competencies:** `process-improvement`
+- **Supporting Competencies:** `operations-management`
+- **Source File:** 031-operations-strategy.json
+
+### Compensation strategy and design
+- **Slug:** `compensation-strategy-design`
+- **Description:** Develop competitive compensation structures and benefits packages
+- **Primary Competencies:** `compensation-benefits`
+- **Source File:** 031-operations-strategy.json
+
+### Competitive strategy and positioning
+- **Slug:** `competitive-strategy-positioning`
+- **Description:** Analyze markets and develop competitive positioning strategies
+- **Primary Competencies:** `competitive-strategy`
+- **Supporting Competencies:** `business-strategy`
+- **Source File:** 031-operations-strategy.json
+
+### Continuous process improvement
+- **Slug:** `continuous-process-improvement`
+- **Description:** Build a culture of continuous improvement and operational excellence
+- **Primary Competencies:** `process-improvement`
+- **Source File:** 031-operations-strategy.json
+
+### Contract negotiation and management
+- **Slug:** `contract-negotiation-management`
+- **Description:** Negotiate, draft, and manage business contracts effectively
+- **Primary Competencies:** `contract-management`
+- **Source File:** 031-operations-strategy.json
+
+### Corporate governance and business law
+- **Slug:** `corporate-governance-business-law`
+- **Description:** Navigate corporate legal structures and governance requirements
+- **Primary Competencies:** `business-law`
+- **Supporting Competencies:** `compliance`
+- **Source File:** 031-operations-strategy.json
+
+### Corporate strategy development
+- **Slug:** `corporate-strategy-development`
+- **Description:** Develop long-term strategic plans for organizational growth and success
+- **Primary Competencies:** `business-strategy`
+- **Source File:** 031-operations-strategy.json
+
+### Designing sustainable business models
+- **Slug:** `designing-sustainable-business-models`
+- **Description:** Create and validate business models for new and existing ventures
+- **Primary Competencies:** `business-model-design`
+- **Source File:** 031-operations-strategy.json
+
+### Employee relations and engagement
+- **Slug:** `employee-relations-engagement`
+- **Description:** Build positive employee relations and drive workforce engagement
+- **Primary Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Enterprise risk management
+- **Slug:** `enterprise-risk-management`
+- **Description:** Identify, assess, and mitigate organizational risks
+- **Primary Competencies:** `risk-management`
+- **Source File:** 031-operations-strategy.json
+
+### HR strategy and workforce planning
+- **Slug:** `hr-strategy-workforce-planning`
+- **Description:** Develop human resources strategies and plan workforce needs
+- **Primary Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Implementing Lean methodologies
+- **Slug:** `implementing-lean-methodologies`
+- **Description:** Apply Lean principles to eliminate waste and improve efficiency
+- **Primary Competencies:** `lean-management`
+- **Source File:** 031-operations-strategy.json
+
+### Lean manufacturing and production
+- **Slug:** `lean-manufacturing-production`
+- **Description:** Optimize manufacturing operations using Lean principles
+- **Primary Competencies:** `lean-management`
+- **Supporting Competencies:** `operations-management`
+- **Source File:** 031-operations-strategy.json
+
+### Lean Six Sigma integration
+- **Slug:** `lean-six-sigma-integration`
+- **Description:** Combine Lean and Six Sigma methodologies for operational excellence
+- **Primary Competencies:** `lean-management`
+- **Supporting Competencies:** `six-sigma`, `process-improvement`
+- **Source File:** 031-operations-strategy.json
+
+### Managing employee performance
+- **Slug:** `managing-employee-performance`
+- **Description:** Implement performance management systems and conduct effective reviews
+- **Primary Competencies:** `performance-management`
+- **Source File:** 031-operations-strategy.json
+
+### Managing global supply chains
+- **Slug:** `managing-global-supply-chains`
+- **Description:** Optimize procurement, logistics, and distribution across supply chains
+- **Primary Competencies:** `supply-chain-management`
+- **Source File:** 031-operations-strategy.json
+
+### Market analysis and competitive intelligence
+- **Slug:** `market-analysis-competitive-intelligence`
+- **Description:** Gather and analyze competitive intelligence to inform business decisions
+- **Primary Competencies:** `competitive-strategy`
+- **Source File:** 031-operations-strategy.json
+
+### Operations management fundamentals
+- **Slug:** `operations-management-fundamentals`
+- **Description:** Manage day-to-day operations and optimize organizational efficiency
+- **Primary Competencies:** `operations-management`
+- **Source File:** 031-operations-strategy.json
+
+### Optimizing operations with process improvement
+- **Slug:** `optimizing-operations-process-improvement`
+- **Description:** Drive operational excellence through systematic process improvements
+- **Primary Competencies:** `operations-management`
+- **Supporting Competencies:** `process-improvement`
+- **Source File:** 031-operations-strategy.json
+
+### Performance management system design
+- **Slug:** `performance-management-system-design`
+- **Description:** Design performance management frameworks and processes
+- **Primary Competencies:** `performance-management`
+- **Supporting Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Quality improvement with Six Sigma
+- **Slug:** `quality-improvement-six-sigma`
+- **Description:** Reduce defects and variability using Six Sigma methodologies
+- **Primary Competencies:** `six-sigma`
+- **Source File:** 031-operations-strategy.json
+
+### Recruiting and hiring talent
+- **Slug:** `recruiting-hiring-talent`
+- **Description:** Attract, source, and hire top talent for your organization
+- **Primary Competencies:** `talent-acquisition`
+- **Source File:** 031-operations-strategy.json
+
+### Regulatory compliance management
+- **Slug:** `regulatory-compliance-management`
+- **Description:** Ensure organizational compliance with laws and regulations
+- **Primary Competencies:** `compliance`
+- **Source File:** 031-operations-strategy.json
+
+### Risk assessment and mitigation strategies
+- **Slug:** `risk-assessment-mitigation-strategies`
+- **Description:** Develop frameworks for assessing and managing business risks
+- **Primary Competencies:** `risk-management`
+- **Supporting Competencies:** `compliance`
+- **Source File:** 031-operations-strategy.json
+
+### Six Sigma project management and execution
+- **Slug:** `six-sigma-project-management`
+- **Description:** Lead Six Sigma improvement projects using DMAIC methodology
+- **Primary Competencies:** `six-sigma`
+- **Supporting Competencies:** `process-improvement`
+- **Source File:** 031-operations-strategy.json
+
+### Starting and growing a business
+- **Slug:** `starting-growing-business`
+- **Description:** Launch and scale a successful business venture from concept to growth
+- **Primary Competencies:** `entrepreneurship`
+- **Source File:** 031-operations-strategy.json
+
+### Startup strategy and planning
+- **Slug:** `startup-strategy-planning`
+- **Description:** Develop strategic plans and go-to-market strategies for startups
+- **Primary Competencies:** `entrepreneurship`
+- **Supporting Competencies:** `business-strategy`
+- **Source File:** 031-operations-strategy.json
+
+### Supply chain optimization and efficiency
+- **Slug:** `supply-chain-optimization-efficiency`
+- **Description:** Improve supply chain performance through data analysis and process improvement
+- **Primary Competencies:** `supply-chain-management`
+- **Supporting Competencies:** `process-improvement`
+- **Source File:** 031-operations-strategy.json
+
+### Total rewards program management
+- **Slug:** `total-rewards-program-management`
+- **Description:** Manage comprehensive compensation and benefits programs
+- **Primary Competencies:** `compensation-benefits`
+- **Supporting Competencies:** `human-resources`
+- **Source File:** 031-operations-strategy.json
+
+### Training and developing employees
+- **Slug:** `training-developing-employees`
+- **Description:** Design and deliver employee training and development programs
+- **Primary Competencies:** `employee-development`
+- **Source File:** 031-operations-strategy.json
+
+### Vendor contract management
+- **Slug:** `vendor-contract-management`
+- **Description:** Manage vendor relationships and contracts throughout their lifecycle
+- **Primary Competencies:** `contract-management`
+- **Supporting Competencies:** `supply-chain-management`
+- **Source File:** 031-operations-strategy.json
+
+---
+
 ## personal-finance
 
 ### Auto insurance coverage optimization
@@ -7728,6 +8979,245 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## systems-programming
+
+### Actor-based programming with Pony
+- **Slug:** `actor-based-programming-pony`
+- **Description:** Build concurrent systems using Pony's actor model
+- **Primary Competencies:** `pony`
+- **Source File:** 033-systems-programming.json
+
+### ARM assembly programming
+- **Slug:** `arm-assembly-programming`
+- **Description:** Write ARM assembly code for embedded and mobile processors
+- **Primary Competencies:** `assembly`
+- **Source File:** 033-systems-programming.json
+
+### Assembly language programming
+- **Slug:** `assembly-language-programming`
+- **Description:** Write low-level code in assembly for specific architectures
+- **Primary Competencies:** `assembly`
+- **Source File:** 033-systems-programming.json
+
+### Cloud automation with PowerShell
+- **Slug:** `cloud-automation-powershell`
+- **Description:** Automate Azure and cloud infrastructure using PowerShell
+- **Primary Competencies:** `powershell`
+- **Source File:** 033-systems-programming.json
+
+### Concurrent systems with Erlang
+- **Slug:** `concurrent-systems-erlang`
+- **Description:** Build fault-tolerant distributed systems using Erlang
+- **Primary Competencies:** `erlang`
+- **Source File:** 033-systems-programming.json
+
+### Data extraction and reporting with AWK
+- **Slug:** `data-extraction-reporting-awk`
+- **Description:** Extract and transform data from text files using AWK
+- **Primary Competencies:** `awk`
+- **Source File:** 033-systems-programming.json
+
+### DevOps automation with Bash
+- **Slug:** `devops-automation-bash`
+- **Description:** Create CI/CD and deployment automation scripts using Bash
+- **Primary Competencies:** `bash`
+- **Source File:** 033-systems-programming.json
+
+### Distributed applications with Erlang
+- **Slug:** `distributed-applications-erlang`
+- **Description:** Create scalable distributed applications using Erlang's actor model
+- **Primary Competencies:** `erlang`
+- **Source File:** 033-systems-programming.json
+
+### Embedded real-time systems with Ada
+- **Slug:** `embedded-real-time-systems-ada`
+- **Description:** Build real-time embedded systems using Ada
+- **Primary Competencies:** `ada`
+- **Source File:** 033-systems-programming.json
+
+### Embedded systems programming with C
+- **Slug:** `embedded-systems-programming-c`
+- **Description:** Program microcontrollers and embedded devices using C
+- **Primary Competencies:** `c`
+- **Source File:** 033-systems-programming.json
+
+### Embedded systems with C++
+- **Slug:** `embedded-systems-cpp`
+- **Description:** Program embedded systems using modern C++ features
+- **Primary Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### Game engine development with C++
+- **Slug:** `game-engine-development-cpp`
+- **Description:** Build game engines and graphics systems using C++
+- **Primary Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### High-performance applications with Nim
+- **Slug:** `high-performance-applications-nim`
+- **Description:** Create fast, compiled applications using Nim
+- **Primary Competencies:** `nim`
+- **Source File:** 033-systems-programming.json
+
+### High-performance computing with C++
+- **Slug:** `high-performance-computing-cpp`
+- **Description:** Write optimized high-performance applications using C++
+- **Primary Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### High-performance computing with Chapel
+- **Slug:** `high-performance-computing-chapel`
+- **Description:** Build scalable scientific computing applications using Chapel
+- **Primary Competencies:** `chapel`
+- **Source File:** 033-systems-programming.json
+
+### High-performance concurrent systems with Pony
+- **Slug:** `high-performance-concurrent-pony`
+- **Description:** Create fast, safe concurrent applications using Pony
+- **Primary Competencies:** `pony`
+- **Source File:** 033-systems-programming.json
+
+### Linux system administration with Bash
+- **Slug:** `linux-system-administration-bash`
+- **Description:** Manage Linux systems using Bash scripting
+- **Primary Competencies:** `bash`
+- **Source File:** 033-systems-programming.json
+
+### Low-level programming with Zig
+- **Slug:** `low-level-programming-zig`
+- **Description:** Write memory-safe low-level code using Zig
+- **Primary Competencies:** `zig`
+- **Source File:** 033-systems-programming.json
+
+### Migrating C++ to Carbon
+- **Slug:** `migrating-cpp-to-carbon`
+- **Description:** Transition C++ codebases to Carbon incrementally
+- **Primary Competencies:** `carbon`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### Modern C++ development
+- **Slug:** `modern-cpp-development`
+- **Description:** Use modern C++ features and best practices for software development
+- **Primary Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### Network programming with C
+- **Slug:** `network-programming-c`
+- **Description:** Build network applications and protocols using C sockets
+- **Primary Competencies:** `c`
+- **Source File:** 033-systems-programming.json
+
+### Operating systems development with C
+- **Slug:** `operating-systems-development-c`
+- **Description:** Develop operating system kernels and components using C
+- **Primary Competencies:** `c`
+- **Source File:** 033-systems-programming.json
+
+### Parallel programming with Chapel
+- **Slug:** `parallel-programming-chapel`
+- **Description:** Write parallel and distributed programs using Chapel
+- **Primary Competencies:** `chapel`
+- **Source File:** 033-systems-programming.json
+
+### PowerShell scripting for system administration
+- **Slug:** `powershell-scripting-system-administration`
+- **Description:** Manage Windows systems and Active Directory with PowerShell
+- **Primary Competencies:** `powershell`
+- **Source File:** 033-systems-programming.json
+
+### Reverse engineering with assembly
+- **Slug:** `reverse-engineering-assembly`
+- **Description:** Analyze and reverse engineer software using assembly knowledge
+- **Primary Competencies:** `assembly`
+- **Source File:** 033-systems-programming.json
+
+### Safety-critical systems with Ada
+- **Slug:** `safety-critical-systems-ada`
+- **Description:** Develop high-reliability safety-critical systems using Ada
+- **Primary Competencies:** `ada`
+- **Source File:** 033-systems-programming.json
+
+### Shell scripting with Bash
+- **Slug:** `shell-scripting-bash`
+- **Description:** Automate tasks and system administration with Bash scripts
+- **Primary Competencies:** `bash`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with C
+- **Slug:** `systems-programming-c`
+- **Description:** Build low-level systems software using the C programming language
+- **Primary Competencies:** `c`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with C++
+- **Slug:** `systems-programming-cpp`
+- **Description:** Build high-performance systems software using modern C++
+- **Primary Competencies:** `cpp`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with Carbon
+- **Slug:** `systems-programming-carbon`
+- **Description:** Build modern systems software using Google's Carbon language
+- **Primary Competencies:** `carbon`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with D
+- **Slug:** `systems-programming-d`
+- **Description:** Build high-performance systems software using the D language
+- **Primary Competencies:** `d`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with Nim
+- **Slug:** `systems-programming-nim`
+- **Description:** Build efficient systems software using Nim
+- **Primary Competencies:** `nim`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with V
+- **Slug:** `systems-programming-v`
+- **Description:** Build fast, safe applications using the V programming language
+- **Primary Competencies:** `v`
+- **Source File:** 033-systems-programming.json
+
+### Systems programming with Zig
+- **Slug:** `systems-programming-zig`
+- **Description:** Build robust, optimized systems software using Zig
+- **Primary Competencies:** `zig`
+- **Source File:** 033-systems-programming.json
+
+### Telecommunication systems with Erlang
+- **Slug:** `telecommunication-systems-erlang`
+- **Description:** Build telecom and messaging systems using Erlang
+- **Primary Competencies:** `erlang`
+- **Source File:** 033-systems-programming.json
+
+### Text processing with AWK
+- **Slug:** `text-processing-awk`
+- **Description:** Process and analyze text files using AWK scripting
+- **Primary Competencies:** `awk`
+- **Source File:** 033-systems-programming.json
+
+### Theorem-proving systems programming with ATS
+- **Slug:** `theorem-proving-systems-ats`
+- **Description:** Build formally verified systems software using ATS
+- **Primary Competencies:** `ats`
+- **Source File:** 033-systems-programming.json
+
+### Windows automation with PowerShell
+- **Slug:** `windows-automation-powershell`
+- **Description:** Automate Windows administration tasks using PowerShell
+- **Primary Competencies:** `powershell`
+- **Source File:** 033-systems-programming.json
+
+### x86 assembly programming
+- **Slug:** `x86-assembly-programming`
+- **Description:** Program in x86/x64 assembly language
+- **Primary Competencies:** `assembly`
+- **Source File:** 033-systems-programming.json
+
+---
+
 ## theater
 
 ### Auditioning successfully for theater roles
@@ -7859,6 +9349,283 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Craft original comedy material, develop stage presence, and perform stand-up sets
 - **Primary Competencies:** `stand-up-comedy`
 - **Source File:** 018-theater.json
+
+---
+
+## uiux-design
+
+### Advanced prototyping with ProtoPie
+- **Slug:** `advanced-prototyping-protopie`
+- **Description:** Create high-fidelity interactive prototypes using ProtoPie
+- **Primary Competencies:** `protopie`
+- **Source File:** 030-uiux-design.json
+
+### Animating Sketch designs with Principle
+- **Slug:** `animating-sketch-principle`
+- **Description:** Import Sketch designs and add animations using Principle
+- **Primary Competencies:** `principle`
+- **Supporting Competencies:** `sketch`
+- **Source File:** 030-uiux-design.json
+
+### Building complex prototypes with Axure RP
+- **Slug:** `complex-prototypes-axure`
+- **Description:** Create dynamic, data-driven prototypes with conditional logic using Axure RP
+- **Primary Competencies:** `axure-rp`
+- **Source File:** 030-uiux-design.json
+
+### Building custom websites with Webflow CMS
+- **Slug:** `custom-websites-webflow-cms`
+- **Description:** Create content-driven websites using Webflow's CMS features
+- **Primary Competencies:** `webflow`
+- **Supporting Competencies:** `html`, `css`
+- **Source File:** 030-uiux-design.json
+
+### Building design systems in Figma
+- **Slug:** `building-design-systems-figma`
+- **Description:** Create scalable design systems with components and variants in Figma
+- **Primary Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Building design systems in Sketch
+- **Slug:** `building-design-systems-sketch`
+- **Description:** Develop reusable design systems using Sketch's symbols and libraries
+- **Primary Competencies:** `sketch`
+- **Source File:** 030-uiux-design.json
+
+### Building e-commerce sites with WordPress and WooCommerce
+- **Slug:** `ecommerce-wordpress-woocommerce`
+- **Description:** Create online stores using WordPress and the WooCommerce plugin
+- **Primary Competencies:** `wordpress`
+- **Source File:** 030-uiux-design.json
+
+### Building interactive prototypes with Framer
+- **Slug:** `interactive-prototypes-framer`
+- **Description:** Create high-fidelity interactive prototypes using Framer
+- **Primary Competencies:** `framer`
+- **Source File:** 030-uiux-design.json
+
+### Building online stores with Squarespace
+- **Slug:** `online-stores-squarespace`
+- **Description:** Create e-commerce sites using Squarespace's commerce features
+- **Primary Competencies:** `squarespace`
+- **Source File:** 030-uiux-design.json
+
+### Building online stores with Wix
+- **Slug:** `online-stores-wix`
+- **Description:** Create e-commerce websites using Wix's online store features
+- **Primary Competencies:** `wix`
+- **Source File:** 030-uiux-design.json
+
+### Building responsive websites with Webflow
+- **Slug:** `responsive-websites-webflow`
+- **Description:** Create responsive, mobile-friendly websites using Webflow
+- **Primary Competencies:** `webflow`
+- **Supporting Competencies:** `html`, `css`
+- **Source File:** 030-uiux-design.json
+
+### Building visual websites with Webflow
+- **Slug:** `visual-websites-webflow`
+- **Description:** Design and build production-ready websites visually using Webflow
+- **Primary Competencies:** `webflow`
+- **Supporting Competencies:** `html`, `css`
+- **Source File:** 030-uiux-design.json
+
+### Building websites with Adobe Dreamweaver
+- **Slug:** `building-websites-dreamweaver`
+- **Description:** Design and code websites using Adobe Dreamweaver
+- **Primary Competencies:** `adobe-dreamweaver`
+- **Supporting Competencies:** `html`, `css`, `javascript`
+- **Source File:** 030-uiux-design.json
+
+### Building websites with Squarespace
+- **Slug:** `building-websites-squarespace`
+- **Description:** Design and launch professional websites using Squarespace
+- **Primary Competencies:** `squarespace`
+- **Source File:** 030-uiux-design.json
+
+### Building websites with Wix
+- **Slug:** `building-websites-wix`
+- **Description:** Create professional websites using the Wix drag-and-drop builder
+- **Primary Competencies:** `wix`
+- **Source File:** 030-uiux-design.json
+
+### Building websites with WordPress
+- **Slug:** `building-websites-wordpress`
+- **Description:** Create and manage websites using WordPress CMS
+- **Primary Competencies:** `wordpress`
+- **Source File:** 030-uiux-design.json
+
+### Building WordPress sites with page builders
+- **Slug:** `wordpress-sites-page-builders`
+- **Description:** Create custom WordPress sites using visual page builders
+- **Primary Competencies:** `wordpress`
+- **Source File:** 030-uiux-design.json
+
+### Code-based design with Framer and React
+- **Slug:** `code-based-design-framer-react`
+- **Description:** Create custom interactive components in Framer using React
+- **Primary Competencies:** `framer`
+- **Supporting Competencies:** `react`, `javascript`
+- **Source File:** 030-uiux-design.json
+
+### Collaborative design workflows with Figma
+- **Slug:** `collaborative-design-figma`
+- **Description:** Work with design teams using Figma's collaboration and feedback tools
+- **Primary Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Collaborative whiteboarding with Miro
+- **Slug:** `collaborative-whiteboarding-miro`
+- **Description:** Facilitate remote collaboration and brainstorming using Miro
+- **Primary Competencies:** `miro`
+- **Source File:** 030-uiux-design.json
+
+### Creating interactive prototypes with Adobe XD
+- **Slug:** `interactive-prototypes-adobe-xd`
+- **Description:** Build clickable prototypes and user flows with Adobe XD
+- **Primary Competencies:** `adobe-xd`
+- **Source File:** 030-uiux-design.json
+
+### Creating interactive prototypes with Figma
+- **Slug:** `interactive-prototypes-figma`
+- **Description:** Design and test interactive user flows using Figma's prototyping features
+- **Primary Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Customizing WordPress themes
+- **Slug:** `customizing-wordpress-themes`
+- **Description:** Modify and customize WordPress themes for unique designs
+- **Primary Competencies:** `wordpress`
+- **Supporting Competencies:** `html`, `css`, `php`
+- **Source File:** 030-uiux-design.json
+
+### Design collaboration and handoff with InVision
+- **Slug:** `design-collaboration-invision`
+- **Description:** Collaborate with teams and hand off designs to developers using InVision
+- **Primary Competencies:** `invision`
+- **Source File:** 030-uiux-design.json
+
+### Design workflows from Miro to Figma
+- **Slug:** `miro-to-figma-workflow`
+- **Description:** Move from ideation in Miro to detailed design in Figma
+- **Primary Competencies:** `miro`
+- **Supporting Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Design-to-development handoff with Zeplin
+- **Slug:** `design-handoff-zeplin`
+- **Description:** Streamline design handoff to developers using Zeplin
+- **Primary Competencies:** `zeplin`
+- **Source File:** 030-uiux-design.json
+
+### Designing interactive websites with Framer
+- **Slug:** `interactive-websites-framer`
+- **Description:** Build production-ready interactive websites using Framer
+- **Primary Competencies:** `framer`
+- **Source File:** 030-uiux-design.json
+
+### Designing interface animations with Principle
+- **Slug:** `interface-animations-principle`
+- **Description:** Create animated and interactive UI prototypes using Principle
+- **Primary Competencies:** `principle`
+- **Source File:** 030-uiux-design.json
+
+### Designing micro-interactions with Origami Studio
+- **Slug:** `micro-interactions-origami-studio`
+- **Description:** Create detailed interaction designs and animations using Origami Studio
+- **Primary Competencies:** `origami-studio`
+- **Source File:** 030-uiux-design.json
+
+### Designing mobile apps with Figma
+- **Slug:** `mobile-app-design-figma`
+- **Description:** Create mobile application designs and prototypes using Figma
+- **Primary Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Designing user interfaces with Adobe XD
+- **Slug:** `designing-user-interfaces-adobe-xd`
+- **Description:** Design and prototype user experiences using Adobe XD
+- **Primary Competencies:** `adobe-xd`
+- **Source File:** 030-uiux-design.json
+
+### Designing user interfaces with Figma
+- **Slug:** `designing-user-interfaces-figma`
+- **Description:** Create modern user interfaces and design systems using Figma
+- **Primary Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Designing user interfaces with Lunacy
+- **Slug:** `designing-user-interfaces-lunacy`
+- **Description:** Create UI designs using the Lunacy design tool
+- **Primary Competencies:** `lunacy`
+- **Source File:** 030-uiux-design.json
+
+### Designing user interfaces with Sketch
+- **Slug:** `designing-user-interfaces-sketch`
+- **Description:** Create digital product designs using Sketch
+- **Primary Competencies:** `sketch`
+- **Source File:** 030-uiux-design.json
+
+### Integrating Figma with Zeplin for handoff
+- **Slug:** `figma-zeplin-handoff`
+- **Description:** Export Figma designs and hand them off to developers using Zeplin
+- **Primary Competencies:** `zeplin`
+- **Supporting Competencies:** `figma`
+- **Source File:** 030-uiux-design.json
+
+### Interactive prototyping with InVision
+- **Slug:** `interactive-prototyping-invision`
+- **Description:** Create interactive prototypes and gather stakeholder feedback using InVision
+- **Primary Competencies:** `invision`
+- **Source File:** 030-uiux-design.json
+
+### Prototyping mobile interactions with Origami Studio
+- **Slug:** `mobile-interactions-origami-studio`
+- **Description:** Design complex mobile app interactions using Origami Studio
+- **Primary Competencies:** `origami-studio`
+- **Source File:** 030-uiux-design.json
+
+### Rapid prototyping with Marvel
+- **Slug:** `rapid-prototyping-marvel`
+- **Description:** Create quick interactive prototypes and mockups using Marvel
+- **Primary Competencies:** `marvel`
+- **Source File:** 030-uiux-design.json
+
+### Rapid wireframing with Balsamiq
+- **Slug:** `rapid-wireframing-balsamiq`
+- **Description:** Create low-fidelity wireframes and mockups using Balsamiq
+- **Primary Competencies:** `balsamiq`
+- **Source File:** 030-uiux-design.json
+
+### Sensor-based prototyping with ProtoPie
+- **Slug:** `sensor-prototyping-protopie`
+- **Description:** Design prototypes with device sensors and advanced interactions using ProtoPie
+- **Primary Competencies:** `protopie`
+- **Source File:** 030-uiux-design.json
+
+### User flow wireframing with Balsamiq
+- **Slug:** `user-flow-wireframing-balsamiq`
+- **Description:** Map out user flows and create quick wireframes using Balsamiq
+- **Primary Competencies:** `balsamiq`
+- **Source File:** 030-uiux-design.json
+
+### User research and mapping with Miro
+- **Slug:** `user-research-mapping-miro`
+- **Description:** Conduct user research, create journey maps, and organize insights using Miro
+- **Primary Competencies:** `miro`
+- **Source File:** 030-uiux-design.json
+
+### Wireframing and prototyping with Axure RP
+- **Slug:** `wireframing-prototyping-axure`
+- **Description:** Create detailed wireframes and interactive prototypes using Axure RP
+- **Primary Competencies:** `axure-rp`
+- **Source File:** 030-uiux-design.json
+
+### Working with Sketch files in Lunacy
+- **Slug:** `sketch-files-lunacy`
+- **Description:** Open and edit Sketch files on Windows using Lunacy
+- **Primary Competencies:** `lunacy`
+- **Source File:** 030-uiux-design.json
 
 ---
 

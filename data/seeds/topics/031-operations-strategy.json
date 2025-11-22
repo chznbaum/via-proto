@@ -1,0 +1,548 @@
+{
+  "topics": [
+    {
+      "name": "Starting and growing a business",
+      "slug": "starting-growing-business",
+      "description": "Launch and scale a successful business venture from concept to growth",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "entrepreneurship",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building a startup business model",
+      "slug": "building-startup-business-model",
+      "description": "Design viable business models for startup ventures",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "entrepreneurship",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-model-design",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Startup strategy and planning",
+      "slug": "startup-strategy-planning",
+      "description": "Develop strategic plans and go-to-market strategies for startups",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "entrepreneurship",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-strategy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Corporate strategy development",
+      "slug": "corporate-strategy-development",
+      "description": "Develop long-term strategic plans for organizational growth and success",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-strategy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Competitive strategy and positioning",
+      "slug": "competitive-strategy-positioning",
+      "description": "Analyze markets and develop competitive positioning strategies",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "competitive-strategy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-strategy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Market analysis and competitive intelligence",
+      "slug": "market-analysis-competitive-intelligence",
+      "description": "Gather and analyze competitive intelligence to inform business decisions",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "competitive-strategy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing sustainable business models",
+      "slug": "designing-sustainable-business-models",
+      "description": "Create and validate business models for new and existing ventures",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-model-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Business model innovation and transformation",
+      "slug": "business-model-innovation-transformation",
+      "description": "Transform existing business models for changing markets",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-model-design",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "business-strategy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing global supply chains",
+      "slug": "managing-global-supply-chains",
+      "description": "Optimize procurement, logistics, and distribution across supply chains",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "supply-chain-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Supply chain optimization and efficiency",
+      "slug": "supply-chain-optimization-efficiency",
+      "description": "Improve supply chain performance through data analysis and process improvement",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "supply-chain-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Operations management fundamentals",
+      "slug": "operations-management-fundamentals",
+      "description": "Manage day-to-day operations and optimize organizational efficiency",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "operations-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Optimizing operations with process improvement",
+      "slug": "optimizing-operations-process-improvement",
+      "description": "Drive operational excellence through systematic process improvements",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "operations-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing Lean methodologies",
+      "slug": "implementing-lean-methodologies",
+      "description": "Apply Lean principles to eliminate waste and improve efficiency",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "lean-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Lean manufacturing and production",
+      "slug": "lean-manufacturing-production",
+      "description": "Optimize manufacturing operations using Lean principles",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "lean-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "operations-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Quality improvement with Six Sigma",
+      "slug": "quality-improvement-six-sigma",
+      "description": "Reduce defects and variability using Six Sigma methodologies",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "six-sigma",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Six Sigma project management and execution",
+      "slug": "six-sigma-project-management",
+      "description": "Lead Six Sigma improvement projects using DMAIC methodology",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "six-sigma",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Lean Six Sigma integration",
+      "slug": "lean-six-sigma-integration",
+      "description": "Combine Lean and Six Sigma methodologies for operational excellence",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "lean-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "six-sigma",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Continuous process improvement",
+      "slug": "continuous-process-improvement",
+      "description": "Build a culture of continuous improvement and operational excellence",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Business process reengineering",
+      "slug": "business-process-reengineering",
+      "description": "Fundamentally redesign business processes for dramatic improvements",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "process-improvement",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "operations-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "HR strategy and workforce planning",
+      "slug": "hr-strategy-workforce-planning",
+      "description": "Develop human resources strategies and plan workforce needs",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "human-resources",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Employee relations and engagement",
+      "slug": "employee-relations-engagement",
+      "description": "Build positive employee relations and drive workforce engagement",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "human-resources",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Recruiting and hiring talent",
+      "slug": "recruiting-hiring-talent",
+      "description": "Attract, source, and hire top talent for your organization",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "talent-acquisition",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building talent acquisition strategies",
+      "slug": "building-talent-acquisition-strategies",
+      "description": "Develop comprehensive talent acquisition and employer branding strategies",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "talent-acquisition",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "human-resources",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Training and developing employees",
+      "slug": "training-developing-employees",
+      "description": "Design and deliver employee training and development programs",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "employee-development",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building learning and development programs",
+      "slug": "building-learning-development-programs",
+      "description": "Create comprehensive L&D strategies to upskill your workforce",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "employee-development",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "human-resources",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Managing employee performance",
+      "slug": "managing-employee-performance",
+      "description": "Implement performance management systems and conduct effective reviews",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "performance-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Performance management system design",
+      "slug": "performance-management-system-design",
+      "description": "Design performance management frameworks and processes",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "performance-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "human-resources",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Compensation strategy and design",
+      "slug": "compensation-strategy-design",
+      "description": "Develop competitive compensation structures and benefits packages",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "compensation-benefits",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Total rewards program management",
+      "slug": "total-rewards-program-management",
+      "description": "Manage comprehensive compensation and benefits programs",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "compensation-benefits",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "human-resources",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data-driven organizations with business intelligence",
+      "slug": "data-driven-organizations-bi",
+      "description": "Implement BI strategies to drive data-informed decision making",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-intelligence",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "BI reporting and analytics for executives",
+      "slug": "bi-reporting-analytics-executives",
+      "description": "Create executive dashboards and KPI reporting systems",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-intelligence",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Enterprise risk management",
+      "slug": "enterprise-risk-management",
+      "description": "Identify, assess, and mitigate organizational risks",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "risk-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Risk assessment and mitigation strategies",
+      "slug": "risk-assessment-mitigation-strategies",
+      "description": "Develop frameworks for assessing and managing business risks",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "risk-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "compliance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Regulatory compliance management",
+      "slug": "regulatory-compliance-management",
+      "description": "Ensure organizational compliance with laws and regulations",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "compliance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building compliance programs",
+      "slug": "building-compliance-programs",
+      "description": "Design and implement comprehensive compliance frameworks",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "compliance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "risk-management",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Business law fundamentals",
+      "slug": "business-law-fundamentals",
+      "description": "Understand legal frameworks governing business operations",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-law",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Corporate governance and business law",
+      "slug": "corporate-governance-business-law",
+      "description": "Navigate corporate legal structures and governance requirements",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "business-law",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "compliance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Contract negotiation and management",
+      "slug": "contract-negotiation-management",
+      "description": "Negotiate, draft, and manage business contracts effectively",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "contract-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Vendor contract management",
+      "slug": "vendor-contract-management",
+      "description": "Manage vendor relationships and contracts throughout their lifecycle",
+      "category_slug": "operations-strategy",
+      "competencies": [
+        {
+          "competency_slug": "contract-management",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "supply-chain-management",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}
