@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T20:50:30.948Z
-**Total Topics:** 877
+**Generated:** 2025-11-22T21:08:18.061Z
+**Total Topics:** 1037
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -14,7 +14,9 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 - [backend-development](#backend-development) (3)
 - [cloud-devops](#cloud-devops) (170)
+- [dance](#dance) (42)
 - [databases](#databases) (72)
+- [fiber-arts-crafts](#fiber-arts-crafts) (47)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
 - [game-development](#game-development) (1)
@@ -23,6 +25,8 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [music](#music) (181)
 - [programming](#programming) (73)
 - [software-testing](#software-testing) (3)
+- [theater](#theater) (20)
+- [visual-arts](#visual-arts) (51)
 - [writing](#writing) (95)
 
 ---
@@ -1164,6 +1168,282 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## dance
+
+### Aerial dance and silk technique
+- **Slug:** `aerial-dance-silk-technique`
+- **Description:** Combine dance with aerial silks, hoops, and suspended movement
+- **Primary Competencies:** `aerial-dance`
+- **Source File:** 021-dance.json
+
+### Argentine tango connection and improvisation
+- **Slug:** `argentine-tango-connection-improvisation`
+- **Description:** Develop close embrace, musicality, and improvisation in Argentine tango
+- **Primary Competencies:** `argentine-tango`
+- **Source File:** 021-dance.json
+
+### Ballroom dancing for social and competition
+- **Slug:** `ballroom-dancing-social-competition`
+- **Description:** Learn partner dancing, frame, and movement across ballroom styles
+- **Primary Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Bollywood dance and storytelling
+- **Slug:** `bollywood-dance-storytelling`
+- **Description:** Combine classical and contemporary Indian moves for Bollywood performance
+- **Primary Competencies:** `bollywood-dance`
+- **Source File:** 021-dance.json
+
+### Brazilian samba technique
+- **Slug:** `brazilian-samba-technique`
+- **Description:** Learn bouncing action, hip movement, and samba rhythm
+- **Primary Competencies:** `samba`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Breaking fundamentals and power moves
+- **Slug:** `breaking-fundamentals-power-moves`
+- **Description:** Master toprock, footwork, freezes, and power moves in breaking
+- **Primary Competencies:** `breaking`
+- **Supporting Competencies:** `hip-hop-dance`
+- **Source File:** 021-dance.json
+
+### Choreographing competitive ballroom routines
+- **Slug:** `choreographing-competitive-ballroom-routines`
+- **Description:** Create technical and artistic ballroom dance routines for competition
+- **Primary Competencies:** `ballroom-choreography`
+- **Supporting Competencies:** `ballroom-dance`, `choreography`
+- **Source File:** 021-dance.json
+
+### Classical ballet technique and performance
+- **Slug:** `classical-ballet-technique-performance`
+- **Description:** Master ballet positions, movements, and grace through classical training
+- **Primary Competencies:** `ballet`
+- **Source File:** 021-dance.json
+
+### Classical bharatanatyam technique
+- **Slug:** `classical-bharatanatyam-technique`
+- **Description:** Master precise footwork, hand gestures, and expressions in bharatanatyam
+- **Primary Competencies:** `bharatanatyam`
+- **Source File:** 021-dance.json
+
+### Creating original dance choreography
+- **Slug:** `creating-original-dance-choreography`
+- **Description:** Design movement sequences, structure pieces, and develop choreographic voice
+- **Primary Competencies:** `choreography`
+- **Source File:** 021-dance.json
+
+### Dramatic paso doble
+- **Slug:** `dramatic-paso-doble`
+- **Description:** Perform powerful, theatrical paso doble with matador imagery
+- **Primary Competencies:** `paso-doble`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### East Coast swing for social dancing
+- **Slug:** `east-coast-swing-social-dancing`
+- **Description:** Learn versatile East Coast swing for dancing to various music
+- **Primary Competencies:** `east-coast-swing`
+- **Supporting Competencies:** `swing-dance`
+- **Source File:** 021-dance.json
+
+### Elegant waltz technique
+- **Slug:** `elegant-waltz-technique`
+- **Description:** Master the rise and fall, frame, and rotation of waltz
+- **Primary Competencies:** `waltz`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Emotional lyrical dance performance
+- **Slug:** `emotional-lyrical-dance-performance`
+- **Description:** Blend ballet and jazz to express emotion and tell stories through movement
+- **Primary Competencies:** `lyrical-dance`
+- **Supporting Competencies:** `ballet`, `jazz-dance`
+- **Source File:** 021-dance.json
+
+### Energetic jazz dance performance
+- **Slug:** `energetic-jazz-dance-performance`
+- **Description:** Develop rhythm, isolations, and showmanship through jazz dance
+- **Primary Competencies:** `jazz-dance`
+- **Source File:** 021-dance.json
+
+### Energetic merengue dancing
+- **Slug:** `energetic-merengue-dancing`
+- **Description:** Master simple, fast-paced merengue for social dancing
+- **Primary Competencies:** `merengue`
+- **Source File:** 021-dance.json
+
+### Expressive belly dance
+- **Slug:** `expressive-belly-dance`
+- **Description:** Develop fluid hip movements, shimmies, and Middle Eastern dance technique
+- **Primary Competencies:** `belly-dance`
+- **Source File:** 021-dance.json
+
+### Expressive contemporary dance
+- **Slug:** `expressive-contemporary-dance`
+- **Description:** Combine technical precision with emotional expression in contemporary dance
+- **Primary Competencies:** `contemporary-dance`
+- **Source File:** 021-dance.json
+
+### Fast-paced quickstep
+- **Slug:** `fast-paced-quickstep`
+- **Description:** Master quick, light footwork and hops in quickstep dance
+- **Primary Competencies:** `quickstep`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Hawaiian hula storytelling
+- **Slug:** `hawaiian-hula-storytelling`
+- **Description:** Express stories through graceful hula movements and hand gestures
+- **Primary Competencies:** `hula`
+- **Source File:** 021-dance.json
+
+### High-energy jive dancing
+- **Slug:** `high-energy-jive-dancing`
+- **Description:** Develop fast kicks, flicks, and bouncy jive technique
+- **Primary Competencies:** `jive`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Hip hop dance foundations
+- **Slug:** `hip-hop-dance-foundations`
+- **Description:** Learn foundational hip hop grooves, bounce, and freestyle techniques
+- **Primary Competencies:** `hip-hop-dance`
+- **Source File:** 021-dance.json
+
+### House dance and footwork
+- **Slug:** `house-dance-footwork`
+- **Description:** Develop intricate footwork and jacking technique for house music
+- **Primary Competencies:** `house-dance`
+- **Supporting Competencies:** `hip-hop-dance`
+- **Source File:** 021-dance.json
+
+### Irish step dancing
+- **Slug:** `irish-step-dancing`
+- **Description:** Master rapid footwork and upright posture of Irish dance
+- **Primary Competencies:** `irish-dance`
+- **Source File:** 021-dance.json
+
+### Kathak rhythmic footwork and spins
+- **Slug:** `kathak-rhythmic-footwork-spins`
+- **Description:** Develop complex rhythmic patterns and graceful turns in kathak dance
+- **Primary Competencies:** `kathak`
+- **Source File:** 021-dance.json
+
+### Lindy hop dancing
+- **Slug:** `lindy-hop-dancing`
+- **Description:** Master swingouts, aerials, and authentic lindy hop style
+- **Primary Competencies:** `lindy-hop`
+- **Supporting Competencies:** `swing-dance`
+- **Source File:** 021-dance.json
+
+### Locking dance and funk styles
+- **Slug:** `locking-dance-funk-styles`
+- **Description:** Learn funky locking moves, points, and comic performance
+- **Primary Competencies:** `locking`
+- **Supporting Competencies:** `hip-hop-dance`
+- **Source File:** 021-dance.json
+
+### Modern dance fundamentals
+- **Slug:** `modern-dance-fundamentals`
+- **Description:** Learn groundwork, contraction, and release techniques of modern dance
+- **Primary Competencies:** `modern-dance`
+- **Source File:** 021-dance.json
+
+### Passionate flamenco dance
+- **Slug:** `passionate-flamenco-dance`
+- **Description:** Express emotion through footwork, arms, and flamenco compás
+- **Primary Competencies:** `flamenco`
+- **Source File:** 021-dance.json
+
+### Passionate tango dance
+- **Slug:** `passionate-tango-dance`
+- **Description:** Develop dramatic connection, staccato movement, and tango styling
+- **Primary Competencies:** `tango`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Playful cha-cha dancing
+- **Slug:** `playful-cha-cha-dancing`
+- **Description:** Master the characteristic cha-cha-cha rhythm and cheeky styling
+- **Primary Competencies:** `cha-cha`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Pole dancing for fitness and artistry
+- **Slug:** `pole-dancing-fitness-artistry`
+- **Description:** Build strength and grace through pole dancing spins and tricks
+- **Primary Competencies:** `pole-dancing`
+- **Source File:** 021-dance.json
+
+### Popping and animation dance
+- **Slug:** `popping-animation-dance`
+- **Description:** Create robotic and fluid illusions through popping technique
+- **Primary Competencies:** `popping`
+- **Supporting Competencies:** `hip-hop-dance`
+- **Source File:** 021-dance.json
+
+### Rhythmic tap dance
+- **Slug:** `rhythmic-tap-dance`
+- **Description:** Create percussion with your feet through tap dance technique
+- **Primary Competencies:** `tap-dance`
+- **Source File:** 021-dance.json
+
+### Romantic bachata dance
+- **Slug:** `romantic-bachata-dance`
+- **Description:** Develop smooth hip movement and close connection in bachata
+- **Primary Competencies:** `bachata`
+- **Source File:** 021-dance.json
+
+### Rumba dance and Cuban motion
+- **Slug:** `rumba-dance-cuban-motion`
+- **Description:** Develop slow, sensual movement and Cuban hip action in rumba
+- **Primary Competencies:** `rumba`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Smooth foxtrot dancing
+- **Slug:** `smooth-foxtrot-dancing`
+- **Description:** Glide across the floor with foxtrot's flowing continuous movement
+- **Primary Competencies:** `foxtrot`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Social salsa dancing
+- **Slug:** `social-salsa-dancing`
+- **Description:** Learn salsa timing, partner work, and improvisation for social dancing
+- **Primary Competencies:** `salsa`
+- **Source File:** 021-dance.json
+
+### Swing dance fundamentals
+- **Slug:** `swing-dance-fundamentals`
+- **Description:** Learn triple steps, rock steps, and swing-out basics
+- **Primary Competencies:** `swing-dance`
+- **Source File:** 021-dance.json
+
+### Viennese waltz technique
+- **Slug:** `viennese-waltz-technique`
+- **Description:** Spin continuously with speed and elegance in Viennese waltz
+- **Primary Competencies:** `viennese-waltz`
+- **Supporting Competencies:** `ballroom-dance`
+- **Source File:** 021-dance.json
+
+### Vintage charleston dance
+- **Slug:** `vintage-charleston-dance`
+- **Description:** Perform energetic kicks and swivels in 1920s charleston style
+- **Primary Competencies:** `charleston`
+- **Supporting Competencies:** `swing-dance`
+- **Source File:** 021-dance.json
+
+### West Coast swing technique
+- **Slug:** `west-coast-swing-technique`
+- **Description:** Develop smooth, elastic connection in the West Coast swing slot
+- **Primary Competencies:** `west-coast-swing`
+- **Supporting Competencies:** `swing-dance`
+- **Source File:** 021-dance.json
+
+---
+
 ## databases
 
 ### .NET document databases with RavenDB
@@ -1647,6 +1927,305 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `drizzle-orm`
 - **Supporting Competencies:** `typescript`, `postgresql`
 - **Source File:** 003-databases.json
+
+---
+
+## fiber-arts-crafts
+
+### Appliqué fabric art
+- **Slug:** `applique-fabric-art`
+- **Description:** Attach decorative fabric shapes to create dimensional textile art
+- **Primary Competencies:** `applique`
+- **Supporting Competencies:** `sewing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Artisan soap making
+- **Slug:** `artisan-soap-making`
+- **Description:** Make handcrafted soaps using cold process, hot process, or melt-and-pour methods
+- **Primary Competencies:** `soap-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Batik fabric design
+- **Slug:** `batik-fabric-design`
+- **Description:** Create resist-dyed patterns on fabric using wax and dye
+- **Primary Competencies:** `batik`
+- **Supporting Competencies:** `fiber-dyeing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Beaded jewelry and accessories
+- **Slug:** `beaded-jewelry-accessories`
+- **Description:** Design and create beaded necklaces, bracelets, and embellishments
+- **Primary Competencies:** `beading`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Bookbinding and book arts
+- **Slug:** `bookbinding-book-arts`
+- **Description:** Bind handmade books, journals, and artistic book structures
+- **Primary Competencies:** `bookbinding`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Candle making and design
+- **Slug:** `candle-making-design`
+- **Description:** Create custom candles with various waxes, scents, and designs
+- **Primary Competencies:** `candle-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Creating functional pottery
+- **Slug:** `creating-functional-pottery`
+- **Description:** Make bowls, mugs, and vessels using hand-building and wheel-throwing
+- **Primary Competencies:** `pottery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Creating handmade quilts
+- **Slug:** `creating-handmade-quilts`
+- **Description:** Design and construct beautiful quilts from piecing to binding
+- **Primary Competencies:** `quilting`
+- **Supporting Competencies:** `sewing`, `pattern-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Creative scrapbooking and memory keeping
+- **Slug:** `creative-scrapbooking-memory-keeping`
+- **Description:** Preserve memories through decorated scrapbook pages and albums
+- **Primary Competencies:** `scrapbooking`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Crocheting projects from patterns
+- **Slug:** `crocheting-projects-from-patterns`
+- **Description:** Master crochet stitches to create blankets, amigurumi, and wearables
+- **Primary Competencies:** `crochet`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Cross-stitch pattern work
+- **Slug:** `cross-stitch-pattern-work`
+- **Description:** Create detailed cross-stitch designs from charts and patterns
+- **Primary Competencies:** `cross-stitch`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Custom dyed yarn for knitting projects
+- **Slug:** `custom-dyed-yarn-knitting-projects`
+- **Description:** Dye and knit with handpainted yarn for unique colorwork
+- **Primary Competencies:** `fiber-dyeing`
+- **Supporting Competencies:** `knitting`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Decorative embroidery and surface design
+- **Slug:** `decorative-embroidery-surface-design`
+- **Description:** Embellish fabric with hand embroidery stitches and decorative designs
+- **Primary Competencies:** `embroidery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Decorative paper crafts
+- **Slug:** `decorative-paper-crafts`
+- **Description:** Make paper flowers, decorations, and dimensional paper art
+- **Primary Competencies:** `paper-crafts`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Delicate lace making
+- **Slug:** `delicate-lace-making`
+- **Description:** Create intricate lace using bobbin or needle lace techniques
+- **Primary Competencies:** `lace-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Drafting custom sewing patterns
+- **Slug:** `drafting-custom-sewing-patterns`
+- **Description:** Create original patterns for garments and projects from measurements
+- **Primary Competencies:** `pattern-making`
+- **Supporting Competencies:** `sewing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Glass blowing and sculptural glass
+- **Slug:** `glass-blowing-sculptural-glass`
+- **Description:** Shape molten glass into vessels and artistic forms
+- **Primary Competencies:** `glass-blowing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Glazing and finishing ceramic pieces
+- **Slug:** `glazing-finishing-ceramic-pieces`
+- **Description:** Apply glazes and surface treatments to pottery for beautiful finished pieces
+- **Primary Competencies:** `ceramic-glazing`
+- **Supporting Competencies:** `pottery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Hand-building ceramic forms
+- **Slug:** `hand-building-ceramic-forms`
+- **Description:** Create pottery using pinch, coil, and slab techniques
+- **Primary Competencies:** `hand-building-pottery`
+- **Supporting Competencies:** `pottery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Handmade greeting cards
+- **Slug:** `handmade-greeting-cards`
+- **Description:** Design and craft personalized cards for any occasion
+- **Primary Competencies:** `card-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Handmade jewelry design and assembly
+- **Slug:** `handmade-jewelry-design-assembly`
+- **Description:** Create original jewelry using various materials and techniques
+- **Primary Competencies:** `jewelry-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Hooked rugs and wall hangings
+- **Slug:** `hooked-rugs-wall-hangings`
+- **Description:** Create textured rugs by hooking yarn or fabric strips through backing
+- **Primary Competencies:** `rug-hooking`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Knitting garments and accessories
+- **Slug:** `knitting-garments-accessories`
+- **Description:** Create sweaters, scarves, and other knitted items using various stitches and techniques
+- **Primary Competencies:** `knitting`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Leatherworking and leather goods
+- **Slug:** `leatherworking-leather-goods`
+- **Description:** Craft wallets, bags, and accessories from leather using traditional techniques
+- **Primary Competencies:** `leatherworking`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Macramé wall hangings and plant hangers
+- **Slug:** `macrame-wall-hangings-plant-hangers`
+- **Description:** Create decorative knotted items using macramé techniques
+- **Primary Competencies:** `macrame`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Mosaic art and design
+- **Slug:** `mosaic-art-design`
+- **Description:** Create decorative mosaics using tile, glass, and found materials
+- **Primary Competencies:** `mosaic-art`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Natural fiber dyeing
+- **Slug:** `natural-fiber-dyeing`
+- **Description:** Dye yarn and fabric using natural and synthetic dyes
+- **Primary Competencies:** `fiber-dyeing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Needle felting sculptures and decorations
+- **Slug:** `needle-felting-sculptures-decorations`
+- **Description:** Shape wool into dimensional forms using felting needles
+- **Primary Competencies:** `needle-felting`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Needlepoint canvas work
+- **Slug:** `needlepoint-canvas-work`
+- **Description:** Stitch decorative designs on canvas using needlepoint techniques
+- **Primary Competencies:** `needlepoint`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Origami folding and paper sculpture
+- **Slug:** `origami-folding-paper-sculpture`
+- **Description:** Create intricate folded paper designs from simple to complex
+- **Primary Competencies:** `origami`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Polymer clay sculpture and jewelry
+- **Slug:** `polymer-clay-sculpture-jewelry`
+- **Description:** Sculpt miniatures, beads, and decorative items from polymer clay
+- **Primary Competencies:** `polymer-clay`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Resin art and jewelry
+- **Slug:** `resin-art-jewelry`
+- **Description:** Create jewelry, coasters, and art using epoxy resin
+- **Primary Competencies:** `resin-crafts`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Sewing clothing and home goods
+- **Slug:** `sewing-clothing-home-goods`
+- **Description:** Use a sewing machine to create garments, curtains, and fabric items
+- **Primary Competencies:** `sewing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Smocking and decorative gathering
+- **Slug:** `smocking-decorative-gathering`
+- **Description:** Create textured, gathered fabric designs through smocking stitches
+- **Primary Competencies:** `smocking`
+- **Supporting Competencies:** `embroidery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Spinning yarn from fiber
+- **Slug:** `spinning-yarn-from-fiber`
+- **Description:** Transform raw wool and fiber into handspun yarn using a spinning wheel or spindle
+- **Primary Competencies:** `fiber-spinning`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Stained glass window art
+- **Slug:** `stained-glass-window-art`
+- **Description:** Cut, foil, and solder glass pieces into decorative stained glass panels
+- **Primary Competencies:** `stained-glass`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Tailoring and fitting custom garments
+- **Slug:** `tailoring-fitting-custom-garments`
+- **Description:** Alter and construct well-fitted clothing with professional finishing
+- **Primary Competencies:** `tailoring`
+- **Supporting Competencies:** `sewing`, `pattern-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Tatting lace with shuttle or needle
+- **Slug:** `tatting-lace-shuttle-needle`
+- **Description:** Make delicate tatted lace edgings and doilies
+- **Primary Competencies:** `tatting`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Throwing pottery on the wheel
+- **Slug:** `throwing-pottery-on-wheel`
+- **Description:** Center clay and create symmetrical forms on the pottery wheel
+- **Primary Competencies:** `wheel-throwing`
+- **Supporting Competencies:** `pottery`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Tie-dye patterns and techniques
+- **Slug:** `tie-dye-patterns-techniques`
+- **Description:** Create colorful tie-dye designs on fabric using folding and binding
+- **Primary Competencies:** `tie-dye`
+- **Supporting Competencies:** `fiber-dyeing`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Weaving fabric on a loom
+- **Slug:** `weaving-fabric-on-loom`
+- **Description:** Create woven textiles using various loom types and weaving patterns
+- **Primary Competencies:** `weaving`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Weaving functional baskets
+- **Slug:** `weaving-functional-baskets`
+- **Description:** Create woven baskets using natural materials and traditional techniques
+- **Primary Competencies:** `basket-weaving`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Weaving pictorial tapestries
+- **Slug:** `weaving-pictorial-tapestries`
+- **Description:** Create images and designs through tapestry weaving techniques
+- **Primary Competencies:** `tapestry-weaving`
+- **Supporting Competencies:** `weaving`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Wet felting sculptural objects
+- **Slug:** `wet-felting-sculptural-objects`
+- **Description:** Create felted fabric and three-dimensional forms through wet felting
+- **Primary Competencies:** `felting`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Whittling small wood sculptures
+- **Slug:** `whittling-small-wood-sculptures`
+- **Description:** Create simple carved objects using just a knife and wood
+- **Primary Competencies:** `whittling`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Wire-wrapped jewelry and gemstone settings
+- **Slug:** `wire-wrapped-jewelry-gemstone-settings`
+- **Description:** Wrap wire to create pendants, rings, and stone settings
+- **Primary Competencies:** `wire-wrapping`
+- **Supporting Competencies:** `jewelry-making`
+- **Source File:** 016-fiber-arts-crafts.json
+
+### Woodcarving decorative and functional objects
+- **Slug:** `woodcarving-decorative-functional-objects`
+- **Description:** Carve detailed designs and objects from wood using chisels and knives
+- **Primary Competencies:** `woodcarving`
+- **Source File:** 016-fiber-arts-crafts.json
 
 ---
 
@@ -5223,6 +5802,470 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `mocha`
 - **Supporting Competencies:** `vuejs`, `javascript`
 - **Source File:** 001-programming.json
+
+---
+
+## theater
+
+### Auditioning successfully for theater roles
+- **Slug:** `auditioning-successfully-theater-roles`
+- **Description:** Prepare audition materials, perform confidently, and showcase your strengths to directors
+- **Primary Competencies:** `audition-technique`
+- **Supporting Competencies:** `acting`, `monologue-performance`
+- **Source File:** 018-theater.json
+
+### Bringing puppets to life through performance
+- **Slug:** `bringing-puppets-to-life-through-performance`
+- **Description:** Master puppet manipulation, character voices, and storytelling through puppetry
+- **Primary Competencies:** `puppetry`
+- **Supporting Competencies:** `voice-acting`
+- **Source File:** 018-theater.json
+
+### Character transformation through stage makeup
+- **Slug:** `character-transformation-stage-makeup`
+- **Description:** Apply theatrical makeup to create characters, ages, and special effects for the stage
+- **Primary Competencies:** `stage-makeup`
+- **Source File:** 018-theater.json
+
+### Choreographing and performing stage combat
+- **Slug:** `choreographing-performing-stage-combat`
+- **Description:** Learn safe, realistic fight choreography for theatrical productions
+- **Primary Competencies:** `stage-combat`
+- **Supporting Competencies:** `stage-acting`
+- **Source File:** 018-theater.json
+
+### Crafting stage props and practical effects
+- **Slug:** `crafting-stage-props-practical-effects`
+- **Description:** Build functional and decorative props that support theatrical storytelling
+- **Primary Competencies:** `props-making`
+- **Source File:** 018-theater.json
+
+### Creating characters for voice acting
+- **Slug:** `creating-characters-for-voice-acting`
+- **Description:** Master vocal techniques, character voices, and microphone performance for animation and audiobooks
+- **Primary Competencies:** `voice-acting`
+- **Supporting Competencies:** `acting`
+- **Source File:** 018-theater.json
+
+### Creating theatrical costumes
+- **Slug:** `creating-theatrical-costumes`
+- **Description:** Design and construct costumes that enhance character and support the production's vision
+- **Primary Competencies:** `costume-design`
+- **Source File:** 018-theater.json
+
+### Designing immersive stage environments
+- **Slug:** `designing-immersive-stage-environments`
+- **Description:** Create scenic designs that support storytelling and bring productions to life
+- **Primary Competencies:** `set-design`
+- **Source File:** 018-theater.json
+
+### Directing theatrical productions
+- **Slug:** `directing-theatrical-productions`
+- **Description:** Lead actors, collaborate with designers, and realize a creative vision for the stage
+- **Primary Competencies:** `theater-directing`
+- **Source File:** 018-theater.json
+
+### Emotional depth with method acting
+- **Slug:** `emotional-depth-with-method-acting`
+- **Description:** Access authentic emotions and create believable performances using method acting techniques
+- **Primary Competencies:** `method-acting`
+- **Supporting Competencies:** `acting`
+- **Source File:** 018-theater.json
+
+### Integrated theatrical production design
+- **Slug:** `integrated-theatrical-production-design`
+- **Description:** Coordinate set, lighting, and costume design for cohesive theatrical productions
+- **Primary Competencies:** `set-design`
+- **Supporting Competencies:** `lighting-design`, `costume-design`
+- **Source File:** 018-theater.json
+
+### Lighting design for theatrical productions
+- **Slug:** `lighting-design-theatrical-productions`
+- **Description:** Use lighting to create atmosphere, focus attention, and enhance theatrical storytelling
+- **Primary Competencies:** `lighting-design`
+- **Source File:** 018-theater.json
+
+### Managing theatrical productions
+- **Slug:** `managing-theatrical-productions`
+- **Description:** Coordinate rehearsals, manage backstage operations, and ensure smooth show execution
+- **Primary Competencies:** `stage-management`
+- **Source File:** 018-theater.json
+
+### Performing in musical theater productions
+- **Slug:** `performing-in-musical-theater-productions`
+- **Description:** Combine acting, singing, and dancing to perform in musical theater shows
+- **Primary Competencies:** `musical-theater`
+- **Supporting Competencies:** `stage-acting`
+- **Source File:** 018-theater.json
+
+### Performing on stage with confidence
+- **Slug:** `performing-on-stage-with-confidence`
+- **Description:** Develop stage presence, character work, and physical technique for theatrical performance
+- **Primary Competencies:** `stage-acting`
+- **Supporting Competencies:** `acting`
+- **Source File:** 018-theater.json
+
+### Performing powerful monologues
+- **Slug:** `performing-powerful-monologues`
+- **Description:** Master solo performance techniques for dramatic and comedic monologues
+- **Primary Competencies:** `monologue-performance`
+- **Supporting Competencies:** `acting`
+- **Source File:** 018-theater.json
+
+### Physical storytelling through mime
+- **Slug:** `physical-storytelling-through-mime`
+- **Description:** Express narratives and emotions using only physical movement and facial expressions
+- **Primary Competencies:** `mime`
+- **Source File:** 018-theater.json
+
+### Sound design for live theater
+- **Slug:** `sound-design-live-theater`
+- **Description:** Create soundscapes, music, and audio effects that enhance theatrical productions
+- **Primary Competencies:** `sound-design`
+- **Source File:** 018-theater.json
+
+### Spontaneous performance through improvisation
+- **Slug:** `spontaneous-performance-through-improvisation`
+- **Description:** Learn to create unscripted scenes, develop characters on the spot, and build comedy through improv
+- **Primary Competencies:** `improvisation`
+- **Supporting Competencies:** `acting`
+- **Source File:** 018-theater.json
+
+### Writing and performing stand-up comedy
+- **Slug:** `writing-performing-standup-comedy`
+- **Description:** Craft original comedy material, develop stage presence, and perform stand-up sets
+- **Primary Competencies:** `stand-up-comedy`
+- **Source File:** 018-theater.json
+
+---
+
+## visual-arts
+
+### Abstract art exploration and expression
+- **Slug:** `abstract-art-exploration-expression`
+- **Description:** Create non-representational art using color, form, and gesture
+- **Primary Competencies:** `abstract-art`
+- **Source File:** 014-visual-arts.json
+
+### Acrylic painting versatility and techniques
+- **Slug:** `acrylic-painting-versatility-techniques`
+- **Description:** Explore acrylic's fast-drying versatility for various painting styles
+- **Primary Competencies:** `acrylic-painting`
+- **Source File:** 014-visual-arts.json
+
+### Anatomy for figure artists
+- **Slug:** `anatomy-for-figure-artists`
+- **Description:** Study skeletal and muscular structure to draw and paint the human form
+- **Primary Competencies:** `anatomy-for-artists`
+- **Source File:** 014-visual-arts.json
+
+### Calligraphy and decorative lettering
+- **Slug:** `calligraphy-decorative-lettering`
+- **Description:** Create beautiful letterforms using traditional and modern calligraphy
+- **Primary Competencies:** `calligraphy`
+- **Source File:** 014-visual-arts.json
+
+### Caricature and exaggerated portraiture
+- **Slug:** `caricature-exaggerated-portraiture`
+- **Description:** Create humorous, exaggerated portraits that capture personality
+- **Primary Competencies:** `caricature`
+- **Source File:** 014-visual-arts.json
+
+### Character design from concept to final
+- **Slug:** `character-design-concept-final`
+- **Description:** Develop memorable characters with personality and visual appeal
+- **Primary Competencies:** `character-design`
+- **Source File:** 014-visual-arts.json
+
+### Collage composition and techniques
+- **Slug:** `collage-composition-techniques`
+- **Description:** Create art by assembling and layering cut paper and found materials
+- **Primary Competencies:** `collage`
+- **Source File:** 014-visual-arts.json
+
+### Color theory for artists
+- **Slug:** `color-theory-for-artists`
+- **Description:** Understand color relationships, harmony, and emotional impact in art
+- **Primary Competencies:** `color-theory`
+- **Source File:** 014-visual-arts.json
+
+### Colored pencil rendering and detail
+- **Slug:** `colored-pencil-rendering-detail`
+- **Description:** Build rich color and fine detail through layered colored pencil
+- **Primary Competencies:** `colored-pencil`
+- **Source File:** 014-visual-arts.json
+
+### Comic book art and sequential storytelling
+- **Slug:** `comic-book-art-sequential-storytelling`
+- **Description:** Create compelling comic pages with panel composition and pacing
+- **Primary Competencies:** `comic-art`
+- **Source File:** 014-visual-arts.json
+
+### Concept art and character design with Procreate
+- **Slug:** `concept-art-character-design-procreate`
+- **Description:** Design characters and environments for games and film using Procreate
+- **Primary Competencies:** `procreate`
+- **Supporting Competencies:** `concept-art`, `character-design`
+- **Source File:** 014-visual-arts.json
+
+### Concept art for entertainment
+- **Slug:** `concept-art-entertainment`
+- **Description:** Design visual concepts for games, films, and animation production
+- **Primary Competencies:** `concept-art`
+- **Source File:** 014-visual-arts.json
+
+### Design sketching and concepting with Concepts
+- **Slug:** `design-sketching-concepting-concepts`
+- **Description:** Develop design ideas and concepts using the Concepts app's infinite canvas
+- **Primary Competencies:** `concepts-app`
+- **Supporting Competencies:** `sketching`, `concept-art`
+- **Source File:** 014-visual-arts.json
+
+### Digital comics and manga with MediBang Paint
+- **Slug:** `digital-comics-manga-medibang-paint`
+- **Description:** Create comic panels and manga pages using MediBang Paint's specialized tools
+- **Primary Competencies:** `medibang-paint`
+- **Supporting Competencies:** `comic-art`, `manga-art`
+- **Source File:** 014-visual-arts.json
+
+### Digital illustration with FireAlpaca
+- **Slug:** `digital-illustration-firealpaca`
+- **Description:** Create vibrant digital artwork using FireAlpaca's accessible tools
+- **Primary Competencies:** `firealpaca`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Digital painting with Krita
+- **Slug:** `digital-painting-krita`
+- **Description:** Create professional digital artwork using Krita's powerful painting tools
+- **Primary Competencies:** `krita`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Digital painting with natural media in Corel Painter
+- **Slug:** `digital-painting-natural-media-corel-painter`
+- **Description:** Simulate traditional painting techniques using Corel Painter's realistic brushes
+- **Primary Competencies:** `corel-painter`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Digital portrait illustration with Procreate
+- **Slug:** `digital-portrait-illustration-procreate`
+- **Description:** Create expressive digital portraits using Procreate's brushes and layering
+- **Primary Competencies:** `procreate`
+- **Supporting Competencies:** `digital-illustration`, `portrait-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Dramatic charcoal drawing
+- **Slug:** `dramatic-charcoal-drawing`
+- **Description:** Develop rich values and atmospheric effects with charcoal
+- **Primary Competencies:** `charcoal-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Drawing the human figure
+- **Slug:** `drawing-human-figure`
+- **Description:** Capture human proportions, anatomy, and movement through figure drawing
+- **Primary Competencies:** `figure-drawing`
+- **Supporting Competencies:** `anatomy-for-artists`
+- **Source File:** 014-visual-arts.json
+
+### Etching and intaglio printmaking
+- **Slug:** `etching-intaglio-printmaking`
+- **Description:** Create detailed prints through acid etching on metal plates
+- **Primary Competencies:** `etching`
+- **Supporting Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
+
+### Expressive digital painting with ArtRage
+- **Slug:** `expressive-digital-painting-artrage`
+- **Description:** Create textured digital art with ArtRage's natural painting simulation
+- **Primary Competencies:** `artrage`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Expressive ink drawing
+- **Slug:** `expressive-ink-drawing`
+- **Description:** Create bold, permanent line work and washes with ink
+- **Primary Competencies:** `ink-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Foundational drawing skills
+- **Slug:** `foundational-drawing-skills`
+- **Description:** Develop observation, line work, and basic drawing techniques
+- **Primary Competencies:** `drawing`
+- **Source File:** 014-visual-arts.json
+
+### Gesture drawing for movement and energy
+- **Slug:** `gesture-drawing-movement-energy`
+- **Description:** Capture action, flow, and life force through quick gesture sketches
+- **Primary Competencies:** `gesture-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Gouache painting for illustration
+- **Slug:** `gouache-painting-illustration`
+- **Description:** Create flat, vibrant artwork using opaque gouache paint
+- **Primary Competencies:** `gouache-painting`
+- **Source File:** 014-visual-arts.json
+
+### Graphite drawing and shading
+- **Slug:** `graphite-drawing-shading`
+- **Description:** Master value, form, and texture using graphite pencils
+- **Primary Competencies:** `graphite-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Illustration for books and editorial
+- **Slug:** `illustration-books-editorial`
+- **Description:** Create narrative illustrations for publishing and media
+- **Primary Competencies:** `illustration`
+- **Source File:** 014-visual-arts.json
+
+### Landscape painting outdoors and in studio
+- **Slug:** `landscape-painting-outdoors-studio`
+- **Description:** Capture natural scenery with light, atmosphere, and composition
+- **Primary Competencies:** `landscape-painting`
+- **Source File:** 014-visual-arts.json
+
+### Large-scale mural painting
+- **Slug:** `large-scale-mural-painting`
+- **Description:** Design and execute public art murals on walls and buildings
+- **Primary Competencies:** `mural-painting`
+- **Source File:** 014-visual-arts.json
+
+### Linocut relief printing
+- **Slug:** `linocut-relief-printing`
+- **Description:** Carve and print graphic images using linoleum blocks
+- **Primary Competencies:** `linocut`
+- **Supporting Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
+
+### Manga art and Japanese comic techniques
+- **Slug:** `manga-art-japanese-comic-techniques`
+- **Description:** Draw manga characters and stories using authentic Japanese techniques
+- **Primary Competencies:** `manga-art`
+- **Source File:** 014-visual-arts.json
+
+### Mixed media art exploration
+- **Slug:** `mixed-media-art-exploration`
+- **Description:** Combine multiple materials and techniques for rich, layered artwork
+- **Primary Competencies:** `mixed-media-art`
+- **Source File:** 014-visual-arts.json
+
+### Mobile digital painting with Infinite Painter
+- **Slug:** `mobile-digital-painting-infinite-painter`
+- **Description:** Create detailed digital art on mobile devices using Infinite Painter
+- **Primary Competencies:** `infinite-painter`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Monoprinting unique artworks
+- **Slug:** `monoprinting-unique-artworks`
+- **Description:** Create one-of-a-kind prints through direct painting on plates
+- **Primary Competencies:** `monoprint`
+- **Supporting Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
+
+### Oil painting from classical to contemporary
+- **Slug:** `oil-painting-classical-contemporary`
+- **Description:** Develop rich color and texture using traditional oil painting methods
+- **Primary Competencies:** `oil-painting`
+- **Source File:** 014-visual-arts.json
+
+### Painting fundamentals and color mixing
+- **Slug:** `painting-fundamentals-color-mixing`
+- **Description:** Learn brushwork, color theory, and essential painting techniques
+- **Primary Competencies:** `painting`
+- **Supporting Competencies:** `color-theory`
+- **Source File:** 014-visual-arts.json
+
+### Perspective drawing for spatial depth
+- **Slug:** `perspective-drawing-spatial-depth`
+- **Description:** Create convincing three-dimensional space using perspective principles
+- **Primary Competencies:** `perspective-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Plein air painting from observation
+- **Slug:** `plein-air-painting-observation`
+- **Description:** Paint landscapes outdoors, capturing light and atmosphere directly from nature
+- **Primary Competencies:** `plein-air-painting`
+- **Supporting Competencies:** `landscape-painting`
+- **Source File:** 014-visual-arts.json
+
+### Portrait drawing and likeness
+- **Slug:** `portrait-drawing-likeness`
+- **Description:** Capture facial features, expressions, and personality in portraits
+- **Primary Competencies:** `portrait-drawing`
+- **Source File:** 014-visual-arts.json
+
+### Printmaking techniques and editions
+- **Slug:** `printmaking-techniques-editions`
+- **Description:** Create multiple original artworks through relief and intaglio printing
+- **Primary Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
+
+### Professional digital art with ArtStudio Pro
+- **Slug:** `professional-digital-art-artstudio-pro`
+- **Description:** Create polished illustrations using ArtStudio Pro's advanced features
+- **Primary Competencies:** `artstudio-pro`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Professional digital illustration
+- **Slug:** `professional-digital-illustration`
+- **Description:** Create commercial artwork using digital tools and techniques
+- **Primary Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Screen printing posters and textiles
+- **Slug:** `screen-printing-posters-textiles`
+- **Description:** Print bold graphics on paper and fabric using screen printing
+- **Primary Competencies:** `screen-printing`
+- **Supporting Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
+
+### Sketching for ideation and exploration
+- **Slug:** `sketching-ideation-exploration`
+- **Description:** Use quick sketches to develop ideas and visual thinking
+- **Primary Competencies:** `sketching`
+- **Source File:** 014-visual-arts.json
+
+### Soft pastel art techniques
+- **Slug:** `soft-pastel-art-techniques`
+- **Description:** Create luminous, painterly effects using soft pastels
+- **Primary Competencies:** `pastel-art`
+- **Source File:** 014-visual-arts.json
+
+### Still life composition and painting
+- **Slug:** `still-life-composition-painting`
+- **Description:** Arrange and paint objects to study form, color, and light
+- **Primary Competencies:** `still-life`
+- **Supporting Competencies:** `composition`
+- **Source File:** 014-visual-arts.json
+
+### Visual composition and design principles
+- **Slug:** `visual-composition-design-principles`
+- **Description:** Arrange elements effectively using balance, rhythm, and focal points
+- **Primary Competencies:** `composition`
+- **Source File:** 014-visual-arts.json
+
+### Watercolor painting techniques
+- **Slug:** `watercolor-painting-techniques`
+- **Description:** Master washes, wet-on-wet, and transparent layering in watercolor
+- **Primary Competencies:** `watercolor-painting`
+- **Source File:** 014-visual-arts.json
+
+### Watercolor-style digital art with Rebelle
+- **Slug:** `watercolor-style-digital-art-rebelle`
+- **Description:** Paint with realistic watercolor and acrylic simulation in Rebelle
+- **Primary Competencies:** `rebelle`
+- **Supporting Competencies:** `digital-illustration`
+- **Source File:** 014-visual-arts.json
+
+### Woodcut relief printing
+- **Slug:** `woodcut-relief-printing`
+- **Description:** Carve traditional woodblocks for bold, graphic prints
+- **Primary Competencies:** `woodcut`
+- **Supporting Competencies:** `printmaking`
+- **Source File:** 014-visual-arts.json
 
 ---
 

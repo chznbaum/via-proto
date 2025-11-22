@@ -1,0 +1,596 @@
+{
+  "topics": [
+    {
+      "name": "Classical ballet technique and performance",
+      "slug": "classical-ballet-technique-performance",
+      "description": "Master ballet positions, movements, and grace through classical training",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "ballet",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Expressive contemporary dance",
+      "slug": "expressive-contemporary-dance",
+      "description": "Combine technical precision with emotional expression in contemporary dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "contemporary-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Modern dance fundamentals",
+      "slug": "modern-dance-fundamentals",
+      "description": "Learn groundwork, contraction, and release techniques of modern dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "modern-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Energetic jazz dance performance",
+      "slug": "energetic-jazz-dance-performance",
+      "description": "Develop rhythm, isolations, and showmanship through jazz dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "jazz-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Rhythmic tap dance",
+      "slug": "rhythmic-tap-dance",
+      "description": "Create percussion with your feet through tap dance technique",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "tap-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Hip hop dance foundations",
+      "slug": "hip-hop-dance-foundations",
+      "description": "Learn foundational hip hop grooves, bounce, and freestyle techniques",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "hip-hop-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Breaking fundamentals and power moves",
+      "slug": "breaking-fundamentals-power-moves",
+      "description": "Master toprock, footwork, freezes, and power moves in breaking",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "breaking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hip-hop-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Popping and animation dance",
+      "slug": "popping-animation-dance",
+      "description": "Create robotic and fluid illusions through popping technique",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "popping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hip-hop-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Locking dance and funk styles",
+      "slug": "locking-dance-funk-styles",
+      "description": "Learn funky locking moves, points, and comic performance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "locking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hip-hop-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "House dance and footwork",
+      "slug": "house-dance-footwork",
+      "description": "Develop intricate footwork and jacking technique for house music",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "house-dance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "hip-hop-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ballroom dancing for social and competition",
+      "slug": "ballroom-dancing-social-competition",
+      "description": "Learn partner dancing, frame, and movement across ballroom styles",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Elegant waltz technique",
+      "slug": "elegant-waltz-technique",
+      "description": "Master the rise and fall, frame, and rotation of waltz",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "waltz",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Passionate tango dance",
+      "slug": "passionate-tango-dance",
+      "description": "Develop dramatic connection, staccato movement, and tango styling",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "tango",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Smooth foxtrot dancing",
+      "slug": "smooth-foxtrot-dancing",
+      "description": "Glide across the floor with foxtrot's flowing continuous movement",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "foxtrot",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fast-paced quickstep",
+      "slug": "fast-paced-quickstep",
+      "description": "Master quick, light footwork and hops in quickstep dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "quickstep",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Viennese waltz technique",
+      "slug": "viennese-waltz-technique",
+      "description": "Spin continuously with speed and elegance in Viennese waltz",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "viennese-waltz",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Social salsa dancing",
+      "slug": "social-salsa-dancing",
+      "description": "Learn salsa timing, partner work, and improvisation for social dancing",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "salsa",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Romantic bachata dance",
+      "slug": "romantic-bachata-dance",
+      "description": "Develop smooth hip movement and close connection in bachata",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "bachata",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Energetic merengue dancing",
+      "slug": "energetic-merengue-dancing",
+      "description": "Master simple, fast-paced merengue for social dancing",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "merengue",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brazilian samba technique",
+      "slug": "brazilian-samba-technique",
+      "description": "Learn bouncing action, hip movement, and samba rhythm",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "samba",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rumba dance and Cuban motion",
+      "slug": "rumba-dance-cuban-motion",
+      "description": "Develop slow, sensual movement and Cuban hip action in rumba",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "rumba",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Playful cha-cha dancing",
+      "slug": "playful-cha-cha-dancing",
+      "description": "Master the characteristic cha-cha-cha rhythm and cheeky styling",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "cha-cha",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "High-energy jive dancing",
+      "slug": "high-energy-jive-dancing",
+      "description": "Develop fast kicks, flicks, and bouncy jive technique",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "jive",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Dramatic paso doble",
+      "slug": "dramatic-paso-doble",
+      "description": "Perform powerful, theatrical paso doble with matador imagery",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "paso-doble",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Swing dance fundamentals",
+      "slug": "swing-dance-fundamentals",
+      "description": "Learn triple steps, rock steps, and swing-out basics",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "swing-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Lindy hop dancing",
+      "slug": "lindy-hop-dancing",
+      "description": "Master swingouts, aerials, and authentic lindy hop style",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "lindy-hop",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "swing-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "West Coast swing technique",
+      "slug": "west-coast-swing-technique",
+      "description": "Develop smooth, elastic connection in the West Coast swing slot",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "west-coast-swing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "swing-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "East Coast swing for social dancing",
+      "slug": "east-coast-swing-social-dancing",
+      "description": "Learn versatile East Coast swing for dancing to various music",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "east-coast-swing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "swing-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Vintage charleston dance",
+      "slug": "vintage-charleston-dance",
+      "description": "Perform energetic kicks and swivels in 1920s charleston style",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "charleston",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "swing-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Argentine tango connection and improvisation",
+      "slug": "argentine-tango-connection-improvisation",
+      "description": "Develop close embrace, musicality, and improvisation in Argentine tango",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "argentine-tango",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Irish step dancing",
+      "slug": "irish-step-dancing",
+      "description": "Master rapid footwork and upright posture of Irish dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "irish-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Passionate flamenco dance",
+      "slug": "passionate-flamenco-dance",
+      "description": "Express emotion through footwork, arms, and flamenco compás",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "flamenco",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Expressive belly dance",
+      "slug": "expressive-belly-dance",
+      "description": "Develop fluid hip movements, shimmies, and Middle Eastern dance technique",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "belly-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Bollywood dance and storytelling",
+      "slug": "bollywood-dance-storytelling",
+      "description": "Combine classical and contemporary Indian moves for Bollywood performance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "bollywood-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Classical bharatanatyam technique",
+      "slug": "classical-bharatanatyam-technique",
+      "description": "Master precise footwork, hand gestures, and expressions in bharatanatyam",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "bharatanatyam",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Kathak rhythmic footwork and spins",
+      "slug": "kathak-rhythmic-footwork-spins",
+      "description": "Develop complex rhythmic patterns and graceful turns in kathak dance",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "kathak",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Hawaiian hula storytelling",
+      "slug": "hawaiian-hula-storytelling",
+      "description": "Express stories through graceful hula movements and hand gestures",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "hula",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Pole dancing for fitness and artistry",
+      "slug": "pole-dancing-fitness-artistry",
+      "description": "Build strength and grace through pole dancing spins and tricks",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "pole-dancing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Aerial dance and silk technique",
+      "slug": "aerial-dance-silk-technique",
+      "description": "Combine dance with aerial silks, hoops, and suspended movement",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "aerial-dance",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Emotional lyrical dance performance",
+      "slug": "emotional-lyrical-dance-performance",
+      "description": "Blend ballet and jazz to express emotion and tell stories through movement",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "lyrical-dance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballet",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "jazz-dance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating original dance choreography",
+      "slug": "creating-original-dance-choreography",
+      "description": "Design movement sequences, structure pieces, and develop choreographic voice",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "choreography",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Choreographing competitive ballroom routines",
+      "slug": "choreographing-competitive-ballroom-routines",
+      "description": "Create technical and artistic ballroom dance routines for competition",
+      "category_slug": "dance",
+      "competencies": [
+        {
+          "competency_slug": "ballroom-choreography",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ballroom-dance",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "choreography",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

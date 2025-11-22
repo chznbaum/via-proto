@@ -1,0 +1,292 @@
+{
+  "topics": [
+    {
+      "name": "Performing on stage with confidence",
+      "slug": "performing-on-stage-with-confidence",
+      "description": "Develop stage presence, character work, and physical technique for theatrical performance",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "stage-acting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creating characters for voice acting",
+      "slug": "creating-characters-for-voice-acting",
+      "description": "Master vocal techniques, character voices, and microphone performance for animation and audiobooks",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "voice-acting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Spontaneous performance through improvisation",
+      "slug": "spontaneous-performance-through-improvisation",
+      "description": "Learn to create unscripted scenes, develop characters on the spot, and build comedy through improv",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Emotional depth with method acting",
+      "slug": "emotional-depth-with-method-acting",
+      "description": "Access authentic emotions and create believable performances using method acting techniques",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "method-acting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Performing in musical theater productions",
+      "slug": "performing-in-musical-theater-productions",
+      "description": "Combine acting, singing, and dancing to perform in musical theater shows",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "musical-theater",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stage-acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Choreographing and performing stage combat",
+      "slug": "choreographing-performing-stage-combat",
+      "description": "Learn safe, realistic fight choreography for theatrical productions",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "stage-combat",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "stage-acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Physical storytelling through mime",
+      "slug": "physical-storytelling-through-mime",
+      "description": "Express narratives and emotions using only physical movement and facial expressions",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "mime",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Bringing puppets to life through performance",
+      "slug": "bringing-puppets-to-life-through-performance",
+      "description": "Master puppet manipulation, character voices, and storytelling through puppetry",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "puppetry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "voice-acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing and performing stand-up comedy",
+      "slug": "writing-performing-standup-comedy",
+      "description": "Craft original comedy material, develop stage presence, and perform stand-up sets",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "stand-up-comedy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Directing theatrical productions",
+      "slug": "directing-theatrical-productions",
+      "description": "Lead actors, collaborate with designers, and realize a creative vision for the stage",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "theater-directing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Managing theatrical productions",
+      "slug": "managing-theatrical-productions",
+      "description": "Coordinate rehearsals, manage backstage operations, and ensure smooth show execution",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "stage-management",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Designing immersive stage environments",
+      "slug": "designing-immersive-stage-environments",
+      "description": "Create scenic designs that support storytelling and bring productions to life",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "set-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating theatrical costumes",
+      "slug": "creating-theatrical-costumes",
+      "description": "Design and construct costumes that enhance character and support the production's vision",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "costume-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Lighting design for theatrical productions",
+      "slug": "lighting-design-theatrical-productions",
+      "description": "Use lighting to create atmosphere, focus attention, and enhance theatrical storytelling",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "lighting-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sound design for live theater",
+      "slug": "sound-design-live-theater",
+      "description": "Create soundscapes, music, and audio effects that enhance theatrical productions",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "sound-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Crafting stage props and practical effects",
+      "slug": "crafting-stage-props-practical-effects",
+      "description": "Build functional and decorative props that support theatrical storytelling",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "props-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Character transformation through stage makeup",
+      "slug": "character-transformation-stage-makeup",
+      "description": "Apply theatrical makeup to create characters, ages, and special effects for the stage",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "stage-makeup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Auditioning successfully for theater roles",
+      "slug": "auditioning-successfully-theater-roles",
+      "description": "Prepare audition materials, perform confidently, and showcase your strengths to directors",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "audition-technique",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "monologue-performance",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Performing powerful monologues",
+      "slug": "performing-powerful-monologues",
+      "description": "Master solo performance techniques for dramatic and comedic monologues",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "monologue-performance",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "acting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Integrated theatrical production design",
+      "slug": "integrated-theatrical-production-design",
+      "description": "Coordinate set, lighting, and costume design for cohesive theatrical productions",
+      "category_slug": "theater",
+      "competencies": [
+        {
+          "competency_slug": "set-design",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "lighting-design",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "costume-design",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

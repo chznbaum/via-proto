@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T20:50:48.497Z
-**Total Topics:** 877
+**Generated:** 2025-11-22T21:08:29.014Z
+**Total Topics:** 1037
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -40,11 +40,11 @@ Run `npm run topic:coverage` to update.
 │   │   ├── Photography & Video [0 topics, 3 competencies]
 │   │   ├── Music [181 topics, 58 competencies]
 │   │   ├── Writing [95 topics, 52 competencies]
-│   │   ├── Theater [0 topics, 20 competencies]
-│   │   ├── Visual Arts [0 topics, 50 competencies]
-│   │   └── Dance [0 topics, 42 competencies]
+│   │   ├── Theater [20 topics, 20 competencies]
+│   │   ├── Visual Arts [51 topics, 50 competencies]
+│   │   └── Dance [42 topics, 42 competencies]
 │   ├── Architecture [0 topics, 7 competencies]
-│   └── Fiber Arts & Crafts [0 topics, 46 competencies]
+│   └── Fiber Arts & Crafts [47 topics, 46 competencies]
 ├── Business & Management [0 topics, 0 competencies]
 │   ├── Product & Project Management [0 topics, 11 competencies]
 │   ├── Marketing & Sales [0 topics, 18 competencies]
@@ -230,7 +230,7 @@ Run `npm run topic:coverage` to update.
 
 ### Dance
 - **Slug:** `dance`
-- **Topics:** 0
+- **Topics:** 42
 - **Competencies:** 42
 - **Parent:** creative-arts
 
@@ -272,7 +272,7 @@ Run `npm run topic:coverage` to update.
 
 ### Fiber Arts & Crafts
 - **Slug:** `fiber-arts-crafts`
-- **Topics:** 0
+- **Topics:** 47
 - **Competencies:** 46
 - **Parent:** design-creativity
 
@@ -514,7 +514,7 @@ Run `npm run topic:coverage` to update.
 
 ### Theater
 - **Slug:** `theater`
-- **Topics:** 0
+- **Topics:** 20
 - **Competencies:** 20
 - **Parent:** creative-arts
 
@@ -532,7 +532,7 @@ Run `npm run topic:coverage` to update.
 
 ### Visual Arts
 - **Slug:** `visual-arts`
-- **Topics:** 0
+- **Topics:** 51
 - **Competencies:** 50
 - **Parent:** creative-arts
 

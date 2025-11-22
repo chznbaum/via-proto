@@ -1,6 +1,6 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T20:50:38.359Z
+**Generated:** 2025-11-22T21:08:22.297Z
 **Total Competencies:** 1625
 
 This file is auto-generated for quick reference during seed expansion.

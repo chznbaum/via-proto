@@ -1,0 +1,712 @@
+{
+  "topics": [
+    {
+      "name": "Digital portrait illustration with Procreate",
+      "slug": "digital-portrait-illustration-procreate",
+      "description": "Create expressive digital portraits using Procreate's brushes and layering",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "procreate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "portrait-drawing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Concept art and character design with Procreate",
+      "slug": "concept-art-character-design-procreate",
+      "description": "Design characters and environments for games and film using Procreate",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "procreate",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "concept-art",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "character-design",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Digital painting with Krita",
+      "slug": "digital-painting-krita",
+      "description": "Create professional digital artwork using Krita's powerful painting tools",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "krita",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Digital painting with natural media in Corel Painter",
+      "slug": "digital-painting-natural-media-corel-painter",
+      "description": "Simulate traditional painting techniques using Corel Painter's realistic brushes",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "corel-painter",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Expressive digital painting with ArtRage",
+      "slug": "expressive-digital-painting-artrage",
+      "description": "Create textured digital art with ArtRage's natural painting simulation",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "artrage",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Watercolor-style digital art with Rebelle",
+      "slug": "watercolor-style-digital-art-rebelle",
+      "description": "Paint with realistic watercolor and acrylic simulation in Rebelle",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "rebelle",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Digital comics and manga with MediBang Paint",
+      "slug": "digital-comics-manga-medibang-paint",
+      "description": "Create comic panels and manga pages using MediBang Paint's specialized tools",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "medibang-paint",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "comic-art",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "manga-art",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Digital illustration with FireAlpaca",
+      "slug": "digital-illustration-firealpaca",
+      "description": "Create vibrant digital artwork using FireAlpaca's accessible tools",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "firealpaca",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Design sketching and concepting with Concepts",
+      "slug": "design-sketching-concepting-concepts",
+      "description": "Develop design ideas and concepts using the Concepts app's infinite canvas",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "concepts-app",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sketching",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "concept-art",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mobile digital painting with Infinite Painter",
+      "slug": "mobile-digital-painting-infinite-painter",
+      "description": "Create detailed digital art on mobile devices using Infinite Painter",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "infinite-painter",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Professional digital art with ArtStudio Pro",
+      "slug": "professional-digital-art-artstudio-pro",
+      "description": "Create polished illustrations using ArtStudio Pro's advanced features",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "artstudio-pro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Foundational drawing skills",
+      "slug": "foundational-drawing-skills",
+      "description": "Develop observation, line work, and basic drawing techniques",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sketching for ideation and exploration",
+      "slug": "sketching-ideation-exploration",
+      "description": "Use quick sketches to develop ideas and visual thinking",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "sketching",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Drawing the human figure",
+      "slug": "drawing-human-figure",
+      "description": "Capture human proportions, anatomy, and movement through figure drawing",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "figure-drawing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "anatomy-for-artists",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Portrait drawing and likeness",
+      "slug": "portrait-drawing-likeness",
+      "description": "Capture facial features, expressions, and personality in portraits",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "portrait-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Gesture drawing for movement and energy",
+      "slug": "gesture-drawing-movement-energy",
+      "description": "Capture action, flow, and life force through quick gesture sketches",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "gesture-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Perspective drawing for spatial depth",
+      "slug": "perspective-drawing-spatial-depth",
+      "description": "Create convincing three-dimensional space using perspective principles",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "perspective-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Painting fundamentals and color mixing",
+      "slug": "painting-fundamentals-color-mixing",
+      "description": "Learn brushwork, color theory, and essential painting techniques",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "painting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "color-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Watercolor painting techniques",
+      "slug": "watercolor-painting-techniques",
+      "description": "Master washes, wet-on-wet, and transparent layering in watercolor",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "watercolor-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Oil painting from classical to contemporary",
+      "slug": "oil-painting-classical-contemporary",
+      "description": "Develop rich color and texture using traditional oil painting methods",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "oil-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Acrylic painting versatility and techniques",
+      "slug": "acrylic-painting-versatility-techniques",
+      "description": "Explore acrylic's fast-drying versatility for various painting styles",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "acrylic-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Gouache painting for illustration",
+      "slug": "gouache-painting-illustration",
+      "description": "Create flat, vibrant artwork using opaque gouache paint",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "gouache-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Expressive ink drawing",
+      "slug": "expressive-ink-drawing",
+      "description": "Create bold, permanent line work and washes with ink",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "ink-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Dramatic charcoal drawing",
+      "slug": "dramatic-charcoal-drawing",
+      "description": "Develop rich values and atmospheric effects with charcoal",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "charcoal-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Soft pastel art techniques",
+      "slug": "soft-pastel-art-techniques",
+      "description": "Create luminous, painterly effects using soft pastels",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "pastel-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Colored pencil rendering and detail",
+      "slug": "colored-pencil-rendering-detail",
+      "description": "Build rich color and fine detail through layered colored pencil",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "colored-pencil",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Graphite drawing and shading",
+      "slug": "graphite-drawing-shading",
+      "description": "Master value, form, and texture using graphite pencils",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "graphite-drawing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Landscape painting outdoors and in studio",
+      "slug": "landscape-painting-outdoors-studio",
+      "description": "Capture natural scenery with light, atmosphere, and composition",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "landscape-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Still life composition and painting",
+      "slug": "still-life-composition-painting",
+      "description": "Arrange and paint objects to study form, color, and light",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "still-life",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "composition",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Abstract art exploration and expression",
+      "slug": "abstract-art-exploration-expression",
+      "description": "Create non-representational art using color, form, and gesture",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "abstract-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Printmaking techniques and editions",
+      "slug": "printmaking-techniques-editions",
+      "description": "Create multiple original artworks through relief and intaglio printing",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "printmaking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Screen printing posters and textiles",
+      "slug": "screen-printing-posters-textiles",
+      "description": "Print bold graphics on paper and fabric using screen printing",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "screen-printing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "printmaking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Linocut relief printing",
+      "slug": "linocut-relief-printing",
+      "description": "Carve and print graphic images using linoleum blocks",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "linocut",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "printmaking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Etching and intaglio printmaking",
+      "slug": "etching-intaglio-printmaking",
+      "description": "Create detailed prints through acid etching on metal plates",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "etching",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "printmaking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Woodcut relief printing",
+      "slug": "woodcut-relief-printing",
+      "description": "Carve traditional woodblocks for bold, graphic prints",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "woodcut",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "printmaking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Monoprinting unique artworks",
+      "slug": "monoprinting-unique-artworks",
+      "description": "Create one-of-a-kind prints through direct painting on plates",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "monoprint",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "printmaking",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Color theory for artists",
+      "slug": "color-theory-for-artists",
+      "description": "Understand color relationships, harmony, and emotional impact in art",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "color-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Visual composition and design principles",
+      "slug": "visual-composition-design-principles",
+      "description": "Arrange elements effectively using balance, rhythm, and focal points",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "composition",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Anatomy for figure artists",
+      "slug": "anatomy-for-figure-artists",
+      "description": "Study skeletal and muscular structure to draw and paint the human form",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "anatomy-for-artists",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Illustration for books and editorial",
+      "slug": "illustration-books-editorial",
+      "description": "Create narrative illustrations for publishing and media",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "illustration",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Professional digital illustration",
+      "slug": "professional-digital-illustration",
+      "description": "Create commercial artwork using digital tools and techniques",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "digital-illustration",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Concept art for entertainment",
+      "slug": "concept-art-entertainment",
+      "description": "Design visual concepts for games, films, and animation production",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "concept-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Character design from concept to final",
+      "slug": "character-design-concept-final",
+      "description": "Develop memorable characters with personality and visual appeal",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "character-design",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Comic book art and sequential storytelling",
+      "slug": "comic-book-art-sequential-storytelling",
+      "description": "Create compelling comic pages with panel composition and pacing",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "comic-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Manga art and Japanese comic techniques",
+      "slug": "manga-art-japanese-comic-techniques",
+      "description": "Draw manga characters and stories using authentic Japanese techniques",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "manga-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Caricature and exaggerated portraiture",
+      "slug": "caricature-exaggerated-portraiture",
+      "description": "Create humorous, exaggerated portraits that capture personality",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "caricature",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Calligraphy and decorative lettering",
+      "slug": "calligraphy-decorative-lettering",
+      "description": "Create beautiful letterforms using traditional and modern calligraphy",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "calligraphy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mixed media art exploration",
+      "slug": "mixed-media-art-exploration",
+      "description": "Combine multiple materials and techniques for rich, layered artwork",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "mixed-media-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Collage composition and techniques",
+      "slug": "collage-composition-techniques",
+      "description": "Create art by assembling and layering cut paper and found materials",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "collage",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Large-scale mural painting",
+      "slug": "large-scale-mural-painting",
+      "description": "Design and execute public art murals on walls and buildings",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "mural-painting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Plein air painting from observation",
+      "slug": "plein-air-painting-observation",
+      "description": "Paint landscapes outdoors, capturing light and atmosphere directly from nature",
+      "category_slug": "visual-arts",
+      "competencies": [
+        {
+          "competency_slug": "plein-air-painting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "landscape-painting",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

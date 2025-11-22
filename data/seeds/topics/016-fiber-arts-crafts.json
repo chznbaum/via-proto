@@ -1,0 +1,628 @@
+{
+  "topics": [
+    {
+      "name": "Knitting garments and accessories",
+      "slug": "knitting-garments-accessories",
+      "description": "Create sweaters, scarves, and other knitted items using various stitches and techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "knitting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Crocheting projects from patterns",
+      "slug": "crocheting-projects-from-patterns",
+      "description": "Master crochet stitches to create blankets, amigurumi, and wearables",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "crochet",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Weaving fabric on a loom",
+      "slug": "weaving-fabric-on-loom",
+      "description": "Create woven textiles using various loom types and weaving patterns",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "weaving",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Decorative embroidery and surface design",
+      "slug": "decorative-embroidery-surface-design",
+      "description": "Embellish fabric with hand embroidery stitches and decorative designs",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "embroidery",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cross-stitch pattern work",
+      "slug": "cross-stitch-pattern-work",
+      "description": "Create detailed cross-stitch designs from charts and patterns",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "cross-stitch",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Needlepoint canvas work",
+      "slug": "needlepoint-canvas-work",
+      "description": "Stitch decorative designs on canvas using needlepoint techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "needlepoint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating handmade quilts",
+      "slug": "creating-handmade-quilts",
+      "description": "Design and construct beautiful quilts from piecing to binding",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "quilting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sewing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pattern-making",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Sewing clothing and home goods",
+      "slug": "sewing-clothing-home-goods",
+      "description": "Use a sewing machine to create garments, curtains, and fabric items",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "sewing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Tailoring and fitting custom garments",
+      "slug": "tailoring-fitting-custom-garments",
+      "description": "Alter and construct well-fitted clothing with professional finishing",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "tailoring",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sewing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pattern-making",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Drafting custom sewing patterns",
+      "slug": "drafting-custom-sewing-patterns",
+      "description": "Create original patterns for garments and projects from measurements",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "pattern-making",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sewing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Spinning yarn from fiber",
+      "slug": "spinning-yarn-from-fiber",
+      "description": "Transform raw wool and fiber into handspun yarn using a spinning wheel or spindle",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "fiber-spinning",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Wet felting sculptural objects",
+      "slug": "wet-felting-sculptural-objects",
+      "description": "Create felted fabric and three-dimensional forms through wet felting",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "felting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Needle felting sculptures and decorations",
+      "slug": "needle-felting-sculptures-decorations",
+      "description": "Shape wool into dimensional forms using felting needles",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "needle-felting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Weaving pictorial tapestries",
+      "slug": "weaving-pictorial-tapestries",
+      "description": "Create images and designs through tapestry weaving techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "tapestry-weaving",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "weaving",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Macramé wall hangings and plant hangers",
+      "slug": "macrame-wall-hangings-plant-hangers",
+      "description": "Create decorative knotted items using macramé techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "macrame",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Delicate lace making",
+      "slug": "delicate-lace-making",
+      "description": "Create intricate lace using bobbin or needle lace techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "lace-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Tatting lace with shuttle or needle",
+      "slug": "tatting-lace-shuttle-needle",
+      "description": "Make delicate tatted lace edgings and doilies",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "tatting",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Hooked rugs and wall hangings",
+      "slug": "hooked-rugs-wall-hangings",
+      "description": "Create textured rugs by hooking yarn or fabric strips through backing",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "rug-hooking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Natural fiber dyeing",
+      "slug": "natural-fiber-dyeing",
+      "description": "Dye yarn and fabric using natural and synthetic dyes",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "fiber-dyeing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Custom dyed yarn for knitting projects",
+      "slug": "custom-dyed-yarn-knitting-projects",
+      "description": "Dye and knit with handpainted yarn for unique colorwork",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "fiber-dyeing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "knitting",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Batik fabric design",
+      "slug": "batik-fabric-design",
+      "description": "Create resist-dyed patterns on fabric using wax and dye",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "batik",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiber-dyeing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tie-dye patterns and techniques",
+      "slug": "tie-dye-patterns-techniques",
+      "description": "Create colorful tie-dye designs on fabric using folding and binding",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "tie-dye",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fiber-dyeing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Appliqué fabric art",
+      "slug": "applique-fabric-art",
+      "description": "Attach decorative fabric shapes to create dimensional textile art",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "applique",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sewing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Smocking and decorative gathering",
+      "slug": "smocking-decorative-gathering",
+      "description": "Create textured, gathered fabric designs through smocking stitches",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "smocking",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "embroidery",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Beaded jewelry and accessories",
+      "slug": "beaded-jewelry-accessories",
+      "description": "Design and create beaded necklaces, bracelets, and embellishments",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "beading",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Handmade jewelry design and assembly",
+      "slug": "handmade-jewelry-design-assembly",
+      "description": "Create original jewelry using various materials and techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "jewelry-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Wire-wrapped jewelry and gemstone settings",
+      "slug": "wire-wrapped-jewelry-gemstone-settings",
+      "description": "Wrap wire to create pendants, rings, and stone settings",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "wire-wrapping",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jewelry-making",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Creative scrapbooking and memory keeping",
+      "slug": "creative-scrapbooking-memory-keeping",
+      "description": "Preserve memories through decorated scrapbook pages and albums",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "scrapbooking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Handmade greeting cards",
+      "slug": "handmade-greeting-cards",
+      "description": "Design and craft personalized cards for any occasion",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "card-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Bookbinding and book arts",
+      "slug": "bookbinding-book-arts",
+      "description": "Bind handmade books, journals, and artistic book structures",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "bookbinding",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Origami folding and paper sculpture",
+      "slug": "origami-folding-paper-sculpture",
+      "description": "Create intricate folded paper designs from simple to complex",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "origami",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Decorative paper crafts",
+      "slug": "decorative-paper-crafts",
+      "description": "Make paper flowers, decorations, and dimensional paper art",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "paper-crafts",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Leatherworking and leather goods",
+      "slug": "leatherworking-leather-goods",
+      "description": "Craft wallets, bags, and accessories from leather using traditional techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "leatherworking",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Candle making and design",
+      "slug": "candle-making-design",
+      "description": "Create custom candles with various waxes, scents, and designs",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "candle-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Artisan soap making",
+      "slug": "artisan-soap-making",
+      "description": "Make handcrafted soaps using cold process, hot process, or melt-and-pour methods",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "soap-making",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Resin art and jewelry",
+      "slug": "resin-art-jewelry",
+      "description": "Create jewelry, coasters, and art using epoxy resin",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "resin-crafts",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Polymer clay sculpture and jewelry",
+      "slug": "polymer-clay-sculpture-jewelry",
+      "description": "Sculpt miniatures, beads, and decorative items from polymer clay",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "polymer-clay",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating functional pottery",
+      "slug": "creating-functional-pottery",
+      "description": "Make bowls, mugs, and vessels using hand-building and wheel-throwing",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "pottery",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Hand-building ceramic forms",
+      "slug": "hand-building-ceramic-forms",
+      "description": "Create pottery using pinch, coil, and slab techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "hand-building-pottery",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pottery",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Throwing pottery on the wheel",
+      "slug": "throwing-pottery-on-wheel",
+      "description": "Center clay and create symmetrical forms on the pottery wheel",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "wheel-throwing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pottery",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Glazing and finishing ceramic pieces",
+      "slug": "glazing-finishing-ceramic-pieces",
+      "description": "Apply glazes and surface treatments to pottery for beautiful finished pieces",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "ceramic-glazing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pottery",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mosaic art and design",
+      "slug": "mosaic-art-design",
+      "description": "Create decorative mosaics using tile, glass, and found materials",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "mosaic-art",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Stained glass window art",
+      "slug": "stained-glass-window-art",
+      "description": "Cut, foil, and solder glass pieces into decorative stained glass panels",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "stained-glass",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Glass blowing and sculptural glass",
+      "slug": "glass-blowing-sculptural-glass",
+      "description": "Shape molten glass into vessels and artistic forms",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "glass-blowing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Weaving functional baskets",
+      "slug": "weaving-functional-baskets",
+      "description": "Create woven baskets using natural materials and traditional techniques",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "basket-weaving",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Woodcarving decorative and functional objects",
+      "slug": "woodcarving-decorative-functional-objects",
+      "description": "Carve detailed designs and objects from wood using chisels and knives",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "woodcarving",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Whittling small wood sculptures",
+      "slug": "whittling-small-wood-sculptures",
+      "description": "Create simple carved objects using just a knife and wood",
+      "category_slug": "fiber-arts-crafts",
+      "competencies": [
+        {
+          "competency_slug": "whittling",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}
