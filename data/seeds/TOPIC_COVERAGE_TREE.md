@@ -1,8 +1,8 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T15:57:47.720Z
-**Total Topics:** 23
-**Total Competencies:** 1617
+**Generated:** 2025-11-22T19:09:04.361Z
+**Total Topics:** 127
+**Total Competencies:** 1623
 **Total Categories:** 89
 
 This file shows the category hierarchy with topic and competency counts.
@@ -14,17 +14,17 @@ Run `npm run topic:coverage` to update.
 
 ```
 ├── Information & Technology [0 topics, 0 competencies]
-│   ├── Programming [3 topics, 48 competencies]
+│   ├── Programming [73 topics, 51 competencies]
 │   │   ├── Web Development [0 topics, 1 competencies]
-│   │   │   ├── Frontend Development [9 topics, 46 competencies]
-│   │   │   ├── Full-stack Development [3 topics, 0 competencies]
+│   │   │   ├── Frontend Development [40 topics, 47 competencies]
+│   │   │   ├── Full-stack Development [6 topics, 0 competencies]
 │   │   │   └── Backend Development [3 topics, 36 competencies]
 │   │   ├── Mobile Development [0 topics, 48 competencies]
 │   │   ├── Game Development [1 topics, 53 competencies]
 │   │   ├── Systems Programming [0 topics, 17 competencies]
 │   │   └── Software Testing [3 topics, 0 competencies]
 │   ├── Data & Analytics [0 topics, 0 competencies]
-│   │   ├── Data Science [0 topics, 95 competencies]
+│   │   ├── Data Science [0 topics, 97 competencies]
 │   │   ├── Data Engineering [0 topics, 8 competencies]
 │   │   └── Databases [0 topics, 55 competencies]
 │   ├── Cloud & DevOps [0 topics, 169 competencies]
@@ -243,7 +243,7 @@ Run `npm run topic:coverage` to update.
 ### Data Science
 - **Slug:** `data-science`
 - **Topics:** 0
-- **Competencies:** 95
+- **Competencies:** 97
 - **Parent:** data-analytics
 
 ### Databases
@@ -290,13 +290,13 @@ Run `npm run topic:coverage` to update.
 
 ### Frontend Development
 - **Slug:** `frontend-development`
-- **Topics:** 9
-- **Competencies:** 46
+- **Topics:** 40
+- **Competencies:** 47
 - **Parent:** web-development
 
 ### Full-stack Development
 - **Slug:** `fullstack-development`
-- **Topics:** 3
+- **Topics:** 6
 - **Competencies:** 0
 - **Parent:** web-development
 
@@ -479,8 +479,8 @@ Run `npm run topic:coverage` to update.
 
 ### Programming
 - **Slug:** `programming`
-- **Topics:** 3
-- **Competencies:** 48
+- **Topics:** 73
+- **Competencies:** 51
 - **Parent:** information-technology
 
 ### Recreation & Hobbies

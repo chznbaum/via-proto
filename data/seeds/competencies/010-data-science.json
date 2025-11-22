@@ -663,6 +663,49 @@
           "notes": "MATLAB is the commercial alternative"
         }
       ]
+    },
+    {
+      "name": "BeautifulSoup",
+      "slug": "beautifulsoup",
+      "description": "Python library for parsing HTML and XML documents and extracting data",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Beautiful Soup",
+        "BS4",
+        "BeautifulSoup4"
+      ],
+      "icon": "logos:python",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "BeautifulSoup is a Python library"
+        }
+      ]
+    },
+    {
+      "name": "Scrapy",
+      "slug": "scrapy",
+      "description": "Python framework for web scraping and crawling at scale",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Scrapy Framework"
+      ],
+      "icon": "logos:python",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Scrapy is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "beautifulsoup",
+          "relationship_type": "similar",
+          "notes": "BeautifulSoup is lighter-weight for simple scraping tasks"
+        }
+      ]
     }
   ]
 }

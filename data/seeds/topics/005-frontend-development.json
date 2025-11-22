@@ -319,6 +319,650 @@
           "is_primary": false
         }
       ]
+    },
+    {
+      "name": "Full-stack React applications with Next.js",
+      "slug": "fullstack-react-nextjs",
+      "description": "Build server-rendered React apps with routing, API routes, and optimizations using Next.js",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "nextjs",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Full-stack React applications with Remix",
+      "slug": "fullstack-react-remix",
+      "description": "Build fast, resilient web applications using Remix's nested routing and data loading",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "remix",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Static site generation with Gatsby",
+      "slug": "static-sites-gatsby",
+      "description": "Build blazing-fast static websites with React and Gatsby's data layer",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "gatsby",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Reactive web applications with Svelte",
+      "slug": "reactive-apps-svelte",
+      "description": "Build highly reactive UIs with Svelte's compile-time framework",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "svelte",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Full-stack applications with SvelteKit",
+      "slug": "fullstack-apps-sveltekit",
+      "description": "Build server-rendered Svelte applications with SvelteKit's integrated routing and SSR",
+      "category_slug": "fullstack-development",
+      "competencies": [
+        {
+          "competency_slug": "sveltekit",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "svelte",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Utility-first styling with Tailwind CSS",
+      "slug": "utility-first-styling-tailwind",
+      "description": "Design custom UIs rapidly using Tailwind's utility-first CSS framework",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "tailwindcss",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Responsive layouts with Bootstrap",
+      "slug": "responsive-layouts-bootstrap",
+      "description": "Build mobile-first responsive websites using Bootstrap's grid system and components",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "bootstrap",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "html",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "React UIs with Material-UI components",
+      "slug": "react-uis-material-ui",
+      "description": "Build polished React interfaces using Material-UI's component library",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "material-ui",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Enterprise UIs with Ant Design",
+      "slug": "enterprise-uis-ant-design",
+      "description": "Create professional React applications using Ant Design's enterprise component library",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "ant-design",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Advanced CSS with Sass",
+      "slug": "advanced-css-sass",
+      "description": "Write maintainable, modular CSS using Sass variables, nesting, and mixins",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "sass",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Dynamic styling with Less",
+      "slug": "dynamic-styling-less",
+      "description": "Enhance CSS with variables, mixins, and functions using Less preprocessor",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "less",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "CSS transformation with PostCSS",
+      "slug": "css-transformation-postcss",
+      "description": "Transform and optimize CSS using PostCSS plugins and modern features",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "postcss",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "css",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modern build tooling with Vite",
+      "slug": "modern-build-vite",
+      "description": "Set up lightning-fast development environments using Vite's ESM-based build tool",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "vite",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Module bundling with Webpack",
+      "slug": "module-bundling-webpack",
+      "description": "Configure and optimize JavaScript bundling using Webpack",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "webpack",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Zero-config bundling with Parcel",
+      "slug": "zero-config-bundling-parcel",
+      "description": "Build web applications quickly with Parcel's zero-configuration bundler",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "parcel",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Library bundling with Rollup",
+      "slug": "library-bundling-rollup",
+      "description": "Create optimized JavaScript libraries using Rollup's tree-shaking bundler",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "rollup",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ultra-fast bundling with esbuild",
+      "slug": "ultra-fast-bundling-esbuild",
+      "description": "Bundle JavaScript and TypeScript at blazing speed using esbuild",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "esbuild",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "State management with Redux",
+      "slug": "state-management-redux",
+      "description": "Manage complex application state with Redux's predictable state container",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "redux",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Lightweight state management with Zustand",
+      "slug": "lightweight-state-zustand",
+      "description": "Manage React state simply using Zustand's minimalist hooks-based approach",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "zustand",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Atomic state management with Jotai",
+      "slug": "atomic-state-jotai",
+      "description": "Build React apps with Jotai's primitive and flexible atomic state management",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "jotai",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Reactive state with MobX",
+      "slug": "reactive-state-mobx",
+      "description": "Manage application state reactively using MobX observables and actions",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "mobx",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Client-side routing with React Router",
+      "slug": "client-routing-react-router",
+      "description": "Implement navigation and routing in React applications using React Router",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "react-router",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Server state management with TanStack Query",
+      "slug": "server-state-tanstack-query",
+      "description": "Handle API data fetching, caching, and synchronization with TanStack Query",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "tanstack-query",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "GraphQL client development with Apollo Client",
+      "slug": "graphql-client-apollo",
+      "description": "Build GraphQL-powered React apps using Apollo Client for data management",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "apollo-client",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "End-to-end testing with Cypress",
+      "slug": "e2e-testing-cypress",
+      "description": "Write reliable end-to-end tests for web applications using Cypress",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "cypress",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modern browser automation with Playwright",
+      "slug": "browser-automation-playwright",
+      "description": "Automate and test web applications across browsers using Playwright",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "playwright",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Component testing with Testing Library",
+      "slug": "component-testing-testing-library",
+      "description": "Test React components effectively using Testing Library's user-centric approach",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "testing-library",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fast unit testing with Vitest",
+      "slug": "fast-unit-testing-vitest",
+      "description": "Write blazing-fast unit tests using Vitest's Vite-powered test runner",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "vitest",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Component documentation with Storybook",
+      "slug": "component-docs-storybook",
+      "description": "Document and develop UI components in isolation using Storybook",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "storybook",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Code quality with ESLint",
+      "slug": "code-quality-eslint",
+      "description": "Enforce code quality and consistency using ESLint's linting rules",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "eslint",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Code formatting with Prettier",
+      "slug": "code-formatting-prettier",
+      "description": "Maintain consistent code style automatically using Prettier",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "prettier",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Type-safe functional UIs with Elm",
+      "slug": "functional-uis-elm",
+      "description": "Build reliable web applications using Elm's purely functional architecture",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "elm",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Type-safe React with ReScript",
+      "slug": "type-safe-react-rescript",
+      "description": "Write fast, type-safe React applications using ReScript's OCaml-inspired syntax",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "rescript",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "react",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Functional web apps with PureScript",
+      "slug": "functional-web-apps-purescript",
+      "description": "Build strongly-typed functional web applications using PureScript",
+      "category_slug": "frontend-development",
+      "competencies": [
+        {
+          "competency_slug": "purescript",
+          "is_primary": true
+        }
+      ]
     }
   ]
 }

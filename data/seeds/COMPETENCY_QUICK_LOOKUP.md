@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-22T16:21:30.065Z
-**Total Competencies:** 1617
+**Generated:** 2025-11-22T19:08:21.832Z
+**Total Competencies:** 1623
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -34,7 +34,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **cybersecurity** (27)
 - **dance** (42)
 - **data-engineering** (8)
-- **data-science** (95)
+- **data-science** (97)
 - **databases** (55)
 - **differential-equations** (2)
 - **discrete-mathematics** (6)
@@ -42,7 +42,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **fiber-arts-crafts** (46)
 - **finance-accounting** (12)
 - **flexibility-mobility** (9)
-- **frontend-development** (46)
+- **frontend-development** (47)
 - **game-development** (53)
 - **genetics** (4)
 - **geometry** (6)
@@ -73,7 +73,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **problem-solving** (1)
 - **product-project-management** (11)
 - **productivity-time-management** (10)
-- **programming** (48)
+- **programming** (51)
 - **recreation-hobbies** (39)
 - **statistics-probability** (6)
 - **strength-training** (10)
@@ -270,6 +270,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `bayesian-statistics` - Bayesian Statistics (statistics-probability)
 - `beading` - Beading (fiber-arts-crafts)
 - `beatboxing` - Beatboxing (music)
+- `beautifulsoup` - BeautifulSoup (data-science)
 - `beekeeping` - Beekeeping (home-lifestyle)
 - `behavioral-neuroscience` - Behavioral Neuroscience (neuroscience)
 - `belarusian` - Belarusian (languages)
@@ -863,6 +864,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `jasmine` - Jasmine (frontend-development)
 - `jasp` - JASP (data-science)
 - `java` - Java (programming)
+- `javafx` - JavaFX (programming)
 - `javanese` - Javanese (languages)
 - `javascript` - JavaScript (programming)
 - `jazz-dance` - Jazz Dance (dance)
@@ -1354,6 +1356,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `romanian` - Romanian (languages)
 - `rowing-fitness` - Rowing (cardio-endurance)
 - `rpg-maker` - RPG Maker (game-development)
+- `rspec` - RSpec (programming)
 - `ruby` - Ruby (programming)
 - `ruby-on-rails` - Ruby on Rails (backend-development)
 - `rug-hooking` - Rug Hooking (fiber-arts-crafts)
@@ -1384,6 +1387,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `scikit-learn` - Scikit-learn (data-science)
 - `scottish-gaelic` - Scottish Gaelic (languages)
 - `scrapbooking` - Scrapbooking (fiber-arts-crafts)
+- `scrapy` - Scrapy (data-science)
 - `scratch` - Scratch (programming)
 - `screen-printing` - Screen Printing (visual-arts)
 - `screenwriting` - Screenwriting (writing)
@@ -1393,6 +1397,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `seaborn` - Seaborn (data-science)
 - `security-auditing` - Security Auditing (cybersecurity)
 - `seldon-core` - Seldon Core (data-science)
+- `selenium` - Selenium (frontend-development)
 - `self-awareness` - Self-Awareness (mindfulness-wellness)
 - `self-compassion` - Self-Compassion (mindfulness-wellness)
 - `self-confidence` - Self-Confidence (mindfulness-wellness)
@@ -1677,6 +1682,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `working-capital-management` - Working Capital Management (corporate-finance)
 - `world-anvil` - World Anvil (writing)
 - `worldbuilding` - Worldbuilding (writing)
+- `wpf` - WPF (programming)
 - `wrk` - wrk (cloud-devops)
 - `wu-chinese` - Wu Chinese (languages)
 - `wwise` - Wwise (game-development)

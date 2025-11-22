@@ -1084,6 +1084,28 @@
           "notes": "Service workers and PWA features require JavaScript"
         }
       ]
+    },
+    {
+      "name": "Selenium",
+      "slug": "selenium",
+      "description": "Browser automation framework for testing web applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Selenium WebDriver",
+        "Selenium Framework"
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "playwright",
+          "relationship_type": "similar",
+          "notes": "Playwright is a modern alternative with better API and performance"
+        },
+        {
+          "alternative_slug": "cypress",
+          "relationship_type": "similar",
+          "notes": "Cypress is focused on end-to-end testing with better developer experience"
+        }
+      ]
     }
   ]
 }

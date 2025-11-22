@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T16:21:30.069Z
-**Total Competencies:** 1617
+**Generated:** 2025-11-22T19:08:21.836Z
+**Total Competencies:** 1623
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -34,7 +34,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
 - [data-engineering](#data-engineering) (8)
-- [data-science](#data-science) (95)
+- [data-science](#data-science) (97)
 - [databases](#databases) (55)
 - [differential-equations](#differential-equations) (2)
 - [discrete-mathematics](#discrete-mathematics) (6)
@@ -42,7 +42,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [finance-accounting](#finance-accounting) (12)
 - [flexibility-mobility](#flexibility-mobility) (9)
-- [frontend-development](#frontend-development) (46)
+- [frontend-development](#frontend-development) (47)
 - [game-development](#game-development) (53)
 - [genetics](#genetics) (4)
 - [geometry](#geometry) (6)
@@ -73,7 +73,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [problem-solving](#problem-solving) (1)
 - [product-project-management](#product-project-management) (11)
 - [productivity-time-management](#productivity-time-management) (10)
-- [programming](#programming) (48)
+- [programming](#programming) (51)
 - [recreation-hobbies](#recreation-hobbies) (39)
 - [statistics-probability](#statistics-probability) (6)
 - [strength-training](#strength-training) (10)
@@ -3004,6 +3004,13 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `azure` (recommended) - Azure ML is part of Microsoft Azure
 
+### BeautifulSoup
+- **Slug:** `beautifulsoup`
+- **Icon:** `logos:python`
+- **Synonyms:** Beautiful Soup, BS4, BeautifulSoup4
+- **Prerequisites:**
+  - `python` (required) - BeautifulSoup is a Python library
+
 ### BentoML
 - **Slug:** `bentoml`
 - **Synonyms:** Bento ML, BentoML Framework
@@ -3413,6 +3420,15 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `python` (required) - Scikit-learn is a Python library
   - `numpy` (recommended) - Understanding NumPy helps with scikit-learn
+
+### Scrapy
+- **Slug:** `scrapy`
+- **Icon:** `logos:python`
+- **Synonyms:** Scrapy Framework
+- **Prerequisites:**
+  - `python` (required) - Scrapy is a Python framework
+- **Alternatives:**
+  - `beautifulsoup` (similar)
 
 ### Seaborn
 - **Slug:** `seaborn`
@@ -4592,6 +4608,13 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Alternatives:**
   - `less` (similar)
   - `postcss` (similar)
+
+### Selenium
+- **Slug:** `selenium`
+- **Synonyms:** Selenium WebDriver, Selenium Framework
+- **Alternatives:**
+  - `playwright` (similar)
+  - `cypress` (similar)
 
 ### Storybook
 - **Slug:** `storybook`
@@ -8246,6 +8269,13 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `csharp` (similar)
   - `kotlin` (similar)
 
+### JavaFX
+- **Slug:** `javafx`
+- **Icon:** `logos:java`
+- **Synonyms:** JavaFX Framework, Java FX
+- **Prerequisites:**
+  - `java` (required) - JavaFX is a Java framework and requires Java knowledge
+
 ### JavaScript
 - **Slug:** `javascript`
 - **Icon:** `logos:javascript`
@@ -8331,6 +8361,12 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `ring`
 - **Synonyms:** Ring Language, Ring Programming
 
+### RSpec
+- **Slug:** `rspec`
+- **Synonyms:** RSpec Testing, RSpec Framework
+- **Prerequisites:**
+  - `ruby` (required) - RSpec is a Ruby testing framework
+
 ### Ruby
 - **Slug:** `ruby`
 - **Icon:** `logos:ruby`
@@ -8397,6 +8433,12 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** VB, VB.NET, Visual Basic .NET, VBA
 - **Alternatives:**
   - `csharp` (similar)
+
+### WPF
+- **Slug:** `wpf`
+- **Synonyms:** Windows Presentation Foundation, WPF Framework
+- **Prerequisites:**
+  - `csharp` (required) - WPF applications are built with C# and .NET
 
 ---
 

@@ -123,6 +123,914 @@
           "is_primary": true
         }
       ]
+    },
+    {
+      "name": "Web application development with Django",
+      "slug": "web-development-django",
+      "description": "Build full-featured web applications using Django's batteries-included framework",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "django",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building REST APIs with Flask",
+      "slug": "rest-apis-flask",
+      "description": "Create lightweight and flexible web APIs using Flask",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "flask",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "High-performance APIs with FastAPI",
+      "slug": "high-performance-apis-fastapi",
+      "description": "Build modern, fast APIs with automatic documentation using FastAPI",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "fastapi",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Web scraping with BeautifulSoup",
+      "slug": "web-scraping-beautifulsoup",
+      "description": "Extract and parse data from HTML and XML documents using BeautifulSoup",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "beautifulsoup",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Large-scale web scraping with Scrapy",
+      "slug": "web-scraping-scrapy",
+      "description": "Build scalable web crawlers and scrapers using the Scrapy framework",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "scrapy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Browser automation with Selenium",
+      "slug": "browser-automation-selenium",
+      "description": "Automate web browser interactions for testing and scraping with Selenium",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "selenium",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Machine learning with scikit-learn",
+      "slug": "machine-learning-scikit-learn",
+      "description": "Build and train machine learning models using scikit-learn",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "scikit-learn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deep learning with TensorFlow",
+      "slug": "deep-learning-tensorflow",
+      "description": "Build and train neural networks using TensorFlow",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "tensorflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deep learning with PyTorch",
+      "slug": "deep-learning-pytorch",
+      "description": "Build and train neural networks using PyTorch's dynamic computation graphs",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "pytorch",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Neural network prototyping with Keras",
+      "slug": "neural-networks-keras",
+      "description": "Rapidly prototype and build neural networks using Keras",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "keras",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Data analysis with Pandas",
+      "slug": "data-analysis-pandas",
+      "description": "Analyze and manipulate tabular data using Pandas DataFrames",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "pandas",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Numerical computing with NumPy",
+      "slug": "numerical-computing-numpy",
+      "description": "Perform efficient array operations and numerical computations with NumPy",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "numpy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Data visualization with Matplotlib",
+      "slug": "data-visualization-matplotlib",
+      "description": "Create static, animated, and interactive visualizations using Matplotlib",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "matplotlib",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Statistical data visualization with Seaborn",
+      "slug": "data-visualization-seaborn",
+      "description": "Create informative statistical graphics using Seaborn",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "seaborn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Interactive visualizations with Plotly",
+      "slug": "interactive-visualizations-plotly",
+      "description": "Build interactive charts and dashboards using Plotly",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "plotly",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Automation and scripting with Python",
+      "slug": "automation-scripting-python",
+      "description": "Automate repetitive tasks and build productivity scripts with Python",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "python",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building command-line tools with Python",
+      "slug": "cli-tools-python",
+      "description": "Create powerful command-line applications and utilities with Python",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "python",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building enterprise applications with Java",
+      "slug": "enterprise-applications-java",
+      "description": "Develop scalable enterprise-grade applications using Java",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Android mobile app development with Java",
+      "slug": "android-development-java",
+      "description": "Create native Android applications using Java",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Desktop application development with JavaFX",
+      "slug": "desktop-apps-javafx",
+      "description": "Build cross-platform desktop applications using JavaFX",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Concurrent and multithreaded programming in Java",
+      "slug": "concurrent-programming-java",
+      "description": "Master thread management and concurrent programming patterns in Java",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data processing with Java Streams",
+      "slug": "data-processing-java-streams",
+      "description": "Process collections efficiently using Java's functional Stream API",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building microservices with Java",
+      "slug": "microservices-java",
+      "description": "Design and implement microservices architecture using Java",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "java",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building desktop applications with C# and .NET",
+      "slug": "desktop-apps-csharp-dotnet",
+      "description": "Create Windows desktop applications using C# and .NET framework",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Game development with C# and Unity",
+      "slug": "game-development-csharp-unity",
+      "description": "Build 2D and 3D games using C# scripting in Unity",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building web applications with C# and ASP.NET Core",
+      "slug": "web-apps-csharp-aspnet",
+      "description": "Develop modern web applications using C# and ASP.NET Core",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cross-platform mobile apps with C# and Xamarin",
+      "slug": "mobile-apps-csharp-xamarin",
+      "description": "Build iOS and Android apps from a single C# codebase using Xamarin",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Windows application development with WPF",
+      "slug": "windows-apps-wpf",
+      "description": "Create rich Windows desktop applications using WPF and C#",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Cloud-native applications with C# and Azure",
+      "slug": "cloud-apps-csharp-azure",
+      "description": "Build and deploy cloud applications using C# and Microsoft Azure",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "csharp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building high-performance web servers with Go",
+      "slug": "web-servers-go",
+      "description": "Create fast, efficient web servers using Go's standard library",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Concurrent programming with Go goroutines",
+      "slug": "concurrent-programming-go",
+      "description": "Master concurrency patterns using Go's goroutines and channels",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building command-line tools with Go",
+      "slug": "cli-tools-go",
+      "description": "Develop professional command-line applications and utilities in Go",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Microservices development with Go",
+      "slug": "microservices-go",
+      "description": "Build scalable microservices using Go's lightweight runtime",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Systems programming with Go",
+      "slug": "systems-programming-go",
+      "description": "Develop system-level tools and utilities using Go",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building REST APIs with Go",
+      "slug": "rest-apis-go",
+      "description": "Create efficient RESTful web services using Go",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "go",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Web application development with Ruby on Rails",
+      "slug": "web-development-ruby-rails",
+      "description": "Build full-stack web applications using Ruby and the Rails framework",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "ruby-on-rails",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ruby",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Writing automated scripts with Ruby",
+      "slug": "automation-scripts-ruby",
+      "description": "Create automation and system administration scripts using Ruby",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "ruby",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Test automation with RSpec",
+      "slug": "test-automation-rspec",
+      "description": "Write comprehensive test suites using RSpec's behavior-driven development approach",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "rspec",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ruby",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building command-line applications with Ruby",
+      "slug": "cli-apps-ruby",
+      "description": "Develop command-line tools and scripts using Ruby",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "ruby",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Data processing and transformation with Ruby",
+      "slug": "data-processing-ruby",
+      "description": "Process and transform data using Ruby's flexible syntax",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "ruby",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Object-oriented design principles",
+      "slug": "object-oriented-design-principles",
+      "description": "Master SOLID principles and design reusable, maintainable object-oriented code",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "oop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building class hierarchies with inheritance and polymorphism",
+      "slug": "class-hierarchies-inheritance-polymorphism",
+      "description": "Design effective class structures using inheritance, interfaces, and polymorphism",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "oop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Encapsulation and abstraction in software design",
+      "slug": "encapsulation-abstraction",
+      "description": "Apply encapsulation and abstraction to create modular, maintainable code",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "oop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Functional programming fundamentals",
+      "slug": "functional-programming-fundamentals",
+      "description": "Learn pure functions, immutability, and functional composition",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "functional-programming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Higher-order functions and function composition",
+      "slug": "higher-order-functions-composition",
+      "description": "Master map, filter, reduce, and compose functions for elegant code",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "functional-programming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Immutable data structures and state management",
+      "slug": "immutable-data-structures",
+      "description": "Work with immutable data to write predictable, bug-free code",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "functional-programming",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Algorithm analysis and complexity",
+      "slug": "algorithm-analysis-complexity",
+      "description": "Analyze time and space complexity using Big O notation",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "algorithms",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sorting and searching algorithms",
+      "slug": "sorting-searching-algorithms",
+      "description": "Implement and optimize classic sorting and searching algorithms",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "algorithms",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Graph algorithms and traversal",
+      "slug": "graph-algorithms-traversal",
+      "description": "Solve problems using graph traversal, shortest path, and spanning tree algorithms",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "algorithms",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Dynamic programming and memoization",
+      "slug": "dynamic-programming-memoization",
+      "description": "Solve complex optimization problems using dynamic programming techniques",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "algorithms",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Greedy algorithms and optimization",
+      "slug": "greedy-algorithms-optimization",
+      "description": "Apply greedy strategies to solve optimization problems efficiently",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "algorithms",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Trees and binary search trees",
+      "slug": "trees-binary-search-trees",
+      "description": "Implement and use tree data structures for hierarchical data",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "data-structures",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Hash tables and associative arrays",
+      "slug": "hash-tables-associative-arrays",
+      "description": "Use hash tables for fast lookups and data indexing",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "data-structures",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Stacks, queues, and deques",
+      "slug": "stacks-queues-deques",
+      "description": "Implement and apply linear data structures for various use cases",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "data-structures",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Graphs and graph representations",
+      "slug": "graphs-representations",
+      "description": "Model and represent complex relationships using graph data structures",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "data-structures",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Heaps and priority queues",
+      "slug": "heaps-priority-queues",
+      "description": "Implement heap data structures for efficient priority-based operations",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "data-structures",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creational design patterns",
+      "slug": "creational-design-patterns",
+      "description": "Apply Singleton, Factory, Builder, and Prototype patterns to object creation",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "design-patterns",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Structural design patterns",
+      "slug": "structural-design-patterns",
+      "description": "Organize code with Adapter, Decorator, Facade, and Composite patterns",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "design-patterns",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Behavioral design patterns",
+      "slug": "behavioral-design-patterns",
+      "description": "Manage object interactions with Observer, Strategy, Command, and State patterns",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "design-patterns",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Architectural design patterns",
+      "slug": "architectural-design-patterns",
+      "description": "Structure applications with MVC, MVVM, and layered architecture patterns",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "design-patterns",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Version control with Git",
+      "slug": "version-control-git",
+      "description": "Track code changes and collaborate using Git version control",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "git",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Git branching strategies and workflows",
+      "slug": "git-branching-workflows",
+      "description": "Master Git Flow, trunk-based development, and feature branch workflows",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "git",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Collaborative development with Git",
+      "slug": "collaborative-development-git",
+      "description": "Manage pull requests, code reviews, and team collaboration with Git",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "git",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced Git techniques and troubleshooting",
+      "slug": "advanced-git-techniques",
+      "description": "Master rebasing, cherry-picking, bisecting, and resolving merge conflicts",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "git",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Pattern matching with regular expressions",
+      "slug": "pattern-matching-regex",
+      "description": "Use regex for text searching, validation, and extraction",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "regular-expressions",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Text processing and transformation with regex",
+      "slug": "text-processing-regex",
+      "description": "Parse, clean, and transform text data using regular expressions",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "regular-expressions",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Input validation with regular expressions",
+      "slug": "input-validation-regex",
+      "description": "Validate user input, emails, URLs, and data formats with regex patterns",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "regular-expressions",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Debugging techniques and strategies",
+      "slug": "debugging-techniques-strategies",
+      "description": "Systematically identify and fix bugs using debugging methodologies",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "debugging",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Using debuggers and debugging tools",
+      "slug": "debuggers-debugging-tools",
+      "description": "Master breakpoints, watch expressions, and step-through debugging",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "debugging",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Performance profiling and optimization",
+      "slug": "performance-profiling-optimization",
+      "description": "Identify performance bottlenecks and optimize code execution",
+      "category_slug": "programming",
+      "competencies": [
+        {
+          "competency_slug": "debugging",
+          "is_primary": true
+        }
+      ]
     }
   ]
 }

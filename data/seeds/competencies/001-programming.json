@@ -1831,6 +1831,58 @@
           "notes": "Both focus on memory safety in systems programming"
         }
       ]
+    },
+    {
+      "name": "JavaFX",
+      "slug": "javafx",
+      "description": "Java framework for building rich desktop applications with modern UIs",
+      "category_slug": "programming",
+      "synonyms": [
+        "JavaFX Framework",
+        "Java FX"
+      ],
+      "icon": "logos:java",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "java",
+          "prerequisite_level": "required",
+          "notes": "JavaFX is a Java framework and requires Java knowledge"
+        }
+      ]
+    },
+    {
+      "name": "WPF",
+      "slug": "wpf",
+      "description": "Windows Presentation Foundation - UI framework for building Windows desktop applications",
+      "category_slug": "programming",
+      "synonyms": [
+        "Windows Presentation Foundation",
+        "WPF Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "csharp",
+          "prerequisite_level": "required",
+          "notes": "WPF applications are built with C# and .NET"
+        }
+      ]
+    },
+    {
+      "name": "RSpec",
+      "slug": "rspec",
+      "description": "Behavior-driven development framework for testing Ruby applications",
+      "category_slug": "programming",
+      "synonyms": [
+        "RSpec Testing",
+        "RSpec Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ruby",
+          "prerequisite_level": "required",
+          "notes": "RSpec is a Ruby testing framework"
+        }
+      ]
     }
   ]
 }
