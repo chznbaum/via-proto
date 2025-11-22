@@ -1,7 +1,7 @@
 # Competency Reference
 
-**Generated:** 2025-11-22T01:21:06.558Z
-**Total Competencies:** 441
+**Generated:** 2025-11-22T01:37:48.559Z
+**Total Competencies:** 483
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -10,11 +10,12 @@ Run `npm run generate:competency-reference` to update.
 
 ## Table of Contents
 
+- [automation-integration](#automation-integration) (3)
 - [backend-development](#backend-development) (36)
 - [cloud-devops](#cloud-devops) (169)
 - [cybersecurity](#cybersecurity) (27)
 - [data-engineering](#data-engineering) (1)
-- [data-science](#data-science) (32)
+- [data-science](#data-science) (71)
 - [databases](#databases) (55)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (3)
@@ -41,7 +42,9 @@ Run `npm run generate:competency-reference` to update.
 - `algolia` - Algolia (databases)
 - `algorithms` - Algorithms (programming)
 - `alibaba-cloud` - Alibaba Cloud (cloud-devops)
+- `amazon-lex` - Amazon Lex (data-science)
 - `amazon-rds` - Amazon RDS (databases)
+- `amazon-sagemaker` - Amazon SageMaker (data-science)
 - `anchore` - Anchore (cloud-devops)
 - `angular` - Angular (frontend-development)
 - `ansible` - Ansible (cloud-devops)
@@ -60,8 +63,10 @@ Run `npm run generate:competency-reference` to update.
 - `artillery` - Artillery (cloud-devops)
 - `aspnet-core` - ASP.NET Core (backend-development)
 - `assembly` - Assembly (systems-programming)
+- `assemblyai` - AssemblyAI (data-science)
 - `ats` - ATS (systems-programming)
 - `auth0` - Auth0 (cybersecurity)
+- `autogen` - AutoGen (data-science)
 - `awk` - AWK (systems-programming)
 - `aws` - Amazon Web Services (cloud-devops)
 - `aws-api-gateway` - AWS API Gateway (cloud-devops)
@@ -81,16 +86,19 @@ Run `npm run generate:competency-reference` to update.
 - `azure-devops` - Azure DevOps (cloud-devops)
 - `azure-functions` - Azure Functions (cloud-devops)
 - `azure-key-vault` - Azure Key Vault (cloud-devops)
+- `azure-machine-learning` - Azure Machine Learning (data-science)
 - `azure-resource-manager` - Azure Resource Manager (cloud-devops)
 - `azure-service-bus` - Azure Service Bus (cloud-devops)
 - `azure-sql-database` - Azure SQL Database (databases)
 - `ballerina` - Ballerina (cloud-devops)
 - `bamboo` - Bamboo (cloud-devops)
 - `bash` - Bash (systems-programming)
+- `bentoml` - BentoML (data-science)
 - `bicep` - Bicep (cloud-devops)
 - `bitbucket-pipelines` - Bitbucket Pipelines (cloud-devops)
 - `bootstrap` - Bootstrap (frontend-development)
 - `borg` - BorgBackup (cloud-devops)
+- `botpress` - Botpress (data-science)
 - `buddy` - Buddy (cloud-devops)
 - `buildkite` - Buildkite (cloud-devops)
 - `bun` - Bun (backend-development)
@@ -105,6 +113,7 @@ Run `npm run generate:competency-reference` to update.
 - `certbot` - Certbot (cloud-devops)
 - `chapel` - Chapel (systems-programming)
 - `chef` - Chef (cloud-devops)
+- `chroma` - Chroma (data-science)
 - `cilium` - Cilium (cloud-devops)
 - `circleci` - CircleCI (cloud-devops)
 - `clair` - Clair (cloud-devops)
@@ -115,6 +124,7 @@ Run `npm run generate:competency-reference` to update.
 - `cockroachdb` - CockroachDB (databases)
 - `codefresh` - Codefresh (cloud-devops)
 - `codeship` - CodeShip (cloud-devops)
+- `cohere-api` - Cohere API (data-science)
 - `common-lisp` - Common Lisp (programming)
 - `concourse` - Concourse CI (cloud-devops)
 - `consul` - HashiCorp Consul (cloud-devops)
@@ -125,6 +135,7 @@ Run `npm run generate:competency-reference` to update.
 - `couchbase` - Couchbase (databases)
 - `couchdb` - CouchDB (databases)
 - `cpp` - C++ (systems-programming)
+- `crewai` - CrewAI (data-science)
 - `cri-o` - CRI-O (cloud-devops)
 - `crossplane` - Crossplane (cloud-devops)
 - `crystal` - Crystal (programming)
@@ -136,6 +147,7 @@ Run `npm run generate:competency-reference` to update.
 - `d` - D (systems-programming)
 - `dart` - Dart (mobile-development)
 - `data-structures` - Data Structures (programming)
+- `databricks` - Databricks (data-science)
 - `datadog` - Datadog (cloud-devops)
 - `datagrip` - DataGrip (databases)
 - `dbeaver` - DBeaver (databases)
@@ -143,6 +155,7 @@ Run `npm run generate:competency-reference` to update.
 - `delphi` - Delphi (programming)
 - `deno` - Deno (backend-development)
 - `design-patterns` - Design Patterns (programming)
+- `dialogflow` - Dialogflow (data-science)
 - `digitalocean` - DigitalOcean (cloud-devops)
 - `django` - Django (backend-development)
 - `django-orm` - Django ORM (databases)
@@ -158,6 +171,7 @@ Run `npm run generate:competency-reference` to update.
 - `dynatrace` - Dynatrace (cloud-devops)
 - `echo` - Echo (backend-development)
 - `elasticsearch` - Elasticsearch (cloud-devops)
+- `elevenlabs` - ElevenLabs (data-science)
 - `elixir` - Elixir (programming)
 - `elm` - Elm (frontend-development)
 - `eloquent` - Eloquent (databases)
@@ -170,6 +184,7 @@ Run `npm run generate:competency-reference` to update.
 - `expressjs` - Express.js (backend-development)
 - `fabric` - Fabric (cloud-devops)
 - `fail2ban` - Fail2Ban (cybersecurity)
+- `faiss` - FAISS (data-science)
 - `falco` - Falco (cloud-devops)
 - `fastapi` - FastAPI (backend-development)
 - `fastify` - Fastify (backend-development)
@@ -206,6 +221,7 @@ Run `npm run generate:competency-reference` to update.
 - `google-cloud-secret-manager` - Google Cloud Secret Manager (cloud-devops)
 - `google-cloud-sql` - Google Cloud SQL (databases)
 - `google-container-registry` - Google Container Registry (cloud-devops)
+- `google-gemini-api` - Google Gemini API (data-science)
 - `gradio` - Gradio (data-science)
 - `grafana` - Grafana (cloud-devops)
 - `graphql` - GraphQL (databases)
@@ -218,6 +234,7 @@ Run `npm run generate:competency-reference` to update.
 - `harbor` - Harbor (cloud-devops)
 - `haskell` - Haskell (programming)
 - `hbase` - HBase (databases)
+- `helicone` - Helicone (data-science)
 - `helm` - Helm (cloud-devops)
 - `heroku` - Heroku (cloud-devops)
 - `hetzner-cloud` - Hetzner Cloud (cloud-devops)
@@ -253,8 +270,12 @@ Run `npm run generate:competency-reference` to update.
 - `koa` - Koa (backend-development)
 - `kong` - Kong (cloud-devops)
 - `kotlin` - Kotlin (mobile-development)
+- `kserve` - KServe (data-science)
 - `kubernetes` - Kubernetes (cloud-devops)
 - `langchain` - LangChain (data-science)
+- `langfuse` - LangFuse (data-science)
+- `langgraph` - LangGraph (data-science)
+- `langsmith` - LangSmith (data-science)
 - `laravel` - Laravel (backend-development)
 - `ldap` - LDAP (cybersecurity)
 - `lean` - Lean (programming)
@@ -265,10 +286,13 @@ Run `npm run generate:competency-reference` to update.
 - `linkerd` - Linkerd (cloud-devops)
 - `linode` - Linode (cloud-devops)
 - `liquibase` - Liquibase (databases)
+- `llamaindex` - LlamaIndex (data-science)
+- `lm-studio` - LM Studio (data-science)
 - `locust` - Locust (cloud-devops)
 - `logstash` - Logstash (cloud-devops)
 - `loki` - Loki (cloud-devops)
 - `lua` - Lua (game-development)
+- `make` - Make (automation-integration)
 - `mariadb` - MariaDB (databases)
 - `material-ui` - Material UI (frontend-development)
 - `matlab` - MATLAB (data-science)
@@ -278,10 +302,13 @@ Run `npm run generate:competency-reference` to update.
 - `mercurial` - Mercurial (programming)
 - `metasploit` - Metasploit (cybersecurity)
 - `micronaut` - Micronaut (backend-development)
+- `microsoft-copilot-studio` - Microsoft Copilot Studio (data-science)
 - `microsoft-sql-server` - Microsoft SQL Server (databases)
+- `milvus` - Milvus (data-science)
 - `mlflow` - MLflow (data-science)
 - `mobx` - MobX (frontend-development)
 - `mocha` - Mocha (frontend-development)
+- `modal` - Modal (data-science)
 - `modsecurity` - ModSecurity (cybersecurity)
 - `mojo` - Mojo (data-science)
 - `mongodb` - MongoDB (databases)
@@ -290,6 +317,7 @@ Run `npm run generate:competency-reference` to update.
 - `mongoose` - Mongoose (databases)
 - `mysql` - MySQL (databases)
 - `mysql-workbench` - MySQL Workbench (databases)
+- `n8n` - n8n (automation-integration)
 - `nagios` - Nagios (cloud-devops)
 - `nats` - NATS (cloud-devops)
 - `navicat` - Navicat (databases)
@@ -311,6 +339,7 @@ Run `npm run generate:competency-reference` to update.
 - `ocaml` - OCaml (programming)
 - `odin` - Odin (game-development)
 - `okta` - Okta (cybersecurity)
+- `ollama` - Ollama (data-science)
 - `oop` - Object-Oriented Programming (programming)
 - `openai-api` - OpenAI API (data-science)
 - `opencv` - OpenCV (data-science)
@@ -332,6 +361,7 @@ Run `npm run generate:competency-reference` to update.
 - `phoenix` - Phoenix (backend-development)
 - `php` - PHP (backend-development)
 - `phpmyadmin` - phpMyAdmin (databases)
+- `pinecone` - Pinecone (data-science)
 - `pinia` - Pinia (frontend-development)
 - `planetscale` - PlanetScale (databases)
 - `playwright` - Playwright (frontend-development)
@@ -353,6 +383,7 @@ Run `npm run generate:competency-reference` to update.
 - `pwa` - Progressive Web App (frontend-development)
 - `python` - Python (programming)
 - `pytorch` - PyTorch (data-science)
+- `qdrant` - Qdrant (data-science)
 - `quarkus` - Quarkus (backend-development)
 - `r` - R (data-science)
 - `rabbitmq` - RabbitMQ (cloud-devops)
@@ -360,6 +391,7 @@ Run `npm run generate:competency-reference` to update.
 - `railway` - Railway (cloud-devops)
 - `raku` - Raku (programming)
 - `rancher` - Rancher (cloud-devops)
+- `rasa` - Rasa (data-science)
 - `ravendb` - RavenDB (databases)
 - `ray` - Ray (data-science)
 - `react` - React (frontend-development)
@@ -370,11 +402,13 @@ Run `npm run generate:competency-reference` to update.
 - `regular-expressions` - Regular Expressions (programming)
 - `remix` - Remix (frontend-development)
 - `render` - Render (cloud-devops)
+- `replicate` - Replicate (data-science)
 - `rescript` - ReScript (frontend-development)
 - `rest-api` - REST API (backend-development)
 - `restic` - Restic (cloud-devops)
 - `rethinkdb` - RethinkDB (databases)
 - `ring` - Ring (programming)
+- `roboflow` - Roboflow (data-science)
 - `rollbar` - Rollbar (cloud-devops)
 - `rollup` - Rollup (frontend-development)
 - `ruby` - Ruby (programming)
@@ -391,6 +425,8 @@ Run `npm run generate:competency-reference` to update.
 - `scratch` - Scratch (programming)
 - `seaborn` - Seaborn (data-science)
 - `security-auditing` - Security Auditing (cybersecurity)
+- `seldon-core` - Seldon Core (data-science)
+- `semantic-kernel` - Semantic Kernel (data-science)
 - `semaphore` - Semaphore (cloud-devops)
 - `sentry` - Sentry (cloud-devops)
 - `sequelize` - Sequelize (databases)
@@ -435,40 +471,70 @@ Run `npm run generate:competency-reference` to update.
 - `terraform` - Terraform (cloud-devops)
 - `testing-library` - Testing Library (frontend-development)
 - `timescaledb` - TimescaleDB (databases)
+- `together-ai` - Together AI (data-science)
 - `traefik` - Traefik (cloud-devops)
 - `travis-ci` - Travis CI (cloud-devops)
 - `trivy` - Trivy (cloud-devops)
 - `trpc` - tRPC (backend-development)
 - `typeorm` - TypeORM (databases)
 - `typescript` - TypeScript (programming)
+- `ultralytics` - Ultralytics (data-science)
 - `uptrace` - Uptrace (cloud-devops)
 - `v` - V (systems-programming)
 - `vagrant` - Vagrant (cloud-devops)
 - `vault` - HashiCorp Vault (cloud-devops)
 - `velero` - Velero (cloud-devops)
 - `vercel` - Vercel (cloud-devops)
+- `vertex-ai` - Vertex AI (data-science)
 - `visual-basic` - Visual Basic (programming)
 - `vite` - Vite (frontend-development)
 - `vitest` - Vitest (frontend-development)
+- `voiceflow` - Voiceflow (data-science)
 - `vuejs` - Vue.js (frontend-development)
 - `vuex` - Vuex (frontend-development)
 - `vultr` - Vultr (cloud-devops)
 - `weave-net` - Weave Net (cloud-devops)
+- `weaviate` - Weaviate (data-science)
 - `webassembly` - WebAssembly (web-development)
 - `webpack` - Webpack (frontend-development)
 - `weights-and-biases` - Weights & Biases (data-science)
 - `wercker` - Wercker (cloud-devops)
+- `whisper` - Whisper (data-science)
 - `wireshark` - Wireshark (cybersecurity)
 - `wrk` - wrk (cloud-devops)
 - `xgboost` - XGBoost (data-science)
 - `yolo` - YOLO (data-science)
 - `zabbix` - Zabbix (cloud-devops)
+- `zapier` - Zapier (automation-integration)
 - `zero-trust` - Zero Trust (cybersecurity)
 - `zerossl` - ZeroSSL (cloud-devops)
 - `zig` - Zig (systems-programming)
 - `zipkin` - Zipkin (cloud-devops)
 - `zookeeper` - Apache ZooKeeper (cloud-devops)
 - `zustand` - Zustand (frontend-development)
+
+---
+
+## automation-integration
+
+### Make
+- **Slug:** `make`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Make.com, Integromat
+- **Description:** Visual workflow automation platform for connecting apps and services
+
+### n8n
+- **Slug:** `n8n`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** n8n.io, n8n Automation
+- **Description:** Open-source workflow automation tool for technical users
+
+### Zapier
+- **Slug:** `zapier`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:zapier-icon`
+- **Synonyms:** Zapier Automation, Zapier Integration
+- **Description:** Workflow automation platform connecting web applications
 
 ---
 
@@ -2658,11 +2724,86 @@ Run `npm run generate:competency-reference` to update.
 
 ## data-science
 
+### Amazon Lex
+- **Slug:** `amazon-lex`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** AWS Lex, Lex
+- **Description:** AWS service for building conversational interfaces using voice and text
+- **Prerequisites:**
+  - `aws` (recommended) - Amazon Lex is part of AWS
+
+### Amazon SageMaker
+- **Slug:** `amazon-sagemaker`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** SageMaker, AWS SageMaker
+- **Description:** AWS fully managed service for building, training, and deploying ML models
+- **Prerequisites:**
+  - `aws` (recommended) - SageMaker is part of AWS
+
 ### Anthropic Claude API
 - **Slug:** `anthropic-claude-api`
 - **File:** `006-ai-ml.json`
 - **Synonyms:** Claude API, Anthropic API, Claude AI
 - **Description:** API for accessing Anthropic's Claude language models
+
+### AssemblyAI
+- **Slug:** `assemblyai`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Assembly AI, AssemblyAI API
+- **Description:** AI-powered speech-to-text and audio intelligence API
+
+### AutoGen
+- **Slug:** `autogen`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Microsoft AutoGen, AutoGen Framework
+- **Description:** Framework for building multi-agent conversational systems
+- **Prerequisites:**
+  - `python` (required) - AutoGen is a Python framework
+- **Alternatives:**
+  - `crewai` (similar) - CrewAI is another multi-agent framework
+
+### Azure Machine Learning
+- **Slug:** `azure-machine-learning`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Azure ML, AzureML
+- **Description:** Microsoft Azure's cloud platform for ML lifecycle management
+- **Prerequisites:**
+  - `azure` (recommended) - Azure ML is part of Microsoft Azure
+
+### BentoML
+- **Slug:** `bentoml`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Bento ML, BentoML Framework
+- **Description:** Framework for serving and deploying ML models in production
+- **Prerequisites:**
+  - `python` (required) - BentoML is a Python framework
+
+### Botpress
+- **Slug:** `botpress`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Botpress Platform, Botpress Framework
+- **Description:** Open-source platform for building and deploying chatbots
+
+### Chroma
+- **Slug:** `chroma`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:chroma`
+- **Synonyms:** ChromaDB, Chroma Vector Database
+- **Description:** Open-source embedding database for AI applications
+
+### Cohere API
+- **Slug:** `cohere-api`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Cohere, Cohere AI
+- **Description:** API for accessing Cohere's language models and NLP tools
+
+### CrewAI
+- **Slug:** `crewai`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Crew AI, CrewAI Framework
+- **Description:** Framework for orchestrating role-playing autonomous AI agents
+- **Prerequisites:**
+  - `python` (required) - CrewAI is a Python framework
 
 ### CUDA
 - **Slug:** `cuda`
@@ -2671,6 +2812,33 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** Parallel computing platform and API by NVIDIA for GPU acceleration
 - **Prerequisites:**
   - `cpp` (recommended) - CUDA programming often involves C++
+
+### Databricks
+- **Slug:** `databricks`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Databricks Platform, Databricks ML
+- **Description:** Unified analytics platform for data engineering, ML, and AI
+
+### Dialogflow
+- **Slug:** `dialogflow`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:dialogflow`
+- **Synonyms:** Google Dialogflow, Dialogflow CX, Dialogflow ES
+- **Description:** Google's conversational AI platform for building chatbots and voice assistants
+
+### ElevenLabs
+- **Slug:** `elevenlabs`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** ElevenLabs AI, Eleven Labs TTS
+- **Description:** AI voice generation and text-to-speech platform
+
+### FAISS
+- **Slug:** `faiss`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Facebook AI Similarity Search, FAISS Vector Search
+- **Description:** Library for efficient similarity search and clustering of dense vectors
+- **Prerequisites:**
+  - `python` (recommended) - FAISS is commonly used with Python
 
 ### Fortran
 - **Slug:** `fortran`
@@ -2682,6 +2850,13 @@ Run `npm run generate:competency-reference` to update.
   - `c` (similar) - Both are used for high-performance computing
   - `julia` (similar) - Julia is a modern alternative for scientific computing
 
+### Google Gemini API
+- **Slug:** `google-gemini-api`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:google-gemini`
+- **Synonyms:** Gemini API, Google Gemini
+- **Description:** API for accessing Google's Gemini multimodal AI models
+
 ### Gradio
 - **Slug:** `gradio`
 - **File:** `006-ai-ml.json`
@@ -2691,6 +2866,12 @@ Run `npm run generate:competency-reference` to update.
   - `python` (required) - Gradio is a Python library
 - **Alternatives:**
   - `streamlit` (similar) - Streamlit is another framework for ML web apps
+
+### Helicone
+- **Slug:** `helicone`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Helicone AI, Helicone Observability
+- **Description:** Observability platform for LLM applications and APIs
 
 ### Hugging Face
 - **Slug:** `hugging-face`
@@ -2731,6 +2912,14 @@ Run `npm run generate:competency-reference` to update.
   - `tensorflow` (recommended) - Keras is now integrated with TensorFlow
   - `python` (required) - Keras is a Python library
 
+### KServe
+- **Slug:** `kserve`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** KServe ML, KFServing
+- **Description:** Kubernetes-based platform for ML model serving
+- **Prerequisites:**
+  - `kubernetes` (required) - KServe runs on Kubernetes
+
 ### LangChain
 - **Slug:** `langchain`
 - **File:** `006-ai-ml.json`
@@ -2738,6 +2927,29 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** Framework for developing applications powered by language models
 - **Prerequisites:**
   - `python` (required) - LangChain is a Python framework
+
+### LangFuse
+- **Slug:** `langfuse`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Langfuse Platform, LangFuse Analytics
+- **Description:** Open-source observability and analytics for LLM applications
+
+### LangGraph
+- **Slug:** `langgraph`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** LangChain Graph, LangGraph Framework
+- **Description:** Framework for building stateful, multi-agent LLM applications
+- **Prerequisites:**
+  - `langchain` (recommended) - LangGraph is built on LangChain
+  - `python` (required) - LangGraph is a Python framework
+
+### LangSmith
+- **Slug:** `langsmith`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** LangChain Smith, LangSmith Platform
+- **Description:** Platform for debugging, testing, and monitoring LLM applications
+- **Prerequisites:**
+  - `langchain` (recommended) - LangSmith is designed for LangChain applications
 
 ### LightGBM
 - **Slug:** `lightgbm`
@@ -2748,6 +2960,22 @@ Run `npm run generate:competency-reference` to update.
   - `python` (recommended) - LightGBM is commonly used with Python
 - **Alternatives:**
   - `xgboost` (similar) - XGBoost is another gradient boosting library
+
+### LlamaIndex
+- **Slug:** `llamaindex`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** LlamaIndex Framework, GPT Index
+- **Description:** Data framework for LLM applications with RAG capabilities
+- **Prerequisites:**
+  - `python` (required) - LlamaIndex is a Python framework
+- **Alternatives:**
+  - `langchain` (similar) - LangChain is another LLM application framework
+
+### LM Studio
+- **Slug:** `lm-studio`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** LM Studio App, LMStudio
+- **Description:** Desktop application for running local LLMs
 
 ### MATLAB
 - **Slug:** `matlab`
@@ -2768,6 +2996,18 @@ Run `npm run generate:competency-reference` to update.
   - `python` (required) - Matplotlib is a Python library
   - `numpy` (recommended) - Matplotlib works with NumPy arrays
 
+### Microsoft Copilot Studio
+- **Slug:** `microsoft-copilot-studio`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Copilot Studio, Microsoft Copilot Builder
+- **Description:** Low-code platform for building AI agents and copilots
+
+### Milvus
+- **Slug:** `milvus`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Milvus DB, Milvus Vector Database
+- **Description:** Open-source vector database for scalable similarity search
+
 ### MLflow
 - **Slug:** `mlflow`
 - **File:** `006-ai-ml.json`
@@ -2775,6 +3015,14 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** Open-source platform for managing ML lifecycle
 - **Prerequisites:**
   - `python` (required) - MLflow is primarily used with Python
+
+### Modal
+- **Slug:** `modal`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Modal Labs, Modal Cloud
+- **Description:** Cloud platform for running ML models and compute-intensive workloads
+- **Prerequisites:**
+  - `python` (required) - Modal is primarily used with Python
 
 ### Mojo
 - **Slug:** `mojo`
@@ -2806,6 +3054,12 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `python` (required) - NumPy is a Python library
 
+### Ollama
+- **Slug:** `ollama`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Ollama AI, Ollama LLM
+- **Description:** Tool for running large language models locally
+
 ### OpenAI API
 - **Slug:** `openai-api`
 - **File:** `006-ai-ml.json`
@@ -2832,6 +3086,13 @@ Run `npm run generate:competency-reference` to update.
   - `python` (required) - Pandas is a Python library
   - `numpy` (recommended) - Pandas is built on NumPy
 
+### Pinecone
+- **Slug:** `pinecone`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:pinecone-icon`
+- **Synonyms:** Pinecone DB, Pinecone Vector Database
+- **Description:** Vector database for AI applications and semantic search
+
 ### Plotly
 - **Slug:** `plotly`
 - **File:** `006-ai-ml.json`
@@ -2851,6 +3112,13 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `tensorflow` (similar) - TensorFlow is another popular deep learning framework
 
+### Qdrant
+- **Slug:** `qdrant`
+- **File:** `006-ai-ml.json`
+- **Icon:** `logos:qdrant-icon`
+- **Synonyms:** Qdrant DB, Qdrant Vector Database
+- **Description:** Vector similarity search engine and database
+
 ### R
 - **Slug:** `r`
 - **File:** `001-programming.json`
@@ -2860,6 +3128,14 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `python` (similar) - Python with libraries like Pandas is often used as an alternative to R for data science
 
+### Rasa
+- **Slug:** `rasa`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Rasa NLU, Rasa Framework
+- **Description:** Open-source framework for building conversational AI and chatbots
+- **Prerequisites:**
+  - `python` (required) - Rasa is a Python framework
+
 ### Ray
 - **Slug:** `ray`
 - **File:** `006-ai-ml.json`
@@ -2867,6 +3143,18 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** Framework for scaling Python and AI applications
 - **Prerequisites:**
   - `python` (required) - Ray is a Python framework
+
+### Replicate
+- **Slug:** `replicate`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Replicate AI, Replicate Cloud
+- **Description:** Platform for running and deploying ML models in the cloud
+
+### Roboflow
+- **Slug:** `roboflow`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Roboflow CV, Roboflow Platform
+- **Description:** Platform for computer vision model training and deployment
 
 ### Scikit-learn
 - **Slug:** `scikit-learn`
@@ -2886,6 +3174,20 @@ Run `npm run generate:competency-reference` to update.
 - **Prerequisites:**
   - `matplotlib` (recommended) - Seaborn is built on Matplotlib
   - `python` (required) - Seaborn is a Python library
+
+### Seldon Core
+- **Slug:** `seldon-core`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Seldon, Seldon Deploy
+- **Description:** Open-source platform for deploying ML models on Kubernetes
+- **Prerequisites:**
+  - `kubernetes` (recommended) - Seldon Core runs on Kubernetes
+
+### Semantic Kernel
+- **Slug:** `semantic-kernel`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Semantic Kernel SDK, Microsoft Semantic Kernel
+- **Description:** Microsoft SDK for integrating LLMs with conventional programming
 
 ### spaCy
 - **Slug:** `spacy`
@@ -2922,6 +3224,40 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `pytorch` (similar) - PyTorch is another popular deep learning framework
 
+### Together AI
+- **Slug:** `together-ai`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Together, Together Compute
+- **Description:** Platform for running open-source AI models at scale
+
+### Ultralytics
+- **Slug:** `ultralytics`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Ultralytics YOLO, Ultralytics HUB
+- **Description:** Computer vision AI platform and YOLO framework maintainer
+- **Prerequisites:**
+  - `python` (recommended) - Ultralytics YOLO is primarily used with Python
+
+### Vertex AI
+- **Slug:** `vertex-ai`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Google Vertex AI, GCP Vertex AI
+- **Description:** Google Cloud's unified ML platform for building and deploying AI models
+- **Prerequisites:**
+  - `google-cloud-platform` (recommended) - Vertex AI is part of Google Cloud Platform
+
+### Voiceflow
+- **Slug:** `voiceflow`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Voiceflow AI, Voiceflow Platform
+- **Description:** Platform for designing and building conversational AI agents
+
+### Weaviate
+- **Slug:** `weaviate`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** Weaviate DB, Weaviate Vector Database
+- **Description:** Open-source vector database for AI-native applications
+
 ### Weights & Biases
 - **Slug:** `weights-and-biases`
 - **File:** `006-ai-ml.json`
@@ -2929,6 +3265,14 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** ML experiment tracking and model management platform
 - **Prerequisites:**
   - `python` (required) - W&B is primarily used with Python
+
+### Whisper
+- **Slug:** `whisper`
+- **File:** `006-ai-ml.json`
+- **Synonyms:** OpenAI Whisper, Whisper ASR
+- **Description:** OpenAI's automatic speech recognition system
+- **Prerequisites:**
+  - `python` (recommended) - Whisper is commonly used with Python
 
 ### XGBoost
 - **Slug:** `xgboost`

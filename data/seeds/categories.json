@@ -121,11 +121,19 @@
       "parent_slug": "information-technology"
     },
     {
+      "name": "Automation & Integration",
+      "slug": "automation-integration",
+      "description": "Workflow automation and system integration tools",
+      "icon": "lucide:workflow",
+      "display_order": 4,
+      "parent_slug": "information-technology"
+    },
+    {
       "name": "Information Security",
       "slug": "information-security",
       "description": "Cybersecurity and information protection",
       "icon": "lucide:shield-check",
-      "display_order": 4,
+      "display_order": 5,
       "parent_slug": "information-technology"
     },
     {

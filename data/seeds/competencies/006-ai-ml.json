@@ -543,6 +543,571 @@
           "notes": "Streamlit is another framework for ML web apps"
         }
       ]
+    },
+    {
+      "name": "Pinecone",
+      "slug": "pinecone",
+      "description": "Vector database for AI applications and semantic search",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Pinecone DB",
+        "Pinecone Vector Database"
+      ],
+      "icon": "logos:pinecone-icon"
+    },
+    {
+      "name": "Weaviate",
+      "slug": "weaviate",
+      "description": "Open-source vector database for AI-native applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Weaviate DB",
+        "Weaviate Vector Database"
+      ]
+    },
+    {
+      "name": "Chroma",
+      "slug": "chroma",
+      "description": "Open-source embedding database for AI applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "ChromaDB",
+        "Chroma Vector Database"
+      ],
+      "icon": "logos:chroma"
+    },
+    {
+      "name": "Qdrant",
+      "slug": "qdrant",
+      "description": "Vector similarity search engine and database",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Qdrant DB",
+        "Qdrant Vector Database"
+      ],
+      "icon": "logos:qdrant-icon"
+    },
+    {
+      "name": "Milvus",
+      "slug": "milvus",
+      "description": "Open-source vector database for scalable similarity search",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Milvus DB",
+        "Milvus Vector Database"
+      ]
+    },
+    {
+      "name": "FAISS",
+      "slug": "faiss",
+      "description": "Library for efficient similarity search and clustering of dense vectors",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Facebook AI Similarity Search",
+        "FAISS Vector Search"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "FAISS is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "LlamaIndex",
+      "slug": "llamaindex",
+      "description": "Data framework for LLM applications with RAG capabilities",
+      "category_slug": "data-science",
+      "synonyms": [
+        "LlamaIndex Framework",
+        "GPT Index"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "LlamaIndex is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "langchain",
+          "relationship_type": "similar",
+          "notes": "LangChain is another LLM application framework"
+        }
+      ]
+    },
+    {
+      "name": "LangGraph",
+      "slug": "langgraph",
+      "description": "Framework for building stateful, multi-agent LLM applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "LangChain Graph",
+        "LangGraph Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "langchain",
+          "prerequisite_level": "recommended",
+          "notes": "LangGraph is built on LangChain"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "LangGraph is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "CrewAI",
+      "slug": "crewai",
+      "description": "Framework for orchestrating role-playing autonomous AI agents",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Crew AI",
+        "CrewAI Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "CrewAI is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "AutoGen",
+      "slug": "autogen",
+      "description": "Framework for building multi-agent conversational systems",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Microsoft AutoGen",
+        "AutoGen Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "AutoGen is a Python framework"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "crewai",
+          "relationship_type": "similar",
+          "notes": "CrewAI is another multi-agent framework"
+        }
+      ]
+    },
+    {
+      "name": "Semantic Kernel",
+      "slug": "semantic-kernel",
+      "description": "Microsoft SDK for integrating LLMs with conventional programming",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Semantic Kernel SDK",
+        "Microsoft Semantic Kernel"
+      ]
+    },
+    {
+      "name": "Vertex AI",
+      "slug": "vertex-ai",
+      "description": "Google Cloud's unified ML platform for building and deploying AI models",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Google Vertex AI",
+        "GCP Vertex AI"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "google-cloud-platform",
+          "prerequisite_level": "recommended",
+          "notes": "Vertex AI is part of Google Cloud Platform"
+        }
+      ]
+    },
+    {
+      "name": "Azure Machine Learning",
+      "slug": "azure-machine-learning",
+      "description": "Microsoft Azure's cloud platform for ML lifecycle management",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Azure ML",
+        "AzureML"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "azure",
+          "prerequisite_level": "recommended",
+          "notes": "Azure ML is part of Microsoft Azure"
+        }
+      ]
+    },
+    {
+      "name": "Amazon SageMaker",
+      "slug": "amazon-sagemaker",
+      "description": "AWS fully managed service for building, training, and deploying ML models",
+      "category_slug": "data-science",
+      "synonyms": [
+        "SageMaker",
+        "AWS SageMaker"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "recommended",
+          "notes": "SageMaker is part of AWS"
+        }
+      ]
+    },
+    {
+      "name": "Databricks",
+      "slug": "databricks",
+      "description": "Unified analytics platform for data engineering, ML, and AI",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Databricks Platform",
+        "Databricks ML"
+      ]
+    },
+    {
+      "name": "Make",
+      "slug": "make",
+      "description": "Visual workflow automation platform for connecting apps and services",
+      "category_slug": "automation-integration",
+      "synonyms": [
+        "Make.com",
+        "Integromat"
+      ]
+    },
+    {
+      "name": "n8n",
+      "slug": "n8n",
+      "description": "Open-source workflow automation tool for technical users",
+      "category_slug": "automation-integration",
+      "synonyms": [
+        "n8n.io",
+        "n8n Automation"
+      ]
+    },
+    {
+      "name": "Zapier",
+      "slug": "zapier",
+      "description": "Workflow automation platform connecting web applications",
+      "category_slug": "automation-integration",
+      "synonyms": [
+        "Zapier Automation",
+        "Zapier Integration"
+      ],
+      "icon": "logos:zapier-icon"
+    },
+    {
+      "name": "BentoML",
+      "slug": "bentoml",
+      "description": "Framework for serving and deploying ML models in production",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Bento ML",
+        "BentoML Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "BentoML is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "Seldon Core",
+      "slug": "seldon-core",
+      "description": "Open-source platform for deploying ML models on Kubernetes",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Seldon",
+        "Seldon Deploy"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "recommended",
+          "notes": "Seldon Core runs on Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "KServe",
+      "slug": "kserve",
+      "description": "Kubernetes-based platform for ML model serving",
+      "category_slug": "data-science",
+      "synonyms": [
+        "KServe ML",
+        "KFServing"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "kubernetes",
+          "prerequisite_level": "required",
+          "notes": "KServe runs on Kubernetes"
+        }
+      ]
+    },
+    {
+      "name": "Modal",
+      "slug": "modal",
+      "description": "Cloud platform for running ML models and compute-intensive workloads",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Modal Labs",
+        "Modal Cloud"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Modal is primarily used with Python"
+        }
+      ]
+    },
+    {
+      "name": "Replicate",
+      "slug": "replicate",
+      "description": "Platform for running and deploying ML models in the cloud",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Replicate AI",
+        "Replicate Cloud"
+      ]
+    },
+    {
+      "name": "Together AI",
+      "slug": "together-ai",
+      "description": "Platform for running open-source AI models at scale",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Together",
+        "Together Compute"
+      ]
+    },
+    {
+      "name": "Ollama",
+      "slug": "ollama",
+      "description": "Tool for running large language models locally",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Ollama AI",
+        "Ollama LLM"
+      ]
+    },
+    {
+      "name": "LM Studio",
+      "slug": "lm-studio",
+      "description": "Desktop application for running local LLMs",
+      "category_slug": "data-science",
+      "synonyms": [
+        "LM Studio App",
+        "LMStudio"
+      ]
+    },
+    {
+      "name": "LangSmith",
+      "slug": "langsmith",
+      "description": "Platform for debugging, testing, and monitoring LLM applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "LangChain Smith",
+        "LangSmith Platform"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "langchain",
+          "prerequisite_level": "recommended",
+          "notes": "LangSmith is designed for LangChain applications"
+        }
+      ]
+    },
+    {
+      "name": "Helicone",
+      "slug": "helicone",
+      "description": "Observability platform for LLM applications and APIs",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Helicone AI",
+        "Helicone Observability"
+      ]
+    },
+    {
+      "name": "LangFuse",
+      "slug": "langfuse",
+      "description": "Open-source observability and analytics for LLM applications",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Langfuse Platform",
+        "LangFuse Analytics"
+      ]
+    },
+    {
+      "name": "Google Gemini API",
+      "slug": "google-gemini-api",
+      "description": "API for accessing Google's Gemini multimodal AI models",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Gemini API",
+        "Google Gemini"
+      ],
+      "icon": "logos:google-gemini"
+    },
+    {
+      "name": "Cohere API",
+      "slug": "cohere-api",
+      "description": "API for accessing Cohere's language models and NLP tools",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Cohere",
+        "Cohere AI"
+      ]
+    },
+    {
+      "name": "Rasa",
+      "slug": "rasa",
+      "description": "Open-source framework for building conversational AI and chatbots",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Rasa NLU",
+        "Rasa Framework"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Rasa is a Python framework"
+        }
+      ]
+    },
+    {
+      "name": "Botpress",
+      "slug": "botpress",
+      "description": "Open-source platform for building and deploying chatbots",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Botpress Platform",
+        "Botpress Framework"
+      ]
+    },
+    {
+      "name": "Dialogflow",
+      "slug": "dialogflow",
+      "description": "Google's conversational AI platform for building chatbots and voice assistants",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Google Dialogflow",
+        "Dialogflow CX",
+        "Dialogflow ES"
+      ],
+      "icon": "logos:dialogflow"
+    },
+    {
+      "name": "Amazon Lex",
+      "slug": "amazon-lex",
+      "description": "AWS service for building conversational interfaces using voice and text",
+      "category_slug": "data-science",
+      "synonyms": [
+        "AWS Lex",
+        "Lex"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "aws",
+          "prerequisite_level": "recommended",
+          "notes": "Amazon Lex is part of AWS"
+        }
+      ]
+    },
+    {
+      "name": "Voiceflow",
+      "slug": "voiceflow",
+      "description": "Platform for designing and building conversational AI agents",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Voiceflow AI",
+        "Voiceflow Platform"
+      ]
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "slug": "microsoft-copilot-studio",
+      "description": "Low-code platform for building AI agents and copilots",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Copilot Studio",
+        "Microsoft Copilot Builder"
+      ]
+    },
+    {
+      "name": "Whisper",
+      "slug": "whisper",
+      "description": "OpenAI's automatic speech recognition system",
+      "category_slug": "data-science",
+      "synonyms": [
+        "OpenAI Whisper",
+        "Whisper ASR"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Whisper is commonly used with Python"
+        }
+      ]
+    },
+    {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "description": "AI voice generation and text-to-speech platform",
+      "category_slug": "data-science",
+      "synonyms": [
+        "ElevenLabs AI",
+        "Eleven Labs TTS"
+      ]
+    },
+    {
+      "name": "AssemblyAI",
+      "slug": "assemblyai",
+      "description": "AI-powered speech-to-text and audio intelligence API",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Assembly AI",
+        "AssemblyAI API"
+      ]
+    },
+    {
+      "name": "Roboflow",
+      "slug": "roboflow",
+      "description": "Platform for computer vision model training and deployment",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Roboflow CV",
+        "Roboflow Platform"
+      ]
+    },
+    {
+      "name": "Ultralytics",
+      "slug": "ultralytics",
+      "description": "Computer vision AI platform and YOLO framework maintainer",
+      "category_slug": "data-science",
+      "synonyms": [
+        "Ultralytics YOLO",
+        "Ultralytics HUB"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Ultralytics YOLO is primarily used with Python"
+        }
+      ]
     }
   ]
 }
