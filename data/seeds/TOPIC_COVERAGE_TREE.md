@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T20:16:42.160Z
-**Total Topics:** 601
+**Generated:** 2025-11-22T20:40:10.066Z
+**Total Topics:** 782
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -38,7 +38,7 @@ Run `npm run topic:coverage` to update.
 │   ├── Motion & 3D [0 topics, 16 competencies]
 │   ├── Creative Arts [0 topics, 0 competencies]
 │   │   ├── Photography & Video [0 topics, 3 competencies]
-│   │   ├── Music [0 topics, 58 competencies]
+│   │   ├── Music [181 topics, 58 competencies]
 │   │   ├── Writing [0 topics, 52 competencies]
 │   │   ├── Theater [0 topics, 20 competencies]
 │   │   ├── Visual Arts [0 topics, 50 competencies]
@@ -408,7 +408,7 @@ Run `npm run topic:coverage` to update.
 
 ### Music
 - **Slug:** `music`
-- **Topics:** 0
+- **Topics:** 181
 - **Competencies:** 58
 - **Parent:** creative-arts
 

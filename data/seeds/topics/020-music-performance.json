@@ -1,0 +1,3276 @@
+{
+  "topics": [
+    {
+      "name": "Classical piano performance",
+      "slug": "classical-piano-performance",
+      "description": "Master classical piano repertoire from Baroque to Romantic eras with proper technique and interpretation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz piano performance and improvisation",
+      "slug": "jazz-piano-improvisation",
+      "description": "Play jazz piano with authentic chord voicings, comping patterns, and improvised solos",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Pop and contemporary piano performance",
+      "slug": "pop-piano-performance",
+      "description": "Play popular music on piano with contemporary chord progressions and accompaniment styles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Piano accompaniment for vocalists and instrumentalists",
+      "slug": "piano-accompaniment",
+      "description": "Accompany singers and other musicians with sensitive, supportive piano playing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Piano sight-reading proficiency",
+      "slug": "piano-sight-reading",
+      "description": "Read and play unfamiliar piano music accurately at first sight",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solo piano recital preparation",
+      "slug": "solo-piano-recital",
+      "description": "Prepare and perform polished solo piano recitals with diverse repertoire",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blues and boogie-woogie piano",
+      "slug": "blues-boogie-piano",
+      "description": "Play blues and boogie-woogie piano styles with authentic feel and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Gospel piano techniques",
+      "slug": "gospel-piano",
+      "description": "Play gospel piano with characteristic chord progressions, runs, and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "piano",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical guitar performance",
+      "slug": "classical-guitar-performance",
+      "description": "Perform classical guitar repertoire with fingerstyle technique and musical interpretation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz guitar performance and improvisation",
+      "slug": "jazz-guitar-improvisation",
+      "description": "Play jazz guitar with authentic voicings, comping, and improvised solos over changes",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blues guitar performance and technique",
+      "slug": "blues-guitar-performance",
+      "description": "Play blues guitar with authentic phrasing, bending, and improvisation techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rock guitar performance",
+      "slug": "rock-guitar-performance",
+      "description": "Play rock guitar with power chords, riffs, and electric guitar techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fingerstyle acoustic guitar",
+      "slug": "fingerstyle-acoustic-guitar",
+      "description": "Play fingerstyle acoustic guitar with intricate picking patterns and arrangements",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Electric guitar lead and soloing techniques",
+      "slug": "electric-guitar-lead",
+      "description": "Craft expressive electric guitar solos using scales, bending, vibrato, and effects",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rhythm guitar and chord progressions",
+      "slug": "rhythm-guitar-chords",
+      "description": "Provide solid rhythm guitar foundation with varied strumming and chord voicings",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Guitar sight-reading and chord charts",
+      "slug": "guitar-sight-reading",
+      "description": "Read standard notation and chord charts fluently for guitar performance",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Flamenco guitar techniques",
+      "slug": "flamenco-guitar",
+      "description": "Play flamenco guitar with authentic rasgueado, picado, and traditional forms",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Electric bass guitar performance",
+      "slug": "electric-bass-performance",
+      "description": "Provide solid bass lines and grooves across various musical styles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bass-guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz bass walking lines and improvisation",
+      "slug": "jazz-bass-walking",
+      "description": "Create flowing jazz walking bass lines and improvise over chord changes",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bass-guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Funk and slap bass techniques",
+      "slug": "funk-slap-bass",
+      "description": "Play funk bass lines with slap, pop, and thumb techniques for groove-oriented music",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bass-guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rock and metal bass playing",
+      "slug": "rock-metal-bass",
+      "description": "Deliver powerful bass lines for rock and metal with pick and finger techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bass-guitar",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical violin performance",
+      "slug": "classical-violin-performance",
+      "description": "Perform classical violin repertoire with proper bowing, intonation, and musical expression",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "violin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fiddle playing for folk and bluegrass",
+      "slug": "fiddle-folk-bluegrass",
+      "description": "Play traditional fiddle tunes and improvisation for folk and bluegrass music",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "violin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz violin improvisation",
+      "slug": "jazz-violin-improvisation",
+      "description": "Improvise jazz violin solos with swing feel and authentic jazz vocabulary",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "violin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for violin",
+      "slug": "violin-chamber-music",
+      "description": "Collaborate in string quartets and other chamber ensembles as a violinist",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "violin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral violin section playing",
+      "slug": "orchestral-violin",
+      "description": "Play violin in symphony orchestra sections with unified bowing and intonation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "violin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical cello performance",
+      "slug": "classical-cello-performance",
+      "description": "Perform classical cello repertoire from Baroque to contemporary with expressive technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cello",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz cello techniques and improvisation",
+      "slug": "jazz-cello",
+      "description": "Play jazz on cello with pizzicato, arco techniques, and improvised solos",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cello",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for cello",
+      "slug": "cello-chamber-music",
+      "description": "Collaborate in string quartets, trios, and other chamber groups as a cellist",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cello",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Contemporary cello techniques and repertoire",
+      "slug": "contemporary-cello",
+      "description": "Perform extended techniques and avant-garde cello repertoire from the 20th and 21st centuries",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cello",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical viola performance",
+      "slug": "classical-viola-performance",
+      "description": "Perform classical viola repertoire with rich tone and alto clef proficiency",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "viola",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral viola section playing",
+      "slug": "orchestral-viola",
+      "description": "Play viola in symphony orchestra with blend, intonation, and section unity",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "viola",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for viola",
+      "slug": "viola-chamber-music",
+      "description": "Play viola in string quartets and quintets with leadership and musical sensitivity",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "viola",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical double bass performance",
+      "slug": "classical-double-bass",
+      "description": "Perform classical double bass repertoire with strong foundation in orchestral and solo works",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "double-bass",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz double bass walking lines",
+      "slug": "jazz-double-bass-walking",
+      "description": "Create flowing jazz walking bass lines with proper swing feel and harmonic knowledge",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "double-bass",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral double bass section playing",
+      "slug": "orchestral-double-bass",
+      "description": "Provide solid bass foundation in symphony orchestra with unified articulation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "double-bass",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bluegrass banjo techniques",
+      "slug": "bluegrass-banjo",
+      "description": "Play three-finger style bluegrass banjo with rolls, licks, and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "banjo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Clawhammer and old-time banjo",
+      "slug": "clawhammer-banjo",
+      "description": "Play traditional clawhammer banjo style for old-time and folk music",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "banjo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Irish and Celtic banjo playing",
+      "slug": "celtic-banjo",
+      "description": "Play traditional Irish and Celtic tunes on tenor or four-string banjo",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "banjo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Fingerstyle ukulele performance",
+      "slug": "fingerstyle-ukulele",
+      "description": "Play intricate fingerstyle arrangements on ukulele with melody, harmony, and bass",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ukulele",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ukulele strumming and chord playing",
+      "slug": "ukulele-strumming",
+      "description": "Play songs on ukulele with varied strumming patterns and chord progressions",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ukulele",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz ukulele performance",
+      "slug": "jazz-ukulele",
+      "description": "Play jazz standards and chord-melody arrangements on ukulele",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ukulele",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bluegrass mandolin techniques",
+      "slug": "bluegrass-mandolin",
+      "description": "Play bluegrass mandolin with tremolo, crosspicking, and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "mandolin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical mandolin repertoire",
+      "slug": "classical-mandolin",
+      "description": "Perform classical mandolin pieces with proper tremolo and classical technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "mandolin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Celtic and Irish mandolin playing",
+      "slug": "celtic-mandolin",
+      "description": "Play traditional Celtic tunes on mandolin with authentic ornamentation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "mandolin",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Celtic harp performance",
+      "slug": "celtic-harp",
+      "description": "Play traditional Celtic music on lever harp with authentic ornamentation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "harp",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral harp performance",
+      "slug": "orchestral-harp",
+      "description": "Perform classical harp repertoire in orchestral and solo contexts with pedal technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "harp",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Blues harmonica techniques",
+      "slug": "blues-harmonica",
+      "description": "Play blues harmonica with bending, tongue blocking, and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "harmonica",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chromatic harmonica performance",
+      "slug": "chromatic-harmonica",
+      "description": "Play jazz and classical music on chromatic harmonica with full chromatic range",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "harmonica",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Diatonic accordion for folk music",
+      "slug": "diatonic-accordion-folk",
+      "description": "Play traditional folk music on button accordion with authentic style",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "accordion",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Piano accordion performance",
+      "slug": "piano-accordion",
+      "description": "Perform varied repertoire on piano accordion with bellows control and registration",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "accordion",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Scottish bagpipe performance",
+      "slug": "scottish-bagpipes",
+      "description": "Play Great Highland bagpipes with traditional Scottish repertoire and ornamentation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bagpipes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical trumpet performance",
+      "slug": "classical-trumpet-performance",
+      "description": "Perform classical trumpet repertoire with proper embouchure, articulation, and tone",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trumpet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz trumpet improvisation",
+      "slug": "jazz-trumpet-improvisation",
+      "description": "Improvise jazz trumpet solos with authentic bebop and modern jazz language",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trumpet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral trumpet section playing",
+      "slug": "orchestral-trumpet",
+      "description": "Play trumpet in symphony orchestra with blend, precision, and stylistic awareness",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trumpet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Lead trumpet in big bands and jazz ensembles",
+      "slug": "lead-trumpet-big-band",
+      "description": "Lead trumpet section in big band with high range, endurance, and stylistic command",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trumpet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mariachi trumpet performance",
+      "slug": "mariachi-trumpet",
+      "description": "Play mariachi trumpet with authentic style, ornamentation, and ensemble technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trumpet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical trombone performance",
+      "slug": "classical-trombone-performance",
+      "description": "Perform classical trombone repertoire with smooth slide technique and musicality",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trombone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz trombone styles and improvisation",
+      "slug": "jazz-trombone",
+      "description": "Play jazz trombone with tailgate, bebop, and contemporary improvisation styles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trombone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral trombone section playing",
+      "slug": "orchestral-trombone",
+      "description": "Play trombone in symphony orchestra with unified attacks and blend",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "trombone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "French horn performance",
+      "slug": "french-horn-performance",
+      "description": "Perform French horn repertoire with rich tone, accuracy, and musical expression",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "french-horn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral horn section playing",
+      "slug": "orchestral-horn",
+      "description": "Play French horn in symphony orchestra with blend, intonation, and ensemble precision",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "french-horn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for horn",
+      "slug": "horn-chamber-music",
+      "description": "Collaborate in brass quintets and mixed chamber groups as a horn player",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "french-horn",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tuba performance for orchestra and band",
+      "slug": "orchestral-tuba",
+      "description": "Provide solid bass foundation in orchestral and concert band settings on tuba",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "tuba",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz tuba and sousaphone",
+      "slug": "jazz-tuba-sousaphone",
+      "description": "Play tuba or sousaphone in jazz ensembles with walking bass and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "tuba",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical saxophone performance",
+      "slug": "classical-saxophone-performance",
+      "description": "Perform classical saxophone repertoire with refined tone and technical precision",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "saxophone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz saxophone improvisation",
+      "slug": "jazz-saxophone-improvisation",
+      "description": "Improvise jazz saxophone solos with bebop, modal, and contemporary techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "saxophone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Alto saxophone in jazz ensembles",
+      "slug": "alto-sax-jazz-ensemble",
+      "description": "Play alto saxophone in jazz combos and big bands with section and solo work",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "saxophone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Tenor saxophone techniques and styles",
+      "slug": "tenor-sax-techniques",
+      "description": "Master tenor saxophone across jazz, R&B, and contemporary styles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "saxophone",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical clarinet performance",
+      "slug": "classical-clarinet-performance",
+      "description": "Perform classical clarinet repertoire with warm tone and technical facility",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "clarinet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz clarinet styles and improvisation",
+      "slug": "jazz-clarinet",
+      "description": "Play jazz clarinet with traditional and contemporary improvisation approaches",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "clarinet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral clarinet section playing",
+      "slug": "orchestral-clarinet",
+      "description": "Play clarinet in symphony orchestra with blend, precision, and musical sensitivity",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "clarinet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Klezmer clarinet performance",
+      "slug": "klezmer-clarinet",
+      "description": "Play klezmer music on clarinet with authentic ornamentation and emotional expression",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "clarinet",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Flute performance for orchestra and chamber music",
+      "slug": "classical-flute-performance",
+      "description": "Perform classical flute repertoire with beautiful tone and expressive phrasing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "flute",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz flute techniques and improvisation",
+      "slug": "jazz-flute",
+      "description": "Improvise on jazz flute with authentic vocabulary and contemporary techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "flute",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Irish flute and tin whistle playing",
+      "slug": "irish-flute-whistle",
+      "description": "Play traditional Irish music on wooden flute and tin whistle with ornamentation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "flute",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Oboe performance for orchestra",
+      "slug": "orchestral-oboe",
+      "description": "Perform oboe in orchestral settings with refined tone and technical control",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "oboe",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for oboe",
+      "slug": "oboe-chamber-music",
+      "description": "Collaborate in wind quintets and mixed chamber ensembles as an oboist",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "oboe",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bassoon performance for orchestra",
+      "slug": "orchestral-bassoon",
+      "description": "Perform bassoon in orchestral settings with rich tone and musical expression",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bassoon",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber music for bassoon",
+      "slug": "bassoon-chamber-music",
+      "description": "Play bassoon in wind quintets and other chamber groups with blend and musicality",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bassoon",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Baroque recorder performance",
+      "slug": "baroque-recorder",
+      "description": "Play Baroque recorder repertoire with historical performance practice and ornamentation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "recorder",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Acoustic drum set performance",
+      "slug": "acoustic-drums-performance",
+      "description": "Play drum set across rock, jazz, and pop styles with solid time and groove",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "drums",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz drumming and improvisation",
+      "slug": "jazz-drumming",
+      "description": "Play jazz drums with swing, comping, and interactive improvisation skills",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "drums",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rock and metal drumming techniques",
+      "slug": "rock-metal-drums",
+      "description": "Deliver powerful rock and metal drum grooves with double bass and fills",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "drums",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Funk and R&B drumming",
+      "slug": "funk-rnb-drums",
+      "description": "Play groove-based funk and R&B drum patterns with pocket and feel",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "drums",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Latin percussion and drumming",
+      "slug": "latin-drums-percussion",
+      "description": "Play Latin drum set patterns and hand percussion with authentic clave-based rhythms",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "drums",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analog synthesizer sound design",
+      "slug": "analog-synth-sound-design",
+      "description": "Create expressive sounds on analog synthesizers using oscillators, filters, and envelopes",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Live synthesizer performance techniques",
+      "slug": "live-synth-performance",
+      "description": "Perform live electronic music using synthesizers with real-time control and expression",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modular synthesizer patching and performance",
+      "slug": "modular-synth-patching",
+      "description": "Build complex patches and perform with modular synthesizer systems",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "MIDI keyboard controller performance",
+      "slug": "midi-controller-performance",
+      "description": "Perform with MIDI keyboards and controllers for live and studio applications",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "midi-programming",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Church organ performance",
+      "slug": "church-organ-performance",
+      "description": "Play liturgical and classical organ repertoire with registration and pedal technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "organ",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz organ and Hammond B3 performance",
+      "slug": "jazz-organ-hammond",
+      "description": "Play jazz organ with authentic drawbar settings, bass pedals, and improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "organ",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Theater organ performance",
+      "slug": "theater-organ",
+      "description": "Play theater organ for silent films and entertainment with registration changes",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "organ",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical vocal technique and art song",
+      "slug": "classical-vocal-technique",
+      "description": "Sing classical repertoire with proper technique, diction, and musical interpretation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Opera performance and stagecraft",
+      "slug": "opera-performance",
+      "description": "Perform opera roles with vocal technique, acting, and foreign language diction",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "opera-singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "singing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Choral singing and ensemble technique",
+      "slug": "choral-singing-ensemble",
+      "description": "Sing in choirs with blend, intonation, sight-reading, and ensemble awareness",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz vocal improvisation and scat singing",
+      "slug": "jazz-vocal-improvisation",
+      "description": "Improvise jazz vocals with scat syllables and authentic jazz phrasing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Pop and contemporary vocal performance",
+      "slug": "pop-vocal-performance",
+      "description": "Sing pop music with contemporary vocal techniques and microphone control",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Musical theater vocal performance",
+      "slug": "musical-theater-vocals",
+      "description": "Perform musical theater repertoire with acting, dance, and vocal technique",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Belt and mix voice techniques",
+      "slug": "belt-mix-vocal-technique",
+      "description": "Develop contemporary vocal techniques including belting and mixed voice registration",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Vocal sight-singing proficiency",
+      "slug": "vocal-sight-singing",
+      "description": "Read and sing unfamiliar melodies accurately using solfège or other systems",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "ear-training",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "A cappella group singing and arranging",
+      "slug": "a-cappella-singing",
+      "description": "Sing in a cappella ensembles with tight harmony, blend, and vocal percussion",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "singing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Sacred choral music performance",
+      "slug": "sacred-choral-music",
+      "description": "Perform liturgical and sacred choral works with appropriate style and reverence",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Beatboxing techniques and performance",
+      "slug": "beatboxing-performance",
+      "description": "Create percussion sounds, rhythms, and musical effects using only the voice",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "beatboxing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Vocal percussion for a cappella groups",
+      "slug": "vocal-percussion-a-cappella",
+      "description": "Provide beatbox-style percussion for vocal ensembles and a cappella groups",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "beatboxing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Music theory fundamentals",
+      "slug": "music-theory-fundamentals",
+      "description": "Understand notation, scales, intervals, chords, and basic harmonic progressions",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced harmony and voice leading",
+      "slug": "advanced-harmony-voice-leading",
+      "description": "Master chromatic harmony, modulation, and sophisticated voice leading techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz harmony and chord progressions",
+      "slug": "jazz-harmony-theory",
+      "description": "Understand jazz chord extensions, substitutions, and ii-V-I progressions",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Counterpoint and polyphonic writing",
+      "slug": "counterpoint-polyphony",
+      "description": "Write independent melodic lines that work harmonically using species counterpoint",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Musical form and analysis",
+      "slug": "musical-form-analysis",
+      "description": "Analyze and understand musical structures from binary form to sonata-allegro",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Orchestration for small ensembles",
+      "slug": "orchestration-small-ensembles",
+      "description": "Arrange and orchestrate music for chamber groups and small instrumental ensembles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "orchestration",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestration for symphony orchestra",
+      "slug": "orchestration-symphony",
+      "description": "Score music for full symphony orchestra with effective instrument combinations",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "orchestration",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Film scoring and orchestration",
+      "slug": "film-scoring-orchestration",
+      "description": "Compose and orchestrate music for film, television, and media",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "orchestration",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Instrumental sight-reading proficiency",
+      "slug": "instrumental-sight-reading",
+      "description": "Read and perform unfamiliar instrumental music accurately at first sight",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Ear training and interval recognition",
+      "slug": "ear-training-intervals",
+      "description": "Identify intervals, chords, and melodic patterns by ear",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ear-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Transcribing music by ear",
+      "slug": "transcribing-music-ear",
+      "description": "Notate melodies, harmonies, and solos by listening and analyzing recordings",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ear-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Harmonic dictation and chord recognition",
+      "slug": "harmonic-dictation",
+      "description": "Identify and notate chord progressions and harmonic movement by ear",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ear-training",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Songwriting fundamentals",
+      "slug": "songwriting-fundamentals",
+      "description": "Write original songs with melody, harmony, lyrics, and structure",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-composition",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Classical composition techniques",
+      "slug": "classical-composition",
+      "description": "Compose original classical music with formal structure and orchestration",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-composition",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "orchestration",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz composition and arranging",
+      "slug": "jazz-composition-arranging",
+      "description": "Compose and arrange original jazz pieces for small and large ensembles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-composition",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Arranging for choir and vocal ensembles",
+      "slug": "choral-arranging",
+      "description": "Create and arrange music for choirs with proper voice leading and text setting",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Arranging for big band and jazz ensemble",
+      "slug": "big-band-arranging",
+      "description": "Write and arrange music for big band with section voicings and solo spaces",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "orchestration",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Contemporary pop music arrangement",
+      "slug": "pop-music-arrangement",
+      "description": "Arrange pop songs for various instruments and ensembles with modern production",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Music production fundamentals",
+      "slug": "music-production-fundamentals",
+      "description": "Produce complete recordings from tracking to mixing with modern DAW workflows",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Electronic music production techniques",
+      "slug": "electronic-music-production",
+      "description": "Create electronic music using synthesis, sampling, and digital production tools",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Hip-hop beat production and sampling",
+      "slug": "hip-hop-beat-production",
+      "description": "Produce hip-hop beats with sampling, drum programming, and arrangement",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Pop music production workflows",
+      "slug": "pop-production-workflow",
+      "description": "Produce radio-ready pop songs with modern arrangement and mixing techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-arrangement",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Rock music production and recording",
+      "slug": "rock-music-production",
+      "description": "Record and produce rock music with authentic tones and mixing techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "EDM and dance music production",
+      "slug": "edm-dance-production",
+      "description": "Produce electronic dance music with club-ready arrangements and mixing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Podcast production and editing",
+      "slug": "podcast-production-editing",
+      "description": "Record, edit, and produce podcasts with professional audio quality",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "music-production",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Live sound reinforcement and mixing",
+      "slug": "live-sound-reinforcement",
+      "description": "Mix live concerts and events with PA systems and monitoring",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording studio engineering",
+      "slug": "recording-studio-engineering",
+      "description": "Record musicians in professional studio settings with microphone technique and signal flow",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Audio mixing fundamentals",
+      "slug": "audio-mixing-fundamentals",
+      "description": "Mix multi-track recordings using EQ, compression, and spatial effects",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Advanced mixing techniques and automation",
+      "slug": "advanced-mixing-techniques",
+      "description": "Master parallel processing, advanced EQ, and dynamic automation for professional mixes",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Audio mastering for streaming platforms",
+      "slug": "audio-mastering-streaming",
+      "description": "Master audio for Spotify, Apple Music, and other streaming services with loudness standards",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "audio-mastering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Audio mastering for vinyl and physical media",
+      "slug": "audio-mastering-vinyl",
+      "description": "Master audio for vinyl records with analog processing and format-specific considerations",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "audio-mastering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Microphone techniques for recording",
+      "slug": "microphone-techniques",
+      "description": "Choose and position microphones effectively for various instruments and voices",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording multi-track sessions with Ableton Live",
+      "slug": "recording-ableton-live",
+      "description": "Record and arrange multi-track music sessions in Ableton Live",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ableton-live",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Producing electronic music with Ableton Live",
+      "slug": "electronic-music-ableton",
+      "description": "Create electronic music productions using Ableton Live's instruments and effects",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ableton-live",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mixing professionally with Ableton Live",
+      "slug": "mixing-ableton-live",
+      "description": "Mix complete productions in Ableton Live with advanced routing and effects",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ableton-live",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Live performance with Ableton Live",
+      "slug": "live-performance-ableton",
+      "description": "Perform electronic music live using Ableton Live's session view and controllers",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "ableton-live",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording multi-track sessions with Logic Pro",
+      "slug": "recording-logic-pro",
+      "description": "Record and produce music in Logic Pro with advanced MIDI and audio editing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "logic-pro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Producing electronic music with Logic Pro",
+      "slug": "electronic-music-logic-pro",
+      "description": "Create electronic productions using Logic Pro's synthesizers and samplers",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "logic-pro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mixing professionally with Logic Pro",
+      "slug": "mixing-logic-pro",
+      "description": "Mix complete songs in Logic Pro with stock plugins and advanced techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "logic-pro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "MIDI composition and arrangement with Logic Pro",
+      "slug": "midi-composition-logic-pro",
+      "description": "Compose and arrange music using Logic Pro's MIDI sequencing and virtual instruments",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "logic-pro",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "midi-programming",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording multi-track sessions with FL Studio",
+      "slug": "recording-fl-studio",
+      "description": "Record and produce music in FL Studio with pattern-based workflow",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "fl-studio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Producing electronic music with FL Studio",
+      "slug": "electronic-music-fl-studio",
+      "description": "Create electronic beats and productions using FL Studio's step sequencer and plugins",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "fl-studio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mixing professionally with FL Studio",
+      "slug": "mixing-fl-studio",
+      "description": "Mix complete tracks in FL Studio with its mixer and effects plugins",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "fl-studio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Hip-hop beat making with FL Studio",
+      "slug": "hip-hop-beats-fl-studio",
+      "description": "Produce hip-hop beats using FL Studio's piano roll and sampling capabilities",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "fl-studio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording multi-track sessions with Pro Tools",
+      "slug": "recording-pro-tools",
+      "description": "Record professional-quality music and audio in Pro Tools with industry-standard workflow",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "pro-tools",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mixing professionally with Pro Tools",
+      "slug": "mixing-pro-tools",
+      "description": "Mix music and post-production audio using Pro Tools' industry-standard mixing environment",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "pro-tools",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Audio editing and post-production with Pro Tools",
+      "slug": "audio-editing-pro-tools",
+      "description": "Edit dialogue, sound effects, and music for film and TV using Pro Tools",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "pro-tools",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording multi-track sessions with Cubase",
+      "slug": "recording-cubase",
+      "description": "Record and produce music in Cubase with advanced MIDI and audio capabilities",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cubase",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sound-engineering",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Producing electronic music with Cubase",
+      "slug": "electronic-music-cubase",
+      "description": "Create electronic music using Cubase's synthesizers and MIDI features",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cubase",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mixing professionally with Cubase",
+      "slug": "mixing-cubase",
+      "description": "Mix complete productions in Cubase with its advanced mixing console",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "cubase",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Home recording with GarageBand",
+      "slug": "home-recording-garageband",
+      "description": "Record music at home using GarageBand's accessible production tools",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "garageband",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Podcast editing with Audacity",
+      "slug": "podcast-editing-audacity",
+      "description": "Edit and produce podcasts using free Audacity audio editor",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "audacity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Electronic music with Reason",
+      "slug": "electronic-music-reason",
+      "description": "Produce electronic music using Reason's virtual rack and synthesizers",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "reason",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording and mixing with Reaper",
+      "slug": "recording-mixing-reaper",
+      "description": "Produce and mix music using the lightweight and customizable Reaper DAW",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "reaper",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Recording and producing with Studio One",
+      "slug": "recording-studio-one",
+      "description": "Record and produce music using PreSonus Studio One's modern workflow",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "studio-one",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Electronic music with Bitwig Studio",
+      "slug": "electronic-music-bitwig",
+      "description": "Create electronic music using Bitwig Studio's modular approach and modern features",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "bitwig-studio",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "DJing for clubs and events",
+      "slug": "djing-clubs-events",
+      "description": "Mix and perform as a DJ using turntables, controllers, and digital systems",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "djing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Turntablism and scratching techniques",
+      "slug": "turntablism-scratching",
+      "description": "Perform advanced DJ techniques including scratching, beat juggling, and turntablism",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "turntablism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "djing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Digital DJ mixing and transitions",
+      "slug": "digital-dj-mixing",
+      "description": "Mix tracks seamlessly using digital DJ software and controllers",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "djing",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "audio-mixing",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Music selection and programming for DJs",
+      "slug": "dj-music-selection",
+      "description": "Curate and program DJ sets for different venues and audiences",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "djing",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "MIDI programming for live performance",
+      "slug": "midi-live-performance",
+      "description": "Program MIDI controllers and sequences for live electronic music performance",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "midi-programming",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "synthesizer",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "electronic-music-production",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "MIDI orchestration and composition",
+      "slug": "midi-orchestration",
+      "description": "Compose and orchestrate music using MIDI and virtual instruments",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "midi-programming",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-composition",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "orchestration",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestral conducting techniques",
+      "slug": "orchestral-conducting",
+      "description": "Conduct symphony orchestras with clear gestures, score interpretation, and rehearsal techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "conducting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Choral conducting and rehearsal techniques",
+      "slug": "choral-conducting",
+      "description": "Conduct choirs with vocal technique awareness, score preparation, and ensemble building",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "conducting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "choir-singing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Band conducting for concert and marching bands",
+      "slug": "band-conducting",
+      "description": "Conduct wind ensembles and marching bands with score study and rehearsal techniques",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "conducting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sight-reading",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz ensemble direction and conducting",
+      "slug": "jazz-ensemble-direction",
+      "description": "Direct jazz big bands and combos with stylistic knowledge and improvisation guidance",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "conducting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Opera conducting and coordination",
+      "slug": "opera-conducting",
+      "description": "Conduct opera productions coordinating singers, orchestra, and stage action",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "conducting",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "opera-singing",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "orchestration",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz improvisation fundamentals",
+      "slug": "jazz-improvisation-fundamentals",
+      "description": "Learn to improvise over jazz standards using scales, arpeggios, and jazz vocabulary",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Bebop improvisation techniques",
+      "slug": "bebop-improvisation",
+      "description": "Master bebop language, fast tempos, and chromatic approaches for jazz improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modal jazz improvisation",
+      "slug": "modal-jazz-improvisation",
+      "description": "Improvise over modal jazz using modes and contemporary harmonic approaches",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz chord-scale relationships",
+      "slug": "jazz-chord-scales",
+      "description": "Understand and apply chord-scale theory for jazz improvisation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Jazz phrasing and articulation",
+      "slug": "jazz-phrasing-articulation",
+      "description": "Develop authentic jazz phrasing, swing feel, and stylistic articulation",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Latin jazz improvisation",
+      "slug": "latin-jazz-improvisation",
+      "description": "Improvise over Latin jazz rhythms including bossa nova, samba, and Afro-Cuban styles",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Free jazz and avant-garde improvisation",
+      "slug": "free-jazz-improvisation",
+      "description": "Explore free improvisation and experimental approaches to jazz performance",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Jazz rhythm section interaction",
+      "slug": "jazz-rhythm-section",
+      "description": "Develop interactive listening and comping skills for jazz rhythm section playing",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Transcribing and analyzing jazz solos",
+      "slug": "transcribing-jazz-solos",
+      "description": "Transcribe and learn from recorded jazz solos to develop improvisation vocabulary",
+      "category_slug": "music",
+      "competencies": [
+        {
+          "competency_slug": "jazz-improvisation",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ear-training",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "music-theory",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

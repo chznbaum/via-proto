@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T20:16:23.790Z
-**Total Topics:** 601
+**Generated:** 2025-11-22T20:38:18.565Z
+**Total Topics:** 782
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -20,6 +20,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [game-development](#game-development) (1)
 - [languages](#languages) (147)
 - [mobile-development](#mobile-development) (86)
+- [music](#music) (181)
 - [programming](#programming) (73)
 - [software-testing](#software-testing) (3)
 
@@ -3470,6 +3471,1272 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `react-native`
 - **Supporting Competencies:** `typescript`, `react`
 - **Source File:** 011-mobile-development.json
+
+---
+
+## music
+
+### A cappella group singing and arranging
+- **Slug:** `a-cappella-singing`
+- **Description:** Sing in a cappella ensembles with tight harmony, blend, and vocal percussion
+- **Primary Competencies:** `choir-singing`
+- **Supporting Competencies:** `singing`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Acoustic drum set performance
+- **Slug:** `acoustic-drums-performance`
+- **Description:** Play drum set across rock, jazz, and pop styles with solid time and groove
+- **Primary Competencies:** `drums`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Advanced harmony and voice leading
+- **Slug:** `advanced-harmony-voice-leading`
+- **Description:** Master chromatic harmony, modulation, and sophisticated voice leading techniques
+- **Primary Competencies:** `music-theory`
+- **Supporting Competencies:** `music-composition`
+- **Source File:** 020-music-performance.json
+
+### Advanced mixing techniques and automation
+- **Slug:** `advanced-mixing-techniques`
+- **Description:** Master parallel processing, advanced EQ, and dynamic automation for professional mixes
+- **Primary Competencies:** `audio-mixing`
+- **Supporting Competencies:** `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Alto saxophone in jazz ensembles
+- **Slug:** `alto-sax-jazz-ensemble`
+- **Description:** Play alto saxophone in jazz combos and big bands with section and solo work
+- **Primary Competencies:** `saxophone`
+- **Supporting Competencies:** `jazz-improvisation`, `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Analog synthesizer sound design
+- **Slug:** `analog-synth-sound-design`
+- **Description:** Create expressive sounds on analog synthesizers using oscillators, filters, and envelopes
+- **Primary Competencies:** `synthesizer`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Arranging for big band and jazz ensemble
+- **Slug:** `big-band-arranging`
+- **Description:** Write and arrange music for big band with section voicings and solo spaces
+- **Primary Competencies:** `music-arrangement`
+- **Supporting Competencies:** `orchestration`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Arranging for choir and vocal ensembles
+- **Slug:** `choral-arranging`
+- **Description:** Create and arrange music for choirs with proper voice leading and text setting
+- **Primary Competencies:** `music-arrangement`
+- **Supporting Competencies:** `choir-singing`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Audio editing and post-production with Pro Tools
+- **Slug:** `audio-editing-pro-tools`
+- **Description:** Edit dialogue, sound effects, and music for film and TV using Pro Tools
+- **Primary Competencies:** `pro-tools`
+- **Supporting Competencies:** `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Audio mastering for streaming platforms
+- **Slug:** `audio-mastering-streaming`
+- **Description:** Master audio for Spotify, Apple Music, and other streaming services with loudness standards
+- **Primary Competencies:** `audio-mastering`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Audio mastering for vinyl and physical media
+- **Slug:** `audio-mastering-vinyl`
+- **Description:** Master audio for vinyl records with analog processing and format-specific considerations
+- **Primary Competencies:** `audio-mastering`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Audio mixing fundamentals
+- **Slug:** `audio-mixing-fundamentals`
+- **Description:** Mix multi-track recordings using EQ, compression, and spatial effects
+- **Primary Competencies:** `audio-mixing`
+- **Supporting Competencies:** `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Band conducting for concert and marching bands
+- **Slug:** `band-conducting`
+- **Description:** Conduct wind ensembles and marching bands with score study and rehearsal techniques
+- **Primary Competencies:** `conducting`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Baroque recorder performance
+- **Slug:** `baroque-recorder`
+- **Description:** Play Baroque recorder repertoire with historical performance practice and ornamentation
+- **Primary Competencies:** `recorder`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Bassoon performance for orchestra
+- **Slug:** `orchestral-bassoon`
+- **Description:** Perform bassoon in orchestral settings with rich tone and musical expression
+- **Primary Competencies:** `bassoon`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Beatboxing techniques and performance
+- **Slug:** `beatboxing-performance`
+- **Description:** Create percussion sounds, rhythms, and musical effects using only the voice
+- **Primary Competencies:** `beatboxing`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Bebop improvisation techniques
+- **Slug:** `bebop-improvisation`
+- **Description:** Master bebop language, fast tempos, and chromatic approaches for jazz improvisation
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Belt and mix voice techniques
+- **Slug:** `belt-mix-vocal-technique`
+- **Description:** Develop contemporary vocal techniques including belting and mixed voice registration
+- **Primary Competencies:** `singing`
+- **Source File:** 020-music-performance.json
+
+### Bluegrass banjo techniques
+- **Slug:** `bluegrass-banjo`
+- **Description:** Play three-finger style bluegrass banjo with rolls, licks, and improvisation
+- **Primary Competencies:** `banjo`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Bluegrass mandolin techniques
+- **Slug:** `bluegrass-mandolin`
+- **Description:** Play bluegrass mandolin with tremolo, crosspicking, and improvisation
+- **Primary Competencies:** `mandolin`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Blues and boogie-woogie piano
+- **Slug:** `blues-boogie-piano`
+- **Description:** Play blues and boogie-woogie piano styles with authentic feel and improvisation
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `jazz-improvisation`
+- **Source File:** 020-music-performance.json
+
+### Blues guitar performance and technique
+- **Slug:** `blues-guitar-performance`
+- **Description:** Play blues guitar with authentic phrasing, bending, and improvisation techniques
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Blues harmonica techniques
+- **Slug:** `blues-harmonica`
+- **Description:** Play blues harmonica with bending, tongue blocking, and improvisation
+- **Primary Competencies:** `harmonica`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Celtic and Irish mandolin playing
+- **Slug:** `celtic-mandolin`
+- **Description:** Play traditional Celtic tunes on mandolin with authentic ornamentation
+- **Primary Competencies:** `mandolin`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Celtic harp performance
+- **Slug:** `celtic-harp`
+- **Description:** Play traditional Celtic music on lever harp with authentic ornamentation
+- **Primary Competencies:** `harp`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for bassoon
+- **Slug:** `bassoon-chamber-music`
+- **Description:** Play bassoon in wind quintets and other chamber groups with blend and musicality
+- **Primary Competencies:** `bassoon`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for cello
+- **Slug:** `cello-chamber-music`
+- **Description:** Collaborate in string quartets, trios, and other chamber groups as a cellist
+- **Primary Competencies:** `cello`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for horn
+- **Slug:** `horn-chamber-music`
+- **Description:** Collaborate in brass quintets and mixed chamber groups as a horn player
+- **Primary Competencies:** `french-horn`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for oboe
+- **Slug:** `oboe-chamber-music`
+- **Description:** Collaborate in wind quintets and mixed chamber ensembles as an oboist
+- **Primary Competencies:** `oboe`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for viola
+- **Slug:** `viola-chamber-music`
+- **Description:** Play viola in string quartets and quintets with leadership and musical sensitivity
+- **Primary Competencies:** `viola`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Chamber music for violin
+- **Slug:** `violin-chamber-music`
+- **Description:** Collaborate in string quartets and other chamber ensembles as a violinist
+- **Primary Competencies:** `violin`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Choral conducting and rehearsal techniques
+- **Slug:** `choral-conducting`
+- **Description:** Conduct choirs with vocal technique awareness, score preparation, and ensemble building
+- **Primary Competencies:** `conducting`
+- **Supporting Competencies:** `choir-singing`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Choral singing and ensemble technique
+- **Slug:** `choral-singing-ensemble`
+- **Description:** Sing in choirs with blend, intonation, sight-reading, and ensemble awareness
+- **Primary Competencies:** `choir-singing`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Chromatic harmonica performance
+- **Slug:** `chromatic-harmonica`
+- **Description:** Play jazz and classical music on chromatic harmonica with full chromatic range
+- **Primary Competencies:** `harmonica`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Church organ performance
+- **Slug:** `church-organ-performance`
+- **Description:** Play liturgical and classical organ repertoire with registration and pedal technique
+- **Primary Competencies:** `organ`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical cello performance
+- **Slug:** `classical-cello-performance`
+- **Description:** Perform classical cello repertoire from Baroque to contemporary with expressive technique
+- **Primary Competencies:** `cello`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical clarinet performance
+- **Slug:** `classical-clarinet-performance`
+- **Description:** Perform classical clarinet repertoire with warm tone and technical facility
+- **Primary Competencies:** `clarinet`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical composition techniques
+- **Slug:** `classical-composition`
+- **Description:** Compose original classical music with formal structure and orchestration
+- **Primary Competencies:** `music-composition`
+- **Supporting Competencies:** `orchestration`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Classical double bass performance
+- **Slug:** `classical-double-bass`
+- **Description:** Perform classical double bass repertoire with strong foundation in orchestral and solo works
+- **Primary Competencies:** `double-bass`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical guitar performance
+- **Slug:** `classical-guitar-performance`
+- **Description:** Perform classical guitar repertoire with fingerstyle technique and musical interpretation
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical mandolin repertoire
+- **Slug:** `classical-mandolin`
+- **Description:** Perform classical mandolin pieces with proper tremolo and classical technique
+- **Primary Competencies:** `mandolin`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical piano performance
+- **Slug:** `classical-piano-performance`
+- **Description:** Master classical piano repertoire from Baroque to Romantic eras with proper technique and interpretation
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical saxophone performance
+- **Slug:** `classical-saxophone-performance`
+- **Description:** Perform classical saxophone repertoire with refined tone and technical precision
+- **Primary Competencies:** `saxophone`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical trombone performance
+- **Slug:** `classical-trombone-performance`
+- **Description:** Perform classical trombone repertoire with smooth slide technique and musicality
+- **Primary Competencies:** `trombone`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical trumpet performance
+- **Slug:** `classical-trumpet-performance`
+- **Description:** Perform classical trumpet repertoire with proper embouchure, articulation, and tone
+- **Primary Competencies:** `trumpet`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical viola performance
+- **Slug:** `classical-viola-performance`
+- **Description:** Perform classical viola repertoire with rich tone and alto clef proficiency
+- **Primary Competencies:** `viola`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical violin performance
+- **Slug:** `classical-violin-performance`
+- **Description:** Perform classical violin repertoire with proper bowing, intonation, and musical expression
+- **Primary Competencies:** `violin`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Classical vocal technique and art song
+- **Slug:** `classical-vocal-technique`
+- **Description:** Sing classical repertoire with proper technique, diction, and musical interpretation
+- **Primary Competencies:** `singing`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Clawhammer and old-time banjo
+- **Slug:** `clawhammer-banjo`
+- **Description:** Play traditional clawhammer banjo style for old-time and folk music
+- **Primary Competencies:** `banjo`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Contemporary cello techniques and repertoire
+- **Slug:** `contemporary-cello`
+- **Description:** Perform extended techniques and avant-garde cello repertoire from the 20th and 21st centuries
+- **Primary Competencies:** `cello`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Contemporary pop music arrangement
+- **Slug:** `pop-music-arrangement`
+- **Description:** Arrange pop songs for various instruments and ensembles with modern production
+- **Primary Competencies:** `music-arrangement`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Counterpoint and polyphonic writing
+- **Slug:** `counterpoint-polyphony`
+- **Description:** Write independent melodic lines that work harmonically using species counterpoint
+- **Primary Competencies:** `music-theory`
+- **Supporting Competencies:** `music-composition`
+- **Source File:** 020-music-performance.json
+
+### Diatonic accordion for folk music
+- **Slug:** `diatonic-accordion-folk`
+- **Description:** Play traditional folk music on button accordion with authentic style
+- **Primary Competencies:** `accordion`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Digital DJ mixing and transitions
+- **Slug:** `digital-dj-mixing`
+- **Description:** Mix tracks seamlessly using digital DJ software and controllers
+- **Primary Competencies:** `djing`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### DJing for clubs and events
+- **Slug:** `djing-clubs-events`
+- **Description:** Mix and perform as a DJ using turntables, controllers, and digital systems
+- **Primary Competencies:** `djing`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Ear training and interval recognition
+- **Slug:** `ear-training-intervals`
+- **Description:** Identify intervals, chords, and melodic patterns by ear
+- **Primary Competencies:** `ear-training`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### EDM and dance music production
+- **Slug:** `edm-dance-production`
+- **Description:** Produce electronic dance music with club-ready arrangements and mixing
+- **Primary Competencies:** `electronic-music-production`
+- **Supporting Competencies:** `music-production`, `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Electric bass guitar performance
+- **Slug:** `electric-bass-performance`
+- **Description:** Provide solid bass lines and grooves across various musical styles
+- **Primary Competencies:** `bass-guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Electric guitar lead and soloing techniques
+- **Slug:** `electric-guitar-lead`
+- **Description:** Craft expressive electric guitar solos using scales, bending, vibrato, and effects
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Electronic music production techniques
+- **Slug:** `electronic-music-production`
+- **Description:** Create electronic music using synthesis, sampling, and digital production tools
+- **Primary Competencies:** `electronic-music-production`
+- **Supporting Competencies:** `music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Electronic music with Bitwig Studio
+- **Slug:** `electronic-music-bitwig`
+- **Description:** Create electronic music using Bitwig Studio's modular approach and modern features
+- **Primary Competencies:** `bitwig-studio`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Electronic music with Reason
+- **Slug:** `electronic-music-reason`
+- **Description:** Produce electronic music using Reason's virtual rack and synthesizers
+- **Primary Competencies:** `reason`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Fiddle playing for folk and bluegrass
+- **Slug:** `fiddle-folk-bluegrass`
+- **Description:** Play traditional fiddle tunes and improvisation for folk and bluegrass music
+- **Primary Competencies:** `violin`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Film scoring and orchestration
+- **Slug:** `film-scoring-orchestration`
+- **Description:** Compose and orchestrate music for film, television, and media
+- **Primary Competencies:** `orchestration`
+- **Supporting Competencies:** `music-composition`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Fingerstyle acoustic guitar
+- **Slug:** `fingerstyle-acoustic-guitar`
+- **Description:** Play fingerstyle acoustic guitar with intricate picking patterns and arrangements
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Fingerstyle ukulele performance
+- **Slug:** `fingerstyle-ukulele`
+- **Description:** Play intricate fingerstyle arrangements on ukulele with melody, harmony, and bass
+- **Primary Competencies:** `ukulele`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Flamenco guitar techniques
+- **Slug:** `flamenco-guitar`
+- **Description:** Play flamenco guitar with authentic rasgueado, picado, and traditional forms
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Flute performance for orchestra and chamber music
+- **Slug:** `classical-flute-performance`
+- **Description:** Perform classical flute repertoire with beautiful tone and expressive phrasing
+- **Primary Competencies:** `flute`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Free jazz and avant-garde improvisation
+- **Slug:** `free-jazz-improvisation`
+- **Description:** Explore free improvisation and experimental approaches to jazz performance
+- **Primary Competencies:** `jazz-improvisation`
+- **Source File:** 020-music-performance.json
+
+### French horn performance
+- **Slug:** `french-horn-performance`
+- **Description:** Perform French horn repertoire with rich tone, accuracy, and musical expression
+- **Primary Competencies:** `french-horn`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Funk and R&B drumming
+- **Slug:** `funk-rnb-drums`
+- **Description:** Play groove-based funk and R&B drum patterns with pocket and feel
+- **Primary Competencies:** `drums`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Funk and slap bass techniques
+- **Slug:** `funk-slap-bass`
+- **Description:** Play funk bass lines with slap, pop, and thumb techniques for groove-oriented music
+- **Primary Competencies:** `bass-guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Gospel piano techniques
+- **Slug:** `gospel-piano`
+- **Description:** Play gospel piano with characteristic chord progressions, runs, and improvisation
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Guitar sight-reading and chord charts
+- **Slug:** `guitar-sight-reading`
+- **Description:** Read standard notation and chord charts fluently for guitar performance
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Harmonic dictation and chord recognition
+- **Slug:** `harmonic-dictation`
+- **Description:** Identify and notate chord progressions and harmonic movement by ear
+- **Primary Competencies:** `ear-training`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Hip-hop beat making with FL Studio
+- **Slug:** `hip-hop-beats-fl-studio`
+- **Description:** Produce hip-hop beats using FL Studio's piano roll and sampling capabilities
+- **Primary Competencies:** `fl-studio`
+- **Supporting Competencies:** `music-production`, `electronic-music-production`
+- **Source File:** 020-music-performance.json
+
+### Hip-hop beat production and sampling
+- **Slug:** `hip-hop-beat-production`
+- **Description:** Produce hip-hop beats with sampling, drum programming, and arrangement
+- **Primary Competencies:** `music-production`
+- **Supporting Competencies:** `electronic-music-production`
+- **Source File:** 020-music-performance.json
+
+### Home recording with GarageBand
+- **Slug:** `home-recording-garageband`
+- **Description:** Record music at home using GarageBand's accessible production tools
+- **Primary Competencies:** `garageband`
+- **Supporting Competencies:** `music-production`
+- **Source File:** 020-music-performance.json
+
+### Instrumental sight-reading proficiency
+- **Slug:** `instrumental-sight-reading`
+- **Description:** Read and perform unfamiliar instrumental music accurately at first sight
+- **Primary Competencies:** `sight-reading`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Irish and Celtic banjo playing
+- **Slug:** `celtic-banjo`
+- **Description:** Play traditional Irish and Celtic tunes on tenor or four-string banjo
+- **Primary Competencies:** `banjo`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Irish flute and tin whistle playing
+- **Slug:** `irish-flute-whistle`
+- **Description:** Play traditional Irish music on wooden flute and tin whistle with ornamentation
+- **Primary Competencies:** `flute`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz bass walking lines and improvisation
+- **Slug:** `jazz-bass-walking`
+- **Description:** Create flowing jazz walking bass lines and improvise over chord changes
+- **Primary Competencies:** `bass-guitar`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz cello techniques and improvisation
+- **Slug:** `jazz-cello`
+- **Description:** Play jazz on cello with pizzicato, arco techniques, and improvised solos
+- **Primary Competencies:** `cello`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz chord-scale relationships
+- **Slug:** `jazz-chord-scales`
+- **Description:** Understand and apply chord-scale theory for jazz improvisation
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz clarinet styles and improvisation
+- **Slug:** `jazz-clarinet`
+- **Description:** Play jazz clarinet with traditional and contemporary improvisation approaches
+- **Primary Competencies:** `clarinet`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz composition and arranging
+- **Slug:** `jazz-composition-arranging`
+- **Description:** Compose and arrange original jazz pieces for small and large ensembles
+- **Primary Competencies:** `music-composition`
+- **Supporting Competencies:** `music-arrangement`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz double bass walking lines
+- **Slug:** `jazz-double-bass-walking`
+- **Description:** Create flowing jazz walking bass lines with proper swing feel and harmonic knowledge
+- **Primary Competencies:** `double-bass`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz drumming and improvisation
+- **Slug:** `jazz-drumming`
+- **Description:** Play jazz drums with swing, comping, and interactive improvisation skills
+- **Primary Competencies:** `drums`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz ensemble direction and conducting
+- **Slug:** `jazz-ensemble-direction`
+- **Description:** Direct jazz big bands and combos with stylistic knowledge and improvisation guidance
+- **Primary Competencies:** `conducting`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz flute techniques and improvisation
+- **Slug:** `jazz-flute`
+- **Description:** Improvise on jazz flute with authentic vocabulary and contemporary techniques
+- **Primary Competencies:** `flute`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz guitar performance and improvisation
+- **Slug:** `jazz-guitar-improvisation`
+- **Description:** Play jazz guitar with authentic voicings, comping, and improvised solos over changes
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz harmony and chord progressions
+- **Slug:** `jazz-harmony-theory`
+- **Description:** Understand jazz chord extensions, substitutions, and ii-V-I progressions
+- **Primary Competencies:** `music-theory`
+- **Supporting Competencies:** `jazz-improvisation`
+- **Source File:** 020-music-performance.json
+
+### Jazz improvisation fundamentals
+- **Slug:** `jazz-improvisation-fundamentals`
+- **Description:** Learn to improvise over jazz standards using scales, arpeggios, and jazz vocabulary
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz organ and Hammond B3 performance
+- **Slug:** `jazz-organ-hammond`
+- **Description:** Play jazz organ with authentic drawbar settings, bass pedals, and improvisation
+- **Primary Competencies:** `organ`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz phrasing and articulation
+- **Slug:** `jazz-phrasing-articulation`
+- **Description:** Develop authentic jazz phrasing, swing feel, and stylistic articulation
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz piano performance and improvisation
+- **Slug:** `jazz-piano-improvisation`
+- **Description:** Play jazz piano with authentic chord voicings, comping patterns, and improvised solos
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz rhythm section interaction
+- **Slug:** `jazz-rhythm-section`
+- **Description:** Develop interactive listening and comping skills for jazz rhythm section playing
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz saxophone improvisation
+- **Slug:** `jazz-saxophone-improvisation`
+- **Description:** Improvise jazz saxophone solos with bebop, modal, and contemporary techniques
+- **Primary Competencies:** `saxophone`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz trombone styles and improvisation
+- **Slug:** `jazz-trombone`
+- **Description:** Play jazz trombone with tailgate, bebop, and contemporary improvisation styles
+- **Primary Competencies:** `trombone`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz trumpet improvisation
+- **Slug:** `jazz-trumpet-improvisation`
+- **Description:** Improvise jazz trumpet solos with authentic bebop and modern jazz language
+- **Primary Competencies:** `trumpet`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz tuba and sousaphone
+- **Slug:** `jazz-tuba-sousaphone`
+- **Description:** Play tuba or sousaphone in jazz ensembles with walking bass and improvisation
+- **Primary Competencies:** `tuba`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz ukulele performance
+- **Slug:** `jazz-ukulele`
+- **Description:** Play jazz standards and chord-melody arrangements on ukulele
+- **Primary Competencies:** `ukulele`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz violin improvisation
+- **Slug:** `jazz-violin-improvisation`
+- **Description:** Improvise jazz violin solos with swing feel and authentic jazz vocabulary
+- **Primary Competencies:** `violin`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Jazz vocal improvisation and scat singing
+- **Slug:** `jazz-vocal-improvisation`
+- **Description:** Improvise jazz vocals with scat syllables and authentic jazz phrasing
+- **Primary Competencies:** `singing`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Klezmer clarinet performance
+- **Slug:** `klezmer-clarinet`
+- **Description:** Play klezmer music on clarinet with authentic ornamentation and emotional expression
+- **Primary Competencies:** `clarinet`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Latin jazz improvisation
+- **Slug:** `latin-jazz-improvisation`
+- **Description:** Improvise over Latin jazz rhythms including bossa nova, samba, and Afro-Cuban styles
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Latin percussion and drumming
+- **Slug:** `latin-drums-percussion`
+- **Description:** Play Latin drum set patterns and hand percussion with authentic clave-based rhythms
+- **Primary Competencies:** `drums`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Lead trumpet in big bands and jazz ensembles
+- **Slug:** `lead-trumpet-big-band`
+- **Description:** Lead trumpet section in big band with high range, endurance, and stylistic command
+- **Primary Competencies:** `trumpet`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Live performance with Ableton Live
+- **Slug:** `live-performance-ableton`
+- **Description:** Perform electronic music live using Ableton Live's session view and controllers
+- **Primary Competencies:** `ableton-live`
+- **Supporting Competencies:** `electronic-music-production`
+- **Source File:** 020-music-performance.json
+
+### Live sound reinforcement and mixing
+- **Slug:** `live-sound-reinforcement`
+- **Description:** Mix live concerts and events with PA systems and monitoring
+- **Primary Competencies:** `sound-engineering`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Live synthesizer performance techniques
+- **Slug:** `live-synth-performance`
+- **Description:** Perform live electronic music using synthesizers with real-time control and expression
+- **Primary Competencies:** `synthesizer`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Mariachi trumpet performance
+- **Slug:** `mariachi-trumpet`
+- **Description:** Play mariachi trumpet with authentic style, ornamentation, and ensemble technique
+- **Primary Competencies:** `trumpet`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Microphone techniques for recording
+- **Slug:** `microphone-techniques`
+- **Description:** Choose and position microphones effectively for various instruments and voices
+- **Primary Competencies:** `sound-engineering`
+- **Supporting Competencies:** `music-production`
+- **Source File:** 020-music-performance.json
+
+### MIDI composition and arrangement with Logic Pro
+- **Slug:** `midi-composition-logic-pro`
+- **Description:** Compose and arrange music using Logic Pro's MIDI sequencing and virtual instruments
+- **Primary Competencies:** `logic-pro`
+- **Supporting Competencies:** `midi-programming`, `music-composition`
+- **Source File:** 020-music-performance.json
+
+### MIDI keyboard controller performance
+- **Slug:** `midi-controller-performance`
+- **Description:** Perform with MIDI keyboards and controllers for live and studio applications
+- **Primary Competencies:** `synthesizer`
+- **Supporting Competencies:** `midi-programming`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### MIDI orchestration and composition
+- **Slug:** `midi-orchestration`
+- **Description:** Compose and orchestrate music using MIDI and virtual instruments
+- **Primary Competencies:** `midi-programming`
+- **Supporting Competencies:** `music-composition`, `orchestration`
+- **Source File:** 020-music-performance.json
+
+### MIDI programming for live performance
+- **Slug:** `midi-live-performance`
+- **Description:** Program MIDI controllers and sequences for live electronic music performance
+- **Primary Competencies:** `midi-programming`
+- **Supporting Competencies:** `synthesizer`, `electronic-music-production`
+- **Source File:** 020-music-performance.json
+
+### Mixing professionally with Ableton Live
+- **Slug:** `mixing-ableton-live`
+- **Description:** Mix complete productions in Ableton Live with advanced routing and effects
+- **Primary Competencies:** `ableton-live`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Mixing professionally with Cubase
+- **Slug:** `mixing-cubase`
+- **Description:** Mix complete productions in Cubase with its advanced mixing console
+- **Primary Competencies:** `cubase`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Mixing professionally with FL Studio
+- **Slug:** `mixing-fl-studio`
+- **Description:** Mix complete tracks in FL Studio with its mixer and effects plugins
+- **Primary Competencies:** `fl-studio`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Mixing professionally with Logic Pro
+- **Slug:** `mixing-logic-pro`
+- **Description:** Mix complete songs in Logic Pro with stock plugins and advanced techniques
+- **Primary Competencies:** `logic-pro`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Mixing professionally with Pro Tools
+- **Slug:** `mixing-pro-tools`
+- **Description:** Mix music and post-production audio using Pro Tools' industry-standard mixing environment
+- **Primary Competencies:** `pro-tools`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Modal jazz improvisation
+- **Slug:** `modal-jazz-improvisation`
+- **Description:** Improvise over modal jazz using modes and contemporary harmonic approaches
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Modular synthesizer patching and performance
+- **Slug:** `modular-synth-patching`
+- **Description:** Build complex patches and perform with modular synthesizer systems
+- **Primary Competencies:** `synthesizer`
+- **Supporting Competencies:** `electronic-music-production`
+- **Source File:** 020-music-performance.json
+
+### Music production fundamentals
+- **Slug:** `music-production-fundamentals`
+- **Description:** Produce complete recordings from tracking to mixing with modern DAW workflows
+- **Primary Competencies:** `music-production`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Music selection and programming for DJs
+- **Slug:** `dj-music-selection`
+- **Description:** Curate and program DJ sets for different venues and audiences
+- **Primary Competencies:** `djing`
+- **Source File:** 020-music-performance.json
+
+### Music theory fundamentals
+- **Slug:** `music-theory-fundamentals`
+- **Description:** Understand notation, scales, intervals, chords, and basic harmonic progressions
+- **Primary Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Musical form and analysis
+- **Slug:** `musical-form-analysis`
+- **Description:** Analyze and understand musical structures from binary form to sonata-allegro
+- **Primary Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Musical theater vocal performance
+- **Slug:** `musical-theater-vocals`
+- **Description:** Perform musical theater repertoire with acting, dance, and vocal technique
+- **Primary Competencies:** `singing`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Oboe performance for orchestra
+- **Slug:** `orchestral-oboe`
+- **Description:** Perform oboe in orchestral settings with refined tone and technical control
+- **Primary Competencies:** `oboe`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Opera conducting and coordination
+- **Slug:** `opera-conducting`
+- **Description:** Conduct opera productions coordinating singers, orchestra, and stage action
+- **Primary Competencies:** `conducting`
+- **Supporting Competencies:** `opera-singing`, `orchestration`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Opera performance and stagecraft
+- **Slug:** `opera-performance`
+- **Description:** Perform opera roles with vocal technique, acting, and foreign language diction
+- **Primary Competencies:** `opera-singing`
+- **Supporting Competencies:** `singing`, `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Orchestral clarinet section playing
+- **Slug:** `orchestral-clarinet`
+- **Description:** Play clarinet in symphony orchestra with blend, precision, and musical sensitivity
+- **Primary Competencies:** `clarinet`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral conducting techniques
+- **Slug:** `orchestral-conducting`
+- **Description:** Conduct symphony orchestras with clear gestures, score interpretation, and rehearsal techniques
+- **Primary Competencies:** `conducting`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Orchestral double bass section playing
+- **Slug:** `orchestral-double-bass`
+- **Description:** Provide solid bass foundation in symphony orchestra with unified articulation
+- **Primary Competencies:** `double-bass`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral harp performance
+- **Slug:** `orchestral-harp`
+- **Description:** Perform classical harp repertoire in orchestral and solo contexts with pedal technique
+- **Primary Competencies:** `harp`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Orchestral horn section playing
+- **Slug:** `orchestral-horn`
+- **Description:** Play French horn in symphony orchestra with blend, intonation, and ensemble precision
+- **Primary Competencies:** `french-horn`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral trombone section playing
+- **Slug:** `orchestral-trombone`
+- **Description:** Play trombone in symphony orchestra with unified attacks and blend
+- **Primary Competencies:** `trombone`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral trumpet section playing
+- **Slug:** `orchestral-trumpet`
+- **Description:** Play trumpet in symphony orchestra with blend, precision, and stylistic awareness
+- **Primary Competencies:** `trumpet`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral viola section playing
+- **Slug:** `orchestral-viola`
+- **Description:** Play viola in symphony orchestra with blend, intonation, and section unity
+- **Primary Competencies:** `viola`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestral violin section playing
+- **Slug:** `orchestral-violin`
+- **Description:** Play violin in symphony orchestra sections with unified bowing and intonation
+- **Primary Competencies:** `violin`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Orchestration for small ensembles
+- **Slug:** `orchestration-small-ensembles`
+- **Description:** Arrange and orchestrate music for chamber groups and small instrumental ensembles
+- **Primary Competencies:** `orchestration`
+- **Supporting Competencies:** `music-theory`, `music-arrangement`
+- **Source File:** 020-music-performance.json
+
+### Orchestration for symphony orchestra
+- **Slug:** `orchestration-symphony`
+- **Description:** Score music for full symphony orchestra with effective instrument combinations
+- **Primary Competencies:** `orchestration`
+- **Supporting Competencies:** `music-theory`, `music-composition`
+- **Source File:** 020-music-performance.json
+
+### Piano accompaniment for vocalists and instrumentalists
+- **Slug:** `piano-accompaniment`
+- **Description:** Accompany singers and other musicians with sensitive, supportive piano playing
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Piano accordion performance
+- **Slug:** `piano-accordion`
+- **Description:** Perform varied repertoire on piano accordion with bellows control and registration
+- **Primary Competencies:** `accordion`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Piano sight-reading proficiency
+- **Slug:** `piano-sight-reading`
+- **Description:** Read and play unfamiliar piano music accurately at first sight
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Podcast editing with Audacity
+- **Slug:** `podcast-editing-audacity`
+- **Description:** Edit and produce podcasts using free Audacity audio editor
+- **Primary Competencies:** `audacity`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Podcast production and editing
+- **Slug:** `podcast-production-editing`
+- **Description:** Record, edit, and produce podcasts with professional audio quality
+- **Primary Competencies:** `music-production`
+- **Supporting Competencies:** `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Pop and contemporary piano performance
+- **Slug:** `pop-piano-performance`
+- **Description:** Play popular music on piano with contemporary chord progressions and accompaniment styles
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Pop and contemporary vocal performance
+- **Slug:** `pop-vocal-performance`
+- **Description:** Sing pop music with contemporary vocal techniques and microphone control
+- **Primary Competencies:** `singing`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Pop music production workflows
+- **Slug:** `pop-production-workflow`
+- **Description:** Produce radio-ready pop songs with modern arrangement and mixing techniques
+- **Primary Competencies:** `music-production`
+- **Supporting Competencies:** `audio-mixing`, `music-arrangement`
+- **Source File:** 020-music-performance.json
+
+### Producing electronic music with Ableton Live
+- **Slug:** `electronic-music-ableton`
+- **Description:** Create electronic music productions using Ableton Live's instruments and effects
+- **Primary Competencies:** `ableton-live`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Producing electronic music with Cubase
+- **Slug:** `electronic-music-cubase`
+- **Description:** Create electronic music using Cubase's synthesizers and MIDI features
+- **Primary Competencies:** `cubase`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Producing electronic music with FL Studio
+- **Slug:** `electronic-music-fl-studio`
+- **Description:** Create electronic beats and productions using FL Studio's step sequencer and plugins
+- **Primary Competencies:** `fl-studio`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Producing electronic music with Logic Pro
+- **Slug:** `electronic-music-logic-pro`
+- **Description:** Create electronic productions using Logic Pro's synthesizers and samplers
+- **Primary Competencies:** `logic-pro`
+- **Supporting Competencies:** `electronic-music-production`, `synthesizer`
+- **Source File:** 020-music-performance.json
+
+### Recording and mixing with Reaper
+- **Slug:** `recording-mixing-reaper`
+- **Description:** Produce and mix music using the lightweight and customizable Reaper DAW
+- **Primary Competencies:** `reaper`
+- **Supporting Competencies:** `music-production`, `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Recording and producing with Studio One
+- **Slug:** `recording-studio-one`
+- **Description:** Record and produce music using PreSonus Studio One's modern workflow
+- **Primary Competencies:** `studio-one`
+- **Supporting Competencies:** `music-production`, `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Recording multi-track sessions with Ableton Live
+- **Slug:** `recording-ableton-live`
+- **Description:** Record and arrange multi-track music sessions in Ableton Live
+- **Primary Competencies:** `ableton-live`
+- **Supporting Competencies:** `music-production`, `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Recording multi-track sessions with Cubase
+- **Slug:** `recording-cubase`
+- **Description:** Record and produce music in Cubase with advanced MIDI and audio capabilities
+- **Primary Competencies:** `cubase`
+- **Supporting Competencies:** `music-production`, `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Recording multi-track sessions with FL Studio
+- **Slug:** `recording-fl-studio`
+- **Description:** Record and produce music in FL Studio with pattern-based workflow
+- **Primary Competencies:** `fl-studio`
+- **Supporting Competencies:** `music-production`, `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Recording multi-track sessions with Logic Pro
+- **Slug:** `recording-logic-pro`
+- **Description:** Record and produce music in Logic Pro with advanced MIDI and audio editing
+- **Primary Competencies:** `logic-pro`
+- **Supporting Competencies:** `music-production`, `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Recording multi-track sessions with Pro Tools
+- **Slug:** `recording-pro-tools`
+- **Description:** Record professional-quality music and audio in Pro Tools with industry-standard workflow
+- **Primary Competencies:** `pro-tools`
+- **Supporting Competencies:** `music-production`, `sound-engineering`
+- **Source File:** 020-music-performance.json
+
+### Recording studio engineering
+- **Slug:** `recording-studio-engineering`
+- **Description:** Record musicians in professional studio settings with microphone technique and signal flow
+- **Primary Competencies:** `sound-engineering`
+- **Supporting Competencies:** `music-production`
+- **Source File:** 020-music-performance.json
+
+### Rhythm guitar and chord progressions
+- **Slug:** `rhythm-guitar-chords`
+- **Description:** Provide solid rhythm guitar foundation with varied strumming and chord voicings
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Rock and metal bass playing
+- **Slug:** `rock-metal-bass`
+- **Description:** Deliver powerful bass lines for rock and metal with pick and finger techniques
+- **Primary Competencies:** `bass-guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Rock and metal drumming techniques
+- **Slug:** `rock-metal-drums`
+- **Description:** Deliver powerful rock and metal drum grooves with double bass and fills
+- **Primary Competencies:** `drums`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Rock guitar performance
+- **Slug:** `rock-guitar-performance`
+- **Description:** Play rock guitar with power chords, riffs, and electric guitar techniques
+- **Primary Competencies:** `guitar`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Rock music production and recording
+- **Slug:** `rock-music-production`
+- **Description:** Record and produce rock music with authentic tones and mixing techniques
+- **Primary Competencies:** `music-production`
+- **Supporting Competencies:** `sound-engineering`, `audio-mixing`
+- **Source File:** 020-music-performance.json
+
+### Sacred choral music performance
+- **Slug:** `sacred-choral-music`
+- **Description:** Perform liturgical and sacred choral works with appropriate style and reverence
+- **Primary Competencies:** `choir-singing`
+- **Supporting Competencies:** `music-theory`, `sight-reading`
+- **Source File:** 020-music-performance.json
+
+### Scottish bagpipe performance
+- **Slug:** `scottish-bagpipes`
+- **Description:** Play Great Highland bagpipes with traditional Scottish repertoire and ornamentation
+- **Primary Competencies:** `bagpipes`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Solo piano recital preparation
+- **Slug:** `solo-piano-recital`
+- **Description:** Prepare and perform polished solo piano recitals with diverse repertoire
+- **Primary Competencies:** `piano`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Songwriting fundamentals
+- **Slug:** `songwriting-fundamentals`
+- **Description:** Write original songs with melody, harmony, lyrics, and structure
+- **Primary Competencies:** `music-composition`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Tenor saxophone techniques and styles
+- **Slug:** `tenor-sax-techniques`
+- **Description:** Master tenor saxophone across jazz, R&B, and contemporary styles
+- **Primary Competencies:** `saxophone`
+- **Supporting Competencies:** `jazz-improvisation`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Theater organ performance
+- **Slug:** `theater-organ`
+- **Description:** Play theater organ for silent films and entertainment with registration changes
+- **Primary Competencies:** `organ`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Transcribing and analyzing jazz solos
+- **Slug:** `transcribing-jazz-solos`
+- **Description:** Transcribe and learn from recorded jazz solos to develop improvisation vocabulary
+- **Primary Competencies:** `jazz-improvisation`
+- **Supporting Competencies:** `ear-training`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Transcribing music by ear
+- **Slug:** `transcribing-music-ear`
+- **Description:** Notate melodies, harmonies, and solos by listening and analyzing recordings
+- **Primary Competencies:** `ear-training`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Tuba performance for orchestra and band
+- **Slug:** `orchestral-tuba`
+- **Description:** Provide solid bass foundation in orchestral and concert band settings on tuba
+- **Primary Competencies:** `tuba`
+- **Supporting Competencies:** `sight-reading`, `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Turntablism and scratching techniques
+- **Slug:** `turntablism-scratching`
+- **Description:** Perform advanced DJ techniques including scratching, beat juggling, and turntablism
+- **Primary Competencies:** `turntablism`
+- **Supporting Competencies:** `djing`
+- **Source File:** 020-music-performance.json
+
+### Ukulele strumming and chord playing
+- **Slug:** `ukulele-strumming`
+- **Description:** Play songs on ukulele with varied strumming patterns and chord progressions
+- **Primary Competencies:** `ukulele`
+- **Supporting Competencies:** `music-theory`
+- **Source File:** 020-music-performance.json
+
+### Vocal percussion for a cappella groups
+- **Slug:** `vocal-percussion-a-cappella`
+- **Description:** Provide beatbox-style percussion for vocal ensembles and a cappella groups
+- **Primary Competencies:** `beatboxing`
+- **Supporting Competencies:** `choir-singing`
+- **Source File:** 020-music-performance.json
+
+### Vocal sight-singing proficiency
+- **Slug:** `vocal-sight-singing`
+- **Description:** Read and sing unfamiliar melodies accurately using solfège or other systems
+- **Primary Competencies:** `singing`
+- **Supporting Competencies:** `sight-reading`, `ear-training`, `music-theory`
+- **Source File:** 020-music-performance.json
 
 ---
 
