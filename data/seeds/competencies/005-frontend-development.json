@@ -1,6 +1,28 @@
 {
   "competencies": [
     {
+      "name": "HTML",
+      "slug": "html",
+      "description": "Markup language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "HTML5",
+        "HyperText Markup Language"
+      ],
+      "icon": "logos:html-5"
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "description": "Style sheet language for web pages",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "CSS3",
+        "Cascading Style Sheets"
+      ],
+      "icon": "logos:css-3-official"
+    },
+    {
       "name": "React",
       "slug": "react",
       "description": "JavaScript library for building user interfaces",
@@ -28,6 +50,11 @@
           "alternative_slug": "angular",
           "relationship_type": "similar",
           "notes": "Both are popular frontend frameworks. React is more flexible, Angular is more opinionated and feature-complete."
+        },
+        {
+          "alternative_slug": "svelte",
+          "relationship_type": "similar",
+          "notes": "Both are frontend frameworks. Svelte compiles to vanilla JS, React uses virtual DOM."
         }
       ]
     },
@@ -52,9 +79,19 @@
       ],
       "alternatives": [
         {
+          "alternative_slug": "react",
+          "relationship_type": "similar",
+          "notes": "Both are popular JavaScript frontend frameworks. React has larger ecosystem, Vue.js has gentler learning curve."
+        },
+        {
           "alternative_slug": "angular",
           "relationship_type": "similar",
           "notes": "Both are complete frontend frameworks. Vue.js is more approachable, Angular is better for enterprise apps."
+        },
+        {
+          "alternative_slug": "svelte",
+          "relationship_type": "similar",
+          "notes": "Both are lightweight frontend frameworks with gentle learning curves."
         }
       ]
     },
@@ -75,80 +112,978 @@
           "prerequisite_level": "required",
           "notes": "Angular is written in TypeScript, so familiarity is required to pick it up quickly"
         }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react",
+          "relationship_type": "similar",
+          "notes": "Both are popular frontend frameworks. React is more flexible, Angular is more opinionated and feature-complete."
+        },
+        {
+          "alternative_slug": "vuejs",
+          "relationship_type": "similar",
+          "notes": "Both are complete frontend frameworks. Vue.js is more approachable, Angular is better for enterprise apps."
+        }
       ]
     },
     {
-      "name": "HTML",
-      "slug": "html",
-      "description": "Markup language for web pages",
+      "name": "Svelte",
+      "slug": "svelte",
+      "description": "Component framework that compiles to highly optimized vanilla JavaScript",
       "category_slug": "frontend-development",
       "synonyms": [
-        "HTML5",
-        "HyperText Markup Language"
+        "Svelte.js",
+        "SvelteJS"
       ],
-      "icon": "logos:html-5"
+      "icon": "logos:svelte-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript fundamentals required before learning Svelte"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "react",
+          "relationship_type": "similar",
+          "notes": "Both are frontend frameworks. Svelte compiles to vanilla JS, React uses virtual DOM."
+        },
+        {
+          "alternative_slug": "vuejs",
+          "relationship_type": "similar",
+          "notes": "Both are lightweight frontend frameworks with gentle learning curves."
+        }
+      ]
     },
     {
-      "name": "CSS",
-      "slug": "css",
-      "description": "Style sheet language for web pages",
+      "name": "Next.js",
+      "slug": "nextjs",
+      "description": "React framework for production with server-side rendering and static site generation",
       "category_slug": "frontend-development",
       "synonyms": [
-        "CSS3",
-        "Cascading Style Sheets"
+        "Next",
+        "NextJS"
       ],
-      "icon": "logos:css-3-official"
-    },
-    {
-      "name": "Pinia",
-      "slug": "pinia",
-      "description": "A more modular and intuitive store for Vue.js",
-      "category_slug": "frontend-development",
-      "icon": "logos:pinia"
-    },
-    {
-      "name": "Vuex",
-      "slug": "vuex",
-      "description": "A more modular and intuitive store for Vue.js",
-      "category_slug": "frontend-development"
+      "icon": "logos:nextjs-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Next.js is built on React, so React knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "remix",
+          "relationship_type": "similar",
+          "notes": "Both are full-stack React frameworks. Next.js has larger ecosystem, Remix focuses on web standards."
+        },
+        {
+          "alternative_slug": "gatsby",
+          "relationship_type": "similar",
+          "notes": "Both are React-based frameworks. Gatsby is primarily for static sites, Next.js supports SSR and SSG."
+        }
+      ]
     },
     {
       "name": "Nuxt",
       "slug": "nuxt",
-      "description": "Full stack web application framework for Vue.js",
+      "description": "Full-stack web application framework for Vue.js with server-side rendering",
       "category_slug": "frontend-development",
-      "icon": "logos:nuxt-icon"
+      "synonyms": [
+        "Nuxt.js",
+        "NuxtJS"
+      ],
+      "icon": "logos:nuxt-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "vuejs",
+          "prerequisite_level": "required",
+          "notes": "Nuxt is built on Vue.js, so Vue knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nextjs",
+          "relationship_type": "similar",
+          "notes": "Both are meta-frameworks for SSR. Nuxt is for Vue, Next.js is for React."
+        },
+        {
+          "alternative_slug": "sveltekit",
+          "relationship_type": "similar",
+          "notes": "Both are meta-frameworks with SSR. Nuxt is for Vue, SvelteKit is for Svelte."
+        }
+      ]
+    },
+    {
+      "name": "SvelteKit",
+      "slug": "sveltekit",
+      "description": "Full-stack web framework built on Svelte for building fast web applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Svelte Kit"
+      ],
+      "icon": "logos:svelte-kit",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "svelte",
+          "prerequisite_level": "required",
+          "notes": "SvelteKit is built on Svelte, so Svelte knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nextjs",
+          "relationship_type": "similar",
+          "notes": "Both are meta-frameworks with SSR. SvelteKit is for Svelte, Next.js is for React."
+        },
+        {
+          "alternative_slug": "nuxt",
+          "relationship_type": "similar",
+          "notes": "Both are meta-frameworks with SSR. SvelteKit is for Svelte, Nuxt is for Vue."
+        }
+      ]
+    },
+    {
+      "name": "Remix",
+      "slug": "remix",
+      "description": "Full-stack web framework built on React Router focusing on web standards",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Remix.run"
+      ],
+      "icon": "logos:remix-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Remix is built on React, so React knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nextjs",
+          "relationship_type": "similar",
+          "notes": "Both are full-stack React frameworks. Next.js has larger ecosystem, Remix focuses on web standards."
+        }
+      ]
+    },
+    {
+      "name": "Gatsby",
+      "slug": "gatsby",
+      "description": "React-based static site generator for blazing fast websites",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "GatsbyJS",
+        "Gatsby.js"
+      ],
+      "icon": "logos:gatsby",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Gatsby is built on React, so React knowledge is essential"
+        },
+        {
+          "prerequisite_slug": "graphql",
+          "prerequisite_level": "recommended",
+          "notes": "Gatsby uses GraphQL for data querying"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "nextjs",
+          "relationship_type": "similar",
+          "notes": "Both are React-based frameworks. Gatsby is primarily for static sites, Next.js supports SSR and SSG."
+        }
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "slug": "tailwindcss",
+      "description": "Utility-first CSS framework for rapid UI development",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Tailwind"
+      ],
+      "icon": "logos:tailwindcss-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding CSS concepts helps with Tailwind usage"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "bootstrap",
+          "relationship_type": "similar",
+          "notes": "Both are CSS frameworks. Tailwind is utility-first, Bootstrap is component-based."
+        }
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "slug": "bootstrap",
+      "description": "Popular CSS framework for responsive web design with pre-built components",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Bootstrap CSS",
+        "Bootstrap 5"
+      ],
+      "icon": "logos:bootstrap",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding CSS helps when customizing Bootstrap"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tailwindcss",
+          "relationship_type": "similar",
+          "notes": "Both are CSS frameworks. Tailwind is utility-first, Bootstrap is component-based."
+        }
+      ]
+    },
+    {
+      "name": "Material UI",
+      "slug": "material-ui",
+      "description": "React component library implementing Google's Material Design",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "MUI",
+        "Material-UI"
+      ],
+      "icon": "logos:material-ui",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Material UI is a React library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ant-design",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive React UI libraries with pre-built components."
+        }
+      ]
+    },
+    {
+      "name": "Ant Design",
+      "slug": "ant-design",
+      "description": "Enterprise-class UI design language and React component library",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "antd",
+        "Ant Design React"
+      ],
+      "icon": "logos:ant-design",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Ant Design is a React library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "material-ui",
+          "relationship_type": "similar",
+          "notes": "Both are comprehensive React UI libraries with pre-built components."
+        }
+      ]
+    },
+    {
+      "name": "Sass",
+      "slug": "sass",
+      "description": "CSS preprocessor with variables, nesting, and mixins",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "SCSS",
+        "Syntactically Awesome Style Sheets"
+      ],
+      "icon": "logos:sass",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Sass extends CSS, so CSS knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "less",
+          "relationship_type": "similar",
+          "notes": "Both are CSS preprocessors with similar features."
+        },
+        {
+          "alternative_slug": "postcss",
+          "relationship_type": "similar",
+          "notes": "Both extend CSS capabilities. PostCSS is more modular with plugins."
+        }
+      ]
+    },
+    {
+      "name": "Less",
+      "slug": "less",
+      "description": "CSS preprocessor with variables and mixins",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Less CSS",
+        "LessCSS"
+      ],
+      "icon": "logos:less",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "Less extends CSS, so CSS knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sass",
+          "relationship_type": "similar",
+          "notes": "Both are CSS preprocessors with similar features."
+        }
+      ]
+    },
+    {
+      "name": "PostCSS",
+      "slug": "postcss",
+      "description": "Tool for transforming CSS with JavaScript plugins",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Post CSS"
+      ],
+      "icon": "logos:postcss",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "css",
+          "prerequisite_level": "required",
+          "notes": "PostCSS processes CSS, so CSS knowledge is essential"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "sass",
+          "relationship_type": "similar",
+          "notes": "Both extend CSS capabilities. PostCSS is more modular with plugins."
+        }
+      ]
+    },
+    {
+      "name": "Webpack",
+      "slug": "webpack",
+      "description": "Module bundler for JavaScript applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Webpack.js"
+      ],
+      "icon": "logos:webpack",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Understanding JavaScript modules is essential for Webpack"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vite",
+          "relationship_type": "similar",
+          "notes": "Both are build tools. Vite is faster in development, Webpack is more mature."
+        },
+        {
+          "alternative_slug": "parcel",
+          "relationship_type": "similar",
+          "notes": "Both are bundlers. Parcel is zero-config, Webpack is more configurable."
+        },
+        {
+          "alternative_slug": "rollup",
+          "relationship_type": "similar",
+          "notes": "Both are bundlers. Rollup is optimized for libraries, Webpack for applications."
+        }
+      ]
+    },
+    {
+      "name": "Vite",
+      "slug": "vite",
+      "description": "Next-generation frontend build tool with lightning-fast HMR",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Vite.js",
+        "ViteJS"
+      ],
+      "icon": "logos:vitejs",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Understanding JavaScript modules is essential for Vite"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "webpack",
+          "relationship_type": "similar",
+          "notes": "Both are build tools. Vite is faster in development, Webpack is more mature."
+        },
+        {
+          "alternative_slug": "parcel",
+          "relationship_type": "similar",
+          "notes": "Both prioritize developer experience with fast builds."
+        }
+      ]
+    },
+    {
+      "name": "Parcel",
+      "slug": "parcel",
+      "description": "Zero-configuration web application bundler",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Parcel.js",
+        "ParcelJS"
+      ],
+      "icon": "logos:parcel-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Understanding JavaScript is essential for using Parcel"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "webpack",
+          "relationship_type": "similar",
+          "notes": "Both are bundlers. Parcel is zero-config, Webpack is more configurable."
+        },
+        {
+          "alternative_slug": "vite",
+          "relationship_type": "similar",
+          "notes": "Both prioritize developer experience with fast builds."
+        }
+      ]
+    },
+    {
+      "name": "Rollup",
+      "slug": "rollup",
+      "description": "Module bundler optimized for JavaScript libraries",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Rollup.js",
+        "RollupJS"
+      ],
+      "icon": "logos:rollupjs",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Understanding JavaScript modules is essential for Rollup"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "webpack",
+          "relationship_type": "similar",
+          "notes": "Both are bundlers. Rollup is optimized for libraries, Webpack for applications."
+        }
+      ]
+    },
+    {
+      "name": "esbuild",
+      "slug": "esbuild",
+      "description": "Extremely fast JavaScript bundler and minifier",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "ESBuild"
+      ],
+      "icon": "logos:esbuild",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Understanding JavaScript is essential for esbuild"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "webpack",
+          "relationship_type": "similar",
+          "notes": "Both are bundlers. esbuild is much faster but less configurable."
+        },
+        {
+          "alternative_slug": "vite",
+          "relationship_type": "related",
+          "notes": "Vite uses esbuild internally for pre-bundling dependencies."
+        }
+      ]
+    },
+    {
+      "name": "Redux",
+      "slug": "redux",
+      "description": "Predictable state container for JavaScript applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Redux.js"
+      ],
+      "icon": "logos:redux",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "recommended",
+          "notes": "Redux is commonly used with React, though it works with any framework"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript knowledge is essential for Redux"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "zustand",
+          "relationship_type": "similar",
+          "notes": "Both are state management libraries. Zustand is simpler with less boilerplate."
+        },
+        {
+          "alternative_slug": "mobx",
+          "relationship_type": "similar",
+          "notes": "Both are state management solutions. MobX is more opinionated, Redux is more explicit."
+        },
+        {
+          "alternative_slug": "jotai",
+          "relationship_type": "similar",
+          "notes": "Both manage React state. Jotai is atomic-based, Redux is centralized."
+        }
+      ]
+    },
+    {
+      "name": "Zustand",
+      "slug": "zustand",
+      "description": "Small, fast, and scalable state management for React",
+      "category_slug": "frontend-development",
+      "icon": "logos:zustand",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Zustand is a React state management library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "redux",
+          "relationship_type": "similar",
+          "notes": "Both are state management libraries. Zustand is simpler with less boilerplate."
+        },
+        {
+          "alternative_slug": "jotai",
+          "relationship_type": "similar",
+          "notes": "Both are lightweight React state libraries with minimal boilerplate."
+        }
+      ]
+    },
+    {
+      "name": "Jotai",
+      "slug": "jotai",
+      "description": "Primitive and flexible state management for React",
+      "category_slug": "frontend-development",
+      "icon": "logos:jotai",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Jotai is a React state management library"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "redux",
+          "relationship_type": "similar",
+          "notes": "Both manage React state. Jotai is atomic-based, Redux is centralized."
+        },
+        {
+          "alternative_slug": "zustand",
+          "relationship_type": "similar",
+          "notes": "Both are lightweight React state libraries with minimal boilerplate."
+        }
+      ]
+    },
+    {
+      "name": "MobX",
+      "slug": "mobx",
+      "description": "Simple, scalable state management with reactive programming",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "MobX.js"
+      ],
+      "icon": "logos:mobx",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "JavaScript knowledge is essential for MobX"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "redux",
+          "relationship_type": "similar",
+          "notes": "Both are state management solutions. MobX is more opinionated, Redux is more explicit."
+        }
+      ]
+    },
+    {
+      "name": "Pinia",
+      "slug": "pinia",
+      "description": "Intuitive, type-safe state management for Vue",
+      "category_slug": "frontend-development",
+      "icon": "logos:pinia",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "vuejs",
+          "prerequisite_level": "required",
+          "notes": "Pinia is the official state management library for Vue"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vuex",
+          "relationship_type": "similar",
+          "notes": "Both are Vue state management. Pinia is the successor to Vuex with better TypeScript support."
+        }
+      ]
+    },
+    {
+      "name": "Vuex",
+      "slug": "vuex",
+      "description": "State management pattern and library for Vue.js applications",
+      "category_slug": "frontend-development",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "vuejs",
+          "prerequisite_level": "required",
+          "notes": "Vuex is designed for Vue.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "pinia",
+          "relationship_type": "similar",
+          "notes": "Both are Vue state management. Pinia is the successor to Vuex with better TypeScript support."
+        }
+      ]
+    },
+    {
+      "name": "React Router",
+      "slug": "react-router",
+      "description": "Declarative routing for React applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "React Router DOM"
+      ],
+      "icon": "logos:react-router",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "React Router is designed for React applications"
+        }
+      ]
+    },
+    {
+      "name": "TanStack Query",
+      "slug": "tanstack-query",
+      "description": "Powerful data synchronization for React with caching and automatic refetching",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "React Query",
+        "TanStack React Query"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "TanStack Query is primarily used with React"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "apollo-client",
+          "relationship_type": "similar",
+          "notes": "Both handle data fetching and caching. Apollo Client is GraphQL-specific, TanStack Query is agnostic."
+        }
+      ]
+    },
+    {
+      "name": "Apollo Client",
+      "slug": "apollo-client",
+      "description": "Comprehensive GraphQL client for React applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Apollo",
+        "Apollo React"
+      ],
+      "icon": "logos:apollostack",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "Apollo Client is commonly used with React"
+        },
+        {
+          "prerequisite_slug": "graphql",
+          "prerequisite_level": "required",
+          "notes": "Apollo Client requires understanding of GraphQL"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "tanstack-query",
+          "relationship_type": "similar",
+          "notes": "Both handle data fetching and caching. Apollo Client is GraphQL-specific, TanStack Query is agnostic."
+        }
+      ]
+    },
+    {
+      "name": "Cypress",
+      "slug": "cypress",
+      "description": "End-to-end testing framework for web applications",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Cypress.io"
+      ],
+      "icon": "logos:cypress-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Cypress tests are written in JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "playwright",
+          "relationship_type": "similar",
+          "notes": "Both are end-to-end testing frameworks. Playwright supports multiple browsers natively."
+        }
+      ]
+    },
+    {
+      "name": "Playwright",
+      "slug": "playwright",
+      "description": "Modern end-to-end testing framework with cross-browser support",
+      "category_slug": "frontend-development",
+      "icon": "logos:playwright",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Playwright tests are written in JavaScript/TypeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "cypress",
+          "relationship_type": "similar",
+          "notes": "Both are end-to-end testing frameworks. Playwright supports multiple browsers natively."
+        }
+      ]
+    },
+    {
+      "name": "Testing Library",
+      "slug": "testing-library",
+      "description": "Simple and complete testing utilities that encourage good testing practices",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "React Testing Library",
+        "DOM Testing Library"
+      ],
+      "icon": "logos:testing-library",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Testing Library requires JavaScript knowledge"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jest",
+          "relationship_type": "related",
+          "notes": "Testing Library is often used with Jest for a complete testing solution."
+        }
+      ]
     },
     {
       "name": "Jest",
       "slug": "jest",
       "description": "JavaScript testing framework with an emphasis on simplicity",
       "category_slug": "frontend-development",
-      "icon": "logos:jest"
+      "icon": "logos:jest",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Jest tests are written in JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "vitest",
+          "relationship_type": "similar",
+          "notes": "Both are JavaScript test frameworks. Vitest is faster with Vite integration."
+        },
+        {
+          "alternative_slug": "mocha",
+          "relationship_type": "similar",
+          "notes": "Both are JavaScript testing frameworks. Jest is more opinionated, Mocha is more flexible."
+        }
+      ]
+    },
+    {
+      "name": "Vitest",
+      "slug": "vitest",
+      "description": "Blazing fast unit test framework powered by Vite",
+      "category_slug": "frontend-development",
+      "icon": "logos:vitest",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Vitest tests are written in JavaScript/TypeScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jest",
+          "relationship_type": "similar",
+          "notes": "Both are JavaScript test frameworks. Vitest is faster with Vite integration."
+        }
+      ]
     },
     {
       "name": "Mocha",
       "slug": "mocha",
-      "description": "Flexible JavaScript testing framework that aims to be fun to use",
+      "description": "Flexible JavaScript testing framework that runs on Node.js and in browsers",
       "category_slug": "frontend-development",
-      "icon": "logos:mocha"
+      "icon": "logos:mocha",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Mocha tests are written in JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jest",
+          "relationship_type": "similar",
+          "notes": "Both are JavaScript testing frameworks. Jest is more opinionated, Mocha is more flexible."
+        }
+      ]
     },
     {
       "name": "Jasmine",
       "slug": "jasmine",
-      "description": "Lightweight JavaScript testing framework without magic",
+      "description": "Behavior-driven JavaScript testing framework",
       "category_slug": "frontend-development",
-      "icon": "logos:jasmine"
+      "icon": "logos:jasmine",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Jasmine tests are written in JavaScript"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "jest",
+          "relationship_type": "similar",
+          "notes": "Both are JavaScript testing frameworks with BDD-style syntax."
+        }
+      ]
+    },
+    {
+      "name": "Storybook",
+      "slug": "storybook",
+      "description": "UI component development environment and workshop",
+      "category_slug": "frontend-development",
+      "synonyms": [
+        "Storybook.js"
+      ],
+      "icon": "logos:storybook-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Storybook requires JavaScript knowledge"
+        }
+      ]
+    },
+    {
+      "name": "ESLint",
+      "slug": "eslint",
+      "description": "Pluggable JavaScript linter for identifying and fixing code quality issues",
+      "category_slug": "frontend-development",
+      "icon": "logos:eslint",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "ESLint analyzes JavaScript code"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "prettier",
+          "relationship_type": "related",
+          "notes": "ESLint focuses on code quality, Prettier on code formatting. Often used together."
+        }
+      ]
+    },
+    {
+      "name": "Prettier",
+      "slug": "prettier",
+      "description": "Opinionated code formatter for consistent style",
+      "category_slug": "frontend-development",
+      "icon": "logos:prettier",
+      "alternatives": [
+        {
+          "alternative_slug": "eslint",
+          "relationship_type": "related",
+          "notes": "ESLint focuses on code quality, Prettier on code formatting. Often used together."
+        }
+      ]
     },
     {
       "name": "Progressive Web App",
       "slug": "pwa",
-      "description": "Web applications with native app-like features like push notifications and offline-capability",
+      "description": "Web applications with native app-like features like push notifications and offline capability",
       "category_slug": "frontend-development",
       "synonyms": [
-        "pwa"
+        "PWA"
       ],
-      "icon": "logos:pwa"
+      "icon": "logos:pwa",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "html",
+          "prerequisite_level": "required",
+          "notes": "PWAs are built on web technologies"
+        },
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "Service workers and PWA features require JavaScript"
+        }
+      ]
     }
   ]
 }
