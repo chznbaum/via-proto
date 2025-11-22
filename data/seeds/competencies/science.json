@@ -1,0 +1,1059 @@
+{
+  "competencies": [
+    {
+      "name": "Physics",
+      "slug": "physics",
+      "description": "Study of matter, energy, and fundamental forces of nature",
+      "category_slug": "physics",
+      "synonyms": ["General Physics", "Physical Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "recommended",
+          "notes": "Calculus helpful for understanding physics concepts"
+        },
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra essential for physics problem-solving"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Classical Mechanics",
+      "slug": "classical-mechanics",
+      "description": "Study of motion, forces, and energy in macroscopic systems",
+      "category_slug": "physics",
+      "synonyms": ["Newtonian Mechanics", "Mechanics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Basic physics understanding required"
+        },
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "required",
+          "notes": "Calculus essential for classical mechanics"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Electromagnetism",
+      "slug": "electromagnetism",
+      "description": "Study of electric and magnetic fields and their interactions",
+      "category_slug": "physics",
+      "synonyms": ["Electrodynamics", "E&M", "Electricity and Magnetism"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Basic physics understanding required"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Multivariable calculus needed for field equations"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Thermodynamics",
+      "slug": "thermodynamics",
+      "description": "Study of heat, work, temperature, and energy transfer",
+      "category_slug": "physics",
+      "synonyms": ["Thermal Physics", "Statistical Mechanics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Basic physics understanding required"
+        },
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "recommended",
+          "notes": "Calculus helpful for thermodynamics"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Quantum Mechanics",
+      "slug": "quantum-mechanics",
+      "description": "Study of matter and energy at atomic and subatomic scales",
+      "category_slug": "physics",
+      "synonyms": ["Quantum Physics", "Quantum Theory", "QM"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Strong physics foundation required"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "required",
+          "notes": "Linear algebra essential for quantum mechanics"
+        },
+        {
+          "prerequisite_slug": "calculus-3",
+          "prerequisite_level": "required",
+          "notes": "Advanced calculus needed"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Optics",
+      "slug": "optics",
+      "description": "Study of light and its properties, propagation, and behavior",
+      "category_slug": "physics",
+      "synonyms": ["Photonics", "Light Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Basic physics understanding required"
+        },
+        {
+          "prerequisite_slug": "trigonometry",
+          "prerequisite_level": "recommended",
+          "notes": "Trigonometry useful for optics"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Nuclear Physics",
+      "slug": "nuclear-physics",
+      "description": "Study of atomic nuclei and nuclear reactions",
+      "category_slug": "physics",
+      "synonyms": ["Atomic Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "quantum-mechanics",
+          "prerequisite_level": "required",
+          "notes": "Quantum mechanics foundation required"
+        },
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Strong physics background required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Particle Physics",
+      "slug": "particle-physics",
+      "description": "Study of fundamental particles and their interactions",
+      "category_slug": "physics",
+      "synonyms": ["High Energy Physics", "Elementary Particle Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "quantum-mechanics",
+          "prerequisite_level": "required",
+          "notes": "Quantum mechanics essential"
+        },
+        {
+          "prerequisite_slug": "nuclear-physics",
+          "prerequisite_level": "recommended",
+          "notes": "Nuclear physics provides useful context"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Relativity",
+      "slug": "relativity",
+      "description": "Study of spacetime, gravity, and motion at high speeds",
+      "category_slug": "physics",
+      "synonyms": ["Theory of Relativity", "General Relativity", "Special Relativity", "Einsteinian Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "classical-mechanics",
+          "prerequisite_level": "required",
+          "notes": "Classical mechanics foundation required"
+        },
+        {
+          "prerequisite_slug": "calculus-3",
+          "prerequisite_level": "required",
+          "notes": "Advanced mathematics essential"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Acoustics",
+      "slug": "acoustics",
+      "description": "Study of sound waves and vibrations",
+      "category_slug": "physics",
+      "synonyms": ["Sound Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Basic physics understanding required"
+        },
+        {
+          "prerequisite_slug": "trigonometry",
+          "prerequisite_level": "recommended",
+          "notes": "Wave mathematics helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Fluid Dynamics",
+      "slug": "fluid-dynamics",
+      "description": "Study of liquids and gases in motion",
+      "category_slug": "physics",
+      "synonyms": ["Fluid Mechanics", "Hydrodynamics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "classical-mechanics",
+          "prerequisite_level": "required",
+          "notes": "Mechanics foundation required"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Calculus essential for fluid equations"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Chemistry",
+      "slug": "chemistry",
+      "description": "Study of matter, its properties, composition, and reactions",
+      "category_slug": "chemistry",
+      "synonyms": ["General Chemistry", "Chemical Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "algebra-2",
+          "prerequisite_level": "required",
+          "notes": "Algebra essential for chemistry calculations"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Organic Chemistry",
+      "slug": "organic-chemistry",
+      "description": "Study of carbon-based compounds and their reactions",
+      "category_slug": "chemistry",
+      "synonyms": ["Orgo", "Organic"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "General chemistry foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Inorganic Chemistry",
+      "slug": "inorganic-chemistry",
+      "description": "Study of inorganic compounds and materials",
+      "category_slug": "chemistry",
+      "synonyms": ["Inorganic"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "General chemistry foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Physical Chemistry",
+      "slug": "physical-chemistry",
+      "description": "Study of how matter behaves at molecular and atomic levels",
+      "category_slug": "chemistry",
+      "synonyms": ["P-Chem"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "General chemistry required"
+        },
+        {
+          "prerequisite_slug": "calculus-1",
+          "prerequisite_level": "required",
+          "notes": "Calculus essential for physical chemistry"
+        },
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "recommended",
+          "notes": "Physics background helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Analytical Chemistry",
+      "slug": "analytical-chemistry",
+      "description": "Study of methods for analyzing and identifying chemical compounds",
+      "category_slug": "chemistry",
+      "synonyms": ["Chemical Analysis"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "General chemistry foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Biochemistry",
+      "slug": "biochemistry",
+      "description": "Study of chemical processes within living organisms",
+      "category_slug": "chemistry",
+      "synonyms": ["Biological Chemistry"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "General chemistry required"
+        },
+        {
+          "prerequisite_slug": "organic-chemistry",
+          "prerequisite_level": "required",
+          "notes": "Organic chemistry essential for biochemistry"
+        },
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "recommended",
+          "notes": "Biology background helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Materials Science",
+      "slug": "materials-science",
+      "description": "Study of properties and applications of materials",
+      "category_slug": "chemistry",
+      "synonyms": ["Materials Engineering"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "Chemistry foundation required"
+        },
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "recommended",
+          "notes": "Physics helpful for materials science"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Astronomy",
+      "slug": "astronomy",
+      "description": "Study of celestial objects, space, and the universe",
+      "category_slug": "astronomy",
+      "synonyms": ["Observational Astronomy"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "recommended",
+          "notes": "Physics helpful for understanding celestial phenomena"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Astrophysics",
+      "slug": "astrophysics",
+      "description": "Study of physical properties and processes of celestial objects",
+      "category_slug": "astronomy",
+      "synonyms": ["Astronomical Physics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "astronomy",
+          "prerequisite_level": "required",
+          "notes": "Astronomy foundation required"
+        },
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "required",
+          "notes": "Physics essential for astrophysics"
+        },
+        {
+          "prerequisite_slug": "calculus-2",
+          "prerequisite_level": "required",
+          "notes": "Advanced mathematics needed"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cosmology",
+      "slug": "cosmology",
+      "description": "Study of the origin, evolution, and fate of the universe",
+      "category_slug": "astronomy",
+      "synonyms": ["Physical Cosmology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "astrophysics",
+          "prerequisite_level": "required",
+          "notes": "Astrophysics foundation essential"
+        },
+        {
+          "prerequisite_slug": "relativity",
+          "prerequisite_level": "recommended",
+          "notes": "Relativity helpful for cosmology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Planetary Science",
+      "slug": "planetary-science",
+      "description": "Study of planets, moons, and planetary systems",
+      "category_slug": "astronomy",
+      "synonyms": ["Planetology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "astronomy",
+          "prerequisite_level": "required",
+          "notes": "Astronomy foundation required"
+        },
+        {
+          "prerequisite_slug": "geology",
+          "prerequisite_level": "recommended",
+          "notes": "Geology provides useful context"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Astrobiology",
+      "slug": "astrobiology",
+      "description": "Study of life in the universe",
+      "category_slug": "astronomy",
+      "synonyms": ["Exobiology", "Xenobiology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "astronomy",
+          "prerequisite_level": "required",
+          "notes": "Astronomy foundation required"
+        },
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology essential for astrobiology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Biology",
+      "slug": "biology",
+      "description": "Study of living organisms and life processes",
+      "category_slug": "biology",
+      "synonyms": ["General Biology", "Life Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Chemistry helpful for understanding biological processes"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cell Biology",
+      "slug": "cell-biology",
+      "description": "Study of cell structure, function, and processes",
+      "category_slug": "biology",
+      "synonyms": ["Cellular Biology", "Cytology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "General biology foundation required"
+        },
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Chemistry helpful for cellular processes"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Molecular Biology",
+      "slug": "molecular-biology",
+      "description": "Study of biological processes at the molecular level",
+      "category_slug": "biology",
+      "synonyms": ["Molecular Bio"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        },
+        {
+          "prerequisite_slug": "biochemistry",
+          "prerequisite_level": "required",
+          "notes": "Biochemistry essential for molecular biology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Microbiology",
+      "slug": "microbiology",
+      "description": "Study of microorganisms including bacteria, viruses, and fungi",
+      "category_slug": "biology",
+      "synonyms": ["Bacteriology", "Virology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "General biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Botany",
+      "slug": "botany",
+      "description": "Study of plants, including structure, growth, and reproduction",
+      "category_slug": "biology",
+      "synonyms": ["Plant Biology", "Plant Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "General biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Zoology",
+      "slug": "zoology",
+      "description": "Study of animals, including behavior, structure, and classification",
+      "category_slug": "biology",
+      "synonyms": ["Animal Biology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "General biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Ecology",
+      "slug": "ecology",
+      "description": "Study of relationships between organisms and their environment",
+      "category_slug": "biology",
+      "synonyms": ["Environmental Biology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Marine Biology",
+      "slug": "marine-biology",
+      "description": "Study of ocean life and marine ecosystems",
+      "category_slug": "biology",
+      "synonyms": ["Ocean Biology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        },
+        {
+          "prerequisite_slug": "ecology",
+          "prerequisite_level": "recommended",
+          "notes": "Ecology helpful for marine biology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Evolutionary Biology",
+      "slug": "evolutionary-biology",
+      "description": "Study of evolution, natural selection, and species development",
+      "category_slug": "biology",
+      "synonyms": ["Evolution"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        },
+        {
+          "prerequisite_slug": "genetics",
+          "prerequisite_level": "recommended",
+          "notes": "Genetics helpful for understanding evolution"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Genetics",
+      "slug": "genetics",
+      "description": "Study of heredity, genes, and genetic variation",
+      "category_slug": "genetics",
+      "synonyms": ["Classical Genetics", "Heredity"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Molecular Genetics",
+      "slug": "molecular-genetics",
+      "description": "Study of gene structure and function at molecular level",
+      "category_slug": "genetics",
+      "synonyms": ["Gene Expression"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "genetics",
+          "prerequisite_level": "required",
+          "notes": "Basic genetics required"
+        },
+        {
+          "prerequisite_slug": "molecular-biology",
+          "prerequisite_level": "required",
+          "notes": "Molecular biology essential"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Population Genetics",
+      "slug": "population-genetics",
+      "description": "Study of genetic variation and change in populations",
+      "category_slug": "genetics",
+      "synonyms": ["Quantitative Genetics"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "genetics",
+          "prerequisite_level": "required",
+          "notes": "Basic genetics required"
+        },
+        {
+          "prerequisite_slug": "statistics",
+          "prerequisite_level": "recommended",
+          "notes": "Statistics helpful for population genetics"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Genomics",
+      "slug": "genomics",
+      "description": "Study of genomes and genome sequencing",
+      "category_slug": "genetics",
+      "synonyms": ["Genome Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "molecular-genetics",
+          "prerequisite_level": "required",
+          "notes": "Molecular genetics foundation required"
+        },
+        {
+          "prerequisite_slug": "biochemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Biochemistry helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Neuroscience",
+      "slug": "neuroscience",
+      "description": "Study of the nervous system, brain, and neural processes",
+      "category_slug": "neuroscience",
+      "synonyms": ["Brain Science", "Neural Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        },
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Chemistry helpful for understanding neural processes"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cognitive Neuroscience",
+      "slug": "cognitive-neuroscience",
+      "description": "Study of neural basis of cognition and mental processes",
+      "category_slug": "neuroscience",
+      "synonyms": ["Cognitive Brain Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "neuroscience",
+          "prerequisite_level": "required",
+          "notes": "Neuroscience foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Behavioral Neuroscience",
+      "slug": "behavioral-neuroscience",
+      "description": "Study of neural basis of behavior",
+      "category_slug": "neuroscience",
+      "synonyms": ["Biopsychology", "Psychobiology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "neuroscience",
+          "prerequisite_level": "required",
+          "notes": "Neuroscience foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Neuroanatomy",
+      "slug": "neuroanatomy",
+      "description": "Study of the structure of the nervous system",
+      "category_slug": "neuroscience",
+      "synonyms": ["Neural Anatomy"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "anatomy",
+          "prerequisite_level": "required",
+          "notes": "Anatomy foundation required"
+        },
+        {
+          "prerequisite_slug": "neuroscience",
+          "prerequisite_level": "recommended",
+          "notes": "Neuroscience helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Computational Neuroscience",
+      "slug": "computational-neuroscience",
+      "description": "Study of brain function through computational models",
+      "category_slug": "neuroscience",
+      "synonyms": ["Theoretical Neuroscience"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "neuroscience",
+          "prerequisite_level": "required",
+          "notes": "Neuroscience foundation required"
+        },
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Programming helpful for computational modeling"
+        },
+        {
+          "prerequisite_slug": "linear-algebra",
+          "prerequisite_level": "recommended",
+          "notes": "Math helpful for modeling"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Anatomy",
+      "slug": "anatomy",
+      "description": "Study of body structure and organization of organisms",
+      "category_slug": "life-sciences",
+      "synonyms": ["Human Anatomy", "Gross Anatomy"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Comparative Anatomy",
+      "slug": "comparative-anatomy",
+      "description": "Study of similarities and differences in anatomy across species",
+      "category_slug": "life-sciences",
+      "synonyms": ["Morphology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "anatomy",
+          "prerequisite_level": "required",
+          "notes": "Anatomy foundation required"
+        },
+        {
+          "prerequisite_slug": "zoology",
+          "prerequisite_level": "recommended",
+          "notes": "Zoology helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Histology",
+      "slug": "histology",
+      "description": "Study of tissues at microscopic level",
+      "category_slug": "life-sciences",
+      "synonyms": ["Microscopic Anatomy"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "anatomy",
+          "prerequisite_level": "required",
+          "notes": "Anatomy foundation required"
+        },
+        {
+          "prerequisite_slug": "cell-biology",
+          "prerequisite_level": "recommended",
+          "notes": "Cell biology helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Physiology",
+      "slug": "physiology",
+      "description": "Study of normal functions of living organisms and their parts",
+      "category_slug": "life-sciences",
+      "synonyms": ["Human Physiology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "required",
+          "notes": "Biology foundation required"
+        },
+        {
+          "prerequisite_slug": "anatomy",
+          "prerequisite_level": "recommended",
+          "notes": "Anatomy helpful for physiology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Exercise Physiology",
+      "slug": "exercise-physiology",
+      "description": "Study of body's responses and adaptations to physical activity",
+      "category_slug": "life-sciences",
+      "synonyms": ["Sports Physiology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physiology",
+          "prerequisite_level": "required",
+          "notes": "Physiology foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Plant Physiology",
+      "slug": "plant-physiology",
+      "description": "Study of functions and processes in plants",
+      "category_slug": "life-sciences",
+      "synonyms": ["Phytophysiology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "botany",
+          "prerequisite_level": "required",
+          "notes": "Botany foundation required"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Environmental Science",
+      "slug": "environmental-science",
+      "description": "Study of environment and solutions to environmental problems",
+      "category_slug": "environmental-science",
+      "synonyms": ["Environmental Studies"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "recommended",
+          "notes": "Biology helpful"
+        },
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Chemistry helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Conservation Biology",
+      "slug": "conservation-biology",
+      "description": "Study of biodiversity preservation and species conservation",
+      "category_slug": "environmental-science",
+      "synonyms": ["Conservation Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ecology",
+          "prerequisite_level": "required",
+          "notes": "Ecology foundation required"
+        },
+        {
+          "prerequisite_slug": "environmental-science",
+          "prerequisite_level": "recommended",
+          "notes": "Environmental science helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Climate Science",
+      "slug": "climate-science",
+      "description": "Study of climate systems and climate change",
+      "category_slug": "environmental-science",
+      "synonyms": ["Climatology"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "environmental-science",
+          "prerequisite_level": "required",
+          "notes": "Environmental science foundation required"
+        },
+        {
+          "prerequisite_slug": "meteorology",
+          "prerequisite_level": "recommended",
+          "notes": "Meteorology helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Sustainability",
+      "slug": "sustainability",
+      "description": "Study of sustainable practices and environmental stewardship",
+      "category_slug": "environmental-science",
+      "synonyms": ["Sustainable Development"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "environmental-science",
+          "prerequisite_level": "recommended",
+          "notes": "Environmental science helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Environmental Chemistry",
+      "slug": "environmental-chemistry",
+      "description": "Study of chemical processes in the environment",
+      "category_slug": "environmental-science",
+      "synonyms": ["Geochemistry"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "required",
+          "notes": "Chemistry foundation required"
+        },
+        {
+          "prerequisite_slug": "environmental-science",
+          "prerequisite_level": "recommended",
+          "notes": "Environmental science helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Geology",
+      "slug": "geology",
+      "description": "Study of Earth's physical structure, substances, and processes",
+      "category_slug": "environmental-science",
+      "synonyms": ["Earth Science", "Geoscience"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "chemistry",
+          "prerequisite_level": "recommended",
+          "notes": "Chemistry helpful for geology"
+        },
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "recommended",
+          "notes": "Physics helpful for geology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Meteorology",
+      "slug": "meteorology",
+      "description": "Study of atmosphere and weather phenomena",
+      "category_slug": "environmental-science",
+      "synonyms": ["Atmospheric Science", "Weather Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "physics",
+          "prerequisite_level": "recommended",
+          "notes": "Physics helpful for meteorology"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Oceanography",
+      "slug": "oceanography",
+      "description": "Study of oceans, marine ecosystems, and ocean processes",
+      "category_slug": "environmental-science",
+      "synonyms": ["Marine Science", "Ocean Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "environmental-science",
+          "prerequisite_level": "recommended",
+          "notes": "Environmental science helpful"
+        },
+        {
+          "prerequisite_slug": "marine-biology",
+          "prerequisite_level": "recommended",
+          "notes": "Marine biology helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Paleontology",
+      "slug": "paleontology",
+      "description": "Study of ancient life through fossils",
+      "category_slug": "environmental-science",
+      "synonyms": ["Fossil Science"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "geology",
+          "prerequisite_level": "required",
+          "notes": "Geology foundation required"
+        },
+        {
+          "prerequisite_slug": "biology",
+          "prerequisite_level": "recommended",
+          "notes": "Biology helpful for understanding ancient life"
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

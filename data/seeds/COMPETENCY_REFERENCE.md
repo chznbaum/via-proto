@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T14:25:01.613Z
-**Total Competencies:** 1333
+**Generated:** 2025-11-22T14:29:48.309Z
+**Total Competencies:** 1382
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -12,10 +12,15 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ## Table of Contents
 
+- [advanced-math](#advanced-math) (9)
+- [algebra](#algebra) (3)
+- [applied-math](#applied-math) (10)
 - [architecture](#architecture) (7)
+- [arithmetic](#arithmetic) (1)
 - [automation-integration](#automation-integration) (3)
 - [backend-development](#backend-development) (36)
 - [blockchain-web3](#blockchain-web3) (41)
+- [calculus](#calculus) (3)
 - [cloud-devops](#cloud-devops) (169)
 - [corporate-finance](#corporate-finance) (7)
 - [cybersecurity](#cybersecurity) (27)
@@ -23,32 +28,196 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [data-engineering](#data-engineering) (8)
 - [data-science](#data-science) (95)
 - [databases](#databases) (55)
+- [differential-equations](#differential-equations) (2)
+- [discrete-mathematics](#discrete-mathematics) (6)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [finance-accounting](#finance-accounting) (5)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (53)
+- [geometry](#geometry) (6)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [investing-trading](#investing-trading) (8)
 - [languages](#languages) (169)
 - [leadership-communication](#leadership-communication) (12)
+- [linear-algebra](#linear-algebra) (1)
 - [linguistics](#linguistics) (15)
 - [marketing-sales](#marketing-sales) (18)
 - [mobile-development](#mobile-development) (48)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
+- [number-theory](#number-theory) (1)
 - [operations-strategy](#operations-strategy) (19)
 - [personal-finance](#personal-finance) (4)
 - [photography-video](#photography-video) (3)
 - [product-project-management](#product-project-management) (11)
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
+- [statistics-probability](#statistics-probability) (6)
 - [systems-programming](#systems-programming) (17)
 - [theater](#theater) (20)
+- [trigonometry](#trigonometry) (1)
 - [uiux-design](#uiux-design) (19)
 - [visual-arts](#visual-arts) (50)
 - [web-development](#web-development) (1)
 - [writing](#writing) (52)
+
+---
+
+## advanced-math
+
+### Abstract Algebra
+- **Slug:** `abstract-algebra`
+- **Synonyms:** Modern Algebra, Group Theory, Ring Theory
+- **Prerequisites:**
+  - `linear-algebra` (required) - Linear algebra provides concrete examples of algebraic structures
+
+### Algebraic Geometry
+- **Slug:** `algebraic-geometry`
+- **Synonyms:** Algebraic Varieties
+- **Prerequisites:**
+  - `abstract-algebra` (required) - Abstract algebra is essential for algebraic geometry
+  - `linear-algebra` (required) - Linear algebra provides tools for algebraic geometry
+
+### Category Theory
+- **Slug:** `category-theory`
+- **Synonyms:** Abstract Category Theory
+- **Prerequisites:**
+  - `abstract-algebra` (required) - Abstract algebra provides concrete examples for category theory
+
+### Complex Analysis
+- **Slug:** `complex-analysis`
+- **Synonyms:** Complex Variables, Theory of Complex Functions
+- **Prerequisites:**
+  - `calculus-2` (required) - Single variable calculus extends to complex variables
+
+### Functional Analysis
+- **Slug:** `functional-analysis`
+- **Synonyms:** Operator Theory
+- **Prerequisites:**
+  - `real-analysis` (required) - Real analysis provides foundation for functional spaces
+  - `linear-algebra` (required) - Linear algebra extends to infinite-dimensional spaces in functional analysis
+
+### Measure Theory
+- **Slug:** `measure-theory`
+- **Synonyms:** Lebesgue Integration, Measure and Integration
+- **Prerequisites:**
+  - `real-analysis` (required) - Real analysis is essential foundation for measure theory
+
+### Pre-Calculus
+- **Slug:** `pre-calculus`
+- **Synonyms:** Precalculus, Pre-Calc
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra II is essential for pre-calculus
+  - `trigonometry` (required) - Trigonometry is a major component of pre-calculus
+
+### Real Analysis
+- **Slug:** `real-analysis`
+- **Synonyms:** Advanced Calculus, Mathematical Analysis
+- **Prerequisites:**
+  - `calculus-2` (required) - Calculus provides intuition that real analysis makes rigorous
+
+### Topology
+- **Slug:** `topology`
+- **Synonyms:** Point-Set Topology, General Topology
+- **Prerequisites:**
+  - `real-analysis` (required) - Real analysis provides foundation for topological concepts
+
+---
+
+## algebra
+
+### Algebra I
+- **Slug:** `algebra-1`
+- **Synonyms:** Elementary Algebra, Algebra 1, Beginning Algebra, Introductory Algebra
+- **Prerequisites:**
+  - `pre-algebra` (required) - Pre-algebra concepts are foundational for Algebra I
+
+### Algebra II
+- **Slug:** `algebra-2`
+- **Synonyms:** Intermediate Algebra, Algebra 2, Advanced Algebra
+- **Prerequisites:**
+  - `algebra-1` (required) - Algebra I is essential foundation for Algebra II concepts
+
+### Pre-Algebra
+- **Slug:** `pre-algebra`
+- **Synonyms:** Introductory Algebra, Beginning Algebra
+- **Prerequisites:**
+  - `arithmetic` (required) - Arithmetic fundamentals are essential for understanding pre-algebra concepts
+
+---
+
+## applied-math
+
+### Actuarial Mathematics
+- **Slug:** `actuarial-mathematics`
+- **Synonyms:** Actuarial Science, Risk Mathematics
+- **Prerequisites:**
+  - `probability` (required) - Probability is fundamental to risk assessment
+  - `statistics` (required) - Statistical methods are core to actuarial work
+  - `calculus-2` (required) - Calculus is needed for actuarial models
+
+### Cryptography
+- **Slug:** `cryptography-math`
+- **Synonyms:** Mathematical Cryptography, Cryptographic Mathematics
+- **Prerequisites:**
+  - `number-theory` (required) - Number theory is fundamental to modern cryptography
+  - `abstract-algebra` (recommended) - Abstract algebra provides tools for advanced cryptography
+
+### Dynamical Systems
+- **Slug:** `dynamical-systems`
+- **Synonyms:** Chaos Theory, Systems Theory
+- **Prerequisites:**
+  - `differential-equations` (required) - Differential equations model dynamical systems
+  - `linear-algebra` (required) - Linear algebra is used to analyze system behavior
+
+### Finite Mathematics
+- **Slug:** `finite-mathematics`
+- **Synonyms:** Finite Math, Business Mathematics
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra provides foundation for finite mathematics
+
+### Fourier Analysis
+- **Slug:** `fourier-analysis`
+- **Synonyms:** Harmonic Analysis, Fourier Transform
+- **Prerequisites:**
+  - `calculus-2` (required) - Integration is essential for Fourier transforms
+  - `differential-equations` (recommended) - Fourier analysis is used to solve differential equations
+
+### Game Theory
+- **Slug:** `game-theory`
+- **Synonyms:** Strategic Game Theory, Mathematical Game Theory
+- **Prerequisites:**
+  - `probability` (required) - Probability is essential for analyzing game strategies
+  - `linear-algebra` (recommended) - Linear algebra helps with matrix games
+
+### Mathematical Modeling
+- **Slug:** `mathematical-modeling`
+- **Synonyms:** Applied Mathematics, Mathematical Simulation
+- **Prerequisites:**
+  - `calculus-2` (required) - Calculus is essential for continuous models
+  - `differential-equations` (recommended) - Differential equations model dynamic systems
+
+### Numerical Analysis
+- **Slug:** `numerical-analysis`
+- **Synonyms:** Numerical Methods, Computational Mathematics
+- **Prerequisites:**
+  - `calculus-2` (required) - Calculus is essential for understanding numerical methods
+  - `linear-algebra` (required) - Linear algebra is used extensively in numerical algorithms
+
+### Operations Research
+- **Slug:** `operations-research`
+- **Synonyms:** Operational Research, Management Science, OR
+- **Prerequisites:**
+  - `linear-algebra` (required) - Linear programming and optimization require linear algebra
+  - `statistics` (recommended) - Statistical methods are used in OR
+
+### Optimization
+- **Slug:** `optimization`
+- **Synonyms:** Mathematical Optimization, Linear Programming, Nonlinear Optimization
+- **Prerequisites:**
+  - `calculus-3` (required) - Multivariable calculus is essential for optimization
+  - `linear-algebra` (required) - Linear algebra is fundamental to optimization methods
 
 ---
 
@@ -86,6 +255,14 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Slug:** `solidworks`
 - **Alternatives:**
   - `fusion-360` (similar)
+
+---
+
+## arithmetic
+
+### Arithmetic
+- **Slug:** `arithmetic`
+- **Synonyms:** Basic Math, Elementary Math, Number Operations, Basic Arithmetic
 
 ---
 
@@ -618,6 +795,28 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** zkSync Era, zkSync Network
 - **Prerequisites:**
   - `ethereum` (recommended) - zkSync is an Ethereum Layer 2
+
+---
+
+## calculus
+
+### Calculus I
+- **Slug:** `calculus-1`
+- **Synonyms:** Differential Calculus, Single Variable Calculus, Calculus 1, AP Calculus AB
+- **Prerequisites:**
+  - `pre-calculus` (required) - Pre-calculus provides essential foundation for understanding limits and derivatives
+
+### Calculus II
+- **Slug:** `calculus-2`
+- **Synonyms:** Integral Calculus, Calculus 2, AP Calculus BC
+- **Prerequisites:**
+  - `calculus-1` (required) - Calculus I is essential foundation for integral calculus
+
+### Calculus III
+- **Slug:** `calculus-3`
+- **Synonyms:** Multivariable Calculus, Calculus 3, Vector Calculus, Multivariate Calculus
+- **Prerequisites:**
+  - `calculus-2` (required) - Calculus II concepts extend naturally to multiple variables
 
 ---
 
@@ -3236,6 +3435,64 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## differential-equations
+
+### Differential Equations
+- **Slug:** `differential-equations`
+- **Synonyms:** ODEs, Ordinary Differential Equations, DiffEq
+- **Prerequisites:**
+  - `calculus-2` (required) - Integration techniques from Calculus II are essential for solving differential equations
+  - `linear-algebra` (recommended) - Linear algebra is useful for systems of differential equations
+
+### Partial Differential Equations
+- **Slug:** `partial-differential-equations`
+- **Synonyms:** PDEs, PDE Theory
+- **Prerequisites:**
+  - `calculus-3` (required) - Multivariable calculus is essential for PDEs
+  - `differential-equations` (required) - Understanding ODEs is foundational for PDEs
+
+---
+
+## discrete-mathematics
+
+### Boolean Algebra
+- **Slug:** `boolean-algebra`
+- **Synonyms:** Logic Algebra, Binary Algebra
+- **Prerequisites:**
+  - `discrete-mathematics` (recommended) - Discrete math introduces logical structures
+
+### Combinatorics
+- **Slug:** `combinatorics`
+- **Synonyms:** Combinatorial Mathematics, Counting Theory
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra is essential for combinatorial formulas
+
+### Discrete Mathematics
+- **Slug:** `discrete-mathematics`
+- **Synonyms:** Discrete Math, Discrete Structures
+- **Prerequisites:**
+  - `algebra-1` (required) - Basic algebra is needed for discrete math concepts
+
+### Graph Theory
+- **Slug:** `graph-theory`
+- **Synonyms:** Network Theory, Graph Mathematics
+- **Prerequisites:**
+  - `discrete-mathematics` (recommended) - Discrete math provides helpful background for graph theory
+
+### Mathematical Logic
+- **Slug:** `mathematical-logic`
+- **Synonyms:** Formal Logic, Symbolic Logic, Logic Theory
+- **Prerequisites:**
+  - `discrete-mathematics` (recommended) - Discrete math introduces logical reasoning concepts
+
+### Set Theory
+- **Slug:** `set-theory`
+- **Synonyms:** Naive Set Theory, Axiomatic Set Theory
+- **Prerequisites:**
+  - `discrete-mathematics` (recommended) - Discrete math introduces basic set concepts
+
+---
+
 ## fiber-arts-crafts
 
 ### Appliqué
@@ -4186,6 +4443,48 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `csharp` (required) - C# is the language for XNA
 - **Alternatives:**
   - `monogame` (similar)
+
+---
+
+## geometry
+
+### Analytic Geometry
+- **Slug:** `analytic-geometry`
+- **Synonyms:** Coordinate Geometry, Cartesian Geometry
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra is essential for coordinate-based geometry
+  - `geometry` (required) - Basic geometry concepts are foundational
+
+### Differential Geometry
+- **Slug:** `differential-geometry`
+- **Synonyms:** Curved Space Geometry
+- **Prerequisites:**
+  - `calculus-3` (required) - Multivariable calculus is essential for differential geometry
+  - `linear-algebra` (required) - Linear algebra is fundamental to differential geometry
+
+### Euclidean Geometry
+- **Slug:** `euclidean-geometry`
+- **Synonyms:** Classical Geometry, Plane Geometry
+- **Prerequisites:**
+  - `geometry` (required) - Basic geometry provides foundation for Euclidean geometry
+
+### Geometry
+- **Slug:** `geometry`
+- **Synonyms:** Euclidean Geometry, Plane Geometry, Geometric Reasoning
+- **Prerequisites:**
+  - `algebra-1` (recommended) - Basic algebra helps with geometric proofs and calculations
+
+### Non-Euclidean Geometry
+- **Slug:** `non-euclidean-geometry`
+- **Synonyms:** Hyperbolic Geometry, Elliptic Geometry
+- **Prerequisites:**
+  - `euclidean-geometry` (required) - Understanding Euclidean geometry is essential before studying alternatives
+
+### Projective Geometry
+- **Slug:** `projective-geometry`
+- **Synonyms:** Perspective Geometry
+- **Prerequisites:**
+  - `linear-algebra` (required) - Linear algebra provides tools for projective transformations
 
 ---
 
@@ -5362,6 +5661,17 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## linear-algebra
+
+### Linear Algebra
+- **Slug:** `linear-algebra`
+- **Synonyms:** Matrix Theory, Vector Algebra
+- **Prerequisites:**
+  - `algebra-2` (required) - Strong algebraic foundation is essential for linear algebra
+  - `calculus-1` (recommended) - Calculus helps with understanding some linear algebra applications
+
+---
+
 ## linguistics
 
 ### Bilingualism
@@ -6331,6 +6641,16 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## number-theory
+
+### Number Theory
+- **Slug:** `number-theory`
+- **Synonyms:** Theory of Numbers, Elementary Number Theory
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebraic reasoning is essential for number theory
+
+---
+
 ## operations-strategy
 
 ### Business Intelligence
@@ -7022,6 +7342,50 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## statistics-probability
+
+### Bayesian Statistics
+- **Slug:** `bayesian-statistics`
+- **Synonyms:** Bayesian Inference, Bayesian Analysis
+- **Prerequisites:**
+  - `statistics` (required) - Foundation in statistics is essential for Bayesian methods
+  - `probability` (required) - Probability theory is core to Bayesian statistics
+
+### Mathematical Statistics
+- **Slug:** `mathematical-statistics`
+- **Synonyms:** Theoretical Statistics, Statistical Theory
+- **Prerequisites:**
+  - `probability` (required) - Probability theory is the foundation of mathematical statistics
+  - `calculus-2` (required) - Calculus is essential for continuous distributions
+
+### Probability
+- **Slug:** `probability`
+- **Synonyms:** Probability Theory, Probabilistic Analysis
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra is essential for probability calculations
+
+### Statistics
+- **Slug:** `statistics`
+- **Synonyms:** Statistical Analysis, Descriptive Statistics, Inferential Statistics
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebraic skills are needed for statistical formulas and calculations
+
+### Stochastic Processes
+- **Slug:** `stochastic-processes`
+- **Synonyms:** Random Processes, Markov Chains
+- **Prerequisites:**
+  - `probability` (required) - Probability theory is fundamental to stochastic processes
+  - `calculus-2` (required) - Calculus is needed for continuous-time processes
+
+### Time Series Analysis
+- **Slug:** `time-series-analysis`
+- **Synonyms:** Temporal Analysis, Sequential Data Analysis
+- **Prerequisites:**
+  - `statistics` (required) - Statistical foundation is essential for time series
+  - `probability` (required) - Probability helps with forecasting and modeling
+
+---
+
 ## systems-programming
 
 ### Ada
@@ -7234,6 +7598,17 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Voice Acting
 - **Slug:** `voice-acting`
 - **Synonyms:** Voice Over, VO
+
+---
+
+## trigonometry
+
+### Trigonometry
+- **Slug:** `trigonometry`
+- **Synonyms:** Trig, Trigonometric Functions
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra II provides necessary foundation for understanding trigonometric concepts
+  - `geometry` (required) - Geometric understanding is essential for trigonometry
 
 ---
 
