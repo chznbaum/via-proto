@@ -1,7 +1,7 @@
 # Competency Reference
 
-**Generated:** 2025-11-22T01:37:48.559Z
-**Total Competencies:** 483
+**Generated:** 2025-11-22T01:42:57.361Z
+**Total Competencies:** 524
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -12,6 +12,7 @@ Run `npm run generate:competency-reference` to update.
 
 - [automation-integration](#automation-integration) (3)
 - [backend-development](#backend-development) (36)
+- [blockchain-web3](#blockchain-web3) (41)
 - [cloud-devops](#cloud-devops) (169)
 - [cybersecurity](#cybersecurity) (27)
 - [data-engineering](#data-engineering) (1)
@@ -38,6 +39,7 @@ Run `npm run generate:competency-reference` to update.
 - `adminer` - Adminer (databases)
 - `adonisjs` - AdonisJS (backend-development)
 - `agda` - Agda (programming)
+- `alchemy` - Alchemy (blockchain-web3)
 - `alembic` - Alembic (databases)
 - `algolia` - Algolia (databases)
 - `algorithms` - Algorithms (programming)
@@ -45,6 +47,7 @@ Run `npm run generate:competency-reference` to update.
 - `amazon-lex` - Amazon Lex (data-science)
 - `amazon-rds` - Amazon RDS (databases)
 - `amazon-sagemaker` - Amazon SageMaker (data-science)
+- `anchor` - Anchor (blockchain-web3)
 - `anchore` - Anchore (cloud-devops)
 - `angular` - Angular (frontend-development)
 - `ansible` - Ansible (cloud-devops)
@@ -59,6 +62,7 @@ Run `npm run generate:competency-reference` to update.
 - `appdynamics` - AppDynamics (cloud-devops)
 - `aqua-security` - Aqua Security (cloud-devops)
 - `arangodb` - ArangoDB (databases)
+- `arbitrum` - Arbitrum (blockchain-web3)
 - `argocd` - ArgoCD (cloud-devops)
 - `artillery` - Artillery (cloud-devops)
 - `aspnet-core` - ASP.NET Core (backend-development)
@@ -67,6 +71,7 @@ Run `npm run generate:competency-reference` to update.
 - `ats` - ATS (systems-programming)
 - `auth0` - Auth0 (cybersecurity)
 - `autogen` - AutoGen (data-science)
+- `avalanche` - Avalanche (blockchain-web3)
 - `awk` - AWK (systems-programming)
 - `aws` - Amazon Web Services (cloud-devops)
 - `aws-api-gateway` - AWS API Gateway (cloud-devops)
@@ -96,9 +101,11 @@ Run `npm run generate:competency-reference` to update.
 - `bentoml` - BentoML (data-science)
 - `bicep` - Bicep (cloud-devops)
 - `bitbucket-pipelines` - Bitbucket Pipelines (cloud-devops)
+- `bnb-chain` - BNB Chain (blockchain-web3)
 - `bootstrap` - Bootstrap (frontend-development)
 - `borg` - BorgBackup (cloud-devops)
 - `botpress` - Botpress (data-science)
+- `brownie` - Brownie (blockchain-web3)
 - `buddy` - Buddy (cloud-devops)
 - `buildkite` - Buildkite (cloud-devops)
 - `bun` - Bun (backend-development)
@@ -108,9 +115,11 @@ Run `npm run generate:competency-reference` to update.
 - `calico` - Calico (cloud-devops)
 - `capistrano` - Capistrano (cloud-devops)
 - `carbon` - Carbon (systems-programming)
+- `cardano` - Cardano (blockchain-web3)
 - `cassandra` - Cassandra (databases)
 - `cert-manager` - cert-manager (cloud-devops)
 - `certbot` - Certbot (cloud-devops)
+- `chainlink` - Chainlink (blockchain-web3)
 - `chapel` - Chapel (systems-programming)
 - `chef` - Chef (cloud-devops)
 - `chroma` - Chroma (data-science)
@@ -132,6 +141,7 @@ Run `npm run generate:competency-reference` to update.
 - `containerd` - Containerd (cloud-devops)
 - `coq` - Coq (programming)
 - `cors` - CORS (cybersecurity)
+- `cosmos` - Cosmos (blockchain-web3)
 - `couchbase` - Couchbase (databases)
 - `couchdb` - CouchDB (databases)
 - `cpp` - C++ (systems-programming)
@@ -181,6 +191,9 @@ Run `npm run generate:competency-reference` to update.
 - `esbuild` - esbuild (frontend-development)
 - `eslint` - ESLint (frontend-development)
 - `etcd` - etcd (cloud-devops)
+- `ethereum` - Ethereum (blockchain-web3)
+- `etherscan` - Etherscan (blockchain-web3)
+- `ethersjs` - ethers.js (blockchain-web3)
 - `expressjs` - Express.js (backend-development)
 - `fabric` - Fabric (cloud-devops)
 - `fail2ban` - Fail2Ban (cybersecurity)
@@ -200,8 +213,10 @@ Run `npm run generate:competency-reference` to update.
 - `fly-io` - Fly.io (cloud-devops)
 - `flyway` - Flyway (databases)
 - `fortran` - Fortran (data-science)
+- `foundry` - Foundry (blockchain-web3)
 - `fsharp` - F# (programming)
 - `functional-programming` - Functional Programming (programming)
+- `ganache` - Ganache (blockchain-web3)
 - `gatling` - Gatling (cloud-devops)
 - `gatsby` - Gatsby (frontend-development)
 - `gin` - Gin (backend-development)
@@ -232,6 +247,7 @@ Run `npm run generate:competency-reference` to update.
 - `hapi` - Hapi (backend-development)
 - `haproxy` - HAProxy (cloud-devops)
 - `harbor` - Harbor (cloud-devops)
+- `hardhat` - Hardhat (blockchain-web3)
 - `haskell` - Haskell (programming)
 - `hbase` - HBase (databases)
 - `helicone` - Helicone (data-science)
@@ -245,7 +261,9 @@ Run `npm run generate:competency-reference` to update.
 - `ibm-cloud` - IBM Cloud (cloud-devops)
 - `idris` - Idris (programming)
 - `influxdb` - InfluxDB (databases)
+- `infura` - Infura (blockchain-web3)
 - `insomnia` - Insomnia (backend-development)
+- `ipfs` - IPFS (blockchain-web3)
 - `istio` - Istio (cloud-devops)
 - `jaeger` - Jaeger (cloud-devops)
 - `janet` - Janet (programming)
@@ -300,6 +318,7 @@ Run `npm run generate:competency-reference` to update.
 - `meilisearch` - Meilisearch (databases)
 - `memcached` - Memcached (databases)
 - `mercurial` - Mercurial (programming)
+- `metamask` - MetaMask (blockchain-web3)
 - `metasploit` - Metasploit (cybersecurity)
 - `micronaut` - Micronaut (backend-development)
 - `microsoft-copilot-studio` - Microsoft Copilot Studio (data-science)
@@ -315,12 +334,14 @@ Run `npm run generate:competency-reference` to update.
 - `mongodb-atlas` - MongoDB Atlas (databases)
 - `mongodb-compass` - MongoDB Compass (databases)
 - `mongoose` - Mongoose (databases)
+- `moralis` - Moralis (blockchain-web3)
 - `mysql` - MySQL (databases)
 - `mysql-workbench` - MySQL Workbench (databases)
 - `n8n` - n8n (automation-integration)
 - `nagios` - Nagios (cloud-devops)
 - `nats` - NATS (cloud-devops)
 - `navicat` - Navicat (databases)
+- `near-protocol` - NEAR Protocol (blockchain-web3)
 - `neo4j` - Neo4j (databases)
 - `nestjs` - NestJS (backend-development)
 - `netlify` - Netlify (cloud-devops)
@@ -344,7 +365,9 @@ Run `npm run generate:competency-reference` to update.
 - `openai-api` - OpenAI API (data-science)
 - `opencv` - OpenCV (data-science)
 - `opentelemetry` - OpenTelemetry (cloud-devops)
+- `openzeppelin` - OpenZeppelin (blockchain-web3)
 - `opsgenie` - Opsgenie (cloud-devops)
+- `optimism` - Optimism (blockchain-web3)
 - `oracle-cloud` - Oracle Cloud (cloud-devops)
 - `oracle-database` - Oracle Database (databases)
 - `ovh-cloud` - OVH Cloud (cloud-devops)
@@ -367,6 +390,8 @@ Run `npm run generate:competency-reference` to update.
 - `playwright` - Playwright (frontend-development)
 - `plotly` - Plotly (data-science)
 - `podman` - Podman (cloud-devops)
+- `polkadot` - Polkadot (blockchain-web3)
+- `polygon` - Polygon (blockchain-web3)
 - `pony` - Pony (systems-programming)
 - `postcss` - PostCSS (frontend-development)
 - `postgresql` - PostgreSQL (databases)
@@ -385,10 +410,12 @@ Run `npm run generate:competency-reference` to update.
 - `pytorch` - PyTorch (data-science)
 - `qdrant` - Qdrant (data-science)
 - `quarkus` - Quarkus (backend-development)
+- `quicknode` - QuickNode (blockchain-web3)
 - `r` - R (data-science)
 - `rabbitmq` - RabbitMQ (cloud-devops)
 - `racket` - Racket (programming)
 - `railway` - Railway (cloud-devops)
+- `rainbowkit` - RainbowKit (blockchain-web3)
 - `raku` - Raku (programming)
 - `rancher` - Rancher (cloud-devops)
 - `rasa` - Rasa (data-science)
@@ -401,6 +428,7 @@ Run `npm run generate:competency-reference` to update.
 - `redux` - Redux (frontend-development)
 - `regular-expressions` - Regular Expressions (programming)
 - `remix` - Remix (frontend-development)
+- `remix-ide` - Remix IDE (blockchain-web3)
 - `render` - Render (cloud-devops)
 - `replicate` - Replicate (data-science)
 - `rescript` - ReScript (frontend-development)
@@ -414,6 +442,7 @@ Run `npm run generate:competency-reference` to update.
 - `ruby` - Ruby (programming)
 - `ruby-on-rails` - Ruby on Rails (backend-development)
 - `rust` - Rust (systems-programming)
+- `safe` - Safe (blockchain-web3)
 - `sailsjs` - Sails.js (backend-development)
 - `saltstack` - SaltStack (cloud-devops)
 - `saml` - SAML (cybersecurity)
@@ -435,7 +464,9 @@ Run `npm run generate:competency-reference` to update.
 - `smalltalk` - Smalltalk (programming)
 - `snyk` - Snyk (cybersecurity)
 - `snyk-container` - Snyk Container (cloud-devops)
+- `solana` - Solana (blockchain-web3)
 - `solidity` - Solidity (programming)
+- `solidity` - Solidity (blockchain-web3)
 - `sonarqube` - SonarQube (cybersecurity)
 - `spacy` - spaCy (data-science)
 - `spanish` - Spanish (natural-languages)
@@ -467,15 +498,19 @@ Run `npm run generate:competency-reference` to update.
 - `teamcity` - TeamCity (cloud-devops)
 - `tempo` - Tempo (cloud-devops)
 - `tencent-cloud` - Tencent Cloud (cloud-devops)
+- `tenderly` - Tenderly (blockchain-web3)
 - `tensorflow` - TensorFlow (data-science)
 - `terraform` - Terraform (cloud-devops)
 - `testing-library` - Testing Library (frontend-development)
+- `the-graph` - The Graph (blockchain-web3)
+- `thirdweb` - Thirdweb (blockchain-web3)
 - `timescaledb` - TimescaleDB (databases)
 - `together-ai` - Together AI (data-science)
 - `traefik` - Traefik (cloud-devops)
 - `travis-ci` - Travis CI (cloud-devops)
 - `trivy` - Trivy (cloud-devops)
 - `trpc` - tRPC (backend-development)
+- `truffle` - Truffle (blockchain-web3)
 - `typeorm` - TypeORM (databases)
 - `typescript` - TypeScript (programming)
 - `ultralytics` - Ultralytics (data-science)
@@ -486,6 +521,7 @@ Run `npm run generate:competency-reference` to update.
 - `velero` - Velero (cloud-devops)
 - `vercel` - Vercel (cloud-devops)
 - `vertex-ai` - Vertex AI (data-science)
+- `viem` - viem (blockchain-web3)
 - `visual-basic` - Visual Basic (programming)
 - `vite` - Vite (frontend-development)
 - `vitest` - Vitest (frontend-development)
@@ -493,8 +529,13 @@ Run `npm run generate:competency-reference` to update.
 - `vuejs` - Vue.js (frontend-development)
 - `vuex` - Vuex (frontend-development)
 - `vultr` - Vultr (cloud-devops)
+- `vyper` - Vyper (blockchain-web3)
+- `wagmi` - wagmi (blockchain-web3)
+- `walletconnect` - WalletConnect (blockchain-web3)
 - `weave-net` - Weave Net (cloud-devops)
 - `weaviate` - Weaviate (data-science)
+- `web3js` - web3.js (blockchain-web3)
+- `web3py` - web3.py (blockchain-web3)
 - `webassembly` - WebAssembly (web-development)
 - `webpack` - Webpack (frontend-development)
 - `weights-and-biases` - Weights & Biases (data-science)
@@ -510,6 +551,7 @@ Run `npm run generate:competency-reference` to update.
 - `zerossl` - ZeroSSL (cloud-devops)
 - `zig` - Zig (systems-programming)
 - `zipkin` - Zipkin (cloud-devops)
+- `zksync` - zkSync (blockchain-web3)
 - `zookeeper` - Apache ZooKeeper (cloud-devops)
 - `zustand` - Zustand (frontend-development)
 
@@ -876,6 +918,334 @@ Run `npm run generate:competency-reference` to update.
 - **Description:** End-to-end typesafe APIs made easy with TypeScript
 - **Prerequisites:**
   - `typescript` (required) - tRPC is designed for TypeScript
+
+---
+
+## blockchain-web3
+
+### Alchemy
+- **Slug:** `alchemy`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Alchemy API, Alchemy Platform
+- **Description:** Blockchain development platform and node infrastructure
+
+### Anchor
+- **Slug:** `anchor`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Anchor Framework, Anchor Solana
+- **Description:** Framework for Solana program development
+- **Prerequisites:**
+  - `solana` (required) - Anchor is for Solana development
+  - `rust` (required) - Solana programs are written in Rust
+
+### Arbitrum
+- **Slug:** `arbitrum`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** ARB, Arbitrum Network
+- **Description:** Ethereum Layer 2 scaling solution using optimistic rollups
+- **Prerequisites:**
+  - `ethereum` (recommended) - Arbitrum is an Ethereum Layer 2
+
+### Avalanche
+- **Slug:** `avalanche`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** AVAX, Avalanche Network
+- **Description:** High-throughput blockchain platform for decentralized applications
+
+### BNB Chain
+- **Slug:** `bnb-chain`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Binance Smart Chain, BSC, BNB Smart Chain
+- **Description:** Blockchain platform by Binance for smart contracts and dApps
+
+### Brownie
+- **Slug:** `brownie`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Brownie Framework, Eth Brownie
+- **Description:** Python-based development and testing framework for Ethereum
+- **Prerequisites:**
+  - `python` (required) - Brownie is a Python framework
+  - `solidity` (required) - Brownie is used for Solidity development
+
+### Cardano
+- **Slug:** `cardano`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:cardano-icon`
+- **Synonyms:** ADA, Cardano Blockchain
+- **Description:** Proof-of-stake blockchain platform with academic research foundation
+
+### Chainlink
+- **Slug:** `chainlink`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** LINK, Chainlink Oracles
+- **Description:** Decentralized oracle network for smart contracts
+- **Prerequisites:**
+  - `solidity` (recommended) - Chainlink is commonly used with Ethereum smart contracts
+
+### Cosmos
+- **Slug:** `cosmos`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** ATOM, Cosmos Network
+- **Description:** Ecosystem of interoperable blockchains
+
+### Ethereum
+- **Slug:** `ethereum`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:ethereum`
+- **Synonyms:** ETH, Ethereum Blockchain
+- **Description:** Decentralized blockchain platform for smart contracts and dApps
+
+### ethers.js
+- **Slug:** `ethersjs`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:ethers`
+- **Synonyms:** Ethers, Ethers.js Library
+- **Description:** Complete Ethereum library for interacting with the blockchain
+- **Prerequisites:**
+  - `javascript` (required) - ethers.js is a JavaScript library
+  - `ethereum` (recommended) - Understanding Ethereum helps with ethers.js
+- **Alternatives:**
+  - `web3js` (similar) - web3.js is another popular Ethereum library
+  - `viem` (similar) - viem is a modern alternative with better TypeScript support
+
+### Etherscan
+- **Slug:** `etherscan`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Etherscan Explorer, Etherscan API
+- **Description:** Blockchain explorer and analytics platform for Ethereum
+
+### Foundry
+- **Slug:** `foundry`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Foundry Framework, Foundry Ethereum
+- **Description:** Fast, portable Ethereum development toolkit written in Rust
+- **Prerequisites:**
+  - `solidity` (required) - Foundry is used for Solidity development
+- **Alternatives:**
+  - `hardhat` (similar) - Hardhat is another popular development framework
+
+### Ganache
+- **Slug:** `ganache`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Ganache CLI, Truffle Ganache
+- **Description:** Personal Ethereum blockchain for local development and testing
+- **Prerequisites:**
+  - `ethereum` (recommended) - Ganache simulates Ethereum blockchain
+
+### Hardhat
+- **Slug:** `hardhat`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:hardhat-icon`
+- **Synonyms:** Hardhat Framework, HardhatJS
+- **Description:** Ethereum development environment for professionals
+- **Prerequisites:**
+  - `solidity` (required) - Hardhat is used for Solidity development
+  - `nodejs` (required) - Hardhat runs on Node.js
+- **Alternatives:**
+  - `foundry` (similar) - Foundry is a faster alternative development framework
+  - `truffle` (similar) - Truffle is another Ethereum development framework
+
+### Infura
+- **Slug:** `infura`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Infura API, Infura Infrastructure
+- **Description:** Blockchain infrastructure and node provider for Ethereum
+
+### IPFS
+- **Slug:** `ipfs`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** InterPlanetary File System, IPFS Protocol
+- **Description:** Peer-to-peer distributed file system for decentralized storage
+
+### MetaMask
+- **Slug:** `metamask`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:metamask-icon`
+- **Synonyms:** MetaMask Wallet, MetaMask Extension
+- **Description:** Cryptocurrency wallet and gateway to blockchain apps
+
+### Moralis
+- **Slug:** `moralis`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Moralis API, Moralis Platform
+- **Description:** Web3 development platform with APIs and backend infrastructure
+
+### NEAR Protocol
+- **Slug:** `near-protocol`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** NEAR, NEAR Blockchain
+- **Description:** Scalable blockchain platform with developer-friendly features
+
+### OpenZeppelin
+- **Slug:** `openzeppelin`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** OpenZeppelin Contracts, OpenZeppelin Library
+- **Description:** Library of secure smart contract implementations
+- **Prerequisites:**
+  - `solidity` (required) - OpenZeppelin provides Solidity contracts
+
+### Optimism
+- **Slug:** `optimism`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** OP, Optimism Network
+- **Description:** Ethereum Layer 2 optimistic rollup scaling solution
+- **Prerequisites:**
+  - `ethereum` (recommended) - Optimism is an Ethereum Layer 2
+
+### Polkadot
+- **Slug:** `polkadot`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** DOT, Polkadot Network
+- **Description:** Multi-chain protocol for connecting and securing blockchains
+
+### Polygon
+- **Slug:** `polygon`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `devicon:polygon`
+- **Synonyms:** MATIC, Polygon Network
+- **Description:** Layer 2 scaling solution for Ethereum
+- **Prerequisites:**
+  - `ethereum` (recommended) - Polygon is built on Ethereum
+
+### QuickNode
+- **Slug:** `quicknode`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** QuickNode API, QuickNode Infrastructure
+- **Description:** Blockchain infrastructure and node hosting service
+
+### RainbowKit
+- **Slug:** `rainbowkit`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** RainbowKit React, RainbowKit Library
+- **Description:** React library for wallet connection UI components
+- **Prerequisites:**
+  - `react` (required) - RainbowKit is a React library
+  - `wagmi` (recommended) - RainbowKit works well with wagmi
+
+### Remix IDE
+- **Slug:** `remix-ide`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Remix, Remix Ethereum
+- **Description:** Browser-based IDE for Solidity smart contract development
+- **Prerequisites:**
+  - `solidity` (recommended) - Remix is designed for Solidity development
+
+### Safe
+- **Slug:** `safe`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Gnosis Safe, Safe Wallet
+- **Description:** Multi-signature smart contract wallet platform
+- **Prerequisites:**
+  - `ethereum` (recommended) - Safe is built on Ethereum
+
+### Solana
+- **Slug:** `solana`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** SOL, Solana Blockchain
+- **Description:** High-performance blockchain platform for decentralized applications
+
+### Solidity
+- **Slug:** `solidity`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:solidity`
+- **Synonyms:** Solidity Language, Solidity Programming
+- **Description:** Object-oriented programming language for writing smart contracts
+- **Prerequisites:**
+  - `ethereum` (recommended) - Solidity is primarily used for Ethereum smart contracts
+
+### Tenderly
+- **Slug:** `tenderly`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Tenderly Platform, Tenderly Monitoring
+- **Description:** Monitoring, debugging, and analytics platform for smart contracts
+
+### The Graph
+- **Slug:** `the-graph`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Graph Protocol, TheGraph
+- **Description:** Indexing protocol for querying blockchain data
+
+### Thirdweb
+- **Slug:** `thirdweb`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Thirdweb SDK, Thirdweb Platform
+- **Description:** Web3 development framework with pre-built smart contracts
+
+### Truffle
+- **Slug:** `truffle`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:truffle-icon`
+- **Synonyms:** Truffle Suite, Truffle Framework
+- **Description:** Development framework for Ethereum with built-in testing
+- **Prerequisites:**
+  - `solidity` (required) - Truffle is used for Solidity development
+  - `nodejs` (required) - Truffle runs on Node.js
+
+### viem
+- **Slug:** `viem`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Viem Library, Viem TypeScript
+- **Description:** TypeScript interface for Ethereum with lightweight and modular design
+- **Prerequisites:**
+  - `typescript` (required) - viem is designed for TypeScript
+  - `ethereum` (recommended) - Understanding Ethereum helps with viem
+- **Alternatives:**
+  - `ethersjs` (similar) - ethers.js is more established but less type-safe
+
+### Vyper
+- **Slug:** `vyper`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Vyper Language, Vyper Smart Contracts
+- **Description:** Pythonic smart contract programming language for Ethereum
+- **Prerequisites:**
+  - `python` (recommended) - Vyper syntax is similar to Python
+  - `ethereum` (recommended) - Vyper is used for Ethereum smart contracts
+- **Alternatives:**
+  - `solidity` (similar) - Solidity is the more widely used smart contract language
+
+### wagmi
+- **Slug:** `wagmi`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** wagmi Hooks, wagmi React
+- **Description:** React Hooks library for Ethereum built on viem
+- **Prerequisites:**
+  - `react` (required) - wagmi is a React library
+  - `viem` (recommended) - wagmi is built on viem
+
+### WalletConnect
+- **Slug:** `walletconnect`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** WalletConnect Protocol, WalletConnect SDK
+- **Description:** Open-source protocol for connecting wallets to dApps
+
+### web3.js
+- **Slug:** `web3js`
+- **File:** `008-blockchain-web3.json`
+- **Icon:** `logos:web3js`
+- **Synonyms:** Web3, Web3.js Library
+- **Description:** JavaScript library for interacting with Ethereum nodes
+- **Prerequisites:**
+  - `javascript` (required) - web3.js is a JavaScript library
+  - `ethereum` (recommended) - Understanding Ethereum helps with web3.js
+- **Alternatives:**
+  - `ethersjs` (similar) - ethers.js is a popular alternative
+
+### web3.py
+- **Slug:** `web3py`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** Web3.py, Web3 Python
+- **Description:** Python library for interacting with Ethereum
+- **Prerequisites:**
+  - `python` (required) - web3.py is a Python library
+  - `ethereum` (recommended) - Understanding Ethereum helps with web3.py
+
+### zkSync
+- **Slug:** `zksync`
+- **File:** `008-blockchain-web3.json`
+- **Synonyms:** zkSync Era, zkSync Network
+- **Description:** Ethereum Layer 2 scaling solution using zero-knowledge rollups
+- **Prerequisites:**
+  - `ethereum` (recommended) - zkSync is an Ethereum Layer 2
 
 ---
 

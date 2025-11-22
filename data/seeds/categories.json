@@ -145,6 +145,14 @@
       "parent_slug": "information-security"
     },
     {
+      "name": "Blockchain & Web3",
+      "slug": "blockchain-web3",
+      "description": "Decentralized applications and blockchain technology",
+      "icon": "lucide:blocks",
+      "display_order": 6,
+      "parent_slug": "information-technology"
+    },
+    {
       "name": "Design & Creativity",
       "slug": "design-creativity",
       "description": "Visual design, UX, and creative arts",

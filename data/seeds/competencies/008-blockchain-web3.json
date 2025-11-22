@@ -1,3 +1,685 @@
 {
-  "competencies": []
+  "competencies": [
+    {
+      "name": "Ethereum",
+      "slug": "ethereum",
+      "description": "Decentralized blockchain platform for smart contracts and dApps",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "ETH",
+        "Ethereum Blockchain"
+      ],
+      "icon": "logos:ethereum"
+    },
+    {
+      "name": "Solidity",
+      "slug": "solidity",
+      "description": "Object-oriented programming language for writing smart contracts",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Solidity Language",
+        "Solidity Programming"
+      ],
+      "icon": "logos:solidity",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Solidity is primarily used for Ethereum smart contracts"
+        }
+      ]
+    },
+    {
+      "name": "Hardhat",
+      "slug": "hardhat",
+      "description": "Ethereum development environment for professionals",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Hardhat Framework",
+        "HardhatJS"
+      ],
+      "icon": "logos:hardhat-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "required",
+          "notes": "Hardhat is used for Solidity development"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Hardhat runs on Node.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "foundry",
+          "relationship_type": "similar",
+          "notes": "Foundry is a faster alternative development framework"
+        },
+        {
+          "alternative_slug": "truffle",
+          "relationship_type": "similar",
+          "notes": "Truffle is another Ethereum development framework"
+        }
+      ]
+    },
+    {
+      "name": "Foundry",
+      "slug": "foundry",
+      "description": "Fast, portable Ethereum development toolkit written in Rust",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Foundry Framework",
+        "Foundry Ethereum"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "required",
+          "notes": "Foundry is used for Solidity development"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "hardhat",
+          "relationship_type": "similar",
+          "notes": "Hardhat is another popular development framework"
+        }
+      ]
+    },
+    {
+      "name": "Truffle",
+      "slug": "truffle",
+      "description": "Development framework for Ethereum with built-in testing",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Truffle Suite",
+        "Truffle Framework"
+      ],
+      "icon": "logos:truffle-icon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "required",
+          "notes": "Truffle is used for Solidity development"
+        },
+        {
+          "prerequisite_slug": "nodejs",
+          "prerequisite_level": "required",
+          "notes": "Truffle runs on Node.js"
+        }
+      ]
+    },
+    {
+      "name": "ethers.js",
+      "slug": "ethersjs",
+      "description": "Complete Ethereum library for interacting with the blockchain",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Ethers",
+        "Ethers.js Library"
+      ],
+      "icon": "logos:ethers",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "ethers.js is a JavaScript library"
+        },
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Ethereum helps with ethers.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "web3js",
+          "relationship_type": "similar",
+          "notes": "web3.js is another popular Ethereum library"
+        },
+        {
+          "alternative_slug": "viem",
+          "relationship_type": "similar",
+          "notes": "viem is a modern alternative with better TypeScript support"
+        }
+      ]
+    },
+    {
+      "name": "web3.js",
+      "slug": "web3js",
+      "description": "JavaScript library for interacting with Ethereum nodes",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Web3",
+        "Web3.js Library"
+      ],
+      "icon": "logos:web3js",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "javascript",
+          "prerequisite_level": "required",
+          "notes": "web3.js is a JavaScript library"
+        },
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Ethereum helps with web3.js"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ethersjs",
+          "relationship_type": "similar",
+          "notes": "ethers.js is a popular alternative"
+        }
+      ]
+    },
+    {
+      "name": "viem",
+      "slug": "viem",
+      "description": "TypeScript interface for Ethereum with lightweight and modular design",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Viem Library",
+        "Viem TypeScript"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "typescript",
+          "prerequisite_level": "required",
+          "notes": "viem is designed for TypeScript"
+        },
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Ethereum helps with viem"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "ethersjs",
+          "relationship_type": "similar",
+          "notes": "ethers.js is more established but less type-safe"
+        }
+      ]
+    },
+    {
+      "name": "wagmi",
+      "slug": "wagmi",
+      "description": "React Hooks library for Ethereum built on viem",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "wagmi Hooks",
+        "wagmi React"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "wagmi is a React library"
+        },
+        {
+          "prerequisite_slug": "viem",
+          "prerequisite_level": "recommended",
+          "notes": "wagmi is built on viem"
+        }
+      ]
+    },
+    {
+      "name": "web3.py",
+      "slug": "web3py",
+      "description": "Python library for interacting with Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Web3.py",
+        "Web3 Python"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "web3.py is a Python library"
+        },
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding Ethereum helps with web3.py"
+        }
+      ]
+    },
+    {
+      "name": "MetaMask",
+      "slug": "metamask",
+      "description": "Cryptocurrency wallet and gateway to blockchain apps",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "MetaMask Wallet",
+        "MetaMask Extension"
+      ],
+      "icon": "logos:metamask-icon"
+    },
+    {
+      "name": "WalletConnect",
+      "slug": "walletconnect",
+      "description": "Open-source protocol for connecting wallets to dApps",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "WalletConnect Protocol",
+        "WalletConnect SDK"
+      ]
+    },
+    {
+      "name": "RainbowKit",
+      "slug": "rainbowkit",
+      "description": "React library for wallet connection UI components",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "RainbowKit React",
+        "RainbowKit Library"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "react",
+          "prerequisite_level": "required",
+          "notes": "RainbowKit is a React library"
+        },
+        {
+          "prerequisite_slug": "wagmi",
+          "prerequisite_level": "recommended",
+          "notes": "RainbowKit works well with wagmi"
+        }
+      ]
+    },
+    {
+      "name": "Infura",
+      "slug": "infura",
+      "description": "Blockchain infrastructure and node provider for Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Infura API",
+        "Infura Infrastructure"
+      ]
+    },
+    {
+      "name": "Alchemy",
+      "slug": "alchemy",
+      "description": "Blockchain development platform and node infrastructure",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Alchemy API",
+        "Alchemy Platform"
+      ]
+    },
+    {
+      "name": "The Graph",
+      "slug": "the-graph",
+      "description": "Indexing protocol for querying blockchain data",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Graph Protocol",
+        "TheGraph"
+      ]
+    },
+    {
+      "name": "QuickNode",
+      "slug": "quicknode",
+      "description": "Blockchain infrastructure and node hosting service",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "QuickNode API",
+        "QuickNode Infrastructure"
+      ]
+    },
+    {
+      "name": "OpenZeppelin",
+      "slug": "openzeppelin",
+      "description": "Library of secure smart contract implementations",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "OpenZeppelin Contracts",
+        "OpenZeppelin Library"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "required",
+          "notes": "OpenZeppelin provides Solidity contracts"
+        }
+      ]
+    },
+    {
+      "name": "Solana",
+      "slug": "solana",
+      "description": "High-performance blockchain platform for decentralized applications",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "SOL",
+        "Solana Blockchain"
+      ]
+    },
+    {
+      "name": "Anchor",
+      "slug": "anchor",
+      "description": "Framework for Solana program development",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Anchor Framework",
+        "Anchor Solana"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solana",
+          "prerequisite_level": "required",
+          "notes": "Anchor is for Solana development"
+        },
+        {
+          "prerequisite_slug": "rust",
+          "prerequisite_level": "required",
+          "notes": "Solana programs are written in Rust"
+        }
+      ]
+    },
+    {
+      "name": "Polygon",
+      "slug": "polygon",
+      "description": "Layer 2 scaling solution for Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "MATIC",
+        "Polygon Network"
+      ],
+      "icon": "devicon:polygon",
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Polygon is built on Ethereum"
+        }
+      ]
+    },
+    {
+      "name": "Optimism",
+      "slug": "optimism",
+      "description": "Ethereum Layer 2 optimistic rollup scaling solution",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "OP",
+        "Optimism Network"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Optimism is an Ethereum Layer 2"
+        }
+      ]
+    },
+    {
+      "name": "Arbitrum",
+      "slug": "arbitrum",
+      "description": "Ethereum Layer 2 scaling solution using optimistic rollups",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "ARB",
+        "Arbitrum Network"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Arbitrum is an Ethereum Layer 2"
+        }
+      ]
+    },
+    {
+      "name": "zkSync",
+      "slug": "zksync",
+      "description": "Ethereum Layer 2 scaling solution using zero-knowledge rollups",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "zkSync Era",
+        "zkSync Network"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "zkSync is an Ethereum Layer 2"
+        }
+      ]
+    },
+    {
+      "name": "Avalanche",
+      "slug": "avalanche",
+      "description": "High-throughput blockchain platform for decentralized applications",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "AVAX",
+        "Avalanche Network"
+      ]
+    },
+    {
+      "name": "BNB Chain",
+      "slug": "bnb-chain",
+      "description": "Blockchain platform by Binance for smart contracts and dApps",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Binance Smart Chain",
+        "BSC",
+        "BNB Smart Chain"
+      ]
+    },
+    {
+      "name": "NEAR Protocol",
+      "slug": "near-protocol",
+      "description": "Scalable blockchain platform with developer-friendly features",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "NEAR",
+        "NEAR Blockchain"
+      ]
+    },
+    {
+      "name": "Cardano",
+      "slug": "cardano",
+      "description": "Proof-of-stake blockchain platform with academic research foundation",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "ADA",
+        "Cardano Blockchain"
+      ],
+      "icon": "logos:cardano-icon"
+    },
+    {
+      "name": "Polkadot",
+      "slug": "polkadot",
+      "description": "Multi-chain protocol for connecting and securing blockchains",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "DOT",
+        "Polkadot Network"
+      ]
+    },
+    {
+      "name": "Cosmos",
+      "slug": "cosmos",
+      "description": "Ecosystem of interoperable blockchains",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "ATOM",
+        "Cosmos Network"
+      ]
+    },
+    {
+      "name": "Chainlink",
+      "slug": "chainlink",
+      "description": "Decentralized oracle network for smart contracts",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "LINK",
+        "Chainlink Oracles"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "recommended",
+          "notes": "Chainlink is commonly used with Ethereum smart contracts"
+        }
+      ]
+    },
+    {
+      "name": "IPFS",
+      "slug": "ipfs",
+      "description": "Peer-to-peer distributed file system for decentralized storage",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "InterPlanetary File System",
+        "IPFS Protocol"
+      ]
+    },
+    {
+      "name": "Vyper",
+      "slug": "vyper",
+      "description": "Pythonic smart contract programming language for Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Vyper Language",
+        "Vyper Smart Contracts"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "recommended",
+          "notes": "Vyper syntax is similar to Python"
+        },
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Vyper is used for Ethereum smart contracts"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "solidity",
+          "relationship_type": "similar",
+          "notes": "Solidity is the more widely used smart contract language"
+        }
+      ]
+    },
+    {
+      "name": "Brownie",
+      "slug": "brownie",
+      "description": "Python-based development and testing framework for Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Brownie Framework",
+        "Eth Brownie"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "python",
+          "prerequisite_level": "required",
+          "notes": "Brownie is a Python framework"
+        },
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "required",
+          "notes": "Brownie is used for Solidity development"
+        }
+      ]
+    },
+    {
+      "name": "Ganache",
+      "slug": "ganache",
+      "description": "Personal Ethereum blockchain for local development and testing",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Ganache CLI",
+        "Truffle Ganache"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Ganache simulates Ethereum blockchain"
+        }
+      ]
+    },
+    {
+      "name": "Etherscan",
+      "slug": "etherscan",
+      "description": "Blockchain explorer and analytics platform for Ethereum",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Etherscan Explorer",
+        "Etherscan API"
+      ]
+    },
+    {
+      "name": "Moralis",
+      "slug": "moralis",
+      "description": "Web3 development platform with APIs and backend infrastructure",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Moralis API",
+        "Moralis Platform"
+      ]
+    },
+    {
+      "name": "Thirdweb",
+      "slug": "thirdweb",
+      "description": "Web3 development framework with pre-built smart contracts",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Thirdweb SDK",
+        "Thirdweb Platform"
+      ]
+    },
+    {
+      "name": "Remix IDE",
+      "slug": "remix-ide",
+      "description": "Browser-based IDE for Solidity smart contract development",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Remix",
+        "Remix Ethereum"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "solidity",
+          "prerequisite_level": "recommended",
+          "notes": "Remix is designed for Solidity development"
+        }
+      ]
+    },
+    {
+      "name": "Tenderly",
+      "slug": "tenderly",
+      "description": "Monitoring, debugging, and analytics platform for smart contracts",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Tenderly Platform",
+        "Tenderly Monitoring"
+      ]
+    },
+    {
+      "name": "Safe",
+      "slug": "safe",
+      "description": "Multi-signature smart contract wallet platform",
+      "category_slug": "blockchain-web3",
+      "synonyms": [
+        "Gnosis Safe",
+        "Safe Wallet"
+      ],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ethereum",
+          "prerequisite_level": "recommended",
+          "notes": "Safe is built on Ethereum"
+        }
+      ]
+    }
+  ]
 }

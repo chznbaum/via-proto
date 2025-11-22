@@ -862,25 +862,6 @@
       ]
     },
     {
-      "name": "Solidity",
-      "slug": "solidity",
-      "description": "Contract-oriented language for writing smart contracts on Ethereum and other blockchains",
-      "category_slug": "programming",
-      "synonyms": [
-        "Solidity Language",
-        "Solidity Programming",
-        "Smart Contract Language"
-      ],
-      "icon": "logos:solidity",
-      "prerequisites": [
-        {
-          "prerequisite_slug": "javascript",
-          "prerequisite_level": "recommended",
-          "notes": "Solidity syntax is influenced by JavaScript"
-        }
-      ]
-    },
-    {
       "name": "Nim",
       "slug": "nim",
       "description": "Statically typed compiled language combining efficiency with expressive Python-like syntax",
