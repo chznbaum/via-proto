@@ -233,6 +233,14 @@
       "parent_slug": "creative-arts"
     },
     {
+      "name": "Dance",
+      "slug": "dance",
+      "description": "Dance styles, choreography, and movement",
+      "icon": "lucide:music",
+      "display_order": 6,
+      "parent_slug": "creative-arts"
+    },
+    {
       "name": "Architecture",
       "slug": "architecture",
       "description": "Architectural design and planning",

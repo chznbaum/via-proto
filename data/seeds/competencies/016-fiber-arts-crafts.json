@@ -1,0 +1,454 @@
+{
+  "competencies": [
+    {
+      "name": "Knitting",
+      "slug": "knitting",
+      "description": "Creating fabric by interlocking loops of yarn with needles for garments and accessories",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Crochet",
+      "slug": "crochet",
+      "description": "Creating fabric with a hooked needle by pulling loops through other loops",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "knitting",
+          "relationship_type": "similar",
+          "notes": "Knitting creates similar fabric using different techniques"
+        }
+      ]
+    },
+    {
+      "name": "Weaving",
+      "slug": "weaving",
+      "description": "Interlacing threads on a loom to create fabric and textiles",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Loom Weaving"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Embroidery",
+      "slug": "embroidery",
+      "description": "Decorating fabric with needle and thread using decorative stitches",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cross-Stitch",
+      "slug": "cross-stitch",
+      "description": "Counted thread embroidery creating X-shaped stitches on even-weave fabric",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Cross Stitch"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Needlepoint",
+      "slug": "needlepoint",
+      "description": "Canvas embroidery using diagonal tent stitches to create designs",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Canvas Work"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Quilting",
+      "slug": "quilting",
+      "description": "Sewing layers of fabric together to create quilts with decorative patterns",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Quilt Making"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sewing",
+          "prerequisite_level": "recommended",
+          "notes": "Sewing skills are helpful for quilting"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Sewing",
+      "slug": "sewing",
+      "description": "Joining fabrics and materials using needle and thread or sewing machine",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tailoring",
+      "slug": "tailoring",
+      "description": "Custom fitting and constructing garments with precise measurements and techniques",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sewing",
+          "prerequisite_level": "required",
+          "notes": "Sewing skills are essential for tailoring"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Pattern Making",
+      "slug": "pattern-making",
+      "description": "Creating templates and blueprints for sewing garments and textile projects",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Pattern Drafting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Spinning",
+      "slug": "fiber-spinning",
+      "description": "Twisting fibers into yarn using a spinning wheel or drop spindle",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Yarn Spinning", "Hand Spinning"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Felting",
+      "slug": "felting",
+      "description": "Creating dense fabric by matting and pressing wool fibers together",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Wet Felting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Needle Felting",
+      "slug": "needle-felting",
+      "description": "Sculpting wool fibers using barbed needles to create three-dimensional forms",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Dry Felting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tapestry Weaving",
+      "slug": "tapestry-weaving",
+      "description": "Weaving pictorial designs and images on a loom creating decorative wall hangings",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Tapestry"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "weaving",
+          "prerequisite_level": "recommended",
+          "notes": "Basic weaving skills are helpful for tapestry"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Macramé",
+      "slug": "macrame",
+      "description": "Knotting cord or string to create decorative textiles and wall hangings",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lace Making",
+      "slug": "lace-making",
+      "description": "Creating delicate openwork fabric using threads and specialized techniques",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Lace"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tatting",
+      "slug": "tatting",
+      "description": "Making lace using shuttle or needle to create knots and loops",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Rug Hooking",
+      "slug": "rug-hooking",
+      "description": "Pulling loops of yarn or fabric through backing material to create rugs",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Rug Making"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Dyeing",
+      "slug": "fiber-dyeing",
+      "description": "Coloring fibers, yarn, and fabric using natural or synthetic dyes",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Yarn Dyeing", "Fabric Dyeing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Batik",
+      "slug": "batik",
+      "description": "Wax-resist dyeing technique creating patterns on fabric",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tie-Dye",
+      "slug": "tie-dye",
+      "description": "Creating colorful patterns by tying and dyeing fabric",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Tie Dye"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Appliqué",
+      "slug": "applique",
+      "description": "Sewing fabric pieces onto a larger background to create decorative designs",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "sewing",
+          "prerequisite_level": "recommended",
+          "notes": "Sewing skills are helpful for appliqué"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Smocking",
+      "slug": "smocking",
+      "description": "Decorative embroidery gathering fabric into pleated patterns",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Beading",
+      "slug": "beading",
+      "description": "Creating jewelry and decorative items by stringing and weaving beads",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Bead Work"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Jewelry Making",
+      "slug": "jewelry-making",
+      "description": "Crafting wearable adornments using metals, stones, and various materials",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Jewelry Craft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Wire Wrapping",
+      "slug": "wire-wrapping",
+      "description": "Creating jewelry by wrapping wire around stones and beads without soldering",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Wire Jewelry"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Scrapbooking",
+      "slug": "scrapbooking",
+      "description": "Creating personalized photo albums with decorative papers and embellishments",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Card Making",
+      "slug": "card-making",
+      "description": "Creating handmade greeting cards with paper, stamps, and decorative elements",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Cardmaking"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bookbinding",
+      "slug": "bookbinding",
+      "description": "Assembling and binding pages into books using traditional or modern techniques",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Book Binding"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Origami",
+      "slug": "origami",
+      "description": "Japanese art of paper folding to create decorative shapes and figures",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Paper Folding"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Paper Crafts",
+      "slug": "paper-crafts",
+      "description": "Creating decorative and functional items using paper and cardstock",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Papercrafts", "Paper Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Leatherworking",
+      "slug": "leatherworking",
+      "description": "Crafting items from leather through cutting, tooling, and stitching",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Leathercraft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Candle Making",
+      "slug": "candle-making",
+      "description": "Creating decorative and scented candles using wax, wicks, and molds",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Candle Craft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Soap Making",
+      "slug": "soap-making",
+      "description": "Crafting handmade soaps using natural ingredients and essential oils",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Soap Craft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Resin Crafts",
+      "slug": "resin-crafts",
+      "description": "Creating decorative items by pouring and curing epoxy resin",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Resin Art", "Epoxy Resin"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Polymer Clay",
+      "slug": "polymer-clay",
+      "description": "Sculpting and creating items with oven-bake modeling clay",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Polymer Clay Craft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pottery",
+      "slug": "pottery",
+      "description": "Creating functional and decorative ceramic objects using clay and a wheel or hand-building",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Ceramics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hand-Building Pottery",
+      "slug": "hand-building-pottery",
+      "description": "Creating pottery without a wheel using pinch, coil, and slab techniques",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Hand Building"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Wheel Throwing",
+      "slug": "wheel-throwing",
+      "description": "Shaping clay on a pottery wheel to create symmetrical vessels",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Pottery Wheel", "Throwing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ceramic Glazing",
+      "slug": "ceramic-glazing",
+      "description": "Applying and firing glazes to create colorful, glass-like surfaces on pottery",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Glazing"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "pottery",
+          "prerequisite_level": "recommended",
+          "notes": "Basic pottery skills are helpful for glazing"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Mosaic Art",
+      "slug": "mosaic-art",
+      "description": "Creating images and patterns by assembling small pieces of glass, tile, or stone",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Mosaics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stained Glass",
+      "slug": "stained-glass",
+      "description": "Creating decorative glass panels by cutting and joining colored glass pieces",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Glass Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Glass Blowing",
+      "slug": "glass-blowing",
+      "description": "Shaping molten glass into decorative and functional objects using blowing techniques",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Glassblowing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Basket Weaving",
+      "slug": "basket-weaving",
+      "description": "Creating baskets by weaving natural or synthetic materials",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Basketry"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Woodcarving",
+      "slug": "woodcarving",
+      "description": "Shaping wood into decorative or functional objects using carving tools",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": ["Wood Carving"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Whittling",
+      "slug": "whittling",
+      "description": "Carving wood into simple shapes using a knife",
+      "category_slug": "fiber-arts-crafts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "competencies": [
+    {
+      "name": "Piano",
+      "slug": "piano",
+      "description": "Playing the piano keyboard instrument for classical, jazz, and contemporary music",
+      "category_slug": "music",
+      "synonyms": ["Piano Playing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Guitar",
+      "slug": "guitar",
+      "description": "Playing acoustic or electric guitar with chords, scales, and techniques",
+      "category_slug": "music",
+      "synonyms": ["Guitar Playing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bass Guitar",
+      "slug": "bass-guitar",
+      "description": "Playing electric or acoustic bass guitar providing rhythm and low-end foundation",
+      "category_slug": "music",
+      "synonyms": ["Bass"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Drums",
+      "slug": "drums",
+      "description": "Playing drum kit with coordinated rhythms and percussion techniques",
+      "category_slug": "music",
+      "synonyms": ["Drumming", "Drum Kit"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Violin",
+      "slug": "violin",
+      "description": "Playing the violin with bowing techniques and finger positioning",
+      "category_slug": "music",
+      "synonyms": ["Violin Playing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cello",
+      "slug": "cello",
+      "description": "Playing the cello with bowing and fingering techniques for deep, rich tones",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Viola",
+      "slug": "viola",
+      "description": "Playing the viola, a string instrument larger than violin with deeper tone",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Double Bass",
+      "slug": "double-bass",
+      "description": "Playing the upright bass, the largest bowed string instrument",
+      "category_slug": "music",
+      "synonyms": ["Upright Bass", "Contrabass"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ukulele",
+      "slug": "ukulele",
+      "description": "Playing the small four-stringed Hawaiian instrument",
+      "category_slug": "music",
+      "synonyms": ["Uke"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Banjo",
+      "slug": "banjo",
+      "description": "Playing the stringed instrument with distinctive bright, plucky sound",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mandolin",
+      "slug": "mandolin",
+      "description": "Playing the small stringed instrument with paired strings",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Harp",
+      "slug": "harp",
+      "description": "Playing the multi-stringed instrument with plucking techniques",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Trumpet",
+      "slug": "trumpet",
+      "description": "Playing the brass instrument using embouchure and valve techniques",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Trombone",
+      "slug": "trombone",
+      "description": "Playing the brass instrument with slide mechanism for pitch control",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "French Horn",
+      "slug": "french-horn",
+      "description": "Playing the brass instrument with rotary valves and mellow tone",
+      "category_slug": "music",
+      "synonyms": ["Horn"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tuba",
+      "slug": "tuba",
+      "description": "Playing the largest brass instrument providing bass foundation",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Saxophone",
+      "slug": "saxophone",
+      "description": "Playing the woodwind instrument with single reed and keys",
+      "category_slug": "music",
+      "synonyms": ["Sax"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Clarinet",
+      "slug": "clarinet",
+      "description": "Playing the single-reed woodwind instrument with cylindrical bore",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Flute",
+      "slug": "flute",
+      "description": "Playing the woodwind instrument by blowing across an opening",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Oboe",
+      "slug": "oboe",
+      "description": "Playing the double-reed woodwind instrument with distinctive sound",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bassoon",
+      "slug": "bassoon",
+      "description": "Playing the large double-reed woodwind instrument with deep tone",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Recorder",
+      "slug": "recorder",
+      "description": "Playing the woodwind instrument often used in early music and education",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Harmonica",
+      "slug": "harmonica",
+      "description": "Playing the small wind instrument with reeds activated by breath",
+      "category_slug": "music",
+      "synonyms": ["Blues Harp", "Mouth Organ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Accordion",
+      "slug": "accordion",
+      "description": "Playing the bellows-driven instrument with keyboard and buttons",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bagpipes",
+      "slug": "bagpipes",
+      "description": "Playing the wind instrument with air reservoir and multiple pipes",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Synthesizer",
+      "slug": "synthesizer",
+      "description": "Playing electronic instruments creating sounds through synthesis",
+      "category_slug": "music",
+      "synonyms": ["Synth"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Organ",
+      "slug": "organ",
+      "description": "Playing pipe or electronic organ with multiple keyboards and pedals",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Singing",
+      "slug": "singing",
+      "description": "Producing musical sounds with the voice using breath and vocal technique",
+      "category_slug": "music",
+      "synonyms": ["Vocals", "Voice"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Opera Singing",
+      "slug": "opera-singing",
+      "description": "Classical vocal technique for operatic performance with power and projection",
+      "category_slug": "music",
+      "synonyms": ["Opera"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "singing",
+          "prerequisite_level": "required",
+          "notes": "Strong vocal foundation is essential for opera"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Choir Singing",
+      "slug": "choir-singing",
+      "description": "Singing in choral groups with harmony and ensemble techniques",
+      "category_slug": "music",
+      "synonyms": ["Choral Singing"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "singing",
+          "prerequisite_level": "recommended",
+          "notes": "Basic singing skills are helpful for choir"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Beatboxing",
+      "slug": "beatboxing",
+      "description": "Creating drum beats and musical sounds using only the mouth and voice",
+      "category_slug": "music",
+      "synonyms": ["Vocal Percussion"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Music Theory",
+      "slug": "music-theory",
+      "description": "Understanding musical notation, harmony, rhythm, and composition principles",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sight-Reading",
+      "slug": "sight-reading",
+      "description": "Reading and performing music notation at first sight without prior practice",
+      "category_slug": "music",
+      "synonyms": ["Sight Reading Music"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "required",
+          "notes": "Music theory knowledge is essential for sight-reading"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Ear Training",
+      "slug": "ear-training",
+      "description": "Developing ability to identify pitches, intervals, chords, and rhythms by ear",
+      "category_slug": "music",
+      "synonyms": ["Aural Skills"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Music Composition",
+      "slug": "music-composition",
+      "description": "Creating original music through melody, harmony, and arrangement",
+      "category_slug": "music",
+      "synonyms": ["Composing", "Songwriting"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "recommended",
+          "notes": "Music theory helps with composition"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Music Arrangement",
+      "slug": "music-arrangement",
+      "description": "Adapting and orchestrating music for different instruments and ensembles",
+      "category_slug": "music",
+      "synonyms": ["Arranging"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "recommended",
+          "notes": "Music theory is helpful for arrangement"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Orchestration",
+      "slug": "orchestration",
+      "description": "Writing music for orchestra with understanding of instrument capabilities and timbres",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-composition",
+          "prerequisite_level": "recommended",
+          "notes": "Composition skills are helpful for orchestration"
+        },
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "required",
+          "notes": "Music theory is essential for orchestration"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Conducting",
+      "slug": "conducting",
+      "description": "Leading musical ensembles through gesture, tempo, and interpretation",
+      "category_slug": "music",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "required",
+          "notes": "Music theory is essential for conducting"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Jazz Improvisation",
+      "slug": "jazz-improvisation",
+      "description": "Creating spontaneous melodies and solos within jazz harmonic structures",
+      "category_slug": "music",
+      "synonyms": ["Jazz Improv"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "music-theory",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding harmony helps with improvisation"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Music Production",
+      "slug": "music-production",
+      "description": "Recording, mixing, and mastering music using studio equipment and software",
+      "category_slug": "music",
+      "synonyms": ["Audio Production"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Audio Mixing",
+      "slug": "audio-mixing",
+      "description": "Balancing and processing multiple audio tracks into final stereo mix",
+      "category_slug": "music",
+      "synonyms": ["Mixing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Audio Mastering",
+      "slug": "audio-mastering",
+      "description": "Final audio processing to optimize sound for distribution and playback",
+      "category_slug": "music",
+      "synonyms": ["Mastering"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "audio-mixing",
+          "prerequisite_level": "recommended",
+          "notes": "Mixing experience is helpful for mastering"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Sound Engineering",
+      "slug": "sound-engineering",
+      "description": "Technical aspects of recording and live sound reinforcement",
+      "category_slug": "music",
+      "synonyms": ["Audio Engineering"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "DJing",
+      "slug": "djing",
+      "description": "Mixing and blending recorded music for live audiences and events",
+      "category_slug": "music",
+      "synonyms": ["DJ", "Disc Jockey"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Turntablism",
+      "slug": "turntablism",
+      "description": "DJ technique using turntables for scratching, beat juggling, and manipulation",
+      "category_slug": "music",
+      "synonyms": ["Scratching"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "djing",
+          "prerequisite_level": "recommended",
+          "notes": "DJ skills are helpful for turntablism"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Electronic Music Production",
+      "slug": "electronic-music-production",
+      "description": "Creating electronic music using synthesizers, samplers, and digital tools",
+      "category_slug": "music",
+      "synonyms": ["EDM Production"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sound Design",
+      "slug": "sound-design-music",
+      "description": "Creating and manipulating audio for music, games, and multimedia",
+      "category_slug": "music",
+      "synonyms": ["Audio Sound Design"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "MIDI Programming",
+      "slug": "midi-programming",
+      "description": "Creating and editing music using MIDI protocol and virtual instruments",
+      "category_slug": "music",
+      "synonyms": ["MIDI"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
+}

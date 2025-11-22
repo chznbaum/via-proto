@@ -1,0 +1,508 @@
+{
+  "competencies": [
+    {
+      "name": "Cooking",
+      "slug": "cooking",
+      "description": "Preparing food using various techniques, recipes, and ingredients",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Culinary Arts"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Baking",
+      "slug": "baking",
+      "description": "Making breads, pastries, and desserts using ovens and baking techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bread Making",
+      "slug": "bread-making",
+      "description": "Baking various types of bread from scratch using dough techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Bread Baking"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "baking",
+          "prerequisite_level": "recommended",
+          "notes": "Basic baking skills are helpful for bread making"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Sourdough Baking",
+      "slug": "sourdough-baking",
+      "description": "Baking bread using natural fermentation with sourdough starter",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Sourdough"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "bread-making",
+          "prerequisite_level": "recommended",
+          "notes": "Bread making skills are helpful for sourdough"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Pastry",
+      "slug": "pastry",
+      "description": "Creating delicate baked goods including pies, tarts, and laminated doughs",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Pastry Making"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "baking",
+          "prerequisite_level": "recommended",
+          "notes": "Baking skills are helpful for pastry work"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cake Decorating",
+      "slug": "cake-decorating",
+      "description": "Decorating cakes with frosting, fondant, and artistic techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "baking",
+          "prerequisite_level": "recommended",
+          "notes": "Baking skills are helpful for cake decorating"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Chocolate Making",
+      "slug": "chocolate-making",
+      "description": "Crafting chocolates and confections through tempering and molding",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Chocolate Craft", "Chocolatiering"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Grilling",
+      "slug": "grilling",
+      "description": "Cooking food over direct heat on a grill",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Barbecue", "BBQ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Smoking",
+      "slug": "food-smoking",
+      "description": "Cooking and preserving food using smoke from burning wood",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Meat Smoking", "Smoking Food"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sous Vide",
+      "slug": "sous-vide",
+      "description": "Precision cooking in vacuum-sealed bags at controlled low temperatures",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Fermentation",
+      "slug": "fermentation",
+      "description": "Preserving and flavoring foods through controlled microbial growth",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pickling",
+      "slug": "pickling",
+      "description": "Preserving foods in acidic brine or vinegar solutions",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Canning",
+      "slug": "canning",
+      "description": "Preserving food in airtight containers through heat processing",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Food Preservation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Wine Tasting",
+      "slug": "wine-tasting",
+      "description": "Evaluating and appreciating wines through systematic sensory analysis",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Wine Appreciation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Coffee Brewing",
+      "slug": "coffee-brewing",
+      "description": "Preparing coffee using various brewing methods and techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Coffee Making"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Espresso",
+      "slug": "espresso",
+      "description": "Making concentrated coffee using espresso machines and techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Espresso Making"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Latte Art",
+      "slug": "latte-art",
+      "description": "Creating decorative patterns in coffee drinks with steamed milk",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "espresso",
+          "prerequisite_level": "recommended",
+          "notes": "Espresso skills are helpful for latte art"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Mixology",
+      "slug": "mixology",
+      "description": "Crafting cocktails and mixed drinks with creative techniques and recipes",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Cocktail Making", "Bartending"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Knife Skills",
+      "slug": "knife-skills",
+      "description": "Proper techniques for cutting, slicing, and dicing ingredients safely and efficiently",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Meal Prep",
+      "slug": "meal-prep",
+      "description": "Planning and preparing meals in advance for efficiency and nutrition",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Meal Preparation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Gardening",
+      "slug": "gardening",
+      "description": "Growing and maintaining plants, flowers, and gardens",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Vegetable Gardening",
+      "slug": "vegetable-gardening",
+      "description": "Growing edible vegetables and herbs in home gardens",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Veggie Garden"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "gardening",
+          "prerequisite_level": "recommended",
+          "notes": "Basic gardening knowledge is helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Organic Gardening",
+      "slug": "organic-gardening",
+      "description": "Growing plants without synthetic pesticides or fertilizers using natural methods",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "gardening",
+          "prerequisite_level": "recommended",
+          "notes": "Basic gardening knowledge is helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Container Gardening",
+      "slug": "container-gardening",
+      "description": "Growing plants in pots and containers for small spaces",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Pot Gardening"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hydroponics",
+      "slug": "hydroponics",
+      "description": "Growing plants in water-based nutrient solutions without soil",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Composting",
+      "slug": "composting",
+      "description": "Creating nutrient-rich soil amendment from organic waste",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Landscaping",
+      "slug": "landscaping",
+      "description": "Designing and maintaining outdoor spaces with plants, hardscaping, and features",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Landscape Design"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Permaculture",
+      "slug": "permaculture",
+      "description": "Designing sustainable agricultural systems inspired by natural ecosystems",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Beekeeping",
+      "slug": "beekeeping",
+      "description": "Maintaining bee colonies for honey production and pollination",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Apiculture"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bonsai",
+      "slug": "bonsai",
+      "description": "Growing and shaping miniature trees in containers using artistic techniques",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Orchid Growing",
+      "slug": "orchid-growing",
+      "description": "Cultivating orchids with specialized care and environmental conditions",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Orchid Care"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Home Repair",
+      "slug": "home-repair",
+      "description": "Fixing and maintaining household systems and structures",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Home Maintenance"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Plumbing",
+      "slug": "plumbing",
+      "description": "Installing and repairing water pipes, fixtures, and drainage systems",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Electrical Work",
+      "slug": "electrical-work",
+      "description": "Installing and repairing electrical wiring and systems safely",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Electrical Repair"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Carpentry",
+      "slug": "carpentry",
+      "description": "Building and repairing wooden structures and furniture",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Woodworking",
+      "slug": "woodworking",
+      "description": "Crafting items from wood using hand and power tools",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Furniture Making",
+      "slug": "furniture-making",
+      "description": "Building custom furniture from wood and other materials",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Furniture Building"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "woodworking",
+          "prerequisite_level": "recommended",
+          "notes": "Woodworking skills are helpful for furniture making"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Cabinet Making",
+      "slug": "cabinet-making",
+      "description": "Designing and building custom cabinets and storage solutions",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Cabinetry"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "woodworking",
+          "prerequisite_level": "recommended",
+          "notes": "Woodworking skills are helpful for cabinet making"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "House Painting",
+      "slug": "house-painting",
+      "description": "Painting interior and exterior surfaces of homes",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Residential Painting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tiling",
+      "slug": "tiling",
+      "description": "Installing ceramic, porcelain, and stone tiles on floors and walls",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Tile Installation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Drywall",
+      "slug": "drywall",
+      "description": "Installing and finishing drywall for interior walls and ceilings",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Drywalling", "Sheetrock"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Welding",
+      "slug": "welding",
+      "description": "Joining metal parts using heat and pressure",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Auto Repair",
+      "slug": "auto-repair",
+      "description": "Diagnosing and fixing mechanical issues in vehicles",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Car Repair", "Automotive Repair"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Auto Maintenance",
+      "slug": "auto-maintenance",
+      "description": "Routine servicing and upkeep of vehicles",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Car Maintenance"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Home Organization",
+      "slug": "home-organization",
+      "description": "Systematically arranging and managing household spaces and belongings",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Organization"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Decluttering",
+      "slug": "decluttering",
+      "description": "Removing unnecessary items and simplifying living spaces",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Interior Design",
+      "slug": "interior-design",
+      "description": "Planning and designing functional and aesthetic interior spaces",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pet Care",
+      "slug": "pet-care",
+      "description": "Caring for domestic animals including feeding, grooming, and health",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Dog Training",
+      "slug": "dog-training",
+      "description": "Teaching dogs obedience, commands, and desired behaviors",
+      "category_slug": "home-lifestyle",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Aquarium Keeping",
+      "slug": "aquarium-keeping",
+      "description": "Maintaining freshwater or saltwater aquariums with fish and aquatic life",
+      "category_slug": "home-lifestyle",
+      "synonyms": ["Fishkeeping"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Competency Reference
 
-**Generated:** 2025-11-22T02:00:03.761Z
-**Total Competencies:** 597
+**Generated:** 2025-11-22T02:23:39.313Z
+**Total Competencies:** 945
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -16,21 +16,28 @@ Run `npm run generate:competency-reference` to update.
 - [blockchain-web3](#blockchain-web3) (41)
 - [cloud-devops](#cloud-devops) (169)
 - [cybersecurity](#cybersecurity) (27)
+- [dance](#dance) (42)
 - [data-engineering](#data-engineering) (1)
 - [data-science](#data-science) (71)
 - [databases](#databases) (55)
+- [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (3)
 - [graphic-design](#graphic-design) (18)
+- [home-lifestyle](#home-lifestyle) (50)
 - [mobile-development](#mobile-development) (4)
 - [motion-3d](#motion-3d) (16)
-- [music](#music) (11)
+- [music](#music) (59)
 - [natural-languages](#natural-languages) (1)
 - [photography-video](#photography-video) (3)
 - [programming](#programming) (48)
+- [recreation-hobbies](#recreation-hobbies) (39)
 - [systems-programming](#systems-programming) (17)
+- [theater](#theater) (20)
 - [uiux-design](#uiux-design) (19)
+- [visual-arts](#visual-arts) (51)
 - [web-development](#web-development) (1)
+- [writing](#writing) (52)
 
 ---
 
@@ -38,7 +45,12 @@ Run `npm run generate:competency-reference` to update.
 
 - `3ds-max` - 3ds Max (motion-3d)
 - `ableton-live` - Ableton Live (music)
+- `abstract-art` - Abstract Art (visual-arts)
+- `academic-writing` - Academic Writing (writing)
+- `accordion` - Accordion (music)
 - `acme-sh` - acme.sh (cloud-devops)
+- `acrylic-painting` - Acrylic Painting (visual-arts)
+- `acting` - Acting (theater)
 - `actionscript` - ActionScript (programming)
 - `active-directory` - Active Directory (cybersecurity)
 - `activemq` - ActiveMQ (cloud-devops)
@@ -56,6 +68,7 @@ Run `npm run generate:competency-reference` to update.
 - `adobe-premiere-pro` - Adobe Premiere Pro (motion-3d)
 - `adobe-xd` - Adobe XD (uiux-design)
 - `adonisjs` - AdonisJS (backend-development)
+- `aerial-dance` - Aerial Dance (dance)
 - `affinity-designer` - Affinity Designer (graphic-design)
 - `affinity-photo` - Affinity Photo (graphic-design)
 - `affinity-publisher` - Affinity Publisher (graphic-design)
@@ -68,6 +81,7 @@ Run `npm run generate:competency-reference` to update.
 - `amazon-lex` - Amazon Lex (data-science)
 - `amazon-rds` - Amazon RDS (databases)
 - `amazon-sagemaker` - Amazon SageMaker (data-science)
+- `anatomy-for-artists` - Anatomy for Artists (visual-arts)
 - `anchor` - Anchor (blockchain-web3)
 - `anchore` - Anchore (cloud-devops)
 - `angular` - Angular (frontend-development)
@@ -81,19 +95,31 @@ Run `npm run generate:competency-reference` to update.
 - `apollo-client` - Apollo Client (frontend-development)
 - `apollo-server` - Apollo Server (backend-development)
 - `appdynamics` - AppDynamics (cloud-devops)
+- `applique` - Appliqué (fiber-arts-crafts)
 - `aqua-security` - Aqua Security (cloud-devops)
+- `aquarium-keeping` - Aquarium Keeping (home-lifestyle)
 - `arangodb` - ArangoDB (databases)
 - `arbitrum` - Arbitrum (blockchain-web3)
+- `archery` - Archery (recreation-hobbies)
 - `archicad` - ArchiCAD (architecture)
+- `argentine-tango` - Argentine Tango (dance)
 - `argocd` - ArgoCD (cloud-devops)
 - `artillery` - Artillery (cloud-devops)
+- `artrage` - ArtRage (visual-arts)
+- `artstudio-pro` - ArtStudio Pro (visual-arts)
 - `aseprite` - Aseprite (graphic-design)
 - `aspnet-core` - ASP.NET Core (backend-development)
 - `assembly` - Assembly (systems-programming)
 - `assemblyai` - AssemblyAI (data-science)
 - `ats` - ATS (systems-programming)
+- `atticus` - Atticus (writing)
 - `audacity` - Audacity (music)
+- `audio-mastering` - Audio Mastering (music)
+- `audio-mixing` - Audio Mixing (music)
+- `audition-technique` - Audition Technique (theater)
 - `auth0` - Auth0 (cybersecurity)
+- `auto-maintenance` - Auto Maintenance (home-lifestyle)
+- `auto-repair` - Auto Repair (home-lifestyle)
 - `autocad` - AutoCAD (architecture)
 - `autogen` - AutoGen (data-science)
 - `avalanche` - Avalanche (blockchain-web3)
@@ -121,43 +147,96 @@ Run `npm run generate:competency-reference` to update.
 - `azure-resource-manager` - Azure Resource Manager (cloud-devops)
 - `azure-service-bus` - Azure Service Bus (cloud-devops)
 - `azure-sql-database` - Azure SQL Database (databases)
+- `bachata` - Bachata (dance)
+- `backpacking` - Backpacking (recreation-hobbies)
+- `bagpipes` - Bagpipes (music)
+- `baking` - Baking (home-lifestyle)
 - `ballerina` - Ballerina (cloud-devops)
+- `ballet` - Ballet (dance)
+- `ballroom-choreography` - Ballroom Choreography (dance)
+- `ballroom-dance` - Ballroom Dance (dance)
 - `balsamiq` - Balsamiq (uiux-design)
 - `bamboo` - Bamboo (cloud-devops)
+- `banjo` - Banjo (music)
 - `bash` - Bash (systems-programming)
+- `basket-weaving` - Basket Weaving (fiber-arts-crafts)
+- `basketball` - Basketball (recreation-hobbies)
+- `bass-guitar` - Bass Guitar (music)
+- `bassoon` - Bassoon (music)
+- `batik` - Batik (fiber-arts-crafts)
+- `beading` - Beading (fiber-arts-crafts)
+- `beatboxing` - Beatboxing (music)
+- `beekeeping` - Beekeeping (home-lifestyle)
+- `belly-dance` - Belly Dance (dance)
 - `bentoml` - BentoML (data-science)
+- `bharatanatyam` - Bharatanatyam (dance)
 - `bicep` - Bicep (cloud-devops)
+- `biography-writing` - Biography (writing)
 - `bitbucket-pipelines` - Bitbucket Pipelines (cloud-devops)
 - `bitwig-studio` - Bitwig Studio (music)
 - `blender` - Blender (motion-3d)
+- `blogging` - Blogging (writing)
 - `bnb-chain` - BNB Chain (blockchain-web3)
+- `bollywood-dance` - Bollywood Dance (dance)
+- `bonsai` - Bonsai (home-lifestyle)
+- `book-publishing` - Book Publishing (writing)
+- `bookbinding` - Bookbinding (fiber-arts-crafts)
 - `bootstrap` - Bootstrap (frontend-development)
 - `borg` - BorgBackup (cloud-devops)
 - `botpress` - Botpress (data-science)
+- `bouldering` - Bouldering (recreation-hobbies)
+- `boxing` - Boxing (recreation-hobbies)
+- `brazilian-jiu-jitsu` - Brazilian Jiu-Jitsu (recreation-hobbies)
+- `bread-making` - Bread Making (home-lifestyle)
+- `breaking` - Breaking (dance)
 - `brownie` - Brownie (blockchain-web3)
 - `buddy` - Buddy (cloud-devops)
 - `buildkite` - Buildkite (cloud-devops)
 - `bun` - Bun (backend-development)
 - `burp-suite` - Burp Suite (cybersecurity)
+- `business-writing` - Business Writing (writing)
 - `c` - C (systems-programming)
+- `cabinet-making` - Cabinet Making (home-lifestyle)
 - `caddy` - Caddy (cloud-devops)
+- `cake-decorating` - Cake Decorating (home-lifestyle)
 - `calico` - Calico (cloud-devops)
+- `calligraphy` - Calligraphy (visual-arts)
+- `campfire-write` - Campfire Write (writing)
+- `camping` - Camping (recreation-hobbies)
+- `candle-making` - Candle Making (fiber-arts-crafts)
+- `canning` - Canning (home-lifestyle)
 - `canva` - Canva (graphic-design)
 - `capistrano` - Capistrano (cloud-devops)
 - `capture-one` - Capture One (photography-video)
 - `carbon` - Carbon (systems-programming)
+- `card-making` - Card Making (fiber-arts-crafts)
 - `cardano` - Cardano (blockchain-web3)
+- `caricature` - Caricature (visual-arts)
+- `carpentry` - Carpentry (home-lifestyle)
 - `cassandra` - Cassandra (databases)
+- `cello` - Cello (music)
+- `celtx` - Celtx (writing)
+- `ceramic-glazing` - Ceramic Glazing (fiber-arts-crafts)
 - `cert-manager` - cert-manager (cloud-devops)
 - `certbot` - Certbot (cloud-devops)
+- `cha-cha` - Cha-Cha (dance)
 - `chainlink` - Chainlink (blockchain-web3)
 - `chapel` - Chapel (systems-programming)
+- `character-design` - Character Design (visual-arts)
+- `character-development` - Character Development (writing)
+- `charcoal-drawing` - Charcoal Drawing (visual-arts)
+- `charleston` - Charleston (dance)
 - `chef` - Chef (cloud-devops)
+- `chess` - Chess (recreation-hobbies)
+- `chocolate-making` - Chocolate Making (home-lifestyle)
+- `choir-singing` - Choir Singing (music)
+- `choreography` - Choreography (dance)
 - `chroma` - Chroma (data-science)
 - `cilium` - Cilium (cloud-devops)
 - `cinema-4d` - Cinema 4D (motion-3d)
 - `circleci` - CircleCI (cloud-devops)
 - `clair` - Clair (cloud-devops)
+- `clarinet` - Clarinet (music)
 - `clip-studio-paint` - Clip Studio Paint (graphic-design)
 - `clojure` - Clojure (programming)
 - `cloudflare` - Cloudflare (cloud-devops)
@@ -166,21 +245,41 @@ Run `npm run generate:competency-reference` to update.
 - `cockroachdb` - CockroachDB (databases)
 - `codefresh` - Codefresh (cloud-devops)
 - `codeship` - CodeShip (cloud-devops)
+- `coffee-brewing` - Coffee Brewing (home-lifestyle)
 - `cohere-api` - Cohere API (data-science)
+- `collage` - Collage (visual-arts)
+- `color-theory` - Color Theory (visual-arts)
+- `colored-pencil` - Colored Pencil (visual-arts)
+- `comic-art` - Comic Art (visual-arts)
 - `common-lisp` - Common Lisp (programming)
+- `composition` - Composition (visual-arts)
+- `composting` - Composting (home-lifestyle)
+- `concept-art` - Concept Art (visual-arts)
+- `concepts-app` - Concepts (visual-arts)
 - `concourse` - Concourse CI (cloud-devops)
+- `conducting` - Conducting (music)
 - `consul` - HashiCorp Consul (cloud-devops)
 - `consul-service-mesh` - Consul Service Mesh (cloud-devops)
+- `container-gardening` - Container Gardening (home-lifestyle)
 - `containerd` - Containerd (cloud-devops)
+- `contemporary-dance` - Contemporary Dance (dance)
+- `content-writing` - Content Writing (writing)
+- `cooking` - Cooking (home-lifestyle)
+- `copywriting-skill` - Copywriting (writing)
 - `coq` - Coq (programming)
+- `corel-painter` - Corel Painter (visual-arts)
 - `coreldraw` - CorelDRAW (graphic-design)
 - `cors` - CORS (cybersecurity)
 - `cosmos` - Cosmos (blockchain-web3)
+- `costume-design` - Costume Design (theater)
 - `couchbase` - Couchbase (databases)
 - `couchdb` - CouchDB (databases)
 - `cpp` - C++ (systems-programming)
+- `creative-writing` - Creative Writing (writing)
 - `crewai` - CrewAI (data-science)
 - `cri-o` - CRI-O (cloud-devops)
+- `crochet` - Crochet (fiber-arts-crafts)
+- `cross-stitch` - Cross-Stitch (fiber-arts-crafts)
 - `crossplane` - Crossplane (cloud-devops)
 - `crystal` - Crystal (programming)
 - `csharp` - C# (programming)
@@ -188,6 +287,7 @@ Run `npm run generate:competency-reference` to update.
 - `css` - CSS (frontend-development)
 - `cubase` - Cubase (music)
 - `cuda` - CUDA (data-science)
+- `cycling` - Cycling (recreation-hobbies)
 - `cypress` - Cypress (frontend-development)
 - `d` - D (systems-programming)
 - `dart` - Dart (mobile-development)
@@ -198,35 +298,55 @@ Run `npm run generate:competency-reference` to update.
 - `davinci-resolve` - DaVinci Resolve (motion-3d)
 - `dbeaver` - DBeaver (databases)
 - `debugging` - Debugging (programming)
+- `decluttering` - Decluttering (home-lifestyle)
 - `delphi` - Delphi (programming)
 - `deno` - Deno (backend-development)
 - `design-patterns` - Design Patterns (programming)
 - `dialogflow` - Dialogflow (data-science)
+- `dialogue-writing` - Dialogue Writing (writing)
+- `digital-illustration` - Digital Illustration (visual-arts)
 - `digitalocean` - DigitalOcean (cloud-devops)
 - `django` - Django (backend-development)
 - `django-orm` - Django ORM (databases)
 - `django-rest-framework` - Django REST Framework (backend-development)
+- `djing` - DJing (music)
 - `docker` - Docker (cloud-devops)
 - `docker-compose` - Docker Compose (cloud-devops)
 - `docker-hub` - Docker Hub (cloud-devops)
 - `docker-swarm` - Docker Swarm (cloud-devops)
+- `dog-training` - Dog Training (home-lifestyle)
+- `double-bass` - Double Bass (music)
+- `drawing` - Drawing (visual-arts)
 - `drizzle-orm` - Drizzle ORM (databases)
 - `drone` - Drone (cloud-devops)
+- `drone-flying` - Drone Flying (recreation-hobbies)
+- `drums` - Drums (music)
+- `drywall` - Drywall (home-lifestyle)
 - `duplicati` - Duplicati (cloud-devops)
 - `dynamodb` - DynamoDB (databases)
 - `dynatrace` - Dynatrace (cloud-devops)
+- `ear-training` - Ear Training (music)
+- `east-coast-swing` - East Coast Swing (dance)
 - `echo` - Echo (backend-development)
+- `editing-writing` - Editing (writing)
 - `elasticsearch` - Elasticsearch (cloud-devops)
+- `electrical-work` - Electrical Work (home-lifestyle)
+- `electronic-music-production` - Electronic Music Production (music)
 - `elevenlabs` - ElevenLabs (data-science)
 - `elixir` - Elixir (programming)
 - `elm` - Elm (frontend-development)
 - `eloquent` - Eloquent (databases)
+- `embroidery` - Embroidery (fiber-arts-crafts)
 - `entity-framework` - Entity Framework (databases)
 - `envoy` - Envoy (cloud-devops)
 - `erlang` - Erlang (systems-programming)
 - `esbuild` - esbuild (frontend-development)
 - `eslint` - ESLint (frontend-development)
+- `esports` - Esports (recreation-hobbies)
+- `espresso` - Espresso (home-lifestyle)
+- `essay-writing` - Essay Writing (writing)
 - `etcd` - etcd (cloud-devops)
+- `etching` - Etching (visual-arts)
 - `ethereum` - Ethereum (blockchain-web3)
 - `etherscan` - Etherscan (blockchain-web3)
 - `ethersjs` - ethers.js (blockchain-web3)
@@ -235,43 +355,68 @@ Run `npm run generate:competency-reference` to update.
 - `fail2ban` - Fail2Ban (cybersecurity)
 - `faiss` - FAISS (data-science)
 - `falco` - Falco (cloud-devops)
+- `fantasy-writing` - Fantasy Writing (writing)
 - `fastapi` - FastAPI (backend-development)
 - `fastify` - Fastify (backend-development)
 - `fastly` - Fastly (cloud-devops)
+- `felting` - Felting (fiber-arts-crafts)
 - `fennel` - Fennel (game-development)
+- `fermentation` - Fermentation (home-lifestyle)
 - `fiber` - Fiber (backend-development)
+- `fiber-dyeing` - Dyeing (fiber-arts-crafts)
+- `fiber-spinning` - Spinning (fiber-arts-crafts)
+- `fiction-writing` - Fiction Writing (writing)
 - `figma` - Figma (uiux-design)
+- `figure-drawing` - Figure Drawing (visual-arts)
 - `final-cut-pro` - Final Cut Pro (motion-3d)
+- `final-draft` - Final Draft (writing)
+- `firealpaca` - FireAlpaca (visual-arts)
 - `firebase` - Firebase (cloud-devops)
+- `fishing` - Fishing (recreation-hobbies)
 - `fl-studio` - FL Studio (music)
+- `flamenco` - Flamenco (dance)
 - `flannel` - Flannel (cloud-devops)
+- `flash-fiction` - Flash Fiction (writing)
 - `flask` - Flask (backend-development)
 - `fluent-bit` - Fluent Bit (cloud-devops)
 - `fluentd` - Fluentd (cloud-devops)
+- `flute` - Flute (music)
 - `flux` - Flux (cloud-devops)
+- `fly-fishing` - Fly Fishing (recreation-hobbies)
 - `fly-io` - Fly.io (cloud-devops)
 - `flyway` - Flyway (databases)
 - `fontforge` - FontForge (graphic-design)
+- `food-smoking` - Smoking (home-lifestyle)
 - `fortran` - Fortran (data-science)
 - `foundry` - Foundry (blockchain-web3)
+- `foxtrot` - Foxtrot (dance)
 - `framer` - Framer (uiux-design)
+- `french-horn` - French Horn (music)
 - `fsharp` - F# (programming)
 - `functional-programming` - Functional Programming (programming)
+- `furniture-making` - Furniture Making (home-lifestyle)
 - `fusion-360` - Fusion 360 (architecture)
+- `game-mastering` - Game Mastering (recreation-hobbies)
+- `game-streaming` - Game Streaming (recreation-hobbies)
 - `ganache` - Ganache (blockchain-web3)
 - `garageband` - GarageBand (music)
+- `gardening` - Gardening (home-lifestyle)
 - `gatling` - Gatling (cloud-devops)
 - `gatsby` - Gatsby (frontend-development)
+- `gesture-drawing` - Gesture Drawing (visual-arts)
+- `ghostwriting` - Ghostwriting (writing)
 - `gimp` - GIMP (graphic-design)
 - `gin` - Gin (backend-development)
 - `git` - Git (programming)
 - `github-actions` - GitHub Actions (cloud-devops)
 - `github-container-registry` - GitHub Container Registry (cloud-devops)
 - `gitlab-cicd` - GitLab CI/CD (cloud-devops)
+- `glass-blowing` - Glass Blowing (fiber-arts-crafts)
 - `gleam` - Gleam (programming)
 - `glyphs` - Glyphs (graphic-design)
 - `go` - Go (programming)
 - `gocd` - GoCD (cloud-devops)
+- `golf` - Golf (recreation-hobbies)
 - `google-artifact-registry` - Google Artifact Registry (cloud-devops)
 - `google-cloud-endpoints` - Google Cloud Endpoints (cloud-devops)
 - `google-cloud-functions` - Google Cloud Functions (cloud-devops)
@@ -282,120 +427,198 @@ Run `npm run generate:competency-reference` to update.
 - `google-cloud-sql` - Google Cloud SQL (databases)
 - `google-container-registry` - Google Container Registry (cloud-devops)
 - `google-gemini-api` - Google Gemini API (data-science)
+- `gouache-painting` - Gouache Painting (visual-arts)
 - `gradio` - Gradio (data-science)
 - `grafana` - Grafana (cloud-devops)
+- `grammarly` - Grammarly (writing)
+- `grant-writing` - Grant Writing (writing)
+- `graphite-drawing` - Graphite Drawing (visual-arts)
 - `graphql` - GraphQL (databases)
+- `grilling` - Grilling (home-lifestyle)
 - `groovy` - Groovy (programming)
 - `grpc` - gRPC (backend-development)
 - `grype` - Grype (cloud-devops)
+- `guitar` - Guitar (music)
 - `hack` - Hack (backend-development)
+- `hand-building-pottery` - Hand-Building Pottery (fiber-arts-crafts)
 - `hapi` - Hapi (backend-development)
 - `haproxy` - HAProxy (cloud-devops)
 - `harbor` - Harbor (cloud-devops)
 - `hardhat` - Hardhat (blockchain-web3)
+- `harmonica` - Harmonica (music)
+- `harp` - Harp (music)
 - `haskell` - Haskell (programming)
 - `hbase` - HBase (databases)
 - `helicone` - Helicone (data-science)
 - `helm` - Helm (cloud-devops)
+- `hemingway-editor` - Hemingway Editor (writing)
 - `heroku` - Heroku (cloud-devops)
 - `hetzner-cloud` - Hetzner Cloud (cloud-devops)
 - `hibernate` - Hibernate (databases)
+- `hiking` - Hiking (recreation-hobbies)
+- `hip-hop-dance` - Hip Hop Dance (dance)
+- `home-organization` - Home Organization (home-lifestyle)
+- `home-repair` - Home Repair (home-lifestyle)
 - `honeycomb` - Honeycomb (cloud-devops)
+- `horror-writing` - Horror Writing (writing)
 - `houdini` - Houdini (motion-3d)
+- `house-dance` - House Dance (dance)
+- `house-painting` - House Painting (home-lifestyle)
 - `html` - HTML (frontend-development)
 - `hugging-face` - Hugging Face (data-science)
+- `hula` - Hula (dance)
+- `hunting` - Hunting (recreation-hobbies)
+- `hydroponics` - Hydroponics (home-lifestyle)
+- `ia-writer` - iA Writer (writing)
 - `ibm-cloud` - IBM Cloud (cloud-devops)
 - `idris` - Idris (programming)
+- `illustration` - Illustration (visual-arts)
+- `improvisation` - Improvisation (theater)
+- `infinite-painter` - Infinite Painter (visual-arts)
 - `influxdb` - InfluxDB (databases)
 - `infura` - Infura (blockchain-web3)
+- `ink-drawing` - Ink Drawing (visual-arts)
 - `inkscape` - Inkscape (graphic-design)
 - `insomnia` - Insomnia (backend-development)
+- `interior-design` - Interior Design (home-lifestyle)
 - `invision` - InVision (uiux-design)
 - `ipfs` - IPFS (blockchain-web3)
+- `irish-dance` - Irish Dance (dance)
 - `istio` - Istio (cloud-devops)
 - `jaeger` - Jaeger (cloud-devops)
 - `janet` - Janet (programming)
 - `jasmine` - Jasmine (frontend-development)
 - `java` - Java (programming)
 - `javascript` - JavaScript (programming)
+- `jazz-dance` - Jazz Dance (dance)
+- `jazz-improvisation` - Jazz Improvisation (music)
 - `jenkins` - Jenkins (cloud-devops)
 - `jest` - Jest (frontend-development)
+- `jewelry-making` - Jewelry Making (fiber-arts-crafts)
+- `jive` - Jive (dance)
 - `jmeter` - Apache JMeter (cloud-devops)
 - `jotai` - Jotai (frontend-development)
+- `journalism` - Journalism (writing)
 - `julia` - Julia (data-science)
 - `jupyter` - Jupyter (data-science)
 - `jwt` - JWT (cybersecurity)
 - `k6` - k6 (cloud-devops)
 - `kafka` - Apache Kafka (cloud-devops)
 - `kali-linux` - Kali Linux (cybersecurity)
+- `karate` - Karate (recreation-hobbies)
 - `kasten-k10` - Kasten K10 (cloud-devops)
+- `kathak` - Kathak (dance)
 - `keras` - Keras (data-science)
 - `keycloak` - Keycloak (cybersecurity)
 - `kibana` - Kibana (cloud-devops)
 - `knexjs` - Knex.js (databases)
+- `knife-skills` - Knife Skills (home-lifestyle)
+- `knitting` - Knitting (fiber-arts-crafts)
 - `koa` - Koa (backend-development)
 - `kong` - Kong (cloud-devops)
 - `kotlin` - Kotlin (mobile-development)
 - `krita` - Krita (graphic-design)
+- `krita` - Krita (visual-arts)
 - `kserve` - KServe (data-science)
 - `kubernetes` - Kubernetes (cloud-devops)
+- `lace-making` - Lace Making (fiber-arts-crafts)
+- `landscape-painting` - Landscape Painting (visual-arts)
+- `landscaping` - Landscaping (home-lifestyle)
 - `langchain` - LangChain (data-science)
 - `langfuse` - LangFuse (data-science)
 - `langgraph` - LangGraph (data-science)
 - `langsmith` - LangSmith (data-science)
 - `laravel` - Laravel (backend-development)
+- `latte-art` - Latte Art (home-lifestyle)
 - `ldap` - LDAP (cybersecurity)
 - `lean` - Lean (programming)
+- `leatherworking` - Leatherworking (fiber-arts-crafts)
 - `less` - Less (frontend-development)
 - `lets-encrypt` - Let's Encrypt (cloud-devops)
 - `lightgbm` - LightGBM (data-science)
+- `lighting-design` - Lighting Design (theater)
 - `lightstep` - Lightstep (cloud-devops)
+- `lindy-hop` - Lindy Hop (dance)
 - `linkerd` - Linkerd (cloud-devops)
+- `linocut` - Linocut (visual-arts)
 - `linode` - Linode (cloud-devops)
 - `liquibase` - Liquibase (databases)
 - `llamaindex` - LlamaIndex (data-science)
 - `lm-studio` - LM Studio (data-science)
+- `locking` - Locking (dance)
 - `locust` - Locust (cloud-devops)
 - `logic-pro` - Logic Pro (music)
 - `logstash` - Logstash (cloud-devops)
 - `loki` - Loki (cloud-devops)
 - `lua` - Lua (game-development)
 - `lunacy` - Lunacy (uiux-design)
+- `lyrical-dance` - Lyrical Dance (dance)
+- `macrame` - Macramé (fiber-arts-crafts)
 - `make` - Make (automation-integration)
+- `mandolin` - Mandolin (music)
+- `manga-art` - Manga Art (visual-arts)
+- `marathon-training` - Marathon Training (recreation-hobbies)
 - `mariadb` - MariaDB (databases)
+- `martial-arts` - Martial Arts (recreation-hobbies)
 - `marvel` - Marvel (uiux-design)
 - `material-ui` - Material UI (frontend-development)
 - `matlab` - MATLAB (data-science)
 - `matplotlib` - Matplotlib (data-science)
 - `maya` - Maya (motion-3d)
+- `meal-prep` - Meal Prep (home-lifestyle)
+- `medibang-paint` - MediBang Paint (visual-arts)
 - `meilisearch` - Meilisearch (databases)
 - `memcached` - Memcached (databases)
+- `memoir-writing` - Memoir Writing (writing)
 - `mercurial` - Mercurial (programming)
+- `merengue` - Merengue (dance)
 - `metamask` - MetaMask (blockchain-web3)
 - `metasploit` - Metasploit (cybersecurity)
+- `method-acting` - Method Acting (theater)
 - `micronaut` - Micronaut (backend-development)
 - `microsoft-copilot-studio` - Microsoft Copilot Studio (data-science)
 - `microsoft-sql-server` - Microsoft SQL Server (databases)
+- `midi-programming` - MIDI Programming (music)
 - `milvus` - Milvus (data-science)
+- `mime` - Mime (theater)
+- `miniature-painting` - Miniature Painting (recreation-hobbies)
 - `miro` - Miro (uiux-design)
+- `mixed-media-art` - Mixed Media Art (visual-arts)
+- `mixology` - Mixology (home-lifestyle)
 - `mlflow` - MLflow (data-science)
 - `mobx` - MobX (frontend-development)
 - `mocha` - Mocha (frontend-development)
 - `modal` - Modal (data-science)
+- `model-building` - Model Building (recreation-hobbies)
+- `modern-dance` - Modern Dance (dance)
 - `modsecurity` - ModSecurity (cybersecurity)
 - `mojo` - Mojo (data-science)
 - `mongodb` - MongoDB (databases)
 - `mongodb-atlas` - MongoDB Atlas (databases)
 - `mongodb-compass` - MongoDB Compass (databases)
 - `mongoose` - Mongoose (databases)
+- `monologue-performance` - Monologue Performance (theater)
+- `monoprint` - Monoprint (visual-arts)
 - `moralis` - Moralis (blockchain-web3)
+- `mosaic-art` - Mosaic Art (fiber-arts-crafts)
+- `mountain-biking` - Mountain Biking (recreation-hobbies)
+- `muay-thai` - Muay Thai (recreation-hobbies)
+- `mural-painting` - Mural Painting (visual-arts)
+- `music-arrangement` - Music Arrangement (music)
+- `music-composition` - Music Composition (music)
+- `music-production` - Music Production (music)
+- `music-theory` - Music Theory (music)
+- `musical-theater` - Musical Theater (theater)
 - `mysql` - MySQL (databases)
 - `mysql-workbench` - MySQL Workbench (databases)
+- `mystery-writing` - Mystery Writing (writing)
 - `n8n` - n8n (automation-integration)
 - `nagios` - Nagios (cloud-devops)
 - `nats` - NATS (cloud-devops)
 - `navicat` - Navicat (databases)
 - `near-protocol` - NEAR Protocol (blockchain-web3)
+- `needle-felting` - Needle Felting (fiber-arts-crafts)
+- `needlepoint` - Needlepoint (fiber-arts-crafts)
 - `neo4j` - Neo4j (databases)
 - `nestjs` - NestJS (backend-development)
 - `netlify` - Netlify (cloud-devops)
@@ -407,13 +630,19 @@ Run `npm run generate:competency-reference` to update.
 - `nmap` - Nmap (cybersecurity)
 - `nodejs` - Node.js (backend-development)
 - `nomad` - HashiCorp Nomad (cloud-devops)
+- `notion` - Notion (writing)
+- `novel-writing` - Novel Writing (writing)
+- `novlr` - Novlr (writing)
 - `numpy` - NumPy (data-science)
 - `nuxt` - Nuxt (frontend-development)
 - `oauth` - OAuth (cybersecurity)
 - `objective-c` - Objective-C (mobile-development)
+- `oboe` - Oboe (music)
 - `obs-studio` - OBS Studio (photography-video)
+- `obsidian` - Obsidian (writing)
 - `ocaml` - OCaml (programming)
 - `odin` - Odin (game-development)
+- `oil-painting` - Oil Painting (visual-arts)
 - `okta` - Okta (cybersecurity)
 - `ollama` - Ollama (data-science)
 - `oop` - Object-Oriented Programming (programming)
@@ -421,50 +650,85 @@ Run `npm run generate:competency-reference` to update.
 - `opencv` - OpenCV (data-science)
 - `opentelemetry` - OpenTelemetry (cloud-devops)
 - `openzeppelin` - OpenZeppelin (blockchain-web3)
+- `opera-singing` - Opera Singing (music)
 - `opsgenie` - Opsgenie (cloud-devops)
 - `optimism` - Optimism (blockchain-web3)
 - `oracle-cloud` - Oracle Cloud (cloud-devops)
 - `oracle-database` - Oracle Database (databases)
+- `orchestration` - Orchestration (music)
+- `orchid-growing` - Orchid Growing (home-lifestyle)
+- `organ` - Organ (music)
+- `organic-gardening` - Organic Gardening (home-lifestyle)
+- `origami` - Origami (fiber-arts-crafts)
 - `origami-studio` - Origami Studio (uiux-design)
 - `ovh-cloud` - OVH Cloud (cloud-devops)
 - `owasp` - OWASP (cybersecurity)
 - `packer` - Packer (cloud-devops)
 - `pagerduty` - PagerDuty (cloud-devops)
 - `paint-tool-sai` - Paint Tool SAI (graphic-design)
+- `paint-tool-sai` - Paint Tool SAI (visual-arts)
+- `painting` - Painting (visual-arts)
 - `pandas` - Pandas (data-science)
+- `paper-crafts` - Paper Crafts (fiber-arts-crafts)
 - `parcel` - Parcel (frontend-development)
 - `pascal` - Pascal (programming)
+- `paso-doble` - Paso Doble (dance)
 - `passportjs` - Passport.js (cybersecurity)
+- `pastel-art` - Pastel Art (visual-arts)
+- `pastry` - Pastry (home-lifestyle)
+- `pattern-making` - Pattern Making (fiber-arts-crafts)
 - `penetration-testing` - Penetration Testing (cybersecurity)
 - `perl` - Perl (programming)
+- `permaculture` - Permaculture (home-lifestyle)
+- `perspective-drawing` - Perspective Drawing (visual-arts)
+- `pet-care` - Pet Care (home-lifestyle)
 - `pgadmin` - pgAdmin (databases)
 - `phoenix` - Phoenix (backend-development)
 - `php` - PHP (backend-development)
 - `phpmyadmin` - phpMyAdmin (databases)
+- `piano` - Piano (music)
+- `pickling` - Pickling (home-lifestyle)
 - `pinecone` - Pinecone (data-science)
 - `pinia` - Pinia (frontend-development)
 - `planetscale` - PlanetScale (databases)
 - `playwright` - Playwright (frontend-development)
+- `playwriting` - Playwriting (writing)
+- `plein-air-painting` - Plein Air Painting (visual-arts)
+- `plot-development` - Plot Development (writing)
 - `plotly` - Plotly (data-science)
+- `plumbing` - Plumbing (home-lifestyle)
 - `podman` - Podman (cloud-devops)
+- `poetry` - Poetry (writing)
+- `poker` - Poker (recreation-hobbies)
+- `pole-dancing` - Pole Dancing (dance)
 - `polkadot` - Polkadot (blockchain-web3)
 - `polygon` - Polygon (blockchain-web3)
+- `polymer-clay` - Polymer Clay (fiber-arts-crafts)
 - `pony` - Pony (systems-programming)
+- `popping` - Popping (dance)
+- `portrait-drawing` - Portrait Drawing (visual-arts)
 - `postcss` - PostCSS (frontend-development)
 - `postgresql` - PostgreSQL (databases)
 - `postman` - Postman (backend-development)
+- `pottery` - Pottery (fiber-arts-crafts)
 - `powershell` - PowerShell (systems-programming)
 - `prettier` - Prettier (frontend-development)
 - `principle` - Principle (uiux-design)
+- `printmaking` - Printmaking (visual-arts)
 - `prisma` - Prisma (databases)
 - `pro-tools` - Pro Tools (music)
 - `procreate` - Procreate (graphic-design)
+- `procreate` - Procreate (visual-arts)
 - `prolog` - Prolog (programming)
 - `prometheus` - Prometheus (cloud-devops)
+- `proofreading` - Proofreading (writing)
+- `props-making` - Props Making (theater)
 - `protopie` - ProtoPie (uiux-design)
+- `prowritingaid` - ProWritingAid (writing)
 - `pulsar` - Apache Pulsar (cloud-devops)
 - `pulumi` - Pulumi (cloud-devops)
 - `puppet` - Puppet (cloud-devops)
+- `puppetry` - Puppetry (theater)
 - `purescript` - PureScript (frontend-development)
 - `pwa` - Progressive Web App (frontend-development)
 - `python` - Python (programming)
@@ -472,6 +736,8 @@ Run `npm run generate:competency-reference` to update.
 - `qdrant` - Qdrant (data-science)
 - `quarkus` - Quarkus (backend-development)
 - `quicknode` - QuickNode (blockchain-web3)
+- `quickstep` - Quickstep (dance)
+- `quilting` - Quilting (fiber-arts-crafts)
 - `r` - R (data-science)
 - `rabbitmq` - RabbitMQ (cloud-devops)
 - `racket` - Racket (programming)
@@ -482,61 +748,100 @@ Run `npm run generate:competency-reference` to update.
 - `rasa` - Rasa (data-science)
 - `ravendb` - RavenDB (databases)
 - `ray` - Ray (data-science)
+- `rc-vehicles` - RC Vehicles (recreation-hobbies)
 - `react` - React (frontend-development)
 - `react-router` - React Router (frontend-development)
 - `reaper` - Reaper (music)
 - `reason` - Reason (music)
+- `rebelle` - Rebelle (visual-arts)
+- `recorder` - Recorder (music)
 - `red` - Red (programming)
 - `redis` - Redis (databases)
 - `redux` - Redux (frontend-development)
+- `reedsy-book-editor` - Reedsy Book Editor (writing)
 - `regular-expressions` - Regular Expressions (programming)
 - `remix` - Remix (frontend-development)
 - `remix-ide` - Remix IDE (blockchain-web3)
 - `render` - Render (cloud-devops)
 - `replicate` - Replicate (data-science)
 - `rescript` - ReScript (frontend-development)
+- `resin-crafts` - Resin Crafts (fiber-arts-crafts)
 - `rest-api` - REST API (backend-development)
 - `restic` - Restic (cloud-devops)
 - `rethinkdb` - RethinkDB (databases)
 - `revit` - Revit (architecture)
 - `rhino` - Rhino (architecture)
 - `ring` - Ring (programming)
+- `roam-research` - Roam Research (writing)
 - `roboflow` - Roboflow (data-science)
+- `rock-climbing` - Rock Climbing (recreation-hobbies)
 - `rollbar` - Rollbar (cloud-devops)
 - `rollup` - Rollup (frontend-development)
+- `romance-writing` - Romance Writing (writing)
 - `ruby` - Ruby (programming)
 - `ruby-on-rails` - Ruby on Rails (backend-development)
+- `rug-hooking` - Rug Hooking (fiber-arts-crafts)
+- `rumba` - Rumba (dance)
+- `running` - Running (recreation-hobbies)
 - `rust` - Rust (systems-programming)
 - `safe` - Safe (blockchain-web3)
 - `sailsjs` - Sails.js (backend-development)
+- `salsa` - Salsa (dance)
 - `saltstack` - SaltStack (cloud-devops)
+- `samba` - Samba (dance)
 - `saml` - SAML (cybersecurity)
 - `sass` - Sass (frontend-development)
+- `saxophone` - Saxophone (music)
 - `scala` - Scala (programming)
 - `scaleway` - Scaleway (cloud-devops)
 - `scheme` - Scheme (programming)
+- `science-fiction-writing` - Science Fiction Writing (writing)
 - `scikit-learn` - Scikit-learn (data-science)
+- `scrapbooking` - Scrapbooking (fiber-arts-crafts)
 - `scratch` - Scratch (programming)
+- `screen-printing` - Screen Printing (visual-arts)
+- `screenwriting` - Screenwriting (writing)
+- `scrivener` - Scrivener (writing)
 - `seaborn` - Seaborn (data-science)
 - `security-auditing` - Security Auditing (cybersecurity)
 - `seldon-core` - Seldon Core (data-science)
+- `self-publishing` - Self-Publishing (writing)
 - `semantic-kernel` - Semantic Kernel (data-science)
 - `semaphore` - Semaphore (cloud-devops)
 - `sentry` - Sentry (cloud-devops)
 - `sequelize` - Sequelize (databases)
+- `set-design` - Set Design (theater)
+- `sewing` - Sewing (fiber-arts-crafts)
+- `short-story-writing` - Short Story Writing (writing)
 - `siem` - SIEM (cybersecurity)
+- `sight-reading` - Sight-Reading (music)
 - `sinatra` - Sinatra (backend-development)
+- `singing` - Singing (music)
+- `skateboarding` - Skateboarding (recreation-hobbies)
 - `sketch` - Sketch (uiux-design)
+- `sketching` - Sketching (visual-arts)
 - `sketchup` - SketchUp (architecture)
+- `skiing` - Skiing (recreation-hobbies)
 - `smalltalk` - Smalltalk (programming)
+- `smocking` - Smocking (fiber-arts-crafts)
+- `snowboarding` - Snowboarding (recreation-hobbies)
 - `snyk` - Snyk (cybersecurity)
 - `snyk-container` - Snyk Container (cloud-devops)
+- `soap-making` - Soap Making (fiber-arts-crafts)
+- `soccer` - Soccer (recreation-hobbies)
 - `solana` - Solana (blockchain-web3)
 - `solidity` - Solidity (blockchain-web3)
 - `solidworks` - SolidWorks (architecture)
 - `sonarqube` - SonarQube (cybersecurity)
+- `sound-design` - Sound Design (theater)
+- `sound-design-music` - Sound Design (music)
+- `sound-engineering` - Sound Engineering (music)
+- `sourdough-baking` - Sourdough Baking (home-lifestyle)
+- `sous-vide` - Sous Vide (home-lifestyle)
 - `spacy` - spaCy (data-science)
 - `spanish` - Spanish (natural-languages)
+- `speedcubing` - Speedcubing (recreation-hobbies)
+- `speedrunning` - Speedrunning (recreation-hobbies)
 - `spine` - Spine (motion-3d)
 - `spinnaker` - Spinnaker (cloud-devops)
 - `splunk` - Splunk (cloud-devops)
@@ -547,9 +852,17 @@ Run `npm run generate:competency-reference` to update.
 - `squarespace` - Squarespace (uiux-design)
 - `ssl-tls` - SSL/TLS (cybersecurity)
 - `stable-diffusion` - Stable Diffusion (data-science)
+- `stage-acting` - Stage Acting (theater)
+- `stage-combat` - Stage Combat (theater)
+- `stage-makeup` - Stage Makeup (theater)
+- `stage-management` - Stage Management (theater)
+- `stained-glass` - Stained Glass (fiber-arts-crafts)
+- `stand-up-comedy` - Stand-up Comedy (theater)
 - `standard-ml` - Standard ML (programming)
 - `stash` - Stash (cloud-devops)
+- `still-life` - Still Life (visual-arts)
 - `storybook` - Storybook (frontend-development)
+- `storytelling` - Storytelling (writing)
 - `strapi` - Strapi (backend-development)
 - `streamlit` - Streamlit (data-science)
 - `studio-one` - Studio One (music)
@@ -557,47 +870,74 @@ Run `npm run generate:competency-reference` to update.
 - `substance-painter` - Substance Painter (motion-3d)
 - `subversion` - Subversion (programming)
 - `supabase` - Supabase (cloud-devops)
+- `surfing` - Surfing (recreation-hobbies)
 - `svelte` - Svelte (frontend-development)
 - `sveltekit` - SvelteKit (frontend-development)
 - `swagger` - Swagger (backend-development)
 - `swift` - Swift (mobile-development)
+- `swimming` - Swimming (recreation-hobbies)
+- `swing-dance` - Swing Dance (dance)
 - `symfony` - Symfony (backend-development)
+- `synthesizer` - Synthesizer (music)
 - `sysdig` - Sysdig (cloud-devops)
 - `tableplus` - TablePlus (databases)
+- `taekwondo` - Taekwondo (recreation-hobbies)
+- `tailoring` - Tailoring (fiber-arts-crafts)
 - `tailwindcss` - Tailwind CSS (frontend-development)
+- `tango` - Tango (dance)
 - `tanstack-query` - TanStack Query (frontend-development)
+- `tap-dance` - Tap Dance (dance)
+- `tapestry-weaving` - Tapestry Weaving (fiber-arts-crafts)
+- `tatting` - Tatting (fiber-arts-crafts)
 - `tcl` - Tcl (programming)
 - `teamcity` - TeamCity (cloud-devops)
+- `technical-writing` - Technical Writing (writing)
 - `tempo` - Tempo (cloud-devops)
 - `tencent-cloud` - Tencent Cloud (cloud-devops)
 - `tenderly` - Tenderly (blockchain-web3)
+- `tennis` - Tennis (recreation-hobbies)
 - `tensorflow` - TensorFlow (data-science)
 - `terraform` - Terraform (cloud-devops)
 - `testing-library` - Testing Library (frontend-development)
 - `the-graph` - The Graph (blockchain-web3)
+- `theater-directing` - Directing (theater)
 - `thirdweb` - Thirdweb (blockchain-web3)
+- `tie-dye` - Tie-Dye (fiber-arts-crafts)
+- `tiling` - Tiling (home-lifestyle)
 - `timescaledb` - TimescaleDB (databases)
 - `together-ai` - Together AI (data-science)
 - `toon-boom-harmony` - Toon Boom Harmony (motion-3d)
 - `traefik` - Traefik (cloud-devops)
 - `travis-ci` - Travis CI (cloud-devops)
 - `trivy` - Trivy (cloud-devops)
+- `trombone` - Trombone (music)
 - `trpc` - tRPC (backend-development)
 - `truffle` - Truffle (blockchain-web3)
+- `trumpet` - Trumpet (music)
+- `tuba` - Tuba (music)
+- `turntablism` - Turntablism (music)
 - `typeorm` - TypeORM (databases)
 - `typescript` - TypeScript (programming)
+- `ukulele` - Ukulele (music)
 - `ultralytics` - Ultralytics (data-science)
+- `ulysses` - Ulysses (writing)
 - `uptrace` - Uptrace (cloud-devops)
 - `v` - V (systems-programming)
 - `vagrant` - Vagrant (cloud-devops)
 - `vault` - HashiCorp Vault (cloud-devops)
+- `vegetable-gardening` - Vegetable Gardening (home-lifestyle)
 - `velero` - Velero (cloud-devops)
+- `vellum` - Vellum (writing)
 - `vercel` - Vercel (cloud-devops)
 - `vertex-ai` - Vertex AI (data-science)
 - `viem` - viem (blockchain-web3)
+- `viennese-waltz` - Viennese Waltz (dance)
+- `viola` - Viola (music)
+- `violin` - Violin (music)
 - `visual-basic` - Visual Basic (programming)
 - `vite` - Vite (frontend-development)
 - `vitest` - Vitest (frontend-development)
+- `voice-acting` - Voice Acting (theater)
 - `voiceflow` - Voiceflow (data-science)
 - `vray` - V-Ray (motion-3d)
 - `vuejs` - Vue.js (frontend-development)
@@ -606,22 +946,37 @@ Run `npm run generate:competency-reference` to update.
 - `vyper` - Vyper (blockchain-web3)
 - `wagmi` - wagmi (blockchain-web3)
 - `walletconnect` - WalletConnect (blockchain-web3)
+- `waltz` - Waltz (dance)
+- `watercolor-painting` - Watercolor Painting (visual-arts)
 - `weave-net` - Weave Net (cloud-devops)
 - `weaviate` - Weaviate (data-science)
+- `weaving` - Weaving (fiber-arts-crafts)
 - `web3js` - web3.js (blockchain-web3)
 - `web3py` - web3.py (blockchain-web3)
 - `webassembly` - WebAssembly (web-development)
 - `webflow` - Webflow (uiux-design)
 - `webpack` - Webpack (frontend-development)
 - `weights-and-biases` - Weights & Biases (data-science)
+- `welding` - Welding (home-lifestyle)
 - `wercker` - Wercker (cloud-devops)
+- `west-coast-swing` - West Coast Swing (dance)
+- `wheel-throwing` - Wheel Throwing (fiber-arts-crafts)
 - `whisper` - Whisper (data-science)
+- `whittling` - Whittling (fiber-arts-crafts)
+- `wine-tasting` - Wine Tasting (home-lifestyle)
+- `wire-wrapping` - Wire Wrapping (fiber-arts-crafts)
 - `wireshark` - Wireshark (cybersecurity)
 - `wix` - Wix (uiux-design)
+- `woodcarving` - Woodcarving (fiber-arts-crafts)
+- `woodcut` - Woodcut (visual-arts)
+- `woodworking` - Woodworking (home-lifestyle)
 - `wordpress` - WordPress (uiux-design)
+- `world-anvil` - World Anvil (writing)
+- `worldbuilding` - Worldbuilding (writing)
 - `wrk` - wrk (cloud-devops)
 - `xgboost` - XGBoost (data-science)
 - `yolo` - YOLO (data-science)
+- `ywriter` - yWriter (writing)
 - `zabbix` - Zabbix (cloud-devops)
 - `zapier` - Zapier (automation-integration)
 - `zbrush` - ZBrush (motion-3d)
@@ -2644,6 +2999,160 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## dance
+
+### Aerial Dance
+- **Slug:** `aerial-dance`
+- **Synonyms:** Aerial Arts
+
+### Argentine Tango
+- **Slug:** `argentine-tango`
+
+### Bachata
+- **Slug:** `bachata`
+
+### Ballet
+- **Slug:** `ballet`
+- **Synonyms:** Classical Ballet
+
+### Ballroom Choreography
+- **Slug:** `ballroom-choreography`
+- **Prerequisites:**
+  - `ballroom-dance` (recommended) - Ballroom dance experience is helpful
+  - `choreography` (recommended) - General choreography skills are helpful
+
+### Ballroom Dance
+- **Slug:** `ballroom-dance`
+- **Synonyms:** Ballroom
+
+### Belly Dance
+- **Slug:** `belly-dance`
+- **Synonyms:** Belly Dancing, Raqs Sharqi
+
+### Bharatanatyam
+- **Slug:** `bharatanatyam`
+
+### Bollywood Dance
+- **Slug:** `bollywood-dance`
+- **Synonyms:** Bollywood
+
+### Breaking
+- **Slug:** `breaking`
+- **Synonyms:** Breakdancing, B-boying
+
+### Cha-Cha
+- **Slug:** `cha-cha`
+- **Synonyms:** Cha-Cha-Cha
+
+### Charleston
+- **Slug:** `charleston`
+
+### Choreography
+- **Slug:** `choreography`
+- **Synonyms:** Dance Choreography
+
+### Contemporary Dance
+- **Slug:** `contemporary-dance`
+- **Synonyms:** Contemporary
+
+### East Coast Swing
+- **Slug:** `east-coast-swing`
+
+### Flamenco
+- **Slug:** `flamenco`
+
+### Foxtrot
+- **Slug:** `foxtrot`
+
+### Hip Hop Dance
+- **Slug:** `hip-hop-dance`
+- **Synonyms:** Hip Hop, Street Dance
+
+### House Dance
+- **Slug:** `house-dance`
+- **Synonyms:** House
+
+### Hula
+- **Slug:** `hula`
+
+### Irish Dance
+- **Slug:** `irish-dance`
+- **Synonyms:** Irish Step Dancing
+
+### Jazz Dance
+- **Slug:** `jazz-dance`
+- **Synonyms:** Jazz
+
+### Jive
+- **Slug:** `jive`
+
+### Kathak
+- **Slug:** `kathak`
+
+### Lindy Hop
+- **Slug:** `lindy-hop`
+
+### Locking
+- **Slug:** `locking`
+
+### Lyrical Dance
+- **Slug:** `lyrical-dance`
+- **Synonyms:** Lyrical
+
+### Merengue
+- **Slug:** `merengue`
+
+### Modern Dance
+- **Slug:** `modern-dance`
+- **Synonyms:** Modern
+
+### Paso Doble
+- **Slug:** `paso-doble`
+
+### Pole Dancing
+- **Slug:** `pole-dancing`
+- **Synonyms:** Pole Fitness
+
+### Popping
+- **Slug:** `popping`
+
+### Quickstep
+- **Slug:** `quickstep`
+
+### Rumba
+- **Slug:** `rumba`
+
+### Salsa
+- **Slug:** `salsa`
+- **Synonyms:** Salsa Dancing
+
+### Samba
+- **Slug:** `samba`
+
+### Swing Dance
+- **Slug:** `swing-dance`
+- **Synonyms:** Swing
+
+### Tango
+- **Slug:** `tango`
+- **Synonyms:** Argentine Tango
+
+### Tap Dance
+- **Slug:** `tap-dance`
+- **Synonyms:** Tap
+
+### Viennese Waltz
+- **Slug:** `viennese-waltz`
+
+### Waltz
+- **Slug:** `waltz`
+
+### West Coast Swing
+- **Slug:** `west-coast-swing`
+- **Synonyms:** WCS
+
+---
+
 ## data-engineering
 
 ### Apache Spark
@@ -3397,6 +3906,194 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## fiber-arts-crafts
+
+### Appliqué
+- **Slug:** `applique`
+- **Prerequisites:**
+  - `sewing` (recommended) - Sewing skills are helpful for appliqué
+
+### Basket Weaving
+- **Slug:** `basket-weaving`
+- **Synonyms:** Basketry
+
+### Batik
+- **Slug:** `batik`
+
+### Beading
+- **Slug:** `beading`
+- **Synonyms:** Bead Work
+
+### Bookbinding
+- **Slug:** `bookbinding`
+- **Synonyms:** Book Binding
+
+### Candle Making
+- **Slug:** `candle-making`
+- **Synonyms:** Candle Craft
+
+### Card Making
+- **Slug:** `card-making`
+- **Synonyms:** Cardmaking
+
+### Ceramic Glazing
+- **Slug:** `ceramic-glazing`
+- **Synonyms:** Glazing
+- **Prerequisites:**
+  - `pottery` (recommended) - Basic pottery skills are helpful for glazing
+
+### Crochet
+- **Slug:** `crochet`
+- **Alternatives:**
+  - `knitting` (similar)
+
+### Cross-Stitch
+- **Slug:** `cross-stitch`
+- **Synonyms:** Cross Stitch
+
+### Dyeing
+- **Slug:** `fiber-dyeing`
+- **Synonyms:** Yarn Dyeing, Fabric Dyeing
+
+### Embroidery
+- **Slug:** `embroidery`
+
+### Felting
+- **Slug:** `felting`
+- **Synonyms:** Wet Felting
+
+### Glass Blowing
+- **Slug:** `glass-blowing`
+- **Synonyms:** Glassblowing
+
+### Hand-Building Pottery
+- **Slug:** `hand-building-pottery`
+- **Synonyms:** Hand Building
+
+### Jewelry Making
+- **Slug:** `jewelry-making`
+- **Synonyms:** Jewelry Craft
+
+### Knitting
+- **Slug:** `knitting`
+
+### Lace Making
+- **Slug:** `lace-making`
+- **Synonyms:** Lace
+
+### Leatherworking
+- **Slug:** `leatherworking`
+- **Synonyms:** Leathercraft
+
+### Macramé
+- **Slug:** `macrame`
+
+### Mosaic Art
+- **Slug:** `mosaic-art`
+- **Synonyms:** Mosaics
+
+### Needle Felting
+- **Slug:** `needle-felting`
+- **Synonyms:** Dry Felting
+
+### Needlepoint
+- **Slug:** `needlepoint`
+- **Synonyms:** Canvas Work
+
+### Origami
+- **Slug:** `origami`
+- **Synonyms:** Paper Folding
+
+### Paper Crafts
+- **Slug:** `paper-crafts`
+- **Synonyms:** Papercrafts, Paper Art
+
+### Pattern Making
+- **Slug:** `pattern-making`
+- **Synonyms:** Pattern Drafting
+
+### Polymer Clay
+- **Slug:** `polymer-clay`
+- **Synonyms:** Polymer Clay Craft
+
+### Pottery
+- **Slug:** `pottery`
+- **Synonyms:** Ceramics
+
+### Quilting
+- **Slug:** `quilting`
+- **Synonyms:** Quilt Making
+- **Prerequisites:**
+  - `sewing` (recommended) - Sewing skills are helpful for quilting
+
+### Resin Crafts
+- **Slug:** `resin-crafts`
+- **Synonyms:** Resin Art, Epoxy Resin
+
+### Rug Hooking
+- **Slug:** `rug-hooking`
+- **Synonyms:** Rug Making
+
+### Scrapbooking
+- **Slug:** `scrapbooking`
+
+### Sewing
+- **Slug:** `sewing`
+
+### Smocking
+- **Slug:** `smocking`
+
+### Soap Making
+- **Slug:** `soap-making`
+- **Synonyms:** Soap Craft
+
+### Spinning
+- **Slug:** `fiber-spinning`
+- **Synonyms:** Yarn Spinning, Hand Spinning
+
+### Stained Glass
+- **Slug:** `stained-glass`
+- **Synonyms:** Glass Art
+
+### Tailoring
+- **Slug:** `tailoring`
+- **Prerequisites:**
+  - `sewing` (required) - Sewing skills are essential for tailoring
+
+### Tapestry Weaving
+- **Slug:** `tapestry-weaving`
+- **Synonyms:** Tapestry
+- **Prerequisites:**
+  - `weaving` (recommended) - Basic weaving skills are helpful for tapestry
+
+### Tatting
+- **Slug:** `tatting`
+
+### Tie-Dye
+- **Slug:** `tie-dye`
+- **Synonyms:** Tie Dye
+
+### Weaving
+- **Slug:** `weaving`
+- **Synonyms:** Loom Weaving
+
+### Wheel Throwing
+- **Slug:** `wheel-throwing`
+- **Synonyms:** Pottery Wheel, Throwing
+
+### Whittling
+- **Slug:** `whittling`
+
+### Wire Wrapping
+- **Slug:** `wire-wrapping`
+- **Synonyms:** Wire Jewelry
+
+### Woodcarving
+- **Slug:** `woodcarving`
+- **Synonyms:** Wood Carving
+
+---
+
 ## frontend-development
 
 ### Angular
@@ -3949,6 +4646,207 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## home-lifestyle
+
+### Aquarium Keeping
+- **Slug:** `aquarium-keeping`
+- **Synonyms:** Fishkeeping
+
+### Auto Maintenance
+- **Slug:** `auto-maintenance`
+- **Synonyms:** Car Maintenance
+
+### Auto Repair
+- **Slug:** `auto-repair`
+- **Synonyms:** Car Repair, Automotive Repair
+
+### Baking
+- **Slug:** `baking`
+
+### Beekeeping
+- **Slug:** `beekeeping`
+- **Synonyms:** Apiculture
+
+### Bonsai
+- **Slug:** `bonsai`
+
+### Bread Making
+- **Slug:** `bread-making`
+- **Synonyms:** Bread Baking
+- **Prerequisites:**
+  - `baking` (recommended) - Basic baking skills are helpful for bread making
+
+### Cabinet Making
+- **Slug:** `cabinet-making`
+- **Synonyms:** Cabinetry
+- **Prerequisites:**
+  - `woodworking` (recommended) - Woodworking skills are helpful for cabinet making
+
+### Cake Decorating
+- **Slug:** `cake-decorating`
+- **Prerequisites:**
+  - `baking` (recommended) - Baking skills are helpful for cake decorating
+
+### Canning
+- **Slug:** `canning`
+- **Synonyms:** Food Preservation
+
+### Carpentry
+- **Slug:** `carpentry`
+
+### Chocolate Making
+- **Slug:** `chocolate-making`
+- **Synonyms:** Chocolate Craft, Chocolatiering
+
+### Coffee Brewing
+- **Slug:** `coffee-brewing`
+- **Synonyms:** Coffee Making
+
+### Composting
+- **Slug:** `composting`
+
+### Container Gardening
+- **Slug:** `container-gardening`
+- **Synonyms:** Pot Gardening
+
+### Cooking
+- **Slug:** `cooking`
+- **Synonyms:** Culinary Arts
+
+### Decluttering
+- **Slug:** `decluttering`
+
+### Dog Training
+- **Slug:** `dog-training`
+
+### Drywall
+- **Slug:** `drywall`
+- **Synonyms:** Drywalling, Sheetrock
+
+### Electrical Work
+- **Slug:** `electrical-work`
+- **Synonyms:** Electrical Repair
+
+### Espresso
+- **Slug:** `espresso`
+- **Synonyms:** Espresso Making
+
+### Fermentation
+- **Slug:** `fermentation`
+
+### Furniture Making
+- **Slug:** `furniture-making`
+- **Synonyms:** Furniture Building
+- **Prerequisites:**
+  - `woodworking` (recommended) - Woodworking skills are helpful for furniture making
+
+### Gardening
+- **Slug:** `gardening`
+
+### Grilling
+- **Slug:** `grilling`
+- **Synonyms:** Barbecue, BBQ
+
+### Home Organization
+- **Slug:** `home-organization`
+- **Synonyms:** Organization
+
+### Home Repair
+- **Slug:** `home-repair`
+- **Synonyms:** Home Maintenance
+
+### House Painting
+- **Slug:** `house-painting`
+- **Synonyms:** Residential Painting
+
+### Hydroponics
+- **Slug:** `hydroponics`
+
+### Interior Design
+- **Slug:** `interior-design`
+
+### Knife Skills
+- **Slug:** `knife-skills`
+
+### Landscaping
+- **Slug:** `landscaping`
+- **Synonyms:** Landscape Design
+
+### Latte Art
+- **Slug:** `latte-art`
+- **Prerequisites:**
+  - `espresso` (recommended) - Espresso skills are helpful for latte art
+
+### Meal Prep
+- **Slug:** `meal-prep`
+- **Synonyms:** Meal Preparation
+
+### Mixology
+- **Slug:** `mixology`
+- **Synonyms:** Cocktail Making, Bartending
+
+### Orchid Growing
+- **Slug:** `orchid-growing`
+- **Synonyms:** Orchid Care
+
+### Organic Gardening
+- **Slug:** `organic-gardening`
+- **Prerequisites:**
+  - `gardening` (recommended) - Basic gardening knowledge is helpful
+
+### Pastry
+- **Slug:** `pastry`
+- **Synonyms:** Pastry Making
+- **Prerequisites:**
+  - `baking` (recommended) - Baking skills are helpful for pastry work
+
+### Permaculture
+- **Slug:** `permaculture`
+
+### Pet Care
+- **Slug:** `pet-care`
+
+### Pickling
+- **Slug:** `pickling`
+
+### Plumbing
+- **Slug:** `plumbing`
+
+### Smoking
+- **Slug:** `food-smoking`
+- **Synonyms:** Meat Smoking, Smoking Food
+
+### Sourdough Baking
+- **Slug:** `sourdough-baking`
+- **Synonyms:** Sourdough
+- **Prerequisites:**
+  - `bread-making` (recommended) - Bread making skills are helpful for sourdough
+
+### Sous Vide
+- **Slug:** `sous-vide`
+
+### Tiling
+- **Slug:** `tiling`
+- **Synonyms:** Tile Installation
+
+### Vegetable Gardening
+- **Slug:** `vegetable-gardening`
+- **Synonyms:** Veggie Garden
+- **Prerequisites:**
+  - `gardening` (recommended) - Basic gardening knowledge is helpful
+
+### Welding
+- **Slug:** `welding`
+
+### Wine Tasting
+- **Slug:** `wine-tasting`
+- **Synonyms:** Wine Appreciation
+
+### Woodworking
+- **Slug:** `woodworking`
+
+---
+
 ## mobile-development
 
 ### Dart
@@ -4088,8 +4986,38 @@ Run `npm run generate:competency-reference` to update.
   - `fl-studio` (similar)
   - `logic-pro` (similar)
 
+### Accordion
+- **Slug:** `accordion`
+
 ### Audacity
 - **Slug:** `audacity`
+
+### Audio Mastering
+- **Slug:** `audio-mastering`
+- **Synonyms:** Mastering
+- **Prerequisites:**
+  - `audio-mixing` (recommended) - Mixing experience is helpful for mastering
+
+### Audio Mixing
+- **Slug:** `audio-mixing`
+- **Synonyms:** Mixing
+
+### Bagpipes
+- **Slug:** `bagpipes`
+
+### Banjo
+- **Slug:** `banjo`
+
+### Bass Guitar
+- **Slug:** `bass-guitar`
+- **Synonyms:** Bass
+
+### Bassoon
+- **Slug:** `bassoon`
+
+### Beatboxing
+- **Slug:** `beatboxing`
+- **Synonyms:** Vocal Percussion
 
 ### Bitwig Studio
 - **Slug:** `bitwig-studio`
@@ -4097,11 +5025,48 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `ableton-live` (similar)
 
+### Cello
+- **Slug:** `cello`
+
+### Choir Singing
+- **Slug:** `choir-singing`
+- **Synonyms:** Choral Singing
+- **Prerequisites:**
+  - `singing` (recommended) - Basic singing skills are helpful for choir
+
+### Clarinet
+- **Slug:** `clarinet`
+
+### Conducting
+- **Slug:** `conducting`
+- **Prerequisites:**
+  - `music-theory` (required) - Music theory is essential for conducting
+
 ### Cubase
 - **Slug:** `cubase`
 - **Synonyms:** Steinberg Cubase
 - **Alternatives:**
   - `logic-pro` (similar)
+
+### DJing
+- **Slug:** `djing`
+- **Synonyms:** DJ, Disc Jockey
+
+### Double Bass
+- **Slug:** `double-bass`
+- **Synonyms:** Upright Bass, Contrabass
+
+### Drums
+- **Slug:** `drums`
+- **Synonyms:** Drumming, Drum Kit
+
+### Ear Training
+- **Slug:** `ear-training`
+- **Synonyms:** Aural Skills
+
+### Electronic Music Production
+- **Slug:** `electronic-music-production`
+- **Synonyms:** EDM Production
 
 ### FL Studio
 - **Slug:** `fl-studio`
@@ -4109,9 +5074,33 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `ableton-live` (similar)
 
+### Flute
+- **Slug:** `flute`
+
+### French Horn
+- **Slug:** `french-horn`
+- **Synonyms:** Horn
+
 ### GarageBand
 - **Slug:** `garageband`
 - **Synonyms:** Garage Band
+
+### Guitar
+- **Slug:** `guitar`
+- **Synonyms:** Guitar Playing
+
+### Harmonica
+- **Slug:** `harmonica`
+- **Synonyms:** Blues Harp, Mouth Organ
+
+### Harp
+- **Slug:** `harp`
+
+### Jazz Improvisation
+- **Slug:** `jazz-improvisation`
+- **Synonyms:** Jazz Improv
+- **Prerequisites:**
+  - `music-theory` (recommended) - Understanding harmony helps with improvisation
 
 ### Logic Pro
 - **Slug:** `logic-pro`
@@ -4119,6 +5108,54 @@ Run `npm run generate:competency-reference` to update.
 - **Alternatives:**
   - `ableton-live` (similar)
   - `pro-tools` (similar)
+
+### Mandolin
+- **Slug:** `mandolin`
+
+### MIDI Programming
+- **Slug:** `midi-programming`
+- **Synonyms:** MIDI
+
+### Music Arrangement
+- **Slug:** `music-arrangement`
+- **Synonyms:** Arranging
+- **Prerequisites:**
+  - `music-theory` (recommended) - Music theory is helpful for arrangement
+
+### Music Composition
+- **Slug:** `music-composition`
+- **Synonyms:** Composing, Songwriting
+- **Prerequisites:**
+  - `music-theory` (recommended) - Music theory helps with composition
+
+### Music Production
+- **Slug:** `music-production`
+- **Synonyms:** Audio Production
+
+### Music Theory
+- **Slug:** `music-theory`
+
+### Oboe
+- **Slug:** `oboe`
+
+### Opera Singing
+- **Slug:** `opera-singing`
+- **Synonyms:** Opera
+- **Prerequisites:**
+  - `singing` (required) - Strong vocal foundation is essential for opera
+
+### Orchestration
+- **Slug:** `orchestration`
+- **Prerequisites:**
+  - `music-composition` (recommended) - Composition skills are helpful for orchestration
+  - `music-theory` (required) - Music theory is essential for orchestration
+
+### Organ
+- **Slug:** `organ`
+
+### Piano
+- **Slug:** `piano`
+- **Synonyms:** Piano Playing
 
 ### Pro Tools
 - **Slug:** `pro-tools`
@@ -4136,11 +5173,66 @@ Run `npm run generate:competency-reference` to update.
 - **Slug:** `reason`
 - **Synonyms:** Reason Studios
 
+### Recorder
+- **Slug:** `recorder`
+
+### Saxophone
+- **Slug:** `saxophone`
+- **Synonyms:** Sax
+
+### Sight-Reading
+- **Slug:** `sight-reading`
+- **Synonyms:** Sight Reading Music
+- **Prerequisites:**
+  - `music-theory` (required) - Music theory knowledge is essential for sight-reading
+
+### Singing
+- **Slug:** `singing`
+- **Synonyms:** Vocals, Voice
+
+### Sound Design
+- **Slug:** `sound-design-music`
+- **Synonyms:** Audio Sound Design
+
+### Sound Engineering
+- **Slug:** `sound-engineering`
+- **Synonyms:** Audio Engineering
+
 ### Studio One
 - **Slug:** `studio-one`
 - **Synonyms:** PreSonus Studio One
 - **Alternatives:**
   - `logic-pro` (similar)
+
+### Synthesizer
+- **Slug:** `synthesizer`
+- **Synonyms:** Synth
+
+### Trombone
+- **Slug:** `trombone`
+
+### Trumpet
+- **Slug:** `trumpet`
+
+### Tuba
+- **Slug:** `tuba`
+
+### Turntablism
+- **Slug:** `turntablism`
+- **Synonyms:** Scratching
+- **Prerequisites:**
+  - `djing` (recommended) - DJ skills are helpful for turntablism
+
+### Ukulele
+- **Slug:** `ukulele`
+- **Synonyms:** Uke
+
+### Viola
+- **Slug:** `viola`
+
+### Violin
+- **Slug:** `violin`
+- **Synonyms:** Violin Playing
 
 ---
 
@@ -4513,6 +5605,152 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## recreation-hobbies
+
+### Archery
+- **Slug:** `archery`
+
+### Backpacking
+- **Slug:** `backpacking`
+- **Prerequisites:**
+  - `hiking` (recommended) - Hiking experience is helpful for backpacking
+  - `camping` (recommended) - Camping skills are helpful for backpacking
+
+### Basketball
+- **Slug:** `basketball`
+
+### Bouldering
+- **Slug:** `bouldering`
+
+### Boxing
+- **Slug:** `boxing`
+
+### Brazilian Jiu-Jitsu
+- **Slug:** `brazilian-jiu-jitsu`
+- **Synonyms:** BJJ
+
+### Camping
+- **Slug:** `camping`
+
+### Chess
+- **Slug:** `chess`
+
+### Cycling
+- **Slug:** `cycling`
+- **Synonyms:** Biking
+
+### Drone Flying
+- **Slug:** `drone-flying`
+- **Synonyms:** FPV, Drone Piloting
+
+### Esports
+- **Slug:** `esports`
+- **Synonyms:** E-sports, Competitive Gaming
+
+### Fishing
+- **Slug:** `fishing`
+- **Synonyms:** Angling
+
+### Fly Fishing
+- **Slug:** `fly-fishing`
+
+### Game Mastering
+- **Slug:** `game-mastering`
+- **Synonyms:** GM, Dungeon Master, DM
+
+### Game Streaming
+- **Slug:** `game-streaming`
+- **Synonyms:** Streaming
+
+### Golf
+- **Slug:** `golf`
+
+### Hiking
+- **Slug:** `hiking`
+
+### Hunting
+- **Slug:** `hunting`
+
+### Karate
+- **Slug:** `karate`
+
+### Marathon Training
+- **Slug:** `marathon-training`
+- **Synonyms:** Marathon Running
+- **Prerequisites:**
+  - `running` (required) - Running experience is essential for marathon training
+
+### Martial Arts
+- **Slug:** `martial-arts`
+
+### Miniature Painting
+- **Slug:** `miniature-painting`
+- **Synonyms:** Mini Painting
+
+### Model Building
+- **Slug:** `model-building`
+- **Synonyms:** Scale Modeling
+
+### Mountain Biking
+- **Slug:** `mountain-biking`
+- **Synonyms:** MTB
+- **Prerequisites:**
+  - `cycling` (recommended) - Basic cycling skills are helpful
+
+### Muay Thai
+- **Slug:** `muay-thai`
+- **Synonyms:** Thai Boxing
+
+### Poker
+- **Slug:** `poker`
+
+### RC Vehicles
+- **Slug:** `rc-vehicles`
+- **Synonyms:** RC Cars, Remote Control
+
+### Rock Climbing
+- **Slug:** `rock-climbing`
+- **Synonyms:** Climbing
+
+### Running
+- **Slug:** `running`
+
+### Skateboarding
+- **Slug:** `skateboarding`
+
+### Skiing
+- **Slug:** `skiing`
+
+### Snowboarding
+- **Slug:** `snowboarding`
+
+### Soccer
+- **Slug:** `soccer`
+- **Synonyms:** Football
+
+### Speedcubing
+- **Slug:** `speedcubing`
+- **Synonyms:** Rubik's Cube, Cubing
+
+### Speedrunning
+- **Slug:** `speedrunning`
+- **Synonyms:** Speed Running
+
+### Surfing
+- **Slug:** `surfing`
+
+### Swimming
+- **Slug:** `swimming`
+
+### Taekwondo
+- **Slug:** `taekwondo`
+- **Synonyms:** Tae Kwon Do
+
+### Tennis
+- **Slug:** `tennis`
+
+---
+
 ## systems-programming
 
 ### Ada
@@ -4641,6 +5879,93 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## theater
+
+### Acting
+- **Slug:** `acting`
+
+### Audition Technique
+- **Slug:** `audition-technique`
+- **Synonyms:** Auditioning
+
+### Costume Design
+- **Slug:** `costume-design`
+
+### Directing
+- **Slug:** `theater-directing`
+- **Synonyms:** Theater Direction, Stage Direction
+
+### Improvisation
+- **Slug:** `improvisation`
+- **Synonyms:** Improv
+
+### Lighting Design
+- **Slug:** `lighting-design`
+- **Synonyms:** Stage Lighting
+
+### Method Acting
+- **Slug:** `method-acting`
+- **Synonyms:** The Method
+- **Prerequisites:**
+  - `acting` (recommended) - Acting fundamentals are helpful for method acting
+
+### Mime
+- **Slug:** `mime`
+
+### Monologue Performance
+- **Slug:** `monologue-performance`
+- **Synonyms:** Monologues
+- **Prerequisites:**
+  - `acting` (recommended) - Acting skills are important for monologue work
+
+### Musical Theater
+- **Slug:** `musical-theater`
+- **Synonyms:** Musical Theatre
+- **Prerequisites:**
+  - `acting` (recommended) - Acting skills are important for musical theater
+
+### Props Making
+- **Slug:** `props-making`
+- **Synonyms:** Props Design
+
+### Puppetry
+- **Slug:** `puppetry`
+
+### Set Design
+- **Slug:** `set-design`
+- **Synonyms:** Scenic Design
+
+### Sound Design
+- **Slug:** `sound-design`
+- **Synonyms:** Theater Sound
+
+### Stage Acting
+- **Slug:** `stage-acting`
+- **Synonyms:** Theater Acting
+- **Prerequisites:**
+  - `acting` (recommended) - Basic acting skills are helpful for stage work
+
+### Stage Combat
+- **Slug:** `stage-combat`
+- **Synonyms:** Fight Choreography
+
+### Stage Makeup
+- **Slug:** `stage-makeup`
+- **Synonyms:** Theater Makeup
+
+### Stage Management
+- **Slug:** `stage-management`
+
+### Stand-up Comedy
+- **Slug:** `stand-up-comedy`
+- **Synonyms:** Stand Up, Standup Comedy
+
+### Voice Acting
+- **Slug:** `voice-acting`
+- **Synonyms:** Voice Over, VO
+
+---
+
 ## uiux-design
 
 ### Adobe Dreamweaver
@@ -4751,6 +6076,228 @@ Run `npm run generate:competency-reference` to update.
 
 ---
 
+## visual-arts
+
+### Abstract Art
+- **Slug:** `abstract-art`
+- **Synonyms:** Abstract Painting
+
+### Acrylic Painting
+- **Slug:** `acrylic-painting`
+- **Synonyms:** Acrylic Paint
+
+### Anatomy for Artists
+- **Slug:** `anatomy-for-artists`
+- **Synonyms:** Artistic Anatomy
+
+### ArtRage
+- **Slug:** `artrage`
+
+### ArtStudio Pro
+- **Slug:** `artstudio-pro`
+- **Synonyms:** ArtStudio
+
+### Calligraphy
+- **Slug:** `calligraphy`
+- **Synonyms:** Hand Lettering
+
+### Caricature
+- **Slug:** `caricature`
+- **Synonyms:** Caricature Drawing
+
+### Character Design
+- **Slug:** `character-design`
+- **Synonyms:** Character Art
+
+### Charcoal Drawing
+- **Slug:** `charcoal-drawing`
+- **Synonyms:** Charcoal Art
+
+### Collage
+- **Slug:** `collage`
+
+### Color Theory
+- **Slug:** `color-theory`
+- **Synonyms:** Color Mixing
+
+### Colored Pencil
+- **Slug:** `colored-pencil`
+- **Synonyms:** Colored Pencil Drawing, Coloured Pencil
+
+### Comic Art
+- **Slug:** `comic-art`
+- **Synonyms:** Comics, Sequential Art
+
+### Composition
+- **Slug:** `composition`
+- **Synonyms:** Art Composition
+
+### Concept Art
+- **Slug:** `concept-art`
+- **Prerequisites:**
+  - `digital-illustration` (recommended) - Digital illustration skills are commonly used in concept art
+
+### Concepts
+- **Slug:** `concepts-app`
+- **Synonyms:** Concepts
+
+### Corel Painter
+- **Slug:** `corel-painter`
+- **Icon:** `logos:corel`
+- **Synonyms:** Painter
+- **Alternatives:**
+  - `krita` (similar)
+  - `procreate` (similar)
+
+### Digital Illustration
+- **Slug:** `digital-illustration`
+- **Synonyms:** Digital Art
+
+### Drawing
+- **Slug:** `drawing`
+
+### Etching
+- **Slug:** `etching`
+
+### Figure Drawing
+- **Slug:** `figure-drawing`
+- **Synonyms:** Life Drawing
+- **Prerequisites:**
+  - `drawing` (recommended) - Basic drawing skills are helpful for figure drawing
+
+### FireAlpaca
+- **Slug:** `firealpaca`
+- **Alternatives:**
+  - `medibang-paint` (similar)
+
+### Gesture Drawing
+- **Slug:** `gesture-drawing`
+
+### Gouache Painting
+- **Slug:** `gouache-painting`
+- **Synonyms:** Gouache
+
+### Graphite Drawing
+- **Slug:** `graphite-drawing`
+- **Synonyms:** Pencil Drawing
+
+### Illustration
+- **Slug:** `illustration`
+- **Synonyms:** Illustrative Art
+
+### Infinite Painter
+- **Slug:** `infinite-painter`
+
+### Ink Drawing
+- **Slug:** `ink-drawing`
+- **Synonyms:** Ink Art, Pen and Ink
+
+### Krita
+- **Slug:** `krita`
+- **Alternatives:**
+  - `procreate` (similar)
+  - `corel-painter` (similar)
+
+### Landscape Painting
+- **Slug:** `landscape-painting`
+- **Synonyms:** Landscape Art
+- **Prerequisites:**
+  - `painting` (recommended) - Basic painting skills are helpful for landscape work
+
+### Linocut
+- **Slug:** `linocut`
+- **Synonyms:** Lino Printing, Linoleum Cut
+
+### Manga Art
+- **Slug:** `manga-art`
+- **Synonyms:** Manga Drawing
+
+### MediBang Paint
+- **Slug:** `medibang-paint`
+- **Synonyms:** MediBang
+- **Alternatives:**
+  - `firealpaca` (similar)
+
+### Mixed Media Art
+- **Slug:** `mixed-media-art`
+- **Synonyms:** Mixed Media
+
+### Monoprint
+- **Slug:** `monoprint`
+- **Synonyms:** Monotype
+
+### Mural Painting
+- **Slug:** `mural-painting`
+- **Synonyms:** Murals
+- **Prerequisites:**
+  - `painting` (recommended) - Painting skills are helpful for mural work
+
+### Oil Painting
+- **Slug:** `oil-painting`
+- **Synonyms:** Oil Paint
+
+### Paint Tool SAI
+- **Slug:** `paint-tool-sai`
+- **Synonyms:** SAI, PaintTool SAI
+
+### Painting
+- **Slug:** `painting`
+
+### Pastel Art
+- **Slug:** `pastel-art`
+- **Synonyms:** Pastel Drawing, Pastel Painting
+
+### Perspective Drawing
+- **Slug:** `perspective-drawing`
+- **Synonyms:** Linear Perspective
+
+### Plein Air Painting
+- **Slug:** `plein-air-painting`
+- **Synonyms:** Outdoor Painting
+- **Prerequisites:**
+  - `painting` (required) - Painting skills are essential for plein air work
+
+### Portrait Drawing
+- **Slug:** `portrait-drawing`
+- **Synonyms:** Portrait Art
+- **Prerequisites:**
+  - `drawing` (recommended) - Basic drawing skills are helpful for portrait work
+
+### Printmaking
+- **Slug:** `printmaking`
+
+### Procreate
+- **Slug:** `procreate`
+- **Synonyms:** Procreate App
+- **Alternatives:**
+  - `krita` (similar)
+  - `corel-painter` (similar)
+
+### Rebelle
+- **Slug:** `rebelle`
+
+### Screen Printing
+- **Slug:** `screen-printing`
+- **Synonyms:** Silkscreen, Serigraphy
+
+### Sketching
+- **Slug:** `sketching`
+- **Synonyms:** Sketch Drawing
+
+### Still Life
+- **Slug:** `still-life`
+- **Synonyms:** Still Life Painting, Still Life Drawing
+
+### Watercolor Painting
+- **Slug:** `watercolor-painting`
+- **Synonyms:** Watercolor, Watercolour
+
+### Woodcut
+- **Slug:** `woodcut`
+- **Synonyms:** Wood Block Printing
+
+---
+
 ## web-development
 
 ### WebAssembly
@@ -4759,6 +6306,243 @@ Run `npm run generate:competency-reference` to update.
 - **Synonyms:** WASM, Web Assembly
 - **Prerequisites:**
   - `c` (optional) - C, C++, and Rust are common source languages compiled to WebAssembly
+
+---
+
+## writing
+
+### Academic Writing
+- **Slug:** `academic-writing`
+- **Synonyms:** Scholarly Writing
+
+### Atticus
+- **Slug:** `atticus`
+
+### Biography
+- **Slug:** `biography-writing`
+- **Synonyms:** Biographical Writing
+
+### Blogging
+- **Slug:** `blogging`
+- **Synonyms:** Blog Writing
+
+### Book Publishing
+- **Slug:** `book-publishing`
+- **Synonyms:** Publishing
+
+### Business Writing
+- **Slug:** `business-writing`
+- **Synonyms:** Professional Writing
+
+### Campfire Write
+- **Slug:** `campfire-write`
+- **Synonyms:** Campfire
+- **Alternatives:**
+  - `world-anvil` (similar)
+
+### Celtx
+- **Slug:** `celtx`
+- **Alternatives:**
+  - `final-draft` (similar)
+
+### Character Development
+- **Slug:** `character-development`
+- **Synonyms:** Character Creation
+
+### Content Writing
+- **Slug:** `content-writing`
+- **Synonyms:** Web Content Writing
+
+### Copywriting
+- **Slug:** `copywriting-skill`
+- **Synonyms:** Marketing Copy
+
+### Creative Writing
+- **Slug:** `creative-writing`
+
+### Dialogue Writing
+- **Slug:** `dialogue-writing`
+- **Synonyms:** Dialogue
+
+### Editing
+- **Slug:** `editing-writing`
+- **Synonyms:** Revision, Self-Editing
+
+### Essay Writing
+- **Slug:** `essay-writing`
+- **Synonyms:** Essays
+
+### Fantasy Writing
+- **Slug:** `fantasy-writing`
+- **Synonyms:** Fantasy Fiction
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for fantasy
+  - `worldbuilding` (recommended) - Worldbuilding is important for fantasy settings
+
+### Fiction Writing
+- **Slug:** `fiction-writing`
+- **Synonyms:** Fiction
+- **Prerequisites:**
+  - `creative-writing` (recommended) - Creative writing skills form the foundation of fiction writing
+
+### Final Draft
+- **Slug:** `final-draft`
+- **Alternatives:**
+  - `celtx` (similar)
+
+### Flash Fiction
+- **Slug:** `flash-fiction`
+- **Synonyms:** Microfiction
+
+### Ghostwriting
+- **Slug:** `ghostwriting`
+
+### Grammarly
+- **Slug:** `grammarly`
+- **Alternatives:**
+  - `prowritingaid` (similar)
+
+### Grant Writing
+- **Slug:** `grant-writing`
+- **Synonyms:** Grant Proposals
+
+### Hemingway Editor
+- **Slug:** `hemingway-editor`
+- **Synonyms:** Hemingway App
+
+### Horror Writing
+- **Slug:** `horror-writing`
+- **Synonyms:** Horror Fiction
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for horror
+
+### iA Writer
+- **Slug:** `ia-writer`
+
+### Journalism
+- **Slug:** `journalism`
+- **Synonyms:** News Writing
+
+### Memoir Writing
+- **Slug:** `memoir-writing`
+- **Synonyms:** Memoir
+
+### Mystery Writing
+- **Slug:** `mystery-writing`
+- **Synonyms:** Mystery Fiction
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for mysteries
+
+### Notion
+- **Slug:** `notion`
+- **Icon:** `logos:notion-icon`
+- **Alternatives:**
+  - `obsidian` (similar)
+
+### Novel Writing
+- **Slug:** `novel-writing`
+- **Synonyms:** Novel Craft
+- **Prerequisites:**
+  - `fiction-writing` (required) - Fiction writing skills are essential for novels
+
+### Novlr
+- **Slug:** `novlr`
+
+### Obsidian
+- **Slug:** `obsidian`
+- **Alternatives:**
+  - `notion` (similar)
+  - `roam-research` (similar)
+
+### Playwriting
+- **Slug:** `playwriting`
+- **Synonyms:** Theater Writing
+
+### Plot Development
+- **Slug:** `plot-development`
+- **Synonyms:** Plot Structure
+
+### Poetry
+- **Slug:** `poetry`
+- **Synonyms:** Poem Writing
+
+### Proofreading
+- **Slug:** `proofreading`
+
+### ProWritingAid
+- **Slug:** `prowritingaid`
+- **Alternatives:**
+  - `grammarly` (similar)
+
+### Reedsy Book Editor
+- **Slug:** `reedsy-book-editor`
+- **Synonyms:** Reedsy
+
+### Roam Research
+- **Slug:** `roam-research`
+- **Synonyms:** Roam
+- **Alternatives:**
+  - `obsidian` (similar)
+
+### Romance Writing
+- **Slug:** `romance-writing`
+- **Synonyms:** Romance Fiction
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for romance
+
+### Science Fiction Writing
+- **Slug:** `science-fiction-writing`
+- **Synonyms:** Sci-Fi Writing
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for science fiction
+
+### Screenwriting
+- **Slug:** `screenwriting`
+- **Synonyms:** Script Writing
+
+### Scrivener
+- **Slug:** `scrivener`
+- **Alternatives:**
+  - `ulysses` (similar)
+
+### Self-Publishing
+- **Slug:** `self-publishing`
+- **Synonyms:** Indie Publishing
+
+### Short Story Writing
+- **Slug:** `short-story-writing`
+- **Synonyms:** Short Fiction
+- **Prerequisites:**
+  - `fiction-writing` (recommended) - Fiction writing skills are helpful for short stories
+
+### Storytelling
+- **Slug:** `storytelling`
+- **Synonyms:** Story Craft
+
+### Technical Writing
+- **Slug:** `technical-writing`
+- **Synonyms:** Tech Writing
+
+### Ulysses
+- **Slug:** `ulysses`
+- **Alternatives:**
+  - `scrivener` (similar)
+
+### Vellum
+- **Slug:** `vellum`
+
+### World Anvil
+- **Slug:** `world-anvil`
+- **Synonyms:** WorldAnvil
+- **Alternatives:**
+  - `campfire-write` (similar)
+
+### Worldbuilding
+- **Slug:** `worldbuilding`
+- **Synonyms:** World Building
+
+### yWriter
+- **Slug:** `ywriter`
 
 ---
 

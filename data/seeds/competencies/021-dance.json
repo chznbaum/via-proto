@@ -1,0 +1,393 @@
+{
+  "competencies": [
+    {
+      "name": "Ballet",
+      "slug": "ballet",
+      "description": "Classical dance technique with precise movements, positions, and terminology",
+      "category_slug": "dance",
+      "synonyms": ["Classical Ballet"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Contemporary Dance",
+      "slug": "contemporary-dance",
+      "description": "Modern expressive dance combining various techniques and improvisation",
+      "category_slug": "dance",
+      "synonyms": ["Contemporary"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Modern Dance",
+      "slug": "modern-dance",
+      "description": "Expressive dance style emphasizing creativity and natural movement",
+      "category_slug": "dance",
+      "synonyms": ["Modern"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Jazz Dance",
+      "slug": "jazz-dance",
+      "description": "Energetic dance style with isolations, turns, and syncopated rhythms",
+      "category_slug": "dance",
+      "synonyms": ["Jazz"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tap Dance",
+      "slug": "tap-dance",
+      "description": "Percussive dance using shoes with metal taps to create rhythms",
+      "category_slug": "dance",
+      "synonyms": ["Tap"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hip Hop Dance",
+      "slug": "hip-hop-dance",
+      "description": "Urban street dance styles including breaking, locking, and popping",
+      "category_slug": "dance",
+      "synonyms": ["Hip Hop", "Street Dance"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Breaking",
+      "slug": "breaking",
+      "description": "Athletic street dance with acrobatic moves, freezes, and floor work",
+      "category_slug": "dance",
+      "synonyms": ["Breakdancing", "B-boying"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Popping",
+      "slug": "popping",
+      "description": "Funk dance style with quick muscle contractions creating jerking movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Locking",
+      "slug": "locking",
+      "description": "Funk dance with distinct stops and locks in positions",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "House Dance",
+      "slug": "house-dance",
+      "description": "Social dance to house music with footwork and fluid movements",
+      "category_slug": "dance",
+      "synonyms": ["House"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ballroom Dance",
+      "slug": "ballroom-dance",
+      "description": "Partner dancing in formal settings including waltz, foxtrot, and tango",
+      "category_slug": "dance",
+      "synonyms": ["Ballroom"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Waltz",
+      "slug": "waltz",
+      "description": "Smooth ballroom dance in 3/4 time with rotating movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Tango",
+      "slug": "tango",
+      "description": "Passionate partner dance with sharp movements and dramatic holds",
+      "category_slug": "dance",
+      "synonyms": ["Argentine Tango"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Foxtrot",
+      "slug": "foxtrot",
+      "description": "Smooth ballroom dance with walking steps and elegant movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Quickstep",
+      "slug": "quickstep",
+      "description": "Fast ballroom dance combining walking and hopping movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Viennese Waltz",
+      "slug": "viennese-waltz",
+      "description": "Fast-paced waltz with continuous rotating movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Salsa",
+      "slug": "salsa",
+      "description": "Latin partner dance with Cuban and Puerto Rican influences",
+      "category_slug": "dance",
+      "synonyms": ["Salsa Dancing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bachata",
+      "slug": "bachata",
+      "description": "Dominican partner dance with side-to-side movements and hip motion",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Merengue",
+      "slug": "merengue",
+      "description": "Dominican partner dance with marching steps and hip movements",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Samba",
+      "slug": "samba",
+      "description": "Brazilian dance with bouncing movements and rhythmic hip action",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Rumba",
+      "slug": "rumba",
+      "description": "Slow Latin dance emphasizing hip movements and romantic character",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cha-Cha",
+      "slug": "cha-cha",
+      "description": "Latin dance with triple step and syncopated rhythm",
+      "category_slug": "dance",
+      "synonyms": ["Cha-Cha-Cha"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Jive",
+      "slug": "jive",
+      "description": "Energetic swing dance with kicks and flicks",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Paso Doble",
+      "slug": "paso-doble",
+      "description": "Spanish theatrical dance representing bullfight drama",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Swing Dance",
+      "slug": "swing-dance",
+      "description": "Partner dance to swing music with bouncy movements",
+      "category_slug": "dance",
+      "synonyms": ["Swing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lindy Hop",
+      "slug": "lindy-hop",
+      "description": "Original swing dance from Harlem with improvisational style",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "West Coast Swing",
+      "slug": "west-coast-swing",
+      "description": "Smooth partner dance danced in a slot with elastic connection",
+      "category_slug": "dance",
+      "synonyms": ["WCS"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "East Coast Swing",
+      "slug": "east-coast-swing",
+      "description": "Social swing dance with circular movements and basic patterns",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Charleston",
+      "slug": "charleston",
+      "description": "1920s dance with distinctive kicked steps and swinging arms",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Argentine Tango",
+      "slug": "argentine-tango",
+      "description": "Improvisational partner dance from Argentina with close embrace",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Irish Dance",
+      "slug": "irish-dance",
+      "description": "Traditional dance with fast footwork and stationary upper body",
+      "category_slug": "dance",
+      "synonyms": ["Irish Step Dancing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Flamenco",
+      "slug": "flamenco",
+      "description": "Spanish dance with intricate footwork, arm movements, and passion",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Belly Dance",
+      "slug": "belly-dance",
+      "description": "Middle Eastern dance emphasizing isolated torso movements",
+      "category_slug": "dance",
+      "synonyms": ["Belly Dancing", "Raqs Sharqi"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bollywood Dance",
+      "slug": "bollywood-dance",
+      "description": "Indian film dance combining classical, folk, and modern styles",
+      "category_slug": "dance",
+      "synonyms": ["Bollywood"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bharatanatyam",
+      "slug": "bharatanatyam",
+      "description": "Classical Indian dance with precise movements and storytelling",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Kathak",
+      "slug": "kathak",
+      "description": "North Indian classical dance with rhythmic footwork and spins",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hula",
+      "slug": "hula",
+      "description": "Hawaiian dance telling stories through hand movements and footwork",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pole Dancing",
+      "slug": "pole-dancing",
+      "description": "Athletic dance combining acrobatics and dance on vertical pole",
+      "category_slug": "dance",
+      "synonyms": ["Pole Fitness"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Aerial Dance",
+      "slug": "aerial-dance",
+      "description": "Dance performed on aerial apparatus like silks, hoops, and hammocks",
+      "category_slug": "dance",
+      "synonyms": ["Aerial Arts"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lyrical Dance",
+      "slug": "lyrical-dance",
+      "description": "Expressive dance blending ballet and jazz with emotional storytelling",
+      "category_slug": "dance",
+      "synonyms": ["Lyrical"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Choreography",
+      "slug": "choreography",
+      "description": "Creating and arranging dance sequences and movements",
+      "category_slug": "dance",
+      "synonyms": ["Dance Choreography"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ballroom Choreography",
+      "slug": "ballroom-choreography",
+      "description": "Creating competitive ballroom dance routines and sequences",
+      "category_slug": "dance",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "ballroom-dance",
+          "prerequisite_level": "recommended",
+          "notes": "Ballroom dance experience is helpful"
+        },
+        {
+          "prerequisite_slug": "choreography",
+          "prerequisite_level": "recommended",
+          "notes": "General choreography skills are helpful"
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

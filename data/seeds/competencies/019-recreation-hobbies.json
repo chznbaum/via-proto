@@ -1,0 +1,378 @@
+{
+  "competencies": [
+    {
+      "name": "Chess",
+      "slug": "chess",
+      "description": "Strategic board game played between two players on a checkered board",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Poker",
+      "slug": "poker",
+      "description": "Card game combining strategy, probability, and psychology",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game Mastering",
+      "slug": "game-mastering",
+      "description": "Running tabletop RPG sessions as storyteller and referee",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["GM", "Dungeon Master", "DM"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Miniature Painting",
+      "slug": "miniature-painting",
+      "description": "Painting small-scale models and figures for tabletop games and display",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Mini Painting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Speedrunning",
+      "slug": "speedrunning",
+      "description": "Completing video games as quickly as possible using optimized strategies",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Speed Running"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Game Streaming",
+      "slug": "game-streaming",
+      "description": "Broadcasting video game gameplay live to online audiences",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Streaming"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Esports",
+      "slug": "esports",
+      "description": "Competitive video gaming at professional and amateur levels",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["E-sports", "Competitive Gaming"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Running",
+      "slug": "running",
+      "description": "Cardiovascular exercise and sport of foot racing at various distances",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Marathon Training",
+      "slug": "marathon-training",
+      "description": "Preparing for long-distance running events of 26.2 miles",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Marathon Running"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "running",
+          "prerequisite_level": "required",
+          "notes": "Running experience is essential for marathon training"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Swimming",
+      "slug": "swimming",
+      "description": "Aquatic sport and exercise using various strokes and techniques",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Cycling",
+      "slug": "cycling",
+      "description": "Riding bicycles for recreation, fitness, and sport",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Biking"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mountain Biking",
+      "slug": "mountain-biking",
+      "description": "Off-road cycling on rough terrain and trails",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["MTB"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "cycling",
+          "prerequisite_level": "recommended",
+          "notes": "Basic cycling skills are helpful"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Tennis",
+      "slug": "tennis",
+      "description": "Racket sport played on a court with singles or doubles players",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Golf",
+      "slug": "golf",
+      "description": "Club-and-ball sport played on courses with 18 holes",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Basketball",
+      "slug": "basketball",
+      "description": "Team sport shooting a ball through elevated hoops",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Soccer",
+      "slug": "soccer",
+      "description": "Team sport kicking a ball to score goals",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Football"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Martial Arts",
+      "slug": "martial-arts",
+      "description": "Combat practices and traditions including striking, grappling, and weapons",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Karate",
+      "slug": "karate",
+      "description": "Japanese martial art using striking techniques and kata",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Taekwondo",
+      "slug": "taekwondo",
+      "description": "Korean martial art emphasizing kicking techniques",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Tae Kwon Do"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Brazilian Jiu-Jitsu",
+      "slug": "brazilian-jiu-jitsu",
+      "description": "Grappling martial art focusing on ground fighting and submissions",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["BJJ"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Boxing",
+      "slug": "boxing",
+      "description": "Combat sport using punches in regulated matches",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Muay Thai",
+      "slug": "muay-thai",
+      "description": "Thai martial art using fists, elbows, knees, and shins",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Thai Boxing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Rock Climbing",
+      "slug": "rock-climbing",
+      "description": "Ascending rock formations using hands, feet, and climbing equipment",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Climbing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Bouldering",
+      "slug": "bouldering",
+      "description": "Climbing short routes without ropes using crash pads",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Skateboarding",
+      "slug": "skateboarding",
+      "description": "Riding and performing tricks on a skateboard",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Surfing",
+      "slug": "surfing",
+      "description": "Riding ocean waves on a surfboard",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Skiing",
+      "slug": "skiing",
+      "description": "Gliding on snow using skis attached to boots",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Snowboarding",
+      "slug": "snowboarding",
+      "description": "Descending snow-covered slopes on a single board",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hiking",
+      "slug": "hiking",
+      "description": "Walking in nature on trails and wilderness paths",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Camping",
+      "slug": "camping",
+      "description": "Outdoor overnight stays in tents or recreational vehicles",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Backpacking",
+      "slug": "backpacking",
+      "description": "Multi-day hiking trips carrying gear and supplies",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "hiking",
+          "prerequisite_level": "recommended",
+          "notes": "Hiking experience is helpful for backpacking"
+        },
+        {
+          "prerequisite_slug": "camping",
+          "prerequisite_level": "recommended",
+          "notes": "Camping skills are helpful for backpacking"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Fishing",
+      "slug": "fishing",
+      "description": "Catching fish using rods, reels, and various techniques",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Angling"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Fly Fishing",
+      "slug": "fly-fishing",
+      "description": "Fishing using artificial flies and specialized casting techniques",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Hunting",
+      "slug": "hunting",
+      "description": "Pursuing wild animals for food or sport using firearms or archery",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Archery",
+      "slug": "archery",
+      "description": "Using bows to shoot arrows at targets or for hunting",
+      "category_slug": "recreation-hobbies",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Model Building",
+      "slug": "model-building",
+      "description": "Assembling and detailing scale models of vehicles, buildings, and figures",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Scale Modeling"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "RC Vehicles",
+      "slug": "rc-vehicles",
+      "description": "Operating remote-controlled cars, boats, planes, and helicopters",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["RC Cars", "Remote Control"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Drone Flying",
+      "slug": "drone-flying",
+      "description": "Piloting unmanned aerial vehicles for recreation and aerial photography",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["FPV", "Drone Piloting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Speedcubing",
+      "slug": "speedcubing",
+      "description": "Solving combination puzzles like Rubik's Cube using speed-solving techniques",
+      "category_slug": "recreation-hobbies",
+      "synonyms": ["Rubik's Cube", "Cubing"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
+}

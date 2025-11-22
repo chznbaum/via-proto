@@ -1,0 +1,597 @@
+{
+  "competencies": [
+    {
+      "name": "Scrivener",
+      "slug": "scrivener",
+      "description": "Professional writing software for long-form projects like novels, screenplays, and research papers",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "ulysses",
+          "relationship_type": "similar",
+          "notes": "Ulysses is a writing app with similar organizational features"
+        }
+      ]
+    },
+    {
+      "name": "Final Draft",
+      "slug": "final-draft",
+      "description": "Industry-standard screenwriting software with professional formatting and collaboration tools",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "celtx",
+          "relationship_type": "similar",
+          "notes": "Celtx is a free screenwriting alternative"
+        }
+      ]
+    },
+    {
+      "name": "Ulysses",
+      "slug": "ulysses",
+      "description": "Distraction-free writing app for Mac and iOS with powerful organization and publishing features",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "scrivener",
+          "relationship_type": "similar",
+          "notes": "Scrivener offers similar long-form writing features"
+        }
+      ]
+    },
+    {
+      "name": "iA Writer",
+      "slug": "ia-writer",
+      "description": "Minimalist writing app focused on distraction-free writing with markdown support",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Obsidian",
+      "slug": "obsidian",
+      "description": "Knowledge management and note-taking app using markdown and bidirectional linking",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "notion",
+          "relationship_type": "similar",
+          "notes": "Notion is a similar knowledge management tool"
+        },
+        {
+          "alternative_slug": "roam-research",
+          "relationship_type": "similar",
+          "notes": "Roam Research pioneered bidirectional linking"
+        }
+      ]
+    },
+    {
+      "name": "Notion",
+      "slug": "notion",
+      "description": "All-in-one workspace for notes, databases, wikis, and project management",
+      "category_slug": "writing",
+      "icon": "logos:notion-icon",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "obsidian",
+          "relationship_type": "similar",
+          "notes": "Obsidian is focused on local-first knowledge management"
+        }
+      ]
+    },
+    {
+      "name": "Roam Research",
+      "slug": "roam-research",
+      "description": "Note-taking tool for networked thought with bidirectional linking and knowledge graphs",
+      "category_slug": "writing",
+      "synonyms": ["Roam"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "obsidian",
+          "relationship_type": "similar",
+          "notes": "Obsidian offers similar linking features"
+        }
+      ]
+    },
+    {
+      "name": "Grammarly",
+      "slug": "grammarly",
+      "description": "AI-powered writing assistant for grammar, spelling, and style suggestions",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "prowritingaid",
+          "relationship_type": "similar",
+          "notes": "ProWritingAid offers similar editing features"
+        }
+      ]
+    },
+    {
+      "name": "ProWritingAid",
+      "slug": "prowritingaid",
+      "description": "Comprehensive editing tool for grammar, style, and in-depth writing reports",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "grammarly",
+          "relationship_type": "similar",
+          "notes": "Grammarly is a popular alternative"
+        }
+      ]
+    },
+    {
+      "name": "Hemingway Editor",
+      "slug": "hemingway-editor",
+      "description": "Writing tool highlighting complex sentences and readability issues for clearer prose",
+      "category_slug": "writing",
+      "synonyms": ["Hemingway App"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "yWriter",
+      "slug": "ywriter",
+      "description": "Free novel writing software breaking projects into chapters and scenes",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Novlr",
+      "slug": "novlr",
+      "description": "Cloud-based novel writing platform with goal tracking and writing statistics",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Campfire Write",
+      "slug": "campfire-write",
+      "description": "Writing software with worldbuilding and character management tools for fantasy and sci-fi",
+      "category_slug": "writing",
+      "synonyms": ["Campfire"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "world-anvil",
+          "relationship_type": "similar",
+          "notes": "World Anvil specializes in worldbuilding"
+        }
+      ]
+    },
+    {
+      "name": "World Anvil",
+      "slug": "world-anvil",
+      "description": "Worldbuilding platform for creating fictional worlds, characters, and lore with wiki-style organization",
+      "category_slug": "writing",
+      "synonyms": ["WorldAnvil"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "campfire-write",
+          "relationship_type": "similar",
+          "notes": "Campfire Write includes worldbuilding features"
+        }
+      ]
+    },
+    {
+      "name": "Reedsy Book Editor",
+      "slug": "reedsy-book-editor",
+      "description": "Free online book editor with professional formatting for novels and non-fiction",
+      "category_slug": "writing",
+      "synonyms": ["Reedsy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Celtx",
+      "slug": "celtx",
+      "description": "Screenwriting and pre-production software for film, TV, and theater",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "final-draft",
+          "relationship_type": "similar",
+          "notes": "Final Draft is the industry standard screenwriting tool"
+        }
+      ]
+    },
+    {
+      "name": "Atticus",
+      "slug": "atticus",
+      "description": "Book writing and formatting software for authors to write, format, and publish books",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Vellum",
+      "slug": "vellum",
+      "description": "Book formatting and publishing software for Mac creating professional ebooks and print books",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Creative Writing",
+      "slug": "creative-writing",
+      "description": "Imaginative writing expressing ideas, stories, and emotions through original narratives",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Fiction Writing",
+      "slug": "fiction-writing",
+      "description": "Crafting imaginary stories with invented characters, plots, and settings",
+      "category_slug": "writing",
+      "synonyms": ["Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "creative-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Creative writing skills form the foundation of fiction writing"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Novel Writing",
+      "slug": "novel-writing",
+      "description": "Writing long-form fiction with complex plots, characters, and narrative arcs",
+      "category_slug": "writing",
+      "synonyms": ["Novel Craft"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "required",
+          "notes": "Fiction writing skills are essential for novels"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Short Story Writing",
+      "slug": "short-story-writing",
+      "description": "Crafting concise fictional narratives with focused plots and characters",
+      "category_slug": "writing",
+      "synonyms": ["Short Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for short stories"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Flash Fiction",
+      "slug": "flash-fiction",
+      "description": "Extremely short stories typically under 1000 words requiring tight narrative focus",
+      "category_slug": "writing",
+      "synonyms": ["Microfiction"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Screenwriting",
+      "slug": "screenwriting",
+      "description": "Writing scripts for film, television, and streaming media with industry-standard formatting",
+      "category_slug": "writing",
+      "synonyms": ["Script Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Playwriting",
+      "slug": "playwriting",
+      "description": "Writing scripts for theatrical stage productions with dialogue and stage directions",
+      "category_slug": "writing",
+      "synonyms": ["Theater Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Poetry",
+      "slug": "poetry",
+      "description": "Expressive writing using rhythm, imagery, and literary devices to evoke emotion",
+      "category_slug": "writing",
+      "synonyms": ["Poem Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Memoir Writing",
+      "slug": "memoir-writing",
+      "description": "Personal narrative recounting significant life experiences and reflections",
+      "category_slug": "writing",
+      "synonyms": ["Memoir"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Biography",
+      "slug": "biography-writing",
+      "description": "Writing detailed accounts of other people's lives based on research and interviews",
+      "category_slug": "writing",
+      "synonyms": ["Biographical Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Essay Writing",
+      "slug": "essay-writing",
+      "description": "Structured writing presenting arguments, analysis, or personal perspectives",
+      "category_slug": "writing",
+      "synonyms": ["Essays"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Academic Writing",
+      "slug": "academic-writing",
+      "description": "Formal scholarly writing for research papers, theses, and academic publications",
+      "category_slug": "writing",
+      "synonyms": ["Scholarly Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Technical Writing",
+      "slug": "technical-writing",
+      "description": "Clear documentation of technical information, processes, and instructions",
+      "category_slug": "writing",
+      "synonyms": ["Tech Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Content Writing",
+      "slug": "content-writing",
+      "description": "Creating written material for websites, blogs, and digital marketing",
+      "category_slug": "writing",
+      "synonyms": ["Web Content Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Copywriting",
+      "slug": "copywriting-skill",
+      "description": "Persuasive writing for advertising, marketing, and sales materials",
+      "category_slug": "writing",
+      "synonyms": ["Marketing Copy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Blogging",
+      "slug": "blogging",
+      "description": "Regular online writing sharing insights, experiences, and information with readers",
+      "category_slug": "writing",
+      "synonyms": ["Blog Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Journalism",
+      "slug": "journalism",
+      "description": "Researching and writing news stories and articles for media outlets",
+      "category_slug": "writing",
+      "synonyms": ["News Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Grant Writing",
+      "slug": "grant-writing",
+      "description": "Writing proposals to secure funding from foundations, government agencies, and donors",
+      "category_slug": "writing",
+      "synonyms": ["Grant Proposals"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Business Writing",
+      "slug": "business-writing",
+      "description": "Professional writing for business communications, reports, and proposals",
+      "category_slug": "writing",
+      "synonyms": ["Professional Writing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ghostwriting",
+      "slug": "ghostwriting",
+      "description": "Writing content on behalf of others who take authorship credit",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Storytelling",
+      "slug": "storytelling",
+      "description": "Art of engaging audiences through compelling narrative structure and delivery",
+      "category_slug": "writing",
+      "synonyms": ["Story Craft"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Character Development",
+      "slug": "character-development",
+      "description": "Creating believable, complex characters with motivations, arcs, and personalities",
+      "category_slug": "writing",
+      "synonyms": ["Character Creation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Plot Development",
+      "slug": "plot-development",
+      "description": "Structuring story events, conflicts, and resolutions into compelling narratives",
+      "category_slug": "writing",
+      "synonyms": ["Plot Structure"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Dialogue Writing",
+      "slug": "dialogue-writing",
+      "description": "Crafting realistic, engaging conversations between characters",
+      "category_slug": "writing",
+      "synonyms": ["Dialogue"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Worldbuilding",
+      "slug": "worldbuilding",
+      "description": "Creating fictional settings, cultures, histories, and rules for stories",
+      "category_slug": "writing",
+      "synonyms": ["World Building"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Editing",
+      "slug": "editing-writing",
+      "description": "Revising and refining written work for clarity, coherence, and impact",
+      "category_slug": "writing",
+      "synonyms": ["Revision", "Self-Editing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Proofreading",
+      "slug": "proofreading",
+      "description": "Final review of written text to correct grammar, spelling, and formatting errors",
+      "category_slug": "writing",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Book Publishing",
+      "slug": "book-publishing",
+      "description": "Process of preparing, producing, and distributing books to readers",
+      "category_slug": "writing",
+      "synonyms": ["Publishing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Self-Publishing",
+      "slug": "self-publishing",
+      "description": "Independently publishing books without traditional publishing houses",
+      "category_slug": "writing",
+      "synonyms": ["Indie Publishing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Science Fiction Writing",
+      "slug": "science-fiction-writing",
+      "description": "Writing speculative fiction exploring futuristic concepts, technology, and science",
+      "category_slug": "writing",
+      "synonyms": ["Sci-Fi Writing"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for science fiction"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Fantasy Writing",
+      "slug": "fantasy-writing",
+      "description": "Writing fiction featuring magic, mythical creatures, and imaginary worlds",
+      "category_slug": "writing",
+      "synonyms": ["Fantasy Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for fantasy"
+        },
+        {
+          "prerequisite_slug": "worldbuilding",
+          "prerequisite_level": "recommended",
+          "notes": "Worldbuilding is important for fantasy settings"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Mystery Writing",
+      "slug": "mystery-writing",
+      "description": "Crafting suspenseful stories with puzzles, clues, and crime solving",
+      "category_slug": "writing",
+      "synonyms": ["Mystery Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for mysteries"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Romance Writing",
+      "slug": "romance-writing",
+      "description": "Writing love stories with emotional relationships and satisfying resolutions",
+      "category_slug": "writing",
+      "synonyms": ["Romance Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for romance"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Horror Writing",
+      "slug": "horror-writing",
+      "description": "Creating frightening stories that evoke fear, dread, and suspense",
+      "category_slug": "writing",
+      "synonyms": ["Horror Fiction"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "fiction-writing",
+          "prerequisite_level": "recommended",
+          "notes": "Fiction writing skills are helpful for horror"
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

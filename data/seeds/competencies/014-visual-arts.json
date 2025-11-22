@@ -1,0 +1,545 @@
+{
+  "competencies": [
+    {
+      "name": "Procreate",
+      "slug": "procreate",
+      "description": "Professional digital painting and illustration app for iPad with natural drawing experience",
+      "category_slug": "visual-arts",
+      "synonyms": ["Procreate App"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "krita",
+          "relationship_type": "similar",
+          "notes": "Krita is a free alternative for digital painting"
+        },
+        {
+          "alternative_slug": "corel-painter",
+          "relationship_type": "similar",
+          "notes": "Corel Painter is a professional desktop alternative"
+        }
+      ]
+    },
+    {
+      "name": "Krita",
+      "slug": "krita",
+      "description": "Free and open-source digital painting application with professional-grade brushes and tools",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "procreate",
+          "relationship_type": "similar",
+          "notes": "Procreate is a popular iPad alternative"
+        },
+        {
+          "alternative_slug": "corel-painter",
+          "relationship_type": "similar",
+          "notes": "Corel Painter is a professional alternative"
+        }
+      ]
+    },
+    {
+      "name": "Corel Painter",
+      "slug": "corel-painter",
+      "description": "Professional digital art software simulating traditional painting and drawing media",
+      "category_slug": "visual-arts",
+      "icon": "logos:corel",
+      "synonyms": ["Painter"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "krita",
+          "relationship_type": "similar",
+          "notes": "Krita is a free alternative"
+        },
+        {
+          "alternative_slug": "procreate",
+          "relationship_type": "similar",
+          "notes": "Procreate is a popular iPad alternative"
+        }
+      ]
+    },
+    {
+      "name": "ArtRage",
+      "slug": "artrage",
+      "description": "Digital painting software focused on realistic simulation of traditional art materials",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Rebelle",
+      "slug": "rebelle",
+      "description": "Realistic watercolor, acrylic, and wet media painting software with natural color blending",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Paint Tool SAI",
+      "slug": "paint-tool-sai",
+      "description": "Lightweight digital painting software popular for manga and anime-style illustration",
+      "category_slug": "visual-arts",
+      "synonyms": ["SAI", "PaintTool SAI"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "MediBang Paint",
+      "slug": "medibang-paint",
+      "description": "Free lightweight digital painting and comic creation software with cloud features",
+      "category_slug": "visual-arts",
+      "synonyms": ["MediBang"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "firealpaca",
+          "relationship_type": "similar",
+          "notes": "FireAlpaca is made by the same developers with similar features"
+        }
+      ]
+    },
+    {
+      "name": "FireAlpaca",
+      "slug": "firealpaca",
+      "description": "Free digital painting software with simple interface and comic creation tools",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "medibang-paint",
+          "relationship_type": "similar",
+          "notes": "MediBang Paint is made by the same developers with cloud features"
+        }
+      ]
+    },
+    {
+      "name": "Concepts",
+      "slug": "concepts-app",
+      "description": "Infinite canvas sketching and design app for iPad and desktop with vector-based workflow",
+      "category_slug": "visual-arts",
+      "synonyms": ["Concepts"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Infinite Painter",
+      "slug": "infinite-painter",
+      "description": "Mobile painting app with extensive brush engine and layer management for tablets and phones",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "ArtStudio Pro",
+      "slug": "artstudio-pro",
+      "description": "Professional painting and photo editing app for iPad and Mac with advanced layer features",
+      "category_slug": "visual-arts",
+      "synonyms": ["ArtStudio"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Drawing",
+      "slug": "drawing",
+      "description": "Foundational art skill of creating images using lines, marks, and shading techniques",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sketching",
+      "slug": "sketching",
+      "description": "Quick, loose drawing technique for capturing ideas, forms, and compositions",
+      "category_slug": "visual-arts",
+      "synonyms": ["Sketch Drawing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Figure Drawing",
+      "slug": "figure-drawing",
+      "description": "Drawing the human form from observation, studying anatomy, proportion, and gesture",
+      "category_slug": "visual-arts",
+      "synonyms": ["Life Drawing"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "drawing",
+          "prerequisite_level": "recommended",
+          "notes": "Basic drawing skills are helpful for figure drawing"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Portrait Drawing",
+      "slug": "portrait-drawing",
+      "description": "Drawing human faces and expressions with attention to likeness and character",
+      "category_slug": "visual-arts",
+      "synonyms": ["Portrait Art"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "drawing",
+          "prerequisite_level": "recommended",
+          "notes": "Basic drawing skills are helpful for portrait work"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Gesture Drawing",
+      "slug": "gesture-drawing",
+      "description": "Quick sketching technique capturing movement, energy, and essential forms",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Perspective Drawing",
+      "slug": "perspective-drawing",
+      "description": "Techniques for creating depth and three-dimensional space on a two-dimensional surface",
+      "category_slug": "visual-arts",
+      "synonyms": ["Linear Perspective"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Painting",
+      "slug": "painting",
+      "description": "Art of applying pigments to create images using various media and techniques",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Watercolor Painting",
+      "slug": "watercolor-painting",
+      "description": "Painting with water-based pigments known for transparency and fluid blending",
+      "category_slug": "visual-arts",
+      "synonyms": ["Watercolor", "Watercolour"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Oil Painting",
+      "slug": "oil-painting",
+      "description": "Traditional painting technique using oil-based pigments with rich colors and blending",
+      "category_slug": "visual-arts",
+      "synonyms": ["Oil Paint"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Acrylic Painting",
+      "slug": "acrylic-painting",
+      "description": "Versatile painting medium using fast-drying acrylic polymers with vibrant colors",
+      "category_slug": "visual-arts",
+      "synonyms": ["Acrylic Paint"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Gouache Painting",
+      "slug": "gouache-painting",
+      "description": "Opaque water-based paint combining properties of watercolor and acrylic",
+      "category_slug": "visual-arts",
+      "synonyms": ["Gouache"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Ink Drawing",
+      "slug": "ink-drawing",
+      "description": "Drawing with ink using pens, brushes, and various application techniques",
+      "category_slug": "visual-arts",
+      "synonyms": ["Ink Art", "Pen and Ink"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Charcoal Drawing",
+      "slug": "charcoal-drawing",
+      "description": "Drawing with charcoal sticks for expressive marks and dramatic tonal ranges",
+      "category_slug": "visual-arts",
+      "synonyms": ["Charcoal Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Pastel Art",
+      "slug": "pastel-art",
+      "description": "Drawing and painting with soft pastels, oil pastels, and pastel pencils",
+      "category_slug": "visual-arts",
+      "synonyms": ["Pastel Drawing", "Pastel Painting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Colored Pencil",
+      "slug": "colored-pencil",
+      "description": "Drawing technique using colored pencils for detailed, layered artwork",
+      "category_slug": "visual-arts",
+      "synonyms": ["Colored Pencil Drawing", "Coloured Pencil"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Graphite Drawing",
+      "slug": "graphite-drawing",
+      "description": "Drawing with graphite pencils for precise shading and tonal work",
+      "category_slug": "visual-arts",
+      "synonyms": ["Pencil Drawing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Landscape Painting",
+      "slug": "landscape-painting",
+      "description": "Depicting natural scenery including mountains, forests, rivers, and skies",
+      "category_slug": "visual-arts",
+      "synonyms": ["Landscape Art"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "painting",
+          "prerequisite_level": "recommended",
+          "notes": "Basic painting skills are helpful for landscape work"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Still Life",
+      "slug": "still-life",
+      "description": "Art depicting inanimate objects arranged in composition",
+      "category_slug": "visual-arts",
+      "synonyms": ["Still Life Painting", "Still Life Drawing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Abstract Art",
+      "slug": "abstract-art",
+      "description": "Non-representational art using color, form, and gestural marks",
+      "category_slug": "visual-arts",
+      "synonyms": ["Abstract Painting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Printmaking",
+      "slug": "printmaking",
+      "description": "Creating artworks by printing from a matrix onto paper or other surfaces",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Screen Printing",
+      "slug": "screen-printing",
+      "description": "Printmaking technique using mesh screen to transfer ink onto surfaces",
+      "category_slug": "visual-arts",
+      "synonyms": ["Silkscreen", "Serigraphy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Linocut",
+      "slug": "linocut",
+      "description": "Relief printmaking technique carving into linoleum blocks",
+      "category_slug": "visual-arts",
+      "synonyms": ["Lino Printing", "Linoleum Cut"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Etching",
+      "slug": "etching",
+      "description": "Intaglio printmaking using acid to cut into metal plates",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Woodcut",
+      "slug": "woodcut",
+      "description": "Relief printmaking technique carving images into wooden blocks",
+      "category_slug": "visual-arts",
+      "synonyms": ["Wood Block Printing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Monoprint",
+      "slug": "monoprint",
+      "description": "Printmaking technique creating unique one-of-a-kind prints",
+      "category_slug": "visual-arts",
+      "synonyms": ["Monotype"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Color Theory",
+      "slug": "color-theory",
+      "description": "Study of color relationships, harmony, and visual effects for artists",
+      "category_slug": "visual-arts",
+      "synonyms": ["Color Mixing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Composition",
+      "slug": "composition",
+      "description": "Arrangement of visual elements to create effective and balanced artwork",
+      "category_slug": "visual-arts",
+      "synonyms": ["Art Composition"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Anatomy for Artists",
+      "slug": "anatomy-for-artists",
+      "description": "Understanding human and animal anatomy for accurate figure drawing and painting",
+      "category_slug": "visual-arts",
+      "synonyms": ["Artistic Anatomy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Illustration",
+      "slug": "illustration",
+      "description": "Creating visual images to accompany text or convey ideas in books, magazines, and media",
+      "category_slug": "visual-arts",
+      "synonyms": ["Illustrative Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Digital Illustration",
+      "slug": "digital-illustration",
+      "description": "Creating illustrations using digital tools and software",
+      "category_slug": "visual-arts",
+      "synonyms": ["Digital Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Concept Art",
+      "slug": "concept-art",
+      "description": "Visual development for characters, environments, and designs in entertainment media",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "digital-illustration",
+          "prerequisite_level": "recommended",
+          "notes": "Digital illustration skills are commonly used in concept art"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Character Design",
+      "slug": "character-design",
+      "description": "Creating original characters for animation, games, comics, and illustration",
+      "category_slug": "visual-arts",
+      "synonyms": ["Character Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Comic Art",
+      "slug": "comic-art",
+      "description": "Sequential art storytelling through illustrated panels and narratives",
+      "category_slug": "visual-arts",
+      "synonyms": ["Comics", "Sequential Art"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Manga Art",
+      "slug": "manga-art",
+      "description": "Japanese comic art style with distinctive character designs and panel layouts",
+      "category_slug": "visual-arts",
+      "synonyms": ["Manga Drawing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Caricature",
+      "slug": "caricature",
+      "description": "Exaggerated portraiture emphasizing distinctive features for humor or satire",
+      "category_slug": "visual-arts",
+      "synonyms": ["Caricature Drawing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Calligraphy",
+      "slug": "calligraphy",
+      "description": "Decorative handwriting and lettering as a visual art form",
+      "category_slug": "visual-arts",
+      "synonyms": ["Hand Lettering"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mixed Media Art",
+      "slug": "mixed-media-art",
+      "description": "Combining multiple artistic materials and techniques in single artworks",
+      "category_slug": "visual-arts",
+      "synonyms": ["Mixed Media"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Collage",
+      "slug": "collage",
+      "description": "Art technique assembling different materials and images into unified compositions",
+      "category_slug": "visual-arts",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mural Painting",
+      "slug": "mural-painting",
+      "description": "Large-scale painting applied directly to walls, ceilings, or permanent surfaces",
+      "category_slug": "visual-arts",
+      "synonyms": ["Murals"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "painting",
+          "prerequisite_level": "recommended",
+          "notes": "Painting skills are helpful for mural work"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Plein Air Painting",
+      "slug": "plein-air-painting",
+      "description": "Painting outdoors to capture natural light, atmosphere, and landscapes",
+      "category_slug": "visual-arts",
+      "synonyms": ["Outdoor Painting"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "painting",
+          "prerequisite_level": "required",
+          "notes": "Painting skills are essential for plein air work"
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

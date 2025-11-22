@@ -1,0 +1,208 @@
+{
+  "competencies": [
+    {
+      "name": "Acting",
+      "slug": "acting",
+      "description": "Performing characters through voice, movement, and emotional expression",
+      "category_slug": "theater",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stage Acting",
+      "slug": "stage-acting",
+      "description": "Performing live theater for audiences in theatrical venues",
+      "category_slug": "theater",
+      "synonyms": ["Theater Acting"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "acting",
+          "prerequisite_level": "recommended",
+          "notes": "Basic acting skills are helpful for stage work"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Voice Acting",
+      "slug": "voice-acting",
+      "description": "Performing character voices for animation, games, and audio productions",
+      "category_slug": "theater",
+      "synonyms": ["Voice Over", "VO"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Improvisation",
+      "slug": "improvisation",
+      "description": "Creating spontaneous performances without scripts or preparation",
+      "category_slug": "theater",
+      "synonyms": ["Improv"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Method Acting",
+      "slug": "method-acting",
+      "description": "Technique drawing on personal emotions and experiences to create authentic performances",
+      "category_slug": "theater",
+      "synonyms": ["The Method"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "acting",
+          "prerequisite_level": "recommended",
+          "notes": "Acting fundamentals are helpful for method acting"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Musical Theater",
+      "slug": "musical-theater",
+      "description": "Performing in productions combining acting, singing, and dance",
+      "category_slug": "theater",
+      "synonyms": ["Musical Theatre"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "acting",
+          "prerequisite_level": "recommended",
+          "notes": "Acting skills are important for musical theater"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Stage Combat",
+      "slug": "stage-combat",
+      "description": "Choreographed fighting techniques for safe theatrical violence",
+      "category_slug": "theater",
+      "synonyms": ["Fight Choreography"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mime",
+      "slug": "mime",
+      "description": "Silent performance art using gesture, movement, and facial expression",
+      "category_slug": "theater",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Puppetry",
+      "slug": "puppetry",
+      "description": "Performing with puppets and manipulating characters through inanimate objects",
+      "category_slug": "theater",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stand-up Comedy",
+      "slug": "stand-up-comedy",
+      "description": "Solo comedic performance delivering jokes and stories to live audiences",
+      "category_slug": "theater",
+      "synonyms": ["Stand Up", "Standup Comedy"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Directing",
+      "slug": "theater-directing",
+      "description": "Guiding actors and creative teams to realize theatrical productions",
+      "category_slug": "theater",
+      "synonyms": ["Theater Direction", "Stage Direction"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stage Management",
+      "slug": "stage-management",
+      "description": "Coordinating all technical and organizational aspects of theatrical productions",
+      "category_slug": "theater",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Set Design",
+      "slug": "set-design",
+      "description": "Designing physical environments and scenery for theatrical productions",
+      "category_slug": "theater",
+      "synonyms": ["Scenic Design"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Costume Design",
+      "slug": "costume-design",
+      "description": "Creating clothing and accessories for theatrical characters",
+      "category_slug": "theater",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lighting Design",
+      "slug": "lighting-design",
+      "description": "Planning and implementing lighting for theatrical productions",
+      "category_slug": "theater",
+      "synonyms": ["Stage Lighting"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Sound Design",
+      "slug": "sound-design",
+      "description": "Creating audio environments and effects for theatrical productions",
+      "category_slug": "theater",
+      "synonyms": ["Theater Sound"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Props Making",
+      "slug": "props-making",
+      "description": "Creating and managing stage properties for theatrical productions",
+      "category_slug": "theater",
+      "synonyms": ["Props Design"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stage Makeup",
+      "slug": "stage-makeup",
+      "description": "Applying theatrical makeup for performances under stage lighting",
+      "category_slug": "theater",
+      "synonyms": ["Theater Makeup"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Audition Technique",
+      "slug": "audition-technique",
+      "description": "Skills for preparing and performing successful theatrical auditions",
+      "category_slug": "theater",
+      "synonyms": ["Auditioning"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Monologue Performance",
+      "slug": "monologue-performance",
+      "description": "Performing solo dramatic speeches showcasing acting abilities",
+      "category_slug": "theater",
+      "synonyms": ["Monologues"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "acting",
+          "prerequisite_level": "recommended",
+          "notes": "Acting skills are important for monologue work"
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}
