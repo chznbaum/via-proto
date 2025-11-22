@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T14:29:48.309Z
-**Total Competencies:** 1382
+**Generated:** 2025-11-22T14:40:23.465Z
+**Total Competencies:** 1483
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -17,12 +17,18 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [applied-math](#applied-math) (10)
 - [architecture](#architecture) (7)
 - [arithmetic](#arithmetic) (1)
+- [astronomy](#astronomy) (5)
 - [automation-integration](#automation-integration) (3)
 - [backend-development](#backend-development) (36)
+- [biology](#biology) (9)
 - [blockchain-web3](#blockchain-web3) (41)
 - [calculus](#calculus) (3)
+- [chemistry](#chemistry) (7)
 - [cloud-devops](#cloud-devops) (169)
+- [cognitive-skills](#cognitive-skills) (5)
+- [communication-interpersonal](#communication-interpersonal) (9)
 - [corporate-finance](#corporate-finance) (7)
+- [critical-thinking](#critical-thinking) (1)
 - [cybersecurity](#cybersecurity) (27)
 - [dance](#dance) (42)
 - [data-engineering](#data-engineering) (8)
@@ -30,27 +36,37 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [databases](#databases) (55)
 - [differential-equations](#differential-equations) (2)
 - [discrete-mathematics](#discrete-mathematics) (6)
+- [environmental-science](#environmental-science) (9)
 - [fiber-arts-crafts](#fiber-arts-crafts) (46)
 - [finance-accounting](#finance-accounting) (5)
 - [frontend-development](#frontend-development) (46)
 - [game-development](#game-development) (53)
+- [genetics](#genetics) (4)
 - [geometry](#geometry) (6)
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [investing-trading](#investing-trading) (8)
 - [languages](#languages) (169)
 - [leadership-communication](#leadership-communication) (12)
+- [life-sciences](#life-sciences) (6)
 - [linear-algebra](#linear-algebra) (1)
 - [linguistics](#linguistics) (15)
 - [marketing-sales](#marketing-sales) (18)
+- [memory-learning](#memory-learning) (9)
+- [mindfulness-wellness](#mindfulness-wellness) (9)
 - [mobile-development](#mobile-development) (48)
 - [motion-3d](#motion-3d) (16)
 - [music](#music) (58)
+- [neuroscience](#neuroscience) (5)
 - [number-theory](#number-theory) (1)
 - [operations-strategy](#operations-strategy) (19)
+- [personal-development](#personal-development) (1)
 - [personal-finance](#personal-finance) (4)
 - [photography-video](#photography-video) (3)
+- [physics](#physics) (11)
+- [problem-solving](#problem-solving) (1)
 - [product-project-management](#product-project-management) (11)
+- [productivity-time-management](#productivity-time-management) (10)
 - [programming](#programming) (48)
 - [recreation-hobbies](#recreation-hobbies) (39)
 - [statistics-probability](#statistics-probability) (6)
@@ -263,6 +279,45 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Arithmetic
 - **Slug:** `arithmetic`
 - **Synonyms:** Basic Math, Elementary Math, Number Operations, Basic Arithmetic
+
+---
+
+## astronomy
+
+### Astrobiology
+- **Slug:** `astrobiology`
+- **Synonyms:** Exobiology, Xenobiology
+- **Prerequisites:**
+  - `astronomy` (required) - Astronomy foundation required
+  - `biology` (required) - Biology essential for astrobiology
+
+### Astronomy
+- **Slug:** `astronomy`
+- **Synonyms:** Observational Astronomy
+- **Prerequisites:**
+  - `physics` (recommended) - Physics helpful for understanding celestial phenomena
+
+### Astrophysics
+- **Slug:** `astrophysics`
+- **Synonyms:** Astronomical Physics
+- **Prerequisites:**
+  - `astronomy` (required) - Astronomy foundation required
+  - `physics` (required) - Physics essential for astrophysics
+  - `calculus-2` (required) - Advanced mathematics needed
+
+### Cosmology
+- **Slug:** `cosmology`
+- **Synonyms:** Physical Cosmology
+- **Prerequisites:**
+  - `astrophysics` (required) - Astrophysics foundation essential
+  - `relativity` (recommended) - Relativity helpful for cosmology
+
+### Planetary Science
+- **Slug:** `planetary-science`
+- **Synonyms:** Planetology
+- **Prerequisites:**
+  - `astronomy` (required) - Astronomy foundation required
+  - `geology` (recommended) - Geology provides useful context
 
 ---
 
@@ -552,6 +607,68 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## biology
+
+### Biology
+- **Slug:** `biology`
+- **Synonyms:** General Biology, Life Science
+- **Prerequisites:**
+  - `chemistry` (recommended) - Chemistry helpful for understanding biological processes
+
+### Botany
+- **Slug:** `botany`
+- **Synonyms:** Plant Biology, Plant Science
+- **Prerequisites:**
+  - `biology` (required) - General biology foundation required
+
+### Cell Biology
+- **Slug:** `cell-biology`
+- **Synonyms:** Cellular Biology, Cytology
+- **Prerequisites:**
+  - `biology` (required) - General biology foundation required
+  - `chemistry` (recommended) - Chemistry helpful for cellular processes
+
+### Ecology
+- **Slug:** `ecology`
+- **Synonyms:** Environmental Biology
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+
+### Evolutionary Biology
+- **Slug:** `evolutionary-biology`
+- **Synonyms:** Evolution
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+  - `genetics` (recommended) - Genetics helpful for understanding evolution
+
+### Marine Biology
+- **Slug:** `marine-biology`
+- **Synonyms:** Ocean Biology
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+  - `ecology` (recommended) - Ecology helpful for marine biology
+
+### Microbiology
+- **Slug:** `microbiology`
+- **Synonyms:** Bacteriology, Virology
+- **Prerequisites:**
+  - `biology` (required) - General biology foundation required
+
+### Molecular Biology
+- **Slug:** `molecular-biology`
+- **Synonyms:** Molecular Bio
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+  - `biochemistry` (required) - Biochemistry essential for molecular biology
+
+### Zoology
+- **Slug:** `zoology`
+- **Synonyms:** Animal Biology
+- **Prerequisites:**
+  - `biology` (required) - General biology foundation required
+
+---
+
 ## blockchain-web3
 
 ### Alchemy
@@ -817,6 +934,57 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** Multivariable Calculus, Calculus 3, Vector Calculus, Multivariate Calculus
 - **Prerequisites:**
   - `calculus-2` (required) - Calculus II concepts extend naturally to multiple variables
+
+---
+
+## chemistry
+
+### Analytical Chemistry
+- **Slug:** `analytical-chemistry`
+- **Synonyms:** Chemical Analysis
+- **Prerequisites:**
+  - `chemistry` (required) - General chemistry foundation required
+
+### Biochemistry
+- **Slug:** `biochemistry`
+- **Synonyms:** Biological Chemistry
+- **Prerequisites:**
+  - `chemistry` (required) - General chemistry required
+  - `organic-chemistry` (required) - Organic chemistry essential for biochemistry
+  - `biology` (recommended) - Biology background helpful
+
+### Chemistry
+- **Slug:** `chemistry`
+- **Synonyms:** General Chemistry, Chemical Science
+- **Prerequisites:**
+  - `algebra-2` (required) - Algebra essential for chemistry calculations
+
+### Inorganic Chemistry
+- **Slug:** `inorganic-chemistry`
+- **Synonyms:** Inorganic
+- **Prerequisites:**
+  - `chemistry` (required) - General chemistry foundation required
+
+### Materials Science
+- **Slug:** `materials-science`
+- **Synonyms:** Materials Engineering
+- **Prerequisites:**
+  - `chemistry` (required) - Chemistry foundation required
+  - `physics` (recommended) - Physics helpful for materials science
+
+### Organic Chemistry
+- **Slug:** `organic-chemistry`
+- **Synonyms:** Orgo, Organic
+- **Prerequisites:**
+  - `chemistry` (required) - General chemistry foundation required
+
+### Physical Chemistry
+- **Slug:** `physical-chemistry`
+- **Synonyms:** P-Chem
+- **Prerequisites:**
+  - `chemistry` (required) - General chemistry required
+  - `calculus-1` (required) - Calculus essential for physical chemistry
+  - `physics` (recommended) - Physics background helpful
 
 ---
 
@@ -2136,6 +2304,76 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## cognitive-skills
+
+### Analytical Thinking
+- **Slug:** `analytical-thinking`
+- **Synonyms:** Analysis Skills, Data Analysis Thinking, Logical Analysis
+
+### Creative Thinking
+- **Slug:** `creative-thinking`
+- **Synonyms:** Innovation, Creative Problem Solving, Ideation
+
+### Decision Making
+- **Slug:** `decision-making`
+- **Synonyms:** Decision Skills, Choice Making, Judgment
+- **Prerequisites:**
+  - `critical-thinking-skill` (recommended) - Critical thinking enhances decision quality
+
+### Lateral Thinking
+- **Slug:** `lateral-thinking`
+- **Synonyms:** Divergent Thinking, Outside-the-Box Thinking, Non-Linear Thinking
+- **Alternatives:**
+  - `creative-thinking` (similar)
+
+### Systems Thinking
+- **Slug:** `systems-thinking`
+- **Synonyms:** Holistic Thinking, System Analysis, Big Picture Thinking
+
+---
+
+## communication-interpersonal
+
+### Active Listening
+- **Slug:** `active-listening`
+- **Synonyms:** Attentive Listening, Mindful Listening, Deep Listening
+
+### Assertiveness
+- **Slug:** `assertiveness`
+- **Synonyms:** Assertive Communication, Self-Assertion, Confident Expression
+
+### Body Language
+- **Slug:** `body-language`
+- **Synonyms:** Nonverbal Communication, Kinesics, Physical Communication
+
+### Communication Skills
+- **Slug:** `communication-skills-personal`
+- **Synonyms:** Personal Communication, Interpersonal Communication, Effective Communication
+
+### Conversation Skills
+- **Slug:** `conversation-skills`
+- **Synonyms:** Conversational Skills, Dialogue Skills, Small Talk
+
+### Empathy
+- **Slug:** `empathy`
+- **Synonyms:** Empathic Understanding, Emotional Empathy, Compassion
+
+### Interpersonal Skills
+- **Slug:** `interpersonal-skills`
+- **Synonyms:** People Skills, Social Intelligence, Relationship Skills
+
+### Relationship Building
+- **Slug:** `relationship-building`
+- **Synonyms:** Network Building, Connection Building, Rapport Building
+- **Prerequisites:**
+  - `interpersonal-skills` (recommended) - Strong interpersonal skills support relationship building
+
+### Social Skills
+- **Slug:** `social-skills`
+- **Synonyms:** Social Competence, Social Awareness, Social Interaction
+
+---
+
 ## corporate-finance
 
 ### Corporate Budgeting
@@ -2183,6 +2421,14 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Prerequisites:**
   - `investing` (required) - VC is a specialized form of investing
   - `entrepreneurship` (recommended) - Understanding startups helps in VC investing
+
+---
+
+## critical-thinking
+
+### Critical Thinking
+- **Slug:** `critical-thinking-skill`
+- **Synonyms:** Analytical Reasoning, Logical Thinking, Rational Analysis
 
 ---
 
@@ -3493,6 +3739,71 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## environmental-science
+
+### Climate Science
+- **Slug:** `climate-science`
+- **Synonyms:** Climatology
+- **Prerequisites:**
+  - `environmental-science` (required) - Environmental science foundation required
+  - `meteorology` (recommended) - Meteorology helpful
+
+### Conservation Biology
+- **Slug:** `conservation-biology`
+- **Synonyms:** Conservation Science
+- **Prerequisites:**
+  - `ecology` (required) - Ecology foundation required
+  - `environmental-science` (recommended) - Environmental science helpful
+
+### Environmental Chemistry
+- **Slug:** `environmental-chemistry`
+- **Synonyms:** Geochemistry
+- **Prerequisites:**
+  - `chemistry` (required) - Chemistry foundation required
+  - `environmental-science` (recommended) - Environmental science helpful
+
+### Environmental Science
+- **Slug:** `environmental-science`
+- **Synonyms:** Environmental Studies
+- **Prerequisites:**
+  - `biology` (recommended) - Biology helpful
+  - `chemistry` (recommended) - Chemistry helpful
+
+### Geology
+- **Slug:** `geology`
+- **Synonyms:** Earth Science, Geoscience
+- **Prerequisites:**
+  - `chemistry` (recommended) - Chemistry helpful for geology
+  - `physics` (recommended) - Physics helpful for geology
+
+### Meteorology
+- **Slug:** `meteorology`
+- **Synonyms:** Atmospheric Science, Weather Science
+- **Prerequisites:**
+  - `physics` (recommended) - Physics helpful for meteorology
+
+### Oceanography
+- **Slug:** `oceanography`
+- **Synonyms:** Marine Science, Ocean Science
+- **Prerequisites:**
+  - `environmental-science` (recommended) - Environmental science helpful
+  - `marine-biology` (recommended) - Marine biology helpful
+
+### Paleontology
+- **Slug:** `paleontology`
+- **Synonyms:** Fossil Science
+- **Prerequisites:**
+  - `geology` (required) - Geology foundation required
+  - `biology` (recommended) - Biology helpful for understanding ancient life
+
+### Sustainability
+- **Slug:** `sustainability`
+- **Synonyms:** Sustainable Development
+- **Prerequisites:**
+  - `environmental-science` (recommended) - Environmental science helpful
+
+---
+
 ## fiber-arts-crafts
 
 ### Appliqué
@@ -4443,6 +4754,37 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
   - `csharp` (required) - C# is the language for XNA
 - **Alternatives:**
   - `monogame` (similar)
+
+---
+
+## genetics
+
+### Genetics
+- **Slug:** `genetics`
+- **Synonyms:** Classical Genetics, Heredity
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+
+### Genomics
+- **Slug:** `genomics`
+- **Synonyms:** Genome Science
+- **Prerequisites:**
+  - `molecular-genetics` (required) - Molecular genetics foundation required
+  - `biochemistry` (recommended) - Biochemistry helpful
+
+### Molecular Genetics
+- **Slug:** `molecular-genetics`
+- **Synonyms:** Gene Expression
+- **Prerequisites:**
+  - `genetics` (required) - Basic genetics required
+  - `molecular-biology` (required) - Molecular biology essential
+
+### Population Genetics
+- **Slug:** `population-genetics`
+- **Synonyms:** Quantitative Genetics
+- **Prerequisites:**
+  - `genetics` (required) - Basic genetics required
+  - `statistics` (recommended) - Statistics helpful for population genetics
 
 ---
 
@@ -5661,6 +6003,49 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## life-sciences
+
+### Anatomy
+- **Slug:** `anatomy`
+- **Synonyms:** Human Anatomy, Gross Anatomy
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+
+### Comparative Anatomy
+- **Slug:** `comparative-anatomy`
+- **Synonyms:** Morphology
+- **Prerequisites:**
+  - `anatomy` (required) - Anatomy foundation required
+  - `zoology` (recommended) - Zoology helpful
+
+### Exercise Physiology
+- **Slug:** `exercise-physiology`
+- **Synonyms:** Sports Physiology
+- **Prerequisites:**
+  - `physiology` (required) - Physiology foundation required
+
+### Histology
+- **Slug:** `histology`
+- **Synonyms:** Microscopic Anatomy
+- **Prerequisites:**
+  - `anatomy` (required) - Anatomy foundation required
+  - `cell-biology` (recommended) - Cell biology helpful
+
+### Physiology
+- **Slug:** `physiology`
+- **Synonyms:** Human Physiology
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+  - `anatomy` (recommended) - Anatomy helpful for physiology
+
+### Plant Physiology
+- **Slug:** `plant-physiology`
+- **Synonyms:** Phytophysiology
+- **Prerequisites:**
+  - `botany` (required) - Botany foundation required
+
+---
+
 ## linear-algebra
 
 ### Linear Algebra
@@ -5836,6 +6221,90 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** SMM, Social Marketing, Social Media Strategy, Social Media Management
 - **Prerequisites:**
   - `digital-marketing` (recommended) - Social media is a digital marketing channel
+
+---
+
+## memory-learning
+
+### Active Recall
+- **Slug:** `active-recall`
+- **Synonyms:** Retrieval Practice, Active Retrieval, Memory Retrieval
+- **Alternatives:**
+  - `spaced-repetition` (related)
+
+### Learning Strategies
+- **Slug:** `learning-strategies`
+- **Synonyms:** Learning Methods, Learning Techniques, Study Strategies
+
+### Memory Improvement
+- **Slug:** `memory-improvement`
+- **Synonyms:** Memory Enhancement, Memory Training, Mnemonics
+
+### Mind Mapping
+- **Slug:** `mind-mapping`
+- **Synonyms:** Concept Mapping, Brain Mapping, Thought Mapping
+
+### Note-Taking
+- **Slug:** `note-taking`
+- **Synonyms:** Note Writing, Information Recording, Note Making
+
+### Reading Comprehension
+- **Slug:** `reading-comprehension`
+- **Synonyms:** Reading Understanding, Text Comprehension, Reading Skills
+
+### Spaced Repetition
+- **Slug:** `spaced-repetition`
+- **Synonyms:** SRS, Spaced Review, Interval Learning
+
+### Speed Reading
+- **Slug:** `speed-reading`
+- **Synonyms:** Rapid Reading, Fast Reading, Quick Reading
+
+### Study Skills
+- **Slug:** `study-skills`
+- **Synonyms:** Learning Skills, Academic Skills, Study Techniques
+
+---
+
+## mindfulness-wellness
+
+### Emotional Regulation
+- **Slug:** `emotional-regulation`
+- **Synonyms:** Emotion Control, Emotional Management, Affect Regulation
+- **Prerequisites:**
+  - `self-awareness` (recommended) - Self-awareness is foundational for emotional regulation
+
+### Gratitude Practice
+- **Slug:** `gratitude-practice`
+- **Synonyms:** Gratitude, Thankfulness, Appreciation Practice
+
+### Mindfulness
+- **Slug:** `mindfulness-practice`
+- **Synonyms:** Mindful Awareness, Present Moment Awareness, Conscious Attention
+
+### Positive Psychology
+- **Slug:** `positive-psychology`
+- **Synonyms:** Positive Mental Health, Well-Being Psychology, Flourishing
+
+### Resilience
+- **Slug:** `resilience`
+- **Synonyms:** Mental Toughness, Psychological Resilience, Adaptability
+
+### Self-Awareness
+- **Slug:** `self-awareness`
+- **Synonyms:** Self-Knowledge, Personal Awareness, Introspection
+
+### Self-Compassion
+- **Slug:** `self-compassion`
+- **Synonyms:** Self-Kindness, Self-Care Mindset, Inner Compassion
+
+### Self-Confidence
+- **Slug:** `self-confidence`
+- **Synonyms:** Confidence Building, Self-Esteem, Self-Assurance
+
+### Stress Management
+- **Slug:** `stress-management`
+- **Synonyms:** Stress Reduction, Stress Relief, Stress Coping
 
 ---
 
@@ -6641,6 +7110,44 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## neuroscience
+
+### Behavioral Neuroscience
+- **Slug:** `behavioral-neuroscience`
+- **Synonyms:** Biopsychology, Psychobiology
+- **Prerequisites:**
+  - `neuroscience` (required) - Neuroscience foundation required
+
+### Cognitive Neuroscience
+- **Slug:** `cognitive-neuroscience`
+- **Synonyms:** Cognitive Brain Science
+- **Prerequisites:**
+  - `neuroscience` (required) - Neuroscience foundation required
+
+### Computational Neuroscience
+- **Slug:** `computational-neuroscience`
+- **Synonyms:** Theoretical Neuroscience
+- **Prerequisites:**
+  - `neuroscience` (required) - Neuroscience foundation required
+  - `python` (recommended) - Programming helpful for computational modeling
+  - `linear-algebra` (recommended) - Math helpful for modeling
+
+### Neuroanatomy
+- **Slug:** `neuroanatomy`
+- **Synonyms:** Neural Anatomy
+- **Prerequisites:**
+  - `anatomy` (required) - Anatomy foundation required
+  - `neuroscience` (recommended) - Neuroscience helpful
+
+### Neuroscience
+- **Slug:** `neuroscience`
+- **Synonyms:** Brain Science, Neural Science
+- **Prerequisites:**
+  - `biology` (required) - Biology foundation required
+  - `chemistry` (recommended) - Chemistry helpful for understanding neural processes
+
+---
+
 ## number-theory
 
 ### Number Theory
@@ -6749,6 +7256,14 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 
 ---
 
+## personal-development
+
+### Growth Mindset
+- **Slug:** `growth-mindset`
+- **Synonyms:** Learning Mindset, Growth Orientation, Resilience
+
+---
+
 ## personal-finance
 
 ### Personal Budgeting
@@ -6792,6 +7307,96 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### OBS Studio
 - **Slug:** `obs-studio`
 - **Synonyms:** OBS, Open Broadcaster Software
+
+---
+
+## physics
+
+### Acoustics
+- **Slug:** `acoustics`
+- **Synonyms:** Sound Physics
+- **Prerequisites:**
+  - `physics` (required) - Basic physics understanding required
+  - `trigonometry` (recommended) - Wave mathematics helpful
+
+### Classical Mechanics
+- **Slug:** `classical-mechanics`
+- **Synonyms:** Newtonian Mechanics, Mechanics
+- **Prerequisites:**
+  - `physics` (required) - Basic physics understanding required
+  - `calculus-1` (required) - Calculus essential for classical mechanics
+
+### Electromagnetism
+- **Slug:** `electromagnetism`
+- **Synonyms:** Electrodynamics, E&M, Electricity and Magnetism
+- **Prerequisites:**
+  - `physics` (required) - Basic physics understanding required
+  - `calculus-2` (required) - Multivariable calculus needed for field equations
+
+### Fluid Dynamics
+- **Slug:** `fluid-dynamics`
+- **Synonyms:** Fluid Mechanics, Hydrodynamics
+- **Prerequisites:**
+  - `classical-mechanics` (required) - Mechanics foundation required
+  - `calculus-2` (required) - Calculus essential for fluid equations
+
+### Nuclear Physics
+- **Slug:** `nuclear-physics`
+- **Synonyms:** Atomic Physics
+- **Prerequisites:**
+  - `quantum-mechanics` (required) - Quantum mechanics foundation required
+  - `physics` (required) - Strong physics background required
+
+### Optics
+- **Slug:** `optics`
+- **Synonyms:** Photonics, Light Physics
+- **Prerequisites:**
+  - `physics` (required) - Basic physics understanding required
+  - `trigonometry` (recommended) - Trigonometry useful for optics
+
+### Particle Physics
+- **Slug:** `particle-physics`
+- **Synonyms:** High Energy Physics, Elementary Particle Physics
+- **Prerequisites:**
+  - `quantum-mechanics` (required) - Quantum mechanics essential
+  - `nuclear-physics` (recommended) - Nuclear physics provides useful context
+
+### Physics
+- **Slug:** `physics`
+- **Synonyms:** General Physics, Physical Science
+- **Prerequisites:**
+  - `calculus-1` (recommended) - Calculus helpful for understanding physics concepts
+  - `algebra-2` (required) - Algebra essential for physics problem-solving
+
+### Quantum Mechanics
+- **Slug:** `quantum-mechanics`
+- **Synonyms:** Quantum Physics, Quantum Theory, QM
+- **Prerequisites:**
+  - `physics` (required) - Strong physics foundation required
+  - `linear-algebra` (required) - Linear algebra essential for quantum mechanics
+  - `calculus-3` (required) - Advanced calculus needed
+
+### Relativity
+- **Slug:** `relativity`
+- **Synonyms:** Theory of Relativity, General Relativity, Special Relativity, Einsteinian Physics
+- **Prerequisites:**
+  - `classical-mechanics` (required) - Classical mechanics foundation required
+  - `calculus-3` (required) - Advanced mathematics essential
+
+### Thermodynamics
+- **Slug:** `thermodynamics`
+- **Synonyms:** Thermal Physics, Statistical Mechanics
+- **Prerequisites:**
+  - `physics` (required) - Basic physics understanding required
+  - `calculus-1` (recommended) - Calculus helpful for thermodynamics
+
+---
+
+## problem-solving
+
+### Problem Solving
+- **Slug:** `problem-solving-skill`
+- **Synonyms:** Solution Finding, Issue Resolution, Problem Analysis
 
 ---
 
@@ -6852,6 +7457,58 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - **Synonyms:** User Story Writing, Story Mapping, Acceptance Criteria
 - **Prerequisites:**
   - `agile` (recommended) - User stories are commonly used in Agile development
+
+---
+
+## productivity-time-management
+
+### Focus and Concentration
+- **Slug:** `focus-concentration`
+- **Synonyms:** Deep Focus, Concentration Skills, Attention Management
+
+### Getting Things Done
+- **Slug:** `getting-things-done`
+- **Synonyms:** GTD, GTD Method, GTD System
+- **Prerequisites:**
+  - `task-management` (recommended) - Understanding task management concepts helps with GTD
+- **Alternatives:**
+  - `time-blocking` (similar)
+
+### Goal Setting
+- **Slug:** `goal-setting`
+- **Synonyms:** Goal Planning, Objective Setting, SMART Goals
+
+### Habit Formation
+- **Slug:** `habit-formation`
+- **Synonyms:** Habit Building, Habit Development, Behavior Change
+
+### Pomodoro Technique
+- **Slug:** `pomodoro-technique`
+- **Synonyms:** Pomodoro, Pomodoro Method, Time Boxing
+- **Alternatives:**
+  - `time-blocking` (similar)
+
+### Procrastination Management
+- **Slug:** `procrastination-management`
+- **Synonyms:** Beating Procrastination, Overcoming Procrastination, Anti-Procrastination
+
+### Productivity
+- **Slug:** `productivity`
+- **Synonyms:** Personal Productivity, Efficiency, Work Effectiveness
+
+### Task Management
+- **Slug:** `task-management`
+- **Synonyms:** Task Organization, To-Do Management, Task Prioritization
+
+### Time Blocking
+- **Slug:** `time-blocking`
+- **Synonyms:** Calendar Blocking, Time Batching, Scheduled Focus
+- **Prerequisites:**
+  - `time-management` (recommended) - Basic time management helps with time blocking implementation
+
+### Time Management
+- **Slug:** `time-management`
+- **Synonyms:** Time Organization, Time Planning, Schedule Management
 
 ---
 

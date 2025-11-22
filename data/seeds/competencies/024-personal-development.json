@@ -1,0 +1,463 @@
+{
+  "competencies": [
+    {
+      "name": "Time Management",
+      "slug": "time-management",
+      "description": "Effectively organizing and prioritizing tasks to maximize productivity",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Time Organization", "Time Planning", "Schedule Management"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Goal Setting",
+      "slug": "goal-setting",
+      "description": "Defining clear, achievable objectives and creating action plans",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Goal Planning", "Objective Setting", "SMART Goals"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Productivity",
+      "slug": "productivity",
+      "description": "Maximizing output and efficiency in work and personal tasks",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Personal Productivity", "Efficiency", "Work Effectiveness"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Task Management",
+      "slug": "task-management",
+      "description": "Organizing, prioritizing, and completing tasks effectively",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Task Organization", "To-Do Management", "Task Prioritization"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Time Blocking",
+      "slug": "time-blocking",
+      "description": "Scheduling specific time periods for focused work on particular tasks",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Calendar Blocking", "Time Batching", "Scheduled Focus"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "time-management",
+          "prerequisite_level": "recommended",
+          "notes": "Basic time management helps with time blocking implementation"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Getting Things Done",
+      "slug": "getting-things-done",
+      "description": "David Allen's productivity methodology for stress-free task management",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["GTD", "GTD Method", "GTD System"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "task-management",
+          "prerequisite_level": "recommended",
+          "notes": "Understanding task management concepts helps with GTD"
+        }
+      ],
+      "alternatives": [
+        {
+          "alternative_slug": "time-blocking",
+          "relationship_type": "similar",
+          "notes": "Both are productivity methodologies with different approaches"
+        }
+      ]
+    },
+    {
+      "name": "Pomodoro Technique",
+      "slug": "pomodoro-technique",
+      "description": "Time management method using timed work intervals and breaks",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Pomodoro", "Pomodoro Method", "Time Boxing"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "time-blocking",
+          "relationship_type": "similar",
+          "notes": "Both structure time for focused work"
+        }
+      ]
+    },
+    {
+      "name": "Habit Formation",
+      "slug": "habit-formation",
+      "description": "Building positive habits and breaking negative ones",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Habit Building", "Habit Development", "Behavior Change"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Focus and Concentration",
+      "slug": "focus-concentration",
+      "description": "Developing sustained attention and minimizing distractions",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Deep Focus", "Concentration Skills", "Attention Management"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Procrastination Management",
+      "slug": "procrastination-management",
+      "description": "Overcoming delays and building momentum for task completion",
+      "category_slug": "productivity-time-management",
+      "synonyms": ["Beating Procrastination", "Overcoming Procrastination", "Anti-Procrastination"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Critical Thinking",
+      "slug": "critical-thinking-skill",
+      "description": "Analyzing information objectively and making reasoned judgments",
+      "category_slug": "critical-thinking",
+      "synonyms": ["Analytical Reasoning", "Logical Thinking", "Rational Analysis"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Problem Solving",
+      "slug": "problem-solving-skill",
+      "description": "Identifying issues and developing effective solutions",
+      "category_slug": "problem-solving",
+      "synonyms": ["Solution Finding", "Issue Resolution", "Problem Analysis"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Creative Thinking",
+      "slug": "creative-thinking",
+      "description": "Generating innovative ideas and novel solutions",
+      "category_slug": "cognitive-skills",
+      "synonyms": ["Innovation", "Creative Problem Solving", "Ideation"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Lateral Thinking",
+      "slug": "lateral-thinking",
+      "description": "Approaching problems from unconventional angles",
+      "category_slug": "cognitive-skills",
+      "synonyms": ["Divergent Thinking", "Outside-the-Box Thinking", "Non-Linear Thinking"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "creative-thinking",
+          "relationship_type": "similar",
+          "notes": "Both involve innovative thinking approaches"
+        }
+      ]
+    },
+    {
+      "name": "Systems Thinking",
+      "slug": "systems-thinking",
+      "description": "Understanding complex interconnected systems and relationships",
+      "category_slug": "cognitive-skills",
+      "synonyms": ["Holistic Thinking", "System Analysis", "Big Picture Thinking"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Decision Making",
+      "slug": "decision-making",
+      "description": "Making effective choices through analysis and judgment",
+      "category_slug": "cognitive-skills",
+      "synonyms": ["Decision Skills", "Choice Making", "Judgment"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "critical-thinking-skill",
+          "prerequisite_level": "recommended",
+          "notes": "Critical thinking enhances decision quality"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Analytical Thinking",
+      "slug": "analytical-thinking",
+      "description": "Breaking down complex information into components for examination",
+      "category_slug": "cognitive-skills",
+      "synonyms": ["Analysis Skills", "Data Analysis Thinking", "Logical Analysis"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Memory Improvement",
+      "slug": "memory-improvement",
+      "description": "Techniques and strategies to enhance memory retention and recall",
+      "category_slug": "memory-learning",
+      "synonyms": ["Memory Enhancement", "Memory Training", "Mnemonics"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Speed Reading",
+      "slug": "speed-reading",
+      "description": "Reading faster while maintaining comprehension",
+      "category_slug": "memory-learning",
+      "synonyms": ["Rapid Reading", "Fast Reading", "Quick Reading"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Note-Taking",
+      "slug": "note-taking",
+      "description": "Capturing and organizing information effectively",
+      "category_slug": "memory-learning",
+      "synonyms": ["Note Writing", "Information Recording", "Note Making"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Study Skills",
+      "slug": "study-skills",
+      "description": "Effective learning and exam preparation techniques",
+      "category_slug": "memory-learning",
+      "synonyms": ["Learning Skills", "Academic Skills", "Study Techniques"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Learning Strategies",
+      "slug": "learning-strategies",
+      "description": "Methods for efficient and effective learning",
+      "category_slug": "memory-learning",
+      "synonyms": ["Learning Methods", "Learning Techniques", "Study Strategies"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Spaced Repetition",
+      "slug": "spaced-repetition",
+      "description": "Learning technique using increasing intervals for review",
+      "category_slug": "memory-learning",
+      "synonyms": ["SRS", "Spaced Review", "Interval Learning"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Mind Mapping",
+      "slug": "mind-mapping",
+      "description": "Visual diagramming technique for organizing information",
+      "category_slug": "memory-learning",
+      "synonyms": ["Concept Mapping", "Brain Mapping", "Thought Mapping"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Active Recall",
+      "slug": "active-recall",
+      "description": "Learning technique involving retrieving information from memory",
+      "category_slug": "memory-learning",
+      "synonyms": ["Retrieval Practice", "Active Retrieval", "Memory Retrieval"],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "spaced-repetition",
+          "relationship_type": "related",
+          "notes": "Often used together for effective learning"
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "slug": "reading-comprehension",
+      "description": "Understanding and retaining written information",
+      "category_slug": "memory-learning",
+      "synonyms": ["Reading Understanding", "Text Comprehension", "Reading Skills"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Communication Skills",
+      "slug": "communication-skills-personal",
+      "description": "Effective verbal and written communication in personal contexts",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Personal Communication", "Interpersonal Communication", "Effective Communication"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Active Listening",
+      "slug": "active-listening",
+      "description": "Fully concentrating and understanding what others say",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Attentive Listening", "Mindful Listening", "Deep Listening"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Assertiveness",
+      "slug": "assertiveness",
+      "description": "Expressing needs and opinions confidently and respectfully",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Assertive Communication", "Self-Assertion", "Confident Expression"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Empathy",
+      "slug": "empathy",
+      "description": "Understanding and sharing the feelings of others",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Empathic Understanding", "Emotional Empathy", "Compassion"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Interpersonal Skills",
+      "slug": "interpersonal-skills",
+      "description": "Building and maintaining positive relationships",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["People Skills", "Social Intelligence", "Relationship Skills"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Social Skills",
+      "slug": "social-skills",
+      "description": "Navigating social situations and building connections",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Social Competence", "Social Awareness", "Social Interaction"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Body Language",
+      "slug": "body-language",
+      "description": "Understanding and using nonverbal communication",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Nonverbal Communication", "Kinesics", "Physical Communication"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Conversation Skills",
+      "slug": "conversation-skills",
+      "description": "Engaging in meaningful and effective dialogue",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Conversational Skills", "Dialogue Skills", "Small Talk"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Relationship Building",
+      "slug": "relationship-building",
+      "description": "Developing and maintaining meaningful connections",
+      "category_slug": "communication-interpersonal",
+      "synonyms": ["Network Building", "Connection Building", "Rapport Building"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "interpersonal-skills",
+          "prerequisite_level": "recommended",
+          "notes": "Strong interpersonal skills support relationship building"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Mindfulness",
+      "slug": "mindfulness-practice",
+      "description": "Present-moment awareness and non-judgmental attention",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Mindful Awareness", "Present Moment Awareness", "Conscious Attention"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Stress Management",
+      "slug": "stress-management",
+      "description": "Techniques for coping with and reducing stress",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Stress Reduction", "Stress Relief", "Stress Coping"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Self-Awareness",
+      "slug": "self-awareness",
+      "description": "Understanding one's own emotions, strengths, and weaknesses",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Self-Knowledge", "Personal Awareness", "Introspection"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Emotional Regulation",
+      "slug": "emotional-regulation",
+      "description": "Managing and responding to emotions effectively",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Emotion Control", "Emotional Management", "Affect Regulation"],
+      "prerequisites": [
+        {
+          "prerequisite_slug": "self-awareness",
+          "prerequisite_level": "recommended",
+          "notes": "Self-awareness is foundational for emotional regulation"
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Resilience",
+      "slug": "resilience",
+      "description": "Bouncing back from setbacks and adversity",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Mental Toughness", "Psychological Resilience", "Adaptability"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Self-Compassion",
+      "slug": "self-compassion",
+      "description": "Treating oneself with kindness and understanding",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Self-Kindness", "Self-Care Mindset", "Inner Compassion"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Gratitude Practice",
+      "slug": "gratitude-practice",
+      "description": "Cultivating appreciation and thankfulness",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Gratitude", "Thankfulness", "Appreciation Practice"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Positive Psychology",
+      "slug": "positive-psychology",
+      "description": "Focusing on strengths, well-being, and flourishing",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Positive Mental Health", "Well-Being Psychology", "Flourishing"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Self-Confidence",
+      "slug": "self-confidence",
+      "description": "Building trust in one's abilities and worth",
+      "category_slug": "mindfulness-wellness",
+      "synonyms": ["Confidence Building", "Self-Esteem", "Self-Assurance"],
+      "prerequisites": [],
+      "alternatives": []
+    },
+    {
+      "name": "Growth Mindset",
+      "slug": "growth-mindset",
+      "description": "Approaching challenges with a belief in one's ability to learn and improve",
+      "category_slug": "personal-development",
+      "synonyms": ["Learning Mindset", "Growth Orientation", "Resilience"],
+      "prerequisites": [],
+      "alternatives": []
+    }
+  ]
+}
