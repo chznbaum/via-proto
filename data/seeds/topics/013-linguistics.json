@@ -92,6 +92,7 @@
         {"competency_slug": "translation", "is_primary": true}
       ]
     },
+
     {
       "name": "Interpretation skills and techniques",
       "slug": "interpretation-skills-and-techniques",

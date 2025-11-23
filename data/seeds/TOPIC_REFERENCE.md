@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-23T03:02:58.220Z
-**Total Topics:** 2618
+**Generated:** 2025-11-23T03:09:54.899Z
+**Total Topics:** 2620
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -54,7 +54,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [leadership-communication](#leadership-communication) (23)
 - [life-sciences](#life-sciences) (22)
 - [linear-algebra](#linear-algebra) (7)
-- [linguistics](#linguistics) (32)
+- [linguistics](#linguistics) (34)
 - [marketing-sales](#marketing-sales) (45)
 - [meditation](#meditation) (11)
 - [memory-learning](#memory-learning) (18)
@@ -10040,6 +10040,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `language-pedagogy`
 - **Source File:** 013-linguistics.json
 
+### Literary translation techniques
+- **Slug:** `literary-translation-techniques`
+- **Description:** Translate literature while preserving style, voice, and cultural nuances
+- **Primary Competencies:** `translation`
+- **Source File:** 013-linguistics.json
+
 ### Phonetics and pronunciation fundamentals
 - **Slug:** `phonetics-and-pronunciation-fundamentals`
 - **Description:** Study speech sounds and articulation to understand how languages are pronounced
@@ -10082,6 +10088,13 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `spanish-english-interpretation`
 - **Description:** Interpret between Spanish and English in professional and community settings
 - **Primary Competencies:** `interpretation`
+- **Supporting Competencies:** `spanish`, `english`
+- **Source File:** 013-linguistics.json
+
+### Spanish-English translation
+- **Slug:** `spanish-english-translation`
+- **Description:** Translate between Spanish and English for professional or personal contexts
+- **Primary Competencies:** `translation`
 - **Supporting Competencies:** `spanish`, `english`
 - **Source File:** 013-linguistics.json
 

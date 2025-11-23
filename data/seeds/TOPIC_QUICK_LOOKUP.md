@@ -1,7 +1,7 @@
 # Topic Quick Lookup
 
-**Generated:** 2025-11-23T03:02:58.216Z
-**Total Topics:** 2618
+**Generated:** 2025-11-23T03:09:54.894Z
+**Total Topics:** 2620
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -54,7 +54,7 @@ For detailed information (competencies, descriptions), see TOPIC_REFERENCE.md
 - **leadership-communication** (23)
 - **life-sciences** (22)
 - **linear-algebra** (7)
-- **linguistics** (32)
+- **linguistics** (34)
 - **marketing-sales** (45)
 - **meditation** (11)
 - **memory-learning** (18)
@@ -1583,6 +1583,7 @@ For detailed information (competencies, descriptions), see TOPIC_REFERENCE.md
 - `lipids-membranes` - Working with lipids and membranes (chemistry) [Primary: biochemistry]
 - `literary-essay-writing` - Writing literary essays (writing) [Primary: essay-writing]
 - `literary-translation-techniques` - Literary translation techniques (languages) [Primary: none]
+- `literary-translation-techniques` - Literary translation techniques (linguistics) [Primary: translation]
 - `live-game-streaming-production` - Live game streaming production (recreation-hobbies) [Primary: game-streaming]
 - `live-performance-ableton` - Live performance with Ableton Live (music) [Primary: ableton-live]
 - `live-sound-reinforcement` - Live sound reinforcement and mixing (music) [Primary: sound-engineering]
@@ -2365,6 +2366,7 @@ For detailed information (competencies, descriptions), see TOPIC_REFERENCE.md
 - `spaced-repetition-for-long-term-retention` - Spaced repetition for long-term retention (memory-learning) [Primary: spaced-repetition]
 - `spanish-english-interpretation` - Spanish-English interpretation (linguistics) [Primary: interpretation]
 - `spanish-english-translation` - Spanish-English translation (languages) [Primary: spanish]
+- `spanish-english-translation` - Spanish-English translation (linguistics) [Primary: translation]
 - `spectral-methods-pdes` - Understanding spectral methods for PDEs (applied-math) [Primary: fourier-analysis]
 - `spectroscopy-molecular-analysis` - Understanding spectroscopy and molecular analysis (chemistry) [Primary: analytical-chemistry]
 - `speech-recognition-whisper` - Speech recognition with OpenAI Whisper (data-science) [Primary: whisper]
