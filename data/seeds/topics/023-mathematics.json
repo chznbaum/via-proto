@@ -1,0 +1,2768 @@
+{
+  "topics": [
+    {
+      "name": "Building number sense and mental math skills",
+      "slug": "building-number-sense-mental-math",
+      "description": "Develop strong computational fluency and mental calculation strategies for everyday mathematics",
+      "category_slug": "arithmetic",
+      "competencies": [
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mastering fractions, decimals, and percentages",
+      "slug": "mastering-fractions-decimals-percentages",
+      "description": "Work confidently with different number representations and conversions",
+      "category_slug": "arithmetic",
+      "competencies": [
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving real-world problems with basic arithmetic",
+      "slug": "solving-real-world-arithmetic-problems",
+      "description": "Apply arithmetic to budgeting, shopping, cooking, and everyday calculations",
+      "category_slug": "arithmetic",
+      "competencies": [
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding variables and algebraic expressions",
+      "slug": "understanding-variables-expressions",
+      "description": "Build foundational algebra skills by working with variables, terms, and expressions",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "pre-algebra",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving basic equations and inequalities",
+      "slug": "solving-basic-equations-inequalities",
+      "description": "Learn to solve one-step and multi-step equations to prepare for algebra",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "pre-algebra",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with ratios, proportions, and percentages",
+      "slug": "ratios-proportions-percentages",
+      "description": "Understand and apply proportional reasoning to real-world situations",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "pre-algebra",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "arithmetic",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving linear equations and systems",
+      "slug": "solving-linear-equations-systems",
+      "description": "Master techniques for solving single equations and systems of linear equations",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pre-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Graphing linear functions and inequalities",
+      "slug": "graphing-linear-functions",
+      "description": "Visualize linear relationships through graphing and interpret slope and intercepts",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with polynomials and factoring",
+      "slug": "polynomials-factoring",
+      "description": "Understand polynomial expressions and master factoring techniques",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying linear algebra to real-world problems",
+      "slug": "applying-linear-algebra-real-world",
+      "description": "Use linear equations and systems to model and solve practical problems",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving and graphing quadratic functions",
+      "slug": "quadratic-functions",
+      "description": "Work with parabolas, quadratic equations, and their applications",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding exponential and logarithmic functions",
+      "slug": "exponential-logarithmic-functions",
+      "description": "Master exponential growth and decay, and logarithmic relationships",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing polynomial and rational functions",
+      "slug": "polynomial-rational-functions",
+      "description": "Understand complex polynomial and rational function behavior and graphing",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with radical expressions and equations",
+      "slug": "radical-expressions-equations",
+      "description": "Simplify radicals and solve equations involving square roots and nth roots",
+      "category_slug": "algebra",
+      "competencies": [
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding geometric shapes and their properties",
+      "slug": "geometric-shapes-properties",
+      "description": "Learn about angles, triangles, quadrilaterals, circles, and their characteristics",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "geometry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Calculating area, perimeter, and volume",
+      "slug": "area-perimeter-volume-calculations",
+      "description": "Apply formulas to find measurements of 2D and 3D shapes",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Proving geometric theorems",
+      "slug": "proving-geometric-theorems",
+      "description": "Develop logical reasoning skills through geometric proofs and deductive reasoning",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "euclidean-geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding transformations and symmetry",
+      "slug": "geometric-transformations-symmetry",
+      "description": "Work with translations, rotations, reflections, and dilations",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "geometry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying geometry to architecture and design",
+      "slug": "geometry-architecture-design",
+      "description": "Use geometric principles in architectural planning, interior design, and construction",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "euclidean-geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Mastering Euclidean geometry fundamentals",
+      "slug": "euclidean-geometry-fundamentals",
+      "description": "Study classical geometry including Euclid's axioms and postulates",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "euclidean-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Exploring non-Euclidean geometry",
+      "slug": "exploring-non-euclidean-geometry",
+      "description": "Understand hyperbolic and spherical geometries and their applications",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "non-euclidean-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "euclidean-geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying non-Euclidean geometry to cosmology and relativity",
+      "slug": "non-euclidean-geometry-cosmology",
+      "description": "Understand curved spacetime and the geometry of the universe",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "non-euclidean-geometry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with coordinate geometry and equations of shapes",
+      "slug": "coordinate-geometry-equations",
+      "description": "Use coordinate systems to represent and analyze geometric figures algebraically",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "analytic-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding conic sections through analytic geometry",
+      "slug": "conic-sections-analytic-geometry",
+      "description": "Study circles, ellipses, parabolas, and hyperbolas using algebraic equations",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "analytic-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding curves and surfaces in differential geometry",
+      "slug": "curves-surfaces-differential-geometry",
+      "description": "Study the geometry of smooth curves and surfaces using calculus",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "differential-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying differential geometry to general relativity",
+      "slug": "differential-geometry-relativity",
+      "description": "Understand the mathematical framework of Einstein's theory of gravity",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "differential-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding projective geometry and perspective",
+      "slug": "projective-geometry-perspective",
+      "description": "Study geometric properties preserved under projection and their applications to art",
+      "category_slug": "geometry",
+      "competencies": [
+        {
+          "competency_slug": "projective-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "euclidean-geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding trigonometric functions and the unit circle",
+      "slug": "trigonometric-functions-unit-circle",
+      "description": "Master sine, cosine, tangent, and their relationships on the unit circle",
+      "category_slug": "trigonometry",
+      "competencies": [
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving right triangles with trigonometry",
+      "slug": "solving-right-triangles",
+      "description": "Apply trigonometric ratios to find missing sides and angles in right triangles",
+      "category_slug": "trigonometry",
+      "competencies": [
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Proving and applying trigonometric identities",
+      "slug": "trigonometric-identities",
+      "description": "Work with fundamental identities and prove trigonometric equations",
+      "category_slug": "trigonometry",
+      "competencies": [
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying trigonometry to navigation and surveying",
+      "slug": "trigonometry-navigation-surveying",
+      "description": "Use trigonometric principles for distance measurement and position finding",
+      "category_slug": "trigonometry",
+      "competencies": [
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying trigonometry to physics and engineering",
+      "slug": "trigonometry-physics-engineering",
+      "description": "Use trigonometric functions to model waves, oscillations, and periodic phenomena",
+      "category_slug": "trigonometry",
+      "competencies": [
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mastering functions and their properties",
+      "slug": "functions-properties-precalculus",
+      "description": "Understand domain, range, composition, and transformations of functions",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "pre-calculus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding limits and continuity",
+      "slug": "limits-continuity-precalculus",
+      "description": "Build intuition for calculus concepts through limits and function behavior",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "pre-calculus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "algebra-2",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with parametric and polar equations",
+      "slug": "parametric-polar-equations",
+      "description": "Represent curves using alternative coordinate systems",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "pre-calculus",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "trigonometry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding derivatives and rates of change",
+      "slug": "derivatives-rates-of-change",
+      "description": "Master differentiation techniques and interpret derivatives as rates of change",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pre-calculus",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying derivatives to optimization problems",
+      "slug": "derivatives-optimization",
+      "description": "Find maximum and minimum values to solve real-world optimization problems",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding integration and the Fundamental Theorem of Calculus",
+      "slug": "integration-fundamental-theorem",
+      "description": "Master integration techniques and understand the connection between derivatives and integrals",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying calculus to physics and motion",
+      "slug": "calculus-physics-motion",
+      "description": "Use derivatives and integrals to analyze position, velocity, and acceleration",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mastering advanced integration techniques",
+      "slug": "advanced-integration-techniques",
+      "description": "Work with integration by parts, partial fractions, trigonometric substitution, and more",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding sequences and series",
+      "slug": "sequences-series-calculus",
+      "description": "Work with infinite sequences, series convergence, and power series",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying integration to area, volume, and arc length",
+      "slug": "integration-area-volume",
+      "description": "Use definite integrals to calculate geometric properties",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving basic differential equations",
+      "slug": "basic-differential-equations-calculus2",
+      "description": "Work with separable equations and first-order linear differential equations",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding multivariable functions and partial derivatives",
+      "slug": "multivariable-functions-partial-derivatives",
+      "description": "Work with functions of several variables and compute partial derivatives",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Evaluating double and triple integrals",
+      "slug": "double-triple-integrals",
+      "description": "Compute multiple integrals to find volumes and other properties",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding vector calculus and field theory",
+      "slug": "vector-calculus-field-theory",
+      "description": "Work with gradient, divergence, curl, and fundamental theorems of vector calculus",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying multivariable calculus to physics and engineering",
+      "slug": "multivariable-calculus-physics-engineering",
+      "description": "Use vector calculus to analyze electromagnetic fields, fluid flow, and more",
+      "category_slug": "calculus",
+      "competencies": [
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with vectors and matrices",
+      "slug": "vectors-matrices-basics",
+      "description": "Understand vector operations, matrix multiplication, and determinants",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving systems of linear equations with matrices",
+      "slug": "solving-linear-systems-matrices",
+      "description": "Use Gaussian elimination, matrix inverses, and other techniques to solve systems",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding eigenvalues and eigenvectors",
+      "slug": "eigenvalues-eigenvectors",
+      "description": "Work with eigenvalue problems and diagonalization of matrices",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding vector spaces and linear transformations",
+      "slug": "vector-spaces-linear-transformations",
+      "description": "Study abstract vector spaces, subspaces, and linear mappings",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying linear algebra to computer graphics",
+      "slug": "linear-algebra-computer-graphics",
+      "description": "Use matrices and transformations for 2D and 3D graphics rendering",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying linear algebra to machine learning",
+      "slug": "linear-algebra-machine-learning",
+      "description": "Use vectors and matrices for data representation and ML algorithms",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying linear algebra to data science",
+      "slug": "linear-algebra-data-science",
+      "description": "Use matrix operations for dimensionality reduction, PCA, and data analysis",
+      "category_slug": "linear-algebra",
+      "competencies": [
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving ordinary differential equations",
+      "slug": "solving-ordinary-differential-equations",
+      "description": "Master techniques for first and second-order ODEs and systems",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modeling physical systems with differential equations",
+      "slug": "modeling-physical-systems-odes",
+      "description": "Use differential equations to model springs, circuits, population growth, and more",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding Laplace transforms and their applications",
+      "slug": "laplace-transforms-applications",
+      "description": "Use Laplace transforms to solve differential equations and analyze systems",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying differential equations to engineering problems",
+      "slug": "differential-equations-engineering",
+      "description": "Model and analyze mechanical, electrical, and thermal systems",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving differential equations with linear algebra",
+      "slug": "solving-odes-linear-algebra",
+      "description": "Use matrix methods to solve systems of linear differential equations",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding partial differential equations",
+      "slug": "understanding-partial-differential-equations",
+      "description": "Work with PDEs and boundary value problems",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving the heat, wave, and Laplace equations",
+      "slug": "solving-heat-wave-laplace-equations",
+      "description": "Master classical PDEs using separation of variables and Fourier series",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying PDEs to physics and engineering",
+      "slug": "pdes-physics-engineering",
+      "description": "Model diffusion, wave propagation, and potential problems with PDEs",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding numerical methods for PDEs",
+      "slug": "numerical-methods-pdes",
+      "description": "Use finite difference and finite element methods to solve PDEs computationally",
+      "category_slug": "differential-equations",
+      "competencies": [
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding logic and proof techniques",
+      "slug": "logic-proof-techniques",
+      "description": "Master direct proof, contradiction, induction, and other mathematical reasoning methods",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with sets, relations, and functions",
+      "slug": "sets-relations-functions-discrete",
+      "description": "Understand foundational discrete structures and their properties",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "set-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding counting principles and combinatorics",
+      "slug": "counting-principles-discrete",
+      "description": "Master permutations, combinations, and the pigeonhole principle",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying discrete mathematics to computer science",
+      "slug": "discrete-math-computer-science",
+      "description": "Use discrete structures to analyze algorithms and computational problems",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding graphs and network structures",
+      "slug": "graphs-network-structures",
+      "description": "Work with vertices, edges, paths, cycles, and graph properties",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing graph algorithms and shortest paths",
+      "slug": "graph-algorithms-shortest-paths",
+      "description": "Implement and analyze algorithms like Dijkstra's and breadth-first search",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding graph coloring and matching",
+      "slug": "graph-coloring-matching",
+      "description": "Work with chromatic numbers, bipartite matching, and scheduling problems",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying graph theory to network optimization",
+      "slug": "graph-theory-network-optimization",
+      "description": "Use graphs to model and optimize transportation, communication, and flow networks",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying graph theory to social networks",
+      "slug": "graph-theory-social-networks",
+      "description": "Analyze relationships, influence, and community structure using graph theory",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Solving advanced counting problems",
+      "slug": "advanced-counting-problems",
+      "description": "Work with inclusion-exclusion, generating functions, and recurrence relations",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding generating functions",
+      "slug": "understanding-generating-functions",
+      "description": "Use generating functions to solve counting and recurrence problems",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying combinatorics to probability",
+      "slug": "combinatorics-probability",
+      "description": "Use counting techniques to calculate probabilities of events",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding combinatorial optimization",
+      "slug": "combinatorial-optimization",
+      "description": "Solve optimization problems on discrete structures",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding propositional and predicate logic",
+      "slug": "propositional-predicate-logic",
+      "description": "Work with logical statements, truth tables, and quantifiers",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "discrete-mathematics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Proving theorems with formal logic",
+      "slug": "proving-theorems-formal-logic",
+      "description": "Use deductive systems and proof techniques from mathematical logic",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding completeness and soundness in logic",
+      "slug": "completeness-soundness-logic",
+      "description": "Study the fundamental theorems of mathematical logic",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying logic to computer science and programming",
+      "slug": "logic-computer-science",
+      "description": "Use formal logic for program verification and automated reasoning",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "boolean-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding axiomatic set theory",
+      "slug": "axiomatic-set-theory",
+      "description": "Study ZFC axioms and the foundations of mathematics",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "set-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with functions and relations in set theory",
+      "slug": "functions-relations-set-theory",
+      "description": "Understand mappings, equivalence relations, and orderings from a set-theoretic perspective",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "set-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding cardinality and infinite sets",
+      "slug": "cardinality-infinite-sets",
+      "description": "Work with countable and uncountable infinities and Cantor's theorem",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "set-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding Boolean logic and algebra",
+      "slug": "boolean-logic-algebra",
+      "description": "Work with Boolean operations, truth tables, and logical equivalences",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "boolean-algebra",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mathematical-logic",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Simplifying Boolean expressions",
+      "slug": "simplifying-boolean-expressions",
+      "description": "Use Karnaugh maps and algebraic methods to minimize Boolean functions",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "boolean-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying Boolean algebra to digital circuit design",
+      "slug": "boolean-algebra-digital-circuits",
+      "description": "Design and analyze logic gates and combinational circuits",
+      "category_slug": "discrete-mathematics",
+      "competencies": [
+        {
+          "competency_slug": "boolean-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding divisibility and prime numbers",
+      "slug": "divisibility-prime-numbers",
+      "description": "Study fundamental properties of integers and primality",
+      "category_slug": "number-theory",
+      "competencies": [
+        {
+          "competency_slug": "number-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with modular arithmetic",
+      "slug": "modular-arithmetic",
+      "description": "Understand congruences, modular exponentiation, and applications",
+      "category_slug": "number-theory",
+      "competencies": [
+        {
+          "competency_slug": "number-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying number theory to cryptography",
+      "slug": "number-theory-cryptography",
+      "description": "Use modular arithmetic and prime numbers for RSA and other cryptosystems",
+      "category_slug": "number-theory",
+      "competencies": [
+        {
+          "competency_slug": "number-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cryptography-math",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving Diophantine equations",
+      "slug": "solving-diophantine-equations",
+      "description": "Find integer solutions to polynomial equations",
+      "category_slug": "number-theory",
+      "competencies": [
+        {
+          "competency_slug": "number-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding unique factorization and the Fundamental Theorem of Arithmetic",
+      "slug": "unique-factorization-theorem",
+      "description": "Study prime factorization and its uniqueness",
+      "category_slug": "number-theory",
+      "competencies": [
+        {
+          "competency_slug": "number-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding descriptive statistics",
+      "slug": "understanding-descriptive-statistics",
+      "description": "Calculate and interpret mean, median, mode, variance, and standard deviation",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating and interpreting data visualizations",
+      "slug": "data-visualizations-statistics",
+      "description": "Make effective histograms, box plots, scatter plots, and other statistical graphics",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding sampling and experimental design",
+      "slug": "sampling-experimental-design",
+      "description": "Design studies, select samples, and understand bias and variability",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding hypothesis testing and confidence intervals",
+      "slug": "hypothesis-testing-confidence-intervals",
+      "description": "Conduct statistical tests and make inferences from data",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying statistics to data analysis",
+      "slug": "applying-statistics-data-analysis",
+      "description": "Use statistical methods to analyze real-world datasets and draw conclusions",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding regression and correlation",
+      "slug": "regression-correlation",
+      "description": "Analyze relationships between variables using linear regression",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "statistics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding probability fundamentals",
+      "slug": "probability-fundamentals",
+      "description": "Master basic probability rules, sample spaces, and events",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "probability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Computing probabilities with counting techniques",
+      "slug": "probabilities-counting-techniques",
+      "description": "Use permutations and combinations to solve probability problems",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "probability",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding random variables and probability distributions",
+      "slug": "random-variables-distributions",
+      "description": "Work with discrete and continuous probability distributions",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "probability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding conditional probability and Bayes' theorem",
+      "slug": "conditional-probability-bayes",
+      "description": "Work with conditional probabilities and update beliefs with new information",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "probability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying probability to real-world problems",
+      "slug": "probability-real-world-problems",
+      "description": "Use probability to model risk, games of chance, and uncertain outcomes",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "probability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding Bayesian inference",
+      "slug": "understanding-bayesian-inference",
+      "description": "Use Bayes' theorem for statistical inference and updating beliefs",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "bayesian-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Computing posterior distributions",
+      "slug": "computing-posterior-distributions",
+      "description": "Calculate and interpret posterior probabilities using prior and likelihood",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "bayesian-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying Bayesian methods to data analysis",
+      "slug": "bayesian-methods-data-analysis",
+      "description": "Use Bayesian frameworks for modeling and inference on real datasets",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "bayesian-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Comparing Bayesian and frequentist statistical approaches",
+      "slug": "bayesian-frequentist-comparison",
+      "description": "Understand the philosophical and practical differences between statistical paradigms",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "bayesian-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mathematical-statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding random processes over time",
+      "slug": "random-processes-over-time",
+      "description": "Study stochastic models and their evolution",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "stochastic-processes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with Markov chains",
+      "slug": "working-with-markov-chains",
+      "description": "Analyze discrete-time stochastic processes with the Markov property",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "stochastic-processes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing queuing systems with stochastic processes",
+      "slug": "queuing-systems-stochastic-processes",
+      "description": "Model waiting lines and service systems using probability",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "stochastic-processes",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "operations-research",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying stochastic processes to finance",
+      "slug": "stochastic-processes-finance",
+      "description": "Model stock prices, interest rates, and derivatives using random processes",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "stochastic-processes",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Analyzing temporal data patterns",
+      "slug": "analyzing-temporal-data-patterns",
+      "description": "Identify trends, seasonality, and patterns in time-ordered data",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "time-series-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building forecasting models with time series",
+      "slug": "forecasting-models-time-series",
+      "description": "Create predictive models for future values based on historical data",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "time-series-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding ARIMA models",
+      "slug": "understanding-arima-models",
+      "description": "Work with autoregressive integrated moving average models for time series",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "time-series-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying time series analysis to finance and economics",
+      "slug": "time-series-finance-economics",
+      "description": "Analyze and forecast economic indicators and financial market data",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "time-series-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding statistical inference theory",
+      "slug": "statistical-inference-theory",
+      "description": "Study the theoretical foundations of estimation and hypothesis testing",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Deriving estimators and their properties",
+      "slug": "deriving-estimators-properties",
+      "description": "Understand unbiasedness, consistency, and efficiency of statistical estimators",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with maximum likelihood estimation",
+      "slug": "maximum-likelihood-estimation",
+      "description": "Find parameter estimates that maximize the likelihood function",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding hypothesis testing theory",
+      "slug": "hypothesis-testing-theory",
+      "description": "Study the mathematical foundations of statistical tests and power",
+      "category_slug": "statistics-probability",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-statistics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding rigorous foundations of calculus",
+      "slug": "rigorous-foundations-calculus",
+      "description": "Study limits, continuity, and derivatives with epsilon-delta definitions",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Proving theorems about sequences and series",
+      "slug": "proving-theorems-sequences-series",
+      "description": "Rigorously analyze convergence and properties of infinite sequences and series",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding metric spaces and topology",
+      "slug": "metric-spaces-topology-analysis",
+      "description": "Study distance, open sets, and continuous functions in abstract spaces",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "topology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Lebesgue integration",
+      "slug": "understanding-lebesgue-integration",
+      "description": "Study measure-theoretic integration beyond Riemann integrals",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "measure-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding complex functions and analyticity",
+      "slug": "complex-functions-analyticity",
+      "description": "Study holomorphic functions and complex differentiability",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "complex-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Computing complex integrals with residue theory",
+      "slug": "complex-integrals-residue-theory",
+      "description": "Use the residue theorem to evaluate complex contour integrals",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "complex-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding conformal mappings",
+      "slug": "understanding-conformal-mappings",
+      "description": "Study angle-preserving transformations in the complex plane",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "complex-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying complex analysis to physics and engineering",
+      "slug": "complex-analysis-physics-engineering",
+      "description": "Use complex methods for fluid dynamics, electromagnetism, and signal processing",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "complex-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding groups, rings, and fields",
+      "slug": "groups-rings-fields",
+      "description": "Study fundamental algebraic structures and their properties",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Proving algebraic theorems",
+      "slug": "proving-algebraic-theorems",
+      "description": "Develop proof techniques for group theory, ring theory, and field theory",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding homomorphisms and isomorphisms",
+      "slug": "homomorphisms-isomorphisms",
+      "description": "Study structure-preserving maps between algebraic objects",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying abstract algebra to coding theory",
+      "slug": "abstract-algebra-coding-theory",
+      "description": "Use finite fields and polynomial rings for error-correcting codes",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "number-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding topological spaces",
+      "slug": "understanding-topological-spaces",
+      "description": "Study open sets, neighborhoods, and continuity in abstract spaces",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "topology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding compactness and connectedness",
+      "slug": "compactness-connectedness",
+      "description": "Study fundamental topological properties and their applications",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "topology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Exploring algebraic topology",
+      "slug": "exploring-algebraic-topology",
+      "description": "Use algebraic tools like fundamental groups and homology to study topological spaces",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "topology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding measure and integration theory",
+      "slug": "measure-integration-theory",
+      "description": "Study abstract measures and generalized integration",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "measure-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with Lebesgue integration",
+      "slug": "working-with-lebesgue-integration",
+      "description": "Master measure-theoretic integration and its advantages over Riemann integration",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "measure-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding probability theory foundations",
+      "slug": "probability-theory-foundations-measure",
+      "description": "Study probability using measure-theoretic foundations",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "measure-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding function spaces and norms",
+      "slug": "function-spaces-norms",
+      "description": "Study Banach and Hilbert spaces and their properties",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "functional-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "real-analysis",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with linear operators on infinite-dimensional spaces",
+      "slug": "linear-operators-infinite-dimensional",
+      "description": "Study bounded and unbounded operators in function spaces",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "functional-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding spectral theory",
+      "slug": "understanding-spectral-theory",
+      "description": "Study eigenvalue problems for operators in infinite dimensions",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "functional-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying functional analysis to PDEs",
+      "slug": "functional-analysis-pdes",
+      "description": "Use function space methods to study existence and uniqueness of PDE solutions",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "functional-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding algebraic varieties",
+      "slug": "understanding-algebraic-varieties",
+      "description": "Study solution sets of polynomial equations using geometry",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "algebraic-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with schemes and sheaves",
+      "slug": "schemes-sheaves",
+      "description": "Study modern algebraic geometry using scheme theory",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "algebraic-geometry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "category-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding categories and functors",
+      "slug": "categories-functors",
+      "description": "Study the abstract structure of mathematical objects and their relationships",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "category-theory",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with natural transformations",
+      "slug": "natural-transformations",
+      "description": "Understand mappings between functors and universal properties",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "category-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying category theory to mathematics",
+      "slug": "category-theory-mathematics",
+      "description": "Use categorical language to unify and clarify mathematical structures",
+      "category_slug": "advanced-math",
+      "competencies": [
+        {
+          "competency_slug": "category-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Computing numerical solutions to equations",
+      "slug": "numerical-solutions-equations",
+      "description": "Use iterative methods like Newton's method to solve nonlinear equations",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding error analysis and numerical stability",
+      "slug": "error-analysis-numerical-stability",
+      "description": "Study round-off errors, truncation errors, and algorithm stability",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Implementing numerical algorithms",
+      "slug": "implementing-numerical-algorithms",
+      "description": "Code numerical methods for integration, differentiation, and solving equations",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying numerical methods to scientific computing",
+      "slug": "numerical-methods-scientific-computing",
+      "description": "Use computational mathematics to solve complex scientific problems",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Optimizing resource allocation with linear programming",
+      "slug": "resource-allocation-linear-programming",
+      "description": "Use simplex method and linear programming to optimize constrained problems",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "operations-research",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving network flow problems",
+      "slug": "solving-network-flow-problems",
+      "description": "Optimize flows through transportation and communication networks",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "operations-research",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "graph-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying operations research to logistics and supply chain",
+      "slug": "operations-research-logistics",
+      "description": "Use OR techniques to optimize distribution, inventory, and production",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "operations-research",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding integer programming",
+      "slug": "understanding-integer-programming",
+      "description": "Solve optimization problems with discrete decision variables",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "operations-research",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optimization",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding strategic decision-making with game theory",
+      "slug": "strategic-decision-making-game-theory",
+      "description": "Analyze competitive situations and optimal strategies",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "game-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Analyzing Nash equilibria",
+      "slug": "analyzing-nash-equilibria",
+      "description": "Find and interpret stable strategy profiles in games",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "game-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with cooperative and non-cooperative games",
+      "slug": "cooperative-noncooperative-games",
+      "description": "Study different game structures and solution concepts",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "game-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying game theory to economics and business",
+      "slug": "game-theory-economics-business",
+      "description": "Use game-theoretic models for pricing, competition, and market analysis",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "game-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying game theory to political science",
+      "slug": "game-theory-political-science",
+      "description": "Analyze voting, bargaining, and political strategy using game theory",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "game-theory",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding mathematical foundations of cryptography",
+      "slug": "mathematical-foundations-cryptography",
+      "description": "Study the number theory and algebra underlying modern encryption",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "cryptography-math",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "number-theory",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with public-key cryptosystems",
+      "slug": "public-key-cryptosystems",
+      "description": "Understand RSA, Diffie-Hellman, and other asymmetric encryption schemes",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "cryptography-math",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "number-theory",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding elliptic curve cryptography",
+      "slug": "elliptic-curve-cryptography",
+      "description": "Use elliptic curves over finite fields for modern cryptographic systems",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "cryptography-math",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "abstract-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving unconstrained optimization problems",
+      "slug": "unconstrained-optimization",
+      "description": "Use gradient descent and other methods to find function extrema",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving constrained optimization problems",
+      "slug": "constrained-optimization",
+      "description": "Use Lagrange multipliers and KKT conditions for optimization with constraints",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding convex optimization",
+      "slug": "understanding-convex-optimization",
+      "description": "Work with convex functions and guaranteed global optima",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying optimization to machine learning",
+      "slug": "optimization-machine-learning",
+      "description": "Use optimization algorithms to train models and tune hyperparameters",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding nonlinear optimization methods",
+      "slug": "nonlinear-optimization-methods",
+      "description": "Work with quasi-Newton methods, conjugate gradient, and other advanced techniques",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "optimization",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "numerical-analysis",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building mathematical models of real-world systems",
+      "slug": "building-mathematical-models",
+      "description": "Translate real phenomena into mathematical equations and frameworks",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Validating and refining mathematical models",
+      "slug": "validating-refining-models",
+      "description": "Compare model predictions with data and improve model accuracy",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying mathematical modeling to science and engineering",
+      "slug": "modeling-science-engineering",
+      "description": "Create models for biological, physical, and engineering systems",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding dimensional analysis",
+      "slug": "understanding-dimensional-analysis",
+      "description": "Use units and scaling to simplify and validate mathematical models",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding life contingencies",
+      "slug": "understanding-life-contingencies",
+      "description": "Model mortality and survival using actuarial mathematics",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "actuarial-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Computing insurance premiums and reserves",
+      "slug": "insurance-premiums-reserves",
+      "description": "Calculate pricing and financial requirements for insurance products",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "actuarial-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying actuarial mathematics to risk assessment",
+      "slug": "actuarial-math-risk-assessment",
+      "description": "Use mathematical models to quantify and manage financial risk",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "actuarial-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding survival analysis",
+      "slug": "understanding-survival-analysis",
+      "description": "Analyze time-to-event data for actuarial applications",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "actuarial-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding differential equation systems and phase portraits",
+      "slug": "differential-systems-phase-portraits",
+      "description": "Visualize and analyze systems of ODEs using geometric methods",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing stability and bifurcations",
+      "slug": "stability-bifurcations",
+      "description": "Study how system behavior changes with parameters",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with chaotic dynamical systems",
+      "slug": "chaotic-dynamical-systems",
+      "description": "Understand sensitive dependence on initial conditions and strange attractors",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying dynamical systems to biology and ecology",
+      "slug": "dynamical-systems-biology-ecology",
+      "description": "Model population dynamics, epidemics, and ecological interactions",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying dynamical systems to physics",
+      "slug": "dynamical-systems-physics",
+      "description": "Analyze mechanical systems, oscillations, and nonlinear phenomena",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Fourier series and transforms",
+      "slug": "fourier-series-transforms",
+      "description": "Decompose functions into frequency components",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying Fourier analysis to signal processing",
+      "slug": "fourier-analysis-signal-processing",
+      "description": "Use frequency domain methods to filter and analyze signals",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with the discrete Fourier transform",
+      "slug": "discrete-fourier-transform",
+      "description": "Analyze digital signals using FFT algorithms",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding spectral methods for PDEs",
+      "slug": "spectral-methods-pdes",
+      "description": "Use Fourier series to solve partial differential equations",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "fourier-analysis",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding discrete optimization and combinatorial problems",
+      "slug": "discrete-optimization-combinatorial",
+      "description": "Solve optimization problems with discrete decision variables",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "finite-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "combinatorics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with matrices and linear systems",
+      "slug": "matrices-linear-systems-finite",
+      "description": "Use matrix algebra for solving systems and applications",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "finite-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying finite mathematics to business problems",
+      "slug": "finite-math-business-problems",
+      "description": "Use discrete math for business optimization and decision-making",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "finite-mathematics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding Markov chains in finite mathematics",
+      "slug": "markov-chains-finite-math",
+      "description": "Model probabilistic systems with discrete states",
+      "category_slug": "applied-math",
+      "competencies": [
+        {
+          "competency_slug": "finite-mathematics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

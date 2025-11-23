@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T22:17:20.809Z
-**Total Topics:** 1591
+**Generated:** 2025-11-22T23:03:48.196Z
+**Total Topics:** 1998
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -12,33 +12,780 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ## Table of Contents
 
+- [advanced-math](#advanced-math) (30)
+- [algebra](#algebra) (11)
+- [applied-math](#applied-math) (42)
+- [arithmetic](#arithmetic) (3)
+- [astronomy](#astronomy) (19)
 - [backend-development](#backend-development) (3)
+- [biology](#biology) (37)
 - [blockchain-web3](#blockchain-web3) (45)
+- [calculus](#calculus) (12)
+- [chemistry](#chemistry) (30)
 - [cloud-devops](#cloud-devops) (170)
 - [cybersecurity](#cybersecurity) (33)
 - [dance](#dance) (42)
 - [data-science](#data-science) (104)
 - [databases](#databases) (72)
+- [differential-equations](#differential-equations) (9)
+- [discrete-mathematics](#discrete-mathematics) (23)
+- [environmental-science](#environmental-science) (36)
 - [fiber-arts-crafts](#fiber-arts-crafts) (47)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
 - [game-development](#game-development) (1)
+- [genetics](#genetics) (14)
+- [geometry](#geometry) (13)
 - [home-lifestyle](#home-lifestyle) (80)
 - [investing-trading](#investing-trading) (29)
 - [languages](#languages) (147)
+- [life-sciences](#life-sciences) (22)
+- [linear-algebra](#linear-algebra) (7)
 - [marketing-sales](#marketing-sales) (45)
 - [mobile-development](#mobile-development) (86)
 - [music](#music) (181)
+- [neuroscience](#neuroscience) (18)
+- [number-theory](#number-theory) (5)
 - [operations-strategy](#operations-strategy) (39)
 - [personal-finance](#personal-finance) (26)
+- [physics](#physics) (44)
 - [programming](#programming) (73)
 - [recreation-hobbies](#recreation-hobbies) (70)
 - [software-testing](#software-testing) (3)
+- [statistics-probability](#statistics-probability) (27)
 - [systems-programming](#systems-programming) (39)
 - [theater](#theater) (20)
+- [trigonometry](#trigonometry) (5)
 - [uiux-design](#uiux-design) (44)
 - [visual-arts](#visual-arts) (51)
 - [writing](#writing) (95)
+
+---
+
+## advanced-math
+
+### Applying abstract algebra to coding theory
+- **Slug:** `abstract-algebra-coding-theory`
+- **Description:** Use finite fields and polynomial rings for error-correcting codes
+- **Primary Competencies:** `abstract-algebra`
+- **Supporting Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying category theory to mathematics
+- **Slug:** `category-theory-mathematics`
+- **Description:** Use categorical language to unify and clarify mathematical structures
+- **Primary Competencies:** `category-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying complex analysis to physics and engineering
+- **Slug:** `complex-analysis-physics-engineering`
+- **Description:** Use complex methods for fluid dynamics, electromagnetism, and signal processing
+- **Primary Competencies:** `complex-analysis`
+- **Supporting Competencies:** `fourier-analysis`
+- **Source File:** 023-mathematics.json
+
+### Applying functional analysis to PDEs
+- **Slug:** `functional-analysis-pdes`
+- **Description:** Use function space methods to study existence and uniqueness of PDE solutions
+- **Primary Competencies:** `functional-analysis`
+- **Supporting Competencies:** `partial-differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Computing complex integrals with residue theory
+- **Slug:** `complex-integrals-residue-theory`
+- **Description:** Use the residue theorem to evaluate complex contour integrals
+- **Primary Competencies:** `complex-analysis`
+- **Source File:** 023-mathematics.json
+
+### Exploring algebraic topology
+- **Slug:** `exploring-algebraic-topology`
+- **Description:** Use algebraic tools like fundamental groups and homology to study topological spaces
+- **Primary Competencies:** `topology`
+- **Supporting Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Mastering functions and their properties
+- **Slug:** `functions-properties-precalculus`
+- **Description:** Understand domain, range, composition, and transformations of functions
+- **Primary Competencies:** `pre-calculus`
+- **Supporting Competencies:** `algebra-2`
+- **Source File:** 023-mathematics.json
+
+### Proving algebraic theorems
+- **Slug:** `proving-algebraic-theorems`
+- **Description:** Develop proof techniques for group theory, ring theory, and field theory
+- **Primary Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Proving theorems about sequences and series
+- **Slug:** `proving-theorems-sequences-series`
+- **Description:** Rigorously analyze convergence and properties of infinite sequences and series
+- **Primary Competencies:** `real-analysis`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding algebraic varieties
+- **Slug:** `understanding-algebraic-varieties`
+- **Description:** Study solution sets of polynomial equations using geometry
+- **Primary Competencies:** `algebraic-geometry`
+- **Supporting Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding categories and functors
+- **Slug:** `categories-functors`
+- **Description:** Study the abstract structure of mathematical objects and their relationships
+- **Primary Competencies:** `category-theory`
+- **Supporting Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding compactness and connectedness
+- **Slug:** `compactness-connectedness`
+- **Description:** Study fundamental topological properties and their applications
+- **Primary Competencies:** `topology`
+- **Source File:** 023-mathematics.json
+
+### Understanding complex functions and analyticity
+- **Slug:** `complex-functions-analyticity`
+- **Description:** Study holomorphic functions and complex differentiability
+- **Primary Competencies:** `complex-analysis`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding conformal mappings
+- **Slug:** `understanding-conformal-mappings`
+- **Description:** Study angle-preserving transformations in the complex plane
+- **Primary Competencies:** `complex-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding function spaces and norms
+- **Slug:** `function-spaces-norms`
+- **Description:** Study Banach and Hilbert spaces and their properties
+- **Primary Competencies:** `functional-analysis`
+- **Supporting Competencies:** `real-analysis`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding groups, rings, and fields
+- **Slug:** `groups-rings-fields`
+- **Description:** Study fundamental algebraic structures and their properties
+- **Primary Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding homomorphisms and isomorphisms
+- **Slug:** `homomorphisms-isomorphisms`
+- **Description:** Study structure-preserving maps between algebraic objects
+- **Primary Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding Lebesgue integration
+- **Slug:** `understanding-lebesgue-integration`
+- **Description:** Study measure-theoretic integration beyond Riemann integrals
+- **Primary Competencies:** `real-analysis`
+- **Supporting Competencies:** `measure-theory`
+- **Source File:** 023-mathematics.json
+
+### Understanding limits and continuity
+- **Slug:** `limits-continuity-precalculus`
+- **Description:** Build intuition for calculus concepts through limits and function behavior
+- **Primary Competencies:** `pre-calculus`
+- **Supporting Competencies:** `algebra-2`, `trigonometry`
+- **Source File:** 023-mathematics.json
+
+### Understanding measure and integration theory
+- **Slug:** `measure-integration-theory`
+- **Description:** Study abstract measures and generalized integration
+- **Primary Competencies:** `measure-theory`
+- **Supporting Competencies:** `real-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding metric spaces and topology
+- **Slug:** `metric-spaces-topology-analysis`
+- **Description:** Study distance, open sets, and continuous functions in abstract spaces
+- **Primary Competencies:** `real-analysis`
+- **Supporting Competencies:** `topology`
+- **Source File:** 023-mathematics.json
+
+### Understanding probability theory foundations
+- **Slug:** `probability-theory-foundations-measure`
+- **Description:** Study probability using measure-theoretic foundations
+- **Primary Competencies:** `measure-theory`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding rigorous foundations of calculus
+- **Slug:** `rigorous-foundations-calculus`
+- **Description:** Study limits, continuity, and derivatives with epsilon-delta definitions
+- **Primary Competencies:** `real-analysis`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding spectral theory
+- **Slug:** `understanding-spectral-theory`
+- **Description:** Study eigenvalue problems for operators in infinite dimensions
+- **Primary Competencies:** `functional-analysis`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding topological spaces
+- **Slug:** `understanding-topological-spaces`
+- **Description:** Study open sets, neighborhoods, and continuity in abstract spaces
+- **Primary Competencies:** `topology`
+- **Source File:** 023-mathematics.json
+
+### Working with Lebesgue integration
+- **Slug:** `working-with-lebesgue-integration`
+- **Description:** Master measure-theoretic integration and its advantages over Riemann integration
+- **Primary Competencies:** `measure-theory`
+- **Supporting Competencies:** `real-analysis`
+- **Source File:** 023-mathematics.json
+
+### Working with linear operators on infinite-dimensional spaces
+- **Slug:** `linear-operators-infinite-dimensional`
+- **Description:** Study bounded and unbounded operators in function spaces
+- **Primary Competencies:** `functional-analysis`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Working with natural transformations
+- **Slug:** `natural-transformations`
+- **Description:** Understand mappings between functors and universal properties
+- **Primary Competencies:** `category-theory`
+- **Source File:** 023-mathematics.json
+
+### Working with parametric and polar equations
+- **Slug:** `parametric-polar-equations`
+- **Description:** Represent curves using alternative coordinate systems
+- **Primary Competencies:** `pre-calculus`
+- **Supporting Competencies:** `trigonometry`
+- **Source File:** 023-mathematics.json
+
+### Working with schemes and sheaves
+- **Slug:** `schemes-sheaves`
+- **Description:** Study modern algebraic geometry using scheme theory
+- **Primary Competencies:** `algebraic-geometry`
+- **Supporting Competencies:** `abstract-algebra`, `category-theory`
+- **Source File:** 023-mathematics.json
+
+---
+
+## algebra
+
+### Analyzing polynomial and rational functions
+- **Slug:** `polynomial-rational-functions`
+- **Description:** Understand complex polynomial and rational function behavior and graphing
+- **Primary Competencies:** `algebra-2`
+- **Supporting Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Applying linear algebra to real-world problems
+- **Slug:** `applying-linear-algebra-real-world`
+- **Description:** Use linear equations and systems to model and solve practical problems
+- **Primary Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Graphing linear functions and inequalities
+- **Slug:** `graphing-linear-functions`
+- **Description:** Visualize linear relationships through graphing and interpret slope and intercepts
+- **Primary Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Solving and graphing quadratic functions
+- **Slug:** `quadratic-functions`
+- **Description:** Work with parabolas, quadratic equations, and their applications
+- **Primary Competencies:** `algebra-2`
+- **Supporting Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Solving basic equations and inequalities
+- **Slug:** `solving-basic-equations-inequalities`
+- **Description:** Learn to solve one-step and multi-step equations to prepare for algebra
+- **Primary Competencies:** `pre-algebra`
+- **Supporting Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+### Solving linear equations and systems
+- **Slug:** `solving-linear-equations-systems`
+- **Description:** Master techniques for solving single equations and systems of linear equations
+- **Primary Competencies:** `algebra-1`
+- **Supporting Competencies:** `pre-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding exponential and logarithmic functions
+- **Slug:** `exponential-logarithmic-functions`
+- **Description:** Master exponential growth and decay, and logarithmic relationships
+- **Primary Competencies:** `algebra-2`
+- **Supporting Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Understanding variables and algebraic expressions
+- **Slug:** `understanding-variables-expressions`
+- **Description:** Build foundational algebra skills by working with variables, terms, and expressions
+- **Primary Competencies:** `pre-algebra`
+- **Supporting Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+### Working with polynomials and factoring
+- **Slug:** `polynomials-factoring`
+- **Description:** Understand polynomial expressions and master factoring techniques
+- **Primary Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Working with radical expressions and equations
+- **Slug:** `radical-expressions-equations`
+- **Description:** Simplify radicals and solve equations involving square roots and nth roots
+- **Primary Competencies:** `algebra-2`
+- **Supporting Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Working with ratios, proportions, and percentages
+- **Slug:** `ratios-proportions-percentages`
+- **Description:** Understand and apply proportional reasoning to real-world situations
+- **Primary Competencies:** `pre-algebra`
+- **Supporting Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+---
+
+## applied-math
+
+### Analyzing Nash equilibria
+- **Slug:** `analyzing-nash-equilibria`
+- **Description:** Find and interpret stable strategy profiles in games
+- **Primary Competencies:** `game-theory`
+- **Source File:** 023-mathematics.json
+
+### Analyzing stability and bifurcations
+- **Slug:** `stability-bifurcations`
+- **Description:** Study how system behavior changes with parameters
+- **Primary Competencies:** `dynamical-systems`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Applying actuarial mathematics to risk assessment
+- **Slug:** `actuarial-math-risk-assessment`
+- **Description:** Use mathematical models to quantify and manage financial risk
+- **Primary Competencies:** `actuarial-mathematics`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Applying dynamical systems to biology and ecology
+- **Slug:** `dynamical-systems-biology-ecology`
+- **Description:** Model population dynamics, epidemics, and ecological interactions
+- **Primary Competencies:** `dynamical-systems`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Applying dynamical systems to physics
+- **Slug:** `dynamical-systems-physics`
+- **Description:** Analyze mechanical systems, oscillations, and nonlinear phenomena
+- **Primary Competencies:** `dynamical-systems`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Applying finite mathematics to business problems
+- **Slug:** `finite-math-business-problems`
+- **Description:** Use discrete math for business optimization and decision-making
+- **Primary Competencies:** `finite-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Applying Fourier analysis to signal processing
+- **Slug:** `fourier-analysis-signal-processing`
+- **Description:** Use frequency domain methods to filter and analyze signals
+- **Primary Competencies:** `fourier-analysis`
+- **Source File:** 023-mathematics.json
+
+### Applying game theory to economics and business
+- **Slug:** `game-theory-economics-business`
+- **Description:** Use game-theoretic models for pricing, competition, and market analysis
+- **Primary Competencies:** `game-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying game theory to political science
+- **Slug:** `game-theory-political-science`
+- **Description:** Analyze voting, bargaining, and political strategy using game theory
+- **Primary Competencies:** `game-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying mathematical modeling to science and engineering
+- **Slug:** `modeling-science-engineering`
+- **Description:** Create models for biological, physical, and engineering systems
+- **Primary Competencies:** `mathematical-modeling`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Applying numerical methods to scientific computing
+- **Slug:** `numerical-methods-scientific-computing`
+- **Description:** Use computational mathematics to solve complex scientific problems
+- **Primary Competencies:** `numerical-analysis`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Applying operations research to logistics and supply chain
+- **Slug:** `operations-research-logistics`
+- **Description:** Use OR techniques to optimize distribution, inventory, and production
+- **Primary Competencies:** `operations-research`
+- **Supporting Competencies:** `optimization`
+- **Source File:** 023-mathematics.json
+
+### Applying optimization to machine learning
+- **Slug:** `optimization-machine-learning`
+- **Description:** Use optimization algorithms to train models and tune hyperparameters
+- **Primary Competencies:** `optimization`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Building mathematical models of real-world systems
+- **Slug:** `building-mathematical-models`
+- **Description:** Translate real phenomena into mathematical equations and frameworks
+- **Primary Competencies:** `mathematical-modeling`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Computing insurance premiums and reserves
+- **Slug:** `insurance-premiums-reserves`
+- **Description:** Calculate pricing and financial requirements for insurance products
+- **Primary Competencies:** `actuarial-mathematics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Computing numerical solutions to equations
+- **Slug:** `numerical-solutions-equations`
+- **Description:** Use iterative methods like Newton's method to solve nonlinear equations
+- **Primary Competencies:** `numerical-analysis`
+- **Supporting Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Implementing numerical algorithms
+- **Slug:** `implementing-numerical-algorithms`
+- **Description:** Code numerical methods for integration, differentiation, and solving equations
+- **Primary Competencies:** `numerical-analysis`
+- **Source File:** 023-mathematics.json
+
+### Optimizing resource allocation with linear programming
+- **Slug:** `resource-allocation-linear-programming`
+- **Description:** Use simplex method and linear programming to optimize constrained problems
+- **Primary Competencies:** `operations-research`
+- **Supporting Competencies:** `optimization`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Solving constrained optimization problems
+- **Slug:** `constrained-optimization`
+- **Description:** Use Lagrange multipliers and KKT conditions for optimization with constraints
+- **Primary Competencies:** `optimization`
+- **Supporting Competencies:** `calculus-3`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Solving network flow problems
+- **Slug:** `solving-network-flow-problems`
+- **Description:** Optimize flows through transportation and communication networks
+- **Primary Competencies:** `operations-research`
+- **Supporting Competencies:** `graph-theory`
+- **Source File:** 023-mathematics.json
+
+### Solving unconstrained optimization problems
+- **Slug:** `unconstrained-optimization`
+- **Description:** Use gradient descent and other methods to find function extrema
+- **Primary Competencies:** `optimization`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding convex optimization
+- **Slug:** `understanding-convex-optimization`
+- **Description:** Work with convex functions and guaranteed global optima
+- **Primary Competencies:** `optimization`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding differential equation systems and phase portraits
+- **Slug:** `differential-systems-phase-portraits`
+- **Description:** Visualize and analyze systems of ODEs using geometric methods
+- **Primary Competencies:** `dynamical-systems`
+- **Supporting Competencies:** `differential-equations`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding dimensional analysis
+- **Slug:** `understanding-dimensional-analysis`
+- **Description:** Use units and scaling to simplify and validate mathematical models
+- **Primary Competencies:** `mathematical-modeling`
+- **Source File:** 023-mathematics.json
+
+### Understanding discrete optimization and combinatorial problems
+- **Slug:** `discrete-optimization-combinatorial`
+- **Description:** Solve optimization problems with discrete decision variables
+- **Primary Competencies:** `finite-mathematics`
+- **Supporting Competencies:** `combinatorics`
+- **Source File:** 023-mathematics.json
+
+### Understanding elliptic curve cryptography
+- **Slug:** `elliptic-curve-cryptography`
+- **Description:** Use elliptic curves over finite fields for modern cryptographic systems
+- **Primary Competencies:** `cryptography-math`
+- **Supporting Competencies:** `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding error analysis and numerical stability
+- **Slug:** `error-analysis-numerical-stability`
+- **Description:** Study round-off errors, truncation errors, and algorithm stability
+- **Primary Competencies:** `numerical-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding Fourier series and transforms
+- **Slug:** `fourier-series-transforms`
+- **Description:** Decompose functions into frequency components
+- **Primary Competencies:** `fourier-analysis`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding integer programming
+- **Slug:** `understanding-integer-programming`
+- **Description:** Solve optimization problems with discrete decision variables
+- **Primary Competencies:** `operations-research`
+- **Supporting Competencies:** `optimization`
+- **Source File:** 023-mathematics.json
+
+### Understanding life contingencies
+- **Slug:** `understanding-life-contingencies`
+- **Description:** Model mortality and survival using actuarial mathematics
+- **Primary Competencies:** `actuarial-mathematics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding Markov chains in finite mathematics
+- **Slug:** `markov-chains-finite-math`
+- **Description:** Model probabilistic systems with discrete states
+- **Primary Competencies:** `finite-mathematics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding mathematical foundations of cryptography
+- **Slug:** `mathematical-foundations-cryptography`
+- **Description:** Study the number theory and algebra underlying modern encryption
+- **Primary Competencies:** `cryptography-math`
+- **Supporting Competencies:** `number-theory`, `abstract-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding nonlinear optimization methods
+- **Slug:** `nonlinear-optimization-methods`
+- **Description:** Work with quasi-Newton methods, conjugate gradient, and other advanced techniques
+- **Primary Competencies:** `optimization`
+- **Supporting Competencies:** `numerical-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding spectral methods for PDEs
+- **Slug:** `spectral-methods-pdes`
+- **Description:** Use Fourier series to solve partial differential equations
+- **Primary Competencies:** `fourier-analysis`
+- **Supporting Competencies:** `partial-differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Understanding strategic decision-making with game theory
+- **Slug:** `strategic-decision-making-game-theory`
+- **Description:** Analyze competitive situations and optimal strategies
+- **Primary Competencies:** `game-theory`
+- **Source File:** 023-mathematics.json
+
+### Understanding survival analysis
+- **Slug:** `understanding-survival-analysis`
+- **Description:** Analyze time-to-event data for actuarial applications
+- **Primary Competencies:** `actuarial-mathematics`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Validating and refining mathematical models
+- **Slug:** `validating-refining-models`
+- **Description:** Compare model predictions with data and improve model accuracy
+- **Primary Competencies:** `mathematical-modeling`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Working with chaotic dynamical systems
+- **Slug:** `chaotic-dynamical-systems`
+- **Description:** Understand sensitive dependence on initial conditions and strange attractors
+- **Primary Competencies:** `dynamical-systems`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Working with cooperative and non-cooperative games
+- **Slug:** `cooperative-noncooperative-games`
+- **Description:** Study different game structures and solution concepts
+- **Primary Competencies:** `game-theory`
+- **Source File:** 023-mathematics.json
+
+### Working with matrices and linear systems
+- **Slug:** `matrices-linear-systems-finite`
+- **Description:** Use matrix algebra for solving systems and applications
+- **Primary Competencies:** `finite-mathematics`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Working with public-key cryptosystems
+- **Slug:** `public-key-cryptosystems`
+- **Description:** Understand RSA, Diffie-Hellman, and other asymmetric encryption schemes
+- **Primary Competencies:** `cryptography-math`
+- **Supporting Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+### Working with the discrete Fourier transform
+- **Slug:** `discrete-fourier-transform`
+- **Description:** Analyze digital signals using FFT algorithms
+- **Primary Competencies:** `fourier-analysis`
+- **Source File:** 023-mathematics.json
+
+---
+
+## arithmetic
+
+### Building number sense and mental math skills
+- **Slug:** `building-number-sense-mental-math`
+- **Description:** Develop strong computational fluency and mental calculation strategies for everyday mathematics
+- **Primary Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+### Mastering fractions, decimals, and percentages
+- **Slug:** `mastering-fractions-decimals-percentages`
+- **Description:** Work confidently with different number representations and conversions
+- **Primary Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+### Solving real-world problems with basic arithmetic
+- **Slug:** `solving-real-world-arithmetic-problems`
+- **Description:** Apply arithmetic to budgeting, shopping, cooking, and everyday calculations
+- **Primary Competencies:** `arithmetic`
+- **Source File:** 023-mathematics.json
+
+---
+
+## astronomy
+
+### Applying astrophysics to exoplanet detection
+- **Slug:** `astrophysics-exoplanet-detection`
+- **Description:** Use physics and observation to find and characterize planets beyond our solar system
+- **Primary Competencies:** `astrophysics`
+- **Supporting Competencies:** `planetary-science`
+- **Source File:** 027-science.json
+
+### Applying planetary science to astrobiology
+- **Slug:** `planetary-science-astrobiology`
+- **Description:** Search for habitable environments and biosignatures on other worlds
+- **Primary Competencies:** `planetary-science`
+- **Supporting Competencies:** `astrobiology`
+- **Source File:** 027-science.json
+
+### Observing celestial objects with telescopes
+- **Slug:** `observing-celestial-objects-telescopes`
+- **Description:** Learn practical astronomy and use telescopes for observation
+- **Primary Competencies:** `astronomy`
+- **Supporting Competencies:** `optics`
+- **Source File:** 027-science.json
+
+### Searching for biosignatures and signs of life
+- **Slug:** `searching-biosignatures-signs-life`
+- **Description:** Detect potential indicators of life on exoplanets and moons
+- **Primary Competencies:** `astrobiology`
+- **Supporting Competencies:** `planetary-science`
+- **Source File:** 027-science.json
+
+### Understanding compact objects and extreme physics
+- **Slug:** `compact-objects-extreme-physics`
+- **Description:** Study neutron stars, pulsars, and stellar remnants
+- **Primary Competencies:** `astrophysics`
+- **Supporting Competencies:** `relativity`
+- **Source File:** 027-science.json
+
+### Understanding dark matter and dark energy
+- **Slug:** `dark-matter-dark-energy`
+- **Description:** Study the mysterious components that dominate the universe
+- **Primary Competencies:** `cosmology`
+- **Supporting Competencies:** `particle-physics`
+- **Source File:** 027-science.json
+
+### Understanding extremophiles and limits of life
+- **Slug:** `extremophiles-limits-life`
+- **Description:** Study organisms that survive in extreme conditions and expand our understanding of habitability
+- **Primary Competencies:** `astrobiology`
+- **Supporting Competencies:** `microbiology`
+- **Source File:** 027-science.json
+
+### Understanding galaxies and large-scale structure
+- **Slug:** `galaxies-large-scale-structure`
+- **Description:** Study galaxy types, clusters, and the cosmic web
+- **Primary Competencies:** `astronomy`
+- **Source File:** 027-science.json
+
+### Understanding planetary atmospheres
+- **Slug:** `planetary-atmospheres`
+- **Description:** Study atmospheric composition, weather, and climate on other worlds
+- **Primary Competencies:** `planetary-science`
+- **Supporting Competencies:** `fluid-dynamics`
+- **Source File:** 027-science.json
+
+### Understanding planetary formation and evolution
+- **Slug:** `planetary-formation-evolution`
+- **Description:** Study how planets form from protoplanetary disks
+- **Primary Competencies:** `planetary-science`
+- **Supporting Competencies:** `astrophysics`
+- **Source File:** 027-science.json
+
+### Understanding planetary geology and surfaces
+- **Slug:** `planetary-geology-surfaces`
+- **Description:** Study the geological processes shaping planets and moons
+- **Primary Competencies:** `planetary-science`
+- **Supporting Competencies:** `geology`, `astronomy`
+- **Source File:** 027-science.json
+
+### Understanding stellar evolution and life cycles
+- **Slug:** `stellar-evolution-life-cycles`
+- **Description:** Study how stars form, evolve, and die
+- **Primary Competencies:** `astronomy`
+- **Supporting Competencies:** `nuclear-physics`
+- **Source File:** 027-science.json
+
+### Understanding stellar physics and nucleosynthesis
+- **Slug:** `stellar-physics-nucleosynthesis`
+- **Description:** Study the physics of stars and how elements are created
+- **Primary Competencies:** `astrophysics`
+- **Supporting Competencies:** `nuclear-physics`, `astronomy`
+- **Source File:** 027-science.json
+
+### Understanding supernovae and explosive stellar death
+- **Slug:** `supernovae-explosive-stellar-death`
+- **Description:** Study the most energetic stellar explosions in the universe
+- **Primary Competencies:** `astrophysics`
+- **Supporting Competencies:** `nuclear-physics`
+- **Source File:** 027-science.json
+
+### Understanding the Big Bang and cosmic inflation
+- **Slug:** `big-bang-cosmic-inflation`
+- **Description:** Study the origin and early evolution of the universe
+- **Primary Competencies:** `cosmology`
+- **Supporting Competencies:** `astrophysics`, `particle-physics`
+- **Source File:** 027-science.json
+
+### Understanding the cosmic microwave background
+- **Slug:** `cosmic-microwave-background`
+- **Description:** Study the afterglow of the Big Bang and what it reveals about the universe
+- **Primary Competencies:** `cosmology`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+### Understanding the fate of the universe
+- **Slug:** `fate-of-universe`
+- **Description:** Study cosmological models and the ultimate destiny of spacetime
+- **Primary Competencies:** `cosmology`
+- **Supporting Competencies:** `relativity`
+- **Source File:** 027-science.json
+
+### Understanding the origin and evolution of life
+- **Slug:** `origin-evolution-life`
+- **Description:** Study how life might emerge from chemistry and evolve in the universe
+- **Primary Competencies:** `astrobiology`
+- **Supporting Competencies:** `biology`, `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding the solar system and planetary motion
+- **Slug:** `solar-system-planetary-motion`
+- **Description:** Study planets, moons, and the dynamics of our cosmic neighborhood
+- **Primary Competencies:** `astronomy`
+- **Source File:** 027-science.json
 
 ---
 
@@ -64,6 +811,259 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `flask`
 - **Supporting Competencies:** `python`, `html`, `css`
 - **Source File:** 004-backend-apis.json
+
+---
+
+## biology
+
+### Conducting biology lab work and experiments
+- **Slug:** `biology-lab-work-experiments`
+- **Description:** Perform dissections, microscopy, and biological investigations
+- **Primary Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Conducting ecological field studies
+- **Slug:** `ecological-field-studies`
+- **Description:** Design and execute field research in natural ecosystems
+- **Primary Competencies:** `ecology`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+### Conducting marine research and diving
+- **Slug:** `marine-research-diving`
+- **Description:** Perform underwater observations and collect marine samples
+- **Primary Competencies:** `marine-biology`
+- **Source File:** 027-science.json
+
+### Identifying and classifying plants
+- **Slug:** `identifying-classifying-plants`
+- **Description:** Use taxonomic keys and field guides to identify plant species
+- **Primary Competencies:** `botany`
+- **Source File:** 027-science.json
+
+### Observing and studying wildlife
+- **Slug:** `observing-studying-wildlife`
+- **Description:** Conduct field observations and research on animal populations
+- **Primary Competencies:** `zoology`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding animal behavior and ethology
+- **Slug:** `animal-behavior-ethology`
+- **Description:** Study innate behaviors, learning, communication, and social systems
+- **Primary Competencies:** `zoology`
+- **Supporting Competencies:** `behavioral-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding animal diversity and classification
+- **Slug:** `animal-diversity-classification`
+- **Description:** Study major animal phyla and their evolutionary relationships
+- **Primary Competencies:** `zoology`
+- **Supporting Competencies:** `biology`, `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding animal physiology and adaptations
+- **Slug:** `animal-physiology-adaptations`
+- **Description:** Study how animals function and adapt to their environments
+- **Primary Competencies:** `zoology`
+- **Supporting Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Understanding apoptosis and cell death
+- **Slug:** `apoptosis-cell-death`
+- **Description:** Study programmed cell death and its role in development and disease
+- **Primary Competencies:** `cell-biology`
+- **Source File:** 027-science.json
+
+### Understanding bacteria and archaeal diversity
+- **Slug:** `bacteria-archaeal-diversity`
+- **Description:** Study prokaryotic life forms, their structure, and diversity
+- **Primary Competencies:** `microbiology`
+- **Supporting Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Understanding cell signaling and communication
+- **Slug:** `cell-signaling-communication`
+- **Description:** Study how cells receive and respond to external signals
+- **Primary Competencies:** `cell-biology`
+- **Supporting Competencies:** `biochemistry`
+- **Source File:** 027-science.json
+
+### Understanding cells and cellular organization
+- **Slug:** `cells-cellular-organization`
+- **Description:** Study cell structure, organelles, and basic life processes
+- **Primary Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Understanding community ecology and species interactions
+- **Slug:** `community-ecology-species-interactions`
+- **Description:** Study competition, predation, symbiosis, and community structure
+- **Primary Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding DNA replication and repair
+- **Slug:** `dna-replication-repair`
+- **Description:** Study how genetic information is copied and maintained
+- **Primary Competencies:** `molecular-biology`
+- **Supporting Competencies:** `biochemistry`, `genetics`
+- **Source File:** 027-science.json
+
+### Understanding DNA, genes, and heredity
+- **Slug:** `dna-genes-heredity`
+- **Description:** Study genetic information, inheritance patterns, and basic genetics
+- **Primary Competencies:** `biology`
+- **Supporting Competencies:** `genetics`
+- **Source File:** 027-science.json
+
+### Understanding ecosystem ecology and biogeochemical cycles
+- **Slug:** `ecosystem-ecology-biogeochemical-cycles`
+- **Description:** Study energy flow and nutrient cycling in ecosystems
+- **Primary Competencies:** `ecology`
+- **Supporting Competencies:** `environmental-science`
+- **Source File:** 027-science.json
+
+### Understanding ecosystems and energy flow
+- **Slug:** `ecosystems-energy-flow`
+- **Description:** Study food webs, nutrient cycles, and ecological interactions
+- **Primary Competencies:** `biology`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding evidence for evolution
+- **Slug:** `evidence-for-evolution`
+- **Description:** Study fossils, comparative anatomy, and molecular evidence for evolution
+- **Primary Competencies:** `evolutionary-biology`
+- **Supporting Competencies:** `biology`, `paleontology`
+- **Source File:** 027-science.json
+
+### Understanding evolution and natural selection
+- **Slug:** `evolution-natural-selection`
+- **Description:** Study how species change over time through evolutionary mechanisms
+- **Primary Competencies:** `biology`
+- **Supporting Competencies:** `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding human evolution
+- **Slug:** `understanding-human-evolution`
+- **Description:** Study the fossil record and evolution of Homo sapiens
+- **Primary Competencies:** `evolutionary-biology`
+- **Supporting Competencies:** `paleontology`
+- **Source File:** 027-science.json
+
+### Understanding infectious diseases and pathogens
+- **Slug:** `infectious-diseases-pathogens`
+- **Description:** Study disease-causing microorganisms and immune responses
+- **Primary Competencies:** `microbiology`
+- **Source File:** 027-science.json
+
+### Understanding marine animal adaptations
+- **Slug:** `marine-animal-adaptations`
+- **Description:** Study how marine organisms survive in oceanic environments
+- **Primary Competencies:** `marine-biology`
+- **Supporting Competencies:** `zoology`
+- **Source File:** 027-science.json
+
+### Understanding marine ecosystems and biodiversity
+- **Slug:** `marine-ecosystems-biodiversity`
+- **Description:** Study ocean life, coral reefs, and marine habitats
+- **Primary Competencies:** `marine-biology`
+- **Supporting Competencies:** `ecology`, `oceanography`
+- **Source File:** 027-science.json
+
+### Understanding mechanisms of evolution and speciation
+- **Slug:** `mechanisms-evolution-speciation`
+- **Description:** Study mutation, selection, drift, and how new species arise
+- **Primary Competencies:** `evolutionary-biology`
+- **Supporting Competencies:** `population-genetics`
+- **Source File:** 027-science.json
+
+### Understanding membrane structure and transport
+- **Slug:** `membrane-structure-transport`
+- **Description:** Study cell membranes, diffusion, osmosis, and active transport
+- **Primary Competencies:** `cell-biology`
+- **Supporting Competencies:** `biochemistry`, `biology`
+- **Source File:** 027-science.json
+
+### Understanding microbial metabolism and growth
+- **Slug:** `microbial-metabolism-growth`
+- **Description:** Study how microorganisms obtain energy and reproduce
+- **Primary Competencies:** `microbiology`
+- **Supporting Competencies:** `biochemistry`
+- **Source File:** 027-science.json
+
+### Understanding ocean conservation challenges
+- **Slug:** `ocean-conservation-challenges`
+- **Description:** Study threats to marine ecosystems and conservation strategies
+- **Primary Competencies:** `marine-biology`
+- **Supporting Competencies:** `conservation-biology`
+- **Source File:** 027-science.json
+
+### Understanding photosynthesis and plant metabolism
+- **Slug:** `photosynthesis-plant-metabolism`
+- **Description:** Study how plants convert light energy into chemical energy
+- **Primary Competencies:** `botany`
+- **Supporting Competencies:** `biochemistry`, `plant-physiology`
+- **Source File:** 027-science.json
+
+### Understanding phylogenetics and evolutionary trees
+- **Slug:** `phylogenetics-evolutionary-trees`
+- **Description:** Construct and interpret phylogenetic trees showing evolutionary relationships
+- **Primary Competencies:** `evolutionary-biology`
+- **Supporting Competencies:** `molecular-biology`
+- **Source File:** 027-science.json
+
+### Understanding plant reproduction and life cycles
+- **Slug:** `plant-reproduction-life-cycles`
+- **Description:** Study flowers, pollination, seeds, and alternation of generations
+- **Primary Competencies:** `botany`
+- **Source File:** 027-science.json
+
+### Understanding plant structure and function
+- **Slug:** `plant-structure-function`
+- **Description:** Study roots, stems, leaves, and plant organ systems
+- **Primary Competencies:** `botany`
+- **Supporting Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Understanding population dynamics and growth
+- **Slug:** `population-dynamics-growth`
+- **Description:** Study population size, density, and factors affecting growth
+- **Primary Competencies:** `ecology`
+- **Supporting Competencies:** `biology`, `statistics`
+- **Source File:** 027-science.json
+
+### Understanding the cell cycle and mitosis
+- **Slug:** `cell-cycle-mitosis`
+- **Description:** Study cell division, checkpoints, and chromosome segregation
+- **Primary Competencies:** `cell-biology`
+- **Supporting Competencies:** `molecular-biology`
+- **Source File:** 027-science.json
+
+### Understanding transcription and gene expression
+- **Slug:** `transcription-gene-expression`
+- **Description:** Study how genetic information is transcribed into RNA
+- **Primary Competencies:** `molecular-biology`
+- **Supporting Competencies:** `genetics`
+- **Source File:** 027-science.json
+
+### Understanding translation and protein synthesis
+- **Slug:** `translation-protein-synthesis`
+- **Description:** Study how RNA is translated into proteins by ribosomes
+- **Primary Competencies:** `molecular-biology`
+- **Supporting Competencies:** `biochemistry`
+- **Source File:** 027-science.json
+
+### Working with microbiology lab techniques
+- **Slug:** `microbiology-lab-techniques`
+- **Description:** Culture, isolate, and identify microorganisms using sterile technique
+- **Primary Competencies:** `microbiology`
+- **Source File:** 027-science.json
+
+### Working with molecular biology techniques
+- **Slug:** `molecular-biology-techniques`
+- **Description:** Use PCR, gel electrophoresis, cloning, and other lab methods
+- **Primary Competencies:** `molecular-biology`
+- **Source File:** 027-science.json
 
 ---
 
@@ -377,6 +1377,292 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `zksync`
 - **Supporting Competencies:** `ethereum`, `solidity`
 - **Source File:** 008-blockchain-web3.json
+
+---
+
+## calculus
+
+### Applying calculus to physics and motion
+- **Slug:** `calculus-physics-motion`
+- **Description:** Use derivatives and integrals to analyze position, velocity, and acceleration
+- **Primary Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Applying derivatives to optimization problems
+- **Slug:** `derivatives-optimization`
+- **Description:** Find maximum and minimum values to solve real-world optimization problems
+- **Primary Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Applying integration to area, volume, and arc length
+- **Slug:** `integration-area-volume`
+- **Description:** Use definite integrals to calculate geometric properties
+- **Primary Competencies:** `calculus-2`
+- **Supporting Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Applying multivariable calculus to physics and engineering
+- **Slug:** `multivariable-calculus-physics-engineering`
+- **Description:** Use vector calculus to analyze electromagnetic fields, fluid flow, and more
+- **Primary Competencies:** `calculus-3`
+- **Source File:** 023-mathematics.json
+
+### Evaluating double and triple integrals
+- **Slug:** `double-triple-integrals`
+- **Description:** Compute multiple integrals to find volumes and other properties
+- **Primary Competencies:** `calculus-3`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Mastering advanced integration techniques
+- **Slug:** `advanced-integration-techniques`
+- **Description:** Work with integration by parts, partial fractions, trigonometric substitution, and more
+- **Primary Competencies:** `calculus-2`
+- **Supporting Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Solving basic differential equations
+- **Slug:** `basic-differential-equations-calculus2`
+- **Description:** Work with separable equations and first-order linear differential equations
+- **Primary Competencies:** `calculus-2`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Understanding derivatives and rates of change
+- **Slug:** `derivatives-rates-of-change`
+- **Description:** Master differentiation techniques and interpret derivatives as rates of change
+- **Primary Competencies:** `calculus-1`
+- **Supporting Competencies:** `pre-calculus`
+- **Source File:** 023-mathematics.json
+
+### Understanding integration and the Fundamental Theorem of Calculus
+- **Slug:** `integration-fundamental-theorem`
+- **Description:** Master integration techniques and understand the connection between derivatives and integrals
+- **Primary Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Understanding multivariable functions and partial derivatives
+- **Slug:** `multivariable-functions-partial-derivatives`
+- **Description:** Work with functions of several variables and compute partial derivatives
+- **Primary Competencies:** `calculus-3`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding sequences and series
+- **Slug:** `sequences-series-calculus`
+- **Description:** Work with infinite sequences, series convergence, and power series
+- **Primary Competencies:** `calculus-2`
+- **Supporting Competencies:** `calculus-1`
+- **Source File:** 023-mathematics.json
+
+### Understanding vector calculus and field theory
+- **Slug:** `vector-calculus-field-theory`
+- **Description:** Work with gradient, divergence, curl, and fundamental theorems of vector calculus
+- **Primary Competencies:** `calculus-3`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+---
+
+## chemistry
+
+### Applying analytical chemistry to environmental monitoring
+- **Slug:** `analytical-chemistry-environmental`
+- **Description:** Measure pollutants, contaminants, and environmental samples
+- **Primary Competencies:** `analytical-chemistry`
+- **Supporting Competencies:** `environmental-chemistry`
+- **Source File:** 027-science.json
+
+### Applying inorganic chemistry to catalysis
+- **Slug:** `inorganic-chemistry-catalysis`
+- **Description:** Use metal complexes and inorganic compounds to accelerate reactions
+- **Primary Competencies:** `inorganic-chemistry`
+- **Source File:** 027-science.json
+
+### Applying materials science to nanotechnology
+- **Slug:** `materials-science-nanotechnology`
+- **Description:** Design and work with materials at the nanometer scale
+- **Primary Competencies:** `materials-science`
+- **Source File:** 027-science.json
+
+### Applying organic chemistry to pharmaceuticals
+- **Slug:** `organic-chemistry-pharmaceuticals`
+- **Description:** Understand drug molecules, synthesis, and medicinal chemistry
+- **Primary Competencies:** `organic-chemistry`
+- **Source File:** 027-science.json
+
+### Conducting chemistry lab experiments safely
+- **Slug:** `chemistry-lab-experiments`
+- **Description:** Perform titrations, synthesis, and analysis with proper laboratory technique
+- **Primary Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Performing quantitative chemical analysis
+- **Slug:** `quantitative-chemical-analysis`
+- **Description:** Determine concentrations using titrations, gravimetry, and instrumentation
+- **Primary Competencies:** `analytical-chemistry`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+### Synthesizing organic molecules in the laboratory
+- **Slug:** `synthesizing-organic-molecules`
+- **Description:** Design and execute multi-step organic synthesis procedures
+- **Primary Competencies:** `organic-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding atomic structure and the periodic table
+- **Slug:** `atomic-structure-periodic-table`
+- **Description:** Study electron configurations, periodic trends, and chemical properties
+- **Primary Competencies:** `chemistry`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Understanding carbon compounds and functional groups
+- **Slug:** `carbon-compounds-functional-groups`
+- **Description:** Study alkanes, alkenes, alcohols, and other organic molecules
+- **Primary Competencies:** `organic-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding chemical bonding and molecular structure
+- **Slug:** `chemical-bonding-molecular-structure`
+- **Description:** Study ionic, covalent, and metallic bonds and molecular geometry
+- **Primary Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding chemical kinetics and reaction rates
+- **Slug:** `chemical-kinetics-reaction-rates`
+- **Description:** Study rate laws, activation energy, and reaction mechanisms
+- **Primary Competencies:** `physical-chemistry`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 027-science.json
+
+### Understanding chemical reactions and stoichiometry
+- **Slug:** `chemical-reactions-stoichiometry`
+- **Description:** Master balancing equations and calculating reaction quantities
+- **Primary Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding coordination compounds and complexes
+- **Slug:** `coordination-compounds-complexes`
+- **Description:** Study transition metal complexes, ligands, and coordination chemistry
+- **Primary Competencies:** `inorganic-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding material properties and characterization
+- **Slug:** `material-properties-characterization`
+- **Description:** Study mechanical, electrical, and thermal properties of materials
+- **Primary Competencies:** `materials-science`
+- **Supporting Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding metabolism and energy production
+- **Slug:** `metabolism-energy-production`
+- **Description:** Study cellular respiration, glycolysis, and ATP synthesis
+- **Primary Competencies:** `biochemistry`
+- **Supporting Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Understanding nucleic acids and genetic information
+- **Slug:** `nucleic-acids-genetic-information`
+- **Description:** Study DNA, RNA structure, replication, and gene expression
+- **Primary Competencies:** `biochemistry`
+- **Supporting Competencies:** `molecular-biology`
+- **Source File:** 027-science.json
+
+### Understanding organic reaction mechanisms
+- **Slug:** `organic-reaction-mechanisms`
+- **Description:** Study electron movement, intermediates, and reaction pathways
+- **Primary Competencies:** `organic-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding polymers and macromolecules
+- **Slug:** `polymers-macromolecules`
+- **Description:** Study synthetic polymers, plastics, and polymerization reactions
+- **Primary Competencies:** `materials-science`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding protein structure and function
+- **Slug:** `protein-structure-function`
+- **Description:** Study amino acids, protein folding, and enzymatic catalysis
+- **Primary Competencies:** `biochemistry`
+- **Supporting Competencies:** `organic-chemistry`, `biology`
+- **Source File:** 027-science.json
+
+### Understanding quantum chemistry and molecular orbitals
+- **Slug:** `quantum-chemistry-molecular-orbitals`
+- **Description:** Apply quantum mechanics to chemical bonding and spectroscopy
+- **Primary Competencies:** `physical-chemistry`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Understanding solid state and crystal structures
+- **Slug:** `solid-state-crystal-structures`
+- **Description:** Study lattices, unit cells, and the properties of crystalline materials
+- **Primary Competencies:** `inorganic-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding spectroscopy and molecular analysis
+- **Slug:** `spectroscopy-molecular-analysis`
+- **Description:** Use NMR, IR, and mass spectrometry to identify compounds
+- **Primary Competencies:** `analytical-chemistry`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Understanding stereochemistry and chirality
+- **Slug:** `stereochemistry-chirality`
+- **Description:** Study 3D molecular structure, enantiomers, and optical activity
+- **Primary Competencies:** `organic-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding thermodynamics of chemical reactions
+- **Slug:** `thermodynamics-chemical-reactions`
+- **Description:** Study enthalpy, entropy, and Gibbs free energy in chemistry
+- **Primary Competencies:** `physical-chemistry`
+- **Supporting Competencies:** `thermodynamics`, `chemistry`
+- **Source File:** 027-science.json
+
+### Working with acids, bases, and pH
+- **Slug:** `acids-bases-ph`
+- **Description:** Understand acid-base chemistry, equilibrium, and buffer solutions
+- **Primary Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Working with chromatography and separation techniques
+- **Slug:** `chromatography-separation-techniques`
+- **Description:** Separate and purify chemical mixtures using various methods
+- **Primary Competencies:** `analytical-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Working with electrochemistry and batteries
+- **Slug:** `electrochemistry-batteries`
+- **Description:** Study redox reactions, electrochemical cells, and energy storage
+- **Primary Competencies:** `physical-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Working with lipids and membranes
+- **Slug:** `lipids-membranes`
+- **Description:** Understand biological membranes, signaling, and lipid metabolism
+- **Primary Competencies:** `biochemistry`
+- **Supporting Competencies:** `cell-biology`
+- **Source File:** 027-science.json
+
+### Working with main group element chemistry
+- **Slug:** `main-group-element-chemistry`
+- **Description:** Study the chemistry of s-block and p-block elements
+- **Primary Competencies:** `inorganic-chemistry`
+- **Source File:** 027-science.json
+
+### Working with semiconductors and electronic materials
+- **Slug:** `semiconductors-electronic-materials`
+- **Description:** Understand the materials behind modern electronics and computing
+- **Primary Competencies:** `materials-science`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
 
 ---
 
@@ -3178,6 +4464,473 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## differential-equations
+
+### Applying differential equations to engineering problems
+- **Slug:** `differential-equations-engineering`
+- **Description:** Model and analyze mechanical, electrical, and thermal systems
+- **Primary Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Applying PDEs to physics and engineering
+- **Slug:** `pdes-physics-engineering`
+- **Description:** Model diffusion, wave propagation, and potential problems with PDEs
+- **Primary Competencies:** `partial-differential-equations`
+- **Supporting Competencies:** `calculus-3`
+- **Source File:** 023-mathematics.json
+
+### Modeling physical systems with differential equations
+- **Slug:** `modeling-physical-systems-odes`
+- **Description:** Use differential equations to model springs, circuits, population growth, and more
+- **Primary Competencies:** `differential-equations`
+- **Source File:** 023-mathematics.json
+
+### Solving differential equations with linear algebra
+- **Slug:** `solving-odes-linear-algebra`
+- **Description:** Use matrix methods to solve systems of linear differential equations
+- **Primary Competencies:** `differential-equations`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Solving ordinary differential equations
+- **Slug:** `solving-ordinary-differential-equations`
+- **Description:** Master techniques for first and second-order ODEs and systems
+- **Primary Competencies:** `differential-equations`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Solving the heat, wave, and Laplace equations
+- **Slug:** `solving-heat-wave-laplace-equations`
+- **Description:** Master classical PDEs using separation of variables and Fourier series
+- **Primary Competencies:** `partial-differential-equations`
+- **Supporting Competencies:** `fourier-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding Laplace transforms and their applications
+- **Slug:** `laplace-transforms-applications`
+- **Description:** Use Laplace transforms to solve differential equations and analyze systems
+- **Primary Competencies:** `differential-equations`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding numerical methods for PDEs
+- **Slug:** `numerical-methods-pdes`
+- **Description:** Use finite difference and finite element methods to solve PDEs computationally
+- **Primary Competencies:** `partial-differential-equations`
+- **Supporting Competencies:** `numerical-analysis`
+- **Source File:** 023-mathematics.json
+
+### Understanding partial differential equations
+- **Slug:** `understanding-partial-differential-equations`
+- **Description:** Work with PDEs and boundary value problems
+- **Primary Competencies:** `partial-differential-equations`
+- **Supporting Competencies:** `calculus-3`, `differential-equations`
+- **Source File:** 023-mathematics.json
+
+---
+
+## discrete-mathematics
+
+### Analyzing graph algorithms and shortest paths
+- **Slug:** `graph-algorithms-shortest-paths`
+- **Description:** Implement and analyze algorithms like Dijkstra's and breadth-first search
+- **Primary Competencies:** `graph-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying Boolean algebra to digital circuit design
+- **Slug:** `boolean-algebra-digital-circuits`
+- **Description:** Design and analyze logic gates and combinational circuits
+- **Primary Competencies:** `boolean-algebra`
+- **Source File:** 023-mathematics.json
+
+### Applying combinatorics to probability
+- **Slug:** `combinatorics-probability`
+- **Description:** Use counting techniques to calculate probabilities of events
+- **Primary Competencies:** `combinatorics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Applying discrete mathematics to computer science
+- **Slug:** `discrete-math-computer-science`
+- **Description:** Use discrete structures to analyze algorithms and computational problems
+- **Primary Competencies:** `discrete-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Applying graph theory to network optimization
+- **Slug:** `graph-theory-network-optimization`
+- **Description:** Use graphs to model and optimize transportation, communication, and flow networks
+- **Primary Competencies:** `graph-theory`
+- **Supporting Competencies:** `optimization`
+- **Source File:** 023-mathematics.json
+
+### Applying graph theory to social networks
+- **Slug:** `graph-theory-social-networks`
+- **Description:** Analyze relationships, influence, and community structure using graph theory
+- **Primary Competencies:** `graph-theory`
+- **Source File:** 023-mathematics.json
+
+### Applying logic to computer science and programming
+- **Slug:** `logic-computer-science`
+- **Description:** Use formal logic for program verification and automated reasoning
+- **Primary Competencies:** `mathematical-logic`
+- **Supporting Competencies:** `boolean-algebra`
+- **Source File:** 023-mathematics.json
+
+### Proving theorems with formal logic
+- **Slug:** `proving-theorems-formal-logic`
+- **Description:** Use deductive systems and proof techniques from mathematical logic
+- **Primary Competencies:** `mathematical-logic`
+- **Source File:** 023-mathematics.json
+
+### Simplifying Boolean expressions
+- **Slug:** `simplifying-boolean-expressions`
+- **Description:** Use Karnaugh maps and algebraic methods to minimize Boolean functions
+- **Primary Competencies:** `boolean-algebra`
+- **Source File:** 023-mathematics.json
+
+### Solving advanced counting problems
+- **Slug:** `advanced-counting-problems`
+- **Description:** Work with inclusion-exclusion, generating functions, and recurrence relations
+- **Primary Competencies:** `combinatorics`
+- **Supporting Competencies:** `discrete-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Understanding axiomatic set theory
+- **Slug:** `axiomatic-set-theory`
+- **Description:** Study ZFC axioms and the foundations of mathematics
+- **Primary Competencies:** `set-theory`
+- **Supporting Competencies:** `mathematical-logic`
+- **Source File:** 023-mathematics.json
+
+### Understanding Boolean logic and algebra
+- **Slug:** `boolean-logic-algebra`
+- **Description:** Work with Boolean operations, truth tables, and logical equivalences
+- **Primary Competencies:** `boolean-algebra`
+- **Supporting Competencies:** `mathematical-logic`
+- **Source File:** 023-mathematics.json
+
+### Understanding cardinality and infinite sets
+- **Slug:** `cardinality-infinite-sets`
+- **Description:** Work with countable and uncountable infinities and Cantor's theorem
+- **Primary Competencies:** `set-theory`
+- **Source File:** 023-mathematics.json
+
+### Understanding combinatorial optimization
+- **Slug:** `combinatorial-optimization`
+- **Description:** Solve optimization problems on discrete structures
+- **Primary Competencies:** `combinatorics`
+- **Supporting Competencies:** `optimization`
+- **Source File:** 023-mathematics.json
+
+### Understanding completeness and soundness in logic
+- **Slug:** `completeness-soundness-logic`
+- **Description:** Study the fundamental theorems of mathematical logic
+- **Primary Competencies:** `mathematical-logic`
+- **Source File:** 023-mathematics.json
+
+### Understanding counting principles and combinatorics
+- **Slug:** `counting-principles-discrete`
+- **Description:** Master permutations, combinations, and the pigeonhole principle
+- **Primary Competencies:** `discrete-mathematics`
+- **Supporting Competencies:** `combinatorics`
+- **Source File:** 023-mathematics.json
+
+### Understanding generating functions
+- **Slug:** `understanding-generating-functions`
+- **Description:** Use generating functions to solve counting and recurrence problems
+- **Primary Competencies:** `combinatorics`
+- **Source File:** 023-mathematics.json
+
+### Understanding graph coloring and matching
+- **Slug:** `graph-coloring-matching`
+- **Description:** Work with chromatic numbers, bipartite matching, and scheduling problems
+- **Primary Competencies:** `graph-theory`
+- **Supporting Competencies:** `combinatorics`
+- **Source File:** 023-mathematics.json
+
+### Understanding graphs and network structures
+- **Slug:** `graphs-network-structures`
+- **Description:** Work with vertices, edges, paths, cycles, and graph properties
+- **Primary Competencies:** `graph-theory`
+- **Supporting Competencies:** `discrete-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Understanding logic and proof techniques
+- **Slug:** `logic-proof-techniques`
+- **Description:** Master direct proof, contradiction, induction, and other mathematical reasoning methods
+- **Primary Competencies:** `discrete-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Understanding propositional and predicate logic
+- **Slug:** `propositional-predicate-logic`
+- **Description:** Work with logical statements, truth tables, and quantifiers
+- **Primary Competencies:** `mathematical-logic`
+- **Supporting Competencies:** `discrete-mathematics`
+- **Source File:** 023-mathematics.json
+
+### Working with functions and relations in set theory
+- **Slug:** `functions-relations-set-theory`
+- **Description:** Understand mappings, equivalence relations, and orderings from a set-theoretic perspective
+- **Primary Competencies:** `set-theory`
+- **Source File:** 023-mathematics.json
+
+### Working with sets, relations, and functions
+- **Slug:** `sets-relations-functions-discrete`
+- **Description:** Understand foundational discrete structures and their properties
+- **Primary Competencies:** `discrete-mathematics`
+- **Supporting Competencies:** `set-theory`
+- **Source File:** 023-mathematics.json
+
+---
+
+## environmental-science
+
+### Analyzing environmental samples
+- **Slug:** `analyzing-environmental-samples`
+- **Description:** Use analytical chemistry to measure contaminants in air, water, and soil
+- **Primary Competencies:** `environmental-chemistry`
+- **Supporting Competencies:** `analytical-chemistry`
+- **Source File:** 027-science.json
+
+### Applying conservation biology to restoration ecology
+- **Slug:** `conservation-biology-restoration`
+- **Description:** Restore degraded ecosystems and reintroduce endangered species
+- **Primary Competencies:** `conservation-biology`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Applying meteorology to aviation and transportation
+- **Slug:** `meteorology-aviation-transportation`
+- **Description:** Use weather knowledge for flight planning and transportation safety
+- **Primary Competencies:** `meteorology`
+- **Source File:** 027-science.json
+
+### Applying sustainability to urban planning
+- **Slug:** `sustainability-urban-planning`
+- **Description:** Design sustainable cities and communities
+- **Primary Competencies:** `sustainability`
+- **Source File:** 027-science.json
+
+### Conducting environmental monitoring and assessment
+- **Slug:** `environmental-monitoring-assessment`
+- **Description:** Measure environmental parameters and assess ecological health
+- **Primary Competencies:** `environmental-science`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+### Conducting fossil excavation and preparation
+- **Slug:** `fossil-excavation-preparation`
+- **Description:** Extract, clean, and preserve fossil specimens from rock formations
+- **Primary Competencies:** `paleontology`
+- **Supporting Competencies:** `geology`
+- **Source File:** 027-science.json
+
+### Conducting geological fieldwork
+- **Slug:** `geological-fieldwork`
+- **Description:** Map rock formations, collect samples, and interpret geological features
+- **Primary Competencies:** `geology`
+- **Source File:** 027-science.json
+
+### Conducting oceanographic research expeditions
+- **Slug:** `oceanographic-research-expeditions`
+- **Description:** Collect and analyze data from ocean environments
+- **Primary Competencies:** `oceanography`
+- **Source File:** 027-science.json
+
+### Designing protected areas and wildlife corridors
+- **Slug:** `protected-areas-wildlife-corridors`
+- **Description:** Plan conservation reserves to preserve biodiversity
+- **Primary Competencies:** `conservation-biology`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding ancient environments through paleontology
+- **Slug:** `ancient-environments-paleontology`
+- **Description:** Reconstruct past ecosystems and climate from fossil evidence
+- **Primary Competencies:** `paleontology`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding atmospheric chemistry and air quality
+- **Slug:** `atmospheric-chemistry-air-quality`
+- **Description:** Study chemical reactions in the atmosphere and pollution formation
+- **Primary Competencies:** `environmental-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding biodiversity and extinction threats
+- **Slug:** `biodiversity-extinction-threats`
+- **Description:** Study species diversity, habitat loss, and conservation priorities
+- **Primary Competencies:** `conservation-biology`
+- **Supporting Competencies:** `ecology`, `environmental-science`
+- **Source File:** 027-science.json
+
+### Understanding chemical pollutants and toxicology
+- **Slug:** `chemical-pollutants-toxicology`
+- **Description:** Study the fate and effects of chemicals in the environment
+- **Primary Competencies:** `environmental-chemistry`
+- **Supporting Competencies:** `chemistry`, `environmental-science`
+- **Source File:** 027-science.json
+
+### Understanding circular economy and waste reduction
+- **Slug:** `circular-economy-waste-reduction`
+- **Description:** Design systems that minimize waste and maximize resource reuse
+- **Primary Competencies:** `sustainability`
+- **Source File:** 027-science.json
+
+### Understanding climate impacts and adaptation
+- **Slug:** `climate-impacts-adaptation`
+- **Description:** Study how climate change affects ecosystems, societies, and economies
+- **Primary Competencies:** `climate-science`
+- **Supporting Competencies:** `environmental-science`
+- **Source File:** 027-science.json
+
+### Understanding dinosaurs and prehistoric life
+- **Slug:** `dinosaurs-prehistoric-life`
+- **Description:** Study the biology and evolution of extinct organisms
+- **Primary Competencies:** `paleontology`
+- **Supporting Competencies:** `zoology`
+- **Source File:** 027-science.json
+
+### Understanding Earth's climate system
+- **Slug:** `earth-climate-system`
+- **Description:** Study atmosphere, oceans, ice, and their interactions shaping climate
+- **Primary Competencies:** `climate-science`
+- **Supporting Competencies:** `meteorology`, `oceanography`
+- **Source File:** 027-science.json
+
+### Understanding Earth's structure and plate tectonics
+- **Slug:** `earth-structure-plate-tectonics`
+- **Description:** Study the Earth's layers, continental drift, and tectonic processes
+- **Primary Competencies:** `geology`
+- **Source File:** 027-science.json
+
+### Understanding ecosystems and environmental interactions
+- **Slug:** `ecosystems-environmental-interactions`
+- **Description:** Study how organisms interact with their physical and biological environment
+- **Primary Competencies:** `environmental-science`
+- **Supporting Competencies:** `ecology`
+- **Source File:** 027-science.json
+
+### Understanding geological time and Earth history
+- **Slug:** `geological-time-earth-history`
+- **Description:** Study the history of Earth through rock formations and fossils
+- **Primary Competencies:** `geology`
+- **Supporting Competencies:** `paleontology`
+- **Source File:** 027-science.json
+
+### Understanding greenhouse gases and global warming
+- **Slug:** `greenhouse-gases-global-warming`
+- **Description:** Study carbon dioxide, methane, and the enhanced greenhouse effect
+- **Primary Competencies:** `climate-science`
+- **Supporting Competencies:** `environmental-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding natural resource management
+- **Slug:** `natural-resource-management`
+- **Description:** Study sustainable use of water, forests, minerals, and other resources
+- **Primary Competencies:** `environmental-science`
+- **Supporting Competencies:** `sustainability`
+- **Source File:** 027-science.json
+
+### Understanding ocean chemistry and acidification
+- **Slug:** `ocean-chemistry-acidification`
+- **Description:** Study chemical processes in seawater and impacts of CO2 absorption
+- **Primary Competencies:** `oceanography`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding ocean circulation and currents
+- **Slug:** `ocean-circulation-currents`
+- **Description:** Study surface and deep ocean currents and their role in climate
+- **Primary Competencies:** `oceanography`
+- **Supporting Competencies:** `fluid-dynamics`
+- **Source File:** 027-science.json
+
+### Understanding pollution and environmental health
+- **Slug:** `pollution-environmental-health`
+- **Description:** Study air, water, and soil pollution and their impacts on ecosystems and health
+- **Primary Competencies:** `environmental-science`
+- **Supporting Competencies:** `environmental-chemistry`
+- **Source File:** 027-science.json
+
+### Understanding population viability analysis
+- **Slug:** `population-viability-analysis`
+- **Description:** Model extinction risk for endangered species
+- **Primary Competencies:** `conservation-biology`
+- **Supporting Competencies:** `population-genetics`, `statistics`
+- **Source File:** 027-science.json
+
+### Understanding renewable energy systems
+- **Slug:** `renewable-energy-systems`
+- **Description:** Study solar, wind, hydro, and other sustainable energy sources
+- **Primary Competencies:** `sustainability`
+- **Supporting Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding rocks, minerals, and the rock cycle
+- **Slug:** `rocks-minerals-rock-cycle`
+- **Description:** Identify and classify rocks and understand geological processes
+- **Primary Competencies:** `geology`
+- **Source File:** 027-science.json
+
+### Understanding seafloor geology and tectonics
+- **Slug:** `seafloor-geology-tectonics`
+- **Description:** Study mid-ocean ridges, trenches, and submarine volcanism
+- **Primary Competencies:** `oceanography`
+- **Supporting Competencies:** `geology`
+- **Source File:** 027-science.json
+
+### Understanding severe weather phenomena
+- **Slug:** `severe-weather-phenomena`
+- **Description:** Study hurricanes, tornadoes, thunderstorms, and extreme weather
+- **Primary Competencies:** `meteorology`
+- **Source File:** 027-science.json
+
+### Understanding sustainable development principles
+- **Slug:** `sustainable-development-principles`
+- **Description:** Study how to meet current needs without compromising future generations
+- **Primary Competencies:** `sustainability`
+- **Supporting Competencies:** `environmental-science`
+- **Source File:** 027-science.json
+
+### Understanding the fossil record and extinction events
+- **Slug:** `fossil-record-extinction-events`
+- **Description:** Study preserved remains of ancient life and mass extinctions
+- **Primary Competencies:** `paleontology`
+- **Supporting Competencies:** `geology`, `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding water chemistry and treatment
+- **Slug:** `water-chemistry-treatment`
+- **Description:** Study chemical processes in water and methods for purification
+- **Primary Competencies:** `environmental-chemistry`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Understanding weather systems and forecasting
+- **Slug:** `weather-systems-forecasting`
+- **Description:** Study atmospheric processes and predict weather patterns
+- **Primary Competencies:** `meteorology`
+- **Supporting Competencies:** `fluid-dynamics`
+- **Source File:** 027-science.json
+
+### Working with climate models and predictions
+- **Slug:** `climate-models-predictions`
+- **Description:** Use computational models to project future climate scenarios
+- **Primary Competencies:** `climate-science`
+- **Supporting Competencies:** `mathematical-modeling`
+- **Source File:** 027-science.json
+
+### Working with weather data and observation
+- **Slug:** `weather-data-observation`
+- **Description:** Collect and analyze meteorological measurements
+- **Primary Competencies:** `meteorology`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+---
+
 ## fiber-arts-crafts
 
 ### Appliqué fabric art
@@ -3813,6 +5566,196 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `vuejs`
 - **Supporting Competencies:** `javascript`, `html`, `css`
 - **Source File:** 001-programming.json
+
+---
+
+## genetics
+
+### Applying genetics to agriculture and breeding
+- **Slug:** `genetics-agriculture-breeding`
+- **Description:** Use genetic principles to improve crops and livestock
+- **Primary Competencies:** `genetics`
+- **Source File:** 027-science.json
+
+### Applying genomics to personalized medicine
+- **Slug:** `genomics-personalized-medicine`
+- **Description:** Use genomic information to tailor medical treatment
+- **Primary Competencies:** `genomics`
+- **Source File:** 027-science.json
+
+### Modeling population genetics mathematically
+- **Slug:** `modeling-population-genetics`
+- **Description:** Use mathematical models to predict evolutionary changes
+- **Primary Competencies:** `population-genetics`
+- **Supporting Competencies:** `mathematical-modeling`, `probability`
+- **Source File:** 027-science.json
+
+### Understanding allele frequencies and Hardy-Weinberg equilibrium
+- **Slug:** `allele-frequencies-hardy-weinberg`
+- **Description:** Study how genetic variation is distributed in populations
+- **Primary Competencies:** `population-genetics`
+- **Supporting Competencies:** `genetics`, `statistics`
+- **Source File:** 027-science.json
+
+### Understanding cancer genetics
+- **Slug:** `understanding-cancer-genetics`
+- **Description:** Study oncogenes, tumor suppressors, and the genetics of cancer
+- **Primary Competencies:** `molecular-genetics`
+- **Supporting Competencies:** `cell-biology`
+- **Source File:** 027-science.json
+
+### Understanding comparative genomics
+- **Slug:** `understanding-comparative-genomics`
+- **Description:** Compare genomes across species to understand evolution and function
+- **Primary Competencies:** `genomics`
+- **Supporting Competencies:** `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding gene regulation and epigenetics
+- **Slug:** `gene-regulation-epigenetics`
+- **Description:** Study how genes are turned on and off and heritable changes beyond DNA sequence
+- **Primary Competencies:** `molecular-genetics`
+- **Supporting Competencies:** `molecular-biology`, `genetics`
+- **Source File:** 027-science.json
+
+### Understanding genetic drift and population bottlenecks
+- **Slug:** `genetic-drift-population-bottlenecks`
+- **Description:** Study random changes in allele frequencies over time
+- **Primary Competencies:** `population-genetics`
+- **Supporting Competencies:** `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding genetic variation and mutations
+- **Slug:** `genetic-variation-mutations`
+- **Description:** Study sources of genetic diversity and types of mutations
+- **Primary Competencies:** `genetics`
+- **Supporting Competencies:** `molecular-genetics`
+- **Source File:** 027-science.json
+
+### Understanding genome sequencing and analysis
+- **Slug:** `genome-sequencing-analysis`
+- **Description:** Work with next-generation sequencing and analyze whole genomes
+- **Primary Competencies:** `genomics`
+- **Supporting Competencies:** `molecular-genetics`
+- **Source File:** 027-science.json
+
+### Understanding human genetics and genetic disorders
+- **Slug:** `human-genetics-disorders`
+- **Description:** Study inheritance of human traits and genetic diseases
+- **Primary Competencies:** `genetics`
+- **Source File:** 027-science.json
+
+### Understanding Mendelian genetics
+- **Slug:** `mendelian-genetics`
+- **Description:** Study inheritance patterns, Punnett squares, and genetic crosses
+- **Primary Competencies:** `genetics`
+- **Supporting Competencies:** `biology`
+- **Source File:** 027-science.json
+
+### Working with bioinformatics for genomics
+- **Slug:** `bioinformatics-genomics`
+- **Description:** Use computational tools to analyze large-scale genomic data
+- **Primary Competencies:** `genomics`
+- **Source File:** 027-science.json
+
+### Working with genetic engineering and CRISPR
+- **Slug:** `genetic-engineering-crispr`
+- **Description:** Use molecular tools to edit genes and create modified organisms
+- **Primary Competencies:** `molecular-genetics`
+- **Supporting Competencies:** `molecular-biology`
+- **Source File:** 027-science.json
+
+---
+
+## geometry
+
+### Applying differential geometry to general relativity
+- **Slug:** `differential-geometry-relativity`
+- **Description:** Understand the mathematical framework of Einstein's theory of gravity
+- **Primary Competencies:** `differential-geometry`
+- **Supporting Competencies:** `calculus-3`
+- **Source File:** 023-mathematics.json
+
+### Applying geometry to architecture and design
+- **Slug:** `geometry-architecture-design`
+- **Description:** Use geometric principles in architectural planning, interior design, and construction
+- **Primary Competencies:** `geometry`
+- **Supporting Competencies:** `euclidean-geometry`
+- **Source File:** 023-mathematics.json
+
+### Applying non-Euclidean geometry to cosmology and relativity
+- **Slug:** `non-euclidean-geometry-cosmology`
+- **Description:** Understand curved spacetime and the geometry of the universe
+- **Primary Competencies:** `non-euclidean-geometry`
+- **Source File:** 023-mathematics.json
+
+### Calculating area, perimeter, and volume
+- **Slug:** `area-perimeter-volume-calculations`
+- **Description:** Apply formulas to find measurements of 2D and 3D shapes
+- **Primary Competencies:** `geometry`
+- **Supporting Competencies:** `algebra-1`
+- **Source File:** 023-mathematics.json
+
+### Exploring non-Euclidean geometry
+- **Slug:** `exploring-non-euclidean-geometry`
+- **Description:** Understand hyperbolic and spherical geometries and their applications
+- **Primary Competencies:** `non-euclidean-geometry`
+- **Supporting Competencies:** `euclidean-geometry`
+- **Source File:** 023-mathematics.json
+
+### Mastering Euclidean geometry fundamentals
+- **Slug:** `euclidean-geometry-fundamentals`
+- **Description:** Study classical geometry including Euclid's axioms and postulates
+- **Primary Competencies:** `euclidean-geometry`
+- **Supporting Competencies:** `geometry`
+- **Source File:** 023-mathematics.json
+
+### Proving geometric theorems
+- **Slug:** `proving-geometric-theorems`
+- **Description:** Develop logical reasoning skills through geometric proofs and deductive reasoning
+- **Primary Competencies:** `geometry`
+- **Supporting Competencies:** `euclidean-geometry`
+- **Source File:** 023-mathematics.json
+
+### Understanding conic sections through analytic geometry
+- **Slug:** `conic-sections-analytic-geometry`
+- **Description:** Study circles, ellipses, parabolas, and hyperbolas using algebraic equations
+- **Primary Competencies:** `analytic-geometry`
+- **Supporting Competencies:** `algebra-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding curves and surfaces in differential geometry
+- **Slug:** `curves-surfaces-differential-geometry`
+- **Description:** Study the geometry of smooth curves and surfaces using calculus
+- **Primary Competencies:** `differential-geometry`
+- **Supporting Competencies:** `calculus-3`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding geometric shapes and their properties
+- **Slug:** `geometric-shapes-properties`
+- **Description:** Learn about angles, triangles, quadrilaterals, circles, and their characteristics
+- **Primary Competencies:** `geometry`
+- **Source File:** 023-mathematics.json
+
+### Understanding projective geometry and perspective
+- **Slug:** `projective-geometry-perspective`
+- **Description:** Study geometric properties preserved under projection and their applications to art
+- **Primary Competencies:** `projective-geometry`
+- **Supporting Competencies:** `euclidean-geometry`
+- **Source File:** 023-mathematics.json
+
+### Understanding transformations and symmetry
+- **Slug:** `geometric-transformations-symmetry`
+- **Description:** Work with translations, rotations, reflections, and dilations
+- **Primary Competencies:** `geometry`
+- **Source File:** 023-mathematics.json
+
+### Working with coordinate geometry and equations of shapes
+- **Slug:** `coordinate-geometry-equations`
+- **Description:** Use coordinate systems to represent and analyze geometric figures algebraically
+- **Primary Competencies:** `analytic-geometry`
+- **Supporting Competencies:** `algebra-2`, `geometry`
+- **Source File:** 023-mathematics.json
 
 ---
 
@@ -5461,6 +7404,198 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Master the six tones of Vietnamese for accurate pronunciation
 - **Primary Competencies:** `vietnamese`
 - **Source File:** 013-languages.json
+
+---
+
+## life-sciences
+
+### Applying anatomy to clinical medicine
+- **Slug:** `anatomy-clinical-medicine`
+- **Description:** Use anatomical knowledge for medical diagnosis and procedures
+- **Primary Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Applying exercise physiology to performance optimization
+- **Slug:** `exercise-physiology-performance`
+- **Description:** Use physiological principles to enhance athletic performance
+- **Primary Competencies:** `exercise-physiology`
+- **Source File:** 027-science.json
+
+### Applying plant physiology to agriculture
+- **Slug:** `plant-physiology-agriculture`
+- **Description:** Use physiological knowledge to improve crop yields and resilience
+- **Primary Competencies:** `plant-physiology`
+- **Source File:** 027-science.json
+
+### Conducting exercise testing and assessment
+- **Slug:** `exercise-testing-assessment`
+- **Description:** Measure VO2 max, lactate threshold, and other fitness parameters
+- **Primary Competencies:** `exercise-physiology`
+- **Source File:** 027-science.json
+
+### Conducting physiology experiments
+- **Slug:** `physiology-experiments`
+- **Description:** Measure and analyze physiological parameters in laboratory settings
+- **Primary Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Understanding cardiovascular and respiratory physiology
+- **Slug:** `cardiovascular-respiratory-physiology`
+- **Description:** Study heart function, blood circulation, and gas exchange
+- **Primary Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Understanding energy systems in exercise
+- **Slug:** `energy-systems-exercise`
+- **Description:** Study aerobic and anaerobic metabolism during physical activity
+- **Primary Competencies:** `exercise-physiology`
+- **Supporting Competencies:** `biochemistry`
+- **Source File:** 027-science.json
+
+### Understanding evolutionary patterns in anatomy
+- **Slug:** `evolutionary-patterns-anatomy`
+- **Description:** Compare anatomical structures across species to understand evolution
+- **Primary Competencies:** `comparative-anatomy`
+- **Supporting Competencies:** `anatomy`, `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding homologous and analogous structures
+- **Slug:** `homologous-analogous-structures`
+- **Description:** Study similarities in anatomy due to common ancestry vs. convergent evolution
+- **Primary Competencies:** `comparative-anatomy`
+- **Supporting Competencies:** `evolutionary-biology`
+- **Source File:** 027-science.json
+
+### Understanding human body systems and organization
+- **Slug:** `human-body-systems-organization`
+- **Description:** Study the skeletal, muscular, circulatory, and other organ systems
+- **Primary Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Understanding musculoskeletal anatomy
+- **Slug:** `musculoskeletal-anatomy`
+- **Description:** Study bones, joints, muscles, and their relationships
+- **Primary Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Understanding neural and endocrine integration
+- **Slug:** `neural-endocrine-integration`
+- **Description:** Study how nervous and hormonal systems coordinate body functions
+- **Primary Competencies:** `physiology`
+- **Supporting Competencies:** `neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding organ system physiology
+- **Slug:** `organ-system-physiology`
+- **Description:** Study how body systems maintain homeostasis and function
+- **Primary Competencies:** `physiology`
+- **Supporting Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Understanding pathological changes in tissues
+- **Slug:** `pathological-tissue-changes`
+- **Description:** Study how disease affects tissue structure and function
+- **Primary Competencies:** `histology`
+- **Source File:** 027-science.json
+
+### Understanding physiological adaptations to exercise
+- **Slug:** `physiological-adaptations-exercise`
+- **Description:** Study how the body responds and adapts to physical training
+- **Primary Competencies:** `exercise-physiology`
+- **Supporting Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Understanding plant hormones and development
+- **Slug:** `plant-hormones-development`
+- **Description:** Study auxins, gibberellins, and other hormones controlling plant growth
+- **Primary Competencies:** `plant-physiology`
+- **Source File:** 027-science.json
+
+### Understanding plant responses to environment
+- **Slug:** `plant-responses-environment`
+- **Description:** Study phototropism, circadian rhythms, and stress responses
+- **Primary Competencies:** `plant-physiology`
+- **Supporting Competencies:** `botany`
+- **Source File:** 027-science.json
+
+### Understanding plant water relations and transport
+- **Slug:** `plant-water-relations-transport`
+- **Description:** Study transpiration, xylem, phloem, and water movement in plants
+- **Primary Competencies:** `plant-physiology`
+- **Supporting Competencies:** `botany`
+- **Source File:** 027-science.json
+
+### Understanding tissues and microscopic structure
+- **Slug:** `tissues-microscopic-structure`
+- **Description:** Study epithelial, connective, muscle, and nervous tissue under the microscope
+- **Primary Competencies:** `histology`
+- **Supporting Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Understanding vertebrate anatomy across taxa
+- **Slug:** `vertebrate-anatomy-taxa`
+- **Description:** Compare anatomical systems in fish, amphibians, reptiles, birds, and mammals
+- **Primary Competencies:** `comparative-anatomy`
+- **Supporting Competencies:** `zoology`
+- **Source File:** 027-science.json
+
+### Working with cadaver dissection
+- **Slug:** `cadaver-dissection`
+- **Description:** Learn anatomy through hands-on dissection of preserved specimens
+- **Primary Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Working with microscopy and tissue staining
+- **Slug:** `microscopy-tissue-staining`
+- **Description:** Prepare and examine tissue samples using various staining techniques
+- **Primary Competencies:** `histology`
+- **Source File:** 027-science.json
+
+---
+
+## linear-algebra
+
+### Applying linear algebra to computer graphics
+- **Slug:** `linear-algebra-computer-graphics`
+- **Description:** Use matrices and transformations for 2D and 3D graphics rendering
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Applying linear algebra to data science
+- **Slug:** `linear-algebra-data-science`
+- **Description:** Use matrix operations for dimensionality reduction, PCA, and data analysis
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Applying linear algebra to machine learning
+- **Slug:** `linear-algebra-machine-learning`
+- **Description:** Use vectors and matrices for data representation and ML algorithms
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Solving systems of linear equations with matrices
+- **Slug:** `solving-linear-systems-matrices`
+- **Description:** Use Gaussian elimination, matrix inverses, and other techniques to solve systems
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding eigenvalues and eigenvectors
+- **Slug:** `eigenvalues-eigenvectors`
+- **Description:** Work with eigenvalue problems and diagonalization of matrices
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Understanding vector spaces and linear transformations
+- **Slug:** `vector-spaces-linear-transformations`
+- **Description:** Study abstract vector spaces, subspaces, and linear mappings
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Working with vectors and matrices
+- **Slug:** `vectors-matrices-basics`
+- **Description:** Understand vector operations, matrix multiplication, and determinants
+- **Primary Competencies:** `linear-algebra`
+- **Source File:** 023-mathematics.json
 
 ---
 
@@ -7612,6 +9747,163 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## neuroscience
+
+### Analyzing neural data with machine learning
+- **Slug:** `analyzing-neural-data-ml`
+- **Description:** Use computational methods to decode brain activity patterns
+- **Primary Competencies:** `computational-neuroscience`
+- **Source File:** 027-science.json
+
+### Modeling neural dynamics mathematically
+- **Slug:** `modeling-neural-dynamics`
+- **Description:** Use differential equations to model neurons and neural networks
+- **Primary Competencies:** `computational-neuroscience`
+- **Supporting Competencies:** `differential-equations`
+- **Source File:** 027-science.json
+
+### Understanding addiction neuroscience
+- **Slug:** `addiction-neuroscience`
+- **Description:** Study the neural mechanisms underlying substance abuse and addiction
+- **Primary Competencies:** `behavioral-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding attention and consciousness
+- **Slug:** `attention-consciousness`
+- **Description:** Study the neural basis of awareness, attention, and conscious experience
+- **Primary Competencies:** `cognitive-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding brain structure and function
+- **Slug:** `brain-structure-function`
+- **Description:** Study the organization of the nervous system and neural circuits
+- **Primary Competencies:** `neuroscience`
+- **Supporting Competencies:** `neuroanatomy`
+- **Source File:** 027-science.json
+
+### Understanding central nervous system structure
+- **Slug:** `central-nervous-system-structure`
+- **Description:** Study brain regions, spinal cord, and major neural pathways
+- **Primary Competencies:** `neuroanatomy`
+- **Supporting Competencies:** `anatomy`
+- **Source File:** 027-science.json
+
+### Understanding language and the brain
+- **Slug:** `language-brain`
+- **Description:** Study how the brain processes and produces language
+- **Primary Competencies:** `cognitive-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding memory and learning mechanisms
+- **Slug:** `memory-learning-mechanisms`
+- **Description:** Study how the brain encodes, stores, and retrieves information
+- **Primary Competencies:** `cognitive-neuroscience`
+- **Supporting Competencies:** `neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding motivation and reward systems
+- **Slug:** `motivation-reward-systems`
+- **Description:** Study dopamine pathways and the neuroscience of motivation
+- **Primary Competencies:** `behavioral-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding neural basis of behavior
+- **Slug:** `neural-basis-behavior`
+- **Description:** Study how brain circuits generate and control behavior
+- **Primary Competencies:** `behavioral-neuroscience`
+- **Supporting Competencies:** `neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding neural network models
+- **Slug:** `neural-network-models`
+- **Description:** Build computational models of brain circuits and neural systems
+- **Primary Competencies:** `computational-neuroscience`
+- **Supporting Competencies:** `neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding neurological disorders and diseases
+- **Slug:** `neurological-disorders-diseases`
+- **Description:** Study Alzheimer's, Parkinson's, epilepsy, and other brain conditions
+- **Primary Competencies:** `neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding neurons and synaptic transmission
+- **Slug:** `neurons-synaptic-transmission`
+- **Description:** Study action potentials, neurotransmitters, and neural communication
+- **Primary Competencies:** `neuroscience`
+- **Supporting Competencies:** `biochemistry`
+- **Source File:** 027-science.json
+
+### Understanding peripheral nervous system
+- **Slug:** `peripheral-nervous-system`
+- **Description:** Study cranial nerves, spinal nerves, and autonomic nervous system
+- **Primary Competencies:** `neuroanatomy`
+- **Supporting Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Understanding sensory systems and perception
+- **Slug:** `sensory-systems-perception`
+- **Description:** Study how the brain processes visual, auditory, and other sensory information
+- **Primary Competencies:** `neuroscience`
+- **Supporting Competencies:** `cognitive-neuroscience`
+- **Source File:** 027-science.json
+
+### Understanding stress and the brain
+- **Slug:** `stress-brain`
+- **Description:** Study how stress affects neural circuits and behavior
+- **Primary Competencies:** `behavioral-neuroscience`
+- **Supporting Competencies:** `physiology`
+- **Source File:** 027-science.json
+
+### Working with brain dissection and imaging
+- **Slug:** `brain-dissection-imaging`
+- **Description:** Perform neuroanatomical studies using specimens and imaging data
+- **Primary Competencies:** `neuroanatomy`
+- **Source File:** 027-science.json
+
+### Working with neuroimaging techniques
+- **Slug:** `neuroimaging-techniques`
+- **Description:** Use fMRI, EEG, and other methods to study brain activity
+- **Primary Competencies:** `cognitive-neuroscience`
+- **Source File:** 027-science.json
+
+---
+
+## number-theory
+
+### Applying number theory to cryptography
+- **Slug:** `number-theory-cryptography`
+- **Description:** Use modular arithmetic and prime numbers for RSA and other cryptosystems
+- **Primary Competencies:** `number-theory`
+- **Supporting Competencies:** `cryptography-math`
+- **Source File:** 023-mathematics.json
+
+### Solving Diophantine equations
+- **Slug:** `solving-diophantine-equations`
+- **Description:** Find integer solutions to polynomial equations
+- **Primary Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+### Understanding divisibility and prime numbers
+- **Slug:** `divisibility-prime-numbers`
+- **Description:** Study fundamental properties of integers and primality
+- **Primary Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+### Understanding unique factorization and the Fundamental Theorem of Arithmetic
+- **Slug:** `unique-factorization-theorem`
+- **Description:** Study prime factorization and its uniqueness
+- **Primary Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+### Working with modular arithmetic
+- **Slug:** `modular-arithmetic`
+- **Description:** Understand congruences, modular exponentiation, and applications
+- **Primary Competencies:** `number-theory`
+- **Source File:** 023-mathematics.json
+
+---
+
 ## operations-strategy
 
 ### BI reporting and analytics for executives
@@ -8051,6 +10343,303 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `wills`
 - **Supporting Competencies:** `estate-planning`
 - **Source File:** 025-personal-finance.json
+
+---
+
+## physics
+
+### Analyzing fluid flow with the Navier-Stokes equations
+- **Slug:** `fluid-flow-navier-stokes`
+- **Description:** Study the fundamental equations governing fluid motion
+- **Primary Competencies:** `fluid-dynamics`
+- **Supporting Competencies:** `partial-differential-equations`, `calculus-3`
+- **Source File:** 027-science.json
+
+### Analyzing room acoustics and architectural sound
+- **Slug:** `room-acoustics-architectural-sound`
+- **Description:** Design spaces for optimal sound quality and noise control
+- **Primary Competencies:** `acoustics`
+- **Source File:** 027-science.json
+
+### Analyzing rotational motion and rigid bodies
+- **Slug:** `rotational-motion-rigid-bodies`
+- **Description:** Study angular momentum, torque, and the dynamics of rotating systems
+- **Primary Competencies:** `classical-mechanics`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 027-science.json
+
+### Analyzing thermodynamic cycles and heat engines
+- **Slug:** `thermodynamic-cycles-heat-engines`
+- **Description:** Study Carnot cycles, refrigeration, and energy conversion efficiency
+- **Primary Competencies:** `thermodynamics`
+- **Source File:** 027-science.json
+
+### Applying acoustics to audio engineering
+- **Slug:** `acoustics-audio-engineering`
+- **Description:** Use acoustic principles for recording, mixing, and sound reproduction
+- **Primary Competencies:** `acoustics`
+- **Source File:** 027-science.json
+
+### Applying classical mechanics to engineering problems
+- **Slug:** `classical-mechanics-engineering`
+- **Description:** Use mechanical principles to analyze structures, machines, and mechanical systems
+- **Primary Competencies:** `classical-mechanics`
+- **Source File:** 027-science.json
+
+### Applying electromagnetism to circuit design
+- **Slug:** `electromagnetism-circuit-design`
+- **Description:** Use electromagnetic principles to analyze and design electrical circuits
+- **Primary Competencies:** `electromagnetism`
+- **Source File:** 027-science.json
+
+### Applying fluid dynamics to aerodynamics
+- **Slug:** `fluid-dynamics-aerodynamics`
+- **Description:** Use fluid mechanics to design aircraft and analyze airflow
+- **Primary Competencies:** `fluid-dynamics`
+- **Source File:** 027-science.json
+
+### Applying fluid dynamics to weather and climate
+- **Slug:** `fluid-dynamics-weather-climate`
+- **Description:** Model atmospheric and oceanic flows using fluid mechanics
+- **Primary Competencies:** `fluid-dynamics`
+- **Supporting Competencies:** `meteorology`
+- **Source File:** 027-science.json
+
+### Applying nuclear physics to medicine
+- **Slug:** `nuclear-physics-medicine`
+- **Description:** Use radiation and nuclear techniques for imaging and therapy
+- **Primary Competencies:** `nuclear-physics`
+- **Source File:** 027-science.json
+
+### Applying optics to imaging and microscopy
+- **Slug:** `optics-imaging-microscopy`
+- **Description:** Design and use optical systems for cameras, telescopes, and microscopes
+- **Primary Competencies:** `optics`
+- **Source File:** 027-science.json
+
+### Applying quantum mechanics to atoms and molecules
+- **Slug:** `quantum-mechanics-atoms-molecules`
+- **Description:** Use quantum theory to understand atomic structure and chemical bonding
+- **Primary Competencies:** `quantum-mechanics`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Applying relativity to GPS and precision timing
+- **Slug:** `relativity-gps-precision-timing`
+- **Description:** Understand how relativistic effects impact real-world technology
+- **Primary Competencies:** `relativity`
+- **Source File:** 027-science.json
+
+### Applying thermodynamics to chemistry and materials
+- **Slug:** `thermodynamics-chemistry-materials`
+- **Description:** Use thermodynamic principles to understand chemical reactions and phase transitions
+- **Primary Competencies:** `thermodynamics`
+- **Supporting Competencies:** `chemistry`
+- **Source File:** 027-science.json
+
+### Conducting physics experiments and lab work
+- **Slug:** `physics-experiments-lab-work`
+- **Description:** Design experiments, collect data, and analyze results in physics laboratory settings
+- **Primary Competencies:** `physics`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 027-science.json
+
+### Exploring beyond the Standard Model
+- **Slug:** `beyond-standard-model`
+- **Description:** Study dark matter, supersymmetry, and unsolved problems in particle physics
+- **Primary Competencies:** `particle-physics`
+- **Source File:** 027-science.json
+
+### Solving physics problems with calculus
+- **Slug:** `physics-problems-with-calculus`
+- **Description:** Apply calculus to analyze motion, forces, and continuous change in physical systems
+- **Primary Competencies:** `physics`
+- **Supporting Competencies:** `calculus-1`
+- **Source File:** 027-science.json
+
+### Solving the Schrödinger equation
+- **Slug:** `solving-schrodinger-equation`
+- **Description:** Work with quantum wavefunctions and eigenvalue problems
+- **Primary Competencies:** `quantum-mechanics`
+- **Supporting Competencies:** `partial-differential-equations`, `linear-algebra`
+- **Source File:** 027-science.json
+
+### Understanding black holes and gravitational waves
+- **Slug:** `black-holes-gravitational-waves`
+- **Description:** Study extreme gravitational phenomena predicted by general relativity
+- **Primary Competencies:** `relativity`
+- **Source File:** 027-science.json
+
+### Understanding electric and magnetic fields
+- **Slug:** `electric-magnetic-fields`
+- **Description:** Study the behavior of charged particles and electromagnetic interactions
+- **Primary Competencies:** `electromagnetism`
+- **Supporting Competencies:** `physics`, `calculus-3`
+- **Source File:** 027-science.json
+
+### Understanding electromagnetic waves and radiation
+- **Slug:** `electromagnetic-waves-radiation`
+- **Description:** Study how electromagnetic energy propagates through space
+- **Primary Competencies:** `electromagnetism`
+- **Supporting Competencies:** `partial-differential-equations`
+- **Source File:** 027-science.json
+
+### Understanding fluid statics and pressure
+- **Slug:** `fluid-statics-pressure`
+- **Description:** Study buoyancy, hydrostatic pressure, and fluids at rest
+- **Primary Competencies:** `fluid-dynamics`
+- **Supporting Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding fundamental physics concepts
+- **Slug:** `fundamental-physics-concepts`
+- **Description:** Build intuition for motion, forces, energy, and the laws governing the physical world
+- **Primary Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding general relativity and curved spacetime
+- **Slug:** `general-relativity-curved-spacetime`
+- **Description:** Study gravity as spacetime curvature and Einstein's field equations
+- **Primary Competencies:** `relativity`
+- **Supporting Competencies:** `differential-geometry`, `calculus-3`
+- **Source File:** 027-science.json
+
+### Understanding heat, work, and the laws of thermodynamics
+- **Slug:** `heat-work-thermodynamics-laws`
+- **Description:** Study energy transfer, entropy, and the fundamental laws governing thermal systems
+- **Primary Competencies:** `thermodynamics`
+- **Supporting Competencies:** `physics`, `calculus-2`
+- **Source File:** 027-science.json
+
+### Understanding Lagrangian and Hamiltonian mechanics
+- **Slug:** `lagrangian-hamiltonian-mechanics`
+- **Description:** Study advanced formulations of classical mechanics using energy principles
+- **Primary Competencies:** `classical-mechanics`
+- **Supporting Competencies:** `calculus-3`, `differential-equations`
+- **Source File:** 027-science.json
+
+### Understanding light propagation and reflection
+- **Slug:** `light-propagation-reflection`
+- **Description:** Study geometric optics, mirrors, lenses, and image formation
+- **Primary Competencies:** `optics`
+- **Supporting Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding musical acoustics and instrument physics
+- **Slug:** `musical-acoustics-instrument-physics`
+- **Description:** Study how musical instruments produce and shape sound
+- **Primary Competencies:** `acoustics`
+- **Source File:** 027-science.json
+
+### Understanding Newton's laws and classical mechanics
+- **Slug:** `newtons-laws-classical-mechanics`
+- **Description:** Master the principles of motion, forces, and momentum in classical physics
+- **Primary Competencies:** `classical-mechanics`
+- **Supporting Competencies:** `physics`, `calculus-1`
+- **Source File:** 027-science.json
+
+### Understanding nuclear reactions and energy
+- **Slug:** `nuclear-reactions-energy`
+- **Description:** Study fission, fusion, and nuclear power generation
+- **Primary Competencies:** `nuclear-physics`
+- **Source File:** 027-science.json
+
+### Understanding nuclear structure and radioactivity
+- **Slug:** `nuclear-structure-radioactivity`
+- **Description:** Study atomic nuclei, decay processes, and radiation
+- **Primary Competencies:** `nuclear-physics`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Understanding particle accelerators and detectors
+- **Slug:** `particle-accelerators-detectors`
+- **Description:** Study how particles are accelerated and detected in high-energy experiments
+- **Primary Competencies:** `particle-physics`
+- **Supporting Competencies:** `electromagnetism`
+- **Source File:** 027-science.json
+
+### Understanding quantum computing fundamentals
+- **Slug:** `quantum-computing-fundamentals`
+- **Description:** Study qubits, quantum gates, and quantum algorithms
+- **Primary Competencies:** `quantum-mechanics`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 027-science.json
+
+### Understanding quantum entanglement and measurement
+- **Slug:** `quantum-entanglement-measurement`
+- **Description:** Study non-classical correlations and the measurement problem
+- **Primary Competencies:** `quantum-mechanics`
+- **Supporting Competencies:** `linear-algebra`
+- **Source File:** 027-science.json
+
+### Understanding quantum mechanics fundamentals
+- **Slug:** `quantum-mechanics-fundamentals`
+- **Description:** Study wave-particle duality, uncertainty principle, and quantum states
+- **Primary Competencies:** `quantum-mechanics`
+- **Supporting Competencies:** `physics`, `calculus-3`
+- **Source File:** 027-science.json
+
+### Understanding radiation detection and safety
+- **Slug:** `radiation-detection-safety`
+- **Description:** Measure radiation and understand health physics principles
+- **Primary Competencies:** `nuclear-physics`
+- **Source File:** 027-science.json
+
+### Understanding sound waves and vibrations
+- **Slug:** `sound-waves-vibrations`
+- **Description:** Study the physics of sound, resonance, and wave propagation
+- **Primary Competencies:** `acoustics`
+- **Supporting Competencies:** `physics`
+- **Source File:** 027-science.json
+
+### Understanding special relativity
+- **Slug:** `understanding-special-relativity`
+- **Description:** Study time dilation, length contraction, and spacetime at high velocities
+- **Primary Competencies:** `relativity`
+- **Supporting Competencies:** `physics`, `calculus-2`
+- **Source File:** 027-science.json
+
+### Understanding statistical mechanics
+- **Slug:** `understanding-statistical-mechanics`
+- **Description:** Connect microscopic particle behavior to macroscopic thermodynamic properties
+- **Primary Competencies:** `thermodynamics`
+- **Supporting Competencies:** `statistics`, `probability`
+- **Source File:** 027-science.json
+
+### Understanding the Standard Model of particle physics
+- **Slug:** `standard-model-particle-physics`
+- **Description:** Study quarks, leptons, gauge bosons, and fundamental interactions
+- **Primary Competencies:** `particle-physics`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Understanding turbulence and complex flows
+- **Slug:** `turbulence-complex-flows`
+- **Description:** Study chaotic fluid motion and turbulent flow patterns
+- **Primary Competencies:** `fluid-dynamics`
+- **Supporting Competencies:** `dynamical-systems`
+- **Source File:** 027-science.json
+
+### Understanding wave optics and interference
+- **Slug:** `wave-optics-interference`
+- **Description:** Study diffraction, interference patterns, and the wave nature of light
+- **Primary Competencies:** `optics`
+- **Supporting Competencies:** `electromagnetism`
+- **Source File:** 027-science.json
+
+### Working with lasers and photonics
+- **Slug:** `lasers-photonics`
+- **Description:** Understand laser physics, optical fibers, and photonic devices
+- **Primary Competencies:** `optics`
+- **Supporting Competencies:** `quantum-mechanics`
+- **Source File:** 027-science.json
+
+### Working with Maxwell's equations
+- **Slug:** `maxwells-equations`
+- **Description:** Master the fundamental equations describing electromagnetic phenomena
+- **Primary Competencies:** `electromagnetism`
+- **Supporting Competencies:** `calculus-3`, `differential-equations`
+- **Source File:** 027-science.json
 
 ---
 
@@ -8979,6 +11568,188 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## statistics-probability
+
+### Analyzing queuing systems with stochastic processes
+- **Slug:** `queuing-systems-stochastic-processes`
+- **Description:** Model waiting lines and service systems using probability
+- **Primary Competencies:** `stochastic-processes`
+- **Supporting Competencies:** `operations-research`
+- **Source File:** 023-mathematics.json
+
+### Analyzing temporal data patterns
+- **Slug:** `analyzing-temporal-data-patterns`
+- **Description:** Identify trends, seasonality, and patterns in time-ordered data
+- **Primary Competencies:** `time-series-analysis`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Applying Bayesian methods to data analysis
+- **Slug:** `bayesian-methods-data-analysis`
+- **Description:** Use Bayesian frameworks for modeling and inference on real datasets
+- **Primary Competencies:** `bayesian-statistics`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Applying probability to real-world problems
+- **Slug:** `probability-real-world-problems`
+- **Description:** Use probability to model risk, games of chance, and uncertain outcomes
+- **Primary Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Applying statistics to data analysis
+- **Slug:** `applying-statistics-data-analysis`
+- **Description:** Use statistical methods to analyze real-world datasets and draw conclusions
+- **Primary Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Applying stochastic processes to finance
+- **Slug:** `stochastic-processes-finance`
+- **Description:** Model stock prices, interest rates, and derivatives using random processes
+- **Primary Competencies:** `stochastic-processes`
+- **Source File:** 023-mathematics.json
+
+### Applying time series analysis to finance and economics
+- **Slug:** `time-series-finance-economics`
+- **Description:** Analyze and forecast economic indicators and financial market data
+- **Primary Competencies:** `time-series-analysis`
+- **Source File:** 023-mathematics.json
+
+### Building forecasting models with time series
+- **Slug:** `forecasting-models-time-series`
+- **Description:** Create predictive models for future values based on historical data
+- **Primary Competencies:** `time-series-analysis`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Comparing Bayesian and frequentist statistical approaches
+- **Slug:** `bayesian-frequentist-comparison`
+- **Description:** Understand the philosophical and practical differences between statistical paradigms
+- **Primary Competencies:** `bayesian-statistics`
+- **Supporting Competencies:** `mathematical-statistics`
+- **Source File:** 023-mathematics.json
+
+### Computing posterior distributions
+- **Slug:** `computing-posterior-distributions`
+- **Description:** Calculate and interpret posterior probabilities using prior and likelihood
+- **Primary Competencies:** `bayesian-statistics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Computing probabilities with counting techniques
+- **Slug:** `probabilities-counting-techniques`
+- **Description:** Use permutations and combinations to solve probability problems
+- **Primary Competencies:** `probability`
+- **Supporting Competencies:** `combinatorics`
+- **Source File:** 023-mathematics.json
+
+### Creating and interpreting data visualizations
+- **Slug:** `data-visualizations-statistics`
+- **Description:** Make effective histograms, box plots, scatter plots, and other statistical graphics
+- **Primary Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Deriving estimators and their properties
+- **Slug:** `deriving-estimators-properties`
+- **Description:** Understand unbiasedness, consistency, and efficiency of statistical estimators
+- **Primary Competencies:** `mathematical-statistics`
+- **Supporting Competencies:** `calculus-2`
+- **Source File:** 023-mathematics.json
+
+### Understanding ARIMA models
+- **Slug:** `understanding-arima-models`
+- **Description:** Work with autoregressive integrated moving average models for time series
+- **Primary Competencies:** `time-series-analysis`
+- **Supporting Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Understanding Bayesian inference
+- **Slug:** `understanding-bayesian-inference`
+- **Description:** Use Bayes' theorem for statistical inference and updating beliefs
+- **Primary Competencies:** `bayesian-statistics`
+- **Supporting Competencies:** `probability`, `statistics`
+- **Source File:** 023-mathematics.json
+
+### Understanding conditional probability and Bayes' theorem
+- **Slug:** `conditional-probability-bayes`
+- **Description:** Work with conditional probabilities and update beliefs with new information
+- **Primary Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding descriptive statistics
+- **Slug:** `understanding-descriptive-statistics`
+- **Description:** Calculate and interpret mean, median, mode, variance, and standard deviation
+- **Primary Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Understanding hypothesis testing and confidence intervals
+- **Slug:** `hypothesis-testing-confidence-intervals`
+- **Description:** Conduct statistical tests and make inferences from data
+- **Primary Competencies:** `statistics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding hypothesis testing theory
+- **Slug:** `hypothesis-testing-theory`
+- **Description:** Study the mathematical foundations of statistical tests and power
+- **Primary Competencies:** `mathematical-statistics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding probability fundamentals
+- **Slug:** `probability-fundamentals`
+- **Description:** Master basic probability rules, sample spaces, and events
+- **Primary Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding random processes over time
+- **Slug:** `random-processes-over-time`
+- **Description:** Study stochastic models and their evolution
+- **Primary Competencies:** `stochastic-processes`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding random variables and probability distributions
+- **Slug:** `random-variables-distributions`
+- **Description:** Work with discrete and continuous probability distributions
+- **Primary Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Understanding regression and correlation
+- **Slug:** `regression-correlation`
+- **Description:** Analyze relationships between variables using linear regression
+- **Primary Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Understanding sampling and experimental design
+- **Slug:** `sampling-experimental-design`
+- **Description:** Design studies, select samples, and understand bias and variability
+- **Primary Competencies:** `statistics`
+- **Source File:** 023-mathematics.json
+
+### Understanding statistical inference theory
+- **Slug:** `statistical-inference-theory`
+- **Description:** Study the theoretical foundations of estimation and hypothesis testing
+- **Primary Competencies:** `mathematical-statistics`
+- **Supporting Competencies:** `probability`
+- **Source File:** 023-mathematics.json
+
+### Working with Markov chains
+- **Slug:** `working-with-markov-chains`
+- **Description:** Analyze discrete-time stochastic processes with the Markov property
+- **Primary Competencies:** `stochastic-processes`
+- **Supporting Competencies:** `probability`, `linear-algebra`
+- **Source File:** 023-mathematics.json
+
+### Working with maximum likelihood estimation
+- **Slug:** `maximum-likelihood-estimation`
+- **Description:** Find parameter estimates that maximize the likelihood function
+- **Primary Competencies:** `mathematical-statistics`
+- **Supporting Competencies:** `calculus-2`, `optimization`
+- **Source File:** 023-mathematics.json
+
+---
+
 ## systems-programming
 
 ### Actor-based programming with Pony
@@ -9349,6 +12120,43 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Craft original comedy material, develop stage presence, and perform stand-up sets
 - **Primary Competencies:** `stand-up-comedy`
 - **Source File:** 018-theater.json
+
+---
+
+## trigonometry
+
+### Applying trigonometry to navigation and surveying
+- **Slug:** `trigonometry-navigation-surveying`
+- **Description:** Use trigonometric principles for distance measurement and position finding
+- **Primary Competencies:** `trigonometry`
+- **Source File:** 023-mathematics.json
+
+### Applying trigonometry to physics and engineering
+- **Slug:** `trigonometry-physics-engineering`
+- **Description:** Use trigonometric functions to model waves, oscillations, and periodic phenomena
+- **Primary Competencies:** `trigonometry`
+- **Source File:** 023-mathematics.json
+
+### Proving and applying trigonometric identities
+- **Slug:** `trigonometric-identities`
+- **Description:** Work with fundamental identities and prove trigonometric equations
+- **Primary Competencies:** `trigonometry`
+- **Supporting Competencies:** `algebra-2`
+- **Source File:** 023-mathematics.json
+
+### Solving right triangles with trigonometry
+- **Slug:** `solving-right-triangles`
+- **Description:** Apply trigonometric ratios to find missing sides and angles in right triangles
+- **Primary Competencies:** `trigonometry`
+- **Supporting Competencies:** `geometry`
+- **Source File:** 023-mathematics.json
+
+### Understanding trigonometric functions and the unit circle
+- **Slug:** `trigonometric-functions-unit-circle`
+- **Description:** Master sine, cosine, tangent, and their relationships on the unit circle
+- **Primary Competencies:** `trigonometry`
+- **Supporting Competencies:** `algebra-2`
+- **Source File:** 023-mathematics.json
 
 ---
 

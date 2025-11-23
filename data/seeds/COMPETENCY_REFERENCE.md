@@ -1,6 +1,6 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-22T22:17:29.461Z
+**Generated:** 2025-11-22T23:03:58.184Z
 **Total Competencies:** 1625
 
 This file is auto-generated for reference during seed expansion.

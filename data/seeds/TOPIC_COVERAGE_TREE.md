@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T22:17:35.075Z
-**Total Topics:** 1591
+**Generated:** 2025-11-22T23:15:06.368Z
+**Total Topics:** 1998
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -59,28 +59,28 @@ Run `npm run topic:coverage` to update.
 │   └── Speech Development & Pathology [0 topics, 0 competencies]
 ├── Mathematics [0 topics, 0 competencies]
 │   ├── Foundational Math [0 topics, 0 competencies]
-│   │   ├── Arithmetic [0 topics, 1 competencies]
-│   │   ├── Algebra [0 topics, 3 competencies]
-│   │   ├── Geometry [0 topics, 6 competencies]
-│   │   └── Trigonometry [0 topics, 1 competencies]
-│   ├── Advanced Math [0 topics, 9 competencies]
-│   │   ├── Calculus [0 topics, 3 competencies]
-│   │   ├── Linear Algebra [0 topics, 1 competencies]
-│   │   └── Differential Equations [0 topics, 2 competencies]
-│   └── Applied Math [0 topics, 10 competencies]
-│       ├── Statistics & Probability [0 topics, 6 competencies]
-│       ├── Discrete Mathematics [0 topics, 6 competencies]
-│       └── Number Theory [0 topics, 1 competencies]
+│   │   ├── Arithmetic [3 topics, 1 competencies]
+│   │   ├── Algebra [11 topics, 3 competencies]
+│   │   ├── Geometry [13 topics, 6 competencies]
+│   │   └── Trigonometry [5 topics, 1 competencies]
+│   ├── Advanced Math [30 topics, 9 competencies]
+│   │   ├── Calculus [12 topics, 3 competencies]
+│   │   ├── Linear Algebra [7 topics, 1 competencies]
+│   │   └── Differential Equations [9 topics, 2 competencies]
+│   └── Applied Math [42 topics, 10 competencies]
+│       ├── Statistics & Probability [27 topics, 6 competencies]
+│       ├── Discrete Mathematics [23 topics, 6 competencies]
+│       └── Number Theory [5 topics, 1 competencies]
 ├── Science [0 topics, 0 competencies]
 │   ├── Physical Sciences [0 topics, 0 competencies]
-│   │   ├── Physics [0 topics, 11 competencies]
-│   │   ├── Chemistry [0 topics, 7 competencies]
-│   │   └── Astronomy [0 topics, 5 competencies]
-│   ├── Life Sciences [0 topics, 6 competencies]
-│   │   ├── Biology [0 topics, 9 competencies]
-│   │   ├── Genetics [0 topics, 4 competencies]
-│   │   └── Neuroscience [0 topics, 5 competencies]
-│   └── Environmental Science [0 topics, 9 competencies]
+│   │   ├── Physics [44 topics, 11 competencies]
+│   │   ├── Chemistry [30 topics, 7 competencies]
+│   │   └── Astronomy [19 topics, 5 competencies]
+│   ├── Life Sciences [22 topics, 6 competencies]
+│   │   ├── Biology [37 topics, 9 competencies]
+│   │   ├── Genetics [14 topics, 4 competencies]
+│   │   └── Neuroscience [18 topics, 5 competencies]
+│   └── Environmental Science [36 topics, 9 competencies]
 ├── Personal Development [0 topics, 1 competencies]
 │   ├── Productivity & Time Management [0 topics, 10 competencies]
 │   ├── Cognitive Skills [0 topics, 5 competencies]
@@ -110,13 +110,13 @@ Run `npm run topic:coverage` to update.
 
 ### Advanced Math
 - **Slug:** `advanced-math`
-- **Topics:** 0
+- **Topics:** 30
 - **Competencies:** 9
 - **Parent:** mathematics
 
 ### Algebra
 - **Slug:** `algebra`
-- **Topics:** 0
+- **Topics:** 11
 - **Competencies:** 3
 - **Parent:** foundational-math
 
@@ -128,7 +128,7 @@ Run `npm run topic:coverage` to update.
 
 ### Applied Math
 - **Slug:** `applied-math`
-- **Topics:** 0
+- **Topics:** 42
 - **Competencies:** 10
 - **Parent:** mathematics
 
@@ -140,13 +140,13 @@ Run `npm run topic:coverage` to update.
 
 ### Arithmetic
 - **Slug:** `arithmetic`
-- **Topics:** 0
+- **Topics:** 3
 - **Competencies:** 1
 - **Parent:** foundational-math
 
 ### Astronomy
 - **Slug:** `astronomy`
-- **Topics:** 0
+- **Topics:** 19
 - **Competencies:** 5
 - **Parent:** physical-sciences
 
@@ -164,7 +164,7 @@ Run `npm run topic:coverage` to update.
 
 ### Biology
 - **Slug:** `biology`
-- **Topics:** 0
+- **Topics:** 37
 - **Competencies:** 9
 - **Parent:** life-sciences
 
@@ -176,7 +176,7 @@ Run `npm run topic:coverage` to update.
 
 ### Calculus
 - **Slug:** `calculus`
-- **Topics:** 0
+- **Topics:** 12
 - **Competencies:** 3
 - **Parent:** advanced-math
 
@@ -188,7 +188,7 @@ Run `npm run topic:coverage` to update.
 
 ### Chemistry
 - **Slug:** `chemistry`
-- **Topics:** 0
+- **Topics:** 30
 - **Competencies:** 7
 - **Parent:** physical-sciences
 
@@ -254,19 +254,19 @@ Run `npm run topic:coverage` to update.
 
 ### Differential Equations
 - **Slug:** `differential-equations`
-- **Topics:** 0
+- **Topics:** 9
 - **Competencies:** 2
 - **Parent:** advanced-math
 
 ### Discrete Mathematics
 - **Slug:** `discrete-mathematics`
-- **Topics:** 0
+- **Topics:** 23
 - **Competencies:** 6
 - **Parent:** applied-math
 
 ### Environmental Science
 - **Slug:** `environmental-science`
-- **Topics:** 0
+- **Topics:** 36
 - **Competencies:** 9
 - **Parent:** science
 
@@ -308,13 +308,13 @@ Run `npm run topic:coverage` to update.
 
 ### Genetics
 - **Slug:** `genetics`
-- **Topics:** 0
+- **Topics:** 14
 - **Competencies:** 4
 - **Parent:** life-sciences
 
 ### Geometry
 - **Slug:** `geometry`
-- **Topics:** 0
+- **Topics:** 13
 - **Competencies:** 6
 - **Parent:** foundational-math
 
@@ -349,13 +349,13 @@ Run `npm run topic:coverage` to update.
 
 ### Life Sciences
 - **Slug:** `life-sciences`
-- **Topics:** 0
+- **Topics:** 22
 - **Competencies:** 6
 - **Parent:** science
 
 ### Linear Algebra
 - **Slug:** `linear-algebra`
-- **Topics:** 0
+- **Topics:** 7
 - **Competencies:** 1
 - **Parent:** advanced-math
 
@@ -414,13 +414,13 @@ Run `npm run topic:coverage` to update.
 
 ### Neuroscience
 - **Slug:** `neuroscience`
-- **Topics:** 0
+- **Topics:** 18
 - **Competencies:** 5
 - **Parent:** life-sciences
 
 ### Number Theory
 - **Slug:** `number-theory`
-- **Topics:** 0
+- **Topics:** 5
 - **Competencies:** 1
 - **Parent:** applied-math
 
@@ -455,7 +455,7 @@ Run `npm run topic:coverage` to update.
 
 ### Physics
 - **Slug:** `physics`
-- **Topics:** 0
+- **Topics:** 44
 - **Competencies:** 11
 - **Parent:** physical-sciences
 
@@ -496,7 +496,7 @@ Run `npm run topic:coverage` to update.
 
 ### Statistics & Probability
 - **Slug:** `statistics-probability`
-- **Topics:** 0
+- **Topics:** 27
 - **Competencies:** 6
 - **Parent:** applied-math
 
@@ -520,7 +520,7 @@ Run `npm run topic:coverage` to update.
 
 ### Trigonometry
 - **Slug:** `trigonometry`
-- **Topics:** 0
+- **Topics:** 5
 - **Competencies:** 1
 - **Parent:** foundational-math
 

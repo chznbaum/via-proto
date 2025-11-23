@@ -1,0 +1,3372 @@
+{
+  "topics": [
+    {
+      "name": "Understanding fundamental physics concepts",
+      "slug": "fundamental-physics-concepts",
+      "description": "Build intuition for motion, forces, energy, and the laws governing the physical world",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "physics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Conducting physics experiments and lab work",
+      "slug": "physics-experiments-lab-work",
+      "description": "Design experiments, collect data, and analyze results in physics laboratory settings",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "physics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving physics problems with calculus",
+      "slug": "physics-problems-with-calculus",
+      "description": "Apply calculus to analyze motion, forces, and continuous change in physical systems",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "physics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Newton's laws and classical mechanics",
+      "slug": "newtons-laws-classical-mechanics",
+      "description": "Master the principles of motion, forces, and momentum in classical physics",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "classical-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-1",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing rotational motion and rigid bodies",
+      "slug": "rotational-motion-rigid-bodies",
+      "description": "Study angular momentum, torque, and the dynamics of rotating systems",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "classical-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Lagrangian and Hamiltonian mechanics",
+      "slug": "lagrangian-hamiltonian-mechanics",
+      "description": "Study advanced formulations of classical mechanics using energy principles",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "classical-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying classical mechanics to engineering problems",
+      "slug": "classical-mechanics-engineering",
+      "description": "Use mechanical principles to analyze structures, machines, and mechanical systems",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "classical-mechanics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding electric and magnetic fields",
+      "slug": "electric-magnetic-fields",
+      "description": "Study the behavior of charged particles and electromagnetic interactions",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with Maxwell's equations",
+      "slug": "maxwells-equations",
+      "description": "Master the fundamental equations describing electromagnetic phenomena",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding electromagnetic waves and radiation",
+      "slug": "electromagnetic-waves-radiation",
+      "description": "Study how electromagnetic energy propagates through space",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying electromagnetism to circuit design",
+      "slug": "electromagnetism-circuit-design",
+      "description": "Use electromagnetic principles to analyze and design electrical circuits",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding heat, work, and the laws of thermodynamics",
+      "slug": "heat-work-thermodynamics-laws",
+      "description": "Study energy transfer, entropy, and the fundamental laws governing thermal systems",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "thermodynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing thermodynamic cycles and heat engines",
+      "slug": "thermodynamic-cycles-heat-engines",
+      "description": "Study Carnot cycles, refrigeration, and energy conversion efficiency",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "thermodynamics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding statistical mechanics",
+      "slug": "understanding-statistical-mechanics",
+      "description": "Connect microscopic particle behavior to macroscopic thermodynamic properties",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "thermodynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying thermodynamics to chemistry and materials",
+      "slug": "thermodynamics-chemistry-materials",
+      "description": "Use thermodynamic principles to understand chemical reactions and phase transitions",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "thermodynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding quantum mechanics fundamentals",
+      "slug": "quantum-mechanics-fundamentals",
+      "description": "Study wave-particle duality, uncertainty principle, and quantum states",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Solving the Schrödinger equation",
+      "slug": "solving-schrodinger-equation",
+      "description": "Work with quantum wavefunctions and eigenvalue problems",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding quantum entanglement and measurement",
+      "slug": "quantum-entanglement-measurement",
+      "description": "Study non-classical correlations and the measurement problem",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying quantum mechanics to atoms and molecules",
+      "slug": "quantum-mechanics-atoms-molecules",
+      "description": "Use quantum theory to understand atomic structure and chemical bonding",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding quantum computing fundamentals",
+      "slug": "quantum-computing-fundamentals",
+      "description": "Study qubits, quantum gates, and quantum algorithms",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "linear-algebra",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding light propagation and reflection",
+      "slug": "light-propagation-reflection",
+      "description": "Study geometric optics, mirrors, lenses, and image formation",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "optics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding wave optics and interference",
+      "slug": "wave-optics-interference",
+      "description": "Study diffraction, interference patterns, and the wave nature of light",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "optics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with lasers and photonics",
+      "slug": "lasers-photonics",
+      "description": "Understand laser physics, optical fibers, and photonic devices",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "optics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying optics to imaging and microscopy",
+      "slug": "optics-imaging-microscopy",
+      "description": "Design and use optical systems for cameras, telescopes, and microscopes",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "optics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding nuclear structure and radioactivity",
+      "slug": "nuclear-structure-radioactivity",
+      "description": "Study atomic nuclei, decay processes, and radiation",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding nuclear reactions and energy",
+      "slug": "nuclear-reactions-energy",
+      "description": "Study fission, fusion, and nuclear power generation",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying nuclear physics to medicine",
+      "slug": "nuclear-physics-medicine",
+      "description": "Use radiation and nuclear techniques for imaging and therapy",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding radiation detection and safety",
+      "slug": "radiation-detection-safety",
+      "description": "Measure radiation and understand health physics principles",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding the Standard Model of particle physics",
+      "slug": "standard-model-particle-physics",
+      "description": "Study quarks, leptons, gauge bosons, and fundamental interactions",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "particle-physics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding particle accelerators and detectors",
+      "slug": "particle-accelerators-detectors",
+      "description": "Study how particles are accelerated and detected in high-energy experiments",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "particle-physics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "electromagnetism",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Exploring beyond the Standard Model",
+      "slug": "beyond-standard-model",
+      "description": "Study dark matter, supersymmetry, and unsolved problems in particle physics",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "particle-physics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding special relativity",
+      "slug": "understanding-special-relativity",
+      "description": "Study time dilation, length contraction, and spacetime at high velocities",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "relativity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-2",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding general relativity and curved spacetime",
+      "slug": "general-relativity-curved-spacetime",
+      "description": "Study gravity as spacetime curvature and Einstein's field equations",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "relativity",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-geometry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding black holes and gravitational waves",
+      "slug": "black-holes-gravitational-waves",
+      "description": "Study extreme gravitational phenomena predicted by general relativity",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "relativity",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying relativity to GPS and precision timing",
+      "slug": "relativity-gps-precision-timing",
+      "description": "Understand how relativistic effects impact real-world technology",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "relativity",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding sound waves and vibrations",
+      "slug": "sound-waves-vibrations",
+      "description": "Study the physics of sound, resonance, and wave propagation",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "acoustics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing room acoustics and architectural sound",
+      "slug": "room-acoustics-architectural-sound",
+      "description": "Design spaces for optimal sound quality and noise control",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "acoustics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding musical acoustics and instrument physics",
+      "slug": "musical-acoustics-instrument-physics",
+      "description": "Study how musical instruments produce and shape sound",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "acoustics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying acoustics to audio engineering",
+      "slug": "acoustics-audio-engineering",
+      "description": "Use acoustic principles for recording, mixing, and sound reproduction",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "acoustics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding fluid statics and pressure",
+      "slug": "fluid-statics-pressure",
+      "description": "Study buoyancy, hydrostatic pressure, and fluids at rest",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing fluid flow with the Navier-Stokes equations",
+      "slug": "fluid-flow-navier-stokes",
+      "description": "Study the fundamental equations governing fluid motion",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "partial-differential-equations",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "calculus-3",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding turbulence and complex flows",
+      "slug": "turbulence-complex-flows",
+      "description": "Study chaotic fluid motion and turbulent flow patterns",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dynamical-systems",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying fluid dynamics to aerodynamics",
+      "slug": "fluid-dynamics-aerodynamics",
+      "description": "Use fluid mechanics to design aircraft and analyze airflow",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying fluid dynamics to weather and climate",
+      "slug": "fluid-dynamics-weather-climate",
+      "description": "Model atmospheric and oceanic flows using fluid mechanics",
+      "category_slug": "physics",
+      "competencies": [
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "meteorology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding chemical reactions and stoichiometry",
+      "slug": "chemical-reactions-stoichiometry",
+      "description": "Master balancing equations and calculating reaction quantities",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding atomic structure and the periodic table",
+      "slug": "atomic-structure-periodic-table",
+      "description": "Study electron configurations, periodic trends, and chemical properties",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding chemical bonding and molecular structure",
+      "slug": "chemical-bonding-molecular-structure",
+      "description": "Study ionic, covalent, and metallic bonds and molecular geometry",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with acids, bases, and pH",
+      "slug": "acids-bases-ph",
+      "description": "Understand acid-base chemistry, equilibrium, and buffer solutions",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Conducting chemistry lab experiments safely",
+      "slug": "chemistry-lab-experiments",
+      "description": "Perform titrations, synthesis, and analysis with proper laboratory technique",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding carbon compounds and functional groups",
+      "slug": "carbon-compounds-functional-groups",
+      "description": "Study alkanes, alkenes, alcohols, and other organic molecules",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding organic reaction mechanisms",
+      "slug": "organic-reaction-mechanisms",
+      "description": "Study electron movement, intermediates, and reaction pathways",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Synthesizing organic molecules in the laboratory",
+      "slug": "synthesizing-organic-molecules",
+      "description": "Design and execute multi-step organic synthesis procedures",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding stereochemistry and chirality",
+      "slug": "stereochemistry-chirality",
+      "description": "Study 3D molecular structure, enantiomers, and optical activity",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying organic chemistry to pharmaceuticals",
+      "slug": "organic-chemistry-pharmaceuticals",
+      "description": "Understand drug molecules, synthesis, and medicinal chemistry",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding coordination compounds and complexes",
+      "slug": "coordination-compounds-complexes",
+      "description": "Study transition metal complexes, ligands, and coordination chemistry",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "inorganic-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding solid state and crystal structures",
+      "slug": "solid-state-crystal-structures",
+      "description": "Study lattices, unit cells, and the properties of crystalline materials",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "inorganic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with main group element chemistry",
+      "slug": "main-group-element-chemistry",
+      "description": "Study the chemistry of s-block and p-block elements",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "inorganic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying inorganic chemistry to catalysis",
+      "slug": "inorganic-chemistry-catalysis",
+      "description": "Use metal complexes and inorganic compounds to accelerate reactions",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "inorganic-chemistry",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding thermodynamics of chemical reactions",
+      "slug": "thermodynamics-chemical-reactions",
+      "description": "Study enthalpy, entropy, and Gibbs free energy in chemistry",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "physical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "thermodynamics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding chemical kinetics and reaction rates",
+      "slug": "chemical-kinetics-reaction-rates",
+      "description": "Study rate laws, activation energy, and reaction mechanisms",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "physical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding quantum chemistry and molecular orbitals",
+      "slug": "quantum-chemistry-molecular-orbitals",
+      "description": "Apply quantum mechanics to chemical bonding and spectroscopy",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "physical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with electrochemistry and batteries",
+      "slug": "electrochemistry-batteries",
+      "description": "Study redox reactions, electrochemical cells, and energy storage",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "physical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with chromatography and separation techniques",
+      "slug": "chromatography-separation-techniques",
+      "description": "Separate and purify chemical mixtures using various methods",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "analytical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding spectroscopy and molecular analysis",
+      "slug": "spectroscopy-molecular-analysis",
+      "description": "Use NMR, IR, and mass spectrometry to identify compounds",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "analytical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Performing quantitative chemical analysis",
+      "slug": "quantitative-chemical-analysis",
+      "description": "Determine concentrations using titrations, gravimetry, and instrumentation",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "analytical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying analytical chemistry to environmental monitoring",
+      "slug": "analytical-chemistry-environmental",
+      "description": "Measure pollutants, contaminants, and environmental samples",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "analytical-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding protein structure and function",
+      "slug": "protein-structure-function",
+      "description": "Study amino acids, protein folding, and enzymatic catalysis",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "organic-chemistry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding metabolism and energy production",
+      "slug": "metabolism-energy-production",
+      "description": "Study cellular respiration, glycolysis, and ATP synthesis",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding nucleic acids and genetic information",
+      "slug": "nucleic-acids-genetic-information",
+      "description": "Study DNA, RNA structure, replication, and gene expression",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with lipids and membranes",
+      "slug": "lipids-membranes",
+      "description": "Understand biological membranes, signaling, and lipid metabolism",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding polymers and macromolecules",
+      "slug": "polymers-macromolecules",
+      "description": "Study synthetic polymers, plastics, and polymerization reactions",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "materials-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding material properties and characterization",
+      "slug": "material-properties-characterization",
+      "description": "Study mechanical, electrical, and thermal properties of materials",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "materials-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with semiconductors and electronic materials",
+      "slug": "semiconductors-electronic-materials",
+      "description": "Understand the materials behind modern electronics and computing",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "materials-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "quantum-mechanics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying materials science to nanotechnology",
+      "slug": "materials-science-nanotechnology",
+      "description": "Design and work with materials at the nanometer scale",
+      "category_slug": "chemistry",
+      "competencies": [
+        {
+          "competency_slug": "materials-science",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding the solar system and planetary motion",
+      "slug": "solar-system-planetary-motion",
+      "description": "Study planets, moons, and the dynamics of our cosmic neighborhood",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astronomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Observing celestial objects with telescopes",
+      "slug": "observing-celestial-objects-telescopes",
+      "description": "Learn practical astronomy and use telescopes for observation",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astronomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "optics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding stellar evolution and life cycles",
+      "slug": "stellar-evolution-life-cycles",
+      "description": "Study how stars form, evolve, and die",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astronomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding galaxies and large-scale structure",
+      "slug": "galaxies-large-scale-structure",
+      "description": "Study galaxy types, clusters, and the cosmic web",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astronomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding stellar physics and nucleosynthesis",
+      "slug": "stellar-physics-nucleosynthesis",
+      "description": "Study the physics of stars and how elements are created",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "astronomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding compact objects and extreme physics",
+      "slug": "compact-objects-extreme-physics",
+      "description": "Study neutron stars, pulsars, and stellar remnants",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "relativity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding supernovae and explosive stellar death",
+      "slug": "supernovae-explosive-stellar-death",
+      "description": "Study the most energetic stellar explosions in the universe",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "nuclear-physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying astrophysics to exoplanet detection",
+      "slug": "astrophysics-exoplanet-detection",
+      "description": "Use physics and observation to find and characterize planets beyond our solar system",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding the Big Bang and cosmic inflation",
+      "slug": "big-bang-cosmic-inflation",
+      "description": "Study the origin and early evolution of the universe",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "cosmology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "particle-physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding dark matter and dark energy",
+      "slug": "dark-matter-dark-energy",
+      "description": "Study the mysterious components that dominate the universe",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "cosmology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "particle-physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding the cosmic microwave background",
+      "slug": "cosmic-microwave-background",
+      "description": "Study the afterglow of the Big Bang and what it reveals about the universe",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "cosmology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding the fate of the universe",
+      "slug": "fate-of-universe",
+      "description": "Study cosmological models and the ultimate destiny of spacetime",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "cosmology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "relativity",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding planetary geology and surfaces",
+      "slug": "planetary-geology-surfaces",
+      "description": "Study the geological processes shaping planets and moons",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "astronomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding planetary atmospheres",
+      "slug": "planetary-atmospheres",
+      "description": "Study atmospheric composition, weather, and climate on other worlds",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding planetary formation and evolution",
+      "slug": "planetary-formation-evolution",
+      "description": "Study how planets form from protoplanetary disks",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "astrophysics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying planetary science to astrobiology",
+      "slug": "planetary-science-astrobiology",
+      "description": "Search for habitable environments and biosignatures on other worlds",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "astrobiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding the origin and evolution of life",
+      "slug": "origin-evolution-life",
+      "description": "Study how life might emerge from chemistry and evolve in the universe",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrobiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Searching for biosignatures and signs of life",
+      "slug": "searching-biosignatures-signs-life",
+      "description": "Detect potential indicators of life on exoplanets and moons",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrobiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "planetary-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding extremophiles and limits of life",
+      "slug": "extremophiles-limits-life",
+      "description": "Study organisms that survive in extreme conditions and expand our understanding of habitability",
+      "category_slug": "astronomy",
+      "competencies": [
+        {
+          "competency_slug": "astrobiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "microbiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding cells and cellular organization",
+      "slug": "cells-cellular-organization",
+      "description": "Study cell structure, organelles, and basic life processes",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "biology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding DNA, genes, and heredity",
+      "slug": "dna-genes-heredity",
+      "description": "Study genetic information, inheritance patterns, and basic genetics",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding evolution and natural selection",
+      "slug": "evolution-natural-selection",
+      "description": "Study how species change over time through evolutionary mechanisms",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding ecosystems and energy flow",
+      "slug": "ecosystems-energy-flow",
+      "description": "Study food webs, nutrient cycles, and ecological interactions",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting biology lab work and experiments",
+      "slug": "biology-lab-work-experiments",
+      "description": "Perform dissections, microscopy, and biological investigations",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "biology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding membrane structure and transport",
+      "slug": "membrane-structure-transport",
+      "description": "Study cell membranes, diffusion, osmosis, and active transport",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding cell signaling and communication",
+      "slug": "cell-signaling-communication",
+      "description": "Study how cells receive and respond to external signals",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding the cell cycle and mitosis",
+      "slug": "cell-cycle-mitosis",
+      "description": "Study cell division, checkpoints, and chromosome segregation",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding apoptosis and cell death",
+      "slug": "apoptosis-cell-death",
+      "description": "Study programmed cell death and its role in development and disease",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding DNA replication and repair",
+      "slug": "dna-replication-repair",
+      "description": "Study how genetic information is copied and maintained",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding transcription and gene expression",
+      "slug": "transcription-gene-expression",
+      "description": "Study how genetic information is transcribed into RNA",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding translation and protein synthesis",
+      "slug": "translation-protein-synthesis",
+      "description": "Study how RNA is translated into proteins by ribosomes",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with molecular biology techniques",
+      "slug": "molecular-biology-techniques",
+      "description": "Use PCR, gel electrophoresis, cloning, and other lab methods",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding bacteria and archaeal diversity",
+      "slug": "bacteria-archaeal-diversity",
+      "description": "Study prokaryotic life forms, their structure, and diversity",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "microbiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding microbial metabolism and growth",
+      "slug": "microbial-metabolism-growth",
+      "description": "Study how microorganisms obtain energy and reproduce",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "microbiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with microbiology lab techniques",
+      "slug": "microbiology-lab-techniques",
+      "description": "Culture, isolate, and identify microorganisms using sterile technique",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "microbiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding infectious diseases and pathogens",
+      "slug": "infectious-diseases-pathogens",
+      "description": "Study disease-causing microorganisms and immune responses",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "microbiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding plant structure and function",
+      "slug": "plant-structure-function",
+      "description": "Study roots, stems, leaves, and plant organ systems",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "botany",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding photosynthesis and plant metabolism",
+      "slug": "photosynthesis-plant-metabolism",
+      "description": "Study how plants convert light energy into chemical energy",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "botany",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "plant-physiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding plant reproduction and life cycles",
+      "slug": "plant-reproduction-life-cycles",
+      "description": "Study flowers, pollination, seeds, and alternation of generations",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "botany",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Identifying and classifying plants",
+      "slug": "identifying-classifying-plants",
+      "description": "Use taxonomic keys and field guides to identify plant species",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "botany",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding animal diversity and classification",
+      "slug": "animal-diversity-classification",
+      "description": "Study major animal phyla and their evolutionary relationships",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "zoology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding animal behavior and ethology",
+      "slug": "animal-behavior-ethology",
+      "description": "Study innate behaviors, learning, communication, and social systems",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "zoology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "behavioral-neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding animal physiology and adaptations",
+      "slug": "animal-physiology-adaptations",
+      "description": "Study how animals function and adapt to their environments",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "zoology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Observing and studying wildlife",
+      "slug": "observing-studying-wildlife",
+      "description": "Conduct field observations and research on animal populations",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "zoology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding population dynamics and growth",
+      "slug": "population-dynamics-growth",
+      "description": "Study population size, density, and factors affecting growth",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "ecology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding community ecology and species interactions",
+      "slug": "community-ecology-species-interactions",
+      "description": "Study competition, predation, symbiosis, and community structure",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "ecology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding ecosystem ecology and biogeochemical cycles",
+      "slug": "ecosystem-ecology-biogeochemical-cycles",
+      "description": "Study energy flow and nutrient cycling in ecosystems",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "ecology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting ecological field studies",
+      "slug": "ecological-field-studies",
+      "description": "Design and execute field research in natural ecosystems",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "ecology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding marine ecosystems and biodiversity",
+      "slug": "marine-ecosystems-biodiversity",
+      "description": "Study ocean life, coral reefs, and marine habitats",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "marine-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "oceanography",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding marine animal adaptations",
+      "slug": "marine-animal-adaptations",
+      "description": "Study how marine organisms survive in oceanic environments",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "marine-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "zoology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting marine research and diving",
+      "slug": "marine-research-diving",
+      "description": "Perform underwater observations and collect marine samples",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "marine-biology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding ocean conservation challenges",
+      "slug": "ocean-conservation-challenges",
+      "description": "Study threats to marine ecosystems and conservation strategies",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "marine-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "conservation-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding evidence for evolution",
+      "slug": "evidence-for-evolution",
+      "description": "Study fossils, comparative anatomy, and molecular evidence for evolution",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "paleontology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding mechanisms of evolution and speciation",
+      "slug": "mechanisms-evolution-speciation",
+      "description": "Study mutation, selection, drift, and how new species arise",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "population-genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding phylogenetics and evolutionary trees",
+      "slug": "phylogenetics-evolutionary-trees",
+      "description": "Construct and interpret phylogenetic trees showing evolutionary relationships",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding human evolution",
+      "slug": "understanding-human-evolution",
+      "description": "Study the fossil record and evolution of Homo sapiens",
+      "category_slug": "biology",
+      "competencies": [
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "paleontology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Mendelian genetics",
+      "slug": "mendelian-genetics",
+      "description": "Study inheritance patterns, Punnett squares, and genetic crosses",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding genetic variation and mutations",
+      "slug": "genetic-variation-mutations",
+      "description": "Study sources of genetic diversity and types of mutations",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding human genetics and genetic disorders",
+      "slug": "human-genetics-disorders",
+      "description": "Study inheritance of human traits and genetic diseases",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genetics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying genetics to agriculture and breeding",
+      "slug": "genetics-agriculture-breeding",
+      "description": "Use genetic principles to improve crops and livestock",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genetics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding gene regulation and epigenetics",
+      "slug": "gene-regulation-epigenetics",
+      "description": "Study how genes are turned on and off and heritable changes beyond DNA sequence",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "molecular-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with genetic engineering and CRISPR",
+      "slug": "genetic-engineering-crispr",
+      "description": "Use molecular tools to edit genes and create modified organisms",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "molecular-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding cancer genetics",
+      "slug": "understanding-cancer-genetics",
+      "description": "Study oncogenes, tumor suppressors, and the genetics of cancer",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "molecular-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cell-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding allele frequencies and Hardy-Weinberg equilibrium",
+      "slug": "allele-frequencies-hardy-weinberg",
+      "description": "Study how genetic variation is distributed in populations",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "population-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "genetics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding genetic drift and population bottlenecks",
+      "slug": "genetic-drift-population-bottlenecks",
+      "description": "Study random changes in allele frequencies over time",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "population-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modeling population genetics mathematically",
+      "slug": "modeling-population-genetics",
+      "description": "Use mathematical models to predict evolutionary changes",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "population-genetics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "probability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding genome sequencing and analysis",
+      "slug": "genome-sequencing-analysis",
+      "description": "Work with next-generation sequencing and analyze whole genomes",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genomics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "molecular-genetics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding comparative genomics",
+      "slug": "understanding-comparative-genomics",
+      "description": "Compare genomes across species to understand evolution and function",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genomics",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying genomics to personalized medicine",
+      "slug": "genomics-personalized-medicine",
+      "description": "Use genomic information to tailor medical treatment",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genomics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with bioinformatics for genomics",
+      "slug": "bioinformatics-genomics",
+      "description": "Use computational tools to analyze large-scale genomic data",
+      "category_slug": "genetics",
+      "competencies": [
+        {
+          "competency_slug": "genomics",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding brain structure and function",
+      "slug": "brain-structure-function",
+      "description": "Study the organization of the nervous system and neural circuits",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "neuroanatomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding neurons and synaptic transmission",
+      "slug": "neurons-synaptic-transmission",
+      "description": "Study action potentials, neurotransmitters, and neural communication",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding sensory systems and perception",
+      "slug": "sensory-systems-perception",
+      "description": "Study how the brain processes visual, auditory, and other sensory information",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "cognitive-neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding neurological disorders and diseases",
+      "slug": "neurological-disorders-diseases",
+      "description": "Study Alzheimer's, Parkinson's, epilepsy, and other brain conditions",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding memory and learning mechanisms",
+      "slug": "memory-learning-mechanisms",
+      "description": "Study how the brain encodes, stores, and retrieves information",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "cognitive-neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding attention and consciousness",
+      "slug": "attention-consciousness",
+      "description": "Study the neural basis of awareness, attention, and conscious experience",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "cognitive-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding language and the brain",
+      "slug": "language-brain",
+      "description": "Study how the brain processes and produces language",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "cognitive-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with neuroimaging techniques",
+      "slug": "neuroimaging-techniques",
+      "description": "Use fMRI, EEG, and other methods to study brain activity",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "cognitive-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding neural basis of behavior",
+      "slug": "neural-basis-behavior",
+      "description": "Study how brain circuits generate and control behavior",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "behavioral-neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding motivation and reward systems",
+      "slug": "motivation-reward-systems",
+      "description": "Study dopamine pathways and the neuroscience of motivation",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "behavioral-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding stress and the brain",
+      "slug": "stress-brain",
+      "description": "Study how stress affects neural circuits and behavior",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "behavioral-neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding addiction neuroscience",
+      "slug": "addiction-neuroscience",
+      "description": "Study the neural mechanisms underlying substance abuse and addiction",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "behavioral-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding central nervous system structure",
+      "slug": "central-nervous-system-structure",
+      "description": "Study brain regions, spinal cord, and major neural pathways",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroanatomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "anatomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding peripheral nervous system",
+      "slug": "peripheral-nervous-system",
+      "description": "Study cranial nerves, spinal nerves, and autonomic nervous system",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroanatomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with brain dissection and imaging",
+      "slug": "brain-dissection-imaging",
+      "description": "Perform neuroanatomical studies using specimens and imaging data",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "neuroanatomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding neural network models",
+      "slug": "neural-network-models",
+      "description": "Build computational models of brain circuits and neural systems",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "computational-neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Modeling neural dynamics mathematically",
+      "slug": "modeling-neural-dynamics",
+      "description": "Use differential equations to model neurons and neural networks",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "computational-neuroscience",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "differential-equations",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing neural data with machine learning",
+      "slug": "analyzing-neural-data-ml",
+      "description": "Use computational methods to decode brain activity patterns",
+      "category_slug": "neuroscience",
+      "competencies": [
+        {
+          "competency_slug": "computational-neuroscience",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding human body systems and organization",
+      "slug": "human-body-systems-organization",
+      "description": "Study the skeletal, muscular, circulatory, and other organ systems",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "anatomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding musculoskeletal anatomy",
+      "slug": "musculoskeletal-anatomy",
+      "description": "Study bones, joints, muscles, and their relationships",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "anatomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with cadaver dissection",
+      "slug": "cadaver-dissection",
+      "description": "Learn anatomy through hands-on dissection of preserved specimens",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "anatomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying anatomy to clinical medicine",
+      "slug": "anatomy-clinical-medicine",
+      "description": "Use anatomical knowledge for medical diagnosis and procedures",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "anatomy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding evolutionary patterns in anatomy",
+      "slug": "evolutionary-patterns-anatomy",
+      "description": "Compare anatomical structures across species to understand evolution",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "comparative-anatomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "anatomy",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding homologous and analogous structures",
+      "slug": "homologous-analogous-structures",
+      "description": "Study similarities in anatomy due to common ancestry vs. convergent evolution",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "comparative-anatomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding vertebrate anatomy across taxa",
+      "slug": "vertebrate-anatomy-taxa",
+      "description": "Compare anatomical systems in fish, amphibians, reptiles, birds, and mammals",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "comparative-anatomy",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "zoology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding tissues and microscopic structure",
+      "slug": "tissues-microscopic-structure",
+      "description": "Study epithelial, connective, muscle, and nervous tissue under the microscope",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "histology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "anatomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with microscopy and tissue staining",
+      "slug": "microscopy-tissue-staining",
+      "description": "Prepare and examine tissue samples using various staining techniques",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "histology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding pathological changes in tissues",
+      "slug": "pathological-tissue-changes",
+      "description": "Study how disease affects tissue structure and function",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "histology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding organ system physiology",
+      "slug": "organ-system-physiology",
+      "description": "Study how body systems maintain homeostasis and function",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "anatomy",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding cardiovascular and respiratory physiology",
+      "slug": "cardiovascular-respiratory-physiology",
+      "description": "Study heart function, blood circulation, and gas exchange",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding neural and endocrine integration",
+      "slug": "neural-endocrine-integration",
+      "description": "Study how nervous and hormonal systems coordinate body functions",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "neuroscience",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting physiology experiments",
+      "slug": "physiology-experiments",
+      "description": "Measure and analyze physiological parameters in laboratory settings",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding physiological adaptations to exercise",
+      "slug": "physiological-adaptations-exercise",
+      "description": "Study how the body responds and adapts to physical training",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "exercise-physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physiology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding energy systems in exercise",
+      "slug": "energy-systems-exercise",
+      "description": "Study aerobic and anaerobic metabolism during physical activity",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "exercise-physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "biochemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying exercise physiology to performance optimization",
+      "slug": "exercise-physiology-performance",
+      "description": "Use physiological principles to enhance athletic performance",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "exercise-physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Conducting exercise testing and assessment",
+      "slug": "exercise-testing-assessment",
+      "description": "Measure VO2 max, lactate threshold, and other fitness parameters",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "exercise-physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding plant water relations and transport",
+      "slug": "plant-water-relations-transport",
+      "description": "Study transpiration, xylem, phloem, and water movement in plants",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "plant-physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "botany",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding plant hormones and development",
+      "slug": "plant-hormones-development",
+      "description": "Study auxins, gibberellins, and other hormones controlling plant growth",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "plant-physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding plant responses to environment",
+      "slug": "plant-responses-environment",
+      "description": "Study phototropism, circadian rhythms, and stress responses",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "plant-physiology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "botany",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying plant physiology to agriculture",
+      "slug": "plant-physiology-agriculture",
+      "description": "Use physiological knowledge to improve crop yields and resilience",
+      "category_slug": "life-sciences",
+      "competencies": [
+        {
+          "competency_slug": "plant-physiology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding ecosystems and environmental interactions",
+      "slug": "ecosystems-environmental-interactions",
+      "description": "Study how organisms interact with their physical and biological environment",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding pollution and environmental health",
+      "slug": "pollution-environmental-health",
+      "description": "Study air, water, and soil pollution and their impacts on ecosystems and health",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding natural resource management",
+      "slug": "natural-resource-management",
+      "description": "Study sustainable use of water, forests, minerals, and other resources",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sustainability",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting environmental monitoring and assessment",
+      "slug": "environmental-monitoring-assessment",
+      "description": "Measure environmental parameters and assess ecological health",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding biodiversity and extinction threats",
+      "slug": "biodiversity-extinction-threats",
+      "description": "Study species diversity, habitat loss, and conservation priorities",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "conservation-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Designing protected areas and wildlife corridors",
+      "slug": "protected-areas-wildlife-corridors",
+      "description": "Plan conservation reserves to preserve biodiversity",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "conservation-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding population viability analysis",
+      "slug": "population-viability-analysis",
+      "description": "Model extinction risk for endangered species",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "conservation-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "population-genetics",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying conservation biology to restoration ecology",
+      "slug": "conservation-biology-restoration",
+      "description": "Restore degraded ecosystems and reintroduce endangered species",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "conservation-biology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Earth's climate system",
+      "slug": "earth-climate-system",
+      "description": "Study atmosphere, oceans, ice, and their interactions shaping climate",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "climate-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "meteorology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "oceanography",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding greenhouse gases and global warming",
+      "slug": "greenhouse-gases-global-warming",
+      "description": "Study carbon dioxide, methane, and the enhanced greenhouse effect",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "climate-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Working with climate models and predictions",
+      "slug": "climate-models-predictions",
+      "description": "Use computational models to project future climate scenarios",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "climate-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mathematical-modeling",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding climate impacts and adaptation",
+      "slug": "climate-impacts-adaptation",
+      "description": "Study how climate change affects ecosystems, societies, and economies",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "climate-science",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding sustainable development principles",
+      "slug": "sustainable-development-principles",
+      "description": "Study how to meet current needs without compromising future generations",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "sustainability",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding renewable energy systems",
+      "slug": "renewable-energy-systems",
+      "description": "Study solar, wind, hydro, and other sustainable energy sources",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "sustainability",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "physics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding circular economy and waste reduction",
+      "slug": "circular-economy-waste-reduction",
+      "description": "Design systems that minimize waste and maximize resource reuse",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "sustainability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Applying sustainability to urban planning",
+      "slug": "sustainability-urban-planning",
+      "description": "Design sustainable cities and communities",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "sustainability",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding chemical pollutants and toxicology",
+      "slug": "chemical-pollutants-toxicology",
+      "description": "Study the fate and effects of chemicals in the environment",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "environmental-science",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding atmospheric chemistry and air quality",
+      "slug": "atmospheric-chemistry-air-quality",
+      "description": "Study chemical reactions in the atmosphere and pollution formation",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding water chemistry and treatment",
+      "slug": "water-chemistry-treatment",
+      "description": "Study chemical processes in water and methods for purification",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Analyzing environmental samples",
+      "slug": "analyzing-environmental-samples",
+      "description": "Use analytical chemistry to measure contaminants in air, water, and soil",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "environmental-chemistry",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "analytical-chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding Earth's structure and plate tectonics",
+      "slug": "earth-structure-plate-tectonics",
+      "description": "Study the Earth's layers, continental drift, and tectonic processes",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "geology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding rocks, minerals, and the rock cycle",
+      "slug": "rocks-minerals-rock-cycle",
+      "description": "Identify and classify rocks and understand geological processes",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "geology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding geological time and Earth history",
+      "slug": "geological-time-earth-history",
+      "description": "Study the history of Earth through rock formations and fossils",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "geology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "paleontology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting geological fieldwork",
+      "slug": "geological-fieldwork",
+      "description": "Map rock formations, collect samples, and interpret geological features",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "geology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding weather systems and forecasting",
+      "slug": "weather-systems-forecasting",
+      "description": "Study atmospheric processes and predict weather patterns",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "meteorology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding severe weather phenomena",
+      "slug": "severe-weather-phenomena",
+      "description": "Study hurricanes, tornadoes, thunderstorms, and extreme weather",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "meteorology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Working with weather data and observation",
+      "slug": "weather-data-observation",
+      "description": "Collect and analyze meteorological measurements",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "meteorology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "statistics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Applying meteorology to aviation and transportation",
+      "slug": "meteorology-aviation-transportation",
+      "description": "Use weather knowledge for flight planning and transportation safety",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "meteorology",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding ocean circulation and currents",
+      "slug": "ocean-circulation-currents",
+      "description": "Study surface and deep ocean currents and their role in climate",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "oceanography",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "fluid-dynamics",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding ocean chemistry and acidification",
+      "slug": "ocean-chemistry-acidification",
+      "description": "Study chemical processes in seawater and impacts of CO2 absorption",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "oceanography",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "chemistry",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding seafloor geology and tectonics",
+      "slug": "seafloor-geology-tectonics",
+      "description": "Study mid-ocean ridges, trenches, and submarine volcanism",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "oceanography",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting oceanographic research expeditions",
+      "slug": "oceanographic-research-expeditions",
+      "description": "Collect and analyze data from ocean environments",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "oceanography",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Understanding the fossil record and extinction events",
+      "slug": "fossil-record-extinction-events",
+      "description": "Study preserved remains of ancient life and mass extinctions",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "paleontology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geology",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "evolutionary-biology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding dinosaurs and prehistoric life",
+      "slug": "dinosaurs-prehistoric-life",
+      "description": "Study the biology and evolution of extinct organisms",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "paleontology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "zoology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Conducting fossil excavation and preparation",
+      "slug": "fossil-excavation-preparation",
+      "description": "Extract, clean, and preserve fossil specimens from rock formations",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "paleontology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "geology",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Understanding ancient environments through paleontology",
+      "slug": "ancient-environments-paleontology",
+      "description": "Reconstruct past ecosystems and climate from fossil evidence",
+      "category_slug": "environmental-science",
+      "competencies": [
+        {
+          "competency_slug": "paleontology",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "ecology",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}
