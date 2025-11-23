@@ -34,30 +34,6 @@ export function GeneratingPathCard({
     }
   };
 
-  const getIcon = () => {
-    if (status === 'failed') {
-      return 'lucide--alert-circle text-error';
-    }
-    if (status === 'completed') {
-      return 'lucide--check-circle text-success';
-    }
-    return 'lucide--sparkles text-primary';
-  };
-
-  const getTimeEstimate = () => {
-    switch (status) {
-      case 'pending':
-      case 'generating_metadata':
-        return '~30s remaining';
-      case 'fetching_image':
-        return '~20s remaining';
-      case 'curating_resources':
-        return '~10s remaining';
-      default:
-        return '';
-    }
-  };
-
   const handleCancel = () => {
     if (onCancel && status !== 'completed' && status !== 'failed') {
       onCancel(pathId);
@@ -68,12 +44,8 @@ export function GeneratingPathCard({
     <div className="card bg-base-100 shadow">
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-2.5">
-        <span className={`iconify ${getIcon()} size-4`}></span>
         <p className="grow font-medium">
           {status === 'failed' ? 'Generation Failed' : `Generating: ${topicName}`}
-        </p>
-        <p className="text-base-content/40 text-xs font-medium max-sm:hidden">
-          {getTimeEstimate()}
         </p>
       </div>
 

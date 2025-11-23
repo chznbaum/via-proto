@@ -281,7 +281,7 @@
 - [ ] **6.4 Stripe Webhook Testing** (15 min)
   - [ ] Use Stripe CLI to forward webhooks to localhost:
     ```bash
-    stripe listen --forward-to http://localhost:3000/api/webhook/stripe
+    stripe listen --forward-to http://localhost:3001/api/webhook/stripe
     ```
   - [ ] Trigger test events:
     - `checkout.session.completed` → verify subscription activated
