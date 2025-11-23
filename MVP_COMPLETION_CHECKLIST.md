@@ -206,7 +206,7 @@
 ### 5. App Branding Update 🔴 (~15-30 min)
 **Reference:** Config files, PRD Section 2
 
-- [ ] **5.1 Update config.ts** (10 min)
+- [x] **5.1 Update config.ts** (10 min)
   - [x] Open `config.ts` or equivalent config file
   - [x] Replace `appName: "ShipFast"` → `"ViaPro.to"`
   - [x] Update `appDescription` to ViaProto value prop
@@ -215,7 +215,7 @@
   - [x] Update social media handles if applicable
   - **Files to modify:** `config.ts`
 
-- [ ] **5.2 Search for ShipFast References** (15 min)
+- [x] **5.2 Search for ShipFast References** (15 min)
   - [x] Run global search: `Grep -i "shipfast"` across codebase
   - [x] Replace all remaining ShipFast branding with ViaProto
   - [x] Check files:
@@ -307,9 +307,9 @@
 ### 7. Topic Improvements 🟡 (~1-2 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #6", PRD Section 3.1
 
-- [ ] **7.1 Expand Topic Specificity** (1.5 hours)
-  - [ ] Review current `data/topics_seed.json`
-  - [ ] Use AI to generate more specific, goal-oriented topics:
+- [x] **7.1 Expand Topic Specificity** (1.5 hours)
+  - [x] Review current `data/topics_seed.json`
+  - [x] Use AI to generate more specific, goal-oriented topics:
     - Instead of "Python" → add:
       - "Automating tasks with Python"
       - "Building web applications with Python" (Competencies: Python, Flask, Django, ...)
@@ -321,7 +321,7 @@
       - "Full-stack apps with React and Next.js"
       - "Mobile apps with React Native"
       - "State management in React"
-  - [ ] Ensure each topic has:
+  - [x] Ensure each topic has:
     - Clear learning goal in name
     - Relevant synonyms for search
     - Correct category assignment
@@ -334,16 +334,15 @@
           - We could then prompt the user to check off if they have the prerequisite skills and include that context in the generation prompt
         - Be able to indicate some skills/competencies are interchangeable (ie: Different types of relational database)
         - Be able to inform the LLM via the prompt what competencies we expect the user to develop in the learning path to improve the quality of path generation
-  - [ ] Update topics_seed.json with expanded list (target: 1000 topics, expanded in batches/multiple Claude Code sessions)
-  - [ ] Re-seed database: `npm scripts/generte-seeds.js && supabase db reset`
+  - [x] Update topics_seed.json with expanded list (target: 1000 topics, expanded in batches/multiple Claude Code sessions)
+  - [x] Re-seed database: `npm scripts/generte-seeds.js && supabase db reset`
   - **Files to modify:** `data/topics_seed.json`, seed script
   - **Tool:** Use Claude to generate topic variations
 
-- [ ] **7.2 Verify Topic Search Quality** (15 min)
-  - [ ] Test typeahead with expanded topics
-  - [ ] Verify synonym matching works
-  - [ ] Test category filtering
-  - [ ] Ensure no duplicates or overlap
+- [x] **7.2 Verify Topic Search Quality** (15 min)
+  - [x] Test typeahead with expanded topics
+  - [x] Verify synonym matching works
+  - [x] Ensure no duplicates or overlap
 
 ---
 
@@ -495,7 +494,7 @@
   - [ ] Update path generation endpoint (`/api/paths/generate`)
   - [ ] After AI generates path, before storing:
     - For each resource, fetch OpenGraph data
-    - Store in `resources.og_image_url`, `og_title` columns
+    - Store in `resources.og_image_url`, `og_title`, `og_description` columns
     - Update `link_status` to 'active' or 'broken'
   - [ ] Update migration to add OG columns (if not already present):
     - `og_image_url` TEXT
