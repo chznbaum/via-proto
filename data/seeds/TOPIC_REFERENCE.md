@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-22T23:03:48.196Z
-**Total Topics:** 1998
+**Generated:** 2025-11-23T02:19:29.536Z
+**Total Topics:** 2241
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -15,8 +15,10 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [advanced-math](#advanced-math) (30)
 - [algebra](#algebra) (11)
 - [applied-math](#applied-math) (42)
+- [architecture](#architecture) (47)
 - [arithmetic](#arithmetic) (3)
 - [astronomy](#astronomy) (19)
+- [automation-integration](#automation-integration) (40)
 - [backend-development](#backend-development) (3)
 - [biology](#biology) (37)
 - [blockchain-web3](#blockchain-web3) (45)
@@ -25,6 +27,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [cloud-devops](#cloud-devops) (170)
 - [cybersecurity](#cybersecurity) (33)
 - [dance](#dance) (42)
+- [data-engineering](#data-engineering) (41)
 - [data-science](#data-science) (104)
 - [databases](#databases) (72)
 - [differential-equations](#differential-equations) (9)
@@ -36,6 +39,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [game-development](#game-development) (1)
 - [genetics](#genetics) (14)
 - [geometry](#geometry) (13)
+- [graphic-design](#graphic-design) (69)
 - [home-lifestyle](#home-lifestyle) (80)
 - [investing-trading](#investing-trading) (29)
 - [languages](#languages) (147)
@@ -48,6 +52,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [number-theory](#number-theory) (5)
 - [operations-strategy](#operations-strategy) (39)
 - [personal-finance](#personal-finance) (26)
+- [photography-video](#photography-video) (46)
 - [physics](#physics) (44)
 - [programming](#programming) (73)
 - [recreation-hobbies](#recreation-hobbies) (70)
@@ -632,6 +637,296 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## architecture
+
+### 2D drafting and technical drawings with AutoCAD
+- **Slug:** `2d-drafting-and-technical-drawings-with-autocad`
+- **Description:** Create precise 2D construction drawings, sections, and elevations using AutoCAD
+- **Primary Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### 3D modeling and rendering with AutoCAD
+- **Slug:** `3d-modeling-and-rendering-with-autocad`
+- **Description:** Create 3D architectural models and photorealistic visualizations using AutoCAD's 3D tools
+- **Primary Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### 3D printing preparation with Fusion 360
+- **Slug:** `3d-printing-preparation-with-fusion-360`
+- **Description:** Design and prepare models for 3D printing using Fusion 360's additive manufacturing tools
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Architectural facade design with Rhino
+- **Slug:** `architectural-facade-design-with-rhino`
+- **Description:** Model complex building facades and cladding systems using Rhino's surface tools
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Architectural modeling with SketchUp
+- **Slug:** `architectural-modeling-with-sketchup`
+- **Description:** Design and visualize buildings using SketchUp's intuitive 3D modeling tools and components
+- **Primary Competencies:** `sketchup`
+- **Source File:** 037-architecture.json
+
+### Architectural presentation boards with SketchUp and Photoshop
+- **Slug:** `architectural-presentation-boards-with-sketchup-and-photoshop`
+- **Description:** Create professional presentation graphics combining SketchUp renders with Photoshop layouts
+- **Primary Competencies:** `sketchup`
+- **Supporting Competencies:** `adobe-photoshop`
+- **Source File:** 037-architecture.json
+
+### Assembly design and motion simulation in SolidWorks
+- **Slug:** `assembly-design-and-motion-simulation-in-solidworks`
+- **Description:** Create complex assemblies and test mechanical motion using SolidWorks' assembly tools
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### AutoCAD customization and scripting
+- **Slug:** `autocad-customization-and-scripting`
+- **Description:** Automate repetitive tasks and customize AutoCAD using LISP, scripts, and macros
+- **Primary Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### AutoCAD to Revit BIM workflow
+- **Slug:** `autocad-to-revit-bim-workflow`
+- **Description:** Import AutoCAD drawings and convert them to intelligent Revit BIM models
+- **Primary Competencies:** `revit`
+- **Supporting Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### BIM modeling with Revit
+- **Slug:** `bim-modeling-with-revit`
+- **Description:** Create intelligent building models with coordinated documentation using Revit's BIM platform
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Building design with ArchiCAD
+- **Slug:** `building-design-with-archicad`
+- **Description:** Design buildings and generate documentation using ArchiCAD's integrated BIM workflow
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### CAD/CAM manufacturing with Fusion 360
+- **Slug:** `cadcam-manufacturing-with-fusion-360`
+- **Description:** Design products and generate CNC toolpaths using Fusion 360's integrated CAM workflows
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Clash detection and coordination in Revit
+- **Slug:** `clash-detection-and-coordination-in-revit`
+- **Description:** Identify and resolve conflicts between building systems using Revit's coordination tools
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Collaborative BIM workflows with ArchiCAD
+- **Slug:** `collaborative-bim-workflows-with-archicad`
+- **Description:** Coordinate multi-disciplinary building projects using ArchiCAD's teamwork and BIM collaboration
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Collaborative design with Fusion 360 teams
+- **Slug:** `collaborative-design-with-fusion-360-teams`
+- **Description:** Share and co-develop product designs using Fusion 360's cloud-based collaboration tools
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Complex architectural forms with Rhino
+- **Slug:** `complex-architectural-forms-with-rhino`
+- **Description:** Model freeform and organic architectural shapes using Rhino's advanced NURBS modeling
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Conceptual design and massing in ArchiCAD
+- **Slug:** `conceptual-design-and-massing-in-archicad`
+- **Description:** Explore early design concepts and building massing using ArchiCAD's modeling tools
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Construction documentation with ArchiCAD
+- **Slug:** `construction-documentation-with-archicad`
+- **Description:** Generate coordinated construction drawings, schedules, and specifications using ArchiCAD
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Creating construction documents with AutoCAD
+- **Slug:** `creating-construction-documents-with-autocad`
+- **Description:** Produce detailed technical drawings, floor plans, and construction documentation using AutoCAD
+- **Primary Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### Design for manufacturing with SolidWorks
+- **Slug:** `design-for-manufacturing-with-solidworks`
+- **Description:** Create manufacturable parts using SolidWorks' DFM tools and design validation
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### Dynamo visual programming for Revit
+- **Slug:** `dynamo-visual-programming-for-revit`
+- **Description:** Automate BIM workflows and create parametric designs using Dynamo's visual scripting in Revit
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Electronic design and PCB layout with Fusion 360
+- **Slug:** `electronic-design-and-pcb-layout-with-fusion-360`
+- **Description:** Design circuit boards and integrate electronics with mechanical design in Fusion 360
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Energy analysis and sustainability in ArchiCAD
+- **Slug:** `energy-analysis-and-sustainability-in-archicad`
+- **Description:** Analyze building energy performance and sustainability using ArchiCAD's integrated tools
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Generative design with Fusion 360
+- **Slug:** `generative-design-with-fusion-360`
+- **Description:** Optimize product designs using Fusion 360's AI-powered generative design algorithms
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Interior design visualization with SketchUp
+- **Slug:** `interior-design-visualization-with-sketchup`
+- **Description:** Plan and present interior spaces with furniture, materials, and lighting in SketchUp
+- **Primary Competencies:** `sketchup`
+- **Source File:** 037-architecture.json
+
+### Jewelry and product design with Rhino
+- **Slug:** `jewelry-and-product-design-with-rhino`
+- **Description:** Create intricate jewelry and small product designs using Rhino's precision modeling tools
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Landscape architecture modeling with SketchUp
+- **Slug:** `landscape-architecture-modeling-with-sketchup`
+- **Description:** Design outdoor spaces, terrain, and landscape elements using SketchUp's site modeling tools
+- **Primary Competencies:** `sketchup`
+- **Source File:** 037-architecture.json
+
+### Mechanical design with SolidWorks
+- **Slug:** `mechanical-design-with-solidworks`
+- **Description:** Create precise mechanical parts and assemblies using SolidWorks' parametric CAD system
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### MEP systems design in Revit
+- **Slug:** `mep-systems-design-in-revit`
+- **Description:** Design mechanical, electrical, and plumbing systems with coordination tools in Revit MEP
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Migrating from ArchiCAD to Revit
+- **Slug:** `migrating-from-archicad-to-revit`
+- **Description:** Transfer projects and adapt BIM workflows when transitioning from ArchiCAD to Revit
+- **Primary Competencies:** `revit`
+- **Supporting Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Parametric design with Rhino
+- **Slug:** `parametric-design-with-rhino`
+- **Description:** Build algorithmic and parametric models using Rhino's computational design capabilities
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Photorealistic rendering with ArchiCAD
+- **Slug:** `photorealistic-rendering-with-archicad`
+- **Description:** Create high-quality architectural visualizations using ArchiCAD's built-in rendering engine
+- **Primary Competencies:** `archicad`
+- **Source File:** 037-architecture.json
+
+### Product design with Fusion 360
+- **Slug:** `product-design-with-fusion-360`
+- **Description:** Design and engineer products using Fusion 360's parametric modeling and CAD/CAM tools
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Quick concept modeling with SketchUp
+- **Slug:** `quick-concept-modeling-with-sketchup`
+- **Description:** Rapidly explore design ideas and create presentation models using SketchUp's intuitive interface
+- **Primary Competencies:** `sketchup`
+- **Source File:** 037-architecture.json
+
+### Revit families and custom components
+- **Slug:** `revit-families-and-custom-components`
+- **Description:** Create parametric Revit families and custom building components for reusable BIM objects
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Rhino to fabrication workflow
+- **Slug:** `rhino-to-fabrication-workflow`
+- **Description:** Prepare Rhino models for CNC milling, laser cutting, and digital fabrication
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Schematic design and space planning in Revit
+- **Slug:** `schematic-design-and-space-planning-in-revit`
+- **Description:** Develop early design concepts and analyze space requirements using Revit's conceptual tools
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Sheet metal design in SolidWorks
+- **Slug:** `sheet-metal-design-in-solidworks`
+- **Description:** Design fabricated sheet metal parts with bends, flanges, and flat patterns using SolidWorks
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### Simulation and stress analysis in SolidWorks
+- **Slug:** `simulation-and-stress-analysis-in-solidworks`
+- **Description:** Validate mechanical designs using SolidWorks Simulation for stress, thermal, and motion analysis
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### Simulation-driven design with Fusion 360
+- **Slug:** `simulation-driven-design-with-fusion-360`
+- **Description:** Optimize product performance using integrated simulation and testing in Fusion 360
+- **Primary Competencies:** `fusion-360`
+- **Source File:** 037-architecture.json
+
+### Site plans and civil engineering with AutoCAD
+- **Slug:** `site-plans-and-civil-engineering-with-autocad`
+- **Description:** Create site layouts, grading plans, and civil engineering drawings using AutoCAD Civil 3D
+- **Primary Competencies:** `autocad`
+- **Source File:** 037-architecture.json
+
+### SketchUp extensions and plugins
+- **Slug:** `sketchup-extensions-and-plugins`
+- **Description:** Enhance SketchUp's capabilities using third-party extensions for rendering, analysis, and productivity
+- **Primary Competencies:** `sketchup`
+- **Source File:** 037-architecture.json
+
+### SketchUp to Photoshop rendering workflow
+- **Slug:** `sketchup-to-photoshop-rendering-workflow`
+- **Description:** Export SketchUp models and enhance visualizations with post-processing in Adobe Photoshop
+- **Primary Competencies:** `sketchup`
+- **Supporting Competencies:** `adobe-photoshop`
+- **Source File:** 037-architecture.json
+
+### Structural design with Revit
+- **Slug:** `structural-design-with-revit`
+- **Description:** Model structural systems and generate construction documents using Revit Structure
+- **Primary Competencies:** `revit`
+- **Source File:** 037-architecture.json
+
+### Surface modeling and advanced shapes in SolidWorks
+- **Slug:** `surface-modeling-and-advanced-shapes-in-solidworks`
+- **Description:** Create complex curved surfaces and organic shapes using SolidWorks' surfacing tools
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+### Surface modeling and analysis in Rhino
+- **Slug:** `surface-modeling-and-analysis-in-rhino`
+- **Description:** Create and analyze complex surfaces for architecture and product design using Rhino
+- **Primary Competencies:** `rhino`
+- **Source File:** 037-architecture.json
+
+### Weldments and structural frames in SolidWorks
+- **Slug:** `weldments-and-structural-frames-in-solidworks`
+- **Description:** Design structural steel frames and weldments using SolidWorks' specialized tools
+- **Primary Competencies:** `solidworks`
+- **Source File:** 037-architecture.json
+
+---
+
 ## arithmetic
 
 ### Building number sense and mental math skills
@@ -786,6 +1081,261 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Study planets, moons, and the dynamics of our cosmic neighborhood
 - **Primary Competencies:** `astronomy`
 - **Source File:** 027-science.json
+
+---
+
+## automation-integration
+
+### Automating API workflows with Make
+- **Slug:** `automating-api-workflows-with-make`
+- **Description:** Connect and orchestrate REST API calls in Make scenarios for complex integrations
+- **Primary Competencies:** `make`
+- **Supporting Competencies:** `rest-api`
+- **Source File:** 035-automation-integration.json
+
+### Automating business workflows with Zapier
+- **Slug:** `automating-business-workflows-with-zapier`
+- **Description:** Connect apps and automate repetitive tasks using Zapier's no-code integration platform
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Automating content workflows with Make and Notion
+- **Slug:** `automating-content-workflows-with-make-and-notion`
+- **Description:** Streamline content management by connecting Notion with other tools using Make automation
+- **Primary Competencies:** `make`
+- **Supporting Competencies:** `notion`
+- **Source File:** 035-automation-integration.json
+
+### Automating customer onboarding with n8n
+- **Slug:** `automating-customer-onboarding-with-n8n`
+- **Description:** Create seamless customer onboarding experiences with automated welcome sequences and setup workflows
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Automating data enrichment with Make
+- **Slug:** `automating-data-enrichment-with-make`
+- **Description:** Enhance contact and company data by connecting enrichment services and databases through Make
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Automating email workflows with Zapier
+- **Slug:** `automating-email-workflows-with-zapier`
+- **Description:** Set up automated email sequences and notifications across multiple platforms using Zapier
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Automating file management with Make
+- **Slug:** `automating-file-management-with-make`
+- **Description:** Organize, backup, and sync files across cloud storage platforms using Make automation
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Automating invoice processing with Make
+- **Slug:** `automating-invoice-processing-with-make`
+- **Description:** Streamline accounts payable and receivable by automating invoice creation, sending, and tracking with Make
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Automating payment workflows with Zapier
+- **Slug:** `automating-payment-workflows-with-zapier`
+- **Description:** Process payments, send receipts, and manage subscriptions automatically using Zapier integrations
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Automating reporting with Zapier and Google Sheets
+- **Slug:** `automating-reporting-with-zapier-and-google-sheets`
+- **Description:** Generate automated reports and dashboards by connecting data sources to Google Sheets via Zapier
+- **Primary Competencies:** `zapier`
+- **Supporting Competencies:** `google-sheets`
+- **Source File:** 035-automation-integration.json
+
+### Automating social media workflows with Make
+- **Slug:** `automating-social-media-workflows-with-make`
+- **Description:** Schedule, publish, and monitor social media content across platforms using Make automation
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Automating task management with Make and Notion
+- **Slug:** `automating-task-management-with-make-and-notion`
+- **Description:** Synchronize tasks, deadlines, and project updates between Notion and other productivity tools using Make
+- **Primary Competencies:** `make`
+- **Supporting Competencies:** `notion`
+- **Source File:** 035-automation-integration.json
+
+### Automating workflows with Make
+- **Slug:** `automating-workflows-with-make`
+- **Description:** Design visual automation scenarios using Make's drag-and-drop workflow builder
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Building advanced Make scenarios with JavaScript
+- **Slug:** `building-advanced-make-scenarios-with-javascript`
+- **Description:** Enhance Make automations with custom JavaScript functions for complex data processing
+- **Primary Competencies:** `make`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 035-automation-integration.json
+
+### Building AI-powered automations with Zapier
+- **Slug:** `building-ai-powered-automations-with-zapier`
+- **Description:** Enhance workflows with AI capabilities using Zapier's ChatGPT, OpenAI, and AI assistant integrations
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Building CRM automations with Zapier
+- **Slug:** `building-crm-automations-with-zapier`
+- **Description:** Automate contact management, deal tracking, and sales workflows using Zapier CRM integrations
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Building custom automations with n8n
+- **Slug:** `building-custom-automations-with-n8n`
+- **Description:** Create flexible workflow automations using n8n's open-source automation platform
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Building custom integrations with Make HTTP modules
+- **Slug:** `building-custom-integrations-with-make-http-modules`
+- **Description:** Connect any web service to Make using HTTP requests, authentication, and data parsing
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Building custom n8n nodes with JavaScript
+- **Slug:** `building-custom-n8n-nodes-with-javascript`
+- **Description:** Extend n8n functionality by creating reusable custom nodes using JavaScript and TypeScript
+- **Primary Competencies:** `n8n`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 035-automation-integration.json
+
+### Building data extraction workflows with n8n
+- **Slug:** `building-data-extraction-workflows-with-n8n`
+- **Description:** Extract and transform data from websites, APIs, and documents using n8n automation
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Building data pipelines with n8n and Google Sheets
+- **Slug:** `building-data-pipelines-with-n8n-and-google-sheets`
+- **Description:** Synchronize and transform data between Google Sheets and multiple services using n8n workflows
+- **Primary Competencies:** `n8n`
+- **Supporting Competencies:** `google-sheets`
+- **Source File:** 035-automation-integration.json
+
+### Building e-commerce automations with n8n
+- **Slug:** `building-ecommerce-automations-with-n8n`
+- **Description:** Automate order processing, inventory management, and customer communications with n8n workflows
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Building error handling in Make scenarios
+- **Slug:** `building-error-handling-in-make-scenarios`
+- **Description:** Implement robust error handling, rollback, and notification strategies in Make automations
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Building lead capture automations with Zapier
+- **Slug:** `building-lead-capture-automations-with-zapier`
+- **Description:** Automatically capture, enrich, and route leads from forms and landing pages using Zapier
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Building marketing automation funnels with Zapier
+- **Slug:** `building-marketing-automation-funnels-with-zapier`
+- **Description:** Design and implement automated marketing campaigns and customer journeys using Zapier workflows
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Building multi-step automations with Make
+- **Slug:** `building-multi-step-automations-with-make`
+- **Description:** Design complex automation workflows with conditional logic, filters, and data transformation in Make
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Building notification systems with Make
+- **Slug:** `building-notification-systems-with-make`
+- **Description:** Set up intelligent alert and notification workflows across communication channels using Make
+- **Primary Competencies:** `make`
+- **Source File:** 035-automation-integration.json
+
+### Building real-time automation with n8n webhooks
+- **Slug:** `building-real-time-automation-with-n8n-webhooks`
+- **Description:** Create instant, event-driven workflows using n8n's webhook triggers and real-time processing
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Building REST API integrations with Zapier
+- **Slug:** `building-rest-api-integrations-with-zapier`
+- **Description:** Connect custom APIs and web services to your Zapier workflows using webhooks and HTTP requests
+- **Primary Competencies:** `zapier`
+- **Supporting Competencies:** `rest-api`
+- **Source File:** 035-automation-integration.json
+
+### Building REST API workflows with n8n
+- **Slug:** `building-rest-api-workflows-with-n8n`
+- **Description:** Integrate custom APIs and web services into n8n automation flows using HTTP nodes and authentication
+- **Primary Competencies:** `n8n`
+- **Supporting Competencies:** `rest-api`
+- **Source File:** 035-automation-integration.json
+
+### Connecting Google Sheets with Zapier
+- **Slug:** `connecting-google-sheets-with-zapier`
+- **Description:** Automate data workflows between Google Sheets and other applications using Zapier
+- **Primary Competencies:** `zapier`
+- **Supporting Competencies:** `google-sheets`
+- **Source File:** 035-automation-integration.json
+
+### Creating conditional workflows with Zapier
+- **Slug:** `creating-conditional-workflows-with-zapier`
+- **Description:** Build intelligent automation paths using filters, conditional logic, and branching in Zapier
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Creating data synchronization workflows with Zapier
+- **Slug:** `creating-data-synchronization-workflows-with-zapier`
+- **Description:** Keep data consistent across multiple platforms by automating bi-directional syncs with Zapier
+- **Primary Competencies:** `zapier`
+- **Source File:** 035-automation-integration.json
+
+### Creating scheduled workflows with n8n
+- **Slug:** `creating-scheduled-workflows-with-n8n`
+- **Description:** Build time-based automation triggers and recurring tasks using n8n's scheduling capabilities
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Creating webhooks and triggers with n8n
+- **Slug:** `creating-webhooks-and-triggers-with-n8n`
+- **Description:** Set up custom webhook endpoints and event-driven automation triggers in n8n workflows
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Debugging and monitoring n8n workflows
+- **Slug:** `debugging-and-monitoring-n8n-workflows`
+- **Description:** Troubleshoot automation issues and monitor workflow performance using n8n's debugging tools
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Extending n8n with custom JavaScript code
+- **Slug:** `extending-n8n-with-custom-javascript-code`
+- **Description:** Add custom logic to n8n workflows using JavaScript code nodes for advanced transformations
+- **Primary Competencies:** `n8n`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 035-automation-integration.json
+
+### Migrating workflows between automation platforms
+- **Slug:** `migrating-workflows-between-automation-platforms`
+- **Description:** Transfer and adapt automation workflows between Zapier, Make, and n8n platforms
+- **Supporting Competencies:** `zapier`, `make`, `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Scaling automation workflows with n8n clusters
+- **Slug:** `scaling-automation-workflows-with-n8n-clusters`
+- **Description:** Deploy high-availability n8n instances with queue mode for enterprise-scale automation
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
+
+### Self-hosting n8n for automation workflows
+- **Slug:** `self-hosting-n8n-for-automation-workflows`
+- **Description:** Deploy and manage your own n8n instance for complete control over workflow automation
+- **Primary Competencies:** `n8n`
+- **Source File:** 035-automation-integration.json
 
 ---
 
@@ -3276,6 +3826,297 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## data-engineering
+
+### Building batch processing pipelines with Spark
+- **Slug:** `building-batch-processing-pipelines-with-spark`
+- **Description:** Process large volumes of data efficiently using Apache Spark's batch processing capabilities
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building cost-effective data pipelines with Prefect and Databricks
+- **Slug:** `building-cost-effective-data-pipelines-with-prefect-and-databricks`
+- **Description:** Optimize cloud costs by orchestrating Databricks jobs with Prefect's resource management
+- **Primary Competencies:** `prefect`
+- **Supporting Competencies:** `databricks`, `python`
+- **Source File:** 034-data-engineering.json
+
+### Building data catalogs with Great Expectations
+- **Slug:** `building-data-catalogs-with-great-expectations`
+- **Description:** Document and validate data assets using Great Expectations' expectation suites and data docs
+- **Primary Competencies:** `great-expectations`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Building data pipelines on AWS with Airflow
+- **Slug:** `building-data-pipelines-on-aws-with-airflow`
+- **Description:** Design and deploy cloud-native data pipelines using Apache Airflow with AWS services
+- **Primary Competencies:** `apache-airflow`
+- **Supporting Competencies:** `aws`, `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building data pipelines on Azure with Dagster
+- **Slug:** `building-data-pipelines-on-azure-with-dagster`
+- **Description:** Deploy and manage cloud data workflows using Dagster integrated with Azure services
+- **Primary Competencies:** `dagster`
+- **Supporting Competencies:** `azure`, `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building data pipelines on Google Cloud with Prefect
+- **Slug:** `building-data-pipelines-on-google-cloud-with-prefect`
+- **Description:** Create scalable data workflows using Prefect integrated with Google Cloud Platform services
+- **Primary Competencies:** `prefect`
+- **Supporting Competencies:** `google-cloud-platform`, `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building data pipelines with Dagster
+- **Slug:** `building-data-pipelines-with-dagster`
+- **Description:** Develop testable and observable data pipelines using Dagster assets, ops, and software-defined data orchestration
+- **Primary Competencies:** `dagster`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building data quality frameworks with Great Expectations and Airflow
+- **Slug:** `building-data-quality-frameworks-with-great-expectations-and-airflow`
+- **Description:** Integrate automated data validation into Airflow pipelines using Great Expectations
+- **Primary Competencies:** `great-expectations`, `apache-airflow`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building data transformation pipelines with dbt
+- **Slug:** `building-data-transformation-pipelines-with-dbt`
+- **Description:** Transform raw data into analytics-ready datasets using dbt models, tests, and documentation
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building Databricks data pipelines with Spark and Delta Lake
+- **Slug:** `building-databricks-data-pipelines-with-spark-and-delta-lake`
+- **Description:** Develop scalable data lakehouse architectures using Databricks, Apache Spark, and Python
+- **Primary Competencies:** `databricks`, `apache-spark`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building dimensional data models with dbt
+- **Slug:** `building-dimensional-data-models-with-dbt`
+- **Description:** Design star and snowflake schemas for analytics using dbt's modeling capabilities
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building end-to-end data platforms with Airflow, dbt, and Great Expectations
+- **Slug:** `building-end-to-end-data-platforms-with-airflow-dbt-and-great-expectations`
+- **Description:** Create comprehensive data platforms combining orchestration, transformation, and quality validation
+- **Primary Competencies:** `apache-airflow`, `dbt`, `great-expectations`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building ETL pipelines with Apache Airflow
+- **Slug:** `building-etl-pipelines-with-apache-airflow`
+- **Description:** Create and orchestrate data extraction, transformation, and loading workflows using Apache Airflow DAGs and Python
+- **Primary Competencies:** `apache-airflow`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building ETL pipelines with Prefect
+- **Slug:** `building-etl-pipelines-with-prefect`
+- **Description:** Design and deploy data pipelines using Prefect flows, tasks, and modern Python orchestration patterns
+- **Primary Competencies:** `prefect`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building event-driven data pipelines with Airflow
+- **Slug:** `building-event-driven-data-pipelines-with-airflow`
+- **Description:** Create reactive data workflows using Apache Airflow sensors and event-based triggers
+- **Primary Competencies:** `apache-airflow`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Building incremental data models with dbt
+- **Slug:** `building-incremental-data-models-with-dbt`
+- **Description:** Optimize data transformation performance using dbt's incremental materialization strategies
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building MySQL data warehouses with dbt
+- **Slug:** `building-mysql-data-warehouses-with-dbt`
+- **Description:** Design and maintain analytical data models in MySQL using dbt transformations
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `mysql`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building PostgreSQL data pipelines with dbt
+- **Slug:** `building-postgresql-data-pipelines-with-dbt`
+- **Description:** Transform and model PostgreSQL data using dbt's SQL-based transformation framework
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `postgresql`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building production data pipelines with Airflow and dbt
+- **Slug:** `building-production-data-pipelines-with-airflow-and-dbt`
+- **Description:** Orchestrate dbt transformations with Apache Airflow for end-to-end ELT workflows
+- **Primary Competencies:** `apache-airflow`, `dbt`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building reliable data pipelines with Dagster and dbt
+- **Slug:** `building-reliable-data-pipelines-with-dagster-and-dbt`
+- **Description:** Develop observable and testable data workflows by orchestrating dbt with Dagster's asset-based approach
+- **Primary Competencies:** `dagster`, `dbt`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building reusable dbt packages and macros
+- **Slug:** `building-reusable-dbt-packages-and-macros`
+- **Description:** Create modular and maintainable data transformation code using dbt packages and Jinja macros
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building self-service analytics with dbt
+- **Slug:** `building-self-service-analytics-with-dbt`
+- **Description:** Enable business users to access trusted data through well-documented dbt models and exposures
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Building validated data pipelines with dbt and Great Expectations
+- **Slug:** `building-validated-data-pipelines-with-dbt-and-great-expectations`
+- **Description:** Combine dbt transformations with Great Expectations validation for reliable data pipelines
+- **Primary Competencies:** `dbt`, `great-expectations`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Implementing CI/CD for data pipelines with Airflow
+- **Slug:** `implementing-cicd-for-data-pipelines-with-airflow`
+- **Description:** Build automated testing and deployment workflows for Apache Airflow DAGs
+- **Primary Competencies:** `apache-airflow`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Implementing data contracts with Soda and dbt
+- **Slug:** `implementing-data-contracts-with-soda-and-dbt`
+- **Description:** Define and enforce data quality standards across teams using Soda validation and dbt modeling
+- **Primary Competencies:** `soda`, `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Implementing data lineage with Dagster
+- **Slug:** `implementing-data-lineage-with-dagster`
+- **Description:** Track and visualize data dependencies using Dagster's asset-based lineage and metadata features
+- **Primary Competencies:** `dagster`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Implementing data observability with Prefect
+- **Slug:** `implementing-data-observability-with-prefect`
+- **Description:** Monitor data pipeline health and performance using Prefect's observability features
+- **Primary Competencies:** `prefect`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Implementing data quality testing with Soda
+- **Slug:** `implementing-data-quality-testing-with-soda`
+- **Description:** Create data quality checks and monitoring using Soda's SQL-based testing framework
+- **Primary Competencies:** `soda`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Implementing data quality validation with Great Expectations
+- **Slug:** `implementing-data-quality-validation-with-great-expectations`
+- **Description:** Build automated data quality checks and validation suites using Great Expectations and Python
+- **Primary Competencies:** `great-expectations`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Monitoring data pipelines with Prefect and Great Expectations
+- **Slug:** `monitoring-data-pipelines-with-prefect-and-great-expectations`
+- **Description:** Build observable data workflows with Prefect orchestration and Great Expectations quality monitoring
+- **Primary Competencies:** `prefect`, `great-expectations`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Optimizing Spark performance for large datasets
+- **Slug:** `optimizing-spark-performance-for-large-datasets`
+- **Description:** Tune Apache Spark applications for memory, partitioning, and execution efficiency
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Orchestrating data science workflows with Prefect
+- **Slug:** `orchestrating-data-science-workflows-with-prefect`
+- **Description:** Automate machine learning pipelines and data science tasks using Prefect's workflow engine
+- **Primary Competencies:** `prefect`
+- **Supporting Competencies:** `python`, `pandas`
+- **Source File:** 034-data-engineering.json
+
+### Orchestrating data workflows with Luigi
+- **Slug:** `orchestrating-data-workflows-with-luigi`
+- **Description:** Build dependency-driven data pipelines using Luigi's Python-based workflow management
+- **Primary Competencies:** `luigi`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Orchestrating distributed Spark clusters with Dagster
+- **Slug:** `orchestrating-distributed-spark-clusters-with-dagster`
+- **Description:** Manage and monitor Apache Spark job execution using Dagster's orchestration platform
+- **Primary Competencies:** `dagster`, `apache-spark`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Orchestrating Spark jobs with Airflow
+- **Slug:** `orchestrating-spark-jobs-with-airflow`
+- **Description:** Schedule and monitor Apache Spark data processing jobs using Apache Airflow orchestration
+- **Primary Competencies:** `apache-airflow`, `apache-spark`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Processing data with Spark and Pandas
+- **Slug:** `processing-data-with-spark-and-pandas`
+- **Description:** Combine Apache Spark for large-scale processing with Pandas for detailed data analysis and transformation
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `pandas`, `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Processing large-scale data with Apache Spark
+- **Slug:** `processing-large-scale-data-with-apache-spark`
+- **Description:** Analyze and transform big data using Apache Spark's distributed computing framework with PySpark
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `python`, `sql`
+- **Source File:** 034-data-engineering.json
+
+### Processing semi-structured data with Spark
+- **Slug:** `processing-semi-structured-data-with-spark`
+- **Description:** Parse and analyze JSON, XML, and nested data structures using Apache Spark
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Processing streaming data with Spark
+- **Slug:** `processing-streaming-data-with-spark`
+- **Description:** Build real-time data processing applications using Apache Spark Structured Streaming
+- **Primary Competencies:** `apache-spark`
+- **Supporting Competencies:** `python`
+- **Source File:** 034-data-engineering.json
+
+### Testing dbt models and transformations
+- **Slug:** `testing-dbt-models-and-transformations`
+- **Description:** Ensure data quality and correctness using dbt's built-in testing framework and custom tests
+- **Primary Competencies:** `dbt`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+### Validating database schemas with Soda
+- **Slug:** `validating-database-schemas-with-soda`
+- **Description:** Ensure data integrity and schema compliance using Soda's automated data quality checks
+- **Primary Competencies:** `soda`
+- **Supporting Competencies:** `sql`
+- **Source File:** 034-data-engineering.json
+
+---
+
 ## data-science
 
 ### Building AI agents with LangGraph
@@ -5756,6 +6597,424 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `analytic-geometry`
 - **Supporting Competencies:** `algebra-2`, `geometry`
 - **Source File:** 023-mathematics.json
+
+---
+
+## graphic-design
+
+### 3D effects and perspective in Illustrator
+- **Slug:** `3d-effects-and-perspective-in-illustrator`
+- **Description:** Create isometric designs and 3D effects using Illustrator's perspective and extrude tools
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Animated sprites and characters with Aseprite
+- **Slug:** `animated-sprites-and-characters-with-aseprite`
+- **Description:** Design character animations and sprite sheets with frame-by-frame pixel animation in Aseprite
+- **Primary Competencies:** `aseprite`
+- **Source File:** 038-graphic-design.json
+
+### Animation frames with Clip Studio Paint
+- **Slug:** `animation-frames-with-clip-studio-paint`
+- **Description:** Create frame-by-frame animation for short films using Clip Studio Paint's animation features
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
+
+### Annual report design with InDesign
+- **Slug:** `annual-report-design-with-indesign`
+- **Description:** Design corporate annual reports with data visualization and professional layouts in InDesign
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Book cover design with Photoshop and InDesign
+- **Slug:** `book-cover-design-with-photoshop-and-indesign`
+- **Description:** Design compelling book covers combining Photoshop imagery with InDesign typography and layout
+- **Primary Competencies:** `adobe-photoshop`, `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Brand identity design with Illustrator and Photoshop
+- **Slug:** `brand-identity-design-with-illustrator-and-photoshop`
+- **Description:** Create complete brand systems combining Illustrator's vector work with Photoshop's mockups
+- **Primary Competencies:** `adobe-illustrator`, `adobe-photoshop`
+- **Source File:** 038-graphic-design.json
+
+### Brand templates and style guides with Canva
+- **Slug:** `brand-templates-and-style-guides-with-canva`
+- **Description:** Create consistent brand materials and team templates using Canva's brand kit features
+- **Primary Competencies:** `canva`
+- **Source File:** 038-graphic-design.json
+
+### Branding and style systems with Illustrator
+- **Slug:** `branding-and-style-systems-with-illustrator`
+- **Description:** Develop comprehensive brand identity systems with logos, colors, and guidelines in Illustrator
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Brochure and flyer design with Affinity Publisher
+- **Slug:** `brochure-and-flyer-design-with-affinity-publisher`
+- **Description:** Design marketing collateral with professional layouts using Affinity Publisher
+- **Primary Competencies:** `affinity-publisher`
+- **Source File:** 038-graphic-design.json
+
+### Character design with Clip Studio Paint
+- **Slug:** `character-design-with-clip-studio-paint`
+- **Description:** Design anime and manga characters with model sheets using Clip Studio Paint's drawing tools
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
+
+### Children's book illustration with Clip Studio Paint
+- **Slug:** `childrens-book-illustration-with-clip-studio-paint`
+- **Description:** Create colorful children's book illustrations and storyboards using Clip Studio Paint
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
+
+### Complete Affinity workflow for branding
+- **Slug:** `complete-affinity-workflow-for-branding`
+- **Description:** Design full brand identities using the integrated Affinity Designer, Photo, and Publisher suite
+- **Primary Competencies:** `affinity-designer`, `affinity-photo`, `affinity-publisher`
+- **Source File:** 038-graphic-design.json
+
+### Custom lettering and calligraphy with Illustrator
+- **Slug:** `custom-lettering-and-calligraphy-with-illustrator`
+- **Description:** Design hand-lettered logos and calligraphic compositions using Illustrator's brush tools
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Digital illustration with Clip Studio Paint
+- **Slug:** `digital-illustration-with-clip-studio-paint`
+- **Description:** Create manga, comics, and digital art using Clip Studio Paint's specialized brushes and tools
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
+
+### Digital painting techniques with GIMP
+- **Slug:** `digital-painting-techniques-with-gimp`
+- **Description:** Create digital paintings using GIMP's brushes, layers, and blending modes
+- **Primary Competencies:** `gimp`
+- **Source File:** 038-graphic-design.json
+
+### Digital painting with Paint Tool SAI
+- **Slug:** `digital-painting-with-paint-tool-sai`
+- **Description:** Create smooth digital paintings and illustrations using Paint Tool SAI's lightweight painting tools
+- **Primary Competencies:** `paint-tool-sai`
+- **Source File:** 038-graphic-design.json
+
+### Editorial design with InDesign and InCopy
+- **Slug:** `editorial-design-with-indesign-and-incopy`
+- **Description:** Manage collaborative editorial workflows with writers using InDesign layouts and InCopy
+- **Primary Competencies:** `adobe-indesign`, `adobe-incopy`
+- **Source File:** 038-graphic-design.json
+
+### Editorial workflow with Adobe InCopy
+- **Slug:** `editorial-workflow-with-adobe-incopy`
+- **Description:** Collaborate on editorial content and copywriting within InDesign layouts using Adobe InCopy
+- **Primary Competencies:** `adobe-incopy`
+- **Source File:** 038-graphic-design.json
+
+### EPUB and digital publishing with InDesign
+- **Slug:** `epub-and-digital-publishing-with-indesign`
+- **Description:** Create reflowable ebooks and digital publications for export to EPUB using Adobe InDesign
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Font design with FontForge
+- **Slug:** `font-design-with-fontforge`
+- **Description:** Create custom typefaces and fonts using FontForge's open-source font editor
+- **Primary Competencies:** `fontforge`
+- **Source File:** 038-graphic-design.json
+
+### Grid systems and modular layout in InDesign
+- **Slug:** `grid-systems-and-modular-layout-in-indesign`
+- **Description:** Design with advanced grid systems and baseline grids for professional typography in InDesign
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Handwriting fonts with Glyphs
+- **Slug:** `handwriting-fonts-with-glyphs`
+- **Description:** Create custom script and handwriting fonts using Glyphs' font design tools
+- **Primary Competencies:** `glyphs`
+- **Source File:** 038-graphic-design.json
+
+### Icon font creation with FontForge
+- **Slug:** `icon-font-creation-with-fontforge`
+- **Description:** Convert icon sets into custom web fonts using FontForge
+- **Primary Competencies:** `fontforge`
+- **Source File:** 038-graphic-design.json
+
+### Icon system design with Affinity Designer
+- **Slug:** `icon-system-design-with-affinity-designer`
+- **Description:** Create cohesive icon sets with consistent style and export formats in Affinity Designer
+- **Primary Competencies:** `affinity-designer`
+- **Source File:** 038-graphic-design.json
+
+### Illustration and page layout with CorelDRAW
+- **Slug:** `illustration-and-page-layout-with-coreldraw`
+- **Description:** Create illustrations and multi-page layouts in CorelDRAW's all-in-one design suite
+- **Primary Competencies:** `coreldraw`
+- **Source File:** 038-graphic-design.json
+
+### Illustration with smooth linework in Paint Tool SAI
+- **Slug:** `illustration-with-smooth-linework-in-paint-tool-sai`
+- **Description:** Create anime-style illustrations with clean lines using Paint Tool SAI's stabilization
+- **Primary Competencies:** `paint-tool-sai`
+- **Source File:** 038-graphic-design.json
+
+### Infographic design with Illustrator
+- **Slug:** `infographic-design-with-illustrator`
+- **Description:** Create data visualizations and infographics using Illustrator's charting and illustration tools
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Interactive PDF creation with InDesign
+- **Slug:** `interactive-pdf-creation-with-indesign`
+- **Description:** Design interactive documents with hyperlinks, buttons, and forms using Adobe InDesign
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Isometric game tiles with Aseprite
+- **Slug:** `isometric-game-tiles-with-aseprite`
+- **Description:** Create isometric pixel art tiles and environments for games using Aseprite
+- **Primary Competencies:** `aseprite`
+- **Source File:** 038-graphic-design.json
+
+### Logo animation preparation with Illustrator
+- **Slug:** `logo-animation-preparation-with-illustrator`
+- **Description:** Design and organize vector logos in Illustrator for smooth handoff to animation software
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Long-form document design with InDesign
+- **Slug:** `long-form-document-design-with-indesign`
+- **Description:** Format technical manuals, reports, and long documents using InDesign's automation features
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Magazine and book layout with Adobe InDesign
+- **Slug:** `magazine-and-book-layout-with-adobe-indesign`
+- **Description:** Design multi-page publications with master pages, styles, and typography in Adobe InDesign
+- **Primary Competencies:** `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Magazine cover design with InDesign and Photoshop
+- **Slug:** `magazine-cover-design-with-indesign-and-photoshop`
+- **Description:** Design eye-catching magazine covers combining Photoshop images with InDesign typography
+- **Primary Competencies:** `adobe-indesign`, `adobe-photoshop`
+- **Source File:** 038-graphic-design.json
+
+### Manga and comic creation with Clip Studio Paint
+- **Slug:** `manga-and-comic-creation-with-clip-studio-paint`
+- **Description:** Create professional manga pages with screentones, speech bubbles, and panel layouts in Clip Studio Paint
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
+
+### Marketing materials with Canva Pro
+- **Slug:** `marketing-materials-with-canva-pro`
+- **Description:** Design professional marketing campaigns using Canva's brand kit and team collaboration features
+- **Primary Competencies:** `canva`
+- **Source File:** 038-graphic-design.json
+
+### Migrating from Adobe to Affinity suite
+- **Slug:** `migrating-from-adobe-to-affinity-suite`
+- **Description:** Transfer design workflows from Adobe Creative Cloud to the Affinity Designer, Photo, and Publisher suite
+- **Primary Competencies:** `affinity-designer`, `affinity-photo`, `affinity-publisher`
+- **Source File:** 038-graphic-design.json
+
+### Multi-language font support with FontForge
+- **Slug:** `multi-language-font-support-with-fontforge`
+- **Description:** Design fonts with extended character sets and language support using FontForge
+- **Primary Competencies:** `fontforge`
+- **Source File:** 038-graphic-design.json
+
+### Newsletter and email templates with Canva
+- **Slug:** `newsletter-and-email-templates-with-canva`
+- **Description:** Design responsive email newsletters and marketing templates using Canva
+- **Primary Competencies:** `canva`
+- **Source File:** 038-graphic-design.json
+
+### Open-source graphic design with GIMP and Inkscape
+- **Slug:** `open-source-graphic-design-with-gimp-and-inkscape`
+- **Description:** Create complete design projects using the free GIMP and Inkscape workflow
+- **Primary Competencies:** `gimp`, `inkscape`
+- **Source File:** 038-graphic-design.json
+
+### OpenType features and font engineering with Glyphs
+- **Slug:** `opentype-features-and-font-engineering-with-glyphs`
+- **Description:** Implement advanced OpenType features like ligatures and alternates using Glyphs
+- **Primary Competencies:** `glyphs`
+- **Source File:** 038-graphic-design.json
+
+### Packaging design with Illustrator
+- **Slug:** `packaging-design-with-illustrator`
+- **Description:** Design product packaging with dielines, structural layouts, and print specifications in Illustrator
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Pattern design with Illustrator
+- **Slug:** `pattern-design-with-illustrator`
+- **Description:** Create seamless repeating patterns for textiles and surfaces using Illustrator's pattern tools
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Photo compositing with GIMP
+- **Slug:** `photo-compositing-with-gimp`
+- **Description:** Combine multiple images into creative composites using GIMP's layers and masking
+- **Primary Competencies:** `gimp`
+- **Source File:** 038-graphic-design.json
+
+### Photo editing and retouching with GIMP
+- **Slug:** `photo-editing-and-retouching-with-gimp`
+- **Description:** Edit and enhance images using GIMP's free open-source photo manipulation tools
+- **Primary Competencies:** `gimp`
+- **Source File:** 038-graphic-design.json
+
+### Photo editing with Affinity Photo
+- **Slug:** `photo-editing-with-affinity-photo`
+- **Description:** Retouch and enhance photographs using Affinity Photo's professional editing capabilities
+- **Primary Competencies:** `affinity-photo`
+- **Source File:** 038-graphic-design.json
+
+### Photo restoration with Affinity Photo
+- **Slug:** `photo-restoration-with-affinity-photo`
+- **Description:** Restore and repair damaged photographs using Affinity Photo's cloning and healing tools
+- **Primary Competencies:** `affinity-photo`
+- **Source File:** 038-graphic-design.json
+
+### Pixel art with Aseprite
+- **Slug:** `pixel-art-with-aseprite`
+- **Description:** Create pixel art sprites and animations for games using Aseprite's specialized pixel editor
+- **Primary Competencies:** `aseprite`
+- **Source File:** 038-graphic-design.json
+
+### Poster design with Illustrator and Photoshop
+- **Slug:** `poster-design-with-illustrator-and-photoshop`
+- **Description:** Create event posters combining Photoshop's imagery with Illustrator's typography and graphics
+- **Primary Competencies:** `adobe-illustrator`, `adobe-photoshop`
+- **Source File:** 038-graphic-design.json
+
+### Presentation design with Canva
+- **Slug:** `presentation-design-with-canva`
+- **Description:** Design engaging presentations and pitch decks using Canva's templates and animations
+- **Primary Competencies:** `canva`
+- **Source File:** 038-graphic-design.json
+
+### Print production workflow with Illustrator and InDesign
+- **Slug:** `print-production-workflow-with-illustrator-and-indesign`
+- **Description:** Prepare print-ready files by combining Illustrator assets with InDesign layout and preflight
+- **Primary Competencies:** `adobe-illustrator`, `adobe-indesign`
+- **Source File:** 038-graphic-design.json
+
+### Print-ready file preparation with Illustrator
+- **Slug:** `print-ready-file-preparation-with-illustrator`
+- **Description:** Prepare vector artwork for professional printing with proper bleeds, color modes, and formats
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Professional photo editing workflow with Affinity Photo
+- **Slug:** `professional-photo-editing-workflow-with-affinity-photo`
+- **Description:** Edit commercial photography with RAW processing and advanced retouching in Affinity Photo
+- **Primary Competencies:** `affinity-photo`
+- **Source File:** 038-graphic-design.json
+
+### Publishing and layout with Affinity Publisher
+- **Slug:** `publishing-and-layout-with-affinity-publisher`
+- **Description:** Create magazines, books, and brochures using Affinity Publisher's page layout tools
+- **Primary Competencies:** `affinity-publisher`
+- **Source File:** 038-graphic-design.json
+
+### Retro pixel art game assets with Aseprite
+- **Slug:** `retro-pixel-art-game-assets-with-aseprite`
+- **Description:** Design sprite sheets, tiles, and animated game assets using Aseprite's pixel-perfect tools
+- **Primary Competencies:** `aseprite`
+- **Source File:** 038-graphic-design.json
+
+### Signage and large format design with CorelDRAW
+- **Slug:** `signage-and-large-format-design-with-coreldraw`
+- **Description:** Design banners, signs, and large-format prints using CorelDRAW's precision tools
+- **Primary Competencies:** `coreldraw`
+- **Source File:** 038-graphic-design.json
+
+### Social media graphics with Canva
+- **Slug:** `social-media-graphics-with-canva`
+- **Description:** Design engaging social media posts, stories, and ads using Canva's drag-and-drop templates
+- **Primary Competencies:** `canva`
+- **Source File:** 038-graphic-design.json
+
+### SVG optimization and web export with Inkscape
+- **Slug:** `svg-optimization-and-web-export-with-inkscape`
+- **Description:** Create and optimize scalable vector graphics for web use using Inkscape
+- **Primary Competencies:** `inkscape`
+- **Source File:** 038-graphic-design.json
+
+### Technical illustration with Inkscape
+- **Slug:** `technical-illustration-with-inkscape`
+- **Description:** Create precise technical diagrams and instructional illustrations using Inkscape's drawing tools
+- **Primary Competencies:** `inkscape`
+- **Source File:** 038-graphic-design.json
+
+### Texture and brush creation in GIMP
+- **Slug:** `texture-and-brush-creation-in-gimp`
+- **Description:** Create custom brushes and seamless textures for digital painting in GIMP
+- **Primary Competencies:** `gimp`
+- **Source File:** 038-graphic-design.json
+
+### Typography and font creation with Glyphs
+- **Slug:** `typography-and-font-creation-with-glyphs`
+- **Description:** Design professional typefaces with Glyphs' intuitive font design and production tools
+- **Primary Competencies:** `glyphs`
+- **Source File:** 038-graphic-design.json
+
+### Typography and type design in Illustrator
+- **Slug:** `typography-and-type-design-in-illustrator`
+- **Description:** Create custom lettering, typography compositions, and type-based designs in Adobe Illustrator
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Variable font design with Glyphs
+- **Slug:** `variable-font-design-with-glyphs`
+- **Description:** Create modern variable fonts with multiple axes using Glyphs' advanced interpolation
+- **Primary Competencies:** `glyphs`
+- **Source File:** 038-graphic-design.json
+
+### Vector design with CorelDRAW
+- **Slug:** `vector-design-with-coreldraw`
+- **Description:** Create illustrations, logos, and layouts using CorelDRAW's comprehensive vector tools
+- **Primary Competencies:** `coreldraw`
+- **Source File:** 038-graphic-design.json
+
+### Vector graphics and icons with Affinity Designer
+- **Slug:** `vector-graphics-and-icons-with-affinity-designer`
+- **Description:** Design icons, illustrations, and vector graphics using Affinity Designer's professional tools
+- **Primary Competencies:** `affinity-designer`
+- **Source File:** 038-graphic-design.json
+
+### Vector illustration with Inkscape
+- **Slug:** `vector-illustration-with-inkscape`
+- **Description:** Create scalable vector graphics and illustrations using Inkscape's free SVG editor
+- **Primary Competencies:** `inkscape`
+- **Source File:** 038-graphic-design.json
+
+### Vector logo design with Adobe Illustrator
+- **Slug:** `vector-logo-design-with-adobe-illustrator`
+- **Description:** Create scalable logos and brand marks using Adobe Illustrator's vector drawing tools and shapes
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Watercolor-style digital art with Paint Tool SAI
+- **Slug:** `watercolor-style-digital-art-with-paint-tool-sai`
+- **Description:** Create watercolor and soft painting effects using Paint Tool SAI's blending tools
+- **Primary Competencies:** `paint-tool-sai`
+- **Source File:** 038-graphic-design.json
+
+### Web graphics and UI assets with Illustrator
+- **Slug:** `web-graphics-and-ui-assets-with-illustrator`
+- **Description:** Create SVG icons, UI elements, and web graphics optimized for digital use in Illustrator
+- **Primary Competencies:** `adobe-illustrator`
+- **Source File:** 038-graphic-design.json
+
+### Webtoon and vertical scrolling comics with Clip Studio Paint
+- **Slug:** `webtoon-and-vertical-scrolling-comics-with-clip-studio-paint`
+- **Description:** Create webtoon-style digital comics optimized for mobile reading in Clip Studio Paint
+- **Primary Competencies:** `clip-studio-paint`
+- **Source File:** 038-graphic-design.json
 
 ---
 
@@ -10343,6 +11602,287 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `wills`
 - **Supporting Competencies:** `estate-planning`
 - **Source File:** 025-personal-finance.json
+
+---
+
+## photography-video
+
+### Advanced scene composition in OBS Studio
+- **Slug:** `advanced-scene-composition-in-obs-studio`
+- **Description:** Build complex multi-source scenes with transitions, filters, and effects in OBS Studio
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Architectural photography in Capture One
+- **Slug:** `architectural-photography-in-capture-one`
+- **Description:** Process architectural photos with perspective correction and detail enhancement using Capture One
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Audio mixing and filters in OBS Studio
+- **Slug:** `audio-mixing-and-filters-in-obs-studio`
+- **Description:** Optimize microphone and audio quality using OBS Studio's VST plugins and audio filters
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Batch processing and exporting in Capture One
+- **Slug:** `batch-processing-and-exporting-in-capture-one`
+- **Description:** Process large volumes of photos efficiently using Capture One's batch operations and export recipes
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Beauty retouching with Capture One and Photoshop
+- **Slug:** `beauty-retouching-with-capture-one-and-photoshop`
+- **Description:** Create flawless beauty imagery combining Capture One's color grading with Photoshop's retouching tools
+- **Primary Competencies:** `capture-one`, `adobe-photoshop`
+- **Source File:** 036-photography-video.json
+
+### Black and white photography in Lightroom
+- **Slug:** `black-and-white-photography-in-lightroom`
+- **Description:** Convert and enhance black and white photographs using Adobe Lightroom's monochrome tools
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Client gallery creation in Capture One
+- **Slug:** `client-gallery-creation-in-capture-one`
+- **Description:** Organize and deliver professional photo galleries to clients using Capture One's session tools
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Color calibration and profiling in Capture One
+- **Slug:** `color-calibration-and-profiling-in-capture-one`
+- **Description:** Achieve accurate color reproduction using Capture One's camera and monitor profiling tools
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Color grading in Capture One
+- **Slug:** `color-grading-in-capture-one`
+- **Description:** Create consistent color palettes and mood using Capture One's advanced color grading tools
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Commercial retouching with Capture One and Photoshop
+- **Slug:** `commercial-retouching-with-capture-one-and-photoshop`
+- **Description:** Deliver high-end commercial imagery by combining Capture One's color tools with Photoshop's retouching
+- **Primary Competencies:** `capture-one`, `adobe-photoshop`
+- **Source File:** 036-photography-video.json
+
+### Complete photo editing workflow with Lightroom and Photoshop
+- **Slug:** `complete-photo-editing-workflow-with-lightroom-and-photoshop`
+- **Description:** Combine Adobe Lightroom's batch editing with Photoshop's advanced retouching for professional photo workflows
+- **Primary Competencies:** `adobe-lightroom`, `adobe-photoshop`
+- **Source File:** 036-photography-video.json
+
+### Creating Lightroom presets for consistent style
+- **Slug:** `creating-lightroom-presets-for-consistent-style`
+- **Description:** Develop and apply custom editing presets in Adobe Lightroom for brand consistency across photos
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Creating timelapse sequences in Lightroom
+- **Slug:** `creating-timelapse-sequences-in-lightroom`
+- **Description:** Process and synchronize timelapse photo sequences using Adobe Lightroom's batch editing
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Editing and organizing photos with Adobe Lightroom
+- **Slug:** `editing-and-organizing-photos-with-adobe-lightroom`
+- **Description:** Manage, edit, and enhance digital photographs using Adobe Lightroom's cataloging and editing tools
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Event photography workflows in Lightroom
+- **Slug:** `event-photography-workflows-in-lightroom`
+- **Description:** Quickly cull, edit, and deliver event photos using Adobe Lightroom's efficient batch tools
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Fashion photography workflows in Capture One
+- **Slug:** `fashion-photography-workflows-in-capture-one`
+- **Description:** Edit fashion and editorial photography using Capture One's color tools and layer-based editing
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Film simulation and styles in Capture One
+- **Slug:** `film-simulation-and-styles-in-capture-one`
+- **Description:** Recreate classic film looks and custom color styles using Capture One's styles and color tools
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Food photography editing in Lightroom
+- **Slug:** `food-photography-editing-in-lightroom`
+- **Description:** Enhance food photos with vibrant colors and appetizing tones using Adobe Lightroom
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Gaming streams and overlays with OBS Studio
+- **Slug:** `gaming-streams-and-overlays-with-obs-studio`
+- **Description:** Create engaging gaming streams with custom overlays, alerts, and scenes using OBS Studio
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Green screen and chroma keying with OBS Studio
+- **Slug:** `green-screen-and-chroma-keying-with-obs-studio`
+- **Description:** Remove backgrounds and composite video sources using OBS Studio's chroma key filters
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### HDR photo merging in Lightroom
+- **Slug:** `hdr-photo-merging-in-lightroom`
+- **Description:** Combine multiple exposures into high dynamic range images using Adobe Lightroom's HDR merge
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Landscape photography workflows in Lightroom
+- **Slug:** `landscape-photography-workflows-in-lightroom`
+- **Description:** Process landscape photographs with Adobe Lightroom for dramatic skies, enhanced details, and vibrant colors
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Layer-based editing in Capture One
+- **Slug:** `layer-based-editing-in-capture-one`
+- **Description:** Use selective adjustments and masking with Capture One's layer-based editing system
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Live streaming with OBS Studio
+- **Slug:** `live-streaming-with-obs-studio`
+- **Description:** Set up and broadcast live video streams using OBS Studio's streaming and recording features
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Migrating from Lightroom to Capture One
+- **Slug:** `migrating-from-lightroom-to-capture-one`
+- **Description:** Transfer photo catalogs and adapt editing workflows when switching from Adobe Lightroom to Capture One
+- **Primary Competencies:** `capture-one`
+- **Supporting Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Mobile photography editing with Lightroom
+- **Slug:** `mobile-photography-editing-with-lightroom`
+- **Description:** Edit smartphone photos using Adobe Lightroom Mobile's powerful editing and syncing capabilities
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Multi-camera live production with OBS Studio
+- **Slug:** `multi-camera-live-production-with-obs-studio`
+- **Description:** Switch between multiple video sources and create professional live broadcasts using OBS Studio scenes
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Noise reduction and sharpening in Lightroom
+- **Slug:** `noise-reduction-and-sharpening-in-lightroom`
+- **Description:** Clean up high-ISO photos and enhance sharpness using Adobe Lightroom's detail panel
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Organizing large photo libraries in Lightroom
+- **Slug:** `organizing-large-photo-libraries-in-lightroom`
+- **Description:** Manage thousands of photos with keywords, collections, and smart search in Adobe Lightroom
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Panorama stitching in Lightroom
+- **Slug:** `panorama-stitching-in-lightroom`
+- **Description:** Create seamless wide-angle panoramic images using Adobe Lightroom's photo merge feature
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Podcast recording and streaming with OBS Studio
+- **Slug:** `podcast-recording-and-streaming-with-obs-studio`
+- **Description:** Record and stream podcast episodes with multiple guests using OBS Studio's audio and video mixing
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Portrait photography editing with Lightroom
+- **Slug:** `portrait-photography-editing-with-lightroom`
+- **Description:** Enhance and retouch portrait photos using Adobe Lightroom's color correction and skin retouching tools
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Product photography editing in Lightroom
+- **Slug:** `product-photography-editing-in-lightroom`
+- **Description:** Create clean, professional product images with consistent white backgrounds using Adobe Lightroom
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Professional photo editing with Capture One
+- **Slug:** `professional-photo-editing-with-capture-one`
+- **Description:** Edit and color grade professional photographs using Capture One's advanced editing capabilities
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### RAW photo processing in Capture One
+- **Slug:** `raw-photo-processing-in-capture-one`
+- **Description:** Extract maximum detail and dynamic range from RAW files using Capture One's processing engine
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Real estate photography editing in Lightroom
+- **Slug:** `real-estate-photography-editing-in-lightroom`
+- **Description:** Enhance property photos with HDR merging, perspective correction, and lighting adjustments in Adobe Lightroom
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Recording gameplay and tutorials with OBS Studio
+- **Slug:** `recording-gameplay-and-tutorials-with-obs-studio`
+- **Description:** Capture high-quality gameplay footage and create tutorial videos using OBS Studio's recording features
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Screen recording and tutorial creation with OBS Studio
+- **Slug:** `screen-recording-and-tutorial-creation-with-obs-studio`
+- **Description:** Record screen content and create educational videos using OBS Studio's capture and recording features
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Streaming software and games with OBS Studio
+- **Slug:** `streaming-software-and-games-with-obs-studio`
+- **Description:** Configure optimal capture settings for gaming and application streaming using OBS Studio
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Streaming to multiple platforms with OBS Studio
+- **Slug:** `streaming-to-multiple-platforms-with-obs-studio`
+- **Description:** Broadcast simultaneously to Twitch, YouTube, and other platforms using OBS Studio plugins
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Street photography editing in Lightroom
+- **Slug:** `street-photography-editing-in-lightroom`
+- **Description:** Process candid street photos with mood and atmosphere using Adobe Lightroom's tone controls
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
+
+### Studio lighting workflows in Capture One
+- **Slug:** `studio-lighting-workflows-in-capture-one`
+- **Description:** Optimize studio photography with tethered shooting and real-time adjustments using Capture One
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Tethered shooting with Capture One
+- **Slug:** `tethered-shooting-with-capture-one`
+- **Description:** Set up live camera capture and instant image review using Capture One's tethering capabilities for studio photography
+- **Primary Competencies:** `capture-one`
+- **Source File:** 036-photography-video.json
+
+### Video recording and post-production with OBS Studio
+- **Slug:** `video-recording-and-post-production-with-obs-studio`
+- **Description:** Record high-quality video content with OBS Studio and prepare it for editing in video software
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Virtual events and webinars with OBS Studio
+- **Slug:** `virtual-events-and-webinars-with-obs-studio`
+- **Description:** Host professional virtual events with presentations, screen sharing, and guest management using OBS Studio
+- **Primary Competencies:** `obs-studio`
+- **Source File:** 036-photography-video.json
+
+### Wedding photography editing in Lightroom
+- **Slug:** `wedding-photography-editing-in-lightroom`
+- **Description:** Process hundreds of wedding photos efficiently using Adobe Lightroom's batch editing and presets
+- **Primary Competencies:** `adobe-lightroom`
+- **Source File:** 036-photography-video.json
 
 ---
 

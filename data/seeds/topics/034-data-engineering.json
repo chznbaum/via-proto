@@ -1,0 +1,816 @@
+{
+  "topics": [
+    {
+      "name": "Building ETL pipelines with Apache Airflow",
+      "slug": "building-etl-pipelines-with-apache-airflow",
+      "description": "Create and orchestrate data extraction, transformation, and loading workflows using Apache Airflow DAGs and Python",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building ETL pipelines with Prefect",
+      "slug": "building-etl-pipelines-with-prefect",
+      "description": "Design and deploy data pipelines using Prefect flows, tasks, and modern Python orchestration patterns",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data pipelines with Dagster",
+      "slug": "building-data-pipelines-with-dagster",
+      "description": "Develop testable and observable data pipelines using Dagster assets, ops, and software-defined data orchestration",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dagster",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data transformation pipelines with dbt",
+      "slug": "building-data-transformation-pipelines-with-dbt",
+      "description": "Transform raw data into analytics-ready datasets using dbt models, tests, and documentation",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing data quality validation with Great Expectations",
+      "slug": "implementing-data-quality-validation-with-great-expectations",
+      "description": "Build automated data quality checks and validation suites using Great Expectations and Python",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing data quality testing with Soda",
+      "slug": "implementing-data-quality-testing-with-soda",
+      "description": "Create data quality checks and monitoring using Soda's SQL-based testing framework",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "soda",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Processing large-scale data with Apache Spark",
+      "slug": "processing-large-scale-data-with-apache-spark",
+      "description": "Analyze and transform big data using Apache Spark's distributed computing framework with PySpark",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building production data pipelines with Airflow and dbt",
+      "slug": "building-production-data-pipelines-with-airflow-and-dbt",
+      "description": "Orchestrate dbt transformations with Apache Airflow for end-to-end ELT workflows",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data pipelines on AWS with Airflow",
+      "slug": "building-data-pipelines-on-aws-with-airflow",
+      "description": "Design and deploy cloud-native data pipelines using Apache Airflow with AWS services",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "aws",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data pipelines on Google Cloud with Prefect",
+      "slug": "building-data-pipelines-on-google-cloud-with-prefect",
+      "description": "Create scalable data workflows using Prefect integrated with Google Cloud Platform services",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-cloud-platform",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building validated data pipelines with dbt and Great Expectations",
+      "slug": "building-validated-data-pipelines-with-dbt-and-great-expectations",
+      "description": "Combine dbt transformations with Great Expectations validation for reliable data pipelines",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestrating Spark jobs with Airflow",
+      "slug": "orchestrating-spark-jobs-with-airflow",
+      "description": "Schedule and monitor Apache Spark data processing jobs using Apache Airflow orchestration",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building reliable data pipelines with Dagster and dbt",
+      "slug": "building-reliable-data-pipelines-with-dagster-and-dbt",
+      "description": "Develop observable and testable data workflows by orchestrating dbt with Dagster's asset-based approach",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dagster",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Processing data with Spark and Pandas",
+      "slug": "processing-data-with-spark-and-pandas",
+      "description": "Combine Apache Spark for large-scale processing with Pandas for detailed data analysis and transformation",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "pandas",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building end-to-end data platforms with Airflow, dbt, and Great Expectations",
+      "slug": "building-end-to-end-data-platforms-with-airflow-dbt-and-great-expectations",
+      "description": "Create comprehensive data platforms combining orchestration, transformation, and quality validation",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestrating data workflows with Luigi",
+      "slug": "orchestrating-data-workflows-with-luigi",
+      "description": "Build dependency-driven data pipelines using Luigi's Python-based workflow management",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "luigi",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building Databricks data pipelines with Spark and Delta Lake",
+      "slug": "building-databricks-data-pipelines-with-spark-and-delta-lake",
+      "description": "Develop scalable data lakehouse architectures using Databricks, Apache Spark, and Python",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "databricks",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building PostgreSQL data pipelines with dbt",
+      "slug": "building-postgresql-data-pipelines-with-dbt",
+      "description": "Transform and model PostgreSQL data using dbt's SQL-based transformation framework",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "postgresql",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Monitoring data pipelines with Prefect and Great Expectations",
+      "slug": "monitoring-data-pipelines-with-prefect-and-great-expectations",
+      "description": "Build observable data workflows with Prefect orchestration and Great Expectations quality monitoring",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building incremental data models with dbt",
+      "slug": "building-incremental-data-models-with-dbt",
+      "description": "Optimize data transformation performance using dbt's incremental materialization strategies",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing data lineage with Dagster",
+      "slug": "implementing-data-lineage-with-dagster",
+      "description": "Track and visualize data dependencies using Dagster's asset-based lineage and metadata features",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dagster",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building batch processing pipelines with Spark",
+      "slug": "building-batch-processing-pipelines-with-spark",
+      "description": "Process large volumes of data efficiently using Apache Spark's batch processing capabilities",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Validating database schemas with Soda",
+      "slug": "validating-database-schemas-with-soda",
+      "description": "Ensure data integrity and schema compliance using Soda's automated data quality checks",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "soda",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building MySQL data warehouses with dbt",
+      "slug": "building-mysql-data-warehouses-with-dbt",
+      "description": "Design and maintain analytical data models in MySQL using dbt transformations",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "mysql",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestrating data science workflows with Prefect",
+      "slug": "orchestrating-data-science-workflows-with-prefect",
+      "description": "Automate machine learning pipelines and data science tasks using Prefect's workflow engine",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "pandas",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data quality frameworks with Great Expectations and Airflow",
+      "slug": "building-data-quality-frameworks-with-great-expectations-and-airflow",
+      "description": "Integrate automated data validation into Airflow pipelines using Great Expectations",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Processing streaming data with Spark",
+      "slug": "processing-streaming-data-with-spark",
+      "description": "Build real-time data processing applications using Apache Spark Structured Streaming",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data pipelines on Azure with Dagster",
+      "slug": "building-data-pipelines-on-azure-with-dagster",
+      "description": "Deploy and manage cloud data workflows using Dagster integrated with Azure services",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dagster",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "azure",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Testing dbt models and transformations",
+      "slug": "testing-dbt-models-and-transformations",
+      "description": "Ensure data quality and correctness using dbt's built-in testing framework and custom tests",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building dimensional data models with dbt",
+      "slug": "building-dimensional-data-models-with-dbt",
+      "description": "Design star and snowflake schemas for analytics using dbt's modeling capabilities",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing CI/CD for data pipelines with Airflow",
+      "slug": "implementing-cicd-for-data-pipelines-with-airflow",
+      "description": "Build automated testing and deployment workflows for Apache Airflow DAGs",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Optimizing Spark performance for large datasets",
+      "slug": "optimizing-spark-performance-for-large-datasets",
+      "description": "Tune Apache Spark applications for memory, partitioning, and execution efficiency",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building reusable dbt packages and macros",
+      "slug": "building-reusable-dbt-packages-and-macros",
+      "description": "Create modular and maintainable data transformation code using dbt packages and Jinja macros",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing data contracts with Soda and dbt",
+      "slug": "implementing-data-contracts-with-soda-and-dbt",
+      "description": "Define and enforce data quality standards across teams using Soda validation and dbt modeling",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "soda",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data catalogs with Great Expectations",
+      "slug": "building-data-catalogs-with-great-expectations",
+      "description": "Document and validate data assets using Great Expectations' expectation suites and data docs",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "great-expectations",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Orchestrating distributed Spark clusters with Dagster",
+      "slug": "orchestrating-distributed-spark-clusters-with-dagster",
+      "description": "Manage and monitor Apache Spark job execution using Dagster's orchestration platform",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dagster",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building self-service analytics with dbt",
+      "slug": "building-self-service-analytics-with-dbt",
+      "description": "Enable business users to access trusted data through well-documented dbt models and exposures",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "dbt",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "sql",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Implementing data observability with Prefect",
+      "slug": "implementing-data-observability-with-prefect",
+      "description": "Monitor data pipeline health and performance using Prefect's observability features",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building event-driven data pipelines with Airflow",
+      "slug": "building-event-driven-data-pipelines-with-airflow",
+      "description": "Create reactive data workflows using Apache Airflow sensors and event-based triggers",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-airflow",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Processing semi-structured data with Spark",
+      "slug": "processing-semi-structured-data-with-spark",
+      "description": "Parse and analyze JSON, XML, and nested data structures using Apache Spark",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "apache-spark",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building cost-effective data pipelines with Prefect and Databricks",
+      "slug": "building-cost-effective-data-pipelines-with-prefect-and-databricks",
+      "description": "Optimize cloud costs by orchestrating Databricks jobs with Prefect's resource management",
+      "category_slug": "data-engineering",
+      "competencies": [
+        {
+          "competency_slug": "prefect",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "databricks",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "python",
+          "is_primary": false
+        }
+      ]
+    }
+  ]
+}

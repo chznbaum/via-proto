@@ -1,0 +1,876 @@
+{
+  "topics": [
+    {
+      "name": "Vector logo design with Adobe Illustrator",
+      "slug": "vector-logo-design-with-adobe-illustrator",
+      "description": "Create scalable logos and brand marks using Adobe Illustrator's vector drawing tools and shapes",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Magazine and book layout with Adobe InDesign",
+      "slug": "magazine-and-book-layout-with-adobe-indesign",
+      "description": "Design multi-page publications with master pages, styles, and typography in Adobe InDesign",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Photo editing and retouching with GIMP",
+      "slug": "photo-editing-and-retouching-with-gimp",
+      "description": "Edit and enhance images using GIMP's free open-source photo manipulation tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "gimp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Vector illustration with Inkscape",
+      "slug": "vector-illustration-with-inkscape",
+      "description": "Create scalable vector graphics and illustrations using Inkscape's free SVG editor",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "inkscape",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Social media graphics with Canva",
+      "slug": "social-media-graphics-with-canva",
+      "description": "Design engaging social media posts, stories, and ads using Canva's drag-and-drop templates",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "canva",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Editorial workflow with Adobe InCopy",
+      "slug": "editorial-workflow-with-adobe-incopy",
+      "description": "Collaborate on editorial content and copywriting within InDesign layouts using Adobe InCopy",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-incopy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Vector graphics and icons with Affinity Designer",
+      "slug": "vector-graphics-and-icons-with-affinity-designer",
+      "description": "Design icons, illustrations, and vector graphics using Affinity Designer's professional tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-designer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Photo editing with Affinity Photo",
+      "slug": "photo-editing-with-affinity-photo",
+      "description": "Retouch and enhance photographs using Affinity Photo's professional editing capabilities",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-photo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Publishing and layout with Affinity Publisher",
+      "slug": "publishing-and-layout-with-affinity-publisher",
+      "description": "Create magazines, books, and brochures using Affinity Publisher's page layout tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-publisher",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Vector design with CorelDRAW",
+      "slug": "vector-design-with-coreldraw",
+      "description": "Create illustrations, logos, and layouts using CorelDRAW's comprehensive vector tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "coreldraw",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Digital illustration with Clip Studio Paint",
+      "slug": "digital-illustration-with-clip-studio-paint",
+      "description": "Create manga, comics, and digital art using Clip Studio Paint's specialized brushes and tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Font design with FontForge",
+      "slug": "font-design-with-fontforge",
+      "description": "Create custom typefaces and fonts using FontForge's open-source font editor",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "fontforge",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Typography and font creation with Glyphs",
+      "slug": "typography-and-font-creation-with-glyphs",
+      "description": "Design professional typefaces with Glyphs' intuitive font design and production tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "glyphs",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Digital painting with Paint Tool SAI",
+      "slug": "digital-painting-with-paint-tool-sai",
+      "description": "Create smooth digital paintings and illustrations using Paint Tool SAI's lightweight painting tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "paint-tool-sai",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Pixel art with Aseprite",
+      "slug": "pixel-art-with-aseprite",
+      "description": "Create pixel art sprites and animations for games using Aseprite's specialized pixel editor",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "aseprite",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brand identity design with Illustrator and Photoshop",
+      "slug": "brand-identity-design-with-illustrator-and-photoshop",
+      "description": "Create complete brand systems combining Illustrator's vector work with Photoshop's mockups",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Print production workflow with Illustrator and InDesign",
+      "slug": "print-production-workflow-with-illustrator-and-indesign",
+      "description": "Prepare print-ready files by combining Illustrator assets with InDesign layout and preflight",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Editorial design with InDesign and InCopy",
+      "slug": "editorial-design-with-indesign-and-incopy",
+      "description": "Manage collaborative editorial workflows with writers using InDesign layouts and InCopy",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-incopy",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Packaging design with Illustrator",
+      "slug": "packaging-design-with-illustrator",
+      "description": "Design product packaging with dielines, structural layouts, and print specifications in Illustrator",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Typography and type design in Illustrator",
+      "slug": "typography-and-type-design-in-illustrator",
+      "description": "Create custom lettering, typography compositions, and type-based designs in Adobe Illustrator",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Interactive PDF creation with InDesign",
+      "slug": "interactive-pdf-creation-with-indesign",
+      "description": "Design interactive documents with hyperlinks, buttons, and forms using Adobe InDesign",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Photo compositing with GIMP",
+      "slug": "photo-compositing-with-gimp",
+      "description": "Combine multiple images into creative composites using GIMP's layers and masking",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "gimp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Technical illustration with Inkscape",
+      "slug": "technical-illustration-with-inkscape",
+      "description": "Create precise technical diagrams and instructional illustrations using Inkscape's drawing tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "inkscape",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brand templates and style guides with Canva",
+      "slug": "brand-templates-and-style-guides-with-canva",
+      "description": "Create consistent brand materials and team templates using Canva's brand kit features",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "canva",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Complete Affinity workflow for branding",
+      "slug": "complete-affinity-workflow-for-branding",
+      "description": "Design full brand identities using the integrated Affinity Designer, Photo, and Publisher suite",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-designer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "affinity-photo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "affinity-publisher",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Manga and comic creation with Clip Studio Paint",
+      "slug": "manga-and-comic-creation-with-clip-studio-paint",
+      "description": "Create professional manga pages with screentones, speech bubbles, and panel layouts in Clip Studio Paint",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Variable font design with Glyphs",
+      "slug": "variable-font-design-with-glyphs",
+      "description": "Create modern variable fonts with multiple axes using Glyphs' advanced interpolation",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "glyphs",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Infographic design with Illustrator",
+      "slug": "infographic-design-with-illustrator",
+      "description": "Create data visualizations and infographics using Illustrator's charting and illustration tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Book cover design with Photoshop and InDesign",
+      "slug": "book-cover-design-with-photoshop-and-indesign",
+      "description": "Design compelling book covers combining Photoshop imagery with InDesign typography and layout",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Web graphics and UI assets with Illustrator",
+      "slug": "web-graphics-and-ui-assets-with-illustrator",
+      "description": "Create SVG icons, UI elements, and web graphics optimized for digital use in Illustrator",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Pattern design with Illustrator",
+      "slug": "pattern-design-with-illustrator",
+      "description": "Create seamless repeating patterns for textiles and surfaces using Illustrator's pattern tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Long-form document design with InDesign",
+      "slug": "long-form-document-design-with-indesign",
+      "description": "Format technical manuals, reports, and long documents using InDesign's automation features",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Open-source graphic design with GIMP and Inkscape",
+      "slug": "open-source-graphic-design-with-gimp-and-inkscape",
+      "description": "Create complete design projects using the free GIMP and Inkscape workflow",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "gimp",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "inkscape",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Presentation design with Canva",
+      "slug": "presentation-design-with-canva",
+      "description": "Design engaging presentations and pitch decks using Canva's templates and animations",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "canva",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Icon system design with Affinity Designer",
+      "slug": "icon-system-design-with-affinity-designer",
+      "description": "Create cohesive icon sets with consistent style and export formats in Affinity Designer",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-designer",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Photo restoration with Affinity Photo",
+      "slug": "photo-restoration-with-affinity-photo",
+      "description": "Restore and repair damaged photographs using Affinity Photo's cloning and healing tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-photo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Brochure and flyer design with Affinity Publisher",
+      "slug": "brochure-and-flyer-design-with-affinity-publisher",
+      "description": "Design marketing collateral with professional layouts using Affinity Publisher",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-publisher",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Illustration and page layout with CorelDRAW",
+      "slug": "illustration-and-page-layout-with-coreldraw",
+      "description": "Create illustrations and multi-page layouts in CorelDRAW's all-in-one design suite",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "coreldraw",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Webtoon and vertical scrolling comics with Clip Studio Paint",
+      "slug": "webtoon-and-vertical-scrolling-comics-with-clip-studio-paint",
+      "description": "Create webtoon-style digital comics optimized for mobile reading in Clip Studio Paint",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Custom lettering and calligraphy with Illustrator",
+      "slug": "custom-lettering-and-calligraphy-with-illustrator",
+      "description": "Design hand-lettered logos and calligraphic compositions using Illustrator's brush tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Poster design with Illustrator and Photoshop",
+      "slug": "poster-design-with-illustrator-and-photoshop",
+      "description": "Create event posters combining Photoshop's imagery with Illustrator's typography and graphics",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "EPUB and digital publishing with InDesign",
+      "slug": "epub-and-digital-publishing-with-indesign",
+      "description": "Create reflowable ebooks and digital publications for export to EPUB using Adobe InDesign",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Digital painting techniques with GIMP",
+      "slug": "digital-painting-techniques-with-gimp",
+      "description": "Create digital paintings using GIMP's brushes, layers, and blending modes",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "gimp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Logo animation preparation with Illustrator",
+      "slug": "logo-animation-preparation-with-illustrator",
+      "description": "Design and organize vector logos in Illustrator for smooth handoff to animation software",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Newsletter and email templates with Canva",
+      "slug": "newsletter-and-email-templates-with-canva",
+      "description": "Design responsive email newsletters and marketing templates using Canva",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "canva",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Character design with Clip Studio Paint",
+      "slug": "character-design-with-clip-studio-paint",
+      "description": "Design anime and manga characters with model sheets using Clip Studio Paint's drawing tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Handwriting fonts with Glyphs",
+      "slug": "handwriting-fonts-with-glyphs",
+      "description": "Create custom script and handwriting fonts using Glyphs' font design tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "glyphs",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Retro pixel art game assets with Aseprite",
+      "slug": "retro-pixel-art-game-assets-with-aseprite",
+      "description": "Design sprite sheets, tiles, and animated game assets using Aseprite's pixel-perfect tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "aseprite",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Illustration with smooth linework in Paint Tool SAI",
+      "slug": "illustration-with-smooth-linework-in-paint-tool-sai",
+      "description": "Create anime-style illustrations with clean lines using Paint Tool SAI's stabilization",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "paint-tool-sai",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "3D effects and perspective in Illustrator",
+      "slug": "3d-effects-and-perspective-in-illustrator",
+      "description": "Create isometric designs and 3D effects using Illustrator's perspective and extrude tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Annual report design with InDesign",
+      "slug": "annual-report-design-with-indesign",
+      "description": "Design corporate annual reports with data visualization and professional layouts in InDesign",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Texture and brush creation in GIMP",
+      "slug": "texture-and-brush-creation-in-gimp",
+      "description": "Create custom brushes and seamless textures for digital painting in GIMP",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "gimp",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SVG optimization and web export with Inkscape",
+      "slug": "svg-optimization-and-web-export-with-inkscape",
+      "description": "Create and optimize scalable vector graphics for web use using Inkscape",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "inkscape",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Marketing materials with Canva Pro",
+      "slug": "marketing-materials-with-canva-pro",
+      "description": "Design professional marketing campaigns using Canva's brand kit and team collaboration features",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "canva",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Professional photo editing workflow with Affinity Photo",
+      "slug": "professional-photo-editing-workflow-with-affinity-photo",
+      "description": "Edit commercial photography with RAW processing and advanced retouching in Affinity Photo",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-photo",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Signage and large format design with CorelDRAW",
+      "slug": "signage-and-large-format-design-with-coreldraw",
+      "description": "Design banners, signs, and large-format prints using CorelDRAW's precision tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "coreldraw",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Animation frames with Clip Studio Paint",
+      "slug": "animation-frames-with-clip-studio-paint",
+      "description": "Create frame-by-frame animation for short films using Clip Studio Paint's animation features",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-language font support with FontForge",
+      "slug": "multi-language-font-support-with-fontforge",
+      "description": "Design fonts with extended character sets and language support using FontForge",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "fontforge",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Isometric game tiles with Aseprite",
+      "slug": "isometric-game-tiles-with-aseprite",
+      "description": "Create isometric pixel art tiles and environments for games using Aseprite",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "aseprite",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Magazine cover design with InDesign and Photoshop",
+      "slug": "magazine-cover-design-with-indesign-and-photoshop",
+      "description": "Design eye-catching magazine covers combining Photoshop images with InDesign typography",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Migrating from Adobe to Affinity suite",
+      "slug": "migrating-from-adobe-to-affinity-suite",
+      "description": "Transfer design workflows from Adobe Creative Cloud to the Affinity Designer, Photo, and Publisher suite",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "affinity-designer",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "affinity-photo",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "affinity-publisher",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Children's book illustration with Clip Studio Paint",
+      "slug": "childrens-book-illustration-with-clip-studio-paint",
+      "description": "Create colorful children's book illustrations and storyboards using Clip Studio Paint",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "clip-studio-paint",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Branding and style systems with Illustrator",
+      "slug": "branding-and-style-systems-with-illustrator",
+      "description": "Develop comprehensive brand identity systems with logos, colors, and guidelines in Illustrator",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Grid systems and modular layout in InDesign",
+      "slug": "grid-systems-and-modular-layout-in-indesign",
+      "description": "Design with advanced grid systems and baseline grids for professional typography in InDesign",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-indesign",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Icon font creation with FontForge",
+      "slug": "icon-font-creation-with-fontforge",
+      "description": "Convert icon sets into custom web fonts using FontForge",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "fontforge",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "OpenType features and font engineering with Glyphs",
+      "slug": "opentype-features-and-font-engineering-with-glyphs",
+      "description": "Implement advanced OpenType features like ligatures and alternates using Glyphs",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "glyphs",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Animated sprites and characters with Aseprite",
+      "slug": "animated-sprites-and-characters-with-aseprite",
+      "description": "Design character animations and sprite sheets with frame-by-frame pixel animation in Aseprite",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "aseprite",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Watercolor-style digital art with Paint Tool SAI",
+      "slug": "watercolor-style-digital-art-with-paint-tool-sai",
+      "description": "Create watercolor and soft painting effects using Paint Tool SAI's blending tools",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "paint-tool-sai",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Print-ready file preparation with Illustrator",
+      "slug": "print-ready-file-preparation-with-illustrator",
+      "description": "Prepare vector artwork for professional printing with proper bleeds, color modes, and formats",
+      "category_slug": "graphic-design",
+      "competencies": [
+        {
+          "competency_slug": "adobe-illustrator",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

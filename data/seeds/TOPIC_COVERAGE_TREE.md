@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-22T23:15:06.368Z
-**Total Topics:** 1998
+**Generated:** 2025-11-23T02:19:42.300Z
+**Total Topics:** 2241
 **Total Competencies:** 1625
 **Total Categories:** 89
 
@@ -25,25 +25,25 @@ Run `npm run topic:coverage` to update.
 │   │   └── Software Testing [3 topics, 0 competencies]
 │   ├── Data & Analytics [0 topics, 0 competencies]
 │   │   ├── Data Science [104 topics, 97 competencies]
-│   │   ├── Data Engineering [0 topics, 8 competencies]
+│   │   ├── Data Engineering [41 topics, 8 competencies]
 │   │   └── Databases [72 topics, 55 competencies]
 │   ├── Cloud & DevOps [170 topics, 170 competencies]
-│   ├── Automation & Integration [0 topics, 3 competencies]
+│   ├── Automation & Integration [40 topics, 3 competencies]
 │   ├── Information Security [0 topics, 0 competencies]
 │   │   └── Cybersecurity [33 topics, 27 competencies]
 │   └── Blockchain & Web3 [45 topics, 41 competencies]
 ├── Design & Creativity [0 topics, 0 competencies]
 │   ├── UI/UX Design [44 topics, 19 competencies]
-│   ├── Graphic Design [0 topics, 16 competencies]
+│   ├── Graphic Design [69 topics, 16 competencies]
 │   ├── Motion & 3D [0 topics, 16 competencies]
 │   ├── Creative Arts [0 topics, 0 competencies]
-│   │   ├── Photography & Video [0 topics, 3 competencies]
+│   │   ├── Photography & Video [46 topics, 3 competencies]
 │   │   ├── Music [181 topics, 58 competencies]
 │   │   ├── Writing [95 topics, 52 competencies]
 │   │   ├── Theater [20 topics, 20 competencies]
 │   │   ├── Visual Arts [51 topics, 50 competencies]
 │   │   └── Dance [42 topics, 42 competencies]
-│   ├── Architecture [0 topics, 7 competencies]
+│   ├── Architecture [47 topics, 7 competencies]
 │   └── Fiber Arts & Crafts [47 topics, 46 competencies]
 ├── Business & Management [0 topics, 0 competencies]
 │   ├── Product & Project Management [0 topics, 11 competencies]
@@ -134,7 +134,7 @@ Run `npm run topic:coverage` to update.
 
 ### Architecture
 - **Slug:** `architecture`
-- **Topics:** 0
+- **Topics:** 47
 - **Competencies:** 7
 - **Parent:** design-creativity
 
@@ -152,7 +152,7 @@ Run `npm run topic:coverage` to update.
 
 ### Automation & Integration
 - **Slug:** `automation-integration`
-- **Topics:** 0
+- **Topics:** 40
 - **Competencies:** 3
 - **Parent:** information-technology
 
@@ -236,7 +236,7 @@ Run `npm run topic:coverage` to update.
 
 ### Data Engineering
 - **Slug:** `data-engineering`
-- **Topics:** 0
+- **Topics:** 41
 - **Competencies:** 8
 - **Parent:** data-analytics
 
@@ -320,7 +320,7 @@ Run `npm run topic:coverage` to update.
 
 ### Graphic Design
 - **Slug:** `graphic-design`
-- **Topics:** 0
+- **Topics:** 69
 - **Competencies:** 16
 - **Parent:** design-creativity
 
@@ -449,7 +449,7 @@ Run `npm run topic:coverage` to update.
 
 ### Photography & Video
 - **Slug:** `photography-video`
-- **Topics:** 0
+- **Topics:** 46
 - **Competencies:** 3
 - **Parent:** creative-arts
 

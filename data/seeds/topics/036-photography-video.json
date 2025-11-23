@@ -1,0 +1,572 @@
+{
+  "topics": [
+    {
+      "name": "Editing and organizing photos with Adobe Lightroom",
+      "slug": "editing-and-organizing-photos-with-adobe-lightroom",
+      "description": "Manage, edit, and enhance digital photographs using Adobe Lightroom's cataloging and editing tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Professional photo editing with Capture One",
+      "slug": "professional-photo-editing-with-capture-one",
+      "description": "Edit and color grade professional photographs using Capture One's advanced editing capabilities",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Live streaming with OBS Studio",
+      "slug": "live-streaming-with-obs-studio",
+      "description": "Set up and broadcast live video streams using OBS Studio's streaming and recording features",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Portrait photography editing with Lightroom",
+      "slug": "portrait-photography-editing-with-lightroom",
+      "description": "Enhance and retouch portrait photos using Adobe Lightroom's color correction and skin retouching tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Landscape photography workflows in Lightroom",
+      "slug": "landscape-photography-workflows-in-lightroom",
+      "description": "Process landscape photographs with Adobe Lightroom for dramatic skies, enhanced details, and vibrant colors",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Complete photo editing workflow with Lightroom and Photoshop",
+      "slug": "complete-photo-editing-workflow-with-lightroom-and-photoshop",
+      "description": "Combine Adobe Lightroom's batch editing with Photoshop's advanced retouching for professional photo workflows",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Tethered shooting with Capture One",
+      "slug": "tethered-shooting-with-capture-one",
+      "description": "Set up live camera capture and instant image review using Capture One's tethering capabilities for studio photography",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Color grading in Capture One",
+      "slug": "color-grading-in-capture-one",
+      "description": "Create consistent color palettes and mood using Capture One's advanced color grading tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Screen recording and tutorial creation with OBS Studio",
+      "slug": "screen-recording-and-tutorial-creation-with-obs-studio",
+      "description": "Record screen content and create educational videos using OBS Studio's capture and recording features",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Multi-camera live production with OBS Studio",
+      "slug": "multi-camera-live-production-with-obs-studio",
+      "description": "Switch between multiple video sources and create professional live broadcasts using OBS Studio scenes",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Product photography editing in Lightroom",
+      "slug": "product-photography-editing-in-lightroom",
+      "description": "Create clean, professional product images with consistent white backgrounds using Adobe Lightroom",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Commercial retouching with Capture One and Photoshop",
+      "slug": "commercial-retouching-with-capture-one-and-photoshop",
+      "description": "Deliver high-end commercial imagery by combining Capture One's color tools with Photoshop's retouching",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Wedding photography editing in Lightroom",
+      "slug": "wedding-photography-editing-in-lightroom",
+      "description": "Process hundreds of wedding photos efficiently using Adobe Lightroom's batch editing and presets",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "RAW photo processing in Capture One",
+      "slug": "raw-photo-processing-in-capture-one",
+      "description": "Extract maximum detail and dynamic range from RAW files using Capture One's processing engine",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Gaming streams and overlays with OBS Studio",
+      "slug": "gaming-streams-and-overlays-with-obs-studio",
+      "description": "Create engaging gaming streams with custom overlays, alerts, and scenes using OBS Studio",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating Lightroom presets for consistent style",
+      "slug": "creating-lightroom-presets-for-consistent-style",
+      "description": "Develop and apply custom editing presets in Adobe Lightroom for brand consistency across photos",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Fashion photography workflows in Capture One",
+      "slug": "fashion-photography-workflows-in-capture-one",
+      "description": "Edit fashion and editorial photography using Capture One's color tools and layer-based editing",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Podcast recording and streaming with OBS Studio",
+      "slug": "podcast-recording-and-streaming-with-obs-studio",
+      "description": "Record and stream podcast episodes with multiple guests using OBS Studio's audio and video mixing",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Black and white photography in Lightroom",
+      "slug": "black-and-white-photography-in-lightroom",
+      "description": "Convert and enhance black and white photographs using Adobe Lightroom's monochrome tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Real estate photography editing in Lightroom",
+      "slug": "real-estate-photography-editing-in-lightroom",
+      "description": "Enhance property photos with HDR merging, perspective correction, and lighting adjustments in Adobe Lightroom",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Studio lighting workflows in Capture One",
+      "slug": "studio-lighting-workflows-in-capture-one",
+      "description": "Optimize studio photography with tethered shooting and real-time adjustments using Capture One",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Virtual events and webinars with OBS Studio",
+      "slug": "virtual-events-and-webinars-with-obs-studio",
+      "description": "Host professional virtual events with presentations, screen sharing, and guest management using OBS Studio",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mobile photography editing with Lightroom",
+      "slug": "mobile-photography-editing-with-lightroom",
+      "description": "Edit smartphone photos using Adobe Lightroom Mobile's powerful editing and syncing capabilities",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "HDR photo merging in Lightroom",
+      "slug": "hdr-photo-merging-in-lightroom",
+      "description": "Combine multiple exposures into high dynamic range images using Adobe Lightroom's HDR merge",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Batch processing and exporting in Capture One",
+      "slug": "batch-processing-and-exporting-in-capture-one",
+      "description": "Process large volumes of photos efficiently using Capture One's batch operations and export recipes",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Advanced scene composition in OBS Studio",
+      "slug": "advanced-scene-composition-in-obs-studio",
+      "description": "Build complex multi-source scenes with transitions, filters, and effects in OBS Studio",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Panorama stitching in Lightroom",
+      "slug": "panorama-stitching-in-lightroom",
+      "description": "Create seamless wide-angle panoramic images using Adobe Lightroom's photo merge feature",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Food photography editing in Lightroom",
+      "slug": "food-photography-editing-in-lightroom",
+      "description": "Enhance food photos with vibrant colors and appetizing tones using Adobe Lightroom",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Client gallery creation in Capture One",
+      "slug": "client-gallery-creation-in-capture-one",
+      "description": "Organize and deliver professional photo galleries to clients using Capture One's session tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Green screen and chroma keying with OBS Studio",
+      "slug": "green-screen-and-chroma-keying-with-obs-studio",
+      "description": "Remove backgrounds and composite video sources using OBS Studio's chroma key filters",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Noise reduction and sharpening in Lightroom",
+      "slug": "noise-reduction-and-sharpening-in-lightroom",
+      "description": "Clean up high-ISO photos and enhance sharpness using Adobe Lightroom's detail panel",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Color calibration and profiling in Capture One",
+      "slug": "color-calibration-and-profiling-in-capture-one",
+      "description": "Achieve accurate color reproduction using Capture One's camera and monitor profiling tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Recording gameplay and tutorials with OBS Studio",
+      "slug": "recording-gameplay-and-tutorials-with-obs-studio",
+      "description": "Capture high-quality gameplay footage and create tutorial videos using OBS Studio's recording features",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating timelapse sequences in Lightroom",
+      "slug": "creating-timelapse-sequences-in-lightroom",
+      "description": "Process and synchronize timelapse photo sequences using Adobe Lightroom's batch editing",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Layer-based editing in Capture One",
+      "slug": "layer-based-editing-in-capture-one",
+      "description": "Use selective adjustments and masking with Capture One's layer-based editing system",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Streaming to multiple platforms with OBS Studio",
+      "slug": "streaming-to-multiple-platforms-with-obs-studio",
+      "description": "Broadcast simultaneously to Twitch, YouTube, and other platforms using OBS Studio plugins",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Event photography workflows in Lightroom",
+      "slug": "event-photography-workflows-in-lightroom",
+      "description": "Quickly cull, edit, and deliver event photos using Adobe Lightroom's efficient batch tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Architectural photography in Capture One",
+      "slug": "architectural-photography-in-capture-one",
+      "description": "Process architectural photos with perspective correction and detail enhancement using Capture One",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Audio mixing and filters in OBS Studio",
+      "slug": "audio-mixing-and-filters-in-obs-studio",
+      "description": "Optimize microphone and audio quality using OBS Studio's VST plugins and audio filters",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Migrating from Lightroom to Capture One",
+      "slug": "migrating-from-lightroom-to-capture-one",
+      "description": "Transfer photo catalogs and adapt editing workflows when switching from Adobe Lightroom to Capture One",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Video recording and post-production with OBS Studio",
+      "slug": "video-recording-and-post-production-with-obs-studio",
+      "description": "Record high-quality video content with OBS Studio and prepare it for editing in video software",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Street photography editing in Lightroom",
+      "slug": "street-photography-editing-in-lightroom",
+      "description": "Process candid street photos with mood and atmosphere using Adobe Lightroom's tone controls",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Beauty retouching with Capture One and Photoshop",
+      "slug": "beauty-retouching-with-capture-one-and-photoshop",
+      "description": "Create flawless beauty imagery combining Capture One's color grading with Photoshop's retouching tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Streaming software and games with OBS Studio",
+      "slug": "streaming-software-and-games-with-obs-studio",
+      "description": "Configure optimal capture settings for gaming and application streaming using OBS Studio",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "obs-studio",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Organizing large photo libraries in Lightroom",
+      "slug": "organizing-large-photo-libraries-in-lightroom",
+      "description": "Manage thousands of photos with keywords, collections, and smart search in Adobe Lightroom",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "adobe-lightroom",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Film simulation and styles in Capture One",
+      "slug": "film-simulation-and-styles-in-capture-one",
+      "description": "Recreate classic film looks and custom color styles using Capture One's styles and color tools",
+      "category_slug": "photography-video",
+      "competencies": [
+        {
+          "competency_slug": "capture-one",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

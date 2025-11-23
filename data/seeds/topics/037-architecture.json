@@ -1,0 +1,584 @@
+{
+  "topics": [
+    {
+      "name": "Architectural modeling with SketchUp",
+      "slug": "architectural-modeling-with-sketchup",
+      "description": "Design and visualize buildings using SketchUp's intuitive 3D modeling tools and components",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating construction documents with AutoCAD",
+      "slug": "creating-construction-documents-with-autocad",
+      "description": "Produce detailed technical drawings, floor plans, and construction documentation using AutoCAD",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "BIM modeling with Revit",
+      "slug": "bim-modeling-with-revit",
+      "description": "Create intelligent building models with coordinated documentation using Revit's BIM platform",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building design with ArchiCAD",
+      "slug": "building-design-with-archicad",
+      "description": "Design buildings and generate documentation using ArchiCAD's integrated BIM workflow",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Product design with Fusion 360",
+      "slug": "product-design-with-fusion-360",
+      "description": "Design and engineer products using Fusion 360's parametric modeling and CAD/CAM tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Mechanical design with SolidWorks",
+      "slug": "mechanical-design-with-solidworks",
+      "description": "Create precise mechanical parts and assemblies using SolidWorks' parametric CAD system",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Complex architectural forms with Rhino",
+      "slug": "complex-architectural-forms-with-rhino",
+      "description": "Model freeform and organic architectural shapes using Rhino's advanced NURBS modeling",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Interior design visualization with SketchUp",
+      "slug": "interior-design-visualization-with-sketchup",
+      "description": "Plan and present interior spaces with furniture, materials, and lighting in SketchUp",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "2D drafting and technical drawings with AutoCAD",
+      "slug": "2d-drafting-and-technical-drawings-with-autocad",
+      "description": "Create precise 2D construction drawings, sections, and elevations using AutoCAD",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "MEP systems design in Revit",
+      "slug": "mep-systems-design-in-revit",
+      "description": "Design mechanical, electrical, and plumbing systems with coordination tools in Revit MEP",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Collaborative BIM workflows with ArchiCAD",
+      "slug": "collaborative-bim-workflows-with-archicad",
+      "description": "Coordinate multi-disciplinary building projects using ArchiCAD's teamwork and BIM collaboration",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "CAD/CAM manufacturing with Fusion 360",
+      "slug": "cadcam-manufacturing-with-fusion-360",
+      "description": "Design products and generate CNC toolpaths using Fusion 360's integrated CAM workflows",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Assembly design and motion simulation in SolidWorks",
+      "slug": "assembly-design-and-motion-simulation-in-solidworks",
+      "description": "Create complex assemblies and test mechanical motion using SolidWorks' assembly tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Parametric design with Rhino",
+      "slug": "parametric-design-with-rhino",
+      "description": "Build algorithmic and parametric models using Rhino's computational design capabilities",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Landscape architecture modeling with SketchUp",
+      "slug": "landscape-architecture-modeling-with-sketchup",
+      "description": "Design outdoor spaces, terrain, and landscape elements using SketchUp's site modeling tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "3D modeling and rendering with AutoCAD",
+      "slug": "3d-modeling-and-rendering-with-autocad",
+      "description": "Create 3D architectural models and photorealistic visualizations using AutoCAD's 3D tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Structural design with Revit",
+      "slug": "structural-design-with-revit",
+      "description": "Model structural systems and generate construction documents using Revit Structure",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Conceptual design and massing in ArchiCAD",
+      "slug": "conceptual-design-and-massing-in-archicad",
+      "description": "Explore early design concepts and building massing using ArchiCAD's modeling tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Generative design with Fusion 360",
+      "slug": "generative-design-with-fusion-360",
+      "description": "Optimize product designs using Fusion 360's AI-powered generative design algorithms",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Sheet metal design in SolidWorks",
+      "slug": "sheet-metal-design-in-solidworks",
+      "description": "Design fabricated sheet metal parts with bends, flanges, and flat patterns using SolidWorks",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Jewelry and product design with Rhino",
+      "slug": "jewelry-and-product-design-with-rhino",
+      "description": "Create intricate jewelry and small product designs using Rhino's precision modeling tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SketchUp to Photoshop rendering workflow",
+      "slug": "sketchup-to-photoshop-rendering-workflow",
+      "description": "Export SketchUp models and enhance visualizations with post-processing in Adobe Photoshop",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "AutoCAD to Revit BIM workflow",
+      "slug": "autocad-to-revit-bim-workflow",
+      "description": "Import AutoCAD drawings and convert them to intelligent Revit BIM models",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Revit families and custom components",
+      "slug": "revit-families-and-custom-components",
+      "description": "Create parametric Revit families and custom building components for reusable BIM objects",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Energy analysis and sustainability in ArchiCAD",
+      "slug": "energy-analysis-and-sustainability-in-archicad",
+      "description": "Analyze building energy performance and sustainability using ArchiCAD's integrated tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "3D printing preparation with Fusion 360",
+      "slug": "3d-printing-preparation-with-fusion-360",
+      "description": "Design and prepare models for 3D printing using Fusion 360's additive manufacturing tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Weldments and structural frames in SolidWorks",
+      "slug": "weldments-and-structural-frames-in-solidworks",
+      "description": "Design structural steel frames and weldments using SolidWorks' specialized tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Surface modeling and analysis in Rhino",
+      "slug": "surface-modeling-and-analysis-in-rhino",
+      "description": "Create and analyze complex surfaces for architecture and product design using Rhino",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Quick concept modeling with SketchUp",
+      "slug": "quick-concept-modeling-with-sketchup",
+      "description": "Rapidly explore design ideas and create presentation models using SketchUp's intuitive interface",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Site plans and civil engineering with AutoCAD",
+      "slug": "site-plans-and-civil-engineering-with-autocad",
+      "description": "Create site layouts, grading plans, and civil engineering drawings using AutoCAD Civil 3D",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Dynamo visual programming for Revit",
+      "slug": "dynamo-visual-programming-for-revit",
+      "description": "Automate BIM workflows and create parametric designs using Dynamo's visual scripting in Revit",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Photorealistic rendering with ArchiCAD",
+      "slug": "photorealistic-rendering-with-archicad",
+      "description": "Create high-quality architectural visualizations using ArchiCAD's built-in rendering engine",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Electronic design and PCB layout with Fusion 360",
+      "slug": "electronic-design-and-pcb-layout-with-fusion-360",
+      "description": "Design circuit boards and integrate electronics with mechanical design in Fusion 360",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Simulation and stress analysis in SolidWorks",
+      "slug": "simulation-and-stress-analysis-in-solidworks",
+      "description": "Validate mechanical designs using SolidWorks Simulation for stress, thermal, and motion analysis",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Rhino to fabrication workflow",
+      "slug": "rhino-to-fabrication-workflow",
+      "description": "Prepare Rhino models for CNC milling, laser cutting, and digital fabrication",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "SketchUp extensions and plugins",
+      "slug": "sketchup-extensions-and-plugins",
+      "description": "Enhance SketchUp's capabilities using third-party extensions for rendering, analysis, and productivity",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "AutoCAD customization and scripting",
+      "slug": "autocad-customization-and-scripting",
+      "description": "Automate repetitive tasks and customize AutoCAD using LISP, scripts, and macros",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "autocad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Clash detection and coordination in Revit",
+      "slug": "clash-detection-and-coordination-in-revit",
+      "description": "Identify and resolve conflicts between building systems using Revit's coordination tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Construction documentation with ArchiCAD",
+      "slug": "construction-documentation-with-archicad",
+      "description": "Generate coordinated construction drawings, schedules, and specifications using ArchiCAD",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Simulation-driven design with Fusion 360",
+      "slug": "simulation-driven-design-with-fusion-360",
+      "description": "Optimize product performance using integrated simulation and testing in Fusion 360",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Surface modeling and advanced shapes in SolidWorks",
+      "slug": "surface-modeling-and-advanced-shapes-in-solidworks",
+      "description": "Create complex curved surfaces and organic shapes using SolidWorks' surfacing tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Architectural presentation boards with SketchUp and Photoshop",
+      "slug": "architectural-presentation-boards-with-sketchup-and-photoshop",
+      "description": "Create professional presentation graphics combining SketchUp renders with Photoshop layouts",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "sketchup",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "adobe-photoshop",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Schematic design and space planning in Revit",
+      "slug": "schematic-design-and-space-planning-in-revit",
+      "description": "Develop early design concepts and analyze space requirements using Revit's conceptual tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Migrating from ArchiCAD to Revit",
+      "slug": "migrating-from-archicad-to-revit",
+      "description": "Transfer projects and adapt BIM workflows when transitioning from ArchiCAD to Revit",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "archicad",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "revit",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Collaborative design with Fusion 360 teams",
+      "slug": "collaborative-design-with-fusion-360-teams",
+      "description": "Share and co-develop product designs using Fusion 360's cloud-based collaboration tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "fusion-360",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Design for manufacturing with SolidWorks",
+      "slug": "design-for-manufacturing-with-solidworks",
+      "description": "Create manufacturable parts using SolidWorks' DFM tools and design validation",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "solidworks",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Architectural facade design with Rhino",
+      "slug": "architectural-facade-design-with-rhino",
+      "description": "Model complex building facades and cladding systems using Rhino's surface tools",
+      "category_slug": "architecture",
+      "competencies": [
+        {
+          "competency_slug": "rhino",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "topics": [
+    {
+      "name": "Automating business workflows with Zapier",
+      "slug": "automating-business-workflows-with-zapier",
+      "description": "Connect apps and automate repetitive tasks using Zapier's no-code integration platform",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building custom automations with n8n",
+      "slug": "building-custom-automations-with-n8n",
+      "description": "Create flexible workflow automations using n8n's open-source automation platform",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating workflows with Make",
+      "slug": "automating-workflows-with-make",
+      "description": "Design visual automation scenarios using Make's drag-and-drop workflow builder",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Connecting Google Sheets with Zapier",
+      "slug": "connecting-google-sheets-with-zapier",
+      "description": "Automate data workflows between Google Sheets and other applications using Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-sheets",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data pipelines with n8n and Google Sheets",
+      "slug": "building-data-pipelines-with-n8n-and-google-sheets",
+      "description": "Synchronize and transform data between Google Sheets and multiple services using n8n workflows",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-sheets",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Automating content workflows with Make and Notion",
+      "slug": "automating-content-workflows-with-make-and-notion",
+      "description": "Streamline content management by connecting Notion with other tools using Make automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "notion",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building REST API integrations with Zapier",
+      "slug": "building-rest-api-integrations-with-zapier",
+      "description": "Connect custom APIs and web services to your Zapier workflows using webhooks and HTTP requests",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "rest-api",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building REST API workflows with n8n",
+      "slug": "building-rest-api-workflows-with-n8n",
+      "description": "Integrate custom APIs and web services into n8n automation flows using HTTP nodes and authentication",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "rest-api",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Automating API workflows with Make",
+      "slug": "automating-api-workflows-with-make",
+      "description": "Connect and orchestrate REST API calls in Make scenarios for complex integrations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "rest-api",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Extending n8n with custom JavaScript code",
+      "slug": "extending-n8n-with-custom-javascript-code",
+      "description": "Add custom logic to n8n workflows using JavaScript code nodes for advanced transformations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building advanced Make scenarios with JavaScript",
+      "slug": "building-advanced-make-scenarios-with-javascript",
+      "description": "Enhance Make automations with custom JavaScript functions for complex data processing",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Automating email workflows with Zapier",
+      "slug": "automating-email-workflows-with-zapier",
+      "description": "Set up automated email sequences and notifications across multiple platforms using Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building multi-step automations with Make",
+      "slug": "building-multi-step-automations-with-make",
+      "description": "Design complex automation workflows with conditional logic, filters, and data transformation in Make",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Self-hosting n8n for automation workflows",
+      "slug": "self-hosting-n8n-for-automation-workflows",
+      "description": "Deploy and manage your own n8n instance for complete control over workflow automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building lead capture automations with Zapier",
+      "slug": "building-lead-capture-automations-with-zapier",
+      "description": "Automatically capture, enrich, and route leads from forms and landing pages using Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating social media workflows with Make",
+      "slug": "automating-social-media-workflows-with-make",
+      "description": "Schedule, publish, and monitor social media content across platforms using Make automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building e-commerce automations with n8n",
+      "slug": "building-ecommerce-automations-with-n8n",
+      "description": "Automate order processing, inventory management, and customer communications with n8n workflows",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating data synchronization workflows with Zapier",
+      "slug": "creating-data-synchronization-workflows-with-zapier",
+      "description": "Keep data consistent across multiple platforms by automating bi-directional syncs with Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building notification systems with Make",
+      "slug": "building-notification-systems-with-make",
+      "description": "Set up intelligent alert and notification workflows across communication channels using Make",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating customer onboarding with n8n",
+      "slug": "automating-customer-onboarding-with-n8n",
+      "description": "Create seamless customer onboarding experiences with automated welcome sequences and setup workflows",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building CRM automations with Zapier",
+      "slug": "building-crm-automations-with-zapier",
+      "description": "Automate contact management, deal tracking, and sales workflows using Zapier CRM integrations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating scheduled workflows with n8n",
+      "slug": "creating-scheduled-workflows-with-n8n",
+      "description": "Build time-based automation triggers and recurring tasks using n8n's scheduling capabilities",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating invoice processing with Make",
+      "slug": "automating-invoice-processing-with-make",
+      "description": "Streamline accounts payable and receivable by automating invoice creation, sending, and tracking with Make",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building marketing automation funnels with Zapier",
+      "slug": "building-marketing-automation-funnels-with-zapier",
+      "description": "Design and implement automated marketing campaigns and customer journeys using Zapier workflows",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating webhooks and triggers with n8n",
+      "slug": "creating-webhooks-and-triggers-with-n8n",
+      "description": "Set up custom webhook endpoints and event-driven automation triggers in n8n workflows",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating task management with Make and Notion",
+      "slug": "automating-task-management-with-make-and-notion",
+      "description": "Synchronize tasks, deadlines, and project updates between Notion and other productivity tools using Make",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "notion",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building data extraction workflows with n8n",
+      "slug": "building-data-extraction-workflows-with-n8n",
+      "description": "Extract and transform data from websites, APIs, and documents using n8n automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Creating conditional workflows with Zapier",
+      "slug": "creating-conditional-workflows-with-zapier",
+      "description": "Build intelligent automation paths using filters, conditional logic, and branching in Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating file management with Make",
+      "slug": "automating-file-management-with-make",
+      "description": "Organize, backup, and sync files across cloud storage platforms using Make automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building custom n8n nodes with JavaScript",
+      "slug": "building-custom-n8n-nodes-with-javascript",
+      "description": "Extend n8n functionality by creating reusable custom nodes using JavaScript and TypeScript",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "javascript",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Automating reporting with Zapier and Google Sheets",
+      "slug": "automating-reporting-with-zapier-and-google-sheets",
+      "description": "Generate automated reports and dashboards by connecting data sources to Google Sheets via Zapier",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        },
+        {
+          "competency_slug": "google-sheets",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building error handling in Make scenarios",
+      "slug": "building-error-handling-in-make-scenarios",
+      "description": "Implement robust error handling, rollback, and notification strategies in Make automations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Scaling automation workflows with n8n clusters",
+      "slug": "scaling-automation-workflows-with-n8n-clusters",
+      "description": "Deploy high-availability n8n instances with queue mode for enterprise-scale automation",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Migrating workflows between automation platforms",
+      "slug": "migrating-workflows-between-automation-platforms",
+      "description": "Transfer and adapt automation workflows between Zapier, Make, and n8n platforms",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "make",
+          "is_primary": false
+        },
+        {
+          "competency_slug": "n8n",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "name": "Building real-time automation with n8n webhooks",
+      "slug": "building-real-time-automation-with-n8n-webhooks",
+      "description": "Create instant, event-driven workflows using n8n's webhook triggers and real-time processing",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating payment workflows with Zapier",
+      "slug": "automating-payment-workflows-with-zapier",
+      "description": "Process payments, send receipts, and manage subscriptions automatically using Zapier integrations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building custom integrations with Make HTTP modules",
+      "slug": "building-custom-integrations-with-make-http-modules",
+      "description": "Connect any web service to Make using HTTP requests, authentication, and data parsing",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Debugging and monitoring n8n workflows",
+      "slug": "debugging-and-monitoring-n8n-workflows",
+      "description": "Troubleshoot automation issues and monitor workflow performance using n8n's debugging tools",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "n8n",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Building AI-powered automations with Zapier",
+      "slug": "building-ai-powered-automations-with-zapier",
+      "description": "Enhance workflows with AI capabilities using Zapier's ChatGPT, OpenAI, and AI assistant integrations",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "zapier",
+          "is_primary": true
+        }
+      ]
+    },
+    {
+      "name": "Automating data enrichment with Make",
+      "slug": "automating-data-enrichment-with-make",
+      "description": "Enhance contact and company data by connecting enrichment services and databases through Make",
+      "category_slug": "automation-integration",
+      "competencies": [
+        {
+          "competency_slug": "make",
+          "is_primary": true
+        }
+      ]
+    }
+  ]
+}
