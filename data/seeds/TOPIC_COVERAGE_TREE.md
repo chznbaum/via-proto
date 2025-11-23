@@ -1,8 +1,8 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-23T02:23:00.942Z
-**Total Topics:** 2241
-**Total Competencies:** 1625
+**Generated:** 2025-11-23T03:44:20.305Z
+**Total Topics:** 2965
+**Total Competencies:** 1626
 **Total Categories:** 89
 
 This file shows the category hierarchy with topic and competency counts.
@@ -14,20 +14,20 @@ Run `npm run topic:coverage` to update.
 
 ```
 ├── Information & Technology [0 topics, 0 competencies]
-│   ├── Programming [73 topics, 51 competencies]
-│   │   ├── Web Development [0 topics, 1 competencies]
+│   ├── Programming [168 topics, 51 competencies]
+│   │   ├── Web Development [5 topics, 1 competencies]
 │   │   │   ├── Frontend Development [40 topics, 47 competencies]
 │   │   │   ├── Full-stack Development [6 topics, 0 competencies]
-│   │   │   └── Backend Development [3 topics, 36 competencies]
+│   │   │   └── Backend Development [68 topics, 36 competencies]
 │   │   ├── Mobile Development [86 topics, 48 competencies]
-│   │   ├── Game Development [1 topics, 53 competencies]
+│   │   ├── Game Development [122 topics, 53 competencies]
 │   │   ├── Systems Programming [39 topics, 17 competencies]
 │   │   └── Software Testing [3 topics, 0 competencies]
 │   ├── Data & Analytics [0 topics, 0 competencies]
 │   │   ├── Data Science [104 topics, 97 competencies]
 │   │   ├── Data Engineering [41 topics, 8 competencies]
 │   │   └── Databases [72 topics, 55 competencies]
-│   ├── Cloud & DevOps [170 topics, 170 competencies]
+│   ├── Cloud & DevOps [236 topics, 170 competencies]
 │   ├── Automation & Integration [40 topics, 3 competencies]
 │   ├── Information Security [0 topics, 0 competencies]
 │   │   └── Cybersecurity [33 topics, 27 competencies]
@@ -35,7 +35,7 @@ Run `npm run topic:coverage` to update.
 ├── Design & Creativity [0 topics, 0 competencies]
 │   ├── UI/UX Design [44 topics, 19 competencies]
 │   ├── Graphic Design [69 topics, 16 competencies]
-│   ├── Motion & 3D [0 topics, 16 competencies]
+│   ├── Motion & 3D [32 topics, 16 competencies]
 │   ├── Creative Arts [0 topics, 0 competencies]
 │   │   ├── Photography & Video [46 topics, 3 competencies]
 │   │   ├── Music [181 topics, 58 competencies]
@@ -46,16 +46,16 @@ Run `npm run topic:coverage` to update.
 │   ├── Architecture [47 topics, 7 competencies]
 │   └── Fiber Arts & Crafts [47 topics, 46 competencies]
 ├── Business & Management [0 topics, 0 competencies]
-│   ├── Product & Project Management [0 topics, 11 competencies]
+│   ├── Product & Project Management [22 topics, 11 competencies]
 │   ├── Marketing & Sales [45 topics, 18 competencies]
-│   ├── Leadership & Communication [0 topics, 12 competencies]
-│   ├── Finance & Accounting [0 topics, 12 competencies]
+│   ├── Leadership & Communication [23 topics, 12 competencies]
+│   ├── Finance & Accounting [20 topics, 12 competencies]
 │   │   ├── Personal Finance [26 topics, 22 competencies]
 │   │   ├── Investing & Trading [29 topics, 26 competencies]
-│   │   └── Corporate Finance [0 topics, 14 competencies]
+│   │   └── Corporate Finance [21 topics, 14 competencies]
 │   └── Operations & Strategy [39 topics, 19 competencies]
-├── Linguistics [0 topics, 15 competencies]
-│   ├── Languages [147 topics, 170 competencies]
+├── Linguistics [32 topics, 15 competencies]
+│   ├── Languages [147 topics, 171 competencies]
 │   └── Speech Development & Pathology [0 topics, 0 competencies]
 ├── Mathematics [0 topics, 0 competencies]
 │   ├── Foundational Math [0 topics, 0 competencies]
@@ -81,25 +81,25 @@ Run `npm run topic:coverage` to update.
 │   │   ├── Genetics [14 topics, 4 competencies]
 │   │   └── Neuroscience [18 topics, 5 competencies]
 │   └── Environmental Science [36 topics, 9 competencies]
-├── Personal Development [0 topics, 1 competencies]
-│   ├── Productivity & Time Management [0 topics, 10 competencies]
-│   ├── Cognitive Skills [0 topics, 5 competencies]
-│   │   ├── Critical Thinking [0 topics, 1 competencies]
-│   │   ├── Memory & Learning [0 topics, 9 competencies]
-│   │   └── Problem Solving [0 topics, 1 competencies]
-│   ├── Communication & Interpersonal [0 topics, 9 competencies]
-│   └── Mindfulness & Wellness [0 topics, 9 competencies]
+├── Personal Development [2 topics, 1 competencies]
+│   ├── Productivity & Time Management [19 topics, 10 competencies]
+│   ├── Cognitive Skills [9 topics, 5 competencies]
+│   │   ├── Critical Thinking [3 topics, 1 competencies]
+│   │   ├── Memory & Learning [18 topics, 9 competencies]
+│   │   └── Problem Solving [3 topics, 1 competencies]
+│   ├── Communication & Interpersonal [18 topics, 9 competencies]
+│   └── Mindfulness & Wellness [18 topics, 9 competencies]
 ├── Health & Fitness [0 topics, 0 competencies]
 │   ├── Fitness & Exercise [0 topics, 0 competencies]
-│   │   ├── Strength Training [0 topics, 10 competencies]
-│   │   ├── Cardio & Endurance [0 topics, 12 competencies]
-│   │   └── Flexibility & Mobility [0 topics, 9 competencies]
-│   ├── Nutrition & Diet [0 topics, 11 competencies]
-│   ├── Mental Health [0 topics, 8 competencies]
+│   │   ├── Strength Training [17 topics, 10 competencies]
+│   │   ├── Cardio & Endurance [21 topics, 12 competencies]
+│   │   └── Flexibility & Mobility [14 topics, 9 competencies]
+│   ├── Nutrition & Diet [19 topics, 11 competencies]
+│   ├── Mental Health [14 topics, 8 competencies]
 │   └── Holistic Health [0 topics, 0 competencies]
-│       ├── Yoga [0 topics, 10 competencies]
-│       ├── Meditation [0 topics, 8 competencies]
-│       └── Alternative Medicine [0 topics, 16 competencies]
+│       ├── Yoga [12 topics, 10 competencies]
+│       ├── Meditation [11 topics, 8 competencies]
+│       └── Alternative Medicine [24 topics, 16 competencies]
 ├── Home & Lifestyle [80 topics, 50 competencies]
 └── Recreation & Hobbies [70 topics, 39 competencies]
 ```
@@ -122,7 +122,7 @@ Run `npm run topic:coverage` to update.
 
 ### Alternative Medicine
 - **Slug:** `alternative-medicine`
-- **Topics:** 0
+- **Topics:** 24
 - **Competencies:** 16
 - **Parent:** holistic-health
 
@@ -158,7 +158,7 @@ Run `npm run topic:coverage` to update.
 
 ### Backend Development
 - **Slug:** `backend-development`
-- **Topics:** 3
+- **Topics:** 68
 - **Competencies:** 36
 - **Parent:** web-development
 
@@ -182,7 +182,7 @@ Run `npm run topic:coverage` to update.
 
 ### Cardio & Endurance
 - **Slug:** `cardio-endurance`
-- **Topics:** 0
+- **Topics:** 21
 - **Competencies:** 12
 - **Parent:** fitness-exercise
 
@@ -194,31 +194,31 @@ Run `npm run topic:coverage` to update.
 
 ### Cloud & DevOps
 - **Slug:** `cloud-devops`
-- **Topics:** 170
+- **Topics:** 236
 - **Competencies:** 170
 - **Parent:** information-technology
 
 ### Cognitive Skills
 - **Slug:** `cognitive-skills`
-- **Topics:** 0
+- **Topics:** 9
 - **Competencies:** 5
 - **Parent:** personal-development
 
 ### Communication & Interpersonal
 - **Slug:** `communication-interpersonal`
-- **Topics:** 0
+- **Topics:** 18
 - **Competencies:** 9
 - **Parent:** personal-development
 
 ### Corporate Finance
 - **Slug:** `corporate-finance`
-- **Topics:** 0
+- **Topics:** 21
 - **Competencies:** 14
 - **Parent:** finance-accounting
 
 ### Critical Thinking
 - **Slug:** `critical-thinking`
-- **Topics:** 0
+- **Topics:** 3
 - **Competencies:** 1
 - **Parent:** cognitive-skills
 
@@ -278,13 +278,13 @@ Run `npm run topic:coverage` to update.
 
 ### Finance & Accounting
 - **Slug:** `finance-accounting`
-- **Topics:** 0
+- **Topics:** 20
 - **Competencies:** 12
 - **Parent:** business-management
 
 ### Flexibility & Mobility
 - **Slug:** `flexibility-mobility`
-- **Topics:** 0
+- **Topics:** 14
 - **Competencies:** 9
 - **Parent:** fitness-exercise
 
@@ -302,7 +302,7 @@ Run `npm run topic:coverage` to update.
 
 ### Game Development
 - **Slug:** `game-development`
-- **Topics:** 1
+- **Topics:** 122
 - **Competencies:** 53
 - **Parent:** programming
 
@@ -338,12 +338,12 @@ Run `npm run topic:coverage` to update.
 ### Languages
 - **Slug:** `languages`
 - **Topics:** 147
-- **Competencies:** 170
+- **Competencies:** 171
 - **Parent:** linguistics
 
 ### Leadership & Communication
 - **Slug:** `leadership-communication`
-- **Topics:** 0
+- **Topics:** 23
 - **Competencies:** 12
 - **Parent:** business-management
 
@@ -361,7 +361,7 @@ Run `npm run topic:coverage` to update.
 
 ### Linguistics
 - **Slug:** `linguistics`
-- **Topics:** 0
+- **Topics:** 32
 - **Competencies:** 15
 
 ### Marketing & Sales
@@ -372,25 +372,25 @@ Run `npm run topic:coverage` to update.
 
 ### Meditation
 - **Slug:** `meditation`
-- **Topics:** 0
+- **Topics:** 11
 - **Competencies:** 8
 - **Parent:** holistic-health
 
 ### Memory & Learning
 - **Slug:** `memory-learning`
-- **Topics:** 0
+- **Topics:** 18
 - **Competencies:** 9
 - **Parent:** cognitive-skills
 
 ### Mental Health
 - **Slug:** `mental-health`
-- **Topics:** 0
+- **Topics:** 14
 - **Competencies:** 8
 - **Parent:** health-fitness
 
 ### Mindfulness & Wellness
 - **Slug:** `mindfulness-wellness`
-- **Topics:** 0
+- **Topics:** 18
 - **Competencies:** 9
 - **Parent:** personal-development
 
@@ -402,7 +402,7 @@ Run `npm run topic:coverage` to update.
 
 ### Motion & 3D
 - **Slug:** `motion-3d`
-- **Topics:** 0
+- **Topics:** 32
 - **Competencies:** 16
 - **Parent:** design-creativity
 
@@ -426,7 +426,7 @@ Run `npm run topic:coverage` to update.
 
 ### Nutrition & Diet
 - **Slug:** `nutrition-diet`
-- **Topics:** 0
+- **Topics:** 19
 - **Competencies:** 11
 - **Parent:** health-fitness
 
@@ -438,7 +438,7 @@ Run `npm run topic:coverage` to update.
 
 ### Personal Development
 - **Slug:** `personal-development`
-- **Topics:** 0
+- **Topics:** 2
 - **Competencies:** 1
 
 ### Personal Finance
@@ -461,25 +461,25 @@ Run `npm run topic:coverage` to update.
 
 ### Problem Solving
 - **Slug:** `problem-solving`
-- **Topics:** 0
+- **Topics:** 3
 - **Competencies:** 1
 - **Parent:** cognitive-skills
 
 ### Product & Project Management
 - **Slug:** `product-project-management`
-- **Topics:** 0
+- **Topics:** 22
 - **Competencies:** 11
 - **Parent:** business-management
 
 ### Productivity & Time Management
 - **Slug:** `productivity-time-management`
-- **Topics:** 0
+- **Topics:** 19
 - **Competencies:** 10
 - **Parent:** personal-development
 
 ### Programming
 - **Slug:** `programming`
-- **Topics:** 73
+- **Topics:** 168
 - **Competencies:** 51
 - **Parent:** information-technology
 
@@ -502,7 +502,7 @@ Run `npm run topic:coverage` to update.
 
 ### Strength Training
 - **Slug:** `strength-training`
-- **Topics:** 0
+- **Topics:** 17
 - **Competencies:** 10
 - **Parent:** fitness-exercise
 
@@ -538,7 +538,7 @@ Run `npm run topic:coverage` to update.
 
 ### Web Development
 - **Slug:** `web-development`
-- **Topics:** 0
+- **Topics:** 5
 - **Competencies:** 1
 - **Parent:** programming
 
@@ -550,7 +550,7 @@ Run `npm run topic:coverage` to update.
 
 ### Yoga
 - **Slug:** `yoga`
-- **Topics:** 0
+- **Topics:** 12
 - **Competencies:** 10
 - **Parent:** holistic-health
 

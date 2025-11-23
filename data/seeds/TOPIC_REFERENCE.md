@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-23T03:09:54.899Z
-**Total Topics:** 2620
+**Generated:** 2025-11-23T03:44:45.531Z
+**Total Topics:** 2965
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -20,13 +20,13 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [arithmetic](#arithmetic) (3)
 - [astronomy](#astronomy) (19)
 - [automation-integration](#automation-integration) (40)
-- [backend-development](#backend-development) (3)
+- [backend-development](#backend-development) (68)
 - [biology](#biology) (37)
 - [blockchain-web3](#blockchain-web3) (45)
 - [calculus](#calculus) (12)
 - [cardio-endurance](#cardio-endurance) (21)
 - [chemistry](#chemistry) (30)
-- [cloud-devops](#cloud-devops) (170)
+- [cloud-devops](#cloud-devops) (236)
 - [cognitive-skills](#cognitive-skills) (9)
 - [communication-interpersonal](#communication-interpersonal) (18)
 - [corporate-finance](#corporate-finance) (21)
@@ -44,7 +44,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [flexibility-mobility](#flexibility-mobility) (14)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
-- [game-development](#game-development) (1)
+- [game-development](#game-development) (122)
 - [genetics](#genetics) (14)
 - [geometry](#geometry) (13)
 - [graphic-design](#graphic-design) (69)
@@ -54,7 +54,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [leadership-communication](#leadership-communication) (23)
 - [life-sciences](#life-sciences) (22)
 - [linear-algebra](#linear-algebra) (7)
-- [linguistics](#linguistics) (34)
+- [linguistics](#linguistics) (32)
 - [marketing-sales](#marketing-sales) (45)
 - [meditation](#meditation) (11)
 - [memory-learning](#memory-learning) (18)
@@ -74,7 +74,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [problem-solving](#problem-solving) (3)
 - [product-project-management](#product-project-management) (22)
 - [productivity-time-management](#productivity-time-management) (19)
-- [programming](#programming) (73)
+- [programming](#programming) (168)
 - [recreation-hobbies](#recreation-hobbies) (70)
 - [software-testing](#software-testing) (3)
 - [statistics-probability](#statistics-probability) (27)
@@ -1517,12 +1517,76 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ## backend-development
 
+### Advanced serialization in Django REST Framework
+- **Slug:** `advanced-serialization-drf`
+- **Description:** Master complex data serialization, nested relationships, and custom fields in DRF
+- **Primary Competencies:** `django-rest-framework`
+- **Supporting Competencies:** `django`, `python`
+- **Source File:** 004-backend-apis-extended.json
+
+### API authentication and permissions with DRF
+- **Slug:** `api-authentication-permissions-drf`
+- **Description:** Implement secure authentication and fine-grained permissions in Django REST Framework APIs
+- **Primary Competencies:** `django-rest-framework`
+- **Supporting Competencies:** `django`, `python`
+- **Source File:** 004-backend-apis-extended.json
+
+### API design and specification with OpenAPI
+- **Slug:** `api-design-specification-openapi`
+- **Description:** Design APIs using OpenAPI spec-first approach for better collaboration and code generation
+- **Primary Competencies:** `swagger`
+- **Source File:** 004-backend-apis-extended.json
+
+### API development workflows with Insomnia
+- **Slug:** `api-development-workflows-insomnia`
+- **Description:** Streamline API development with environment variables, code generation, and team collaboration
+- **Primary Competencies:** `insomnia`
+- **Source File:** 004-backend-apis-extended.json
+
+### API documentation with Swagger/OpenAPI
+- **Slug:** `api-documentation-swagger-openapi`
+- **Description:** Create interactive, standards-based API documentation using the OpenAPI specification
+- **Primary Competencies:** `swagger`
+- **Source File:** 004-backend-apis-extended.json
+
+### API testing and development with Postman
+- **Slug:** `api-testing-development-postman`
+- **Description:** Test, document, and collaborate on APIs using Postman's comprehensive platform
+- **Primary Competencies:** `postman`
+- **Source File:** 004-backend-apis-extended.json
+
+### API workflows and collections in Postman
+- **Slug:** `api-workflows-collections-postman`
+- **Description:** Organize and chain API requests into workflows using Postman collections
+- **Primary Competencies:** `postman`
+- **Source File:** 004-backend-apis-extended.json
+
+### Authentication and authorization with AdonisJS
+- **Slug:** `authentication-authorization-adonisjs`
+- **Description:** Implement secure user authentication, sessions, and role-based access control in AdonisJS
+- **Primary Competencies:** `adonisjs`
+- **Supporting Competencies:** `nodejs`, `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Automated API testing with Postman
+- **Slug:** `automated-api-testing-postman`
+- **Description:** Create automated test suites and CI/CD integration for APIs using Postman
+- **Primary Competencies:** `postman`
+- **Source File:** 004-backend-apis-extended.json
+
 ### Building Node.js APIs with TypeScript
 - **Slug:** `nodejs-apis-typescript`
 - **Description:** Create type-safe backend APIs using TypeScript and Node.js
 - **Primary Competencies:** `nodejs`
 - **Supporting Competencies:** `typescript`
 - **Source File:** 005-frontend-development.json
+
+### Building REST APIs with Django REST Framework
+- **Slug:** `building-rest-apis-django-rest-framework`
+- **Description:** Create powerful, flexible REST APIs with serialization, authentication, and permissions
+- **Primary Competencies:** `django-rest-framework`
+- **Supporting Competencies:** `django`, `python`
+- **Source File:** 004-backend-apis-extended.json
 
 ### Building web applications with Python and Django
 - **Slug:** `building-web-applications-with-python-django`
@@ -1537,6 +1601,385 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `flask`
 - **Supporting Competencies:** `python`, `html`, `css`
 - **Source File:** 004-backend-apis.json
+
+### Cloud-native Java apps with Micronaut
+- **Slug:** `cloud-native-java-apps-micronaut`
+- **Description:** Build low-memory, fast-startup microservices optimized for containers and serverless
+- **Primary Competencies:** `micronaut`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### Cross-language services with gRPC
+- **Slug:** `cross-language-services-grpc`
+- **Description:** Connect services written in different languages using gRPC's polyglot capabilities
+- **Primary Competencies:** `grpc`
+- **Source File:** 004-backend-apis-extended.json
+
+### Custom content types and APIs in Strapi
+- **Slug:** `custom-content-types-apis-strapi`
+- **Description:** Design and implement custom content models with relationships and permissions in Strapi
+- **Primary Competencies:** `strapi`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Enterprise Node.js applications with Hapi
+- **Slug:** `enterprise-nodejs-apps-hapi`
+- **Description:** Build configuration-driven, plugin-based applications using Hapi's rich ecosystem
+- **Primary Competencies:** `hapi`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Enterprise PHP applications with Symfony
+- **Slug:** `enterprise-php-apps-symfony`
+- **Description:** Build robust, maintainable PHP applications using Symfony's component-based architecture
+- **Primary Competencies:** `symfony`
+- **Supporting Competencies:** `php`
+- **Source File:** 004-backend-apis-extended.json
+
+### Enterprise TypeScript backends with NestJS
+- **Slug:** `enterprise-typescript-backends-nestjs`
+- **Description:** Build scalable, testable server applications using NestJS's Angular-inspired architecture
+- **Primary Competencies:** `nestjs`
+- **Supporting Competencies:** `typescript`, `nodejs`
+- **Source File:** 004-backend-apis-extended.json
+
+### Express-style Go development with Fiber
+- **Slug:** `express-style-go-development-fiber`
+- **Description:** Build web applications with familiar Express.js-like syntax optimized for Go's performance
+- **Primary Competencies:** `fiber`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### Extending Strapi with plugins
+- **Slug:** `extending-strapi-plugins`
+- **Description:** Build and integrate custom plugins to extend Strapi's functionality
+- **Primary Competencies:** `strapi`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Fastify plugin development
+- **Slug:** `fastify-plugin-development`
+- **Description:** Create reusable Fastify plugins to extend functionality and share code
+- **Primary Competencies:** `fastify`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Full-featured web apps with AdonisJS
+- **Slug:** `full-featured-web-apps-adonisjs`
+- **Description:** Build complete web applications with AdonisJS's Laravel-inspired MVC architecture
+- **Primary Competencies:** `adonisjs`
+- **Supporting Competencies:** `nodejs`, `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Full-stack development with Bun
+- **Slug:** `full-stack-development-bun`
+- **Description:** Use Bun's all-in-one toolkit for bundling, transpiling, and running full-stack JavaScript apps
+- **Primary Competencies:** `bun`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Full-stack TypeScript with tRPC
+- **Slug:** `full-stack-typescript-trpc`
+- **Description:** Create seamless frontend-backend integration with shared TypeScript types using tRPC
+- **Primary Competencies:** `trpc`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### GraalVM native images with Micronaut
+- **Slug:** `graalvm-native-images-micronaut`
+- **Description:** Compile Micronaut applications to native executables for instant startup and low memory usage
+- **Primary Competencies:** `micronaut`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### GraphQL APIs with NestJS
+- **Slug:** `graphql-apis-nestjs`
+- **Description:** Build type-safe GraphQL APIs using NestJS's first-class GraphQL support
+- **Primary Competencies:** `nestjs`
+- **Supporting Competencies:** `graphql`, `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Headless CMS with Strapi
+- **Slug:** `headless-cms-strapi`
+- **Description:** Build customizable content APIs and admin panels using Strapi's headless CMS
+- **Primary Competencies:** `strapi`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### High-performance APIs with Fastify
+- **Slug:** `high-performance-apis-fastify`
+- **Description:** Build fast, low-overhead REST APIs using Fastify's plugin architecture and schema validation
+- **Primary Competencies:** `fastify`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### High-performance Go APIs with Gin
+- **Slug:** `high-performance-go-apis-gin`
+- **Description:** Build fast REST APIs leveraging Gin's performance and Go's concurrency
+- **Primary Competencies:** `gin`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### High-performance microservices with gRPC
+- **Slug:** `high-performance-microservices-grpc`
+- **Description:** Build efficient, language-agnostic microservices using gRPC and Protocol Buffers
+- **Primary Competencies:** `grpc`
+- **Source File:** 004-backend-apis-extended.json
+
+### High-performance servers with Bun
+- **Slug:** `high-performance-servers-bun`
+- **Description:** Create fast HTTP servers and APIs leveraging Bun's optimized runtime performance
+- **Primary Competencies:** `bun`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### High-performance web services with Hack and HHVM
+- **Slug:** `high-performance-web-services-hack-hhvm`
+- **Description:** Develop scalable backend services leveraging Hack's performance on HHVM
+- **Primary Competencies:** `hack`
+- **Source File:** 004-backend-apis-extended.json
+
+### Input validation and authentication with Hapi
+- **Slug:** `input-validation-authentication-hapi`
+- **Description:** Implement robust validation and authentication using Hapi's built-in features and Joi
+- **Primary Competencies:** `hapi`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### JWT authentication with Gin
+- **Slug:** `jwt-authentication-gin`
+- **Description:** Implement secure token-based authentication in Gin APIs
+- **Primary Competencies:** `gin`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### Kubernetes-native Java with Quarkus
+- **Slug:** `kubernetes-native-java-quarkus`
+- **Description:** Build container-first Java applications optimized for Kubernetes with Quarkus
+- **Primary Competencies:** `quarkus`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### Lightweight APIs with Koa
+- **Slug:** `lightweight-apis-koa`
+- **Description:** Create minimalist REST APIs using Koa's context-based middleware system
+- **Primary Competencies:** `koa`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Lightweight Ruby web apps with Sinatra
+- **Slug:** `lightweight-ruby-web-apps-sinatra`
+- **Description:** Build simple, elegant web applications and APIs using Sinatra's DSL
+- **Primary Competencies:** `sinatra`
+- **Supporting Competencies:** `ruby`
+- **Source File:** 004-backend-apis-extended.json
+
+### Microservices architecture with NestJS
+- **Slug:** `microservices-architecture-nestjs`
+- **Description:** Design and implement microservices using NestJS's built-in support for various transport layers
+- **Primary Competencies:** `nestjs`
+- **Supporting Competencies:** `typescript`, `nodejs`
+- **Source File:** 004-backend-apis-extended.json
+
+### Microservices with Symfony
+- **Slug:** `microservices-symfony`
+- **Description:** Design and implement microservice architectures using Symfony and API Platform
+- **Primary Competencies:** `symfony`
+- **Supporting Competencies:** `php`
+- **Source File:** 004-backend-apis-extended.json
+
+### Middleware and routing with Gin
+- **Slug:** `middleware-routing-gin`
+- **Description:** Master Gin's middleware system and routing for building structured Go web services
+- **Primary Competencies:** `gin`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### Migrating PHP projects to Hack
+- **Slug:** `migrating-php-projects-hack`
+- **Description:** Gradually adopt Hack's type system and features in existing PHP codebases
+- **Primary Competencies:** `hack`
+- **Supporting Competencies:** `php`
+- **Source File:** 004-backend-apis-extended.json
+
+### Minimalist Go web services with Echo
+- **Slug:** `minimalist-go-web-services-echo`
+- **Description:** Create lightweight, high-performance web applications using Echo framework
+- **Primary Competencies:** `echo`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### Modern async web apps with Koa
+- **Slug:** `modern-async-web-apps-koa`
+- **Description:** Build clean, middleware-based web applications using Koa's async/await foundation
+- **Primary Competencies:** `koa`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Modern JavaScript with Deno
+- **Slug:** `modern-javascript-deno`
+- **Description:** Build secure server-side applications using Deno's modern runtime with built-in TypeScript support
+- **Primary Competencies:** `deno`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### MVC web applications with Sails.js
+- **Slug:** `mvc-web-applications-sailsjs`
+- **Description:** Build data-driven web applications using Sails.js's Rails-inspired MVC architecture
+- **Primary Competencies:** `sailsjs`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Phoenix LiveView for interactive UIs
+- **Slug:** `phoenix-liveview-interactive-uis`
+- **Description:** Create rich, real-time user experiences without writing JavaScript using LiveView
+- **Primary Competencies:** `phoenix`
+- **Supporting Competencies:** `elixir`
+- **Source File:** 004-backend-apis-extended.json
+
+### Production-ready backend services with Fastify
+- **Slug:** `production-backend-services-fastify`
+- **Description:** Develop scalable backend applications with Fastify's async/await support and TypeScript integration
+- **Primary Competencies:** `fastify`
+- **Supporting Competencies:** `nodejs`, `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### React and Next.js integration with tRPC
+- **Slug:** `react-nextjs-integration-trpc`
+- **Description:** Build type-safe React applications with tRPC and Next.js for optimal developer experience
+- **Primary Competencies:** `trpc`
+- **Supporting Competencies:** `nextjs`, `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Reactive microservices with Micronaut
+- **Slug:** `reactive-microservices-micronaut`
+- **Description:** Develop reactive, non-blocking microservices using Micronaut's async capabilities
+- **Primary Competencies:** `micronaut`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### Reactive programming with Quarkus
+- **Slug:** `reactive-programming-quarkus`
+- **Description:** Build reactive, event-driven applications using Quarkus and reactive streams
+- **Primary Competencies:** `quarkus`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### Real-time features with Sails.js
+- **Slug:** `real-time-features-sailsjs`
+- **Description:** Implement WebSocket-based real-time functionality using Sails.js's built-in support
+- **Primary Competencies:** `sailsjs`
+- **Supporting Competencies:** `nodejs`, `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Real-time web applications with Phoenix
+- **Slug:** `real-time-web-apps-phoenix`
+- **Description:** Build highly concurrent, real-time applications using Phoenix and Elixir's BEAM VM
+- **Primary Competencies:** `phoenix`
+- **Supporting Competencies:** `elixir`
+- **Source File:** 004-backend-apis-extended.json
+
+### REST and GraphQL testing with Insomnia
+- **Slug:** `rest-graphql-testing-insomnia`
+- **Description:** Debug and test REST and GraphQL APIs using Insomnia's developer-friendly interface
+- **Primary Competencies:** `insomnia`
+- **Source File:** 004-backend-apis-extended.json
+
+### RESTful APIs with Echo
+- **Slug:** `restful-apis-echo`
+- **Description:** Build well-structured REST APIs with validation and middleware using Echo
+- **Primary Competencies:** `echo`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### RESTful APIs with NestJS
+- **Slug:** `restful-apis-nestjs`
+- **Description:** Create well-structured REST APIs with validation, authentication, and testing in NestJS
+- **Primary Competencies:** `nestjs`
+- **Supporting Competencies:** `typescript`, `nodejs`
+- **Source File:** 004-backend-apis-extended.json
+
+### RESTful APIs with Symfony
+- **Slug:** `restful-apis-symfony`
+- **Description:** Create scalable REST APIs with Symfony's API Platform and serialization components
+- **Primary Competencies:** `symfony`
+- **Supporting Competencies:** `php`
+- **Source File:** 004-backend-apis-extended.json
+
+### RESTful services with Sinatra
+- **Slug:** `restful-services-sinatra`
+- **Description:** Create minimalist REST APIs and microservices using Sinatra
+- **Primary Competencies:** `sinatra`
+- **Supporting Competencies:** `ruby`
+- **Source File:** 004-backend-apis-extended.json
+
+### Scalable APIs with Phoenix and Ecto
+- **Slug:** `scalable-apis-phoenix-ecto`
+- **Description:** Build fault-tolerant REST APIs leveraging Phoenix's performance and Ecto's database layer
+- **Primary Competencies:** `phoenix`
+- **Supporting Competencies:** `elixir`
+- **Source File:** 004-backend-apis-extended.json
+
+### Secure-by-default applications with Deno
+- **Slug:** `secure-by-default-apps-deno`
+- **Description:** Leverage Deno's permission system to build secure applications with explicit access control
+- **Primary Competencies:** `deno`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Streaming and bidirectional communication with gRPC
+- **Slug:** `streaming-bidirectional-grpc`
+- **Description:** Implement real-time data streams and bidirectional communication using gRPC
+- **Primary Competencies:** `grpc`
+- **Source File:** 004-backend-apis-extended.json
+
+### Supersonic subatomic Java with Quarkus
+- **Slug:** `supersonic-subatomic-java-quarkus`
+- **Description:** Develop ultra-fast, lightweight Java applications with Quarkus's innovative approach
+- **Primary Competencies:** `quarkus`
+- **Supporting Competencies:** `java`
+- **Source File:** 004-backend-apis-extended.json
+
+### Symfony components in standalone projects
+- **Slug:** `symfony-components-standalone`
+- **Description:** Leverage individual Symfony components to enhance any PHP project
+- **Primary Competencies:** `symfony`
+- **Supporting Competencies:** `php`
+- **Source File:** 004-backend-apis-extended.json
+
+### Type-safe APIs with tRPC
+- **Slug:** `type-safe-apis-trpc`
+- **Description:** Build end-to-end typesafe APIs without code generation using tRPC and TypeScript
+- **Primary Competencies:** `trpc`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Type-safe PHP development with Hack
+- **Slug:** `type-safe-php-development-hack`
+- **Description:** Build robust web applications using Hack's static typing and modern language features
+- **Primary Competencies:** `hack`
+- **Source File:** 004-backend-apis-extended.json
+
+### Ultra-fast APIs with Fiber
+- **Slug:** `ultra-fast-apis-fiber`
+- **Description:** Leverage Fiber's Fasthttp foundation for building extremely fast web services
+- **Primary Competencies:** `fiber`
+- **Supporting Competencies:** `go`
+- **Source File:** 004-backend-apis-extended.json
+
+### Ultra-fast JavaScript with Bun
+- **Slug:** `ultra-fast-javascript-bun`
+- **Description:** Build and run JavaScript applications with Bun's blazing-fast runtime and bundler
+- **Primary Competencies:** `bun`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 004-backend-apis-extended.json
+
+### Web APIs and servers with Deno
+- **Slug:** `web-apis-servers-deno`
+- **Description:** Create HTTP servers and REST APIs using Deno's standard library and Oak framework
+- **Primary Competencies:** `deno`
+- **Supporting Competencies:** `typescript`
+- **Source File:** 004-backend-apis-extended.json
 
 ---
 
@@ -2535,11 +2978,35 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ## cloud-devops
 
+### Advanced build configurations with TeamCity
+- **Slug:** `advanced-build-configurations-teamcity`
+- **Description:** Leverage TeamCity's features for complex multi-project builds and testing
+- **Primary Competencies:** `teamcity`
+- **Source File:** 002-cloud-devops-extended.json
+
+### AI and machine learning on IBM Cloud
+- **Slug:** `ai-machine-learning-ibm-cloud`
+- **Description:** Build and deploy AI models using IBM Watson and Cloud services
+- **Primary Competencies:** `ibm-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Apache performance tuning and optimization
+- **Slug:** `apache-performance-tuning-optimization`
+- **Description:** Optimize Apache configuration for high-traffic websites and applications
+- **Primary Competencies:** `apache`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### API gateway with Kong
 - **Slug:** `api-gateway-kong`
 - **Description:** Build and manage API gateways with Kong for routing, authentication, and rate limiting
 - **Primary Competencies:** `kong`
 - **Source File:** 002-cloud-devops.json
+
+### API integration with Ballerina
+- **Slug:** `api-integration-ballerina`
+- **Description:** Connect and orchestrate APIs using Ballerina's sequence diagram-based syntax
+- **Primary Competencies:** `ballerina`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### API management with Azure API Management
 - **Slug:** `api-management-azure`
@@ -2567,6 +3034,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `prometheus`
 - **Source File:** 002-cloud-devops.json
 
+### Application monitoring with Splunk
+- **Slug:** `application-monitoring-splunk`
+- **Description:** Monitor application performance and troubleshoot issues with Splunk APM
+- **Primary Competencies:** `splunk`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Application performance monitoring with AppDynamics
 - **Slug:** `apm-appdynamics`
 - **Description:** Monitor business performance and application metrics using AppDynamics
@@ -2590,6 +3063,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Monitor application performance and user experience using New Relic
 - **Primary Competencies:** `new-relic`
 - **Source File:** 002-cloud-devops.json
+
+### Automated backup strategies with Duplicati
+- **Slug:** `automated-backup-strategies-duplicati`
+- **Description:** Configure scheduled, incremental backups with deduplication using Duplicati
+- **Primary Competencies:** `duplicati`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Automated certificate management with ZeroSSL
+- **Slug:** `automated-certificate-management-zerossl`
+- **Description:** Automate SSL certificate renewal and deployment using ZeroSSL's API
+- **Primary Competencies:** `zerossl`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Autonomous database with Oracle Cloud
+- **Slug:** `autonomous-database-oracle-cloud`
+- **Description:** Leverage Oracle's self-driving, self-securing autonomous database services
+- **Primary Competencies:** `oracle-cloud`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### AWS infrastructure as code with CloudFormation
 - **Slug:** `aws-infrastructure-cloudformation`
@@ -2619,11 +3110,35 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
 
+### Backup and disaster recovery with Duplicati
+- **Slug:** `backup-disaster-recovery-duplicati`
+- **Description:** Protect data with encrypted backups to cloud storage using Duplicati
+- **Primary Competencies:** `duplicati`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Backup and disaster recovery with Restic
 - **Slug:** `backup-restic`
 - **Description:** Create encrypted, deduplicated backups using Restic
 - **Primary Competencies:** `restic`
 - **Source File:** 002-cloud-devops.json
+
+### Bamboo integration with Jira and Bitbucket
+- **Slug:** `bamboo-integration-jira-bitbucket`
+- **Description:** Create seamless workflows connecting Bamboo, Jira, and Bitbucket
+- **Primary Competencies:** `bamboo`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Bare metal and container hosting with Scaleway
+- **Slug:** `bare-metal-container-hosting-scaleway`
+- **Description:** Run workloads on Scaleway's dedicated servers and managed Kubernetes
+- **Primary Competencies:** `scaleway`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Big data and analytics on Alibaba Cloud
+- **Slug:** `big-data-analytics-alibaba-cloud`
+- **Description:** Process large datasets using Alibaba Cloud's data analytics services
+- **Primary Competencies:** `alibaba-cloud`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Building backends with Firebase
 - **Slug:** `backend-firebase`
@@ -2704,6 +3219,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `grafana`
 - **Source File:** 002-cloud-devops.json
 
+### CI/CD automation with TeamCity
+- **Slug:** `cicd-automation-teamcity`
+- **Description:** Build sophisticated build and deployment pipelines using JetBrains TeamCity
+- **Primary Competencies:** `teamcity`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### CI/CD pipelines with Azure DevOps
 - **Slug:** `cicd-azure-devops`
 - **Description:** Build comprehensive CI/CD pipelines using Azure DevOps services
@@ -2741,6 +3262,36 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `jenkins`
 - **Source File:** 002-cloud-devops.json
 
+### CI/CD pipelines with Travis CI
+- **Slug:** `cicd-pipelines-travis-ci`
+- **Description:** Automate testing and deployment for GitHub projects using Travis CI
+- **Primary Competencies:** `travis-ci`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Cloud infrastructure in China with Alibaba Cloud
+- **Slug:** `cloud-infrastructure-china-alibaba`
+- **Description:** Deploy applications in China and Asia using Alibaba Cloud's services
+- **Primary Competencies:** `alibaba-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Cloud services in China with Tencent Cloud
+- **Slug:** `cloud-services-china-tencent`
+- **Description:** Deploy applications in China using Tencent Cloud's WeChat-integrated platform
+- **Primary Competencies:** `tencent-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Cloud-native CI/CD with CodeShip
+- **Slug:** `cloud-native-cicd-codeship`
+- **Description:** Automate deployments to cloud platforms using CodeShip's hosted CI/CD
+- **Primary Competencies:** `codeship`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Cloud-native integration with Ballerina
+- **Slug:** `cloud-native-integration-ballerina`
+- **Description:** Build network-distributed applications using Ballerina's integration-focused language
+- **Primary Competencies:** `ballerina`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Cloud-native messaging with NATS
 - **Slug:** `messaging-nats`
 - **Description:** Build lightweight, high-performance messaging systems with NATS
@@ -2758,6 +3309,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Automate infrastructure configuration and compliance using Chef
 - **Primary Competencies:** `chef`
 - **Source File:** 002-cloud-devops.json
+
+### Configuration management with Parameter Store
+- **Slug:** `configuration-management-parameter-store`
+- **Description:** Centralize application configuration using AWS Parameter Store's hierarchical storage
+- **Primary Competencies:** `aws-parameter-store`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Configuration management with Puppet
 - **Slug:** `configuration-puppet`
@@ -2777,6 +3334,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `sysdig`
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
+
+### Container compliance with Anchore
+- **Slug:** `container-compliance-anchore`
+- **Description:** Enforce security policies and compliance requirements for container images
+- **Primary Competencies:** `anchore`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Container image builds with GitHub Actions
 - **Slug:** `container-builds-github-actions`
@@ -2798,6 +3361,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `harbor`
 - **Supporting Competencies:** `docker`
 - **Source File:** 002-cloud-devops.json
+
+### Container security scanning with Anchore
+- **Slug:** `container-security-scanning-anchore`
+- **Description:** Analyze container images for vulnerabilities using Anchore's deep inspection
+- **Primary Competencies:** `anchore`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Container security scanning with Trivy
 - **Slug:** `container-security-trivy`
@@ -2834,11 +3403,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `docker`
 - **Source File:** 002-cloud-devops.json
 
+### Container-native CI/CD with Drone
+- **Slug:** `container-native-cicd-drone`
+- **Description:** Build Docker-based pipelines using Drone's container-first approach
+- **Primary Competencies:** `drone`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Containerizing web applications with Docker
 - **Slug:** `containerizing-web-apps-docker`
 - **Description:** Package web applications into portable Docker containers for consistent deployment across environments
 - **Primary Competencies:** `docker`
 - **Source File:** 002-cloud-devops.json
+
+### Continuous delivery with GoCD
+- **Slug:** `continuous-delivery-gocd`
+- **Description:** Model complex deployment workflows using GoCD's value stream map
+- **Primary Competencies:** `gocd`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Continuous delivery with Spinnaker
 - **Slug:** `continuous-delivery-spinnaker`
@@ -2851,6 +3432,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Manage distributed system coordination using Apache ZooKeeper
 - **Primary Competencies:** `zookeeper`
 - **Source File:** 002-cloud-devops.json
+
+### Custom load testing with wrk and Lua
+- **Slug:** `custom-load-testing-wrk-lua`
+- **Description:** Create complex load testing scenarios using wrk's Lua scripting capabilities
+- **Primary Competencies:** `wrk`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Deploying applications to Fly.io
 - **Slug:** `deploying-apps-fly-io`
@@ -3033,6 +3620,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `docker`
 - **Source File:** 002-cloud-devops.json
 
+### Developer-friendly CI with Buddy
+- **Slug:** `developer-friendly-ci-buddy`
+- **Description:** Build and deploy applications using Buddy's visual pipeline builder
+- **Primary Competencies:** `buddy`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Development environments with Vagrant
 - **Slug:** `dev-environments-vagrant`
 - **Description:** Create reproducible development environments using Vagrant
@@ -3045,11 +3638,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `etcd`
 - **Source File:** 002-cloud-devops.json
 
+### Distributed system observability with Lightstep
+- **Slug:** `distributed-system-observability-lightstep`
+- **Description:** Gain insights into complex microservices using Lightstep's observability platform
+- **Primary Competencies:** `lightstep`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Distributed tracing with Jaeger
 - **Slug:** `distributed-tracing-jaeger`
 - **Description:** Track and analyze requests across microservices using Jaeger tracing
 - **Primary Competencies:** `jaeger`
 - **Source File:** 002-cloud-devops.json
+
+### Distributed tracing with Splunk
+- **Slug:** `distributed-tracing-splunk`
+- **Description:** Track requests across microservices using Splunk's distributed tracing
+- **Primary Competencies:** `splunk`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Distributed tracing with Tempo
 - **Slug:** `distributed-tracing-tempo`
@@ -3064,6 +3669,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `zipkin`
 - **Source File:** 002-cloud-devops.json
 
+### E-commerce platforms with Alibaba Cloud
+- **Slug:** `ecommerce-platforms-alibaba-cloud`
+- **Description:** Build scalable e-commerce solutions leveraging Alibaba's commerce expertise
+- **Primary Competencies:** `alibaba-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Edge computing with Cloudflare Workers
 - **Slug:** `edge-computing-cloudflare`
 - **Description:** Deploy serverless functions at the edge using Cloudflare Workers
@@ -3075,6 +3686,30 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Create deduplicated, encrypted backups using BorgBackup
 - **Primary Competencies:** `borg`
 - **Source File:** 002-cloud-devops.json
+
+### Enterprise applications on Oracle Cloud
+- **Slug:** `enterprise-applications-oracle-cloud`
+- **Description:** Build and run business applications on Oracle Cloud's infrastructure
+- **Primary Competencies:** `oracle-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Enterprise CI/CD with Bamboo
+- **Slug:** `enterprise-cicd-bamboo`
+- **Description:** Build automated deployment pipelines with Atlassian Bamboo for enterprise teams
+- **Primary Competencies:** `bamboo`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Enterprise cloud infrastructure with IBM Cloud
+- **Slug:** `enterprise-cloud-infrastructure-ibm-cloud`
+- **Description:** Deploy and manage enterprise applications on IBM Cloud's hybrid cloud platform
+- **Primary Competencies:** `ibm-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Enterprise log management with Splunk
+- **Slug:** `enterprise-log-management-splunk`
+- **Description:** Collect, analyze, and visualize machine data using Splunk's platform
+- **Primary Competencies:** `splunk`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Enterprise monitoring with Zabbix
 - **Slug:** `monitoring-zabbix`
@@ -3093,6 +3728,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Monitor and debug application errors in production using Sentry
 - **Primary Competencies:** `sentry`
 - **Source File:** 002-cloud-devops.json
+
+### European cloud hosting with Scaleway
+- **Slug:** `european-cloud-hosting-scaleway`
+- **Description:** Deploy applications on Scaleway's cost-effective European cloud infrastructure
+- **Primary Competencies:** `scaleway`
+- **Source File:** 002-cloud-devops-extended.json
+
+### European cloud infrastructure with OVH Cloud
+- **Slug:** `european-cloud-infrastructure-ovh`
+- **Description:** Build applications on OVHcloud's GDPR-compliant European infrastructure
+- **Primary Competencies:** `ovh-cloud`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Event streaming with Apache Kafka
 - **Slug:** `event-streaming-kafka`
@@ -3120,6 +3767,30 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `aws`, `aws-lambda`
 - **Source File:** 002-cloud-devops.json
 
+### Fast automated workflows with Buddy
+- **Slug:** `fast-automated-workflows-buddy`
+- **Description:** Create rapid deployment pipelines with Buddy's cached dependencies and parallelism
+- **Primary Competencies:** `buddy`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Free SSL certificates with ZeroSSL
+- **Slug:** `free-ssl-certificates-zerossl`
+- **Description:** Obtain and manage free SSL/TLS certificates using ZeroSSL
+- **Primary Competencies:** `zerossl`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Gaming infrastructure with Tencent Cloud
+- **Slug:** `gaming-infrastructure-tencent-cloud`
+- **Description:** Build and scale gaming backends using Tencent Cloud's game-optimized services
+- **Primary Competencies:** `tencent-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Git repository management with Stash
+- **Slug:** `git-repository-management-stash`
+- **Description:** Host and manage Git repositories using Atlassian Stash (Bitbucket Server)
+- **Primary Competencies:** `stash`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### GitOps continuous delivery with ArgoCD
 - **Slug:** `gitops-argocd`
 - **Description:** Automate Kubernetes deployments using GitOps principles with ArgoCD
@@ -3133,6 +3804,48 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `flux`
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
+
+### GitOps workflows with Codefresh
+- **Slug:** `gitops-workflows-codefresh`
+- **Description:** Implement GitOps-based deployments using Codefresh and Argo CD
+- **Primary Competencies:** `codefresh`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Helm chart management with Codefresh
+- **Slug:** `helm-chart-management-codefresh`
+- **Description:** Package and deploy Helm charts as part of Codefresh CI/CD pipelines
+- **Primary Competencies:** `codefresh`
+- **Source File:** 002-cloud-devops-extended.json
+
+### High-performance CI with Semaphore
+- **Slug:** `high-performance-ci-semaphore`
+- **Description:** Accelerate builds and tests using Semaphore's fast, optimized CI/CD platform
+- **Primary Competencies:** `semaphore`
+- **Source File:** 002-cloud-devops-extended.json
+
+### High-performance HTTP benchmarking with wrk
+- **Slug:** `high-performance-http-benchmarking-wrk`
+- **Description:** Stress test HTTP services using wrk's multi-threaded performance testing
+- **Primary Competencies:** `wrk`
+- **Source File:** 002-cloud-devops-extended.json
+
+### HTTP benchmarking with Apache Bench
+- **Slug:** `http-benchmarking-apache-bench`
+- **Description:** Measure web server performance and capacity using Apache Bench
+- **Primary Competencies:** `apache-bench`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Hybrid CI/CD with Buildkite
+- **Slug:** `hybrid-cicd-buildkite`
+- **Description:** Combine cloud orchestration with self-hosted build agents using Buildkite
+- **Primary Competencies:** `buildkite`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Hybrid cloud solutions with IBM Cloud
+- **Slug:** `hybrid-cloud-solutions-ibm-cloud`
+- **Description:** Integrate on-premises infrastructure with IBM Cloud for hybrid deployments
+- **Primary Competencies:** `ibm-cloud`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Incident management with Opsgenie
 - **Slug:** `incident-management-opsgenie`
@@ -3192,6 +3905,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
 
+### Kubernetes deployments with Codefresh
+- **Slug:** `kubernetes-deployments-codefresh`
+- **Description:** Build and deploy containerized applications to Kubernetes using Codefresh
+- **Primary Competencies:** `codefresh`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Kubernetes ingress with Traefik
 - **Slug:** `k8s-ingress-traefik`
 - **Description:** Manage Kubernetes ingress traffic and routing using Traefik
@@ -3227,6 +3946,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
 
+### Lightweight CI pipelines with Drone
+- **Slug:** `lightweight-ci-pipelines-drone`
+- **Description:** Deploy and configure Drone for simple, scalable continuous integration
+- **Primary Competencies:** `drone`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Lightweight log forwarding with Fluent Bit
 - **Slug:** `log-forwarding-fluent-bit`
 - **Description:** Collect and forward logs efficiently using Fluent Bit
@@ -3245,6 +3970,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Configure high-performance load balancing and traffic management with HAProxy
 - **Primary Competencies:** `haproxy`
 - **Source File:** 002-cloud-devops.json
+
+### Load testing APIs with Apache Bench
+- **Slug:** `load-testing-apis-apache-bench`
+- **Description:** Test API performance under load using Apache Bench's simple CLI
+- **Primary Competencies:** `apache-bench`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Load testing with Apache JMeter
 - **Slug:** `load-testing-jmeter`
@@ -3424,6 +4155,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `rabbitmq`
 - **Source File:** 002-cloud-devops.json
 
+### Microservices CI/CD with Wercker
+- **Slug:** `microservices-cicd-wercker`
+- **Description:** Build container-based microservices pipelines using Oracle Wercker
+- **Primary Competencies:** `wercker`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Microservices development with Ballerina
+- **Slug:** `microservices-development-ballerina`
+- **Description:** Develop cloud-native microservices using Ballerina's built-in networking primitives
+- **Primary Competencies:** `ballerina`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Modern web server with Caddy
 - **Slug:** `web-server-caddy`
 - **Description:** Deploy web applications with automatic HTTPS using Caddy web server
@@ -3449,6 +4192,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
 
+### Multi-stage deployments with GoCD
+- **Slug:** `multi-stage-deployments-gocd`
+- **Description:** Orchestrate complex release processes across environments with GoCD
+- **Primary Competencies:** `gocd`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Observability stack with Prometheus and Grafana
 - **Slug:** `observability-prometheus-grafana`
 - **Description:** Build complete monitoring and alerting solutions using Prometheus and Grafana
@@ -3468,11 +4217,53 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `opentelemetry`
 - **Source File:** 002-cloud-devops.json
 
+### Observability with Uptrace
+- **Slug:** `observability-uptrace`
+- **Description:** Monitor distributed systems using Uptrace's OpenTelemetry-native platform
+- **Primary Competencies:** `uptrace`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Open source project automation with Travis CI
+- **Slug:** `open-source-automation-travis-ci`
+- **Description:** Set up free continuous integration for open source GitHub repositories
+- **Primary Competencies:** `travis-ci`
+- **Source File:** 002-cloud-devops-extended.json
+
+### OpenTelemetry tracing with Uptrace
+- **Slug:** `opentelemetry-tracing-uptrace`
+- **Description:** Implement distributed tracing using Uptrace and OpenTelemetry
+- **Primary Competencies:** `uptrace`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Optimized test pipelines with Semaphore
+- **Slug:** `optimized-test-pipelines-semaphore`
+- **Description:** Leverage Semaphore's auto-scaling and caching for fast test execution
+- **Primary Competencies:** `semaphore`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Optimizing Docker images for production deployments
 - **Slug:** `optimizing-docker-images-production`
 - **Description:** Create efficient, secure, and minimal Docker images using multi-stage builds and best practices
 - **Primary Competencies:** `docker`
 - **Source File:** 002-cloud-devops.json
+
+### Oracle database cloud services
+- **Slug:** `oracle-database-cloud-services`
+- **Description:** Deploy and manage Oracle databases on Oracle Cloud Infrastructure
+- **Primary Competencies:** `oracle-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Performance analysis with Lightstep
+- **Slug:** `performance-analysis-lightstep`
+- **Description:** Identify and resolve performance issues using Lightstep's tracing and metrics
+- **Primary Competencies:** `lightstep`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Pipeline automation with Concourse CI
+- **Slug:** `pipeline-automation-concourse-ci`
+- **Description:** Build declarative, reproducible CI/CD pipelines with Concourse
+- **Primary Competencies:** `concourse`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Proxy servers with Envoy
 - **Slug:** `proxy-envoy`
@@ -3485,6 +4276,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Execute shell commands remotely using Python Fabric
 - **Primary Competencies:** `fabric`
 - **Source File:** 002-cloud-devops.json
+
+### Resource-based workflows with Concourse
+- **Slug:** `resource-based-workflows-concourse`
+- **Description:** Design pipelines around versioned resources using Concourse's model
+- **Primary Competencies:** `concourse`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Reverse proxy and load balancing with Apache
+- **Slug:** `reverse-proxy-load-balancing-apache`
+- **Description:** Configure Apache as a reverse proxy and load balancer for backend services
+- **Primary Competencies:** `apache`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Reverse proxy and load balancing with Nginx
 - **Slug:** `reverse-proxy-nginx`
@@ -3512,12 +4315,30 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
 
+### Scalable CI infrastructure with Buildkite
+- **Slug:** `scalable-ci-infrastructure-buildkite`
+- **Description:** Run fast, secure CI/CD on your own infrastructure with Buildkite agents
+- **Primary Competencies:** `buildkite`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Secrets management with AWS Parameter Store
+- **Slug:** `secrets-management-aws-parameter-store`
+- **Description:** Store and manage application secrets securely using AWS Systems Manager Parameter Store
+- **Primary Competencies:** `aws-parameter-store`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Securing Kubernetes clusters with network policies
 - **Slug:** `k8s-network-policies`
 - **Description:** Implement network security and traffic control in Kubernetes clusters using Calico
 - **Primary Competencies:** `calico`
 - **Supporting Competencies:** `kubernetes`
 - **Source File:** 002-cloud-devops.json
+
+### Security monitoring with Splunk
+- **Slug:** `security-monitoring-splunk`
+- **Description:** Detect security threats and investigate incidents using Splunk
+- **Primary Competencies:** `splunk`
+- **Source File:** 002-cloud-devops-extended.json
 
 ### Service discovery with Consul
 - **Slug:** `service-discovery-consul`
@@ -3608,6 +4429,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `lets-encrypt`
 - **Source File:** 002-cloud-devops.json
 
+### SSL/TLS configuration with Apache
+- **Slug:** `ssl-tls-configuration-apache`
+- **Description:** Secure websites with HTTPS using Apache and SSL/TLS certificates
+- **Primary Competencies:** `apache`
+- **Source File:** 002-cloud-devops-extended.json
+
 ### Storing artifacts with Google Artifact Registry
 - **Slug:** `artifact-registry-google`
 - **Description:** Manage container images and language packages using Google Artifact Registry
@@ -3642,6 +4469,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `google-container-registry`
 - **Supporting Competencies:** `google-cloud-platform`, `docker`
 - **Source File:** 002-cloud-devops.json
+
+### Web hosting and cloud services with OVH
+- **Slug:** `web-hosting-cloud-services-ovh`
+- **Description:** Deploy websites and applications on OVHcloud's diverse hosting solutions
+- **Primary Competencies:** `ovh-cloud`
+- **Source File:** 002-cloud-devops-extended.json
+
+### Web server configuration with Apache
+- **Slug:** `web-server-configuration-apache`
+- **Description:** Deploy and configure Apache HTTP Server for hosting websites and applications
+- **Primary Competencies:** `apache`
+- **Source File:** 002-cloud-devops-extended.json
 
 ---
 
@@ -7301,12 +8140,800 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ## game-development
 
+### 2D game creation with GameMaker Studio
+- **Slug:** `2d-game-creation-gamemaker-studio`
+- **Description:** Develop 2D games quickly using GameMaker's drag-and-drop interface and GML scripting
+- **Primary Competencies:** `gamemaker-studio`
+- **Source File:** 012-game-development.json
+
+### 2D game development with Godot
+- **Slug:** `2d-game-development-godot`
+- **Description:** Create pixel-perfect 2D games using Godot's specialized 2D engine and tooling
+- **Primary Competencies:** `godot`
+- **Supporting Competencies:** `gdscript`
+- **Source File:** 012-game-development.json
+
+### 2D game development with MonoGame
+- **Slug:** `2d-game-development-monogame`
+- **Description:** Create 2D games with precise control using MonoGame's low-level framework
+- **Primary Competencies:** `monogame`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### 2D games with Love2D
+- **Slug:** `2d-games-love2d`
+- **Description:** Build 2D games using the Love2D framework and Lua programming
+- **Primary Competencies:** `love2d`
+- **Supporting Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### 2D level design and layout
+- **Slug:** `2d-level-design-layout`
+- **Description:** Design compelling 2D game levels with good pacing and challenge curves
+- **Primary Competencies:** `level-design`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### 2D physics simulation with Box2D
+- **Slug:** `2d-physics-simulation-box2d`
+- **Description:** Add realistic 2D physics to games using the Box2D physics engine
+- **Primary Competencies:** `box2d`
+- **Source File:** 012-game-development.json
+
+### 2D sprite animation for games
+- **Slug:** `2d-sprite-animation-games`
+- **Description:** Create frame-by-frame sprite animations for 2D games
+- **Primary Competencies:** `game-animation`
+- **Source File:** 012-game-development.json
+
+### 2D web games with Phaser
+- **Slug:** `2d-web-games-phaser`
+- **Description:** Develop engaging 2D browser games with physics and animations using Phaser
+- **Primary Competencies:** `phaser`
+- **Supporting Competencies:** `javascript`, `html`
+- **Source File:** 012-game-development.json
+
+### 3D browser games with PlayCanvas
+- **Slug:** `3d-browser-games-playcanvas`
+- **Description:** Build WebGL-powered 3D games that run in browsers using PlayCanvas and JavaScript
+- **Primary Competencies:** `playcanvas`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 012-game-development.json
+
+### 3D character modeling for games
+- **Slug:** `3d-character-modeling-games`
+- **Description:** Create optimized 3D character models for real-time game engines
+- **Primary Competencies:** `3d-modeling-games`
+- **Source File:** 012-game-development.json
+
+### 3D game development with Godot
+- **Slug:** `3d-game-development-godot`
+- **Description:** Develop 3D games with Godot's lightweight 3D engine and GDScript programming
+- **Primary Competencies:** `godot`
+- **Supporting Competencies:** `gdscript`
+- **Source File:** 012-game-development.json
+
+### 3D graphics programming with OpenGL
+- **Slug:** `3d-graphics-programming-opengl`
+- **Description:** Learn low-level graphics rendering and 3D programming using OpenGL and C++
+- **Primary Competencies:** `opengl`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### 3D level design and world building
+- **Slug:** `3d-level-design-world-building`
+- **Description:** Create engaging 3D game environments, layouts, and spatial experiences
+- **Primary Competencies:** `level-design`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### 3D physics with Bullet Physics
+- **Slug:** `3d-physics-bullet-physics`
+- **Description:** Implement realistic 3D physics simulations using Bullet Physics and C++
+- **Primary Competencies:** `bullet-physics`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### A/B testing for game features
+- **Slug:** `ab-testing-game-features`
+- **Description:** Use experimental design to optimize game mechanics and monetization
+- **Primary Competencies:** `game-analytics`
+- **Source File:** 012-game-development.json
+
+### Accessibility in game interfaces
+- **Slug:** `accessibility-game-interfaces`
+- **Description:** Design inclusive game UIs that work for players with different abilities
+- **Primary Competencies:** `game-ui-ux-design`
+- **Source File:** 012-game-development.json
+
+### Adaptive music systems with FMOD
+- **Slug:** `adaptive-music-systems-fmod`
+- **Description:** Create music that adapts to game state and player actions using FMOD
+- **Primary Competencies:** `fmod`
+- **Source File:** 012-game-development.json
+
+### Advanced C++ programming for Unreal Engine
+- **Slug:** `advanced-cpp-unreal-engine`
+- **Description:** Master C++ gameplay programming and engine customization in Unreal Engine
+- **Primary Competencies:** `unreal-engine`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Advanced rendering techniques with HLSL
+- **Slug:** `advanced-rendering-hlsl`
+- **Description:** Implement cutting-edge graphics techniques using HLSL shader programming
+- **Primary Competencies:** `hlsl`
+- **Supporting Competencies:** `directx`
+- **Source File:** 012-game-development.json
+
+### Advanced shader techniques
+- **Slug:** `advanced-shader-techniques`
+- **Description:** Master complex rendering effects using custom shader programming
+- **Primary Competencies:** `shader-programming`
+- **Source File:** 012-game-development.json
+
+### Audio implementation in game engines
+- **Slug:** `audio-implementation-game-engines`
+- **Description:** Integrate and optimize audio systems in games for best performance
+- **Primary Competencies:** `game-audio-design`
+- **Source File:** 012-game-development.json
+
+### Authoritative server architectures for games
+- **Slug:** `authoritative-server-architectures`
+- **Description:** Design cheat-resistant multiplayer games using server-authoritative networking
+- **Primary Competencies:** `game-networking`
+- **Source File:** 012-game-development.json
+
+### Automated testing for games
+- **Slug:** `automated-testing-games`
+- **Description:** Implement automated tests for game systems and mechanics
+- **Primary Competencies:** `game-testing`
+- **Source File:** 012-game-development.json
+
+### Balancing multiplayer games
+- **Slug:** `balancing-multiplayer-games`
+- **Description:** Tune competitive games for fair and engaging multiplayer experiences
+- **Primary Competencies:** `game-balancing`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Behavior trees for game AI
+- **Slug:** `behavior-trees-game-ai`
+- **Description:** Design complex NPC behaviors using behavior tree architectures
+- **Primary Competencies:** `game-ai-programming`
+- **Source File:** 012-game-development.json
+
+### Browser-based games with Phaser
+- **Slug:** `browser-based-games-phaser`
+- **Description:** Create HTML5 games that run in the browser using Phaser and JavaScript
+- **Primary Competencies:** `phaser`
+- **Supporting Competencies:** `javascript`, `html`
+- **Source File:** 012-game-development.json
+
+### Building 2D games with Unity
+- **Slug:** `building-2d-games-with-unity`
+- **Description:** Create 2D platformers, puzzle games, and side-scrollers using Unity's 2D tools and C# scripting
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Building 3D games with Unity
+- **Slug:** `building-3d-games-with-unity`
+- **Description:** Develop 3D games with Unity's game engine, including physics, lighting, and C# gameplay programming
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Building AAA games with Unreal Engine
+- **Slug:** `building-aaa-games-unreal-engine`
+- **Description:** Create high-fidelity 3D games with Unreal Engine's advanced graphics and C++ programming
+- **Primary Competencies:** `unreal-engine`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
 ### Building games for web browsers with Vue.js
 - **Slug:** `building-browser-games-vuejs`
 - **Description:** Create interactive browser-based games using Vue.js components and reactivity
 - **Primary Competencies:** `vuejs`
 - **Supporting Competencies:** `javascript`, `html`, `css`
 - **Source File:** 001-programming.json
+
+### Building multiplayer games with Unity
+- **Slug:** `building-multiplayer-games-unity`
+- **Description:** Implement networked multiplayer gameplay and synchronization in Unity games
+- **Primary Competencies:** `game-networking`
+- **Supporting Competencies:** `unity`, `csharp`
+- **Source File:** 012-game-development.json
+
+### Character rigging and animation
+- **Slug:** `character-rigging-animation`
+- **Description:** Rig and animate 3D characters for game engines
+- **Primary Competencies:** `game-animation`
+- **Source File:** 012-game-development.json
+
+### Character writing and dialogue for games
+- **Slug:** `character-writing-dialogue-games`
+- **Description:** Write compelling characters and dialogue that enhance gameplay
+- **Primary Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Choice-driven game narratives
+- **Slug:** `choice-driven-game-narratives`
+- **Description:** Design meaningful player choices that shape story outcomes
+- **Primary Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Combat AI and enemy behavior
+- **Slug:** `combat-ai-enemy-behavior`
+- **Description:** Create challenging and believable enemy AI for action games
+- **Primary Competencies:** `game-ai-programming`
+- **Source File:** 012-game-development.json
+
+### Combat and action game mechanics
+- **Slug:** `combat-action-game-mechanics`
+- **Description:** Design satisfying combat systems, combos, and action gameplay
+- **Primary Competencies:** `game-mechanics-design`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Controller and input design for games
+- **Slug:** `controller-input-design-games`
+- **Description:** Design responsive and satisfying control schemes for different platforms
+- **Primary Competencies:** `game-ui-ux-design`
+- **Source File:** 012-game-development.json
+
+### Core principles of game design
+- **Slug:** `core-principles-game-design`
+- **Description:** Master the fundamentals of creating engaging gameplay, mechanics, and player experiences
+- **Primary Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Cross-platform 2D games with Defold
+- **Slug:** `cross-platform-2d-games-defold`
+- **Description:** Build mobile and web games using Defold's lightweight engine and Lua scripting
+- **Primary Competencies:** `defold`
+- **Supporting Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### Cross-platform C# games with MonoGame
+- **Slug:** `cross-platform-csharp-games-monogame`
+- **Description:** Develop games for multiple platforms using MonoGame framework and C#
+- **Primary Competencies:** `monogame`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Cross-platform graphics with OpenGL
+- **Slug:** `cross-platform-graphics-opengl`
+- **Description:** Build graphics applications that run on multiple platforms using OpenGL
+- **Primary Competencies:** `opengl`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Cross-platform Java games with LibGDX
+- **Slug:** `cross-platform-java-games-libgdx`
+- **Description:** Build games for desktop, mobile, and web using LibGDX and Java
+- **Primary Competencies:** `libgdx`
+- **Supporting Competencies:** `java`
+- **Source File:** 012-game-development.json
+
+### Cross-platform rendering with Vulkan
+- **Slug:** `cross-platform-rendering-vulkan`
+- **Description:** Create high-performance graphics that run on desktop and mobile using Vulkan
+- **Primary Competencies:** `vulkan`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Custom RPG mechanics with RPG Maker scripting
+- **Slug:** `custom-rpg-mechanics-rpg-maker`
+- **Description:** Extend RPG Maker with custom gameplay systems and mechanics using JavaScript plugins
+- **Primary Competencies:** `rpg-maker`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 012-game-development.json
+
+### Data-driven game balancing
+- **Slug:** `data-driven-game-balancing`
+- **Description:** Use analytics and playtesting data to optimize game balance
+- **Primary Competencies:** `game-balancing`
+- **Supporting Competencies:** `game-analytics`
+- **Source File:** 012-game-development.json
+
+### Demoscene and tiny games with Pico-8
+- **Slug:** `demoscene-tiny-games-pico-8`
+- **Description:** Create impressive demos and games within Pico-8's strict size and performance limits
+- **Primary Competencies:** `pico-8`
+- **Supporting Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### Designing player progression systems
+- **Slug:** `designing-player-progression-systems`
+- **Description:** Create rewarding progression curves, unlocks, and skill trees for games
+- **Primary Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### DirectX shader programming with HLSL
+- **Slug:** `directx-shader-programming-hlsl`
+- **Description:** Write custom shaders for DirectX graphics using High-Level Shading Language
+- **Primary Competencies:** `hlsl`
+- **Supporting Competencies:** `directx`
+- **Source File:** 012-game-development.json
+
+### Dynamic soundscapes with Wwise
+- **Slug:** `dynamic-soundscapes-wwise`
+- **Description:** Build immersive and adaptive audio environments using Wwise's powerful tools
+- **Primary Competencies:** `wwise`
+- **Source File:** 012-game-development.json
+
+### Embedding Lua in game engines
+- **Slug:** `embedding-lua-game-engines`
+- **Description:** Integrate Lua scripting into C++ game engines for modding and gameplay logic
+- **Primary Competencies:** `lua`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Environment and prop modeling for games
+- **Slug:** `environment-prop-modeling-games`
+- **Description:** Build 3D game environments and assets optimized for performance
+- **Primary Competencies:** `3d-modeling-games`
+- **Source File:** 012-game-development.json
+
+### Environmental storytelling in games
+- **Slug:** `environmental-storytelling-games`
+- **Description:** Tell stories through level design and environmental details
+- **Primary Competencies:** `level-design`
+- **Supporting Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Free-to-play game monetization
+- **Slug:** `free-to-play-monetization`
+- **Description:** Design ethical and profitable monetization for F2P games
+- **Primary Competencies:** `game-monetization`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Functional game scripting with Fennel
+- **Slug:** `functional-game-scripting-fennel`
+- **Description:** Write game logic using Fennel's Lisp syntax that compiles to Lua
+- **Primary Competencies:** `fennel`
+- **Supporting Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### Game audio middleware with Wwise
+- **Slug:** `game-audio-middleware-wwise`
+- **Description:** Implement professional interactive audio for games using Audiokinetic Wwise
+- **Primary Competencies:** `wwise`
+- **Source File:** 012-game-development.json
+
+### Game economy and resource systems
+- **Slug:** `game-economy-resource-systems`
+- **Description:** Design balanced in-game economies, currencies, and resource management
+- **Primary Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Game testing and quality assurance
+- **Slug:** `game-testing-quality-assurance`
+- **Description:** Test games for bugs, balance issues, and player experience problems
+- **Primary Competencies:** `game-testing`
+- **Source File:** 012-game-development.json
+
+### Game UI and menu design
+- **Slug:** `game-ui-menu-design`
+- **Description:** Create intuitive menus, HUDs, and user interfaces for games
+- **Primary Competencies:** `game-ui-ux-design`
+- **Source File:** 012-game-development.json
+
+### GDScript programming for Godot games
+- **Slug:** `gdscript-programming-godot-games`
+- **Description:** Master Godot's Python-like GDScript language for efficient game development
+- **Primary Competencies:** `gdscript`
+- **Supporting Competencies:** `godot`
+- **Source File:** 012-game-development.json
+
+### High-fidelity 3D games with CryEngine
+- **Slug:** `high-fidelity-3d-games-cryengine`
+- **Description:** Create visually stunning games using CryEngine's advanced graphics capabilities and C++ programming
+- **Primary Competencies:** `cryengine`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### High-performance graphics with Vulkan
+- **Slug:** `high-performance-graphics-vulkan`
+- **Description:** Build cutting-edge graphics applications using Vulkan's modern low-level API
+- **Primary Competencies:** `vulkan`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### HTML5 game development with Construct
+- **Slug:** `html5-game-development-construct`
+- **Description:** Create browser-based games and export to multiple platforms using Construct
+- **Primary Competencies:** `construct`
+- **Source File:** 012-game-development.json
+
+### In-game economy design
+- **Slug:** `in-game-economy-design`
+- **Description:** Create balanced virtual economies with currencies and item systems
+- **Primary Competencies:** `game-monetization`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Interactive audio with FMOD
+- **Slug:** `interactive-audio-fmod`
+- **Description:** Design dynamic game audio that responds to gameplay using FMOD Studio
+- **Primary Competencies:** `fmod`
+- **Source File:** 012-game-development.json
+
+### Interactive storytelling for games
+- **Slug:** `interactive-storytelling-games`
+- **Description:** Craft branching narratives and player-driven stories in games
+- **Primary Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Live operations and telemetry
+- **Slug:** `live-operations-telemetry`
+- **Description:** Implement and analyze real-time game metrics for live service games
+- **Primary Competencies:** `game-analytics`
+- **Source File:** 012-game-development.json
+
+### Low-level game engine programming with Odin
+- **Slug:** `low-level-game-engine-odin`
+- **Description:** Develop custom game engines and tools using Odin as a C alternative
+- **Primary Competencies:** `odin`
+- **Source File:** 012-game-development.json
+
+### Low-level game programming with SDL
+- **Slug:** `low-level-game-programming-sdl`
+- **Description:** Build games from scratch using SDL for graphics, input, and audio in C
+- **Primary Competencies:** `sdl`
+- **Supporting Competencies:** `c`
+- **Source File:** 012-game-development.json
+
+### Low-poly and stylized 3D art
+- **Slug:** `low-poly-stylized-3d-art`
+- **Description:** Create appealing low-poly 3D models with distinct visual styles
+- **Primary Competencies:** `3d-modeling-games`
+- **Source File:** 012-game-development.json
+
+### Lua scripting for game development
+- **Slug:** `lua-scripting-game-development`
+- **Description:** Write game logic and systems using Lua's lightweight scripting language
+- **Primary Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### Maintaining XNA games
+- **Slug:** `maintaining-xna-games`
+- **Description:** Update and maintain legacy XNA game projects and migrate to modern frameworks
+- **Primary Competencies:** `xna`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Mobile game development with Cocos2d
+- **Slug:** `mobile-game-development-cocos2d`
+- **Description:** Develop 2D mobile games using the Cocos2d framework and C++
+- **Primary Competencies:** `cocos2d`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Mobile game development with Godot
+- **Slug:** `mobile-game-development-godot`
+- **Description:** Build and export mobile games for iOS and Android using Godot
+- **Primary Competencies:** `godot`
+- **Supporting Competencies:** `gdscript`
+- **Source File:** 012-game-development.json
+
+### Mobile game development with Unity
+- **Slug:** `mobile-game-development-with-unity`
+- **Description:** Build and optimize cross-platform mobile games for iOS and Android using Unity
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Modern graphics with DirectX 12
+- **Slug:** `modern-graphics-directx-12`
+- **Description:** Leverage DirectX 12's low-level API for maximum graphics performance on Windows
+- **Primary Competencies:** `directx`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Modern pixel art styles
+- **Slug:** `modern-pixel-art-styles`
+- **Description:** Create contemporary pixel art with lighting, effects, and high color counts
+- **Primary Competencies:** `pixel-art`
+- **Source File:** 012-game-development.json
+
+### Multiplayer networking and synchronization
+- **Slug:** `multiplayer-networking-synchronization`
+- **Description:** Implement networked multiplayer gameplay with proper state synchronization
+- **Primary Competencies:** `game-networking`
+- **Source File:** 012-game-development.json
+
+### Music composition for games
+- **Slug:** `music-composition-games`
+- **Description:** Compose adaptive and interactive music for game soundtracks
+- **Primary Competencies:** `game-audio-design`
+- **Source File:** 012-game-development.json
+
+### Open-source game development with Godot
+- **Slug:** `open-source-game-development-godot`
+- **Description:** Build 2D and 3D games with the free and open-source Godot engine and GDScript
+- **Primary Competencies:** `godot`
+- **Supporting Competencies:** `gdscript`
+- **Source File:** 012-game-development.json
+
+### Particle systems and visual effects
+- **Slug:** `particle-systems-visual-effects`
+- **Description:** Design and implement particle effects for explosions, magic, and environments
+- **Primary Competencies:** `vfx-games`
+- **Source File:** 012-game-development.json
+
+### Pathfinding and navigation AI
+- **Slug:** `pathfinding-navigation-ai`
+- **Description:** Implement intelligent movement and navigation for NPCs in games
+- **Primary Competencies:** `game-ai-programming`
+- **Source File:** 012-game-development.json
+
+### Performance-focused game development with Odin
+- **Slug:** `performance-game-development-odin`
+- **Description:** Build high-performance games using Odin's modern systems programming language
+- **Primary Competencies:** `odin`
+- **Source File:** 012-game-development.json
+
+### Physics-based 2D games with Box2D
+- **Slug:** `physics-based-2d-games-box2d`
+- **Description:** Design games centered around physics interactions using Box2D
+- **Primary Competencies:** `box2d`
+- **Source File:** 012-game-development.json
+
+### Pixel art animation techniques
+- **Slug:** `pixel-art-animation-techniques`
+- **Description:** Animate pixel art characters and objects with limited palettes
+- **Primary Competencies:** `pixel-art`
+- **Source File:** 012-game-development.json
+
+### Pixel art for retro games
+- **Slug:** `pixel-art-retro-games`
+- **Description:** Create retro-style pixel art sprites and tilesets for games
+- **Primary Competencies:** `pixel-art`
+- **Source File:** 012-game-development.json
+
+### Platformer and action games with GameMaker Studio
+- **Slug:** `platformer-action-games-gamemaker`
+- **Description:** Build fast-paced 2D platformers and action games using GameMaker Studio
+- **Primary Competencies:** `gamemaker-studio`
+- **Source File:** 012-game-development.json
+
+### Player behavior analytics for games
+- **Slug:** `player-behavior-analytics`
+- **Description:** Analyze player data to understand engagement, retention, and game balance
+- **Primary Competencies:** `game-analytics`
+- **Source File:** 012-game-development.json
+
+### Playtesting and user research
+- **Slug:** `playtesting-user-research`
+- **Description:** Conduct effective playtests to gather feedback and improve games
+- **Primary Competencies:** `game-testing`
+- **Source File:** 012-game-development.json
+
+### Post-processing effects with shaders
+- **Slug:** `post-processing-effects-shaders`
+- **Description:** Implement bloom, color grading, and other post-processing effects
+- **Primary Competencies:** `shader-programming`
+- **Source File:** 012-game-development.json
+
+### Procedural animation techniques
+- **Slug:** `procedural-animation-techniques`
+- **Description:** Generate animations dynamically using procedural techniques and inverse kinematics
+- **Primary Competencies:** `game-animation`
+- **Source File:** 012-game-development.json
+
+### Procedural content creation for roguelikes
+- **Slug:** `procedural-content-roguelikes`
+- **Description:** Design procedural systems for roguelike and roguelite games
+- **Primary Competencies:** `procedural-generation`
+- **Source File:** 012-game-development.json
+
+### Procedural dungeon and level generation
+- **Slug:** `procedural-dungeon-level-generation`
+- **Description:** Create unique dungeons and levels using procedural algorithms
+- **Primary Competencies:** `procedural-generation`
+- **Supporting Competencies:** `algorithms`
+- **Source File:** 012-game-development.json
+
+### Procedural world generation
+- **Slug:** `procedural-world-generation`
+- **Description:** Generate infinite game worlds and terrains algorithmically
+- **Primary Competencies:** `procedural-generation`
+- **Source File:** 012-game-development.json
+
+### Puzzle and logic game mechanics
+- **Slug:** `puzzle-logic-game-mechanics`
+- **Description:** Create engaging puzzle systems and brain-teasing mechanics
+- **Primary Competencies:** `game-mechanics-design`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Ragdoll and soft body physics with Bullet
+- **Slug:** `ragdoll-soft-body-physics-bullet`
+- **Description:** Create advanced physics simulations including ragdolls and deformable objects
+- **Primary Competencies:** `bullet-physics`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### Rapid prototyping for game ideas
+- **Slug:** `rapid-prototyping-game-ideas`
+- **Description:** Quickly test and iterate on game concepts to find fun mechanics
+- **Primary Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Real-time multiplayer game systems
+- **Slug:** `real-time-multiplayer-systems`
+- **Description:** Build fast-paced networked games with client prediction and lag compensation
+- **Primary Competencies:** `game-networking`
+- **Source File:** 012-game-development.json
+
+### Real-time physics with PhysX
+- **Slug:** `real-time-physics-physx`
+- **Description:** Integrate NVIDIA PhysX for high-performance physics in games
+- **Primary Competencies:** `physx`
+- **Source File:** 012-game-development.json
+
+### Real-time VFX for gameplay
+- **Slug:** `real-time-vfx-gameplay`
+- **Description:** Create performant visual effects that enhance game feel and feedback
+- **Primary Competencies:** `vfx-games`
+- **Source File:** 012-game-development.json
+
+### Realistic graphics and lighting in Unreal Engine
+- **Slug:** `realistic-graphics-lighting-unreal`
+- **Description:** Create photorealistic environments using Unreal Engine's rendering and lighting systems
+- **Primary Competencies:** `unreal-engine`
+- **Source File:** 012-game-development.json
+
+### Retro game creation with Pico-8
+- **Slug:** `retro-game-creation-pico-8`
+- **Description:** Design constrained retro-style games using Pico-8's fantasy console and Lua
+- **Primary Competencies:** `pico-8`
+- **Supporting Competencies:** `lua`
+- **Source File:** 012-game-development.json
+
+### RPG development with RPG Maker
+- **Slug:** `rpg-development-rpg-maker`
+- **Description:** Create story-driven role-playing games without programming using RPG Maker
+- **Primary Competencies:** `rpg-maker`
+- **Source File:** 012-game-development.json
+
+### RPG quest and mission design
+- **Slug:** `rpg-quest-mission-design`
+- **Description:** Create engaging quests and missions for role-playing games
+- **Primary Competencies:** `quest-design`
+- **Supporting Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Shader programming with GLSL
+- **Slug:** `shader-programming-glsl`
+- **Description:** Write custom vertex and fragment shaders using GLSL for OpenGL graphics
+- **Primary Competencies:** `glsl`
+- **Supporting Competencies:** `opengl`
+- **Source File:** 012-game-development.json
+
+### Side quest and optional content design
+- **Slug:** `side-quest-optional-content`
+- **Description:** Design rewarding side content that enhances the main game experience
+- **Primary Competencies:** `quest-design`
+- **Supporting Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
+
+### Simple game development with Raylib
+- **Slug:** `simple-game-development-raylib`
+- **Description:** Create games quickly with Raylib's beginner-friendly C library
+- **Primary Competencies:** `raylib`
+- **Supporting Competencies:** `c`
+- **Source File:** 012-game-development.json
+
+### Single-player difficulty balancing
+- **Slug:** `single-player-difficulty-balancing`
+- **Description:** Create well-paced difficulty curves that challenge without frustrating
+- **Primary Competencies:** `game-balancing`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Sound design fundamentals for games
+- **Slug:** `sound-design-fundamentals-games`
+- **Description:** Create and implement sound effects that enhance gameplay and immersion
+- **Primary Competencies:** `game-audio-design`
+- **Source File:** 012-game-development.json
+
+### Strategic AI for games
+- **Slug:** `strategic-ai-games`
+- **Description:** Implement AI opponents for strategy and tactical games
+- **Primary Competencies:** `game-ai-programming`
+- **Supporting Competencies:** `algorithms`
+- **Source File:** 012-game-development.json
+
+### Strategy game systems design
+- **Slug:** `strategy-game-systems-design`
+- **Description:** Design deep strategic gameplay with meaningful choices and emergent complexity
+- **Primary Competencies:** `game-mechanics-design`
+- **Supporting Competencies:** `game-design`
+- **Source File:** 012-game-development.json
+
+### Stylized and non-photorealistic rendering
+- **Slug:** `stylized-non-photorealistic-rendering`
+- **Description:** Create unique art styles using custom shaders and rendering techniques
+- **Primary Competencies:** `shader-programming`
+- **Source File:** 012-game-development.json
+
+### Stylized VFX and shader effects
+- **Slug:** `stylized-vfx-shader-effects`
+- **Description:** Combine shaders and particles for unique, art-directed visual effects
+- **Primary Competencies:** `vfx-games`
+- **Supporting Competencies:** `shader-programming`
+- **Source File:** 012-game-development.json
+
+### Turn-based multiplayer systems
+- **Slug:** `turn-based-multiplayer-systems`
+- **Description:** Implement networking for turn-based and asynchronous multiplayer games
+- **Primary Competencies:** `game-networking`
+- **Source File:** 012-game-development.json
+
+### Unity physics and gameplay mechanics
+- **Slug:** `unity-physics-gameplay-mechanics`
+- **Description:** Implement realistic physics simulations and complex gameplay systems in Unity
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Unity UI and UX design
+- **Slug:** `unity-ui-ux-design`
+- **Description:** Design and implement user interfaces, menus, and HUD elements in Unity games
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`, `game-ui-ux-design`
+- **Source File:** 012-game-development.json
+
+### Visual effects with GLSL shaders
+- **Slug:** `visual-effects-glsl-shaders`
+- **Description:** Create stunning visual effects and post-processing with GLSL shader programming
+- **Primary Competencies:** `glsl`
+- **Supporting Competencies:** `opengl`
+- **Source File:** 012-game-development.json
+
+### Visual game development with Construct
+- **Slug:** `visual-game-development-construct`
+- **Description:** Build 2D games using Construct's event-based visual programming without code
+- **Primary Competencies:** `construct`
+- **Source File:** 012-game-development.json
+
+### Visual scripting with Unreal Engine Blueprints
+- **Slug:** `visual-scripting-unreal-blueprints`
+- **Description:** Build game logic and systems using Unreal Engine's node-based Blueprint visual scripting
+- **Primary Competencies:** `blueprint-visual-scripting`
+- **Supporting Competencies:** `unreal-engine`
+- **Source File:** 012-game-development.json
+
+### Visual shader creation with Unity Shader Graph
+- **Slug:** `visual-shader-creation-unity-shader-graph`
+- **Description:** Create custom visual effects and materials without code using Unity's node-based Shader Graph
+- **Primary Competencies:** `unity-shader-graph`
+- **Supporting Competencies:** `unity`
+- **Source File:** 012-game-development.json
+
+### VR and AR development with Unity
+- **Slug:** `vr-ar-development-with-unity`
+- **Description:** Create immersive virtual and augmented reality experiences using Unity's XR tools
+- **Primary Competencies:** `unity`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 012-game-development.json
+
+### Windows game graphics with DirectX
+- **Slug:** `windows-game-graphics-directx`
+- **Description:** Develop high-performance graphics and games for Windows using DirectX and C++
+- **Primary Competencies:** `directx`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 012-game-development.json
+
+### World building for game narratives
+- **Slug:** `world-building-game-narratives`
+- **Description:** Create rich fictional worlds, lore, and backstories for games
+- **Primary Competencies:** `narrative-design-games`
+- **Source File:** 012-game-development.json
 
 ---
 
@@ -10040,12 +11667,6 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `language-pedagogy`
 - **Source File:** 013-linguistics.json
 
-### Literary translation techniques
-- **Slug:** `literary-translation-techniques`
-- **Description:** Translate literature while preserving style, voice, and cultural nuances
-- **Primary Competencies:** `translation`
-- **Source File:** 013-linguistics.json
-
 ### Phonetics and pronunciation fundamentals
 - **Slug:** `phonetics-and-pronunciation-fundamentals`
 - **Description:** Study speech sounds and articulation to understand how languages are pronounced
@@ -10088,13 +11709,6 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `spanish-english-interpretation`
 - **Description:** Interpret between Spanish and English in professional and community settings
 - **Primary Competencies:** `interpretation`
-- **Supporting Competencies:** `spanish`, `english`
-- **Source File:** 013-linguistics.json
-
-### Spanish-English translation
-- **Slug:** `spanish-english-translation`
-- **Description:** Translate between Spanish and English for professional or personal contexts
-- **Primary Competencies:** `translation`
 - **Supporting Competencies:** `spanish`, `english`
 - **Source File:** 013-linguistics.json
 
@@ -14561,11 +16175,35 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `python`
 - **Source File:** 001-programming.json
 
+### Backend services with Scala and Akka
+- **Slug:** `backend-services-scala-akka`
+- **Description:** Build concurrent, distributed systems using Scala's Akka actor framework
+- **Primary Competencies:** `scala`
+- **Source File:** 001-programming-extended.json
+
 ### Behavioral design patterns
 - **Slug:** `behavioral-design-patterns`
 - **Description:** Manage object interactions with Observer, Strategy, Command, and State patterns
 - **Primary Competencies:** `design-patterns`
 - **Source File:** 001-programming.json
+
+### Big data processing with Scala and Spark
+- **Slug:** `big-data-processing-scala-spark`
+- **Description:** Analyze massive datasets using Scala with Apache Spark for distributed computing
+- **Primary Competencies:** `scala`
+- **Source File:** 001-programming-extended.json
+
+### Bioinformatics with Perl
+- **Slug:** `bioinformatics-perl`
+- **Description:** Analyze biological sequence data and genomics using Perl's BioPerl libraries
+- **Primary Competencies:** `perl`
+- **Source File:** 001-programming-extended.json
+
+### Branching and merging with Mercurial
+- **Slug:** `branching-merging-mercurial`
+- **Description:** Master Mercurial's branching strategies and conflict resolution for team workflows
+- **Primary Competencies:** `mercurial`
+- **Source File:** 001-programming-extended.json
 
 ### Browser automation with Selenium
 - **Slug:** `browser-automation-selenium`
@@ -14573,6 +16211,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `selenium`
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
+
+### Build automation with Groovy and Gradle
+- **Slug:** `build-automation-groovy-gradle`
+- **Description:** Create powerful build scripts using Groovy's DSL capabilities in Gradle
+- **Primary Competencies:** `groovy`
+- **Source File:** 001-programming-extended.json
 
 ### Building class hierarchies with inheritance and polymorphism
 - **Slug:** `class-hierarchies-inheritance-polymorphism`
@@ -14641,11 +16285,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `csharp`
 - **Source File:** 001-programming.json
 
+### Certified programming with Coq
+- **Slug:** `certified-programming-coq`
+- **Description:** Extract verified programs from Coq proofs for safety-critical systems
+- **Primary Competencies:** `coq`
+- **Source File:** 001-programming-extended.json
+
 ### Cloud-native applications with C# and Azure
 - **Slug:** `cloud-apps-csharp-azure`
 - **Description:** Build and deploy cloud applications using C# and Microsoft Azure
 - **Primary Competencies:** `csharp`
 - **Source File:** 001-programming.json
+
+### COBOL modernization strategies
+- **Slug:** `cobol-modernization-strategies`
+- **Description:** Modernize COBOL applications through refactoring and integration with modern systems
+- **Primary Competencies:** `cobol`
+- **Source File:** 001-programming-extended.json
 
 ### Collaborative development with Git
 - **Slug:** `collaborative-development-git`
@@ -14653,11 +16309,41 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `git`
 - **Source File:** 001-programming.json
 
+### Combinatorial problem solving with Prolog
+- **Slug:** `combinatorial-problem-solving-prolog`
+- **Description:** Solve puzzles, scheduling, and combinatorial optimization using Prolog
+- **Primary Competencies:** `prolog`
+- **Source File:** 001-programming-extended.json
+
+### Compiler and language design with Haskell
+- **Slug:** `compiler-language-design-haskell`
+- **Description:** Build parsers, compilers, and domain-specific languages using Haskell
+- **Primary Competencies:** `haskell`
+- **Source File:** 001-programming-extended.json
+
+### Compiler construction with Standard ML
+- **Slug:** `compiler-construction-standard-ml`
+- **Description:** Build compilers and language tools using SML's pattern matching and type safety
+- **Primary Competencies:** `standard-ml`
+- **Source File:** 001-programming-extended.json
+
 ### Concurrent and multithreaded programming in Java
 - **Slug:** `concurrent-programming-java`
 - **Description:** Master thread management and concurrent programming patterns in Java
 - **Primary Competencies:** `java`
 - **Source File:** 001-programming.json
+
+### Concurrent applications with Gleam
+- **Slug:** `concurrent-applications-gleam`
+- **Description:** Leverage Erlang's BEAM VM for fault-tolerant concurrent systems in Gleam
+- **Primary Competencies:** `gleam`
+- **Source File:** 001-programming-extended.json
+
+### Concurrent programming with Clojure
+- **Slug:** `concurrent-programming-clojure`
+- **Description:** Build concurrent applications using Clojure's immutable data structures and STM
+- **Primary Competencies:** `clojure`
+- **Source File:** 001-programming-extended.json
 
 ### Concurrent programming with Go goroutines
 - **Slug:** `concurrent-programming-go`
@@ -14665,17 +16351,49 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `go`
 - **Source File:** 001-programming.json
 
+### Concurrent programming with Raku
+- **Slug:** `concurrent-programming-raku`
+- **Description:** Leverage Raku's built-in concurrency features for parallel and asynchronous programming
+- **Primary Competencies:** `raku`
+- **Source File:** 001-programming-extended.json
+
+### Continuation-based programming with Scheme
+- **Slug:** `continuation-based-programming-scheme`
+- **Description:** Master advanced control flow using Scheme's first-class continuations
+- **Primary Competencies:** `scheme`
+- **Source File:** 001-programming-extended.json
+
 ### Creational design patterns
 - **Slug:** `creational-design-patterns`
 - **Description:** Apply Singleton, Factory, Builder, and Prototype patterns to object creation
 - **Primary Competencies:** `design-patterns`
 - **Source File:** 001-programming.json
 
+### Cross-platform applications with Ring
+- **Slug:** `cross-platform-applications-ring`
+- **Description:** Build desktop and mobile apps using Ring's simple, portable language
+- **Primary Competencies:** `ring`
+- **Source File:** 001-programming-extended.json
+
+### Cross-platform GUIs with JavaFX
+- **Slug:** `cross-platform-guis-javafx`
+- **Description:** Create visually appealing, cross-platform desktop interfaces using JavaFX
+- **Primary Competencies:** `javafx`
+- **Supporting Competencies:** `java`
+- **Source File:** 001-programming-extended.json
+
 ### Cross-platform mobile apps with C# and Xamarin
 - **Slug:** `mobile-apps-csharp-xamarin`
 - **Description:** Build iOS and Android apps from a single C# codebase using Xamarin
 - **Primary Competencies:** `csharp`
 - **Source File:** 001-programming.json
+
+### Custom controls and styling with WPF
+- **Slug:** `custom-controls-styling-wpf`
+- **Description:** Create reusable custom controls and themes using WPF's styling system
+- **Primary Competencies:** `wpf`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 001-programming-extended.json
 
 ### Data analysis with Pandas
 - **Slug:** `data-analysis-pandas`
@@ -14696,12 +16414,37 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `java`
 - **Source File:** 001-programming.json
 
+### Data science and analysis with F#
+- **Slug:** `data-science-analysis-fsharp`
+- **Description:** Perform data analysis and scientific computing using F# and .NET data libraries
+- **Primary Competencies:** `fsharp`
+- **Source File:** 001-programming-extended.json
+
+### Data visualization with JavaFX
+- **Slug:** `data-visualization-javafx`
+- **Description:** Build interactive charts and data visualizations using JavaFX's charting APIs
+- **Primary Competencies:** `javafx`
+- **Supporting Competencies:** `java`
+- **Source File:** 001-programming-extended.json
+
 ### Data visualization with Matplotlib
 - **Slug:** `data-visualization-matplotlib`
 - **Description:** Create static, animated, and interactive visualizations using Matplotlib
 - **Primary Competencies:** `matplotlib`
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
+
+### Data-oriented programming with Clojure
+- **Slug:** `data-oriented-programming-clojure`
+- **Description:** Process and transform data using Clojure's powerful sequence abstractions
+- **Primary Competencies:** `clojure`
+- **Source File:** 001-programming-extended.json
+
+### Database applications with Delphi
+- **Slug:** `database-applications-delphi`
+- **Description:** Build data-driven Windows applications using Delphi's RAD tools and database components
+- **Primary Competencies:** `delphi`
+- **Source File:** 001-programming-extended.json
 
 ### Debugging techniques and strategies
 - **Slug:** `debugging-techniques-strategies`
@@ -14723,11 +16466,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
 
+### Dependent types with Idris
+- **Slug:** `dependent-types-idris`
+- **Description:** Write provably correct programs using Idris's dependent type system
+- **Primary Competencies:** `idris`
+- **Source File:** 001-programming-extended.json
+
 ### Desktop application development with JavaFX
 - **Slug:** `desktop-apps-javafx`
 - **Description:** Build cross-platform desktop applications using JavaFX
 - **Primary Competencies:** `java`
 - **Source File:** 001-programming.json
+
+### Domain modeling with F#
+- **Slug:** `domain-modeling-fsharp`
+- **Description:** Design expressive domain models using F#'s algebraic data types and type system
+- **Primary Competencies:** `fsharp`
+- **Source File:** 001-programming-extended.json
 
 ### Dynamic programming and memoization
 - **Slug:** `dynamic-programming-memoization`
@@ -14735,17 +16490,77 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `algorithms`
 - **Source File:** 001-programming.json
 
+### Embedded development with Janet
+- **Slug:** `embedded-development-janet`
+- **Description:** Embed Janet as a scripting language in C applications for extensibility
+- **Primary Competencies:** `janet`
+- **Source File:** 001-programming-extended.json
+
+### Embedded systems scripting with Tcl
+- **Slug:** `embedded-systems-scripting-tcl`
+- **Description:** Use Tcl for testing and controlling embedded systems and hardware
+- **Primary Competencies:** `tcl`
+- **Source File:** 001-programming-extended.json
+
 ### Encapsulation and abstraction in software design
 - **Slug:** `encapsulation-abstraction`
 - **Description:** Apply encapsulation and abstraction to create modular, maintainable code
 - **Primary Competencies:** `oop`
 - **Source File:** 001-programming.json
 
+### Expert systems and AI with Prolog
+- **Slug:** `expert-systems-ai-prolog`
+- **Description:** Build rule-based expert systems and AI applications using Prolog's inference engine
+- **Primary Competencies:** `prolog`
+- **Source File:** 001-programming-extended.json
+
+### Financial systems with Haskell
+- **Slug:** `financial-systems-haskell`
+- **Description:** Develop reliable financial and trading systems leveraging Haskell's type safety
+- **Primary Competencies:** `haskell`
+- **Source File:** 001-programming-extended.json
+
+### Financial transaction processing with COBOL
+- **Slug:** `financial-transaction-processing-cobol`
+- **Description:** Work with COBOL in banking and financial systems for transaction processing
+- **Primary Competencies:** `cobol`
+- **Source File:** 001-programming-extended.json
+
+### Formal verification with Coq
+- **Slug:** `formal-verification-coq`
+- **Description:** Verify software correctness using Coq's interactive theorem prover
+- **Primary Competencies:** `coq`
+- **Source File:** 001-programming-extended.json
+
+### Formal verification with OCaml
+- **Slug:** `formal-verification-ocaml`
+- **Description:** Create verified software using OCaml for proof assistants and theorem provers
+- **Primary Competencies:** `ocaml`
+- **Source File:** 001-programming-extended.json
+
+### Full-stack programming with Red
+- **Slug:** `full-stack-programming-red`
+- **Description:** Build systems from low-level to GUI using Red's productive, all-in-one language
+- **Primary Competencies:** `red`
+- **Source File:** 001-programming-extended.json
+
 ### Functional programming fundamentals
 - **Slug:** `functional-programming-fundamentals`
 - **Description:** Learn pure functions, immutability, and functional composition
 - **Primary Competencies:** `functional-programming`
 - **Source File:** 001-programming.json
+
+### Functional programming with Scala
+- **Slug:** `functional-programming-scala`
+- **Description:** Master functional programming concepts using Scala's powerful type system and immutability
+- **Primary Competencies:** `scala`
+- **Source File:** 001-programming-extended.json
+
+### Functional-first programming with F#
+- **Slug:** `functional-first-programming-fsharp`
+- **Description:** Build .NET applications using F#'s functional-first approach and type inference
+- **Primary Competencies:** `fsharp`
+- **Source File:** 001-programming-extended.json
 
 ### Game development with C# and Unity
 - **Slug:** `game-development-csharp-unity`
@@ -14758,6 +16573,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Master Git Flow, trunk-based development, and feature branch workflows
 - **Primary Competencies:** `git`
 - **Source File:** 001-programming.json
+
+### Grammars and parsing with Raku
+- **Slug:** `grammars-parsing-raku`
+- **Description:** Build parsers and DSLs using Raku's built-in grammar system
+- **Primary Competencies:** `raku`
+- **Source File:** 001-programming-extended.json
 
 ### Graph algorithms and traversal
 - **Slug:** `graph-algorithms-traversal`
@@ -14776,6 +16597,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Apply greedy strategies to solve optimization problems efficiently
 - **Primary Competencies:** `algorithms`
 - **Source File:** 001-programming.json
+
+### GUI automation with Tcl/Tk
+- **Slug:** `gui-automation-tcl-tk`
+- **Description:** Create cross-platform graphical interfaces and automation scripts with Tcl/Tk
+- **Primary Competencies:** `tcl`
+- **Source File:** 001-programming-extended.json
 
 ### Hash tables and associative arrays
 - **Slug:** `hash-tables-associative-arrays`
@@ -14796,6 +16623,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
 
+### High-performance web services with Crystal
+- **Slug:** `high-performance-web-services-crystal`
+- **Description:** Build fast web applications and APIs using Crystal's compiled performance
+- **Primary Competencies:** `crystal`
+- **Source File:** 001-programming-extended.json
+
 ### Higher-order functions and function composition
 - **Slug:** `higher-order-functions-composition`
 - **Description:** Master map, filter, reduce, and compose functions for elegant code
@@ -14814,12 +16647,42 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `regular-expressions`
 - **Source File:** 001-programming.json
 
+### Interactive development with Clojure REPL
+- **Slug:** `interactive-development-clojure-repl`
+- **Description:** Master REPL-driven development for rapid prototyping and debugging in Clojure
+- **Primary Competencies:** `clojure`
+- **Source File:** 001-programming-extended.json
+
+### Interactive programming with Common Lisp
+- **Slug:** `interactive-programming-common-lisp`
+- **Description:** Leverage Common Lisp's live coding and REPL for rapid development and debugging
+- **Primary Competencies:** `common-lisp`
+- **Source File:** 001-programming-extended.json
+
+### Interactive stories and games with Scratch
+- **Slug:** `interactive-stories-games-scratch`
+- **Description:** Create animations, stories, and simple games using Scratch's sprite system
+- **Primary Competencies:** `scratch`
+- **Source File:** 001-programming-extended.json
+
 ### Interactive visualizations with Plotly
 - **Slug:** `interactive-visualizations-plotly`
 - **Description:** Build interactive charts and dashboards using Plotly
 - **Primary Competencies:** `plotly`
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
+
+### JVM scripting with Groovy
+- **Slug:** `jvm-scripting-groovy`
+- **Description:** Write dynamic JVM applications and scripts using Groovy's concise syntax
+- **Primary Competencies:** `groovy`
+- **Source File:** 001-programming-extended.json
+
+### Language-oriented programming with Racket
+- **Slug:** `language-oriented-programming-racket`
+- **Description:** Create domain-specific languages and extend Racket's syntax with macros
+- **Primary Competencies:** `racket`
+- **Source File:** 001-programming-extended.json
 
 ### Large-scale web scraping with Scrapy
 - **Slug:** `web-scraping-scrapy`
@@ -14828,6 +16691,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
 
+### Live programming with Smalltalk
+- **Slug:** `live-programming-smalltalk`
+- **Description:** Develop and debug code interactively using Smalltalk's image-based development
+- **Primary Competencies:** `smalltalk`
+- **Source File:** 001-programming-extended.json
+
+### Logic programming with Prolog
+- **Slug:** `logic-programming-prolog`
+- **Description:** Solve constraint satisfaction and symbolic reasoning problems using Prolog
+- **Primary Competencies:** `prolog`
+- **Source File:** 001-programming-extended.json
+
 ### Machine learning with scikit-learn
 - **Slug:** `machine-learning-scikit-learn`
 - **Description:** Build and train machine learning models using scikit-learn
@@ -14835,11 +16710,85 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `python`
 - **Source File:** 001-programming.json
 
+### Macro-based metaprogramming with Common Lisp
+- **Slug:** `macro-metaprogramming-common-lisp`
+- **Description:** Extend language syntax and create DSLs using Common Lisp's powerful macro system
+- **Primary Competencies:** `common-lisp`
+- **Source File:** 001-programming-extended.json
+
+### Mainframe development with COBOL
+- **Slug:** `mainframe-development-cobol`
+- **Description:** Develop and deploy applications on mainframe systems using COBOL
+- **Primary Competencies:** `cobol`
+- **Source File:** 001-programming-extended.json
+
+### Maintaining Flash and ActionScript projects
+- **Slug:** `maintaining-flash-actionscript-projects`
+- **Description:** Support legacy Flash applications and migrate ActionScript code to modern platforms
+- **Primary Competencies:** `actionscript`
+- **Source File:** 001-programming-extended.json
+
+### Maintaining legacy COBOL systems
+- **Slug:** `maintaining-legacy-cobol-systems`
+- **Description:** Understand and maintain critical business systems written in COBOL
+- **Primary Competencies:** `cobol`
+- **Source File:** 001-programming-extended.json
+
+### Maintaining legacy Delphi applications
+- **Slug:** `maintaining-legacy-delphi-applications`
+- **Description:** Update and maintain Windows applications written in Delphi and Object Pascal
+- **Primary Competencies:** `delphi`
+- **Source File:** 001-programming-extended.json
+
+### Maintaining legacy Pascal systems
+- **Slug:** `maintaining-legacy-pascal-systems`
+- **Description:** Support and update existing Pascal and Turbo Pascal applications
+- **Primary Competencies:** `pascal`
+- **Source File:** 001-programming-extended.json
+
+### Maintaining Visual Basic legacy systems
+- **Slug:** `maintaining-visual-basic-legacy-systems`
+- **Description:** Support and update existing VB.NET and VB6 enterprise applications
+- **Primary Competencies:** `visual-basic`
+- **Source File:** 001-programming-extended.json
+
+### Mathematical formalization with Lean
+- **Slug:** `mathematical-formalization-lean`
+- **Description:** Contribute to Lean's mathlib and formalize mathematical theories
+- **Primary Competencies:** `lean`
+- **Source File:** 001-programming-extended.json
+
+### Mathematical proofs with Agda
+- **Slug:** `mathematical-proofs-agda`
+- **Description:** Formalize mathematics and verify proofs using Agda
+- **Primary Competencies:** `agda`
+- **Source File:** 001-programming-extended.json
+
+### Mathematical proofs with Coq
+- **Slug:** `mathematical-proofs-coq`
+- **Description:** Formalize and verify mathematical theorems using Coq
+- **Primary Competencies:** `coq`
+- **Source File:** 001-programming-extended.json
+
 ### Microservices development with Go
 - **Slug:** `microservices-go`
 - **Description:** Build scalable microservices using Go's lightweight runtime
 - **Primary Competencies:** `go`
 - **Source File:** 001-programming.json
+
+### Migrating ActionScript to JavaScript
+- **Slug:** `migrating-actionscript-javascript`
+- **Description:** Convert Flash/ActionScript applications to HTML5 and JavaScript
+- **Primary Competencies:** `actionscript`
+- **Supporting Competencies:** `javascript`
+- **Source File:** 001-programming-extended.json
+
+### Migrating from Subversion to Git
+- **Slug:** `migrating-subversion-git`
+- **Description:** Transition legacy SVN repositories to Git while preserving history
+- **Primary Competencies:** `subversion`
+- **Supporting Competencies:** `git`
+- **Source File:** 001-programming-extended.json
 
 ### Migrating JavaScript projects to TypeScript
 - **Slug:** `migrating-javascript-typescript`
@@ -14847,6 +16796,49 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `typescript`
 - **Supporting Competencies:** `javascript`
 - **Source File:** 001-programming.json
+
+### Migrating VB6 to modern platforms
+- **Slug:** `migrating-vb6-modern-platforms`
+- **Description:** Modernize Visual Basic 6 applications to .NET or other modern frameworks
+- **Primary Competencies:** `visual-basic`
+- **Source File:** 001-programming-extended.json
+
+### Minimalist programming with Scheme
+- **Slug:** `minimalist-programming-scheme`
+- **Description:** Learn programming fundamentals through Scheme's elegant, minimal design
+- **Primary Competencies:** `scheme`
+- **Source File:** 001-programming-extended.json
+
+### Modern Perl programming with Raku
+- **Slug:** `modern-perl-programming-raku`
+- **Description:** Write expressive, Unicode-native code using Raku's gradual typing and concurrency
+- **Primary Competencies:** `raku`
+- **Source File:** 001-programming-extended.json
+
+### MVVM patterns with WPF
+- **Slug:** `mvvm-patterns-wpf`
+- **Description:** Implement maintainable UIs using WPF's data binding and MVVM architecture
+- **Primary Competencies:** `wpf`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 001-programming-extended.json
+
+### Natural language processing with Prolog
+- **Slug:** `natural-language-processing-prolog`
+- **Description:** Parse and analyze natural language using Prolog's pattern matching and logic
+- **Primary Competencies:** `prolog`
+- **Source File:** 001-programming-extended.json
+
+### Natural language-like programming with Ring
+- **Slug:** `natural-language-programming-ring`
+- **Description:** Write readable code using Ring's natural language syntax and simplicity
+- **Primary Competencies:** `ring`
+- **Source File:** 001-programming-extended.json
+
+### Network automation with Tcl
+- **Slug:** `network-automation-tcl`
+- **Description:** Automate network devices and infrastructure using Tcl scripting
+- **Primary Competencies:** `tcl`
+- **Source File:** 001-programming-extended.json
 
 ### Neural network prototyping with Keras
 - **Slug:** `neural-networks-keras`
@@ -14868,6 +16860,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `oop`
 - **Source File:** 001-programming.json
 
+### Object-oriented programming with Smalltalk
+- **Slug:** `object-oriented-programming-smalltalk`
+- **Description:** Master pure OOP concepts using Smalltalk's pioneering object system and live coding
+- **Primary Competencies:** `smalltalk`
+- **Source File:** 001-programming-extended.json
+
+### Office automation with Visual Basic
+- **Slug:** `office-automation-visual-basic`
+- **Description:** Automate Microsoft Office tasks using VBA and Visual Basic
+- **Primary Competencies:** `visual-basic`
+- **Source File:** 001-programming-extended.json
+
 ### Pattern matching with regular expressions
 - **Slug:** `pattern-matching-regex`
 - **Description:** Use regex for text searching, validation, and extraction
@@ -14879,6 +16883,31 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Identify performance bottlenecks and optimize code execution
 - **Primary Competencies:** `debugging`
 - **Source File:** 001-programming.json
+
+### Pure functional programming with Haskell
+- **Slug:** `pure-functional-programming-haskell`
+- **Description:** Learn rigorous functional programming with Haskell's lazy evaluation and strong typing
+- **Primary Competencies:** `haskell`
+- **Source File:** 001-programming-extended.json
+
+### Rich desktop applications with JavaFX
+- **Slug:** `rich-desktop-applications-javafx`
+- **Description:** Build modern Java desktop applications with JavaFX's rich UI controls and CSS styling
+- **Primary Competencies:** `javafx`
+- **Supporting Competencies:** `java`
+- **Source File:** 001-programming-extended.json
+
+### Ruby-like syntax with Crystal performance
+- **Slug:** `ruby-syntax-crystal-performance`
+- **Description:** Write elegant, type-safe code with Ruby-like syntax compiled to native speed
+- **Primary Competencies:** `crystal`
+- **Source File:** 001-programming-extended.json
+
+### Scripting and automation with Janet
+- **Slug:** `scripting-automation-janet`
+- **Description:** Write concise automation scripts using Janet's Lisp-like syntax
+- **Primary Competencies:** `janet`
+- **Source File:** 001-programming-extended.json
 
 ### Sorting and searching algorithms
 - **Slug:** `sorting-searching-algorithms`
@@ -14905,11 +16934,59 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `design-patterns`
 - **Source File:** 001-programming.json
 
+### Symbolic computation with Common Lisp
+- **Slug:** `symbolic-computation-common-lisp`
+- **Description:** Implement AI systems and symbolic reasoning using Common Lisp's metaprogramming
+- **Primary Competencies:** `common-lisp`
+- **Source File:** 001-programming-extended.json
+
+### Systems administration with Perl
+- **Slug:** `systems-administration-perl`
+- **Description:** Automate system tasks, log processing, and text manipulation using Perl's powerful regex and scripting
+- **Primary Competencies:** `perl`
+- **Source File:** 001-programming-extended.json
+
 ### Systems programming with Go
 - **Slug:** `systems-programming-go`
 - **Description:** Develop system-level tools and utilities using Go
 - **Primary Competencies:** `go`
 - **Source File:** 001-programming.json
+
+### Systems programming with OCaml
+- **Slug:** `systems-programming-ocaml`
+- **Description:** Develop high-performance systems and tools using OCaml's native compilation
+- **Primary Competencies:** `ocaml`
+- **Source File:** 001-programming-extended.json
+
+### Teaching children to code with Scratch
+- **Slug:** `teaching-children-code-scratch`
+- **Description:** Introduce computational thinking and game design to children using Scratch
+- **Primary Competencies:** `scratch`
+- **Source File:** 001-programming-extended.json
+
+### Teaching OOP concepts with Smalltalk
+- **Slug:** `teaching-oop-concepts-smalltalk`
+- **Description:** Use Smalltalk to teach pure object-oriented design and programming principles
+- **Primary Competencies:** `smalltalk`
+- **Source File:** 001-programming-extended.json
+
+### Teaching programming concepts with Scheme
+- **Slug:** `teaching-programming-concepts-scheme`
+- **Description:** Use Scheme to teach core computer science concepts and functional programming
+- **Primary Competencies:** `scheme`
+- **Source File:** 001-programming-extended.json
+
+### Teaching programming fundamentals with Pascal
+- **Slug:** `teaching-programming-fundamentals-pascal`
+- **Description:** Learn structured programming concepts using Pascal's clear, readable syntax
+- **Primary Competencies:** `pascal`
+- **Source File:** 001-programming-extended.json
+
+### Teaching programming with Racket
+- **Slug:** `teaching-programming-racket`
+- **Description:** Use Racket's educational tools to teach programming concepts and language design
+- **Primary Competencies:** `racket`
+- **Source File:** 001-programming-extended.json
 
 ### Test automation with RSpec
 - **Slug:** `test-automation-rspec`
@@ -14918,11 +16995,29 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `ruby`
 - **Source File:** 001-programming.json
 
+### Testing with Groovy and Spock
+- **Slug:** `testing-groovy-spock`
+- **Description:** Write expressive, readable tests using Groovy's Spock framework
+- **Primary Competencies:** `groovy`
+- **Source File:** 001-programming-extended.json
+
+### Text processing and data extraction with Perl
+- **Slug:** `text-processing-data-extraction-perl`
+- **Description:** Parse complex text formats and extract data using Perl's unmatched regex capabilities
+- **Primary Competencies:** `perl`
+- **Source File:** 001-programming-extended.json
+
 ### Text processing and transformation with regex
 - **Slug:** `text-processing-regex`
 - **Description:** Parse, clean, and transform text data using regular expressions
 - **Primary Competencies:** `regular-expressions`
 - **Source File:** 001-programming.json
+
+### Theorem proving with Lean
+- **Slug:** `theorem-proving-lean`
+- **Description:** Formalize mathematics and verify proofs using Lean's modern proof assistant
+- **Primary Competencies:** `lean`
+- **Source File:** 001-programming-extended.json
 
 ### Trees and binary search trees
 - **Slug:** `trees-binary-search-trees`
@@ -14930,11 +17025,53 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `data-structures`
 - **Source File:** 001-programming.json
 
+### Type-driven development with Haskell
+- **Slug:** `type-driven-development-haskell`
+- **Description:** Use Haskell's advanced type system to design and verify program correctness
+- **Primary Competencies:** `haskell`
+- **Source File:** 001-programming-extended.json
+
+### Type-driven development with Idris
+- **Slug:** `type-driven-development-idris`
+- **Description:** Use types to guide implementation and verify correctness in Idris
+- **Primary Competencies:** `idris`
+- **Source File:** 001-programming-extended.json
+
+### Type-safe domain modeling with Scala
+- **Slug:** `type-safe-domain-modeling-scala`
+- **Description:** Leverage Scala's advanced type system to create robust domain models
+- **Primary Competencies:** `scala`
+- **Source File:** 001-programming-extended.json
+
+### Type-safe functional programming with Gleam
+- **Slug:** `type-safe-functional-gleam`
+- **Description:** Build reliable systems using Gleam's friendly syntax and strong static typing on the BEAM
+- **Primary Competencies:** `gleam`
+- **Source File:** 001-programming-extended.json
+
+### Type-safe functional programming with OCaml
+- **Slug:** `type-safe-functional-programming-ocaml`
+- **Description:** Build reliable software using OCaml's strong static typing and functional features
+- **Primary Competencies:** `ocaml`
+- **Source File:** 001-programming-extended.json
+
 ### Type-safe JavaScript development with TypeScript
 - **Slug:** `type-safe-javascript-typescript`
 - **Description:** Write safer, more maintainable JavaScript code using TypeScript's static typing
 - **Primary Competencies:** `typescript`
 - **Source File:** 001-programming.json
+
+### Type-safe ML programming with Standard ML
+- **Slug:** `type-safe-ml-programming-standard-ml`
+- **Description:** Learn functional programming with Standard ML's rigorous type system and modules
+- **Primary Competencies:** `standard-ml`
+- **Source File:** 001-programming-extended.json
+
+### Type-safe scripting with Crystal
+- **Slug:** `type-safe-scripting-crystal`
+- **Description:** Combine scripting language ease with compile-time type safety in Crystal
+- **Primary Competencies:** `crystal`
+- **Source File:** 001-programming-extended.json
 
 ### Using debuggers and debugging tools
 - **Slug:** `debuggers-debugging-tools`
@@ -14942,11 +17079,41 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `debugging`
 - **Source File:** 001-programming.json
 
+### Verified programming with Agda
+- **Slug:** `verified-programming-agda`
+- **Description:** Prove program properties using Agda's dependently typed proof assistant
+- **Primary Competencies:** `agda`
+- **Source File:** 001-programming-extended.json
+
+### Verified software with Lean
+- **Slug:** `verified-software-lean`
+- **Description:** Build provably correct programs using Lean's dependent type system
+- **Primary Competencies:** `lean`
+- **Source File:** 001-programming-extended.json
+
 ### Version control with Git
 - **Slug:** `version-control-git`
 - **Description:** Track code changes and collaborate using Git version control
 - **Primary Competencies:** `git`
 - **Source File:** 001-programming.json
+
+### Version control with Mercurial
+- **Slug:** `version-control-mercurial`
+- **Description:** Manage source code history and collaborate using Mercurial's distributed version control
+- **Primary Competencies:** `mercurial`
+- **Source File:** 001-programming-extended.json
+
+### Version control with Subversion
+- **Slug:** `version-control-subversion`
+- **Description:** Manage enterprise codebases using SVN's centralized version control system
+- **Primary Competencies:** `subversion`
+- **Source File:** 001-programming-extended.json
+
+### Visual programming for beginners with Scratch
+- **Slug:** `visual-programming-beginners-scratch`
+- **Description:** Learn programming fundamentals through Scratch's block-based visual interface
+- **Primary Competencies:** `scratch`
+- **Source File:** 001-programming-extended.json
 
 ### Web application development with Django
 - **Slug:** `web-development-django`
@@ -14962,6 +17129,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `ruby`
 - **Source File:** 001-programming.json
 
+### Web development with Clojure
+- **Slug:** `web-development-clojure`
+- **Description:** Build web applications using Clojure's Ring, Compojure, and ClojureScript
+- **Primary Competencies:** `clojure`
+- **Source File:** 001-programming-extended.json
+
+### Web development with Racket
+- **Slug:** `web-development-racket`
+- **Description:** Build web applications using Racket's continuation-based web framework
+- **Primary Competencies:** `racket`
+- **Source File:** 001-programming-extended.json
+
+### Web scraping and automation with Perl
+- **Slug:** `web-scraping-automation-perl`
+- **Description:** Build web scrapers and automation scripts leveraging Perl's CPAN ecosystem
+- **Primary Competencies:** `perl`
+- **Source File:** 001-programming-extended.json
+
 ### Web scraping with BeautifulSoup
 - **Slug:** `web-scraping-beautifulsoup`
 - **Description:** Extract and parse data from HTML and XML documents using BeautifulSoup
@@ -14974,6 +17159,13 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Create rich Windows desktop applications using WPF and C#
 - **Primary Competencies:** `csharp`
 - **Source File:** 001-programming.json
+
+### Windows desktop applications with WPF
+- **Slug:** `windows-desktop-applications-wpf`
+- **Description:** Build rich Windows applications using WPF's XAML-based UI framework
+- **Primary Competencies:** `wpf`
+- **Supporting Competencies:** `csharp`
+- **Source File:** 001-programming-extended.json
 
 ### Writing automated scripts with Ruby
 - **Slug:** `automation-scripts-ruby`

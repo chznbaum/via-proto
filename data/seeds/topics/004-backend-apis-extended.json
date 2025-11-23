@@ -1,0 +1,664 @@
+{
+  "topics": [
+    {
+      "name": "High-performance APIs with Fastify",
+      "slug": "high-performance-apis-fastify",
+      "description": "Build fast, low-overhead REST APIs using Fastify's plugin architecture and schema validation",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "fastify", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Production-ready backend services with Fastify",
+      "slug": "production-backend-services-fastify",
+      "description": "Develop scalable backend applications with Fastify's async/await support and TypeScript integration",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "fastify", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Fastify plugin development",
+      "slug": "fastify-plugin-development",
+      "description": "Create reusable Fastify plugins to extend functionality and share code",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "fastify", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Modern async web apps with Koa",
+      "slug": "modern-async-web-apps-koa",
+      "description": "Build clean, middleware-based web applications using Koa's async/await foundation",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "koa", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Lightweight APIs with Koa",
+      "slug": "lightweight-apis-koa",
+      "description": "Create minimalist REST APIs using Koa's context-based middleware system",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "koa", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Enterprise TypeScript backends with NestJS",
+      "slug": "enterprise-typescript-backends-nestjs",
+      "description": "Build scalable, testable server applications using NestJS's Angular-inspired architecture",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "nestjs", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false },
+        { "competency_slug": "nodejs", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Microservices architecture with NestJS",
+      "slug": "microservices-architecture-nestjs",
+      "description": "Design and implement microservices using NestJS's built-in support for various transport layers",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "nestjs", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false },
+        { "competency_slug": "nodejs", "is_primary": false }
+      ]
+    },
+    {
+      "name": "GraphQL APIs with NestJS",
+      "slug": "graphql-apis-nestjs",
+      "description": "Build type-safe GraphQL APIs using NestJS's first-class GraphQL support",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "nestjs", "is_primary": true },
+        { "competency_slug": "graphql", "is_primary": false },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "RESTful APIs with NestJS",
+      "slug": "restful-apis-nestjs",
+      "description": "Create well-structured REST APIs with validation, authentication, and testing in NestJS",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "nestjs", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false },
+        { "competency_slug": "nodejs", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Building REST APIs with Django REST Framework",
+      "slug": "building-rest-apis-django-rest-framework",
+      "description": "Create powerful, flexible REST APIs with serialization, authentication, and permissions",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "django-rest-framework", "is_primary": true },
+        { "competency_slug": "django", "is_primary": false },
+        { "competency_slug": "python", "is_primary": false }
+      ]
+    },
+    {
+      "name": "API authentication and permissions with DRF",
+      "slug": "api-authentication-permissions-drf",
+      "description": "Implement secure authentication and fine-grained permissions in Django REST Framework APIs",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "django-rest-framework", "is_primary": true },
+        { "competency_slug": "django", "is_primary": false },
+        { "competency_slug": "python", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Advanced serialization in Django REST Framework",
+      "slug": "advanced-serialization-drf",
+      "description": "Master complex data serialization, nested relationships, and custom fields in DRF",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "django-rest-framework", "is_primary": true },
+        { "competency_slug": "django", "is_primary": false },
+        { "competency_slug": "python", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Real-time web applications with Phoenix",
+      "slug": "real-time-web-apps-phoenix",
+      "description": "Build highly concurrent, real-time applications using Phoenix and Elixir's BEAM VM",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "phoenix", "is_primary": true },
+        { "competency_slug": "elixir", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Phoenix LiveView for interactive UIs",
+      "slug": "phoenix-liveview-interactive-uis",
+      "description": "Create rich, real-time user experiences without writing JavaScript using LiveView",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "phoenix", "is_primary": true },
+        { "competency_slug": "elixir", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Scalable APIs with Phoenix and Ecto",
+      "slug": "scalable-apis-phoenix-ecto",
+      "description": "Build fault-tolerant REST APIs leveraging Phoenix's performance and Ecto's database layer",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "phoenix", "is_primary": true },
+        { "competency_slug": "elixir", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Full-featured web apps with AdonisJS",
+      "slug": "full-featured-web-apps-adonisjs",
+      "description": "Build complete web applications with AdonisJS's Laravel-inspired MVC architecture",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "adonisjs", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Authentication and authorization with AdonisJS",
+      "slug": "authentication-authorization-adonisjs",
+      "description": "Implement secure user authentication, sessions, and role-based access control in AdonisJS",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "adonisjs", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Headless CMS with Strapi",
+      "slug": "headless-cms-strapi",
+      "description": "Build customizable content APIs and admin panels using Strapi's headless CMS",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "strapi", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Custom content types and APIs in Strapi",
+      "slug": "custom-content-types-apis-strapi",
+      "description": "Design and implement custom content models with relationships and permissions in Strapi",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "strapi", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Extending Strapi with plugins",
+      "slug": "extending-strapi-plugins",
+      "description": "Build and integrate custom plugins to extend Strapi's functionality",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "strapi", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "API documentation with Swagger/OpenAPI",
+      "slug": "api-documentation-swagger-openapi",
+      "description": "Create interactive, standards-based API documentation using the OpenAPI specification",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "swagger", "is_primary": true }
+      ]
+    },
+    {
+      "name": "API design and specification with OpenAPI",
+      "slug": "api-design-specification-openapi",
+      "description": "Design APIs using OpenAPI spec-first approach for better collaboration and code generation",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "swagger", "is_primary": true }
+      ]
+    },
+    {
+      "name": "API testing and development with Postman",
+      "slug": "api-testing-development-postman",
+      "description": "Test, document, and collaborate on APIs using Postman's comprehensive platform",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "postman", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Automated API testing with Postman",
+      "slug": "automated-api-testing-postman",
+      "description": "Create automated test suites and CI/CD integration for APIs using Postman",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "postman", "is_primary": true }
+      ]
+    },
+    {
+      "name": "API workflows and collections in Postman",
+      "slug": "api-workflows-collections-postman",
+      "description": "Organize and chain API requests into workflows using Postman collections",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "postman", "is_primary": true }
+      ]
+    },
+    {
+      "name": "REST and GraphQL testing with Insomnia",
+      "slug": "rest-graphql-testing-insomnia",
+      "description": "Debug and test REST and GraphQL APIs using Insomnia's developer-friendly interface",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "insomnia", "is_primary": true }
+      ]
+    },
+    {
+      "name": "API development workflows with Insomnia",
+      "slug": "api-development-workflows-insomnia",
+      "description": "Streamline API development with environment variables, code generation, and team collaboration",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "insomnia", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Modern JavaScript with Deno",
+      "slug": "modern-javascript-deno",
+      "description": "Build secure server-side applications using Deno's modern runtime with built-in TypeScript support",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "deno", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Web APIs and servers with Deno",
+      "slug": "web-apis-servers-deno",
+      "description": "Create HTTP servers and REST APIs using Deno's standard library and Oak framework",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "deno", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Secure-by-default applications with Deno",
+      "slug": "secure-by-default-apps-deno",
+      "description": "Leverage Deno's permission system to build secure applications with explicit access control",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "deno", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Ultra-fast JavaScript with Bun",
+      "slug": "ultra-fast-javascript-bun",
+      "description": "Build and run JavaScript applications with Bun's blazing-fast runtime and bundler",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "bun", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "High-performance servers with Bun",
+      "slug": "high-performance-servers-bun",
+      "description": "Create fast HTTP servers and APIs leveraging Bun's optimized runtime performance",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "bun", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Full-stack development with Bun",
+      "slug": "full-stack-development-bun",
+      "description": "Use Bun's all-in-one toolkit for bundling, transpiling, and running full-stack JavaScript apps",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "bun", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Type-safe APIs with tRPC",
+      "slug": "type-safe-apis-trpc",
+      "description": "Build end-to-end typesafe APIs without code generation using tRPC and TypeScript",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "trpc", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Full-stack TypeScript with tRPC",
+      "slug": "full-stack-typescript-trpc",
+      "description": "Create seamless frontend-backend integration with shared TypeScript types using tRPC",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "trpc", "is_primary": true },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "React and Next.js integration with tRPC",
+      "slug": "react-nextjs-integration-trpc",
+      "description": "Build type-safe React applications with tRPC and Next.js for optimal developer experience",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "trpc", "is_primary": true },
+        { "competency_slug": "nextjs", "is_primary": false },
+        { "competency_slug": "typescript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "High-performance microservices with gRPC",
+      "slug": "high-performance-microservices-grpc",
+      "description": "Build efficient, language-agnostic microservices using gRPC and Protocol Buffers",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "grpc", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Streaming and bidirectional communication with gRPC",
+      "slug": "streaming-bidirectional-grpc",
+      "description": "Implement real-time data streams and bidirectional communication using gRPC",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "grpc", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cross-language services with gRPC",
+      "slug": "cross-language-services-grpc",
+      "description": "Connect services written in different languages using gRPC's polyglot capabilities",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "grpc", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Enterprise Node.js applications with Hapi",
+      "slug": "enterprise-nodejs-apps-hapi",
+      "description": "Build configuration-driven, plugin-based applications using Hapi's rich ecosystem",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "hapi", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Input validation and authentication with Hapi",
+      "slug": "input-validation-authentication-hapi",
+      "description": "Implement robust validation and authentication using Hapi's built-in features and Joi",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "hapi", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "MVC web applications with Sails.js",
+      "slug": "mvc-web-applications-sailsjs",
+      "description": "Build data-driven web applications using Sails.js's Rails-inspired MVC architecture",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "sailsjs", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Real-time features with Sails.js",
+      "slug": "real-time-features-sailsjs",
+      "description": "Implement WebSocket-based real-time functionality using Sails.js's built-in support",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "sailsjs", "is_primary": true },
+        { "competency_slug": "nodejs", "is_primary": false },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Enterprise PHP applications with Symfony",
+      "slug": "enterprise-php-apps-symfony",
+      "description": "Build robust, maintainable PHP applications using Symfony's component-based architecture",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "symfony", "is_primary": true },
+        { "competency_slug": "php", "is_primary": false }
+      ]
+    },
+    {
+      "name": "RESTful APIs with Symfony",
+      "slug": "restful-apis-symfony",
+      "description": "Create scalable REST APIs with Symfony's API Platform and serialization components",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "symfony", "is_primary": true },
+        { "competency_slug": "php", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Symfony components in standalone projects",
+      "slug": "symfony-components-standalone",
+      "description": "Leverage individual Symfony components to enhance any PHP project",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "symfony", "is_primary": true },
+        { "competency_slug": "php", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Microservices with Symfony",
+      "slug": "microservices-symfony",
+      "description": "Design and implement microservice architectures using Symfony and API Platform",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "symfony", "is_primary": true },
+        { "competency_slug": "php", "is_primary": false }
+      ]
+    },
+    {
+      "name": "High-performance Go APIs with Gin",
+      "slug": "high-performance-go-apis-gin",
+      "description": "Build fast REST APIs leveraging Gin's performance and Go's concurrency",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "gin", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Middleware and routing with Gin",
+      "slug": "middleware-routing-gin",
+      "description": "Master Gin's middleware system and routing for building structured Go web services",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "gin", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "JWT authentication with Gin",
+      "slug": "jwt-authentication-gin",
+      "description": "Implement secure token-based authentication in Gin APIs",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "gin", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Minimalist Go web services with Echo",
+      "slug": "minimalist-go-web-services-echo",
+      "description": "Create lightweight, high-performance web applications using Echo framework",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "echo", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "RESTful APIs with Echo",
+      "slug": "restful-apis-echo",
+      "description": "Build well-structured REST APIs with validation and middleware using Echo",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "echo", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Express-style Go development with Fiber",
+      "slug": "express-style-go-development-fiber",
+      "description": "Build web applications with familiar Express.js-like syntax optimized for Go's performance",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "fiber", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Ultra-fast APIs with Fiber",
+      "slug": "ultra-fast-apis-fiber",
+      "description": "Leverage Fiber's Fasthttp foundation for building extremely fast web services",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "fiber", "is_primary": true },
+        { "competency_slug": "go", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Lightweight Ruby web apps with Sinatra",
+      "slug": "lightweight-ruby-web-apps-sinatra",
+      "description": "Build simple, elegant web applications and APIs using Sinatra's DSL",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "sinatra", "is_primary": true },
+        { "competency_slug": "ruby", "is_primary": false }
+      ]
+    },
+    {
+      "name": "RESTful services with Sinatra",
+      "slug": "restful-services-sinatra",
+      "description": "Create minimalist REST APIs and microservices using Sinatra",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "sinatra", "is_primary": true },
+        { "competency_slug": "ruby", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cloud-native Java apps with Micronaut",
+      "slug": "cloud-native-java-apps-micronaut",
+      "description": "Build low-memory, fast-startup microservices optimized for containers and serverless",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "micronaut", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Reactive microservices with Micronaut",
+      "slug": "reactive-microservices-micronaut",
+      "description": "Develop reactive, non-blocking microservices using Micronaut's async capabilities",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "micronaut", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "GraalVM native images with Micronaut",
+      "slug": "graalvm-native-images-micronaut",
+      "description": "Compile Micronaut applications to native executables for instant startup and low memory usage",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "micronaut", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Kubernetes-native Java with Quarkus",
+      "slug": "kubernetes-native-java-quarkus",
+      "description": "Build container-first Java applications optimized for Kubernetes with Quarkus",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "quarkus", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Supersonic subatomic Java with Quarkus",
+      "slug": "supersonic-subatomic-java-quarkus",
+      "description": "Develop ultra-fast, lightweight Java applications with Quarkus's innovative approach",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "quarkus", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Reactive programming with Quarkus",
+      "slug": "reactive-programming-quarkus",
+      "description": "Build reactive, event-driven applications using Quarkus and reactive streams",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "quarkus", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Type-safe PHP development with Hack",
+      "slug": "type-safe-php-development-hack",
+      "description": "Build robust web applications using Hack's static typing and modern language features",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "hack", "is_primary": true }
+      ]
+    },
+    {
+      "name": "High-performance web services with Hack and HHVM",
+      "slug": "high-performance-web-services-hack-hhvm",
+      "description": "Develop scalable backend services leveraging Hack's performance on HHVM",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "hack", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Migrating PHP projects to Hack",
+      "slug": "migrating-php-projects-hack",
+      "description": "Gradually adopt Hack's type system and features in existing PHP codebases",
+      "category_slug": "backend-development",
+      "competencies": [
+        { "competency_slug": "hack", "is_primary": true },
+        { "competency_slug": "php", "is_primary": false }
+      ]
+    }
+  ]
+}

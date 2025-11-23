@@ -1,0 +1,598 @@
+{
+  "topics": [
+    {
+      "name": "Enterprise cloud infrastructure with IBM Cloud",
+      "slug": "enterprise-cloud-infrastructure-ibm-cloud",
+      "description": "Deploy and manage enterprise applications on IBM Cloud's hybrid cloud platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ibm-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "AI and machine learning on IBM Cloud",
+      "slug": "ai-machine-learning-ibm-cloud",
+      "description": "Build and deploy AI models using IBM Watson and Cloud services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ibm-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Hybrid cloud solutions with IBM Cloud",
+      "slug": "hybrid-cloud-solutions-ibm-cloud",
+      "description": "Integrate on-premises infrastructure with IBM Cloud for hybrid deployments",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ibm-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Oracle database cloud services",
+      "slug": "oracle-database-cloud-services",
+      "description": "Deploy and manage Oracle databases on Oracle Cloud Infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "oracle-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Enterprise applications on Oracle Cloud",
+      "slug": "enterprise-applications-oracle-cloud",
+      "description": "Build and run business applications on Oracle Cloud's infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "oracle-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Autonomous database with Oracle Cloud",
+      "slug": "autonomous-database-oracle-cloud",
+      "description": "Leverage Oracle's self-driving, self-securing autonomous database services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "oracle-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "European cloud hosting with Scaleway",
+      "slug": "european-cloud-hosting-scaleway",
+      "description": "Deploy applications on Scaleway's cost-effective European cloud infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "scaleway", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Bare metal and container hosting with Scaleway",
+      "slug": "bare-metal-container-hosting-scaleway",
+      "description": "Run workloads on Scaleway's dedicated servers and managed Kubernetes",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "scaleway", "is_primary": true }
+      ]
+    },
+    {
+      "name": "European cloud infrastructure with OVH Cloud",
+      "slug": "european-cloud-infrastructure-ovh",
+      "description": "Build applications on OVHcloud's GDPR-compliant European infrastructure",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ovh-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Web hosting and cloud services with OVH",
+      "slug": "web-hosting-cloud-services-ovh",
+      "description": "Deploy websites and applications on OVHcloud's diverse hosting solutions",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ovh-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cloud infrastructure in China with Alibaba Cloud",
+      "slug": "cloud-infrastructure-china-alibaba",
+      "description": "Deploy applications in China and Asia using Alibaba Cloud's services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "alibaba-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "E-commerce platforms with Alibaba Cloud",
+      "slug": "ecommerce-platforms-alibaba-cloud",
+      "description": "Build scalable e-commerce solutions leveraging Alibaba's commerce expertise",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "alibaba-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Big data and analytics on Alibaba Cloud",
+      "slug": "big-data-analytics-alibaba-cloud",
+      "description": "Process large datasets using Alibaba Cloud's data analytics services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "alibaba-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cloud services in China with Tencent Cloud",
+      "slug": "cloud-services-china-tencent",
+      "description": "Deploy applications in China using Tencent Cloud's WeChat-integrated platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "tencent-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Gaming infrastructure with Tencent Cloud",
+      "slug": "gaming-infrastructure-tencent-cloud",
+      "description": "Build and scale gaming backends using Tencent Cloud's game-optimized services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "tencent-cloud", "is_primary": true }
+      ]
+    },
+    {
+      "name": "CI/CD pipelines with Travis CI",
+      "slug": "cicd-pipelines-travis-ci",
+      "description": "Automate testing and deployment for GitHub projects using Travis CI",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "travis-ci", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Open source project automation with Travis CI",
+      "slug": "open-source-automation-travis-ci",
+      "description": "Set up free continuous integration for open source GitHub repositories",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "travis-ci", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Enterprise CI/CD with Bamboo",
+      "slug": "enterprise-cicd-bamboo",
+      "description": "Build automated deployment pipelines with Atlassian Bamboo for enterprise teams",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "bamboo", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Bamboo integration with Jira and Bitbucket",
+      "slug": "bamboo-integration-jira-bitbucket",
+      "description": "Create seamless workflows connecting Bamboo, Jira, and Bitbucket",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "bamboo", "is_primary": true }
+      ]
+    },
+    {
+      "name": "CI/CD automation with TeamCity",
+      "slug": "cicd-automation-teamcity",
+      "description": "Build sophisticated build and deployment pipelines using JetBrains TeamCity",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "teamcity", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Advanced build configurations with TeamCity",
+      "slug": "advanced-build-configurations-teamcity",
+      "description": "Leverage TeamCity's features for complex multi-project builds and testing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "teamcity", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Container-native CI/CD with Drone",
+      "slug": "container-native-cicd-drone",
+      "description": "Build Docker-based pipelines using Drone's container-first approach",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "drone", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Lightweight CI pipelines with Drone",
+      "slug": "lightweight-ci-pipelines-drone",
+      "description": "Deploy and configure Drone for simple, scalable continuous integration",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "drone", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Scalable CI infrastructure with Buildkite",
+      "slug": "scalable-ci-infrastructure-buildkite",
+      "description": "Run fast, secure CI/CD on your own infrastructure with Buildkite agents",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "buildkite", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Hybrid CI/CD with Buildkite",
+      "slug": "hybrid-cicd-buildkite",
+      "description": "Combine cloud orchestration with self-hosted build agents using Buildkite",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "buildkite", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Pipeline automation with Concourse CI",
+      "slug": "pipeline-automation-concourse-ci",
+      "description": "Build declarative, reproducible CI/CD pipelines with Concourse",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "concourse", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Resource-based workflows with Concourse",
+      "slug": "resource-based-workflows-concourse",
+      "description": "Design pipelines around versioned resources using Concourse's model",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "concourse", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Continuous delivery with GoCD",
+      "slug": "continuous-delivery-gocd",
+      "description": "Model complex deployment workflows using GoCD's value stream map",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "gocd", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Multi-stage deployments with GoCD",
+      "slug": "multi-stage-deployments-gocd",
+      "description": "Orchestrate complex release processes across environments with GoCD",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "gocd", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cloud-native CI/CD with CodeShip",
+      "slug": "cloud-native-cicd-codeship",
+      "description": "Automate deployments to cloud platforms using CodeShip's hosted CI/CD",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "codeship", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Developer-friendly CI with Buddy",
+      "slug": "developer-friendly-ci-buddy",
+      "description": "Build and deploy applications using Buddy's visual pipeline builder",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "buddy", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Fast automated workflows with Buddy",
+      "slug": "fast-automated-workflows-buddy",
+      "description": "Create rapid deployment pipelines with Buddy's cached dependencies and parallelism",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "buddy", "is_primary": true }
+      ]
+    },
+    {
+      "name": "High-performance CI with Semaphore",
+      "slug": "high-performance-ci-semaphore",
+      "description": "Accelerate builds and tests using Semaphore's fast, optimized CI/CD platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "semaphore", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Optimized test pipelines with Semaphore",
+      "slug": "optimized-test-pipelines-semaphore",
+      "description": "Leverage Semaphore's auto-scaling and caching for fast test execution",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "semaphore", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Microservices CI/CD with Wercker",
+      "slug": "microservices-cicd-wercker",
+      "description": "Build container-based microservices pipelines using Oracle Wercker",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "wercker", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Kubernetes deployments with Codefresh",
+      "slug": "kubernetes-deployments-codefresh",
+      "description": "Build and deploy containerized applications to Kubernetes using Codefresh",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "codefresh", "is_primary": true }
+      ]
+    },
+    {
+      "name": "GitOps workflows with Codefresh",
+      "slug": "gitops-workflows-codefresh",
+      "description": "Implement GitOps-based deployments using Codefresh and Argo CD",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "codefresh", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Helm chart management with Codefresh",
+      "slug": "helm-chart-management-codefresh",
+      "description": "Package and deploy Helm charts as part of Codefresh CI/CD pipelines",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "codefresh", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Enterprise log management with Splunk",
+      "slug": "enterprise-log-management-splunk",
+      "description": "Collect, analyze, and visualize machine data using Splunk's platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "splunk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Security monitoring with Splunk",
+      "slug": "security-monitoring-splunk",
+      "description": "Detect security threats and investigate incidents using Splunk",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "splunk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Application monitoring with Splunk",
+      "slug": "application-monitoring-splunk",
+      "description": "Monitor application performance and troubleshoot issues with Splunk APM",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "splunk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Distributed tracing with Splunk",
+      "slug": "distributed-tracing-splunk",
+      "description": "Track requests across microservices using Splunk's distributed tracing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "splunk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Observability with Uptrace",
+      "slug": "observability-uptrace",
+      "description": "Monitor distributed systems using Uptrace's OpenTelemetry-native platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "uptrace", "is_primary": true }
+      ]
+    },
+    {
+      "name": "OpenTelemetry tracing with Uptrace",
+      "slug": "opentelemetry-tracing-uptrace",
+      "description": "Implement distributed tracing using Uptrace and OpenTelemetry",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "uptrace", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Distributed system observability with Lightstep",
+      "slug": "distributed-system-observability-lightstep",
+      "description": "Gain insights into complex microservices using Lightstep's observability platform",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "lightstep", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Performance analysis with Lightstep",
+      "slug": "performance-analysis-lightstep",
+      "description": "Identify and resolve performance issues using Lightstep's tracing and metrics",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "lightstep", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Web server configuration with Apache",
+      "slug": "web-server-configuration-apache",
+      "description": "Deploy and configure Apache HTTP Server for hosting websites and applications",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Reverse proxy and load balancing with Apache",
+      "slug": "reverse-proxy-load-balancing-apache",
+      "description": "Configure Apache as a reverse proxy and load balancer for backend services",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Apache performance tuning and optimization",
+      "slug": "apache-performance-tuning-optimization",
+      "description": "Optimize Apache configuration for high-traffic websites and applications",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache", "is_primary": true }
+      ]
+    },
+    {
+      "name": "SSL/TLS configuration with Apache",
+      "slug": "ssl-tls-configuration-apache",
+      "description": "Secure websites with HTTPS using Apache and SSL/TLS certificates",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Secrets management with AWS Parameter Store",
+      "slug": "secrets-management-aws-parameter-store",
+      "description": "Store and manage application secrets securely using AWS Systems Manager Parameter Store",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "aws-parameter-store", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Configuration management with Parameter Store",
+      "slug": "configuration-management-parameter-store",
+      "description": "Centralize application configuration using AWS Parameter Store's hierarchical storage",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "aws-parameter-store", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Container security scanning with Anchore",
+      "slug": "container-security-scanning-anchore",
+      "description": "Analyze container images for vulnerabilities using Anchore's deep inspection",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "anchore", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Container compliance with Anchore",
+      "slug": "container-compliance-anchore",
+      "description": "Enforce security policies and compliance requirements for container images",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "anchore", "is_primary": true }
+      ]
+    },
+    {
+      "name": "HTTP benchmarking with Apache Bench",
+      "slug": "http-benchmarking-apache-bench",
+      "description": "Measure web server performance and capacity using Apache Bench",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache-bench", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Load testing APIs with Apache Bench",
+      "slug": "load-testing-apis-apache-bench",
+      "description": "Test API performance under load using Apache Bench's simple CLI",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "apache-bench", "is_primary": true }
+      ]
+    },
+    {
+      "name": "High-performance HTTP benchmarking with wrk",
+      "slug": "high-performance-http-benchmarking-wrk",
+      "description": "Stress test HTTP services using wrk's multi-threaded performance testing",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "wrk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Custom load testing with wrk and Lua",
+      "slug": "custom-load-testing-wrk-lua",
+      "description": "Create complex load testing scenarios using wrk's Lua scripting capabilities",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "wrk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Free SSL certificates with ZeroSSL",
+      "slug": "free-ssl-certificates-zerossl",
+      "description": "Obtain and manage free SSL/TLS certificates using ZeroSSL",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "zerossl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Automated certificate management with ZeroSSL",
+      "slug": "automated-certificate-management-zerossl",
+      "description": "Automate SSL certificate renewal and deployment using ZeroSSL's API",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "zerossl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Git repository management with Stash",
+      "slug": "git-repository-management-stash",
+      "description": "Host and manage Git repositories using Atlassian Stash (Bitbucket Server)",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "stash", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Backup and disaster recovery with Duplicati",
+      "slug": "backup-disaster-recovery-duplicati",
+      "description": "Protect data with encrypted backups to cloud storage using Duplicati",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "duplicati", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Automated backup strategies with Duplicati",
+      "slug": "automated-backup-strategies-duplicati",
+      "description": "Configure scheduled, incremental backups with deduplication using Duplicati",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "duplicati", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cloud-native integration with Ballerina",
+      "slug": "cloud-native-integration-ballerina",
+      "description": "Build network-distributed applications using Ballerina's integration-focused language",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ballerina", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Microservices development with Ballerina",
+      "slug": "microservices-development-ballerina",
+      "description": "Develop cloud-native microservices using Ballerina's built-in networking primitives",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ballerina", "is_primary": true }
+      ]
+    },
+    {
+      "name": "API integration with Ballerina",
+      "slug": "api-integration-ballerina",
+      "description": "Connect and orchestrate APIs using Ballerina's sequence diagram-based syntax",
+      "category_slug": "cloud-devops",
+      "competencies": [
+        { "competency_slug": "ballerina", "is_primary": true }
+      ]
+    }
+  ]
+}

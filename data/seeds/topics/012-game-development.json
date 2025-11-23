@@ -1,0 +1,1159 @@
+{
+  "topics": [
+    {
+      "name": "Building 2D games with Unity",
+      "slug": "building-2d-games-with-unity",
+      "description": "Create 2D platformers, puzzle games, and side-scrollers using Unity's 2D tools and C# scripting",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Building 3D games with Unity",
+      "slug": "building-3d-games-with-unity",
+      "description": "Develop 3D games with Unity's game engine, including physics, lighting, and C# gameplay programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Mobile game development with Unity",
+      "slug": "mobile-game-development-with-unity",
+      "description": "Build and optimize cross-platform mobile games for iOS and Android using Unity",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "VR and AR development with Unity",
+      "slug": "vr-ar-development-with-unity",
+      "description": "Create immersive virtual and augmented reality experiences using Unity's XR tools",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Unity physics and gameplay mechanics",
+      "slug": "unity-physics-gameplay-mechanics",
+      "description": "Implement realistic physics simulations and complex gameplay systems in Unity",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Unity UI and UX design",
+      "slug": "unity-ui-ux-design",
+      "description": "Design and implement user interfaces, menus, and HUD elements in Unity games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false },
+        { "competency_slug": "game-ui-ux-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Visual shader creation with Unity Shader Graph",
+      "slug": "visual-shader-creation-unity-shader-graph",
+      "description": "Create custom visual effects and materials without code using Unity's node-based Shader Graph",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unity-shader-graph", "is_primary": true },
+        { "competency_slug": "unity", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Building multiplayer games with Unity",
+      "slug": "building-multiplayer-games-unity",
+      "description": "Implement networked multiplayer gameplay and synchronization in Unity games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-networking", "is_primary": true },
+        { "competency_slug": "unity", "is_primary": false },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Building AAA games with Unreal Engine",
+      "slug": "building-aaa-games-unreal-engine",
+      "description": "Create high-fidelity 3D games with Unreal Engine's advanced graphics and C++ programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unreal-engine", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Visual scripting with Unreal Engine Blueprints",
+      "slug": "visual-scripting-unreal-blueprints",
+      "description": "Build game logic and systems using Unreal Engine's node-based Blueprint visual scripting",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "blueprint-visual-scripting", "is_primary": true },
+        { "competency_slug": "unreal-engine", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Advanced C++ programming for Unreal Engine",
+      "slug": "advanced-cpp-unreal-engine",
+      "description": "Master C++ gameplay programming and engine customization in Unreal Engine",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unreal-engine", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Realistic graphics and lighting in Unreal Engine",
+      "slug": "realistic-graphics-lighting-unreal",
+      "description": "Create photorealistic environments using Unreal Engine's rendering and lighting systems",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "unreal-engine", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Open-source game development with Godot",
+      "slug": "open-source-game-development-godot",
+      "description": "Build 2D and 3D games with the free and open-source Godot engine and GDScript",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "godot", "is_primary": true },
+        { "competency_slug": "gdscript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D game development with Godot",
+      "slug": "2d-game-development-godot",
+      "description": "Create pixel-perfect 2D games using Godot's specialized 2D engine and tooling",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "godot", "is_primary": true },
+        { "competency_slug": "gdscript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "3D game development with Godot",
+      "slug": "3d-game-development-godot",
+      "description": "Develop 3D games with Godot's lightweight 3D engine and GDScript programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "godot", "is_primary": true },
+        { "competency_slug": "gdscript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Mobile game development with Godot",
+      "slug": "mobile-game-development-godot",
+      "description": "Build and export mobile games for iOS and Android using Godot",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "godot", "is_primary": true },
+        { "competency_slug": "gdscript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "GDScript programming for Godot games",
+      "slug": "gdscript-programming-godot-games",
+      "description": "Master Godot's Python-like GDScript language for efficient game development",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "gdscript", "is_primary": true },
+        { "competency_slug": "godot", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D game creation with GameMaker Studio",
+      "slug": "2d-game-creation-gamemaker-studio",
+      "description": "Develop 2D games quickly using GameMaker's drag-and-drop interface and GML scripting",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "gamemaker-studio", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Platformer and action games with GameMaker Studio",
+      "slug": "platformer-action-games-gamemaker",
+      "description": "Build fast-paced 2D platformers and action games using GameMaker Studio",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "gamemaker-studio", "is_primary": true }
+      ]
+    },
+    {
+      "name": "High-fidelity 3D games with CryEngine",
+      "slug": "high-fidelity-3d-games-cryengine",
+      "description": "Create visually stunning games using CryEngine's advanced graphics capabilities and C++ programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "cryengine", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "RPG development with RPG Maker",
+      "slug": "rpg-development-rpg-maker",
+      "description": "Create story-driven role-playing games without programming using RPG Maker",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "rpg-maker", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Custom RPG mechanics with RPG Maker scripting",
+      "slug": "custom-rpg-mechanics-rpg-maker",
+      "description": "Extend RPG Maker with custom gameplay systems and mechanics using JavaScript plugins",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "rpg-maker", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Visual game development with Construct",
+      "slug": "visual-game-development-construct",
+      "description": "Build 2D games using Construct's event-based visual programming without code",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "construct", "is_primary": true }
+      ]
+    },
+    {
+      "name": "HTML5 game development with Construct",
+      "slug": "html5-game-development-construct",
+      "description": "Create browser-based games and export to multiple platforms using Construct",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "construct", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cross-platform 2D games with Defold",
+      "slug": "cross-platform-2d-games-defold",
+      "description": "Build mobile and web games using Defold's lightweight engine and Lua scripting",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "defold", "is_primary": true },
+        { "competency_slug": "lua", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Mobile game development with Cocos2d",
+      "slug": "mobile-game-development-cocos2d",
+      "description": "Develop 2D mobile games using the Cocos2d framework and C++",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "cocos2d", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cross-platform Java games with LibGDX",
+      "slug": "cross-platform-java-games-libgdx",
+      "description": "Build games for desktop, mobile, and web using LibGDX and Java",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "libgdx", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Browser-based games with Phaser",
+      "slug": "browser-based-games-phaser",
+      "description": "Create HTML5 games that run in the browser using Phaser and JavaScript",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "phaser", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false },
+        { "competency_slug": "html", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D web games with Phaser",
+      "slug": "2d-web-games-phaser",
+      "description": "Develop engaging 2D browser games with physics and animations using Phaser",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "phaser", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false },
+        { "competency_slug": "html", "is_primary": false }
+      ]
+    },
+    {
+      "name": "3D browser games with PlayCanvas",
+      "slug": "3d-browser-games-playcanvas",
+      "description": "Build WebGL-powered 3D games that run in browsers using PlayCanvas and JavaScript",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "playcanvas", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cross-platform C# games with MonoGame",
+      "slug": "cross-platform-csharp-games-monogame",
+      "description": "Develop games for multiple platforms using MonoGame framework and C#",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "monogame", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D game development with MonoGame",
+      "slug": "2d-game-development-monogame",
+      "description": "Create 2D games with precise control using MonoGame's low-level framework",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "monogame", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Maintaining XNA games",
+      "slug": "maintaining-xna-games",
+      "description": "Update and maintain legacy XNA game projects and migrate to modern frameworks",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "xna", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Low-level game programming with SDL",
+      "slug": "low-level-game-programming-sdl",
+      "description": "Build games from scratch using SDL for graphics, input, and audio in C",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "sdl", "is_primary": true },
+        { "competency_slug": "c", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Simple game development with Raylib",
+      "slug": "simple-game-development-raylib",
+      "description": "Create games quickly with Raylib's beginner-friendly C library",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "raylib", "is_primary": true },
+        { "competency_slug": "c", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D games with Love2D",
+      "slug": "2d-games-love2d",
+      "description": "Build 2D games using the Love2D framework and Lua programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "love2d", "is_primary": true },
+        { "competency_slug": "lua", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Retro game creation with Pico-8",
+      "slug": "retro-game-creation-pico-8",
+      "description": "Design constrained retro-style games using Pico-8's fantasy console and Lua",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "pico-8", "is_primary": true },
+        { "competency_slug": "lua", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Demoscene and tiny games with Pico-8",
+      "slug": "demoscene-tiny-games-pico-8",
+      "description": "Create impressive demos and games within Pico-8's strict size and performance limits",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "pico-8", "is_primary": true },
+        { "competency_slug": "lua", "is_primary": false }
+      ]
+    },
+    {
+      "name": "3D graphics programming with OpenGL",
+      "slug": "3d-graphics-programming-opengl",
+      "description": "Learn low-level graphics rendering and 3D programming using OpenGL and C++",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "opengl", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cross-platform graphics with OpenGL",
+      "slug": "cross-platform-graphics-opengl",
+      "description": "Build graphics applications that run on multiple platforms using OpenGL",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "opengl", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Windows game graphics with DirectX",
+      "slug": "windows-game-graphics-directx",
+      "description": "Develop high-performance graphics and games for Windows using DirectX and C++",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "directx", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Modern graphics with DirectX 12",
+      "slug": "modern-graphics-directx-12",
+      "description": "Leverage DirectX 12's low-level API for maximum graphics performance on Windows",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "directx", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "High-performance graphics with Vulkan",
+      "slug": "high-performance-graphics-vulkan",
+      "description": "Build cutting-edge graphics applications using Vulkan's modern low-level API",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "vulkan", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cross-platform rendering with Vulkan",
+      "slug": "cross-platform-rendering-vulkan",
+      "description": "Create high-performance graphics that run on desktop and mobile using Vulkan",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "vulkan", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Shader programming with GLSL",
+      "slug": "shader-programming-glsl",
+      "description": "Write custom vertex and fragment shaders using GLSL for OpenGL graphics",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "glsl", "is_primary": true },
+        { "competency_slug": "opengl", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Visual effects with GLSL shaders",
+      "slug": "visual-effects-glsl-shaders",
+      "description": "Create stunning visual effects and post-processing with GLSL shader programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "glsl", "is_primary": true },
+        { "competency_slug": "opengl", "is_primary": false }
+      ]
+    },
+    {
+      "name": "DirectX shader programming with HLSL",
+      "slug": "directx-shader-programming-hlsl",
+      "description": "Write custom shaders for DirectX graphics using High-Level Shading Language",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "hlsl", "is_primary": true },
+        { "competency_slug": "directx", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Advanced rendering techniques with HLSL",
+      "slug": "advanced-rendering-hlsl",
+      "description": "Implement cutting-edge graphics techniques using HLSL shader programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "hlsl", "is_primary": true },
+        { "competency_slug": "directx", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D physics simulation with Box2D",
+      "slug": "2d-physics-simulation-box2d",
+      "description": "Add realistic 2D physics to games using the Box2D physics engine",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "box2d", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Physics-based 2D games with Box2D",
+      "slug": "physics-based-2d-games-box2d",
+      "description": "Design games centered around physics interactions using Box2D",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "box2d", "is_primary": true }
+      ]
+    },
+    {
+      "name": "3D physics with Bullet Physics",
+      "slug": "3d-physics-bullet-physics",
+      "description": "Implement realistic 3D physics simulations using Bullet Physics and C++",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "bullet-physics", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Ragdoll and soft body physics with Bullet",
+      "slug": "ragdoll-soft-body-physics-bullet",
+      "description": "Create advanced physics simulations including ragdolls and deformable objects",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "bullet-physics", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Real-time physics with PhysX",
+      "slug": "real-time-physics-physx",
+      "description": "Integrate NVIDIA PhysX for high-performance physics in games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "physx", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Interactive audio with FMOD",
+      "slug": "interactive-audio-fmod",
+      "description": "Design dynamic game audio that responds to gameplay using FMOD Studio",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "fmod", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Adaptive music systems with FMOD",
+      "slug": "adaptive-music-systems-fmod",
+      "description": "Create music that adapts to game state and player actions using FMOD",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "fmod", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Game audio middleware with Wwise",
+      "slug": "game-audio-middleware-wwise",
+      "description": "Implement professional interactive audio for games using Audiokinetic Wwise",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "wwise", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Dynamic soundscapes with Wwise",
+      "slug": "dynamic-soundscapes-wwise",
+      "description": "Build immersive and adaptive audio environments using Wwise's powerful tools",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "wwise", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Lua scripting for game development",
+      "slug": "lua-scripting-game-development",
+      "description": "Write game logic and systems using Lua's lightweight scripting language",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "lua", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Embedding Lua in game engines",
+      "slug": "embedding-lua-game-engines",
+      "description": "Integrate Lua scripting into C++ game engines for modding and gameplay logic",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "lua", "is_primary": true },
+        { "competency_slug": "cpp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Performance-focused game development with Odin",
+      "slug": "performance-game-development-odin",
+      "description": "Build high-performance games using Odin's modern systems programming language",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "odin", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Low-level game engine programming with Odin",
+      "slug": "low-level-game-engine-odin",
+      "description": "Develop custom game engines and tools using Odin as a C alternative",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "odin", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Functional game scripting with Fennel",
+      "slug": "functional-game-scripting-fennel",
+      "description": "Write game logic using Fennel's Lisp syntax that compiles to Lua",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "fennel", "is_primary": true },
+        { "competency_slug": "lua", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Core principles of game design",
+      "slug": "core-principles-game-design",
+      "description": "Master the fundamentals of creating engaging gameplay, mechanics, and player experiences",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Designing player progression systems",
+      "slug": "designing-player-progression-systems",
+      "description": "Create rewarding progression curves, unlocks, and skill trees for games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Game economy and resource systems",
+      "slug": "game-economy-resource-systems",
+      "description": "Design balanced in-game economies, currencies, and resource management",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Rapid prototyping for game ideas",
+      "slug": "rapid-prototyping-game-ideas",
+      "description": "Quickly test and iterate on game concepts to find fun mechanics",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "3D level design and world building",
+      "slug": "3d-level-design-world-building",
+      "description": "Create engaging 3D game environments, layouts, and spatial experiences",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "level-design", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "2D level design and layout",
+      "slug": "2d-level-design-layout",
+      "description": "Design compelling 2D game levels with good pacing and challenge curves",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "level-design", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Environmental storytelling in games",
+      "slug": "environmental-storytelling-games",
+      "description": "Tell stories through level design and environmental details",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "level-design", "is_primary": true },
+        { "competency_slug": "narrative-design-games", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Combat and action game mechanics",
+      "slug": "combat-action-game-mechanics",
+      "description": "Design satisfying combat systems, combos, and action gameplay",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-mechanics-design", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Puzzle and logic game mechanics",
+      "slug": "puzzle-logic-game-mechanics",
+      "description": "Create engaging puzzle systems and brain-teasing mechanics",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-mechanics-design", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Strategy game systems design",
+      "slug": "strategy-game-systems-design",
+      "description": "Design deep strategic gameplay with meaningful choices and emergent complexity",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-mechanics-design", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Game UI and menu design",
+      "slug": "game-ui-menu-design",
+      "description": "Create intuitive menus, HUDs, and user interfaces for games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ui-ux-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Accessibility in game interfaces",
+      "slug": "accessibility-game-interfaces",
+      "description": "Design inclusive game UIs that work for players with different abilities",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ui-ux-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Controller and input design for games",
+      "slug": "controller-input-design-games",
+      "description": "Design responsive and satisfying control schemes for different platforms",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ui-ux-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Balancing multiplayer games",
+      "slug": "balancing-multiplayer-games",
+      "description": "Tune competitive games for fair and engaging multiplayer experiences",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-balancing", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Single-player difficulty balancing",
+      "slug": "single-player-difficulty-balancing",
+      "description": "Create well-paced difficulty curves that challenge without frustrating",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-balancing", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Data-driven game balancing",
+      "slug": "data-driven-game-balancing",
+      "description": "Use analytics and playtesting data to optimize game balance",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-balancing", "is_primary": true },
+        { "competency_slug": "game-analytics", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Interactive storytelling for games",
+      "slug": "interactive-storytelling-games",
+      "description": "Craft branching narratives and player-driven stories in games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "narrative-design-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Character writing and dialogue for games",
+      "slug": "character-writing-dialogue-games",
+      "description": "Write compelling characters and dialogue that enhance gameplay",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "narrative-design-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "World building for game narratives",
+      "slug": "world-building-game-narratives",
+      "description": "Create rich fictional worlds, lore, and backstories for games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "narrative-design-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Choice-driven game narratives",
+      "slug": "choice-driven-game-narratives",
+      "description": "Design meaningful player choices that shape story outcomes",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "narrative-design-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "RPG quest and mission design",
+      "slug": "rpg-quest-mission-design",
+      "description": "Create engaging quests and missions for role-playing games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "quest-design", "is_primary": true },
+        { "competency_slug": "narrative-design-games", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Side quest and optional content design",
+      "slug": "side-quest-optional-content",
+      "description": "Design rewarding side content that enhances the main game experience",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "quest-design", "is_primary": true },
+        { "competency_slug": "narrative-design-games", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Multiplayer networking and synchronization",
+      "slug": "multiplayer-networking-synchronization",
+      "description": "Implement networked multiplayer gameplay with proper state synchronization",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-networking", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Real-time multiplayer game systems",
+      "slug": "real-time-multiplayer-systems",
+      "description": "Build fast-paced networked games with client prediction and lag compensation",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-networking", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Authoritative server architectures for games",
+      "slug": "authoritative-server-architectures",
+      "description": "Design cheat-resistant multiplayer games using server-authoritative networking",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-networking", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Turn-based multiplayer systems",
+      "slug": "turn-based-multiplayer-systems",
+      "description": "Implement networking for turn-based and asynchronous multiplayer games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-networking", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Pathfinding and navigation AI",
+      "slug": "pathfinding-navigation-ai",
+      "description": "Implement intelligent movement and navigation for NPCs in games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ai-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Behavior trees for game AI",
+      "slug": "behavior-trees-game-ai",
+      "description": "Design complex NPC behaviors using behavior tree architectures",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ai-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Combat AI and enemy behavior",
+      "slug": "combat-ai-enemy-behavior",
+      "description": "Create challenging and believable enemy AI for action games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ai-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Strategic AI for games",
+      "slug": "strategic-ai-games",
+      "description": "Implement AI opponents for strategy and tactical games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-ai-programming", "is_primary": true },
+        { "competency_slug": "algorithms", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Procedural world generation",
+      "slug": "procedural-world-generation",
+      "description": "Generate infinite game worlds and terrains algorithmically",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "procedural-generation", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Procedural dungeon and level generation",
+      "slug": "procedural-dungeon-level-generation",
+      "description": "Create unique dungeons and levels using procedural algorithms",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "procedural-generation", "is_primary": true },
+        { "competency_slug": "algorithms", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Procedural content creation for roguelikes",
+      "slug": "procedural-content-roguelikes",
+      "description": "Design procedural systems for roguelike and roguelite games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "procedural-generation", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Player behavior analytics for games",
+      "slug": "player-behavior-analytics",
+      "description": "Analyze player data to understand engagement, retention, and game balance",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-analytics", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Live operations and telemetry",
+      "slug": "live-operations-telemetry",
+      "description": "Implement and analyze real-time game metrics for live service games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-analytics", "is_primary": true }
+      ]
+    },
+    {
+      "name": "A/B testing for game features",
+      "slug": "ab-testing-game-features",
+      "description": "Use experimental design to optimize game mechanics and monetization",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-analytics", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Free-to-play game monetization",
+      "slug": "free-to-play-monetization",
+      "description": "Design ethical and profitable monetization for F2P games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-monetization", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "In-game economy design",
+      "slug": "in-game-economy-design",
+      "description": "Create balanced virtual economies with currencies and item systems",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-monetization", "is_primary": true },
+        { "competency_slug": "game-design", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Game testing and quality assurance",
+      "slug": "game-testing-quality-assurance",
+      "description": "Test games for bugs, balance issues, and player experience problems",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-testing", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Automated testing for games",
+      "slug": "automated-testing-games",
+      "description": "Implement automated tests for game systems and mechanics",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-testing", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Playtesting and user research",
+      "slug": "playtesting-user-research",
+      "description": "Conduct effective playtests to gather feedback and improve games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-testing", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Advanced shader techniques",
+      "slug": "advanced-shader-techniques",
+      "description": "Master complex rendering effects using custom shader programming",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "shader-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Stylized and non-photorealistic rendering",
+      "slug": "stylized-non-photorealistic-rendering",
+      "description": "Create unique art styles using custom shaders and rendering techniques",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "shader-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Post-processing effects with shaders",
+      "slug": "post-processing-effects-shaders",
+      "description": "Implement bloom, color grading, and other post-processing effects",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "shader-programming", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Sound design fundamentals for games",
+      "slug": "sound-design-fundamentals-games",
+      "description": "Create and implement sound effects that enhance gameplay and immersion",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-audio-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Music composition for games",
+      "slug": "music-composition-games",
+      "description": "Compose adaptive and interactive music for game soundtracks",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-audio-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Audio implementation in game engines",
+      "slug": "audio-implementation-game-engines",
+      "description": "Integrate and optimize audio systems in games for best performance",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-audio-design", "is_primary": true }
+      ]
+    },
+    {
+      "name": "3D character modeling for games",
+      "slug": "3d-character-modeling-games",
+      "description": "Create optimized 3D character models for real-time game engines",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "3d-modeling-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Environment and prop modeling for games",
+      "slug": "environment-prop-modeling-games",
+      "description": "Build 3D game environments and assets optimized for performance",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "3d-modeling-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Low-poly and stylized 3D art",
+      "slug": "low-poly-stylized-3d-art",
+      "description": "Create appealing low-poly 3D models with distinct visual styles",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "3d-modeling-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Character rigging and animation",
+      "slug": "character-rigging-animation",
+      "description": "Rig and animate 3D characters for game engines",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-animation", "is_primary": true }
+      ]
+    },
+    {
+      "name": "2D sprite animation for games",
+      "slug": "2d-sprite-animation-games",
+      "description": "Create frame-by-frame sprite animations for 2D games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-animation", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Procedural animation techniques",
+      "slug": "procedural-animation-techniques",
+      "description": "Generate animations dynamically using procedural techniques and inverse kinematics",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "game-animation", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Pixel art for retro games",
+      "slug": "pixel-art-retro-games",
+      "description": "Create retro-style pixel art sprites and tilesets for games",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "pixel-art", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Pixel art animation techniques",
+      "slug": "pixel-art-animation-techniques",
+      "description": "Animate pixel art characters and objects with limited palettes",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "pixel-art", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Modern pixel art styles",
+      "slug": "modern-pixel-art-styles",
+      "description": "Create contemporary pixel art with lighting, effects, and high color counts",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "pixel-art", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Particle systems and visual effects",
+      "slug": "particle-systems-visual-effects",
+      "description": "Design and implement particle effects for explosions, magic, and environments",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "vfx-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Real-time VFX for gameplay",
+      "slug": "real-time-vfx-gameplay",
+      "description": "Create performant visual effects that enhance game feel and feedback",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "vfx-games", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Stylized VFX and shader effects",
+      "slug": "stylized-vfx-shader-effects",
+      "description": "Combine shaders and particles for unique, art-directed visual effects",
+      "category_slug": "game-development",
+      "competencies": [
+        { "competency_slug": "vfx-games", "is_primary": true },
+        { "competency_slug": "shader-programming", "is_primary": false }
+      ]
+    }
+  ]
+}

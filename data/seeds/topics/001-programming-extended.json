@@ -1,0 +1,867 @@
+{
+  "topics": [
+    {
+      "name": "Systems administration with Perl",
+      "slug": "systems-administration-perl",
+      "description": "Automate system tasks, log processing, and text manipulation using Perl's powerful regex and scripting",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "perl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Text processing and data extraction with Perl",
+      "slug": "text-processing-data-extraction-perl",
+      "description": "Parse complex text formats and extract data using Perl's unmatched regex capabilities",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "perl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Web scraping and automation with Perl",
+      "slug": "web-scraping-automation-perl",
+      "description": "Build web scrapers and automation scripts leveraging Perl's CPAN ecosystem",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "perl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Bioinformatics with Perl",
+      "slug": "bioinformatics-perl",
+      "description": "Analyze biological sequence data and genomics using Perl's BioPerl libraries",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "perl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Version control with Mercurial",
+      "slug": "version-control-mercurial",
+      "description": "Manage source code history and collaborate using Mercurial's distributed version control",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "mercurial", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Branching and merging with Mercurial",
+      "slug": "branching-merging-mercurial",
+      "description": "Master Mercurial's branching strategies and conflict resolution for team workflows",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "mercurial", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Version control with Subversion",
+      "slug": "version-control-subversion",
+      "description": "Manage enterprise codebases using SVN's centralized version control system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "subversion", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Migrating from Subversion to Git",
+      "slug": "migrating-subversion-git",
+      "description": "Transition legacy SVN repositories to Git while preserving history",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "subversion", "is_primary": true },
+        { "competency_slug": "git", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Functional programming with Scala",
+      "slug": "functional-programming-scala",
+      "description": "Master functional programming concepts using Scala's powerful type system and immutability",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scala", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Big data processing with Scala and Spark",
+      "slug": "big-data-processing-scala-spark",
+      "description": "Analyze massive datasets using Scala with Apache Spark for distributed computing",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scala", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Backend services with Scala and Akka",
+      "slug": "backend-services-scala-akka",
+      "description": "Build concurrent, distributed systems using Scala's Akka actor framework",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scala", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-safe domain modeling with Scala",
+      "slug": "type-safe-domain-modeling-scala",
+      "description": "Leverage Scala's advanced type system to create robust domain models",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scala", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Pure functional programming with Haskell",
+      "slug": "pure-functional-programming-haskell",
+      "description": "Learn rigorous functional programming with Haskell's lazy evaluation and strong typing",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "haskell", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-driven development with Haskell",
+      "slug": "type-driven-development-haskell",
+      "description": "Use Haskell's advanced type system to design and verify program correctness",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "haskell", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Compiler and language design with Haskell",
+      "slug": "compiler-language-design-haskell",
+      "description": "Build parsers, compilers, and domain-specific languages using Haskell",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "haskell", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Financial systems with Haskell",
+      "slug": "financial-systems-haskell",
+      "description": "Develop reliable financial and trading systems leveraging Haskell's type safety",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "haskell", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Functional-first programming with F#",
+      "slug": "functional-first-programming-fsharp",
+      "description": "Build .NET applications using F#'s functional-first approach and type inference",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "fsharp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Data science and analysis with F#",
+      "slug": "data-science-analysis-fsharp",
+      "description": "Perform data analysis and scientific computing using F# and .NET data libraries",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "fsharp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Domain modeling with F#",
+      "slug": "domain-modeling-fsharp",
+      "description": "Design expressive domain models using F#'s algebraic data types and type system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "fsharp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Concurrent programming with Clojure",
+      "slug": "concurrent-programming-clojure",
+      "description": "Build concurrent applications using Clojure's immutable data structures and STM",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "clojure", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Interactive development with Clojure REPL",
+      "slug": "interactive-development-clojure-repl",
+      "description": "Master REPL-driven development for rapid prototyping and debugging in Clojure",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "clojure", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Web development with Clojure",
+      "slug": "web-development-clojure",
+      "description": "Build web applications using Clojure's Ring, Compojure, and ClojureScript",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "clojure", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Data-oriented programming with Clojure",
+      "slug": "data-oriented-programming-clojure",
+      "description": "Process and transform data using Clojure's powerful sequence abstractions",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "clojure", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-safe functional programming with OCaml",
+      "slug": "type-safe-functional-programming-ocaml",
+      "description": "Build reliable software using OCaml's strong static typing and functional features",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "ocaml", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Systems programming with OCaml",
+      "slug": "systems-programming-ocaml",
+      "description": "Develop high-performance systems and tools using OCaml's native compilation",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "ocaml", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Formal verification with OCaml",
+      "slug": "formal-verification-ocaml",
+      "description": "Create verified software using OCaml for proof assistants and theorem provers",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "ocaml", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Symbolic computation with Common Lisp",
+      "slug": "symbolic-computation-common-lisp",
+      "description": "Implement AI systems and symbolic reasoning using Common Lisp's metaprogramming",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "common-lisp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Macro-based metaprogramming with Common Lisp",
+      "slug": "macro-metaprogramming-common-lisp",
+      "description": "Extend language syntax and create DSLs using Common Lisp's powerful macro system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "common-lisp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Interactive programming with Common Lisp",
+      "slug": "interactive-programming-common-lisp",
+      "description": "Leverage Common Lisp's live coding and REPL for rapid development and debugging",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "common-lisp", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Minimalist programming with Scheme",
+      "slug": "minimalist-programming-scheme",
+      "description": "Learn programming fundamentals through Scheme's elegant, minimal design",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scheme", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Teaching programming concepts with Scheme",
+      "slug": "teaching-programming-concepts-scheme",
+      "description": "Use Scheme to teach core computer science concepts and functional programming",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scheme", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Continuation-based programming with Scheme",
+      "slug": "continuation-based-programming-scheme",
+      "description": "Master advanced control flow using Scheme's first-class continuations",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scheme", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Ruby-like syntax with Crystal performance",
+      "slug": "ruby-syntax-crystal-performance",
+      "description": "Write elegant, type-safe code with Ruby-like syntax compiled to native speed",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "crystal", "is_primary": true }
+      ]
+    },
+    {
+      "name": "High-performance web services with Crystal",
+      "slug": "high-performance-web-services-crystal",
+      "description": "Build fast web applications and APIs using Crystal's compiled performance",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "crystal", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-safe scripting with Crystal",
+      "slug": "type-safe-scripting-crystal",
+      "description": "Combine scripting language ease with compile-time type safety in Crystal",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "crystal", "is_primary": true }
+      ]
+    },
+    {
+      "name": "JVM scripting with Groovy",
+      "slug": "jvm-scripting-groovy",
+      "description": "Write dynamic JVM applications and scripts using Groovy's concise syntax",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "groovy", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Build automation with Groovy and Gradle",
+      "slug": "build-automation-groovy-gradle",
+      "description": "Create powerful build scripts using Groovy's DSL capabilities in Gradle",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "groovy", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Testing with Groovy and Spock",
+      "slug": "testing-groovy-spock",
+      "description": "Write expressive, readable tests using Groovy's Spock framework",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "groovy", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Maintaining legacy COBOL systems",
+      "slug": "maintaining-legacy-cobol-systems",
+      "description": "Understand and maintain critical business systems written in COBOL",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "cobol", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Financial transaction processing with COBOL",
+      "slug": "financial-transaction-processing-cobol",
+      "description": "Work with COBOL in banking and financial systems for transaction processing",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "cobol", "is_primary": true }
+      ]
+    },
+    {
+      "name": "COBOL modernization strategies",
+      "slug": "cobol-modernization-strategies",
+      "description": "Modernize COBOL applications through refactoring and integration with modern systems",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "cobol", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Mainframe development with COBOL",
+      "slug": "mainframe-development-cobol",
+      "description": "Develop and deploy applications on mainframe systems using COBOL",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "cobol", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Logic programming with Prolog",
+      "slug": "logic-programming-prolog",
+      "description": "Solve constraint satisfaction and symbolic reasoning problems using Prolog",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "prolog", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Expert systems and AI with Prolog",
+      "slug": "expert-systems-ai-prolog",
+      "description": "Build rule-based expert systems and AI applications using Prolog's inference engine",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "prolog", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Natural language processing with Prolog",
+      "slug": "natural-language-processing-prolog",
+      "description": "Parse and analyze natural language using Prolog's pattern matching and logic",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "prolog", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Combinatorial problem solving with Prolog",
+      "slug": "combinatorial-problem-solving-prolog",
+      "description": "Solve puzzles, scheduling, and combinatorial optimization using Prolog",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "prolog", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Language-oriented programming with Racket",
+      "slug": "language-oriented-programming-racket",
+      "description": "Create domain-specific languages and extend Racket's syntax with macros",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "racket", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Teaching programming with Racket",
+      "slug": "teaching-programming-racket",
+      "description": "Use Racket's educational tools to teach programming concepts and language design",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "racket", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Web development with Racket",
+      "slug": "web-development-racket",
+      "description": "Build web applications using Racket's continuation-based web framework",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "racket", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Maintaining legacy Delphi applications",
+      "slug": "maintaining-legacy-delphi-applications",
+      "description": "Update and maintain Windows applications written in Delphi and Object Pascal",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "delphi", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Database applications with Delphi",
+      "slug": "database-applications-delphi",
+      "description": "Build data-driven Windows applications using Delphi's RAD tools and database components",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "delphi", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Maintaining Visual Basic legacy systems",
+      "slug": "maintaining-visual-basic-legacy-systems",
+      "description": "Support and update existing VB.NET and VB6 enterprise applications",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "visual-basic", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Office automation with Visual Basic",
+      "slug": "office-automation-visual-basic",
+      "description": "Automate Microsoft Office tasks using VBA and Visual Basic",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "visual-basic", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Migrating VB6 to modern platforms",
+      "slug": "migrating-vb6-modern-platforms",
+      "description": "Modernize Visual Basic 6 applications to .NET or other modern frameworks",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "visual-basic", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-safe functional programming with Gleam",
+      "slug": "type-safe-functional-gleam",
+      "description": "Build reliable systems using Gleam's friendly syntax and strong static typing on the BEAM",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "gleam", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Concurrent applications with Gleam",
+      "slug": "concurrent-applications-gleam",
+      "description": "Leverage Erlang's BEAM VM for fault-tolerant concurrent systems in Gleam",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "gleam", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Visual programming for beginners with Scratch",
+      "slug": "visual-programming-beginners-scratch",
+      "description": "Learn programming fundamentals through Scratch's block-based visual interface",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scratch", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Teaching children to code with Scratch",
+      "slug": "teaching-children-code-scratch",
+      "description": "Introduce computational thinking and game design to children using Scratch",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scratch", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Interactive stories and games with Scratch",
+      "slug": "interactive-stories-games-scratch",
+      "description": "Create animations, stories, and simple games using Scratch's sprite system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "scratch", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Modern Perl programming with Raku",
+      "slug": "modern-perl-programming-raku",
+      "description": "Write expressive, Unicode-native code using Raku's gradual typing and concurrency",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "raku", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Grammars and parsing with Raku",
+      "slug": "grammars-parsing-raku",
+      "description": "Build parsers and DSLs using Raku's built-in grammar system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "raku", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Concurrent programming with Raku",
+      "slug": "concurrent-programming-raku",
+      "description": "Leverage Raku's built-in concurrency features for parallel and asynchronous programming",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "raku", "is_primary": true }
+      ]
+    },
+    {
+      "name": "GUI automation with Tcl/Tk",
+      "slug": "gui-automation-tcl-tk",
+      "description": "Create cross-platform graphical interfaces and automation scripts with Tcl/Tk",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "tcl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Network automation with Tcl",
+      "slug": "network-automation-tcl",
+      "description": "Automate network devices and infrastructure using Tcl scripting",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "tcl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Embedded systems scripting with Tcl",
+      "slug": "embedded-systems-scripting-tcl",
+      "description": "Use Tcl for testing and controlling embedded systems and hardware",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "tcl", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Teaching programming fundamentals with Pascal",
+      "slug": "teaching-programming-fundamentals-pascal",
+      "description": "Learn structured programming concepts using Pascal's clear, readable syntax",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "pascal", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Maintaining legacy Pascal systems",
+      "slug": "maintaining-legacy-pascal-systems",
+      "description": "Support and update existing Pascal and Turbo Pascal applications",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "pascal", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Object-oriented programming with Smalltalk",
+      "slug": "object-oriented-programming-smalltalk",
+      "description": "Master pure OOP concepts using Smalltalk's pioneering object system and live coding",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "smalltalk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Live programming with Smalltalk",
+      "slug": "live-programming-smalltalk",
+      "description": "Develop and debug code interactively using Smalltalk's image-based development",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "smalltalk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Teaching OOP concepts with Smalltalk",
+      "slug": "teaching-oop-concepts-smalltalk",
+      "description": "Use Smalltalk to teach pure object-oriented design and programming principles",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "smalltalk", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Maintaining Flash and ActionScript projects",
+      "slug": "maintaining-flash-actionscript-projects",
+      "description": "Support legacy Flash applications and migrate ActionScript code to modern platforms",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "actionscript", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Migrating ActionScript to JavaScript",
+      "slug": "migrating-actionscript-javascript",
+      "description": "Convert Flash/ActionScript applications to HTML5 and JavaScript",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "actionscript", "is_primary": true },
+        { "competency_slug": "javascript", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Type-safe ML programming with Standard ML",
+      "slug": "type-safe-ml-programming-standard-ml",
+      "description": "Learn functional programming with Standard ML's rigorous type system and modules",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "standard-ml", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Compiler construction with Standard ML",
+      "slug": "compiler-construction-standard-ml",
+      "description": "Build compilers and language tools using SML's pattern matching and type safety",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "standard-ml", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Full-stack programming with Red",
+      "slug": "full-stack-programming-red",
+      "description": "Build systems from low-level to GUI using Red's productive, all-in-one language",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "red", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Embedded development with Janet",
+      "slug": "embedded-development-janet",
+      "description": "Embed Janet as a scripting language in C applications for extensibility",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "janet", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Scripting and automation with Janet",
+      "slug": "scripting-automation-janet",
+      "description": "Write concise automation scripts using Janet's Lisp-like syntax",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "janet", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Dependent types with Idris",
+      "slug": "dependent-types-idris",
+      "description": "Write provably correct programs using Idris's dependent type system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "idris", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Type-driven development with Idris",
+      "slug": "type-driven-development-idris",
+      "description": "Use types to guide implementation and verify correctness in Idris",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "idris", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Verified programming with Agda",
+      "slug": "verified-programming-agda",
+      "description": "Prove program properties using Agda's dependently typed proof assistant",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "agda", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Mathematical proofs with Agda",
+      "slug": "mathematical-proofs-agda",
+      "description": "Formalize mathematics and verify proofs using Agda",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "agda", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Formal verification with Coq",
+      "slug": "formal-verification-coq",
+      "description": "Verify software correctness using Coq's interactive theorem prover",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "coq", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Certified programming with Coq",
+      "slug": "certified-programming-coq",
+      "description": "Extract verified programs from Coq proofs for safety-critical systems",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "coq", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Mathematical proofs with Coq",
+      "slug": "mathematical-proofs-coq",
+      "description": "Formalize and verify mathematical theorems using Coq",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "coq", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Theorem proving with Lean",
+      "slug": "theorem-proving-lean",
+      "description": "Formalize mathematics and verify proofs using Lean's modern proof assistant",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "lean", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Verified software with Lean",
+      "slug": "verified-software-lean",
+      "description": "Build provably correct programs using Lean's dependent type system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "lean", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Mathematical formalization with Lean",
+      "slug": "mathematical-formalization-lean",
+      "description": "Contribute to Lean's mathlib and formalize mathematical theories",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "lean", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Natural language-like programming with Ring",
+      "slug": "natural-language-programming-ring",
+      "description": "Write readable code using Ring's natural language syntax and simplicity",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "ring", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Cross-platform applications with Ring",
+      "slug": "cross-platform-applications-ring",
+      "description": "Build desktop and mobile apps using Ring's simple, portable language",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "ring", "is_primary": true }
+      ]
+    },
+    {
+      "name": "Rich desktop applications with JavaFX",
+      "slug": "rich-desktop-applications-javafx",
+      "description": "Build modern Java desktop applications with JavaFX's rich UI controls and CSS styling",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "javafx", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Cross-platform GUIs with JavaFX",
+      "slug": "cross-platform-guis-javafx",
+      "description": "Create visually appealing, cross-platform desktop interfaces using JavaFX",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "javafx", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Data visualization with JavaFX",
+      "slug": "data-visualization-javafx",
+      "description": "Build interactive charts and data visualizations using JavaFX's charting APIs",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "javafx", "is_primary": true },
+        { "competency_slug": "java", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Windows desktop applications with WPF",
+      "slug": "windows-desktop-applications-wpf",
+      "description": "Build rich Windows applications using WPF's XAML-based UI framework",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "wpf", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "MVVM patterns with WPF",
+      "slug": "mvvm-patterns-wpf",
+      "description": "Implement maintainable UIs using WPF's data binding and MVVM architecture",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "wpf", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    },
+    {
+      "name": "Custom controls and styling with WPF",
+      "slug": "custom-controls-styling-wpf",
+      "description": "Create reusable custom controls and themes using WPF's styling system",
+      "category_slug": "programming",
+      "competencies": [
+        { "competency_slug": "wpf", "is_primary": true },
+        { "competency_slug": "csharp", "is_primary": false }
+      ]
+    }
+  ]
+}
