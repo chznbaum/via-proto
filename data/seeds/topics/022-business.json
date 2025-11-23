@@ -1,0 +1,1195 @@
+{
+  "topics": [
+    {
+      "name": "Developing leadership skills and presence",
+      "slug": "developing-leadership-skills-and-presence",
+      "description": "Build foundational leadership capabilities including vision-setting, influence, and team inspiration",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "leadership", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Leadership for new managers",
+      "slug": "leadership-for-new-managers",
+      "description": "Transition from individual contributor to effective leader by developing management fundamentals",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "leadership", "is_primary": true},
+        {"competency_slug": "team-management", "is_primary": false},
+        {"competency_slug": "emotional-intelligence", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Executive leadership and strategic thinking",
+      "slug": "executive-leadership-and-strategic-thinking",
+      "description": "Develop C-suite capabilities for organizational vision, strategy, and stakeholder management",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "executive-leadership", "is_primary": true},
+        {"competency_slug": "leadership", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Executive presence and communication",
+      "slug": "executive-presence-and-communication",
+      "description": "Project authority and credibility as a senior leader through communication and presence",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "executive-leadership", "is_primary": true},
+        {"competency_slug": "executive-communication", "is_primary": false},
+        {"competency_slug": "public-speaking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building and leading high-performing teams",
+      "slug": "building-and-leading-high-performing-teams",
+      "description": "Recruit, develop, and manage teams to achieve exceptional results",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "team-management", "is_primary": true},
+        {"competency_slug": "leadership", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Team management and delegation",
+      "slug": "team-management-and-delegation",
+      "description": "Master effective delegation, feedback, and performance management for team success",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "team-management", "is_primary": true},
+        {"competency_slug": "coaching-mentoring", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Leading organizational change",
+      "slug": "leading-organizational-change",
+      "description": "Guide teams and organizations through transitions and transformations successfully",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "change-management", "is_primary": true},
+        {"competency_slug": "leadership", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Change management frameworks and practices",
+      "slug": "change-management-frameworks-and-practices",
+      "description": "Apply structured change management methodologies to drive adoption and minimize resistance",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "change-management", "is_primary": true},
+        {"competency_slug": "stakeholder-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Public speaking and presentation skills",
+      "slug": "public-speaking-and-presentation-skills",
+      "description": "Deliver confident, engaging presentations to audiences of any size",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "public-speaking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Public speaking for thought leadership",
+      "slug": "public-speaking-for-thought-leadership",
+      "description": "Speak at conferences and events to establish expertise and build professional brand",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "public-speaking", "is_primary": true},
+        {"competency_slug": "executive-communication", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective business presentations",
+      "slug": "effective-business-presentations",
+      "description": "Create and deliver compelling presentations that drive business decisions and action",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "business-presentations", "is_primary": true},
+        {"competency_slug": "public-speaking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Executive presentations and board communication",
+      "slug": "executive-presentations-and-board-communication",
+      "description": "Present to senior stakeholders and boards with clarity, brevity, and strategic impact",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "business-presentations", "is_primary": true},
+        {"competency_slug": "executive-communication", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Negotiation strategies and tactics",
+      "slug": "negotiation-strategies-and-tactics",
+      "description": "Negotiate effectively to reach win-win agreements in business and personal contexts",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "negotiation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Complex business negotiations",
+      "slug": "complex-business-negotiations",
+      "description": "Navigate multi-party negotiations, contracts, and high-stakes deals successfully",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "negotiation", "is_primary": true},
+        {"competency_slug": "executive-communication", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Executive communication for leadership",
+      "slug": "executive-communication-for-leadership",
+      "description": "Communicate with clarity, brevity, and impact at the executive level",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "executive-communication", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conflict resolution in the workplace",
+      "slug": "conflict-resolution-in-the-workplace",
+      "description": "Address and resolve interpersonal and team conflicts constructively",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "conflict-resolution", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mediation and dispute resolution",
+      "slug": "mediation-and-dispute-resolution",
+      "description": "Facilitate resolution between conflicting parties as a neutral third party",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "conflict-resolution", "is_primary": true},
+        {"competency_slug": "emotional-intelligence", "is_primary": false},
+        {"competency_slug": "active-listening", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Emotional intelligence for leaders",
+      "slug": "emotional-intelligence-for-leaders",
+      "description": "Develop self-awareness and interpersonal skills to lead with empathy and effectiveness",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "emotional-intelligence", "is_primary": true},
+        {"competency_slug": "leadership", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Emotional intelligence in the workplace",
+      "slug": "emotional-intelligence-in-the-workplace",
+      "description": "Build stronger work relationships and navigate office dynamics with emotional awareness",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "emotional-intelligence", "is_primary": true},
+        {"competency_slug": "empathy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Professional networking strategies",
+      "slug": "professional-networking-strategies",
+      "description": "Build and maintain valuable professional relationships for career growth",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "networking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Strategic networking for business development",
+      "slug": "strategic-networking-for-business-development",
+      "description": "Leverage relationships to create business opportunities and partnerships",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "networking", "is_primary": true},
+        {"competency_slug": "relationship-building", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Coaching and mentoring for development",
+      "slug": "coaching-and-mentoring-for-development",
+      "description": "Guide others' professional growth through effective coaching and mentoring",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "coaching-mentoring", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Leadership coaching and executive mentoring",
+      "slug": "leadership-coaching-and-executive-mentoring",
+      "description": "Develop leaders through structured coaching conversations and mentorship",
+      "category_slug": "leadership-communication",
+      "competencies": [
+        {"competency_slug": "coaching-mentoring", "is_primary": true},
+        {"competency_slug": "emotional-intelligence", "is_primary": false},
+        {"competency_slug": "active-listening", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Financial planning and analysis (FP&A)",
+      "slug": "financial-planning-and-analysis-fpa",
+      "description": "Conduct budgeting, forecasting, and variance analysis to support business decisions",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "fpa", "is_primary": true},
+        {"competency_slug": "financial-modeling", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Strategic FP&A for business partnering",
+      "slug": "strategic-fpa-for-business-partnering",
+      "description": "Partner with business leaders to drive strategic planning and financial performance",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "fpa", "is_primary": true},
+        {"competency_slug": "corporate-strategy", "is_primary": false},
+        {"competency_slug": "financial-modeling", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Treasury management and cash flow optimization",
+      "slug": "treasury-management-and-cash-flow-optimization",
+      "description": "Manage corporate cash, liquidity, and financial risk for organizational stability",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "treasury-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Corporate capital structure decisions",
+      "slug": "corporate-capital-structure-decisions",
+      "description": "Optimize the mix of debt and equity financing to minimize cost of capital",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "capital-structure", "is_primary": true},
+        {"competency_slug": "corporate-finance", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Business valuation methods and models",
+      "slug": "business-valuation-methods-and-models",
+      "description": "Value companies using DCF, comparables, and other valuation techniques",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "valuation", "is_primary": true},
+        {"competency_slug": "financial-modeling", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Valuation for M&A transactions",
+      "slug": "valuation-for-ma-transactions",
+      "description": "Apply valuation frameworks to assess acquisition targets and deal structures",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "valuation", "is_primary": true},
+        {"competency_slug": "mergers-acquisitions", "is_primary": false},
+        {"competency_slug": "financial-modeling", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Investment banking fundamentals",
+      "slug": "investment-banking-fundamentals",
+      "description": "Understand capital markets, deal structuring, and advisory services in investment banking",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "investment-banking", "is_primary": true},
+        {"competency_slug": "financial-modeling", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Investment banking financial modeling",
+      "slug": "investment-banking-financial-modeling",
+      "description": "Build complex financial models for M&A, LBO, and capital markets transactions",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "investment-banking", "is_primary": true},
+        {"competency_slug": "financial-modeling", "is_primary": false},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Corporate strategy development and execution",
+      "slug": "corporate-strategy-development-and-execution",
+      "description": "Formulate and implement long-term corporate strategies for competitive advantage",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "corporate-strategy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Strategic planning and portfolio management",
+      "slug": "strategic-planning-and-portfolio-management",
+      "description": "Develop strategic plans and manage business portfolios for growth and value creation",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "corporate-strategy", "is_primary": true},
+        {"competency_slug": "fpa", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Working capital management",
+      "slug": "working-capital-management",
+      "description": "Optimize cash conversion cycles and manage receivables, inventory, and payables",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "working-capital-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Management accounting for decision-making",
+      "slug": "management-accounting-for-decision-making",
+      "description": "Use cost accounting and internal reporting to support managerial decisions",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "management-accounting", "is_primary": true},
+        {"competency_slug": "cost-accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Corporate budgeting and planning",
+      "slug": "corporate-budgeting-and-planning",
+      "description": "Create and manage enterprise budgets aligned with strategic objectives",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "corporate-budgeting", "is_primary": true},
+        {"competency_slug": "fpa", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Corporate finance fundamentals",
+      "slug": "corporate-finance-fundamentals",
+      "description": "Master core corporate finance concepts including capital budgeting and risk management",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "corporate-finance", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mergers and acquisitions strategy and execution",
+      "slug": "mergers-and-acquisitions-strategy-and-execution",
+      "description": "Navigate M&A processes from target identification through integration",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "mergers-acquisitions", "is_primary": true},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "M&A due diligence and deal structuring",
+      "slug": "ma-due-diligence-and-deal-structuring",
+      "description": "Conduct financial and operational due diligence to evaluate acquisition opportunities",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "mergers-acquisitions", "is_primary": true},
+        {"competency_slug": "financial-analysis", "is_primary": false},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Venture capital fundamentals and investing",
+      "slug": "venture-capital-fundamentals-and-investing",
+      "description": "Evaluate startups, structure deals, and build venture capital portfolios",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "venture-capital", "is_primary": true},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Venture capital deal sourcing and diligence",
+      "slug": "venture-capital-deal-sourcing-and-diligence",
+      "description": "Source investment opportunities and conduct startup due diligence as a VC investor",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "venture-capital", "is_primary": true},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Private equity investing and value creation",
+      "slug": "private-equity-investing-and-value-creation",
+      "description": "Acquire, operate, and exit portfolio companies to generate returns",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "private-equity", "is_primary": true},
+        {"competency_slug": "valuation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Fundraising for startups and growth companies",
+      "slug": "fundraising-for-startups-and-growth-companies",
+      "description": "Raise capital from investors through pitching, negotiation, and deal closing",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "fundraising", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Fundraising strategy and investor relations",
+      "slug": "fundraising-strategy-and-investor-relations",
+      "description": "Develop fundraising strategies, build investor pipelines, and manage investor relationships",
+      "category_slug": "corporate-finance",
+      "competencies": [
+        {"competency_slug": "fundraising", "is_primary": true},
+        {"competency_slug": "business-presentations", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Accounting fundamentals and bookkeeping",
+      "slug": "accounting-fundamentals-and-bookkeeping",
+      "description": "Learn core accounting principles, journal entries, and financial record-keeping",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "accounting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Small business accounting",
+      "slug": "small-business-accounting",
+      "description": "Manage accounting for small businesses including QuickBooks and financial reporting",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "accounting", "is_primary": true},
+        {"competency_slug": "budgeting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Auditing principles and procedures",
+      "slug": "auditing-principles-and-procedures",
+      "description": "Conduct financial audits to verify accuracy and compliance of financial statements",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "auditing", "is_primary": true},
+        {"competency_slug": "accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Internal audit and controls",
+      "slug": "internal-audit-and-controls",
+      "description": "Evaluate internal controls and operational efficiency to improve business processes",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "auditing", "is_primary": true},
+        {"competency_slug": "financial-compliance", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Personal and business budgeting",
+      "slug": "personal-and-business-budgeting",
+      "description": "Create and manage budgets to control spending and achieve financial goals",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "budgeting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Zero-based budgeting",
+      "slug": "zero-based-budgeting",
+      "description": "Build budgets from zero each period to optimize resource allocation",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "budgeting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cost accounting for manufacturing",
+      "slug": "cost-accounting-for-manufacturing",
+      "description": "Track and analyze production costs using job costing and process costing methods",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "cost-accounting", "is_primary": true},
+        {"competency_slug": "management-accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Activity-based costing",
+      "slug": "activity-based-costing",
+      "description": "Allocate overhead costs based on activities to improve cost accuracy and decision-making",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "cost-accounting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Financial analysis and ratio analysis",
+      "slug": "financial-analysis-and-ratio-analysis",
+      "description": "Analyze financial statements to assess company performance and financial health",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-analysis", "is_primary": true},
+        {"competency_slug": "financial-statements", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Financial statement analysis for investors",
+      "slug": "financial-statement-analysis-for-investors",
+      "description": "Evaluate investment opportunities through comprehensive financial statement analysis",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-analysis", "is_primary": true},
+        {"competency_slug": "financial-statements", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Financial compliance and regulatory reporting",
+      "slug": "financial-compliance-and-regulatory-reporting",
+      "description": "Ensure adherence to financial regulations and reporting requirements",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-compliance", "is_primary": true}
+      ]
+    },
+    {
+      "name": "SOX compliance and controls",
+      "slug": "sox-compliance-and-controls",
+      "description": "Implement Sarbanes-Oxley controls for public company financial reporting",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-compliance", "is_primary": true},
+        {"competency_slug": "auditing", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Financial modeling for business decisions",
+      "slug": "financial-modeling-for-business-decisions",
+      "description": "Build Excel-based financial models to forecast and evaluate business scenarios",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-modeling", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced financial modeling in Excel",
+      "slug": "advanced-financial-modeling-in-excel",
+      "description": "Create sophisticated three-statement models, DCF, and LBO models for analysis",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-modeling", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and interpreting financial statements",
+      "slug": "reading-and-interpreting-financial-statements",
+      "description": "Understand balance sheets, income statements, and cash flow statements",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "financial-statements", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Forensic accounting and fraud investigation",
+      "slug": "forensic-accounting-and-fraud-investigation",
+      "description": "Investigate financial crimes and fraudulent activities using accounting expertise",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "forensic-accounting", "is_primary": true},
+        {"competency_slug": "auditing", "is_primary": false}
+      ]
+    },
+    {
+      "name": "US GAAP accounting standards",
+      "slug": "us-gaap-accounting-standards",
+      "description": "Apply Generally Accepted Accounting Principles for US financial reporting",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "gaap", "is_primary": true},
+        {"competency_slug": "accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "IFRS international accounting standards",
+      "slug": "ifrs-international-accounting-standards",
+      "description": "Apply International Financial Reporting Standards for global financial reporting",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "ifrs", "is_primary": true},
+        {"competency_slug": "accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Tax accounting and preparation",
+      "slug": "tax-accounting-and-preparation",
+      "description": "Prepare tax returns and understand tax implications of business decisions",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "tax-accounting", "is_primary": true},
+        {"competency_slug": "accounting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Tax planning and optimization strategies",
+      "slug": "tax-planning-and-optimization-strategies",
+      "description": "Minimize tax liability through strategic planning and legal tax optimization",
+      "category_slug": "finance-accounting",
+      "competencies": [
+        {"competency_slug": "tax-accounting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Agile product development",
+      "slug": "agile-product-development",
+      "description": "Build products iteratively using Agile methodologies and principles",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "agile", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Agile transformation and coaching",
+      "slug": "agile-transformation-and-coaching",
+      "description": "Lead organizational transition to Agile ways of working",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "agile", "is_primary": true},
+        {"competency_slug": "change-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Kanban for workflow management",
+      "slug": "kanban-for-workflow-management",
+      "description": "Visualize and optimize work in progress using Kanban boards and principles",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "kanban", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kanban for software teams",
+      "slug": "kanban-for-software-teams",
+      "description": "Apply Kanban to manage software development workflows and continuous delivery",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "kanban", "is_primary": true},
+        {"competency_slug": "agile", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Defining and tracking KPIs",
+      "slug": "defining-and-tracking-kpis",
+      "description": "Identify key performance indicators to measure business success",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "kpis", "is_primary": true}
+      ]
+    },
+    {
+      "name": "KPI dashboards and data-driven decisions",
+      "slug": "kpi-dashboards-and-data-driven-decisions",
+      "description": "Build KPI tracking systems to monitor performance and drive improvements",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "kpis", "is_primary": true}
+      ]
+    },
+    {
+      "name": "OKRs for goal-setting and alignment",
+      "slug": "okrs-for-goal-setting-and-alignment",
+      "description": "Set and cascade Objectives and Key Results to align teams and drive results",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "okrs", "is_primary": true}
+      ]
+    },
+    {
+      "name": "OKRs for organizational execution",
+      "slug": "okrs-for-organizational-execution",
+      "description": "Implement OKRs across the organization to improve focus and accountability",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "okrs", "is_primary": true},
+        {"competency_slug": "goal-setting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Product management fundamentals",
+      "slug": "product-management-fundamentals",
+      "description": "Learn to discover, define, and deliver products that customers love",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "product-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Product management for tech products",
+      "slug": "product-management-for-tech-products",
+      "description": "Build digital products through user research, prioritization, and iterative development",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "product-management", "is_primary": true},
+        {"competency_slug": "agile", "is_primary": false},
+        {"competency_slug": "user-stories", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Finding product-market fit",
+      "slug": "finding-product-market-fit",
+      "description": "Validate product ideas and iterate toward strong market fit",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "product-market-fit", "is_primary": true},
+        {"competency_slug": "product-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Product-market fit for startups",
+      "slug": "product-market-fit-for-startups",
+      "description": "Use lean startup methods to rapidly test and achieve product-market fit",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "product-market-fit", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Project management essentials",
+      "slug": "project-management-essentials",
+      "description": "Plan, execute, and deliver projects on time and within budget",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "project-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "PMP and traditional project management",
+      "slug": "pmp-and-traditional-project-management",
+      "description": "Apply waterfall project management methodologies and prepare for PMP certification",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "project-management", "is_primary": true},
+        {"competency_slug": "stakeholder-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Product roadmapping and strategy",
+      "slug": "product-roadmapping-and-strategy",
+      "description": "Create strategic product roadmaps that align with business goals",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "roadmapping", "is_primary": true},
+        {"competency_slug": "product-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Roadmap communication and stakeholder buy-in",
+      "slug": "roadmap-communication-and-stakeholder-buy-in",
+      "description": "Present and gain alignment on product roadmaps with stakeholders",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "roadmapping", "is_primary": true},
+        {"competency_slug": "stakeholder-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Scrum framework and ceremonies",
+      "slug": "scrum-framework-and-ceremonies",
+      "description": "Implement Scrum sprints, standups, and retrospectives for agile delivery",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "scrum", "is_primary": true},
+        {"competency_slug": "agile", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Scrum Master certification and practice",
+      "slug": "scrum-master-certification-and-practice",
+      "description": "Facilitate Scrum teams and remove impediments as a certified Scrum Master",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "scrum", "is_primary": true},
+        {"competency_slug": "agile", "is_primary": false},
+        {"competency_slug": "coaching-mentoring", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Stakeholder management and engagement",
+      "slug": "stakeholder-management-and-engagement",
+      "description": "Identify, analyze, and manage stakeholder relationships for project success",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "stakeholder-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Stakeholder communication strategies",
+      "slug": "stakeholder-communication-strategies",
+      "description": "Keep stakeholders informed and aligned throughout project lifecycles",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "stakeholder-management", "is_primary": true},
+        {"competency_slug": "executive-communication", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Writing effective user stories",
+      "slug": "writing-effective-user-stories",
+      "description": "Create clear user stories with acceptance criteria for agile development",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "user-stories", "is_primary": true}
+      ]
+    },
+    {
+      "name": "User story mapping and backlog refinement",
+      "slug": "user-story-mapping-and-backlog-refinement",
+      "description": "Build and prioritize product backlogs using user story mapping techniques",
+      "category_slug": "product-project-management",
+      "competencies": [
+        {"competency_slug": "user-stories", "is_primary": true},
+        {"competency_slug": "product-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Improving focus and concentration",
+      "slug": "improving-focus-and-concentration",
+      "description": "Develop attention control and reduce distractions for deep work",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "focus-concentration", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Focus techniques for knowledge workers",
+      "slug": "focus-techniques-for-knowledge-workers",
+      "description": "Use attention management strategies to maintain focus in demanding work environments",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "focus-concentration", "is_primary": true},
+        {"competency_slug": "productivity", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Getting Things Done (GTD) methodology",
+      "slug": "getting-things-done-gtd-methodology",
+      "description": "Implement David Allen's GTD system for stress-free productivity",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "getting-things-done", "is_primary": true},
+        {"competency_slug": "task-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "GTD for digital workflows",
+      "slug": "gtd-for-digital-workflows",
+      "description": "Apply GTD principles using digital tools and apps for modern knowledge work",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "getting-things-done", "is_primary": true},
+        {"competency_slug": "task-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective goal-setting strategies",
+      "slug": "effective-goal-setting-strategies",
+      "description": "Set and achieve meaningful goals using SMART criteria and other frameworks",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "goal-setting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Goal-setting for personal achievement",
+      "slug": "goal-setting-for-personal-achievement",
+      "description": "Create action plans and track progress toward personal and professional goals",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "goal-setting", "is_primary": true},
+        {"competency_slug": "productivity", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building lasting habits",
+      "slug": "building-lasting-habits",
+      "description": "Use behavior science to form positive habits and break unwanted ones",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "habit-formation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Atomic habits and behavior change",
+      "slug": "atomic-habits-and-behavior-change",
+      "description": "Build identity-based habits through small, consistent changes",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "habit-formation", "is_primary": true},
+        {"competency_slug": "goal-setting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Pomodoro Technique for productivity",
+      "slug": "pomodoro-technique-for-productivity",
+      "description": "Use timed work intervals to maintain focus and prevent burnout",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "pomodoro-technique", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Overcoming procrastination",
+      "slug": "overcoming-procrastination",
+      "description": "Identify and address the root causes of procrastination to take action",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "procrastination-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Procrastination strategies for chronic avoiders",
+      "slug": "procrastination-strategies-for-chronic-avoiders",
+      "description": "Use behavioral techniques to overcome persistent procrastination patterns",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "procrastination-management", "is_primary": true},
+        {"competency_slug": "habit-formation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Personal productivity systems",
+      "slug": "personal-productivity-systems",
+      "description": "Design and implement personalized productivity workflows and systems",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "productivity", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Productivity for remote workers",
+      "slug": "productivity-for-remote-workers",
+      "description": "Maintain high productivity while working from home or distributed locations",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "productivity", "is_primary": true},
+        {"competency_slug": "time-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Task management and prioritization",
+      "slug": "task-management-and-prioritization",
+      "description": "Organize, prioritize, and complete tasks efficiently using proven methods",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "task-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Task management with digital tools",
+      "slug": "task-management-with-digital-tools",
+      "description": "Use task management apps and software to stay organized and productive",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "task-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Time blocking for deep work",
+      "slug": "time-blocking-for-deep-work",
+      "description": "Schedule dedicated time blocks for focused, uninterrupted work sessions",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "time-blocking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Time blocking and calendar management",
+      "slug": "time-blocking-and-calendar-management",
+      "description": "Design your ideal schedule using time blocking and calendar strategies",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "time-blocking", "is_primary": true},
+        {"competency_slug": "time-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective time management",
+      "slug": "effective-time-management",
+      "description": "Allocate and use time wisely to accomplish goals and maintain work-life balance",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "time-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Time management for busy professionals",
+      "slug": "time-management-for-busy-professionals",
+      "description": "Manage competing priorities and maximize productivity in demanding roles",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "time-management", "is_primary": true},
+        {"competency_slug": "task-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Active listening skills",
+      "slug": "active-listening-skills",
+      "description": "Listen attentively and empathetically to truly understand others",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "active-listening", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Active listening for better relationships",
+      "slug": "active-listening-for-better-relationships",
+      "description": "Strengthen personal and professional relationships through reflective listening",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "active-listening", "is_primary": true},
+        {"competency_slug": "empathy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Assertive communication",
+      "slug": "assertive-communication",
+      "description": "Express needs and boundaries clearly while respecting others",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "assertiveness", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Assertiveness in the workplace",
+      "slug": "assertiveness-in-the-workplace",
+      "description": "Advocate for yourself professionally without aggression or passivity",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "assertiveness", "is_primary": true},
+        {"competency_slug": "boundary-setting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Reading and using body language",
+      "slug": "reading-and-using-body-language",
+      "description": "Interpret nonverbal cues and use body language to communicate effectively",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "body-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Body language for presentations and leadership",
+      "slug": "body-language-for-presentations-and-leadership",
+      "description": "Project confidence and authority through conscious nonverbal communication",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "body-language", "is_primary": true},
+        {"competency_slug": "public-speaking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective communication skills",
+      "slug": "effective-communication-skills",
+      "description": "Communicate clearly, persuasively, and appropriately in various contexts",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "communication-skills-personal", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Communication skills for personal relationships",
+      "slug": "communication-skills-for-personal-relationships",
+      "description": "Improve relationship quality through honest, empathetic communication",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "communication-skills-personal", "is_primary": true},
+        {"competency_slug": "active-listening", "is_primary": false},
+        {"competency_slug": "empathy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Conversation skills and small talk",
+      "slug": "conversation-skills-and-small-talk",
+      "description": "Start and maintain engaging conversations in social and professional settings",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "conversation-skills", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Deep conversation and meaningful connection",
+      "slug": "deep-conversation-and-meaningful-connection",
+      "description": "Move beyond surface-level talk to build authentic connections",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "conversation-skills", "is_primary": true},
+        {"competency_slug": "active-listening", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Developing empathy and compassion",
+      "slug": "developing-empathy-and-compassion",
+      "description": "Cultivate the ability to understand and share others' feelings",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "empathy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Empathy in leadership and teams",
+      "slug": "empathy-in-leadership-and-teams",
+      "description": "Lead with empathy to build trust and psychological safety",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "empathy", "is_primary": true},
+        {"competency_slug": "emotional-intelligence", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building strong interpersonal skills",
+      "slug": "building-strong-interpersonal-skills",
+      "description": "Develop social awareness and people skills for better interactions",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "interpersonal-skills", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Interpersonal effectiveness in the workplace",
+      "slug": "interpersonal-effectiveness-in-the-workplace",
+      "description": "Navigate workplace relationships and collaborate effectively with diverse personalities",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "interpersonal-skills", "is_primary": true},
+        {"competency_slug": "emotional-intelligence", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Professional relationship building",
+      "slug": "professional-relationship-building",
+      "description": "Develop and maintain valuable professional relationships over time",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "relationship-building", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Relationship building for career success",
+      "slug": "relationship-building-for-career-success",
+      "description": "Cultivate strategic relationships that advance your career goals",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "relationship-building", "is_primary": true},
+        {"competency_slug": "networking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Social skills for personal and professional success",
+      "slug": "social-skills-for-personal-and-professional-success",
+      "description": "Navigate social situations with confidence and build positive connections",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "social-skills", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Social skills for introverts",
+      "slug": "social-skills-for-introverts",
+      "description": "Develop comfortable, authentic social strategies that honor your introverted nature",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "social-skills", "is_primary": true},
+        {"competency_slug": "conversation-skills", "is_primary": false}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "topics": [
+    {
+      "name": "Motion graphics with Adobe After Effects",
+      "slug": "motion-graphics-with-adobe-after-effects",
+      "description": "Create animated graphics and visual effects for video and digital media",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-after-effects", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced compositing in After Effects",
+      "slug": "advanced-compositing-in-after-effects",
+      "description": "Master VFX compositing, keying, and advanced motion graphics techniques",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-after-effects", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Video editing with Adobe Premiere Pro",
+      "slug": "video-editing-with-adobe-premiere-pro",
+      "description": "Edit professional videos with industry-standard editing software",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-premiere-pro", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Premiere Pro for content creators",
+      "slug": "premiere-pro-for-content-creators",
+      "description": "Create engaging YouTube, social media, and marketing videos efficiently",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-premiere-pro", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Complete video production workflow",
+      "slug": "complete-video-production-workflow",
+      "description": "Master the end-to-end process from filming to final export using professional tools",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-premiere-pro", "is_primary": true},
+        {"competency_slug": "adobe-after-effects", "is_primary": false}
+      ]
+    },
+    {
+      "name": "3D modeling and animation with Blender",
+      "slug": "3d-modeling-and-animation-with-blender",
+      "description": "Create 3D models, animations, and renders using free, open-source software",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "blender", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Blender for game asset creation",
+      "slug": "blender-for-game-asset-creation",
+      "description": "Model, texture, and rig game-ready 3D assets with Blender",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "blender", "is_primary": true},
+        {"competency_slug": "substance-painter", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Blender for architectural visualization",
+      "slug": "blender-for-architectural-visualization",
+      "description": "Create photorealistic architectural renders and walkthroughs",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "blender", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Character animation in Blender",
+      "slug": "character-animation-in-blender",
+      "description": "Rig and animate 3D characters for film, games, and motion graphics",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "blender", "is_primary": true}
+      ]
+    },
+    {
+      "name": "3D modeling and animation with Maya",
+      "slug": "3d-modeling-and-animation-with-maya",
+      "description": "Master industry-standard 3D software for film and game production",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "maya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Character rigging and animation in Maya",
+      "slug": "character-rigging-and-animation-in-maya",
+      "description": "Create professional character rigs and animations for production pipelines",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "maya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "3D modeling with 3ds Max",
+      "slug": "3d-modeling-with-3ds-max",
+      "description": "Model and visualize architectural and product designs with 3ds Max",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "3ds-max", "is_primary": true}
+      ]
+    },
+    {
+      "name": "3ds Max for game environment art",
+      "slug": "3ds-max-for-game-environment-art",
+      "description": "Create detailed game environments and props using 3ds Max workflows",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "3ds-max", "is_primary": true},
+        {"competency_slug": "substance-painter", "is_primary": false}
+      ]
+    },
+    {
+      "name": "2D animation with Adobe Animate",
+      "slug": "2d-animation-with-adobe-animate",
+      "description": "Create vector-based animations for web, games, and video",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "adobe-animate", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Motion graphics and 3D with Cinema 4D",
+      "slug": "motion-graphics-and-3d-with-cinema-4d",
+      "description": "Design broadcast graphics and abstract 3D animations with Cinema 4D",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "cinema-4d", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cinema 4D for motion designers",
+      "slug": "cinema-4d-for-motion-designers",
+      "description": "Integrate Cinema 4D into After Effects workflows for stunning motion graphics",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "cinema-4d", "is_primary": true},
+        {"competency_slug": "adobe-after-effects", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Color grading with DaVinci Resolve",
+      "slug": "color-grading-with-davinci-resolve",
+      "description": "Master professional color correction and grading for film and video",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "davinci-resolve", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Video editing and post-production in DaVinci Resolve",
+      "slug": "video-editing-and-post-production-in-davinci-resolve",
+      "description": "Edit, color grade, and finish videos using an all-in-one post-production suite",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "davinci-resolve", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Video editing with Final Cut Pro",
+      "slug": "video-editing-with-final-cut-pro",
+      "description": "Edit videos efficiently using Apple's professional editing software",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "final-cut-pro", "is_primary": true}
+      ]
+    },
+    {
+      "name": "2D animation with Toon Boom Harmony",
+      "slug": "2d-animation-with-toon-boom-harmony",
+      "description": "Create professional 2D animation for TV, film, and games",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "toon-boom-harmony", "is_primary": true}
+      ]
+    },
+    {
+      "name": "2D character rigging in Spine",
+      "slug": "2d-character-rigging-in-spine",
+      "description": "Rig and animate 2D characters for games using skeletal animation",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "spine", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Digital sculpting with ZBrush",
+      "slug": "digital-sculpting-with-zbrush",
+      "description": "Create highly detailed 3D sculptures for games, film, and 3D printing",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "zbrush", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Character sculpting in ZBrush",
+      "slug": "character-sculpting-in-zbrush",
+      "description": "Sculpt realistic and stylized characters for production pipelines",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "zbrush", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Game-ready character creation pipeline",
+      "slug": "game-ready-character-creation-pipeline",
+      "description": "Create complete game characters from sculpting through texturing and optimization",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "zbrush", "is_primary": true},
+        {"competency_slug": "substance-painter", "is_primary": false},
+        {"competency_slug": "blender", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Procedural effects with Houdini",
+      "slug": "procedural-effects-with-houdini",
+      "description": "Create complex VFX simulations and procedural content with Houdini",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "houdini", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Houdini for game development",
+      "slug": "houdini-for-game-development",
+      "description": "Generate procedural game assets and environments using Houdini workflows",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "houdini", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Texturing 3D models with Substance Painter",
+      "slug": "texturing-3d-models-with-substance-painter",
+      "description": "Create realistic PBR textures for 3D assets using smart materials and brushes",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "substance-painter", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Game asset texturing workflow",
+      "slug": "game-asset-texturing-workflow",
+      "description": "Master production-ready texturing techniques for game assets",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "substance-painter", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Procedural material creation with Substance Designer",
+      "slug": "procedural-material-creation-with-substance-designer",
+      "description": "Build reusable, parametric materials and textures with node-based workflows",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "substance-designer", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Substance Designer for game materials",
+      "slug": "substance-designer-for-game-materials",
+      "description": "Create tileable game textures and procedural material libraries",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "substance-designer", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Photorealistic rendering with V-Ray",
+      "slug": "photorealistic-rendering-with-vray",
+      "description": "Create production-quality renders for architecture and product visualization",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "vray", "is_primary": true}
+      ]
+    },
+    {
+      "name": "V-Ray for architectural visualization",
+      "slug": "vray-for-architectural-visualization",
+      "description": "Render photorealistic architectural interiors and exteriors",
+      "category_slug": "motion-3d",
+      "competencies": [
+        {"competency_slug": "vray", "is_primary": true},
+        {"competency_slug": "3ds-max", "is_primary": false}
+      ]
+    }
+  ]
+}

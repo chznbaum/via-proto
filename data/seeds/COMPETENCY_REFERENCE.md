@@ -1,7 +1,7 @@
 # Competency Reference (Detailed)
 
-**Generated:** 2025-11-23T02:19:38.175Z
-**Total Competencies:** 1625
+**Generated:** 2025-11-23T03:03:05.549Z
+**Total Competencies:** 1626
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -49,7 +49,7 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 - [graphic-design](#graphic-design) (16)
 - [home-lifestyle](#home-lifestyle) (50)
 - [investing-trading](#investing-trading) (26)
-- [languages](#languages) (170)
+- [languages](#languages) (171)
 - [leadership-communication](#leadership-communication) (12)
 - [life-sciences](#life-sciences) (6)
 - [linear-algebra](#linear-algebra) (1)
@@ -5739,6 +5739,12 @@ For a quick alphabetical lookup without details, see COMPETENCY_QUICK_LOOKUP.md
 ### Egyptian Hieroglyphs
 - **Slug:** `egyptian-hieroglyphs`
 - **Synonyms:** Ancient Egyptian, Middle Egyptian
+
+### English
+- **Slug:** `english`
+- **Alternatives:**
+  - `german` (related)
+  - `french` (related)
 
 ### English as a Second Language
 - **Slug:** `english-second-language`

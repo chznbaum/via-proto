@@ -1,0 +1,821 @@
+{
+  "topics": [
+    {
+      "name": "Building cardiovascular endurance through HIIT",
+      "slug": "building-cardiovascular-endurance-through-hiit",
+      "description": "Develop stamina and burn calories efficiently using high-intensity interval training protocols",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "hiit", "is_primary": true}
+      ]
+    },
+    {
+      "name": "HIIT workouts for fat loss and metabolic conditioning",
+      "slug": "hiit-workouts-for-fat-loss-and-metabolic-conditioning",
+      "description": "Design and perform high-intensity interval training sessions to maximize fat burning and improve metabolic health",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "hiit", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "HIIT programming for athletic performance",
+      "slug": "hiit-programming-for-athletic-performance",
+      "description": "Create periodized HIIT training plans to enhance speed, power, and endurance for competitive athletes",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "hiit", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Indoor rowing technique and training",
+      "slug": "indoor-rowing-technique-and-training",
+      "description": "Master proper rowing form and develop effective training programs for full-body cardiovascular fitness",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "rowing-fitness", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Competitive rowing conditioning and race preparation",
+      "slug": "competitive-rowing-conditioning-and-race-preparation",
+      "description": "Train for rowing competitions with periodized programming, pacing strategies, and performance nutrition",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "rowing-fitness", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Jump rope skills and conditioning",
+      "slug": "jump-rope-skills-and-conditioning",
+      "description": "Learn jump rope techniques from basic jumps to advanced tricks while building cardiovascular fitness",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "jump-rope", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Jump rope for boxing and combat sports conditioning",
+      "slug": "jump-rope-for-boxing-and-combat-sports-conditioning",
+      "description": "Develop footwork, timing, and endurance using jump rope training protocols designed for fighters",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "jump-rope", "is_primary": true},
+        {"competency_slug": "hiit", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Indoor cycling training and technique",
+      "slug": "indoor-cycling-training-and-technique",
+      "description": "Build cycling-specific fitness with structured indoor training sessions and proper bike setup",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "indoor-cycling", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Spin class instruction and choreography",
+      "slug": "spin-class-instruction-and-choreography",
+      "description": "Learn to design and lead engaging group indoor cycling classes with music and motivational coaching",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "indoor-cycling", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Stair climbing for lower body strength and endurance",
+      "slug": "stair-climbing-for-lower-body-strength-and-endurance",
+      "description": "Develop powerful legs and cardiovascular capacity through structured stair climbing workouts",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "stair-climbing", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Elliptical training for low-impact cardio",
+      "slug": "elliptical-training-for-low-impact-cardio",
+      "description": "Build cardiovascular fitness with elliptical workouts that minimize joint stress while maximizing calorie burn",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "elliptical-training", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Plyometric training for explosive power",
+      "slug": "plyometric-training-for-explosive-power",
+      "description": "Develop speed, power, and reactive strength through jump training and explosive movements",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "plyometrics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Plyometrics for vertical jump development",
+      "slug": "plyometrics-for-vertical-jump-development",
+      "description": "Increase vertical jump height using progressive plyometric exercises and proper landing mechanics",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "plyometrics", "is_primary": true},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Track and field fundamentals and training",
+      "slug": "track-and-field-fundamentals-and-training",
+      "description": "Learn sprinting, jumping, and throwing techniques with structured athletic development programs",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "track-and-field", "is_primary": true},
+        {"competency_slug": "plyometrics", "is_primary": false},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Sprint training and speed development",
+      "slug": "sprint-training-and-speed-development",
+      "description": "Improve running speed through technique refinement, power development, and sprint-specific conditioning",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "track-and-field", "is_primary": true},
+        {"competency_slug": "plyometrics", "is_primary": false},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Triathlon training and race preparation",
+      "slug": "triathlon-training-and-race-preparation",
+      "description": "Prepare for triathlon competitions with structured swim-bike-run training and transition practice",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "triathlon-training", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ironman distance triathlon preparation",
+      "slug": "ironman-distance-triathlon-preparation",
+      "description": "Train for ultra-distance triathlon events with periodized programming, nutrition strategies, and mental preparation",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "triathlon-training", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "meal-planning", "is_primary": false},
+        {"competency_slug": "supplement-science", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Circuit training for total body conditioning",
+      "slug": "circuit-training-for-total-body-conditioning",
+      "description": "Design and perform circuit workouts that combine strength and cardio for efficient full-body fitness",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "circuit-training", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Circuit training for fat loss and muscle tone",
+      "slug": "circuit-training-for-fat-loss-and-muscle-tone",
+      "description": "Create metabolic circuit workouts optimized for burning fat while maintaining lean muscle mass",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "circuit-training", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false},
+        {"competency_slug": "calorie-counting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Group fitness aerobics instruction",
+      "slug": "group-fitness-aerobics-instruction",
+      "description": "Learn to lead energetic aerobics classes with choreography, music selection, and motivational coaching",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "aerobics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Step aerobics choreography and instruction",
+      "slug": "step-aerobics-choreography-and-instruction",
+      "description": "Design and teach step aerobics classes with progressive choreography and proper stepping technique",
+      "category_slug": "cardio-endurance",
+      "competencies": [
+        {"competency_slug": "step-aerobics", "is_primary": true},
+        {"competency_slug": "aerobics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building muscle mass through bodybuilding",
+      "slug": "building-muscle-mass-through-bodybuilding",
+      "description": "Develop physique through structured resistance training, progressive overload, and muscle-building nutrition",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "bodybuilding", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false},
+        {"competency_slug": "meal-planning", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Competitive bodybuilding preparation and posing",
+      "slug": "competitive-bodybuilding-preparation-and-posing",
+      "description": "Prepare for bodybuilding competitions with contest prep dieting, peak week strategies, and stage presentation",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "bodybuilding", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false},
+        {"competency_slug": "calorie-counting", "is_primary": false},
+        {"competency_slug": "supplement-science", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Bodyweight strength training with calisthenics",
+      "slug": "bodyweight-strength-training-with-calisthenics",
+      "description": "Build strength, muscle, and movement skills using only your bodyweight for resistance",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "calisthenics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced calisthenics skills and progressions",
+      "slug": "advanced-calisthenics-skills-and-progressions",
+      "description": "Master advanced bodyweight movements like muscle-ups, handstand push-ups, and human flags",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "calisthenics", "is_primary": true},
+        {"competency_slug": "mobility-training", "is_primary": false},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "CrossFit training and methodology",
+      "slug": "crossfit-training-and-methodology",
+      "description": "Develop functional fitness through varied workouts combining weightlifting, gymnastics, and metabolic conditioning",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "crossfit", "is_primary": true},
+        {"competency_slug": "olympic-weightlifting", "is_primary": false},
+        {"competency_slug": "calisthenics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "CrossFit competition preparation",
+      "slug": "crossfit-competition-preparation",
+      "description": "Train for CrossFit competitions with sport-specific programming, strategy, and performance nutrition",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "crossfit", "is_primary": true},
+        {"competency_slug": "olympic-weightlifting", "is_primary": false},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Kettlebell training for strength and conditioning",
+      "slug": "kettlebell-training-for-strength-and-conditioning",
+      "description": "Learn kettlebell exercises from swings to snatches for building power, endurance, and functional strength",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "kettlebell-training", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kettlebell sport training and competition",
+      "slug": "kettlebell-sport-training-and-competition",
+      "description": "Master girevoy sport techniques and train for kettlebell lifting competitions with proper form and endurance",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "kettlebell-training", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Olympic weightlifting technique and training",
+      "slug": "olympic-weightlifting-technique-and-training",
+      "description": "Learn the snatch and clean & jerk with proper technique, mobility work, and strength programming",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "olympic-weightlifting", "is_primary": true},
+        {"competency_slug": "mobility-training", "is_primary": false},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Competitive Olympic weightlifting programming",
+      "slug": "competitive-olympic-weightlifting-programming",
+      "description": "Train for weightlifting competitions with periodized programming, meet preparation, and weight class management",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "olympic-weightlifting", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Powerlifting: squat, bench press, and deadlift mastery",
+      "slug": "powerlifting-squat-bench-press-and-deadlift-mastery",
+      "description": "Develop maximal strength in the big three lifts with technique refinement and progressive programming",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "powerlifting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Powerlifting meet preparation and peaking",
+      "slug": "powerlifting-meet-preparation-and-peaking",
+      "description": "Prepare for powerlifting competitions with peaking protocols, attempt selection, and competition day strategies",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "powerlifting", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Resistance band training for strength and mobility",
+      "slug": "resistance-band-training-for-strength-and-mobility",
+      "description": "Build strength and improve mobility using resistance bands for home or travel workouts",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "resistance-band-training", "is_primary": true},
+        {"competency_slug": "mobility-training", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Strongman training and event preparation",
+      "slug": "strongman-training-and-event-preparation",
+      "description": "Develop strength and conditioning for strongman events like atlas stones, farmers walks, and log press",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "strongman-training", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Suspension training for functional strength",
+      "slug": "suspension-training-for-functional-strength",
+      "description": "Build core stability and functional strength using suspension trainers like TRX",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "suspension-training", "is_primary": true}
+      ]
+    },
+    {
+      "name": "General strength training and barbell fundamentals",
+      "slug": "general-strength-training-and-barbell-fundamentals",
+      "description": "Learn proper barbell lifting technique and progressive strength training for fitness and health",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "weightlifting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Strength training for athletic performance",
+      "slug": "strength-training-for-athletic-performance",
+      "description": "Develop sport-specific strength and power to enhance athletic performance in your chosen sport",
+      "category_slug": "strength-training",
+      "competencies": [
+        {"competency_slug": "weightlifting", "is_primary": true},
+        {"competency_slug": "plyometrics", "is_primary": false},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective meal planning for health and fitness",
+      "slug": "effective-meal-planning-for-health-and-fitness",
+      "description": "Learn to plan, prepare, and organize nutritious meals that support your fitness goals and lifestyle",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "meal-planning", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Meal prep strategies for busy lifestyles",
+      "slug": "meal-prep-strategies-for-busy-lifestyles",
+      "description": "Master batch cooking and meal preparation techniques to maintain healthy eating habits with limited time",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "meal-planning", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Tracking macronutrients for body composition",
+      "slug": "tracking-macronutrients-for-body-composition",
+      "description": "Learn to track protein, carbohydrates, and fats to optimize muscle gain or fat loss",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "macronutrient-tracking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Flexible dieting with macro tracking",
+      "slug": "flexible-dieting-with-macro-tracking",
+      "description": "Use macronutrient tracking to achieve fitness goals while maintaining dietary flexibility and food enjoyment",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "macronutrient-tracking", "is_primary": true},
+        {"competency_slug": "calorie-counting", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Calorie counting for weight management",
+      "slug": "calorie-counting-for-weight-management",
+      "description": "Track caloric intake to create energy balance for weight loss, maintenance, or gain",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "calorie-counting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Intermittent fasting protocols and practices",
+      "slug": "intermittent-fasting-protocols-and-practices",
+      "description": "Implement time-restricted eating patterns for health, weight management, and metabolic benefits",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "intermittent-fasting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Combining intermittent fasting with fitness goals",
+      "slug": "combining-intermittent-fasting-with-fitness-goals",
+      "description": "Integrate fasting protocols with training schedules to support muscle gain or fat loss objectives",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "intermittent-fasting", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false},
+        {"competency_slug": "meal-planning", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ketogenic diet fundamentals and implementation",
+      "slug": "ketogenic-diet-fundamentals-and-implementation",
+      "description": "Transition to and maintain a low-carb, high-fat ketogenic diet for metabolic health and fat loss",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "ketogenic-diet", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Keto meal planning and recipes",
+      "slug": "keto-meal-planning-and-recipes",
+      "description": "Plan and prepare delicious ketogenic meals while maintaining proper macro ratios",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "ketogenic-diet", "is_primary": true},
+        {"competency_slug": "meal-planning", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Plant-based nutrition for health and performance",
+      "slug": "plant-based-nutrition-for-health-and-performance",
+      "description": "Meet nutritional needs and fitness goals with a whole-food, plant-based diet",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "plant-based-nutrition", "is_primary": true},
+        {"competency_slug": "meal-planning", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Vegan athlete nutrition and meal planning",
+      "slug": "vegan-athlete-nutrition-and-meal-planning",
+      "description": "Optimize athletic performance with plant-based nutrition strategies for strength and endurance athletes",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "plant-based-nutrition", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Sports nutrition for performance and recovery",
+      "slug": "sports-nutrition-for-performance-and-recovery",
+      "description": "Optimize nutrient timing, hydration, and supplementation to enhance athletic performance",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "sports-nutrition", "is_primary": true},
+        {"competency_slug": "macronutrient-tracking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Competition day nutrition strategies",
+      "slug": "competition-day-nutrition-strategies",
+      "description": "Plan pre-competition meals, intra-event fueling, and recovery nutrition for optimal performance",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "sports-nutrition", "is_primary": true},
+        {"competency_slug": "supplement-science", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Evidence-based supplement selection and use",
+      "slug": "evidence-based-supplement-selection-and-use",
+      "description": "Understand supplement science to make informed decisions about which supplements actually work",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "supplement-science", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Supplements for muscle building and performance",
+      "slug": "supplements-for-muscle-building-and-performance",
+      "description": "Use evidence-based supplementation to support muscle growth, strength, and athletic performance",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "supplement-science", "is_primary": true},
+        {"competency_slug": "sports-nutrition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Intuitive eating and mindful nutrition",
+      "slug": "intuitive-eating-and-mindful-nutrition",
+      "description": "Develop a healthy relationship with food through intuitive eating principles and hunger awareness",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "intuitive-eating", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Breaking free from diet culture with intuitive eating",
+      "slug": "breaking-free-from-diet-culture-with-intuitive-eating",
+      "description": "Move beyond restrictive dieting to trust your body's signals and find food freedom",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "intuitive-eating", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Paleo diet principles and implementation",
+      "slug": "paleo-diet-principles-and-implementation",
+      "description": "Adopt an ancestral eating approach focused on whole foods and eliminating processed ingredients",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "paleo-diet", "is_primary": true},
+        {"competency_slug": "meal-planning", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mediterranean diet for longevity and health",
+      "slug": "mediterranean-diet-for-longevity-and-health",
+      "description": "Adopt the heart-healthy Mediterranean eating pattern rich in vegetables, healthy fats, and whole grains",
+      "category_slug": "nutrition-diet",
+      "competencies": [
+        {"competency_slug": "mediterranean-diet", "is_primary": true},
+        {"competency_slug": "meal-planning", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Barre workouts for toning and flexibility",
+      "slug": "barre-workouts-for-toning-and-flexibility",
+      "description": "Sculpt lean muscles and improve flexibility through ballet-inspired barre exercises",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "barre", "is_primary": true},
+        {"competency_slug": "stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Dynamic stretching for athletic warm-ups",
+      "slug": "dynamic-stretching-for-athletic-warm-ups",
+      "description": "Prepare your body for training and competition with movement-based stretching routines",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "dynamic-stretching", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sport-specific dynamic warm-up protocols",
+      "slug": "sport-specific-dynamic-warm-up-protocols",
+      "description": "Design and implement dynamic stretching sequences tailored to your sport's movement patterns",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "dynamic-stretching", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Foam rolling for recovery and mobility",
+      "slug": "foam-rolling-for-recovery-and-mobility",
+      "description": "Use self-myofascial release techniques to reduce muscle soreness and improve tissue quality",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "foam-rolling", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Foam rolling and mobility work for athletes",
+      "slug": "foam-rolling-and-mobility-work-for-athletes",
+      "description": "Integrate foam rolling and mobility drills into training for better performance and injury prevention",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "foam-rolling", "is_primary": true},
+        {"competency_slug": "mobility-training", "is_primary": false},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mobility training for movement quality",
+      "slug": "mobility-training-for-movement-quality",
+      "description": "Improve joint range of motion and movement efficiency through targeted mobility drills",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "mobility-training", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Functional mobility for strength training",
+      "slug": "functional-mobility-for-strength-training",
+      "description": "Develop mobility needed for proper lifting technique and injury-free strength training",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "mobility-training", "is_primary": true},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Pilates for core strength and body awareness",
+      "slug": "pilates-for-core-strength-and-body-awareness",
+      "description": "Develop core stability, flexibility, and mind-body connection through mat-based Pilates",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "pilates", "is_primary": true},
+        {"competency_slug": "stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Pilates for back pain relief and posture",
+      "slug": "pilates-for-back-pain-relief-and-posture",
+      "description": "Strengthen postural muscles and alleviate back pain through therapeutic Pilates exercises",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "pilates", "is_primary": true}
+      ]
+    },
+    {
+      "name": "PNF stretching for flexibility gains",
+      "slug": "pnf-stretching-for-flexibility-gains",
+      "description": "Use proprioceptive neuromuscular facilitation techniques to rapidly improve flexibility",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "pnf-stretching", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reformer Pilates training and instruction",
+      "slug": "reformer-pilates-training-and-instruction",
+      "description": "Master the Pilates reformer for advanced core work, strength, and flexibility development",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "reformer-pilates", "is_primary": true},
+        {"competency_slug": "pilates", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Static stretching for flexibility and relaxation",
+      "slug": "static-stretching-for-flexibility-and-relaxation",
+      "description": "Improve flexibility and promote recovery through sustained stretching holds",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "static-stretching", "is_primary": true},
+        {"competency_slug": "stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Comprehensive flexibility training",
+      "slug": "comprehensive-flexibility-training",
+      "description": "Develop overall flexibility using multiple stretching modalities and progressive programming",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "stretching", "is_primary": true},
+        {"competency_slug": "static-stretching", "is_primary": false},
+        {"competency_slug": "dynamic-stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Flexibility training for improved athletic performance",
+      "slug": "flexibility-training-for-improved-athletic-performance",
+      "description": "Enhance sports performance through sport-specific flexibility and mobility training",
+      "category_slug": "flexibility-mobility",
+      "competencies": [
+        {"competency_slug": "stretching", "is_primary": true},
+        {"competency_slug": "dynamic-stretching", "is_primary": false},
+        {"competency_slug": "mobility-training", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Ashtanga yoga practice and progression",
+      "slug": "ashtanga-yoga-practice-and-progression",
+      "description": "Learn the traditional Ashtanga yoga sequence with breath-synchronized movement and postures",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "ashtanga-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Bikram hot yoga practice",
+      "slug": "bikram-hot-yoga-practice",
+      "description": "Practice the 26-posture Bikram sequence in a heated room for strength and flexibility",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "bikram-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Hatha yoga fundamentals",
+      "slug": "hatha-yoga-fundamentals",
+      "description": "Learn foundational yoga postures, breathing techniques, and alignment principles",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "hatha-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Iyengar yoga for alignment and precision",
+      "slug": "iyengar-yoga-for-alignment-and-precision",
+      "description": "Develop precise alignment and use props to safely deepen your yoga practice",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "iyengar-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kundalini yoga for energy and awareness",
+      "slug": "kundalini-yoga-for-energy-and-awareness",
+      "description": "Practice dynamic breathing, movement, and meditation to awaken inner energy",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "kundalini-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Power yoga for strength and fitness",
+      "slug": "power-yoga-for-strength-and-fitness",
+      "description": "Build strength and stamina through vigorous, athletic yoga sequences",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "power-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Prenatal yoga for pregnancy wellness",
+      "slug": "prenatal-yoga-for-pregnancy-wellness",
+      "description": "Practice safe, modified yoga to support health and comfort during pregnancy",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "prenatal-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Restorative yoga for deep relaxation",
+      "slug": "restorative-yoga-for-deep-relaxation",
+      "description": "Use props and gentle poses to deeply relax the nervous system and reduce stress",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "restorative-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Vinyasa flow yoga practice",
+      "slug": "vinyasa-flow-yoga-practice",
+      "description": "Link breath with movement in creative, flowing yoga sequences",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "vinyasa-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Yin yoga for deep tissue release",
+      "slug": "yin-yoga-for-deep-tissue-release",
+      "description": "Hold passive floor poses for extended periods to stretch connective tissue and promote flexibility",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "yin-yoga", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Yoga for flexibility and stress relief",
+      "slug": "yoga-for-flexibility-and-stress-relief",
+      "description": "Improve flexibility and manage stress through a balanced yoga practice",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "hatha-yoga", "is_primary": true},
+        {"competency_slug": "stretching", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Yoga for athletes and cross-training",
+      "slug": "yoga-for-athletes-and-cross-training",
+      "description": "Use yoga to enhance athletic performance, prevent injury, and aid recovery",
+      "category_slug": "yoga",
+      "competencies": [
+        {"competency_slug": "vinyasa-yoga", "is_primary": true},
+        {"competency_slug": "stretching", "is_primary": false},
+        {"competency_slug": "mobility-training", "is_primary": false}
+      ]
+    }
+  ]
+}

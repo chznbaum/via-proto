@@ -1,0 +1,309 @@
+{
+  "topics": [
+    {
+      "name": "Phonetics and pronunciation fundamentals",
+      "slug": "phonetics-and-pronunciation-fundamentals",
+      "description": "Study speech sounds and articulation to understand how languages are pronounced",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "phonetics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Applied phonetics for language learning",
+      "slug": "applied-phonetics-for-language-learning",
+      "description": "Use phonetic knowledge to improve pronunciation and accent reduction",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "phonetics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "English grammar fundamentals",
+      "slug": "english-grammar-fundamentals",
+      "description": "Master the structure and rules of English grammar for clear communication",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "grammar-fundamentals", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Grammar for language learners",
+      "slug": "grammar-for-language-learners",
+      "description": "Understand grammatical concepts to accelerate learning any foreign language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "grammar-fundamentals", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced grammar and usage",
+      "slug": "advanced-grammar-and-usage",
+      "description": "Refine your understanding of complex grammatical structures and nuanced usage",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "grammar-fundamentals", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Systematic vocabulary building",
+      "slug": "systematic-vocabulary-building",
+      "description": "Expand your vocabulary using word roots, mnemonics, and spaced repetition",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "vocabulary-building", "is_primary": true},
+        {"competency_slug": "spaced-repetition", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Vocabulary building for language learners",
+      "slug": "vocabulary-building-for-language-learners",
+      "description": "Learn effective strategies to rapidly expand vocabulary in a new language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "vocabulary-building", "is_primary": true},
+        {"competency_slug": "memory-improvement", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Language immersion strategies",
+      "slug": "language-immersion-strategies",
+      "description": "Create immersive language learning environments to accelerate fluency",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-immersion", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Self-directed language immersion",
+      "slug": "self-directed-language-immersion",
+      "description": "Build immersive language practice into daily life without traveling abroad",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-immersion", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Translation fundamentals and practice",
+      "slug": "translation-fundamentals-and-practice",
+      "description": "Learn to translate written texts between languages with accuracy and cultural sensitivity",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "translation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Interpretation skills and techniques",
+      "slug": "interpretation-skills-and-techniques",
+      "description": "Interpret spoken language in real-time for conferences, meetings, and events",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "interpretation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Simultaneous and consecutive interpretation",
+      "slug": "simultaneous-and-consecutive-interpretation",
+      "description": "Master both simultaneous and consecutive interpretation techniques for professional settings",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "interpretation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Spanish-English interpretation",
+      "slug": "spanish-english-interpretation",
+      "description": "Interpret between Spanish and English in professional and community settings",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "interpretation", "is_primary": true},
+        {"competency_slug": "spanish", "is_primary": false},
+        {"competency_slug": "english", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Introduction to linguistics",
+      "slug": "introduction-to-linguistics",
+      "description": "Explore the scientific study of language structure, meaning, and use",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "linguistics-study", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Theoretical linguistics",
+      "slug": "theoretical-linguistics",
+      "description": "Study syntax, semantics, phonology, and morphology in linguistic theory",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "linguistics-study", "is_primary": true},
+        {"competency_slug": "phonetics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Sociolinguistics and language variation",
+      "slug": "sociolinguistics-and-language-variation",
+      "description": "Examine how social factors influence language use and variation",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "sociolinguistics", "is_primary": true},
+        {"competency_slug": "linguistics-study", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Language and society",
+      "slug": "language-and-society",
+      "description": "Study the relationship between language, culture, identity, and power",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "sociolinguistics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Psycholinguistics and language processing",
+      "slug": "psycholinguistics-and-language-processing",
+      "description": "Understand how the human mind processes, produces, and acquires language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "psycholinguistics", "is_primary": true},
+        {"competency_slug": "linguistics-study", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Language and cognition",
+      "slug": "language-and-cognition",
+      "description": "Explore the cognitive mechanisms underlying language comprehension and production",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "psycholinguistics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Historical linguistics and language change",
+      "slug": "historical-linguistics-and-language-change",
+      "description": "Trace how languages evolve and change over time",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "historical-linguistics", "is_primary": true},
+        {"competency_slug": "linguistics-study", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Etymology and word origins",
+      "slug": "etymology-and-word-origins",
+      "description": "Study the origins and historical development of words across languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "historical-linguistics", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Comparative linguistics and language families",
+      "slug": "comparative-linguistics-and-language-families",
+      "description": "Compare languages to understand genetic relationships and typological patterns",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "comparative-linguistics", "is_primary": true},
+        {"competency_slug": "linguistics-study", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Indo-European language family",
+      "slug": "indo-european-language-family",
+      "description": "Study the relationships between Indo-European languages and their shared origins",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "comparative-linguistics", "is_primary": true},
+        {"competency_slug": "historical-linguistics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Language teaching methodology",
+      "slug": "language-teaching-methodology",
+      "description": "Learn effective approaches for teaching languages to learners of all ages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-pedagogy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Teaching English as a second language",
+      "slug": "teaching-english-as-a-second-language",
+      "description": "Prepare to teach English to non-native speakers using modern pedagogical methods",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-pedagogy", "is_primary": true},
+        {"competency_slug": "english", "is_primary": false}
+      ]
+    },
+    {
+      "name": "TESOL and communicative language teaching",
+      "slug": "tesol-and-communicative-language-teaching",
+      "description": "Master communicative approaches to teaching English to speakers of other languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-pedagogy", "is_primary": true},
+        {"competency_slug": "english", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Raising bilingual children",
+      "slug": "raising-bilingual-children",
+      "description": "Support children's development of fluency in two or more languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "bilingualism", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Bilingualism and cognitive benefits",
+      "slug": "bilingualism-and-cognitive-benefits",
+      "description": "Understand the cognitive and social advantages of bilingualism across the lifespan",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "bilingualism", "is_primary": true},
+        {"competency_slug": "psycholinguistics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "First and second language acquisition",
+      "slug": "first-and-second-language-acquisition",
+      "description": "Study how children and adults acquire languages naturally and in educational settings",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-acquisition", "is_primary": true},
+        {"competency_slug": "psycholinguistics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Language acquisition research and theory",
+      "slug": "language-acquisition-research-and-theory",
+      "description": "Examine theories and empirical research on how humans acquire language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "language-acquisition", "is_primary": true},
+        {"competency_slug": "linguistics-study", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Creole languages and their development",
+      "slug": "creole-languages-and-their-development",
+      "description": "Study how creole languages emerge from pidgins and develop full grammatical systems",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "creole-languages", "is_primary": true},
+        {"competency_slug": "historical-linguistics", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Caribbean creole languages",
+      "slug": "caribbean-creole-languages",
+      "description": "Explore the linguistic features and cultural significance of Caribbean creoles",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "creole-languages", "is_primary": true},
+        {"competency_slug": "sociolinguistics", "is_primary": false}
+      ]
+    }
+  ]
+}

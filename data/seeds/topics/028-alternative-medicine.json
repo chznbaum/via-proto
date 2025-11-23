@@ -1,0 +1,225 @@
+{
+  "topics": [
+    {
+      "name": "History and philosophy of acupuncture",
+      "slug": "history-and-philosophy-of-acupuncture",
+      "description": "Explore the origins, theoretical foundations, and cultural development of acupuncture in Traditional Chinese Medicine",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "acupuncture", "is_primary": true},
+        {"competency_slug": "traditional-chinese-medicine", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Acupuncture across cultures and time",
+      "slug": "acupuncture-across-cultures-and-time",
+      "description": "Study how acupuncture has evolved and been adopted across different cultures worldwide",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "acupuncture", "is_primary": true},
+        {"competency_slug": "traditional-chinese-medicine", "is_primary": false}
+      ]
+    },
+    {
+      "name": "History and development of chiropractic",
+      "slug": "history-and-development-of-chiropractic",
+      "description": "Examine the founding, evolution, and societal role of chiropractic as a healthcare approach",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "chiropractic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "History of massage therapy across civilizations",
+      "slug": "history-of-massage-therapy-across-civilizations",
+      "description": "Trace the development of therapeutic massage from ancient practices to modern applications",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "massage-therapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cultural perspectives on massage and bodywork",
+      "slug": "cultural-perspectives-on-massage-and-bodywork",
+      "description": "Study how different cultures have developed and valued various forms of therapeutic touch",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "massage-therapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sports massage in athletic culture",
+      "slug": "sports-massage-in-athletic-culture",
+      "description": "Examine the role and development of sports massage in athletic training and recovery",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "sports-massage", "is_primary": true},
+        {"competency_slug": "massage-therapy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "History and techniques of deep tissue massage",
+      "slug": "history-and-techniques-of-deep-tissue-massage",
+      "description": "Understand the origins and cultural adoption of deep tissue massage modalities",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "deep-tissue-massage", "is_primary": true},
+        {"competency_slug": "massage-therapy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Swedish massage origins and development",
+      "slug": "swedish-massage-origins-and-development",
+      "description": "Study the creation of Swedish massage and its influence on Western massage practice",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "swedish-massage", "is_primary": true},
+        {"competency_slug": "massage-therapy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "History of herbal medicine traditions",
+      "slug": "history-of-herbal-medicine-traditions",
+      "description": "Explore herbal medicine practices across cultures from ancient times to present",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "herbal-medicine", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Ethnobotany and traditional plant medicine",
+      "slug": "ethnobotany-and-traditional-plant-medicine",
+      "description": "Study the relationship between cultures and their use of plants for healing",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "herbal-medicine", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Naturopathy philosophy and historical development",
+      "slug": "naturopathy-philosophy-and-historical-development",
+      "description": "Examine the principles, origins, and evolution of naturopathic medicine",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "naturopathy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Ayurveda: ancient Indian healing tradition",
+      "slug": "ayurveda-ancient-indian-healing-tradition",
+      "description": "Study the historical development, philosophy, and cultural significance of Ayurvedic medicine in India",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "ayurveda", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Ayurveda and Indian culture",
+      "slug": "ayurveda-and-indian-culture",
+      "description": "Explore how Ayurvedic principles are integrated into Indian cultural practices and daily life",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "ayurveda", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Traditional Chinese Medicine philosophy and history",
+      "slug": "traditional-chinese-medicine-philosophy-and-history",
+      "description": "Examine the foundations, development, and cultural role of Traditional Chinese Medicine",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "traditional-chinese-medicine", "is_primary": true}
+      ]
+    },
+    {
+      "name": "TCM concepts in Chinese culture",
+      "slug": "tcm-concepts-in-chinese-culture",
+      "description": "Study how Traditional Chinese Medicine concepts like qi, yin-yang, and five elements influence Chinese culture",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "traditional-chinese-medicine", "is_primary": true}
+      ]
+    },
+    {
+      "name": "History and controversies of homeopathy",
+      "slug": "history-and-controversies-of-homeopathy",
+      "description": "Examine the origins, spread, and ongoing debates surrounding homeopathic medicine",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "homeopathy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Homeopathy in cultural and historical context",
+      "slug": "homeopathy-in-cultural-and-historical-context",
+      "description": "Understand how homeopathy developed and gained acceptance in various societies",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "homeopathy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "History of aromatherapy and essential oils",
+      "slug": "history-of-aromatherapy-and-essential-oils",
+      "description": "Trace the use of aromatic plants and essential oils across cultures and time periods",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "aromatherapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Aromatherapy in cultural healing practices",
+      "slug": "aromatherapy-in-cultural-healing-practices",
+      "description": "Study how different cultures have incorporated aromatic substances into healing rituals",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "aromatherapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reflexology origins and cultural variations",
+      "slug": "reflexology-origins-and-cultural-variations",
+      "description": "Explore the history and cultural interpretations of reflexology practices worldwide",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "reflexology", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reiki: history and Japanese cultural roots",
+      "slug": "reiki-history-and-japanese-cultural-roots",
+      "description": "Study the origins of Reiki in early 20th century Japan and its cultural significance",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "reiki", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reiki's spread and cultural adaptation",
+      "slug": "reikis-spread-and-cultural-adaptation",
+      "description": "Examine how Reiki practice has evolved as it spread from Japan to Western cultures",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "reiki", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cupping therapy across cultures and history",
+      "slug": "cupping-therapy-across-cultures-and-history",
+      "description": "Study the ancient origins and cultural variations of cupping therapy worldwide",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "cupping-therapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Functional medicine approach and philosophy",
+      "slug": "functional-medicine-approach-and-philosophy",
+      "description": "Understand the principles and development of functional medicine as an integrative approach",
+      "category_slug": "alternative-medicine",
+      "competencies": [
+        {"competency_slug": "functional-medicine", "is_primary": true}
+      ]
+    }
+  ]
+}

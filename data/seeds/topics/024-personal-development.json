@@ -1,0 +1,752 @@
+{
+  "topics": [
+    {
+      "name": "Developing emotional regulation skills",
+      "slug": "developing-emotional-regulation-skills",
+      "description": "Learn to identify, understand, and manage your emotional responses in healthy ways",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "emotional-regulation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Emotional regulation through mindfulness",
+      "slug": "emotional-regulation-through-mindfulness",
+      "description": "Use mindfulness techniques to observe and regulate emotions without being overwhelmed",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "emotional-regulation", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cultivating gratitude for wellbeing",
+      "slug": "cultivating-gratitude-for-wellbeing",
+      "description": "Develop a gratitude practice to enhance happiness, resilience, and life satisfaction",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "gratitude-practice", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Gratitude journaling for positive mindset",
+      "slug": "gratitude-journaling-for-positive-mindset",
+      "description": "Use daily gratitude journaling to shift perspective and build lasting positivity",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "gratitude-practice", "is_primary": true},
+        {"competency_slug": "positive-psychology", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mindfulness meditation for daily life",
+      "slug": "mindfulness-meditation-for-daily-life",
+      "description": "Integrate mindfulness practices into everyday activities to reduce stress and increase presence",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "mindfulness-practice", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mindfulness-based stress reduction",
+      "slug": "mindfulness-based-stress-reduction",
+      "description": "Use structured mindfulness practices to manage stress, anxiety, and chronic pain",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "mindfulness-practice", "is_primary": true},
+        {"competency_slug": "stress-management", "is_primary": false},
+        {"competency_slug": "body-scan-meditation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Applied positive psychology for flourishing",
+      "slug": "applied-positive-psychology-for-flourishing",
+      "description": "Use evidence-based positive psychology interventions to enhance wellbeing and life satisfaction",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "positive-psychology", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Strengths-based personal development",
+      "slug": "strengths-based-personal-development",
+      "description": "Identify and leverage your character strengths for greater fulfillment and success",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "positive-psychology", "is_primary": true},
+        {"competency_slug": "self-awareness", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building psychological resilience",
+      "slug": "building-psychological-resilience",
+      "description": "Develop the capacity to recover from setbacks and adapt to challenging circumstances",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "resilience", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Resilience training for adversity",
+      "slug": "resilience-training-for-adversity",
+      "description": "Strengthen your ability to bounce back from stress, trauma, and life challenges",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "resilience", "is_primary": true},
+        {"competency_slug": "emotional-regulation", "is_primary": false},
+        {"competency_slug": "positive-psychology", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Developing self-awareness through reflection",
+      "slug": "developing-self-awareness-through-reflection",
+      "description": "Deepen understanding of your thoughts, emotions, values, and behavioral patterns",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-awareness", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Self-awareness for personal growth",
+      "slug": "self-awareness-for-personal-growth",
+      "description": "Use introspection and feedback to understand yourself better and guide meaningful change",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-awareness", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Practicing self-compassion",
+      "slug": "practicing-self-compassion",
+      "description": "Learn to treat yourself with kindness and understanding, especially during difficult times",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-compassion", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Self-compassion for overcoming perfectionism",
+      "slug": "self-compassion-for-overcoming-perfectionism",
+      "description": "Use self-compassion practices to reduce self-criticism and embrace imperfection",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-compassion", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Building genuine self-confidence",
+      "slug": "building-genuine-self-confidence",
+      "description": "Develop authentic confidence based on self-acceptance and competence",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-confidence", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Self-confidence through skill mastery",
+      "slug": "self-confidence-through-skill-mastery",
+      "description": "Build lasting confidence by developing competence and celebrating progress",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "self-confidence", "is_primary": true},
+        {"competency_slug": "growth-mindset", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective stress management techniques",
+      "slug": "effective-stress-management-techniques",
+      "description": "Learn practical strategies to identify, reduce, and cope with stress in daily life",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "stress-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Holistic stress management and wellbeing",
+      "slug": "holistic-stress-management-and-wellbeing",
+      "description": "Combine mindfulness, lifestyle changes, and coping strategies for comprehensive stress reduction",
+      "category_slug": "mindfulness-wellness",
+      "competencies": [
+        {"competency_slug": "stress-management", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false},
+        {"competency_slug": "sleep-hygiene", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Body scan meditation for relaxation",
+      "slug": "body-scan-meditation-for-relaxation",
+      "description": "Practice systematic body awareness meditation to release tension and cultivate presence",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "body-scan-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Breathwork for calm and energy",
+      "slug": "breathwork-for-calm-and-energy",
+      "description": "Use conscious breathing techniques to regulate your nervous system and emotional state",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "breathwork", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Pranayama and breathwork practices",
+      "slug": "pranayama-and-breathwork-practices",
+      "description": "Learn traditional and modern breathing exercises for mental clarity, stress relief, and vitality",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "breathwork", "is_primary": true},
+        {"competency_slug": "stress-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Guided meditation for beginners",
+      "slug": "guided-meditation-for-beginners",
+      "description": "Start a meditation practice with instructor-led sessions for relaxation and mindfulness",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "guided-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Creating guided meditation recordings",
+      "slug": "creating-guided-meditation-recordings",
+      "description": "Learn to write and record effective guided meditations for personal use or teaching",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "guided-meditation", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Loving-kindness meditation practice",
+      "slug": "loving-kindness-meditation-practice",
+      "description": "Cultivate compassion for yourself and others through metta meditation",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "loving-kindness-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Metta meditation for relationship healing",
+      "slug": "metta-meditation-for-relationship-healing",
+      "description": "Use loving-kindness practice to transform difficult relationships and reduce interpersonal conflict",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "loving-kindness-meditation", "is_primary": true},
+        {"competency_slug": "self-compassion", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Transcendental Meditation technique",
+      "slug": "transcendental-meditation-technique",
+      "description": "Learn the TM mantra-based meditation practice for deep rest and stress reduction",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "transcendental-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Vipassana meditation and insight practice",
+      "slug": "vipassana-meditation-and-insight-practice",
+      "description": "Develop insight through mindful observation of sensations, thoughts, and impermanence",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "vipassana-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Walking meditation for mindful movement",
+      "slug": "walking-meditation-for-mindful-movement",
+      "description": "Practice meditation while walking to combine movement with mindfulness",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "walking-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Zen meditation (Zazen) practice",
+      "slug": "zen-meditation-zazen-practice",
+      "description": "Learn seated Zen meditation to cultivate concentration, awareness, and equanimity",
+      "category_slug": "meditation",
+      "competencies": [
+        {"competency_slug": "zen-meditation", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Managing anxiety with evidence-based techniques",
+      "slug": "managing-anxiety-with-evidence-based-techniques",
+      "description": "Learn practical strategies to reduce anxiety symptoms and regain calm",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "anxiety-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Anxiety management through CBT and mindfulness",
+      "slug": "anxiety-management-through-cbt-and-mindfulness",
+      "description": "Combine cognitive-behavioral techniques with mindfulness to manage anxiety disorders",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "anxiety-management", "is_primary": true},
+        {"competency_slug": "cognitive-behavioral-therapy", "is_primary": false},
+        {"competency_slug": "mindfulness-practice", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Setting healthy boundaries in relationships",
+      "slug": "setting-healthy-boundaries-in-relationships",
+      "description": "Learn to establish and communicate personal boundaries to protect your wellbeing",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "boundary-setting", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Boundaries at work and in personal life",
+      "slug": "boundaries-at-work-and-in-personal-life",
+      "description": "Develop skills to set and maintain boundaries across different life domains",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "boundary-setting", "is_primary": true},
+        {"competency_slug": "self-awareness", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Understanding and applying CBT techniques",
+      "slug": "understanding-and-applying-cbt-techniques",
+      "description": "Learn cognitive-behavioral therapy principles to change unhelpful thought patterns and behaviors",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "cognitive-behavioral-therapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "CBT for depression and anxiety",
+      "slug": "cbt-for-depression-and-anxiety",
+      "description": "Use evidence-based CBT strategies to manage symptoms of depression and anxiety",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "cognitive-behavioral-therapy", "is_primary": true},
+        {"competency_slug": "anxiety-management", "is_primary": false},
+        {"competency_slug": "depression-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Managing depression with lifestyle and therapy",
+      "slug": "managing-depression-with-lifestyle-and-therapy",
+      "description": "Combine behavioral activation, self-care, and therapeutic techniques to manage depression",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "depression-management", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Depression management through behavioral strategies",
+      "slug": "depression-management-through-behavioral-strategies",
+      "description": "Use activity scheduling, positive reinforcement, and cognitive techniques to alleviate depression",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "depression-management", "is_primary": true},
+        {"competency_slug": "cognitive-behavioral-therapy", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Learning DBT skills for emotional regulation",
+      "slug": "learning-dbt-skills-for-emotional-regulation",
+      "description": "Master dialectical behavior therapy skills for managing intense emotions and improving relationships",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "dialectical-behavior-therapy", "is_primary": true},
+        {"competency_slug": "emotional-regulation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "DBT for borderline personality disorder",
+      "slug": "dbt-for-borderline-personality-disorder",
+      "description": "Apply comprehensive DBT skills to manage BPD symptoms and build a life worth living",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "dialectical-behavior-therapy", "is_primary": true},
+        {"competency_slug": "mindfulness-practice", "is_primary": false},
+        {"competency_slug": "emotional-regulation", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Understanding EMDR for trauma processing",
+      "slug": "understanding-emdr-for-trauma-processing",
+      "description": "Learn about Eye Movement Desensitization and Reprocessing therapy for healing trauma",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "emdr-therapy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mental health first aid certification",
+      "slug": "mental-health-first-aid-certification",
+      "description": "Learn to recognize mental health crises and provide initial support until professional help arrives",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "mental-health-first-aid", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Improving sleep through sleep hygiene",
+      "slug": "improving-sleep-through-sleep-hygiene",
+      "description": "Develop habits and routines that promote consistent, restorative sleep",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "sleep-hygiene", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sleep optimization for health and performance",
+      "slug": "sleep-optimization-for-health-and-performance",
+      "description": "Implement evidence-based sleep strategies to enhance recovery, cognition, and wellbeing",
+      "category_slug": "mental-health",
+      "competencies": [
+        {"competency_slug": "sleep-hygiene", "is_primary": true},
+        {"competency_slug": "stress-management", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Active recall study techniques",
+      "slug": "active-recall-study-techniques",
+      "description": "Use retrieval practice to strengthen memory and improve learning efficiency",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "active-recall", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Active recall for exam preparation",
+      "slug": "active-recall-for-exam-preparation",
+      "description": "Master test material through systematic retrieval practice and self-testing",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "active-recall", "is_primary": true},
+        {"competency_slug": "spaced-repetition", "is_primary": false},
+        {"competency_slug": "study-skills", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Evidence-based learning strategies",
+      "slug": "evidence-based-learning-strategies",
+      "description": "Apply cognitive science research to learn more effectively and retain information longer",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "learning-strategies", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Metacognitive learning strategies",
+      "slug": "metacognitive-learning-strategies",
+      "description": "Develop awareness of how you learn best and adapt strategies accordingly",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "learning-strategies", "is_primary": true},
+        {"competency_slug": "self-awareness", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Memory improvement techniques",
+      "slug": "memory-improvement-techniques",
+      "description": "Learn mnemonic devices and memory strategies to recall information more effectively",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "memory-improvement", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced memory techniques and mnemonics",
+      "slug": "advanced-memory-techniques-and-mnemonics",
+      "description": "Master memory palaces, peg systems, and other advanced techniques for exceptional recall",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "memory-improvement", "is_primary": true},
+        {"competency_slug": "active-recall", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Mind mapping for learning and creativity",
+      "slug": "mind-mapping-for-learning-and-creativity",
+      "description": "Create visual diagrams to organize ideas, enhance understanding, and boost creativity",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "mind-mapping", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Mind mapping for project planning",
+      "slug": "mind-mapping-for-project-planning",
+      "description": "Use mind maps to brainstorm, organize, and manage complex projects visually",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "mind-mapping", "is_primary": true},
+        {"competency_slug": "creative-thinking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective note-taking methods",
+      "slug": "effective-note-taking-methods",
+      "description": "Learn systematic note-taking techniques like Cornell, outline, and mapping methods",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "note-taking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Digital note-taking and knowledge management",
+      "slug": "digital-note-taking-and-knowledge-management",
+      "description": "Organize and retrieve notes effectively using digital tools and systems",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "note-taking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Improving reading comprehension",
+      "slug": "improving-reading-comprehension",
+      "description": "Develop strategies to better understand and retain what you read",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "reading-comprehension", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Critical reading for academic success",
+      "slug": "critical-reading-for-academic-success",
+      "description": "Analyze, evaluate, and engage deeply with complex texts for learning",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "reading-comprehension", "is_primary": true},
+        {"competency_slug": "critical-thinking-skill", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Spaced repetition for long-term retention",
+      "slug": "spaced-repetition-for-long-term-retention",
+      "description": "Use scientifically-optimized review schedules to commit information to long-term memory",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "spaced-repetition", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Anki and spaced repetition systems",
+      "slug": "anki-and-spaced-repetition-systems",
+      "description": "Master flashcard software using spaced repetition algorithms for efficient memorization",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "spaced-repetition", "is_primary": true},
+        {"competency_slug": "active-recall", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Speed reading fundamentals",
+      "slug": "speed-reading-fundamentals",
+      "description": "Increase reading speed while maintaining comprehension through proven techniques",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "speed-reading", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Advanced speed reading and comprehension",
+      "slug": "advanced-speed-reading-and-comprehension",
+      "description": "Master rapid reading techniques while enhancing retention and understanding",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "speed-reading", "is_primary": true},
+        {"competency_slug": "reading-comprehension", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective study skills for academic success",
+      "slug": "effective-study-skills-for-academic-success",
+      "description": "Develop comprehensive study habits, time management, and test preparation strategies",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "study-skills", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Study skills and learning optimization",
+      "slug": "study-skills-and-learning-optimization",
+      "description": "Combine evidence-based learning strategies for maximum academic performance",
+      "category_slug": "memory-learning",
+      "competencies": [
+        {"competency_slug": "study-skills", "is_primary": true},
+        {"competency_slug": "active-recall", "is_primary": false},
+        {"competency_slug": "spaced-repetition", "is_primary": false},
+        {"competency_slug": "note-taking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Analytical thinking for problem-solving",
+      "slug": "analytical-thinking-for-problem-solving",
+      "description": "Break down complex problems systematically and develop logical solutions",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "analytical-thinking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Data-driven analytical thinking",
+      "slug": "data-driven-analytical-thinking",
+      "description": "Use structured analysis to interpret data, identify patterns, and draw evidence-based conclusions",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "analytical-thinking", "is_primary": true},
+        {"competency_slug": "critical-thinking-skill", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Creative thinking and innovation",
+      "slug": "creative-thinking-and-innovation",
+      "description": "Develop ideation skills and techniques to generate novel solutions and ideas",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "creative-thinking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Creative problem-solving techniques",
+      "slug": "creative-problem-solving-techniques",
+      "description": "Apply brainstorming, lateral thinking, and divergent thinking to solve problems creatively",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "creative-thinking", "is_primary": true},
+        {"competency_slug": "lateral-thinking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Effective decision-making frameworks",
+      "slug": "effective-decision-making-frameworks",
+      "description": "Use structured approaches to make better personal and professional decisions",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "decision-making", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Strategic decision-making under uncertainty",
+      "slug": "strategic-decision-making-under-uncertainty",
+      "description": "Make sound decisions with incomplete information using probability and risk assessment",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "decision-making", "is_primary": true},
+        {"competency_slug": "analytical-thinking", "is_primary": false},
+        {"competency_slug": "critical-thinking-skill", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Lateral thinking for creative solutions",
+      "slug": "lateral-thinking-for-creative-solutions",
+      "description": "Approach problems from unconventional angles using lateral thinking techniques",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "lateral-thinking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Systems thinking for complex problems",
+      "slug": "systems-thinking-for-complex-problems",
+      "description": "Understand interconnections and feedback loops to address complex, systemic challenges",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "systems-thinking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Systems thinking for organizational change",
+      "slug": "systems-thinking-for-organizational-change",
+      "description": "Apply systems thinking to understand and improve organizational dynamics and processes",
+      "category_slug": "cognitive-skills",
+      "competencies": [
+        {"competency_slug": "systems-thinking", "is_primary": true},
+        {"competency_slug": "analytical-thinking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Cultivating a growth mindset",
+      "slug": "cultivating-a-growth-mindset",
+      "description": "Develop the belief that abilities can be developed through dedication and hard work",
+      "category_slug": "personal-development",
+      "competencies": [
+        {"competency_slug": "growth-mindset", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Growth mindset for learning and achievement",
+      "slug": "growth-mindset-for-learning-and-achievement",
+      "description": "Use growth mindset principles to embrace challenges, persist through obstacles, and achieve goals",
+      "category_slug": "personal-development",
+      "competencies": [
+        {"competency_slug": "growth-mindset", "is_primary": true},
+        {"competency_slug": "resilience", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Critical thinking fundamentals",
+      "slug": "critical-thinking-fundamentals",
+      "description": "Learn to analyze arguments, identify logical fallacies, and evaluate evidence objectively",
+      "category_slug": "critical-thinking",
+      "competencies": [
+        {"competency_slug": "critical-thinking-skill", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Critical thinking for information literacy",
+      "slug": "critical-thinking-for-information-literacy",
+      "description": "Evaluate sources, detect bias, and navigate misinformation in the digital age",
+      "category_slug": "critical-thinking",
+      "competencies": [
+        {"competency_slug": "critical-thinking-skill", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Critical thinking for academic writing",
+      "slug": "critical-thinking-for-academic-writing",
+      "description": "Develop and defend well-reasoned arguments in scholarly writing",
+      "category_slug": "critical-thinking",
+      "competencies": [
+        {"competency_slug": "critical-thinking-skill", "is_primary": true},
+        {"competency_slug": "analytical-thinking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Structured problem-solving methods",
+      "slug": "structured-problem-solving-methods",
+      "description": "Apply systematic frameworks to identify, analyze, and solve problems effectively",
+      "category_slug": "problem-solving",
+      "competencies": [
+        {"competency_slug": "problem-solving-skill", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Problem-solving for technical challenges",
+      "slug": "problem-solving-for-technical-challenges",
+      "description": "Use debugging, troubleshooting, and root cause analysis to solve technical problems",
+      "category_slug": "problem-solving",
+      "competencies": [
+        {"competency_slug": "problem-solving-skill", "is_primary": true},
+        {"competency_slug": "analytical-thinking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Creative and analytical problem-solving",
+      "slug": "creative-and-analytical-problem-solving",
+      "description": "Combine logical analysis with creative ideation to solve diverse problems",
+      "category_slug": "problem-solving",
+      "competencies": [
+        {"competency_slug": "problem-solving-skill", "is_primary": true},
+        {"competency_slug": "creative-thinking", "is_primary": false},
+        {"competency_slug": "analytical-thinking", "is_primary": false}
+      ]
+    }
+  ]
+}

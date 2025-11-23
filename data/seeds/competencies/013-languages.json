@@ -1,6 +1,26 @@
 {
   "competencies": [
     {
+      "name": "English",
+      "slug": "english",
+      "description": "Germanic language spoken globally",
+      "category_slug": "languages",
+      "synonyms": [],
+      "prerequisites": [],
+      "alternatives": [
+        {
+          "alternative_slug": "german",
+          "relationship_type": "related",
+          "notes": "English is a Germanic language"
+        },
+        {
+          "alternative_slug": "french",
+          "relationship_type": "related",
+          "notes": "Romance language with significant influence on English"
+        }
+      ]
+    },
+    {
       "name": "Spanish",
       "slug": "spanish",
       "description": "Romance language spoken in Spain and Latin America",

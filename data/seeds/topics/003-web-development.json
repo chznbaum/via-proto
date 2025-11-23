@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "name": "WebAssembly fundamentals",
+      "slug": "webassembly-fundamentals",
+      "description": "Learn to compile and run high-performance code in web browsers using WebAssembly",
+      "category_slug": "web-development",
+      "competencies": [
+        {"competency_slug": "webassembly", "is_primary": true}
+      ]
+    },
+    {
+      "name": "WebAssembly with Rust",
+      "slug": "webassembly-with-rust",
+      "description": "Compile Rust code to WebAssembly for high-performance web applications",
+      "category_slug": "web-development",
+      "competencies": [
+        {"competency_slug": "webassembly", "is_primary": true},
+        {"competency_slug": "rust", "is_primary": false}
+      ]
+    },
+    {
+      "name": "WebAssembly with C/C++",
+      "slug": "webassembly-with-c-cpp",
+      "description": "Use Emscripten to compile C/C++ code to WebAssembly for browser execution",
+      "category_slug": "web-development",
+      "competencies": [
+        {"competency_slug": "webassembly", "is_primary": true},
+        {"competency_slug": "cpp", "is_primary": false}
+      ]
+    },
+    {
+      "name": "WebAssembly for game development",
+      "slug": "webassembly-for-game-development",
+      "description": "Build high-performance browser games using WebAssembly and game engines",
+      "category_slug": "web-development",
+      "competencies": [
+        {"competency_slug": "webassembly", "is_primary": true}
+      ]
+    },
+    {
+      "name": "WebAssembly System Interface (WASI)",
+      "slug": "webassembly-system-interface-wasi",
+      "description": "Use WASI to run WebAssembly outside the browser in server and edge environments",
+      "category_slug": "web-development",
+      "competencies": [
+        {"competency_slug": "webassembly", "is_primary": true}
+      ]
+    }
+  ]
+}

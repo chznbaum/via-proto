@@ -1,7 +1,7 @@
 # Competency Quick Lookup
 
-**Generated:** 2025-11-23T02:19:38.172Z
-**Total Competencies:** 1625
+**Generated:** 2025-11-23T03:03:05.545Z
+**Total Competencies:** 1626
 
 This file is auto-generated for quick reference during seed expansion.
 Run `npm run generate:competency-reference` to update.
@@ -49,7 +49,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - **graphic-design** (16)
 - **home-lifestyle** (50)
 - **investing-trading** (26)
-- **languages** (170)
+- **languages** (171)
 - **leadership-communication** (12)
 - **life-sciences** (6)
 - **linear-algebra** (1)
@@ -580,6 +580,7 @@ For detailed information (prerequisites, alternatives, icons), see COMPETENCY_RE
 - `emotional-regulation` - Emotional Regulation (mindfulness-wellness)
 - `empathy` - Empathy (communication-interpersonal)
 - `employee-development` - Employee Development (operations-strategy)
+- `english` - English (languages)
 - `english-second-language` - English as a Second Language (languages)
 - `entity-framework` - Entity Framework (databases)
 - `entrepreneurship` - Entrepreneurship (operations-strategy)

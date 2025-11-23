@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-23T02:19:29.536Z
-**Total Topics:** 2241
+**Generated:** 2025-11-23T03:02:58.220Z
+**Total Topics:** 2618
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -14,6 +14,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 - [advanced-math](#advanced-math) (30)
 - [algebra](#algebra) (11)
+- [alternative-medicine](#alternative-medicine) (24)
 - [applied-math](#applied-math) (42)
 - [architecture](#architecture) (47)
 - [arithmetic](#arithmetic) (3)
@@ -23,8 +24,13 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [biology](#biology) (37)
 - [blockchain-web3](#blockchain-web3) (45)
 - [calculus](#calculus) (12)
+- [cardio-endurance](#cardio-endurance) (21)
 - [chemistry](#chemistry) (30)
 - [cloud-devops](#cloud-devops) (170)
+- [cognitive-skills](#cognitive-skills) (9)
+- [communication-interpersonal](#communication-interpersonal) (18)
+- [corporate-finance](#corporate-finance) (21)
+- [critical-thinking](#critical-thinking) (3)
 - [cybersecurity](#cybersecurity) (33)
 - [dance](#dance) (42)
 - [data-engineering](#data-engineering) (41)
@@ -34,6 +40,8 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [discrete-mathematics](#discrete-mathematics) (23)
 - [environmental-science](#environmental-science) (36)
 - [fiber-arts-crafts](#fiber-arts-crafts) (47)
+- [finance-accounting](#finance-accounting) (20)
+- [flexibility-mobility](#flexibility-mobility) (14)
 - [frontend-development](#frontend-development) (40)
 - [fullstack-development](#fullstack-development) (6)
 - [game-development](#game-development) (1)
@@ -43,27 +51,42 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [home-lifestyle](#home-lifestyle) (80)
 - [investing-trading](#investing-trading) (29)
 - [languages](#languages) (147)
+- [leadership-communication](#leadership-communication) (23)
 - [life-sciences](#life-sciences) (22)
 - [linear-algebra](#linear-algebra) (7)
+- [linguistics](#linguistics) (32)
 - [marketing-sales](#marketing-sales) (45)
+- [meditation](#meditation) (11)
+- [memory-learning](#memory-learning) (18)
+- [mental-health](#mental-health) (14)
+- [mindfulness-wellness](#mindfulness-wellness) (18)
 - [mobile-development](#mobile-development) (86)
+- [motion-3d](#motion-3d) (32)
 - [music](#music) (181)
 - [neuroscience](#neuroscience) (18)
 - [number-theory](#number-theory) (5)
+- [nutrition-diet](#nutrition-diet) (19)
 - [operations-strategy](#operations-strategy) (39)
+- [personal-development](#personal-development) (2)
 - [personal-finance](#personal-finance) (26)
 - [photography-video](#photography-video) (46)
 - [physics](#physics) (44)
+- [problem-solving](#problem-solving) (3)
+- [product-project-management](#product-project-management) (22)
+- [productivity-time-management](#productivity-time-management) (19)
 - [programming](#programming) (73)
 - [recreation-hobbies](#recreation-hobbies) (70)
 - [software-testing](#software-testing) (3)
 - [statistics-probability](#statistics-probability) (27)
+- [strength-training](#strength-training) (17)
 - [systems-programming](#systems-programming) (39)
 - [theater](#theater) (20)
 - [trigonometry](#trigonometry) (5)
 - [uiux-design](#uiux-design) (44)
 - [visual-arts](#visual-arts) (51)
+- [web-development](#web-development) (5)
 - [writing](#writing) (95)
+- [yoga](#yoga) (12)
 
 ---
 
@@ -347,6 +370,159 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `pre-algebra`
 - **Supporting Competencies:** `arithmetic`
 - **Source File:** 023-mathematics.json
+
+---
+
+## alternative-medicine
+
+### Acupuncture across cultures and time
+- **Slug:** `acupuncture-across-cultures-and-time`
+- **Description:** Study how acupuncture has evolved and been adopted across different cultures worldwide
+- **Primary Competencies:** `acupuncture`
+- **Supporting Competencies:** `traditional-chinese-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### Aromatherapy in cultural healing practices
+- **Slug:** `aromatherapy-in-cultural-healing-practices`
+- **Description:** Study how different cultures have incorporated aromatic substances into healing rituals
+- **Primary Competencies:** `aromatherapy`
+- **Source File:** 028-alternative-medicine.json
+
+### Ayurveda and Indian culture
+- **Slug:** `ayurveda-and-indian-culture`
+- **Description:** Explore how Ayurvedic principles are integrated into Indian cultural practices and daily life
+- **Primary Competencies:** `ayurveda`
+- **Source File:** 028-alternative-medicine.json
+
+### Ayurveda: ancient Indian healing tradition
+- **Slug:** `ayurveda-ancient-indian-healing-tradition`
+- **Description:** Study the historical development, philosophy, and cultural significance of Ayurvedic medicine in India
+- **Primary Competencies:** `ayurveda`
+- **Source File:** 028-alternative-medicine.json
+
+### Cultural perspectives on massage and bodywork
+- **Slug:** `cultural-perspectives-on-massage-and-bodywork`
+- **Description:** Study how different cultures have developed and valued various forms of therapeutic touch
+- **Primary Competencies:** `massage-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### Cupping therapy across cultures and history
+- **Slug:** `cupping-therapy-across-cultures-and-history`
+- **Description:** Study the ancient origins and cultural variations of cupping therapy worldwide
+- **Primary Competencies:** `cupping-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### Ethnobotany and traditional plant medicine
+- **Slug:** `ethnobotany-and-traditional-plant-medicine`
+- **Description:** Study the relationship between cultures and their use of plants for healing
+- **Primary Competencies:** `herbal-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### Functional medicine approach and philosophy
+- **Slug:** `functional-medicine-approach-and-philosophy`
+- **Description:** Understand the principles and development of functional medicine as an integrative approach
+- **Primary Competencies:** `functional-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### History and controversies of homeopathy
+- **Slug:** `history-and-controversies-of-homeopathy`
+- **Description:** Examine the origins, spread, and ongoing debates surrounding homeopathic medicine
+- **Primary Competencies:** `homeopathy`
+- **Source File:** 028-alternative-medicine.json
+
+### History and development of chiropractic
+- **Slug:** `history-and-development-of-chiropractic`
+- **Description:** Examine the founding, evolution, and societal role of chiropractic as a healthcare approach
+- **Primary Competencies:** `chiropractic`
+- **Source File:** 028-alternative-medicine.json
+
+### History and philosophy of acupuncture
+- **Slug:** `history-and-philosophy-of-acupuncture`
+- **Description:** Explore the origins, theoretical foundations, and cultural development of acupuncture in Traditional Chinese Medicine
+- **Primary Competencies:** `acupuncture`
+- **Supporting Competencies:** `traditional-chinese-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### History and techniques of deep tissue massage
+- **Slug:** `history-and-techniques-of-deep-tissue-massage`
+- **Description:** Understand the origins and cultural adoption of deep tissue massage modalities
+- **Primary Competencies:** `deep-tissue-massage`
+- **Supporting Competencies:** `massage-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### History of aromatherapy and essential oils
+- **Slug:** `history-of-aromatherapy-and-essential-oils`
+- **Description:** Trace the use of aromatic plants and essential oils across cultures and time periods
+- **Primary Competencies:** `aromatherapy`
+- **Source File:** 028-alternative-medicine.json
+
+### History of herbal medicine traditions
+- **Slug:** `history-of-herbal-medicine-traditions`
+- **Description:** Explore herbal medicine practices across cultures from ancient times to present
+- **Primary Competencies:** `herbal-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### History of massage therapy across civilizations
+- **Slug:** `history-of-massage-therapy-across-civilizations`
+- **Description:** Trace the development of therapeutic massage from ancient practices to modern applications
+- **Primary Competencies:** `massage-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### Homeopathy in cultural and historical context
+- **Slug:** `homeopathy-in-cultural-and-historical-context`
+- **Description:** Understand how homeopathy developed and gained acceptance in various societies
+- **Primary Competencies:** `homeopathy`
+- **Source File:** 028-alternative-medicine.json
+
+### Naturopathy philosophy and historical development
+- **Slug:** `naturopathy-philosophy-and-historical-development`
+- **Description:** Examine the principles, origins, and evolution of naturopathic medicine
+- **Primary Competencies:** `naturopathy`
+- **Source File:** 028-alternative-medicine.json
+
+### Reflexology origins and cultural variations
+- **Slug:** `reflexology-origins-and-cultural-variations`
+- **Description:** Explore the history and cultural interpretations of reflexology practices worldwide
+- **Primary Competencies:** `reflexology`
+- **Source File:** 028-alternative-medicine.json
+
+### Reiki: history and Japanese cultural roots
+- **Slug:** `reiki-history-and-japanese-cultural-roots`
+- **Description:** Study the origins of Reiki in early 20th century Japan and its cultural significance
+- **Primary Competencies:** `reiki`
+- **Source File:** 028-alternative-medicine.json
+
+### Reiki's spread and cultural adaptation
+- **Slug:** `reikis-spread-and-cultural-adaptation`
+- **Description:** Examine how Reiki practice has evolved as it spread from Japan to Western cultures
+- **Primary Competencies:** `reiki`
+- **Source File:** 028-alternative-medicine.json
+
+### Sports massage in athletic culture
+- **Slug:** `sports-massage-in-athletic-culture`
+- **Description:** Examine the role and development of sports massage in athletic training and recovery
+- **Primary Competencies:** `sports-massage`
+- **Supporting Competencies:** `massage-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### Swedish massage origins and development
+- **Slug:** `swedish-massage-origins-and-development`
+- **Description:** Study the creation of Swedish massage and its influence on Western massage practice
+- **Primary Competencies:** `swedish-massage`
+- **Supporting Competencies:** `massage-therapy`
+- **Source File:** 028-alternative-medicine.json
+
+### TCM concepts in Chinese culture
+- **Slug:** `tcm-concepts-in-chinese-culture`
+- **Description:** Study how Traditional Chinese Medicine concepts like qi, yin-yang, and five elements influence Chinese culture
+- **Primary Competencies:** `traditional-chinese-medicine`
+- **Source File:** 028-alternative-medicine.json
+
+### Traditional Chinese Medicine philosophy and history
+- **Slug:** `traditional-chinese-medicine-philosophy-and-history`
+- **Description:** Examine the foundations, development, and cultural role of Traditional Chinese Medicine
+- **Primary Competencies:** `traditional-chinese-medicine`
+- **Source File:** 028-alternative-medicine.json
 
 ---
 
@@ -2014,6 +2190,147 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## cardio-endurance
+
+### Building cardiovascular endurance through HIIT
+- **Slug:** `building-cardiovascular-endurance-through-hiit`
+- **Description:** Develop stamina and burn calories efficiently using high-intensity interval training protocols
+- **Primary Competencies:** `hiit`
+- **Source File:** 026-health-fitness.json
+
+### Circuit training for fat loss and muscle tone
+- **Slug:** `circuit-training-for-fat-loss-and-muscle-tone`
+- **Description:** Create metabolic circuit workouts optimized for burning fat while maintaining lean muscle mass
+- **Primary Competencies:** `circuit-training`
+- **Supporting Competencies:** `macronutrient-tracking`, `calorie-counting`
+- **Source File:** 026-health-fitness.json
+
+### Circuit training for total body conditioning
+- **Slug:** `circuit-training-for-total-body-conditioning`
+- **Description:** Design and perform circuit workouts that combine strength and cardio for efficient full-body fitness
+- **Primary Competencies:** `circuit-training`
+- **Source File:** 026-health-fitness.json
+
+### Competitive rowing conditioning and race preparation
+- **Slug:** `competitive-rowing-conditioning-and-race-preparation`
+- **Description:** Train for rowing competitions with periodized programming, pacing strategies, and performance nutrition
+- **Primary Competencies:** `rowing-fitness`
+- **Supporting Competencies:** `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Elliptical training for low-impact cardio
+- **Slug:** `elliptical-training-for-low-impact-cardio`
+- **Description:** Build cardiovascular fitness with elliptical workouts that minimize joint stress while maximizing calorie burn
+- **Primary Competencies:** `elliptical-training`
+- **Source File:** 026-health-fitness.json
+
+### Group fitness aerobics instruction
+- **Slug:** `group-fitness-aerobics-instruction`
+- **Description:** Learn to lead energetic aerobics classes with choreography, music selection, and motivational coaching
+- **Primary Competencies:** `aerobics`
+- **Source File:** 026-health-fitness.json
+
+### HIIT programming for athletic performance
+- **Slug:** `hiit-programming-for-athletic-performance`
+- **Description:** Create periodized HIIT training plans to enhance speed, power, and endurance for competitive athletes
+- **Primary Competencies:** `hiit`
+- **Supporting Competencies:** `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### HIIT workouts for fat loss and metabolic conditioning
+- **Slug:** `hiit-workouts-for-fat-loss-and-metabolic-conditioning`
+- **Description:** Design and perform high-intensity interval training sessions to maximize fat burning and improve metabolic health
+- **Primary Competencies:** `hiit`
+- **Supporting Competencies:** `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Indoor cycling training and technique
+- **Slug:** `indoor-cycling-training-and-technique`
+- **Description:** Build cycling-specific fitness with structured indoor training sessions and proper bike setup
+- **Primary Competencies:** `indoor-cycling`
+- **Source File:** 026-health-fitness.json
+
+### Indoor rowing technique and training
+- **Slug:** `indoor-rowing-technique-and-training`
+- **Description:** Master proper rowing form and develop effective training programs for full-body cardiovascular fitness
+- **Primary Competencies:** `rowing-fitness`
+- **Source File:** 026-health-fitness.json
+
+### Ironman distance triathlon preparation
+- **Slug:** `ironman-distance-triathlon-preparation`
+- **Description:** Train for ultra-distance triathlon events with periodized programming, nutrition strategies, and mental preparation
+- **Primary Competencies:** `triathlon-training`
+- **Supporting Competencies:** `sports-nutrition`, `meal-planning`, `supplement-science`
+- **Source File:** 026-health-fitness.json
+
+### Jump rope for boxing and combat sports conditioning
+- **Slug:** `jump-rope-for-boxing-and-combat-sports-conditioning`
+- **Description:** Develop footwork, timing, and endurance using jump rope training protocols designed for fighters
+- **Primary Competencies:** `jump-rope`
+- **Supporting Competencies:** `hiit`
+- **Source File:** 026-health-fitness.json
+
+### Jump rope skills and conditioning
+- **Slug:** `jump-rope-skills-and-conditioning`
+- **Description:** Learn jump rope techniques from basic jumps to advanced tricks while building cardiovascular fitness
+- **Primary Competencies:** `jump-rope`
+- **Source File:** 026-health-fitness.json
+
+### Plyometric training for explosive power
+- **Slug:** `plyometric-training-for-explosive-power`
+- **Description:** Develop speed, power, and reactive strength through jump training and explosive movements
+- **Primary Competencies:** `plyometrics`
+- **Source File:** 026-health-fitness.json
+
+### Plyometrics for vertical jump development
+- **Slug:** `plyometrics-for-vertical-jump-development`
+- **Description:** Increase vertical jump height using progressive plyometric exercises and proper landing mechanics
+- **Primary Competencies:** `plyometrics`
+- **Supporting Competencies:** `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Spin class instruction and choreography
+- **Slug:** `spin-class-instruction-and-choreography`
+- **Description:** Learn to design and lead engaging group indoor cycling classes with music and motivational coaching
+- **Primary Competencies:** `indoor-cycling`
+- **Source File:** 026-health-fitness.json
+
+### Sprint training and speed development
+- **Slug:** `sprint-training-and-speed-development`
+- **Description:** Improve running speed through technique refinement, power development, and sprint-specific conditioning
+- **Primary Competencies:** `track-and-field`
+- **Supporting Competencies:** `plyometrics`, `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### Stair climbing for lower body strength and endurance
+- **Slug:** `stair-climbing-for-lower-body-strength-and-endurance`
+- **Description:** Develop powerful legs and cardiovascular capacity through structured stair climbing workouts
+- **Primary Competencies:** `stair-climbing`
+- **Source File:** 026-health-fitness.json
+
+### Step aerobics choreography and instruction
+- **Slug:** `step-aerobics-choreography-and-instruction`
+- **Description:** Design and teach step aerobics classes with progressive choreography and proper stepping technique
+- **Primary Competencies:** `step-aerobics`
+- **Supporting Competencies:** `aerobics`
+- **Source File:** 026-health-fitness.json
+
+### Track and field fundamentals and training
+- **Slug:** `track-and-field-fundamentals-and-training`
+- **Description:** Learn sprinting, jumping, and throwing techniques with structured athletic development programs
+- **Primary Competencies:** `track-and-field`
+- **Supporting Competencies:** `plyometrics`, `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Triathlon training and race preparation
+- **Slug:** `triathlon-training-and-race-preparation`
+- **Description:** Prepare for triathlon competitions with structured swim-bike-run training and transition practice
+- **Primary Competencies:** `triathlon-training`
+- **Supporting Competencies:** `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+---
+
 ## chemistry
 
 ### Applying analytical chemistry to environmental monitoring
@@ -3325,6 +3642,358 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `google-container-registry`
 - **Supporting Competencies:** `google-cloud-platform`, `docker`
 - **Source File:** 002-cloud-devops.json
+
+---
+
+## cognitive-skills
+
+### Analytical thinking for problem-solving
+- **Slug:** `analytical-thinking-for-problem-solving`
+- **Description:** Break down complex problems systematically and develop logical solutions
+- **Primary Competencies:** `analytical-thinking`
+- **Source File:** 024-personal-development.json
+
+### Creative problem-solving techniques
+- **Slug:** `creative-problem-solving-techniques`
+- **Description:** Apply brainstorming, lateral thinking, and divergent thinking to solve problems creatively
+- **Primary Competencies:** `creative-thinking`
+- **Supporting Competencies:** `lateral-thinking`
+- **Source File:** 024-personal-development.json
+
+### Creative thinking and innovation
+- **Slug:** `creative-thinking-and-innovation`
+- **Description:** Develop ideation skills and techniques to generate novel solutions and ideas
+- **Primary Competencies:** `creative-thinking`
+- **Source File:** 024-personal-development.json
+
+### Data-driven analytical thinking
+- **Slug:** `data-driven-analytical-thinking`
+- **Description:** Use structured analysis to interpret data, identify patterns, and draw evidence-based conclusions
+- **Primary Competencies:** `analytical-thinking`
+- **Supporting Competencies:** `critical-thinking-skill`
+- **Source File:** 024-personal-development.json
+
+### Effective decision-making frameworks
+- **Slug:** `effective-decision-making-frameworks`
+- **Description:** Use structured approaches to make better personal and professional decisions
+- **Primary Competencies:** `decision-making`
+- **Source File:** 024-personal-development.json
+
+### Lateral thinking for creative solutions
+- **Slug:** `lateral-thinking-for-creative-solutions`
+- **Description:** Approach problems from unconventional angles using lateral thinking techniques
+- **Primary Competencies:** `lateral-thinking`
+- **Source File:** 024-personal-development.json
+
+### Strategic decision-making under uncertainty
+- **Slug:** `strategic-decision-making-under-uncertainty`
+- **Description:** Make sound decisions with incomplete information using probability and risk assessment
+- **Primary Competencies:** `decision-making`
+- **Supporting Competencies:** `analytical-thinking`, `critical-thinking-skill`
+- **Source File:** 024-personal-development.json
+
+### Systems thinking for complex problems
+- **Slug:** `systems-thinking-for-complex-problems`
+- **Description:** Understand interconnections and feedback loops to address complex, systemic challenges
+- **Primary Competencies:** `systems-thinking`
+- **Source File:** 024-personal-development.json
+
+### Systems thinking for organizational change
+- **Slug:** `systems-thinking-for-organizational-change`
+- **Description:** Apply systems thinking to understand and improve organizational dynamics and processes
+- **Primary Competencies:** `systems-thinking`
+- **Supporting Competencies:** `analytical-thinking`
+- **Source File:** 024-personal-development.json
+
+---
+
+## communication-interpersonal
+
+### Active listening for better relationships
+- **Slug:** `active-listening-for-better-relationships`
+- **Description:** Strengthen personal and professional relationships through reflective listening
+- **Primary Competencies:** `active-listening`
+- **Supporting Competencies:** `empathy`
+- **Source File:** 022-business.json
+
+### Active listening skills
+- **Slug:** `active-listening-skills`
+- **Description:** Listen attentively and empathetically to truly understand others
+- **Primary Competencies:** `active-listening`
+- **Source File:** 022-business.json
+
+### Assertive communication
+- **Slug:** `assertive-communication`
+- **Description:** Express needs and boundaries clearly while respecting others
+- **Primary Competencies:** `assertiveness`
+- **Source File:** 022-business.json
+
+### Assertiveness in the workplace
+- **Slug:** `assertiveness-in-the-workplace`
+- **Description:** Advocate for yourself professionally without aggression or passivity
+- **Primary Competencies:** `assertiveness`
+- **Supporting Competencies:** `boundary-setting`
+- **Source File:** 022-business.json
+
+### Body language for presentations and leadership
+- **Slug:** `body-language-for-presentations-and-leadership`
+- **Description:** Project confidence and authority through conscious nonverbal communication
+- **Primary Competencies:** `body-language`
+- **Supporting Competencies:** `public-speaking`
+- **Source File:** 022-business.json
+
+### Building strong interpersonal skills
+- **Slug:** `building-strong-interpersonal-skills`
+- **Description:** Develop social awareness and people skills for better interactions
+- **Primary Competencies:** `interpersonal-skills`
+- **Source File:** 022-business.json
+
+### Communication skills for personal relationships
+- **Slug:** `communication-skills-for-personal-relationships`
+- **Description:** Improve relationship quality through honest, empathetic communication
+- **Primary Competencies:** `communication-skills-personal`
+- **Supporting Competencies:** `active-listening`, `empathy`
+- **Source File:** 022-business.json
+
+### Conversation skills and small talk
+- **Slug:** `conversation-skills-and-small-talk`
+- **Description:** Start and maintain engaging conversations in social and professional settings
+- **Primary Competencies:** `conversation-skills`
+- **Source File:** 022-business.json
+
+### Deep conversation and meaningful connection
+- **Slug:** `deep-conversation-and-meaningful-connection`
+- **Description:** Move beyond surface-level talk to build authentic connections
+- **Primary Competencies:** `conversation-skills`
+- **Supporting Competencies:** `active-listening`
+- **Source File:** 022-business.json
+
+### Developing empathy and compassion
+- **Slug:** `developing-empathy-and-compassion`
+- **Description:** Cultivate the ability to understand and share others' feelings
+- **Primary Competencies:** `empathy`
+- **Source File:** 022-business.json
+
+### Effective communication skills
+- **Slug:** `effective-communication-skills`
+- **Description:** Communicate clearly, persuasively, and appropriately in various contexts
+- **Primary Competencies:** `communication-skills-personal`
+- **Source File:** 022-business.json
+
+### Empathy in leadership and teams
+- **Slug:** `empathy-in-leadership-and-teams`
+- **Description:** Lead with empathy to build trust and psychological safety
+- **Primary Competencies:** `empathy`
+- **Supporting Competencies:** `emotional-intelligence`
+- **Source File:** 022-business.json
+
+### Interpersonal effectiveness in the workplace
+- **Slug:** `interpersonal-effectiveness-in-the-workplace`
+- **Description:** Navigate workplace relationships and collaborate effectively with diverse personalities
+- **Primary Competencies:** `interpersonal-skills`
+- **Supporting Competencies:** `emotional-intelligence`
+- **Source File:** 022-business.json
+
+### Professional relationship building
+- **Slug:** `professional-relationship-building`
+- **Description:** Develop and maintain valuable professional relationships over time
+- **Primary Competencies:** `relationship-building`
+- **Source File:** 022-business.json
+
+### Reading and using body language
+- **Slug:** `reading-and-using-body-language`
+- **Description:** Interpret nonverbal cues and use body language to communicate effectively
+- **Primary Competencies:** `body-language`
+- **Source File:** 022-business.json
+
+### Relationship building for career success
+- **Slug:** `relationship-building-for-career-success`
+- **Description:** Cultivate strategic relationships that advance your career goals
+- **Primary Competencies:** `relationship-building`
+- **Supporting Competencies:** `networking`
+- **Source File:** 022-business.json
+
+### Social skills for introverts
+- **Slug:** `social-skills-for-introverts`
+- **Description:** Develop comfortable, authentic social strategies that honor your introverted nature
+- **Primary Competencies:** `social-skills`
+- **Supporting Competencies:** `conversation-skills`
+- **Source File:** 022-business.json
+
+### Social skills for personal and professional success
+- **Slug:** `social-skills-for-personal-and-professional-success`
+- **Description:** Navigate social situations with confidence and build positive connections
+- **Primary Competencies:** `social-skills`
+- **Source File:** 022-business.json
+
+---
+
+## corporate-finance
+
+### Business valuation methods and models
+- **Slug:** `business-valuation-methods-and-models`
+- **Description:** Value companies using DCF, comparables, and other valuation techniques
+- **Primary Competencies:** `valuation`
+- **Supporting Competencies:** `financial-modeling`
+- **Source File:** 022-business.json
+
+### Corporate budgeting and planning
+- **Slug:** `corporate-budgeting-and-planning`
+- **Description:** Create and manage enterprise budgets aligned with strategic objectives
+- **Primary Competencies:** `corporate-budgeting`
+- **Supporting Competencies:** `fpa`
+- **Source File:** 022-business.json
+
+### Corporate capital structure decisions
+- **Slug:** `corporate-capital-structure-decisions`
+- **Description:** Optimize the mix of debt and equity financing to minimize cost of capital
+- **Primary Competencies:** `capital-structure`
+- **Supporting Competencies:** `corporate-finance`
+- **Source File:** 022-business.json
+
+### Corporate finance fundamentals
+- **Slug:** `corporate-finance-fundamentals`
+- **Description:** Master core corporate finance concepts including capital budgeting and risk management
+- **Primary Competencies:** `corporate-finance`
+- **Source File:** 022-business.json
+
+### Corporate strategy development and execution
+- **Slug:** `corporate-strategy-development-and-execution`
+- **Description:** Formulate and implement long-term corporate strategies for competitive advantage
+- **Primary Competencies:** `corporate-strategy`
+- **Source File:** 022-business.json
+
+### Financial planning and analysis (FP&A)
+- **Slug:** `financial-planning-and-analysis-fpa`
+- **Description:** Conduct budgeting, forecasting, and variance analysis to support business decisions
+- **Primary Competencies:** `fpa`
+- **Supporting Competencies:** `financial-modeling`
+- **Source File:** 022-business.json
+
+### Fundraising for startups and growth companies
+- **Slug:** `fundraising-for-startups-and-growth-companies`
+- **Description:** Raise capital from investors through pitching, negotiation, and deal closing
+- **Primary Competencies:** `fundraising`
+- **Source File:** 022-business.json
+
+### Fundraising strategy and investor relations
+- **Slug:** `fundraising-strategy-and-investor-relations`
+- **Description:** Develop fundraising strategies, build investor pipelines, and manage investor relationships
+- **Primary Competencies:** `fundraising`
+- **Supporting Competencies:** `business-presentations`
+- **Source File:** 022-business.json
+
+### Investment banking financial modeling
+- **Slug:** `investment-banking-financial-modeling`
+- **Description:** Build complex financial models for M&A, LBO, and capital markets transactions
+- **Primary Competencies:** `investment-banking`
+- **Supporting Competencies:** `financial-modeling`, `valuation`
+- **Source File:** 022-business.json
+
+### Investment banking fundamentals
+- **Slug:** `investment-banking-fundamentals`
+- **Description:** Understand capital markets, deal structuring, and advisory services in investment banking
+- **Primary Competencies:** `investment-banking`
+- **Supporting Competencies:** `financial-modeling`
+- **Source File:** 022-business.json
+
+### M&A due diligence and deal structuring
+- **Slug:** `ma-due-diligence-and-deal-structuring`
+- **Description:** Conduct financial and operational due diligence to evaluate acquisition opportunities
+- **Primary Competencies:** `mergers-acquisitions`
+- **Supporting Competencies:** `financial-analysis`, `valuation`
+- **Source File:** 022-business.json
+
+### Management accounting for decision-making
+- **Slug:** `management-accounting-for-decision-making`
+- **Description:** Use cost accounting and internal reporting to support managerial decisions
+- **Primary Competencies:** `management-accounting`
+- **Supporting Competencies:** `cost-accounting`
+- **Source File:** 022-business.json
+
+### Mergers and acquisitions strategy and execution
+- **Slug:** `mergers-and-acquisitions-strategy-and-execution`
+- **Description:** Navigate M&A processes from target identification through integration
+- **Primary Competencies:** `mergers-acquisitions`
+- **Supporting Competencies:** `valuation`
+- **Source File:** 022-business.json
+
+### Private equity investing and value creation
+- **Slug:** `private-equity-investing-and-value-creation`
+- **Description:** Acquire, operate, and exit portfolio companies to generate returns
+- **Primary Competencies:** `private-equity`
+- **Supporting Competencies:** `valuation`
+- **Source File:** 022-business.json
+
+### Strategic FP&A for business partnering
+- **Slug:** `strategic-fpa-for-business-partnering`
+- **Description:** Partner with business leaders to drive strategic planning and financial performance
+- **Primary Competencies:** `fpa`
+- **Supporting Competencies:** `corporate-strategy`, `financial-modeling`
+- **Source File:** 022-business.json
+
+### Strategic planning and portfolio management
+- **Slug:** `strategic-planning-and-portfolio-management`
+- **Description:** Develop strategic plans and manage business portfolios for growth and value creation
+- **Primary Competencies:** `corporate-strategy`
+- **Supporting Competencies:** `fpa`
+- **Source File:** 022-business.json
+
+### Treasury management and cash flow optimization
+- **Slug:** `treasury-management-and-cash-flow-optimization`
+- **Description:** Manage corporate cash, liquidity, and financial risk for organizational stability
+- **Primary Competencies:** `treasury-management`
+- **Source File:** 022-business.json
+
+### Valuation for M&A transactions
+- **Slug:** `valuation-for-ma-transactions`
+- **Description:** Apply valuation frameworks to assess acquisition targets and deal structures
+- **Primary Competencies:** `valuation`
+- **Supporting Competencies:** `mergers-acquisitions`, `financial-modeling`
+- **Source File:** 022-business.json
+
+### Venture capital deal sourcing and diligence
+- **Slug:** `venture-capital-deal-sourcing-and-diligence`
+- **Description:** Source investment opportunities and conduct startup due diligence as a VC investor
+- **Primary Competencies:** `venture-capital`
+- **Supporting Competencies:** `valuation`
+- **Source File:** 022-business.json
+
+### Venture capital fundamentals and investing
+- **Slug:** `venture-capital-fundamentals-and-investing`
+- **Description:** Evaluate startups, structure deals, and build venture capital portfolios
+- **Primary Competencies:** `venture-capital`
+- **Supporting Competencies:** `valuation`
+- **Source File:** 022-business.json
+
+### Working capital management
+- **Slug:** `working-capital-management`
+- **Description:** Optimize cash conversion cycles and manage receivables, inventory, and payables
+- **Primary Competencies:** `working-capital-management`
+- **Source File:** 022-business.json
+
+---
+
+## critical-thinking
+
+### Critical thinking for academic writing
+- **Slug:** `critical-thinking-for-academic-writing`
+- **Description:** Develop and defend well-reasoned arguments in scholarly writing
+- **Primary Competencies:** `critical-thinking-skill`
+- **Supporting Competencies:** `analytical-thinking`
+- **Source File:** 024-personal-development.json
+
+### Critical thinking for information literacy
+- **Slug:** `critical-thinking-for-information-literacy`
+- **Description:** Evaluate sources, detect bias, and navigate misinformation in the digital age
+- **Primary Competencies:** `critical-thinking-skill`
+- **Source File:** 024-personal-development.json
+
+### Critical thinking fundamentals
+- **Slug:** `critical-thinking-fundamentals`
+- **Description:** Learn to analyze arguments, identify logical fallacies, and evaluate evidence objectively
+- **Primary Competencies:** `critical-thinking-skill`
+- **Source File:** 024-personal-development.json
 
 ---
 
@@ -6071,6 +6740,237 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## finance-accounting
+
+### Accounting fundamentals and bookkeeping
+- **Slug:** `accounting-fundamentals-and-bookkeeping`
+- **Description:** Learn core accounting principles, journal entries, and financial record-keeping
+- **Primary Competencies:** `accounting`
+- **Source File:** 022-business.json
+
+### Activity-based costing
+- **Slug:** `activity-based-costing`
+- **Description:** Allocate overhead costs based on activities to improve cost accuracy and decision-making
+- **Primary Competencies:** `cost-accounting`
+- **Source File:** 022-business.json
+
+### Advanced financial modeling in Excel
+- **Slug:** `advanced-financial-modeling-in-excel`
+- **Description:** Create sophisticated three-statement models, DCF, and LBO models for analysis
+- **Primary Competencies:** `financial-modeling`
+- **Source File:** 022-business.json
+
+### Auditing principles and procedures
+- **Slug:** `auditing-principles-and-procedures`
+- **Description:** Conduct financial audits to verify accuracy and compliance of financial statements
+- **Primary Competencies:** `auditing`
+- **Supporting Competencies:** `accounting`
+- **Source File:** 022-business.json
+
+### Cost accounting for manufacturing
+- **Slug:** `cost-accounting-for-manufacturing`
+- **Description:** Track and analyze production costs using job costing and process costing methods
+- **Primary Competencies:** `cost-accounting`
+- **Supporting Competencies:** `management-accounting`
+- **Source File:** 022-business.json
+
+### Financial analysis and ratio analysis
+- **Slug:** `financial-analysis-and-ratio-analysis`
+- **Description:** Analyze financial statements to assess company performance and financial health
+- **Primary Competencies:** `financial-analysis`
+- **Supporting Competencies:** `financial-statements`
+- **Source File:** 022-business.json
+
+### Financial compliance and regulatory reporting
+- **Slug:** `financial-compliance-and-regulatory-reporting`
+- **Description:** Ensure adherence to financial regulations and reporting requirements
+- **Primary Competencies:** `financial-compliance`
+- **Source File:** 022-business.json
+
+### Financial modeling for business decisions
+- **Slug:** `financial-modeling-for-business-decisions`
+- **Description:** Build Excel-based financial models to forecast and evaluate business scenarios
+- **Primary Competencies:** `financial-modeling`
+- **Source File:** 022-business.json
+
+### Financial statement analysis for investors
+- **Slug:** `financial-statement-analysis-for-investors`
+- **Description:** Evaluate investment opportunities through comprehensive financial statement analysis
+- **Primary Competencies:** `financial-analysis`
+- **Supporting Competencies:** `financial-statements`
+- **Source File:** 022-business.json
+
+### Forensic accounting and fraud investigation
+- **Slug:** `forensic-accounting-and-fraud-investigation`
+- **Description:** Investigate financial crimes and fraudulent activities using accounting expertise
+- **Primary Competencies:** `forensic-accounting`
+- **Supporting Competencies:** `auditing`
+- **Source File:** 022-business.json
+
+### IFRS international accounting standards
+- **Slug:** `ifrs-international-accounting-standards`
+- **Description:** Apply International Financial Reporting Standards for global financial reporting
+- **Primary Competencies:** `ifrs`
+- **Supporting Competencies:** `accounting`
+- **Source File:** 022-business.json
+
+### Internal audit and controls
+- **Slug:** `internal-audit-and-controls`
+- **Description:** Evaluate internal controls and operational efficiency to improve business processes
+- **Primary Competencies:** `auditing`
+- **Supporting Competencies:** `financial-compliance`
+- **Source File:** 022-business.json
+
+### Personal and business budgeting
+- **Slug:** `personal-and-business-budgeting`
+- **Description:** Create and manage budgets to control spending and achieve financial goals
+- **Primary Competencies:** `budgeting`
+- **Source File:** 022-business.json
+
+### Reading and interpreting financial statements
+- **Slug:** `reading-and-interpreting-financial-statements`
+- **Description:** Understand balance sheets, income statements, and cash flow statements
+- **Primary Competencies:** `financial-statements`
+- **Source File:** 022-business.json
+
+### Small business accounting
+- **Slug:** `small-business-accounting`
+- **Description:** Manage accounting for small businesses including QuickBooks and financial reporting
+- **Primary Competencies:** `accounting`
+- **Supporting Competencies:** `budgeting`
+- **Source File:** 022-business.json
+
+### SOX compliance and controls
+- **Slug:** `sox-compliance-and-controls`
+- **Description:** Implement Sarbanes-Oxley controls for public company financial reporting
+- **Primary Competencies:** `financial-compliance`
+- **Supporting Competencies:** `auditing`
+- **Source File:** 022-business.json
+
+### Tax accounting and preparation
+- **Slug:** `tax-accounting-and-preparation`
+- **Description:** Prepare tax returns and understand tax implications of business decisions
+- **Primary Competencies:** `tax-accounting`
+- **Supporting Competencies:** `accounting`
+- **Source File:** 022-business.json
+
+### Tax planning and optimization strategies
+- **Slug:** `tax-planning-and-optimization-strategies`
+- **Description:** Minimize tax liability through strategic planning and legal tax optimization
+- **Primary Competencies:** `tax-accounting`
+- **Source File:** 022-business.json
+
+### US GAAP accounting standards
+- **Slug:** `us-gaap-accounting-standards`
+- **Description:** Apply Generally Accepted Accounting Principles for US financial reporting
+- **Primary Competencies:** `gaap`
+- **Supporting Competencies:** `accounting`
+- **Source File:** 022-business.json
+
+### Zero-based budgeting
+- **Slug:** `zero-based-budgeting`
+- **Description:** Build budgets from zero each period to optimize resource allocation
+- **Primary Competencies:** `budgeting`
+- **Source File:** 022-business.json
+
+---
+
+## flexibility-mobility
+
+### Barre workouts for toning and flexibility
+- **Slug:** `barre-workouts-for-toning-and-flexibility`
+- **Description:** Sculpt lean muscles and improve flexibility through ballet-inspired barre exercises
+- **Primary Competencies:** `barre`
+- **Supporting Competencies:** `stretching`
+- **Source File:** 026-health-fitness.json
+
+### Comprehensive flexibility training
+- **Slug:** `comprehensive-flexibility-training`
+- **Description:** Develop overall flexibility using multiple stretching modalities and progressive programming
+- **Primary Competencies:** `stretching`
+- **Supporting Competencies:** `static-stretching`, `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Dynamic stretching for athletic warm-ups
+- **Slug:** `dynamic-stretching-for-athletic-warm-ups`
+- **Description:** Prepare your body for training and competition with movement-based stretching routines
+- **Primary Competencies:** `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Flexibility training for improved athletic performance
+- **Slug:** `flexibility-training-for-improved-athletic-performance`
+- **Description:** Enhance sports performance through sport-specific flexibility and mobility training
+- **Primary Competencies:** `stretching`
+- **Supporting Competencies:** `dynamic-stretching`, `mobility-training`
+- **Source File:** 026-health-fitness.json
+
+### Foam rolling and mobility work for athletes
+- **Slug:** `foam-rolling-and-mobility-work-for-athletes`
+- **Description:** Integrate foam rolling and mobility drills into training for better performance and injury prevention
+- **Primary Competencies:** `foam-rolling`
+- **Supporting Competencies:** `mobility-training`, `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Foam rolling for recovery and mobility
+- **Slug:** `foam-rolling-for-recovery-and-mobility`
+- **Description:** Use self-myofascial release techniques to reduce muscle soreness and improve tissue quality
+- **Primary Competencies:** `foam-rolling`
+- **Source File:** 026-health-fitness.json
+
+### Functional mobility for strength training
+- **Slug:** `functional-mobility-for-strength-training`
+- **Description:** Develop mobility needed for proper lifting technique and injury-free strength training
+- **Primary Competencies:** `mobility-training`
+- **Supporting Competencies:** `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Mobility training for movement quality
+- **Slug:** `mobility-training-for-movement-quality`
+- **Description:** Improve joint range of motion and movement efficiency through targeted mobility drills
+- **Primary Competencies:** `mobility-training`
+- **Source File:** 026-health-fitness.json
+
+### Pilates for back pain relief and posture
+- **Slug:** `pilates-for-back-pain-relief-and-posture`
+- **Description:** Strengthen postural muscles and alleviate back pain through therapeutic Pilates exercises
+- **Primary Competencies:** `pilates`
+- **Source File:** 026-health-fitness.json
+
+### Pilates for core strength and body awareness
+- **Slug:** `pilates-for-core-strength-and-body-awareness`
+- **Description:** Develop core stability, flexibility, and mind-body connection through mat-based Pilates
+- **Primary Competencies:** `pilates`
+- **Supporting Competencies:** `stretching`
+- **Source File:** 026-health-fitness.json
+
+### PNF stretching for flexibility gains
+- **Slug:** `pnf-stretching-for-flexibility-gains`
+- **Description:** Use proprioceptive neuromuscular facilitation techniques to rapidly improve flexibility
+- **Primary Competencies:** `pnf-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Reformer Pilates training and instruction
+- **Slug:** `reformer-pilates-training-and-instruction`
+- **Description:** Master the Pilates reformer for advanced core work, strength, and flexibility development
+- **Primary Competencies:** `reformer-pilates`
+- **Supporting Competencies:** `pilates`
+- **Source File:** 026-health-fitness.json
+
+### Sport-specific dynamic warm-up protocols
+- **Slug:** `sport-specific-dynamic-warm-up-protocols`
+- **Description:** Design and implement dynamic stretching sequences tailored to your sport's movement patterns
+- **Primary Competencies:** `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Static stretching for flexibility and relaxation
+- **Slug:** `static-stretching-for-flexibility-and-relaxation`
+- **Description:** Improve flexibility and promote recovery through sustained stretching holds
+- **Primary Competencies:** `static-stretching`
+- **Supporting Competencies:** `stretching`
+- **Source File:** 026-health-fitness.json
+
+---
+
 ## frontend-development
 
 ### Advanced CSS with Sass
@@ -8666,6 +9566,164 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## leadership-communication
+
+### Building and leading high-performing teams
+- **Slug:** `building-and-leading-high-performing-teams`
+- **Description:** Recruit, develop, and manage teams to achieve exceptional results
+- **Primary Competencies:** `team-management`
+- **Supporting Competencies:** `leadership`
+- **Source File:** 022-business.json
+
+### Change management frameworks and practices
+- **Slug:** `change-management-frameworks-and-practices`
+- **Description:** Apply structured change management methodologies to drive adoption and minimize resistance
+- **Primary Competencies:** `change-management`
+- **Supporting Competencies:** `stakeholder-management`
+- **Source File:** 022-business.json
+
+### Coaching and mentoring for development
+- **Slug:** `coaching-and-mentoring-for-development`
+- **Description:** Guide others' professional growth through effective coaching and mentoring
+- **Primary Competencies:** `coaching-mentoring`
+- **Source File:** 022-business.json
+
+### Complex business negotiations
+- **Slug:** `complex-business-negotiations`
+- **Description:** Navigate multi-party negotiations, contracts, and high-stakes deals successfully
+- **Primary Competencies:** `negotiation`
+- **Supporting Competencies:** `executive-communication`
+- **Source File:** 022-business.json
+
+### Conflict resolution in the workplace
+- **Slug:** `conflict-resolution-in-the-workplace`
+- **Description:** Address and resolve interpersonal and team conflicts constructively
+- **Primary Competencies:** `conflict-resolution`
+- **Source File:** 022-business.json
+
+### Developing leadership skills and presence
+- **Slug:** `developing-leadership-skills-and-presence`
+- **Description:** Build foundational leadership capabilities including vision-setting, influence, and team inspiration
+- **Primary Competencies:** `leadership`
+- **Source File:** 022-business.json
+
+### Effective business presentations
+- **Slug:** `effective-business-presentations`
+- **Description:** Create and deliver compelling presentations that drive business decisions and action
+- **Primary Competencies:** `business-presentations`
+- **Supporting Competencies:** `public-speaking`
+- **Source File:** 022-business.json
+
+### Emotional intelligence for leaders
+- **Slug:** `emotional-intelligence-for-leaders`
+- **Description:** Develop self-awareness and interpersonal skills to lead with empathy and effectiveness
+- **Primary Competencies:** `emotional-intelligence`
+- **Supporting Competencies:** `leadership`
+- **Source File:** 022-business.json
+
+### Emotional intelligence in the workplace
+- **Slug:** `emotional-intelligence-in-the-workplace`
+- **Description:** Build stronger work relationships and navigate office dynamics with emotional awareness
+- **Primary Competencies:** `emotional-intelligence`
+- **Supporting Competencies:** `empathy`
+- **Source File:** 022-business.json
+
+### Executive communication for leadership
+- **Slug:** `executive-communication-for-leadership`
+- **Description:** Communicate with clarity, brevity, and impact at the executive level
+- **Primary Competencies:** `executive-communication`
+- **Source File:** 022-business.json
+
+### Executive leadership and strategic thinking
+- **Slug:** `executive-leadership-and-strategic-thinking`
+- **Description:** Develop C-suite capabilities for organizational vision, strategy, and stakeholder management
+- **Primary Competencies:** `executive-leadership`
+- **Supporting Competencies:** `leadership`
+- **Source File:** 022-business.json
+
+### Executive presence and communication
+- **Slug:** `executive-presence-and-communication`
+- **Description:** Project authority and credibility as a senior leader through communication and presence
+- **Primary Competencies:** `executive-leadership`
+- **Supporting Competencies:** `executive-communication`, `public-speaking`
+- **Source File:** 022-business.json
+
+### Executive presentations and board communication
+- **Slug:** `executive-presentations-and-board-communication`
+- **Description:** Present to senior stakeholders and boards with clarity, brevity, and strategic impact
+- **Primary Competencies:** `business-presentations`
+- **Supporting Competencies:** `executive-communication`
+- **Source File:** 022-business.json
+
+### Leadership coaching and executive mentoring
+- **Slug:** `leadership-coaching-and-executive-mentoring`
+- **Description:** Develop leaders through structured coaching conversations and mentorship
+- **Primary Competencies:** `coaching-mentoring`
+- **Supporting Competencies:** `emotional-intelligence`, `active-listening`
+- **Source File:** 022-business.json
+
+### Leadership for new managers
+- **Slug:** `leadership-for-new-managers`
+- **Description:** Transition from individual contributor to effective leader by developing management fundamentals
+- **Primary Competencies:** `leadership`
+- **Supporting Competencies:** `team-management`, `emotional-intelligence`
+- **Source File:** 022-business.json
+
+### Leading organizational change
+- **Slug:** `leading-organizational-change`
+- **Description:** Guide teams and organizations through transitions and transformations successfully
+- **Primary Competencies:** `change-management`
+- **Supporting Competencies:** `leadership`
+- **Source File:** 022-business.json
+
+### Mediation and dispute resolution
+- **Slug:** `mediation-and-dispute-resolution`
+- **Description:** Facilitate resolution between conflicting parties as a neutral third party
+- **Primary Competencies:** `conflict-resolution`
+- **Supporting Competencies:** `emotional-intelligence`, `active-listening`
+- **Source File:** 022-business.json
+
+### Negotiation strategies and tactics
+- **Slug:** `negotiation-strategies-and-tactics`
+- **Description:** Negotiate effectively to reach win-win agreements in business and personal contexts
+- **Primary Competencies:** `negotiation`
+- **Source File:** 022-business.json
+
+### Professional networking strategies
+- **Slug:** `professional-networking-strategies`
+- **Description:** Build and maintain valuable professional relationships for career growth
+- **Primary Competencies:** `networking`
+- **Source File:** 022-business.json
+
+### Public speaking and presentation skills
+- **Slug:** `public-speaking-and-presentation-skills`
+- **Description:** Deliver confident, engaging presentations to audiences of any size
+- **Primary Competencies:** `public-speaking`
+- **Source File:** 022-business.json
+
+### Public speaking for thought leadership
+- **Slug:** `public-speaking-for-thought-leadership`
+- **Description:** Speak at conferences and events to establish expertise and build professional brand
+- **Primary Competencies:** `public-speaking`
+- **Supporting Competencies:** `executive-communication`
+- **Source File:** 022-business.json
+
+### Strategic networking for business development
+- **Slug:** `strategic-networking-for-business-development`
+- **Description:** Leverage relationships to create business opportunities and partnerships
+- **Primary Competencies:** `networking`
+- **Supporting Competencies:** `relationship-building`
+- **Source File:** 022-business.json
+
+### Team management and delegation
+- **Slug:** `team-management-and-delegation`
+- **Description:** Master effective delegation, feedback, and performance management for team success
+- **Primary Competencies:** `team-management`
+- **Supporting Competencies:** `coaching-mentoring`
+- **Source File:** 022-business.json
+
+---
+
 ## life-sciences
 
 ### Applying anatomy to clinical medicine
@@ -8855,6 +9913,218 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Understand vector operations, matrix multiplication, and determinants
 - **Primary Competencies:** `linear-algebra`
 - **Source File:** 023-mathematics.json
+
+---
+
+## linguistics
+
+### Advanced grammar and usage
+- **Slug:** `advanced-grammar-and-usage`
+- **Description:** Refine your understanding of complex grammatical structures and nuanced usage
+- **Primary Competencies:** `grammar-fundamentals`
+- **Source File:** 013-linguistics.json
+
+### Applied phonetics for language learning
+- **Slug:** `applied-phonetics-for-language-learning`
+- **Description:** Use phonetic knowledge to improve pronunciation and accent reduction
+- **Primary Competencies:** `phonetics`
+- **Source File:** 013-linguistics.json
+
+### Bilingualism and cognitive benefits
+- **Slug:** `bilingualism-and-cognitive-benefits`
+- **Description:** Understand the cognitive and social advantages of bilingualism across the lifespan
+- **Primary Competencies:** `bilingualism`
+- **Supporting Competencies:** `psycholinguistics`
+- **Source File:** 013-linguistics.json
+
+### Caribbean creole languages
+- **Slug:** `caribbean-creole-languages`
+- **Description:** Explore the linguistic features and cultural significance of Caribbean creoles
+- **Primary Competencies:** `creole-languages`
+- **Supporting Competencies:** `sociolinguistics`
+- **Source File:** 013-linguistics.json
+
+### Comparative linguistics and language families
+- **Slug:** `comparative-linguistics-and-language-families`
+- **Description:** Compare languages to understand genetic relationships and typological patterns
+- **Primary Competencies:** `comparative-linguistics`
+- **Supporting Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Creole languages and their development
+- **Slug:** `creole-languages-and-their-development`
+- **Description:** Study how creole languages emerge from pidgins and develop full grammatical systems
+- **Primary Competencies:** `creole-languages`
+- **Supporting Competencies:** `historical-linguistics`
+- **Source File:** 013-linguistics.json
+
+### English grammar fundamentals
+- **Slug:** `english-grammar-fundamentals`
+- **Description:** Master the structure and rules of English grammar for clear communication
+- **Primary Competencies:** `grammar-fundamentals`
+- **Source File:** 013-linguistics.json
+
+### Etymology and word origins
+- **Slug:** `etymology-and-word-origins`
+- **Description:** Study the origins and historical development of words across languages
+- **Primary Competencies:** `historical-linguistics`
+- **Source File:** 013-linguistics.json
+
+### First and second language acquisition
+- **Slug:** `first-and-second-language-acquisition`
+- **Description:** Study how children and adults acquire languages naturally and in educational settings
+- **Primary Competencies:** `language-acquisition`
+- **Supporting Competencies:** `psycholinguistics`
+- **Source File:** 013-linguistics.json
+
+### Grammar for language learners
+- **Slug:** `grammar-for-language-learners`
+- **Description:** Understand grammatical concepts to accelerate learning any foreign language
+- **Primary Competencies:** `grammar-fundamentals`
+- **Source File:** 013-linguistics.json
+
+### Historical linguistics and language change
+- **Slug:** `historical-linguistics-and-language-change`
+- **Description:** Trace how languages evolve and change over time
+- **Primary Competencies:** `historical-linguistics`
+- **Supporting Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Indo-European language family
+- **Slug:** `indo-european-language-family`
+- **Description:** Study the relationships between Indo-European languages and their shared origins
+- **Primary Competencies:** `comparative-linguistics`
+- **Supporting Competencies:** `historical-linguistics`
+- **Source File:** 013-linguistics.json
+
+### Interpretation skills and techniques
+- **Slug:** `interpretation-skills-and-techniques`
+- **Description:** Interpret spoken language in real-time for conferences, meetings, and events
+- **Primary Competencies:** `interpretation`
+- **Source File:** 013-linguistics.json
+
+### Introduction to linguistics
+- **Slug:** `introduction-to-linguistics`
+- **Description:** Explore the scientific study of language structure, meaning, and use
+- **Primary Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Language acquisition research and theory
+- **Slug:** `language-acquisition-research-and-theory`
+- **Description:** Examine theories and empirical research on how humans acquire language
+- **Primary Competencies:** `language-acquisition`
+- **Supporting Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Language and cognition
+- **Slug:** `language-and-cognition`
+- **Description:** Explore the cognitive mechanisms underlying language comprehension and production
+- **Primary Competencies:** `psycholinguistics`
+- **Source File:** 013-linguistics.json
+
+### Language and society
+- **Slug:** `language-and-society`
+- **Description:** Study the relationship between language, culture, identity, and power
+- **Primary Competencies:** `sociolinguistics`
+- **Source File:** 013-linguistics.json
+
+### Language immersion strategies
+- **Slug:** `language-immersion-strategies`
+- **Description:** Create immersive language learning environments to accelerate fluency
+- **Primary Competencies:** `language-immersion`
+- **Source File:** 013-linguistics.json
+
+### Language teaching methodology
+- **Slug:** `language-teaching-methodology`
+- **Description:** Learn effective approaches for teaching languages to learners of all ages
+- **Primary Competencies:** `language-pedagogy`
+- **Source File:** 013-linguistics.json
+
+### Phonetics and pronunciation fundamentals
+- **Slug:** `phonetics-and-pronunciation-fundamentals`
+- **Description:** Study speech sounds and articulation to understand how languages are pronounced
+- **Primary Competencies:** `phonetics`
+- **Source File:** 013-linguistics.json
+
+### Psycholinguistics and language processing
+- **Slug:** `psycholinguistics-and-language-processing`
+- **Description:** Understand how the human mind processes, produces, and acquires language
+- **Primary Competencies:** `psycholinguistics`
+- **Supporting Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Raising bilingual children
+- **Slug:** `raising-bilingual-children`
+- **Description:** Support children's development of fluency in two or more languages
+- **Primary Competencies:** `bilingualism`
+- **Source File:** 013-linguistics.json
+
+### Self-directed language immersion
+- **Slug:** `self-directed-language-immersion`
+- **Description:** Build immersive language practice into daily life without traveling abroad
+- **Primary Competencies:** `language-immersion`
+- **Source File:** 013-linguistics.json
+
+### Simultaneous and consecutive interpretation
+- **Slug:** `simultaneous-and-consecutive-interpretation`
+- **Description:** Master both simultaneous and consecutive interpretation techniques for professional settings
+- **Primary Competencies:** `interpretation`
+- **Source File:** 013-linguistics.json
+
+### Sociolinguistics and language variation
+- **Slug:** `sociolinguistics-and-language-variation`
+- **Description:** Examine how social factors influence language use and variation
+- **Primary Competencies:** `sociolinguistics`
+- **Supporting Competencies:** `linguistics-study`
+- **Source File:** 013-linguistics.json
+
+### Spanish-English interpretation
+- **Slug:** `spanish-english-interpretation`
+- **Description:** Interpret between Spanish and English in professional and community settings
+- **Primary Competencies:** `interpretation`
+- **Supporting Competencies:** `spanish`, `english`
+- **Source File:** 013-linguistics.json
+
+### Systematic vocabulary building
+- **Slug:** `systematic-vocabulary-building`
+- **Description:** Expand your vocabulary using word roots, mnemonics, and spaced repetition
+- **Primary Competencies:** `vocabulary-building`
+- **Supporting Competencies:** `spaced-repetition`
+- **Source File:** 013-linguistics.json
+
+### Teaching English as a second language
+- **Slug:** `teaching-english-as-a-second-language`
+- **Description:** Prepare to teach English to non-native speakers using modern pedagogical methods
+- **Primary Competencies:** `language-pedagogy`
+- **Supporting Competencies:** `english`
+- **Source File:** 013-linguistics.json
+
+### TESOL and communicative language teaching
+- **Slug:** `tesol-and-communicative-language-teaching`
+- **Description:** Master communicative approaches to teaching English to speakers of other languages
+- **Primary Competencies:** `language-pedagogy`
+- **Supporting Competencies:** `english`
+- **Source File:** 013-linguistics.json
+
+### Theoretical linguistics
+- **Slug:** `theoretical-linguistics`
+- **Description:** Study syntax, semantics, phonology, and morphology in linguistic theory
+- **Primary Competencies:** `linguistics-study`
+- **Supporting Competencies:** `phonetics`
+- **Source File:** 013-linguistics.json
+
+### Translation fundamentals and practice
+- **Slug:** `translation-fundamentals-and-practice`
+- **Description:** Learn to translate written texts between languages with accuracy and cultural sensitivity
+- **Primary Competencies:** `translation`
+- **Source File:** 013-linguistics.json
+
+### Vocabulary building for language learners
+- **Slug:** `vocabulary-building-for-language-learners`
+- **Description:** Learn effective strategies to rapidly expand vocabulary in a new language
+- **Primary Competencies:** `vocabulary-building`
+- **Supporting Competencies:** `memory-improvement`
+- **Source File:** 013-linguistics.json
 
 ---
 
@@ -9143,6 +10413,415 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Improve website technical performance for better search rankings
 - **Primary Competencies:** `seo`
 - **Source File:** 032-marketing-sales.json
+
+---
+
+## meditation
+
+### Body scan meditation for relaxation
+- **Slug:** `body-scan-meditation-for-relaxation`
+- **Description:** Practice systematic body awareness meditation to release tension and cultivate presence
+- **Primary Competencies:** `body-scan-meditation`
+- **Source File:** 024-personal-development.json
+
+### Breathwork for calm and energy
+- **Slug:** `breathwork-for-calm-and-energy`
+- **Description:** Use conscious breathing techniques to regulate your nervous system and emotional state
+- **Primary Competencies:** `breathwork`
+- **Source File:** 024-personal-development.json
+
+### Creating guided meditation recordings
+- **Slug:** `creating-guided-meditation-recordings`
+- **Description:** Learn to write and record effective guided meditations for personal use or teaching
+- **Primary Competencies:** `guided-meditation`
+- **Supporting Competencies:** `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Guided meditation for beginners
+- **Slug:** `guided-meditation-for-beginners`
+- **Description:** Start a meditation practice with instructor-led sessions for relaxation and mindfulness
+- **Primary Competencies:** `guided-meditation`
+- **Source File:** 024-personal-development.json
+
+### Loving-kindness meditation practice
+- **Slug:** `loving-kindness-meditation-practice`
+- **Description:** Cultivate compassion for yourself and others through metta meditation
+- **Primary Competencies:** `loving-kindness-meditation`
+- **Source File:** 024-personal-development.json
+
+### Metta meditation for relationship healing
+- **Slug:** `metta-meditation-for-relationship-healing`
+- **Description:** Use loving-kindness practice to transform difficult relationships and reduce interpersonal conflict
+- **Primary Competencies:** `loving-kindness-meditation`
+- **Supporting Competencies:** `self-compassion`
+- **Source File:** 024-personal-development.json
+
+### Pranayama and breathwork practices
+- **Slug:** `pranayama-and-breathwork-practices`
+- **Description:** Learn traditional and modern breathing exercises for mental clarity, stress relief, and vitality
+- **Primary Competencies:** `breathwork`
+- **Supporting Competencies:** `stress-management`
+- **Source File:** 024-personal-development.json
+
+### Transcendental Meditation technique
+- **Slug:** `transcendental-meditation-technique`
+- **Description:** Learn the TM mantra-based meditation practice for deep rest and stress reduction
+- **Primary Competencies:** `transcendental-meditation`
+- **Source File:** 024-personal-development.json
+
+### Vipassana meditation and insight practice
+- **Slug:** `vipassana-meditation-and-insight-practice`
+- **Description:** Develop insight through mindful observation of sensations, thoughts, and impermanence
+- **Primary Competencies:** `vipassana-meditation`
+- **Source File:** 024-personal-development.json
+
+### Walking meditation for mindful movement
+- **Slug:** `walking-meditation-for-mindful-movement`
+- **Description:** Practice meditation while walking to combine movement with mindfulness
+- **Primary Competencies:** `walking-meditation`
+- **Source File:** 024-personal-development.json
+
+### Zen meditation (Zazen) practice
+- **Slug:** `zen-meditation-zazen-practice`
+- **Description:** Learn seated Zen meditation to cultivate concentration, awareness, and equanimity
+- **Primary Competencies:** `zen-meditation`
+- **Source File:** 024-personal-development.json
+
+---
+
+## memory-learning
+
+### Active recall for exam preparation
+- **Slug:** `active-recall-for-exam-preparation`
+- **Description:** Master test material through systematic retrieval practice and self-testing
+- **Primary Competencies:** `active-recall`
+- **Supporting Competencies:** `spaced-repetition`, `study-skills`
+- **Source File:** 024-personal-development.json
+
+### Active recall study techniques
+- **Slug:** `active-recall-study-techniques`
+- **Description:** Use retrieval practice to strengthen memory and improve learning efficiency
+- **Primary Competencies:** `active-recall`
+- **Source File:** 024-personal-development.json
+
+### Advanced memory techniques and mnemonics
+- **Slug:** `advanced-memory-techniques-and-mnemonics`
+- **Description:** Master memory palaces, peg systems, and other advanced techniques for exceptional recall
+- **Primary Competencies:** `memory-improvement`
+- **Supporting Competencies:** `active-recall`
+- **Source File:** 024-personal-development.json
+
+### Advanced speed reading and comprehension
+- **Slug:** `advanced-speed-reading-and-comprehension`
+- **Description:** Master rapid reading techniques while enhancing retention and understanding
+- **Primary Competencies:** `speed-reading`
+- **Supporting Competencies:** `reading-comprehension`
+- **Source File:** 024-personal-development.json
+
+### Anki and spaced repetition systems
+- **Slug:** `anki-and-spaced-repetition-systems`
+- **Description:** Master flashcard software using spaced repetition algorithms for efficient memorization
+- **Primary Competencies:** `spaced-repetition`
+- **Supporting Competencies:** `active-recall`
+- **Source File:** 024-personal-development.json
+
+### Critical reading for academic success
+- **Slug:** `critical-reading-for-academic-success`
+- **Description:** Analyze, evaluate, and engage deeply with complex texts for learning
+- **Primary Competencies:** `reading-comprehension`
+- **Supporting Competencies:** `critical-thinking-skill`
+- **Source File:** 024-personal-development.json
+
+### Digital note-taking and knowledge management
+- **Slug:** `digital-note-taking-and-knowledge-management`
+- **Description:** Organize and retrieve notes effectively using digital tools and systems
+- **Primary Competencies:** `note-taking`
+- **Source File:** 024-personal-development.json
+
+### Effective note-taking methods
+- **Slug:** `effective-note-taking-methods`
+- **Description:** Learn systematic note-taking techniques like Cornell, outline, and mapping methods
+- **Primary Competencies:** `note-taking`
+- **Source File:** 024-personal-development.json
+
+### Effective study skills for academic success
+- **Slug:** `effective-study-skills-for-academic-success`
+- **Description:** Develop comprehensive study habits, time management, and test preparation strategies
+- **Primary Competencies:** `study-skills`
+- **Source File:** 024-personal-development.json
+
+### Evidence-based learning strategies
+- **Slug:** `evidence-based-learning-strategies`
+- **Description:** Apply cognitive science research to learn more effectively and retain information longer
+- **Primary Competencies:** `learning-strategies`
+- **Source File:** 024-personal-development.json
+
+### Improving reading comprehension
+- **Slug:** `improving-reading-comprehension`
+- **Description:** Develop strategies to better understand and retain what you read
+- **Primary Competencies:** `reading-comprehension`
+- **Source File:** 024-personal-development.json
+
+### Memory improvement techniques
+- **Slug:** `memory-improvement-techniques`
+- **Description:** Learn mnemonic devices and memory strategies to recall information more effectively
+- **Primary Competencies:** `memory-improvement`
+- **Source File:** 024-personal-development.json
+
+### Metacognitive learning strategies
+- **Slug:** `metacognitive-learning-strategies`
+- **Description:** Develop awareness of how you learn best and adapt strategies accordingly
+- **Primary Competencies:** `learning-strategies`
+- **Supporting Competencies:** `self-awareness`
+- **Source File:** 024-personal-development.json
+
+### Mind mapping for learning and creativity
+- **Slug:** `mind-mapping-for-learning-and-creativity`
+- **Description:** Create visual diagrams to organize ideas, enhance understanding, and boost creativity
+- **Primary Competencies:** `mind-mapping`
+- **Source File:** 024-personal-development.json
+
+### Mind mapping for project planning
+- **Slug:** `mind-mapping-for-project-planning`
+- **Description:** Use mind maps to brainstorm, organize, and manage complex projects visually
+- **Primary Competencies:** `mind-mapping`
+- **Supporting Competencies:** `creative-thinking`
+- **Source File:** 024-personal-development.json
+
+### Spaced repetition for long-term retention
+- **Slug:** `spaced-repetition-for-long-term-retention`
+- **Description:** Use scientifically-optimized review schedules to commit information to long-term memory
+- **Primary Competencies:** `spaced-repetition`
+- **Source File:** 024-personal-development.json
+
+### Speed reading fundamentals
+- **Slug:** `speed-reading-fundamentals`
+- **Description:** Increase reading speed while maintaining comprehension through proven techniques
+- **Primary Competencies:** `speed-reading`
+- **Source File:** 024-personal-development.json
+
+### Study skills and learning optimization
+- **Slug:** `study-skills-and-learning-optimization`
+- **Description:** Combine evidence-based learning strategies for maximum academic performance
+- **Primary Competencies:** `study-skills`
+- **Supporting Competencies:** `active-recall`, `spaced-repetition`, `note-taking`
+- **Source File:** 024-personal-development.json
+
+---
+
+## mental-health
+
+### Anxiety management through CBT and mindfulness
+- **Slug:** `anxiety-management-through-cbt-and-mindfulness`
+- **Description:** Combine cognitive-behavioral techniques with mindfulness to manage anxiety disorders
+- **Primary Competencies:** `anxiety-management`
+- **Supporting Competencies:** `cognitive-behavioral-therapy`, `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Boundaries at work and in personal life
+- **Slug:** `boundaries-at-work-and-in-personal-life`
+- **Description:** Develop skills to set and maintain boundaries across different life domains
+- **Primary Competencies:** `boundary-setting`
+- **Supporting Competencies:** `self-awareness`
+- **Source File:** 024-personal-development.json
+
+### CBT for depression and anxiety
+- **Slug:** `cbt-for-depression-and-anxiety`
+- **Description:** Use evidence-based CBT strategies to manage symptoms of depression and anxiety
+- **Primary Competencies:** `cognitive-behavioral-therapy`
+- **Supporting Competencies:** `anxiety-management`, `depression-management`
+- **Source File:** 024-personal-development.json
+
+### DBT for borderline personality disorder
+- **Slug:** `dbt-for-borderline-personality-disorder`
+- **Description:** Apply comprehensive DBT skills to manage BPD symptoms and build a life worth living
+- **Primary Competencies:** `dialectical-behavior-therapy`
+- **Supporting Competencies:** `mindfulness-practice`, `emotional-regulation`
+- **Source File:** 024-personal-development.json
+
+### Depression management through behavioral strategies
+- **Slug:** `depression-management-through-behavioral-strategies`
+- **Description:** Use activity scheduling, positive reinforcement, and cognitive techniques to alleviate depression
+- **Primary Competencies:** `depression-management`
+- **Supporting Competencies:** `cognitive-behavioral-therapy`
+- **Source File:** 024-personal-development.json
+
+### Improving sleep through sleep hygiene
+- **Slug:** `improving-sleep-through-sleep-hygiene`
+- **Description:** Develop habits and routines that promote consistent, restorative sleep
+- **Primary Competencies:** `sleep-hygiene`
+- **Source File:** 024-personal-development.json
+
+### Learning DBT skills for emotional regulation
+- **Slug:** `learning-dbt-skills-for-emotional-regulation`
+- **Description:** Master dialectical behavior therapy skills for managing intense emotions and improving relationships
+- **Primary Competencies:** `dialectical-behavior-therapy`
+- **Supporting Competencies:** `emotional-regulation`
+- **Source File:** 024-personal-development.json
+
+### Managing anxiety with evidence-based techniques
+- **Slug:** `managing-anxiety-with-evidence-based-techniques`
+- **Description:** Learn practical strategies to reduce anxiety symptoms and regain calm
+- **Primary Competencies:** `anxiety-management`
+- **Source File:** 024-personal-development.json
+
+### Managing depression with lifestyle and therapy
+- **Slug:** `managing-depression-with-lifestyle-and-therapy`
+- **Description:** Combine behavioral activation, self-care, and therapeutic techniques to manage depression
+- **Primary Competencies:** `depression-management`
+- **Source File:** 024-personal-development.json
+
+### Mental health first aid certification
+- **Slug:** `mental-health-first-aid-certification`
+- **Description:** Learn to recognize mental health crises and provide initial support until professional help arrives
+- **Primary Competencies:** `mental-health-first-aid`
+- **Source File:** 024-personal-development.json
+
+### Setting healthy boundaries in relationships
+- **Slug:** `setting-healthy-boundaries-in-relationships`
+- **Description:** Learn to establish and communicate personal boundaries to protect your wellbeing
+- **Primary Competencies:** `boundary-setting`
+- **Source File:** 024-personal-development.json
+
+### Sleep optimization for health and performance
+- **Slug:** `sleep-optimization-for-health-and-performance`
+- **Description:** Implement evidence-based sleep strategies to enhance recovery, cognition, and wellbeing
+- **Primary Competencies:** `sleep-hygiene`
+- **Supporting Competencies:** `stress-management`
+- **Source File:** 024-personal-development.json
+
+### Understanding and applying CBT techniques
+- **Slug:** `understanding-and-applying-cbt-techniques`
+- **Description:** Learn cognitive-behavioral therapy principles to change unhelpful thought patterns and behaviors
+- **Primary Competencies:** `cognitive-behavioral-therapy`
+- **Source File:** 024-personal-development.json
+
+### Understanding EMDR for trauma processing
+- **Slug:** `understanding-emdr-for-trauma-processing`
+- **Description:** Learn about Eye Movement Desensitization and Reprocessing therapy for healing trauma
+- **Primary Competencies:** `emdr-therapy`
+- **Source File:** 024-personal-development.json
+
+---
+
+## mindfulness-wellness
+
+### Applied positive psychology for flourishing
+- **Slug:** `applied-positive-psychology-for-flourishing`
+- **Description:** Use evidence-based positive psychology interventions to enhance wellbeing and life satisfaction
+- **Primary Competencies:** `positive-psychology`
+- **Source File:** 024-personal-development.json
+
+### Building genuine self-confidence
+- **Slug:** `building-genuine-self-confidence`
+- **Description:** Develop authentic confidence based on self-acceptance and competence
+- **Primary Competencies:** `self-confidence`
+- **Source File:** 024-personal-development.json
+
+### Building psychological resilience
+- **Slug:** `building-psychological-resilience`
+- **Description:** Develop the capacity to recover from setbacks and adapt to challenging circumstances
+- **Primary Competencies:** `resilience`
+- **Source File:** 024-personal-development.json
+
+### Cultivating gratitude for wellbeing
+- **Slug:** `cultivating-gratitude-for-wellbeing`
+- **Description:** Develop a gratitude practice to enhance happiness, resilience, and life satisfaction
+- **Primary Competencies:** `gratitude-practice`
+- **Source File:** 024-personal-development.json
+
+### Developing emotional regulation skills
+- **Slug:** `developing-emotional-regulation-skills`
+- **Description:** Learn to identify, understand, and manage your emotional responses in healthy ways
+- **Primary Competencies:** `emotional-regulation`
+- **Source File:** 024-personal-development.json
+
+### Developing self-awareness through reflection
+- **Slug:** `developing-self-awareness-through-reflection`
+- **Description:** Deepen understanding of your thoughts, emotions, values, and behavioral patterns
+- **Primary Competencies:** `self-awareness`
+- **Source File:** 024-personal-development.json
+
+### Effective stress management techniques
+- **Slug:** `effective-stress-management-techniques`
+- **Description:** Learn practical strategies to identify, reduce, and cope with stress in daily life
+- **Primary Competencies:** `stress-management`
+- **Source File:** 024-personal-development.json
+
+### Emotional regulation through mindfulness
+- **Slug:** `emotional-regulation-through-mindfulness`
+- **Description:** Use mindfulness techniques to observe and regulate emotions without being overwhelmed
+- **Primary Competencies:** `emotional-regulation`
+- **Supporting Competencies:** `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Gratitude journaling for positive mindset
+- **Slug:** `gratitude-journaling-for-positive-mindset`
+- **Description:** Use daily gratitude journaling to shift perspective and build lasting positivity
+- **Primary Competencies:** `gratitude-practice`
+- **Supporting Competencies:** `positive-psychology`
+- **Source File:** 024-personal-development.json
+
+### Holistic stress management and wellbeing
+- **Slug:** `holistic-stress-management-and-wellbeing`
+- **Description:** Combine mindfulness, lifestyle changes, and coping strategies for comprehensive stress reduction
+- **Primary Competencies:** `stress-management`
+- **Supporting Competencies:** `mindfulness-practice`, `sleep-hygiene`
+- **Source File:** 024-personal-development.json
+
+### Mindfulness meditation for daily life
+- **Slug:** `mindfulness-meditation-for-daily-life`
+- **Description:** Integrate mindfulness practices into everyday activities to reduce stress and increase presence
+- **Primary Competencies:** `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Mindfulness-based stress reduction
+- **Slug:** `mindfulness-based-stress-reduction`
+- **Description:** Use structured mindfulness practices to manage stress, anxiety, and chronic pain
+- **Primary Competencies:** `mindfulness-practice`
+- **Supporting Competencies:** `stress-management`, `body-scan-meditation`
+- **Source File:** 024-personal-development.json
+
+### Practicing self-compassion
+- **Slug:** `practicing-self-compassion`
+- **Description:** Learn to treat yourself with kindness and understanding, especially during difficult times
+- **Primary Competencies:** `self-compassion`
+- **Source File:** 024-personal-development.json
+
+### Resilience training for adversity
+- **Slug:** `resilience-training-for-adversity`
+- **Description:** Strengthen your ability to bounce back from stress, trauma, and life challenges
+- **Primary Competencies:** `resilience`
+- **Supporting Competencies:** `emotional-regulation`, `positive-psychology`
+- **Source File:** 024-personal-development.json
+
+### Self-awareness for personal growth
+- **Slug:** `self-awareness-for-personal-growth`
+- **Description:** Use introspection and feedback to understand yourself better and guide meaningful change
+- **Primary Competencies:** `self-awareness`
+- **Supporting Competencies:** `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Self-compassion for overcoming perfectionism
+- **Slug:** `self-compassion-for-overcoming-perfectionism`
+- **Description:** Use self-compassion practices to reduce self-criticism and embrace imperfection
+- **Primary Competencies:** `self-compassion`
+- **Supporting Competencies:** `mindfulness-practice`
+- **Source File:** 024-personal-development.json
+
+### Self-confidence through skill mastery
+- **Slug:** `self-confidence-through-skill-mastery`
+- **Description:** Build lasting confidence by developing competence and celebrating progress
+- **Primary Competencies:** `self-confidence`
+- **Supporting Competencies:** `growth-mindset`
+- **Source File:** 024-personal-development.json
+
+### Strengths-based personal development
+- **Slug:** `strengths-based-personal-development`
+- **Description:** Identify and leverage your character strengths for greater fulfillment and success
+- **Primary Competencies:** `positive-psychology`
+- **Supporting Competencies:** `self-awareness`
+- **Source File:** 024-personal-development.json
 
 ---
 
@@ -9737,6 +11416,208 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `react-native`
 - **Supporting Competencies:** `typescript`, `react`
 - **Source File:** 011-mobile-development.json
+
+---
+
+## motion-3d
+
+### 2D animation with Adobe Animate
+- **Slug:** `2d-animation-with-adobe-animate`
+- **Description:** Create vector-based animations for web, games, and video
+- **Primary Competencies:** `adobe-animate`
+- **Source File:** 009-motion-3d.json
+
+### 2D animation with Toon Boom Harmony
+- **Slug:** `2d-animation-with-toon-boom-harmony`
+- **Description:** Create professional 2D animation for TV, film, and games
+- **Primary Competencies:** `toon-boom-harmony`
+- **Source File:** 009-motion-3d.json
+
+### 2D character rigging in Spine
+- **Slug:** `2d-character-rigging-in-spine`
+- **Description:** Rig and animate 2D characters for games using skeletal animation
+- **Primary Competencies:** `spine`
+- **Source File:** 009-motion-3d.json
+
+### 3D modeling and animation with Blender
+- **Slug:** `3d-modeling-and-animation-with-blender`
+- **Description:** Create 3D models, animations, and renders using free, open-source software
+- **Primary Competencies:** `blender`
+- **Source File:** 009-motion-3d.json
+
+### 3D modeling and animation with Maya
+- **Slug:** `3d-modeling-and-animation-with-maya`
+- **Description:** Master industry-standard 3D software for film and game production
+- **Primary Competencies:** `maya`
+- **Source File:** 009-motion-3d.json
+
+### 3D modeling with 3ds Max
+- **Slug:** `3d-modeling-with-3ds-max`
+- **Description:** Model and visualize architectural and product designs with 3ds Max
+- **Primary Competencies:** `3ds-max`
+- **Source File:** 009-motion-3d.json
+
+### 3ds Max for game environment art
+- **Slug:** `3ds-max-for-game-environment-art`
+- **Description:** Create detailed game environments and props using 3ds Max workflows
+- **Primary Competencies:** `3ds-max`
+- **Supporting Competencies:** `substance-painter`
+- **Source File:** 009-motion-3d.json
+
+### Advanced compositing in After Effects
+- **Slug:** `advanced-compositing-in-after-effects`
+- **Description:** Master VFX compositing, keying, and advanced motion graphics techniques
+- **Primary Competencies:** `adobe-after-effects`
+- **Source File:** 009-motion-3d.json
+
+### Blender for architectural visualization
+- **Slug:** `blender-for-architectural-visualization`
+- **Description:** Create photorealistic architectural renders and walkthroughs
+- **Primary Competencies:** `blender`
+- **Source File:** 009-motion-3d.json
+
+### Blender for game asset creation
+- **Slug:** `blender-for-game-asset-creation`
+- **Description:** Model, texture, and rig game-ready 3D assets with Blender
+- **Primary Competencies:** `blender`
+- **Supporting Competencies:** `substance-painter`
+- **Source File:** 009-motion-3d.json
+
+### Character animation in Blender
+- **Slug:** `character-animation-in-blender`
+- **Description:** Rig and animate 3D characters for film, games, and motion graphics
+- **Primary Competencies:** `blender`
+- **Source File:** 009-motion-3d.json
+
+### Character rigging and animation in Maya
+- **Slug:** `character-rigging-and-animation-in-maya`
+- **Description:** Create professional character rigs and animations for production pipelines
+- **Primary Competencies:** `maya`
+- **Source File:** 009-motion-3d.json
+
+### Character sculpting in ZBrush
+- **Slug:** `character-sculpting-in-zbrush`
+- **Description:** Sculpt realistic and stylized characters for production pipelines
+- **Primary Competencies:** `zbrush`
+- **Source File:** 009-motion-3d.json
+
+### Cinema 4D for motion designers
+- **Slug:** `cinema-4d-for-motion-designers`
+- **Description:** Integrate Cinema 4D into After Effects workflows for stunning motion graphics
+- **Primary Competencies:** `cinema-4d`
+- **Supporting Competencies:** `adobe-after-effects`
+- **Source File:** 009-motion-3d.json
+
+### Color grading with DaVinci Resolve
+- **Slug:** `color-grading-with-davinci-resolve`
+- **Description:** Master professional color correction and grading for film and video
+- **Primary Competencies:** `davinci-resolve`
+- **Source File:** 009-motion-3d.json
+
+### Complete video production workflow
+- **Slug:** `complete-video-production-workflow`
+- **Description:** Master the end-to-end process from filming to final export using professional tools
+- **Primary Competencies:** `adobe-premiere-pro`
+- **Supporting Competencies:** `adobe-after-effects`
+- **Source File:** 009-motion-3d.json
+
+### Digital sculpting with ZBrush
+- **Slug:** `digital-sculpting-with-zbrush`
+- **Description:** Create highly detailed 3D sculptures for games, film, and 3D printing
+- **Primary Competencies:** `zbrush`
+- **Source File:** 009-motion-3d.json
+
+### Game asset texturing workflow
+- **Slug:** `game-asset-texturing-workflow`
+- **Description:** Master production-ready texturing techniques for game assets
+- **Primary Competencies:** `substance-painter`
+- **Source File:** 009-motion-3d.json
+
+### Game-ready character creation pipeline
+- **Slug:** `game-ready-character-creation-pipeline`
+- **Description:** Create complete game characters from sculpting through texturing and optimization
+- **Primary Competencies:** `zbrush`
+- **Supporting Competencies:** `substance-painter`, `blender`
+- **Source File:** 009-motion-3d.json
+
+### Houdini for game development
+- **Slug:** `houdini-for-game-development`
+- **Description:** Generate procedural game assets and environments using Houdini workflows
+- **Primary Competencies:** `houdini`
+- **Source File:** 009-motion-3d.json
+
+### Motion graphics and 3D with Cinema 4D
+- **Slug:** `motion-graphics-and-3d-with-cinema-4d`
+- **Description:** Design broadcast graphics and abstract 3D animations with Cinema 4D
+- **Primary Competencies:** `cinema-4d`
+- **Source File:** 009-motion-3d.json
+
+### Motion graphics with Adobe After Effects
+- **Slug:** `motion-graphics-with-adobe-after-effects`
+- **Description:** Create animated graphics and visual effects for video and digital media
+- **Primary Competencies:** `adobe-after-effects`
+- **Source File:** 009-motion-3d.json
+
+### Photorealistic rendering with V-Ray
+- **Slug:** `photorealistic-rendering-with-vray`
+- **Description:** Create production-quality renders for architecture and product visualization
+- **Primary Competencies:** `vray`
+- **Source File:** 009-motion-3d.json
+
+### Premiere Pro for content creators
+- **Slug:** `premiere-pro-for-content-creators`
+- **Description:** Create engaging YouTube, social media, and marketing videos efficiently
+- **Primary Competencies:** `adobe-premiere-pro`
+- **Source File:** 009-motion-3d.json
+
+### Procedural effects with Houdini
+- **Slug:** `procedural-effects-with-houdini`
+- **Description:** Create complex VFX simulations and procedural content with Houdini
+- **Primary Competencies:** `houdini`
+- **Source File:** 009-motion-3d.json
+
+### Procedural material creation with Substance Designer
+- **Slug:** `procedural-material-creation-with-substance-designer`
+- **Description:** Build reusable, parametric materials and textures with node-based workflows
+- **Primary Competencies:** `substance-designer`
+- **Source File:** 009-motion-3d.json
+
+### Substance Designer for game materials
+- **Slug:** `substance-designer-for-game-materials`
+- **Description:** Create tileable game textures and procedural material libraries
+- **Primary Competencies:** `substance-designer`
+- **Source File:** 009-motion-3d.json
+
+### Texturing 3D models with Substance Painter
+- **Slug:** `texturing-3d-models-with-substance-painter`
+- **Description:** Create realistic PBR textures for 3D assets using smart materials and brushes
+- **Primary Competencies:** `substance-painter`
+- **Source File:** 009-motion-3d.json
+
+### V-Ray for architectural visualization
+- **Slug:** `vray-for-architectural-visualization`
+- **Description:** Render photorealistic architectural interiors and exteriors
+- **Primary Competencies:** `vray`
+- **Supporting Competencies:** `3ds-max`
+- **Source File:** 009-motion-3d.json
+
+### Video editing and post-production in DaVinci Resolve
+- **Slug:** `video-editing-and-post-production-in-davinci-resolve`
+- **Description:** Edit, color grade, and finish videos using an all-in-one post-production suite
+- **Primary Competencies:** `davinci-resolve`
+- **Source File:** 009-motion-3d.json
+
+### Video editing with Adobe Premiere Pro
+- **Slug:** `video-editing-with-adobe-premiere-pro`
+- **Description:** Edit professional videos with industry-standard editing software
+- **Primary Competencies:** `adobe-premiere-pro`
+- **Source File:** 009-motion-3d.json
+
+### Video editing with Final Cut Pro
+- **Slug:** `video-editing-with-final-cut-pro`
+- **Description:** Edit videos efficiently using Apple's professional editing software
+- **Primary Competencies:** `final-cut-pro`
+- **Source File:** 009-motion-3d.json
 
 ---
 
@@ -11163,6 +13044,136 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## nutrition-diet
+
+### Breaking free from diet culture with intuitive eating
+- **Slug:** `breaking-free-from-diet-culture-with-intuitive-eating`
+- **Description:** Move beyond restrictive dieting to trust your body's signals and find food freedom
+- **Primary Competencies:** `intuitive-eating`
+- **Source File:** 026-health-fitness.json
+
+### Calorie counting for weight management
+- **Slug:** `calorie-counting-for-weight-management`
+- **Description:** Track caloric intake to create energy balance for weight loss, maintenance, or gain
+- **Primary Competencies:** `calorie-counting`
+- **Source File:** 026-health-fitness.json
+
+### Combining intermittent fasting with fitness goals
+- **Slug:** `combining-intermittent-fasting-with-fitness-goals`
+- **Description:** Integrate fasting protocols with training schedules to support muscle gain or fat loss objectives
+- **Primary Competencies:** `intermittent-fasting`
+- **Supporting Competencies:** `macronutrient-tracking`, `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Competition day nutrition strategies
+- **Slug:** `competition-day-nutrition-strategies`
+- **Description:** Plan pre-competition meals, intra-event fueling, and recovery nutrition for optimal performance
+- **Primary Competencies:** `sports-nutrition`
+- **Supporting Competencies:** `supplement-science`
+- **Source File:** 026-health-fitness.json
+
+### Effective meal planning for health and fitness
+- **Slug:** `effective-meal-planning-for-health-and-fitness`
+- **Description:** Learn to plan, prepare, and organize nutritious meals that support your fitness goals and lifestyle
+- **Primary Competencies:** `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Evidence-based supplement selection and use
+- **Slug:** `evidence-based-supplement-selection-and-use`
+- **Description:** Understand supplement science to make informed decisions about which supplements actually work
+- **Primary Competencies:** `supplement-science`
+- **Source File:** 026-health-fitness.json
+
+### Flexible dieting with macro tracking
+- **Slug:** `flexible-dieting-with-macro-tracking`
+- **Description:** Use macronutrient tracking to achieve fitness goals while maintaining dietary flexibility and food enjoyment
+- **Primary Competencies:** `macronutrient-tracking`
+- **Supporting Competencies:** `calorie-counting`
+- **Source File:** 026-health-fitness.json
+
+### Intermittent fasting protocols and practices
+- **Slug:** `intermittent-fasting-protocols-and-practices`
+- **Description:** Implement time-restricted eating patterns for health, weight management, and metabolic benefits
+- **Primary Competencies:** `intermittent-fasting`
+- **Source File:** 026-health-fitness.json
+
+### Intuitive eating and mindful nutrition
+- **Slug:** `intuitive-eating-and-mindful-nutrition`
+- **Description:** Develop a healthy relationship with food through intuitive eating principles and hunger awareness
+- **Primary Competencies:** `intuitive-eating`
+- **Source File:** 026-health-fitness.json
+
+### Keto meal planning and recipes
+- **Slug:** `keto-meal-planning-and-recipes`
+- **Description:** Plan and prepare delicious ketogenic meals while maintaining proper macro ratios
+- **Primary Competencies:** `ketogenic-diet`
+- **Supporting Competencies:** `meal-planning`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Ketogenic diet fundamentals and implementation
+- **Slug:** `ketogenic-diet-fundamentals-and-implementation`
+- **Description:** Transition to and maintain a low-carb, high-fat ketogenic diet for metabolic health and fat loss
+- **Primary Competencies:** `ketogenic-diet`
+- **Supporting Competencies:** `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Meal prep strategies for busy lifestyles
+- **Slug:** `meal-prep-strategies-for-busy-lifestyles`
+- **Description:** Master batch cooking and meal preparation techniques to maintain healthy eating habits with limited time
+- **Primary Competencies:** `meal-planning`
+- **Supporting Competencies:** `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Mediterranean diet for longevity and health
+- **Slug:** `mediterranean-diet-for-longevity-and-health`
+- **Description:** Adopt the heart-healthy Mediterranean eating pattern rich in vegetables, healthy fats, and whole grains
+- **Primary Competencies:** `mediterranean-diet`
+- **Supporting Competencies:** `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Paleo diet principles and implementation
+- **Slug:** `paleo-diet-principles-and-implementation`
+- **Description:** Adopt an ancestral eating approach focused on whole foods and eliminating processed ingredients
+- **Primary Competencies:** `paleo-diet`
+- **Supporting Competencies:** `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Plant-based nutrition for health and performance
+- **Slug:** `plant-based-nutrition-for-health-and-performance`
+- **Description:** Meet nutritional needs and fitness goals with a whole-food, plant-based diet
+- **Primary Competencies:** `plant-based-nutrition`
+- **Supporting Competencies:** `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Sports nutrition for performance and recovery
+- **Slug:** `sports-nutrition-for-performance-and-recovery`
+- **Description:** Optimize nutrient timing, hydration, and supplementation to enhance athletic performance
+- **Primary Competencies:** `sports-nutrition`
+- **Supporting Competencies:** `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Supplements for muscle building and performance
+- **Slug:** `supplements-for-muscle-building-and-performance`
+- **Description:** Use evidence-based supplementation to support muscle growth, strength, and athletic performance
+- **Primary Competencies:** `supplement-science`
+- **Supporting Competencies:** `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### Tracking macronutrients for body composition
+- **Slug:** `tracking-macronutrients-for-body-composition`
+- **Description:** Learn to track protein, carbohydrates, and fats to optimize muscle gain or fat loss
+- **Primary Competencies:** `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Vegan athlete nutrition and meal planning
+- **Slug:** `vegan-athlete-nutrition-and-meal-planning`
+- **Description:** Optimize athletic performance with plant-based nutrition strategies for strength and endurance athletes
+- **Primary Competencies:** `plant-based-nutrition`
+- **Supporting Competencies:** `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+---
+
 ## operations-strategy
 
 ### BI reporting and analytics for executives
@@ -11416,6 +13427,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `contract-management`
 - **Supporting Competencies:** `supply-chain-management`
 - **Source File:** 031-operations-strategy.json
+
+---
+
+## personal-development
+
+### Cultivating a growth mindset
+- **Slug:** `cultivating-a-growth-mindset`
+- **Description:** Develop the belief that abilities can be developed through dedication and hard work
+- **Primary Competencies:** `growth-mindset`
+- **Source File:** 024-personal-development.json
+
+### Growth mindset for learning and achievement
+- **Slug:** `growth-mindset-for-learning-and-achievement`
+- **Description:** Use growth mindset principles to embrace challenges, persist through obstacles, and achieve goals
+- **Primary Competencies:** `growth-mindset`
+- **Supporting Competencies:** `resilience`
+- **Source File:** 024-personal-development.json
 
 ---
 
@@ -12180,6 +14208,305 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `electromagnetism`
 - **Supporting Competencies:** `calculus-3`, `differential-equations`
 - **Source File:** 027-science.json
+
+---
+
+## problem-solving
+
+### Creative and analytical problem-solving
+- **Slug:** `creative-and-analytical-problem-solving`
+- **Description:** Combine logical analysis with creative ideation to solve diverse problems
+- **Primary Competencies:** `problem-solving-skill`
+- **Supporting Competencies:** `creative-thinking`, `analytical-thinking`
+- **Source File:** 024-personal-development.json
+
+### Problem-solving for technical challenges
+- **Slug:** `problem-solving-for-technical-challenges`
+- **Description:** Use debugging, troubleshooting, and root cause analysis to solve technical problems
+- **Primary Competencies:** `problem-solving-skill`
+- **Supporting Competencies:** `analytical-thinking`
+- **Source File:** 024-personal-development.json
+
+### Structured problem-solving methods
+- **Slug:** `structured-problem-solving-methods`
+- **Description:** Apply systematic frameworks to identify, analyze, and solve problems effectively
+- **Primary Competencies:** `problem-solving-skill`
+- **Source File:** 024-personal-development.json
+
+---
+
+## product-project-management
+
+### Agile product development
+- **Slug:** `agile-product-development`
+- **Description:** Build products iteratively using Agile methodologies and principles
+- **Primary Competencies:** `agile`
+- **Source File:** 022-business.json
+
+### Agile transformation and coaching
+- **Slug:** `agile-transformation-and-coaching`
+- **Description:** Lead organizational transition to Agile ways of working
+- **Primary Competencies:** `agile`
+- **Supporting Competencies:** `change-management`
+- **Source File:** 022-business.json
+
+### Defining and tracking KPIs
+- **Slug:** `defining-and-tracking-kpis`
+- **Description:** Identify key performance indicators to measure business success
+- **Primary Competencies:** `kpis`
+- **Source File:** 022-business.json
+
+### Finding product-market fit
+- **Slug:** `finding-product-market-fit`
+- **Description:** Validate product ideas and iterate toward strong market fit
+- **Primary Competencies:** `product-market-fit`
+- **Supporting Competencies:** `product-management`
+- **Source File:** 022-business.json
+
+### Kanban for software teams
+- **Slug:** `kanban-for-software-teams`
+- **Description:** Apply Kanban to manage software development workflows and continuous delivery
+- **Primary Competencies:** `kanban`
+- **Supporting Competencies:** `agile`
+- **Source File:** 022-business.json
+
+### Kanban for workflow management
+- **Slug:** `kanban-for-workflow-management`
+- **Description:** Visualize and optimize work in progress using Kanban boards and principles
+- **Primary Competencies:** `kanban`
+- **Source File:** 022-business.json
+
+### KPI dashboards and data-driven decisions
+- **Slug:** `kpi-dashboards-and-data-driven-decisions`
+- **Description:** Build KPI tracking systems to monitor performance and drive improvements
+- **Primary Competencies:** `kpis`
+- **Source File:** 022-business.json
+
+### OKRs for goal-setting and alignment
+- **Slug:** `okrs-for-goal-setting-and-alignment`
+- **Description:** Set and cascade Objectives and Key Results to align teams and drive results
+- **Primary Competencies:** `okrs`
+- **Source File:** 022-business.json
+
+### OKRs for organizational execution
+- **Slug:** `okrs-for-organizational-execution`
+- **Description:** Implement OKRs across the organization to improve focus and accountability
+- **Primary Competencies:** `okrs`
+- **Supporting Competencies:** `goal-setting`
+- **Source File:** 022-business.json
+
+### PMP and traditional project management
+- **Slug:** `pmp-and-traditional-project-management`
+- **Description:** Apply waterfall project management methodologies and prepare for PMP certification
+- **Primary Competencies:** `project-management`
+- **Supporting Competencies:** `stakeholder-management`
+- **Source File:** 022-business.json
+
+### Product management for tech products
+- **Slug:** `product-management-for-tech-products`
+- **Description:** Build digital products through user research, prioritization, and iterative development
+- **Primary Competencies:** `product-management`
+- **Supporting Competencies:** `agile`, `user-stories`
+- **Source File:** 022-business.json
+
+### Product management fundamentals
+- **Slug:** `product-management-fundamentals`
+- **Description:** Learn to discover, define, and deliver products that customers love
+- **Primary Competencies:** `product-management`
+- **Source File:** 022-business.json
+
+### Product roadmapping and strategy
+- **Slug:** `product-roadmapping-and-strategy`
+- **Description:** Create strategic product roadmaps that align with business goals
+- **Primary Competencies:** `roadmapping`
+- **Supporting Competencies:** `product-management`
+- **Source File:** 022-business.json
+
+### Product-market fit for startups
+- **Slug:** `product-market-fit-for-startups`
+- **Description:** Use lean startup methods to rapidly test and achieve product-market fit
+- **Primary Competencies:** `product-market-fit`
+- **Source File:** 022-business.json
+
+### Project management essentials
+- **Slug:** `project-management-essentials`
+- **Description:** Plan, execute, and deliver projects on time and within budget
+- **Primary Competencies:** `project-management`
+- **Source File:** 022-business.json
+
+### Roadmap communication and stakeholder buy-in
+- **Slug:** `roadmap-communication-and-stakeholder-buy-in`
+- **Description:** Present and gain alignment on product roadmaps with stakeholders
+- **Primary Competencies:** `roadmapping`
+- **Supporting Competencies:** `stakeholder-management`
+- **Source File:** 022-business.json
+
+### Scrum framework and ceremonies
+- **Slug:** `scrum-framework-and-ceremonies`
+- **Description:** Implement Scrum sprints, standups, and retrospectives for agile delivery
+- **Primary Competencies:** `scrum`
+- **Supporting Competencies:** `agile`
+- **Source File:** 022-business.json
+
+### Scrum Master certification and practice
+- **Slug:** `scrum-master-certification-and-practice`
+- **Description:** Facilitate Scrum teams and remove impediments as a certified Scrum Master
+- **Primary Competencies:** `scrum`
+- **Supporting Competencies:** `agile`, `coaching-mentoring`
+- **Source File:** 022-business.json
+
+### Stakeholder communication strategies
+- **Slug:** `stakeholder-communication-strategies`
+- **Description:** Keep stakeholders informed and aligned throughout project lifecycles
+- **Primary Competencies:** `stakeholder-management`
+- **Supporting Competencies:** `executive-communication`
+- **Source File:** 022-business.json
+
+### Stakeholder management and engagement
+- **Slug:** `stakeholder-management-and-engagement`
+- **Description:** Identify, analyze, and manage stakeholder relationships for project success
+- **Primary Competencies:** `stakeholder-management`
+- **Source File:** 022-business.json
+
+### User story mapping and backlog refinement
+- **Slug:** `user-story-mapping-and-backlog-refinement`
+- **Description:** Build and prioritize product backlogs using user story mapping techniques
+- **Primary Competencies:** `user-stories`
+- **Supporting Competencies:** `product-management`
+- **Source File:** 022-business.json
+
+### Writing effective user stories
+- **Slug:** `writing-effective-user-stories`
+- **Description:** Create clear user stories with acceptance criteria for agile development
+- **Primary Competencies:** `user-stories`
+- **Source File:** 022-business.json
+
+---
+
+## productivity-time-management
+
+### Atomic habits and behavior change
+- **Slug:** `atomic-habits-and-behavior-change`
+- **Description:** Build identity-based habits through small, consistent changes
+- **Primary Competencies:** `habit-formation`
+- **Supporting Competencies:** `goal-setting`
+- **Source File:** 022-business.json
+
+### Building lasting habits
+- **Slug:** `building-lasting-habits`
+- **Description:** Use behavior science to form positive habits and break unwanted ones
+- **Primary Competencies:** `habit-formation`
+- **Source File:** 022-business.json
+
+### Effective goal-setting strategies
+- **Slug:** `effective-goal-setting-strategies`
+- **Description:** Set and achieve meaningful goals using SMART criteria and other frameworks
+- **Primary Competencies:** `goal-setting`
+- **Source File:** 022-business.json
+
+### Effective time management
+- **Slug:** `effective-time-management`
+- **Description:** Allocate and use time wisely to accomplish goals and maintain work-life balance
+- **Primary Competencies:** `time-management`
+- **Source File:** 022-business.json
+
+### Focus techniques for knowledge workers
+- **Slug:** `focus-techniques-for-knowledge-workers`
+- **Description:** Use attention management strategies to maintain focus in demanding work environments
+- **Primary Competencies:** `focus-concentration`
+- **Supporting Competencies:** `productivity`
+- **Source File:** 022-business.json
+
+### Getting Things Done (GTD) methodology
+- **Slug:** `getting-things-done-gtd-methodology`
+- **Description:** Implement David Allen's GTD system for stress-free productivity
+- **Primary Competencies:** `getting-things-done`
+- **Supporting Competencies:** `task-management`
+- **Source File:** 022-business.json
+
+### Goal-setting for personal achievement
+- **Slug:** `goal-setting-for-personal-achievement`
+- **Description:** Create action plans and track progress toward personal and professional goals
+- **Primary Competencies:** `goal-setting`
+- **Supporting Competencies:** `productivity`
+- **Source File:** 022-business.json
+
+### GTD for digital workflows
+- **Slug:** `gtd-for-digital-workflows`
+- **Description:** Apply GTD principles using digital tools and apps for modern knowledge work
+- **Primary Competencies:** `getting-things-done`
+- **Supporting Competencies:** `task-management`
+- **Source File:** 022-business.json
+
+### Improving focus and concentration
+- **Slug:** `improving-focus-and-concentration`
+- **Description:** Develop attention control and reduce distractions for deep work
+- **Primary Competencies:** `focus-concentration`
+- **Source File:** 022-business.json
+
+### Overcoming procrastination
+- **Slug:** `overcoming-procrastination`
+- **Description:** Identify and address the root causes of procrastination to take action
+- **Primary Competencies:** `procrastination-management`
+- **Source File:** 022-business.json
+
+### Personal productivity systems
+- **Slug:** `personal-productivity-systems`
+- **Description:** Design and implement personalized productivity workflows and systems
+- **Primary Competencies:** `productivity`
+- **Source File:** 022-business.json
+
+### Pomodoro Technique for productivity
+- **Slug:** `pomodoro-technique-for-productivity`
+- **Description:** Use timed work intervals to maintain focus and prevent burnout
+- **Primary Competencies:** `pomodoro-technique`
+- **Source File:** 022-business.json
+
+### Procrastination strategies for chronic avoiders
+- **Slug:** `procrastination-strategies-for-chronic-avoiders`
+- **Description:** Use behavioral techniques to overcome persistent procrastination patterns
+- **Primary Competencies:** `procrastination-management`
+- **Supporting Competencies:** `habit-formation`
+- **Source File:** 022-business.json
+
+### Productivity for remote workers
+- **Slug:** `productivity-for-remote-workers`
+- **Description:** Maintain high productivity while working from home or distributed locations
+- **Primary Competencies:** `productivity`
+- **Supporting Competencies:** `time-management`
+- **Source File:** 022-business.json
+
+### Task management and prioritization
+- **Slug:** `task-management-and-prioritization`
+- **Description:** Organize, prioritize, and complete tasks efficiently using proven methods
+- **Primary Competencies:** `task-management`
+- **Source File:** 022-business.json
+
+### Task management with digital tools
+- **Slug:** `task-management-with-digital-tools`
+- **Description:** Use task management apps and software to stay organized and productive
+- **Primary Competencies:** `task-management`
+- **Source File:** 022-business.json
+
+### Time blocking and calendar management
+- **Slug:** `time-blocking-and-calendar-management`
+- **Description:** Design your ideal schedule using time blocking and calendar strategies
+- **Primary Competencies:** `time-blocking`
+- **Supporting Competencies:** `time-management`
+- **Source File:** 022-business.json
+
+### Time blocking for deep work
+- **Slug:** `time-blocking-for-deep-work`
+- **Description:** Schedule dedicated time blocks for focused, uninterrupted work sessions
+- **Primary Competencies:** `time-blocking`
+- **Source File:** 022-business.json
+
+### Time management for busy professionals
+- **Slug:** `time-management-for-busy-professionals`
+- **Description:** Manage competing priorities and maximize productivity in demanding roles
+- **Primary Competencies:** `time-management`
+- **Supporting Competencies:** `task-management`
+- **Source File:** 022-business.json
 
 ---
 
@@ -13290,6 +15617,124 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## strength-training
+
+### Advanced calisthenics skills and progressions
+- **Slug:** `advanced-calisthenics-skills-and-progressions`
+- **Description:** Master advanced bodyweight movements like muscle-ups, handstand push-ups, and human flags
+- **Primary Competencies:** `calisthenics`
+- **Supporting Competencies:** `mobility-training`, `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Bodyweight strength training with calisthenics
+- **Slug:** `bodyweight-strength-training-with-calisthenics`
+- **Description:** Build strength, muscle, and movement skills using only your bodyweight for resistance
+- **Primary Competencies:** `calisthenics`
+- **Source File:** 026-health-fitness.json
+
+### Building muscle mass through bodybuilding
+- **Slug:** `building-muscle-mass-through-bodybuilding`
+- **Description:** Develop physique through structured resistance training, progressive overload, and muscle-building nutrition
+- **Primary Competencies:** `bodybuilding`
+- **Supporting Competencies:** `macronutrient-tracking`, `meal-planning`
+- **Source File:** 026-health-fitness.json
+
+### Competitive bodybuilding preparation and posing
+- **Slug:** `competitive-bodybuilding-preparation-and-posing`
+- **Description:** Prepare for bodybuilding competitions with contest prep dieting, peak week strategies, and stage presentation
+- **Primary Competencies:** `bodybuilding`
+- **Supporting Competencies:** `macronutrient-tracking`, `calorie-counting`, `supplement-science`
+- **Source File:** 026-health-fitness.json
+
+### Competitive Olympic weightlifting programming
+- **Slug:** `competitive-olympic-weightlifting-programming`
+- **Description:** Train for weightlifting competitions with periodized programming, meet preparation, and weight class management
+- **Primary Competencies:** `olympic-weightlifting`
+- **Supporting Competencies:** `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### CrossFit competition preparation
+- **Slug:** `crossfit-competition-preparation`
+- **Description:** Train for CrossFit competitions with sport-specific programming, strategy, and performance nutrition
+- **Primary Competencies:** `crossfit`
+- **Supporting Competencies:** `olympic-weightlifting`, `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### CrossFit training and methodology
+- **Slug:** `crossfit-training-and-methodology`
+- **Description:** Develop functional fitness through varied workouts combining weightlifting, gymnastics, and metabolic conditioning
+- **Primary Competencies:** `crossfit`
+- **Supporting Competencies:** `olympic-weightlifting`, `calisthenics`
+- **Source File:** 026-health-fitness.json
+
+### General strength training and barbell fundamentals
+- **Slug:** `general-strength-training-and-barbell-fundamentals`
+- **Description:** Learn proper barbell lifting technique and progressive strength training for fitness and health
+- **Primary Competencies:** `weightlifting`
+- **Source File:** 026-health-fitness.json
+
+### Kettlebell sport training and competition
+- **Slug:** `kettlebell-sport-training-and-competition`
+- **Description:** Master girevoy sport techniques and train for kettlebell lifting competitions with proper form and endurance
+- **Primary Competencies:** `kettlebell-training`
+- **Supporting Competencies:** `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### Kettlebell training for strength and conditioning
+- **Slug:** `kettlebell-training-for-strength-and-conditioning`
+- **Description:** Learn kettlebell exercises from swings to snatches for building power, endurance, and functional strength
+- **Primary Competencies:** `kettlebell-training`
+- **Source File:** 026-health-fitness.json
+
+### Olympic weightlifting technique and training
+- **Slug:** `olympic-weightlifting-technique-and-training`
+- **Description:** Learn the snatch and clean & jerk with proper technique, mobility work, and strength programming
+- **Primary Competencies:** `olympic-weightlifting`
+- **Supporting Competencies:** `mobility-training`, `dynamic-stretching`
+- **Source File:** 026-health-fitness.json
+
+### Powerlifting meet preparation and peaking
+- **Slug:** `powerlifting-meet-preparation-and-peaking`
+- **Description:** Prepare for powerlifting competitions with peaking protocols, attempt selection, and competition day strategies
+- **Primary Competencies:** `powerlifting`
+- **Supporting Competencies:** `sports-nutrition`, `macronutrient-tracking`
+- **Source File:** 026-health-fitness.json
+
+### Powerlifting: squat, bench press, and deadlift mastery
+- **Slug:** `powerlifting-squat-bench-press-and-deadlift-mastery`
+- **Description:** Develop maximal strength in the big three lifts with technique refinement and progressive programming
+- **Primary Competencies:** `powerlifting`
+- **Source File:** 026-health-fitness.json
+
+### Resistance band training for strength and mobility
+- **Slug:** `resistance-band-training-for-strength-and-mobility`
+- **Description:** Build strength and improve mobility using resistance bands for home or travel workouts
+- **Primary Competencies:** `resistance-band-training`
+- **Supporting Competencies:** `mobility-training`
+- **Source File:** 026-health-fitness.json
+
+### Strength training for athletic performance
+- **Slug:** `strength-training-for-athletic-performance`
+- **Description:** Develop sport-specific strength and power to enhance athletic performance in your chosen sport
+- **Primary Competencies:** `weightlifting`
+- **Supporting Competencies:** `plyometrics`, `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### Strongman training and event preparation
+- **Slug:** `strongman-training-and-event-preparation`
+- **Description:** Develop strength and conditioning for strongman events like atlas stones, farmers walks, and log press
+- **Primary Competencies:** `strongman-training`
+- **Supporting Competencies:** `sports-nutrition`
+- **Source File:** 026-health-fitness.json
+
+### Suspension training for functional strength
+- **Slug:** `suspension-training-for-functional-strength`
+- **Description:** Build core stability and functional strength using suspension trainers like TRX
+- **Primary Competencies:** `suspension-training`
+- **Source File:** 026-health-fitness.json
+
+---
+
 ## systems-programming
 
 ### Actor-based programming with Pony
@@ -14307,6 +16752,42 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ---
 
+## web-development
+
+### WebAssembly for game development
+- **Slug:** `webassembly-for-game-development`
+- **Description:** Build high-performance browser games using WebAssembly and game engines
+- **Primary Competencies:** `webassembly`
+- **Source File:** 003-web-development.json
+
+### WebAssembly fundamentals
+- **Slug:** `webassembly-fundamentals`
+- **Description:** Learn to compile and run high-performance code in web browsers using WebAssembly
+- **Primary Competencies:** `webassembly`
+- **Source File:** 003-web-development.json
+
+### WebAssembly System Interface (WASI)
+- **Slug:** `webassembly-system-interface-wasi`
+- **Description:** Use WASI to run WebAssembly outside the browser in server and edge environments
+- **Primary Competencies:** `webassembly`
+- **Source File:** 003-web-development.json
+
+### WebAssembly with C/C++
+- **Slug:** `webassembly-with-c-cpp`
+- **Description:** Use Emscripten to compile C/C++ code to WebAssembly for browser execution
+- **Primary Competencies:** `webassembly`
+- **Supporting Competencies:** `cpp`
+- **Source File:** 003-web-development.json
+
+### WebAssembly with Rust
+- **Slug:** `webassembly-with-rust`
+- **Description:** Compile Rust code to WebAssembly for high-performance web applications
+- **Primary Competencies:** `webassembly`
+- **Supporting Competencies:** `rust`
+- **Source File:** 003-web-development.json
+
+---
+
 ## writing
 
 ### Academic writing and research papers
@@ -14961,6 +17442,84 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `dialogue-writing`
 - **Supporting Competencies:** `character-development`
 - **Source File:** 015-writing.json
+
+---
+
+## yoga
+
+### Ashtanga yoga practice and progression
+- **Slug:** `ashtanga-yoga-practice-and-progression`
+- **Description:** Learn the traditional Ashtanga yoga sequence with breath-synchronized movement and postures
+- **Primary Competencies:** `ashtanga-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Bikram hot yoga practice
+- **Slug:** `bikram-hot-yoga-practice`
+- **Description:** Practice the 26-posture Bikram sequence in a heated room for strength and flexibility
+- **Primary Competencies:** `bikram-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Hatha yoga fundamentals
+- **Slug:** `hatha-yoga-fundamentals`
+- **Description:** Learn foundational yoga postures, breathing techniques, and alignment principles
+- **Primary Competencies:** `hatha-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Iyengar yoga for alignment and precision
+- **Slug:** `iyengar-yoga-for-alignment-and-precision`
+- **Description:** Develop precise alignment and use props to safely deepen your yoga practice
+- **Primary Competencies:** `iyengar-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Kundalini yoga for energy and awareness
+- **Slug:** `kundalini-yoga-for-energy-and-awareness`
+- **Description:** Practice dynamic breathing, movement, and meditation to awaken inner energy
+- **Primary Competencies:** `kundalini-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Power yoga for strength and fitness
+- **Slug:** `power-yoga-for-strength-and-fitness`
+- **Description:** Build strength and stamina through vigorous, athletic yoga sequences
+- **Primary Competencies:** `power-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Prenatal yoga for pregnancy wellness
+- **Slug:** `prenatal-yoga-for-pregnancy-wellness`
+- **Description:** Practice safe, modified yoga to support health and comfort during pregnancy
+- **Primary Competencies:** `prenatal-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Restorative yoga for deep relaxation
+- **Slug:** `restorative-yoga-for-deep-relaxation`
+- **Description:** Use props and gentle poses to deeply relax the nervous system and reduce stress
+- **Primary Competencies:** `restorative-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Vinyasa flow yoga practice
+- **Slug:** `vinyasa-flow-yoga-practice`
+- **Description:** Link breath with movement in creative, flowing yoga sequences
+- **Primary Competencies:** `vinyasa-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Yin yoga for deep tissue release
+- **Slug:** `yin-yoga-for-deep-tissue-release`
+- **Description:** Hold passive floor poses for extended periods to stretch connective tissue and promote flexibility
+- **Primary Competencies:** `yin-yoga`
+- **Source File:** 026-health-fitness.json
+
+### Yoga for athletes and cross-training
+- **Slug:** `yoga-for-athletes-and-cross-training`
+- **Description:** Use yoga to enhance athletic performance, prevent injury, and aid recovery
+- **Primary Competencies:** `vinyasa-yoga`
+- **Supporting Competencies:** `stretching`, `mobility-training`
+- **Source File:** 026-health-fitness.json
+
+### Yoga for flexibility and stress relief
+- **Slug:** `yoga-for-flexibility-and-stress-relief`
+- **Description:** Improve flexibility and manage stress through a balanced yoga practice
+- **Primary Competencies:** `hatha-yoga`
+- **Supporting Competencies:** `stretching`
+- **Source File:** 026-health-fitness.json
 
 ---
 
