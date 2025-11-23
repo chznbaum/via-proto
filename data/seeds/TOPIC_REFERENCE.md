@@ -1,7 +1,7 @@
 # Topic Reference (Detailed)
 
-**Generated:** 2025-11-23T03:44:45.531Z
-**Total Topics:** 2965
+**Generated:** 2025-11-23T04:11:48.472Z
+**Total Topics:** 3139
 
 This file is auto-generated for reference during seed expansion.
 Run `npm run generate:topic-reference` to update.
@@ -28,7 +28,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [chemistry](#chemistry) (30)
 - [cloud-devops](#cloud-devops) (236)
 - [cognitive-skills](#cognitive-skills) (9)
-- [communication-interpersonal](#communication-interpersonal) (18)
+- [communication-interpersonal](#communication-interpersonal) (21)
 - [corporate-finance](#corporate-finance) (21)
 - [critical-thinking](#critical-thinking) (3)
 - [cybersecurity](#cybersecurity) (33)
@@ -48,14 +48,14 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [genetics](#genetics) (14)
 - [geometry](#geometry) (13)
 - [graphic-design](#graphic-design) (69)
-- [home-lifestyle](#home-lifestyle) (80)
+- [home-lifestyle](#home-lifestyle) (101)
 - [investing-trading](#investing-trading) (29)
-- [languages](#languages) (147)
-- [leadership-communication](#leadership-communication) (23)
+- [languages](#languages) (260)
+- [leadership-communication](#leadership-communication) (28)
 - [life-sciences](#life-sciences) (22)
 - [linear-algebra](#linear-algebra) (7)
-- [linguistics](#linguistics) (32)
-- [marketing-sales](#marketing-sales) (45)
+- [linguistics](#linguistics) (43)
+- [marketing-sales](#marketing-sales) (46)
 - [meditation](#meditation) (11)
 - [memory-learning](#memory-learning) (18)
 - [mental-health](#mental-health) (14)
@@ -67,15 +67,15 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [number-theory](#number-theory) (5)
 - [nutrition-diet](#nutrition-diet) (19)
 - [operations-strategy](#operations-strategy) (39)
-- [personal-development](#personal-development) (2)
-- [personal-finance](#personal-finance) (26)
+- [personal-development](#personal-development) (8)
+- [personal-finance](#personal-finance) (27)
 - [photography-video](#photography-video) (46)
 - [physics](#physics) (44)
 - [problem-solving](#problem-solving) (3)
 - [product-project-management](#product-project-management) (22)
-- [productivity-time-management](#productivity-time-management) (19)
+- [productivity-time-management](#productivity-time-management) (23)
 - [programming](#programming) (168)
-- [recreation-hobbies](#recreation-hobbies) (70)
+- [recreation-hobbies](#recreation-hobbies) (78)
 - [software-testing](#software-testing) (3)
 - [statistics-probability](#statistics-probability) (27)
 - [strength-training](#strength-training) (17)
@@ -85,7 +85,7 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - [uiux-design](#uiux-design) (44)
 - [visual-arts](#visual-arts) (51)
 - [web-development](#web-development) (5)
-- [writing](#writing) (95)
+- [writing](#writing) (96)
 - [yoga](#yoga) (12)
 
 ---
@@ -4626,12 +4626,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `emotional-intelligence`
 - **Source File:** 022-business.json
 
+### Giving a wedding toast
+- **Slug:** `giving-wedding-toast`
+- **Description:** Learn to prepare and deliver memorable toasts at weddings and celebrations
+- **Primary Competencies:** `public-speaking`
+- **Source File:** 028-general-activities.json
+
 ### Interpersonal effectiveness in the workplace
 - **Slug:** `interpersonal-effectiveness-in-the-workplace`
 - **Description:** Navigate workplace relationships and collaborate effectively with diverse personalities
 - **Primary Competencies:** `interpersonal-skills`
 - **Supporting Competencies:** `emotional-intelligence`
 - **Source File:** 022-business.json
+
+### Managing a book club
+- **Slug:** `managing-book-club`
+- **Description:** Learn to organize, facilitate, and sustain an engaging book club
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Professional relationship building
 - **Slug:** `professional-relationship-building`
@@ -4664,6 +4676,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Navigate social situations with confidence and build positive connections
 - **Primary Competencies:** `social-skills`
 - **Source File:** 022-business.json
+
+### Writing and delivering a eulogy
+- **Slug:** `writing-delivering-eulogy`
+- **Description:** Learn to craft and present meaningful eulogies honoring the deceased
+- **Primary Competencies:** `public-speaking`
+- **Source File:** 028-general-activities.json
 
 ---
 
@@ -9603,6 +9621,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `cooking`
 - **Source File:** 017-home-lifestyle.json
 
+### Basic car fluid checks and maintenance
+- **Slug:** `basic-car-fluid-checks`
+- **Description:** Learn to check and maintain essential car fluids like oil, coolant, and brake fluid
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Basic home repairs
 - **Slug:** `basic-home-repairs`
 - **Description:** Fix common household issues like leaky faucets, squeaky doors, and minor wall damage
@@ -9650,6 +9674,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `auto-maintenance`
 - **Source File:** 017-home-lifestyle.json
 
+### Building a compost bin
+- **Slug:** `building-compost-bin`
+- **Description:** Learn to construct and maintain a home composting system
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Building a raised garden bed
+- **Slug:** `building-raised-garden-bed`
+- **Description:** Learn to construct and set up raised beds for vegetable gardening
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Building a terrarium
+- **Slug:** `building-terrarium`
+- **Description:** Learn to create and maintain closed or open terrariums with plants and decor
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Car maintenance and fluid changes
 - **Slug:** `car-maintenance-fluid-changes`
 - **Description:** Perform routine vehicle maintenance like oil changes, tire rotations, and filter replacements
@@ -9676,6 +9718,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `tiling`
 - **Supporting Competencies:** `home-repair`
 - **Source File:** 017-home-lifestyle.json
+
+### Changing a car tire
+- **Slug:** `changing-car-tire`
+- **Description:** Learn to safely change a flat tire on your vehicle
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Childproofing a home
+- **Slug:** `childproofing-home`
+- **Description:** Learn to identify and address safety hazards when childproofing your living space
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Classic cocktail recipes and variations
 - **Slug:** `classic-cocktail-recipes-variations`
@@ -9707,6 +9761,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Mix classic and modern cocktails with proper techniques, ingredients, and presentation
 - **Primary Competencies:** `mixology`
 - **Source File:** 017-home-lifestyle.json
+
+### Creating a capsule wardrobe
+- **Slug:** `creating-capsule-wardrobe`
+- **Description:** Learn to build a versatile, minimalist wardrobe with interchangeable pieces
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Creating a home emergency kit
+- **Slug:** `creating-home-emergency-kit`
+- **Description:** Learn to assemble and maintain essential supplies for home emergencies
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Croissant and laminated pastry
 - **Slug:** `croissant-laminated-pastry`
@@ -9875,6 +9941,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `gardening`, `composting`
 - **Source File:** 017-home-lifestyle.json
 
+### Hosting a dinner party
+- **Slug:** `hosting-dinner-party`
+- **Description:** Learn to plan, prepare, and host successful dinner parties for guests
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Indoor hydroponic growing systems
 - **Slug:** `indoor-hydroponic-growing-systems`
 - **Description:** Set up and maintain soil-free growing systems for year-round indoor cultivation
@@ -9901,6 +9973,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `cooking`
 - **Supporting Competencies:** `knife-skills`
 - **Source File:** 017-home-lifestyle.json
+
+### Jump-starting a car
+- **Slug:** `jump-starting-car`
+- **Description:** Learn to safely jump-start a car with a dead battery
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Kitchen renovation projects
 - **Slug:** `kitchen-renovation-projects`
@@ -9949,6 +10027,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `home-repair`
 - **Source File:** 017-home-lifestyle.json
 
+### Moving to a new home efficiently
+- **Slug:** `moving-new-home-efficiently`
+- **Description:** Learn strategies for packing, organizing, and executing a smooth residential move
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Native plant landscaping
 - **Slug:** `native-plant-landscaping`
 - **Description:** Design low-maintenance landscapes using native plants adapted to local conditions
@@ -9963,6 +10047,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `gardening`, `composting`
 - **Source File:** 017-home-lifestyle.json
 
+### Organizing a garage sale
+- **Slug:** `organizing-garage-sale`
+- **Description:** Learn to plan, price, advertise, and run a successful garage or yard sale
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Organizing a garage workshop
+- **Slug:** `organizing-garage-workshop`
+- **Description:** Learn to efficiently organize tools, materials, and workspace in a garage
+- **Primary Competencies:** `decluttering`
+- **Source File:** 028-general-activities.json
+
 ### Outdoor deck and fence building
 - **Slug:** `outdoor-deck-fence-building`
 - **Description:** Construct durable outdoor structures with proper framing and weather protection
@@ -9970,12 +10066,42 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `woodworking`
 - **Source File:** 017-home-lifestyle.json
 
+### Packing efficiently for international travel
+- **Slug:** `packing-international-travel`
+- **Description:** Master efficient packing strategies for long trips and international travel
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Pet-proofing a home
+- **Slug:** `pet-proofing-home`
+- **Description:** Learn to create a safe home environment for dogs, cats, and other pets
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### PEX and copper pipe plumbing
 - **Slug:** `pex-copper-pipe-plumbing`
 - **Description:** Install water supply lines using modern PEX and traditional copper piping
 - **Primary Competencies:** `plumbing`
 - **Supporting Competencies:** `home-repair`
 - **Source File:** 017-home-lifestyle.json
+
+### Planning a road trip
+- **Slug:** `planning-road-trip`
+- **Description:** Learn to plan routes, accommodations, and logistics for successful road trips
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Planning a surprise party
+- **Slug:** `planning-surprise-party`
+- **Description:** Learn to coordinate logistics, maintain secrecy, and execute memorable surprise parties
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Planning a wedding
+- **Slug:** `planning-wedding`
+- **Description:** Learn to organize and execute all aspects of wedding planning from budget to ceremony
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Plant-based and vegan cooking
 - **Slug:** `plant-based-vegan-cooking`
@@ -10025,6 +10151,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `aquarium-keeping`
 - **Supporting Competencies:** `pet-care`
 - **Source File:** 017-home-lifestyle.json
+
+### Setting up a home aquarium
+- **Slug:** `setting-up-home-aquarium`
+- **Description:** Learn to set up, cycle, and stock a freshwater or saltwater aquarium
+- **Primary Competencies:** `aquarium-keeping`
+- **Source File:** 028-general-activities.json
+
+### Setting up a home theater system
+- **Slug:** `setting-up-home-theater`
+- **Description:** Learn to configure audio, video, and smart home components for optimal home theater experience
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Setting up a hydroponic garden
+- **Slug:** `setting-up-hydroponic-garden`
+- **Description:** Learn to build and maintain hydroponic growing systems for vegetables and herbs
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Small apartment interior design
 - **Slug:** `small-apartment-interior-design`
@@ -10358,6 +10502,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `american-sign-language`
 - **Source File:** 013-languages.json
 
+### Australian Sign Language fundamentals
+- **Slug:** `australian-sign-language-fundamentals`
+- **Description:** Learn Auslan basics for communication with Australian deaf communities
+- **Primary Competencies:** `australian-sign-language`
+- **Source File:** 013-languages.json
+
+### Belarusian language and cultural identity
+- **Slug:** `belarusian-language-cultural-identity`
+- **Description:** Understand Belarusian linguistic identity and language preservation efforts
+- **Primary Competencies:** `belarusian`
+- **Source File:** 013-languages.json
+
 ### Biblical Hebrew reading
 - **Slug:** `biblical-hebrew-reading`
 - **Description:** Learn to read and interpret biblical Hebrew texts
@@ -10380,6 +10536,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `business-arabic`
 - **Description:** Learn professional Arabic for business contexts in the Arab world
 - **Primary Competencies:** `arabic`
+- **Source File:** 013-languages.json
+
+### Business Azerbaijani
+- **Slug:** `business-azerbaijani`
+- **Description:** Develop professional Azerbaijani skills for Caucasus business contexts
+- **Primary Competencies:** `azerbaijani`
 - **Source File:** 013-languages.json
 
 ### Business Dutch
@@ -10448,6 +10610,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `russian`
 - **Source File:** 013-languages.json
 
+### Business Somali
+- **Slug:** `business-somali`
+- **Description:** Learn professional Somali for business contexts and diaspora communities
+- **Primary Competencies:** `somali`
+- **Source File:** 013-languages.json
+
 ### Business Spanish
 - **Slug:** `business-spanish`
 - **Description:** Develop professional Spanish language skills for the workplace
@@ -10460,10 +10628,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `turkish`
 - **Source File:** 013-languages.json
 
+### Business Uzbek
+- **Slug:** `business-uzbek`
+- **Description:** Develop professional Uzbek skills for business in Central Asian markets
+- **Primary Competencies:** `uzbek`
+- **Source File:** 013-languages.json
+
 ### Cantonese tones and pronunciation
 - **Slug:** `cantonese-tones-pronunciation`
 - **Description:** Master the nine tones of Cantonese for accurate pronunciation
 - **Primary Competencies:** `cantonese`
+- **Source File:** 013-languages.json
+
+### Cherokee language preservation
+- **Slug:** `cherokee-language-preservation`
+- **Description:** Participate in Cherokee language revitalization and cultural preservation efforts
+- **Primary Competencies:** `cherokee`
+- **Source File:** 013-languages.json
+
+### Chinese Sign Language fundamentals
+- **Slug:** `chinese-sign-language-fundamentals`
+- **Description:** Learn CSL basics for communication with Chinese deaf communities
+- **Primary Competencies:** `chinese-sign-language`
 - **Source File:** 013-languages.json
 
 ### Classical Arabic reading
@@ -10472,10 +10658,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `classical-arabic`
 - **Source File:** 013-languages.json
 
+### Classical Chinese for historical documents
+- **Slug:** `classical-chinese-historical-documents`
+- **Description:** Develop skills in reading pre-modern Chinese historical records and official documents
+- **Primary Competencies:** `classical-chinese`
+- **Source File:** 013-languages.json
+
 ### Classical Latin reading
 - **Slug:** `classical-latin-reading`
 - **Description:** Learn to read classical Latin texts from ancient Rome
 - **Primary Competencies:** `latin`
+- **Source File:** 013-languages.json
+
+### Classical Tibetan for Buddhist texts
+- **Slug:** `classical-tibetan-buddhist-texts`
+- **Description:** Learn to read Classical Tibetan to access Buddhist scriptures and commentaries
+- **Primary Competencies:** `tibetan`
 - **Source File:** 013-languages.json
 
 ### Conference interpreting fundamentals
@@ -10526,10 +10724,34 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `assamese`
 - **Source File:** 013-languages.json
 
+### Conversational Australian Sign Language
+- **Slug:** `conversational-australian-sign-language`
+- **Description:** Develop conversational fluency in Auslan for everyday communication
+- **Primary Competencies:** `australian-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Azerbaijani
+- **Slug:** `conversational-azerbaijani`
+- **Description:** Learn to speak Azerbaijani for communication in Azerbaijan and Iran
+- **Primary Competencies:** `azerbaijani`
+- **Source File:** 013-languages.json
+
+### Conversational Balochi
+- **Slug:** `conversational-balochi`
+- **Description:** Learn to speak Balochi for communication with Baloch communities
+- **Primary Competencies:** `balochi`
+- **Source File:** 013-languages.json
+
 ### Conversational Basque
 - **Slug:** `conversational-basque`
 - **Description:** Build speaking and listening proficiency for everyday Basque conversations
 - **Primary Competencies:** `basque`
+- **Source File:** 013-languages.json
+
+### Conversational Belarusian
+- **Slug:** `conversational-belarusian`
+- **Description:** Learn to speak Belarusian for communication in Belarus
+- **Primary Competencies:** `belarusian`
 - **Source File:** 013-languages.json
 
 ### Conversational Bengali
@@ -10574,6 +10796,30 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `catalan`
 - **Source File:** 013-languages.json
 
+### Conversational Cebuano
+- **Slug:** `conversational-cebuano`
+- **Description:** Learn to speak Cebuano for communication in the Visayas and Mindanao, Philippines
+- **Primary Competencies:** `cebuano`
+- **Source File:** 013-languages.json
+
+### Conversational Cherokee
+- **Slug:** `conversational-cherokee`
+- **Description:** Learn to speak Cherokee for communication with Cherokee Nation communities
+- **Primary Competencies:** `cherokee`
+- **Source File:** 013-languages.json
+
+### Conversational Chinese Sign Language
+- **Slug:** `conversational-chinese-sign-language`
+- **Description:** Develop conversational fluency in CSL for everyday communication
+- **Primary Competencies:** `chinese-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Cornish
+- **Slug:** `conversational-cornish`
+- **Description:** Learn to speak Kernewek as part of Cornish language revival efforts
+- **Primary Competencies:** `cornish`
+- **Source File:** 013-languages.json
+
 ### Conversational Croatian
 - **Slug:** `conversational-croatian`
 - **Description:** Build speaking and listening proficiency for everyday Croatian conversations
@@ -10590,6 +10836,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `conversational-danish`
 - **Description:** Build speaking and listening proficiency for everyday Danish conversations
 - **Primary Competencies:** `danish`
+- **Source File:** 013-languages.json
+
+### Conversational Dothraki
+- **Slug:** `conversational-dothraki`
+- **Description:** Learn to speak Dothraki for engagement with Game of Thrones
+- **Primary Competencies:** `dothraki`
 - **Source File:** 013-languages.json
 
 ### Conversational Dutch
@@ -10610,6 +10862,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `estonian`
 - **Source File:** 013-languages.json
 
+### Conversational Faroese
+- **Slug:** `conversational-faroese`
+- **Description:** Learn to speak Faroese for communication in the Faroe Islands
+- **Primary Competencies:** `faroese`
+- **Source File:** 013-languages.json
+
+### Conversational Fijian
+- **Slug:** `conversational-fijian`
+- **Description:** Learn to speak Fijian for communication in Fiji
+- **Primary Competencies:** `fijian`
+- **Source File:** 013-languages.json
+
 ### Conversational Filipino (Tagalog)
 - **Slug:** `conversational-filipino-tagalog`
 - **Description:** Build speaking and listening proficiency for everyday Filipino conversations
@@ -10628,6 +10892,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `french`
 - **Source File:** 013-languages.json
 
+### Conversational French Sign Language
+- **Slug:** `conversational-french-sign-language`
+- **Description:** Develop conversational fluency in LSF for everyday communication
+- **Primary Competencies:** `french-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Fulani (Fula)
+- **Slug:** `conversational-fulani`
+- **Description:** Learn to speak Fulani for communication across West Africa
+- **Primary Competencies:** `fulani`
+- **Source File:** 013-languages.json
+
+### Conversational Galician
+- **Slug:** `conversational-galician`
+- **Description:** Learn to speak Galician for communication in Galicia, Spain
+- **Primary Competencies:** `galician`
+- **Source File:** 013-languages.json
+
 ### Conversational Georgian
 - **Slug:** `conversational-georgian`
 - **Description:** Build speaking and listening proficiency for everyday Georgian conversations
@@ -10640,10 +10922,34 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `german`
 - **Source File:** 013-languages.json
 
+### Conversational German Sign Language
+- **Slug:** `conversational-german-sign-language`
+- **Description:** Develop conversational fluency in DGS for everyday communication
+- **Primary Competencies:** `german-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Greenlandic (Kalaallisut)
+- **Slug:** `conversational-greenlandic`
+- **Description:** Learn to speak Kalaallisut for communication in Greenland
+- **Primary Competencies:** `greenlandic`
+- **Source File:** 013-languages.json
+
+### Conversational Guarani
+- **Slug:** `conversational-guarani`
+- **Description:** Learn to speak Guarani for communication in Paraguay and surrounding regions
+- **Primary Competencies:** `guarani`
+- **Source File:** 013-languages.json
+
 ### Conversational Gujarati
 - **Slug:** `conversational-gujarati`
 - **Description:** Build speaking and listening proficiency for everyday Gujarati conversations
 - **Primary Competencies:** `gujarati`
+- **Source File:** 013-languages.json
+
+### Conversational Hakka
+- **Slug:** `conversational-hakka`
+- **Description:** Learn to speak Hakka for communication with Hakka communities
+- **Primary Competencies:** `hakka`
 - **Source File:** 013-languages.json
 
 ### Conversational Hausa
@@ -10658,10 +10964,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `hawaiian`
 - **Source File:** 013-languages.json
 
+### Conversational High Valyrian
+- **Slug:** `conversational-high-valyrian`
+- **Description:** Learn to speak High Valyrian for engagement with Game of Thrones/House of the Dragon
+- **Primary Competencies:** `high-valyrian`
+- **Source File:** 013-languages.json
+
 ### Conversational Hindi
 - **Slug:** `conversational-hindi`
 - **Description:** Build speaking and listening proficiency for everyday Hindi conversations
 - **Primary Competencies:** `hindi`
+- **Source File:** 013-languages.json
+
+### Conversational Hmong
+- **Slug:** `conversational-hmong`
+- **Description:** Learn to speak Hmong for communication with Hmong communities
+- **Primary Competencies:** `hmong`
 - **Source File:** 013-languages.json
 
 ### Conversational Hungarian
@@ -10682,10 +11000,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `igbo`
 - **Source File:** 013-languages.json
 
+### Conversational Indian Sign Language
+- **Slug:** `conversational-indian-sign-language`
+- **Description:** Develop conversational fluency in ISL for everyday communication
+- **Primary Competencies:** `indian-sign-language`
+- **Source File:** 013-languages.json
+
 ### Conversational Indonesian
 - **Slug:** `conversational-indonesian`
 - **Description:** Build speaking and listening proficiency for everyday Indonesian conversations
 - **Primary Competencies:** `indonesian`
+- **Source File:** 013-languages.json
+
+### Conversational Interlingua
+- **Slug:** `conversational-interlingua`
+- **Description:** Learn to read and speak Interlingua for international communication
+- **Primary Competencies:** `interlingua`
+- **Source File:** 013-languages.json
+
+### Conversational Inuktitut
+- **Slug:** `conversational-inuktitut`
+- **Description:** Learn to speak Inuktitut for communication with Inuit communities
+- **Primary Competencies:** `inuktitut`
 - **Source File:** 013-languages.json
 
 ### Conversational Irish Gaelic
@@ -10700,10 +11036,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `italian`
 - **Source File:** 013-languages.json
 
+### Conversational Italian Sign Language
+- **Slug:** `conversational-italian-sign-language`
+- **Description:** Develop conversational fluency in LIS for everyday communication
+- **Primary Competencies:** `italian-sign-language`
+- **Source File:** 013-languages.json
+
 ### Conversational Japanese
 - **Slug:** `conversational-japanese`
 - **Description:** Build speaking and listening skills for everyday Japanese conversations
 - **Primary Competencies:** `japanese`
+- **Source File:** 013-languages.json
+
+### Conversational Japanese Sign Language
+- **Slug:** `conversational-japanese-sign-language`
+- **Description:** Develop conversational fluency in JSL for everyday communication
+- **Primary Competencies:** `japanese-sign-language`
 - **Source File:** 013-languages.json
 
 ### Conversational Javanese
@@ -10730,10 +11078,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `khmer`
 - **Source File:** 013-languages.json
 
+### Conversational Klingon for fan communities
+- **Slug:** `conversational-klingon-fan-communities`
+- **Description:** Learn to speak and understand Klingon for engagement with Star Trek fandom
+- **Primary Competencies:** `klingon`
+- **Source File:** 013-languages.json
+
 ### Conversational Korean
 - **Slug:** `conversational-korean`
 - **Description:** Develop speaking and listening proficiency for everyday Korean conversations
 - **Primary Competencies:** `korean`
+- **Source File:** 013-languages.json
+
+### Conversational Kurdish
+- **Slug:** `conversational-kurdish`
+- **Description:** Learn to speak Kurdish for communication with Kurdish communities
+- **Primary Competencies:** `kurdish`
+- **Source File:** 013-languages.json
+
+### Conversational Kyrgyz
+- **Slug:** `conversational-kyrgyz`
+- **Description:** Learn to speak Kyrgyz for communication in Kyrgyzstan
+- **Primary Competencies:** `kyrgyz`
 - **Source File:** 013-languages.json
 
 ### Conversational Lao
@@ -10748,10 +11114,34 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `latvian`
 - **Source File:** 013-languages.json
 
+### Conversational Lingala
+- **Slug:** `conversational-lingala`
+- **Description:** Learn to speak Lingala for communication in Congo River region communities
+- **Primary Competencies:** `lingala`
+- **Source File:** 013-languages.json
+
 ### Conversational Lithuanian
 - **Slug:** `conversational-lithuanian`
 - **Description:** Build speaking and listening proficiency for everyday Lithuanian conversations
 - **Primary Competencies:** `lithuanian`
+- **Source File:** 013-languages.json
+
+### Conversational Luxembourgish
+- **Slug:** `conversational-luxembourgish`
+- **Description:** Learn to speak Luxembourgish for living and working in Luxembourg
+- **Primary Competencies:** `luxembourgish`
+- **Source File:** 013-languages.json
+
+### Conversational Macedonian
+- **Slug:** `conversational-macedonian`
+- **Description:** Learn to speak Macedonian for communication in North Macedonia
+- **Primary Competencies:** `macedonian`
+- **Source File:** 013-languages.json
+
+### Conversational Malagasy
+- **Slug:** `conversational-malagasy`
+- **Description:** Learn to speak Malagasy for communication in Madagascar
+- **Primary Competencies:** `malagasy`
 - **Source File:** 013-languages.json
 
 ### Conversational Malay
@@ -10766,10 +11156,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `malayalam`
 - **Source File:** 013-languages.json
 
+### Conversational Maltese
+- **Slug:** `conversational-maltese`
+- **Description:** Learn to speak Maltese for communication in Malta
+- **Primary Competencies:** `maltese`
+- **Source File:** 013-languages.json
+
 ### Conversational Mandarin Chinese
 - **Slug:** `conversational-mandarin-chinese`
 - **Description:** Develop speaking and listening skills for everyday conversations in Mandarin Chinese
 - **Primary Competencies:** `mandarin-chinese`
+- **Source File:** 013-languages.json
+
+### Conversational Manx
+- **Slug:** `conversational-manx`
+- **Description:** Learn to speak Manx Gaelic as part of Isle of Man language revival efforts
+- **Primary Competencies:** `manx`
 - **Source File:** 013-languages.json
 
 ### Conversational Maori
@@ -10782,6 +11184,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `conversational-marathi`
 - **Description:** Develop speaking and listening skills for everyday Marathi conversations
 - **Primary Competencies:** `marathi`
+- **Source File:** 013-languages.json
+
+### Conversational Min Nan
+- **Slug:** `conversational-min-nan`
+- **Description:** Learn to speak Min Nan (Hokkien/Taiwanese) for communication in Taiwan and Fujian
+- **Primary Competencies:** `min-nan`
 - **Source File:** 013-languages.json
 
 ### Conversational Modern Greek
@@ -10802,6 +11210,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `mongolian`
 - **Source File:** 013-languages.json
 
+### Conversational Na'vi
+- **Slug:** `conversational-navi`
+- **Description:** Learn to speak Na'vi for engagement with Avatar
+- **Primary Competencies:** `navi`
+- **Source File:** 013-languages.json
+
+### Conversational Nahuatl
+- **Slug:** `conversational-nahuatl`
+- **Description:** Learn to speak Nahuatl for communication with speakers and cultural preservation
+- **Primary Competencies:** `nahuatl`
+- **Source File:** 013-languages.json
+
+### Conversational Navajo
+- **Slug:** `conversational-navajo`
+- **Description:** Learn to speak Diné bizaad for communication with Navajo Nation communities
+- **Primary Competencies:** `navajo`
+- **Source File:** 013-languages.json
+
 ### Conversational Nepali
 - **Slug:** `conversational-nepali`
 - **Description:** Develop speaking and listening skills for everyday Nepali conversations
@@ -10814,10 +11240,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `norwegian`
 - **Source File:** 013-languages.json
 
+### Conversational Occitan
+- **Slug:** `conversational-occitan`
+- **Description:** Learn to speak Occitan for communication in southern France
+- **Primary Competencies:** `occitan`
+- **Source File:** 013-languages.json
+
 ### Conversational Odia
 - **Slug:** `conversational-odia`
 - **Description:** Develop speaking and listening skills for everyday Odia conversations
 - **Primary Competencies:** `odia`
+- **Source File:** 013-languages.json
+
+### Conversational Oromo
+- **Slug:** `conversational-oromo`
+- **Description:** Learn to speak Oromo for communication in Ethiopia and the Horn of Africa
+- **Primary Competencies:** `oromo`
 - **Source File:** 013-languages.json
 
 ### Conversational Pashto
@@ -10850,6 +11288,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `punjabi`
 - **Source File:** 013-languages.json
 
+### Conversational Quechua
+- **Slug:** `conversational-quechua`
+- **Description:** Learn to speak Quechua for communication with Andean communities
+- **Primary Competencies:** `quechua`
+- **Source File:** 013-languages.json
+
+### Conversational Quenya for Tolkien immersion
+- **Slug:** `conversational-quenya-tolkien`
+- **Description:** Learn to speak Quenya for deeper engagement with Tolkien's Middle-earth
+- **Primary Competencies:** `quenya`
+- **Source File:** 013-languages.json
+
 ### Conversational Romanian
 - **Slug:** `conversational-romanian`
 - **Description:** Build speaking and listening proficiency for everyday Romanian conversations
@@ -10860,6 +11310,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `conversational-russian`
 - **Description:** Develop speaking and listening skills for everyday Russian conversations
 - **Primary Competencies:** `russian`
+- **Source File:** 013-languages.json
+
+### Conversational Russian Sign Language
+- **Slug:** `conversational-russian-sign-language`
+- **Description:** Develop conversational fluency in RSL for everyday communication
+- **Primary Competencies:** `russian-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Sami
+- **Slug:** `conversational-sami`
+- **Description:** Learn to speak Northern Sami for communication with Sami communities
+- **Primary Competencies:** `sami`
 - **Source File:** 013-languages.json
 
 ### Conversational Samoan
@@ -10878,6 +11340,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `conversational-serbian`
 - **Description:** Develop speaking and listening skills for everyday Serbian conversations
 - **Primary Competencies:** `serbian`
+- **Source File:** 013-languages.json
+
+### Conversational Shona
+- **Slug:** `conversational-shona`
+- **Description:** Learn to speak Shona for communication in Zimbabwe and Mozambique
+- **Primary Competencies:** `shona`
+- **Source File:** 013-languages.json
+
+### Conversational Sindarin for Tolkien immersion
+- **Slug:** `conversational-sindarin-tolkien`
+- **Description:** Learn to speak Sindarin for deeper engagement with Tolkien's Middle-earth
+- **Primary Competencies:** `sindarin`
 - **Source File:** 013-languages.json
 
 ### Conversational Sindhi
@@ -10904,10 +11378,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `slovenian`
 - **Source File:** 013-languages.json
 
+### Conversational Somali
+- **Slug:** `conversational-somali`
+- **Description:** Develop speaking and listening skills for everyday Somali conversations
+- **Primary Competencies:** `somali`
+- **Source File:** 013-languages.json
+
 ### Conversational Spanish
 - **Slug:** `conversational-spanish`
 - **Description:** Build speaking and listening skills for everyday Spanish conversations
 - **Primary Competencies:** `spanish`
+- **Source File:** 013-languages.json
+
+### Conversational Spanish Sign Language
+- **Slug:** `conversational-spanish-sign-language`
+- **Description:** Develop conversational fluency in LSE for everyday communication
+- **Primary Competencies:** `spanish-sign-language`
+- **Source File:** 013-languages.json
+
+### Conversational Sundanese
+- **Slug:** `conversational-sundanese`
+- **Description:** Learn to speak Sundanese for communication in West Java, Indonesia
+- **Primary Competencies:** `sundanese`
 - **Source File:** 013-languages.json
 
 ### Conversational Swahili
@@ -10922,10 +11414,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `swedish`
 - **Source File:** 013-languages.json
 
+### Conversational Tahitian
+- **Slug:** `conversational-tahitian`
+- **Description:** Learn to speak Tahitian for communication in French Polynesia
+- **Primary Competencies:** `tahitian`
+- **Source File:** 013-languages.json
+
+### Conversational Tajik
+- **Slug:** `conversational-tajik`
+- **Description:** Learn to speak Tajik for communication in Tajikistan
+- **Primary Competencies:** `tajik`
+- **Source File:** 013-languages.json
+
 ### Conversational Tamil
 - **Slug:** `conversational-tamil`
 - **Description:** Develop speaking and listening skills for everyday Tamil conversations
 - **Primary Competencies:** `tamil`
+- **Source File:** 013-languages.json
+
+### Conversational Tatar
+- **Slug:** `conversational-tatar`
+- **Description:** Learn to speak Tatar for communication in Tatarstan and Tatar communities
+- **Primary Competencies:** `tatar`
 - **Source File:** 013-languages.json
 
 ### Conversational Telugu
@@ -10940,10 +11450,40 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `thai`
 - **Source File:** 013-languages.json
 
+### Conversational Tibetan
+- **Slug:** `conversational-tibetan`
+- **Description:** Learn to speak Tibetan for communication with Tibetan communities
+- **Primary Competencies:** `tibetan`
+- **Source File:** 013-languages.json
+
+### Conversational Tigrinya
+- **Slug:** `conversational-tigrinya`
+- **Description:** Learn to speak Tigrinya for communication in Eritrea and northern Ethiopia
+- **Primary Competencies:** `tigrinya`
+- **Source File:** 013-languages.json
+
+### Conversational Toki Pona
+- **Slug:** `conversational-toki-pona`
+- **Description:** Learn to communicate using Toki Pona's minimalist vocabulary and conceptual thinking
+- **Primary Competencies:** `toki-pona`
+- **Source File:** 013-languages.json
+
+### Conversational Tongan
+- **Slug:** `conversational-tongan`
+- **Description:** Learn to speak Tongan for communication in Tonga
+- **Primary Competencies:** `tongan`
+- **Source File:** 013-languages.json
+
 ### Conversational Turkish
 - **Slug:** `conversational-turkish`
 - **Description:** Build speaking and listening proficiency for everyday Turkish conversations
 - **Primary Competencies:** `turkish`
+- **Source File:** 013-languages.json
+
+### Conversational Turkmen
+- **Slug:** `conversational-turkmen`
+- **Description:** Learn to speak Turkmen for communication in Turkmenistan
+- **Primary Competencies:** `turkmen`
 - **Source File:** 013-languages.json
 
 ### Conversational Ukrainian
@@ -10958,6 +11498,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `urdu`
 - **Source File:** 013-languages.json
 
+### Conversational Uyghur
+- **Slug:** `conversational-uyghur`
+- **Description:** Learn to speak Uyghur for communication with Uyghur communities
+- **Primary Competencies:** `uyghur`
+- **Source File:** 013-languages.json
+
+### Conversational Uzbek
+- **Slug:** `conversational-uzbek`
+- **Description:** Learn to speak Uzbek for communication in Uzbekistan and Central Asia
+- **Primary Competencies:** `uzbek`
+- **Source File:** 013-languages.json
+
 ### Conversational Vietnamese
 - **Slug:** `conversational-vietnamese`
 - **Description:** Develop speaking and listening skills for everyday Vietnamese conversations
@@ -10970,10 +11522,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `welsh`
 - **Source File:** 013-languages.json
 
+### Conversational Wolof
+- **Slug:** `conversational-wolof`
+- **Description:** Learn to speak Wolof for communication in Senegal and the Gambia
+- **Primary Competencies:** `wolof`
+- **Source File:** 013-languages.json
+
+### Conversational Wu Chinese
+- **Slug:** `conversational-wu-chinese`
+- **Description:** Learn to speak Wu Chinese (Shanghainese and related dialects)
+- **Primary Competencies:** `wu-chinese`
+- **Source File:** 013-languages.json
+
 ### Conversational Xhosa
 - **Slug:** `conversational-xhosa`
 - **Description:** Develop speaking and listening skills for everyday Xhosa conversations
 - **Primary Competencies:** `xhosa`
+- **Source File:** 013-languages.json
+
+### Conversational Yiddish
+- **Slug:** `conversational-yiddish`
+- **Description:** Learn to speak Yiddish for communication with Yiddish-speaking communities
+- **Primary Competencies:** `yiddish`
 - **Source File:** 013-languages.json
 
 ### Conversational Yoruba
@@ -10982,10 +11552,22 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `yoruba`
 - **Source File:** 013-languages.json
 
+### Conversational Zhuang
+- **Slug:** `conversational-zhuang`
+- **Description:** Learn to speak Zhuang for communication in Guangxi, China
+- **Primary Competencies:** `zhuang`
+- **Source File:** 013-languages.json
+
 ### Conversational Zulu
 - **Slug:** `conversational-zulu`
 - **Description:** Build speaking and listening proficiency for everyday Zulu conversations
 - **Primary Competencies:** `zulu`
+- **Source File:** 013-languages.json
+
+### Cornish language revitalization
+- **Slug:** `cornish-language-revitalization`
+- **Description:** Participate in efforts to revive and preserve the Cornish Celtic language
+- **Primary Competencies:** `cornish`
 - **Source File:** 013-languages.json
 
 ### Egyptian hieroglyphics reading
@@ -11006,11 +11588,29 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `english-second-language`
 - **Source File:** 013-languages.json
 
+### French Sign Language fundamentals
+- **Slug:** `french-sign-language-fundamentals`
+- **Description:** Learn LSF basics for communication with French deaf communities
+- **Primary Competencies:** `french-sign-language`
+- **Source File:** 013-languages.json
+
 ### French-English translation
 - **Slug:** `french-english-translation`
 - **Description:** Master professional translation between French and English
 - **Primary Competencies:** `french`
 - **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Galician literature and cultural identity
+- **Slug:** `galician-literature-cultural-identity`
+- **Description:** Read Galician literature and understand Galician cultural and linguistic identity
+- **Primary Competencies:** `galician`
+- **Source File:** 013-languages.json
+
+### German Sign Language fundamentals
+- **Slug:** `german-sign-language-fundamentals`
+- **Description:** Learn DGS basics for communication with German deaf communities
+- **Primary Competencies:** `german-sign-language`
 - **Source File:** 013-languages.json
 
 ### German-English translation
@@ -11020,10 +11620,70 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `english-second-language`
 - **Source File:** 013-languages.json
 
+### Greenlandic polysynthetic grammar
+- **Slug:** `greenlandic-polysynthetic-grammar`
+- **Description:** Study Kalaallisut's complex polysynthetic word formation and morphology
+- **Primary Competencies:** `greenlandic`
+- **Source File:** 013-languages.json
+
+### Guarani bilingualism in Paraguay
+- **Slug:** `guarani-bilingualism-paraguay`
+- **Description:** Understand Guarani-Spanish bilingualism and Guarani's co-official status in Paraguay
+- **Primary Competencies:** `guarani`
+- **Source File:** 013-languages.json
+
+### High Valyrian grammar and declension
+- **Slug:** `high-valyrian-grammar-declension`
+- **Description:** Master High Valyrian's complex noun declensions and verb conjugations
+- **Primary Competencies:** `high-valyrian`
+- **Source File:** 013-languages.json
+
+### Hmong cultural preservation
+- **Slug:** `hmong-cultural-preservation`
+- **Description:** Learn Hmong language to support cultural preservation efforts
+- **Primary Competencies:** `hmong`
+- **Source File:** 013-languages.json
+
+### Indian Sign Language fundamentals
+- **Slug:** `indian-sign-language-fundamentals`
+- **Description:** Learn ISL basics for communication with Indian deaf communities
+- **Primary Competencies:** `indian-sign-language`
+- **Source File:** 013-languages.json
+
+### International Sign fundamentals
+- **Slug:** `international-sign-fundamentals`
+- **Description:** Learn International Sign for basic communication at international deaf events and conferences
+- **Primary Competencies:** `international-sign`
+- **Source File:** 013-languages.json
+
+### Introduction to sign languages
+- **Slug:** `introduction-sign-languages`
+- **Description:** Learn basic concepts and simple signs common across sign languages before choosing a specific one
+- **Primary Competencies:** `sign-language-general`
+- **Source File:** 013-languages.json
+
+### Inuktitut cultural knowledge and preservation
+- **Slug:** `inuktitut-cultural-preservation`
+- **Description:** Learn Inuktitut to support Arctic indigenous cultural and linguistic preservation
+- **Primary Competencies:** `inuktitut`
+- **Source File:** 013-languages.json
+
 ### Italian culture through language
 - **Slug:** `italian-culture-through-language`
 - **Description:** Explore Italian culture, history, and society while learning the language
 - **Primary Competencies:** `italian`
+- **Source File:** 013-languages.json
+
+### Italian Sign Language fundamentals
+- **Slug:** `italian-sign-language-fundamentals`
+- **Description:** Learn LIS basics for communication with Italian deaf communities
+- **Primary Competencies:** `italian-sign-language`
+- **Source File:** 013-languages.json
+
+### Japanese Sign Language fundamentals
+- **Slug:** `japanese-sign-language-fundamentals`
+- **Description:** Learn JSL basics for communication with Japanese deaf communities
+- **Primary Competencies:** `japanese-sign-language`
 - **Source File:** 013-languages.json
 
 ### Japanese-English translation
@@ -11031,6 +11691,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Develop professional translation skills between Japanese and English
 - **Primary Competencies:** `japanese`
 - **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Kurdish dialects and cultural contexts
+- **Slug:** `kurdish-dialects-cultural-contexts`
+- **Description:** Understand Kurmanji, Sorani, and other Kurdish varieties and their cultural contexts
+- **Primary Competencies:** `kurdish`
+- **Source File:** 013-languages.json
+
+### Kurdish language preservation
+- **Slug:** `kurdish-language-preservation`
+- **Description:** Participate in efforts to preserve Kurdish language and cultural identity
+- **Primary Competencies:** `kurdish`
 - **Source File:** 013-languages.json
 
 ### Legal translation and interpretation
@@ -11045,11 +11717,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `spanish`, `french`
 - **Source File:** 013-languages.json
 
+### Maltese Semitic-Romance linguistic features
+- **Slug:** `maltese-semitic-romance-features`
+- **Description:** Study Maltese as a unique Semitic language with heavy Romance influence
+- **Primary Competencies:** `maltese`
+- **Source File:** 013-languages.json
+
 ### Mandarin-English translation
 - **Slug:** `mandarin-english-translation`
 - **Description:** Master professional translation between Mandarin Chinese and English
 - **Primary Competencies:** `mandarin-chinese`
 - **Supporting Competencies:** `english-second-language`
+- **Source File:** 013-languages.json
+
+### Manx language revitalization
+- **Slug:** `manx-language-revitalization`
+- **Description:** Participate in efforts to revive Manx Celtic language and Manx cultural heritage
+- **Primary Competencies:** `manx`
 - **Source File:** 013-languages.json
 
 ### Medical and scientific Latin
@@ -11076,6 +11760,30 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `middle-english`
 - **Source File:** 013-languages.json
 
+### Nahuatl language revitalization
+- **Slug:** `nahuatl-language-revitalization`
+- **Description:** Understand and participate in efforts to preserve and revitalize the Nahuatl language
+- **Primary Competencies:** `nahuatl`
+- **Source File:** 013-languages.json
+
+### Navajo language revitalization
+- **Slug:** `navajo-language-revitalization`
+- **Description:** Participate in efforts to preserve and revitalize the Navajo language
+- **Primary Competencies:** `navajo`
+- **Source File:** 013-languages.json
+
+### Navajo verb system and complex grammar
+- **Slug:** `navajo-verb-system-complex-grammar`
+- **Description:** Study Navajo's intricate verb morphology and grammatical structure
+- **Primary Competencies:** `navajo`
+- **Source File:** 013-languages.json
+
+### Occitan language preservation and cultural heritage
+- **Slug:** `occitan-language-preservation`
+- **Description:** Participate in efforts to preserve Occitan language and southern French cultural heritage
+- **Primary Competencies:** `occitan`
+- **Source File:** 013-languages.json
+
 ### Old English reading
 - **Slug:** `old-english-reading`
 - **Description:** Learn to read Old English texts including Beowulf
@@ -11088,6 +11796,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `old-norse`
 - **Source File:** 013-languages.json
 
+### Quechua cultural preservation
+- **Slug:** `quechua-cultural-preservation`
+- **Description:** Participate in efforts to preserve Quechua language and Andean cultural heritage
+- **Primary Competencies:** `quechua`
+- **Source File:** 013-languages.json
+
+### Quechua dialects and regional variation
+- **Slug:** `quechua-dialects-regional-variation`
+- **Description:** Understand the diversity of Quechua varieties across the Andes
+- **Primary Competencies:** `quechua`
+- **Source File:** 013-languages.json
+
 ### Reading Akkadian cuneiform
 - **Slug:** `reading-akkadian-cuneiform`
 - **Description:** Learn to read cuneiform texts in ancient Akkadian language
@@ -11098,6 +11818,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `reading-writing-arabic-script`
 - **Description:** Master the Arabic alphabet and develop reading and writing proficiency
 - **Primary Competencies:** `arabic`
+- **Source File:** 013-languages.json
+
+### Reading and writing Cherokee syllabary
+- **Slug:** `reading-writing-cherokee-syllabary`
+- **Description:** Master the Cherokee syllabary writing system created by Sequoyah
+- **Primary Competencies:** `cherokee`
 - **Source File:** 013-languages.json
 
 ### Reading and writing Chinese characters
@@ -11130,10 +11856,28 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `hebrew-modern`
 - **Source File:** 013-languages.json
 
+### Reading and writing Klingon script
+- **Slug:** `reading-writing-klingon-script`
+- **Description:** Master the pIqaD writing system and Klingon orthography
+- **Primary Competencies:** `klingon`
+- **Source File:** 013-languages.json
+
 ### Reading and writing Persian script
 - **Slug:** `reading-writing-persian-script`
 - **Description:** Learn the Persian alphabet and develop reading and writing proficiency
 - **Primary Competencies:** `persian`
+- **Source File:** 013-languages.json
+
+### Reading and writing Quenya
+- **Slug:** `reading-writing-quenya`
+- **Description:** Master Quenya grammar, vocabulary, and Tengwar script for the High-elven language
+- **Primary Competencies:** `quenya`
+- **Source File:** 013-languages.json
+
+### Reading and writing Sindarin
+- **Slug:** `reading-writing-sindarin`
+- **Description:** Master Sindarin grammar, vocabulary, and Tengwar script for the Grey-elven language
+- **Primary Competencies:** `sindarin`
 - **Source File:** 013-languages.json
 
 ### Reading and writing Thai script
@@ -11148,10 +11892,46 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `urdu`
 - **Source File:** 013-languages.json
 
+### Reading Classical Chinese literature
+- **Slug:** `reading-classical-chinese-literature`
+- **Description:** Learn to read Literary Chinese to access classical Chinese texts and poetry
+- **Primary Competencies:** `classical-chinese`
+- **Source File:** 013-languages.json
+
+### Reading Coptic for early Christian texts
+- **Slug:** `reading-coptic-early-christian-texts`
+- **Description:** Learn to read Coptic to access early Christian manuscripts and Gnostic texts
+- **Primary Competencies:** `coptic`
+- **Source File:** 013-languages.json
+
+### Reading Ge'ez script for Tigrinya
+- **Slug:** `reading-geez-script-tigrinya`
+- **Description:** Learn to read and write Tigrinya using the Ge'ez/Ethiopic script
+- **Primary Competencies:** `tigrinya`
+- **Source File:** 013-languages.json
+
+### Reading Inuktitut syllabics
+- **Slug:** `reading-inuktitut-syllabics`
+- **Description:** Learn to read and write Inuktitut using the Canadian Aboriginal syllabics writing system
+- **Primary Competencies:** `inuktitut`
+- **Source File:** 013-languages.json
+
 ### Reading Japanese hiragana, katakana, and kanji
 - **Slug:** `reading-japanese-writing-systems`
 - **Description:** Master Japanese writing systems including hiragana, katakana, and common kanji
 - **Primary Competencies:** `japanese`
+- **Source File:** 013-languages.json
+
+### Reading Nahuatl colonial texts
+- **Slug:** `reading-nahuatl-colonial-texts`
+- **Description:** Learn to read historical Nahuatl documents from the colonial period
+- **Primary Competencies:** `nahuatl`
+- **Source File:** 013-languages.json
+
+### Reading Phoenician inscriptions
+- **Slug:** `reading-phoenician-inscriptions`
+- **Description:** Learn to read the Phoenician alphabet and ancient Phoenician inscriptions
+- **Primary Competencies:** `phoenician`
 - **Source File:** 013-languages.json
 
 ### Reading Russian Cyrillic
@@ -11166,16 +11946,52 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `sumerian`
 - **Source File:** 013-languages.json
 
+### Reading Tibetan script
+- **Slug:** `reading-tibetan-script`
+- **Description:** Learn to read and write the Tibetan alphabet and script
+- **Primary Competencies:** `tibetan`
+- **Source File:** 013-languages.json
+
 ### Reading Ukrainian Cyrillic
 - **Slug:** `reading-ukrainian-cyrillic`
 - **Description:** Master the Cyrillic alphabet for Ukrainian reading comprehension
 - **Primary Competencies:** `ukrainian`
 - **Source File:** 013-languages.json
 
+### Reading Uyghur Arabic script
+- **Slug:** `reading-uyghur-arabic-script`
+- **Description:** Learn to read and write Uyghur using the Arabic-based script
+- **Primary Competencies:** `uyghur`
+- **Source File:** 013-languages.json
+
+### Reading Yiddish literature
+- **Slug:** `reading-yiddish-literature`
+- **Description:** Read classic and modern Yiddish literature in the original language
+- **Primary Competencies:** `yiddish`
+- **Source File:** 013-languages.json
+
+### Russian Sign Language fundamentals
+- **Slug:** `russian-sign-language-fundamentals`
+- **Description:** Learn RSL basics for communication with Russian deaf communities
+- **Primary Competencies:** `russian-sign-language`
+- **Source File:** 013-languages.json
+
+### Sami language revitalization and indigenous rights
+- **Slug:** `sami-language-revitalization`
+- **Description:** Participate in Sami language preservation and indigenous cultural rights advocacy
+- **Primary Competencies:** `sami`
+- **Source File:** 013-languages.json
+
 ### Sanskrit reading and grammar
 - **Slug:** `sanskrit-reading-grammar`
 - **Description:** Master Sanskrit grammar and learn to read classical texts
 - **Primary Competencies:** `sanskrit`
+- **Source File:** 013-languages.json
+
+### Spanish Sign Language fundamentals
+- **Slug:** `spanish-sign-language-fundamentals`
+- **Description:** Learn LSE basics for communication with Spanish deaf communities
+- **Primary Competencies:** `spanish-sign-language`
 - **Source File:** 013-languages.json
 
 ### Spanish-English translation
@@ -11189,6 +12005,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Slug:** `vietnamese-tones-pronunciation`
 - **Description:** Master the six tones of Vietnamese for accurate pronunciation
 - **Primary Competencies:** `vietnamese`
+- **Source File:** 013-languages.json
+
+### Yiddish cultural heritage and preservation
+- **Slug:** `yiddish-cultural-heritage-preservation`
+- **Description:** Engage with Yiddish language as a key part of Ashkenazi Jewish cultural heritage
+- **Primary Competencies:** `yiddish`
 - **Source File:** 013-languages.json
 
 ---
@@ -11221,6 +12043,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `negotiation`
 - **Supporting Competencies:** `executive-communication`
 - **Source File:** 022-business.json
+
+### Conducting a job interview as an interviewer
+- **Slug:** `conducting-job-interview`
+- **Description:** Learn effective techniques for interviewing and evaluating job candidates
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Conflict resolution in the workplace
 - **Slug:** `conflict-resolution-in-the-workplace`
@@ -11282,6 +12110,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `executive-communication`
 - **Source File:** 022-business.json
 
+### Facilitating productive meetings
+- **Slug:** `facilitating-productive-meetings`
+- **Description:** Learn techniques for running efficient, focused, and outcome-driven meetings
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Giving constructive feedback
+- **Slug:** `giving-constructive-feedback`
+- **Description:** Learn to deliver helpful, specific, and actionable feedback to others
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Leadership coaching and executive mentoring
 - **Slug:** `leadership-coaching-and-executive-mentoring`
 - **Description:** Develop leaders through structured coaching conversations and mentorship
@@ -11295,6 +12135,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `leadership`
 - **Supporting Competencies:** `team-management`, `emotional-intelligence`
 - **Source File:** 022-business.json
+
+### Leading icebreaker activities
+- **Slug:** `leading-icebreaker-activities`
+- **Description:** Learn to facilitate engaging icebreakers and team-building activities
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Leading organizational change
 - **Slug:** `leading-organizational-change`
@@ -11315,6 +12161,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Negotiate effectively to reach win-win agreements in business and personal contexts
 - **Primary Competencies:** `negotiation`
 - **Source File:** 022-business.json
+
+### Networking at professional events
+- **Slug:** `networking-professional-events`
+- **Description:** Learn effective strategies for building professional relationships at networking events
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Professional networking strategies
 - **Slug:** `professional-networking-strategies`
@@ -11585,6 +12437,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `historical-linguistics`
 - **Source File:** 013-linguistics.json
 
+### Dothraki cultural vocabulary and worldbuilding
+- **Slug:** `dothraki-cultural-vocabulary-worldbuilding`
+- **Description:** Study how Dothraki vocabulary reflects nomadic warrior culture in constructed languages
+- **Primary Competencies:** `dothraki`
+- **Source File:** 013-languages.json
+
 ### English grammar fundamentals
 - **Slug:** `english-grammar-fundamentals`
 - **Description:** Master the structure and rules of English grammar for clear communication
@@ -11617,12 +12475,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `linguistics-study`
 - **Source File:** 013-linguistics.json
 
+### Ido reformed grammar and Esperanto alternatives
+- **Slug:** `ido-reformed-grammar-esperanto-alternatives`
+- **Description:** Study Ido's systematic improvements to Esperanto as a case study in language reform
+- **Primary Competencies:** `ido`
+- **Source File:** 013-languages.json
+
 ### Indo-European language family
 - **Slug:** `indo-european-language-family`
 - **Description:** Study the relationships between Indo-European languages and their shared origins
 - **Primary Competencies:** `comparative-linguistics`
 - **Supporting Competencies:** `historical-linguistics`
 - **Source File:** 013-linguistics.json
+
+### Interlingua as an international auxiliary language
+- **Slug:** `interlingua-international-auxiliary`
+- **Description:** Understand Interlingua's naturalistic approach to creating an easily-learned Romance-based auxiliary language
+- **Primary Competencies:** `interlingua`
+- **Source File:** 013-languages.json
 
 ### Interpretation skills and techniques
 - **Slug:** `interpretation-skills-and-techniques`
@@ -11635,6 +12505,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Explore the scientific study of language structure, meaning, and use
 - **Primary Competencies:** `linguistics-study`
 - **Source File:** 013-linguistics.json
+
+### Klingon language design for worldbuilding
+- **Slug:** `klingon-language-design-worldbuilding`
+- **Description:** Analyze Klingon's construction to understand how to create believable aggressive/warrior languages
+- **Primary Competencies:** `klingon`
+- **Source File:** 013-languages.json
 
 ### Language acquisition research and theory
 - **Slug:** `language-acquisition-research-and-theory`
@@ -11667,6 +12543,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `language-pedagogy`
 - **Source File:** 013-linguistics.json
 
+### Lojban logical structure and predicate logic
+- **Slug:** `lojban-logical-structure-predicate-logic`
+- **Description:** Study Lojban's unambiguous grammar and application of predicate logic to natural language
+- **Primary Competencies:** `lojban`
+- **Source File:** 013-languages.json
+
+### Na'vi phonology and exotic sound systems
+- **Slug:** `navi-phonology-exotic-sounds`
+- **Description:** Study Na'vi's ejectives and unusual sounds as examples of creating alien-feeling languages
+- **Primary Competencies:** `navi`
+- **Source File:** 013-languages.json
+
 ### Phonetics and pronunciation fundamentals
 - **Slug:** `phonetics-and-pronunciation-fundamentals`
 - **Description:** Study speech sounds and articulation to understand how languages are pronounced
@@ -11680,6 +12568,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `linguistics-study`
 - **Source File:** 013-linguistics.json
 
+### Quenya grammar and linguistic elegance
+- **Slug:** `quenya-grammar-linguistic-elegance`
+- **Description:** Study Quenya's Finnish-inspired structure as a model for creating aesthetically pleasing languages
+- **Primary Competencies:** `quenya`
+- **Source File:** 013-languages.json
+
 ### Raising bilingual children
 - **Slug:** `raising-bilingual-children`
 - **Description:** Support children's development of fluency in two or more languages
@@ -11692,11 +12586,23 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `language-immersion`
 - **Source File:** 013-linguistics.json
 
+### Sign language fundamentals and linguistics
+- **Slug:** `sign-language-fundamentals-linguistics`
+- **Description:** Understand the linguistic structure and universal features of sign languages
+- **Primary Competencies:** `sign-language-general`
+- **Source File:** 013-languages.json
+
 ### Simultaneous and consecutive interpretation
 - **Slug:** `simultaneous-and-consecutive-interpretation`
 - **Description:** Master both simultaneous and consecutive interpretation techniques for professional settings
 - **Primary Competencies:** `interpretation`
 - **Source File:** 013-linguistics.json
+
+### Sindarin phonology and naturalistic language design
+- **Slug:** `sindarin-phonology-naturalistic-design`
+- **Description:** Study Sindarin's sound changes and evolution as a model for creating naturalistic constructed languages
+- **Primary Competencies:** `sindarin`
+- **Source File:** 013-languages.json
 
 ### Sociolinguistics and language variation
 - **Slug:** `sociolinguistics-and-language-variation`
@@ -11740,6 +12646,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `phonetics`
 - **Source File:** 013-linguistics.json
 
+### Toki Pona minimalist philosophy
+- **Slug:** `toki-pona-minimalist-philosophy`
+- **Description:** Understand Toki Pona's 120-word vocabulary and philosophy of linguistic simplicity
+- **Primary Competencies:** `toki-pona`
+- **Source File:** 013-languages.json
+
 ### Translation fundamentals and practice
 - **Slug:** `translation-fundamentals-and-practice`
 - **Description:** Learn to translate written texts between languages with accuracy and cultural sensitivity
@@ -11752,6 +12664,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `vocabulary-building`
 - **Supporting Competencies:** `memory-improvement`
 - **Source File:** 013-linguistics.json
+
+### Volapük historical auxiliary languages
+- **Slug:** `volapuk-historical-auxiliary-languages`
+- **Description:** Study Volapük as the first widely-known constructed international auxiliary language
+- **Primary Competencies:** `volapuk`
+- **Source File:** 013-languages.json
 
 ---
 
@@ -11789,6 +12707,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `brand-strategy`
 - **Supporting Competencies:** `market-research`
 - **Source File:** 032-marketing-sales.json
+
+### Building a personal brand
+- **Slug:** `building-personal-brand`
+- **Description:** Learn to define and communicate your professional identity and expertise
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Building brand strategy and identity
 - **Slug:** `building-brand-strategy-identity`
@@ -15059,6 +15983,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 
 ## personal-development
 
+### Creating a morning routine
+- **Slug:** `creating-morning-routine`
+- **Description:** Design and implement an effective morning routine for productivity and wellness
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Creating a personal vision board
+- **Slug:** `creating-vision-board`
+- **Description:** Learn to create vision boards for goal-setting and visualization
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Creating an evening routine
+- **Slug:** `creating-evening-routine`
+- **Description:** Establish a consistent evening routine for better sleep and next-day preparation
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Cultivating a growth mindset
 - **Slug:** `cultivating-a-growth-mindset`
 - **Description:** Develop the belief that abilities can be developed through dedication and hard work
@@ -15071,6 +16013,24 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `growth-mindset`
 - **Supporting Competencies:** `resilience`
 - **Source File:** 024-personal-development.json
+
+### Managing impostor syndrome
+- **Slug:** `managing-impostor-syndrome`
+- **Description:** Learn strategies for recognizing and overcoming impostor syndrome in professional settings
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Preparing for a job interview
+- **Slug:** `preparing-job-interview`
+- **Description:** Learn strategies for researching, practicing, and succeeding in job interviews
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Preparing for a performance review
+- **Slug:** `preparing-performance-review`
+- **Description:** Learn to document achievements and prepare for productive performance review conversations
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ---
 
@@ -15103,6 +16063,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `personal-finance`
 - **Supporting Competencies:** `tax-planning`
 - **Source File:** 025-personal-finance.json
+
+### Creating a family budget
+- **Slug:** `creating-family-budget`
+- **Description:** Learn to track income and expenses and create realistic household budgets
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Credit card rewards optimization
 - **Slug:** `credit-card-rewards-optimization`
@@ -16019,11 +16985,29 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `goal-setting`
 - **Source File:** 022-business.json
 
+### Building a habit tracking system
+- **Slug:** `building-habit-tracking-system`
+- **Description:** Create and maintain systems for tracking and building positive habits
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Building lasting habits
 - **Slug:** `building-lasting-habits`
 - **Description:** Use behavior science to form positive habits and break unwanted ones
 - **Primary Competencies:** `habit-formation`
 - **Source File:** 022-business.json
+
+### Creating a study schedule
+- **Slug:** `creating-study-schedule`
+- **Description:** Design effective study schedules that balance subjects and optimize learning
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Designing a bullet journal
+- **Slug:** `designing-bullet-journal`
+- **Description:** Learn to set up and maintain a personalized bullet journal system
+- **Supporting Competencies:** `note-taking`
+- **Source File:** 028-general-activities.json
 
 ### Effective goal-setting strategies
 - **Slug:** `effective-goal-setting-strategies`
@@ -16070,6 +17054,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Develop attention control and reduce distractions for deep work
 - **Primary Competencies:** `focus-concentration`
 - **Source File:** 022-business.json
+
+### Managing remote work effectively
+- **Slug:** `managing-remote-work`
+- **Description:** Learn strategies for productivity, communication, and work-life balance when working remotely
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Overcoming procrastination
 - **Slug:** `overcoming-procrastination`
@@ -17261,6 +18251,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Supporting Competencies:** `martial-arts`
 - **Source File:** 019-recreation-hobbies.json
 
+### Building structures in Minecraft
+- **Slug:** `building-structures-minecraft`
+- **Description:** Master architectural and creative building techniques in Minecraft
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
+### Building techniques in Fortnite
+- **Slug:** `building-techniques-fortnite`
+- **Description:** Master fast and effective building strategies for competitive Fortnite play
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Camping essentials and outdoor living
 - **Slug:** `camping-essentials-outdoor-living`
 - **Description:** Set up camp, cook outdoors, and practice campfire safety
@@ -17296,6 +18298,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Develop competitive gaming skills, practice routines, and team coordination for esports
 - **Primary Competencies:** `esports`
 - **Source File:** 019-recreation-hobbies.json
+
+### Competitive strategies in Counter-Strike
+- **Slug:** `competitive-strategies-counter-strike`
+- **Description:** Master competitive tactics, map knowledge, and team play in Counter-Strike
+- **Primary Competencies:** `esports`
+- **Source File:** 028-general-activities.json
+
+### Competitive strategies in League of Legends
+- **Slug:** `competitive-strategies-league-of-legends`
+- **Description:** Learn competitive gameplay, team coordination, and meta strategies for League of Legends
+- **Primary Competencies:** `esports`
+- **Source File:** 028-general-activities.json
 
 ### Couch to 5K running program
 - **Slug:** `couch-to-5k-running-program`
@@ -17480,6 +18494,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `rc-vehicles`
 - **Source File:** 019-recreation-hobbies.json
 
+### Redstone automation in Minecraft
+- **Slug:** `redstone-automation-minecraft`
+- **Description:** Learn to create automated systems and contraptions using Redstone in Minecraft
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
+
 ### Road cycling fundamentals
 - **Slug:** `road-cycling-fundamentals`
 - **Description:** Learn bike handling, gear shifting, and group riding etiquette for road cycling
@@ -17546,6 +18566,18 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `speedcubing`
 - **Source File:** 019-recreation-hobbies.json
 
+### Speedrunning Super Mario 64
+- **Slug:** `speedrunning-super-mario-64`
+- **Description:** Learn strategies and techniques for speedrunning Super Mario 64
+- **Primary Competencies:** `speedrunning`
+- **Source File:** 028-general-activities.json
+
+### Speedrunning The Legend of Zelda: Ocarina of Time
+- **Slug:** `speedrunning-zelda-ocarina-of-time`
+- **Description:** Master glitches and routing for Ocarina of Time speedruns
+- **Primary Competencies:** `speedrunning`
+- **Source File:** 028-general-activities.json
+
 ### Surfing fundamentals and wave reading
 - **Slug:** `surfing-fundamentals-wave-reading`
 - **Description:** Learn to paddle, pop up, and catch waves with proper surf etiquette
@@ -17557,6 +18589,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Description:** Execute turns, cutbacks, and advanced surfing techniques
 - **Primary Competencies:** `surfing`
 - **Source File:** 019-recreation-hobbies.json
+
+### Survival strategies in Minecraft
+- **Slug:** `survival-strategies-minecraft`
+- **Description:** Learn efficient strategies for surviving and thriving in Minecraft survival mode
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Swimming stroke technique
 - **Slug:** `swimming-stroke-technique`
@@ -19334,6 +20372,12 @@ For a quick alphabetical lookup without details, see TOPIC_QUICK_LOOKUP.md
 - **Primary Competencies:** `worldbuilding`
 - **Supporting Competencies:** `fiction-writing`
 - **Source File:** 015-writing.json
+
+### Writing a resume and cover letter
+- **Slug:** `writing-resume-cover-letter`
+- **Description:** Learn to craft compelling resumes and cover letters for job applications
+- **Competencies:** None
+- **Source File:** 028-general-activities.json
 
 ### Writing and completing your first novel
 - **Slug:** `writing-first-novel`

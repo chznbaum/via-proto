@@ -1,7 +1,7 @@
 # Topic Coverage Tree
 
-**Generated:** 2025-11-23T03:44:20.305Z
-**Total Topics:** 2965
+**Generated:** 2025-11-23T04:10:33.457Z
+**Total Topics:** 3139
 **Total Competencies:** 1626
 **Total Categories:** 89
 
@@ -39,7 +39,7 @@ Run `npm run topic:coverage` to update.
 │   ├── Creative Arts [0 topics, 0 competencies]
 │   │   ├── Photography & Video [46 topics, 3 competencies]
 │   │   ├── Music [181 topics, 58 competencies]
-│   │   ├── Writing [95 topics, 52 competencies]
+│   │   ├── Writing [96 topics, 52 competencies]
 │   │   ├── Theater [20 topics, 20 competencies]
 │   │   ├── Visual Arts [51 topics, 50 competencies]
 │   │   └── Dance [42 topics, 42 competencies]
@@ -47,15 +47,15 @@ Run `npm run topic:coverage` to update.
 │   └── Fiber Arts & Crafts [47 topics, 46 competencies]
 ├── Business & Management [0 topics, 0 competencies]
 │   ├── Product & Project Management [22 topics, 11 competencies]
-│   ├── Marketing & Sales [45 topics, 18 competencies]
-│   ├── Leadership & Communication [23 topics, 12 competencies]
+│   ├── Marketing & Sales [46 topics, 18 competencies]
+│   ├── Leadership & Communication [28 topics, 12 competencies]
 │   ├── Finance & Accounting [20 topics, 12 competencies]
-│   │   ├── Personal Finance [26 topics, 22 competencies]
+│   │   ├── Personal Finance [27 topics, 22 competencies]
 │   │   ├── Investing & Trading [29 topics, 26 competencies]
 │   │   └── Corporate Finance [21 topics, 14 competencies]
 │   └── Operations & Strategy [39 topics, 19 competencies]
-├── Linguistics [32 topics, 15 competencies]
-│   ├── Languages [147 topics, 171 competencies]
+├── Linguistics [43 topics, 15 competencies]
+│   ├── Languages [260 topics, 171 competencies]
 │   └── Speech Development & Pathology [0 topics, 0 competencies]
 ├── Mathematics [0 topics, 0 competencies]
 │   ├── Foundational Math [0 topics, 0 competencies]
@@ -81,13 +81,13 @@ Run `npm run topic:coverage` to update.
 │   │   ├── Genetics [14 topics, 4 competencies]
 │   │   └── Neuroscience [18 topics, 5 competencies]
 │   └── Environmental Science [36 topics, 9 competencies]
-├── Personal Development [2 topics, 1 competencies]
-│   ├── Productivity & Time Management [19 topics, 10 competencies]
+├── Personal Development [8 topics, 1 competencies]
+│   ├── Productivity & Time Management [23 topics, 10 competencies]
 │   ├── Cognitive Skills [9 topics, 5 competencies]
 │   │   ├── Critical Thinking [3 topics, 1 competencies]
 │   │   ├── Memory & Learning [18 topics, 9 competencies]
 │   │   └── Problem Solving [3 topics, 1 competencies]
-│   ├── Communication & Interpersonal [18 topics, 9 competencies]
+│   ├── Communication & Interpersonal [21 topics, 9 competencies]
 │   └── Mindfulness & Wellness [18 topics, 9 competencies]
 ├── Health & Fitness [0 topics, 0 competencies]
 │   ├── Fitness & Exercise [0 topics, 0 competencies]
@@ -100,8 +100,8 @@ Run `npm run topic:coverage` to update.
 │       ├── Yoga [12 topics, 10 competencies]
 │       ├── Meditation [11 topics, 8 competencies]
 │       └── Alternative Medicine [24 topics, 16 competencies]
-├── Home & Lifestyle [80 topics, 50 competencies]
-└── Recreation & Hobbies [70 topics, 39 competencies]
+├── Home & Lifestyle [101 topics, 50 competencies]
+└── Recreation & Hobbies [78 topics, 39 competencies]
 ```
 
 ---
@@ -206,7 +206,7 @@ Run `npm run topic:coverage` to update.
 
 ### Communication & Interpersonal
 - **Slug:** `communication-interpersonal`
-- **Topics:** 18
+- **Topics:** 21
 - **Competencies:** 9
 - **Parent:** personal-development
 
@@ -326,7 +326,7 @@ Run `npm run topic:coverage` to update.
 
 ### Home & Lifestyle
 - **Slug:** `home-lifestyle`
-- **Topics:** 80
+- **Topics:** 101
 - **Competencies:** 50
 
 ### Investing & Trading
@@ -337,13 +337,13 @@ Run `npm run topic:coverage` to update.
 
 ### Languages
 - **Slug:** `languages`
-- **Topics:** 147
+- **Topics:** 260
 - **Competencies:** 171
 - **Parent:** linguistics
 
 ### Leadership & Communication
 - **Slug:** `leadership-communication`
-- **Topics:** 23
+- **Topics:** 28
 - **Competencies:** 12
 - **Parent:** business-management
 
@@ -361,12 +361,12 @@ Run `npm run topic:coverage` to update.
 
 ### Linguistics
 - **Slug:** `linguistics`
-- **Topics:** 32
+- **Topics:** 43
 - **Competencies:** 15
 
 ### Marketing & Sales
 - **Slug:** `marketing-sales`
-- **Topics:** 45
+- **Topics:** 46
 - **Competencies:** 18
 - **Parent:** business-management
 
@@ -438,12 +438,12 @@ Run `npm run topic:coverage` to update.
 
 ### Personal Development
 - **Slug:** `personal-development`
-- **Topics:** 2
+- **Topics:** 8
 - **Competencies:** 1
 
 ### Personal Finance
 - **Slug:** `personal-finance`
-- **Topics:** 26
+- **Topics:** 27
 - **Competencies:** 22
 - **Parent:** finance-accounting
 
@@ -473,7 +473,7 @@ Run `npm run topic:coverage` to update.
 
 ### Productivity & Time Management
 - **Slug:** `productivity-time-management`
-- **Topics:** 19
+- **Topics:** 23
 - **Competencies:** 10
 - **Parent:** personal-development
 
@@ -485,7 +485,7 @@ Run `npm run topic:coverage` to update.
 
 ### Recreation & Hobbies
 - **Slug:** `recreation-hobbies`
-- **Topics:** 70
+- **Topics:** 78
 - **Competencies:** 39
 
 ### Software Testing
@@ -544,7 +544,7 @@ Run `npm run topic:coverage` to update.
 
 ### Writing
 - **Slug:** `writing`
-- **Topics:** 95
+- **Topics:** 96
 - **Competencies:** 52
 - **Parent:** creative-arts
 

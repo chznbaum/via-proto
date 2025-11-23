@@ -1332,6 +1332,1122 @@
       "competencies": [
         {"competency_slug": "sindhi", "is_primary": true}
       ]
+    },
+    {
+      "name": "Conversational Klingon for fan communities",
+      "slug": "conversational-klingon-fan-communities",
+      "description": "Learn to speak and understand Klingon for engagement with Star Trek fandom",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "klingon", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Klingon script",
+      "slug": "reading-writing-klingon-script",
+      "description": "Master the pIqaD writing system and Klingon orthography",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "klingon", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Klingon language design for worldbuilding",
+      "slug": "klingon-language-design-worldbuilding",
+      "description": "Analyze Klingon's construction to understand how to create believable aggressive/warrior languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "klingon", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Sindarin for Tolkien immersion",
+      "slug": "conversational-sindarin-tolkien",
+      "description": "Learn to speak Sindarin for deeper engagement with Tolkien's Middle-earth",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sindarin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Sindarin",
+      "slug": "reading-writing-sindarin",
+      "description": "Master Sindarin grammar, vocabulary, and Tengwar script for the Grey-elven language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sindarin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sindarin phonology and naturalistic language design",
+      "slug": "sindarin-phonology-naturalistic-design",
+      "description": "Study Sindarin's sound changes and evolution as a model for creating naturalistic constructed languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "sindarin", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Quenya for Tolkien immersion",
+      "slug": "conversational-quenya-tolkien",
+      "description": "Learn to speak Quenya for deeper engagement with Tolkien's Middle-earth",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "quenya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Quenya",
+      "slug": "reading-writing-quenya",
+      "description": "Master Quenya grammar, vocabulary, and Tengwar script for the High-elven language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "quenya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Quenya grammar and linguistic elegance",
+      "slug": "quenya-grammar-linguistic-elegance",
+      "description": "Study Quenya's Finnish-inspired structure as a model for creating aesthetically pleasing languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "quenya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational High Valyrian",
+      "slug": "conversational-high-valyrian",
+      "description": "Learn to speak High Valyrian for engagement with Game of Thrones/House of the Dragon",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "high-valyrian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "High Valyrian grammar and declension",
+      "slug": "high-valyrian-grammar-declension",
+      "description": "Master High Valyrian's complex noun declensions and verb conjugations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "high-valyrian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Dothraki",
+      "slug": "conversational-dothraki",
+      "description": "Learn to speak Dothraki for engagement with Game of Thrones",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "dothraki", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Dothraki cultural vocabulary and worldbuilding",
+      "slug": "dothraki-cultural-vocabulary-worldbuilding",
+      "description": "Study how Dothraki vocabulary reflects nomadic warrior culture in constructed languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "dothraki", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Na'vi",
+      "slug": "conversational-navi",
+      "description": "Learn to speak Na'vi for engagement with Avatar",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "navi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Na'vi phonology and exotic sound systems",
+      "slug": "navi-phonology-exotic-sounds",
+      "description": "Study Na'vi's ejectives and unusual sounds as examples of creating alien-feeling languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "navi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Toki Pona minimalist philosophy",
+      "slug": "toki-pona-minimalist-philosophy",
+      "description": "Understand Toki Pona's 120-word vocabulary and philosophy of linguistic simplicity",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "toki-pona", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Toki Pona",
+      "slug": "conversational-toki-pona",
+      "description": "Learn to communicate using Toki Pona's minimalist vocabulary and conceptual thinking",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "toki-pona", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Lojban logical structure and predicate logic",
+      "slug": "lojban-logical-structure-predicate-logic",
+      "description": "Study Lojban's unambiguous grammar and application of predicate logic to natural language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "lojban", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Interlingua as an international auxiliary language",
+      "slug": "interlingua-international-auxiliary",
+      "description": "Understand Interlingua's naturalistic approach to creating an easily-learned Romance-based auxiliary language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "interlingua", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Interlingua",
+      "slug": "conversational-interlingua",
+      "description": "Learn to read and speak Interlingua for international communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "interlingua", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Ido reformed grammar and Esperanto alternatives",
+      "slug": "ido-reformed-grammar-esperanto-alternatives",
+      "description": "Study Ido's systematic improvements to Esperanto as a case study in language reform",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "ido", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Volapük historical auxiliary languages",
+      "slug": "volapuk-historical-auxiliary-languages",
+      "description": "Study Volapük as the first widely-known constructed international auxiliary language",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "volapuk", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Classical Chinese literature",
+      "slug": "reading-classical-chinese-literature",
+      "description": "Learn to read Literary Chinese to access classical Chinese texts and poetry",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "classical-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Classical Chinese for historical documents",
+      "slug": "classical-chinese-historical-documents",
+      "description": "Develop skills in reading pre-modern Chinese historical records and official documents",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "classical-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Coptic for early Christian texts",
+      "slug": "reading-coptic-early-christian-texts",
+      "description": "Learn to read Coptic to access early Christian manuscripts and Gnostic texts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "coptic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Phoenician inscriptions",
+      "slug": "reading-phoenician-inscriptions",
+      "description": "Learn to read the Phoenician alphabet and ancient Phoenician inscriptions",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "phoenician", "is_primary": true}
+      ]
+    },
+    {
+      "name": "International Sign fundamentals",
+      "slug": "international-sign-fundamentals",
+      "description": "Learn International Sign for basic communication at international deaf events and conferences",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "international-sign", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sign language fundamentals and linguistics",
+      "slug": "sign-language-fundamentals-linguistics",
+      "description": "Understand the linguistic structure and universal features of sign languages",
+      "category_slug": "linguistics",
+      "competencies": [
+        {"competency_slug": "sign-language-general", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Introduction to sign languages",
+      "slug": "introduction-sign-languages",
+      "description": "Learn basic concepts and simple signs common across sign languages before choosing a specific one",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sign-language-general", "is_primary": true}
+      ]
+    },
+    {
+      "name": "French Sign Language fundamentals",
+      "slug": "french-sign-language-fundamentals",
+      "description": "Learn LSF basics for communication with French deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational French Sign Language",
+      "slug": "conversational-french-sign-language",
+      "description": "Develop conversational fluency in LSF for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "french-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "German Sign Language fundamentals",
+      "slug": "german-sign-language-fundamentals",
+      "description": "Learn DGS basics for communication with German deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational German Sign Language",
+      "slug": "conversational-german-sign-language",
+      "description": "Develop conversational fluency in DGS for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "german-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Japanese Sign Language fundamentals",
+      "slug": "japanese-sign-language-fundamentals",
+      "description": "Learn JSL basics for communication with Japanese deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Japanese Sign Language",
+      "slug": "conversational-japanese-sign-language",
+      "description": "Develop conversational fluency in JSL for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "japanese-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Chinese Sign Language fundamentals",
+      "slug": "chinese-sign-language-fundamentals",
+      "description": "Learn CSL basics for communication with Chinese deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "chinese-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Chinese Sign Language",
+      "slug": "conversational-chinese-sign-language",
+      "description": "Develop conversational fluency in CSL for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "chinese-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Australian Sign Language fundamentals",
+      "slug": "australian-sign-language-fundamentals",
+      "description": "Learn Auslan basics for communication with Australian deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "australian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Australian Sign Language",
+      "slug": "conversational-australian-sign-language",
+      "description": "Develop conversational fluency in Auslan for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "australian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Spanish Sign Language fundamentals",
+      "slug": "spanish-sign-language-fundamentals",
+      "description": "Learn LSE basics for communication with Spanish deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Spanish Sign Language",
+      "slug": "conversational-spanish-sign-language",
+      "description": "Develop conversational fluency in LSE for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "spanish-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Italian Sign Language fundamentals",
+      "slug": "italian-sign-language-fundamentals",
+      "description": "Learn LIS basics for communication with Italian deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "italian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Italian Sign Language",
+      "slug": "conversational-italian-sign-language",
+      "description": "Develop conversational fluency in LIS for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "italian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Russian Sign Language fundamentals",
+      "slug": "russian-sign-language-fundamentals",
+      "description": "Learn RSL basics for communication with Russian deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "russian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Russian Sign Language",
+      "slug": "conversational-russian-sign-language",
+      "description": "Develop conversational fluency in RSL for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "russian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Indian Sign Language fundamentals",
+      "slug": "indian-sign-language-fundamentals",
+      "description": "Learn ISL basics for communication with Indian deaf communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "indian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Indian Sign Language",
+      "slug": "conversational-indian-sign-language",
+      "description": "Develop conversational fluency in ISL for everyday communication",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "indian-sign-language", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Nahuatl",
+      "slug": "conversational-nahuatl",
+      "description": "Learn to speak Nahuatl for communication with speakers and cultural preservation",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "nahuatl", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Nahuatl colonial texts",
+      "slug": "reading-nahuatl-colonial-texts",
+      "description": "Learn to read historical Nahuatl documents from the colonial period",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "nahuatl", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Nahuatl language revitalization",
+      "slug": "nahuatl-language-revitalization",
+      "description": "Understand and participate in efforts to preserve and revitalize the Nahuatl language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "nahuatl", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Quechua",
+      "slug": "conversational-quechua",
+      "description": "Learn to speak Quechua for communication with Andean communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "quechua", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Quechua dialects and regional variation",
+      "slug": "quechua-dialects-regional-variation",
+      "description": "Understand the diversity of Quechua varieties across the Andes",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "quechua", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Quechua cultural preservation",
+      "slug": "quechua-cultural-preservation",
+      "description": "Participate in efforts to preserve Quechua language and Andean cultural heritage",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "quechua", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Guarani",
+      "slug": "conversational-guarani",
+      "description": "Learn to speak Guarani for communication in Paraguay and surrounding regions",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "guarani", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Guarani bilingualism in Paraguay",
+      "slug": "guarani-bilingualism-paraguay",
+      "description": "Understand Guarani-Spanish bilingualism and Guarani's co-official status in Paraguay",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "guarani", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Navajo",
+      "slug": "conversational-navajo",
+      "description": "Learn to speak Diné bizaad for communication with Navajo Nation communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "navajo", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Navajo language revitalization",
+      "slug": "navajo-language-revitalization",
+      "description": "Participate in efforts to preserve and revitalize the Navajo language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "navajo", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Navajo verb system and complex grammar",
+      "slug": "navajo-verb-system-complex-grammar",
+      "description": "Study Navajo's intricate verb morphology and grammatical structure",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "navajo", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Cherokee",
+      "slug": "conversational-cherokee",
+      "description": "Learn to speak Cherokee for communication with Cherokee Nation communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cherokee", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading and writing Cherokee syllabary",
+      "slug": "reading-writing-cherokee-syllabary",
+      "description": "Master the Cherokee syllabary writing system created by Sequoyah",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cherokee", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cherokee language preservation",
+      "slug": "cherokee-language-preservation",
+      "description": "Participate in Cherokee language revitalization and cultural preservation efforts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cherokee", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Inuktitut",
+      "slug": "conversational-inuktitut",
+      "description": "Learn to speak Inuktitut for communication with Inuit communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "inuktitut", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Inuktitut syllabics",
+      "slug": "reading-inuktitut-syllabics",
+      "description": "Learn to read and write Inuktitut using the Canadian Aboriginal syllabics writing system",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "inuktitut", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Inuktitut cultural knowledge and preservation",
+      "slug": "inuktitut-cultural-preservation",
+      "description": "Learn Inuktitut to support Arctic indigenous cultural and linguistic preservation",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "inuktitut", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Greenlandic (Kalaallisut)",
+      "slug": "conversational-greenlandic",
+      "description": "Learn to speak Kalaallisut for communication in Greenland",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "greenlandic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Greenlandic polysynthetic grammar",
+      "slug": "greenlandic-polysynthetic-grammar",
+      "description": "Study Kalaallisut's complex polysynthetic word formation and morphology",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "greenlandic", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Sami",
+      "slug": "conversational-sami",
+      "description": "Learn to speak Northern Sami for communication with Sami communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sami", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Sami language revitalization and indigenous rights",
+      "slug": "sami-language-revitalization",
+      "description": "Participate in Sami language preservation and indigenous cultural rights advocacy",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sami", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Somali",
+      "slug": "conversational-somali",
+      "description": "Develop speaking and listening skills for everyday Somali conversations",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "somali", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Somali",
+      "slug": "business-somali",
+      "description": "Learn professional Somali for business contexts and diaspora communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "somali", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tigrinya",
+      "slug": "conversational-tigrinya",
+      "description": "Learn to speak Tigrinya for communication in Eritrea and northern Ethiopia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tigrinya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Ge'ez script for Tigrinya",
+      "slug": "reading-geez-script-tigrinya",
+      "description": "Learn to read and write Tigrinya using the Ge'ez/Ethiopic script",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tigrinya", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Shona",
+      "slug": "conversational-shona",
+      "description": "Learn to speak Shona for communication in Zimbabwe and Mozambique",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "shona", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Lingala",
+      "slug": "conversational-lingala",
+      "description": "Learn to speak Lingala for communication in Congo River region communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "lingala", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Malagasy",
+      "slug": "conversational-malagasy",
+      "description": "Learn to speak Malagasy for communication in Madagascar",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "malagasy", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Oromo",
+      "slug": "conversational-oromo",
+      "description": "Learn to speak Oromo for communication in Ethiopia and the Horn of Africa",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "oromo", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Wolof",
+      "slug": "conversational-wolof",
+      "description": "Learn to speak Wolof for communication in Senegal and the Gambia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "wolof", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Fulani (Fula)",
+      "slug": "conversational-fulani",
+      "description": "Learn to speak Fulani for communication across West Africa",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "fulani", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Uzbek",
+      "slug": "conversational-uzbek",
+      "description": "Learn to speak Uzbek for communication in Uzbekistan and Central Asia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "uzbek", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Uzbek",
+      "slug": "business-uzbek",
+      "description": "Develop professional Uzbek skills for business in Central Asian markets",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "uzbek", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Azerbaijani",
+      "slug": "conversational-azerbaijani",
+      "description": "Learn to speak Azerbaijani for communication in Azerbaijan and Iran",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "azerbaijani", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Business Azerbaijani",
+      "slug": "business-azerbaijani",
+      "description": "Develop professional Azerbaijani skills for Caucasus business contexts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "azerbaijani", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tatar",
+      "slug": "conversational-tatar",
+      "description": "Learn to speak Tatar for communication in Tatarstan and Tatar communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tatar", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Kyrgyz",
+      "slug": "conversational-kyrgyz",
+      "description": "Learn to speak Kyrgyz for communication in Kyrgyzstan",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kyrgyz", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Turkmen",
+      "slug": "conversational-turkmen",
+      "description": "Learn to speak Turkmen for communication in Turkmenistan",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "turkmen", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tajik",
+      "slug": "conversational-tajik",
+      "description": "Learn to speak Tajik for communication in Tajikistan",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tajik", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Kurdish",
+      "slug": "conversational-kurdish",
+      "description": "Learn to speak Kurdish for communication with Kurdish communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kurdish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kurdish dialects and cultural contexts",
+      "slug": "kurdish-dialects-cultural-contexts",
+      "description": "Understand Kurmanji, Sorani, and other Kurdish varieties and their cultural contexts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kurdish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Kurdish language preservation",
+      "slug": "kurdish-language-preservation",
+      "description": "Participate in efforts to preserve Kurdish language and cultural identity",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "kurdish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Balochi",
+      "slug": "conversational-balochi",
+      "description": "Learn to speak Balochi for communication with Baloch communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "balochi", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Uyghur",
+      "slug": "conversational-uyghur",
+      "description": "Learn to speak Uyghur for communication with Uyghur communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "uyghur", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Uyghur Arabic script",
+      "slug": "reading-uyghur-arabic-script",
+      "description": "Learn to read and write Uyghur using the Arabic-based script",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "uyghur", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Cornish",
+      "slug": "conversational-cornish",
+      "description": "Learn to speak Kernewek as part of Cornish language revival efforts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cornish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Cornish language revitalization",
+      "slug": "cornish-language-revitalization",
+      "description": "Participate in efforts to revive and preserve the Cornish Celtic language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cornish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Manx",
+      "slug": "conversational-manx",
+      "description": "Learn to speak Manx Gaelic as part of Isle of Man language revival efforts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "manx", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Manx language revitalization",
+      "slug": "manx-language-revitalization",
+      "description": "Participate in efforts to revive Manx Celtic language and Manx cultural heritage",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "manx", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Galician",
+      "slug": "conversational-galician",
+      "description": "Learn to speak Galician for communication in Galicia, Spain",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "galician", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Galician literature and cultural identity",
+      "slug": "galician-literature-cultural-identity",
+      "description": "Read Galician literature and understand Galician cultural and linguistic identity",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "galician", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Occitan",
+      "slug": "conversational-occitan",
+      "description": "Learn to speak Occitan for communication in southern France",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "occitan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Occitan language preservation and cultural heritage",
+      "slug": "occitan-language-preservation",
+      "description": "Participate in efforts to preserve Occitan language and southern French cultural heritage",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "occitan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Luxembourgish",
+      "slug": "conversational-luxembourgish",
+      "description": "Learn to speak Luxembourgish for living and working in Luxembourg",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "luxembourgish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Faroese",
+      "slug": "conversational-faroese",
+      "description": "Learn to speak Faroese for communication in the Faroe Islands",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "faroese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Belarusian",
+      "slug": "conversational-belarusian",
+      "description": "Learn to speak Belarusian for communication in Belarus",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "belarusian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Belarusian language and cultural identity",
+      "slug": "belarusian-language-cultural-identity",
+      "description": "Understand Belarusian linguistic identity and language preservation efforts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "belarusian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Macedonian",
+      "slug": "conversational-macedonian",
+      "description": "Learn to speak Macedonian for communication in North Macedonia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "macedonian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Maltese",
+      "slug": "conversational-maltese",
+      "description": "Learn to speak Maltese for communication in Malta",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "maltese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Maltese Semitic-Romance linguistic features",
+      "slug": "maltese-semitic-romance-features",
+      "description": "Study Maltese as a unique Semitic language with heavy Romance influence",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "maltese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Yiddish",
+      "slug": "conversational-yiddish",
+      "description": "Learn to speak Yiddish for communication with Yiddish-speaking communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "yiddish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Yiddish literature",
+      "slug": "reading-yiddish-literature",
+      "description": "Read classic and modern Yiddish literature in the original language",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "yiddish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Yiddish cultural heritage and preservation",
+      "slug": "yiddish-cultural-heritage-preservation",
+      "description": "Engage with Yiddish language as a key part of Ashkenazi Jewish cultural heritage",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "yiddish", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tibetan",
+      "slug": "conversational-tibetan",
+      "description": "Learn to speak Tibetan for communication with Tibetan communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tibetan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Reading Tibetan script",
+      "slug": "reading-tibetan-script",
+      "description": "Learn to read and write the Tibetan alphabet and script",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tibetan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Classical Tibetan for Buddhist texts",
+      "slug": "classical-tibetan-buddhist-texts",
+      "description": "Learn to read Classical Tibetan to access Buddhist scriptures and commentaries",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tibetan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Wu Chinese",
+      "slug": "conversational-wu-chinese",
+      "description": "Learn to speak Wu Chinese (Shanghainese and related dialects)",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "wu-chinese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Min Nan",
+      "slug": "conversational-min-nan",
+      "description": "Learn to speak Min Nan (Hokkien/Taiwanese) for communication in Taiwan and Fujian",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "min-nan", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hakka",
+      "slug": "conversational-hakka",
+      "description": "Learn to speak Hakka for communication with Hakka communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hakka", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Hmong",
+      "slug": "conversational-hmong",
+      "description": "Learn to speak Hmong for communication with Hmong communities",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hmong", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Hmong cultural preservation",
+      "slug": "hmong-cultural-preservation",
+      "description": "Learn Hmong language to support cultural preservation efforts",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "hmong", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Zhuang",
+      "slug": "conversational-zhuang",
+      "description": "Learn to speak Zhuang for communication in Guangxi, China",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "zhuang", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Cebuano",
+      "slug": "conversational-cebuano",
+      "description": "Learn to speak Cebuano for communication in the Visayas and Mindanao, Philippines",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "cebuano", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Sundanese",
+      "slug": "conversational-sundanese",
+      "description": "Learn to speak Sundanese for communication in West Java, Indonesia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "sundanese", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tahitian",
+      "slug": "conversational-tahitian",
+      "description": "Learn to speak Tahitian for communication in French Polynesia",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tahitian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Fijian",
+      "slug": "conversational-fijian",
+      "description": "Learn to speak Fijian for communication in Fiji",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "fijian", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conversational Tongan",
+      "slug": "conversational-tongan",
+      "description": "Learn to speak Tongan for communication in Tonga",
+      "category_slug": "languages",
+      "competencies": [
+        {"competency_slug": "tongan", "is_primary": true}
+      ]
     }
   ]
 }

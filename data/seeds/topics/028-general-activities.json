@@ -1,0 +1,372 @@
+{
+  "topics": [
+    {
+      "name": "Redstone automation in Minecraft",
+      "slug": "redstone-automation-minecraft",
+      "description": "Learn to create automated systems and contraptions using Redstone in Minecraft",
+      "category_slug": "recreation-hobbies",
+      "competencies": []
+    },
+    {
+      "name": "Building structures in Minecraft",
+      "slug": "building-structures-minecraft",
+      "description": "Master architectural and creative building techniques in Minecraft",
+      "category_slug": "recreation-hobbies",
+      "competencies": []
+    },
+    {
+      "name": "Survival strategies in Minecraft",
+      "slug": "survival-strategies-minecraft",
+      "description": "Learn efficient strategies for surviving and thriving in Minecraft survival mode",
+      "category_slug": "recreation-hobbies",
+      "competencies": []
+    },
+    {
+      "name": "Building techniques in Fortnite",
+      "slug": "building-techniques-fortnite",
+      "description": "Master fast and effective building strategies for competitive Fortnite play",
+      "category_slug": "recreation-hobbies",
+      "competencies": []
+    },
+    {
+      "name": "Speedrunning Super Mario 64",
+      "slug": "speedrunning-super-mario-64",
+      "description": "Learn strategies and techniques for speedrunning Super Mario 64",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {"competency_slug": "speedrunning", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Speedrunning The Legend of Zelda: Ocarina of Time",
+      "slug": "speedrunning-zelda-ocarina-of-time",
+      "description": "Master glitches and routing for Ocarina of Time speedruns",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {"competency_slug": "speedrunning", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Competitive strategies in League of Legends",
+      "slug": "competitive-strategies-league-of-legends",
+      "description": "Learn competitive gameplay, team coordination, and meta strategies for League of Legends",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {"competency_slug": "esports", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Competitive strategies in Counter-Strike",
+      "slug": "competitive-strategies-counter-strike",
+      "description": "Master competitive tactics, map knowledge, and team play in Counter-Strike",
+      "category_slug": "recreation-hobbies",
+      "competencies": [
+        {"competency_slug": "esports", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Changing a car tire",
+      "slug": "changing-car-tire",
+      "description": "Learn to safely change a flat tire on your vehicle",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Jump-starting a car",
+      "slug": "jump-starting-car",
+      "description": "Learn to safely jump-start a car with a dead battery",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Basic car fluid checks and maintenance",
+      "slug": "basic-car-fluid-checks",
+      "description": "Learn to check and maintain essential car fluids like oil, coolant, and brake fluid",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Planning a road trip",
+      "slug": "planning-road-trip",
+      "description": "Learn to plan routes, accommodations, and logistics for successful road trips",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Planning a wedding",
+      "slug": "planning-wedding",
+      "description": "Learn to organize and execute all aspects of wedding planning from budget to ceremony",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Hosting a dinner party",
+      "slug": "hosting-dinner-party",
+      "description": "Learn to plan, prepare, and host successful dinner parties for guests",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Packing efficiently for international travel",
+      "slug": "packing-international-travel",
+      "description": "Master efficient packing strategies for long trips and international travel",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Creating a capsule wardrobe",
+      "slug": "creating-capsule-wardrobe",
+      "description": "Learn to build a versatile, minimalist wardrobe with interchangeable pieces",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Creating a morning routine",
+      "slug": "creating-morning-routine",
+      "description": "Design and implement an effective morning routine for productivity and wellness",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Creating an evening routine",
+      "slug": "creating-evening-routine",
+      "description": "Establish a consistent evening routine for better sleep and next-day preparation",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Building a raised garden bed",
+      "slug": "building-raised-garden-bed",
+      "description": "Learn to construct and set up raised beds for vegetable gardening",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Setting up a home theater system",
+      "slug": "setting-up-home-theater",
+      "description": "Learn to configure audio, video, and smart home components for optimal home theater experience",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Organizing a garage workshop",
+      "slug": "organizing-garage-workshop",
+      "description": "Learn to efficiently organize tools, materials, and workspace in a garage",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {"competency_slug": "decluttering", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building a compost bin",
+      "slug": "building-compost-bin",
+      "description": "Learn to construct and maintain a home composting system",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Setting up a home aquarium",
+      "slug": "setting-up-home-aquarium",
+      "description": "Learn to set up, cycle, and stock a freshwater or saltwater aquarium",
+      "category_slug": "home-lifestyle",
+      "competencies": [
+        {"competency_slug": "aquarium-keeping", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Building a terrarium",
+      "slug": "building-terrarium",
+      "description": "Learn to create and maintain closed or open terrariums with plants and decor",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Setting up a hydroponic garden",
+      "slug": "setting-up-hydroponic-garden",
+      "description": "Learn to build and maintain hydroponic growing systems for vegetables and herbs",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Giving a wedding toast",
+      "slug": "giving-wedding-toast",
+      "description": "Learn to prepare and deliver memorable toasts at weddings and celebrations",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "public-speaking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Writing and delivering a eulogy",
+      "slug": "writing-delivering-eulogy",
+      "description": "Learn to craft and present meaningful eulogies honoring the deceased",
+      "category_slug": "communication-interpersonal",
+      "competencies": [
+        {"competency_slug": "public-speaking", "is_primary": true}
+      ]
+    },
+    {
+      "name": "Conducting a job interview as an interviewer",
+      "slug": "conducting-job-interview",
+      "description": "Learn effective techniques for interviewing and evaluating job candidates",
+      "category_slug": "leadership-communication",
+      "competencies": []
+    },
+    {
+      "name": "Leading icebreaker activities",
+      "slug": "leading-icebreaker-activities",
+      "description": "Learn to facilitate engaging icebreakers and team-building activities",
+      "category_slug": "leadership-communication",
+      "competencies": []
+    },
+    {
+      "name": "Creating a study schedule",
+      "slug": "creating-study-schedule",
+      "description": "Design effective study schedules that balance subjects and optimize learning",
+      "category_slug": "productivity-time-management",
+      "competencies": []
+    },
+    {
+      "name": "Building a habit tracking system",
+      "slug": "building-habit-tracking-system",
+      "description": "Create and maintain systems for tracking and building positive habits",
+      "category_slug": "productivity-time-management",
+      "competencies": []
+    },
+    {
+      "name": "Designing a bullet journal",
+      "slug": "designing-bullet-journal",
+      "description": "Learn to set up and maintain a personalized bullet journal system",
+      "category_slug": "productivity-time-management",
+      "competencies": [
+        {"competency_slug": "note-taking", "is_primary": false}
+      ]
+    },
+    {
+      "name": "Creating a personal vision board",
+      "slug": "creating-vision-board",
+      "description": "Learn to create vision boards for goal-setting and visualization",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Preparing for a job interview",
+      "slug": "preparing-job-interview",
+      "description": "Learn strategies for researching, practicing, and succeeding in job interviews",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Writing a resume and cover letter",
+      "slug": "writing-resume-cover-letter",
+      "description": "Learn to craft compelling resumes and cover letters for job applications",
+      "category_slug": "writing",
+      "competencies": []
+    },
+    {
+      "name": "Networking at professional events",
+      "slug": "networking-professional-events",
+      "description": "Learn effective strategies for building professional relationships at networking events",
+      "category_slug": "leadership-communication",
+      "competencies": []
+    },
+    {
+      "name": "Managing a book club",
+      "slug": "managing-book-club",
+      "description": "Learn to organize, facilitate, and sustain an engaging book club",
+      "category_slug": "communication-interpersonal",
+      "competencies": []
+    },
+    {
+      "name": "Facilitating productive meetings",
+      "slug": "facilitating-productive-meetings",
+      "description": "Learn techniques for running efficient, focused, and outcome-driven meetings",
+      "category_slug": "leadership-communication",
+      "competencies": []
+    },
+    {
+      "name": "Giving constructive feedback",
+      "slug": "giving-constructive-feedback",
+      "description": "Learn to deliver helpful, specific, and actionable feedback to others",
+      "category_slug": "leadership-communication",
+      "competencies": []
+    },
+    {
+      "name": "Managing remote work effectively",
+      "slug": "managing-remote-work",
+      "description": "Learn strategies for productivity, communication, and work-life balance when working remotely",
+      "category_slug": "productivity-time-management",
+      "competencies": []
+    },
+    {
+      "name": "Organizing a garage sale",
+      "slug": "organizing-garage-sale",
+      "description": "Learn to plan, price, advertise, and run a successful garage or yard sale",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Moving to a new home efficiently",
+      "slug": "moving-new-home-efficiently",
+      "description": "Learn strategies for packing, organizing, and executing a smooth residential move",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Childproofing a home",
+      "slug": "childproofing-home",
+      "description": "Learn to identify and address safety hazards when childproofing your living space",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Pet-proofing a home",
+      "slug": "pet-proofing-home",
+      "description": "Learn to create a safe home environment for dogs, cats, and other pets",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Creating a home emergency kit",
+      "slug": "creating-home-emergency-kit",
+      "description": "Learn to assemble and maintain essential supplies for home emergencies",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Planning a surprise party",
+      "slug": "planning-surprise-party",
+      "description": "Learn to coordinate logistics, maintain secrecy, and execute memorable surprise parties",
+      "category_slug": "home-lifestyle",
+      "competencies": []
+    },
+    {
+      "name": "Preparing for a performance review",
+      "slug": "preparing-performance-review",
+      "description": "Learn to document achievements and prepare for productive performance review conversations",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Managing impostor syndrome",
+      "slug": "managing-impostor-syndrome",
+      "description": "Learn strategies for recognizing and overcoming impostor syndrome in professional settings",
+      "category_slug": "personal-development",
+      "competencies": []
+    },
+    {
+      "name": "Building a personal brand",
+      "slug": "building-personal-brand",
+      "description": "Learn to define and communicate your professional identity and expertise",
+      "category_slug": "marketing-sales",
+      "competencies": []
+    },
+    {
+      "name": "Creating a family budget",
+      "slug": "creating-family-budget",
+      "description": "Learn to track income and expenses and create realistic household budgets",
+      "category_slug": "personal-finance",
+      "competencies": []
+    }
+  ]
+}
