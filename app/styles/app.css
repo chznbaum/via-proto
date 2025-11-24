@@ -32,7 +32,7 @@
 .mockup-browser {
     & .mockup-browser-toolbar {
         .input {
-            @apply bg-white;
+            @apply bg-base-100;
         }
     }
 }
