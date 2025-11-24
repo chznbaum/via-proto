@@ -74,7 +74,7 @@ export function CompetencyCard({ competency, onDelete, onEdit }: CompetencyCardP
               {competency.competency.icon && (
                 <Icon
                   icon={competency.competency.icon}
-                  className="size-4 text-base-content/60"
+                  className="size-4 text-base-content/60 bg-transparent"
                 />
               )}
               <h3 className="font-medium leading-tight">

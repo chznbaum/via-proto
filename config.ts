@@ -22,7 +22,7 @@ const config = {
             ? "price_1SV0QxD1xQn8aM2gSRgiYPWh"
             : "price_1SWt7EDnUZacDWq6Oq6GUtI0",
         name: "Pro",
-        description: "Premium AI models • 5 paths/month",
+        description: "Premium AI models • 10 paths/month",
         price: 12,
         priceAnchor: null,
         isFeatured: false,
@@ -43,7 +43,7 @@ const config = {
             ? "price_1SV0QxD1xQn8aM2gHQEeq5lj"
             : "price_1SWt7EDnUZacDWq6Z9Kwh5eL",
         name: "Pro",
-        description: "Claude Sonnet 4.5 • 5 paths/month",
+        description: "Premium AI models • 10 paths/month",
         price: 100,
         priceAnchor: 120,
         isFeatured: true,

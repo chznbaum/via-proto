@@ -43,10 +43,10 @@ export default function DashboardPaths({
 
   const getRateLimit = (tier: string, seats: number) => {
     if (tier === 'free') return 1;
-    if (tier === 'pro') return 5;
+    if (tier === 'pro') return 10;
     if (tier === 'team') {
       const additionalSeats = Math.max(0, seats - 2);
-      return 10 + (additionalSeats * 3);
+      return 20 + (additionalSeats * 6);
     }
     return 1;
   };

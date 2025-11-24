@@ -91,7 +91,7 @@ export function UsageStatsBar({
             <div>
               <p className="text-sm/none italic opacity-80">
                 {subscriptionTier === 'free'
-                  ? 'Get 5 paths & premium models'
+                  ? 'Get 10 paths & premium models'
                   : 'Collaborate with your team'}
               </p>
             </div>

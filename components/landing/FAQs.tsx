@@ -20,7 +20,7 @@ const faqs1 = [
 const faqs2 = [
     {
         question: "How many learning paths can I create?",
-        answer: "Free users get 1 path per month, Pro users get 5 paths per month, and Team plans start with 10 base paths plus 3 additional paths per team member each month.",
+        answer: "Free users get 1 path per month, Pro users get 10 paths per month, and Team plans start with 20 base paths plus 6 additional paths per team member each month.",
     },
     {
         question: "What's the difference between plans?",
