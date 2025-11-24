@@ -41,7 +41,7 @@ ALTER TABLE public.resources ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Resources from public paths are readable by all"
     ON public.resources
     FOR SELECT
-    TO authenticated
+    TO anon, authenticated
     USING (
         EXISTS (
             SELECT 1 FROM public.sections s

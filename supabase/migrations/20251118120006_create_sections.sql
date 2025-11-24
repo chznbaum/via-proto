@@ -33,7 +33,7 @@ ALTER TABLE public.sections ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Sections from public paths are readable by all"
     ON public.sections
     FOR SELECT
-    TO authenticated
+    TO anon, authenticated
     USING (
         EXISTS (
             SELECT 1 FROM public.learning_paths
