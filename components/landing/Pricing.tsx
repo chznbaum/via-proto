@@ -137,9 +137,9 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                             <p className="text-base-content/80 text-sm font-medium">Everything in Free, plus:</p>
                             <div className="mt-4 space-y-2">
                                 {[
-                                    "5 learning paths per month",
+                                    "10 learning paths per month",
                                     "Premium Anthropic models like Claude Sonnet 4.5",
-                                    "GPT-4, Perplexity, Premium Gemini",
+                                    "GPT-5, Perplexity, Gemini 3",
                                     "Private learning paths",
                                     "Progress tracking",
                                 ].map((feature, index) => (

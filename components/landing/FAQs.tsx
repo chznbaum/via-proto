@@ -9,7 +9,7 @@ const faqs1 = [
     },
     {
         question: "What AI models can I use?",
-        answer: "Free users access quality models like DeepSeek, Qwen, Kimi, and free Gemini/Llama models. Pro users unlock premium models including Claude Sonnet 4.5, GPT-4, Perplexity, and Premium Gemini for even better curation.",
+        answer: "Free users access quality models like DeepSeek, Qwen, Kimi, and free Gemini/Llama models. Pro users unlock premium models including Claude Sonnet 4.5, GPT-5, Gemini 3, and premium Perplexity for even better curation.",
     },
     {
         question: "Can I share my learning paths?",
@@ -24,7 +24,7 @@ const faqs2 = [
     },
     {
         question: "What's the difference between plans?",
-        answer: "Free gets you started with quality AI models and public paths. Pro unlocks premium AI models (Claude, GPT-4), private paths, progress tracking, and faster generation. Team adds collaboration features, shared workspaces, and team analytics.",
+        answer: "Free gets you started with quality AI models and public paths. Pro unlocks premium AI models (Claude, GPT-5, Gemini 3, private paths, and progress tracking (coming soon). Team adds collaboration features, shared workspaces, and team analytics.",
     },
     {
         question: "Can I track my learning progress?",

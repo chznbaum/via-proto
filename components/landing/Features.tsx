@@ -4,7 +4,7 @@ const features = [
         keyMetric: "10+ Models",
         badge: "Your Choice",
         title: "Multiple AI Models",
-        description: "Free users access quality models from DeepSeek, Qwen, and others. Pro users unlock Claude, GPT-4, and premium models.",
+        description: "Free users access quality models from DeepSeek, Qwen, and others. Pro users unlock Claude, GPT-5, Gemini 3, and other premium models.",
     },
     {
         icon: <span className="iconify lucide--shield-check size-5.5"></span>,
