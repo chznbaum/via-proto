@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { RegisterForm } from "./RegisterForm";
 
 const RegisterPage = () => {
@@ -10,7 +11,9 @@ const RegisterPage = () => {
         </p>
       </div>
       <div className="mt-8">
-        <RegisterForm />
+        <Suspense fallback={<div className="text-center">Loading...</div>}>
+          <RegisterForm />
+        </Suspense>
       </div>
     </div>
   );
