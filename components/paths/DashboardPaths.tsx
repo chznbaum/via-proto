@@ -20,7 +20,7 @@ interface DashboardPathsProps {
 interface GeneratingPath {
   pathId: string;
   topicName: string;
-  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'validating_links' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
+  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'researching_resources' | 'curating_resources' | 'validating' | 'validating_links' | 'replacing_broken_resources' | 'enriching_sections' | 'completed' | 'cancelled' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_research' | 'failed_sections' | 'failed_validation' | 'failed_link_validation' | 'failed_replacement' | 'failed_enrichment';
   error?: string;
 }
 
@@ -101,7 +101,7 @@ export default function DashboardPaths({
       );
 
       // Terminal statuses: stop polling and show notification
-      const isTerminal = ['completed', 'failed', 'failed_metadata', 'failed_image', 'failed_sections'].includes(data.status);
+      const isTerminal = ['completed', 'cancelled', 'failed', 'failed_metadata', 'failed_image', 'failed_research', 'failed_sections', 'failed_validation', 'failed_link_validation', 'failed_replacement', 'failed_enrichment'].includes(data.status);
 
       if (isTerminal) {
         // Clear interval FIRST (before showing toast)
@@ -182,18 +182,33 @@ export default function DashboardPaths({
     }
   };
 
-  const handleCancelGeneration = (pathId: string) => {
-    // Stop polling
-    const interval = pollingIntervalsRef.current.get(pathId);
-    if (interval) {
-      clearInterval(interval);
-      pollingIntervalsRef.current.delete(pathId);
+  const handleCancelGeneration = async (pathId: string) => {
+    try {
+      // Call cancel endpoint
+      const response = await fetch(`/api/paths/${pathId}/cancel`, {
+        method: 'POST',
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || 'Failed to cancel');
+      }
+
+      // Stop polling
+      const interval = pollingIntervalsRef.current.get(pathId);
+      if (interval) {
+        clearInterval(interval);
+        pollingIntervalsRef.current.delete(pathId);
+      }
+
+      // Remove from generating paths
+      setGeneratingPaths((prev) => prev.filter((p) => p.pathId !== pathId));
+
+      toast.success('Generation cancelled successfully');
+    } catch (error) {
+      console.error('Error cancelling generation:', error);
+      toast.error(error instanceof Error ? error.message : 'Failed to cancel generation');
     }
-
-    // Remove from generating paths
-    setGeneratingPaths((prev) => prev.filter((p) => p.pathId !== pathId));
-
-    toast.success('Generation cancelled');
   };
 
   const handlePathDeleted = (pathId: string) => {

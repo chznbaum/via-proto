@@ -22,6 +22,7 @@ import { createServiceClient } from '@/libs/supabase/service';
 import { fetchUnsplashImage, triggerUnsplashDownload } from '@/libs/unsplash';
 import type { FetchUnsplashImagePayload } from '../types';
 import { addJob } from '../queue';
+import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 
 /**
  * Task handler for Unsplash image fetching
@@ -34,6 +35,18 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
   const supabase = createServiceClient();
 
   try {
+    // Check if cancelled
+    const { data: pathCheck } = await supabase
+      .from('learning_paths')
+      .select('generation_status')
+      .eq('id', pathId)
+      .single();
+
+    if (pathCheck?.generation_status === 'cancelled') {
+      console.log(`[fetch_unsplash_image] Path ${pathId} was cancelled, exiting`);
+      return { cancelled: true, pathId };
+    }
+
     // Step 1: Update status and track job start
     const { data: currentPath } = await supabase
       .from('learning_paths')
@@ -106,12 +119,22 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
     if (!unsplashImage) {
       console.warn(`[fetch_unsplash_image] No image found after all attempts`);
 
-      // Update job metadata - completed but no image found
+      // Update job metadata - completed but no image found with timing
+      const completedAt = new Date().toISOString();
       const { data: noImagePath } = await supabase
         .from('learning_paths')
-        .select('generation_jobs')
+        .select('generation_jobs, generation_metadata')
         .eq('id', pathId)
         .single();
+
+      const startedAt = noImagePath?.generation_jobs?.image?.started_at;
+      const updatedMetadata = updateJobTiming(
+        noImagePath?.generation_metadata,
+        'fetch_unsplash_image',
+        startedAt,
+        completedAt
+      );
+      const totalTime = calculateTotalGenerationTime(updatedMetadata);
 
       await supabase
         .from('learning_paths')
@@ -120,17 +143,34 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
             ...noImagePath?.generation_jobs,
             image: {
               ...noImagePath?.generation_jobs?.image,
-              completed_at: new Date().toISOString(),
+              completed_at: completedAt,
               status: 'completed',
               note: 'No image found (tried topic and primary competency)',
             },
           },
+          generation_metadata: {
+            ...updatedMetadata,
+            total_generation_time_ms: totalTime,
+          },
         })
         .eq('id', pathId);
 
+      console.log(`[fetch_unsplash_image] Job completed in ${formatDuration(updatedMetadata.job_timings.fetch_unsplash_image.duration_ms)}`);
+
       // Non-critical failure - proceed to next step without image
-      await addJob('generate_sections_resources', { pathId });
-      console.log(`[fetch_unsplash_image] Completed (no image). Queued generate_sections_resources`);
+      // Fetch skill_level for research_resources job
+      const { data: pathInfo } = await supabase
+        .from('learning_paths')
+        .select('skill_level')
+        .eq('id', pathId)
+        .single();
+
+      await addJob('research_resources', {
+        pathId,
+        topicName,
+        skillLevel: pathInfo?.skill_level || 'beginner',
+      });
+      console.log(`[fetch_unsplash_image] Completed (no image). Queued research_resources`);
 
       return {
         success: true,
@@ -183,12 +223,22 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
       console.log(`[fetch_unsplash_image] Triggered Unsplash download event`);
     }
 
-    // Step 5: Link image to learning path and update job metadata
+    // Step 5: Link image to learning path and update job metadata with timing
+    const completedAt2 = new Date().toISOString();
     const { data: successPath } = await supabase
       .from('learning_paths')
-      .select('generation_jobs')
+      .select('generation_jobs, generation_metadata')
       .eq('id', pathId)
       .single();
+
+    const startedAt2 = successPath?.generation_jobs?.image?.started_at;
+    const updatedMetadata2 = updateJobTiming(
+      successPath?.generation_metadata,
+      'fetch_unsplash_image',
+      startedAt2,
+      completedAt2
+    );
+    const totalTime2 = calculateTotalGenerationTime(updatedMetadata2);
 
     const { error: updateError } = await supabase
       .from('learning_paths')
@@ -199,12 +249,18 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
           ...successPath?.generation_jobs,
           image: {
             ...successPath?.generation_jobs?.image,
-            completed_at: new Date().toISOString(),
+            completed_at: completedAt2,
             status: 'completed',
           },
         },
+        generation_metadata: {
+          ...updatedMetadata2,
+          total_generation_time_ms: totalTime2,
+        },
       })
       .eq('id', pathId);
+
+    console.log(`[fetch_unsplash_image] Job completed in ${formatDuration(updatedMetadata2.job_timings.fetch_unsplash_image.duration_ms)}`);
 
     if (updateError) {
       throw new Error(`Failed to link image to path: ${updateError.message}`);
@@ -212,10 +268,20 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
 
     console.log(`[fetch_unsplash_image] Linked image to learning path`);
 
-    // Step 7: Queue next job - generate_sections_resources
-    await addJob('generate_sections_resources', { pathId });
+    // Step 7: Fetch skill_level and queue next job - research_resources
+    const { data: pathInfo2 } = await supabase
+      .from('learning_paths')
+      .select('skill_level')
+      .eq('id', pathId)
+      .single();
 
-    console.log(`[fetch_unsplash_image] Completed! Queued generate_sections_resources`);
+    await addJob('research_resources', {
+      pathId,
+      topicName,
+      skillLevel: pathInfo2?.skill_level || 'beginner',
+    });
+
+    console.log(`[fetch_unsplash_image] Completed! Queued research_resources`);
 
     return {
       success: true,

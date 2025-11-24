@@ -11,8 +11,12 @@
 export type JobType =
   | 'generate_metadata'
   | 'fetch_unsplash_image'
+  | 'research_resources'
   | 'generate_sections_resources'
+  | 'validate_and_finalize'
   | 'validate_resource_links'
+  | 'replace_broken_resources'
+  | 'enrich_sections'
   | 'notify_generation_failed';
 
 /**
@@ -37,20 +41,58 @@ export interface FetchUnsplashImagePayload {
 }
 
 /**
- * Payload for Job #3: generate_sections_resources
- * Generates learning sections and resources using AI
- * Uses metadata generated in Job #1
+ * Payload for Job #3: research_resources (NEW - Prompt Chain Step 1)
+ * Uses web search to discover 30-50 candidate learning resources
+ * Stores results in generation_metadata.researched_resources
+ */
+export interface ResearchResourcesPayload {
+  pathId: string;
+  topicName: string;
+  skillLevel: string;
+}
+
+/**
+ * Payload for Job #4: generate_sections_resources (MODIFIED - Prompt Chain Step 2)
+ * Organizes pre-researched resources into logical learning sections
+ * Uses researched_resources from Job #3
  */
 export interface GenerateSectionsResourcesPayload {
   pathId: string;
 }
 
 /**
- * Payload for Job #4: validate_resource_links
+ * Payload for Job #5: validate_and_finalize (NEW - Prompt Chain Step 3)
+ * Validates generated sections/resources and persists to database
+ * Final step before marking path as completed
+ */
+export interface ValidateAndFinalizePayload {
+  pathId: string;
+}
+
+/**
+ * Payload for Job #6: validate_resource_links
  * Fetches OpenGraph metadata and validates all resource links
  * Runs after sections and resources are generated
  */
 export interface ValidateResourceLinksPayload {
+  pathId: string;
+}
+
+/**
+ * Payload for Job #7: replace_broken_resources (Resource Improvement Step 1)
+ * Replaces broken or inaccessible resource links with working alternatives
+ * Triggered when > 3 broken/inaccessible resources found
+ */
+export interface ReplaceBrokenResourcesPayload {
+  pathId: string;
+}
+
+/**
+ * Payload for Job #8: enrich_sections (Resource Improvement Step 2)
+ * Adds complementary resources to sections with < 5 active resources
+ * Triggered after validation or replacement when sections are under-resourced
+ */
+export interface EnrichSectionsPayload {
   pathId: string;
 }
 
@@ -73,6 +115,10 @@ export interface NotifyGenerationFailedPayload {
 export type JobPayload =
   | GenerateMetadataPayload
   | FetchUnsplashImagePayload
+  | ResearchResourcesPayload
   | GenerateSectionsResourcesPayload
+  | ValidateAndFinalizePayload
   | ValidateResourceLinksPayload
+  | ReplaceBrokenResourcesPayload
+  | EnrichSectionsPayload
   | NotifyGenerationFailedPayload;

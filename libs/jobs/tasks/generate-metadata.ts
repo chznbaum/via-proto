@@ -17,6 +17,7 @@ import { createServiceClient } from '@/libs/supabase/service';
 import { MetadataResponseSchema } from '@/libs/validation/path-schema';
 import type { GenerateMetadataPayload } from '../types';
 import { addJob } from '../queue';
+import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import OpenAI from 'openai';
 
 /**
@@ -138,6 +139,18 @@ export const generateMetadataTask: Task = async (payload, helpers) => {
   const supabase = createServiceClient();
 
   try {
+    // Check if cancelled
+    const { data: pathCheck } = await supabase
+      .from('learning_paths')
+      .select('generation_status')
+      .eq('id', pathId)
+      .single();
+
+    if (pathCheck?.generation_status === 'cancelled') {
+      console.log(`[generate_metadata] Path ${pathId} was cancelled, exiting`);
+      return { cancelled: true, pathId };
+    }
+
     // Step 1: Update status and track job start
     const { data: currentPath } = await supabase
       .from('learning_paths')
@@ -292,12 +305,22 @@ export const generateMetadataTask: Task = async (payload, helpers) => {
 
     console.log(`[generate_metadata] Path updated with metadata`);
 
-    // Step 9: Update job metadata with completion
+    // Step 9: Update job metadata with completion and timing
+    const completedAt = new Date().toISOString();
     const { data: finalPath } = await supabase
       .from('learning_paths')
-      .select('generation_jobs')
+      .select('generation_jobs, generation_metadata')
       .eq('id', pathId)
       .single();
+
+    const startedAt = finalPath?.generation_jobs?.metadata?.started_at;
+    const updatedMetadata = updateJobTiming(
+      finalPath?.generation_metadata,
+      'generate_metadata',
+      startedAt,
+      completedAt
+    );
+    const totalTime = calculateTotalGenerationTime(updatedMetadata);
 
     await supabase
       .from('learning_paths')
@@ -306,12 +329,18 @@ export const generateMetadataTask: Task = async (payload, helpers) => {
           ...finalPath?.generation_jobs,
           metadata: {
             ...finalPath?.generation_jobs?.metadata,
-            completed_at: new Date().toISOString(),
+            completed_at: completedAt,
             status: 'completed',
           },
         },
+        generation_metadata: {
+          ...updatedMetadata,
+          total_generation_time_ms: totalTime,
+        },
       })
       .eq('id', pathId);
+
+    console.log(`[generate_metadata] Job completed in ${formatDuration(updatedMetadata.job_timings.generate_metadata.duration_ms)}`);
 
     // Step 10: Queue next job - fetch_unsplash_image
     await addJob('fetch_unsplash_image', {
