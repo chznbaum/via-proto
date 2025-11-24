@@ -41,9 +41,11 @@ const TOS = async () => {
             </p>
             <div className="mt-auto pt-8 sm:pt-12">
               <p className="relative max-w-xl italic max-sm:text-sm">
-                I believe in building tools that empower learners. ViaProto
-                curates and organizes quality resources—I don't replace content
-                creators, I help you find them.
+                The way AI has been deployed has been antithetical to the
+                learning process. When you smooth away the edges and give
+                people an easy button, you take away the good struggles that
+                support learning. If people are going to use LLMs, I aim to make
+                it easier to accomplish your goals without shortcutting the process.
                 <span className="iconify lucide--quote text-base-content/5 absolute -start-6 -top-6 size-12 scale-x-[-1] transform max-sm:hidden"></span>
               </p>
               <p className="text-base-content/80 mt-1 text-sm font-medium max-sm:text-end">

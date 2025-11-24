@@ -41,9 +41,8 @@ const PrivacyPolicy = async () => {
             </p>
             <div className="mt-auto pt-8 sm:pt-12">
               <p className="relative max-w-xl italic max-sm:text-sm">
-                Privacy isn't just about compliance—it's about trust. I only
-                collect what's necessary to provide you with a great learning
-                experience, and I never sell your data.
+                Privacy is about trust. I only collect what will genuinely improve
+                your learning experience, and I never sell your data.
                 <span className="iconify lucide--quote text-base-content/5 absolute -start-6 -top-6 size-12 scale-x-[-1] transform max-sm:hidden"></span>
               </p>
               <p className="text-base-content/80 mt-1 text-sm font-medium max-sm:text-end">
