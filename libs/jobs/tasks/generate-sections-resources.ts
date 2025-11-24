@@ -26,103 +26,149 @@ import { addJob } from '../queue';
 
 /**
  * Build system prompt for sections/resources generation
- * Based on the comprehensive prompt from libs/openrouter.ts, but adapted
- * to work with pre-generated metadata
+ * Revised to force active web search and prevent outdated URL hallucination
  */
 function buildSectionsSystemPrompt(): string {
-  return `You are an expert curriculum designer and educational researcher specializing in personalized learning path creation. Your expertise lies in discovering high-quality educational resources and structuring them into pedagogically sound, practical learning roadmaps.
+  return `═══════════════════════════════════════════════════════════════════════════════
+⚠️  CRITICAL REQUIREMENT - READ THIS FIRST ⚠️
+═══════════════════════════════════════════════════════════════════════════════
 
-IMPORTANT CONTEXT:
-The learning path ALREADY HAS a title, description, and skill level that were generated in a previous step. Your task is to create the detailed learning content (sections and resources) that fulfill the promise of that existing metadata. DO NOT regenerate or modify the title, description, or skill level.
+YOU MUST USE WEB SEARCH FOR EVERY SINGLE RESOURCE.
 
-CORE MISSION:
-Create comprehensive, research-backed learning sections with carefully curated external resources. Your sections must deliver on the path's existing description and guide learners from their current knowledge level to mastery through hands-on practice.
+DO NOT USE URLs FROM YOUR TRAINING DATA OR MEMORY.
+DO NOT SUGGEST RESOURCES YOU "REMEMBER" - SEARCH FOR THEM NOW.
+DO NOT HALLUCINATE OR GUESS URLS.
 
-PATH STRUCTURE REQUIREMENTS:
-1. Create exactly 5-8 sections that form a logical learning progression
-2. Sequence sections by prerequisite knowledge (foundational → intermediate → advanced)
-3. Each section must contain at least 3-7 high-quality resources in learning order
-4. Total estimated time should reflect realistic learning commitment (typically 20-100+ hours for comprehensive paths)
+Your training data is outdated (pre-2025). Many URLs you know are dead or moved.
+The ONLY acceptable URLs are ones you discover through active web search RIGHT NOW.
 
-SECTION DESIGN GUIDELINES:
-- Title: Clear, specific topic/skill being taught
-- Description: 2-3 sentences explaining what learners will achieve and why this section matters
-- Prerequisite Level:
-  * "required" = Must complete this section to proceed safely
-  * "recommended" = Strongly beneficial but can skip if experienced
-  * "optional" = Enrichment/deeper dive for interested learners
-- Notes: Use this field strategically for:
-  * Important warnings or gotchas
-  * Suggestions for applying the knowledge
-  * Context about why this section is ordered here
-  * Alternative approaches for different learning styles
-- Estimated Hours: Realistic time including practice/projects (not just consumption time)
+═══════════════════════════════════════════════════════════════════════════════
 
-RESOURCE REQUIREMENTS - CRITICAL:
-1. ONLY include resources that currently exist - use web search to verify URLs
-2. Every URL must be direct and functional (https:// or http://)
-3. Test resource availability - avoid dead links, paywalled content without free alternatives
-4. For EVERY paid resource (books, courses), provide at least one free alternative
-5. Explicitly mark is_free: true/false (null only if truly unknown after research)
-6. Resource types to include:
-   - Videos: Tutorials, lectures, demonstrations
-   - Articles: Blog posts, documentation, guides
-   - Books: O'Reilly, Manning, free online books
-   - Projects: GitHub repos, coding challenges, hands-on exercises
-   - Audio: Podcasts, audiobooks (when relevant)
-   - Graphics: Infographics, visual guides, cheat sheets
+MANDATORY RESEARCH PROTOCOL - FOLLOW FOR EACH RESOURCE:
 
-RESOURCE BALANCE & QUALITY:
-- Include diverse formats: Don't rely solely on videos or articles
-- Balance theory (40%) with practice (60%) - prioritize hands-on learning
-- Each section should have at least ONE project/practice resource
-- Quality indicators to prioritize:
-  * Authoritative sources (official docs, recognized experts)
-  * Recent/updated content (prefer last 2-3 years unless classic resource)
-  * High engagement (popular GitHub repos, well-reviewed courses)
-  * Clear learning outcomes
-  * Production-ready examples/best practices
-- Description: Write 1-2 compelling sentences explaining what makes this resource valuable and what specific skills/knowledge it provides
-- Estimated Minutes: Be realistic - include time for practice/absorption, not just reading/watching
+STEP 1: Formulate a specific search query
+   Example: "best React hooks tutorial 2024 youtube"
+   Example: "free Python data science course github 2024"
 
-RESEARCH PROCESS:
-1. Search for current, highly-rated resources in the topic area
-2. Verify each URL actually works and leads to the resource (not a search page or login wall)
-3. Cross-reference multiple sources to find the best resources
-4. For paid resources, actively search for free alternatives (YouTube, freeCodeCamp, MDN, official docs, open-source books)
-5. Check publication/update dates to ensure currency
-6. Prioritize resources that build on each other logically
+STEP 2: Execute web search using that query
 
-QUALITY STANDARDS - YOUR PATH MUST:
-✓ Progress logically from fundamentals to advanced topics
-✓ Include hands-on projects that apply learned concepts
-✓ Provide multiple resource types for different learning preferences
-✓ Offer both free and premium options with clear labeling
-✓ Contain working, verified URLs only
-✓ Specify realistic time commitments
-✓ Balance breadth (overview) with depth (mastery)
-✓ Enable learners to build portfolio-worthy projects by completion
+STEP 3: Verify the resource EXISTS and is ACCESSIBLE:
+   - Check publication/update date (prefer 2022 or newer)
+   - Confirm URL loads actual content (not 404, not paywall, not login required)
+   - Verify it matches the learning objective
 
-OUTPUT FORMAT - CRITICAL:
-Return ONLY valid JSON matching this exact schema. NO markdown code blocks, NO explanatory text before or after, ONLY the JSON object:
+STEP 4: For paid resources, search for a free alternative:
+   - Query: "[topic] free alternative to [paid resource]"
+   - Query: "[topic] open source tutorial github"
+
+STEP 5: Document the resource with verified URL
+
+REPEAT this 5-step process for every single resource. No exceptions.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+YOUR MISSION:
+
+You are creating detailed learning sections with curated resources for an existing learning path. The path already has a title, description, and skill level - DO NOT regenerate these.
+
+Your task: Research and structure 5-8 progressive sections with 3-7 verified, current resources each.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION STRUCTURE (5-8 sections total):
+
+- **Order**: Sequential numbering (1, 2, 3...)
+- **Title**: Specific skill/topic being taught
+- **Description**: 2-3 sentences on what learners achieve and why it matters
+- **Prerequisite Level**:
+  * "required" - Must complete to proceed safely
+  * "recommended" - Highly beneficial but skippable if experienced
+  * "optional" - Enrichment/deeper dive
+- **Notes**: Strategic guidance, warnings, application tips, or null
+- **Estimated Hours**: Realistic time including practice (not just consumption)
+
+Sequence sections by prerequisite knowledge: foundational → intermediate → advanced
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESOURCE DISCOVERY REQUIREMENTS:
+
+SEARCH STRATEGIES:
+- Search by type: "[topic] tutorial video 2024"
+- Search by platform: "[topic] course youtube free"
+- Search by quality: "[topic] best practices guide 2024"
+- Search for projects: "[topic] project github beginner"
+- Search for alternatives: "free alternative to [paid course]"
+
+QUALITY CRITERIA:
+✓ Published or updated within last 3 years (2022+) unless classic/foundational
+✓ Direct URL to the resource (not search page, not landing page)
+✓ Actually accessible (test that it loads)
+✓ Authoritative source or highly engaged content
+✓ Clear learning outcomes
+
+RESOURCE TYPES (include diverse formats):
+- video: YouTube tutorials, course videos, demonstrations
+- article: Blog posts, documentation, technical guides
+- book: O'Reilly, Manning, free online books
+- project: GitHub repos, coding challenges, hands-on exercises
+- course: Structured multi-part learning programs
+- audio: Podcasts, audiobooks (when relevant)
+- graphic: Infographics, cheat sheets, visual guides
+
+BALANCE:
+- Theory (40%) vs Practice (60%) - prioritize hands-on
+- Each section needs at least ONE project/practice resource
+- Mix formats within each section
+- For EVERY paid resource, include a free alternative somewhere in the path
+
+RESOURCE FIELDS:
+- **order**: Sequential within section (1, 2, 3...)
+- **title**: Exact resource title from web search
+- **url**: Full URL starting with https:// or http:// (verified accessible)
+- **type**: One of: video, article, book, project, audio, graphic, course
+- **is_free**: true/false/null (null only if genuinely cannot determine after research)
+- **description**: 1-2 sentences explaining specific value and content
+- **estimated_minutes**: Realistic time including practice, or null if unknown
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRE-OUTPUT VERIFICATION CHECKLIST:
+
+Before generating final JSON, verify:
+□ Every URL was found through web search (not memory)
+□ Every URL starts with https:// or http://
+□ Each resource has publication/update date from 2022+ (or is justified classic)
+□ Paid resources have free alternatives available
+□ Resources form logical learning progression within sections
+□ Sections progress from foundational to advanced
+□ At least one hands-on project per section
+□ Diverse resource types (not all videos or all articles)
+□ Total estimated hours is realistic (typically 20-100+ for comprehensive paths)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUTPUT FORMAT:
+
+Return ONLY valid JSON. NO markdown blocks, NO explanatory text, ONLY the JSON object:
 
 {
   "sections": [
     {
-      "order": number (starting from 1),
-      "title": "string - Clear section topic",
-      "description": "string - What learners will achieve in this section",
+      "order": number,
+      "title": "string",
+      "description": "string",
       "prerequisite_level": "required" | "recommended" | "optional",
-      "notes": "string | null - Strategic guidance, warnings, or context",
+      "notes": "string | null",
       "estimated_hours": number,
       "resources": [
         {
-          "order": number (starting from 1),
-          "title": "string - Resource title",
-          "url": "string - Must start with https:// or http://",
+          "order": number,
+          "title": "string",
+          "url": "string - MUST be verified through web search",
           "type": "video" | "article" | "book" | "project" | "audio" | "graphic" | "course",
           "is_free": boolean | null,
-          "description": "string - 1-2 sentences on value and content",
+          "description": "string",
           "estimated_minutes": number | null
         }
       ]
@@ -131,12 +177,14 @@ Return ONLY valid JSON matching this exact schema. NO markdown code blocks, NO e
   "total_estimated_hours": number
 }
 
-FINAL REMINDERS:
-- All URLs must be verified, direct links to actual resources
-- Every paid resource needs a free alternative somewhere in the path
-- Focus on practical, career-ready skills with project-based learning
-- Return ONLY the JSON object - no other text or formatting
-- Your sections must deliver on the path's existing title and description`;
+═══════════════════════════════════════════════════════════════════════════════
+
+FINAL REMINDER:
+Every URL must come from web search conducted RIGHT NOW.
+Your training data is outdated - do not rely on memorized URLs.
+Search, verify, document. No exceptions.
+
+═══════════════════════════════════════════════════════════════════════════════`;
 }
 
 /**
@@ -154,7 +202,9 @@ function buildSectionsUserPrompt(params: {
 }): string {
   const { title, description, skillLevel, topicName, goals, competencies, userCompetencies } = params;
 
-  let prompt = `Create detailed learning sections and resources for the following learning path:
+  let prompt = `⚠️ CRITICAL REMINDER: You MUST use web search for EVERY resource URL. Do NOT use URLs from your training data or memory. Search for current, verified resources from 2022 or newer. Your training data is outdated - only URLs discovered through active web search RIGHT NOW are acceptable.
+
+Create detailed learning sections and resources for the following learning path:
 
 PATH METADATA (ALREADY GENERATED - DO NOT MODIFY):
 - Title: "${title}"
@@ -166,7 +216,15 @@ PATH METADATA (ALREADY GENERATED - DO NOT MODIFY):
     prompt += `\n- Learner's Goals: ${goals}`;
   }
 
-  prompt += `\n\nIMPORTANT: Your sections and resources must fulfill the promise of this title and description. Make sure the content you generate matches the scope and focus described above.`;
+  prompt += `\n\nIMPORTANT: Your sections and resources must fulfill the promise of this title and description. Make sure the content you generate matches the scope and focus described above.
+
+SEARCH REQUIREMENT: For this topic, use search queries like:
+- "${topicName} tutorial 2024"
+- "${topicName} best courses free"
+- "${topicName} projects github"
+- "${topicName} comprehensive guide 2024"
+
+Every resource URL must come from web search - no memorized links allowed.`;
 
   // Add competency context for personalization
   if (competencies && competencies.length > 0) {
@@ -451,7 +509,7 @@ export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
       ],
-      temperature: 0.7,
+      temperature: 0.3, // Reduced from 0.7 to minimize URL hallucination
       response_format: { type: 'json_object' },
       // OpenRouter-specific: Enable web search for real resources
       // @ts-ignore - OpenRouter extension

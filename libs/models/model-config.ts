@@ -46,6 +46,17 @@ export interface ModelConfig {
 export const MODEL_CATALOG: ModelConfig[] = [
   // ==================== FREE TIER MODELS ====================
 
+  {
+    id: "deepseek/deepseek-chat-v3.1",
+    name: "DeepSeek Chat v3.1",
+    provider: "DeepSeek",
+    minimumTier: "free",
+    costTier: "free",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Latest version with improved reasoning",
+    featured: true,
+  },
   // DeepSeek (Free)
   {
     id: "deepseek/deepseek-chat",
@@ -56,17 +67,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsWebSearch: true,
     supportsStructuredOutput: true,
     description: "General-purpose reasoning model with strong capabilities",
-    featured: true,
-  },
-  {
-    id: "deepseek/deepseek-chat-v3.1",
-    name: "DeepSeek Chat v3.1",
-    provider: "DeepSeek",
-    minimumTier: "free",
-    costTier: "free",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Latest version with improved reasoning",
   },
   {
     id: "deepseek/deepseek-r1",
@@ -170,17 +170,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     featured: true,
   },
   {
-    id: "anthropic/claude-sonnet-4.5:thinking",
-    name: "Claude Sonnet 4.5 (Reasoning)",
-    provider: "Anthropic",
-    minimumTier: "pro",
-    costTier: "high",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Extended reasoning mode for complex problem-solving",
-    isReasoningModel: true,
-  },
-  {
     id: "anthropic/claude-sonnet-4",
     name: "Claude Sonnet 4",
     provider: "Anthropic",
@@ -189,17 +178,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsWebSearch: true,
     supportsStructuredOutput: true,
     description: "Previous generation Sonnet model",
-  },
-  {
-    id: "anthropic/claude-sonnet-4:thinking",
-    name: "Claude Sonnet 4 (Reasoning)",
-    provider: "Anthropic",
-    minimumTier: "pro",
-    costTier: "high",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Extended reasoning for Sonnet 4",
-    isReasoningModel: true,
   },
   {
     id: "anthropic/claude-4.5-haiku",
@@ -211,17 +189,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsStructuredOutput: true,
     description: "3x cheaper and 2x faster than Sonnet 4 for coding tasks",
     featured: true,
-  },
-  {
-    id: "anthropic/claude-3.5-sonnet:thinking",
-    name: "Claude 3.5 Sonnet (Reasoning)",
-    provider: "Anthropic",
-    minimumTier: "pro",
-    costTier: "high",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Extended reasoning mode for complex analysis",
-    isReasoningModel: true,
   },
 
   // Google Gemini
@@ -422,7 +389,7 @@ export const MODEL_CATALOG: ModelConfig[] = [
  */
 export function getDefaultModelForTier(tier: SubscriptionTier): string {
   if (tier === "free") {
-    return "deepseek/deepseek-chat";
+    return "deepseek/deepseek-chat-v3.1";
   }
   return "anthropic/claude-sonnet-4.5";
 }
