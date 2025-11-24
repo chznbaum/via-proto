@@ -13,7 +13,9 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   const requestUrl = new URL(req.url);
   const code = requestUrl.searchParams.get("code");
-  const redirectUrl = requestUrl.origin + config.auth.callbackUrl;
+  // Use NEXT_PUBLIC_SITE_URL instead of request origin to avoid Docker networking issues
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || requestUrl.origin;
+  const redirectUrl = siteUrl + config.auth.callbackUrl;
 
   if (code) {
     // Create the redirect response first
