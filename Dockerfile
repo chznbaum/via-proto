@@ -38,12 +38,16 @@ COPY --from=builder /app/types ./types
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 COPY --from=builder /app/node_modules ./node_modules
 
+# Copy SSL certificate for Supabase connection
+COPY --from=builder /certs ./certs
+
 USER nextjs
 
 EXPOSE 3000
 
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV NODE_EXTRA_CA_CERTS="/certs/prod-ca-2021.crt"
 
 # Default command is web server
 CMD ["node", "server.js"]
