@@ -7,6 +7,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    networks:
+      - coolify
+    labels:
+      - "coolify.managed=true"
+      - "coolify.type=application"
     environment:
       # All your environment variables here
       NODE_ENV: production
@@ -23,6 +28,12 @@ services:
       UNSPLASH_ACCESS_KEY: ${UNSPLASH_ACCESS_KEY}
       WORKER_CONCURRENCY: ${WORKER_CONCURRENCY}
       WORKER_POLL_INTERVAL: ${WORKER_POLL_INTERVAL}
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
     restart: unless-stopped
 
   worker:
@@ -30,6 +41,8 @@ services:
       context: .
       dockerfile: Dockerfile
     command: npm run worker
+    networks:
+      - coolify
     environment:
       # Same environment variables as web
       NODE_ENV: production
@@ -46,3 +59,7 @@ services:
     labels:
       - "coolify.exclude_from_hc=true"
     restart: unless-stopped
+
+networks:
+  coolify:
+    external: true
