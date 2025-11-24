@@ -234,6 +234,14 @@ ${JSON.stringify(researchedResources, null, 2)}
 IMPORTANT: Your sections and resources must fulfill the promise of the title and description above.
 Select 20-35 resources from the pool that best support the learning path goals.`;
 
+  // Extract all URLs for deduplication awareness
+  const allAvailableUrls = researchedResources.map((r: any) => r.url);
+
+  prompt += `\n\nDUPLICATION PREVENTION:
+You have ${allAvailableUrls.length} unique resources to choose from.
+Each resource should appear ONLY ONCE across all sections.
+Before including a resource, verify you haven't already used it in a previous section.`;
+
   // Add competency context for personalization
   if (competencies && competencies.length > 0) {
     prompt += `\n\nCOMPETENCY CONTEXT:`;

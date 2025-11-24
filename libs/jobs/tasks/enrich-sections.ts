@@ -49,7 +49,8 @@ type EnrichmentResource = z.infer<typeof EnrichmentResourceSchema>;
  */
 function buildEnrichmentPrompt(
   section: { title: string; description: string; order: number },
-  existingResources: Array<{ title: string; type: string; is_free: boolean | null }>,
+  existingResources: Array<{ title: string; type: string; is_free: boolean | null; url: string }>,
+  allExistingUrls: string[],
   pathTitle: string,
   skillLevel: string
 ): string {
@@ -66,61 +67,110 @@ function buildEnrichmentPrompt(
 
   const allTypes = ['video', 'article', 'book', 'project', 'course', 'audio', 'graphic'];
   const missingTypes = allTypes.filter(t => !typeCount[t]);
-  const underrepresentedTypes = allTypes.filter(t => (typeCount[t] || 0) === 1);
+  const underrepresentedTypes = allTypes.filter(t => (typeCount[t] || 0) <= 1);
 
   return `═══════════════════════════════════════════════════════════════════════════════
-🔍 CRITICAL TASK - ENRICH UNDER-RESOURCED SECTION  🔍
+✨ SECTION ENRICHMENT MISSION ✨
 ═══════════════════════════════════════════════════════════════════════════════
 
-A section needs MORE HIGH-QUALITY resources to meet our quality standards.
+A learning path section needs additional high-quality resources to meet quality standards.
 
 LEARNING PATH: "${pathTitle}" (${skillLevel} level)
-SECTION: "${section.title}"
-DESCRIPTION: "${section.description}"
 
-CURRENT RESOURCES (${existingResources.length} total):
-${existingResources.map((r, i) => `${i + 1}. ${r.title} (${r.type}, ${r.is_free === true ? 'FREE' : r.is_free === false ? 'PAID' : 'unknown'})`).join('\n')}
+SECTION TO ENRICH:
+- Title: "${section.title}"
+- Description: "${section.description}"
+- Current Resource Count: ${existingResources.length} (needs to reach 5-7 for optimal learning)
 
-RESOURCE GAP ANALYSIS:
-- Types present: ${Object.keys(typeCount).join(', ')}
-- Types missing: ${missingTypes.length > 0 ? missingTypes.join(', ') : 'none'}
-- Types underrepresented: ${underrepresentedTypes.length > 0 ? underrepresentedTypes.join(', ') : 'none'}
-- Free/Paid: ${freeCount} free, ${paidCount} paid
+CURRENT RESOURCES IN THIS SECTION:
+${existingResources.map((r, i) => `${i + 1}. "${r.title}" (${r.type}, ${r.is_free === true ? 'FREE' : r.is_free === false ? 'PAID' : 'unknown'})`).join('\n')}
+
+GAP ANALYSIS:
+- Resource types present: ${Object.keys(typeCount).join(', ') || 'none'}
+- Resource types missing: ${missingTypes.length > 0 ? missingTypes.join(', ') : 'all types covered'}
+- Underrepresented types: ${underrepresentedTypes.length > 0 ? underrepresentedTypes.join(', ') : 'good balance'}
+- Free vs Paid: ${freeCount} free, ${paidCount} paid
+- Free percentage: ${existingResources.length > 0 ? Math.round((freeCount / existingResources.length) * 100) : 0}%
 
 YOUR MISSION:
-Use web search to find 2-3 HIGH-QUALITY complementary resources that fill gaps in this section.
 
-PRIORITIZATION RULES (in order):
-1. **Type Diversity**: Prefer missing types (${missingTypes.slice(0, 3).join(', ') || 'N/A'})
-2. **Hands-on Learning**: Add projects/interactive content if missing
-3. **Difficulty Balance**: Ensure coverage across beginner/intermediate/advanced
-4. **Free Resources**: Prioritize free if < 60% are currently free
-5. **Authoritative Sources**: Official docs, recognized platforms, expert authors
+Find 2-3 high-quality, complementary resources that fill gaps in this section's learning materials.
 
-SEARCH STRATEGY:
-1. Search: "${section.title} ${missingTypes[0] || 'tutorial'} ${skillLevel} 2024"
-2. Search: "${pathTitle} ${section.title} hands-on practice"
-3. Search: "best ${section.title} resources official documentation"
+PRIORITIZATION (in order of importance):
+
+1. **Type Diversity**: Prioritize missing types${missingTypes.length > 0 ? ` (especially: ${missingTypes.slice(0, 3).join(', ')})` : ''}
+2. **Hands-On Learning**: Add project/interactive resources if missing
+3. **Difficulty Range**: Ensure beginner, intermediate, and advanced coverage
+4. **Free Resources**: Prioritize free if current free % is below 60%
+5. **Authoritative Sources**: Official docs, recognized platforms, expert creators
+
+RESOURCE DISCOVERY:
+
+Identify current, high-quality resources that complement the existing materials:
+- Find resources that fill type gaps
+- Look for hands-on projects or interactive content
+- Search for official documentation or canonical references
+- Identify highly-rated tutorials from reputable sources
+- Find recent content (2022+) from active creators
+
+CRITICAL - AVOID DUPLICATES:
+Do NOT recommend ANY of these URLs already in the learning path:
+${allExistingUrls.slice(0, 30).join('\n')}
+${allExistingUrls.length > 30 ? `... and ${allExistingUrls.length - 30} more existing URLs` : ''}
 
 REQUIREMENTS FOR NEW RESOURCES:
+
+✓ Must be directly relevant to: "${section.title}"
 ✓ Must complement (not duplicate) existing resources
-✓ Must be directly relevant to section topic: "${section.title}"
-✓ Published or updated 2022 or later
-✓ Accessible (working URL, prefer free over paid)
-✓ Different resource types preferred (fill gaps)
-✓ Direct link to content (not landing page)
+✓ Must fill identified gaps (type, difficulty, free/paid balance)
+✓ Published or updated 2022 or later preferred
+✓ Must be currently accessible (working URL)
+✓ Prefer free resources unless paid offers significant added value
+✓ Must be different from all existing resources (different content AND URL)
 
-FOR EACH RESOURCE:
-- **title**: Exact title from web search
-- **url**: Full working URL (verify it loads)
-- **type**: video | article | book | project | course | audio | graphic
-- **is_free**: true | false | null
-- **description**: 1-2 sentences on what it covers
-- **estimated_minutes**: Number or null
-- **difficulty**: beginner | intermediate | advanced | null
-- **gap_filled**: ONE sentence explaining what gap this fills (e.g., "Adds hands-on project practice", "Provides advanced-level coverage", "Free alternative to paid resources")
+═══════════════════════════════════════════════════════════════════════════════
 
-Return 2-3 resources that COMPLEMENT the existing ones.
+OUTPUT FORMAT - CRITICAL:
+
+Return ONLY valid JSON matching this EXACT schema. NO markdown code blocks, NO explanatory text before or after, ONLY the JSON object:
+
+{
+  "resources": [
+    {
+      "title": "Build a Complete Project: React Task Manager",
+      "url": "https://github.com/example/react-task-manager-tutorial",
+      "type": "project",
+      "is_free": true,
+      "description": "Step-by-step hands-on project building a full-featured task management app with React hooks, context, and local storage. Includes complete source code and tutorial.",
+      "estimated_minutes": 180,
+      "difficulty": "intermediate",
+      "gap_filled": "Adds hands-on project practice, fills missing 'project' type"
+    },
+    {
+      "title": "React Performance Optimization - Official Guide",
+      "url": "https://react.dev/learn/render-and-commit",
+      "type": "article",
+      "is_free": true,
+      "description": "Official React documentation covering rendering behavior, performance optimization techniques, and best practices for avoiding unnecessary re-renders.",
+      "estimated_minutes": 45,
+      "difficulty": "advanced",
+      "gap_filled": "Provides advanced-level coverage, free alternative to paid courses"
+    }
+    // 1-2 more resources following this exact structure
+  ]
+}
+
+REQUIRED FIELDS FOR EACH RESOURCE:
+- title: Exact title of the resource (string)
+- url: Full working URL starting with https:// or http:// (string)
+- type: One of: "video" | "article" | "book" | "project" | "course" | "audio" | "graphic"
+- is_free: true | false | null (boolean | null)
+- description: 1-2 sentences explaining value and specific content covered (string)
+- estimated_minutes: Realistic time to complete/consume (number | null)
+- difficulty: "beginner" | "intermediate" | "advanced" | null
+- gap_filled: ONE sentence explaining what gap this fills (string)
+
+Return exactly 2-3 resources that complement the existing ones and fill identified gaps.
 
 ═══════════════════════════════════════════════════════════════════════════════`;
 }
@@ -197,6 +247,7 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
         resources (
           id,
           title,
+          url,
           type,
           is_free,
           link_status,
@@ -303,6 +354,13 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
       },
     });
 
+    // Step 5.5: Fetch ALL existing URLs for deduplication
+    const allExistingUrls = sections
+      .flatMap(s => s.resources?.map((r: any) => r.url) || [])
+      .filter(Boolean);
+
+    console.log(`[enrich_sections] Total existing URLs in path: ${allExistingUrls.length}`);
+
     let enrichedCount = 0;
     let failedCount = 0;
     const enrichedSectionIds: string[] = [];
@@ -315,6 +373,7 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
         const prompt = buildEnrichmentPrompt(
           section,
           activeResources,
+          allExistingUrls, // ← ADD THIS PARAMETER
           path.title,
           path.skill_level
         );
@@ -322,8 +381,10 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
         const completion = await openrouter.chat.completions.create({
           model: 'anthropic/claude-sonnet-4.5',
           messages: [{ role: 'user', content: prompt }],
-          temperature: 0.3, // Factual, deterministic
+          temperature: 0.7, // Higher temperature for more flexibility in finding complementary resources
           response_format: { type: 'json_object' },
+          // @ts-ignore - OpenRouter extension
+          transforms: ['web-search'],
         });
 
         const responseText = completion.choices[0]?.message?.content;
@@ -331,14 +392,57 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
           throw new Error('No response from AI');
         }
 
-        const parsed = JSON.parse(responseText);
+        // Parse JSON with multiple fallback strategies
+        let parsed;
+        try {
+          parsed = JSON.parse(responseText);
+        } catch (parseError) {
+          // Strategy 2: Strip markdown code blocks
+          const codeBlockPattern = /^```(?:json)?\s*\n?([\s\S]*?)\n?```$/;
+          const match = responseText.trim().match(codeBlockPattern);
+          const cleanText = match ? match[1].trim() : responseText.trim();
+
+          try {
+            parsed = JSON.parse(cleanText);
+          } catch (e2) {
+            // Strategy 3: Extract JSON object from text
+            const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+            if (jsonMatch) {
+              try {
+                parsed = JSON.parse(jsonMatch[0]);
+              } catch (e3) {
+                console.error(`[enrich_sections] Failed to parse response for section ${section.id}. First 300 chars:`, responseText.substring(0, 300));
+                throw new Error(`Invalid JSON response: ${responseText.substring(0, 100)}...`);
+              }
+            } else {
+              console.error(`[enrich_sections] No JSON found in response for section ${section.id}:`, responseText.substring(0, 200));
+              throw new Error(`Response was not JSON: ${responseText.substring(0, 100)}...`);
+            }
+          }
+        }
+
         const enrichmentData = EnrichmentResponseSchema.parse(parsed);
 
         console.log(`[enrich_sections] Found ${enrichmentData.resources.length} complementary resources`);
 
-        // Insert new resources
+        // Filter out any resources that duplicate existing URLs
+        const uniqueResources = enrichmentData.resources.filter(
+          (resource) => !allExistingUrls.includes(resource.url)
+        );
+
+        if (uniqueResources.length === 0) {
+          console.warn(`[enrich_sections] All suggested resources were duplicates for section ${section.id} - skipping enrichment`);
+          failedCount++;
+          continue;
+        }
+
+        if (uniqueResources.length < enrichmentData.resources.length) {
+          console.log(`[enrich_sections] Filtered out ${enrichmentData.resources.length - uniqueResources.length} duplicate URLs`);
+        }
+
+        // Insert new unique resources
         let currentOrder = nextOrder;
-        for (const resource of enrichmentData.resources) {
+        for (const resource of uniqueResources) {
           const { error: insertError } = await supabase
             .from('resources')
             .insert({
@@ -358,6 +462,8 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
             failedCount++;
           } else {
             currentOrder++;
+            // Add to global list to prevent duplicates within same enrichment run
+            allExistingUrls.push(resource.url);
           }
         }
 

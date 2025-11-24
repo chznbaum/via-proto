@@ -53,150 +53,160 @@ type ResearchedResource = z.infer<typeof ResearchedResourceSchema>;
  */
 function buildResearchPrompt(topicName: string, skillLevel: string, goals?: string): string {
   return `═══════════════════════════════════════════════════════════════════════════════
-⚠️  CRITICAL REQUIREMENT - YOU ARE A RESEARCH-ONLY AGENT  ⚠️
+🔍 LEARNING RESOURCE RESEARCH MISSION 🔍
 ═══════════════════════════════════════════════════════════════════════════════
 
-YOU MUST USE WEB SEARCH FOR EVERY SINGLE RESOURCE.
-
-Your ONLY job is to SEARCH and DISCOVER learning resources. You will NOT organize them, structure them, or filter them - that happens later.
-
-DO NOT use URLs from your training data or memory.
-DO NOT suggest resources you "remember" - SEARCH for them NOW.
-DO NOT hallucinate or guess URLs.
-
-Your training data is outdated (pre-2025). Many URLs you know are dead or moved.
-The ONLY acceptable URLs are ones you discover through active web search RIGHT NOW.
-
-═══════════════════════════════════════════════════════════════════════════════
-
-YOUR MISSION: Pure Resource Discovery
+You are an expert educational researcher tasked with discovering 30-50 high-quality learning resources for a comprehensive learning path.
 
 TOPIC: "${topicName}"
 SKILL LEVEL: ${skillLevel}${goals ? `\nLEARNER GOALS: ${goals}` : ''}
 
-SEARCH AND COMPILE 30-50 HIGH-QUALITY LEARNING RESOURCES.
+RESEARCH APPROACH:
 
-DO NOT organize, filter, or structure yet - just compile a comprehensive list.
-Another AI agent will organize these resources into sections later.
+Your goal is to identify the BEST learning resources that currently exist for this topic. Use your knowledge of high-quality educational resources AND verify that they are still accessible and current through web search.
 
-═══════════════════════════════════════════════════════════════════════════════
+CRITICAL REQUIREMENTS:
 
-SEARCH STRATEGY:
+1. **Resource Discovery Strategy**:
+  - Start with authoritative sources: official documentation, recognized platforms, expert authors
+  - Include diverse formats: videos, articles, books, projects, courses, tutorials
+  - Balance free and paid options (prioritize free when quality is equivalent)
+  - Find resources across difficulty levels: beginner, intermediate, advanced
+  - Prioritize hands-on, project-based learning materials
 
-Use multiple search queries to find diverse resources:
+2. **Quality Indicators** (prioritize resources with these traits):
+  - Official documentation or canonical sources (React docs, MDN, etc.)
+  - Reputable platforms: YouTube channels with 100k+ subs, Udemy/Coursera top-rated
+  - Popular GitHub projects: 1k+ stars, active maintenance
+  - Recognized authors: industry experts, bestselling authors
+  - Recent content: published or updated 2022 or later (verify publication dates)
+  - High engagement: good reviews, active communities, proven track records
 
-1. **By Type:**
-   - "${topicName} tutorial video 2024"
-   - "${topicName} article guide 2024"
-   - "${topicName} book pdf free"
-   - "${topicName} course online"
-   - "${topicName} project github"
+3. **Verification Requirements**:
+  - Every URL must be verified as currently accessible
+  - Check that links lead directly to content (not landing pages or paywalls)
+  - Confirm publication/update dates are recent
+  - For paid resources, identify free alternatives covering similar content
+  - Ensure diverse resource types and platforms
 
-2. **By Platform:**
-   - "${topicName} youtube tutorial"
-   - "${topicName} udemy course"
-   - "${topicName} coursera"
-   - "${topicName} freeCodeCamp"
-   - "${topicName} MDN documentation"
-   - "${topicName} bookshop.org"
-
-3. **By Difficulty:**
-   - "${topicName} beginner tutorial 2024"
-   - "${topicName} intermediate guide"
-   - "${topicName} advanced techniques"
-   - "${topicName} expert patterns"
-
-4. **By Quality:**
-   - "${topicName} best practices 2024"
-   - "${topicName} comprehensive guide"
-   - "${topicName} official documentation"
-   - "learn ${topicName} project based"
-
-5. **For Free Alternatives:**
-   - "${topicName} free course"
-   - "${topicName} open source tutorial"
-   - "${topicName} free alternative"
+4. **Coverage Requirements** (aim for this distribution):
+  - Videos: 8-12 resources (YouTube tutorials, course videos)
+  - Articles: 8-12 resources (blog posts, documentation, guides)
+  - Projects: 5-8 resources (GitHub repos, coding challenges)
+  - Courses: 4-6 resources (Udemy, Coursera, freeCodeCamp)
+  - Books: 3-5 resources (O'Reilly, Manning, free PDFs)
+  - Other: 2-4 resources (podcasts, infographics, cheat sheets)
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-RESOURCE REQUIREMENTS:
+RESEARCH TASKS:
 
-For EACH resource, document:
-- **title**: Exact title of the resource (from web search)
-- **url**: Full verified URL starting with https:// or http://
-- **type**: video | article | book | project | course | audio | graphic
-- **is_free**: true | false | null (null only if genuinely cannot determine)
-- **publish_date**: When published/updated (e.g. "2024-03", "2023", or null if unknown)
-- **description**: 1-2 sentences explaining what it covers
-- **estimated_minutes**: Time to complete/consume (estimate, or null)
-- **difficulty**: beginner | intermediate | advanced | null
+For this topic, identify current, high-quality learning resources in these categories:
 
-QUALITY CRITERIA:
-✓ Published or updated 2022 or newer (prefer 2024-2025)
-✓ Direct URL to the resource (not search page, not landing page)
-✓ Actually accessible (verify it loads)
-✓ Authoritative source or highly engaged content
-✓ Clear learning value
+1. **Official Documentation & Canonical Resources**
+  - Find the official docs, getting started guides, and authoritative references
+  - Verify these are maintained and current
 
-DIVERSITY REQUIREMENTS:
-- Mix of videos, articles, books, projects, courses
-- Range from beginner to advanced difficulty
-- Both free and paid options (but prioritize free)
-- Various platforms (YouTube, GitHub, official docs, courses, blogs)
-- Theory AND practice resources
-- Quick reads AND comprehensive deep-dives
+2. **Beginner-Friendly Video Tutorials**
+  - Find comprehensive video courses and tutorials for beginners
+  - Include both free (YouTube) and paid (Udemy, Coursera) options
+  - Look for recent content (2023-2025)
 
-GOAL:
-Discover 30-50 resources that cover the full spectrum of learning for this topic.
-Cast a WIDE net - include beginner, intermediate, and advanced resources.
-Include both quick tutorials AND comprehensive courses.
-Mix free AND paid (with more free options).
+3. **In-Depth Articles & Guides**
+  - Identify detailed blog posts, technical articles, and written tutorials
+  - Find content from recognized platforms and expert developers
+  - Include both quick reads and comprehensive guides
+
+4. **Hands-On Projects & Practice**
+  - Find GitHub repositories with learning projects
+  - Identify coding challenges and interactive exercises
+  - Look for project-based courses and workshops
+
+5. **Comprehensive Courses**
+  - Identify top-rated paid courses (with free alternatives)
+  - Find free bootcamp-style resources (freeCodeCamp, The Odin Project)
+  - Include both structured curricula and self-paced options
+
+6. **Books & Long-Form Content**
+  - Find authoritative books (both paid and free/open-source)
+  - Identify comprehensive written guides
+  - Look for recently published or updated editions
+
+7. **Supplementary Resources**
+  - Find relevant podcasts, cheat sheets, and reference materials
+  - Identify community resources and forums
+  - Include visual learning aids (infographics, diagrams)
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-OUTPUT FORMAT:
+OUTPUT FORMAT - CRITICAL:
 
-Return ONLY valid JSON. NO markdown blocks, NO explanatory text, ONLY the JSON object:
+Return ONLY valid JSON matching this EXACT schema. NO markdown code blocks, NO explanatory text, ONLY the JSON object:
 
 {
   "resources": [
     {
-      "title": "Complete React Tutorial for Beginners",
-      "url": "https://www.youtube.com/watch?v=example",
-      "type": "video",
+      "title": "Official React Documentation",
+      "url": "https://react.dev/learn",
+      "type": "article",
       "is_free": true,
-      "publish_date": "2024-03",
-      "description": "Comprehensive 8-hour video course covering React fundamentals, hooks, and state management with hands-on projects.",
-      "estimated_minutes": 480,
+      "publish_date": "2024",
+      "description": "The authoritative, comprehensive guide to React from the core team. Covers fundamentals, hooks, and advanced patterns with interactive examples.",
+      "estimated_minutes": 240,
       "difficulty": "beginner"
     },
-    // ... 29-49 more resources
+    {
+      "title": "React - The Complete Guide 2024 (incl. Next.js, Redux)",
+      "url": "https://www.udemy.com/course/react-the-complete-guide/",
+      "type": "course",
+      "is_free": false,
+      "publish_date": "2024-01",
+      "description": "Comprehensive 50-hour paid course covering React, hooks, Redux, and Next.js with hands-on projects and real-world applications.",
+      "estimated_minutes": 3000,
+      "difficulty": "beginner"
+    },
+    {
+      "title": "freeCodeCamp React Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+      "type": "video",
+      "is_free": true,
+      "publish_date": "2023",
+      "description": "Free 12-hour comprehensive React tutorial covering fundamentals, hooks, and project building. Excellent free alternative to paid courses.",
+      "estimated_minutes": 720,
+      "difficulty": "beginner"
+    }
+    // ... 27-47 more resources following this exact structure
   ]
 }
 
-═══════════════════════════════════════════════════════════════════════════════
-
-SEARCH QUERIES TO USE RIGHT NOW:
-
-1. "${topicName} tutorial 2024"
-2. "${topicName} best courses free"
-3. "${topicName} projects github"
-4. "${topicName} comprehensive guide 2024"
-5. "${topicName} beginner tutorial"
-6. "${topicName} advanced techniques"
-7. "${topicName} official documentation"
-8. "learn ${topicName} free"
-9. "${topicName} youtube tutorial"
-10. "${topicName} hands-on project"
-
-Execute these searches NOW and compile the discovered resources.
+REQUIRED FIELDS FOR EACH RESOURCE:
+- title: Exact title of the resource (string)
+- url: Full verified URL starting with https:// or http:// (string)
+- type: One of: "video" | "article" | "book" | "project" | "course" | "audio" | "graphic"
+- is_free: true | false | null (null only if genuinely cannot determine)
+- publish_date: "YYYY-MM" or "YYYY" or null (string | null)
+- description: 1-2 compelling sentences explaining value and content (string)
+- estimated_minutes: Realistic time to complete/consume, or null (number | null)
+- difficulty: "beginner" | "intermediate" | "advanced" | null
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-FINAL REMINDER:
-Every URL must come from web search conducted RIGHT NOW.
-Your training data is outdated - do not rely on memorized URLs.
-Search, discover, document. No organization or filtering yet.
+QUALITY CHECKLIST - Before returning, verify:
+
+□ 30-50 resources total
+□ All URLs verified as currently accessible
+□ Mix of resource types (not all videos or all articles)
+□ Range of difficulty levels (beginner to advanced)
+□ Both free AND paid options (more free than paid)
+□ Recent content (2022+ preferred)
+□ Authoritative sources included
+□ At least 5-8 hands-on project resources
+□ Official documentation included
+□ Every paid resource has a free alternative somewhere in the list
+□ Descriptions are specific and compelling
+□ All fields properly filled (no missing required data)
+
+Return the JSON object now.
 
 ═══════════════════════════════════════════════════════════════════════════════`;
 }
@@ -311,7 +321,7 @@ export const researchResourcesTask: Task = async (payload, helpers) => {
       messages: [
         { role: 'user', content: prompt },
       ],
-      temperature: 0.3, // Low temperature for factual research
+      temperature: 0.7, // Higher temperature for better search tool invocation and discovery
       response_format: { type: 'json_object' },
       // OpenRouter-specific: Enable web search for resource discovery
       // @ts-ignore - OpenRouter extension

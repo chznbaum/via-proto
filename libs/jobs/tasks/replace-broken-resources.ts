@@ -47,65 +47,99 @@ function buildReplacementPrompt(
   brokenResource: any,
   sectionTitle: string,
   pathTitle: string,
-  pathSkillLevel: string
+  pathSkillLevel: string,
+  allExistingUrls: string[]
 ): string {
   return `═══════════════════════════════════════════════════════════════════════════════
-⚠️  CRITICAL TASK - FIND WORKING REPLACEMENT FOR BROKEN RESOURCE  ⚠️
+🔧 RESOURCE REPLACEMENT MISSION 🔧
 ═══════════════════════════════════════════════════════════════════════════════
 
-A resource link is BROKEN or INACCESSIBLE. Find a working replacement.
+A learning resource link is broken or inaccessible and needs a working replacement.
 
-BROKEN RESOURCE:
+BROKEN RESOURCE DETAILS:
 - Title: "${brokenResource.title}"
 - Description: "${brokenResource.description}"
-- Original Type: ${brokenResource.type}
+- Type: ${brokenResource.type}
 - Original URL: ${brokenResource.url} (BROKEN - do not reuse)
+- Free Status: ${brokenResource.is_free === true ? 'FREE' : brokenResource.is_free === false ? 'PAID' : 'unknown'}
 
 CONTEXT:
 - Learning Path: "${pathTitle}" (${pathSkillLevel} level)
 - Section: "${sectionTitle}"
 
 YOUR MISSION:
-Use web search to find 3-5 HIGH-QUALITY replacement resources that cover the same topic.
 
-SEARCH STRATEGY:
-1. Search for: "${brokenResource.title} ${pathSkillLevel} tutorial 2024"
-2. Search for: "${sectionTitle} ${brokenResource.type} guide"
-3. Search variations with different platforms (YouTube, GitHub, official docs, etc.)
+Find 3-5 high-quality replacement resources that cover the same subject matter as the broken resource.
 
-REQUIREMENTS FOR REPLACEMENTS:
-✓ Must cover THE SAME subject matter as the broken resource
-✓ Must be accessible (working URL, not behind paywall if original was free)
-✓ Prefer same resource type (${brokenResource.type}), but can substitute if higher quality
-✓ Published or updated 2022 or later
-✓ Official documentation or authoritative sources preferred
-✓ Direct link to content (not landing page or search result)
+REPLACEMENT CRITERIA:
 
-FOR EACH CANDIDATE:
-- **title**: Exact title from web search
-- **url**: Full working URL (verify it loads)
-- **type**: video | article | book | project | course | audio | graphic
-- **is_free**: true | false | null
-- **description**: 1-2 sentences on what it covers
-- **relevance_score**: 1-10 (how well it matches original resource's topic)
+1. **Content Match**: Must teach the same topic/concepts as the broken resource
+2. **Quality**: Prefer authoritative sources, official docs, or highly-rated content
+3. **Accessibility**: Must be currently accessible (verify URL works)
+4. **Free Status**: Match original if possible (if original was free, prioritize free)
+5. **Currency**: Published or updated 2022 or later preferred
+6. **Type Preference**: Same type as original (${brokenResource.type}) preferred but can substitute if higher quality
+7. **Direct Link**: Must link directly to content, not landing/marketing page
 
-CRITICAL OUTPUT REQUIREMENT:
-Return ONLY valid JSON. NO explanatory text, NO markdown blocks, ONLY the JSON object.
+IMPORTANT - AVOID DUPLICATES:
+Do NOT recommend any of these URLs already in the learning path:
+${allExistingUrls.slice(0, 20).join('\n')}
+${allExistingUrls.length > 20 ? `... and ${allExistingUrls.length - 20} more URLs` : ''}
+
+RESEARCH APPROACH:
+
+Find current, high-quality resources that match the broken resource's purpose:
+- Search for the specific topic/technology covered
+- Look for official documentation or canonical sources
+- Identify popular tutorials from reputable creators
+- Find highly-rated courses or well-maintained projects
+- Verify URLs are accessible and content is current
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUTPUT FORMAT - CRITICAL:
+
+Return ONLY valid JSON matching this EXACT schema. NO markdown, NO explanatory text, ONLY the JSON:
 
 {
   "candidates": [
     {
-      "title": "...",
-      "url": "https://...",
+      "title": "Official React Hooks Documentation",
+      "url": "https://react.dev/reference/react",
       "type": "article",
       "is_free": true,
-      "description": "...",
+      "description": "Comprehensive official documentation for React Hooks with interactive examples and best practices directly from the React core team.",
       "relevance_score": 9
+    },
+    {
+      "title": "Complete React Hooks Tutorial by Web Dev Simplified",
+      "url": "https://www.youtube.com/watch?v=O6P86uwfdR0",
+      "type": "video",
+      "is_free": true,
+      "description": "Clear 2-hour video tutorial covering all React Hooks with practical examples and common use cases. 500k+ views, highly rated.",
+      "relevance_score": 8
+    },
+    {
+      "title": "React Hooks in Action (Book)",
+      "url": "https://www.manning.com/books/react-hooks-in-action",
+      "type": "book",
+      "is_free": false,
+      "description": "In-depth book exploring React Hooks patterns, best practices, and real-world applications with production-ready examples.",
+      "relevance_score": 7
     }
+    // 2-4 more candidates
   ]
 }
 
-Return 3-5 candidates, ordered by relevance_score (best first).
+REQUIRED FIELDS:
+- title: Exact title of the resource (string)
+- url: Full working URL starting with https:// or http:// (string)
+- type: "video" | "article" | "book" | "project" | "course" | "audio" | "graphic"
+- is_free: true | false | null
+- description: 1-2 sentences on what it covers and why it's valuable (string)
+- relevance_score: 1-10 score for how well it matches the original resource (number)
+
+Return 3-5 candidates, ordered by relevance_score (highest first).
 
 ═══════════════════════════════════════════════════════════════════════════════`;
 }
@@ -244,6 +278,18 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
       },
     });
 
+    // Step 4.5: Fetch ALL existing URLs for deduplication
+    const { data: allSections } = await supabase
+      .from('sections')
+      .select(`
+        resources (url)
+      `)
+      .eq('learning_path_id', pathId);
+
+    const allExistingUrls = allSections
+      ?.flatMap(s => s.resources?.map((r: any) => r.url))
+      .filter(Boolean) || [];
+
     let replacedCount = 0;
     let failedCount = 0;
 
@@ -256,14 +302,17 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
           resource,
           sectionTitle,
           path.title,
-          path.skill_level
+          path.skill_level,
+          allExistingUrls // Pass all URLs for dedup
         );
 
         const completion = await openrouter.chat.completions.create({
           model: 'anthropic/claude-sonnet-4.5',
           messages: [{ role: 'user', content: prompt }],
-          temperature: 0.3, // Factual, deterministic
+          temperature: 0.7, // Higher temperature for more flexibility in finding replacements
           response_format: { type: 'json_object' },
+          // @ts-ignore - OpenRouter extension
+          transforms: ['web-search'],
         });
 
         const responseText = completion.choices[0]?.message?.content;
@@ -271,25 +320,50 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
           throw new Error('No response from AI');
         }
 
-        // Parse JSON with better error handling
+        // Parse JSON with multiple fallback strategies
         let parsed;
         try {
           parsed = JSON.parse(responseText);
         } catch (parseError) {
-          // Try to extract JSON from text if AI added extra commentary
-          const jsonMatch = responseText.match(/\{[\s\S]*\}/);
-          if (jsonMatch) {
-            parsed = JSON.parse(jsonMatch[0]);
-          } else {
-            console.error(`[replace_broken_resources] Failed to parse response for ${resource.title}:`, responseText.substring(0, 200));
-            throw new Error(`Invalid JSON response: ${responseText.substring(0, 100)}`);
+          // Strategy 2: Try to strip markdown code blocks
+          const codeBlockPattern = /^```(?:json)?\s*\n?([\s\S]*?)\n?```$/;
+          const match = responseText.trim().match(codeBlockPattern);
+          const cleanText = match ? match[1].trim() : responseText.trim();
+
+          try {
+            parsed = JSON.parse(cleanText);
+          } catch (e2) {
+            // Strategy 3: Extract JSON object from text
+            const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+            if (jsonMatch) {
+              try {
+                parsed = JSON.parse(jsonMatch[0]);
+              } catch (e3) {
+                console.error(`[replace_broken_resources] Failed to parse response for ${resource.title}. First 300 chars:`, responseText.substring(0, 300));
+                throw new Error(`Invalid JSON response after all parsing strategies`);
+              }
+            } else {
+              console.error(`[replace_broken_resources] No JSON found in response for ${resource.title}:`, responseText.substring(0, 200));
+              throw new Error(`No JSON object found in response`);
+            }
           }
         }
 
         const replacementData = ReplacementResponseSchema.parse(parsed);
 
-        // Select best candidate (highest relevance_score)
-        const bestCandidate = replacementData.candidates.sort(
+        // Filter out any candidates that duplicate existing URLs
+        const uniqueCandidates = replacementData.candidates.filter(
+          (candidate) => !allExistingUrls.includes(candidate.url)
+        );
+
+        if (uniqueCandidates.length === 0) {
+          console.warn(`[replace_broken_resources] All candidates were duplicates for ${resource.title} - skipping`);
+          failedCount++;
+          continue;
+        }
+
+        // Select best unique candidate
+        const bestCandidate = uniqueCandidates.sort(
           (a, b) => b.relevance_score - a.relevance_score
         )[0];
 
