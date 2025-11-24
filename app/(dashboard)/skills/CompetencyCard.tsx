@@ -1,5 +1,7 @@
 'use client';
 
+import { Icon } from '@iconify/react';
+
 interface CompetencyCardProps {
   competency: {
     id: string;
@@ -9,6 +11,7 @@ interface CompetencyCardProps {
     competency: {
       name: string;
       slug: string;
+      icon: string | null;
       description: string | null;
       category: {
         name: string;
@@ -68,10 +71,11 @@ export function CompetencyCard({ competency, onDelete, onEdit }: CompetencyCardP
         <div className="flex items-start justify-between gap-2">
           <div className="flex-1">
             <div className="flex items-center gap-2">
-              {competency.competency.category?.icon && (
-                <span
-                  className={`iconify ${competency.competency.category.icon} size-4 text-base-content/60`}
-                ></span>
+              {competency.competency.icon && (
+                <Icon
+                  icon={competency.competency.icon}
+                  className="size-4 text-base-content/60"
+                />
               )}
               <h3 className="font-medium leading-tight">
                 {competency.competency.name}

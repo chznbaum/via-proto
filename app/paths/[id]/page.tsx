@@ -358,8 +358,10 @@ export default async function PathDetailPage({
                       <p className="text-sm">0</p>
                     </div>
                   )}
-                  {/* Share */}
-                  <ShareSheet url={fullUrl} title={path.title} description={path.description} />
+                  {/* Share - only show for public paths */}
+                  {path.is_public && (
+                    <ShareSheet url={fullUrl} title={path.title} description={path.description} />
+                  )}
                 </div>
               </div>
 

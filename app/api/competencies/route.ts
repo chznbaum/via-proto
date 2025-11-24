@@ -51,6 +51,7 @@ export async function GET(req: NextRequest) {
           id: comp.id,
           name: comp.name,
           slug: comp.slug,
+          icon: comp.icon,
           description: comp.description,
           category,
           topics_count: comp.topics_count,

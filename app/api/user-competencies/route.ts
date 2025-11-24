@@ -28,6 +28,7 @@ export async function GET(req: NextRequest) {
           id,
           name,
           slug,
+          icon,
           description,
           category:categories(
             name,
@@ -116,6 +117,7 @@ export async function POST(req: NextRequest) {
           id,
           name,
           slug,
+          icon,
           description,
           category:categories(
             name,

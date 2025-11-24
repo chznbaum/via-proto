@@ -288,6 +288,7 @@ export default function DashboardPaths({
                   path={path}
                   isOwner={path.creator_id === userId}
                   onDelete={handlePathDeleted}
+                  teamsEnabled={teamsEnabled}
                 />
               ))}
             </div>

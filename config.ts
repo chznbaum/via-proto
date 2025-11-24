@@ -12,7 +12,6 @@ const config = {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (resend.supportEmail) otherwise customer support won't work.
     id: "0e9f8788-eff9-4a98-b555-984b2e78383f",
     // Hide Crisp by default, except on route "/". Crisp is toggled with <ButtonSupport/>. If you want to show Crisp on every routes, just remove this below
-    onlyShowOnRoutes: ["/"],
   },
   stripe: {
     plans: [
@@ -23,7 +22,7 @@ const config = {
             ? "price_1SV0QxD1xQn8aM2gSRgiYPWh"
             : "price_1SV0QxD1xQn8aM2gSRgiYPWh",
         name: "Pro",
-        description: "Claude Sonnet 4.5 • 5 paths/month",
+        description: "Premium AI models • 5 paths/month",
         price: 12,
         priceAnchor: null,
         isFeatured: false,
@@ -31,7 +30,8 @@ const config = {
         tier: "pro",
         features: [
           { name: "5 learning paths per month" },
-          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Premium Anthropic models" },
+          { name: "Best Gemini and OpenAI models" },
           { name: "Private learning paths" },
           { name: "Priority support" },
         ],
@@ -118,7 +118,7 @@ const config = {
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
     fromAdmin: `ViaProto <hello@notifications.viapro.to>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "chazona@chazonabaum.com",
+    supportEmail: "chazona@viapro.to",
     // Email to be used for privacy/GDPR requests
     privacyEmail: "privacy@viapro.to",
     // Email to be used for good-faith security disclosures or questions

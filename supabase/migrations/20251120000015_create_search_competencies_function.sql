@@ -15,6 +15,7 @@ RETURNS TABLE (
     id uuid,
     name text,
     slug text,
+    icon text,
     description text,
     category_id uuid,
     is_active boolean,
@@ -31,6 +32,7 @@ BEGIN
             c.id,
             c.name,
             c.slug,
+            c.icon,
             c.description,
             c.category_id,
             c.is_active,
@@ -49,6 +51,7 @@ BEGIN
             c.id,
             c.name,
             c.slug,
+            c.icon,
             c.description,
             c.category_id,
             c.is_active,
@@ -65,6 +68,7 @@ BEGIN
         cm.id,
         cm.name,
         cm.slug,
+        cm.icon,
         cm.description,
         cm.category_id,
         cm.is_active,
@@ -79,4 +83,4 @@ END;
 $$;
 
 -- Add comment
-COMMENT ON FUNCTION public.search_competencies IS 'Searches competencies by name and synonyms, returning matches with metadata including topic count.';
+COMMENT ON FUNCTION public.search_competencies IS 'Searches competencies by name and synonyms, returning matches with metadata including topic count and icon.';

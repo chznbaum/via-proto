@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Icon } from '@iconify/react';
 import CompetencyTypeahead from '@/components/paths/CompetencyTypeahead';
 import { toast } from 'react-hot-toast';
 
@@ -66,7 +67,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
             onClick={onClose}
             disabled={isSubmitting}
           >
-            <span className="iconify lucide--x size-5"></span>
+            <Icon icon="lucide--x" className="size-5" />
           </button>
         </div>
 
@@ -82,7 +83,10 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
             />
             {selectedCompetency && (
               <div className="mt-2 flex items-center gap-2 rounded-lg bg-base-200 p-3">
-                <span className="iconify lucide--check-circle text-success size-5"></span>
+                <Icon icon="lucide--check-circle" className="text-success size-5" />
+                {selectedCompetency.icon && (
+                  <Icon icon={selectedCompetency.icon} className="size-5 text-base-content/60" />
+                )}
                 <div className="flex-1">
                   <p className="font-medium">{selectedCompetency.name}</p>
                   {selectedCompetency.category && (
@@ -95,7 +99,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
                   className="btn btn-xs btn-ghost btn-circle"
                   onClick={() => setSelectedCompetency(null)}
                 >
-                  <span className="iconify lucide--x size-4"></span>
+                  <Icon icon="lucide--x" className="size-4" />
                 </button>
               </div>
             )}
@@ -125,7 +129,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
                       onChange={(e) => setProficiencyLevel(e.target.value)}
                       className="radio radio-primary"
                     />
-                    <span className={`iconify ${level.icon} size-5`}></span>
+                    <Icon icon={level.icon} className="size-5" />
                     <div className="flex-1">
                       <p className="font-medium">{level.label}</p>
                       <p className="text-base-content/60 text-sm">{level.description}</p>
@@ -159,7 +163,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
             onClick={onClose}
             disabled={isSubmitting}
           >
-            <span className="iconify lucide--x size-4"></span>
+            <Icon icon="lucide--x" className="size-4" />
             Cancel
           </button>
           <button
@@ -174,7 +178,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
               </>
             ) : (
               <>
-                <span className="iconify lucide--check size-4"></span>
+                <Icon icon="lucide--check" className="size-4" />
                 Save Skill
               </>
             )}

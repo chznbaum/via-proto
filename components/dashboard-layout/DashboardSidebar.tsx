@@ -128,7 +128,7 @@ export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] 
 
       <div id="layout-sidebar" className="sidebar-menu flex flex-col" data-theme={calculatedSidebarTheme}>
         <div className="flex h-16 min-h-16 items-center justify-between gap-3 ps-5 pe-4">
-          <Link href="/dashboard">
+          <Link href="/">
             <Logo />
           </Link>
           <label

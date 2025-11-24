@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { Icon } from '@iconify/react';
 
 export interface Competency {
   id: string;
   name: string;
   slug: string;
+  icon?: string | null;
   description: string | null;
   category: {
     name: string;
@@ -178,8 +180,8 @@ export default function CompetencyTypeahead({
               >
                 {/* Competency name */}
                 <div className="flex items-center gap-2 w-full mb-1">
-                  {result.category?.icon && (
-                    <span className={`iconify ${result.category.icon} size-4`}></span>
+                  {result.icon && (
+                    <Icon icon={result.icon} className="size-4 bg-transparent" />
                   )}
                   <span className="font-semibold flex-1">{result.name}</span>
                   {result.topics_count !== undefined && result.topics_count > 0 && (

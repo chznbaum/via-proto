@@ -81,17 +81,17 @@ export function UsageStatsBar({
         </div>
       </div>
 
-      {/* Upgrade CTA (only show for non-team, and hide team option if not enabled) */}
-      {subscriptionTier !== 'team' && (
+      {/* Upgrade CTA (only show for free tier, or for pro if teams are enabled) */}
+      {(subscriptionTier === 'free' || (subscriptionTier === 'pro' && teamsEnabled)) && (
         <div className="bg-neutral text-neutral-content card h-full p-3 shadow">
           <p className="text-lg/5.5 font-medium">
-            {subscriptionTier === 'free' || !teamsEnabled ? 'Upgrade to Pro' : 'Upgrade to Team'}
+            {subscriptionTier === 'free' ? 'Upgrade to Pro' : 'Upgrade to Team'}
           </p>
           <div className="mt-auto flex items-end justify-between gap-3 pt-2">
             <div>
               <p className="text-sm/none italic opacity-80">
-                {subscriptionTier === 'free' || !teamsEnabled
-                  ? 'Get 5 paths & Claude Sonnet'
+                {subscriptionTier === 'free'
+                  ? 'Get 5 paths & premium models'
                   : 'Collaborate with your team'}
               </p>
             </div>
