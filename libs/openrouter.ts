@@ -51,7 +51,7 @@ SECTION DESIGN GUIDELINES:
 
 RESOURCE REQUIREMENTS - CRITICAL:
 1. ONLY include resources that currently exist - use web search to verify URLs
-2. Every URL must be direct and functional (https:// or http://)
+2. Every URL must be direct and functional (https:// or http://)—double-check that links are still active as your training data is likely outdated
 3. Test resource availability - avoid dead links, paywalled content without free alternatives
 4. For EVERY paid resource (books, courses), provide at least one free alternative
 5. Explicitly mark is_free: true/false (null only if truly unknown after research)
@@ -67,6 +67,7 @@ RESOURCE BALANCE & QUALITY:
 - Include diverse formats: Don't rely solely on videos or articles
 - Balance theory (40%) with practice (60%) - prioritize hands-on learning
 - Each section should have at least ONE project/practice resource
+- Paid courses are encouraged where they are reputable and provide significant value and time-savings over free alternatives as long as you also provide a free alternative
 - Quality indicators to prioritize:
   * Authoritative sources (official docs, recognized experts)
   * Recent/updated content (prefer last 2-3 years unless classic resource)
@@ -78,7 +79,7 @@ RESOURCE BALANCE & QUALITY:
 
 RESEARCH PROCESS:
 1. Search for current, highly-rated resources in the topic area
-2. Verify each URL actually works and leads to the resource (not a search page or login wall)
+2. Verify each URL actually works and leads to the resource (not a search page or login wall)—do not just pull from your training data without checking
 3. Cross-reference multiple sources to find the best resources
 4. For paid resources, actively search for free alternatives (YouTube, freeCodeCamp, MDN, official docs, open-source books)
 5. Check publication/update dates to ensure currency
