@@ -2,12 +2,14 @@ interface UsageStatsBarProps {
   pathsUsed: number;
   pathsLimit: number;
   subscriptionTier: string;
+  teamsEnabled?: boolean;
 }
 
 export function UsageStatsBar({
   pathsUsed,
   pathsLimit,
   subscriptionTier,
+  teamsEnabled = false,
 }: UsageStatsBarProps) {
   const remaining = Math.max(0, pathsLimit - pathsUsed);
   const percentageUsed = (pathsUsed / pathsLimit) * 100;
@@ -79,21 +81,21 @@ export function UsageStatsBar({
         </div>
       </div>
 
-      {/* Upgrade CTA (only show for non-team) */}
+      {/* Upgrade CTA (only show for non-team, and hide team option if not enabled) */}
       {subscriptionTier !== 'team' && (
         <div className="bg-neutral text-neutral-content card h-full p-3 shadow">
           <p className="text-lg/5.5 font-medium">
-            {subscriptionTier === 'free' ? 'Upgrade to Pro' : 'Upgrade to Team'}
+            {subscriptionTier === 'free' || !teamsEnabled ? 'Upgrade to Pro' : 'Upgrade to Team'}
           </p>
           <div className="mt-auto flex items-end justify-between gap-3 pt-2">
             <div>
               <p className="text-sm/none italic opacity-80">
-                {subscriptionTier === 'free'
+                {subscriptionTier === 'free' || !teamsEnabled
                   ? 'Get 5 paths & Claude Sonnet'
                   : 'Collaborate with your team'}
               </p>
             </div>
-            <a href="/pricing" className="btn btn-sm rounded-full">
+            <a href="/upgrade" className="btn btn-sm rounded-full">
               Upgrade
             </a>
           </div>

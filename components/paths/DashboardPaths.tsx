@@ -32,6 +32,8 @@ export default function DashboardPaths({
   accountType,
   seatCount,
 }: DashboardPathsProps) {
+  // Check if teams feature is enabled
+  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
   const [paths, setPaths] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateForm, setShowCreateForm] = useState(false);
@@ -212,6 +214,7 @@ export default function DashboardPaths({
         pathsUsed={pathsGeneratedThisCycle}
         pathsLimit={limit}
         subscriptionTier={subscriptionTier}
+        teamsEnabled={teamsEnabled}
       />
 
       {/* Create Form Modal */}

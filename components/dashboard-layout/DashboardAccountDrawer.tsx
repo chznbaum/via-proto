@@ -16,6 +16,15 @@ export function DashboardAccountDrawer() {
   const [userEmail, setUserEmail] = useState<string>("");
   const [planTier, setPlanTier] = useState<string>("free");
 
+  // Check if teams feature is enabled (client-side check for visibility)
+  const [teamsEnabled, setTeamsEnabled] = useState(false);
+
+  useEffect(() => {
+    // Check if teams is enabled by attempting to read from public env var
+    // Since this needs to match server behavior, we'll assume false by default
+    setTeamsEnabled(false);
+  }, []);
+
   useEffect(() => {
     const getUser = async () => {
       const {
@@ -136,12 +145,14 @@ export function DashboardAccountDrawer() {
             <div className="border-base-300 mt-4 grow overflow-auto border-t border-dashed px-2 sm:mt-6">
               <ul className="menu w-full p-2">
                 <li className="menu-title">Account</li>
-                <li>
-                  <Link href="/dashboard/settings">
-                    <span className="iconify lucide--user size-4.5" />
-                    <span>Profile Settings</span>
-                  </Link>
-                </li>
+                {teamsEnabled && (
+                  <li>
+                    <Link href="/dashboard/settings">
+                      <span className="iconify lucide--user size-4.5" />
+                      <span>Profile Settings</span>
+                    </Link>
+                  </li>
+                )}
                 <li>
                   <button onClick={handleBilling} disabled={isLoading}>
                     <span className="iconify lucide--credit-card size-4.5" />
@@ -151,17 +162,19 @@ export function DashboardAccountDrawer() {
                 </li>
 
                 <li className="menu-title">Resources</li>
+                {teamsEnabled && (
+                  <li>
+                    <Link href="/docs" target="_blank">
+                      <span className="iconify lucide--book-open size-4.5" />
+                      <span>Documentation</span>
+                    </Link>
+                  </li>
+                )}
                 <li>
-                  <Link href="/docs" target="_blank">
-                    <span className="iconify lucide--book-open size-4.5" />
-                    <span>Documentation</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/support" target="_blank">
+                  <a href="mailto:chazona@chazonabaum.com">
                     <span className="iconify lucide--help-circle size-4.5" />
                     <span>Support</span>
-                  </Link>
+                  </a>
                 </li>
 
                 <li>

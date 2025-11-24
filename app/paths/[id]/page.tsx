@@ -14,6 +14,7 @@ import config from '@/config';
 
 async function getPath(id: string) {
   const supabase = await createClient();
+  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
 
   const { data: path, error } = await supabase
     .from('learning_paths')
@@ -79,7 +80,8 @@ async function getPath(id: string) {
     .then(() => {})
     .catch((err) => console.error('Failed to increment view count:', err));
 
-  return path;
+  // Add teams enabled flag to path data
+  return { ...path, _teamsEnabled: teamsEnabled };
 }
 
 async function getRelatedPaths(pathId: string, competencyIds: string[]) {
@@ -302,6 +304,12 @@ export default async function PathDetailPage({
                 <div className={`badge ${skillLevelColor}`}>
                   {path.skill_level.charAt(0).toUpperCase() + path.skill_level.slice(1)}
                 </div>
+                {path.model_used && (
+                  <div className="badge badge-secondary">
+                    <span className="iconify lucide--sparkles size-3 mr-1"></span>
+                    {path.model_used}
+                  </div>
+                )}
                 {path.is_public && (
                   <div className="badge badge-ghost">
                     <span className="iconify lucide--globe size-3 mr-1"></span>
@@ -332,20 +340,24 @@ export default async function PathDetailPage({
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  {/* Favorites - placeholder for now */}
-                  <div className="flex items-center gap-0.5">
-                    <button className="btn btn-sm btn-ghost btn-circle">
-                      <span className="iconify lucide--heart size-4"></span>
-                    </button>
-                    <p className="text-sm">0</p>
-                  </div>
-                  {/* Comments - placeholder for now */}
-                  <div className="flex items-center gap-0.5">
-                    <button className="btn btn-sm btn-ghost btn-circle">
-                      <span className="iconify lucide--messages-square size-4"></span>
-                    </button>
-                    <p className="text-sm">0</p>
-                  </div>
+                  {/* Favorites - hidden until teams enabled */}
+                  {path._teamsEnabled && (
+                    <div className="flex items-center gap-0.5">
+                      <button className="btn btn-sm btn-ghost btn-circle">
+                        <span className="iconify lucide--heart size-4"></span>
+                      </button>
+                      <p className="text-sm">0</p>
+                    </div>
+                  )}
+                  {/* Comments - hidden until teams enabled */}
+                  {path._teamsEnabled && (
+                    <div className="flex items-center gap-0.5">
+                      <button className="btn btn-sm btn-ghost btn-circle">
+                        <span className="iconify lucide--messages-square size-4"></span>
+                      </button>
+                      <p className="text-sm">0</p>
+                    </div>
+                  )}
                   {/* Share */}
                   <ShareSheet url={fullUrl} title={path.title} description={path.description} />
                 </div>
@@ -381,17 +393,23 @@ export default async function PathDetailPage({
               </p>
             </div>
 
-            {/* Tags */}
-            <TagsSection tags={tags} />
-            <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+            {/* Tags - hidden until teams enabled */}
+            {path._teamsEnabled && (
+              <>
+                <TagsSection tags={tags} />
+                <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+              </>
+            )}
 
-            {/* Comment Form */}
-            <div className="mt-6 sm:mt-8">
-              <CommentForm pathId={id} />
-            </div>
-
-            {/* Divider */}
-            <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+            {/* Comment Form - hidden until teams enabled */}
+            {path._teamsEnabled && (
+              <>
+                <div className="mt-6 sm:mt-8">
+                  <CommentForm pathId={id} />
+                </div>
+                <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
+              </>
+            )}
 
             {/* Related Paths */}
             {relatedPaths.length > 0 && (

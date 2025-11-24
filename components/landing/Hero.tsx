@@ -6,7 +6,7 @@ import { createClient } from "@/libs/supabase/client";
 import { NumberCounter } from "@/components/NumberCounter";
 
 export const Hero = () => {
-    const [stats, setStats] = useState({ publicPaths: 0, topics: 0 });
+    const [stats, setStats] = useState({ publicPaths: 0, topics: 0, competencies: 0 });
     const counter1Ref = useRef<HTMLSpanElement | null>(null);
     const counter2Ref = useRef<HTMLSpanElement | null>(null);
     const counter3Ref = useRef<HTMLSpanElement | null>(null);
@@ -35,11 +35,22 @@ export const Hero = () => {
                 console.error('Error fetching topics count:', topicsError);
             }
 
-            console.log('Stats fetched:', { pathsCount, topicsCount });
+            // Get competencies count
+            const { count: competenciesCount, error: competenciesError } = await supabase
+                .from('competencies')
+                .select('*', { count: 'exact', head: true })
+                .eq('is_active', true);
+
+            if (competenciesError) {
+                console.error('Error fetching competencies count:', competenciesError);
+            }
+
+            console.log('Stats fetched:', { pathsCount, topicsCount, competenciesCount });
 
             setStats({
                 publicPaths: pathsCount || 0,
-                topics: topicsCount || 0
+                topics: topicsCount || 0,
+                competencies: competenciesCount || 0
             });
         };
 
@@ -59,10 +70,10 @@ export const Hero = () => {
     }, [stats.topics]);
 
     useEffect(() => {
-        if (counter3Ref.current) {
+        if (counter3Ref.current && stats.competencies > 0) {
             new NumberCounter(counter3Ref.current);
         }
-    }, []);
+    }, [stats.competencies]);
 
     useEffect(() => {
         if (counter4Ref.current) {
@@ -209,11 +220,11 @@ export const Hero = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
                         <p className="text-3xl font-semibold">
-                            <span data-target="60" data-duration="2000" data-final-text="60s" ref={counter3Ref} data-trigger-on-view>
+                            <span data-target={stats.competencies} data-duration="2500" ref={counter3Ref} data-trigger-on-view>
                                 0
-                            </span>
+                            </span>+
                         </p>
-                        <p className="text-base-content/60 max-sm:text-sm">Average Path Generation</p>
+                        <p className="text-base-content/60 max-sm:text-sm">Skills to Learn</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
                         <p className="text-3xl font-semibold">

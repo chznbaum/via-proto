@@ -7,6 +7,9 @@ import { FAQs } from "@/components/landing/FAQs";
 import Footer from "@/components/Footer";
 
 export default function Page() {
+  // Check if teams feature is enabled
+  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
+
   return (
     <>
       <Topbar />
@@ -15,7 +18,7 @@ export default function Page() {
         <Hero />
         <Features />
         <ExamplePath />
-        <Pricing />
+        <Pricing teamsEnabled={teamsEnabled} />
         <FAQs />
       </main>
 

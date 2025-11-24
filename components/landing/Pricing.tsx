@@ -5,7 +5,7 @@ import config from "@/config";
 import ButtonCheckout from "@/components/ButtonCheckout";
 import { TeamSizeSlider } from "./TeamSizeSlider";
 
-export const Pricing = () => {
+export const Pricing = ({ teamsEnabled = false }: { teamsEnabled?: boolean }) => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
     const [teamSeats, setTeamSeats] = useState(2);
 
@@ -224,11 +224,20 @@ export const Pricing = () => {
                                 Experience the full suite with team collaboration, advanced analytics, priority support, and custom onboarding to power your team's learning.
                             </p>
                             <div className="flex items-end justify-end gap-2.5">
-                                <ButtonCheckout
-                                    priceId={teamPlan.priceId}
-                                    mode="subscription"
-                                    seatCount={teamSeats}
-                                />
+                                {teamsEnabled ? (
+                                    <ButtonCheckout
+                                        priceId={teamPlan.priceId}
+                                        mode="subscription"
+                                        seatCount={teamSeats}
+                                    />
+                                ) : (
+                                    <button
+                                        className="btn btn-primary btn-block group"
+                                        disabled
+                                    >
+                                        Coming Soon
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>

@@ -16,11 +16,14 @@ export const ShareSheet = ({ url, title, description }: ShareSheetProps) => {
   const encodedTitle = encodeURIComponent(title);
   const encodedText = description ? encodeURIComponent(description) : encodedTitle;
 
+  // For intents that use text+URL, ensure proper encoding
+  const shareText = `${title}`;
+
   const shareLinks = [
     {
       name: "Bluesky",
       icon: "tabler--brand-bluesky",
-      url: `https://bsky.app/intent/compose?text=${encodedTitle}%20${encodedUrl}`,
+      url: `https://bsky.app/intent/compose?text=${encodeURIComponent(shareText + ' ' + url)}`,
       color: "hover:bg-[#0285FF]/10 hover:text-[#0285FF]",
     },
     {
@@ -38,13 +41,13 @@ export const ShareSheet = ({ url, title, description }: ShareSheetProps) => {
     {
       name: "Mastodon",
       icon: "tabler--brand-mastodon",
-      url: `https://mastodon.social/share?text=${encodedTitle}%20${encodedUrl}`,
+      url: `https://mastodon.social/share?text=${encodeURIComponent(shareText + ' ' + url)}`,
       color: "hover:bg-[#6364FF]/10 hover:text-[#6364FF]",
     },
     {
       name: "Threads",
       icon: "tabler--brand-threads",
-      url: `https://threads.net/intent/post?text=${encodedTitle}%20${encodedUrl}`,
+      url: `https://threads.net/intent/post?text=${encodeURIComponent(shareText + ' ' + url)}`,
       color: "hover:bg-black/10 hover:text-black dark:hover:bg-white/10 dark:hover:text-white",
     },
   ];

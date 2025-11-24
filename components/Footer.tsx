@@ -45,7 +45,7 @@ const Footer = () => {
               </p>
               <div className="mt-5 flex items-center gap-3">
                 <a
-                  href="https://rss.com"
+                  href="https://chazonabaum.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-square border-base-300 btn-sm"
@@ -53,7 +53,7 @@ const Footer = () => {
                   <span className="iconify tabler--rss size-5"></span>
                 </a>
                 <a
-                  href="https://bsky.app"
+                  href="https://bsky.app/profile/chazonabaum.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-square border-base-300 btn-sm"
@@ -61,7 +61,7 @@ const Footer = () => {
                   <span className="iconify tabler--brand-bluesky size-5"></span>
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/chznbaum"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-square border-base-300 btn-sm"
@@ -69,7 +69,7 @@ const Footer = () => {
                   <span className="iconify tabler--brand-github size-5"></span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/chazonacodes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-square border-base-300 btn-sm"
@@ -108,8 +108,8 @@ const Footer = () => {
             <div>
               <h2 className="text-lg font-medium">Legal</h2>
               <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
-                <Link href="/tos">Terms of Service</Link>
-                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="/terms">Terms of Service</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </div>
             </div>
           </div>
