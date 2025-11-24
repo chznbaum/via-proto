@@ -20,7 +20,7 @@ const config = {
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1SV0QxD1xQn8aM2gSRgiYPWh"
-            : "price_1SV0QxD1xQn8aM2gSRgiYPWh",
+            : "price_1SWt7EDnUZacDWq6Oq6GUtI0",
         name: "Pro",
         description: "Premium AI models • 5 paths/month",
         price: 12,
@@ -41,7 +41,7 @@ const config = {
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1SV0QxD1xQn8aM2gHQEeq5lj"
-            : "price_1SV0QxD1xQn8aM2gHQEeq5lj",
+            : "price_1SWt7EDnUZacDWq6Z9Kwh5eL",
         name: "Pro",
         description: "Claude Sonnet 4.5 • 5 paths/month",
         price: 100,
@@ -51,7 +51,8 @@ const config = {
         tier: "pro",
         features: [
           { name: "5 learning paths per month" },
-          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Premium Anthropic models" },
+          { name: "Best Gemini and OpenAI models" },
           { name: "Private learning paths" },
           { name: "Priority support" },
           { name: "2 months free" },
@@ -62,7 +63,7 @@ const config = {
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1SV0VBD1xQn8aM2gP6WMraVn"
-            : "price_1SV0VBD1xQn8aM2gP6WMraVn",
+            : "price_1SWt7JDnUZacDWq6Kp7XHadT",
         name: "Team",
         description: "Collaboration • $10/seat/month",
         price: 10,
@@ -74,7 +75,8 @@ const config = {
         minSeats: 2,
         features: [
           { name: "10+ paths per month (scales with seats)" },
-          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Premium Anthropic models" },
+          { name: "Best Gemini and OpenAI models" },
           { name: "Team collaboration" },
           { name: "Private learning paths" },
           { name: "$10 per team member" },
@@ -85,7 +87,7 @@ const config = {
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1SV0VBD1xQn8aM2gz44hjeiv"
-            : "price_1SV0VBD1xQn8aM2gz44hjeiv",
+            : "price_1SWt7JDnUZacDWq6DINsLPxF",
         name: "Team",
         description: "Collaboration • $10/seat/month",
         price: 80, // yearly per seat
@@ -97,7 +99,8 @@ const config = {
         minSeats: 2,
         features: [
           { name: "10+ paths per month (scales with seats)" },
-          { name: "Claude Sonnet 4.5 (premium AI)" },
+          { name: "Premium Anthropic models" },
+          { name: "Best Gemini and OpenAI models" },
           { name: "Team collaboration" },
           { name: "Private learning paths" },
           { name: "$10 per team member" },
@@ -118,7 +121,7 @@ const config = {
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
     fromAdmin: `ViaProto <hello@notifications.viapro.to>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "chazona@viapro.to",
+    supportEmail: "support@viapro.to",
     // Email to be used for privacy/GDPR requests
     privacyEmail: "privacy@viapro.to",
     // Email to be used for good-faith security disclosures or questions

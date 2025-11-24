@@ -295,7 +295,7 @@ Full deployment guide: https://coolify.io/docs/applications/nextjs
 
 ## Support
 
-- **Support**: chazona@viapro.to
+- **Support**: support@viapro.to
 - **Privacy**: privacy@viapro.to
 - **Security**: security@viapro.to
 
