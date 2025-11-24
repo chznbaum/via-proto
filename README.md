@@ -34,6 +34,7 @@ ViaProto solves the problem of information overload and deteriorating search qua
 | Payments | Stripe | 13.11.0 |
 | Email | Resend | 4.0.1 |
 | Images | Unsplash API | Custom integration |
+| Background Jobs | Graphile Worker | 0.16.6 |
 | Deployment | Coolify → Hetzner VPS | - |
 
 ---
@@ -76,8 +77,12 @@ Update `.env.local` with the credentials from `supabase start` output.
 ### Run Development Server
 
 ```bash
+# Terminal 1: Next.js dev server
 npm run dev
 # → http://localhost:3001
+
+# Terminal 2: Background job worker (required for path generation)
+npm run worker:dev
 ```
 
 ---
@@ -104,6 +109,10 @@ UNSPLASH_ACCESS_KEY=
 
 # Site
 NEXT_PUBLIC_SITE_URL=http://localhost:3001
+
+# Worker (Background Jobs)
+WORKER_CONCURRENCY=3
+WORKER_POLL_INTERVAL=1000
 ```
 
 ---
@@ -154,14 +163,18 @@ via-proto/
 
 **Team scaling**: 2 seats = 10 paths, 5 seats = 19 paths, 10 seats = 34 paths
 
-### Path Generation Flow
+### Path Generation Flow (Background Jobs)
 
 1. User selects topic, skill level, optional goals, optional AI model
 2. System checks rate limits and model access
-3. AI generates structured path with web-verified resources
-4. Multi-stage status tracking: `pending` → `generating_metadata` → `fetching_image` → `curating_resources` → `completed`
-5. Path stored with 5-8 sections, each containing 3-7 resources
-6. Result: 20-100+ hours of curated learning content
+3. **Job #1** (`generate_metadata`): AI generates title, description, skill level
+4. **Job #2** (`fetch_unsplash_image`): Fetches cover image from Unsplash
+5. **Job #3** (`generate_sections_resources`): AI generates 5-8 sections with 3-7 resources each
+6. Multi-stage status tracking: `pending` → `generating_metadata` → `fetching_image` → `curating_resources` → `completed`
+7. Each job retries up to 3 times on failure; users notified via email on permanent failure
+8. Result: 20-100+ hours of curated learning content
+
+**Worker Process**: Run `npm run worker` to start the Graphile Worker background processor
 
 ### Account Architecture
 
@@ -190,6 +203,8 @@ Core tables with Row-Level Security:
 
 ```bash
 npm run dev          # Development server (port 3001)
+npm run worker       # Background job worker (required for path generation)
+npm run worker:dev   # Worker with hot reload
 npm run build        # Production build
 npm run lint         # ESLint check
 npm run postbuild    # Generate sitemap (auto-runs)
@@ -230,12 +245,23 @@ Deployed via **Coolify** to Hetzner VPS with BunnyCDN for DNS/CDN.
 
 ### Coolify Setup
 
+**Two Services Required:**
+
+**Service 1: Web (Next.js)**
 1. Create Next.js application in Coolify
 2. Set build command: `npm run build`
 3. Set start command: `npm run start`
 4. Add production environment variables
 5. Link Supabase remote database
 6. Configure domain: `viapro.to`
+
+**Service 2: Worker (Background Jobs)**
+1. Create Node.js application in Coolify
+2. Set build command: `npm install`
+3. Set start command: `npm run worker`
+4. Share same environment variables as web service
+5. Set restart policy: always
+6. Both services must connect to same DATABASE_URL
 
 ### Production Checklist
 
@@ -254,9 +280,8 @@ Full deployment guide: https://coolify.io/docs/applications/nextjs
 ## API Endpoints
 
 ### Path Generation
-- `POST /api/paths/initiate` - Create path shell
-- `GET /api/paths/[id]/status` - Check generation status
-- `POST /api/paths/[id]/generate-content` - Generate resources
+- `POST /api/paths/initiate` - Create path and queue background job
+- `GET /api/paths/[id]/status` - Check generation status (poll this during generation)
 - `GET /api/paths/[id]` - Get path details
 
 ### Other

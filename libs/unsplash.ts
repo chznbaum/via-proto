@@ -4,7 +4,6 @@
  * Complies with Unsplash API guidelines for attribution and UTM parameters
  */
 
-const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 const UNSPLASH_API_URL = "https://api.unsplash.com";
 const APP_NAME = "ViaProto";
 
@@ -32,7 +31,10 @@ export async function fetchUnsplashImage(
   query: string,
   orientation: "landscape" | "portrait" | "squarish" = "landscape"
 ): Promise<UnsplashImage | null> {
-  if (!UNSPLASH_ACCESS_KEY) {
+  // Read API key at runtime (after environment variables are loaded)
+  const unsplashAccessKey = process.env.UNSPLASH_ACCESS_KEY;
+
+  if (!unsplashAccessKey) {
     console.warn("Unsplash access key not configured");
     return null;
   }
@@ -42,7 +44,7 @@ export async function fetchUnsplashImage(
       `${UNSPLASH_API_URL}/photos/random?query=${encodeURIComponent(query)}&orientation=${orientation}&content_filter=high`,
       {
         headers: {
-          Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
+          Authorization: `Client-ID ${unsplashAccessKey}`,
         },
         // Cache for 1 hour to avoid hitting rate limits
         next: { revalidate: 3600 },
@@ -81,7 +83,10 @@ export async function fetchUnsplashImage(
  * @param downloadLocation - Download location URL from Unsplash API
  */
 export async function triggerUnsplashDownload(downloadLocation: string): Promise<void> {
-  if (!UNSPLASH_ACCESS_KEY) {
+  // Read API key at runtime (after environment variables are loaded)
+  const unsplashAccessKey = process.env.UNSPLASH_ACCESS_KEY;
+
+  if (!unsplashAccessKey) {
     console.warn("Unsplash access key not configured");
     return;
   }
@@ -89,7 +94,7 @@ export async function triggerUnsplashDownload(downloadLocation: string): Promise
   try {
     await fetch(downloadLocation, {
       headers: {
-        Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
+        Authorization: `Client-ID ${unsplashAccessKey}`,
       },
     });
   } catch (error) {

@@ -3,7 +3,7 @@
 interface GeneratingPathCardProps {
   pathId: string;
   topicName: string;
-  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed';
+  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
   error?: string;
   onCancel?: (pathId: string) => void;
 }
@@ -18,15 +18,21 @@ export function GeneratingPathCard({
   const getStatusMessage = () => {
     switch (status) {
       case 'pending':
-        return 'Initializing generation...';
+        return 'Preparing your path...';
       case 'generating_metadata':
-        return 'Crafting title and description...';
+        return 'Creating title and description...';
       case 'fetching_image':
-        return 'Finding the perfect featured image...';
+        return 'Finding the perfect cover image...';
       case 'curating_resources':
-        return 'Curating learning resources from across the web...';
+        return 'Gathering learning resources...';
       case 'completed':
-        return 'Generation complete!';
+        return 'Ready to view!';
+      case 'failed_metadata':
+        return 'Metadata generation failed';
+      case 'failed_image':
+        return 'Image fetch failed (path still usable)';
+      case 'failed_sections':
+        return 'Resource curation failed';
       case 'failed':
         return error || 'Generation failed. Please try again.';
       default:
@@ -34,8 +40,11 @@ export function GeneratingPathCard({
     }
   };
 
+  const isTerminal = ['completed', 'failed', 'failed_metadata', 'failed_image', 'failed_sections'].includes(status);
+  const isFailed = ['failed', 'failed_metadata', 'failed_image', 'failed_sections'].includes(status);
+
   const handleCancel = () => {
-    if (onCancel && status !== 'completed' && status !== 'failed') {
+    if (onCancel && !isTerminal) {
       onCancel(pathId);
     }
   };
@@ -45,7 +54,7 @@ export function GeneratingPathCard({
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-2.5">
         <p className="grow font-medium">
-          {status === 'failed' ? 'Generation Failed' : `Generating: ${topicName}`}
+          {isFailed ? 'Generation Failed' : `Generating: ${topicName}`}
         </p>
       </div>
 
@@ -57,7 +66,7 @@ export function GeneratingPathCard({
         <p className="mt-3 font-medium">{getStatusMessage()}</p>
 
         {/* Skeleton loaders (only show when generating) */}
-        {status !== 'failed' && status !== 'completed' && (
+        {!isTerminal && (
           <div className="mt-2 flex flex-col gap-1.5">
             <div className="rounded-box skeleton h-3 w-[50%]"></div>
             <div className="rounded-box skeleton h-3 w-[75%]"></div>
@@ -66,7 +75,7 @@ export function GeneratingPathCard({
         )}
 
         {/* Error message */}
-        {status === 'failed' && error && (
+        {isFailed && error && (
           <div className="alert alert-error mt-2">
             <span className="text-sm">{error}</span>
           </div>
@@ -75,7 +84,7 @@ export function GeneratingPathCard({
 
       {/* Footer */}
       <div className="mt-auto flex items-end gap-2 px-4 pt-2 pb-4">
-        {status !== 'failed' && status !== 'completed' && (
+        {!isTerminal && (
           <>
             <div className="tooltip" data-tip="Generating">
               <span className="iconify lucide--loader text-base-content/60 block size-4 animate-spin"></span>
@@ -95,7 +104,7 @@ export function GeneratingPathCard({
             View Path
           </a>
         )}
-        {status === 'failed' && (
+        {isFailed && (
           <button
             className="btn btn-sm btn-ghost ms-auto"
             onClick={handleCancel}

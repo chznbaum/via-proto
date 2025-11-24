@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import PathCard from './PathCard';
 import PathCreateForm from './PathCreateForm';
 import { UsageStatsBar } from './UsageStatsBar';
@@ -20,7 +20,7 @@ interface DashboardPathsProps {
 interface GeneratingPath {
   pathId: string;
   topicName: string;
-  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed';
+  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
   error?: string;
 }
 
@@ -36,7 +36,8 @@ export default function DashboardPaths({
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateForm, setShowCreateForm] = useState(false);
   const [generatingPaths, setGeneratingPaths] = useState<GeneratingPath[]>([]);
-  const [pollingIntervals, setPollingIntervals] = useState<Map<string, NodeJS.Timeout>>(new Map());
+  const pollingIntervalsRef = useRef<Map<string, NodeJS.Timeout>>(new Map());
+  const completedPathsRef = useRef<Set<string>>(new Set()); // Track paths that have shown toast
 
   const getRateLimit = (tier: string, seats: number) => {
     if (tier === 'free') return 1;
@@ -59,9 +60,10 @@ export default function DashboardPaths({
   useEffect(() => {
     // Cleanup polling intervals on unmount
     return () => {
-      pollingIntervals.forEach((interval) => clearInterval(interval));
+      pollingIntervalsRef.current.forEach((interval) => clearInterval(interval));
+      pollingIntervalsRef.current.clear();
     };
-  }, [pollingIntervals]);
+  }, []);
 
   const fetchPaths = async () => {
     setIsLoading(true);
@@ -96,37 +98,51 @@ export default function DashboardPaths({
         )
       );
 
-      // If completed or failed, stop polling and refresh paths
-      if (data.status === 'completed' || data.status === 'failed') {
-        const interval = pollingIntervals.get(pathId);
+      // Terminal statuses: stop polling and show notification
+      const isTerminal = ['completed', 'failed', 'failed_metadata', 'failed_image', 'failed_sections'].includes(data.status);
+
+      if (isTerminal) {
+        // Clear interval FIRST (before showing toast)
+        const interval = pollingIntervalsRef.current.get(pathId);
         if (interval) {
           clearInterval(interval);
-          setPollingIntervals((prev) => {
-            const newMap = new Map(prev);
-            newMap.delete(pathId);
-            return newMap;
-          });
+          pollingIntervalsRef.current.delete(pathId);
         }
 
-        if (data.status === 'completed') {
-          toast.success('Learning path generated successfully!');
-          // Remove from generating paths after a short delay
-          setTimeout(() => {
-            setGeneratingPaths((prev) => prev.filter((p) => p.pathId !== pathId));
-            fetchPaths();
-          }, 2000);
-        } else {
-          toast.error(data.error || 'Path generation failed');
+        // Only show toast if we haven't already shown one for this path
+        if (!completedPathsRef.current.has(pathId)) {
+          completedPathsRef.current.add(pathId);
+
+          if (data.status === 'completed') {
+            toast.success('Learning path generated successfully!');
+          } else {
+            // Show specific error messages for different failure types
+            if (data.status === 'failed_metadata') {
+              toast.error('Failed to generate path metadata. Please try again.');
+            } else if (data.status === 'failed_image') {
+              toast.error('Image fetch failed, but your path was created successfully.');
+            } else if (data.status === 'failed_sections') {
+              toast.error('Failed to generate learning resources. Please contact support.');
+            } else {
+              toast.error(data.error || 'Path generation failed');
+            }
+          }
         }
+
+        // Remove from generating paths after a short delay
+        setTimeout(() => {
+          setGeneratingPaths((prev) => prev.filter((p) => p.pathId !== pathId));
+          fetchPaths();
+        }, 2000);
       }
     } catch (error) {
       console.error('Error polling path status:', error);
     }
-  }, [pollingIntervals]);
+  }, []);
 
   const startPathGeneration = async (formData: any) => {
     try {
-      // Step 1: Initiate path creation
+      // Step 1: Initiate path creation (also queues the first job automatically)
       const initiateResponse = await fetch('/api/paths/initiate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -149,21 +165,14 @@ export default function DashboardPaths({
       // Close modal
       setShowCreateForm(false);
 
-      toast.success('Starting path generation...');
+      toast.success('Path generation started!');
 
-      // Step 2: Trigger content generation (async)
-      fetch(`/api/paths/${pathId}/generate-content`, {
-        method: 'POST',
-      }).catch((error) => {
-        console.error('Error triggering generation:', error);
-      });
-
-      // Step 3: Start polling for status
+      // Step 2: Start polling for status
       const interval = setInterval(() => {
         pollPathStatus(pathId);
       }, 2000); // Poll every 2 seconds
 
-      setPollingIntervals((prev) => new Map(prev).set(pathId, interval));
+      pollingIntervalsRef.current.set(pathId, interval);
 
     } catch (error) {
       console.error('Error starting path generation:', error);
@@ -173,14 +182,10 @@ export default function DashboardPaths({
 
   const handleCancelGeneration = (pathId: string) => {
     // Stop polling
-    const interval = pollingIntervals.get(pathId);
+    const interval = pollingIntervalsRef.current.get(pathId);
     if (interval) {
       clearInterval(interval);
-      setPollingIntervals((prev) => {
-        const newMap = new Map(prev);
-        newMap.delete(pathId);
-        return newMap;
-      });
+      pollingIntervalsRef.current.delete(pathId);
     }
 
     // Remove from generating paths

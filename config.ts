@@ -118,7 +118,7 @@ const config = {
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
     fromAdmin: `ViaProto <hello@notifications.viapro.to>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "chazona@viapro.to",
+    supportEmail: "chazona@chazonabaum.com",
     // Email to be used for privacy/GDPR requests
     privacyEmail: "privacy@viapro.to",
     // Email to be used for good-faith security disclosures or questions

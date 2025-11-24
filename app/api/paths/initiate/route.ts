@@ -3,12 +3,14 @@ import { createClient } from '@/libs/supabase/server';
 import { getUserDefaultAccount } from '@/libs/auth';
 import { PathGenerationRequestSchema } from '@/libs/validation/path-schema';
 import { ZodError } from 'zod';
+import { addJob } from '@/libs/jobs/queue';
+import { getDefaultModelForTier } from '@/libs/models';
 
 /**
  * POST /api/paths/initiate
  * Initiate learning path generation
- * Creates the path record immediately (for rate limiting) and returns pathId
- * Client should then poll /api/paths/[id]/status and trigger /api/paths/[id]/generate-content
+ * Creates the path record and queues background job for generation
+ * Client should poll /api/paths/[id]/status to track progress
  */
 export async function POST(req: NextRequest) {
   try {
@@ -148,13 +150,43 @@ export async function POST(req: NextRequest) {
       status: 'pending',
     });
 
-    // 8. Return path ID and trigger client to start generation
+    // 8. Queue the first job (generate_metadata) to start the generation chain
+    const selectedModel = validatedInput.model_id || getDefaultModelForTier(account.subscription_tier);
+
+    try {
+      await addJob('generate_metadata', {
+        pathId: newPath.id,
+        topicId: topic.id,
+        topicName: topic.name,
+        goals: validatedInput.goals,
+        modelId: selectedModel,
+      });
+
+      console.log('🎬 Job queued: generate_metadata for path', newPath.id);
+    } catch (jobError) {
+      console.error('Failed to queue generation job:', jobError);
+      // Path was created but job failed to queue - mark as failed
+      await supabase
+        .from('learning_paths')
+        .update({
+          generation_status: 'failed',
+          generation_error: 'Failed to queue generation job',
+        })
+        .eq('id', newPath.id);
+
+      return NextResponse.json(
+        { error: 'Path created but generation failed to start. Please try again.' },
+        { status: 500 }
+      );
+    }
+
+    // 9. Return path ID - client will poll /api/paths/[id]/status
     return NextResponse.json(
       {
         pathId: newPath.id,
         topicName: topic.name,
         status: 'pending',
-        message: 'Path created successfully. Starting generation...',
+        message: 'Path created. Generation queued.',
         rate_limit: {
           limit,
           used: (pathsThisMonth || 0) + 1,

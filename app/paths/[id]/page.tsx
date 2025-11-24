@@ -89,17 +89,26 @@ async function getRelatedPaths(pathId: string, competencyIds: string[]) {
 
   const supabase = await createClient();
 
-  // Find other public paths that share competencies
+  // First, find topic IDs that have the matching competencies
+  const { data: matchingTopics } = await supabase
+    .from('topic_competencies')
+    .select('topic_id')
+    .in('competency_id', competencyIds);
+
+  if (!matchingTopics || matchingTopics.length === 0) {
+    return [];
+  }
+
+  const topicIds = [...new Set(matchingTopics.map(t => t.topic_id))];
+
+  // Then find paths with those topics
   const { data: relatedPaths, error } = await supabase
     .from('learning_paths')
     .select(`
       *,
       topic:topics(
         *,
-        category:categories(name, slug, icon),
-        topic_competencies!inner(
-          competency_id
-        )
+        category:categories(name, slug, icon)
       ),
       creator:profiles!creator_id(id, name, avatar_url),
       unsplash_images(
@@ -110,7 +119,7 @@ async function getRelatedPaths(pathId: string, competencyIds: string[]) {
     `)
     .neq('id', pathId)
     .eq('is_public', true)
-    .in('topic.topic_competencies.competency_id', competencyIds)
+    .in('topic_id', topicIds)
     .limit(4);
 
   if (error) {
