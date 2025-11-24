@@ -22,6 +22,7 @@ import OpenAI from 'openai';
 import { createServiceClient } from '@/libs/supabase/service';
 import { SectionsResourcesResponseSchema } from '@/libs/validation/path-schema';
 import type { GenerateSectionsResourcesPayload } from '../types';
+import { addJob } from '../queue';
 
 /**
  * Build system prompt for sections/resources generation
@@ -541,10 +542,9 @@ export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
       .from('learning_paths')
       .update({
         total_estimated_hours: calculatedTotalHours,
-        generation_status: 'completed',
+        generation_status: 'curating_resources', // Keep status, next job will mark as completed
         generation_metadata: {
           ...path.generation_metadata,
-          completed_at: new Date().toISOString(),
           sections_count: sectionsData.sections.length,
           resources_count: totalResourcesCount,
         },
@@ -563,7 +563,11 @@ export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
       throw new Error(`Failed to update path with completion status: ${updateError.message}`);
     }
 
-    console.log(`[generate_sections_resources] Completed! Path marked as completed`);
+    console.log(`[generate_sections_resources] Sections completed! Queuing link validation`);
+
+    // Step 12: Queue link validation job
+    await addJob('validate_resource_links', { pathId });
+    console.log(`[generate_sections_resources] Queued validate_resource_links job`);
 
     return {
       success: true,

@@ -20,7 +20,7 @@ interface DashboardPathsProps {
 interface GeneratingPath {
   pathId: string;
   topicName: string;
-  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
+  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'validating_links' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
   error?: string;
 }
 

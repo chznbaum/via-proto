@@ -460,9 +460,9 @@
 ### 10. Link Preview Generation 🟡 (~2-3 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #9", PRD Section 3.2.3, IMPLEMENTATION_PLAN Section 1.3.6
 
-- [ ] **10.1 OpenGraph Fetcher Utility** (45 min)
-  - [ ] Create utility: `libs/opengraph.ts`
-  - [ ] Function `fetchOpenGraph(url: string)`:
+- [x] **10.1 OpenGraph Fetcher Utility** (45 min)
+  - [x] Create utility: `libs/opengraph.ts`
+  - [x] Function `fetchOpenGraph(url: string)`:
     - Fetch URL with HEAD request first (check 200 status)
     - If success, fetch full HTML
     - Parse OpenGraph tags:
@@ -471,32 +471,32 @@
       - `og:description`
     - Return object with tags or null if error/404
     - Handle timeouts (5 second max)
-  - [ ] Use `cheerio` or built-in HTML parsing
+  - [x] Use `cheerio` or built-in HTML parsing
   - **New files:** `libs/opengraph.ts`
   - **Dependencies:** May need `cheerio` package
 
-- [ ] **10.2 Resource Card Preview** (1 hour)
-  - [ ] Update `components/PathCard.tsx` or resource display component
-  - [ ] When rendering resource:
+- [x] **10.2 Resource Card Preview** (1 hour)
+  - [x] Update `components/PathCard.tsx` or resource display component
+  - [ x When rendering resource:
     - Check if `og_image_url` exists in database
     - If yes: display image thumbnail
     - If no: fetch on client-side (or server-side in Server Component)
-  - [ ] Display OpenGraph preview card:
+  - [x] Display OpenGraph preview card:
     - Image thumbnail (if available)
     - og:title (fallback to resource title)
     - og:description (fallback to resource description)
     - URL domain (e.g., "youtube.com", "github.com")
-  - [ ] Add "broken link" badge if fetch returns 404
+  - [x] Add "broken link" badge if fetch returns 404
   - **Files to modify:** Resource card component
   - **Note:** Use Server Component with `fetch()` for OG tags
 
-- [ ] **10.3 Cache OpenGraph Data** (45 min)
-  - [ ] Update path generation endpoint (`/api/paths/generate`)
-  - [ ] After AI generates path, before storing:
+- [x] **10.3 Cache OpenGraph Data** (45 min)
+  - [x] Update path generation endpoint (`/api/paths/generate`)
+  - [x] After AI generates path, before storing:
     - For each resource, fetch OpenGraph data
     - Store in `resources.og_image_url`, `og_title`, `og_description` columns
     - Update `link_status` to 'active' or 'broken'
-  - [ ] Update migration to add OG columns (if not already present):
+  - [x] Update migration to add OG columns (if not already present):
     - `og_image_url` TEXT
     - `og_title` TEXT
     - `og_description` TEXT
@@ -511,6 +511,7 @@
   - **Note:** Regenerate feature may be post-MVP; this prepares for it
 
 ---
+
 
 ### 11. Path Social Sharing 🟡 (~1-2 hours)
 **Reference:** MVP_LAUNCH_STATUS_REPORT Section "Important #10", PRD Section 8.2

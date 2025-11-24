@@ -3,7 +3,7 @@
 interface GeneratingPathCardProps {
   pathId: string;
   topicName: string;
-  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
+  status: 'pending' | 'generating_metadata' | 'fetching_image' | 'curating_resources' | 'validating_links' | 'completed' | 'failed' | 'failed_metadata' | 'failed_image' | 'failed_sections';
   error?: string;
   onCancel?: (pathId: string) => void;
 }
@@ -25,6 +25,8 @@ export function GeneratingPathCard({
         return 'Finding the perfect cover image...';
       case 'curating_resources':
         return 'Gathering learning resources...';
+      case 'validating_links':
+        return 'Validating links and fetching previews...';
       case 'completed':
         return 'Ready to view!';
       case 'failed_metadata':

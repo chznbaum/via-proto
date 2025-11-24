@@ -9,6 +9,7 @@ import type { TaskList } from 'graphile-worker';
 import { generateMetadataTask } from './generate-metadata';
 import { fetchUnsplashImageTask } from './fetch-unsplash-image';
 import { generateSectionsResourcesTask } from './generate-sections-resources';
+import { validateResourceLinksTask } from './validate-resource-links';
 import { notifyGenerationFailedTask } from './notify-generation-failed';
 
 /**
@@ -19,5 +20,6 @@ export const tasks: TaskList = {
   generate_metadata: generateMetadataTask,
   fetch_unsplash_image: fetchUnsplashImageTask,
   generate_sections_resources: generateSectionsResourcesTask,
+  validate_resource_links: validateResourceLinksTask,
   notify_generation_failed: notifyGenerationFailedTask,
 };

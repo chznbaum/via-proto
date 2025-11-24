@@ -12,6 +12,7 @@ export type JobType =
   | 'generate_metadata'
   | 'fetch_unsplash_image'
   | 'generate_sections_resources'
+  | 'validate_resource_links'
   | 'notify_generation_failed';
 
 /**
@@ -45,12 +46,21 @@ export interface GenerateSectionsResourcesPayload {
 }
 
 /**
+ * Payload for Job #4: validate_resource_links
+ * Fetches OpenGraph metadata and validates all resource links
+ * Runs after sections and resources are generated
+ */
+export interface ValidateResourceLinksPayload {
+  pathId: string;
+}
+
+/**
  * Payload for notify_generation_failed job
  * Sends email notification when generation fails
  */
 export interface NotifyGenerationFailedPayload {
   pathId: string;
-  step: string; // 'generate_metadata' | 'fetch_unsplash_image' | 'generate_sections_resources'
+  step: string; // 'generate_metadata' | 'fetch_unsplash_image' | 'generate_sections_resources' | 'validate_resource_links'
   error: string;
   userId: string;
   topicName: string;
@@ -64,4 +74,5 @@ export type JobPayload =
   | GenerateMetadataPayload
   | FetchUnsplashImagePayload
   | GenerateSectionsResourcesPayload
+  | ValidateResourceLinksPayload
   | NotifyGenerationFailedPayload;

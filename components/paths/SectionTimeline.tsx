@@ -12,6 +12,14 @@ interface Resource {
   is_free?: boolean;
   estimated_minutes?: number;
   order: number;
+  // Link validation and metadata fields
+  link_status?: 'active' | 'broken' | 'requires_login' | 'unchecked';
+  last_checked_at?: string;
+  og_title?: string;
+  og_description?: string;
+  og_image_url?: string;
+  page_title?: string;
+  favicon_url?: string;
 }
 
 interface Section {
@@ -168,20 +176,119 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                             : "timeline-end max-md:-mt-9"
                         }`}>
                         <div className="card bg-base-100 p-6 shadow hover:shadow-lg transition-shadow">
+                          {/* Resource Title (AI-generated) */}
+                          <h3 className="font-semibold text-lg mb-2">
+                            {resource.title}
+                          </h3>
+
+                          {/* Resource Description (AI-generated) */}
+                          {resource.description && (
+                            <p className="text-base-content/80 text-sm mb-4">
+                              {resource.description}
+                            </p>
+                          )}
+
+                          {/* Link Status Warnings */}
+                          {resource.link_status === 'requires_login' && (
+                            <div className="alert alert-warning mb-3">
+                              <span className="iconify lucide--lock size-4"></span>
+                              <span className="text-sm">May require login</span>
+                            </div>
+                          )}
+                          {resource.link_status === 'broken' && (
+                            <div className="alert alert-error mb-3 flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <span className="iconify lucide--alert-circle size-4"></span>
+                                <span className="text-sm">May be broken link</span>
+                              </div>
+                              <a
+                                href={`https://www.google.com/search?q=${encodeURIComponent(resource.title)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm btn-ghost gap-1">
+                                <span className="iconify lucide--search size-3"></span>
+                                Search Web
+                              </a>
+                            </div>
+                          )}
+
+                          {/* Discord-style Link Preview */}
                           <a
                             href={resource.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-medium hover:underline text-lg flex items-center gap-2">
-                            {resource.title}
-                            <span className="iconify lucide--external-link size-4"></span>
+                            className="block border border-base-300 rounded-lg overflow-hidden hover:border-primary transition-colors">
+
+                            {/* OG Image with optional title overlay */}
+                            {resource.og_image_url && (
+                              <div className="relative bg-base-200">
+                                <img
+                                  src={resource.og_image_url}
+                                  alt={resource.og_title || resource.title}
+                                  className="w-full h-48 object-cover"
+                                  onError={(e) => {
+                                    // Hide image if it fails to load
+                                    e.currentTarget.parentElement!.style.display = 'none';
+                                  }}
+                                />
+                                {/* Title overlay on image (if OG title exists and differs from resource title) */}
+                                {resource.og_title && resource.og_title !== resource.title && (
+                                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+                                    <p className="text-white font-medium text-sm line-clamp-2">
+                                      {resource.og_title}
+                                    </p>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+
+                            {/* Domain/Favicon Row */}
+                            <div className="p-3 bg-base-200/50">
+                              <div className="flex items-center gap-2 mb-2">
+                                {resource.favicon_url && (
+                                  <img
+                                    src={resource.favicon_url}
+                                    alt="Site icon"
+                                    className="size-4 shrink-0"
+                                    onError={(e) => {
+                                      e.currentTarget.style.display = 'none';
+                                    }}
+                                  />
+                                )}
+                                <span className="text-xs text-base-content/60 font-mono uppercase tracking-wide">
+                                  {(() => {
+                                    try {
+                                      return new URL(resource.url).hostname.replace(/^www\./, '');
+                                    } catch {
+                                      return 'External Link';
+                                    }
+                                  })()}
+                                </span>
+                                <span className="iconify lucide--external-link size-3 ml-auto text-base-content/40"></span>
+                              </div>
+
+                              {/* OG Title or Page Title (if no image, or if different from resource title) */}
+                              {(() => {
+                                const displayTitle = resource.og_title || resource.page_title;
+                                const showTitle = displayTitle && !resource.og_image_url && displayTitle !== resource.title;
+                                return showTitle ? (
+                                  <p className="font-medium text-sm mb-1 line-clamp-2">
+                                    {displayTitle}
+                                  </p>
+                                ) : null;
+                              })()}
+
+                              {/* OG Description (only if different from resource description) */}
+                              {resource.og_description && resource.og_description !== resource.description && (
+                                <p className="text-xs text-base-content/70 line-clamp-2">
+                                  {resource.og_description}
+                                </p>
+                              )}
+                            </div>
                           </a>
-                          {resource.description && (
-                            <p className="text-base-content/80 text-sm mt-2">
-                              {resource.description}
-                            </p>
-                          )}
-                          <div className="flex flex-wrap gap-2 mt-3">
+
+                          {/* Metadata Badges */}
+                          <div className="flex flex-wrap gap-2 mt-4">
                             <span className="badge badge-sm capitalize">
                               {resource.type}
                             </span>
@@ -190,7 +297,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                                 className={`badge badge-sm ${
                                   resource.is_free ? "badge-success" : "badge-warning"
                                 }`}>
-                                {resource.is_free ? "Free" : "Paid"}
+                                {resource.is_free ? "Free" : "May require payment"}
                               </span>
                             )}
                             {resource.estimated_minutes && (
