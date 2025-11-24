@@ -22,10 +22,10 @@ const features = [
     },
     {
         icon: <span className="iconify lucide--zap size-5.5"></span>,
-        keyMetric: "60s",
+        keyMetric: "2m",
         badge: "Lightning Fast",
         title: "Instant Personalization",
-        description: "AI curates a complete learning path with resources, structure, and progression in just 60 seconds. Start learning immediately.",
+        description: "AI curates a complete learning path with resources, structure, and progression in just a couple of minutes. Start learning immediately.",
     },
     {
         icon: <span className="iconify lucide--line-chart size-5.5"></span>,
