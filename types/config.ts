@@ -31,6 +31,7 @@ export interface ConfigProps {
     onlyShowOnRoutes?: string[];
   };
   stripe: {
+    teams_enabled: boolean;
     plans: {
       isFeatured?: boolean;
       priceId: string;
@@ -56,6 +57,8 @@ export interface ConfigProps {
     fromNoReply: string;
     fromAdmin: string;
     supportEmail?: string;
+    privacyEmail?: string;
+    securityEmail?: string;
   };
   colors: {
     theme: Theme;

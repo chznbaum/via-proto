@@ -14,6 +14,8 @@ const config = {
     // Hide Crisp by default, except on route "/". Crisp is toggled with <ButtonSupport/>. If you want to show Crisp on every routes, just remove this below
   },
   stripe: {
+    // Feature flags
+    teams_enabled: false, // Set to true when ready to allow team plan purchases
     plans: [
       {
         // Pro Monthly
@@ -29,7 +31,7 @@ const config = {
         billingPeriod: "monthly",
         tier: "pro",
         features: [
-          { name: "5 learning paths per month" },
+          { name: "10 learning paths per month" },
           { name: "Premium Anthropic models" },
           { name: "Best Gemini and OpenAI models" },
           { name: "Private learning paths" },
@@ -50,7 +52,7 @@ const config = {
         billingPeriod: "yearly",
         tier: "pro",
         features: [
-          { name: "5 learning paths per month" },
+          { name: "10 learning paths per month" },
           { name: "Premium Anthropic models" },
           { name: "Best Gemini and OpenAI models" },
           { name: "Private learning paths" },
@@ -74,7 +76,7 @@ const config = {
         perSeat: true,
         minSeats: 2,
         features: [
-          { name: "10+ paths per month (scales with seats)" },
+          { name: "20+ paths per month (scales with seats)" },
           { name: "Premium Anthropic models" },
           { name: "Best Gemini and OpenAI models" },
           { name: "Team collaboration" },
@@ -98,7 +100,7 @@ const config = {
         perSeat: true,
         minSeats: 2,
         features: [
-          { name: "10+ paths per month (scales with seats)" },
+          { name: "20+ paths per month (scales with seats)" },
           { name: "Premium Anthropic models" },
           { name: "Best Gemini and OpenAI models" },
           { name: "Team collaboration" },

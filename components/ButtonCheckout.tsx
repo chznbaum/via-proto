@@ -12,10 +12,14 @@ const ButtonCheckout = ({
   priceId,
   mode = "subscription",
   seatCount,
+  disabled = false,
+  buttonText,
 }: {
   priceId: string;
   mode?: "payment" | "subscription";
   seatCount?: number;
+  disabled?: boolean;
+  buttonText?: string;
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -46,13 +50,14 @@ const ButtonCheckout = ({
     <button
       className="btn btn-primary btn-block group"
       onClick={() => handlePayment()}
+      disabled={disabled || isLoading}
     >
       {isLoading ? (
         <span className="loading loading-spinner loading-xs"></span>
       ) : (
         ""
       )}
-      Get {config?.appName}
+      {buttonText || `Get ${config?.appName}`}
     </button>
   );
 };

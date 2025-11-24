@@ -5,7 +5,7 @@ import config from "@/config";
 import ButtonCheckout from "@/components/ButtonCheckout";
 import { TeamSizeSlider } from "./TeamSizeSlider";
 
-export const Pricing = ({ teamsEnabled = false }: { teamsEnabled?: boolean }) => {
+export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsEnabled?: boolean }) => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
     const [teamSeats, setTeamSeats] = useState(2);
 
