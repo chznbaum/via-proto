@@ -35,7 +35,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const cspHeader = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://js.stripe.com https://accounts.google.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://cdn.jsdelivr.net https://js.stripe.com https://accounts.google.com;
   style-src 'self' 'unsafe-inline' https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
   img-src 'self' blob: data: https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev;
   font-src 'self' https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;

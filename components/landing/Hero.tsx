@@ -46,8 +46,6 @@ export const Hero = () => {
                 console.error('Error fetching competencies count:', competenciesError);
             }
 
-            console.log('Stats fetched:', { pathsCount, topicsCount, competenciesCount });
-
             setStats({
                 publicPaths: pathsCount || 0,
                 topics: topicsCount || 0,
