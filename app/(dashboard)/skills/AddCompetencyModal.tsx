@@ -59,7 +59,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
 
   return (
     <div className="modal modal-open">
-      <div className="modal-box max-w-2xl">
+      <div className="modal-box max-w-2xl max-h-[85vh] overflow-y-auto">
         <div className="flex items-center justify-between">
           <h3 className="font-bold text-lg">Add Skill</h3>
           <button

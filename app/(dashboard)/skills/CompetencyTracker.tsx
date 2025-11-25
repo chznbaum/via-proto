@@ -139,7 +139,7 @@ export function CompetencyTracker({ userId }: CompetencyTrackerProps) {
             </div>
             <div className="flex flex-col items-end justify-between">
               <button
-                className="btn btn-sm btn-primary"
+                className="btn btn-sm h-auto py-1 lg:py-2 btn-primary"
                 onClick={() => setShowAddModal(true)}
               >
                 <span className="iconify lucide--plus size-4"></span>
