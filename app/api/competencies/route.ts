@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/libs/supabase/server';
+import { generateEmbedding } from '@/libs/embeddings';
 
 /**
  * GET /api/competencies?q=react&limit=10
- * Search for competencies using the search_competencies RPC function
+ * Search for competencies using hybrid semantic search
  */
 export async function GET(req: NextRequest) {
   try {
@@ -17,11 +18,15 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ results: [] });
     }
 
-    // Call the search_competencies RPC function
+    // Generate embedding for the search query
+    const queryEmbedding = await generateEmbedding(query);
+
+    // Call the hybrid search function
     const { data: competencies, error } = await supabase.rpc(
-      'search_competencies',
+      'search_competencies_hybrid',
       {
         search_query: query,
+        query_embedding: queryEmbedding,
         result_limit: limit,
       }
     );

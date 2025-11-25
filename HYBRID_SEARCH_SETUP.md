@@ -4,6 +4,8 @@ This document explains the hybrid search implementation that combines semantic s
 
 ## Architecture Overview
 
+**Hybrid search is now enabled for both Topics and Competencies!**
+
 ### Search Components
 
 The hybrid search combines three scoring mechanisms:
@@ -66,15 +68,25 @@ supabase db push
 
 ### 3. Backfill Embeddings
 
-Generate embeddings for all existing topics (one-time):
+Generate embeddings for topics and/or competencies:
 
 ```bash
+# Topics only (default)
 npm run embeddings:backfill
+
+# Competencies only
+npm run embeddings:backfill -- --type=competencies
+
+# Both topics and competencies
+npm run embeddings:backfill -- --type=all
 ```
 
 **Expected output:**
 ```
-🚀 Starting topic embedding backfill...
+🚀 Starting embedding backfill...
+📋 Type: all
+
+📚 Processing topics...
 📥 Fetching topics without embeddings...
 ✅ Found 3000 topics to process
 
@@ -85,19 +97,43 @@ npm run embeddings:backfill
 
 ...
 
-✨ Backfill complete! Processed 3000/3000 topics
-💰 Estimated cost: $0.30
+✨ Topics backfill complete! Processed 3000/3000 topics
+💰 Estimated cost: $0.3000
+
+────────────────────────────────────────────────────────────────
+
+🎯 Processing competencies...
+📥 Fetching competencies without embeddings...
+✅ Found 250 competencies to process
+
+🔄 Processing batch 1/5 (50 competencies)...
+   Generating embeddings...
+   Updating database...
+   ✅ Batch complete (50/250 total)
+
+...
+
+✨ Competencies backfill complete! Processed 250/250 competencies
+💰 Estimated cost: $0.0375
+
+🎉 All done! Total processed: 3250
 ```
 
-**Cost**: ~$0.30 for 3000 topics (one-time)
+**Cost**:
+- Topics: ~$0.30 for 3000 topics
+- Competencies: ~$0.04 for 250 competencies
+- **Total one-time cost: ~$0.34**
 
 ### 4. Test the Search
 
-The API automatically uses hybrid search - no frontend changes needed!
+The APIs automatically use hybrid search - no frontend changes needed!
 
 ```bash
-# Test query
+# Test topic search
 curl "http://localhost:3001/api/search?q=machine%20learning&limit=10"
+
+# Test competency search
+curl "http://localhost:3001/api/competencies?q=frontend&limit=10"
 ```
 
 **Response includes debug info:**
@@ -125,46 +161,64 @@ libs/
 └── embeddings.ts              # Embedding generation utilities
 
 scripts/
-└── backfill-topic-embeddings.ts  # Backfill script for existing topics
+└── backfill-topic-embeddings.ts  # Backfill script for topics & competencies
 
 supabase/migrations/
-├── 20251124190000_add_pgvector_embeddings.sql       # pgvector setup
-├── 20251124190001_create_hybrid_search_function.sql # Search function
-└── 20251124190002_add_embedding_notes.sql           # Documentation
+├── 20251124190000_add_pgvector_embeddings.sql       # pgvector + topics
+├── 20251124190001_create_hybrid_search_function.sql # Topics hybrid search
+├── 20251124190002_add_embedding_notes.sql           # Documentation
+├── 20251124200000_add_competency_embeddings.sql     # Competency embeddings
+└── 20251124200001_create_competency_hybrid_search.sql # Competency hybrid search
 ```
 
 ### Modified Files
 
 ```
-app/api/search/route.ts        # Now uses hybrid search
-package.json                    # Added embeddings:backfill script
-.env.example                    # Added OPENAI_API_KEY
+app/api/search/route.ts         # Topics: Now uses hybrid search
+app/api/competencies/route.ts   # Competencies: Now uses hybrid search
+package.json                     # Added embeddings:backfill script
+.env.example                     # Added OPENAI_API_KEY
 ```
 
 ## Maintenance
 
-### Adding New Topics
+### Adding New Topics or Competencies
 
-When adding new topics via migrations:
+When adding new items via migrations:
 
-1. Add topics to migration SQL
+1. Add topics/competencies to migration SQL
 2. Run `supabase db push`
-3. Run `npm run embeddings:backfill` to generate embeddings
+3. Run the appropriate backfill command:
+   ```bash
+   # Topics only
+   npm run embeddings:backfill
 
-The backfill script is idempotent - it only processes topics with NULL embeddings.
+   # Competencies only
+   npm run embeddings:backfill -- --type=competencies
 
-### Updating Existing Topics
+   # Both
+   npm run embeddings:backfill -- --type=all
+   ```
 
-If you change topic names or descriptions and want to refresh embeddings:
+The backfill script is idempotent - it only processes items with NULL embeddings.
+
+### Updating Existing Data
+
+If you change names or descriptions and want to refresh embeddings:
 
 ```sql
--- Reset embeddings for specific topics
+-- Reset topic embeddings
 UPDATE public.topics
 SET embedding = NULL
 WHERE name LIKE 'React%';
+
+-- Reset competency embeddings
+UPDATE public.competencies
+SET embedding = NULL
+WHERE name LIKE 'JavaScript%';
 ```
 
-Then run: `npm run embeddings:backfill`
+Then run the appropriate backfill command.
 
 ### Monitoring Costs
 
