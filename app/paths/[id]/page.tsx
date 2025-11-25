@@ -163,16 +163,22 @@ export async function generateMetadata({
     };
   }
 
-  const ogImageUrl = path.unsplash_images?.url || `${config.domainName}/og-default.png`;
+  const ogImageUrl = path.unsplash_images?.url || `https://${config.domainName}/opengraph-image.png`;
+  const pageDescription = path.description || `Learn ${path.topic.name} - ${path.skill_level}`;
 
   return {
     title: `${path.title} | ${config.appName}`,
-    description: path.description || `Learn ${path.topic.name} - ${path.skill_level}`,
+    description: pageDescription,
+    alternates: {
+      canonical: `/paths/${id}`,
+    },
     openGraph: {
       title: path.title,
-      description: path.description,
+      description: pageDescription,
       url: `https://${config.domainName}/paths/${id}`,
       type: 'website',
+      siteName: config.appName,
+      locale: 'en_US',
       images: [
         {
           url: ogImageUrl,
@@ -184,7 +190,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: path.title,
-      description: path.description,
+      description: pageDescription,
     },
     other: {
       'og:logo': `https://${config.domainName}/icon.png`,

@@ -1,21 +1,18 @@
+import type { Viewport } from "next";
 import { ReactNode } from "react";
-import { Viewport } from "next";
-import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import { SwetrixAnalytics } from "@/components/SwetrixAnalytics";
 import config from "@/config";
+import { baseMetadata } from "@/libs/seo";
 import "./styles/app.css";
 
 export const viewport: Viewport = {
-  // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
   themeColor: config.colors.main,
   width: "device-width",
   initialScale: 1,
 };
 
-// This adds default SEO tags to all pages in our app.
-// You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags();
+export const metadata = baseMetadata;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

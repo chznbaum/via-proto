@@ -1,25 +1,16 @@
-import { Metadata } from "next";
 import Link from "next/link";
 import { createClient } from "@/libs/supabase/server";
 import { PathCard } from "./PathCard";
 import { Topbar } from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { getFallbackGradient } from "@/libs/unsplash";
+import { createPageMetadata } from "@/libs/seo";
 
-export const metadata: Metadata = {
-  title: "Explore Public Learning Paths - ViaProto",
+export const metadata = createPageMetadata({
+  title: "Explore Public Learning Paths",
   description: "Browse AI-powered learning paths created by the community. Find curated resources for any skill.",
-  openGraph: {
-    title: "Explore Public Learning Paths - ViaProto",
-    description: "Browse AI-powered learning paths created by the community.",
-    url: "https://viapro.to/explore",
-    type: "website",
-    images: ["/opengraph-image.png"],
-  },
-  other: {
-    "og:logo": "https://viapro.to/icon.png",
-  },
-};
+  canonical: "/explore",
+});
 
 export default async function ExplorePage() {
   const supabase = await createClient();

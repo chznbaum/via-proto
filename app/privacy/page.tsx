@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 import { Topbar } from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { createClient } from "@/libs/supabase/server";
+import { createPageMetadata } from "@/libs/seo";
 
-export const metadata = getSEOTags({
-  title: `Privacy Policy | ${config.appName}`,
-  canonicalUrlRelative: "/privacy-policy",
+export const metadata = createPageMetadata({
+  title: "Privacy Policy",
+  description: "Privacy Policy for ViaProto - How we collect, use, and protect your personal information.",
+  canonical: "/privacy",
 });
 
 const PrivacyPolicy = async () => {

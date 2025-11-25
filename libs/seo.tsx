@@ -1,11 +1,119 @@
 import type { Metadata } from "next";
 import config from "@/config";
 
-// These are all the SEO tags you can add to your pages.
-// It prefills data with default title/description/OG, etc.. and you can cusotmize it for each page.
-// It's already added in the root layout.js so you don't have to add it to every pages
-// But I recommend to set the canonical URL for each page (export const metadata = getSEOTags({canonicalUrlRelative: "/"});)
-// See https://shipfa.st/docs/features/seo
+const siteUrl = `https://${config.domainName}`;
+
+/**
+ * Base metadata for the root layout.
+ * Sets metadataBase and default values that pages inherit.
+ * Only use this in app/layout.tsx.
+ */
+export const baseMetadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3001"
+      : siteUrl
+  ),
+  title: {
+    default: config.appTitle || config.appName,
+    template: `%s | ${config.appName}`,
+  },
+  description: config.appDescription,
+  keywords: [config.appName],
+  applicationName: config.appName,
+  openGraph: {
+    siteName: config.appName,
+    locale: "en_US",
+    type: "website",
+    url: siteUrl,
+    title: config.appTitle || config.appName,
+    description: config.appDescription,
+    images: ["/opengraph-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: config.appTitle || config.appName,
+    description: config.appDescription,
+  },
+  other: {
+    "og:logo": `${siteUrl}/icon.png`,
+  },
+};
+
+/**
+ * Create page-specific metadata.
+ * Use this in individual pages to customize SEO while preserving OG tags.
+ *
+ * @example
+ * // Basic usage with canonical URL
+ * export const metadata = createPageMetadata({ canonical: "/" });
+ *
+ * @example
+ * // Custom title and description
+ * export const metadata = createPageMetadata({
+ *   title: "Explore Learning Paths",
+ *   description: "Browse AI-powered learning paths.",
+ *   canonical: "/explore",
+ * });
+ */
+export function createPageMetadata({
+  title,
+  description,
+  canonical,
+  image,
+  type = "website",
+  noIndex = false,
+}: {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  type?: "website" | "article";
+  noIndex?: boolean;
+} = {}): Metadata {
+  const pageTitle = title || config.appTitle || config.appName;
+  const pageDescription = description || config.appDescription;
+  const pageImage = image || "/opengraph-image.png";
+
+  const metadata: Metadata = {
+    title: pageTitle,
+    description: pageDescription,
+    keywords: [config.appName],
+    applicationName: config.appName,
+    openGraph: {
+      title: pageTitle,
+      description: pageDescription,
+      type,
+      images: [pageImage],
+      siteName: config.appName,
+      locale: "en_US",
+      url: canonical ? `${siteUrl}${canonical}` : siteUrl,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: pageDescription,
+    },
+    other: {
+      "og:logo": `${siteUrl}/icon.png`,
+    },
+  };
+
+  if (canonical) {
+    metadata.alternates = { canonical };
+  }
+
+  if (noIndex) {
+    metadata.robots = { index: false, follow: false };
+  }
+
+  return metadata;
+}
+
+/**
+ * @deprecated Use baseMetadata in root layout and createPageMetadata() in pages.
+ * Keeping for backwards compatibility with existing pages.
+ */
 export const getSEOTags = ({
   title,
   description,
@@ -15,59 +123,38 @@ export const getSEOTags = ({
   extraTags,
 }: Metadata & {
   canonicalUrlRelative?: string;
-  extraTags?: Record<string, any>;
-} = {}) => {
+  extraTags?: Record<string, unknown>;
+} = {}): Metadata => {
   return {
-    // up to 50 characters (what does your app do for the user?) > your main should be here
     title: title || config.appTitle || config.appName,
-    // up to 160 characters (how does your app help the user?)
     description: description || config.appDescription,
-    // some keywords separated by commas. by default it will be your app name
     keywords: keywords || [config.appName],
     applicationName: config.appName,
-    // set a base URL prefix for other fields that require a fully qualified URL (.e.g og:image: og:image: 'https://yourdomain.com/share.png' => '/share.png')
     metadataBase: new URL(
       process.env.NODE_ENV === "development"
         ? "http://localhost:3001/"
-        : `https://${config.domainName}/`,
+        : `${siteUrl}/`,
     ),
-
     openGraph: {
       title: openGraph?.title || config.appTitle || config.appName,
       description: openGraph?.description || config.appDescription,
-      url: openGraph?.url || `https://${config.domainName}/`,
+      url: openGraph?.url || siteUrl,
       siteName: config.appName,
-      // If you add an opengraph-image.(jpg|jpeg|png|gif) image to the /app folder, you don't need the code below
-      // images: [
-      //   {
-      //     url: `https://${config.domainName}/share.png`,
-      //     width: 1200,
-      //     height: 660,
-      //   },
-      // ],
+      images: ["/opengraph-image.png"],
       locale: "en_US",
       type: "website",
     },
-
     twitter: {
       title: openGraph?.title || config.appTitle || config.appName,
       description: openGraph?.description || config.appDescription,
-      // If you add an twitter-image.(jpg|jpeg|png|gif) image to the /app folder, you don't need the code below
-      // images: [openGraph?.image || defaults.og.image],
       card: "summary_large_image",
     },
-
-    // Custom meta tags (og:logo is not standard OpenGraph but some platforms use it)
     other: {
-      "og:logo": `https://${config.domainName}/icon.png`,
+      "og:logo": `${siteUrl}/icon.png`,
     },
-
-    // If a canonical URL is given, we add it. The metadataBase will turn the relative URL into a fully qualified URL
     ...(canonicalUrlRelative && {
       alternates: { canonical: canonicalUrlRelative },
     }),
-
-    // If you want to add extra tags, you can pass them here
     ...extraTags,
   };
 };

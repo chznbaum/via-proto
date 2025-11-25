@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 import { Topbar } from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { createClient } from "@/libs/supabase/server";
+import { createPageMetadata } from "@/libs/seo";
 
-export const metadata = getSEOTags({
-  title: `Terms of Service | ${config.appName}`,
-  canonicalUrlRelative: "/tos",
+export const metadata = createPageMetadata({
+  title: "Terms of Service",
+  description: "Terms of Service for ViaProto - Clear terms for using our AI-powered learning path generator.",
+  canonical: "/terms",
 });
 
 const TOS = async () => {

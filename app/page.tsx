@@ -5,6 +5,11 @@ import { ExamplePath } from "@/components/landing/ExamplePath";
 import { Pricing } from "@/components/landing/Pricing";
 import { FAQs } from "@/components/landing/FAQs";
 import Footer from "@/components/Footer";
+import { createPageMetadata, renderSchemaTags } from "@/libs/seo";
+
+export const metadata = createPageMetadata({
+  canonical: "/",
+});
 
 export default function Page() {
   // Check if teams feature is enabled
@@ -12,6 +17,7 @@ export default function Page() {
 
   return (
     <>
+      {renderSchemaTags()}
       <Topbar />
 
       <main>
