@@ -1,4 +1,53 @@
 /** @type {import('next').NextConfig} */
+
+// Security Headers
+const securityHeaders = [
+  // HSTS - Force HTTPS connections
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=31536000; includeSubDomains',
+  },
+  // Prevent clickjacking
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+  // Prevent MIME-type sniffing
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  // Control referrer information
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+  // Permissions Policy (formerly Feature-Policy)
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=()',
+  },
+];
+
+// Content Security Policy
+// Environment-aware: allows localhost in development, production domains in prod
+const isDev = process.env.NODE_ENV === 'development';
+
+const cspHeader = `
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://js.stripe.com https://accounts.google.com;
+  style-src 'self' 'unsafe-inline' https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
+  img-src 'self' blob: data: https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev;
+  font-src 'self' https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;
+  connect-src 'self' ${isDev ? 'http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*' : ''} https://*.supabase.co wss://*.supabase.co https://openrouter.ai https://api.openrouter.ai https://*.crisp.chat wss://*.crisp.chat https://client.relay.crisp.chat wss://client.relay.crisp.chat https://swetrix.org https://api.swetrix.com https://api.analytics.chazona.dev https://js.stripe.com https://api.stripe.com;
+  frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://accounts.google.com https://*.crisp.chat;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self' https://accounts.google.com;
+  frame-ancestors 'self';
+  ${isDev ? '' : 'upgrade-insecure-requests;'}
+`.replace(/\s{2,}/g, ' ').trim();
+
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
@@ -43,6 +92,21 @@ const nextConfig = {
     }
 
     return config;
+  },
+  async headers() {
+    return [
+      {
+        // Apply security headers to all routes
+        source: '/(.*)',
+        headers: [
+          ...securityHeaders,
+          {
+            key: 'Content-Security-Policy',
+            value: cspHeader,
+          },
+        ],
+      },
+    ];
   },
 };
 
