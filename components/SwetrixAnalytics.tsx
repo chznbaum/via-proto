@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
@@ -8,8 +8,8 @@ declare global {
   interface Window {
     swetrix?: {
       init: (projectId: string, options?: { apiURL?: string }) => void;
-      trackViews: () => void;
-      pageview: (options?: { payload?: Record<string, string> }) => void;
+      trackViews: (options?: { search?: boolean }) => void;
+      pageview: (options: { pg: string; prev?: string }) => void;
     };
   }
 }
@@ -17,11 +17,24 @@ declare global {
 function SwetrixPageViewTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const prevPathRef = useRef<string | null>(null);
 
   useEffect(() => {
-    // Track page views on route changes (after initial load)
-    if (window.swetrix) {
-      window.swetrix.trackViews();
+    // Skip initial mount - trackViews() handles the first pageview
+    if (prevPathRef.current === null) {
+      prevPathRef.current = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
+      return;
+    }
+
+    const currentPath = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
+
+    // Only track if path actually changed
+    if (window.swetrix && currentPath !== prevPathRef.current) {
+      window.swetrix.pageview({
+        pg: currentPath,
+        prev: prevPathRef.current,
+      });
+      prevPathRef.current = currentPath;
     }
   }, [pathname, searchParams]);
 
@@ -38,7 +51,7 @@ export const SwetrixAnalytics = () => {
           window.swetrix?.init("8v56UDklPmgM", {
             apiURL: "https://api.analytics.chazona.dev/log",
           });
-          window.swetrix?.trackViews();
+          window.swetrix?.trackViews({ search: true });
         }}
       />
       <Suspense fallback={null}>
