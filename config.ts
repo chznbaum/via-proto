@@ -7,7 +7,7 @@ const config = {
   appTitle: "Upskill faster with ViaProto",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "Get a complete, personalized learning path in 60 seconds. Everything you need to master any skill, curated and organized for you.",
+    "Get a complete, personalized learning path in a couple of minutes. Everything you need to master any skill, curated and organized for you.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "viapro.to",
   crisp: {
