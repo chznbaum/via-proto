@@ -3,6 +3,7 @@
 import { useState } from "react";
 import apiClient from "@/libs/api";
 import config from "@/config";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 // This component is used to create Stripe Checkout Sessions
 // It calls the /api/stripe/create-checkout route with the priceId, successUrl and cancelUrl
@@ -25,6 +26,17 @@ const ButtonCheckout = ({
 
   const handlePayment = async () => {
     setIsLoading(true);
+
+    // Track checkout initiation
+    const plan = config.stripe.plans.find(p => p.priceId === priceId);
+    trackEvent("checkout.initiated", {
+      meta: {
+        plan: plan?.name || "unknown",
+        tier: plan?.tier || "unknown",
+        billing: plan?.billingPeriod || "unknown",
+        ...(seatCount && { seats: seatCount }),
+      },
+    });
 
     try {
       const { url }: { url: string } = await apiClient.post(

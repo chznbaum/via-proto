@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { createClient } from "@/libs/supabase/client";
 import toast from "react-hot-toast";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 export const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -46,6 +47,7 @@ export const LoginForm = () => {
 
       setEmailSent(true);
       toast.success("Check your email for the magic link!");
+      trackEvent("auth.login_initiated", { unique: true });
     } catch (error) {
       console.error("Login error:", error);
       toast.error("Failed to send magic link");

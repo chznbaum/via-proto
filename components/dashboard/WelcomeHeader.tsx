@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@/libs/supabase/client';
+import { trackEvent } from '@/components/SwetrixAnalytics';
 
 interface WelcomeHeaderProps {
   onCreatePath: () => void;
@@ -48,7 +49,10 @@ export function WelcomeHeader({ onCreatePath, canGenerate }: WelcomeHeaderProps)
         <div className="relative group">
           <button
             className="btn text-primary-content from-primary to-secondary animate-background-shift relative z-1 gap-2 border-none bg-linear-to-r bg-[200%,200%]"
-            onClick={onCreatePath}
+            onClick={() => {
+              trackEvent("cta.dashboard.create_path");
+              onCreatePath();
+            }}
             disabled={!canGenerate}
           >
             <span className="iconify lucide--plus size-4.5"></span>

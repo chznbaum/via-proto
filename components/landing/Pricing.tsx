@@ -4,6 +4,7 @@ import { useState } from "react";
 import config from "@/config";
 import ButtonCheckout from "@/components/ButtonCheckout";
 import { TeamSizeSlider } from "./TeamSizeSlider";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsEnabled?: boolean }) => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
@@ -103,7 +104,11 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                             ))}
                         </div>
                         <div className="mt-auto pt-6">
-                            <a href="/dashboard" className="btn btn-outline border-base-300 rounded-box btn-block gap-2.5">
+                            <a
+                                href="/dashboard"
+                                className="btn btn-outline border-base-300 rounded-box btn-block gap-2.5"
+                                onClick={() => trackEvent("cta.pricing.get_started_free")}
+                            >
                                 <span className="iconify lucide--arrow-right size-4"></span>
                                 <span>Get Started Free</span>
                             </a>

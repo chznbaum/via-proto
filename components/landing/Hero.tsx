@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import { createClient } from "@/libs/supabase/client";
 import { NumberCounter } from "@/components/NumberCounter";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 export const Hero = () => {
     const [stats, setStats] = useState({ publicPaths: 0, topics: 0, competencies: 0 });
@@ -106,12 +107,17 @@ export const Hero = () => {
                             <Link
                                 href="/dashboard"
                                 className="text-primary-content from-primary rounded-box group to-secondary animate-background-shift btn sm:btn-lg relative cursor-pointer gap-2.5 border-0 bg-linear-to-r bg-[200%,200%]"
+                                onClick={() => trackEvent("cta.hero.learn_something_new")}
                             >
                                 <span className="iconify lucide--rocket start-1 bottom-1 size-4.5"></span>
                                 <p>Learn Something New</p>
                                 <div className="from-primary to-secondary animate-background-shift absolute inset-x-0 top-1.5 -z-1 h-full bg-linear-to-r bg-[200%,200%] opacity-60 blur-md transition-all duration-300 group-hover:top-2 group-hover:opacity-80 group-hover:blur-lg"></div>
                             </Link>
-                            <Link href="/explore" className="btn sm:btn-lg btn-ghost gap-2.5">
+                            <Link
+                                href="/explore"
+                                className="btn sm:btn-lg btn-ghost gap-2.5"
+                                onClick={() => trackEvent("cta.hero.browse_shared_paths")}
+                            >
                                 <span className="iconify lucide--search size-4.5"></span>
                                 Browse Shared Paths
                             </Link>

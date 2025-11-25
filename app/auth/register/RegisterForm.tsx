@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { createClient } from "@/libs/supabase/client";
 import toast from "react-hot-toast";
 import { useSearchParams } from "next/navigation";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 // List of available avatars
 const AVATARS = [
@@ -73,6 +74,7 @@ export const RegisterForm = () => {
 
       setEmailSent(true);
       toast.success("Check your email for the magic link!");
+      trackEvent("auth.signup_initiated", { unique: true });
     } catch (error) {
       console.error("Signup error:", error);
       toast.error("Failed to send magic link");

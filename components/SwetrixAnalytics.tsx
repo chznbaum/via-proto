@@ -9,9 +9,41 @@ declare global {
     swetrix?: {
       init: (projectId: string, options?: { apiURL?: string }) => void;
       trackViews: (options?: { search?: boolean }) => void;
+      trackErrors: (options?: { sampleRate?: number }) => void;
       pageview: (options: { pg: string; prev?: string }) => void;
+      track: (options: {
+        ev: string;
+        unique?: boolean;
+        meta?: Record<string, string | number | boolean | null>;
+      }) => void;
     };
   }
+}
+
+/**
+ * Track a custom event in Swetrix
+ * @param event - Event name (letters, numbers, underscores, dots only; max 64 chars; must start with letter)
+ * @param options - Optional settings
+ * @param options.unique - If true, only counts once per session (default: false)
+ * @param options.meta - Additional metadata (max 20 keys, 1000 chars total)
+ *
+ * @example
+ * trackEvent("cta.hero.get_started")
+ * trackEvent("cta.pricing.upgrade", { unique: true })
+ * trackEvent("cta.signup", { meta: { source: "header" } })
+ */
+export function trackEvent(
+  event: string,
+  options?: {
+    unique?: boolean;
+    meta?: Record<string, string | number | boolean | null>;
+  }
+) {
+  window.swetrix?.track({
+    ev: event,
+    unique: options?.unique,
+    meta: options?.meta,
+  });
 }
 
 function SwetrixPageViewTracker() {
@@ -52,6 +84,7 @@ export const SwetrixAnalytics = () => {
             apiURL: "https://api.analytics.chazona.dev/log",
           });
           window.swetrix?.trackViews({ search: true });
+          window.swetrix?.trackErrors({ sampleRate: 1 });
         }}
       />
       <Suspense fallback={null}>

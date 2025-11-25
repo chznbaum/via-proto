@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import config from "@/config";
+import { trackEvent } from "@/components/SwetrixAnalytics";
 
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.resend.supportEmail, the link won't be displayed.
@@ -18,11 +21,19 @@ const Footer = () => {
             Get started in seconds and experience AI-powered learning paths. Discover curated resources from real creators and master any skill.
           </p>
           <div className="mt-4 flex items-center gap-3 xl:mt-6">
-            <Link href="/dashboard" className="btn btn-primary btn-lg gap-2.5">
+            <Link
+              href="/dashboard"
+              className="btn btn-primary btn-lg gap-2.5"
+              onClick={() => trackEvent("cta.footer.get_started_free")}
+            >
               <span className="iconify lucide--rocket size-4.5"></span>
               <p>Get Started Free</p>
             </Link>
-            <Link href="/explore" className="btn btn-lg btn-ghost gap-2.5 max-sm:hidden">
+            <Link
+              href="/explore"
+              className="btn btn-lg btn-ghost gap-2.5 max-sm:hidden"
+              onClick={() => trackEvent("cta.footer.explore_paths")}
+            >
               <span className="iconify lucide--search size-4.5"></span>
               Explore Paths
             </Link>
@@ -128,7 +139,9 @@ const Footer = () => {
           </p>
           <Link
             href="/#pricing"
-            className="btn group from-primary to-secondary text-primary-content btn-sm max-sm:btn-square relative gap-2 border-0 bg-linear-to-r text-sm">
+            className="btn group from-primary to-secondary text-primary-content btn-sm max-sm:btn-square relative gap-2 border-0 bg-linear-to-r text-sm"
+            onClick={() => trackEvent("cta.footer.start_your_path")}
+          >
             <span className="iconify lucide--rocket size-4" />
             <span className="max-sm:hidden">Start Your Path</span>
             <div className="from-primary to-secondary absolute inset-x-0 top-1 -z-1 h-8 bg-linear-to-r opacity-40 blur-md transition-all duration-500 group-hover:opacity-60 group-hover:blur-lg"></div>

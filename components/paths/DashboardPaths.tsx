@@ -7,6 +7,7 @@ import { UsageStatsBar } from './UsageStatsBar';
 import { GeneratingPathCard } from './GeneratingPathCard';
 import { WelcomeHeader } from '@/components/dashboard/WelcomeHeader';
 import { toast } from 'react-hot-toast';
+import { trackEvent } from '@/components/SwetrixAnalytics';
 
 interface DashboardPathsProps {
   userId: string;
@@ -168,6 +169,7 @@ export default function DashboardPaths({
       setShowCreateForm(false);
 
       toast.success('Path generation started!');
+      trackEvent("path.generation_started", { unique: true });
 
       // Step 2: Start polling for status
       const interval = setInterval(() => {
@@ -285,7 +287,10 @@ export default function DashboardPaths({
               {canGenerate && (
                 <button
                   className="btn btn-primary mt-4"
-                  onClick={() => setShowCreateForm(true)}
+                  onClick={() => {
+                    trackEvent("cta.dashboard.create_first_path");
+                    setShowCreateForm(true);
+                  }}
                 >
                   Create Your First Path
                 </button>
