@@ -113,17 +113,15 @@ export default function PathCreateForm({
           </div>
         </div>
 
-        {/* AI Model Selection */}
+        {/* LLM Model Selection */}
         <div className="card bg-base-100 shadow">
           <div className="card-body">
-            <div className="card-title">AI Model</div>
-            <div className="mt-2">
-              <GroupedModelSelector
-                value={formData.model_id}
-                onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
-                tier={subscriptionTier}
-              />
-            </div>
+            <div className="card-title">LLM Model</div>
+            <GroupedModelSelector
+              value={formData.model_id}
+              onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
+              tier={subscriptionTier}
+            />
           </div>
         </div>
 

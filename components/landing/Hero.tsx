@@ -102,7 +102,7 @@ export const Hero = () => {
                             Get a complete, personalized learning path in 60 seconds. Everything you need to master any skill,
                             curated from real creators and organized just for you.
                         </p>
-                        <div className="mt-6 flex items-center gap-3 lg:mt-8">
+                        <div className="mt-6 flex flex-col sm:flex-row items-center gap-3 lg:mt-8">
                             <Link
                                 href="/dashboard"
                                 className="text-primary-content from-primary rounded-box group to-secondary animate-background-shift btn sm:btn-lg relative cursor-pointer gap-2.5 border-0 bg-linear-to-r bg-[200%,200%]"
@@ -137,7 +137,7 @@ export const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative px-4">
+                    <div className="relative px-4 py-24 lg:py-0">
                         <div className="from-primary/80 to-secondary/70 bg-gradient-to-r rounded-xl p-1 sm:p-2 lg:p-3">
                             <img
                                 src="/images/dashboard-screenshot.png"
@@ -147,7 +147,7 @@ export const Hero = () => {
                         </div>
 
                         {/* Top-right popout: Generating path */}
-                        <div className="card bg-base-100 absolute -end-0 top-16 w-60 p-3 shadow-md hover:shadow-lg max-lg:hidden sm:p-4 xl:-end-12 2xl:-end-32">
+                        <div className="card bg-base-100 absolute -end-0 top-0 lg:top-16 w-60 p-3 shadow-md hover:shadow-lg sm:p-4 xl:-end-12 2xl:-end-32">
                             <p className="text-base-content/60 text-sm">
                                 Generate path for <span className="cursor-pointer underline">Conversational Spanish</span>
                             </p>
@@ -168,7 +168,7 @@ export const Hero = () => {
                         </div>
 
                         {/* Bottom-left popout: Path shared */}
-                        <div className="card bg-base-100 absolute start-0 bottom-16 w-60 p-3 shadow-md hover:shadow-lg max-lg:hidden sm:p-4 xl:-start-32 motion-preset-oscillate motion-duration-3000">
+                        <div className="card bg-base-100 absolute start-0 bottom-0 lg:bottom-16 w-60 p-3 shadow-md hover:shadow-lg sm:p-4 xl:-start-32 motion-preset-oscillate motion-duration-3000">
                             <p className="text-base-content/60 text-sm">Share "Python Automation" with Team</p>
                             <p className="mt-1 font-medium">Path shared successfully</p>
                             <div className="avatar-group -space-x-3 py-1 *:border-2 *:transition-all hover:space-x-0.5 hover:*:shadow-sm">

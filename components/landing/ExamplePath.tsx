@@ -124,7 +124,7 @@ export const ExamplePath = () => {
             </div>
 
             {/* Scrollable content area */}
-            <div className="px-8 py-6 h-120 bg-base-100 overflow-y-auto">
+            <div className="px-2 sm:p-8 py-6 h-120 bg-base-100 overflow-y-auto">
               {sectionsData.map((section, sectionIndex) => {
                 const hasResources = section.resources && section.resources.length > 0;
 

@@ -36,3 +36,7 @@
         }
     }
 }
+
+.badge {
+  height: fit-content;
+}

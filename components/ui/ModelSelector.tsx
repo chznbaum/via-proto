@@ -77,40 +77,36 @@ export function ModelSelector({
 
   if (loading) {
     return (
-      <div className={`form-control ${className}`}>
-        <label className="label">
-          <span className="label-text">AI Model</span>
+      <fieldset className={`fieldset ${className}`}>
+        <label className="fieldset-label" htmlFor="model-select">
+          Which model should we use?
         </label>
         <div className="skeleton h-12 w-full"></div>
-      </div>
+      </fieldset>
     );
   }
 
   if (error) {
     return (
-      <div className={`form-control ${className}`}>
-        <label className="label">
-          <span className="label-text">AI Model</span>
+      <fieldset className={`fieldset ${className}`}>
+        <label className="fieldset-label" htmlFor="model-select">
+          Which model should we use?
         </label>
         <div className="alert alert-error">
           <span>{error}</span>
         </div>
-      </div>
+      </fieldset>
     );
   }
 
   if (viewMode === "grouped" && groupedModels) {
     return (
-      <div className={`form-control ${className}`}>
-        <label className="label">
-          <span className="label-text">AI Model</span>
-          {tier && (
-            <span className="label-text-alt">
-              Your tier: <span className="badge badge-sm badge-primary">{tier}</span>
-            </span>
-          )}
+      <fieldset className={`fieldset ${className}`}>
+        <label className="fieldset-label" htmlFor="model-select">
+          Which model should we use?
         </label>
         <select
+          id="model-select"
           className="select select-bordered w-full"
           value={value || defaultModelId}
           onChange={(e) => onChange(e.target.value)}
@@ -130,25 +126,19 @@ export function ModelSelector({
           ))}
         </select>
         {showDescription && selectedModel && (
-          <label className="label">
-            <span className="label-text-alt">{selectedModel.description}</span>
-          </label>
+          <span className="text-base-content/60 text-xs mt-1">{selectedModel.description}</span>
         )}
-      </div>
+      </fieldset>
     );
   }
 
   return (
-    <div className={`form-control ${className}`}>
-      <label className="label">
-        <span className="label-text">AI Model</span>
-        {tier && (
-          <span className="label-text-alt">
-            Your tier: <span className="badge badge-sm badge-primary">{tier}</span>
-          </span>
-        )}
+    <fieldset className={`fieldset ${className}`}>
+      <label className="fieldset-label" htmlFor="model-select-simple">
+        Which model should we use?
       </label>
       <select
+        id="model-select-simple"
         className="select select-bordered w-full"
         value={value || defaultModelId}
         onChange={(e) => onChange(e.target.value)}
@@ -164,12 +154,10 @@ export function ModelSelector({
         ))}
       </select>
       {showDescription && selectedModel && (
-        <label className="label">
-          <span className="label-text-alt">{selectedModel.description}</span>
-        </label>
+        <span className="text-base-content/60 text-xs mt-1">{selectedModel.description}</span>
       )}
       {selectedModel && (
-        <div className="flex gap-2 mt-2">
+        <div className="flex flex-wrap gap-2 mt-2">
           <span className={`badge ${getCostTierBadgeColor(selectedModel.costTier)}`}>
             {getCostTierDisplay(selectedModel.costTier)}
           </span>
@@ -181,7 +169,7 @@ export function ModelSelector({
           )}
         </div>
       )}
-    </div>
+    </fieldset>
   );
 }
 
