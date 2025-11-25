@@ -171,6 +171,7 @@ export async function generateMetadata({
     openGraph: {
       title: path.title,
       description: path.description,
+      url: `https://${config.domainName}/paths/${id}`,
       type: 'website',
       images: [
         {
@@ -184,6 +185,9 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: path.title,
       description: path.description,
+    },
+    other: {
+      'og:logo': `https://${config.domainName}/icon.png`,
     },
   };
 }

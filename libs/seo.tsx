@@ -57,6 +57,11 @@ export const getSEOTags = ({
       card: "summary_large_image",
     },
 
+    // Custom meta tags (og:logo is not standard OpenGraph but some platforms use it)
+    other: {
+      "og:logo": `https://${config.domainName}/icon.png`,
+    },
+
     // If a canonical URL is given, we add it. The metadataBase will turn the relative URL into a fully qualified URL
     ...(canonicalUrlRelative && {
       alternates: { canonical: canonicalUrlRelative },
