@@ -2,7 +2,9 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ViaPro.to",
+  appName: "ViaProto",
+  // SEO title for the homepage (can be different from appName)
+  appTitle: "Upskill faster with ViaProto",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Get a complete, personalized learning path in 60 seconds. Everything you need to master any skill, curated and organized for you.",

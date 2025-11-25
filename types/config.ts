@@ -24,6 +24,7 @@ export type Theme =
 
 export interface ConfigProps {
   appName: string;
+  appTitle?: string;
   appDescription: string;
   domainName: string;
   crisp: {

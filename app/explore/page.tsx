@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Explore Public Learning Paths - ViaProto",
     description: "Browse AI-powered learning paths created by the community.",
+    images: ["/opengraph-image.png"],
   },
 };
 
