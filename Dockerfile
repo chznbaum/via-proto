@@ -31,9 +31,10 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
-# Copy worker, libs, and TypeScript config for tsx
+# Copy worker, libs, scripts, and TypeScript config for tsx
 COPY --from=builder /app/worker.ts ./worker.ts
 COPY --from=builder /app/libs ./libs
+COPY --from=builder /app/scripts ./scripts
 COPY --from=builder /app/types ./types
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 COPY --from=builder /app/node_modules ./node_modules
