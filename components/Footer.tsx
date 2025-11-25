@@ -88,6 +88,19 @@ const Footer = () => {
                   <span className="iconify tabler--brand-linkedin size-5"></span>
                 </a>
               </div>
+              <a
+                href="https://www.tinylaunch.com/launch/8111"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block"
+              >
+                <img
+                  src="/tinylaunch_badge_launching_soon.svg"
+                  alt="TinyLaunch Badge"
+                  width={202}
+                  height={40}
+                />
+              </a>
             </div>
 
             <div>
