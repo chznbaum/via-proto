@@ -85,8 +85,8 @@ export const Hero = () => {
             <div className="relative z-2 pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
                 <div className="grid gap-8 sm:gap-10 xl:grid-cols-2 xl:gap-12 2xl:gap-16">
                     <div className="flex flex-col items-center xl:mt-6 xl:items-start">
-                        <div className="hover:bg-success/5 border-success/60 text-success inline-flex cursor-pointer items-center gap-2 rounded-full border px-2.5 py-0.5 text-xs transition-all">
-                            <p>AI-Curated Learning Paths</p>
+                        <div className="hover:bg-success/5 border-success/60 text-success inline-flex cursor-pointer items-center gap-2 rounded-full border-2 px-2.5 py-0.5 text-xs transition-all">
+                            <p className="font-semibold">AI-Curated Learning Paths</p>
                             <span className="iconify lucide--arrow-right inline-block size-3.5"></span>
                         </div>
                         <h1 className="mt-3 text-3xl leading-tight font-extrabold transition-all duration-1000 lg:text-4xl xl:text-5xl 2xl:text-6xl">
