@@ -31,7 +31,7 @@ const features = [
         icon: <span className="iconify lucide--line-chart size-5.5"></span>,
         keyMetric: "Pro",
         badge: "Track Progress",
-        title: "Learning Analytics",
+        title: "Learning Analytics (coming soon)",
         description: "Pro users can track progress, mark resources complete, and see how far they've come on their learning journey.",
     },
     {
