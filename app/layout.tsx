@@ -14,9 +14,44 @@ export const viewport: Viewport = {
 
 export const metadata = baseMetadata;
 
+// Preload critical fonts to prevent FOUT (Flash of Unstyled Text)
+function FontPreloads() {
+  return (
+    <>
+      {/* Fixel Regular - Primary body font */}
+      <link
+        rel="preload"
+        href="/fonts/fixel/FixelText-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      {/* Fixel SemiBold - Common for emphasis */}
+      <link
+        rel="preload"
+        href="/fonts/fixel/FixelText-SemiBold.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      {/* Young Serif - Headings */}
+      <link
+        rel="preload"
+        href="/fonts/young-serif/YoungSerif-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+    </>
+  );
+}
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" data-theme={config.colors.theme} className="group/html">
+      <head>
+        <FontPreloads />
+      </head>
       <body>
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>

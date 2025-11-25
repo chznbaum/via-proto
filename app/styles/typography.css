@@ -5,7 +5,7 @@
        url('/fonts/young-serif/YoungSerif-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -23,7 +23,7 @@
   src: url('/fonts/fixel/FixelText-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -55,7 +55,7 @@
   src: url('/fonts/fixel/FixelText-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
