@@ -17,7 +17,8 @@
     "check:competency-synonyms": "node scripts/check-competency-synonyms.js",
     "check:topic-duplicates": "node scripts/check-topic-duplicates.js",
     "topic:unused-competencies": "node scripts/find-unused-competencies.js",
-    "topic:coverage": "node scripts/topic-coverage-stats.js"
+    "topic:coverage": "node scripts/topic-coverage-stats.js",
+    "embeddings:backfill": "npx tsx scripts/backfill-topic-embeddings.ts"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",

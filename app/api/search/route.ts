@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/libs/supabase/server';
+import { generateEmbedding } from '@/libs/embeddings';
 import type { SearchResponse, SearchType, TopicSearchResult } from '@/types/search';
 
 /**
@@ -79,7 +80,8 @@ export async function GET(req: NextRequest) {
 }
 
 /**
- * Search topics using weighted tsvector
+ * Search topics using hybrid semantic + keyword search
+ * Combines vector similarity, tsvector ranking, and prefix matching
  */
 async function searchTopics(
   supabase: any,
@@ -87,32 +89,45 @@ async function searchTopics(
   limit: number,
   categoryId: string | null
 ) {
-  const { data: results, error } = await supabase.rpc('search_topics', {
-    search_query: query,
-    result_limit: limit,
-    filter_category_id: categoryId || null,
-  });
+  try {
+    // Generate embedding for the search query
+    const queryEmbedding = await generateEmbedding(query);
 
-  if (error) {
-    console.error('Error searching topics:', error);
+    // Call hybrid search function
+    const { data: results, error } = await supabase.rpc('search_topics_hybrid', {
+      search_query: query,
+      query_embedding: queryEmbedding,
+      result_limit: limit,
+      filter_category_id: categoryId || null,
+    });
+
+    if (error) {
+      console.error('Error searching topics:', error);
+      return NextResponse.json(
+        { error: 'Topic search failed', details: error.message },
+        { status: 500 }
+      );
+    }
+
+    // Add type discriminator to results
+    const typedResults: TopicSearchResult[] = (results || []).map((r: any) => ({
+      type: 'topic' as const,
+      ...r,
+    }));
+
+    const response: SearchResponse = {
+      results: typedResults,
+      query,
+      type: 'topics',
+      count: typedResults.length,
+    };
+
+    return NextResponse.json(response);
+  } catch (error) {
+    console.error('Error in hybrid search:', error);
     return NextResponse.json(
-      { error: 'Topic search failed', details: error.message },
+      { error: 'Search failed', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     );
   }
-
-  // Add type discriminator to results
-  const typedResults: TopicSearchResult[] = (results || []).map((r: any) => ({
-    type: 'topic' as const,
-    ...r,
-  }));
-
-  const response: SearchResponse = {
-    results: typedResults,
-    query,
-    type: 'topics',
-    count: typedResults.length,
-  };
-
-  return NextResponse.json(response);
 }
