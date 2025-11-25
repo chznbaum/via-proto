@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
@@ -14,7 +14,7 @@ declare global {
   }
 }
 
-export const SwetrixAnalytics = () => {
+function SwetrixPageViewTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -25,6 +25,10 @@ export const SwetrixAnalytics = () => {
     }
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export const SwetrixAnalytics = () => {
   return (
     <>
       <Script
@@ -37,6 +41,9 @@ export const SwetrixAnalytics = () => {
           window.swetrix?.trackViews();
         }}
       />
+      <Suspense fallback={null}>
+        <SwetrixPageViewTracker />
+      </Suspense>
       <noscript>
         <img
           src="https://api.analytics.chazona.dev/log/noscript?pid=8v56UDklPmgM"
