@@ -300,7 +300,7 @@ export default async function PathDetailPage({
             {/* Meta Info */}
             <div className="mt-4 sm:mt-8">
               <div className="flex items-center justify-between">
-                <p className="text-base-content/60 font-mono text-xs font-medium tracking-wide uppercase">
+                <p className="text-base-content/75 font-mono text-xs font-medium tracking-wide uppercase">
                   {path.topic.category?.name || 'Learning Path'}
                 </p>
                 <p className="text-base-content/80 text-sm">{path.total_estimated_hours}h</p>
@@ -395,7 +395,7 @@ export default async function PathDetailPage({
 
             {/* Date */}
             <div className="mb-6 sm:mb-8">
-              <p className="text-base-content/60 flex items-center gap-1 text-sm">
+              <p className="text-base-content/75 flex items-center gap-1 text-sm">
                 <span className="iconify lucide--calendar size-4"></span>
                 {new Date(path.created_at).toLocaleDateString('en-US', {
                   year: 'numeric',

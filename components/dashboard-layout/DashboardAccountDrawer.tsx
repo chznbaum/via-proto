@@ -132,7 +132,7 @@ export function DashboardAccountDrawer() {
               </div>
 
               <p className="mt-4 text-lg/none font-medium sm:mt-8">{displayName}</p>
-              <p className="text-base-content/60 mt-1 text-sm">{userEmail}</p>
+              <p className="text-base-content/75 mt-1 text-sm">{userEmail}</p>
 
               {/* Plan badge */}
               <div className="mt-3">

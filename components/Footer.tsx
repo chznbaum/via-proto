@@ -141,12 +141,16 @@ const Footer = () => {
 
         <hr className="text-base-200 mt-8" />
         <div className="container flex flex-wrap items-center justify-between gap-2 py-4">
-          <p className="text-sm text-base-content/60">
+          <p className="text-sm text-base-content/75">
             © {new Date().getFullYear()} {config.appName} - All rights reserved
           </p>
-          <p className="text-sm text-base-content/60">
+          <p className="text-sm text-base-content/75">
             Concept to Reality by{" "}
-            <Link href="https://chazonabaum.com" className="text-blue-500 transition-all hover:text-blue-600" target="_blank">
+            <Link
+              href="https://chazonabaum.com"
+              className="inline-flex items-center px-2 py-1 rounded-md border-2 border-base-300 bg-base-100 shadow-[0_2px_0_0] shadow-base-300 font-mono text-sm font-medium transition-all hover:shadow-[0_1px_0_0] hover:translate-y-[1px] active:shadow-none active:translate-y-[2px]"
+              target="_blank"
+            >
               Chazona
             </Link>
           </p>

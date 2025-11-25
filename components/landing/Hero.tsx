@@ -152,7 +152,7 @@ export const Hero = () => {
 
                         {/* Top-right popout: Generating path */}
                         <div className="card bg-base-100 absolute -end-0 top-0 lg:top-16 w-60 p-3 shadow-md hover:shadow-lg sm:p-4 xl:-end-12 2xl:-end-32">
-                            <p className="text-base-content/60 text-sm">
+                            <p className="text-base-content/75 text-sm">
                                 Generate path for <span className="cursor-pointer underline">Conversational Spanish</span>
                             </p>
                             <p className="mt-0.5 font-medium">Curating resources…</p>
@@ -162,7 +162,7 @@ export const Hero = () => {
                             </div>
                             <div className="mt-3 flex items-end justify-between gap-2">
                                 <div className="tooltip" data-tip="In Process">
-                                    <span className="iconify lucide--loader size-4 animate-spin text-base-content/60"></span>
+                                    <span className="iconify lucide--loader size-4 animate-spin text-base-content/75"></span>
                                 </div>
                                 <button className="btn btn-sm btn-error gap-2 border-none">
                                     <span className="iconify lucide--x size-4"></span>
@@ -173,7 +173,7 @@ export const Hero = () => {
 
                         {/* Bottom-left popout: Path shared */}
                         <div className="card bg-base-100 absolute start-0 bottom-0 lg:bottom-16 w-60 p-3 shadow-md hover:shadow-lg sm:p-4 xl:-start-32 motion-preset-oscillate motion-duration-3000">
-                            <p className="text-base-content/60 text-sm">Share "Python Automation" with Team</p>
+                            <p className="text-base-content/75 text-sm">Share "Python Automation" with Team</p>
                             <p className="mt-1 font-medium">Path shared successfully</p>
                             <div className="avatar-group -space-x-3 py-1 *:border-2 *:transition-all hover:space-x-0.5 hover:*:shadow-sm">
                                 <div className="avatar bg-gradient-to-br from-blue-400 to-blue-600 size-8 rounded-full flex items-center justify-center text-white text-xs font-bold">
@@ -212,7 +212,7 @@ export const Hero = () => {
                                 0
                             </span>+
                         </p>
-                        <p className="text-base-content/60 max-sm:text-sm">Public Learning Paths</p>
+                        <p className="text-base-content/75 max-sm:text-sm">Public Learning Paths</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
                         <p className="text-3xl font-semibold">
@@ -220,7 +220,7 @@ export const Hero = () => {
                                 0
                             </span>+
                         </p>
-                        <p className="text-base-content/60 max-sm:text-sm">Topics Available</p>
+                        <p className="text-base-content/75 max-sm:text-sm">Topics Available</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
                         <p className="text-3xl font-semibold">
@@ -228,7 +228,7 @@ export const Hero = () => {
                                 0
                             </span>+
                         </p>
-                        <p className="text-base-content/60 max-sm:text-sm">Skills to Learn</p>
+                        <p className="text-base-content/75 max-sm:text-sm">Skills to Learn</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-1">
                         <p className="text-3xl font-semibold">
@@ -236,7 +236,7 @@ export const Hero = () => {
                                 0
                             </span>
                         </p>
-                        <p className="text-base-content/60 max-sm:text-sm">Real Creator Content</p>
+                        <p className="text-base-content/75 max-sm:text-sm">Real Creator Content</p>
                     </div>
                 </div>
             </div>

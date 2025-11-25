@@ -85,12 +85,12 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
               <div className="mt-2 flex items-center gap-2 rounded-lg bg-base-200 p-3">
                 <Icon icon="lucide--check-circle" className="text-success size-5" />
                 {selectedCompetency.icon && (
-                  <Icon icon={selectedCompetency.icon} className="size-5 text-base-content/60" />
+                  <Icon icon={selectedCompetency.icon} className="size-5 text-base-content/75" />
                 )}
                 <div className="flex-1">
                   <p className="font-medium">{selectedCompetency.name}</p>
                   {selectedCompetency.category && (
-                    <p className="text-base-content/60 text-sm">
+                    <p className="text-base-content/75 text-sm">
                       {selectedCompetency.category.name}
                     </p>
                   )}
@@ -132,7 +132,7 @@ export function AddCompetencyModal({ onClose, onSuccess }: AddCompetencyModalPro
                     <Icon icon={level.icon} className="size-5" />
                     <div className="flex-1">
                       <p className="font-medium">{level.label}</p>
-                      <p className="text-base-content/60 text-sm">{level.description}</p>
+                      <p className="text-base-content/75 text-sm">{level.description}</p>
                     </div>
                   </div>
                 </label>

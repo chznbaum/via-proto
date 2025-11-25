@@ -91,7 +91,7 @@ export const RegisterForm = () => {
           <div>
             <h3 className="font-semibold">Check your email!</h3>
             <p className="text-sm">We've sent a magic link to <strong>{email}</strong></p>
-            <p className="text-xs mt-1 text-base-content/60">
+            <p className="text-xs mt-1 text-base-content/75">
               Your avatar will be set up when you click the link
             </p>
           </div>

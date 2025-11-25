@@ -66,7 +66,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
   if (!sections || sections.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-base-content/60">No sections found in this learning path.</p>
+        <p className="text-base-content/75">No sections found in this learning path.</p>
       </div>
     );
   }
@@ -76,7 +76,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
       <div className="text-center mb-8 md:mb-12">
         <div className="flex items-center justify-center gap-1.5 mb-2">
           <div className="bg-primary/80 h-4 w-0.5 rounded-full" />
-          <p className="text-base-content/60 font-mono text-sm font-medium">
+          <p className="text-base-content/75 font-mono text-sm font-medium">
             Your Journey
           </p>
           <div className="bg-primary/80 h-4 w-0.5 rounded-full" />
@@ -122,7 +122,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                   <p className="text-base-content/70 mt-2">{section.description}</p>
                 )}
 
-                <div className="flex flex-wrap gap-3 text-sm text-base-content/60 mt-3">
+                <div className="flex flex-wrap gap-3 text-sm text-base-content/75 mt-3">
                   {section.estimated_hours && (
                     <span className="flex items-center gap-1.5">
                       <span className="iconify lucide--clock size-4"></span>
@@ -255,7 +255,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                                     }}
                                   />
                                 )}
-                                <span className="text-xs text-base-content/60 font-mono uppercase tracking-wide">
+                                <span className="text-xs text-base-content/75 font-mono uppercase tracking-wide">
                                   {(() => {
                                     try {
                                       return new URL(resource.url).hostname.replace(/^www\./, '');

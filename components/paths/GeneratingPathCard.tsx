@@ -82,7 +82,7 @@ export function GeneratingPathCard({
 
       {/* Content */}
       <div className="border-base-300 border-t border-dashed px-4 py-2.5">
-        <p className="text-base-content/60 text-sm">
+        <p className="text-base-content/75 text-sm">
           Creating a personalized learning path for <span className="font-medium">{topicName}</span>
         </p>
         <p className="mt-3 font-medium">{getStatusMessage()}</p>
@@ -109,7 +109,7 @@ export function GeneratingPathCard({
         {/* Show loading indicator while generating */}
         {!isTerminal && (
           <div className="tooltip" data-tip="Generating">
-            <span className="iconify lucide--loader text-base-content/60 block size-4 animate-spin"></span>
+            <span className="iconify lucide--loader text-base-content/75 block size-4 animate-spin"></span>
           </div>
         )}
 

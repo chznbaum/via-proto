@@ -74,7 +74,7 @@ export function CompetencyCard({ competency, onDelete, onEdit }: CompetencyCardP
               {competency.competency.icon && (
                 <Icon
                   icon={competency.competency.icon}
-                  className="size-4 text-base-content/60 bg-transparent"
+                  className="size-4 text-base-content/75 bg-transparent"
                 />
               )}
               <h3 className="font-medium leading-tight">
@@ -82,7 +82,7 @@ export function CompetencyCard({ competency, onDelete, onEdit }: CompetencyCardP
               </h3>
             </div>
             {competency.competency.category && (
-              <p className="text-base-content/60 mt-1 text-xs">
+              <p className="text-base-content/75 mt-1 text-xs">
                 {competency.competency.category.name}
               </p>
             )}
@@ -114,7 +114,7 @@ export function CompetencyCard({ competency, onDelete, onEdit }: CompetencyCardP
         </div>
 
         {competency.competency.description && (
-          <p className="text-base-content/60 mt-2 text-sm line-clamp-2">
+          <p className="text-base-content/75 mt-2 text-sm line-clamp-2">
             {competency.competency.description}
           </p>
         )}

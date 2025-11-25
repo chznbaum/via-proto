@@ -107,7 +107,7 @@ export default function PathCard({ path, isOwner, onDelete, teamsEnabled = false
 
       {/* Content */}
       <div className="border-base-300 border-t border-dashed px-4 py-2.5">
-        <p className="text-base-content/60 text-sm line-clamp-2">
+        <p className="text-base-content/75 text-sm line-clamp-2">
           {path.description}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -122,7 +122,7 @@ export default function PathCard({ path, isOwner, onDelete, teamsEnabled = false
             </div>
           )}
         </div>
-        <div className="mt-2 flex items-center gap-4 text-xs text-base-content/60">
+        <div className="mt-2 flex items-center gap-4 text-xs text-base-content/75">
           <span className="flex items-center gap-1">
             <span className="iconify lucide--clock size-3.5"></span>
             {path.total_estimated_hours}h

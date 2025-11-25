@@ -207,7 +207,7 @@ export default function TopicTypeahead({
 
                 {/* Description */}
                 {result.topic_description && (
-                  <span className="text-xs text-base-content/60 line-clamp-2 mb-1">
+                  <span className="text-xs text-base-content/75 line-clamp-2 mb-1">
                     {result.topic_description}
                   </span>
                 )}
@@ -234,7 +234,7 @@ export default function TopicTypeahead({
       {/* No results */}
       {isOpen && !isLoading && results.length === 0 && query.length >= 2 && (
         <div className="absolute z-50 mt-1 w-full bg-base-100 rounded-box shadow-lg border border-base-300 p-4">
-          <p className="text-sm text-base-content/60">
+          <p className="text-sm text-base-content/75">
             No topics found for "{query}". Try a different search.
           </p>
         </div>

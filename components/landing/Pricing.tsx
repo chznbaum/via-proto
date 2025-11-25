@@ -17,7 +17,7 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
 
     return (
         <div className="group/section relative z-10 container mx-auto max-w-7xl py-8 md:py-12 lg:py-16 2xl:py-28" id="pricing">
-            <p className="group-hover/section:text-primary text-base-content/60 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
+            <p className="group-hover/section:text-primary text-base-content/75 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
                 Affordable
             </p>
             <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Flexible Learning Plans</h2>

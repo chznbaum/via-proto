@@ -75,7 +75,7 @@ export const Topbar = () => {
                                     </div>
                                     <div className="min-h-0 grow">
                                         <SimpleBar className="mt-5 size-full">
-                                            <p className="text-base-content/60 mx-3 text-sm font-medium">Navigation</p>
+                                            <p className="text-base-content/75 mx-3 text-sm font-medium">Navigation</p>
                                             <ul className="menu mt-1 w-full p-0">
                                                 {menu.map((item, index) => (
                                                     <li key={index}>

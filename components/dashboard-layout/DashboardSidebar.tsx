@@ -179,11 +179,11 @@ export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] 
             </div>
             <div className="grow -space-y-0.5">
               <p className="text-sm font-medium">{displayName}</p>
-              <p className="text-base-content/60 text-xs">
+              <p className="text-base-content/75 text-xs">
                 {planTier.charAt(0).toUpperCase() + planTier.slice(1)} Plan
               </p>
             </div>
-            <span className="iconify lucide--chevrons-up-down text-base-content/60 size-4" />
+            <span className="iconify lucide--chevrons-up-down text-base-content/75 size-4" />
           </label>
         </div>
       </div>

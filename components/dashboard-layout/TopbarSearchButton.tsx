@@ -123,7 +123,7 @@ export const TopbarSearchButton = () => {
         <div className="modal-box bg-transparent p-0 shadow-none max-w-2xl">
           <div className="bg-base-100 rounded-box">
             <div className="input w-full border-0 !outline-none">
-              <span className="iconify lucide--search text-base-content/60 size-4.5" />
+              <span className="iconify lucide--search text-base-content/75 size-4.5" />
               <input
                 ref={inputRef}
                 type="search"
@@ -165,7 +165,7 @@ export const TopbarSearchButton = () => {
                             <span className="badge badge-xs">Private</span>
                           )}
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-base-content/60">
+                        <div className="flex items-center gap-2 text-xs text-base-content/75">
                           <span>{result.topic_name}</span>
                           <span>•</span>
                           <span className="capitalize">{result.skill_level}</span>
@@ -181,7 +181,7 @@ export const TopbarSearchButton = () => {
                 ) : (
                   <div className="flex flex-col items-center justify-center p-8 text-center">
                     <span className="iconify lucide--search size-8 text-base-content/30 mb-2"></span>
-                    <p className="text-sm text-base-content/60">No learning paths found</p>
+                    <p className="text-sm text-base-content/75">No learning paths found</p>
                   </div>
                 )}
               </div>

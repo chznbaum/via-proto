@@ -126,7 +126,7 @@ export function ModelSelector({
           ))}
         </select>
         {showDescription && selectedModel && (
-          <span className="text-base-content/60 text-xs mt-1">{selectedModel.description}</span>
+          <span className="text-base-content/75 text-xs mt-1">{selectedModel.description}</span>
         )}
       </fieldset>
     );
@@ -154,7 +154,7 @@ export function ModelSelector({
         ))}
       </select>
       {showDescription && selectedModel && (
-        <span className="text-base-content/60 text-xs mt-1">{selectedModel.description}</span>
+        <span className="text-base-content/75 text-xs mt-1">{selectedModel.description}</span>
       )}
       {selectedModel && (
         <div className="flex flex-wrap gap-2 mt-2">

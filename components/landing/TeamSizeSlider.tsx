@@ -11,7 +11,11 @@ interface TeamSizeSliderProps {
 export const TeamSizeSlider = ({ teamSeats, setTeamSeats, pricePerSeat }: TeamSizeSliderProps) => {
     return (
         <div className="mb-6">
+            <label htmlFor="team-seats-slider" className="text-sm font-medium text-base-content mb-2 block">
+                How many seats?
+            </label>
             <input
+                id="team-seats-slider"
                 type="range"
                 min="2"
                 max="50"

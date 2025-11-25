@@ -145,7 +145,7 @@ export function CompetencyTracker({ userId }: CompetencyTrackerProps) {
                 <span className="iconify lucide--plus size-4"></span>
                 <span>Add Skill</span>
               </button>
-              <div className="text-base-content/60 flex items-center gap-2">
+              <div className="text-base-content/75 flex items-center gap-2">
                 <span className="iconify lucide--award size-4"></span>
                 <p className="text-sm">
                   <span className="border-base-content/20 border-b border-dashed font-medium">
@@ -218,7 +218,7 @@ export function CompetencyTracker({ userId }: CompetencyTrackerProps) {
                   <span className="iconify lucide--list size-5" />
                   <p className="text-lg font-medium">Your Skills</p>
                 </div>
-                <p className="text-base-content/60">
+                <p className="text-base-content/75">
                   Manage your competency assessments and track your progress
                 </p>
               </div>
@@ -234,7 +234,7 @@ export function CompetencyTracker({ userId }: CompetencyTrackerProps) {
                   <span className="iconify lucide--lightbulb size-12 text-base-content/40"></span>
                   <div>
                     <p className="font-medium">No skills tracked yet</p>
-                    <p className="text-base-content/60 mt-1 text-sm">
+                    <p className="text-base-content/75 mt-1 text-sm">
                       Start by adding your first competency to track your learning journey
                     </p>
                   </div>

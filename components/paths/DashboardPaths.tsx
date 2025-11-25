@@ -281,7 +281,7 @@ export default function DashboardPaths({
             <div className="card-body items-center text-center">
               <span className="iconify lucide--map size-16 text-base-content/20"></span>
               <h3 className="card-title">No paths yet</h3>
-              <p className="text-base-content/60">
+              <p className="text-base-content/75">
                 Create your first learning path to get started!
               </p>
               {canGenerate && (

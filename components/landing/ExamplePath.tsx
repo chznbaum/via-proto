@@ -107,7 +107,7 @@ export const ExamplePath = () => {
       <div
         className="group/section relative z-10 container mx-auto max-w-7xl scroll-mt-12 py-8 md:py-12 lg:py-16 2xl:py-28"
         id="features">
-        <p className="group-hover/section:text-primary text-base-content/60 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
+        <p className="group-hover/section:text-primary text-base-content/75 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
           Personalized Curriculum
         </p>
         <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Everything you need, nothing you don’t</h2>
@@ -148,7 +148,7 @@ export const ExamplePath = () => {
                         <p className="text-base-content/70 mt-2">{section.description}</p>
                       )}
 
-                      <div className="flex flex-wrap gap-3 text-sm text-base-content/60 mt-3">
+                      <div className="flex flex-wrap gap-3 text-sm text-base-content/75 mt-3">
                         {section.estimated_hours && (
                           <span className="flex items-center gap-1.5">
                             <span className="iconify lucide--clock size-4"></span>

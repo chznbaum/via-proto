@@ -119,7 +119,7 @@ export const PathCard = ({ path }: PathCardProps) => {
               {path.profiles?.name || "Anonymous"}
             </p>
           </div>
-          <p className="text-xs text-base-content/60">{timeAgo}</p>
+          <p className="text-xs text-base-content/75">{timeAgo}</p>
         </div>
 
         {/* Title and Description */}

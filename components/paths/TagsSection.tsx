@@ -20,7 +20,7 @@ export const TagsSection = ({ tags }: TagsSectionProps) => {
           ))}
         </div>
       ) : (
-        <p className="text-base-content/60 mt-2 text-sm">No tags yet</p>
+        <p className="text-base-content/75 mt-2 text-sm">No tags yet</p>
       )}
     </div>
   );

@@ -105,7 +105,7 @@ export default function PathCreateForm({
                   }}
                   placeholder="Search for a topic (e.g., React, Machine Learning, Spanish)"
                 />
-                <p className="text-base-content/60 text-xs mt-1">
+                <p className="text-base-content/75 text-xs mt-1">
                   Start typing to search from <span className="font-semibold">hundreds of topics</span> across programming, design, business, and more
                 </p>
               </div>
@@ -163,7 +163,7 @@ export default function PathCreateForm({
                   <label className="label cursor-pointer" htmlFor="is-public">
                     <span className="label-text">
                       <span className="font-semibold">Make this path public</span>
-                      <span className="block text-sm text-base-content/60">
+                      <span className="block text-sm text-base-content/75">
                         Public paths can be viewed by anyone
                       </span>
                     </span>

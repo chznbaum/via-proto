@@ -68,7 +68,7 @@ export default async function ExplorePage() {
             <p className="text-base-content/80 mt-2 max-sm:text-sm">
               Discover AI-curated learning paths created by the community. Real resources from real creators.
             </p>
-            <div className="text-base-content/60 mt-2 flex items-center gap-1.5">
+            <div className="text-base-content/75 mt-2 flex items-center gap-1.5">
               <span className="iconify lucide--library size-3.5"></span>
               <p className="text-sm">
                 <span className="border-base-content/20 border-b border-dashed font-medium">
@@ -225,7 +225,7 @@ export default async function ExplorePage() {
                 <span className="iconify lucide--search-x size-12 text-base-content/40"></span>
                 <div>
                   <p className="font-medium">No public paths yet</p>
-                  <p className="text-base-content/60 mt-1 text-sm">
+                  <p className="text-base-content/75 mt-1 text-sm">
                     Be the first to create and share a learning path!
                   </p>
                 </div>

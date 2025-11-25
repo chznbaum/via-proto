@@ -54,7 +54,7 @@ export const SkillsDisplay = ({ competencies, showCTA = true }: SkillsDisplayPro
     <div className="group/section overflow-visible py-8 md:py-12 lg:py-16">
       <div className="flex items-center justify-center gap-1.5">
         <div className="bg-primary/80 h-4 w-0.5 translate-x-1.5 rounded-full opacity-0 transition-all group-hover/section:translate-x-0 group-hover/section:opacity-100" />
-        <p className="text-base-content/60 group-hover/section:text-primary font-mono text-sm font-medium transition-all">
+        <p className="text-base-content/75 group-hover/section:text-primary font-mono text-sm font-medium transition-all">
           What You'll Learn
         </p>
         <div className="bg-primary/80 h-4 w-0.5 -translate-x-1.5 rounded-full opacity-0 transition-all group-hover/section:translate-x-0 group-hover/section:opacity-100" />

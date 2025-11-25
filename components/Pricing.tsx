@@ -30,7 +30,7 @@ const Pricing = () => {
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
             AI-Powered Learning Paths
           </h2>
-          <p className="text-base-content/60 mt-4 text-lg">
+          <p className="text-base-content/75 mt-4 text-lg">
             Choose the plan that fits your learning journey
           </p>
         </div>
@@ -81,7 +81,7 @@ const Pricing = () => {
               >
                 +
               </button>
-              <span className="text-sm text-base-content/60">seats</span>
+              <span className="text-sm text-base-content/75">seats</span>
             </div>
           </div>
         </div>
@@ -124,12 +124,12 @@ const Pricing = () => {
                           ${plan.price * teamSeats}
                         </p>
                         <div className="flex flex-col">
-                          <p className="text-xs text-base-content/60 uppercase font-semibold">
+                          <p className="text-xs text-base-content/75 uppercase font-semibold">
                             USD
                           </p>
                         </div>
                       </div>
-                      <p className="text-sm text-base-content/60">
+                      <p className="text-sm text-base-content/75">
                         ${plan.price}/seat × {teamSeats} seats
                       </p>
                     </>
@@ -149,7 +149,7 @@ const Pricing = () => {
                         ${plan.price}
                       </p>
                       <div className="flex flex-col justify-end mb-[4px]">
-                        <p className="text-xs text-base-content/60 uppercase font-semibold">
+                        <p className="text-xs text-base-content/75 uppercase font-semibold">
                           USD
                         </p>
                       </div>

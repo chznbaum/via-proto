@@ -98,7 +98,7 @@ const TOS = async () => {
               A clear outline of what you can expect from me—and what I expect
               from you—when using ViaProto
             </p>
-            <p className="text-base-content/60 mt-2 text-sm">
+            <p className="text-base-content/75 mt-2 text-sm">
               Last Updated: {lastUpdated}
             </p>
           </div>
@@ -774,7 +774,7 @@ const TOS = async () => {
               </div>
 
               <div className="mt-12 pt-8 border-t border-base-300">
-                <p className="text-base-content/60 text-sm text-center">
+                <p className="text-base-content/75 text-sm text-center">
                   ViaProto is operated by Chazona Baum
                   <br />
                   Last Updated: {lastUpdated}

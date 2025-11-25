@@ -39,7 +39,7 @@ const faqs2 = [
 export const FAQs = () => {
     return (
         <div className="group/section relative z-10 container mx-auto max-w-7xl py-8 md:py-12 lg:py-16 2xl:py-28" id="faq">
-            <p className="group-hover/section:text-primary text-base-content/60 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
+            <p className="group-hover/section:text-primary text-base-content/75 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
                 Questions
             </p>
 

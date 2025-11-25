@@ -38,7 +38,7 @@ export function UsageStatsBar({
           <div>
             <p className="text-2xl font-semibold">
               {pathsUsed}
-              <span className="text-base-content/60 text-xl">/{pathsLimit}</span>
+              <span className="text-base-content/75 text-xl">/{pathsLimit}</span>
             </p>
             <p className="text-base-content/50 mt-auto pt-1 text-center text-sm/none">
               Paths Used
@@ -48,7 +48,7 @@ export function UsageStatsBar({
           <div>
             <p className="text-2xl font-semibold">
               {remaining}
-              <span className="text-base-content/60 text-xl"></span>
+              <span className="text-base-content/75 text-xl"></span>
             </p>
             <p className="text-base-content/50 mt-auto pt-1 text-center text-sm/none">
               Remaining
@@ -58,7 +58,7 @@ export function UsageStatsBar({
           <div className="max-sm:hidden">
             <p className="text-2xl font-semibold">
               {percentageUsed.toFixed(0)}%
-              <span className="text-base-content/60 text-xl"></span>
+              <span className="text-base-content/75 text-xl"></span>
             </p>
             <p className="text-base-content/50 mt-auto pt-1 text-center text-sm/none">
               Utilized

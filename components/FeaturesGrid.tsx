@@ -10,7 +10,7 @@ const features = [
     demo: (
       <div className="overflow-hidden h-full flex items-stretch">
         <div className="w-full translate-x-12 bg-base-200 rounded-t-box h-full p-6">
-          <p className="font-medium uppercase tracking-wide text-base-content/60 text-sm mb-3">
+          <p className="font-medium uppercase tracking-wide text-base-content/75 text-sm mb-3">
             Suggest a feature
           </p>
           <div className="relative textarea py-4 h-full mr-12 bg-base-200 group-hover:bg-base-100 group-hover:border-base-content/10 text-base-content">
@@ -121,7 +121,7 @@ const features = [
             },
           ].map((theme, i) => (
             <div className={theme.css} key={i}>
-              <div className="font-medium uppercase tracking-wide text-base-content/60 text-sm mb-3">
+              <div className="font-medium uppercase tracking-wide text-base-content/75 text-sm mb-3">
                 Trending feedback
               </div>
               <div className="space-y-2">
