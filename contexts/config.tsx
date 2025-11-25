@@ -45,7 +45,7 @@ const useHook = () => {
                     .from('user_preferences')
                     .select('theme, font_family, direction, sidebar_theme')
                     .eq('user_id', user.id)
-                    .single();
+                    .maybeSingle();
 
                 if (preferences) {
                     // Map DB column names to config keys
