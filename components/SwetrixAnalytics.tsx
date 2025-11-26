@@ -59,9 +59,9 @@ function SwetrixPageViewTracker() {
 
 export const SwetrixAnalytics = () => {
   useEffect(() => {
-    // Initialize Swetrix with custom API URL
+    // Initialize Swetrix with custom API URL (SDK appends /log automatically)
     Swetrix.init("8v56UDklPmgM", {
-      apiURL: "https://api.analytics.chazona.dev/log",
+      apiURL: "https://api.analytics.chazona.dev",
     });
 
     // Enable automatic pageview tracking (search params excluded)

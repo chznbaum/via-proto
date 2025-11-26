@@ -13,25 +13,23 @@
         <meta name="robots" content="noindex, follow"/>
         <style>
           :root {
-            --primary: #006CFA;
-            --secondary: #9c5de8;
-            --base-100: #ffffff;
-            --base-200: #eef0f2;
-            --base-300: #dcdee0;
-            --base-content: #1e2328;
-            --base-content-muted: #6b7280;
+            --color-primary: #006CFA;
+            --color-secondary: #9c5de8;
+            --color-base-100: #ffffff;
+            --color-base-200: #eef0f2;
+            --color-base-300: #dcdee0;
+            --color-base-content: #1e2328;
             --root-bg: #fafbfc;
           }
 
           @media (prefers-color-scheme: dark) {
             :root {
-              --primary: #378dff;
-              --secondary: #b071ff;
-              --base-100: #181c20;
-              --base-200: #22262a;
-              --base-300: #2c3034;
-              --base-content: #f0f4f8;
-              --base-content-muted: #9ca3af;
+              --color-primary: #378dff;
+              --color-secondary: #b071ff;
+              --color-base-100: #181c20;
+              --color-base-200: #22262a;
+              --color-base-300: #2c3034;
+              --color-base-content: #f0f4f8;
               --root-bg: #121416;
             }
           }
@@ -43,9 +41,9 @@
           }
 
           body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: "Fixel", "Fixel Fallback", system-ui, sans-serif;
             background: var(--root-bg);
-            color: var(--base-content);
+            color: var(--color-base-content);
             line-height: 1.6;
             min-height: 100vh;
           }
@@ -59,14 +57,14 @@
           header {
             margin-bottom: 2rem;
             padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--base-300);
+            border-bottom: 1px solid var(--color-base-300);
           }
 
           .logo {
-            font-family: Georgia, serif;
+            font-family: "Young Serif", "Young Serif Fallback", Georgia, serif;
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -77,11 +75,9 @@
             font-size: 1.25rem;
             font-weight: 600;
             margin-top: 0.5rem;
-            color: var(--base-content);
           }
 
           .description {
-            color: var(--base-content);
             opacity: 0.8;
             font-size: 0.875rem;
             margin-top: 0.25rem;
@@ -98,25 +94,24 @@
             display: flex;
             align-items: center;
             gap: 0.375rem;
-            color: var(--base-content);
           }
 
           .stat-value {
             font-weight: 600;
-            color: var(--primary);
+            color: var(--color-primary);
           }
 
           table {
             width: 100%;
             border-collapse: collapse;
-            background: var(--base-100);
+            background: var(--color-base-100);
             border-radius: 0.25rem;
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
           }
 
           thead {
-            background: var(--base-200);
+            background: var(--color-base-200);
           }
 
           th {
@@ -126,22 +121,21 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: var(--base-content);
-            opacity: 0.7;
+            opacity: 0.75;
           }
 
           td {
             padding: 0.75rem 1rem;
-            border-top: 1px solid var(--base-200);
+            border-top: 1px solid var(--color-base-200);
             font-size: 0.875rem;
           }
 
           tbody tr:hover {
-            background: var(--base-200);
+            background: var(--color-base-200);
           }
 
           a {
-            color: var(--primary);
+            color: var(--color-primary);
             text-decoration: none;
             word-break: break-all;
           }
@@ -159,44 +153,34 @@
             font-size: 0.75rem;
             font-weight: 500;
             border-radius: 9999px;
-            background: var(--base-200);
-            color: var(--base-content);
+            background: var(--color-base-200);
           }
 
           .priority-high {
             background: rgba(0, 108, 250, 0.15);
-            color: var(--primary);
+            color: var(--color-primary);
           }
 
-          .frequency {
+          .secondary {
             font-size: 0.75rem;
-            color: var(--base-content);
             opacity: 0.8;
           }
 
-          .date {
-            font-size: 0.75rem;
-            color: var(--base-content);
-            opacity: 0.8;
+          .tabular {
             font-variant-numeric: tabular-nums;
           }
 
           footer {
             margin-top: 2rem;
             padding-top: 1.5rem;
-            border-top: 1px solid var(--base-300);
+            border-top: 1px solid var(--color-base-300);
             text-align: center;
             font-size: 0.75rem;
-            color: var(--base-content);
             opacity: 0.8;
           }
 
-          footer a {
-            color: var(--base-content);
-          }
-
           footer a:hover {
-            color: var(--primary);
+            color: var(--color-primary);
           }
 
           @media (max-width: 640px) {
@@ -213,7 +197,7 @@
       <body>
         <div class="container">
           <header>
-            <a href="/" class="logo">ViaProto</a>
+            <a href="/" class="logo">ViaPro.to</a>
             <h1>Sitemap</h1>
             <p class="description">All pages available for indexing on this site.</p>
             <div class="stats">
@@ -242,10 +226,10 @@
                       <xsl:value-of select="sitemap:loc"/>
                     </a>
                   </td>
-                  <td class="hide-mobile date">
+                  <td class="hide-mobile secondary tabular">
                     <xsl:value-of select="substring(sitemap:lastmod, 1, 10)"/>
                   </td>
-                  <td class="hide-mobile frequency">
+                  <td class="hide-mobile secondary">
                     <xsl:value-of select="sitemap:changefreq"/>
                   </td>
                   <td>
@@ -266,7 +250,7 @@
           </table>
 
           <footer>
-            <p style="margin-top: 0.5rem;">
+            <p>
               <a href="/">Back to ViaProto</a>
             </p>
           </footer>
