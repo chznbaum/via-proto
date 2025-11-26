@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 
+// CDN configuration - assetPrefix is baked in at build time
+const cdnUrl = process.env.CDN_URL;
+
 // Security Headers
 const securityHeaders = [
   // HSTS - Force HTTPS connections
@@ -33,12 +36,15 @@ const securityHeaders = [
 // Environment-aware: allows localhost in development, production domains in prod
 const isDev = process.env.NODE_ENV === 'development';
 
+// CDN domains for CSP (BunnyCDN custom domains)
+const cdnDomains = 'https://cdn.viapro.to https://cdn-dev.viapro.to';
+
 const cspHeader = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://cdn.jsdelivr.net https://js.stripe.com https://accounts.google.com;
-  style-src 'self' 'unsafe-inline' https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
-  img-src 'self' blob: data: https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev;
-  font-src 'self' https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://cdn.jsdelivr.net https://js.stripe.com https://accounts.google.com;
+  style-src 'self' 'unsafe-inline' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
+  img-src 'self' blob: data: ${cdnDomains} https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev;
+  font-src 'self' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;
   connect-src 'self' ${isDev ? 'http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*' : ''} https://*.supabase.co wss://*.supabase.co https://openrouter.ai https://api.openrouter.ai https://*.crisp.chat wss://*.crisp.chat https://client.relay.crisp.chat wss://client.relay.crisp.chat https://swetrix.org https://api.swetrix.com https://api.analytics.chazona.dev https://js.stripe.com https://api.stripe.com;
   frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://accounts.google.com https://*.crisp.chat;
   object-src 'none';
@@ -51,6 +57,8 @@ const cspHeader = `
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  // CDN asset prefix - only applied when CDN_URL is set (production/staging builds)
+  assetPrefix: isDev ? undefined : cdnUrl,
   eslint: {
     // WARNING: This allows production builds to successfully complete even if
     // your project has ESLint errors. Remove this after fixing lint errors!
@@ -62,6 +70,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    // Disable Next.js image optimization - BunnyCDN handles optimization
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -103,6 +113,16 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value: cspHeader,
+          },
+        ],
+      },
+      {
+        // Long cache headers for static assets (served from CDN in production)
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },

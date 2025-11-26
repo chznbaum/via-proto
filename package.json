@@ -5,6 +5,10 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
+    "build:staging": "CDN_URL=https://cdn-dev.viapro.to next build",
+    "build:production": "CDN_URL=https://cdn.viapro.to next build",
+    "upload:staging": "./scripts/upload-static-to-s3.sh staging",
+    "upload:production": "./scripts/upload-static-to-s3.sh production",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
@@ -49,6 +53,7 @@
     "simplebar-react": "^3.3.2",
     "stripe": "^13.11.0",
     "swetrix": "^3.7.2",
+    "tsx": "^4.20.6",
     "zod": "^3.24.1"
   },
   "devDependencies": {

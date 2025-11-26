@@ -1,0 +1,219 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.2.0
+  aws-cli: circleci/aws-cli@4.1.3
+
+executors:
+  node-executor:
+    docker:
+      - image: cimg/node:20.11.0
+  aws-executor:
+    docker:
+      - image: cimg/aws:2024.03
+
+jobs:
+  build-nextjs:
+    executor: node-executor
+    parameters:
+      environment:
+        type: string
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{{ checksum "package-lock.json" }}
+            - v1-deps-
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - save_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build Next.js for << parameters.environment >>
+          command: npm run build:<< parameters.environment >>
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .next
+            - public
+            - package.json
+            - package-lock.json
+            - next.config.js
+            - worker.ts
+            - libs
+            - scripts
+            - types
+            - tsconfig.json
+            - certs
+            - Dockerfile
+            - docker-entrypoint.sh
+
+  upload-static-assets:
+    executor: aws-executor
+    parameters:
+      bucket:
+        type: string
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Upload static assets to Scaleway S3
+          command: |
+            aws s3 sync .next/static s3://<< parameters.bucket >>/_next/static \
+              --endpoint-url https://s3.nl-ams.scw.cloud \
+              --acl public-read \
+              --cache-control "public,max-age=31536000,immutable" \
+              --delete
+
+            # Upload public folder assets (fonts, images, etc.)
+            aws s3 sync ./public s3://<< parameters.bucket >>/ \
+              --endpoint-url https://s3.nl-ams.scw.cloud \
+              --acl public-read \
+              --cache-control "public,max-age=86400" \
+              --exclude "*.html"
+
+            echo "Static assets uploaded to << parameters.bucket >>"
+
+  build-and-push-docker:
+    docker:
+      - image: cimg/base:stable
+    parameters:
+      image_tag:
+        type: string
+    steps:
+      - attach_workspace:
+          at: .
+      - setup_remote_docker:
+          version: default
+      - run:
+          name: Build Docker image
+          command: |
+            docker build -t $DOCKERHUB_USERNAME/via-proto:<< parameters.image_tag >> .
+            docker tag $DOCKERHUB_USERNAME/via-proto:<< parameters.image_tag >> \
+                       $DOCKERHUB_USERNAME/via-proto:$CIRCLE_SHA1
+      - run:
+          name: Push to Docker Hub
+          command: |
+            echo $DOCKERHUB_TOKEN | docker login -u $DOCKERHUB_USERNAME --password-stdin
+            docker push $DOCKERHUB_USERNAME/via-proto:<< parameters.image_tag >>
+            docker push $DOCKERHUB_USERNAME/via-proto:$CIRCLE_SHA1
+
+  deploy-to-coolify:
+    docker:
+      - image: cimg/base:stable
+    parameters:
+      coolify_webhook:
+        type: env_var_name
+      coolify_token:
+        type: env_var_name
+    steps:
+      - run:
+          name: Trigger Coolify deployment
+          command: |
+            response=$(curl -s -w "\n%{http_code}" --request GET "${<< parameters.coolify_webhook >>}" \
+              --header "Authorization: Bearer ${<< parameters.coolify_token >>}")
+
+            http_code=$(echo "$response" | tail -n1)
+            body=$(echo "$response" | head -n-1)
+
+            echo "Response: $body"
+            echo "HTTP Status: $http_code"
+
+            if [ "$http_code" -lt 200 ] || [ "$http_code" -ge 300 ]; then
+              echo "Deployment trigger failed with status $http_code"
+              exit 1
+            fi
+
+            echo "Deployment triggered successfully"
+
+workflows:
+  # Staging workflow - disabled until branch system is cleaned up
+  # staging:
+  #   jobs:
+  #     - build-nextjs:
+  #         environment: staging
+  #         filters:
+  #           branches:
+  #             only: develop
+  #     - upload-static-assets:
+  #         bucket: viaproto-dev
+  #         requires:
+  #           - build-nextjs
+  #         context: scaleway-staging-viaproto
+  #     - build-and-push-docker:
+  #         image_tag: staging
+  #         requires:
+  #           - upload-static-assets
+  #         context: dockerhub-viaproto
+  #     - deploy-to-coolify:
+  #         name: deploy-web-staging
+  #         coolify_webhook: COOLIFY_STAGING_WEB_WEBHOOK
+  #         coolify_token: COOLIFY_STAGING_TOKEN
+  #         requires:
+  #           - build-and-push-docker
+  #         context: coolify-staging-viaproto
+  #     - deploy-to-coolify:
+  #         name: deploy-worker-staging
+  #         coolify_webhook: COOLIFY_STAGING_WORKER_WEBHOOK
+  #         coolify_token: COOLIFY_STAGING_TOKEN
+  #         requires:
+  #           - build-and-push-docker
+  #         context: coolify-staging-viaproto
+
+  # Production workflow - triggered by tags matching v* (e.g., v1.0.0, v1.2.3)
+  production:
+    jobs:
+      - build-nextjs:
+          environment: production
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - upload-static-assets:
+          bucket: viaproto-prod
+          requires:
+            - build-nextjs
+          context: scaleway-production-viaproto
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - build-and-push-docker:
+          image_tag: latest
+          requires:
+            - upload-static-assets
+          context: dockerhub-viaproto
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - deploy-to-coolify:
+          name: deploy-web-production
+          coolify_webhook: COOLIFY_PRODUCTION_WEB_WEBHOOK
+          coolify_token: COOLIFY_PRODUCTION_TOKEN
+          requires:
+            - build-and-push-docker
+          context: coolify-production-viaproto
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - deploy-to-coolify:
+          name: deploy-worker-production
+          coolify_webhook: COOLIFY_PRODUCTION_WORKER_WEBHOOK
+          coolify_token: COOLIFY_PRODUCTION_TOKEN
+          requires:
+            - build-and-push-docker
+          context: coolify-production-viaproto
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/

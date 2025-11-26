@@ -73,8 +73,8 @@ export default (phase) => {
 ```json
 {
   "scripts": {
-    "build:staging": "CDN_URL=https://staging-cdn.b-cdn.net next build",
-    "build:production": "CDN_URL=https://cdn.b-cdn.net next build"
+    "build:staging": "CDN_URL=https://cdn-dev.viapro.to next build",
+    "build:production": "CDN_URL=https://cdn.viapro.to next build"
   }
 }
 ```
@@ -87,7 +87,7 @@ Scaleway is fully S3-compatible. AWS CLI works directly with the `--endpoint-url
 ```bash
 export AWS_ACCESS_KEY_ID=SCWXXXXXXXXXXXXXXXXX    # Scaleway access key
 export AWS_SECRET_ACCESS_KEY=your-secret-key      # Scaleway secret key
-export AWS_DEFAULT_REGION=fr-par                  # fr-par, nl-ams, or pl-waw
+export AWS_DEFAULT_REGION=nl-ams                  # fr-par, nl-ams, or pl-waw
 ```
 
 **Upload script for CI pipeline:**
@@ -174,7 +174,7 @@ curl -X POST \
 # Purge specific path pattern
 curl -X POST \
   -H "AccessKey: YOUR_BUNNY_API_KEY" \
-  "https://api.bunny.net/purge?url=https://cdn.b-cdn.net/_next/static/*"
+  "https://api.bunny.net/purge?url=https://cdn.viapro.to/_next/static/*"
 ```
 
 **Image optimization decision**: BunnyCDN Optimizer and Next.js Image component both optimize images. Running both causes double-compression. Choose one—recommend disabling Bunny Optimizer for `/_next/image/*` paths via Edge Rules, or use `unoptimized` prop on Next.js Image components if using Bunny Optimizer exclusively.
@@ -338,7 +338,7 @@ workflows:
               only: develop
       - upload-static-assets:
           requires: [build-nextjs]
-          context: scaleway-staging
+          context: scaleway-staging-viaproto
       - build-and-push-docker:
           requires: [upload-static-assets]
           context: github-registry
@@ -357,7 +357,7 @@ workflows:
               only: main
       - upload-static-assets:
           requires: [build-nextjs]
-          context: scaleway-production
+          context: scaleway-production-viaproto
       - build-and-push-docker:
           requires: [upload-static-assets]
           context: github-registry

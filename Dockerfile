@@ -1,23 +1,12 @@
 FROM node:20-alpine AS base
 
-# Install dependencies only when needed
+# Install dependencies for worker
 FROM base AS deps
 WORKDIR /app
-
-# Copy package files
 COPY package.json package-lock.json* ./
-RUN npm ci
+RUN npm ci --omit=dev
 
-# Rebuild the source code only when needed
-FROM base AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-
-# Build Next.js app
-RUN npm run build
-
-# Production image, copy all the files and run next
+# Production image
 FROM base AS runner
 WORKDIR /app
 
@@ -26,24 +15,31 @@ ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy built application
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+# Copy pre-built standalone output from CI
+# The .next directory is built in CI and passed via workspace
+COPY --chown=nextjs:nodejs .next/standalone ./
+COPY --chown=nextjs:nodejs public ./public
 
-# Copy package.json for npm scripts
-COPY --from=builder /app/package.json ./package.json
+# Note: .next/static is NOT copied - it's served from CDN
+# If you need local fallback, uncomment:
+# COPY --chown=nextjs:nodejs .next/static ./.next/static
 
-# Copy worker, libs, scripts, and TypeScript config for tsx (after standalone to avoid overwrite)
-COPY --from=builder /app/worker.ts ./worker.ts
-COPY --from=builder /app/libs ./libs
-COPY --from=builder /app/scripts ./scripts
-COPY --from=builder /app/types ./types
-COPY --from=builder /app/tsconfig.json ./tsconfig.json
-COPY --from=builder /app/node_modules ./node_modules
+# Copy worker, libs, scripts, and TypeScript config for tsx
+COPY --chown=nextjs:nodejs worker.ts ./worker.ts
+COPY --chown=nextjs:nodejs libs ./libs
+COPY --chown=nextjs:nodejs scripts ./scripts
+COPY --chown=nextjs:nodejs types ./types
+COPY --chown=nextjs:nodejs tsconfig.json ./tsconfig.json
+COPY --chown=nextjs:nodejs package.json ./package.json
+
+# Copy node_modules for worker dependencies (tsx, graphile-worker, etc.)
+COPY --from=deps --chown=nextjs:nodejs /app/node_modules ./node_modules
 
 # Copy SSL certificate for Supabase connection
-COPY --from=builder /app/certs ./certs
+COPY --chown=nextjs:nodejs certs ./certs
+
+# Copy entrypoint script
+COPY --chown=nextjs:nodejs docker-entrypoint.sh ./docker-entrypoint.sh
 
 USER nextjs
 
@@ -53,5 +49,5 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV NODE_EXTRA_CA_CERTS="/app/certs/prod-ca-2021.crt"
 
-# Default command is web server
-CMD ["node", "server.js"]
+# Use entrypoint script - set RUN_MODE=worker for worker service
+ENTRYPOINT ["./docker-entrypoint.sh"]

@@ -1,0 +1,8 @@
+{
+  "CORSRules": [{
+    "AllowedOrigins": ["https://viapro.to", "https://cdn.viapro.to", "https://staging.viapro.to", "https://cdn-dev.viapro.to"],
+    "AllowedHeaders": ["*"],
+    "AllowedMethods": ["GET", "HEAD"],
+    "MaxAgeSeconds": 3600
+  }]
+}
