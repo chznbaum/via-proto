@@ -2,23 +2,7 @@
 
 import { Suspense, useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import Script from "next/script";
-
-declare global {
-  interface Window {
-    swetrix?: {
-      init: (projectId: string, options?: { apiURL?: string }) => void;
-      trackViews: (options?: { search?: boolean }) => void;
-      trackErrors: (options?: { sampleRate?: number }) => void;
-      pageview: (options: { pg: string; prev?: string }) => void;
-      track: (options: {
-        ev: string;
-        unique?: boolean;
-        meta?: Record<string, string | number | boolean | null>;
-      }) => void;
-    };
-  }
-}
+import * as Swetrix from "swetrix";
 
 /**
  * Track a custom event in Swetrix
@@ -39,7 +23,7 @@ export function trackEvent(
     meta?: Record<string, string | number | boolean | null>;
   }
 ) {
-  window.swetrix?.track({
+  Swetrix.track({
     ev: event,
     unique: options?.unique,
     meta: options?.meta,
@@ -61,8 +45,8 @@ function SwetrixPageViewTracker() {
     const currentPath = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
 
     // Only track if path actually changed
-    if (window.swetrix && currentPath !== prevPathRef.current) {
-      window.swetrix.pageview({
+    if (currentPath !== prevPathRef.current) {
+      Swetrix.pageview({
         pg: currentPath,
         prev: prevPathRef.current,
       });
@@ -74,19 +58,21 @@ function SwetrixPageViewTracker() {
 }
 
 export const SwetrixAnalytics = () => {
+  useEffect(() => {
+    // Initialize Swetrix with custom API URL
+    Swetrix.init("8v56UDklPmgM", {
+      apiURL: "https://api.analytics.chazona.dev/log",
+    });
+
+    // Enable automatic pageview tracking (search params excluded)
+    Swetrix.trackViews({ search: false });
+
+    // Enable error tracking with 100% sample rate
+    Swetrix.trackErrors({ sampleRate: 1 });
+  }, []);
+
   return (
     <>
-      <Script
-        src="https://swetrix.org/swetrix.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          window.swetrix?.init("8v56UDklPmgM", {
-            apiURL: "https://api.analytics.chazona.dev/log",
-          });
-          window.swetrix?.trackViews({ search: true });
-          window.swetrix?.trackErrors({ sampleRate: 1 });
-        }}
-      />
       <Suspense fallback={null}>
         <SwetrixPageViewTracker />
       </Suspense>
