@@ -6,8 +6,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="grid h-screen lg:place-items-center lg:py-5">
-      <div className="fixed inset-0 -z-20 bg-[url('/images/pages/squares-background.png')] opacity-2 dark:invert"></div>
-      <div className="fixed inset-0 -z-19 bg-[url('/images/pages/mesh-background.jpg')] [background-size:110%] object-fill opacity-2"></div>
+      <div className="fixed inset-0 -z-20 bg-[url('https://cdn.viapro.to/images/pages/squares-background.png')] opacity-2 dark:invert"></div>
+      <div className="fixed inset-0 -z-19 bg-[url('https://cdn.viapro.to/images/pages/mesh-background.jpg')] [background-size:110%] object-fill opacity-2"></div>
       <div className="to-base-100 fixed inset-0 top-2/5 -z-1 bg-linear-to-b from-transparent"></div>
       <div className="bg-base-100 card p-6 min-lg:shadow">
         <div className="flex gap-6 2xl:gap-8">

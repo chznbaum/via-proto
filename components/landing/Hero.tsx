@@ -144,7 +144,7 @@ export const Hero = () => {
                     <div className="relative px-4 py-24 lg:py-0">
                         <div className="from-primary/80 to-secondary/70 bg-gradient-to-r rounded-xl p-1 sm:p-2 lg:p-3">
                             <img
-                                src="/images/dashboard-screenshot.png"
+                                src="https://cdn.viapro.to/images/dashboard-screenshot.png"
                                 alt="ViaProto Dashboard"
                                 className="w-full rounded-lg"
                             />

@@ -95,7 +95,7 @@ const Footer = () => {
                 className="mt-4 inline-block"
               >
                 <img
-                  src="/tinylaunch_badge_launching_soon.svg"
+                  src="https://cdn.viapro.to/tinylaunch_badge_launching_soon.svg"
                   alt="TinyLaunch Badge"
                   width={202}
                   height={40}

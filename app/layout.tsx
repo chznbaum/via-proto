@@ -21,7 +21,7 @@ function FontPreloads() {
       {/* Fixel Regular - Primary body font */}
       <link
         rel="preload"
-        href="/fonts/fixel/FixelText-Regular.woff2"
+        href="https://cdn.viapro.to/fonts/fixel/FixelText-Regular.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
@@ -29,7 +29,7 @@ function FontPreloads() {
       {/* Fixel SemiBold - Common for emphasis */}
       <link
         rel="preload"
-        href="/fonts/fixel/FixelText-SemiBold.woff2"
+        href="https://cdn.viapro.to/fonts/fixel/FixelText-SemiBold.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
@@ -37,7 +37,7 @@ function FontPreloads() {
       {/* Young Serif - Headings */}
       <link
         rel="preload"
-        href="/fonts/young-serif/YoungSerif-Regular.woff2"
+        href="https://cdn.viapro.to/fonts/young-serif/YoungSerif-Regular.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
