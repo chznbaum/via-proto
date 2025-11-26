@@ -1,3 +1,13 @@
+/* Young Serif Fallback - metrics-adjusted system font to minimize layout shift */
+@font-face {
+  font-family: 'Young Serif Fallback';
+  src: local('Charter'), local('Palatino'), local('Book Antiqua'), local('Georgia');
+  size-adjust: 105%;
+  ascent-override: 95%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
 /* Young Serif - for headings and prose */
 @font-face {
   font-family: 'Young Serif';
@@ -5,7 +15,7 @@
        url('https://cdn.viapro.to/fonts/young-serif/YoungSerif-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,13 +27,23 @@
   font-display: swap;
 }
 
+/* Fixel Fallback - metrics-adjusted system font to minimize layout shift */
+@font-face {
+  font-family: 'Fixel Fallback';
+  src: local('Segoe UI'), local('SF Pro Text'), local('-apple-system'), local('Helvetica Neue'), local('Arial');
+  size-adjust: 100%;
+  ascent-override: 92%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
 /* Fixel - for UI and default text */
 @font-face {
   font-family: 'Fixel';
   src: url('https://cdn.viapro.to/fonts/fixel/FixelText-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -55,7 +75,7 @@
   src: url('https://cdn.viapro.to/fonts/fixel/FixelText-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -279,7 +299,7 @@
 
 /** Typography config for tailwindcss **/
 @theme {
-    --font-sans: "Fixel", system-ui, sans-serif;
+    --font-sans: "Fixel", "Fixel Fallback", system-ui, sans-serif;
 
     --text-xs: 12px;
     --text-sm: 14px;
@@ -289,7 +309,7 @@
 }
 
 [data-font-family="fixel"] {
-    --font-sans: "Fixel", system-ui, sans-serif;
+    --font-sans: "Fixel", "Fixel Fallback", system-ui, sans-serif;
 }
 [data-font-family="atkinson"] {
     --font-sans: "Atkinson", system-ui, sans-serif;

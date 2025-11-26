@@ -4,7 +4,6 @@ import { User } from "@supabase/supabase-js";
 import { createClient } from "@/libs/supabase/client";
 import { useEffect, useState, ReactNode } from "react";
 import { usePathname } from "next/navigation";
-import { Crisp } from "crisp-sdk-web";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
@@ -34,8 +33,10 @@ const CrispChat = (): null => {
   }, [supabase, pathname]);
 
   useEffect(() => {
-    if (config?.crisp?.id) {
-      // Set up Crisp
+    if (!config?.crisp?.id) return;
+
+    // Dynamic import to keep Crisp SDK out of initial bundle
+    import("crisp-sdk-web").then(({ Crisp }) => {
       Crisp.configure(config.crisp.id);
 
       // (Optional) If onlyShowOnRoutes array is not empty in config.js file, Crisp will be hidden on the routes in the array.
@@ -49,13 +50,15 @@ const CrispChat = (): null => {
           Crisp.chat.hide();
         });
       }
-    }
+    });
   }, [pathname]);
 
   // Add User Unique ID to Crisp to easily identify users when reaching support (optional)
   useEffect(() => {
     if (data?.user && config?.crisp?.id) {
-      Crisp.session.setData({ userId: data.user?.id });
+      import("crisp-sdk-web").then(({ Crisp }) => {
+        Crisp.session.setData({ userId: data.user?.id });
+      });
     }
   }, [data]);
 

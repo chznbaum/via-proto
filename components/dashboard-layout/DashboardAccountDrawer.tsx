@@ -171,10 +171,16 @@ export function DashboardAccountDrawer() {
                   </li>
                 )}
                 <li>
-                  <a href="mailto:chazona@chazonabaum.com">
+                  <button
+                    onClick={async () => {
+                      const { Crisp } = await import("crisp-sdk-web");
+                      Crisp.chat.show();
+                      Crisp.chat.open();
+                    }}
+                  >
                     <span className="iconify lucide--help-circle size-4.5" />
                     <span>Support</span>
-                  </a>
+                  </button>
                 </li>
 
                 <li>

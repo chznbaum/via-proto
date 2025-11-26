@@ -128,7 +128,18 @@ const Footer = () => {
               <h2 className="text-lg font-medium">Resources</h2>
               <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
                 <Link href="/#faq">FAQ</Link>
-                {config.resend.supportEmail && (
+                {config.crisp?.id ? (
+                  <button
+                    onClick={async () => {
+                      const { Crisp } = await import("crisp-sdk-web");
+                      Crisp.chat.show();
+                      Crisp.chat.open();
+                    }}
+                    className="text-left hover:text-base-content transition-colors"
+                  >
+                    Support
+                  </button>
+                ) : config.resend.supportEmail ? (
                   <a
                     href={`mailto:${config.resend.supportEmail}`}
                     target="_blank"
@@ -136,7 +147,7 @@ const Footer = () => {
                   >
                     Support
                   </a>
-                )}
+                ) : null}
               </div>
             </div>
 
