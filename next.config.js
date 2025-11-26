@@ -43,7 +43,7 @@ const cspHeader = `
   default-src 'self';
   script-src 'self' 'unsafe-inline' 'unsafe-eval' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://swetrix.org https://cdn.jsdelivr.net https://js.stripe.com https://accounts.google.com;
   style-src 'self' 'unsafe-inline' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
-  img-src 'self' blob: data: ${cdnDomains} https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev;
+  img-src 'self' blob: data: ${cdnDomains} https://images.unsplash.com https://lh3.googleusercontent.com https://pbs.twimg.com https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev https://yourwebsitescore.com;
   font-src 'self' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;
   connect-src 'self' ${isDev ? 'http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*' : ''} https://*.supabase.co wss://*.supabase.co https://openrouter.ai https://api.openrouter.ai https://*.crisp.chat wss://*.crisp.chat https://client.relay.crisp.chat wss://client.relay.crisp.chat https://swetrix.org https://api.swetrix.com https://api.analytics.chazona.dev https://js.stripe.com https://api.stripe.com;
   frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://accounts.google.com https://*.crisp.chat;

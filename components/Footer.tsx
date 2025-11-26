@@ -99,6 +99,17 @@ const Footer = () => {
                   alt="TinyLaunch Badge"
                   width={202}
                   height={40}
+                  loading="lazy"
+                />
+              </a>
+              <a href="https://yourwebsitescore.com/certified-websites/viapro.to" target="_blank" rel="noopener">
+                <img
+                  src="https://yourwebsitescore.com/api/badge/viapro.to"
+                  alt="Monitor your website with YourWebsiteScore"
+                  width={120}
+                  height={54}
+                  className="h-[54px] w-auto"
+                  loading="lazy"
                 />
               </a>
             </div>

@@ -144,8 +144,18 @@ export const Hero = () => {
                     <div className="relative px-4 py-24 lg:py-0">
                         <div className="from-primary/80 to-secondary/70 bg-gradient-to-r rounded-xl p-1 sm:p-2 lg:p-3">
                             <img
-                                src="https://cdn.viapro.to/images/dashboard-screenshot.png"
+                                src="https://cdn.viapro.to/images/dashboard-screenshot.png?width=560"
+                                srcSet="
+                                    https://cdn.viapro.to/images/dashboard-screenshot.png?width=400 400w,
+                                    https://cdn.viapro.to/images/dashboard-screenshot.png?width=560 560w,
+                                    https://cdn.viapro.to/images/dashboard-screenshot.png?width=800 800w,
+                                    https://cdn.viapro.to/images/dashboard-screenshot.png?width=1120 1120w
+                                "
+                                sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1280px) 50vw, 560px"
                                 alt="ViaProto Dashboard"
+                                width={560}
+                                height={373}
+                                fetchPriority="high"
                                 className="w-full rounded-lg"
                             />
                         </div>
