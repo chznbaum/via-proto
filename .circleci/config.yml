@@ -168,6 +168,7 @@ workflows:
     jobs:
       - build-nextjs:
           environment: production
+          context: nextjs-build-viaproto
           filters:
             tags:
               only: /^v.*/
