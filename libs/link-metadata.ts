@@ -89,7 +89,7 @@ const DEFAULT_USER_AGENT = 'ViaProto/1.0 (Link Validator)';
 /**
  * Extract OpenGraph meta tags from HTML
  */
-function extractOpenGraphTags(html: string): Partial<LinkMetadata> {
+function extractOpenGraphTags(html: string, baseUrl: string): Partial<LinkMetadata> {
   const ogTitle = html.match(/<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i)?.[1];
   const ogDescription = html.match(/<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i)?.[1];
   const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
@@ -106,7 +106,7 @@ function extractOpenGraphTags(html: string): Partial<LinkMetadata> {
   return {
     ogTitle: rawTitle ? decodeHtmlEntities(rawTitle) : undefined,
     ogDescription: rawDescription ? decodeHtmlEntities(rawDescription) : undefined,
-    ogImage: rawImage,
+    ogImage: rawImage ? resolveUrl(rawImage, baseUrl) : undefined,
   };
 }
 
@@ -117,6 +117,32 @@ function extractTitle(html: string): string | undefined {
   const match = html.match(/<title[^>]*>([^<]+)<\/title>/i);
   const rawTitle = match?.[1]?.trim();
   return rawTitle ? decodeHtmlEntities(rawTitle) : undefined;
+}
+
+/**
+ * Resolve a potentially relative URL to an absolute URL
+ */
+function resolveUrl(urlOrPath: string, baseUrl: string): string {
+  // Already absolute URL
+  if (urlOrPath.startsWith('http://') || urlOrPath.startsWith('https://')) {
+    return urlOrPath;
+  }
+
+  // Protocol-relative URL (//example.com/image.png)
+  if (urlOrPath.startsWith('//')) {
+    return 'https:' + urlOrPath;
+  }
+
+  // Relative URL - resolve against base
+  const url = new URL(baseUrl);
+
+  // Absolute path (/img/logo.png)
+  if (urlOrPath.startsWith('/')) {
+    return url.origin + urlOrPath;
+  }
+
+  // Relative path (img/logo.png) - resolve against current path
+  return url.origin + '/' + urlOrPath;
 }
 
 /**
@@ -131,15 +157,7 @@ function extractFavicon(html: string, baseUrl: string): string | undefined {
   const favicon = iconLink || iconLinkAlt;
 
   if (favicon) {
-    // Make absolute URL if relative
-    if (favicon.startsWith('http://') || favicon.startsWith('https://')) {
-      return favicon;
-    } else if (favicon.startsWith('//')) {
-      return 'https:' + favicon;
-    } else {
-      const url = new URL(baseUrl);
-      return url.origin + (favicon.startsWith('/') ? favicon : '/' + favicon);
-    }
+    return resolveUrl(favicon, baseUrl);
   }
 
   // Fallback to /favicon.ico
@@ -209,7 +227,7 @@ export async function fetchLinkMetadata(
 
     // Success - extract metadata
     const html = await response.text();
-    const ogTags = extractOpenGraphTags(html);
+    const ogTags = extractOpenGraphTags(html, url);
     const title = extractTitle(html);
     const faviconUrl = extractFavicon(html, url);
 
