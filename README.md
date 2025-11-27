@@ -29,6 +29,7 @@ ViaProto solves the problem of information overload and deteriorating search qua
 | UI | React | 19.0.0 |
 | Styling | Tailwind CSS + DaisyUI | 4.1.10 + 5.0.5 |
 | Database | Supabase (PostgreSQL) | 2.45.0 |
+| CMS | Payload CMS | 3.x |
 | Auth | Supabase Auth | 2.45.0 |
 | AI | OpenRouter (40+ models) | via OpenAI SDK 6.9.1 |
 | Payments | Stripe | 13.11.0 |
@@ -113,6 +114,9 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3001
 # Worker (Background Jobs)
 WORKER_CONCURRENCY=3
 WORKER_POLL_INTERVAL=1000
+
+# Payload CMS
+PAYLOAD_SECRET=  # Random string for encrypting Payload data
 ```
 
 ---
@@ -122,32 +126,45 @@ WORKER_POLL_INTERVAL=1000
 ```
 via-proto/
 ├── app/
-│   ├── (dashboard)/          # Protected dashboard routes
+│   ├── (main)/               # Main app routes (separate root layout)
+│   │   ├── (dashboard)/      # Protected dashboard routes
+│   │   ├── auth/             # Login/register pages
+│   │   ├── blog/             # Blog system
+│   │   ├── explore/          # Public path discovery
+│   │   ├── paths/[id]/       # Path detail page
+│   │   └── layout.tsx        # App layout (html/body, fonts, analytics)
+│   ├── (payload)/            # Payload CMS admin (separate root layout)
+│   │   ├── admin/            # Admin UI at /admin
+│   │   ├── api/              # Payload REST API
+│   │   └── layout.tsx        # Payload layout (own html/body)
 │   ├── api/                  # API endpoints
-│   │   ├── paths/           # Path generation & management
-│   │   ├── stripe/          # Payment handling
-│   │   ├── topics/          # Topic search
-│   │   └── webhook/         # Stripe webhooks
-│   ├── auth/                # Login/register pages
-│   ├── blog/                # Blog system
-│   ├── explore/             # Public path discovery
-│   ├── paths/[id]/          # Path detail page
-│   └── pricing/             # Pricing page
-├── components/              # React components
+│   │   ├── paths/            # Path generation & management
+│   │   ├── stripe/           # Payment handling
+│   │   ├── topics/           # Topic search
+│   │   └── webhook/          # Stripe webhooks
+│   └── layout.tsx            # Minimal root layout (returns children only)
+├── src/
+│   └── collections/          # Payload CMS collections
+├── components/               # React components
 ├── libs/
-│   ├── models/             # AI model configuration (40+ models)
-│   ├── supabase/           # Database clients
-│   ├── openrouter.ts       # AI generation logic
-│   ├── stripe.ts           # Payment utilities
-│   └── validation/         # Zod schemas
+│   ├── models/              # AI model configuration (40+ models)
+│   ├── supabase/            # Database clients
+│   ├── openrouter.ts        # AI generation logic
+│   ├── stripe.ts            # Payment utilities
+│   └── validation/          # Zod schemas
 ├── supabase/
-│   ├── migrations/         # Database schema (timestamped)
-│   └── seed.sql           # Topic data
-├── data/                   # JSON source for seeds
+│   ├── migrations/          # Database schema (timestamped)
+│   └── seed.sql            # Topic data
+├── data/                    # JSON source for seeds
 ├── scripts/
-│   └── generate-seeds.js  # Seed file generator
-└── config.ts              # App configuration
+│   └── generate-seeds.js   # Seed file generator
+├── payload.config.ts        # Payload CMS configuration
+└── config.ts               # App configuration
 ```
+
+**Note on Route Groups**: The app uses two route groups with separate root layouts to prevent nested HTML documents:
+- `(main)` - Main application with custom fonts, analytics, and client-side providers
+- `(payload)` - Payload CMS admin with its own layout requirements
 
 ---
 
