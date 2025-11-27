@@ -121,8 +121,20 @@ function extractTitle(html: string): string | undefined {
 
 /**
  * Resolve a potentially relative URL to an absolute URL
+ * Returns undefined for invalid URLs (data URIs, mailto, etc.)
  */
-function resolveUrl(urlOrPath: string, baseUrl: string): string {
+function resolveUrl(urlOrPath: string, baseUrl: string): string | undefined {
+  // Reject data URIs, mailto, tel, javascript, and other non-http(s) schemes
+  if (
+    urlOrPath.startsWith('data:') ||
+    urlOrPath.startsWith('mailto:') ||
+    urlOrPath.startsWith('tel:') ||
+    urlOrPath.startsWith('javascript:') ||
+    urlOrPath.startsWith('blob:')
+  ) {
+    return undefined;
+  }
+
   // Already absolute URL
   if (urlOrPath.startsWith('http://') || urlOrPath.startsWith('https://')) {
     return urlOrPath;
@@ -157,7 +169,11 @@ function extractFavicon(html: string, baseUrl: string): string | undefined {
   const favicon = iconLink || iconLinkAlt;
 
   if (favicon) {
-    return resolveUrl(favicon, baseUrl);
+    const resolved = resolveUrl(favicon, baseUrl);
+    // If resolveUrl returns undefined (data URI, etc.), fall through to default
+    if (resolved) {
+      return resolved;
+    }
   }
 
   // Fallback to /favicon.ico
