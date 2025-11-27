@@ -220,7 +220,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                             className="block border border-base-300 rounded-lg overflow-hidden hover:border-primary transition-colors">
 
                             {/* OG Image with optional title overlay */}
-                            {resource.og_image_url && (
+                            {resource.og_image_url && !resource.og_image_url.startsWith('data:') && (
                               <div className="relative bg-base-200">
                                 <img
                                   src={resource.og_image_url}
@@ -245,7 +245,7 @@ export const SectionTimeline = ({ sections }: SectionTimelineProps) => {
                             {/* Domain/Favicon Row */}
                             <div className="p-3 bg-base-200/50">
                               <div className="flex items-center gap-2 mb-2">
-                                {resource.favicon_url && (
+                                {resource.favicon_url && !resource.favicon_url.startsWith('data:') && (
                                   <img
                                     src={resource.favicon_url}
                                     alt="Site icon"
