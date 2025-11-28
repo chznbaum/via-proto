@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Payload CMS local uploads (production uses S3)
+/media/*
+!/media/.gitkeep
