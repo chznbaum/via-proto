@@ -2,13 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-// @ts-ignore
-import SimpleBar from "simplebar-react";
-import "simplebar-react/dist/simplebar.min.css";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
 import ButtonSignin from "./ButtonSignin";
-import config from "@/config";
 
 const menu = [
     {
@@ -73,25 +69,23 @@ export const Topbar = () => {
                                             </span>
                                         </Link>
                                     </div>
-                                    <div className="min-h-0 grow">
-                                        <SimpleBar className="mt-5 size-full">
-                                            <p className="text-base-content/75 mx-3 text-sm font-medium">Navigation</p>
-                                            <ul className="menu mt-1 w-full p-0">
-                                                {menu.map((item, index) => (
-                                                    <li key={index}>
-                                                        <Link
-                                                            href={item.href ?? ""}
-                                                            className="hover:bg-base-200 rounded-box block px-3 py-1.5 text-sm">
-                                                            {item.title}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                            <div className="divider mx-3"></div>
-                                            <div className="px-3">
-                                                <ButtonSignin extraStyle="btn-primary btn-block" />
-                                            </div>
-                                        </SimpleBar>
+                                    <div className="scrollable mt-5 min-h-0 grow">
+                                        <p className="text-base-content/75 mx-3 text-sm font-medium">Navigation</p>
+                                        <ul className="menu mt-1 w-full p-0">
+                                            {menu.map((item, index) => (
+                                                <li key={index}>
+                                                    <Link
+                                                        href={item.href ?? ""}
+                                                        className="hover:bg-base-200 rounded-box block px-3 py-1.5 text-sm">
+                                                        {item.title}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <div className="divider mx-3"></div>
+                                        <div className="px-3">
+                                            <ButtonSignin extraStyle="btn-primary btn-block" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

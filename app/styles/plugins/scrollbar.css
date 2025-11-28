@@ -1,2 +1,29 @@
 /* Custom scrollbar styling */
-/* This can be extended later if needed */
+
+/* Utility class for styled scrollable containers */
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: oklch(var(--bc) / 0.2) transparent;
+
+  /* WebKit (Chrome, Safari, Edge) */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: oklch(var(--bc) / 0.2);
+    border-radius: 3px;
+
+    &:hover {
+      background-color: oklch(var(--bc) / 0.3);
+    }
+  }
+}

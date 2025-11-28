@@ -51,19 +51,19 @@ export default async function Author({
 
   return (
     <>
-      <section className="max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mt-12 mb-24 md:mb-32">
+      <section className="max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mb-16 xl:mb-24">
         <div>
-          <p className="text-xs uppercase tracking-wide text-base-content/80 mb-2">
-            Authors
-          </p>
-          <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-2">
+          <div className="badge badge-outline border-base-300 badge-sm font-mono mb-2">
+            Author
+          </div>
+          <h1 className="font-serif text-2xl font-semibold sm:text-3xl">
             {author.name}
           </h1>
           {author.job && (
-            <p className="md:text-lg mb-6 md:mb-10 font-medium">{author.job}</p>
+            <p className="text-base-content/80 mt-1 font-medium">{author.job}</p>
           )}
           {author.description && (
-            <p className="md:text-lg text-base-content/80">
+            <p className="text-base-content/80 mt-4 max-sm:text-sm">
               {author.description}
             </p>
           )}
@@ -77,7 +77,7 @@ export default async function Author({
               height={256}
               alt={author.name}
               priority={true}
-              className="rounded-box w-[12rem] md:w-[16rem]"
+              className="rounded-lg w-[12rem] md:w-[16rem]"
             />
           )}
 
@@ -87,7 +87,7 @@ export default async function Author({
                 <a
                   key={social.id || social.platform}
                   href={social.url}
-                  className="btn btn-square"
+                  className="btn btn-square btn-ghost"
                   title={`Go to ${author.name}'s profile on ${getSocialName(social.platform)}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -101,20 +101,28 @@ export default async function Author({
       </section>
 
       <section>
-        <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
+        <h2 className="font-serif text-xl font-medium sm:text-2xl text-center mb-8 md:mb-12">
           Most recent articles by {author.name}
         </h2>
 
         {articlesByAuthor.length > 0 ? (
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 xl:gap-12">
             {articlesByAuthor.map((article) => (
               <CardArticle key={article.id} article={article} />
             ))}
           </div>
         ) : (
-          <p className="text-center text-base-content/60">
-            No articles by this author yet.
-          </p>
+          <div className="text-center">
+            <div className="inline-flex flex-col items-center gap-4 rounded-lg border border-dashed border-base-300 p-12">
+              <span className="iconify lucide--book-x size-12 text-base-content/40"></span>
+              <div>
+                <p className="font-medium">No articles by this author yet</p>
+                <p className="text-base-content/75 mt-1 text-sm">
+                  Check back soon for new content!
+                </p>
+              </div>
+            </div>
+          </div>
         )}
       </section>
     </>
