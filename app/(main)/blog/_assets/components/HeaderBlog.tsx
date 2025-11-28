@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import config from "@/config";
-import { categories } from "../content";
+import type { Category } from "@/payload-types";
 import ButtonSignin from "@/components/ButtonSignin";
 
 const links: {
@@ -20,10 +20,14 @@ const links: {
 ];
 
 const cta: JSX.Element = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
+  <ButtonSignin text="Start Learning" extraStyle="btn-primary md:btn-sm" />
 );
 
-const ButtonPopoverCategories = () => {
+const ButtonPopoverCategories = ({
+  categories,
+}: {
+  categories: Category[];
+}) => {
   return (
     <Popover className="relative z-30">
       {({ open }) => (
@@ -61,18 +65,17 @@ const ButtonPopoverCategories = () => {
                 <div className="overflow-hidden rounded-box shadow-lg ring-1 ring-base-content ring-opacity-5">
                   <div className="relative grid gap-2 bg-base-100 p-2 overflow-hidden">
                     {categories.map((category) => (
-                      <div key={category.slug} onClick={() => close()}>
+                      <div key={category.id} onClick={() => close()}>
                         <Link
                           className="block text-left p-3 -m-1 cursor-pointer hover:bg-base-200 rounded-box duration-200"
                           href={`/blog/category/${category.slug}`}
                         >
                           <div className="">
                             <p className="font-medium mb-0.5">
-                              {category?.titleShort || category.title}
+                              {category.titleShort || category.title}
                             </p>
                             <p className="text-sm opacity-80">
-                              {category?.descriptionShort ||
-                                category.description}
+                              {category.descriptionShort || category.description}
                             </p>
                           </div>
                         </Link>
@@ -89,7 +92,11 @@ const ButtonPopoverCategories = () => {
   );
 };
 
-const ButtonAccordionCategories = () => {
+const ButtonAccordionCategories = ({
+  categories,
+}: {
+  categories: Category[];
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -123,12 +130,12 @@ const ButtonAccordionCategories = () => {
       {isOpen && (
         <ul className="space-y-4">
           {categories.map((category) => (
-            <li key={category.slug}>
+            <li key={category.id}>
               <Link
                 href={`/blog/category/${category.slug}`}
                 className="text-base-content/80 hover:text-base-content duration-100 link link-hover"
               >
-                {category?.titleShort || category.title}
+                {category.titleShort || category.title}
               </Link>
             </li>
           ))}
@@ -138,10 +145,14 @@ const ButtonAccordionCategories = () => {
   );
 };
 
+interface HeaderBlogProps {
+  categories: Category[];
+}
+
 // This is the header that appears on all pages in the /blog folder.
 // By default it shows the logo, the links, and the CTA.
 // In the links, there's a popover with the categories.
-const HeaderBlog = () => {
+const HeaderBlog = ({ categories }: HeaderBlogProps) => {
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -203,7 +214,9 @@ const HeaderBlog = () => {
             </Link>
           ))}
 
-          <ButtonPopoverCategories />
+          {categories.length > 0 && (
+            <ButtonPopoverCategories categories={categories} />
+          )}
         </div>
 
         {/* CTA on large screens */}
@@ -263,7 +276,9 @@ const HeaderBlog = () => {
                     {link.label}
                   </Link>
                 ))}
-                <ButtonAccordionCategories />
+                {categories.length > 0 && (
+                  <ButtonAccordionCategories categories={categories} />
+                )}
               </div>
             </div>
             <div className="divider"></div>

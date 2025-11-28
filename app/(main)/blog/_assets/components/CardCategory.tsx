@@ -1,13 +1,13 @@
 import type { JSX } from "react";
 import Link from "next/link";
-import { categoryType } from "../content";
+import type { Category } from "@/payload-types";
 
 // This is the category card that appears in the home page and in the category page
 const CardCategory = ({
   category,
   tag = "h2",
 }: {
-  category: categoryType;
+  category: Category;
   tag?: keyof JSX.IntrinsicElements;
 }) => {
   const TitleTag = tag;
@@ -20,7 +20,7 @@ const CardCategory = ({
       rel="tag"
     >
       <TitleTag className="md:text-lg font-medium">
-        {category?.titleShort || category.title}
+        {category.titleShort || category.title}
       </TitleTag>
     </Link>
   );

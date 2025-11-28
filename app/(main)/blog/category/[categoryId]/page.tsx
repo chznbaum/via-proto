@@ -1,4 +1,9 @@
-import { categories, articles } from "../../_assets/content";
+import { notFound } from "next/navigation";
+import {
+  getCategoryBySlug,
+  getPostsByCategory,
+  getAllCategories,
+} from "@/libs/payload/queries";
 import CardArticle from "../../_assets/components/CardArticle";
 import CardCategory from "../../_assets/components/CardCategory";
 import { getSEOTags } from "@/libs/seo";
@@ -10,13 +15,18 @@ export async function generateMetadata({
   params: Promise<{ categoryId: string }>;
 }) {
   const { categoryId } = await params;
-  const category = categories.find(
-    (category) => category.slug === categoryId
-  );
+  const category = await getCategoryBySlug(categoryId);
+
+  if (!category) {
+    return getSEOTags({
+      title: "Category Not Found",
+      description: "The requested category could not be found.",
+    });
+  }
 
   return getSEOTags({
     title: `${category.title} | Blog by ${config.appName}`,
-    description: category.description,
+    description: category.description || `Articles about ${category.title}`,
     canonicalUrlRelative: `/blog/category/${category.slug}`,
   });
 }
@@ -27,18 +37,20 @@ export default async function Category({
   params: Promise<{ categoryId: string }>;
 }) {
   const { categoryId } = await params;
-  const category = categories.find(
-    (category) => category.slug === categoryId
-  );
-  const articlesInCategory = articles
-    .filter((article) =>
-      article.categories.map((c) => c.slug).includes(category.slug)
-    )
-    .sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-    )
-    .slice(0, 3);
+
+  // Fetch category, posts in category, and all categories in parallel
+  const [category, articlesInCategory, allCategories] = await Promise.all([
+    getCategoryBySlug(categoryId),
+    getPostsByCategory(categoryId),
+    getAllCategories(),
+  ]);
+
+  if (!category) {
+    notFound();
+  }
+
+  // Filter out the current category from the "other categories" list
+  const otherCategories = allCategories.filter((c) => c.slug !== category.slug);
 
   return (
     <>
@@ -46,9 +58,11 @@ export default async function Category({
         <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6 md:mb-12">
           {category.title}
         </h1>
-        <p className="md:text-lg opacity-80 max-w-xl mx-auto">
-          {category.description}
-        </p>
+        {category.description && (
+          <p className="md:text-lg opacity-80 max-w-xl mx-auto">
+            {category.description}
+          </p>
+        )}
       </section>
 
       <section className="mb-24">
@@ -56,31 +70,41 @@ export default async function Category({
           Most recent articles in {category.title}
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {articlesInCategory.map((article) => (
-            <CardArticle
-              key={article.slug}
-              article={article}
-              tag="h3"
-              showCategory={false}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
-          Other categories you might like
-        </h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {categories
-            .filter((c) => c.slug !== category.slug)
-            .map((category) => (
-              <CardCategory key={category.slug} category={category} tag="h3" />
+        {articlesInCategory.length > 0 ? (
+          <div className="grid lg:grid-cols-2 gap-8">
+            {articlesInCategory.map((article) => (
+              <CardArticle
+                key={article.id}
+                article={article}
+                tag="h3"
+                showCategory={false}
+              />
             ))}
-        </div>
+          </div>
+        ) : (
+          <p className="text-center text-base-content/60">
+            No articles in this category yet.
+          </p>
+        )}
       </section>
+
+      {otherCategories.length > 0 && (
+        <section>
+          <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
+            Other categories you might like
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {otherCategories.map((otherCategory) => (
+              <CardCategory
+                key={otherCategory.id}
+                category={otherCategory}
+                tag="h3"
+              />
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 }

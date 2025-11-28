@@ -3,7 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import BadgeCategory from "./BadgeCategory";
 import Avatar from "./Avatar";
-import { articleType } from "../content";
+import type { Post } from "@/payload-types";
+import {
+  getImageUrl,
+  getImageAlt,
+  getPopulatedCategories,
+} from "@/libs/payload/helpers";
 
 // This is the article card that appears in the home page, in the category page, and in the author's page
 const CardArticle = ({
@@ -12,16 +17,19 @@ const CardArticle = ({
   showCategory = true,
   isImagePriority = false,
 }: {
-  article: articleType;
+  article: Post;
   tag?: keyof JSX.IntrinsicElements;
   showCategory?: boolean;
   isImagePriority?: boolean;
 }) => {
   const TitleTag = tag;
+  const imageUrl = getImageUrl(article.featuredImage, "card");
+  const imageAlt = getImageAlt(article.featuredImage);
+  const categories = getPopulatedCategories(article.categories);
 
   return (
     <article className="card bg-base-200 rounded-box overflow-hidden">
-      {article.image?.src && (
+      {imageUrl && (
         <Link
           href={`/blog/${article.slug}`}
           className="link link-hover hover:link-primary"
@@ -30,12 +38,11 @@ const CardArticle = ({
         >
           <figure>
             <Image
-              src={article.image.src}
-              alt={article.image.alt}
-              width={600}
-              height={338}
+              src={imageUrl}
+              alt={imageAlt}
+              width={768}
+              height={432}
               priority={isImagePriority}
-              placeholder="blur"
               className="aspect-video object-center object-cover hover:scale-[1.03] duration-200 ease-in-out"
             />
           </figure>
@@ -43,10 +50,10 @@ const CardArticle = ({
       )}
       <div className="card-body">
         {/* CATEGORIES */}
-        {showCategory && (
+        {showCategory && categories.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            {article.categories.map((category) => (
-              <BadgeCategory category={category} key={category.slug} />
+            {categories.map((category) => (
+              <BadgeCategory category={category} key={category.id} />
             ))}
           </div>
         )}

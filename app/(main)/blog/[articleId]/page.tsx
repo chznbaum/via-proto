@@ -1,10 +1,18 @@
 import Link from "next/link";
 import Script from "next/script";
-import { articles } from "../_assets/content";
+import { notFound } from "next/navigation";
+import { getPostBySlug, getRelatedPosts } from "@/libs/payload/queries";
 import BadgeCategory from "../_assets/components/BadgeCategory";
 import Avatar from "../_assets/components/Avatar";
+import CardArticle from "../_assets/components/CardArticle";
+import { RichText } from "@/components/RichText";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
+import {
+  getPopulatedCategories,
+  isPopulatedAuthor,
+  getImageUrl,
+} from "@/libs/payload/helpers";
 
 export async function generateMetadata({
   params,
@@ -12,7 +20,16 @@ export async function generateMetadata({
   params: Promise<{ articleId: string }>;
 }) {
   const { articleId } = await params;
-  const article = articles.find((article) => article.slug === articleId);
+  const article = await getPostBySlug(articleId);
+
+  if (!article) {
+    return getSEOTags({
+      title: "Article Not Found",
+      description: "The requested article could not be found.",
+    });
+  }
+
+  const imageUrl = getImageUrl(article.featuredImage, "hero");
 
   return getSEOTags({
     title: article.title,
@@ -23,15 +40,17 @@ export async function generateMetadata({
         title: article.title,
         description: article.description,
         url: `/blog/${article.slug}`,
-        images: [
-          {
-            url: article.image.urlRelative,
-            width: 1200,
-            height: 660,
-          },
-        ],
+        images: imageUrl
+          ? [
+              {
+                url: imageUrl,
+                width: 1200,
+                height: 660,
+              },
+            ]
+          : [],
         locale: "en_US",
-        type: "website",
+        type: "article",
       },
     },
   });
@@ -43,20 +62,19 @@ export default async function Article({
   params: Promise<{ articleId: string }>;
 }) {
   const { articleId } = await params;
-  const article = articles.find((article) => article.slug === articleId);
-  const articlesRelated = articles
-    .filter(
-      (a) =>
-        a.slug !== articleId &&
-        a.categories.some((c) =>
-          article?.categories.map((c) => c.slug).includes(c.slug)
-        )
-    )
-    .sort(
-      (a, b) =>
-        new Date(b.publishedAt).valueOf() - new Date(a.publishedAt).valueOf()
-    )
-    .slice(0, 3);
+  const article = await getPostBySlug(articleId);
+
+  if (!article) {
+    notFound();
+  }
+
+  const categories = getPopulatedCategories(article.categories);
+  const categoryIds = categories.map((c) => c.id);
+  const articlesRelated = await getRelatedPosts(article.slug, categoryIds, 3);
+  const authorName = isPopulatedAuthor(article.author)
+    ? article.author.name
+    : "";
+  const imageUrl = getImageUrl(article.featuredImage, "hero");
 
   return (
     <>
@@ -75,12 +93,14 @@ export default async function Article({
             name: article.title,
             headline: article.title,
             description: article.description,
-            image: `https://${config.domainName}${article.image.urlRelative}`,
+            image: imageUrl
+              ? `${imageUrl}`
+              : `https://${config.domainName}/og-image.png`,
             datePublished: article.publishedAt,
-            dateModified: article.publishedAt,
+            dateModified: article.updatedAt,
             author: {
               "@type": "Person",
-              name: article.author.name,
+              name: authorName,
             },
           }),
         }}
@@ -113,10 +133,10 @@ export default async function Article({
         {/* HEADER WITH CATEGORIES AND DATE AND TITLE */}
         <section className="my-12 md:my-20 max-w-[800px]">
           <div className="flex items-center gap-4 mb-6">
-            {article.categories.map((category) => (
+            {categories.map((category) => (
               <BadgeCategory
                 category={category}
-                key={category.slug}
+                key={category.id}
                 extraStyle="!badge-lg"
               />
             ))}
@@ -152,20 +172,20 @@ export default async function Article({
                   Related reading
                 </p>
                 <div className="space-y-2 md:space-y-5">
-                  {articlesRelated.map((article) => (
-                    <div className="" key={article.slug}>
+                  {articlesRelated.map((relatedArticle) => (
+                    <div className="" key={relatedArticle.id}>
                       <p className="mb-0.5">
                         <Link
-                          href={`/blog/${article.slug}`}
+                          href={`/blog/${relatedArticle.slug}`}
                           className="link link-hover hover:link-primary font-medium"
-                          title={article.title}
+                          title={relatedArticle.title}
                           rel="bookmark"
                         >
-                          {article.title}
+                          {relatedArticle.title}
                         </Link>
                       </p>
                       <p className="text-base-content/80 max-w-full text-sm">
-                        {article.description}
+                        {relatedArticle.description}
                       </p>
                     </div>
                   ))}
@@ -176,10 +196,27 @@ export default async function Article({
 
           {/* ARTICLE CONTENT */}
           <section className="w-full max-md:pt-4 md:pr-20 space-y-12 md:space-y-20">
-            {article.content}
+            <RichText content={article.content} />
           </section>
         </div>
       </article>
+
+      {/* RELATED ARTICLES FOR MOBILE */}
+      {articlesRelated.length > 0 && (
+        <section className="md:hidden mt-12">
+          <p className="font-bold text-xl mb-6">Related reading</p>
+          <div className="grid gap-6">
+            {articlesRelated.map((relatedArticle) => (
+              <CardArticle
+                key={relatedArticle.id}
+                article={relatedArticle}
+                tag="h3"
+                showCategory={false}
+              />
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 }

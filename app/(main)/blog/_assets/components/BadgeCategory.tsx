@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { categoryType } from "../content";
+import type { Category } from "@/payload-types";
 
 // This is the category badge that appears in the article page and in <CardArticle /> component
-const Category = ({
+const BadgeCategory = ({
   category,
   extraStyle,
 }: {
-  category: categoryType;
+  category: Category;
   extraStyle?: string;
 }) => {
   return (
@@ -18,9 +18,9 @@ const Category = ({
       title={`Posts in ${category.title}`}
       rel="tag"
     >
-      {category.titleShort}
+      {category.titleShort || category.title}
     </Link>
   );
 };
 
-export default Category;
+export default BadgeCategory;
