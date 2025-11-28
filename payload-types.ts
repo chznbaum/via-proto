@@ -30,9 +30,20 @@ export interface MediaSize {
   filename?: string | null
 }
 
+export interface MediaAttribution {
+  creatorType?: 'photographer' | 'artist' | 'creator' | null
+  creatorName?: string | null
+  creatorUrl?: string | null
+  sourceName?: string | null
+  sourceUrl?: string | null
+  unsplashDownloadUrl?: string | null
+}
+
 export interface Media extends PayloadTimestamps {
   id: string
   alt: string
+  externalUrl?: string | null
+  attribution?: MediaAttribution | null
   url?: string | null
   cdnUrl?: string | null
   filename?: string | null

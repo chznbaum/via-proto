@@ -40,13 +40,22 @@ type ImageSize = 'thumbnail' | 'card' | 'hero'
 
 /**
  * Extract the best available image URL from a Media object
- * Prefers CDN URL over direct S3 URL, and specified size over original
+ * Priority: externalUrl (for hotlinking) > CDN URL > S3 URL
+ *
+ * Note: externalUrl is used for sources like Unsplash that require
+ * hotlinking for view tracking. When externalUrl is set, it's always
+ * used regardless of preferredSize (external sources handle their own sizing).
  */
 export function getImageUrl(
   media: string | Media | null | undefined,
   preferredSize?: ImageSize
 ): string | null {
   if (!isPopulatedMedia(media)) return null
+
+  // If external URL is set (e.g., Unsplash hotlink), always use it
+  if (media.externalUrl) {
+    return media.externalUrl
+  }
 
   // If a specific size is requested, try to get it
   if (preferredSize && media.sizes?.[preferredSize]) {
@@ -155,4 +164,64 @@ export function getPopulatedCategories(
 ): Category[] {
   if (!categories) return []
   return categories.filter(isPopulatedCategory)
+}
+
+// ============================================================================
+// Image Attribution Helpers
+// ============================================================================
+
+export type MediaAttribution = {
+  creatorType: 'photographer' | 'artist' | 'creator'
+  creatorName: string
+  creatorUrl?: string | null
+  sourceName: string
+  sourceUrl?: string | null
+}
+
+/**
+ * Check if a media object has attribution (at minimum, creator name and source name)
+ */
+export function hasImageAttribution(media: string | Media | null | undefined): boolean {
+  if (!isPopulatedMedia(media)) return false
+  const attr = media.attribution
+  return !!(attr?.creatorName && attr?.sourceName)
+}
+
+/**
+ * Get image attribution data from a Media object
+ * Returns null if required fields (creatorName, sourceName) are missing
+ */
+export function getImageAttribution(
+  media: string | Media | null | undefined
+): MediaAttribution | null {
+  if (!isPopulatedMedia(media)) return null
+
+  const attr = media.attribution
+  if (!attr?.creatorName || !attr?.sourceName) return null
+
+  return {
+    creatorType: attr.creatorType || 'photographer',
+    creatorName: attr.creatorName,
+    creatorUrl: attr.creatorUrl,
+    sourceName: attr.sourceName,
+    sourceUrl: attr.sourceUrl,
+  }
+}
+
+/**
+ * Get the attribution label based on creator type
+ * Returns "Photo by", "Art by", or "By"
+ */
+export function getAttributionLabel(
+  creatorType: 'photographer' | 'artist' | 'creator'
+): string {
+  switch (creatorType) {
+    case 'photographer':
+      return 'Photo by'
+    case 'artist':
+      return 'Art by'
+    case 'creator':
+    default:
+      return 'By'
+  }
 }

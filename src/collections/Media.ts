@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { triggerUnsplashDownload } from '@/libs/unsplash'
 
 /**
  * Media Collection
@@ -84,25 +85,105 @@ export const Media: CollectionConfig = {
         description: 'Describe the image for accessibility (screen readers) and SEO',
       },
     },
-    // Virtual field: CDN URL for serving images
+    // External URL for hotlinking (required by Unsplash for view tracking)
+    {
+      name: 'externalUrl',
+      type: 'text',
+      admin: {
+        description: 'External image URL for hotlinking (e.g., Unsplash requires serving from their CDN)',
+      },
+    },
+    // Attribution fields for stock images (Unsplash, Pixabay, Pexels, etc.)
+    {
+      name: 'attribution',
+      type: 'group',
+      admin: {
+        description: 'Attribution for stock images (leave empty for original content)',
+        hideGutter: true,
+      },
+      fields: [
+        {
+          name: 'creatorType',
+          type: 'select',
+          options: [
+            { label: 'Photographer', value: 'photographer' },
+            { label: 'Artist', value: 'artist' },
+            { label: 'Creator', value: 'creator' },
+          ],
+          admin: {
+            description: 'Type of creator (determines "Photo by" vs "Art by" vs "By")',
+          },
+        },
+        {
+          name: 'creatorName',
+          type: 'text',
+          admin: {
+            description: 'Name of the photographer, artist, or creator',
+          },
+        },
+        {
+          name: 'creatorUrl',
+          type: 'text',
+          admin: {
+            description: 'URL to their profile on the source platform',
+          },
+        },
+        {
+          name: 'sourceName',
+          type: 'text',
+          admin: {
+            description: 'Source platform name (e.g., Unsplash, Pixabay, Pexels)',
+          },
+        },
+        {
+          name: 'sourceUrl',
+          type: 'text',
+          admin: {
+            description: 'URL to the source platform (with UTM params if required)',
+          },
+        },
+        {
+          name: 'unsplashDownloadUrl',
+          type: 'text',
+          admin: {
+            description: 'Unsplash download_location URL (for API compliance tracking)',
+            condition: (data) => data?.attribution?.sourceName?.toLowerCase() === 'unsplash',
+          },
+        },
+      ],
+    },
+    // Virtual field: CDN URL for serving images (populated by collection afterRead hook)
     {
       name: 'cdnUrl',
       type: 'text',
+      virtual: true,
       admin: {
         readOnly: true,
         position: 'sidebar',
-        description: 'CDN URL for serving this image',
-      },
-      hooks: {
-        afterRead: [
-          ({ data }) => {
-            return getCdnUrl(data?.url)
-          },
-        ],
+        description: 'CDN URL for serving this image (auto-generated)',
       },
     },
   ],
   hooks: {
+    // Trigger Unsplash download event when media with Unsplash source is created/updated
+    afterChange: [
+      async ({ doc, operation }) => {
+        // Only trigger on create or when the download URL is newly added
+        if (operation === 'create' || operation === 'update') {
+          const sourceName = doc?.attribution?.sourceName?.toLowerCase()
+          const downloadUrl = doc?.attribution?.unsplashDownloadUrl
+
+          if (sourceName === 'unsplash' && downloadUrl) {
+            // Fire and forget - don't block the response
+            triggerUnsplashDownload(downloadUrl).catch((err) => {
+              console.error('Failed to trigger Unsplash download:', err)
+            })
+          }
+        }
+
+        return doc
+      },
+    ],
     // Add CDN URLs to all image sizes after reading
     afterRead: [
       async ({ doc }) => {

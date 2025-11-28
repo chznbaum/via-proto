@@ -127,6 +127,7 @@ const Footer = () => {
             <div>
               <h2 className="text-lg font-medium">Resources</h2>
               <div className="*:not-hover:text-base-content/70 mt-2 flex flex-col gap-2">
+                <Link href="/blog">Blog</Link>
                 <Link href="/#faq">FAQ</Link>
                 {config.crisp?.id ? (
                   <button
