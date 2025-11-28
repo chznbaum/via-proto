@@ -8,6 +8,8 @@ import CardArticle from "../../_assets/components/CardArticle";
 import CardCategory from "../../_assets/components/CardCategory";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
+import { Topbar } from "@/components/Topbar";
+import Footer from "@/components/Footer";
 
 export async function generateMetadata({
   params,
@@ -54,7 +56,9 @@ export default async function Category({
 
   return (
     <>
-      <section className="mb-16 xl:mb-24 max-w-3xl mx-auto text-center">
+      <Topbar />
+      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+        <section className="mb-16 xl:mb-24 max-w-3xl mx-auto text-center">
         <div className="badge badge-outline border-base-300 badge-sm font-mono mb-2">
           Category
         </div>
@@ -116,6 +120,8 @@ export default async function Category({
           </div>
         </section>
       )}
+      </main>
+      <Footer />
     </>
   );
 }

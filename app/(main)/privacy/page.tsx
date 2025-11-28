@@ -1,7 +1,5 @@
 import Link from "next/link";
 import config from "@/config";
-import { Topbar } from "@/components/Topbar";
-import Footer from "@/components/Footer";
 import { createClient } from "@/libs/supabase/server";
 import { createPageMetadata } from "@/libs/seo";
 
@@ -23,9 +21,7 @@ const PrivacyPolicy = async () => {
     .single();
 
   return (
-    <>
-      <Topbar />
-      <div className="container sm:py-8 xl:py-16 2xl:py-24 mt-20">
+    <div className="container sm:py-8 xl:py-16 2xl:py-24 mt-20">
         <div className="grid gap-6 pb-8 sm:gap-8 lg:grid-cols-2 xl:pb-16 2xl:pb-24">
           <div className="flex flex-col max-lg:order-2">
             <div className="badge badge-outline border-base-300 badge-sm font-mono">
@@ -866,9 +862,7 @@ const PrivacyPolicy = async () => {
             </div>
           </div>
         </div>
-      </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 

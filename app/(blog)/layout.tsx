@@ -2,8 +2,6 @@ import type { Viewport } from "next";
 import { ReactNode } from "react";
 import ClientLayout from "@/components/LayoutClient";
 import { SwetrixAnalytics } from "@/components/SwetrixAnalytics";
-import { Topbar } from "@/components/Topbar";
-import Footer from "@/components/Footer";
 import config from "@/config";
 import { baseMetadata } from "@/libs/seo";
 import "../styles/app.css";
@@ -45,18 +43,14 @@ function FontPreloads() {
   );
 }
 
-export default function MainLayout({ children }: { children: ReactNode }) {
+export default function BlogRootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" data-theme={config.colors.theme} className="group/html">
       <head>
         <FontPreloads />
       </head>
       <body>
-        <ClientLayout>
-          <Topbar />
-          {children}
-          <Footer />
-        </ClientLayout>
+        <ClientLayout>{children}</ClientLayout>
         <SwetrixAnalytics />
       </body>
     </html>

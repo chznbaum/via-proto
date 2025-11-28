@@ -12,6 +12,8 @@ import {
   getAuthorName,
   getAuthorAvatarUrl,
 } from "@/libs/payload/helpers";
+import { Topbar } from "@/components/Topbar";
+import Footer from "@/components/Footer";
 
 export const metadata = createPageMetadata({
   title: `${config.appName} Blog`,
@@ -36,8 +38,10 @@ export default async function Blog() {
 
   return (
     <>
-      {/* Hero Section */}
-      <div className="grid gap-6 pb-8 sm:gap-8 lg:grid-cols-2 xl:pb-16 2xl:pb-24">
+      <Topbar />
+      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+        {/* Hero Section */}
+        <div className="grid gap-6 pb-8 sm:gap-8 lg:grid-cols-2 xl:pb-16 2xl:pb-24">
         <div className="flex flex-col max-lg:order-2">
           <div className="badge badge-outline border-base-300 badge-sm font-mono">
             Blog
@@ -202,6 +206,8 @@ export default async function Blog() {
           </div>
         )}
       </div>
+      </main>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { createClient } from '@/libs/supabase/server';
 import config from '@/config';
-import { articles } from '@/app/blog/_assets/content';
+import { getAllPosts } from '@/libs/payload/queries';
 
 type SitemapEntry = {
   url: string;
@@ -66,7 +66,8 @@ export async function GET() {
     },
   ];
 
-  // Blog articles
+  // Blog articles from Payload CMS
+  const articles = await getAllPosts(100);
   const blogPages: SitemapEntry[] = articles.map((article) => ({
     url: `${baseUrl}/blog/${article.slug}`,
     lastModified: new Date(article.publishedAt),

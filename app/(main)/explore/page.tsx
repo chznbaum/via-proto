@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { createClient } from "@/libs/supabase/server";
 import { PathCard } from "./PathCard";
-import { Topbar } from "@/components/Topbar";
-import Footer from "@/components/Footer";
 import { getFallbackGradient } from "@/libs/unsplash";
 import { createPageMetadata } from "@/libs/seo";
 
@@ -52,10 +50,7 @@ export default async function ExplorePage() {
   const uniqueTopics = new Set(publicPaths.map(p => p.topics?.name).filter(Boolean)).size;
 
   return (
-    <>
-      <Topbar />
-
-      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+    <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
         {/* Hero Section */}
         <div className="grid gap-6 pb-8 sm:gap-8 lg:grid-cols-2 xl:pb-16 2xl:pb-24">
           <div className="flex flex-col max-lg:order-2">
@@ -236,9 +231,6 @@ export default async function ExplorePage() {
             </div>
           )}
         </div>
-      </main>
-
-      <Footer />
-    </>
+    </main>
   );
 }

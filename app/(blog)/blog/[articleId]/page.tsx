@@ -13,6 +13,8 @@ import {
   isPopulatedAuthor,
   getImageUrl,
 } from "@/libs/payload/helpers";
+import { Topbar } from "@/components/Topbar";
+import Footer from "@/components/Footer";
 
 export async function generateMetadata({
   params,
@@ -78,8 +80,10 @@ export default async function Article({
 
   return (
     <>
-      {/* SCHEMA JSON-LD MARKUP FOR GOOGLE */}
-      <Script
+      <Topbar />
+      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+        {/* SCHEMA JSON-LD MARKUP FOR GOOGLE */}
+        <Script
         type="application/ld+json"
         id={`json-ld-article-${article.slug}`}
         dangerouslySetInnerHTML={{
@@ -201,22 +205,24 @@ export default async function Article({
         </div>
       </article>
 
-      {/* RELATED ARTICLES FOR MOBILE */}
-      {articlesRelated.length > 0 && (
-        <section className="md:hidden mt-12">
-          <p className="font-bold text-xl mb-6">Related reading</p>
-          <div className="grid gap-6">
-            {articlesRelated.map((relatedArticle) => (
-              <CardArticle
-                key={relatedArticle.id}
-                article={relatedArticle}
-                tag="h3"
-                showCategory={false}
-              />
-            ))}
-          </div>
-        </section>
-      )}
+        {/* RELATED ARTICLES FOR MOBILE */}
+        {articlesRelated.length > 0 && (
+          <section className="md:hidden mt-12">
+            <p className="font-bold text-xl mb-6">Related reading</p>
+            <div className="grid gap-6">
+              {articlesRelated.map((relatedArticle) => (
+                <CardArticle
+                  key={relatedArticle.id}
+                  article={relatedArticle}
+                  tag="h3"
+                  showCategory={false}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+      </main>
+      <Footer />
     </>
   );
 }

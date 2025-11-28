@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
-import { Topbar } from '@/components/Topbar';
-import Footer from '@/components/Footer';
 import { ShareSheet } from '@/components/paths/ShareSheet';
 import { SkillsDisplay } from '@/components/paths/SkillsDisplay';
 import { SectionTimeline } from '@/components/paths/SectionTimeline';
@@ -251,9 +249,7 @@ export default async function PathDetailPage({
     : { background: getFallbackGradient(path.topic.name || path.title) };
 
   return (
-    <>
-      <Topbar />
-      <main className="min-h-screen pt-20 md:pt-24">
+    <main className="min-h-screen pt-20 md:pt-24">
         <div className="group/section container pb-8 sm:pt-4 xl:pb-16 2xl:pb-24">
           <div className="lg:mx-16 xl:mx-32 2xl:mx-48">
             {/* Back Link */}
@@ -431,8 +427,6 @@ export default async function PathDetailPage({
             )}
           </div>
         </div>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
