@@ -13,9 +13,6 @@ import {
   isPopulatedAuthor,
   getImageUrl,
 } from "@/libs/payload/helpers";
-import { Topbar } from "@/components/Topbar";
-import Footer from "@/components/Footer";
-
 export async function generateMetadata({
   params,
 }: {
@@ -79,10 +76,8 @@ export default async function Article({
   const imageUrl = getImageUrl(article.featuredImage, "hero");
 
   return (
-    <>
-      <Topbar />
-      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
-        {/* SCHEMA JSON-LD MARKUP FOR GOOGLE */}
+    <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+      {/* SCHEMA JSON-LD MARKUP FOR GOOGLE */}
         <Script
         type="application/ld+json"
         id={`json-ld-article-${article.slug}`}
@@ -221,8 +216,6 @@ export default async function Article({
             </div>
           </section>
         )}
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }

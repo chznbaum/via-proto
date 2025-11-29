@@ -6,8 +6,6 @@ import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 import { getImageUrl } from "@/libs/payload/helpers";
 import { getSocialIcon, getSocialName } from "@/libs/payload/social-icons";
-import { Topbar } from "@/components/Topbar";
-import Footer from "@/components/Footer";
 
 export async function generateMetadata({
   params,
@@ -52,10 +50,8 @@ export default async function Author({
   const avatarUrl = getImageUrl(author.avatar, "card");
 
   return (
-    <>
-      <Topbar />
-      <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
-        <section className="max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mb-16 xl:mb-24">
+    <main className="group/section container pt-24 pb-8 md:pt-28 lg:pt-32 lg:pb-16 xl:pt-40 xl:pb-20 2xl:pt-44 2xl:pb-24">
+      <section className="max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mb-16 xl:mb-24">
         <div>
           <div className="badge badge-outline border-base-300 badge-sm font-mono mb-2">
             Author
@@ -129,8 +125,6 @@ export default async function Author({
           </div>
         )}
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
