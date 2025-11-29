@@ -1,5 +1,10 @@
 import type { CollectionConfig } from 'payload'
-import { triggerUnsplashDownload } from '@/libs/unsplash'
+import {
+  triggerUnsplashDownload,
+  fetchUnsplashImageById,
+  extractUnsplashPhotoId,
+  buildUnsplashSourceUrl,
+} from '@/libs/unsplash'
 
 /**
  * Media Collection
@@ -85,12 +90,21 @@ export const Media: CollectionConfig = {
         description: 'Describe the image for accessibility (screen readers) and SEO',
       },
     },
+    // Unsplash integration - paste URL or photo ID to auto-populate fields
+    {
+      name: 'unsplashInput',
+      type: 'text',
+      admin: {
+        description: 'Paste Unsplash photo URL or ID to auto-fill attribution (e.g., "FHnnjk1Yj7Y" or full URL)',
+        placeholder: 'https://unsplash.com/photos/... or photo ID',
+      },
+    },
     // External URL for hotlinking (required by Unsplash for view tracking)
     {
       name: 'externalUrl',
       type: 'text',
       admin: {
-        description: 'External image URL for hotlinking (e.g., Unsplash requires serving from their CDN)',
+        description: 'External image URL for hotlinking (auto-filled for Unsplash)',
       },
     },
     // Attribution fields for stock images (Unsplash, Pixabay, Pexels, etc.)
@@ -165,6 +179,53 @@ export const Media: CollectionConfig = {
     },
   ],
   hooks: {
+    // Auto-populate fields when Unsplash input is provided
+    beforeChange: [
+      async ({ data, operation }) => {
+        // Only process if unsplashInput is provided
+        if (!data?.unsplashInput) return data
+
+        const photoId = extractUnsplashPhotoId(data.unsplashInput)
+        if (!photoId) {
+          console.warn('Could not extract Unsplash photo ID from input:', data.unsplashInput)
+          return data
+        }
+
+        // Fetch image data from Unsplash API
+        const unsplashData = await fetchUnsplashImageById(photoId)
+        if (!unsplashData) {
+          console.warn('Could not fetch Unsplash image data for ID:', photoId)
+          return data
+        }
+
+        // Auto-populate fields
+        // External URL for hotlinking (with size params for optimal loading)
+        data.externalUrl = `${unsplashData.url}&w=1200&q=80`
+
+        // Alt text (if not already set)
+        if (!data.alt && unsplashData.altDescription) {
+          data.alt = unsplashData.altDescription
+        }
+
+        // Attribution fields
+        data.attribution = {
+          ...data.attribution,
+          creatorType: 'photographer',
+          creatorName: unsplashData.photographer,
+          creatorUrl: unsplashData.photographerUrl,
+          sourceName: 'Unsplash',
+          sourceUrl: buildUnsplashSourceUrl(),
+          unsplashDownloadUrl: unsplashData.downloadLocation,
+        }
+
+        // Clear the input field after processing (optional - keeps it for reference)
+        // data.unsplashInput = undefined
+
+        console.log(`Auto-populated Unsplash data for photo: ${photoId} by ${unsplashData.photographer}`)
+
+        return data
+      },
+    ],
     // Trigger Unsplash download event when media with Unsplash source is created/updated
     afterChange: [
       async ({ doc, operation }) => {

@@ -42,6 +42,7 @@ export interface MediaAttribution {
 export interface Media extends PayloadTimestamps {
   id: string
   alt: string
+  unsplashInput?: string | null
   externalUrl?: string | null
   attribution?: MediaAttribution | null
   url?: string | null
