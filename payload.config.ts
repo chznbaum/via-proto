@@ -25,8 +25,9 @@ export default buildConfig({
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URL,
-      // Required for Supabase SSL connections in CI/CD environments
-      ssl: process.env.DATABASE_URL?.includes('supabase')
+      // Skip certificate chain validation for SSL connections
+      // Required because the connection string uses sslmode=require
+      ssl: process.env.DATABASE_URL?.includes('sslmode=')
         ? { rejectUnauthorized: false }
         : undefined,
     },
