@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+// Note: Using <a> instead of <Link> for navigation to force full page reload
+// This is necessary because global-error has its own <html>/<body> structure
 import { useState, useEffect } from "react";
 
 interface ErrorContext {
@@ -226,9 +227,9 @@ export default function GlobalError({
                     <button type="button" onClick={reset} className="btn btn-ghost">
                       ↻ Try Again
                     </button>
-                    <Link href="/" className="btn btn-ghost">
+                    <a href="/" className="btn btn-ghost">
                       ← Go Home
-                    </Link>
+                    </a>
                   </div>
                 </form>
               ) : (
@@ -241,9 +242,9 @@ export default function GlobalError({
                     <button type="button" onClick={reset} className="btn btn-primary">
                       ↻ Try Again
                     </button>
-                    <Link href="/" className="btn btn-ghost">
+                    <a href="/" className="btn btn-ghost">
                       ← Go Home
-                    </Link>
+                    </a>
                   </div>
                 </div>
               )}
