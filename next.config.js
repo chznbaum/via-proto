@@ -1,3 +1,6 @@
+const { withSentryConfig } = require("@sentry/nextjs");
+const { withAxiom } = require("@axiomhq/nextjs");
+
 /** @type {import('next').NextConfig} */
 
 // CDN configuration - assetPrefix is baked in at build time
@@ -45,7 +48,7 @@ const cspHeader = `
   style-src 'self' 'unsafe-inline' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.googleapis.com;
   img-src 'self' blob: data: https: ${cdnDomains} https://*.crisp.chat https://client.crisp.chat https://image.crisp.chat https://api.analytics.chazona.dev https://s3.nl-ams.scw.cloud https://viaproto-prod.s3.nl-ams.scw.cloud https://viaproto-dev.s3.nl-ams.scw.cloud;
   font-src 'self' ${cdnDomains} https://client.crisp.chat https://*.crisp.chat https://fonts.gstatic.com;
-  connect-src 'self' ${isDev ? 'http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*' : ''} https://*.supabase.co wss://*.supabase.co https://openrouter.ai https://api.openrouter.ai https://*.crisp.chat wss://*.crisp.chat https://client.relay.crisp.chat wss://client.relay.crisp.chat https://swetrix.org https://api.swetrix.com https://api.analytics.chazona.dev https://js.stripe.com https://api.stripe.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com https://unsplash.com https://images.unsplash.com https://api.unsplash.com https://pixabay.com https://cdn.pixabay.com https://www.pexels.com https://images.pexels.com;
+  connect-src 'self' ${isDev ? 'http://127.0.0.1:* http://localhost:* ws://127.0.0.1:* ws://localhost:*' : ''} https://*.supabase.co wss://*.supabase.co https://openrouter.ai https://api.openrouter.ai https://*.crisp.chat wss://*.crisp.chat https://client.relay.crisp.chat wss://client.relay.crisp.chat https://swetrix.org https://api.swetrix.com https://api.analytics.chazona.dev https://js.stripe.com https://api.stripe.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com https://unsplash.com https://images.unsplash.com https://api.unsplash.com https://pixabay.com https://cdn.pixabay.com https://www.pexels.com https://images.pexels.com https://*.sentry.io https://*.ingest.sentry.io;
   frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://accounts.google.com https://*.crisp.chat;
   object-src 'none';
   base-uri 'self';
@@ -152,4 +155,33 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withAxiom(withSentryConfig(nextConfig, {
+  // For all available options, see:
+  // https://github.com/getsentry/sentry-webpack-plugin#options
+
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+
+  // Only print logs for uploading source maps in CI
+  silent: !process.env.CI,
+
+  // Upload a larger set of source maps for prettier stack traces (increases build time)
+  widenClientFileUpload: true,
+
+  // Automatically annotate React components to show their full name in breadcrumbs and session replay
+  reactComponentAnnotation: {
+    enabled: true,
+  },
+
+  // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
+  tunnelRoute: "/monitoring",
+
+  // Hides source maps from generated client bundles
+  hideSourceMaps: true,
+
+  // Automatically tree-shake Sentry logger statements to reduce bundle size
+  disableLogger: true,
+
+  // Enables automatic instrumentation of Vercel Cron Monitors (does not apply here but good default)
+  automaticVercelMonitors: false,
+}));

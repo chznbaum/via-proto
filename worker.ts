@@ -19,9 +19,21 @@ import { loadEnvConfig } from '@next/env';
 const projectDir = process.cwd();
 loadEnvConfig(projectDir);
 
+import * as Sentry from '@sentry/node';
 import { run, Runner } from 'graphile-worker';
 import { tasks } from './libs/jobs/tasks';
 import { addJob } from './libs/jobs/queue';
+
+// Initialize Sentry for worker error tracking
+Sentry.init({
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+  environment: process.env.NODE_ENV || 'development',
+  enabled: process.env.NODE_ENV === 'production',
+  // Tag all errors from this process as coming from the worker
+  initialScope: {
+    tags: { service: 'worker' },
+  },
+});
 
 let runner: Runner | null = null;
 
@@ -55,6 +67,21 @@ async function main() {
 
   runner.events.on('job:error', async ({ job, error }) => {
     console.error(`Job error: ${job.task_identifier} (${job.id})`, error.message);
+
+    // Report to Sentry with job context
+    Sentry.captureException(error, {
+      tags: {
+        job_type: job.task_identifier,
+        job_id: job.id,
+        attempt: job.attempts,
+        max_attempts: job.max_attempts,
+      },
+      extra: {
+        payload: job.payload,
+        created_at: job.created_at,
+        run_at: job.run_at,
+      },
+    });
 
     // On final failure (exhausted retries), queue notification
     if (job.attempts >= job.max_attempts) {
@@ -103,6 +130,9 @@ async function shutdown(signal: string) {
     console.log('Worker stopped cleanly');
   }
 
+  // Flush any pending Sentry events before exiting
+  await Sentry.close(2000);
+
   process.exit(0);
 }
 
@@ -111,7 +141,11 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 process.on('SIGINT', () => shutdown('SIGINT'));
 
 // Start the worker
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('Worker crashed:', err);
+  Sentry.captureException(err, {
+    tags: { fatal: true },
+  });
+  await Sentry.close(2000);
   process.exit(1);
 });
