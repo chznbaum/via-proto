@@ -25,6 +25,10 @@ export default buildConfig({
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URL,
+      // Required for Supabase SSL connections in CI/CD environments
+      ssl: process.env.DATABASE_URL?.includes('supabase')
+        ? { rejectUnauthorized: false }
+        : undefined,
     },
     // Payload tables will be in a separate schema to avoid conflicts
     schemaName: 'payload',

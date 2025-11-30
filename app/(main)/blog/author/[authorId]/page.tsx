@@ -7,6 +7,9 @@ import config from "@/config";
 import { getImageUrl } from "@/libs/payload/helpers";
 import { getSocialIcon, getSocialName } from "@/libs/payload/social-icons";
 
+// Revalidate hourly - shows fresh content without redeploying
+export const revalidate = 3600;
+
 export async function generateMetadata({
   params,
 }: {

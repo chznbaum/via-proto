@@ -12,6 +12,9 @@ import {
   getAuthorName,
   getAuthorAvatarUrl,
 } from "@/libs/payload/helpers";
+// Revalidate hourly - shows fresh content without redeploying
+export const revalidate = 3600;
+
 export const metadata = createPageMetadata({
   title: `${config.appName} Blog`,
   description:

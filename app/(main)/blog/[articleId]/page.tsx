@@ -13,6 +13,10 @@ import {
   isPopulatedAuthor,
   getImageUrl,
 } from "@/libs/payload/helpers";
+
+// Revalidate hourly - shows fresh content without redeploying
+export const revalidate = 3600;
+
 export async function generateMetadata({
   params,
 }: {

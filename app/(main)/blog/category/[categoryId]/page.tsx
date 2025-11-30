@@ -9,6 +9,9 @@ import CardCategory from "../../_assets/components/CardCategory";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
+// Revalidate hourly - shows fresh content without redeploying
+export const revalidate = 3600;
+
 export async function generateMetadata({
   params,
 }: {
