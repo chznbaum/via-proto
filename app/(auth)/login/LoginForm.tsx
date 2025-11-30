@@ -36,10 +36,12 @@ export const LoginForm = () => {
       }
 
       // User exists, send the magic link
+      // Using page-based callback for better browser compatibility
+      // (some browsers in private mode treat API redirects as downloads)
       const { error } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: `${window.location.origin}/api/auth/callback`,
+          emailRedirectTo: `${window.location.origin}/callback`,
         },
       });
 

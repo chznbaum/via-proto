@@ -63,10 +63,12 @@ export const RegisterForm = () => {
         document.cookie = `pendingName=${encodeURIComponent(name)}; path=/; max-age=3600; SameSite=Lax`;
       }
 
+      // Using page-based callback for better browser compatibility
+      // (some browsers in private mode treat API redirects as downloads)
       const { error } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: `${window.location.origin}/api/auth/callback`,
+          emailRedirectTo: `${window.location.origin}/callback`,
         },
       });
 
