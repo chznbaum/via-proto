@@ -12,8 +12,8 @@ import {
   getAuthorName,
   getAuthorAvatarUrl,
 } from "@/libs/payload/helpers";
-// Revalidate hourly - shows fresh content without redeploying
-export const revalidate = 3600;
+// Render dynamically - fetch fresh content from Payload on each request
+export const dynamic = 'force-dynamic';
 
 export const metadata = createPageMetadata({
   title: `${config.appName} Blog`,

@@ -14,8 +14,8 @@ import {
   getImageUrl,
 } from "@/libs/payload/helpers";
 
-// Revalidate hourly - shows fresh content without redeploying
-export const revalidate = 3600;
+// Render dynamically - fetch fresh content from Payload on each request
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
   params,
