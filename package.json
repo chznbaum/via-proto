@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build",
-    "build:staging": "CDN_URL=https://cdn-dev.viapro.to next build",
-    "build:production": "CDN_URL=https://cdn.viapro.to next build",
+    "build": "payload generate:importmap && next build",
+    "build:staging": "payload generate:importmap && CDN_URL=https://cdn-dev.viapro.to next build",
+    "build:production": "payload generate:importmap && CDN_URL=https://cdn.viapro.to next build",
     "upload:staging": "./scripts/upload-static-to-s3.sh staging",
     "upload:production": "./scripts/upload-static-to-s3.sh production",
     "start": "next start",
