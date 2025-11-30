@@ -193,7 +193,7 @@ export const RegisterForm = () => {
 
       <p className="text-base-content/80 mt-5 text-center text-sm md:mt-6">
         Already have an account?
-        <Link className="text-primary ms-1 hover:underline" href="/auth/login">
+        <Link className="text-primary ms-1 hover:underline" href="/login">
           Sign In
         </Link>
       </p>

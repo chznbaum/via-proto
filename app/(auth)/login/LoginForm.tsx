@@ -30,7 +30,7 @@ export const LoginForm = () => {
         setIsLoading(false);
         // Give user time to read the message before redirecting
         setTimeout(() => {
-          window.location.href = `/auth/register?email=${encodeURIComponent(email)}`;
+          window.location.href = `/register?email=${encodeURIComponent(email)}`;
         }, 1500);
         return;
       }
@@ -115,7 +115,7 @@ export const LoginForm = () => {
 
       <p className="text-base-content/80 mt-5 text-center text-sm md:mt-6">
         Don't have an account?
-        <Link className="text-primary ms-1 hover:underline" href="/auth/register">
+        <Link className="text-primary ms-1 hover:underline" href="/register">
           Create One
         </Link>
       </p>
