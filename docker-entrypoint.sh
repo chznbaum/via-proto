@@ -6,7 +6,7 @@ if [ "$RUN_MODE" = "worker" ]; then
   exec npx tsx worker.ts
 else
   echo "Running Payload migrations..."
-  npx payload migrate || echo "Migration failed or no migrations to run"
+  npx payload migrate
   echo "Starting web server..."
   exec node server.js
 fi
