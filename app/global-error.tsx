@@ -2,6 +2,7 @@
 
 // Note: Using <a> instead of <Link> for navigation to force full page reload
 // This is necessary because global-error has its own <html>/<body> structure
+import * as Sentry from "@sentry/nextjs";
 import { useState, useEffect } from "react";
 
 interface ErrorContext {
@@ -27,6 +28,9 @@ export default function GlobalError({
   const [errorContext, setErrorContext] = useState<ErrorContext | null>(null);
 
   useEffect(() => {
+    // Capture error in Sentry
+    Sentry.captureException(error);
+
     setErrorContext({
       url: window.location.href,
       referrer: document.referrer || "Direct navigation",

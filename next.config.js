@@ -1,5 +1,4 @@
 const { withSentryConfig } = require("@sentry/nextjs");
-const { withAxiom } = require("@axiomhq/nextjs");
 
 /** @type {import('next').NextConfig} */
 
@@ -155,7 +154,7 @@ const nextConfig = {
   },
 };
 
-module.exports = withAxiom(withSentryConfig(nextConfig, {
+module.exports = withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -184,4 +183,4 @@ module.exports = withAxiom(withSentryConfig(nextConfig, {
 
   // Enables automatic instrumentation of Vercel Cron Monitors (does not apply here but good default)
   automaticVercelMonitors: false,
-}));
+});

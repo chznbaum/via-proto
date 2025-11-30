@@ -1,3 +1,6 @@
+import * as Sentry from "@sentry/nextjs";
+import type { Instrumentation } from "next";
+
 export async function register() {
   if (process.env.NEXT_RUNTIME === "nodejs") {
     await import("./sentry.server.config");
@@ -8,20 +11,32 @@ export async function register() {
   }
 }
 
-export const onRequestError = async (
-  error: Error & { digest?: string },
-  request: {
-    method: string;
-    path: string;
-    headers: Record<string, string>;
-  },
-  context: { routerKind: string; routeType: string; routePath: string }
+// Capture nested React Server Component errors (Next.js 15+)
+export const onRequestError: Instrumentation["onRequestError"] = async (
+  error,
+  request,
+  context
 ) => {
-  const Sentry = await import("@sentry/nextjs");
-  Sentry.captureException(error, {
-    extra: {
-      request,
+  // Report to Sentry using built-in handler
+  Sentry.captureRequestError(error, request, context);
+
+  // Also report to Axiom for structured logging
+  try {
+    const { logger } = await import("@/libs/axiom/server");
+    logger.error("Request error", {
+      error: {
+        message: error.message,
+        stack: error.stack,
+        digest: error.digest,
+      },
+      request: {
+        method: request.method,
+        path: request.path,
+      },
       context,
-    },
-  });
+    });
+    await logger.flush();
+  } catch {
+    // Axiom logging failure shouldn't break error handling
+  }
 };
