@@ -32,6 +32,10 @@ COPY --chown=nextjs:nodejs types ./types
 COPY --chown=nextjs:nodejs tsconfig.json ./tsconfig.json
 COPY --chown=nextjs:nodejs package.json ./package.json
 
+# Copy Payload CMS config and collections for migrations
+COPY --chown=nextjs:nodejs payload.config.ts ./payload.config.ts
+COPY --chown=nextjs:nodejs src ./src
+
 # Copy node_modules for worker dependencies (tsx, graphile-worker, etc.)
 COPY --from=deps --chown=nextjs:nodejs /app/node_modules ./node_modules
 
