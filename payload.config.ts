@@ -8,11 +8,11 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 
 // Collections
-import { Users } from './src/collections/Users.js'
-import { Media } from './src/collections/Media.js'
-import { Authors } from './src/collections/Authors.js'
-import { Categories } from './src/collections/Categories.js'
-import { Posts } from './src/collections/Posts.js'
+import { Users } from './src/collections/Users'
+import { Media } from './src/collections/Media'
+import { Authors } from './src/collections/Authors'
+import { Categories } from './src/collections/Categories'
+import { Posts } from './src/collections/Posts'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
