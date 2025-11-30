@@ -2,10 +2,10 @@
 
 import { ErrorReportContent } from "@/components/ErrorReportContent";
 
-export default function MainNotFound() {
+export default function DashboardNotFound() {
   return (
-    <section className="container min-h-[calc(100vh-200px)] flex flex-col">
+    <div className="container flex flex-col py-8 px-4 lg:px-8">
       <ErrorReportContent type="not-found" />
-    </section>
+    </div>
   );
 }

@@ -2,7 +2,7 @@
 
 import { ErrorReportContent } from "@/components/ErrorReportContent";
 
-export default function MainError({
+export default function DashboardError({
   error,
   reset,
 }: {
@@ -10,8 +10,8 @@ export default function MainError({
   reset: () => void;
 }) {
   return (
-    <section className="container min-h-[calc(100vh-200px)] flex flex-col">
+    <div className="container flex flex-col py-8 px-4 lg:px-8">
       <ErrorReportContent type="error" error={error} reset={reset} />
-    </section>
+    </div>
   );
 }
