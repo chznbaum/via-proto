@@ -7,7 +7,7 @@ orbs:
 executors:
   node-executor:
     docker:
-      - image: cimg/node:20.11.0
+      - image: cimg/node:22.19
   aws-executor:
     docker:
       - image: cimg/aws:2024.03
