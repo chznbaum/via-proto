@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const { withPayload } = require('@payloadcms/next/withPayload')
 
 // CDN configuration - assetPrefix is baked in at build time
 const cdnUrl = process.env.CDN_URL;
@@ -90,7 +89,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'logos-world.net',
       },
-      // Scaleway S3 buckets for Payload CMS uploads
+      // Scaleway S3 buckets
       {
         protocol: 'https',
         hostname: 's3.nl-ams.scw.cloud',
@@ -153,4 +152,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPayload(nextConfig);
+module.exports = nextConfig;

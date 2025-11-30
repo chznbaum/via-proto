@@ -1,6 +1,5 @@
 import { createClient } from '@/libs/supabase/server';
 import config from '@/config';
-import { getAllPosts } from '@/libs/payload/queries';
 
 type SitemapEntry = {
   url: string;
@@ -66,15 +65,6 @@ export async function GET() {
     },
   ];
 
-  // Blog articles from Payload CMS
-  const articles = await getAllPosts(100);
-  const blogPages: SitemapEntry[] = articles.map((article) => ({
-    url: `${baseUrl}/blog/${article.slug}`,
-    lastModified: new Date(article.publishedAt),
-    changeFrequency: 'monthly',
-    priority: 0.6,
-  }));
-
   // Fetch all public learning paths
   const { data: publicPaths, error } = await supabase
     .from('learning_paths')
@@ -84,7 +74,7 @@ export async function GET() {
 
   if (error) {
     console.error('Error fetching public paths for sitemap:', error);
-    const xml = generateXml([...staticPages, ...blogPages]);
+    const xml = generateXml(staticPages);
     return new Response(xml, {
       headers: { 'Content-Type': 'application/xml' },
     });
@@ -98,7 +88,7 @@ export async function GET() {
     priority: 0.7,
   }));
 
-  const xml = generateXml([...staticPages, ...blogPages, ...pathPages]);
+  const xml = generateXml([...staticPages, ...pathPages]);
 
   return new Response(xml, {
     headers: { 'Content-Type': 'application/xml' },

@@ -50,8 +50,6 @@ jobs:
             - certs
             - Dockerfile
             - docker-entrypoint.sh
-            - payload.config.ts
-            - src
 
   upload-static-assets:
     executor: aws-executor

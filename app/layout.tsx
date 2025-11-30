@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import config from "@/config";
 
-// Set metadataBase at root so all routes (including Payload admin) inherit it
+// Set metadataBase at root so all routes inherit it
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NODE_ENV === "development"
@@ -11,8 +11,7 @@ export const metadata: Metadata = {
   ),
 };
 
-// Minimal root layout - each route group ((main) and (payload)) has its own
-// root layout with html/body to prevent nested HTML document errors
+// Minimal root layout - (main) route group has its own html/body structure
 export default function RootLayout({ children }: { children: ReactNode }) {
   return children;
 }
