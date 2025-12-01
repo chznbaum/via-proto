@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
 import { ShareSheet } from '@/components/paths/ShareSheet';
+import { ExportButton } from '@/components/paths/ExportButton';
 import { SkillsDisplay } from '@/components/paths/SkillsDisplay';
 import { SectionTimeline } from '@/components/paths/SectionTimeline';
 import { TagsSection } from '@/components/paths/TagsSection';
@@ -363,6 +364,25 @@ export default async function PathDetailPage({
                       </button>
                       <p className="text-sm">0</p>
                     </div>
+                  )}
+                  {/* Export - show for public paths or own private paths */}
+                  {(path.is_public || (user && user.id === path.creator_id)) && (
+                    <ExportButton
+                      path={{
+                        id: path.id,
+                        title: path.title,
+                        description: path.description,
+                        skill_level: path.skill_level,
+                        total_estimated_hours: path.total_estimated_hours,
+                        created_at: path.created_at,
+                        topic: {
+                          name: path.topic.name,
+                          category: path.topic.category,
+                        },
+                        creator: path.creator,
+                        sections: path.sections,
+                      }}
+                    />
                   )}
                   {/* Share - only show for public paths */}
                   {path.is_public && (
