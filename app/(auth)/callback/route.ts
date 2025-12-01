@@ -3,18 +3,20 @@ import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url);
+  const requestUrl = new URL(request.url);
+  // Use NEXT_PUBLIC_SITE_URL instead of request origin to avoid Docker networking issues
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || requestUrl.origin;
 
-  const token_hash = searchParams.get("token_hash");
-  const type = searchParams.get("type");
-  const error = searchParams.get("error");
-  const error_description = searchParams.get("error_description");
+  const token_hash = requestUrl.searchParams.get("token_hash");
+  const type = requestUrl.searchParams.get("type");
+  const error = requestUrl.searchParams.get("error");
+  const error_description = requestUrl.searchParams.get("error_description");
 
   // Handle error from Supabase
   if (error) {
     const errorMessage = error_description || error;
     return NextResponse.redirect(
-      new URL(`/login?error=${encodeURIComponent(errorMessage)}`, request.url)
+      new URL(`/login?error=${encodeURIComponent(errorMessage)}`, siteUrl)
     );
   }
 
@@ -49,7 +51,7 @@ export async function GET(request: NextRequest) {
 
     if (verifyError) {
       return NextResponse.redirect(
-        new URL(`/login?error=${encodeURIComponent(verifyError.message)}`, request.url)
+        new URL(`/login?error=${encodeURIComponent(verifyError.message)}`, siteUrl)
       );
     }
 
@@ -58,7 +60,7 @@ export async function GET(request: NextRequest) {
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         // Call setup-account to handle new user registration
-        const setupUrl = new URL("/api/auth/setup-account", request.url);
+        const setupUrl = new URL("/api/auth/setup-account", siteUrl);
         await fetch(setupUrl.toString(), {
           method: "POST",
           headers: {
@@ -71,11 +73,11 @@ export async function GET(request: NextRequest) {
       console.error("Failed to setup account, continuing to dashboard");
     }
 
-    return NextResponse.redirect(new URL("/dashboard", request.url));
+    return NextResponse.redirect(new URL("/dashboard", siteUrl));
   }
 
   // No valid parameters found
   return NextResponse.redirect(
-    new URL("/login?error=Invalid+authentication+link", request.url)
+    new URL("/login?error=Invalid+authentication+link", siteUrl)
   );
 }
