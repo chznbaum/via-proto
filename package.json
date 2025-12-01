@@ -36,6 +36,7 @@
     "@sentry/nextjs": "^10.27.0",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.45.0",
+    "@tinacms/cli": "^1.12.5",
     "axios": "^1.7.9",
     "crisp-sdk-web": "^1.0.25",
     "eslint": "^9.17.0",
@@ -56,6 +57,7 @@
     "simplebar-react": "^3.3.2",
     "stripe": "^13.11.0",
     "swetrix": "^3.7.2",
+    "tinacms": "^2.10.0",
     "tsx": "^4.20.6",
     "zod": "^3.24.1"
   },
