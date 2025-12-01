@@ -2,6 +2,10 @@
   "name": "via-proto",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev -p 3001\"",
     "build": "tinacms build && next build",
@@ -52,7 +56,6 @@
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.4.1",
     "react-syntax-highlighter": "^15.6.1",
-    "react-tooltip": "^5.28.0",
     "resend": "^4.0.1",
     "simplebar-react": "^3.3.2",
     "stripe": "^13.11.0",
