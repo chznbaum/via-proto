@@ -3,6 +3,10 @@ FROM node:24-alpine AS base
 # Install dependencies for worker
 FROM base AS deps
 WORKDIR /app
+
+# Install build tools for native modules (better-sqlite3 from TinaCMS)
+RUN apk add --no-cache python3 make g++
+
 COPY package.json package-lock.json* ./
 RUN npm install --omit=dev
 
