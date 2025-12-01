@@ -418,6 +418,7 @@ const event = stripe.webhooks.constructEvent(
 **Environment Variables**:
 - `NEXT_PUBLIC_TINA_CLIENT_ID` - Client ID from TinaCloud
 - `TINA_TOKEN` - Read-only token from TinaCloud
+- `TINA_SEARCH_TOKEN` - Search indexer token from TinaCloud (enables admin search)
 - `TINA_BRANCH` - Git branch for content (defaults to detection from CI/CD)
 
 **Development**:

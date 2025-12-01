@@ -17,6 +17,14 @@ export default defineConfig({
     outputFolder: "admin",
     publicFolder: "public",
   },
+  search: {
+    tina: {
+      indexerToken: process.env.TINA_SEARCH_TOKEN,
+      stopwordLanguages: ["eng"],
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100,
+  },
   media: {
     tina: {
       mediaRoot: "uploads",
