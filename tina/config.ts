@@ -1,7 +1,8 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
+// Branch detection - supports Coolify, Vercel, and manual override
 const branch =
+  process.env.TINA_BRANCH ||
   process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
@@ -9,10 +10,7 @@ const branch =
 
 export default defineConfig({
   branch,
-
-  // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
   build: {
@@ -21,17 +19,31 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "uploads",
       publicFolder: "public",
     },
   },
-  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
     collections: [
       {
         name: "post",
-        label: "Posts",
+        label: "Blog Posts",
         path: "content/posts",
+        format: "mdx",
+        ui: {
+          filename: {
+            readonly: false,
+            slugify: (values) => {
+              return (
+                values?.title
+                  ?.toLowerCase()
+                  .replace(/ /g, "-")
+                  .replace(/[^a-z0-9-]/g, "") || ""
+              );
+            },
+          },
+          router: ({ document }) => `/blog/${document._sys.filename}`,
+        },
         fields: [
           {
             type: "string",
@@ -41,16 +53,55 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+            description: "A short description for post previews and SEO",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Publish Date",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "coverImage",
+            label: "Cover Image",
+          },
+          {
+            type: "object",
+            name: "author",
+            label: "Author",
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Name",
+              },
+              {
+                type: "image",
+                name: "avatar",
+                label: "Avatar",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "tags",
+            label: "Tags",
+            list: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
       },
     ],
   },
