@@ -210,7 +210,8 @@ app/
 │   │   ├── skills/     # Learning path management
 │   │   └── upgrade/    # Pricing/upgrade page
 │   ├── auth/           # Login/register pages
-│   ├── blog/           # Blog page (static for now)
+│   ├── blog/           # Blog listing and posts (TinaCMS)
+│   │   └── [slug]/     # Dynamic blog post pages
 │   ├── paths/[id]/     # Public path detail page
 │   ├── explore/        # Public path discovery
 │   └── layout.tsx      # App layout (html/body, fonts, ClientLayout)
@@ -238,6 +239,11 @@ types/                  # TypeScript type definitions
 supabase/
 ├── migrations/         # Database schema migrations
 └── seed.sql           # Topic seed data
+tina/
+├── config.ts          # TinaCMS schema and configuration
+└── __generated__/     # Auto-generated types (gitignored)
+content/
+└── posts/             # Blog posts as MDX files (managed by TinaCMS)
 ```
 
 ### Route Group Architecture
@@ -394,6 +400,38 @@ const event = stripe.webhooks.constructEvent(
 - Free tier paths are **always public** (cannot be private)
 - Free tier has access to only 7 free AI models
 - Enforced in `/api/paths/initiate/route.ts:106-111`
+
+### TinaCMS Blog System
+
+**Overview**: Git-based headless CMS using TinaCloud for the blog. Content is stored as MDX files in `content/posts/` and committed to Git.
+
+**Configuration**: `tina/config.ts` - defines blog post schema and TinaCloud connection.
+
+**Key Files**:
+- `app/(main)/blog/page.tsx` - Blog listing page
+- `app/(main)/blog/[slug]/page.tsx` - Single post server component
+- `app/(main)/blog/[slug]/client-page.tsx` - Client component with live editing
+- `app/(main)/blog/PostItem.tsx` - Post card component
+
+**Admin Access**: `/admin/index.html` - TinaCMS visual editor
+
+**Environment Variables**:
+- `NEXT_PUBLIC_TINA_CLIENT_ID` - Client ID from TinaCloud
+- `TINA_TOKEN` - Read-only token from TinaCloud
+- `TINA_BRANCH` - Git branch for content (defaults to detection from CI/CD)
+
+**Development**:
+```bash
+npm run dev  # Runs tinacms dev + next dev together
+```
+
+**Content Creation**:
+1. Access `/admin/index.html` in development or production
+2. Create/edit posts through visual editor
+3. TinaCloud commits changes to Git
+4. Redeploy picks up new content
+
+**Note**: The `tina/__generated__/` directory is gitignored and regenerated during build via `tinacms build`.
 
 ## Testing Checklist
 

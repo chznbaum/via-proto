@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev -p 3001\"",
     "build": "tinacms build && next build",
-    "build:staging": "CDN_URL=https://cdn-dev.viapro.to next build",
-    "build:production": "CDN_URL=https://cdn.viapro.to next build",
+    "build:staging": "tinacms build && CDN_URL=https://cdn-dev.viapro.to next build",
+    "build:production": "tinacms build && CDN_URL=https://cdn.viapro.to next build",
     "upload:staging": "./scripts/upload-static-to-s3.sh staging",
     "upload:production": "./scripts/upload-static-to-s3.sh production",
     "start": "next start",

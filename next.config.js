@@ -59,6 +59,8 @@ const cspHeader = `
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  // Transpile TinaCMS packages to resolve module conflicts
+  transpilePackages: ['tinacms'],
   // CDN asset prefix - only applied when CDN_URL is set (production/staging builds)
   assetPrefix: isDev ? undefined : cdnUrl,
   eslint: {
