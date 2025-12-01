@@ -38,3 +38,6 @@ next-env.d.ts
 /media/*
 !/media/.gitkeep
 tina/__generated__
+
+node_modules
+.env
