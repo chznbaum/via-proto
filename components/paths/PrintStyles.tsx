@@ -121,14 +121,11 @@ export function PrintStyles() {
         }
 
         /* ===========================================
-         * Featured image
+         * Featured image - hide to save ink
          * =========================================== */
 
-        .h-64,
-        .sm\\:h-100,
-        .lg\\:h-120 {
-          height: 150px !important;
-          max-height: 150px !important;
+        .featured-image {
+          display: none !important;
         }
 
         /* ===========================================
@@ -188,14 +185,116 @@ export function PrintStyles() {
         }
 
         /* ===========================================
-         * Timeline
+         * Timeline - simplify for print
          * =========================================== */
 
+        /* Hide timeline decorative elements */
         .timeline::before,
-        .timeline-start::before,
-        .timeline-middle,
-        .timeline-end::before {
-          background: #ccc !important;
+        .timeline hr,
+        .timeline-middle {
+          display: none !important;
+        }
+
+        /* Reset timeline layout to simple vertical stack */
+        .timeline {
+          display: block !important;
+          padding: 0 !important;
+        }
+
+        .timeline > li {
+          display: block !important;
+          margin: 0 0 1.5em 0 !important;
+          padding: 0 !important;
+        }
+
+        /* Reset alternating sides - everything left-aligned */
+        .timeline-start,
+        .timeline-end {
+          text-align: left !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* ===========================================
+         * Cards - flatten for print
+         * =========================================== */
+
+        .card {
+          box-shadow: none !important;
+          border: 1px solid #ddd !important;
+          border-radius: 4px !important;
+          padding: 1em !important;
+          margin-bottom: 1em !important;
+          background: #fff !important;
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* Remove hover states */
+        .card:hover {
+          box-shadow: none !important;
+        }
+
+        /* Simplify link preview boxes inside cards */
+        .card a.block {
+          border: 1px solid #ccc !important;
+          border-radius: 4px !important;
+        }
+
+        /* Hide OG images in print to save space/ink */
+        .card img.object-cover {
+          display: none !important;
+        }
+
+        /* Simplify the domain/favicon row */
+        .card .bg-base-200\\/50 {
+          background: #f9f9f9 !important;
+          padding: 0.5em !important;
+        }
+
+        /* Hide external link icons */
+        .card .lucide--external-link {
+          display: none !important;
+        }
+
+        /* Ensure URL is visible for resources */
+        .card a.block::after {
+          content: " (" attr(href) ")";
+          display: block;
+          font-size: 8pt;
+          color: #666;
+          word-break: break-all;
+          margin-top: 0.5em;
+          padding: 0 0.5em 0.5em;
+        }
+
+        /* ===========================================
+         * Section headers for print
+         * =========================================== */
+
+        /* Add visual separator between sections */
+        .space-y-12 > div,
+        .space-y-16 > div {
+          padding-top: 1em !important;
+          margin-top: 0 !important;
+          border-top: 2px solid #333 !important;
+        }
+
+        .space-y-12 > div:first-child,
+        .space-y-16 > div:first-child {
+          border-top: none !important;
+          padding-top: 0 !important;
+        }
+
+        /* Hide collapse buttons */
+        .btn-circle {
+          display: none !important;
+        }
+
+        /* Ensure section badge is visible */
+        .bg-primary\\/10 {
+          background: #f0f0f0 !important;
+          border: 1px solid #ccc !important;
         }
 
         /* ===========================================

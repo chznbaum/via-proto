@@ -266,7 +266,7 @@ export default async function PathDetailPage({
 
             {/* Featured Image */}
             <div
-              className="mt-4 h-64 w-full rounded-lg overflow-hidden relative sm:mt-6 sm:h-100 lg:h-120"
+              className="featured-image mt-4 h-64 w-full rounded-lg overflow-hidden relative sm:mt-6 sm:h-100 lg:h-120"
               style={fallbackStyle}>
               {unsplashImage && (
                 <img
