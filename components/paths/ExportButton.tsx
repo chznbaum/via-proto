@@ -25,13 +25,12 @@ const exportFormats: Array<{
     icon: "lucide--braces",
     description: "Machine-readable format",
   },
-  // PDF will be added later
-  // {
-  //   format: "pdf",
-  //   label: "PDF",
-  //   icon: "lucide--file-down",
-  //   description: "Print-friendly document",
-  // },
+  {
+    format: "pdf",
+    label: "PDF",
+    icon: "lucide--printer",
+    description: "Print-friendly document",
+  },
 ];
 
 export function ExportButton({ path }: ExportButtonProps) {
@@ -40,19 +39,25 @@ export function ExportButton({ path }: ExportButtonProps) {
   const handleExport = async (format: ExportFormat) => {
     setIsExporting(format);
 
+    // Close dropdown by blurring the active element
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+
     // Small delay for visual feedback
     await new Promise((resolve) => setTimeout(resolve, 100));
 
     try {
-      exportPath(path, format);
+      if (format === "pdf") {
+        // PDF export via browser print dialog
+        window.print();
+      } else {
+        exportPath(path, format);
+      }
     } catch (error) {
       console.error("Export failed:", error);
     } finally {
       setIsExporting(null);
-      // Close dropdown by blurring the active element
-      if (document.activeElement instanceof HTMLElement) {
-        document.activeElement.blur();
-      }
     }
   };
 

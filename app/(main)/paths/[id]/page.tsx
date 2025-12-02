@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
 import { ShareSheet } from '@/components/paths/ShareSheet';
 import { ExportButton } from '@/components/paths/ExportButton';
+import { PrintStyles } from '@/components/paths/PrintStyles';
 import { SkillsDisplay } from '@/components/paths/SkillsDisplay';
 import { SectionTimeline } from '@/components/paths/SectionTimeline';
 import { TagsSection } from '@/components/paths/TagsSection';
@@ -243,20 +244,22 @@ export default async function PathDetailPage({
   const skillLevelColor =
     skillLevelColors[path.skill_level as keyof typeof skillLevelColors] || 'badge-neutral';
 
-  const fullUrl = `${config.domainName}/paths/${id}`;
+  const fullUrl = `https://${config.domainName}/paths/${id}`;
   const unsplashImage = path.unsplash_images;
   const fallbackStyle = unsplashImage
     ? undefined
     : { background: getFallbackGradient(path.topic.name || path.title) };
 
   return (
-    <main className="min-h-screen pt-20 md:pt-24">
+    <>
+      <PrintStyles />
+      <main className="min-h-screen pt-20 md:pt-24">
         <div className="group/section container pb-8 sm:pt-4 xl:pb-16 2xl:pb-24">
           <div className="lg:mx-16 xl:mx-32 2xl:mx-48">
             {/* Back Link */}
             <Link
               href="/explore"
-              className="text-base-content/50 hover:text-base-content flex items-center gap-2 text-sm font-medium transition-all">
+              className="print-hidden text-base-content/50 hover:text-base-content flex items-center gap-2 text-sm font-medium transition-all">
               <span className="iconify lucide--arrow-left size-4"></span>
               Back to explore
             </Link>
@@ -274,7 +277,7 @@ export default async function PathDetailPage({
               )}
             </div>
             {unsplashImage && (
-              <p className="text-xs text-base-content/50 mt-2">
+              <p className="print-hidden text-xs text-base-content/50 mt-2">
                 Photo by{' '}
                 <a
                   href={unsplashImage.photographer_url}
@@ -346,7 +349,7 @@ export default async function PathDetailPage({
                     <p className="text-base-content/80 -mt-1 text-sm">Creator</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="print-hidden flex items-center gap-4">
                   {/* Favorites - hidden until teams enabled */}
                   {path._teamsEnabled && (
                     <div className="flex items-center gap-0.5">
@@ -441,12 +444,19 @@ export default async function PathDetailPage({
 
             {/* Related Paths */}
             {relatedPaths.length > 0 && (
-              <div className="mt-6 sm:mt-8">
+              <div className="print-hidden mt-6 sm:mt-8">
                 <RelatedPaths paths={relatedPaths} />
               </div>
             )}
+
+            {/* Print-only footer with source URL */}
+            <div className="print-only mt-8 pt-4 border-t border-base-300 text-center text-sm text-base-content/60">
+              <p>Exported from ViaProto</p>
+              <p className="text-xs">{fullUrl}</p>
+            </div>
           </div>
         </div>
-    </main>
+      </main>
+    </>
   );
 }

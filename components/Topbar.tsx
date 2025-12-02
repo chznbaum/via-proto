@@ -42,7 +42,7 @@ export const Topbar = () => {
 
     return (
         <div
-            className="group fixed start-0 end-0 top-0 z-20 flex md:top-4 md:justify-center"
+            className="print-hidden group fixed start-0 end-0 top-0 z-20 flex md:top-4 md:justify-center"
             data-at-top={scrollPosition < 30}>
             <div className="md:bg-base-100 bg-base-100/90 flex h-16 items-center gap-6 px-4 backdrop-blur-xs transition-all duration-500 group-data-[at-top=false]:shadow group-data-[at-top=true]:bg-transparent hover:group-data-[at-top=false]:shadow-lg max-md:grow max-md:justify-between md:rounded-full md:px-8 lg:gap-12 xl:gap-20">
                 <div className="flex items-center gap-2">

@@ -9,7 +9,7 @@ import { trackEvent } from "@/components/SwetrixAnalytics";
 
 const Footer = () => {
   return (
-    <div className="group/section pt-4 md:pt-6 lg:pt-8 2xl:pt-12">
+    <div className="print-hidden group/section pt-4 md:pt-6 lg:pt-8 2xl:pt-12">
       {/* Elevated CTA Section */}
       <div className="-mb-32 flex items-center justify-center">
         <div className="bg-base-100 contrast-box group relative flex max-w-xs flex-col items-center overflow-hidden rounded-lg p-4 text-center sm:w-5xl sm:max-w-4xl md:p-6 xl:p-10" data-theme="dark">
