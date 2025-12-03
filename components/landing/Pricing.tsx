@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ParityDealsProvider, PDBanner } from "@paritydeals/react-promotions-ui";
 import config from "@/config";
 import ButtonCheckout from "@/components/ButtonCheckout";
 import { TeamSizeSlider } from "./TeamSizeSlider";
@@ -15,19 +16,32 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
     const proPlan = config.stripe.plans.find(p => p.tier === 'pro' && p.billingPeriod === billingPeriod);
     const teamPlan = config.stripe.plans.find(p => p.tier === 'team' && p.billingPeriod === billingPeriod);
 
-    return (
-        <div className="group/section relative z-10 container mx-auto max-w-7xl py-8 md:py-12 lg:py-16 2xl:py-28" id="pricing">
-            <p className="group-hover/section:text-primary text-base-content/75 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
-                Affordable
-            </p>
-            <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Flexible Learning Plans</h2>
-            <div className="mt-2 flex justify-center text-center">
-                <p className="text-base-content/80 max-w-lg">
-                    Choose a plan that fits your learning journey, with transparent pricing and AI-powered curation.
-                </p>
-            </div>
+    const parityDealsProductId = process.env.NEXT_PUBLIC_PARITYDEALS_PRODUCT_ID;
 
-            {/* Billing Toggle */}
+    return (
+        <ParityDealsProvider
+            productId={parityDealsProductId || ""}
+            environment={process.env.NODE_ENV === "development" ? "sandbox" : "production"}
+            baseCurrencyCode="USD"
+            baseCurrencySymbol="$"
+        >
+            <div className="group/section relative z-10 container mx-auto max-w-7xl py-8 md:py-12 lg:py-16 2xl:py-28" id="pricing">
+                <p className="group-hover/section:text-primary text-base-content/75 text-center text-[12px] font-medium tracking-[1px] uppercase transition-all duration-300 group-hover/section:tracking-[2px]">
+                    Affordable
+                </p>
+                <h2 className="mt-2 text-center text-2xl font-semibold sm:text-3xl">Flexible Learning Plans</h2>
+                <div className="mt-2 flex justify-center text-center">
+                    <p className="text-base-content/80 max-w-lg">
+                        Choose a plan that fits your learning journey, with transparent pricing and AI-powered curation.
+                    </p>
+                </div>
+
+                {/* PPP Discount Banner */}
+                <div className="mt-6 flex justify-center">
+                    <PDBanner className="alert alert-info max-w-xl" />
+                </div>
+
+                {/* Billing Toggle */}
             <div className="mt-8 flex items-center justify-center xl:mt-12">
                 <div className="tabs tabs-boxed tabs-sm border-base-300 relative gap-0.5 rounded-full border bg-transparent">
                     <label className="tab hover:bg-base-200/60 has-[:checked]:!bg-base-200 gap-0 !rounded-full bg-transparent transition-all duration-300">
@@ -249,5 +263,6 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                 )}
             </div>
         </div>
+    </ParityDealsProvider>
     );
 };
