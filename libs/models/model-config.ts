@@ -158,6 +158,18 @@ export const MODEL_CATALOG: ModelConfig[] = [
 
   // Anthropic Claude
   {
+    id: "anthropic/claude-opus-4.5",
+    name: "Claude Opus 4.5",
+    provider: "Anthropic",
+    minimumTier: "pro",
+    costTier: "premium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description:
+      "Most intelligent model with 200K context, exceptional for complex reasoning and agentic workflows",
+    featured: true,
+  },
+  {
     id: "anthropic/claude-sonnet-4.5",
     name: "Claude Sonnet 4.5",
     provider: "Anthropic",
@@ -391,7 +403,7 @@ export function getDefaultModelForTier(tier: SubscriptionTier): string {
   if (tier === "free") {
     return "deepseek/deepseek-chat-v3.1";
   }
-  return "anthropic/claude-sonnet-4.5";
+  return "anthropic/claude-opus-4.5";
 }
 
 /**
