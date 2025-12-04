@@ -4,6 +4,8 @@ import { SupabaseClient } from "@supabase/supabase-js";
 import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
+import { createTeamAccount } from "@/libs/teams";
+import { createPersonalAccount, userHasProfile } from "@/libs/accounts";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2023-08-16",
@@ -53,31 +55,82 @@ export async function POST(req: NextRequest) {
         const customerId = session?.customer as string;
         const priceId = session?.line_items?.data[0]?.price.id;
         const quantity = session?.line_items?.data[0]?.quantity || 1;
-        const accountId = stripeObject.client_reference_id; // This is now account_id
+        const clientRefId = stripeObject.client_reference_id;
         const metadata = stripeObject.metadata || {};
         const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
 
-        if (!plan || !accountId) {
-          console.error('Missing plan or account_id in checkout session');
+        if (!plan || !clientRefId) {
+          console.error('Missing plan or client_reference_id in checkout session');
           break;
         }
 
         // Get the subscription ID if it's a subscription
         const subscriptionId = session?.subscription as string | null;
 
-        // Update account with subscription details
-        await supabase
-          .from("accounts")
-          .update({
-            stripe_customer_id: customerId,
-            stripe_subscription_id: subscriptionId,
-            subscription_tier: plan.tier,
-            subscription_status: 'active',
-            seat_count: quantity,
-            cycle_start_date: new Date().toISOString(),
-            paths_generated_this_cycle: 0, // Reset counter on new subscription
-          })
-          .eq("id", accountId);
+        // Check if this is a team signup (new team account creation)
+        if (clientRefId.startsWith('team_signup:') || metadata.checkout_type === 'team_signup') {
+          const userId = metadata.user_id || clientRefId.split(':')[1];
+
+          if (!userId) {
+            console.error('Missing user_id for team signup');
+            break;
+          }
+
+          // 1. Ensure user has a personal account (should exist from signup, but create if not)
+          const hasProfile = await userHasProfile(userId, supabase);
+
+          if (!hasProfile) {
+            // Get user email from Stripe customer
+            const customer = await stripe.customers.retrieve(customerId);
+            const customerEmail = 'email' in customer ? customer.email : null;
+
+            if (customerEmail) {
+              console.log(`Creating personal account for user ${userId} during team signup`);
+              await createPersonalAccount(
+                userId,
+                customerEmail,
+                null, // name will be updated later
+                supabase
+              );
+            } else {
+              console.error('Cannot create personal account: no email found');
+              break;
+            }
+          }
+
+          // 2. Create the team account
+          console.log(`Creating team account for user ${userId} with ${quantity} seats`);
+          const teamAccount = await createTeamAccount(
+            {
+              userId,
+              name: 'My Team', // Default name, user will rename in setup wizard
+              seatCount: quantity,
+              stripeCustomerId: customerId,
+              stripeSubscriptionId: subscriptionId || undefined,
+              needsSetup: true, // Triggers welcome dialog in dashboard
+            },
+            supabase
+          );
+
+          console.log(`Team account created: ${teamAccount.id}`);
+        } else {
+          // Standard account upgrade (pro plan or existing team upgrade)
+          const accountId = clientRefId;
+
+          // Update account with subscription details
+          await supabase
+            .from("accounts")
+            .update({
+              stripe_customer_id: customerId,
+              stripe_subscription_id: subscriptionId,
+              subscription_tier: plan.tier,
+              subscription_status: 'active',
+              seat_count: quantity,
+              cycle_start_date: new Date().toISOString(),
+              paths_generated_this_cycle: 0, // Reset counter on new subscription
+            })
+            .eq("id", accountId);
+        }
 
         // Extra: send email with user link, product page, etc...
         // try {

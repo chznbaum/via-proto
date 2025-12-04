@@ -17,7 +17,7 @@ const config = {
   },
   stripe: {
     // Feature flags
-    teams_enabled: false, // Set to true when ready to allow team plan purchases
+    teams_enabled: true, // Teams feature is now available
     plans: [
       {
         // Pro Monthly

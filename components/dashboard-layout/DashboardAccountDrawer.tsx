@@ -6,6 +6,14 @@ import Link from "next/link";
 import { User } from "@supabase/supabase-js";
 import { createClient } from "@/libs/supabase/client";
 import apiClient from "@/libs/api";
+import { AccountSwitcher } from "./AccountSwitcher";
+
+interface Account {
+  id: string;
+  name: string;
+  account_type: string;
+  subscription_tier: string;
+}
 
 export function DashboardAccountDrawer() {
   const supabase = createClient();
@@ -15,6 +23,8 @@ export function DashboardAccountDrawer() {
   const [displayName, setDisplayName] = useState<string>("");
   const [userEmail, setUserEmail] = useState<string>("");
   const [planTier, setPlanTier] = useState<string>("free");
+  const [accounts, setAccounts] = useState<Account[]>([]);
+  const [currentAccountId, setCurrentAccountId] = useState<string>("");
 
   // Check if teams feature is enabled (client-side check for visibility)
   const [teamsEnabled, setTeamsEnabled] = useState(false);
@@ -46,6 +56,7 @@ export function DashboardAccountDrawer() {
         if (profile) {
           setAvatarUrl(profile.avatar_url);
           setDisplayName(profile.name || user.email?.split("@")[0] || "Account");
+          setCurrentAccountId(profile.default_account_id || "");
 
           // Fetch account subscription tier
           if (profile.default_account_id) {
@@ -57,6 +68,24 @@ export function DashboardAccountDrawer() {
 
             if (account) {
               setPlanTier(account.subscription_tier);
+            }
+          }
+
+          // Fetch all user accounts for the switcher
+          const { data: memberships } = await supabase
+            .from("account_users")
+            .select("account_id")
+            .eq("user_id", user.id);
+
+          if (memberships && memberships.length > 0) {
+            const accountIds = memberships.map((m) => m.account_id);
+            const { data: userAccounts } = await supabase
+              .from("accounts")
+              .select("id, name, account_type, subscription_tier")
+              .in("id", accountIds);
+
+            if (userAccounts) {
+              setAccounts(userAccounts);
             }
           }
         } else {
@@ -142,14 +171,27 @@ export function DashboardAccountDrawer() {
               </div>
             </div>
 
+            {/* Account Switcher - show when user has multiple accounts */}
+            {accounts.length > 1 && (
+              <div className="border-base-300 mt-4 border-t border-dashed px-4 pt-4">
+                <p className="text-xs font-medium text-base-content/60 uppercase tracking-wider mb-2">
+                  Switch Account
+                </p>
+                <AccountSwitcher
+                  accounts={accounts}
+                  currentAccountId={currentAccountId}
+                />
+              </div>
+            )}
+
             <div className="border-base-300 mt-4 grow overflow-auto border-t border-dashed px-2 sm:mt-6">
               <ul className="menu w-full p-2">
                 <li className="menu-title">Account</li>
                 {teamsEnabled && (
                   <li>
-                    <Link href="/dashboard/settings">
-                      <span className="iconify lucide--user size-4.5" />
-                      <span>Profile Settings</span>
+                    <Link href="/account">
+                      <span className="iconify lucide--settings size-4.5" />
+                      <span>Account Settings</span>
                     </Link>
                   </li>
                 )}

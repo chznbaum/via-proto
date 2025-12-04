@@ -65,6 +65,7 @@ export const SectionsResourcesResponseSchema = z.object({
  */
 export const PathGenerationRequestSchema = z.object({
   topic_id: z.string().uuid(),
+  account_id: z.string().uuid().optional(), // Target account (defaults to user's default account)
   goals: z.string().max(2000).optional(),
   is_public: z.boolean().optional().default(false),
   model_id: z.string().optional(), // User-selected model ID

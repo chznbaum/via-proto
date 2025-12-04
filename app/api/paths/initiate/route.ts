@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/libs/supabase/server';
-import { getUserDefaultAccount } from '@/libs/auth';
+import { getUserDefaultAccount, getAccountWithRole } from '@/libs/auth';
 import { PathGenerationRequestSchema } from '@/libs/validation/path-schema';
 import { ZodError } from 'zod';
 import { addJob } from '@/libs/jobs/queue';
@@ -30,17 +30,33 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const validatedInput = PathGenerationRequestSchema.parse(body);
 
-    // 3. Get user's default account with tier information
-    const accountData = await getUserDefaultAccount(user.id);
+    // 3. Get target account - either specified account_id or user's default
+    let account;
 
-    if (!accountData) {
-      return NextResponse.json(
-        { error: 'No active account found' },
-        { status: 400 }
-      );
+    if (validatedInput.account_id) {
+      // User specified an account - verify they're a member
+      try {
+        const accountWithRole = await getAccountWithRole(user.id, validatedInput.account_id);
+        account = accountWithRole.account;
+      } catch {
+        return NextResponse.json(
+          { error: 'You are not a member of this account' },
+          { status: 403 }
+        );
+      }
+    } else {
+      // Use user's default account
+      const accountData = await getUserDefaultAccount(user.id);
+
+      if (!accountData) {
+        return NextResponse.json(
+          { error: 'No active account found' },
+          { status: 400 }
+        );
+      }
+
+      account = accountData.account;
     }
-
-    const { account } = accountData;
 
     // 4. Check rate limits based on subscription tier
     const currentDate = new Date();

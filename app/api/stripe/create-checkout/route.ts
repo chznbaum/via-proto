@@ -83,26 +83,35 @@ export async function POST(req: NextRequest) {
       .eq("id", user.id)
       .single();
 
+    // For team plans, we need to create a NEW team account (not upgrade personal)
+    // For pro plans, we upgrade the user's existing personal account
+    const isTeamPlan = plan.tier === "team";
+
     const stripeSessionURL = await createCheckout({
       priceId,
       mode,
       successUrl,
       cancelUrl,
-      // Pass account_id in metadata so webhook knows which account to update
-      clientReferenceId: account.id,
+      // For team plans, use special prefix to indicate new team creation
+      // For other plans, use account ID to upgrade existing account
+      clientReferenceId: isTeamPlan
+        ? `team_signup:${user.id}`
+        : account.id,
       user: {
         email: profile?.email,
-        // Use account-level customer ID
-        customerId: account.stripe_customer_id,
+        // For team plans, don't use existing customer ID (creates new customer for team)
+        // For pro upgrades, use account-level customer ID
+        customerId: isTeamPlan ? undefined : account.stripe_customer_id,
       },
       // For Team plans, pass the seat count as quantity
       ...(plan.perSeat && { quantity }),
       // Pass metadata for webhook processing
       metadata: {
-        account_id: account.id,
+        account_id: isTeamPlan ? "new_team" : account.id,
         user_id: user.id,
         tier: plan.tier,
         seat_count: quantity.toString(),
+        checkout_type: isTeamPlan ? "team_signup" : "upgrade",
       },
       // If you send coupons from the frontend, you can pass it here
       // couponId: body.couponId,

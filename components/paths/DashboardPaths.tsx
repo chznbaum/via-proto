@@ -9,6 +9,15 @@ import { WelcomeHeader } from '@/components/dashboard/WelcomeHeader';
 import { toast } from 'react-hot-toast';
 import { trackEvent } from '@/components/SwetrixAnalytics';
 
+interface Account {
+  id: string;
+  name: string;
+  account_type: "personal" | "team";
+  subscription_tier: string;
+  seat_count: number;
+  paths_this_month: number;
+}
+
 interface DashboardPathsProps {
   userId: string;
   accountId: string;
@@ -16,6 +25,7 @@ interface DashboardPathsProps {
   pathsGeneratedThisCycle: number;
   accountType: string;
   seatCount: number;
+  accounts?: Account[];
 }
 
 interface GeneratingPath {
@@ -32,6 +42,7 @@ export default function DashboardPaths({
   pathsGeneratedThisCycle,
   accountType,
   seatCount,
+  accounts,
 }: DashboardPathsProps) {
   // Check if teams feature is enabled
   const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
@@ -245,6 +256,8 @@ export default function DashboardPaths({
               onSuccess={startPathGeneration}
               onCancel={() => setShowCreateForm(false)}
               subscriptionTier={subscriptionTier as 'free' | 'pro' | 'team'}
+              accounts={accounts}
+              defaultAccountId={accountId}
             />
           </div>
           <div

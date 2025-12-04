@@ -7,7 +7,12 @@ import ButtonCheckout from "@/components/ButtonCheckout";
 import { TeamSizeSlider } from "./TeamSizeSlider";
 import { trackEvent } from "@/components/SwetrixAnalytics";
 
-export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsEnabled?: boolean }) => {
+interface PricingProps {
+    teamsEnabled?: boolean;
+    isLoggedIn?: boolean;
+}
+
+export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled, isLoggedIn = false }: PricingProps) => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
     const [teamSeats, setTeamSeats] = useState(2);
 
@@ -173,10 +178,21 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                                 ))}
                             </div>
                             <div className="mt-auto pt-6">
-                                <ButtonCheckout
-                                    priceId={proPlan.priceId}
-                                    mode="subscription"
-                                />
+                                {isLoggedIn ? (
+                                    <ButtonCheckout
+                                        priceId={proPlan.priceId}
+                                        mode="subscription"
+                                    />
+                                ) : (
+                                    <a
+                                        href="/login?redirect=/upgrade"
+                                        className="btn btn-primary btn-block group"
+                                        onClick={() => trackEvent("cta.pricing.sign_in_pro")}
+                                    >
+                                        <span className="iconify lucide--log-in size-4"></span>
+                                        Sign in to upgrade
+                                    </a>
+                                )}
                             </div>
                         </div>
                     )}
@@ -243,19 +259,28 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                                 Experience the full suite with team collaboration, advanced analytics, priority support, and custom onboarding to power your team's learning.
                             </p>
                             <div className="flex items-end justify-end gap-2.5">
-                                {teamsEnabled ? (
-                                    <ButtonCheckout
-                                        priceId={teamPlan.priceId}
-                                        mode="subscription"
-                                        seatCount={teamSeats}
-                                    />
-                                ) : (
+                                {!teamsEnabled ? (
                                     <button
                                         className="btn btn-primary btn-block group"
                                         disabled
                                     >
                                         Coming Soon
                                     </button>
+                                ) : isLoggedIn ? (
+                                    <ButtonCheckout
+                                        priceId={teamPlan.priceId}
+                                        mode="subscription"
+                                        seatCount={teamSeats}
+                                    />
+                                ) : (
+                                    <a
+                                        href="/login?redirect=/upgrade"
+                                        className="btn btn-primary btn-block group"
+                                        onClick={() => trackEvent("cta.pricing.sign_in_team")}
+                                    >
+                                        <span className="iconify lucide--log-in size-4"></span>
+                                        Sign in to upgrade
+                                    </a>
                                 )}
                             </div>
                         </div>

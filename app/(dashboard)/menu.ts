@@ -29,7 +29,7 @@ export const getDashboardMenuItems = (): ISidebarMenuItem[] => {
     },
   ];
 
-  // Only show Settings when teams are enabled
+  // Only show Account settings when teams are enabled
   if (teamsEnabled) {
     items.push(
       {
@@ -38,10 +38,10 @@ export const getDashboardMenuItems = (): ISidebarMenuItem[] => {
         label: "Account",
       },
       {
-        id: "settings",
+        id: "account",
         icon: "lucide--settings",
         label: "Settings",
-        url: "/dashboard/settings",
+        url: "/account",
       }
     );
   }

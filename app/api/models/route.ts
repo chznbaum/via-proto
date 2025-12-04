@@ -42,25 +42,32 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const viewMode = searchParams.get('view') || 'all'; // 'all', 'featured', or 'grouped'
 
+    // Allow overriding tier via query param (for account selection in forms)
+    // This is safe because the backend validates model access on path creation
+    const tierParam = searchParams.get('tier');
+    const effectiveTier = tierParam && ['free', 'pro', 'team'].includes(tierParam)
+      ? tierParam
+      : account.subscription_tier;
+
     let models;
     let groupedByProvider;
-    const defaultModelId = getDefaultModelForTier(account.subscription_tier);
+    const defaultModelId = getDefaultModelForTier(effectiveTier);
 
     switch (viewMode) {
       case 'featured':
-        models = getFeaturedModelsForTier(account.subscription_tier);
+        models = getFeaturedModelsForTier(effectiveTier);
         break;
       case 'grouped':
-        groupedByProvider = getModelsByProvider(account.subscription_tier);
+        groupedByProvider = getModelsByProvider(effectiveTier);
         break;
       case 'all':
       default:
-        models = getModelsForTier(account.subscription_tier);
+        models = getModelsForTier(effectiveTier);
         break;
     }
 
     return NextResponse.json({
-      tier: account.subscription_tier,
+      tier: effectiveTier,
       defaultModelId,
       ...(groupedByProvider ? { modelsByProvider: groupedByProvider } : { models }),
     });

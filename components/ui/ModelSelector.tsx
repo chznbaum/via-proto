@@ -40,7 +40,9 @@ export function ModelSelector({
     async function fetchModels() {
       try {
         setLoading(true);
-        const response = await fetch(`/api/models?view=${viewMode === "grouped" ? "grouped" : viewMode}`);
+        const viewParam = viewMode === "grouped" ? "grouped" : viewMode;
+        const tierParam = tier ? `&tier=${tier}` : "";
+        const response = await fetch(`/api/models?view=${viewParam}${tierParam}`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch models");
@@ -49,17 +51,22 @@ export function ModelSelector({
         const data: ModelsResponse = await response.json();
         setDefaultModelId(data.defaultModelId);
 
+        let allModels: ModelConfig[] = [];
         if (data.modelsByProvider) {
           setGroupedModels(data.modelsByProvider);
           // Flatten for the dropdown
-          const allModels = Object.values(data.modelsByProvider).flat();
+          allModels = Object.values(data.modelsByProvider).flat();
           setModels(allModels);
         } else if (data.models) {
           setModels(data.models);
+          allModels = data.models;
         }
 
-        // Set default value if no value is provided
-        if (!value && data.defaultModelId) {
+        // Check if currently selected model is still available
+        const selectedStillAvailable = value && allModels.some(m => m.id === value);
+
+        // Set default value if no value is provided OR if selected model is no longer available
+        if (!selectedStillAvailable && data.defaultModelId) {
           onChange(data.defaultModelId);
         }
       } catch (err) {
@@ -71,7 +78,7 @@ export function ModelSelector({
     }
 
     fetchModels();
-  }, [viewMode, value, onChange]);
+  }, [viewMode, tier]); // Re-fetch when tier changes
 
   const selectedModel = models.find((m) => m.id === value);
 

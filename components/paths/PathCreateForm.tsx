@@ -1,20 +1,33 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import TopicTypeahead, { Topic } from './TopicTypeahead';
 import { GroupedModelSelector } from '@/components/ui/ModelSelector';
+import { AccountSelector } from './AccountSelector';
+
+interface Account {
+  id: string;
+  name: string;
+  account_type: "personal" | "team";
+  subscription_tier: string;
+  seat_count: number;
+  paths_this_month: number;
+}
 
 interface PathCreateFormProps {
   onSuccess?: (formData: any) => void;
   onCancel?: () => void;
   subscriptionTier: 'free' | 'pro' | 'team';
+  accounts?: Account[];
+  defaultAccountId?: string;
 }
 
 export default function PathCreateForm({
   onSuccess,
   onCancel,
   subscriptionTier,
+  accounts,
+  defaultAccountId,
 }: PathCreateFormProps) {
   const [error, setError] = useState<string | null>(null);
 
@@ -23,7 +36,19 @@ export default function PathCreateForm({
     topicName: '',
     is_public: false,
     model_id: undefined as string | undefined,
+    account_id: defaultAccountId || '',
   });
+
+  // Update account_id when defaultAccountId changes
+  useEffect(() => {
+    if (defaultAccountId && !formData.account_id) {
+      setFormData(prev => ({ ...prev, account_id: defaultAccountId }));
+    }
+  }, [defaultAccountId, formData.account_id]);
+
+  // Get the selected account's tier for visibility and model rules
+  const selectedAccount = accounts?.find(a => a.id === formData.account_id);
+  const effectiveTier = selectedAccount?.subscription_tier || subscriptionTier;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +67,12 @@ export default function PathCreateForm({
         topic_id: formData.topic_id,
       };
 
-      if (subscriptionTier !== 'free') {
+      // Include account_id if user has multiple accounts and selected one
+      if (formData.account_id && accounts && accounts.length > 1) {
+        requestBody.account_id = formData.account_id;
+      }
+
+      if (effectiveTier !== 'free') {
         requestBody.is_public = formData.is_public;
       }
 
@@ -86,6 +116,24 @@ export default function PathCreateForm({
       )}
 
       <div className="grid grid-cols-1 gap-4 md:gap-6">
+        {/* Account Selection - only show when user has multiple accounts */}
+        {accounts && accounts.length > 1 && (
+          <div className="card bg-base-100 shadow">
+            <div className="card-body">
+              <div className="card-title">Account</div>
+              <div className="mt-2">
+                <AccountSelector
+                  accounts={accounts}
+                  selectedAccountId={formData.account_id}
+                  onSelect={(accountId) =>
+                    setFormData({ ...formData, account_id: accountId })
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Topic Selection */}
         <div className="card bg-base-100 shadow">
           <div className="card-body">
@@ -120,7 +168,7 @@ export default function PathCreateForm({
             <GroupedModelSelector
               value={formData.model_id}
               onChange={(modelId) => setFormData({ ...formData, model_id: modelId })}
-              tier={subscriptionTier}
+              tier={effectiveTier as 'free' | 'pro' | 'team'}
             />
           </div>
         </div>
@@ -130,7 +178,7 @@ export default function PathCreateForm({
           <div className="card-body">
             <div className="card-title">Visibility</div>
             <div className="mt-2">
-              {subscriptionTier === 'free' ? (
+              {effectiveTier === 'free' ? (
                 <div className="alert alert-info">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
