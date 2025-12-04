@@ -309,7 +309,6 @@ export async function generateLearningPath(params: {
         { role: "user", content: userPrompt },
       ],
       temperature: 0.7,
-      response_format: { type: "json_object" }, // Enforce JSON output
       // OpenRouter-specific: Enable web search for real resources
       // @ts-ignore - OpenRouter extension
       transforms: ["web-search"],

@@ -317,7 +317,6 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
           model: modelToUse,
           messages: [{ role: 'user', content: prompt }],
           temperature: 0.7, // Higher temperature for more flexibility in finding replacements
-          response_format: { type: 'json_object' },
           // @ts-ignore - OpenRouter extension
           transforms: ['web-search'],
         });

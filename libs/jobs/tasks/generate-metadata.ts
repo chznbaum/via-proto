@@ -267,7 +267,6 @@ export const generateMetadataTask: Task = async (payload, helpers) => {
         { role: 'user', content: userPrompt },
       ],
       temperature: 0.7,
-      response_format: { type: 'json_object' },
     });
 
     const responseText = completion.choices[0]?.message?.content;

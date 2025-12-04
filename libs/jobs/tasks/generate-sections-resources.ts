@@ -538,7 +538,6 @@ export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
         { role: 'user', content: userPrompt },
       ],
       temperature: 0.4, // Slightly higher than research for creative organization
-      response_format: { type: 'json_object' },
       // NO web-search transform needed - we're organizing existing resources
     });
 

@@ -180,7 +180,7 @@ export default function DashboardPaths({
       setShowCreateForm(false);
 
       toast.success('Path generation started!');
-      trackEvent("path.generation_started", { unique: true });
+      trackEvent("path.generation_started");
 
       // Step 2: Start polling for status
       const interval = setInterval(() => {

@@ -322,7 +322,6 @@ export const researchResourcesTask: Task = async (payload, helpers) => {
         { role: 'user', content: prompt },
       ],
       temperature: 0.7, // Higher temperature for better search tool invocation and discovery
-      response_format: { type: 'json_object' },
       // OpenRouter-specific: Enable web search for resource discovery
       // @ts-ignore - OpenRouter extension
       transforms: ['web-search'],
