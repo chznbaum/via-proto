@@ -18,11 +18,142 @@ export interface LinkMetadata {
 }
 
 /**
+ * YouTube oEmbed response structure
+ */
+interface YouTubeOEmbedResponse {
+  title: string;
+  author_name: string;
+  author_url: string;
+  thumbnail_url: string;
+  thumbnail_width: number;
+  thumbnail_height: number;
+  html: string;
+}
+
+/**
+ * Check if URL is a YouTube video URL and extract video ID
+ */
+function getYouTubeVideoId(url: string): string | null {
+  try {
+    const urlObj = new URL(url);
+    const hostname = urlObj.hostname.toLowerCase().replace(/^www\./, '');
+
+    // youtube.com/watch?v=VIDEO_ID
+    if (hostname === 'youtube.com' && urlObj.pathname === '/watch') {
+      return urlObj.searchParams.get('v');
+    }
+
+    // youtube.com/embed/VIDEO_ID
+    if (hostname === 'youtube.com' && urlObj.pathname.startsWith('/embed/')) {
+      return urlObj.pathname.split('/embed/')[1]?.split(/[?#]/)[0] || null;
+    }
+
+    // youtube.com/v/VIDEO_ID
+    if (hostname === 'youtube.com' && urlObj.pathname.startsWith('/v/')) {
+      return urlObj.pathname.split('/v/')[1]?.split(/[?#]/)[0] || null;
+    }
+
+    // youtu.be/VIDEO_ID
+    if (hostname === 'youtu.be') {
+      return urlObj.pathname.slice(1).split(/[?#]/)[0] || null;
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Fetch YouTube video metadata via oEmbed API
+ * This is more reliable than scraping as YouTube blocks bot-like requests
+ */
+async function fetchYouTubeMetadata(
+  url: string,
+  timeout: number
+): Promise<LinkMetadata> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const oembedUrl = `https://www.youtube.com/oembed?url=${encodeURIComponent(url)}&format=json`;
+
+    const response = await fetch(oembedUrl, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+      },
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    if (response.status === 404 || response.status === 400) {
+      return {
+        url,
+        status: 'broken',
+        statusCode: response.status,
+        error: 'Video not found or unavailable',
+      };
+    }
+
+    if (response.status === 401 || response.status === 403) {
+      return {
+        url,
+        status: 'requires_login',
+        statusCode: response.status,
+        error: 'Video is private or restricted',
+      };
+    }
+
+    if (!response.ok) {
+      return {
+        url,
+        status: 'broken',
+        statusCode: response.status,
+        error: `YouTube API error: ${response.status}`,
+      };
+    }
+
+    const data: YouTubeOEmbedResponse = await response.json();
+
+    // Get higher quality thumbnail if available
+    const thumbnailUrl = data.thumbnail_url?.replace('hqdefault', 'maxresdefault') || data.thumbnail_url;
+
+    return {
+      url,
+      status: 'active',
+      statusCode: 200,
+      ogTitle: data.title,
+      ogDescription: `Video by ${data.author_name}`,
+      ogImage: thumbnailUrl,
+      title: data.title,
+      faviconUrl: 'https://www.youtube.com/favicon.ico',
+    };
+  } catch (error) {
+    clearTimeout(timeoutId);
+
+    if (error instanceof Error && error.name === 'AbortError') {
+      return {
+        url,
+        status: 'broken',
+        error: 'Request timeout',
+      };
+    }
+
+    return {
+      url,
+      status: 'broken',
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
  * Domains that should always have OpenGraph data if the link is working
+ * Note: YouTube is handled separately via oEmbed API
  */
 const EXPECTS_OG_DOMAINS = [
-  'youtube.com',
-  'youtu.be',
   'vimeo.com',
   'twitter.com',
   'x.com',
@@ -189,6 +320,12 @@ export async function fetchLinkMetadata(
   options: FetchOptions = {}
 ): Promise<LinkMetadata> {
   const { timeout = DEFAULT_TIMEOUT, userAgent = DEFAULT_USER_AGENT } = options;
+
+  // Handle YouTube URLs via oEmbed API (more reliable than HTML scraping)
+  const youtubeVideoId = getYouTubeVideoId(url);
+  if (youtubeVideoId) {
+    return fetchYouTubeMetadata(url, timeout);
+  }
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
