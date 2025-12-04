@@ -15,7 +15,7 @@ import config from '@/config';
 
 async function getPath(id: string) {
   const supabase = await createClient();
-  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
+  const commentsEnabled = process.env.COMMENTS_ENABLED === 'true';
 
   const { data: path, error } = await supabase
     .from('learning_paths')
@@ -84,8 +84,8 @@ async function getPath(id: string) {
     .then(() => {})
     .catch((err) => console.error('Failed to increment view count:', err));
 
-  // Add teams enabled flag to path data
-  return { ...path, _teamsEnabled: teamsEnabled };
+  // Add comments enabled flag to path data
+  return { ...path, _commentsEnabled: commentsEnabled };
 }
 
 async function getForkedFromPath(forkedFromPathId: string | null, userId: string | null) {
@@ -422,7 +422,7 @@ export default async function PathDetailPage({
                 </div>
                 <div className="print-hidden flex items-center gap-4">
                   {/* Favorites - hidden until teams enabled */}
-                  {path._teamsEnabled && (
+                  {path._commentsEnabled && (
                     <div className="flex items-center gap-0.5">
                       <button className="btn btn-sm btn-ghost btn-circle">
                         <span className="iconify lucide--heart size-4"></span>
@@ -431,7 +431,7 @@ export default async function PathDetailPage({
                     </div>
                   )}
                   {/* Comments - hidden until teams enabled */}
-                  {path._teamsEnabled && (
+                  {path._commentsEnabled && (
                     <div className="flex items-center gap-0.5">
                       <button className="btn btn-sm btn-ghost btn-circle">
                         <span className="iconify lucide--messages-square size-4"></span>
@@ -506,7 +506,7 @@ export default async function PathDetailPage({
             </div>
 
             {/* Tags - hidden until teams enabled */}
-            {path._teamsEnabled && (
+            {path._commentsEnabled && (
               <>
                 <TagsSection tags={tags} />
                 <hr className="border-base-300 mt-6 border-dashed sm:mt-8" />
@@ -514,7 +514,7 @@ export default async function PathDetailPage({
             )}
 
             {/* Comment Form - hidden until teams enabled */}
-            {path._teamsEnabled && (
+            {path._commentsEnabled && (
               <>
                 <div className="mt-6 sm:mt-8">
                   <CommentForm pathId={id} />

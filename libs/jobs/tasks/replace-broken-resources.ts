@@ -20,6 +20,7 @@ import { createServiceClient } from '@/libs/supabase/service';
 import type { ReplaceBrokenResourcesPayload } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
+import { getDefaultModelForTier } from '@/libs/models';
 import { z } from 'zod';
 
 /**
@@ -194,16 +195,20 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
 
     console.log(`[replace_broken_resources] Status updated to replacing_broken_resources`);
 
-    // Step 2: Fetch path metadata
+    // Step 2: Fetch path metadata including model and account tier
     const { data: path } = await supabase
       .from('learning_paths')
-      .select('title, skill_level')
+      .select('title, skill_level, model_used, account:accounts(subscription_tier)')
       .eq('id', pathId)
       .single();
 
     if (!path) {
       throw new Error('Path not found');
     }
+
+    // Determine model to use: user's selected model or tier default
+    const accountTier = (path.account as any)?.subscription_tier || 'free';
+    const modelToUse = path.model_used || getDefaultModelForTier(accountTier);
 
     // Step 3: Fetch all broken/inaccessible resources
     const { data: sections } = await supabase
@@ -306,8 +311,10 @@ export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
           allExistingUrls // Pass all URLs for dedup
         );
 
+        console.log(`[replace_broken_resources] Using model: ${modelToUse}`);
+
         const completion = await openrouter.chat.completions.create({
-          model: 'anthropic/claude-sonnet-4.5',
+          model: modelToUse,
           messages: [{ role: 'user', content: prompt }],
           temperature: 0.7, // Higher temperature for more flexibility in finding replacements
           response_format: { type: 'json_object' },

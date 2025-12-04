@@ -22,6 +22,7 @@ import { createServiceClient } from '@/libs/supabase/service';
 import type { EnrichSectionsPayload } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
+import { getDefaultModelForTier } from '@/libs/models';
 import { z } from 'zod';
 
 /**
@@ -225,16 +226,20 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
 
     console.log(`[enrich_sections] Status updated to enriching_sections`);
 
-    // Step 2: Fetch path metadata
+    // Step 2: Fetch path metadata including model and account tier
     const { data: path } = await supabase
       .from('learning_paths')
-      .select('title, skill_level')
+      .select('title, skill_level, model_used, account:accounts(subscription_tier)')
       .eq('id', pathId)
       .single();
 
     if (!path) {
       throw new Error('Path not found');
     }
+
+    // Determine model to use: user's selected model or tier default
+    const accountTier = (path.account as any)?.subscription_tier || 'free';
+    const modelToUse = path.model_used || getDefaultModelForTier(accountTier);
 
     // Step 3: Fetch all sections with their resources (including sections with 0 resources)
     const { data: sections, error: sectionsError } = await supabase
@@ -373,13 +378,15 @@ export const enrichSectionsTask: Task = async (payload, helpers) => {
         const prompt = buildEnrichmentPrompt(
           section,
           activeResources,
-          allExistingUrls, // ← ADD THIS PARAMETER
+          allExistingUrls,
           path.title,
           path.skill_level
         );
 
+        console.log(`[enrich_sections] Using model: ${modelToUse}`);
+
         const completion = await openrouter.chat.completions.create({
-          model: 'anthropic/claude-sonnet-4.5',
+          model: modelToUse,
           messages: [{ role: 'user', content: prompt }],
           temperature: 0.7, // Higher temperature for more flexibility in finding complementary resources
           response_format: { type: 'json_object' },
