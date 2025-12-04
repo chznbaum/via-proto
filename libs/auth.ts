@@ -302,3 +302,98 @@ export async function userHasRole(
     return false;
   }
 }
+
+/**
+ * Check if a user can edit a learning path.
+ * A user can edit if they are:
+ * 1. The creator of the path, OR
+ * 2. An admin or owner of the account that owns the path
+ *
+ * @param userId - The user's ID
+ * @param pathId - The learning path ID to check
+ * @returns true if user can edit the path
+ *
+ * @example
+ * ```typescript
+ * const user = await requireAuth();
+ * const canEdit = await canEditPath(user.id, pathId);
+ * if (!canEdit) {
+ *   return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+ * }
+ * ```
+ */
+export async function canEditPath(
+  userId: string,
+  pathId: string
+): Promise<boolean> {
+  const supabase = await createClient();
+
+  // Get path with creator and account info
+  const { data: path, error } = await supabase
+    .from("learning_paths")
+    .select("creator_id, account_id")
+    .eq("id", pathId)
+    .single();
+
+  if (error || !path) {
+    return false;
+  }
+
+  // Creator can always edit
+  if (path.creator_id === userId) {
+    return true;
+  }
+
+  // Check if user is admin/owner of the account
+  const { data: membership } = await supabase
+    .from("account_users")
+    .select("role")
+    .eq("account_id", path.account_id)
+    .eq("user_id", userId)
+    .single();
+
+  return membership?.role === "owner" || membership?.role === "admin";
+}
+
+/**
+ * Require edit permission for a learning path or throw.
+ * Use this in API routes to verify edit access before making changes.
+ *
+ * @param pathId - The learning path ID to check
+ * @returns Object with user and path information
+ * @throws Error if user is not authenticated or cannot edit the path
+ *
+ * @example
+ * ```typescript
+ * try {
+ *   const { user, path } = await requirePathEdit(pathId);
+ *   // Proceed with edit operation
+ * } catch (error) {
+ *   return NextResponse.json({ error: error.message }, { status: 403 });
+ * }
+ * ```
+ */
+export async function requirePathEdit(pathId: string): Promise<{
+  user: User;
+  path: { id: string; account_id: string; creator_id: string };
+}> {
+  const user = await requireAuth();
+  const supabase = await createClient();
+
+  const { data: path, error } = await supabase
+    .from("learning_paths")
+    .select("id, account_id, creator_id")
+    .eq("id", pathId)
+    .single();
+
+  if (error || !path) {
+    throw new Error("Path not found");
+  }
+
+  const canEdit = await canEditPath(user.id, pathId);
+  if (!canEdit) {
+    throw new Error("Forbidden: You do not have permission to edit this path");
+  }
+
+  return { user, path };
+}

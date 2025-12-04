@@ -157,8 +157,8 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled }: { teamsE
                             <div className="mt-4 space-y-2">
                                 {[
                                     "10 learning paths per month",
-                                    "Premium Anthropic models like Claude Sonnet 4.5",
-                                    "GPT-5, Perplexity, Gemini 3",
+                                    "Premium Anthropic models like Claude Opus 4.5",
+                                    "GPT-5.1, Perplexity, Gemini 3",
                                     "Private learning paths",
                                     "Progress tracking (coming soon)",
                                 ].map((feature, index) => (

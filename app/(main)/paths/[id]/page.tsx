@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
+import { canEditPath, getUserAccounts } from '@/libs/auth';
 import { ShareSheet } from '@/components/paths/ShareSheet';
 import { ExportButton } from '@/components/paths/ExportButton';
 import { PrintStyles } from '@/components/paths/PrintStyles';
 import { SkillsDisplay } from '@/components/paths/SkillsDisplay';
-import { SectionTimeline } from '@/components/paths/SectionTimeline';
+import { PathDetailClient } from '@/components/paths/PathDetailClient';
 import { TagsSection } from '@/components/paths/TagsSection';
 import { CommentForm } from '@/components/paths/CommentForm';
 import { RelatedPaths } from '@/components/paths/RelatedPaths';
@@ -46,7 +47,10 @@ async function getPath(id: string) {
       account:accounts(id, name),
       sections(
         *,
-        resources(*)
+        resources(
+          *,
+          added_by:profiles!resources_added_by_user_id_fkey(id, name, avatar_url)
+        )
       ),
       unsplash_images(
         url,
@@ -82,6 +86,61 @@ async function getPath(id: string) {
 
   // Add teams enabled flag to path data
   return { ...path, _teamsEnabled: teamsEnabled };
+}
+
+async function getForkedFromPath(forkedFromPathId: string | null, userId: string | null) {
+  if (!forkedFromPathId) {
+    return { forkedFrom: null, hasAccessToSource: false };
+  }
+
+  const supabase = await createClient();
+
+  // Get the source path basic info
+  const { data: sourcePath } = await supabase
+    .from('learning_paths')
+    .select(`
+      id,
+      title,
+      is_public,
+      creator_id,
+      account_id,
+      creator:profiles!creator_id(id, name)
+    `)
+    .eq('id', forkedFromPathId)
+    .single();
+
+  if (!sourcePath) {
+    return { forkedFrom: null, hasAccessToSource: false };
+  }
+
+  // Check if user has access to source path
+  let hasAccess = sourcePath.is_public;
+
+  if (!hasAccess && userId) {
+    // Check if user is creator
+    if (sourcePath.creator_id === userId) {
+      hasAccess = true;
+    } else {
+      // Check if user is member of the account
+      const { data: membership } = await supabase
+        .from('account_users')
+        .select('id')
+        .eq('account_id', sourcePath.account_id)
+        .eq('user_id', userId)
+        .single();
+
+      hasAccess = !!membership;
+    }
+  }
+
+  return {
+    forkedFrom: {
+      id: sourcePath.id,
+      title: sourcePath.title,
+      creator: sourcePath.creator,
+    },
+    hasAccessToSource: hasAccess,
+  };
 }
 
 async function getRelatedPaths(pathId: string, competencyIds: string[]) {
@@ -215,6 +274,18 @@ export default async function PathDetailPage({
   const { data: { user } } = await supabase.auth.getUser();
   const backLink = user ? '/dashboard' : '/explore';
   const backText = user ? 'Back to dashboard' : 'Back to explore';
+
+  // Check if user can edit this path
+  const userCanEdit = user ? await canEditPath(user.id, id) : false;
+
+  // Get user's accounts for remix feature (only if logged in)
+  const userAccounts = user ? await getUserAccounts(user.id) : [];
+
+  // Get forked from path details if applicable
+  const { forkedFrom, hasAccessToSource } = await getForkedFromPath(
+    path.forked_from_path_id,
+    user?.id || null
+  );
 
   // Check if user has any competencies tracked
   let hasUserCompetencies = false;
@@ -404,10 +475,20 @@ export default async function PathDetailPage({
               />
             )}
 
-            {/* Sections Timeline */}
-            {path.sections && path.sections.length > 0 && (
-              <SectionTimeline sections={path.sections} />
-            )}
+            {/* Path Edit Mode and Sections Timeline */}
+            <PathDetailClient
+              pathId={path.id}
+              pathTitle={path.title}
+              sections={path.sections || []}
+              canEdit={userCanEdit}
+              accounts={userAccounts.map((a) => ({
+                id: a.accounts.id,
+                name: a.accounts.name,
+                account_type: a.accounts.account_type,
+              }))}
+              forkedFrom={forkedFrom}
+              hasAccessToSource={hasAccessToSource}
+            />
 
             {/* Divider */}
             <hr className="border-base-300 border-dashed my-8" />

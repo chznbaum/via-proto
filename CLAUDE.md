@@ -31,10 +31,6 @@ npm run dev  # http://localhost:3001
 
 # Start background worker (REQUIRED for path generation)
 npm run worker:dev  # Hot-reload enabled
-
-# Build and lint
-npm run build
-npm run lint
 ```
 
 ### Database (Supabase)

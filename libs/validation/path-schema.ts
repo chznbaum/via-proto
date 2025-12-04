@@ -89,3 +89,59 @@ export type MetadataResponse = z.infer<typeof MetadataResponseSchema>;
 export type SectionsResourcesResponse = z.infer<typeof SectionsResourcesResponseSchema>;
 export type PathGenerationRequest = z.infer<typeof PathGenerationRequestSchema>;
 export type PathUpdate = z.infer<typeof PathUpdateSchema>;
+
+/**
+ * Schema for adding a resource to a section
+ */
+export const AddResourceRequestSchema = z.object({
+  section_id: z.string().uuid(),
+  url: z.string().url().regex(/^https?:\/\//, 'URL must start with http:// or https://'),
+  type: z.enum(['video', 'article', 'book', 'project', 'audio', 'graphic', 'course']),
+  title: z.string().min(1).max(500),
+  description: z.string().max(2000).optional(),
+  is_free: z.boolean().nullable().optional(),
+});
+
+/**
+ * Schema for reordering resources within a section
+ * Client sends the complete new order as an array of resource IDs
+ */
+export const ReorderResourcesRequestSchema = z.object({
+  section_id: z.string().uuid(),
+  resource_order: z.array(z.string().uuid()).min(1),
+});
+
+/**
+ * Schema for adding a new section to a path
+ */
+export const AddSectionRequestSchema = z.object({
+  title: z.string().min(1).max(500),
+  description: z.string().min(1).max(2000),
+  prerequisite_level: z.enum(['required', 'recommended', 'optional']),
+});
+
+/**
+ * Schema for reordering sections within a path
+ * Client sends the complete new order as an array of section IDs
+ */
+export const ReorderSectionsRequestSchema = z.object({
+  section_order: z.array(z.string().uuid()).min(1),
+});
+
+/**
+ * Schema for remixing (forking) a path
+ */
+export const RemixPathRequestSchema = z.object({
+  target_account_id: z.string().uuid().optional(),
+  title: z.string().min(1).max(500).optional(),
+  is_public: z.boolean().optional(),
+});
+
+/**
+ * Type exports for editing schemas
+ */
+export type AddResourceRequest = z.infer<typeof AddResourceRequestSchema>;
+export type ReorderResourcesRequest = z.infer<typeof ReorderResourcesRequestSchema>;
+export type AddSectionRequest = z.infer<typeof AddSectionRequestSchema>;
+export type ReorderSectionsRequest = z.infer<typeof ReorderSectionsRequestSchema>;
+export type RemixPathRequest = z.infer<typeof RemixPathRequestSchema>;

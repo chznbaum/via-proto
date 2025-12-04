@@ -9,7 +9,7 @@ const faqs1 = [
     },
     {
         question: "What AI models can I use?",
-        answer: "Free users access quality models like DeepSeek, Qwen, Kimi, and free Gemini/Llama models. Pro users unlock premium models including Claude Sonnet 4.5, GPT-5, Gemini 3, and premium Perplexity for even better curation.",
+        answer: "Free users access quality models like DeepSeek, Qwen, Kimi, and free Gemini/Llama models. Pro users unlock premium models including Claude Opus 4.5, GPT-5.1, Gemini 3, and premium Perplexity for even better curation.",
     },
     {
         question: "Can I share my learning paths?",
