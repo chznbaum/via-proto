@@ -9,11 +9,11 @@ import { ZodError } from 'zod';
  */
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id: pathId } = await params;
     const supabase = await createClient();
-    const pathId = params.id;
 
     // Fetch the path with all related data
     const { data: path, error } = await supabase
@@ -45,8 +45,7 @@ export async function GET(
       .from('learning_paths')
       .update({ view_count: (path.view_count || 0) + 1 })
       .eq('id', pathId)
-      .then(() => {})
-      .catch((err) => console.error('Failed to increment view count:', err));
+      .then();
 
     // Sort sections and resources by order
     if (path.sections) {
@@ -74,11 +73,11 @@ export async function GET(
  */
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id: pathId } = await params;
     const supabase = await createClient();
-    const pathId = params.id;
 
     // Check authentication
     const {
@@ -169,11 +168,11 @@ export async function PATCH(
  */
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id: pathId } = await params;
     const supabase = await createClient();
-    const pathId = params.id;
 
     // Check authentication
     const {

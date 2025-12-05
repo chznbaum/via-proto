@@ -10,7 +10,10 @@ import {
   AddResourceModal,
   AddSectionModal,
 } from "./editing";
+import { ReplacementSuggestionsModal } from "./ReplacementSuggestionsModal";
 import { ResourceProgressControl } from "@/components/progress";
+import { useConfig } from "@/contexts/config";
+import { getResourceSearchUrl } from "@/libs/search-engines";
 
 interface AddedByUser {
   id: string;
@@ -88,6 +91,7 @@ export const SectionTimeline = ({
   const [progressMap, setProgressMap] = useState<Map<string, { status: string; notes: string | null }>>(
     new Map(resourceProgress.map((p) => [p.resource_id, { status: p.status, notes: p.notes || null }]))
   );
+  const { config } = useConfig();
 
   // Helper to get resource progress status
   const getResourceStatus = (resourceId: string) => {
@@ -132,6 +136,12 @@ export const SectionTimeline = ({
   }>({ isOpen: false, sectionId: "", sectionTitle: "" });
   const [isAddSectionModalOpen, setIsAddSectionModalOpen] = useState(false);
   const [isReordering, setIsReordering] = useState(false);
+  const [replacementModal, setReplacementModal] = useState<{
+    isOpen: boolean;
+    resourceId: string;
+    resourceTitle: string;
+    sectionId: string;
+  }>({ isOpen: false, resourceId: "", resourceTitle: "", sectionId: "" });
 
   const toggleSection = (sectionId: string) => {
     setOpenSections((prev) => {
@@ -255,6 +265,47 @@ export const SectionTimeline = ({
     onSectionsChange?.(updatedSections);
     // Open the new section
     setOpenSections((prev) => new Set([...prev, section.id]));
+  };
+
+  // Handle resource replaced
+  const handleResourceReplaced = (
+    sectionId: string,
+    resourceId: string,
+    replacement: {
+      title: string;
+      url: string;
+      type: string;
+      is_free: boolean | null;
+      description: string;
+    }
+  ) => {
+    const updatedSections = sections.map((s) =>
+      s.id === sectionId
+        ? {
+            ...s,
+            resources: s.resources.map((r) =>
+              r.id === resourceId
+                ? {
+                    ...r,
+                    title: replacement.title,
+                    url: replacement.url,
+                    type: replacement.type,
+                    is_free: replacement.is_free ?? undefined,
+                    description: replacement.description,
+                    link_status: "unchecked" as const,
+                    og_title: undefined,
+                    og_description: undefined,
+                    og_image_url: undefined,
+                    page_title: undefined,
+                    favicon_url: undefined,
+                  }
+                : r
+            ),
+          }
+        : s
+    );
+    setSections(updatedSections);
+    onSectionsChange?.(updatedSections);
   };
 
   if (!sections || sections.length === 0) {
@@ -473,24 +524,38 @@ export const SectionTimeline = ({
                             </div>
                           )}
                           {resource.link_status === "broken" && (
-                            <div className="alert alert-error mb-3 flex items-center justify-between">
+                            <div role="alert" className="alert alert-error alert-vertical mb-3">
                               <div className="flex items-center gap-2">
                                 <span className="iconify lucide--alert-circle size-4"></span>
-                                <span className="text-sm">
-                                  May be broken link
-                                </span>
+                                <span className="text-sm">May be broken link</span>
                               </div>
-                              <a
-                                href={`https://www.google.com/search?q=${encodeURIComponent(
-                                  resource.title
-                                )}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-sm btn-ghost gap-1"
-                              >
-                                <span className="iconify lucide--search size-3"></span>
-                                Search Web
-                              </a>
+                              <div className="flex items-center gap-2">
+                                {pathId && (
+                                  <button
+                                    className="btn btn-sm btn-ghost gap-1"
+                                    onClick={() =>
+                                      setReplacementModal({
+                                        isOpen: true,
+                                        resourceId: resource.id,
+                                        resourceTitle: resource.title,
+                                        sectionId: section.id,
+                                      })
+                                    }
+                                  >
+                                    <span className="iconify lucide--sparkles size-3"></span>
+                                    Find Replacements
+                                  </button>
+                                )}
+                                <a
+                                  href={getResourceSearchUrl(resource.title, resource.url, config.searchEngine)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="btn btn-sm btn-ghost gap-1"
+                                >
+                                  <span className="iconify lucide--search size-3"></span>
+                                  Search Web
+                                </a>
+                              </div>
                             </div>
                           )}
 
@@ -698,6 +763,28 @@ export const SectionTimeline = ({
             isOpen={isAddSectionModalOpen}
             onClose={() => setIsAddSectionModalOpen(false)}
             onSuccess={(section) => handleSectionAdded(section as Section)}
+          />
+
+          <ReplacementSuggestionsModal
+            pathId={pathId}
+            resourceId={replacementModal.resourceId}
+            resourceTitle={replacementModal.resourceTitle}
+            isOpen={replacementModal.isOpen}
+            onClose={() =>
+              setReplacementModal({
+                isOpen: false,
+                resourceId: "",
+                resourceTitle: "",
+                sectionId: "",
+              })
+            }
+            onReplace={(suggestion) =>
+              handleResourceReplaced(
+                replacementModal.sectionId,
+                replacementModal.resourceId,
+                suggestion
+              )
+            }
           />
         </>
       )}

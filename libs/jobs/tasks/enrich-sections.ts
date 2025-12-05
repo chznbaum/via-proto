@@ -16,10 +16,9 @@
  * 6. Queue validate_resource_links to fetch OpenGraph data for new resources
  */
 
-import type { Task } from 'graphile-worker';
 import OpenAI from 'openai';
 import { createServiceClient } from '@/libs/supabase/service';
-import type { EnrichSectionsPayload } from '../types';
+import type { EnrichSectionsPayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import { getDefaultModelForTier } from '@/libs/models';
@@ -179,7 +178,7 @@ Return exactly 2-3 resources that complement the existing ones and fill identifi
 /**
  * Task handler for enriching sections
  */
-export const enrichSectionsTask: Task = async (payload, helpers) => {
+export const enrichSectionsTask: TaskWithResult = async (payload, helpers) => {
   const { pathId } = payload as EnrichSectionsPayload;
 
   console.log(`[enrich_sections] Starting for path ${pathId}`);

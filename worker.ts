@@ -66,7 +66,8 @@ async function main() {
   });
 
   runner.events.on('job:error', async ({ job, error }) => {
-    console.error(`Job error: ${job.task_identifier} (${job.id})`, error.message);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error(`Job error: ${job.task_identifier} (${job.id})`, errorMessage);
 
     // Report to Sentry with job context
     Sentry.captureException(error, {
@@ -88,12 +89,14 @@ async function main() {
       console.log(`Queueing failure notification for job ${job.id}`);
 
       try {
+        // Type the payload for accessing properties
+        const payload = job.payload as Record<string, unknown> | null;
         await addJob('notify_generation_failed', {
-          pathId: job.payload.pathId || 'unknown',
+          pathId: (payload?.pathId as string) || 'unknown',
           step: job.task_identifier,
-          error: error.message,
-          userId: job.payload.userId || job.payload.creator_id || 'unknown',
-          topicName: job.payload.topicName || 'Unknown Topic',
+          error: errorMessage,
+          userId: (payload?.userId as string) || (payload?.creator_id as string) || 'unknown',
+          topicName: (payload?.topicName as string) || 'Unknown Topic',
         });
       } catch (notifyError) {
         console.error(`Failed to queue failure notification:`, notifyError);
@@ -102,7 +105,8 @@ async function main() {
   });
 
   runner.events.on('job:failed', ({ job, error }) => {
-    console.error(`Job permanently failed: ${job.task_identifier} (${job.id})`, error.message);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error(`Job permanently failed: ${job.task_identifier} (${job.id})`, errorMessage);
   });
 
   runner.events.on('pool:create', () => {

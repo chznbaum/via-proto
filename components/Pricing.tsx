@@ -197,8 +197,6 @@ const Pricing = () => {
                       priceId={plan.priceId}
                       mode="subscription"
                       seatCount={plan.perSeat ? teamSeats : undefined}
-                      disabled={plan.tier === 'team' && !config.stripe.teams_enabled}
-                      buttonText={plan.tier === 'team' && !config.stripe.teams_enabled ? 'Coming Soon' : undefined}
                     />
 
                     <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">

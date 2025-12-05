@@ -5,6 +5,18 @@
  * background job processing system.
  */
 
+import type { JobHelpers } from 'graphile-worker';
+
+/**
+ * Custom Task type that allows returning values for logging purposes.
+ * The standard graphile-worker Task type expects void/Promise<void>,
+ * but returning values can be useful for debugging and logging.
+ */
+export type TaskWithResult = (
+  payload: unknown,
+  helpers: JobHelpers
+) => Promise<unknown>;
+
 /**
  * All available job types in the system
  */

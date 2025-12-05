@@ -4,6 +4,7 @@ import { ReactNode, createContext, useContext, useEffect, useMemo, useState } fr
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import { createClient } from "@/libs/supabase/client";
+import type { SearchEngineId } from "@/libs/search-engines";
 
 export const themes = ["light", "contrast", "material", "dark", "dim", "material-dark", "system"] as const;
 
@@ -15,6 +16,7 @@ export type IConfig = {
     sidebarTheme: "light" | "dark";
     fontFamily: "fixel" | "atkinson" | "geist" | "figtree";
     fullscreen: boolean;
+    searchEngine: SearchEngineId;
 };
 
 const defaultConfig: IConfig = {
@@ -23,6 +25,7 @@ const defaultConfig: IConfig = {
     fontFamily: "fixel",
     sidebarTheme: "light",
     fullscreen: false,
+    searchEngine: "duckduckgo",
 };
 
 const useHook = () => {
@@ -43,7 +46,7 @@ const useHook = () => {
                 // Fetch preferences from database
                 const { data: preferences } = await supabase
                     .from('user_preferences')
-                    .select('theme, font_family, direction, sidebar_theme')
+                    .select('theme, font_family, direction, sidebar_theme, preferred_search_engine')
                     .eq('user_id', user.id)
                     .maybeSingle();
 
@@ -54,6 +57,7 @@ const useHook = () => {
                         fontFamily: preferences.font_family as IConfig['fontFamily'],
                         direction: preferences.direction as IConfig['direction'],
                         sidebarTheme: preferences.sidebar_theme as IConfig['sidebarTheme'],
+                        searchEngine: preferences.preferred_search_engine as SearchEngineId,
                     };
 
                     // Merge DB preferences with local storage (DB takes precedence)
@@ -79,6 +83,7 @@ const useHook = () => {
             if (changes.fontFamily !== undefined) dbChanges.font_family = changes.fontFamily;
             if (changes.direction !== undefined) dbChanges.direction = changes.direction;
             if (changes.sidebarTheme !== undefined) dbChanges.sidebar_theme = changes.sidebarTheme;
+            if (changes.searchEngine !== undefined) dbChanges.preferred_search_engine = changes.searchEngine;
 
             // Only sync if there are DB-relevant changes
             if (Object.keys(dbChanges).length > 0) {
@@ -107,6 +112,10 @@ const useHook = () => {
 
     const changeDirection = (direction: IConfig["direction"]) => {
         updateConfig({ direction });
+    };
+
+    const changeSearchEngine = (searchEngine: IConfig["searchEngine"]) => {
+        updateConfig({ searchEngine });
     };
 
     const toggleTheme = () => {
@@ -142,6 +151,7 @@ const useHook = () => {
                     font_family: defaultConfig.fontFamily,
                     direction: defaultConfig.direction,
                     sidebar_theme: defaultConfig.sidebarTheme,
+                    preferred_search_engine: defaultConfig.searchEngine,
                 }, {
                     onConflict: 'user_id'
                 });
@@ -201,6 +211,7 @@ const useHook = () => {
         changeFontFamily,
         changeTheme,
         changeDirection,
+        changeSearchEngine,
         toggleFullscreen,
     };
 };

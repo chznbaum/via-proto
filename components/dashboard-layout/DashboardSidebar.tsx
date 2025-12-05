@@ -30,7 +30,7 @@ export const DashboardSidebar = ({ menuItems }: { menuItems: ISidebarMenuItem[] 
   const [planTier, setPlanTier] = useState<string>("free");
 
   useEffect(() => {
-    setActivatedParents(getActivatedItemParentKeys(menuItems, pathname));
+    setActivatedParents(getActivatedItemParentKeys(menuItems, pathname || ""));
   }, [menuItems, pathname]);
 
   useEffect(() => {

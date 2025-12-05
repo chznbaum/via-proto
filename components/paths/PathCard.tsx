@@ -27,10 +27,9 @@ interface PathCardProps {
   };
   isOwner?: boolean;
   onDelete?: (id: string) => void;
-  teamsEnabled?: boolean;
 }
 
-export default function PathCard({ path, isOwner, onDelete, teamsEnabled = false }: PathCardProps) {
+export default function PathCard({ path, isOwner, onDelete }: PathCardProps) {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async () => {
@@ -75,7 +74,7 @@ export default function PathCard({ path, isOwner, onDelete, teamsEnabled = false
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-2.5">
         <p className="grow font-medium">{path.title}</p>
-        {isOwner && teamsEnabled && (
+        {isOwner && (
           <div className="dropdown dropdown-end">
             <button
               tabIndex={0}

@@ -18,7 +18,7 @@ const ButtonSignin = ({
   extraStyle?: string;
 }) => {
   const supabase = createClient();
-  const [user, setUser] = useState<User>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const getUser = async () => {

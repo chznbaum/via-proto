@@ -11,9 +11,6 @@ export const metadata = createPageMetadata({
 });
 
 export default async function Page() {
-  // Check if teams feature is enabled
-  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
-
   // Check if user is logged in
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
@@ -41,7 +38,7 @@ export default async function Page() {
         <Hero />
         <Features />
         <ExamplePath />
-        <Pricing teamsEnabled={teamsEnabled} isLoggedIn={isLoggedIn} />
+        <Pricing isLoggedIn={isLoggedIn} />
         <FAQs />
       </main>
     </>

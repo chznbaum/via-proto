@@ -86,8 +86,7 @@ async function getPath(id: string) {
     .from('learning_paths')
     .update({ view_count: (path.view_count || 0) + 1 })
     .eq('id', id)
-    .then(() => {})
-    .catch((err) => console.error('Failed to increment view count:', err));
+    .then();
 
   // Add comments enabled flag to path data
   return { ...path, _commentsEnabled: commentsEnabled };
@@ -138,11 +137,13 @@ async function getForkedFromPath(forkedFromPathId: string | null, userId: string
     }
   }
 
+  // Type assertion for creator relation (Supabase types as array but it's a single object)
+  const creator = sourcePath.creator as unknown as { id: string; name: string } | null;
   return {
     forkedFrom: {
       id: sourcePath.id,
       title: sourcePath.title,
-      creator: sourcePath.creator,
+      creator: creator,
     },
     hasAccessToSource: hasAccess,
   };

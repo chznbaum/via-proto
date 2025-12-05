@@ -15,16 +15,15 @@
  * 4. Queue validate_resource_links for OpenGraph metadata fetch
  */
 
-import type { Task } from 'graphile-worker';
 import { createServiceClient } from '@/libs/supabase/service';
-import type { ValidateAndFinalizePayload } from '../types';
+import type { ValidateAndFinalizePayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 
 /**
  * Task handler for validation and finalization
  */
-export const validateAndFinalizeTask: Task = async (payload, helpers) => {
+export const validateAndFinalizeTask: TaskWithResult = async (payload, helpers) => {
   const { pathId } = payload as ValidateAndFinalizePayload;
 
   console.log(`[validate_and_finalize] Starting validation for path ${pathId}`);

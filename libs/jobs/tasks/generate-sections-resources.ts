@@ -20,11 +20,10 @@
  * 9. Queue next job: validate_and_finalize
  */
 
-import type { Task } from 'graphile-worker';
 import OpenAI from 'openai';
 import { createServiceClient } from '@/libs/supabase/service';
 import { SectionsResourcesResponseSchema } from '@/libs/validation/path-schema';
-import type { GenerateSectionsResourcesPayload } from '../types';
+import type { GenerateSectionsResourcesPayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 
@@ -363,7 +362,7 @@ function parseSectionsResponse(responseText: string): any {
 /**
  * Task handler for sections and resources generation (curation phase)
  */
-export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
+export const generateSectionsResourcesTask: TaskWithResult = async (payload, helpers) => {
   const { pathId } = payload as GenerateSectionsResourcesPayload;
 
   console.log(`[generate_sections_resources] Starting curation for path ${pathId}`);
@@ -527,7 +526,7 @@ export const generateSectionsResourcesTask: Task = async (payload, helpers) => {
       topicName: topic.name,
       researchedResources,
       goals: path.generation_metadata?.goals,
-      competencies: topicCompetencies,
+      competencies: topicCompetencies || undefined,
       userCompetencies,
     });
 

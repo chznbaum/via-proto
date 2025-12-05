@@ -12,10 +12,9 @@
  * 5. Queue next job: fetch_unsplash_image
  */
 
-import type { Task } from 'graphile-worker';
 import { createServiceClient } from '@/libs/supabase/service';
 import { MetadataResponseSchema } from '@/libs/validation/path-schema';
-import type { GenerateMetadataPayload } from '../types';
+import type { GenerateMetadataPayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import OpenAI from 'openai';
@@ -130,7 +129,7 @@ function parseMetadataResponse(responseText: string): any {
 /**
  * Task handler for metadata generation
  */
-export const generateMetadataTask: Task = async (payload, helpers) => {
+export const generateMetadataTask: TaskWithResult = async (payload, helpers) => {
   const { pathId, topicId, topicName, goals, modelId } =
     payload as GenerateMetadataPayload;
 
@@ -256,7 +255,7 @@ export const generateMetadataTask: Task = async (payload, helpers) => {
     const userPrompt = buildMetadataUserPrompt({
       topicName,
       goals,
-      competencies: topicCompetencies,
+      competencies: topicCompetencies || undefined,
       userCompetencies,
     });
 

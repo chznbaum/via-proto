@@ -26,15 +26,6 @@ export function DashboardAccountDrawer() {
   const [accounts, setAccounts] = useState<Account[]>([]);
   const [currentAccountId, setCurrentAccountId] = useState<string>("");
 
-  // Check if teams feature is enabled (client-side check for visibility)
-  const [teamsEnabled, setTeamsEnabled] = useState(false);
-
-  useEffect(() => {
-    // Check if teams is enabled by attempting to read from public env var
-    // Since this needs to match server behavior, we'll assume false by default
-    setTeamsEnabled(false);
-  }, []);
-
   useEffect(() => {
     const getUser = async () => {
       const {
@@ -187,14 +178,12 @@ export function DashboardAccountDrawer() {
             <div className="border-base-300 mt-4 grow overflow-auto border-t border-dashed px-2 sm:mt-6">
               <ul className="menu w-full p-2">
                 <li className="menu-title">Account</li>
-                {teamsEnabled && (
-                  <li>
-                    <Link href="/account">
-                      <span className="iconify lucide--settings size-4.5" />
-                      <span>Account Settings</span>
-                    </Link>
-                  </li>
-                )}
+                <li>
+                  <Link href="/account">
+                    <span className="iconify lucide--settings size-4.5" />
+                    <span>Account Settings</span>
+                  </Link>
+                </li>
                 <li>
                   <button onClick={handleBilling} disabled={isLoading}>
                     <span className="iconify lucide--credit-card size-4.5" />
@@ -204,14 +193,12 @@ export function DashboardAccountDrawer() {
                 </li>
 
                 <li className="menu-title">Resources</li>
-                {teamsEnabled && (
-                  <li>
-                    <Link href="/docs" target="_blank">
-                      <span className="iconify lucide--book-open size-4.5" />
-                      <span>Documentation</span>
-                    </Link>
-                  </li>
-                )}
+                <li>
+                  <Link href="/docs" target="_blank">
+                    <span className="iconify lucide--book-open size-4.5" />
+                    <span>Documentation</span>
+                  </Link>
+                </li>
                 <li>
                   <button
                     onClick={async () => {
@@ -237,19 +224,24 @@ export function DashboardAccountDrawer() {
               </ul>
             </div>
 
-            {/* Upgrade CTA - only show when teams are enabled */}
-            {teamsEnabled && (
-              <div className="rounded-box from-primary to-secondary text-primary-content m-4 mt-auto flex cursor-pointer flex-col items-center justify-center bg-linear-to-br p-4 text-center transition-all hover:opacity-95 sm:p-6">
+            {/* Upgrade CTA - only show for free and pro tiers */}
+            {(planTier === "free" || planTier === "pro") && (
+              <Link
+                href="/upgrade"
+                className="rounded-box from-primary to-secondary text-primary-content m-4 mt-auto flex flex-col items-center justify-center bg-linear-to-br p-4 text-center transition-all hover:opacity-95 sm:p-6"
+              >
                 <div className="bg-primary-content/10 border-primary-content/10 flex items-center justify-center rounded-full border p-1.5 sm:p-2.5">
                   <span className="iconify lucide--zap size-5 sm:size-6" />
                 </div>
                 <p className="mt-2 font-mono text-[11px] font-medium tracking-wider uppercase opacity-70 sm:mt-4">
-                  Upgrade your plan
+                  {planTier === "free" ? "Upgrade to Pro" : "Upgrade to Team"}
                 </p>
                 <p className="mt-1 leading-none font-medium sm:text-lg">
-                  Unlock <span className="font-semibold underline">unlimited</span> paths
+                  {planTier === "free"
+                    ? "Get 10 paths & premium models"
+                    : "Collaborate with your team"}
                 </p>
-              </div>
+              </Link>
             )}
           </div>
         </div>

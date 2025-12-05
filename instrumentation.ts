@@ -1,5 +1,4 @@
 import * as Sentry from "@sentry/nextjs";
-import type { Instrumentation } from "next";
 
 export async function register() {
   if (process.env.NEXT_RUNTIME === "nodejs") {
@@ -12,13 +11,13 @@ export async function register() {
 }
 
 // Capture nested React Server Component errors (Next.js 15+)
-export const onRequestError: Instrumentation["onRequestError"] = async (
-  error,
-  request,
-  context
-) => {
+export async function onRequestError(
+  error: Error & { digest?: string },
+  request: { method: string; path: string; headers: Record<string, string | undefined> },
+  context: { routerKind: string; routePath: string; routeType: string; renderSource: string }
+) {
   // Report to Sentry using built-in handler
-  Sentry.captureRequestError(error, request, context);
+  Sentry.captureRequestError(error, request as Parameters<typeof Sentry.captureRequestError>[1], context);
 
   // Also report to Axiom for structured logging
   try {
@@ -39,4 +38,4 @@ export const onRequestError: Instrumentation["onRequestError"] = async (
   } catch {
     // Axiom logging failure shouldn't break error handling
   }
-};
+}

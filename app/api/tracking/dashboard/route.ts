@@ -3,6 +3,25 @@ import { createClient } from '@/libs/supabase/server';
 import { ProgressDashboardQuerySchema } from '@/libs/validation/progress-schema';
 import { ZodError } from 'zod';
 
+// Type for the tracking query result with nested relations
+interface TrackingQueryResult {
+  id: string;
+  status: string;
+  started_at: string;
+  last_activity_at: string | null;
+  completed_at: string | null;
+  archived_at: string | null;
+  learning_path: {
+    id: string;
+    title: string;
+    description: string | null;
+    skill_level: string;
+    total_estimated_hours: number | null;
+    topic: { name: string; category: { name: string } | null } | null;
+    unsplash_images: { url: string }[] | null;
+  };
+}
+
 /**
  * GET /api/tracking/dashboard
  * Get all tracked paths for the current user with progress summaries
@@ -90,8 +109,9 @@ export async function GET(req: NextRequest) {
     }
 
     // Get progress for each tracked path
+    const typedTrackings = (trackings || []) as unknown as TrackingQueryResult[];
     const pathsWithProgress = await Promise.all(
-      (trackings || []).map(async (tracking) => {
+      typedTrackings.map(async (tracking) => {
         // Get sections for this path
         const { data: sections } = await supabase
           .from('sections')

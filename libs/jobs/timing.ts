@@ -52,7 +52,7 @@ export function updateJobTiming(
  */
 export function calculateTotalGenerationTime(generationMetadata: any): number {
   const timings = generationMetadata?.job_timings || {};
-  return Object.values(timings).reduce((sum: number, timing: any) => {
+  return Object.values(timings).reduce<number>((sum, timing: any) => {
     return sum + (timing.duration_ms || 0);
   }, 0);
 }

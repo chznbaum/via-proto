@@ -13,10 +13,9 @@
  * Note: This task does not retry. Email delivery failures are logged but not retried.
  */
 
-import type { Task } from 'graphile-worker';
 import { Resend } from 'resend';
 import { createServiceClient } from '@/libs/supabase/service';
-import type { NotifyGenerationFailedPayload } from '../types';
+import type { NotifyGenerationFailedPayload, TaskWithResult } from '../types';
 
 /**
  * Get user-friendly step name
@@ -140,7 +139,7 @@ function buildEmailHTML(params: {
 /**
  * Task handler for failure notifications
  */
-export const notifyGenerationFailedTask: Task = async (payload, helpers) => {
+export const notifyGenerationFailedTask: TaskWithResult = async (payload, helpers) => {
   const { pathId, step, error, userId, topicName } = payload as NotifyGenerationFailedPayload;
 
   console.log(`[notify_generation_failed] Sending notification for path ${pathId}, step: ${step}`);

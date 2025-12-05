@@ -17,10 +17,9 @@
  * 6. Queue next job: generate_sections_resources (curation phase)
  */
 
-import type { Task } from 'graphile-worker';
 import OpenAI from 'openai';
 import { createServiceClient } from '@/libs/supabase/service';
-import type { ResearchResourcesPayload } from '../types';
+import type { ResearchResourcesPayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import { z } from 'zod';
@@ -253,7 +252,7 @@ function parseResearchResponse(responseText: string): any {
 /**
  * Task handler for resource research
  */
-export const researchResourcesTask: Task = async (payload, helpers) => {
+export const researchResourcesTask: TaskWithResult = async (payload, helpers) => {
   const { pathId, topicName, skillLevel } = payload as ResearchResourcesPayload;
 
   console.log(`[research_resources] Starting for path ${pathId}, topic: ${topicName}`);

@@ -6,6 +6,7 @@ import {
   getFeaturedModelsForTier,
   getModelsByProvider,
   getDefaultModelForTier,
+  type SubscriptionTier,
 } from '@/libs/models';
 
 /**
@@ -45,9 +46,9 @@ export async function GET(req: NextRequest) {
     // Allow overriding tier via query param (for account selection in forms)
     // This is safe because the backend validates model access on path creation
     const tierParam = searchParams.get('tier');
-    const effectiveTier = tierParam && ['free', 'pro', 'team'].includes(tierParam)
+    const effectiveTier = (tierParam && ['free', 'pro', 'team'].includes(tierParam)
       ? tierParam
-      : account.subscription_tier;
+      : account.subscription_tier) as SubscriptionTier;
 
     let models;
     let groupedByProvider;

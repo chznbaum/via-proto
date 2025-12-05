@@ -14,10 +14,9 @@
  * 5. Queue enrich_sections (if sections still under-resourced) OR validate_resource_links (to re-check)
  */
 
-import type { Task } from 'graphile-worker';
 import OpenAI from 'openai';
 import { createServiceClient } from '@/libs/supabase/service';
-import type { ReplaceBrokenResourcesPayload } from '../types';
+import type { ReplaceBrokenResourcesPayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import { getDefaultModelForTier } from '@/libs/models';
@@ -148,7 +147,7 @@ Return 3-5 candidates, ordered by relevance_score (highest first).
 /**
  * Task handler for replacing broken resources
  */
-export const replaceBrokenResourcesTask: Task = async (payload, helpers) => {
+export const replaceBrokenResourcesTask: TaskWithResult = async (payload, helpers) => {
   const { pathId } = payload as ReplaceBrokenResourcesPayload;
 
   console.log(`[replace_broken_resources] Starting for path ${pathId}`);

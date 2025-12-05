@@ -189,7 +189,7 @@ async function backfillTopics() {
 
   if (topics.length === 0) {
     console.log("✨ All topics already have embeddings!");
-    return;
+    return 0;
   }
 
   // Process in batches

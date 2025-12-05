@@ -20,7 +20,7 @@
  * 9. validate_resource_links: Fetches OpenGraph for new resources (2nd run, no improvement checks)
  */
 
-import type { TaskList } from 'graphile-worker';
+import type { Task, TaskList } from 'graphile-worker';
 import { generateMetadataTask } from './generate-metadata';
 import { fetchUnsplashImageTask } from './fetch-unsplash-image';
 import { researchResourcesTask } from './research-resources';
@@ -34,15 +34,18 @@ import { notifyGenerationFailedTask } from './notify-generation-failed';
 /**
  * Task list for Graphile Worker
  * Maps job names to their handler functions
+ *
+ * Note: Tasks return values for debugging purposes, but Graphile Worker
+ * expects void returns. The cast is safe since the return values are ignored.
  */
 export const tasks: TaskList = {
-  generate_metadata: generateMetadataTask,
-  fetch_unsplash_image: fetchUnsplashImageTask,
-  research_resources: researchResourcesTask,
-  generate_sections_resources: generateSectionsResourcesTask,
-  validate_and_finalize: validateAndFinalizeTask,
-  validate_resource_links: validateResourceLinksTask,
-  replace_broken_resources: replaceBrokenResourcesTask,
-  enrich_sections: enrichSectionsTask,
-  notify_generation_failed: notifyGenerationFailedTask,
+  generate_metadata: generateMetadataTask as Task,
+  fetch_unsplash_image: fetchUnsplashImageTask as Task,
+  research_resources: researchResourcesTask as Task,
+  generate_sections_resources: generateSectionsResourcesTask as Task,
+  validate_and_finalize: validateAndFinalizeTask as Task,
+  validate_resource_links: validateResourceLinksTask as Task,
+  replace_broken_resources: replaceBrokenResourcesTask as Task,
+  enrich_sections: enrichSectionsTask as Task,
+  notify_generation_failed: notifyGenerationFailedTask as Task,
 };

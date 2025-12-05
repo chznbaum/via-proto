@@ -1,15 +1,15 @@
+import Link from "next/link";
+
 interface UsageStatsBarProps {
   pathsUsed: number;
   pathsLimit: number;
   subscriptionTier: string;
-  teamsEnabled?: boolean;
 }
 
 export function UsageStatsBar({
   pathsUsed,
   pathsLimit,
   subscriptionTier,
-  teamsEnabled = false,
 }: UsageStatsBarProps) {
   const remaining = Math.max(0, pathsLimit - pathsUsed);
   const percentageUsed = (pathsUsed / pathsLimit) * 100;
@@ -81,8 +81,8 @@ export function UsageStatsBar({
         </div>
       </div>
 
-      {/* Upgrade CTA (only show for free tier, or for pro if teams are enabled) */}
-      {(subscriptionTier === 'free' || (subscriptionTier === 'pro' && teamsEnabled)) && (
+      {/* Upgrade CTA (show for free and pro tiers) */}
+      {(subscriptionTier === 'free' || subscriptionTier === 'pro') && (
         <div className="bg-neutral text-neutral-content card h-full p-3 shadow">
           <p className="text-lg/5.5 font-medium">
             {subscriptionTier === 'free' ? 'Upgrade to Pro' : 'Upgrade to Team'}
@@ -95,9 +95,9 @@ export function UsageStatsBar({
                   : 'Collaborate with your team'}
               </p>
             </div>
-            <a href="/upgrade" className="btn btn-sm rounded-full">
+            <Link href="/upgrade" className="btn btn-sm rounded-full">
               Upgrade
-            </a>
+            </Link>
           </div>
         </div>
       )}

@@ -60,7 +60,9 @@ export async function PATCH(
       return NextResponse.json({ error: 'Resource not found' }, { status: 404 });
     }
 
-    const pathId = resource.section.learning_path_id;
+    // Type assertion for the joined data (Supabase types this as array but .single() returns object)
+    const section = resource.section as unknown as { id: string; learning_path_id: string };
+    const pathId = section.learning_path_id;
 
     // Check if user is tracking this path
     const { data: tracking, error: trackingError } = await supabase

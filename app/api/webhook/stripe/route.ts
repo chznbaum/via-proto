@@ -7,11 +7,11 @@ import Stripe from "stripe";
 import { createTeamAccount } from "@/libs/teams";
 import { createPersonalAccount, userHasProfile } from "@/libs/accounts";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2023-08-16",
   typescript: true,
 });
-const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
 
 // This is where we receive Stripe webhook events
 // It used to update the user data, send emails, etc...
@@ -28,16 +28,20 @@ export async function POST(req: NextRequest) {
 
   // Create a private supabase client using the secret service_role API key
   const supabase = new SupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.SUPABASE_SERVICE_ROLE_KEY
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
   );
 
   // verify Stripe event is legit
+  if (!signature) {
+    return NextResponse.json({ error: "Missing stripe-signature header" }, { status: 400 });
+  }
   try {
     event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
   } catch (err) {
-    console.error(`Webhook signature verification failed. ${err.message}`);
-    return NextResponse.json({ error: err.message }, { status: 400 });
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    console.error(`Webhook signature verification failed. ${message}`);
+    return NextResponse.json({ error: message }, { status: 400 });
   }
 
   eventType = event.type;
@@ -53,7 +57,7 @@ export async function POST(req: NextRequest) {
         const session = await findCheckoutSession(stripeObject.id);
 
         const customerId = session?.customer as string;
-        const priceId = session?.line_items?.data[0]?.price.id;
+        const priceId = session?.line_items?.data[0]?.price?.id;
         const quantity = session?.line_items?.data[0]?.quantity || 1;
         const clientRefId = stripeObject.client_reference_id;
         const metadata = stripeObject.metadata || {};
@@ -208,8 +212,8 @@ export async function POST(req: NextRequest) {
         // ✅ Grant access to the product
         const stripeObject: Stripe.Invoice = event.data
           .object as Stripe.Invoice;
-        const priceId = stripeObject.lines.data[0].price.id;
-        const quantity = stripeObject.lines.data[0].quantity || 1;
+        const priceId = stripeObject.lines.data[0]?.price?.id;
+        const quantity = stripeObject.lines.data[0]?.quantity || 1;
         const customerId = stripeObject.customer;
 
         // Find account where customer_id equals the customerId
@@ -250,7 +254,7 @@ export async function POST(req: NextRequest) {
       // Unhandled event type
     }
   } catch (e) {
-    console.error("stripe error: ", e.message);
+    console.error("stripe error: ", e instanceof Error ? e.message : 'Unknown error');
   }
 
   return NextResponse.json({});

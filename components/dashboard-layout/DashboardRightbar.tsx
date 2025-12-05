@@ -1,6 +1,7 @@
 "use client";
 
 import { IConfig, useConfig } from "@/contexts/config";
+import { getSearchEngineOptions } from "@/libs/search-engines";
 
 const fontFamilies: { value: IConfig["fontFamily"]; label: string; className?: string }[] = [
     {
@@ -25,8 +26,10 @@ const fontFamilies: { value: IConfig["fontFamily"]; label: string; className?: s
     },
 ];
 
+const searchEngineOptions = getSearchEngineOptions();
+
 export const DashboardRightbar = () => {
-    const { toggleFullscreen, changeSidebarTheme, changeFontFamily, changeDirection, changeTheme, reset } = useConfig();
+    const { config, toggleFullscreen, changeSidebarTheme, changeFontFamily, changeDirection, changeTheme, changeSearchEngine, reset } = useConfig();
 
     return (
         <div className="drawer drawer-end">
@@ -232,6 +235,19 @@ export const DashboardRightbar = () => {
                                 <span className="inline sm:hidden">RTL</span>
                             </div>
                         </div>
+                        <p className="mt-6 font-medium">Search Engine</p>
+                        <p className="text-base-content/70 text-sm mt-1">Used when searching for replacement resources</p>
+                        <select
+                            className="select select-bordered w-full mt-3"
+                            value={config.searchEngine}
+                            onChange={(e) => changeSearchEngine(e.target.value as IConfig["searchEngine"])}
+                        >
+                            {searchEngineOptions.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                    {option.label}
+                                </option>
+                            ))}
+                        </select>
                     </div>
                 </div>
             </div>

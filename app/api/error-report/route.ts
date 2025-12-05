@@ -219,7 +219,7 @@ export async function POST(req: NextRequest) {
     const { subject, text, html } = buildErrorReportEmail(payload);
 
     await sendEmail({
-      to: config.resend.supportEmail,
+      to: config.resend.supportEmail || "support@viapro.to",
       subject,
       text,
       html,

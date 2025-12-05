@@ -46,7 +46,7 @@ export const RegisterForm = () => {
 
   // Pre-fill email from URL params if redirected from login
   useEffect(() => {
-    const emailParam = searchParams.get("email");
+    const emailParam = searchParams?.get("email");
     if (emailParam) {
       setEmail(decodeURIComponent(emailParam));
     }

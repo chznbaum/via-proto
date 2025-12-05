@@ -44,12 +44,11 @@ export default function DashboardPaths({
   seatCount,
   accounts,
 }: DashboardPathsProps) {
-  // Check if teams feature is enabled
-  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
   const [paths, setPaths] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateForm, setShowCreateForm] = useState(false);
   const [generatingPaths, setGeneratingPaths] = useState<GeneratingPath[]>([]);
+  const [pathsUsed, setPathsUsed] = useState(pathsGeneratedThisCycle);
   const pollingIntervalsRef = useRef<Map<string, NodeJS.Timeout>>(new Map());
   const completedPathsRef = useRef<Set<string>>(new Set()); // Track paths that have shown toast
 
@@ -64,7 +63,7 @@ export default function DashboardPaths({
   };
 
   const limit = getRateLimit(subscriptionTier, seatCount);
-  const remaining = Math.max(0, limit - pathsGeneratedThisCycle);
+  const remaining = Math.max(0, limit - pathsUsed);
   const canGenerate = remaining > 0;
 
   useEffect(() => {
@@ -179,6 +178,9 @@ export default function DashboardPaths({
       // Close modal
       setShowCreateForm(false);
 
+      // Increment local usage count (path counts against quota on initiation)
+      setPathsUsed((prev) => prev + 1);
+
       toast.success('Path generation started!');
       trackEvent("path.generation_started");
 
@@ -239,10 +241,9 @@ export default function DashboardPaths({
 
       {/* Usage Stats */}
       <UsageStatsBar
-        pathsUsed={pathsGeneratedThisCycle}
+        pathsUsed={pathsUsed}
         pathsLimit={limit}
         subscriptionTier={subscriptionTier}
-        teamsEnabled={teamsEnabled}
       />
 
       {/* Create Form Modal */}
@@ -321,7 +322,6 @@ export default function DashboardPaths({
                   path={path}
                   isOwner={path.creator_id === userId}
                   onDelete={handlePathDeleted}
-                  teamsEnabled={teamsEnabled}
                 />
               ))}
             </div>

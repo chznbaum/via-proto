@@ -8,11 +8,10 @@ import { TeamSizeSlider } from "./TeamSizeSlider";
 import { trackEvent } from "@/components/SwetrixAnalytics";
 
 interface PricingProps {
-    teamsEnabled?: boolean;
     isLoggedIn?: boolean;
 }
 
-export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled, isLoggedIn = false }: PricingProps) => {
+export const Pricing = ({ isLoggedIn = false }: PricingProps) => {
     const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
     const [teamSeats, setTeamSeats] = useState(2);
 
@@ -259,14 +258,7 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled, isLoggedIn
                                 Experience the full suite with team collaboration, advanced analytics, priority support, and custom onboarding to power your team's learning.
                             </p>
                             <div className="flex items-end justify-end gap-2.5">
-                                {!teamsEnabled ? (
-                                    <button
-                                        className="btn btn-primary btn-block group"
-                                        disabled
-                                    >
-                                        Coming Soon
-                                    </button>
-                                ) : isLoggedIn ? (
+                                {isLoggedIn ? (
                                     <ButtonCheckout
                                         priceId={teamPlan.priceId}
                                         mode="subscription"

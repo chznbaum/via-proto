@@ -67,10 +67,12 @@ export async function GET(
     }
 
     // Return status
+    // Type assertion for topic relation (Supabase types as array but it's a single object)
+    const topic = path.topic as unknown as { name: string } | null;
     return NextResponse.json({
       pathId: path.id,
       title: path.title,
-      topicName: path.topic?.name,
+      topicName: topic?.name,
       status: path.generation_status,
       error: path.generation_error,
       createdAt: path.created_at,

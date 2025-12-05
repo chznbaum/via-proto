@@ -5,7 +5,7 @@ import { createClient } from "@/libs/supabase/client";
 import { useEffect, useState, ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import NextTopLoader from "nextjs-toploader";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import config from "@/config";
 import { ConfigProvider } from "@/contexts/config";
 import { TeamSetupDialog } from "@/components/teams/TeamSetupDialog";
@@ -16,7 +16,7 @@ const CrispChat = (): null => {
   const pathname = usePathname();
 
   const supabase = createClient();
-  const [data, setData] = useState<{ user: User }>(null);
+  const [data, setData] = useState<{ user: User } | null>(null);
 
   // This is used to get the user data from Supabase Auth (if logged in) => user ID is used to identify users in Crisp
   useEffect(() => {
@@ -35,14 +35,17 @@ const CrispChat = (): null => {
   useEffect(() => {
     if (!config?.crisp?.id) return;
 
+    const crispId = config.crisp.id;
+
     // Dynamic import to keep Crisp SDK out of initial bundle
     import("crisp-sdk-web").then(({ Crisp }) => {
-      Crisp.configure(config.crisp.id);
+      Crisp.configure(crispId);
 
       // (Optional) If onlyShowOnRoutes array is not empty in config.js file, Crisp will be hidden on the routes in the array.
       // Use <AppButtonSupport> instead to show it (user clicks on the button to show Crisp—it cleans the UI)
       if (
         config.crisp.onlyShowOnRoutes &&
+        pathname &&
         !config.crisp.onlyShowOnRoutes?.includes(pathname)
       ) {
         Crisp.chat.hide();
@@ -71,7 +74,7 @@ interface AccountNeedingSetup {
   name: string;
 }
 
-const TeamSetupChecker = (): JSX.Element | null => {
+const TeamSetupChecker = () => {
   const pathname = usePathname();
   const supabase = createClient();
   const [accountNeedingSetup, setAccountNeedingSetup] = useState<AccountNeedingSetup | null>(null);

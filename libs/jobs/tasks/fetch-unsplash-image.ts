@@ -17,17 +17,16 @@
  * to sections generation. Path will be usable without an image.
  */
 
-import type { Task } from 'graphile-worker';
 import { createServiceClient } from '@/libs/supabase/service';
 import { fetchUnsplashImage, triggerUnsplashDownload } from '@/libs/unsplash';
-import type { FetchUnsplashImagePayload } from '../types';
+import type { FetchUnsplashImagePayload, TaskWithResult } from '../types';
 import { addJob } from '../queue';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 
 /**
  * Task handler for Unsplash image fetching
  */
-export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
+export const fetchUnsplashImageTask: TaskWithResult = async (payload, helpers) => {
   const { pathId, topicName } = payload as FetchUnsplashImagePayload;
 
   console.log(`[fetch_unsplash_image] Starting for path ${pathId}`);
@@ -102,8 +101,10 @@ export const fetchUnsplashImageTask: Task = async (payload, helpers) => {
           .limit(1)
           .single();
 
-        if (primaryComp?.competency?.name) {
-          const competencyName = primaryComp.competency.name;
+        // Type assertion for competency relation (Supabase types as array but it's a single object)
+        const competency = primaryComp?.competency as unknown as { name: string } | null;
+        if (competency?.name) {
+          const competencyName = competency.name;
           console.log(`[fetch_unsplash_image] Retrying with primary competency: "${competencyName}"`);
 
           unsplashImage = await fetchUnsplashImage(competencyName, 'landscape');

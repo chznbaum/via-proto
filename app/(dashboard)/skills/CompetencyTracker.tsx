@@ -16,6 +16,7 @@ interface UserCompetency {
     id: string;
     name: string;
     slug: string;
+    icon: string | null;
     description: string | null;
     category: {
       name: string;

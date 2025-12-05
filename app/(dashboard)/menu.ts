@@ -1,9 +1,7 @@
 import { ISidebarMenuItem } from "@/components/dashboard-layout/SidebarMenuItem";
 
 export const getDashboardMenuItems = (): ISidebarMenuItem[] => {
-  const teamsEnabled = process.env.TEAMS_ENABLED === 'true';
-
-  const items: ISidebarMenuItem[] = [
+  return [
     {
       id: "main-label",
       isTitle: true,
@@ -33,26 +31,18 @@ export const getDashboardMenuItems = (): ISidebarMenuItem[] => {
       label: "Explore",
       url: "/explore",
     },
+    {
+      id: "account-label",
+      isTitle: true,
+      label: "Account",
+    },
+    {
+      id: "account",
+      icon: "lucide--settings",
+      label: "Settings",
+      url: "/account",
+    },
   ];
-
-  // Only show Account settings when teams are enabled
-  if (teamsEnabled) {
-    items.push(
-      {
-        id: "account-label",
-        isTitle: true,
-        label: "Account",
-      },
-      {
-        id: "account",
-        icon: "lucide--settings",
-        label: "Settings",
-        url: "/account",
-      }
-    );
-  }
-
-  return items;
 };
 
 // For backwards compatibility

@@ -39,7 +39,7 @@ export default function CompetencyTypeahead({
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const debounceTimerRef = useRef<NodeJS.Timeout>();
+  const debounceTimerRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   // Close dropdown when clicking outside
   useEffect(() => {

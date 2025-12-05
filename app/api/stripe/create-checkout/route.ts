@@ -101,7 +101,7 @@ export async function POST(req: NextRequest) {
         email: profile?.email,
         // For team plans, don't use existing customer ID (creates new customer for team)
         // For pro upgrades, use account-level customer ID
-        customerId: isTeamPlan ? undefined : account.stripe_customer_id,
+        customerId: isTeamPlan ? undefined : account.stripe_customer_id ?? undefined,
       },
       // For Team plans, pass the seat count as quantity
       ...(plan.perSeat && { quantity }),

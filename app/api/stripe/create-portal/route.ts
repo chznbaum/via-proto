@@ -28,9 +28,8 @@ export async function POST(req: NextRequest) {
 
     // Get user's default account
     const accountData = await getUserDefaultAccount(user.id);
-    const { account } = accountData;
 
-    if (!account?.stripe_customer_id) {
+    if (!accountData?.account?.stripe_customer_id) {
       return NextResponse.json(
         {
           error: "You don't have a billing account yet. Make a purchase first.",
@@ -40,7 +39,7 @@ export async function POST(req: NextRequest) {
     }
 
     const stripePortalUrl = await createCustomerPortal({
-      customerId: account.stripe_customer_id,
+      customerId: accountData.account.stripe_customer_id,
       returnUrl: body.returnUrl,
     });
 
@@ -49,6 +48,6 @@ export async function POST(req: NextRequest) {
     });
   } catch (e) {
     console.error(e);
-    return NextResponse.json({ error: e?.message }, { status: 500 });
+    return NextResponse.json({ error: e instanceof Error ? e.message : 'Unknown error' }, { status: 500 });
   }
 }

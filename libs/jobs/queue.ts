@@ -10,7 +10,12 @@ import type {
   JobType,
   GenerateMetadataPayload,
   FetchUnsplashImagePayload,
+  ResearchResourcesPayload,
   GenerateSectionsResourcesPayload,
+  ValidateAndFinalizePayload,
+  ValidateResourceLinksPayload,
+  ReplaceBrokenResourcesPayload,
+  EnrichSectionsPayload,
   NotifyGenerationFailedPayload,
 } from './types';
 
@@ -104,8 +109,38 @@ export async function addJob(
 ): Promise<void>;
 
 export async function addJob(
+  type: 'research_resources',
+  payload: ResearchResourcesPayload,
+  options?: JobOptions
+): Promise<void>;
+
+export async function addJob(
   type: 'generate_sections_resources',
   payload: GenerateSectionsResourcesPayload,
+  options?: JobOptions
+): Promise<void>;
+
+export async function addJob(
+  type: 'validate_and_finalize',
+  payload: ValidateAndFinalizePayload,
+  options?: JobOptions
+): Promise<void>;
+
+export async function addJob(
+  type: 'validate_resource_links',
+  payload: ValidateResourceLinksPayload,
+  options?: JobOptions
+): Promise<void>;
+
+export async function addJob(
+  type: 'replace_broken_resources',
+  payload: ReplaceBrokenResourcesPayload,
+  options?: JobOptions
+): Promise<void>;
+
+export async function addJob(
+  type: 'enrich_sections',
+  payload: EnrichSectionsPayload,
   options?: JobOptions
 ): Promise<void>;
 
@@ -117,7 +152,7 @@ export async function addJob(
 
 export async function addJob(
   type: JobType,
-  payload: any,
+  payload: unknown,
   options: JobOptions = {}
 ): Promise<void> {
   const connectionString = getConnectionString();

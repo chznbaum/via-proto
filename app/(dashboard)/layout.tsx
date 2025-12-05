@@ -1,5 +1,5 @@
 import type { Viewport } from "next";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import ClientLayout from "@/components/LayoutClient";
 import { SwetrixAnalytics } from "@/components/SwetrixAnalytics";
 import { DashboardSidebar } from "@/components/dashboard-layout/DashboardSidebar";
@@ -7,6 +7,7 @@ import { DashboardTopbar } from "@/components/dashboard-layout/DashboardTopbar";
 import { DashboardRightbar } from "@/components/dashboard-layout/DashboardRightbar";
 import { DashboardAccountDrawer } from "@/components/dashboard-layout/DashboardAccountDrawer";
 import { DashboardFooter } from "@/components/dashboard-layout/DashboardFooter";
+import { UpgradeProcessingModal } from "@/components/dashboard-layout/UpgradeProcessingModal";
 import { getDashboardMenuItems } from "./menu";
 import { requireAuth } from "@/libs/auth";
 import config from "@/config";
@@ -79,6 +80,9 @@ export default async function DashboardLayout({
             <DashboardRightbar />
           </div>
           <DashboardAccountDrawer />
+          <Suspense fallback={null}>
+            <UpgradeProcessingModal />
+          </Suspense>
         </ClientLayout>
         <SwetrixAnalytics />
       </body>

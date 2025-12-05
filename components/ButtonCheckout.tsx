@@ -43,7 +43,7 @@ const ButtonCheckout = ({
         "/stripe/create-checkout",
         {
           priceId,
-          successUrl: `${window.location.origin}/dashboard`,
+          successUrl: `${window.location.origin}/dashboard?upgraded=true`,
           cancelUrl: window.location.href,
           mode,
           ...(seatCount && { seatCount }),

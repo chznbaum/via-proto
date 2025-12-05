@@ -23,17 +23,16 @@
  * - Timeout/error: unchecked
  */
 
-import type { Task } from 'graphile-worker';
 import { createServiceClient } from '@/libs/supabase/service';
 import { fetchMultipleLinkMetadata } from '@/libs/link-metadata';
-import type { ValidateResourceLinksPayload } from '../types';
+import type { ValidateResourceLinksPayload, TaskWithResult } from '../types';
 import { updateJobTiming, calculateTotalGenerationTime, formatDuration } from '../timing';
 import { addJob } from '../queue';
 
 /**
  * Task handler for resource link validation
  */
-export const validateResourceLinksTask: Task = async (payload, helpers) => {
+export const validateResourceLinksTask: TaskWithResult = async (payload, helpers) => {
   const { pathId } = payload as ValidateResourceLinksPayload;
 
   console.log(`[validate_resource_links] Starting for path ${pathId}`);

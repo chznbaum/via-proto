@@ -183,8 +183,8 @@ const Testimonial = ({ i }: { i: number }) => {
             {testimonial.img ? (
               <Image
                 className="w-10 h-10 rounded-full object-cover"
-                src={list[i].img}
-                alt={`${list[i].name}'s testimonial for ${config.appName}`}
+                src={testimonial.img}
+                alt={`${testimonial.name}'s testimonial for ${config.appName}`}
                 width={48}
                 height={48}
               />
@@ -225,25 +225,25 @@ const Testimonial = ({ i }: { i: number }) => {
 
 // A video tesionial to build trust. 2 or 3 on a wall of love is perfect.
 const VideoTestimonial = ({ i }: { i: number }) => {
-  const vidRef = useRef(null);
+  const vidRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    if (vidRef.current?.readyState != 0) {
+    if (vidRef.current && vidRef.current.readyState !== 0) {
       setIsLoading(false);
     }
-  }, [vidRef?.current?.readyState]);
+  }, []);
 
   const handlePlayVideo = () => {
     if (isPlaying) {
-      vidRef.current.pause();
+      vidRef.current?.pause();
       setIsPlaying(false);
     } else {
-      vidRef.current.play();
+      vidRef.current?.play();
       setIsPlaying(true);
 
-      if (vidRef.current?.readyState === 0) setIsLoading(true);
+      if (vidRef.current && vidRef.current.readyState === 0) setIsLoading(true);
     }
   };
 
@@ -399,21 +399,22 @@ const Testimonials11 = () => {
                   </blockquote>
                   <figcaption className="relative flex items-center justify-start gap-4 pt-4 mt-4 border-t border-base-content/5">
                     <div className="overflow-hidden rounded-full bg-base-300 shrink-0">
-                      {list[list.length - 1].img ? (
-                        <Image
-                          className="w-12 h-12 rounded-full object-cover"
-                          src={list[list.length - 1].img}
-                          alt={`${
-                            list[list.length - 1].name
-                          }'s testimonial for ${config.appName}`}
-                          width={48}
-                          height={48}
-                        />
-                      ) : (
-                        <span className="w-12 h-12 rounded-full flex justify-center items-center text-xl font-medium bg-base-300">
-                          {list[list.length - 1].name.charAt(0)}
-                        </span>
-                      )}
+                      {(() => {
+                        const lastItem = list[list.length - 1];
+                        return lastItem.img ? (
+                          <Image
+                            className="w-12 h-12 rounded-full object-cover"
+                            src={lastItem.img}
+                            alt={`${lastItem.name}'s testimonial for ${config.appName}`}
+                            width={48}
+                            height={48}
+                          />
+                        ) : (
+                          <span className="w-12 h-12 rounded-full flex justify-center items-center text-xl font-medium bg-base-300">
+                            {lastItem.name.charAt(0)}
+                          </span>
+                        );
+                      })()}
                     </div>
                     <div>
                       <div className="text-base font-medium text-base-content">

@@ -46,10 +46,11 @@ function SwetrixPageViewTracker() {
 
     // Only track if path actually changed
     if (currentPath !== prevPathRef.current) {
+      // Note: Using type assertion because swetrix types may not include all valid options
       Swetrix.pageview({
         pg: currentPath,
         prev: prevPathRef.current,
-      });
+      } as unknown as Parameters<typeof Swetrix.pageview>[0]);
       prevPathRef.current = currentPath;
     }
   }, [pathname, searchParams]);
