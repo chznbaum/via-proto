@@ -24,7 +24,7 @@ const faqs2 = [
     },
     {
         question: "What's the difference between plans?",
-        answer: "Free gets you started with quality AI models and public paths. Pro unlocks premium AI models (Claude, GPT-5, Gemini 3, private paths, and progress tracking (coming soon). Team adds collaboration features, shared workspaces, and team analytics.",
+        answer: "Free gets you started with quality AI models and public paths. Pro unlocks premium AI models (Claude, GPT-5, Gemini 3, private paths, and progress tracking. Team adds collaboration features, shared workspaces, and team analytics.",
     },
     {
         question: "Can I track my learning progress?",

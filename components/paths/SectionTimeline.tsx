@@ -10,6 +10,7 @@ import {
   AddResourceModal,
   AddSectionModal,
 } from "./editing";
+import { ResourceProgressControl } from "@/components/progress";
 
 interface AddedByUser {
   id: string;
@@ -50,11 +51,19 @@ interface Section {
   resources: Resource[];
 }
 
+interface ResourceProgressItem {
+  resource_id: string;
+  status: string;
+  notes?: string | null;
+}
+
 interface SectionTimelineProps {
   sections: Section[];
   pathId?: string;
   isEditMode?: boolean;
   onSectionsChange?: (sections: Section[]) => void;
+  isTracking?: boolean;
+  resourceProgress?: ResourceProgressItem[];
 }
 
 const resourceTypeIcons: Record<string, string> = {
@@ -72,8 +81,47 @@ export const SectionTimeline = ({
   pathId,
   isEditMode = false,
   onSectionsChange,
+  isTracking = false,
+  resourceProgress = [],
 }: SectionTimelineProps) => {
   const [sections, setSections] = useState<Section[]>(initialSections);
+  const [progressMap, setProgressMap] = useState<Map<string, { status: string; notes: string | null }>>(
+    new Map(resourceProgress.map((p) => [p.resource_id, { status: p.status, notes: p.notes || null }]))
+  );
+
+  // Helper to get resource progress status
+  const getResourceStatus = (resourceId: string) => {
+    return (progressMap.get(resourceId)?.status || "not_started") as
+      | "not_started"
+      | "in_progress"
+      | "completed"
+      | "skipped";
+  };
+
+  // Helper to get resource notes
+  const getResourceNotes = (resourceId: string) => {
+    return progressMap.get(resourceId)?.notes || null;
+  };
+
+  // Handle progress status change
+  const handleProgressChange = (resourceId: string, newStatus: string) => {
+    setProgressMap((prev) => {
+      const newMap = new Map(prev);
+      const existing = newMap.get(resourceId);
+      newMap.set(resourceId, { status: newStatus, notes: existing?.notes || null });
+      return newMap;
+    });
+  };
+
+  // Handle notes change
+  const handleNotesChange = (resourceId: string, newNotes: string) => {
+    setProgressMap((prev) => {
+      const newMap = new Map(prev);
+      const existing = newMap.get(resourceId);
+      newMap.set(resourceId, { status: existing?.status || "not_started", notes: newNotes });
+      return newMap;
+    });
+  };
   const [openSections, setOpenSections] = useState<Set<string>>(
     new Set(initialSections.map((s) => s.id))
   );
@@ -532,33 +580,51 @@ export const SectionTimeline = ({
                             </div>
                           </a>
 
-                          {/* Metadata Badges */}
-                          <div className="flex flex-wrap gap-2 mt-4">
-                            <span className="badge badge-sm capitalize">
-                              {resource.type}
-                            </span>
-                            {resource.is_free !== null &&
-                              resource.is_free !== undefined && (
-                                <span
-                                  className={`badge badge-sm ${
-                                    resource.is_free
-                                      ? "badge-success"
-                                      : "badge-warning"
-                                  }`}
-                                >
-                                  {resource.is_free
-                                    ? "Free"
-                                    : "May require payment"}
+                          {/* Metadata Badges and Progress Control */}
+                          <div className="flex flex-wrap items-center justify-between gap-2 mt-4">
+                            <div className="flex flex-wrap gap-2">
+                              <span className="badge badge-sm capitalize">
+                                {resource.type}
+                              </span>
+                              {resource.is_free !== null &&
+                                resource.is_free !== undefined && (
+                                  <span
+                                    className={`badge badge-sm ${
+                                      resource.is_free
+                                        ? "badge-success"
+                                        : "badge-warning"
+                                    }`}
+                                  >
+                                    {resource.is_free
+                                      ? "Free"
+                                      : "May require payment"}
+                                  </span>
+                                )}
+                              {resource.estimated_minutes && (
+                                <span className="badge badge-sm gap-1">
+                                  <span className="iconify lucide--clock size-3"></span>
+                                  {resource.estimated_minutes}m
                                 </span>
                               )}
-                            {resource.estimated_minutes && (
-                              <span className="badge badge-sm gap-1">
-                                <span className="iconify lucide--clock size-3"></span>
-                                {resource.estimated_minutes}m
-                              </span>
+                              {/* Added By Badge */}
+                              <AddedByBadge user={resource.added_by || null} />
+                            </div>
+
+                            {/* Progress Control */}
+                            {!isEditMode && (
+                              <ResourceProgressControl
+                                resourceId={resource.id}
+                                currentStatus={getResourceStatus(resource.id)}
+                                currentNotes={getResourceNotes(resource.id)}
+                                isTracking={isTracking}
+                                onStatusChange={(status) =>
+                                  handleProgressChange(resource.id, status)
+                                }
+                                onNotesChange={(notes) =>
+                                  handleNotesChange(resource.id, notes)
+                                }
+                              />
                             )}
-                            {/* Added By Badge */}
-                            <AddedByBadge user={resource.added_by || null} />
                           </div>
                         </div>
                       </div>

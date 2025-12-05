@@ -11,6 +11,11 @@ import { TagsSection } from '@/components/paths/TagsSection';
 import { CommentForm } from '@/components/paths/CommentForm';
 import { RelatedPaths } from '@/components/paths/RelatedPaths';
 import { getFallbackGradient } from '@/libs/unsplash';
+import {
+  StartLearningButton,
+  LearnerStatsDisplay,
+  ProgressSummaryBar,
+} from '@/components/progress';
 import config from '@/config';
 
 async function getPath(id: string) {
@@ -208,6 +213,89 @@ async function getPathTags(pathId: string) {
   return tags?.map((t: any) => t.tag).filter(Boolean) || [];
 }
 
+async function getPathLearnerStats(pathId: string) {
+  const supabase = await createClient();
+
+  const { data: stats } = await supabase
+    .from('path_learner_stats')
+    .select('total_learners, active_this_month, completed_count')
+    .eq('learning_path_id', pathId)
+    .single();
+
+  return stats || { total_learners: 0, active_this_month: 0, completed_count: 0 };
+}
+
+async function getUserPathTracking(pathId: string, userId: string | null) {
+  if (!userId) {
+    return { tracking: null, progress: null, resourceProgress: [] };
+  }
+
+  const supabase = await createClient();
+
+  // Get tracking record
+  const { data: tracking } = await supabase
+    .from('user_path_tracking')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('learning_path_id', pathId)
+    .single();
+
+  if (!tracking) {
+    return { tracking: null, progress: null, resourceProgress: [] };
+  }
+
+  // Get resource progress (including notes)
+  const { data: resourceProgress } = await supabase
+    .from('user_resource_progress')
+    .select('resource_id, status, notes')
+    .eq('tracking_id', tracking.id);
+
+  // Get total resource count for this path
+  const { data: sections } = await supabase
+    .from('sections')
+    .select('id')
+    .eq('learning_path_id', pathId);
+
+  let totalResources = 0;
+  if (sections && sections.length > 0) {
+    const { count } = await supabase
+      .from('resources')
+      .select('id', { count: 'exact', head: true })
+      .in('section_id', sections.map((s) => s.id));
+    totalResources = count || 0;
+  }
+
+  // Calculate progress stats
+  let completed = 0;
+  let inProgress = 0;
+  let skipped = 0;
+
+  for (const progress of resourceProgress || []) {
+    if (progress.status === 'completed') completed++;
+    else if (progress.status === 'in_progress') inProgress++;
+    else if (progress.status === 'skipped') skipped++;
+  }
+
+  const notStarted = totalResources - completed - inProgress - skipped;
+  const percentage = totalResources > 0 ? Math.round((completed / totalResources) * 100) : 0;
+
+  return {
+    tracking: {
+      id: tracking.id,
+      status: tracking.status as 'active' | 'completed' | 'archived',
+    },
+    progress: {
+      total_resources: totalResources,
+      completed,
+      in_progress: inProgress,
+      skipped,
+      not_started: notStarted,
+      percentage,
+    },
+    resourceProgress: resourceProgress || [],
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -301,9 +389,11 @@ export default async function PathDetailPage({
   const competencyIds =
     path.topic?.topic_competencies?.map((tc: any) => tc.competency?.id).filter(Boolean) || [];
 
-  const [tags, relatedPaths] = await Promise.all([
+  const [tags, relatedPaths, learnerStats, userTracking] = await Promise.all([
     getPathTags(id),
     getRelatedPaths(id, competencyIds),
+    getPathLearnerStats(id),
+    getUserPathTracking(id, user?.id || null),
   ]);
 
   const skillLevelColors = {
@@ -399,6 +489,13 @@ export default async function PathDetailPage({
                 )}
               </div>
 
+              {/* Learner Stats */}
+              <LearnerStatsDisplay
+                totalLearners={learnerStats.total_learners}
+                activeThisMonth={learnerStats.active_this_month}
+                className="mt-4"
+              />
+
               {/* Creator and Actions Bar */}
               <div className="mt-6 flex items-start justify-between gap-3 sm:mt-8">
                 <div className="flex items-center gap-3">
@@ -465,6 +562,27 @@ export default async function PathDetailPage({
                 </div>
               </div>
 
+              {/* Progress Tracking Section */}
+              <div className="mt-6 sm:mt-8 print-hidden">
+                <StartLearningButton
+                  pathId={path.id}
+                  tracking={userTracking.tracking}
+                  progress={userTracking.progress || undefined}
+                />
+
+                {/* Progress Summary Bar - only show if tracking */}
+                {userTracking.tracking && userTracking.progress && (
+                  <ProgressSummaryBar
+                    totalResources={userTracking.progress.total_resources}
+                    completed={userTracking.progress.completed}
+                    inProgress={userTracking.progress.in_progress}
+                    skipped={userTracking.progress.skipped}
+                    percentage={userTracking.progress.percentage}
+                    className="mt-4 p-4 bg-base-200/50 rounded-lg"
+                  />
+                )}
+              </div>
+
             </div>
 
             {/* Skills Display */}
@@ -476,19 +594,23 @@ export default async function PathDetailPage({
             )}
 
             {/* Path Edit Mode and Sections Timeline */}
-            <PathDetailClient
-              pathId={path.id}
-              pathTitle={path.title}
-              sections={path.sections || []}
-              canEdit={userCanEdit}
-              accounts={userAccounts.map((a) => ({
-                id: a.accounts.id,
-                name: a.accounts.name,
-                account_type: a.accounts.account_type,
-              }))}
-              forkedFrom={forkedFrom}
-              hasAccessToSource={hasAccessToSource}
-            />
+            <div id="learning-path">
+              <PathDetailClient
+                pathId={path.id}
+                pathTitle={path.title}
+                sections={path.sections || []}
+                canEdit={userCanEdit}
+                accounts={userAccounts.map((a) => ({
+                  id: a.accounts.id,
+                  name: a.accounts.name,
+                  account_type: a.accounts.account_type,
+                }))}
+                forkedFrom={forkedFrom}
+                hasAccessToSource={hasAccessToSource}
+                isTracking={!!userTracking.tracking && userTracking.tracking.status === 'active'}
+                resourceProgress={userTracking.resourceProgress}
+              />
+            </div>
 
             {/* Divider */}
             <hr className="border-base-300 border-dashed my-8" />

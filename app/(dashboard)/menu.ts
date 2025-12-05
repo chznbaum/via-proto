@@ -22,6 +22,12 @@ export const getDashboardMenuItems = (): ISidebarMenuItem[] => {
       url: "/skills",
     },
     {
+      id: "progress",
+      icon: "lucide--bar-chart-2",
+      label: "My Progress",
+      url: "/progress",
+    },
+    {
       id: "explore",
       icon: "lucide--compass",
       label: "Explore",

@@ -165,7 +165,7 @@ export const Pricing = ({ teamsEnabled = config.stripe.teams_enabled, isLoggedIn
                                     "Premium Anthropic models like Claude Opus 4.5",
                                     "GPT-5.1, Perplexity, Gemini 3",
                                     "Private learning paths",
-                                    "Progress tracking (coming soon)",
+                                    "Progress tracking",
                                 ].map((feature, index) => (
                                     <div className="flex items-center gap-3" key={index}>
                                         <div className="bg-primary/20 text-primary rounded-full p-0.5">

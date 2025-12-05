@@ -57,6 +57,12 @@ interface ForkedFrom {
   } | null;
 }
 
+interface ResourceProgressItem {
+  resource_id: string;
+  status: string;
+  notes?: string | null;
+}
+
 interface PathDetailClientProps {
   pathId: string;
   pathTitle: string;
@@ -65,6 +71,8 @@ interface PathDetailClientProps {
   accounts: Account[];
   forkedFrom?: ForkedFrom | null;
   hasAccessToSource?: boolean;
+  isTracking?: boolean;
+  resourceProgress?: ResourceProgressItem[];
 }
 
 /**
@@ -79,6 +87,8 @@ export const PathDetailClient = ({
   accounts,
   forkedFrom,
   hasAccessToSource = false,
+  isTracking = false,
+  resourceProgress = [],
 }: PathDetailClientProps) => {
   const [isEditMode, setIsEditMode] = useState(false);
   const [sections, setSections] = useState(initialSections);
@@ -143,6 +153,8 @@ export const PathDetailClient = ({
           pathId={pathId}
           isEditMode={isEditMode}
           onSectionsChange={setSections}
+          isTracking={isTracking}
+          resourceProgress={resourceProgress}
         />
       )}
     </>
