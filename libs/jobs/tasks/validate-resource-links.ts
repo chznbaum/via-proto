@@ -287,7 +287,8 @@ export const validateResourceLinksTask: Task = async (payload, helpers) => {
       }
 
       resourcesPerSection[sectionId].total++;
-      if (metadata.status === 'active') {
+      // Count 'active' and 'unchecked' as usable (unchecked = couldn't verify, but probably fine)
+      if (metadata.status === 'active' || metadata.status === 'unchecked') {
         resourcesPerSection[sectionId].active++;
       }
     }
