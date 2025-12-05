@@ -78,13 +78,57 @@ export default function DashboardPaths({
     };
   }, []);
 
+  const inProgressStatuses = [
+    'pending',
+    'generating_metadata',
+    'fetching_image',
+    'researching_resources',
+    'curating_resources',
+    'validating',
+    'validating_links',
+    'replacing_broken_resources',
+    'enriching_sections',
+  ];
+
   const fetchPaths = async () => {
     setIsLoading(true);
     try {
       const response = await fetch(`/api/paths?view=my&limit=50`);
       if (response.ok) {
         const data = await response.json();
-        setPaths(data.paths);
+
+        // Separate completed paths from in-progress ones
+        const completedPaths: any[] = [];
+        const inProgressPaths: GeneratingPath[] = [];
+
+        for (const path of data.paths) {
+          if (inProgressStatuses.includes(path.generation_status)) {
+            inProgressPaths.push({
+              pathId: path.id,
+              topicName: path.title || path.topic?.name || 'Generating...',
+              status: path.generation_status,
+            });
+          } else {
+            completedPaths.push(path);
+          }
+        }
+
+        setPaths(completedPaths);
+
+        // Resume polling for any in-progress paths
+        if (inProgressPaths.length > 0) {
+          setGeneratingPaths(inProgressPaths);
+
+          for (const genPath of inProgressPaths) {
+            // Only start polling if not already polling this path
+            if (!pollingIntervalsRef.current.has(genPath.pathId)) {
+              const interval = setInterval(() => {
+                pollPathStatus(genPath.pathId);
+              }, 2000);
+              pollingIntervalsRef.current.set(genPath.pathId, interval);
+            }
+          }
+        }
       }
     } catch (error) {
       console.error('Error fetching paths:', error);
