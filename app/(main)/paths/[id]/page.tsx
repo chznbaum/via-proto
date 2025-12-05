@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/libs/supabase/server';
-import { canEditPath, getUserAccounts } from '@/libs/auth';
+import { canEditPath, getUserAccounts, userHasAnyPaidPlan } from '@/libs/auth';
 import { ShareSheet } from '@/components/paths/ShareSheet';
 import { ExportButton } from '@/components/paths/ExportButton';
 import { PrintStyles } from '@/components/paths/PrintStyles';
@@ -369,6 +369,9 @@ export default async function PathDetailPage({
   // Get user's accounts for remix feature (only if logged in)
   const userAccounts = user ? await getUserAccounts(user.id) : [];
 
+  // Check if user has access to any paid plan (for progress tracking)
+  const canTrackProgress = user ? await userHasAnyPaidPlan(user.id) : false;
+
   // Get forked from path details if applicable
   const { forkedFrom, hasAccessToSource } = await getForkedFromPath(
     path.forked_from_path_id,
@@ -568,6 +571,8 @@ export default async function PathDetailPage({
                   pathId={path.id}
                   tracking={userTracking.tracking}
                   progress={userTracking.progress || undefined}
+                  isLoggedIn={!!user}
+                  canTrackProgress={canTrackProgress}
                 />
 
                 {/* Progress Summary Bar - only show if tracking */}

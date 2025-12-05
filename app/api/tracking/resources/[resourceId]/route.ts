@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/libs/supabase/server';
+import { userHasAnyPaidPlan } from '@/libs/auth';
 import { UpdateResourceProgressSchema } from '@/libs/validation/progress-schema';
 import { ZodError } from 'zod';
 
@@ -23,6 +24,19 @@ export async function PATCH(
 
     if (authError || !user) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
+    // Check if user has access to any paid plan
+    const hasPaidAccess = await userHasAnyPaidPlan(user.id);
+
+    if (!hasPaidAccess) {
+      return NextResponse.json(
+        {
+          error: 'Progress tracking requires a Pro or Team subscription',
+          upgrade_url: '/upgrade',
+        },
+        { status: 403 }
+      );
     }
 
     // Validate input

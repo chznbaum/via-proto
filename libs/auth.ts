@@ -397,3 +397,51 @@ export async function requirePathEdit(pathId: string): Promise<{
 
   return { user, path };
 }
+
+/**
+ * Check if a user has access to any paid (Pro or Team) account.
+ * This is used for features that are gated behind paid plans but should
+ * be available if the user belongs to ANY paid account (not just their default).
+ *
+ * @param userId - The user's ID
+ * @returns true if user has access to at least one Pro or Team account
+ *
+ * @example
+ * ```typescript
+ * const user = await requireAuth();
+ * const hasPaidAccess = await userHasAnyPaidPlan(user.id);
+ * if (!hasPaidAccess) {
+ *   return NextResponse.json({ error: 'Requires Pro or Team' }, { status: 403 });
+ * }
+ * ```
+ */
+export async function userHasAnyPaidPlan(userId: string): Promise<boolean> {
+  const supabase = await createClient();
+
+  // Get all accounts the user belongs to
+  const { data: memberships, error: membershipError } = await supabase
+    .from("account_users")
+    .select("account_id")
+    .eq("user_id", userId);
+
+  if (membershipError || !memberships || memberships.length === 0) {
+    return false;
+  }
+
+  const accountIds = memberships.map((m) => m.account_id);
+
+  // Check if any of those accounts has a Pro or Team subscription
+  const { data: paidAccounts, error: accountsError } = await supabase
+    .from("accounts")
+    .select("id")
+    .in("id", accountIds)
+    .in("subscription_tier", ["pro", "team"])
+    .limit(1);
+
+  if (accountsError) {
+    console.error("Error checking paid accounts:", accountsError);
+    return false;
+  }
+
+  return paidAccounts && paidAccounts.length > 0;
+}

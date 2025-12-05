@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import toast from "react-hot-toast";
 
 interface StartLearningButtonProps {
@@ -16,6 +17,10 @@ interface StartLearningButtonProps {
     total_resources: number;
   };
   className?: string;
+  /** Whether the user is logged in */
+  isLoggedIn?: boolean;
+  /** Whether the user can track progress (has access to any Pro or Team account) */
+  canTrackProgress?: boolean;
 }
 
 export const StartLearningButton = ({
@@ -23,9 +28,29 @@ export const StartLearningButton = ({
   tracking,
   progress,
   className = "",
+  isLoggedIn = false,
+  canTrackProgress = false,
 }: StartLearningButtonProps) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+
+  // Don't show anything if user is not logged in
+  if (!isLoggedIn) {
+    return null;
+  }
+
+  // Show upgrade prompt for users without paid access (only when not already tracking)
+  if (!canTrackProgress && !tracking) {
+    return (
+      <Link
+        href="/upgrade"
+        className={`btn btn-primary gap-2 ${className}`}
+      >
+        <span className="iconify lucide--sparkles size-4" />
+        Upgrade to track progress
+      </Link>
+    );
+  }
 
   const handleStartTracking = async () => {
     setIsLoading(true);
