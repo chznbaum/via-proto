@@ -452,7 +452,11 @@ export const SectionTimeline = ({
                 <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact mt-6 lg:mt-8">
                   {section.resources.map((resource, resourceIndex) => (
                     <li key={resource.id} className="-mt-2">
-                      <div className="timeline-middle">
+                      <div
+                        className={`timeline-middle ${
+                          resourceIndex % 2 === 1 ? "md:-mt-9" : ""
+                        }`}
+                      >
                         <div className="bg-primary text-primary-content flex items-center justify-center rounded-full p-1.5">
                           <span
                             className={`iconify ${
@@ -465,7 +469,7 @@ export const SectionTimeline = ({
                         className={`mx-4 mb-8 sm:mb-12 ${
                           resourceIndex % 2 === 0
                             ? "timeline-start md:text-end"
-                            : "timeline-end max-md:-mt-9"
+                            : "timeline-end md:-mt-9"
                         }`}
                       >
                         <div className="card bg-base-100 p-6 shadow hover:shadow-lg transition-shadow">
