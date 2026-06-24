@@ -4,7 +4,8 @@
   "private": true,
   "overrides": {
     "react": "$react",
-    "react-dom": "$react-dom"
+    "react-dom": "$react-dom",
+    "lodash": "^4.18.1"
   },
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev -p 3001\"",
@@ -41,7 +42,6 @@
     "@sentry/nextjs": "^10.27.0",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.45.0",
-    "@tinacms/cli": "^1.12.5",
     "axios": "^1.7.9",
     "crisp-sdk-web": "^1.0.25",
     "eslint": "^9.17.0",
@@ -60,7 +60,7 @@
     "simplebar-react": "^3.3.2",
     "stripe": "^13.11.0",
     "swetrix": "^3.7.2",
-    "tinacms": "^2.10.0",
+    "tinacms": "^3.9.3",
     "tsx": "^4.20.6",
     "zod": "^3.24.1"
   },
@@ -71,6 +71,7 @@
     "@iconify-json/tabler": "^1.2.23",
     "@iconify/tailwind4": "^1.1.0",
     "@tailwindcss/postcss": "^4.1.10",
+    "@tinacms/cli": "^2.5.1",
     "@types/jest": "^29.5.14",
     "@types/mdx": "^2.0.13",
     "@types/mongoose": "^5.11.97",
