@@ -43,8 +43,10 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const viewMode = searchParams.get('view') || 'all'; // 'all', 'featured', or 'grouped'
 
-    // Allow overriding tier via query param (for account selection in forms)
-    // This is safe because the backend validates model access on path creation
+    // Allow overriding tier via query param (for account selection in forms).
+    // This is safe because /api/paths/initiate validates the chosen model against
+    // the catalog and the account's tier (getModelConfig + isModelAllowedForTier)
+    // before creating a path.
     const tierParam = searchParams.get('tier');
     const effectiveTier = (tierParam && ['free', 'pro', 'team'].includes(tierParam)
       ? tierParam

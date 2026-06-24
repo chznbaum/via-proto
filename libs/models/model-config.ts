@@ -13,6 +13,7 @@ export type ModelProvider =
   | "Qwen"
   | "Z-AI"
   | "Meta"
+  | "Mistral"
   | "Perplexity"
   | "Amazon"
   | "Moonshot";
@@ -42,6 +43,10 @@ export interface ModelConfig {
 
 /**
  * Complete model catalog
+ *
+ * Every ID below is verified against the live OpenRouter `/v1/models` catalog and
+ * supports structured/JSON output. The generation pipeline applies the OpenRouter
+ * `web-search` transform to every model, so `supportsWebSearch` is informational.
  */
 export const MODEL_CATALOG: ModelConfig[] = [
   // ==================== FREE TIER MODELS ====================
@@ -93,26 +98,26 @@ export const MODEL_CATALOG: ModelConfig[] = [
     featured: true,
   },
   {
-    id: "qwen/qwen-turbo",
-    name: "Qwen Turbo",
+    id: "qwen/qwen3-next-80b-a3b-instruct",
+    name: "Qwen3 Next 80B",
     provider: "Qwen",
     minimumTier: "free",
     costTier: "free",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Fast general-purpose model",
+    description: "Current general-purpose Qwen with an efficient MoE architecture",
   },
 
   // Google Gemini (Free)
   {
-    id: "google/gemini-2.0-flash",
-    name: "Gemini 2.0 Flash",
+    id: "google/gemini-2.5-flash-lite",
+    name: "Gemini 2.5 Flash Lite",
     provider: "Google",
     minimumTier: "free",
     costTier: "free",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Multimodal with 1M token context window",
+    description: "Lightweight, low-cost Gemini with 1M token context",
     featured: true,
   },
 
@@ -139,6 +144,16 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsStructuredOutput: true,
     description: "Open-source model for experimentation",
   },
+  {
+    id: "meta-llama/llama-4-maverick",
+    name: "Llama 4 Maverick",
+    provider: "Meta",
+    minimumTier: "free",
+    costTier: "free",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Meta's Llama 4 Maverick — capable open model with very large context",
+  },
 
   // Moonshot Kimi (Free)
   {
@@ -158,6 +173,29 @@ export const MODEL_CATALOG: ModelConfig[] = [
 
   // Anthropic Claude
   {
+    id: "anthropic/claude-opus-4.8",
+    name: "Claude Opus 4.8",
+    provider: "Anthropic",
+    minimumTier: "pro",
+    costTier: "premium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description:
+      "Latest, most capable Opus with 1M context — exceptional for complex reasoning and agentic curation",
+    featured: true,
+  },
+  {
+    id: "anthropic/claude-opus-4.7",
+    name: "Claude Opus 4.7",
+    provider: "Anthropic",
+    minimumTier: "pro",
+    costTier: "premium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description:
+      "Prior Opus point release with 1M context — an alternative to 4.5 and 4.8",
+  },
+  {
     id: "anthropic/claude-opus-4.5",
     name: "Claude Opus 4.5",
     provider: "Anthropic",
@@ -166,7 +204,19 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsWebSearch: true,
     supportsStructuredOutput: true,
     description:
-      "Most intelligent model with 200K context, exceptional for complex reasoning and agentic workflows",
+      "Highly capable Opus with 200K context, excellent for complex reasoning and agentic workflows",
+    featured: true,
+  },
+  {
+    id: "anthropic/claude-sonnet-4.6",
+    name: "Claude Sonnet 4.6",
+    provider: "Anthropic",
+    minimumTier: "pro",
+    costTier: "medium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description:
+      "Latest Sonnet with 1M context — excellent balance of intelligence and cost",
     featured: true,
   },
   {
@@ -182,37 +232,38 @@ export const MODEL_CATALOG: ModelConfig[] = [
     featured: true,
   },
   {
-    id: "anthropic/claude-sonnet-4",
-    name: "Claude Sonnet 4",
-    provider: "Anthropic",
-    minimumTier: "pro",
-    costTier: "medium",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Previous generation Sonnet model",
-  },
-  {
-    id: "anthropic/claude-4.5-haiku",
+    id: "anthropic/claude-haiku-4.5",
     name: "Claude Haiku 4.5",
     provider: "Anthropic",
     minimumTier: "pro",
     costTier: "low",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "3x cheaper and 2x faster than Sonnet 4 for coding tasks",
+    description: "Fast, low-cost Claude with a strong quality-to-speed ratio",
     featured: true,
   },
 
   // Google Gemini
   {
-    id: "google/gemini-3-pro-preview",
-    name: "Gemini 3 Pro Preview",
+    id: "google/gemini-3.1-pro-preview",
+    name: "Gemini 3.1 Pro",
     provider: "Google",
     minimumTier: "pro",
     costTier: "premium",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Latest Gemini preview with advanced capabilities",
+    description: "Latest Gemini 3 Pro with 1M token context and advanced reasoning",
+    featured: true,
+  },
+  {
+    id: "google/gemini-3.5-flash",
+    name: "Gemini 3.5 Flash",
+    provider: "Google",
+    minimumTier: "pro",
+    costTier: "medium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Newest Gemini Flash — fast and capable with 1M token context",
     featured: true,
   },
   {
@@ -240,6 +291,37 @@ export const MODEL_CATALOG: ModelConfig[] = [
 
   // OpenAI GPT
   {
+    id: "openai/gpt-5.5",
+    name: "GPT-5.5",
+    provider: "OpenAI",
+    minimumTier: "pro",
+    costTier: "premium",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Newest GPT flagship with advanced reasoning and very large context",
+    featured: true,
+  },
+  {
+    id: "openai/gpt-5.4",
+    name: "GPT-5.4",
+    provider: "OpenAI",
+    minimumTier: "pro",
+    costTier: "high",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "High-capability GPT-5 series model; strong value below 5.5",
+  },
+  {
+    id: "openai/gpt-5.4-mini",
+    name: "GPT-5.4 Mini",
+    provider: "OpenAI",
+    minimumTier: "pro",
+    costTier: "low",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Smaller, budget-friendly GPT-5.4 for fast generations",
+  },
+  {
     id: "openai/gpt-5.1",
     name: "GPT-5.1",
     provider: "OpenAI",
@@ -247,7 +329,7 @@ export const MODEL_CATALOG: ModelConfig[] = [
     costTier: "premium",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Latest GPT-5 series model with advanced capabilities",
+    description: "GPT-5 series model with advanced capabilities",
     featured: true,
   },
   {
@@ -303,7 +385,7 @@ export const MODEL_CATALOG: ModelConfig[] = [
     costTier: "premium",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Latest reasoning model with state-of-the-art capabilities",
+    description: "Reasoning model with state-of-the-art capabilities",
     featured: true,
     isReasoningModel: true,
   },
@@ -320,6 +402,16 @@ export const MODEL_CATALOG: ModelConfig[] = [
 
   // DeepSeek (Premium)
   {
+    id: "deepseek/deepseek-v3.2",
+    name: "DeepSeek V3.2",
+    provider: "DeepSeek",
+    minimumTier: "pro",
+    costTier: "low",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Newer DeepSeek with strong reasoning and tool use",
+  },
+  {
     id: "deepseek/deepseek-v3.1-terminus",
     name: "DeepSeek V3.1 Terminus",
     provider: "DeepSeek",
@@ -331,7 +423,7 @@ export const MODEL_CATALOG: ModelConfig[] = [
   },
   {
     id: "deepseek/deepseek-r1-0528",
-    name: "DeepSeek R1 (May 2028)",
+    name: "DeepSeek R1 (May 2025)",
     provider: "DeepSeek",
     minimumTier: "pro",
     costTier: "low",
@@ -339,16 +431,6 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsStructuredOutput: true,
     description: "Latest reasoning model from DeepSeek",
     isReasoningModel: true,
-  },
-  {
-    id: "deepseek/deepseek-prover-v2",
-    name: "DeepSeek Prover V2",
-    provider: "DeepSeek",
-    minimumTier: "pro",
-    costTier: "low",
-    supportsWebSearch: true,
-    supportsStructuredOutput: true,
-    description: "Specialized for theorem proving in Lean 4",
   },
 
   // Qwen (Premium)
@@ -372,27 +454,41 @@ export const MODEL_CATALOG: ModelConfig[] = [
     supportsStructuredOutput: true,
     description: "Maximum capability Qwen model",
   },
+
+  // Moonshot Kimi (Premium)
   {
-    id: "qwen/qwen3-plus",
-    name: "Qwen3 Plus",
-    provider: "Qwen",
+    id: "moonshotai/kimi-k2.6",
+    name: "Kimi K2.6",
+    provider: "Moonshot",
     minimumTier: "pro",
     costTier: "low",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Balanced performance and cost",
+    description: "Newer Kimi K2 with large context and strong agentic performance",
   },
 
-  // Perplexity
+  // Z-AI (Premium)
   {
-    id: "perplexity/sonar-pro",
-    name: "Perplexity Sonar Pro",
-    provider: "Perplexity",
+    id: "z-ai/glm-5",
+    name: "GLM 5",
+    provider: "Z-AI",
     minimumTier: "pro",
-    costTier: "medium",
+    costTier: "low",
     supportsWebSearch: true,
     supportsStructuredOutput: true,
-    description: "Web search grounded responses with citations",
+    description: "Latest GLM flagship with strong general reasoning",
+  },
+
+  // Mistral
+  {
+    id: "mistralai/mistral-large-2512",
+    name: "Mistral Large",
+    provider: "Mistral",
+    minimumTier: "pro",
+    costTier: "low",
+    supportsWebSearch: true,
+    supportsStructuredOutput: true,
+    description: "Mistral's flagship — strong reasoning with 256K context",
   },
 ];
 
@@ -403,7 +499,7 @@ export function getDefaultModelForTier(tier: SubscriptionTier): string {
   if (tier === "free") {
     return "deepseek/deepseek-chat-v3.1";
   }
-  return "anthropic/claude-opus-4.5";
+  return "anthropic/claude-opus-4.8";
 }
 
 /**

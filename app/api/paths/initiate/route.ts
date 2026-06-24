@@ -4,7 +4,11 @@ import { getUserDefaultAccount, getAccountWithRole } from '@/libs/auth';
 import { PathGenerationRequestSchema } from '@/libs/validation/path-schema';
 import { ZodError } from 'zod';
 import { addJob } from '@/libs/jobs/queue';
-import { getDefaultModelForTier } from '@/libs/models';
+import {
+  getDefaultModelForTier,
+  getModelConfig,
+  isModelAllowedForTier,
+} from '@/libs/models';
 
 /**
  * POST /api/paths/initiate
@@ -56,6 +60,27 @@ export async function POST(req: NextRequest) {
       }
 
       account = accountData.account;
+    }
+
+    // 3b. Validate the requested model against the catalog and the account's tier.
+    // model_id arrives as an unvalidated string from the client, so gate it
+    // server-side: reject models outside the user's plan, and unknown IDs that
+    // would otherwise 404 downstream during generation.
+    const selectedModel =
+      validatedInput.model_id ||
+      getDefaultModelForTier(account.subscription_tier);
+
+    if (validatedInput.model_id) {
+      const modelConfig = getModelConfig(validatedInput.model_id);
+      if (
+        !modelConfig ||
+        !isModelAllowedForTier(modelConfig, account.subscription_tier)
+      ) {
+        return NextResponse.json(
+          { error: 'Selected model is not available on your plan' },
+          { status: 403 }
+        );
+      }
     }
 
     // 4. Check rate limits based on subscription tier
@@ -167,8 +192,7 @@ export async function POST(req: NextRequest) {
     });
 
     // 8. Queue the first job (generate_metadata) to start the generation chain
-    const selectedModel = validatedInput.model_id || getDefaultModelForTier(account.subscription_tier);
-
+    // selectedModel was validated against the catalog + tier in step 3b above.
     try {
       await addJob('generate_metadata', {
         pathId: newPath.id,
