@@ -34,6 +34,8 @@ jobs:
       - run:
           name: Build Next.js for << parameters.environment >>
           command: npm run build:<< parameters.environment >>
+          environment:
+            NODE_OPTIONS: --max-old-space-size=3072
       - persist_to_workspace:
           root: .
           paths:
