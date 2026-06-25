@@ -1,8 +1,16 @@
 # ViaProto
 
-**AI-powered learning paths in 60 seconds.** Generate comprehensive, personalized curricula with curated resources from real human creators.
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-Postgres-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?style=flat-square&logo=stripe&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-40%2B%20models-6566F1?style=flat-square)
 
-Production URL: https://viapro.to (not yet live)
+> Your AI learning architect — describe a goal, get a structured path from fundamentals to mastery, each step backed by a real, verified resource.
+
+🌐 **Live at** https://viapro.to
 
 ---
 
@@ -51,7 +59,7 @@ ViaProto solves the problem of information overload and deteriorating search qua
 
 ```bash
 # Clone and install
-git clone https://github.com/yourusername/via-proto.git
+git clone https://github.com/chznbaum/via-proto.git
 cd via-proto
 npm install
 
