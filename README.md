@@ -37,7 +37,7 @@ ViaProto solves the problem of information overload and deteriorating search qua
 | UI | React | 19.0.0 |
 | Styling | Tailwind CSS + DaisyUI | 4.1.10 + 5.0.5 |
 | Database | Supabase (PostgreSQL) | 2.45.0 |
-| CMS | Payload CMS | 3.x |
+| CMS | TinaCMS (blog) | 3.9.3 |
 | Auth | Supabase Auth | 2.45.0 |
 | AI | OpenRouter (40+ models) | via OpenAI SDK 6.9.1 |
 | Payments | Stripe | 13.11.0 |
@@ -103,6 +103,7 @@ npm run worker:dev
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
+DATABASE_URL=                  # Postgres connection string (required by the worker)
 
 # Stripe
 STRIPE_PUBLIC_KEY=
@@ -123,8 +124,10 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3001
 WORKER_CONCURRENCY=3
 WORKER_POLL_INTERVAL=1000
 
-# Payload CMS
-PAYLOAD_SECRET=  # Random string for encrypting Payload data
+# TinaCMS (blog)
+NEXT_PUBLIC_TINA_CLIENT_ID=    # Client ID from TinaCloud
+TINA_TOKEN=                    # Read-only content token
+TINA_SEARCH_TOKEN=             # Search indexer token
 ```
 
 ---
@@ -134,45 +137,48 @@ PAYLOAD_SECRET=  # Random string for encrypting Payload data
 ```
 via-proto/
 ├── app/
-│   ├── (main)/               # Main app routes (separate root layout)
-│   │   ├── (dashboard)/      # Protected dashboard routes
-│   │   ├── auth/             # Login/register pages
-│   │   ├── blog/             # Blog system
+│   ├── (auth)/               # Auth route group — login, register, OAuth callback
+│   ├── (dashboard)/          # Protected route group — dashboard, skills, progress, account, upgrade
+│   ├── (main)/               # Public route group (own root layout)
+│   │   ├── blog/             # Blog (TinaCMS-managed MDX)
 │   │   ├── explore/          # Public path discovery
-│   │   ├── paths/[id]/       # Path detail page
+│   │   ├── paths/[id]/       # Public path detail page
+│   │   ├── invite/           # Team invite acceptance
 │   │   └── layout.tsx        # App layout (html/body, fonts, analytics)
-│   ├── (payload)/            # Payload CMS admin (separate root layout)
-│   │   ├── admin/            # Admin UI at /admin
-│   │   ├── api/              # Payload REST API
-│   │   └── layout.tsx        # Payload layout (own html/body)
-│   ├── api/                  # API endpoints
+│   ├── api/                  # API route handlers
 │   │   ├── paths/            # Path generation & management
-│   │   ├── stripe/           # Payment handling
+│   │   ├── stripe/           # Checkout & portal
 │   │   ├── topics/           # Topic search
 │   │   └── webhook/          # Stripe webhooks
-│   └── layout.tsx            # Minimal root layout (returns children only)
-├── src/
-│   └── collections/          # Payload CMS collections
+│   └── layout.tsx            # Root layout (metadataBase)
 ├── components/               # React components
+├── contexts/                 # React context providers
+├── hooks/                    # Shared React hooks
+├── content/
+│   └── posts/                # Blog posts as MDX (managed by TinaCMS)
+├── tina/
+│   └── config.ts             # TinaCMS schema & configuration
 ├── libs/
-│   ├── models/              # AI model configuration (40+ models)
-│   ├── supabase/            # Database clients
-│   ├── openrouter.ts        # AI generation logic
-│   ├── stripe.ts            # Payment utilities
-│   └── validation/          # Zod schemas
+│   ├── models/               # AI model configuration (40+ models)
+│   ├── jobs/                 # Background job tasks (Graphile Worker)
+│   ├── supabase/             # Database clients (server, client, service)
+│   ├── openrouter.ts         # AI generation logic
+│   ├── stripe.ts             # Payment utilities
+│   └── validation/           # Zod schemas
 ├── supabase/
-│   ├── migrations/          # Database schema (timestamped)
-│   └── seed.sql            # Topic data
-├── data/                    # JSON source for seeds
+│   ├── migrations/           # Database schema (timestamped)
+│   └── seed.sql              # Topic seed data
+├── data/                     # JSON source for seeds
 ├── scripts/
-│   └── generate-seeds.js   # Seed file generator
-├── payload.config.ts        # Payload CMS configuration
-└── config.ts               # App configuration
+│   └── generate-seeds.js     # Seed file generator
+├── worker.ts                 # Background worker entry point
+└── config.ts                 # App configuration
 ```
 
-**Note on Route Groups**: The app uses two route groups with separate root layouts to prevent nested HTML documents:
-- `(main)` - Main application with custom fonts, analytics, and client-side providers
-- `(payload)` - Payload CMS admin with its own layout requirements
+**Note on Route Groups**: The app uses three route groups, each with its own layout:
+- `(main)` - Public-facing pages with custom fonts, analytics, and client-side providers
+- `(dashboard)` - Authenticated/protected pages (dashboard, skills, progress, account, upgrade)
+- `(auth)` - Login, register, and OAuth callback flows
 
 ---
 
