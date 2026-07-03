@@ -1,8 +1,8 @@
 # ViaProto — Agent Guide
 
 This project uses **GSD** for planning. The source of truth for scope, decisions, and how the
-code is organized lives in `.planning/` — not in this file. (This applies to any agent: Claude
-Code, Cursor, Codex, etc. — `CLAUDE.md`, `.cursorrules`, and `AGENTS.md` are thin pointers to
+code is organized lives in `.planning/` — not in this file. (This applies to any agent: Codex,
+Claude Code, Cursor, etc. — `AGENTS.md`, `CLAUDE.md`, and `.cursorrules` are thin pointers to
 the same `.planning/` content.)
 
 **Read before working:**

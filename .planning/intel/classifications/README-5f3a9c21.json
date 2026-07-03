@@ -1,0 +1,13 @@
+{
+  "source_path": "/Users/chazona/Repos/saas/via-proto/README.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": false,
+  "title": "ViaProto",
+  "summary": "Project README describing ViaProto, an AI learning-path generator, its features, tech stack, setup, architecture, and deployment.",
+  "scope": ["ViaProto product overview", "learning path generation", "background job worker", "AI model system", "rate limits and tiers", "account architecture", "database schema", "API endpoints", "deployment"],
+  "cross_refs": [],
+  "locked": false,
+  "precedence": null,
+  "notes": ""
+}
